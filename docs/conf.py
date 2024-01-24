@@ -17,9 +17,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = "Basic Sphinx Example Project"
-copyright = "2022, Read the Docs core team"
-author = "Read the Docs core team"
+project = "OBP60 V2 Documentation"
+copyright = "2024, Open Boat Projects"
+author = "Norbert Walter"
 
 
 # -- General configuration ---------------------------------------------------
