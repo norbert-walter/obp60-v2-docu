@@ -1,4 +1,4 @@
-Example: Basic Sphinx project for Read the Docs
+OBP60 V2 Dokumentation
 ===============================================
 
 .. image:: https://readthedocs.org/projects/example-sphinx-basic/badge/?version=latest
