@@ -1,4 +1,4 @@
-S3
+OBP60 Technische Daten
 ================
 
 ==================  ==================  
@@ -34,19 +34,19 @@ Tutorials
 * :doc:`../tutorials/s3/get_started_with_micropython_s3`
 * :doc:`../tutorials/s3/get_started_with_arduino_s3`
 
-Documentation
+Dokumentation
 ----------------------
 
-* `Schematic V1.0.0[PDF] <../_static/files/sch_s3_v1.0.0.pdf>`_
-* `Dimension V1.0.0[PDF] <../_static/files/dim_s3_v1.0.0.pdf>`_
+* `Schaltung V1.0.0[PDF] <../_static/files/sch_s3_v1.0.0.pdf>`_
+* `Abmessungen V1.0.0[PDF] <../_static/files/dim_s3_v1.0.0.pdf>`_
 * `ESP32-S3-WROOM-1 Datasheet <https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf>`_
 
 
-Technical specs
+Technische Daten
 ----------------------
 
 +----------------------+------------+
-| Operating Voltage    | 3.3V       |
+| Operating Voltage    | 12...33V   |
 +----------------------+------------+
 | Digital I/O Pins     | 31         |
 +----------------------+------------+
@@ -56,12 +56,12 @@ Technical specs
 +----------------------+------------+
 | PSRAM                | 8M Bytes   |
 +----------------------+------------+
-| Size                 | 65.3*25.4mm|
+| Size                 | 110*115x30mm|
 +----------------------+------------+
 | Weight               | 9.0g       |
 +----------------------+------------+
 
-Pin
+Anschlussbelegung
 ----------------------
 
 .. image:: ../_static/boards/s3_v1.0.0_4_16x9.jpg
