@@ -14,7 +14,7 @@ Contents
 .. toctree::
 
    Startseite <self>
-   Historie
-   Technische Daten
+   Historie <hiostorie>
+   Technische Daten <specification>
    usage
    api
