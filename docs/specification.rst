@@ -1,5 +1,5 @@
 OBP60 Technische Daten
-======================
+==================
 
 ==================
  |TOP_IMG|_
@@ -15,6 +15,7 @@ WiFi & Bluetooth 5 (LE) boards based ESP32-S3-WROOM-1.
 
 Funktionen
 ------------------
+
 * CPU: ESP32-S3
 * USB-C (OTG, Debug, NMEA0183)
 * E-Ink Display
@@ -36,13 +37,13 @@ Funktionen
 
 
 Tutorials
-----------------------
+------------------
 
 * :doc:`../tutorials/s3/get_started_with_micropython_s3`
 * :doc:`../tutorials/s3/get_started_with_arduino_s3`
 
 Dokumentation
-----------------------
+------------------
 
 * `Schaltung V1.0.0[PDF] <../_static/files/sch_s3_v1.0.0.pdf>`_
 * `Abmessungen V1.0.0[PDF] <../_static/files/dim_s3_v1.0.0.pdf>`_
@@ -50,7 +51,7 @@ Dokumentation
 
 
 Technische Daten
-----------------------
+------------------
 
 +----------------------+---------------+
 | Versorgungsspannung  | 12...33 V     |
@@ -89,7 +90,7 @@ Technische Daten
 +----------------------+---------------+
 
 Anschlussbelegung
-----------------------
+------------------
 
 .. image:: ../_static/boards/s3_v1.0.0_4_16x9.jpg
    :target: ../_static/boards/s3_v1.0.0_4_16x9.jpg
