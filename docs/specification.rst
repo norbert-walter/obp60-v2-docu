@@ -1,7 +1,11 @@
 OBP60 Technische Daten
 ======================
 
-|TOP_IMG| image:: /pictures/OBP60_Case_Front.png
+=================
+ |TOP_IMG|_
+=================
+
+ |TOP_IMG| image:: /pictures/OBP60_Case_Front.png
           :scale: 20%
 
 WiFi & Bluetooth 5 (LE) boards based ESP32-S3-WROOM-1. 
