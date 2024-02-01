@@ -1,15 +1,8 @@
 OBP60 Technische Daten
-================
+======================
 
-==================  ==================  
- |TOP_IMG|_           |BOTTOM_IMG|_  
-==================  ==================
-
-.. |TOP_IMG| image:: ../_static/boards/s3_v1.0.0_1_16x16.jpg
-.. _TOP_IMG: ../_static/boards/s3_v1.0.0_1_16x16.jpg
-
-.. |BOTTOM_IMG| image:: ../_static/boards/s3_v1.0.0_2_16x16.jpg
-.. _BOTTOM_IMG: ../_static/boards/s3_v1.0.0_2_16x16.jpg
+|TOP_IMG| image:: /pictures/OBP60_Case_Front.png
+          :scale: 20%
 
 WiFi & Bluetooth 5 (LE) boards based ESP32-S3-WROOM-1. 
 `[Buy it]`_
@@ -18,15 +11,27 @@ WiFi & Bluetooth 5 (LE) boards based ESP32-S3-WROOM-1.
 
 Features
 ------------------
-* based ESP32-S3-WROOM-1
-* 2x Type-C USB (OTG, UART)
-* 16MB Flash (Quad SPI)
-* 8MB PSRAM (Octal SPI)
-* 31x IO
-* 1x LOLIN I2C Port
-* ADC, DAC, I2C, SPI, UART, USB OTG
-* Compatible with MicroPython, Arduino and ESP-IDF
-* Default firmware: MicroPython
+* CPU: ESP32-S3
+* USB-C (OTG, Debug, NMEA0183)
+* E-Ink Display
+* 6 Sensor-Tasten (Wischgesten-tauglich)
+* Akustischer Signalgeber (Buzzer)
+* Optischer Signalgeber (RGB-LED)
+* LED Displaybeleuchtung (RGB-LEDs)
+* NMEA 2000 (vollduplex, isoliert)
+* NMEA 0183 (RX oder TX, konfigurierbar, Isoliert)
+* I2C (5V, isoliert)
+* 1Wire
+* Batteriemonitor (12V Spannungsmessung)
+* BMP280 (Temperatur, Luftdruck)
+* GPS-Empfänger (GPS, Glonas, Baidu, interne Mini GPS-Antenne)
+* WiFi 2.4GHz (HTTP, TCP, UDP)
+* Bluetooth (aktuell ungenutzt)
+* Stromversorgung: 12...33V
+* Stromverbrauch: 2W
+* Batterie Tiefentladeschutz < 9.0V (Deep Sleep, 0,2W)
+* Low Power Modus (Deep Sleep mit WeakUp 0,2W)
+
 
 Tutorials
 ----------------------
@@ -46,19 +51,39 @@ Technische Daten
 ----------------------
 
 +----------------------+---------------+
-| Operating Voltage    | 12...33V      |
+| Versorgungsspannung  | 12...33 V     |
 +----------------------+---------------+
-| Digital I/O Pins     | 31            |
+| Stromverbrauch       | 2 W (3 W)     |
 +----------------------+---------------+
-| Clock Speed          | 240MHz        |
+| Clock Speed          | 240 MHz       |
 +----------------------+---------------+
-| Flash                | 16M Bytes     |
+| RAM                  | 512 kB        |
 +----------------------+---------------+
-| PSRAM                | 8M Bytes      |
+| Flash                | 16 MB         |
 +----------------------+---------------+
-| Size                 | 110x115x30mm  |
+| PSRAM                | 8 MB          |
 +----------------------+---------------+
-| Weight               | 300g          |
+| Displaygröße         | 400 x 300 pix |
++----------------------+---------------+
+| Refteshrate          | 1 Hz          |
++----------------------+---------------+
+| Sensortasten         | kapazitiv     |
++----------------------+---------------+
+| NMEA0183             | 115.2 kBd, 8N1|
++----------------------+---------------+
+| NMEA2000             | 250 kBit/s    |
++----------------------+---------------+
+| I2C-Bus              | 5V, 10 kBit/s |
++----------------------+---------------+
+| 1Wire-Bus            | 3.3V          |
++----------------------+---------------+
+| 5V Ausgang           | 250 mA        |
++----------------------+---------------+
+| ESD-Schutz           | 2 kV          |
++----------------------+---------------+
+| Size                 | 110x115x30 mm |
++----------------------+---------------+
+| Weight               | 350 g         |
 +----------------------+---------------+
 
 Anschlussbelegung
