@@ -9,6 +9,9 @@ WiFi & Bluetooth 5 (LE) boards based ESP32-S3-WROOM-1.
 
 .. _[Buy it]: https://www.aliexpress.com/item/1005004643475363.html
 
+
+Das ist ein Text mit ‹‹‹‹ und ÷÷÷÷
+
 Funktionen
 ------------------
 
