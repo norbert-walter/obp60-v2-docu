@@ -13,7 +13,7 @@ WiFi & Bluetooth 5 (LE) boards based ESP32-S3-WROOM-1.
 
 .. _[Buy it]: https://www.aliexpress.com/item/1005004643475363.html
 
-Features
+Funktionen
 ------------------
 * CPU: ESP32-S3
 * USB-C (OTG, Debug, NMEA0183)
@@ -24,17 +24,15 @@ Features
 * LED Displaybeleuchtung (RGB-LEDs)
 * NMEA 2000 (vollduplex, isoliert)
 * NMEA 0183 (RX oder TX, konfigurierbar, Isoliert)
-* I2C (5V, isoliert)
+* I2C (isoliert)
 * 1Wire
 * Batteriemonitor (12V Spannungsmessung)
 * BMP280 (Temperatur, Luftdruck)
 * GPS-Empfänger (GPS, Glonas, Baidu, interne Mini GPS-Antenne)
 * WiFi 2.4GHz (HTTP, TCP, UDP)
 * Bluetooth (aktuell ungenutzt)
-* Stromversorgung: 12...33V
-* Stromverbrauch: 2W
-* Batterie Tiefentladeschutz < 9.0V (Deep Sleep, 0,2W)
-* Low Power Modus (Deep Sleep mit WeakUp 0,2W)
+* Batterie Tiefentladeschutz < 9.0V
+* Low Power Modus
 
 
 Tutorials
