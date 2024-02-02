@@ -1,5 +1,5 @@
 OBP60 Technische Daten
-==================
+======================
 
 .. image:: /pictures/OBP60_Case_Front.png
    :scale: 20%
@@ -10,7 +10,7 @@ WiFi & Bluetooth 5 (LE) boards based ESP32-S3-WROOM-1.
 .. _[Buy it]: https://www.aliexpress.com/item/1005004643475363.html
 
 
-Das ist ein Text mit ‹‹‹‹ und ÷÷÷÷
+Das ist ein Text mit √ú√ú√ú√ú und √ñ√ñ√ñ√ñ√ñ 
 
 Funktionen
 ------------------
@@ -28,7 +28,7 @@ Funktionen
 * 1Wire
 * Batteriemonitor (12V Spannungsmessung)
 * BMP280 (Temperatur, Luftdruck)
-* GPS-Empf‰nger (GPS, Glonas, Baidu, interne Mini GPS-Antenne)
+* GPS-Empf√§nger (GPS, Glonas, Baidu, interne Mini GPS-Antenne)
 * WiFi 2.4GHz (HTTP, TCP, UDP)
 * Bluetooth (aktuell ungenutzt)
 * Batterie Tiefentladeschutz < 9.0V
@@ -65,7 +65,7 @@ Technische Daten
 +----------------------+---------------+
 | PSRAM                | 8 MB          |
 +----------------------+---------------+
-| Displaygrˆﬂe         | 400 x 300 pix |
+| Displaygr√∂√üe         | 400 x 300 pix |
 +----------------------+---------------+
 | Refteshrate          | 1 Hz          |
 +----------------------+---------------+
@@ -85,7 +85,7 @@ Technische Daten
 +----------------------+---------------+
 | Size                 | 110x115x30 mm |
 +----------------------+---------------+
-| Weight               | 350 g         |
+| Gewicht              | 350 g         |
 +----------------------+---------------+
 
 Anschlussbelegung
