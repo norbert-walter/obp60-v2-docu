@@ -18,8 +18,7 @@ Inhalt
 
 .. toctree::
    :maxdepth: 1
-   :hidden:
-   :caption: Boards:
+   :caption: Beschreibung:
 
    Startseite <self>
    Historie <historie>
