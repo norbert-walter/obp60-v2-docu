@@ -1,8 +1,8 @@
 OBP60 V2 Dokumentation
 ======================
 
-.. image:: https://readthedocs.org/projects/example-sphinx-basic/badge/?version=latest
-    :target: https://example-sphinx-basic.readthedocs.io/en/latest/?badge=latest
+.. image:: https://readthedocs.org/projects/obp60-v2-docu/badge/?version=latest
+    :target: https://obp60-v2-docu.readthedocs.io/de/latest/?badge=latest
     :alt: Documentation Status
 
 .. note::

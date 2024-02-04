@@ -1,10 +1,10 @@
 .. include:: ../README.rst
 
-.. toctree::
-   :maxdepth: 3
-
 Inhaltsverzeichnis
 ------------------
+
+.. toctree::
+   :maxdepth: 3
 
    Startseite <self>
    Historie <historie>
