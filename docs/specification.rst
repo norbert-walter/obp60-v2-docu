@@ -1,5 +1,5 @@
 OBP60 Technische Daten
-==================
+======================
 
 .. image:: /pictures/OBP60_Case_Front.png
    :scale: 20%
@@ -10,10 +10,10 @@ WiFi & Bluetooth 5 (LE) boards based ESP32-S3-WROOM-1.
 .. _[Buy it]: https://www.aliexpress.com/item/1005004643475363.html
 
 
-Das ist ein Text mit ‹‹‹‹ und ÷÷÷÷
+Das ist ein Text mit √Ñ√Ñ√Ñ√Ñ und √ñ√ñ√ñ√ñ
 
 Funktionen
-------------------
+----------
 
 * CPU: ESP32-S3
 * USB-C (OTG, Debug, NMEA0183)
@@ -28,7 +28,7 @@ Funktionen
 * 1Wire
 * Batteriemonitor (12V Spannungsmessung)
 * BMP280 (Temperatur, Luftdruck)
-* GPS-Empf‰nger (GPS, Glonas, Baidu, interne Mini GPS-Antenne)
+* GPS-Empf√§ger (GPS, Glonas, Baidu, interne Mini GPS-Antenne)
 * WiFi 2.4GHz (HTTP, TCP, UDP)
 * Bluetooth (aktuell ungenutzt)
 * Batterie Tiefentladeschutz < 9.0V
@@ -36,13 +36,13 @@ Funktionen
 
 
 Tutorials
-------------------
+---------
 
 * :doc:`../tutorials/s3/get_started_with_micropython_s3`
 * :doc:`../tutorials/s3/get_started_with_arduino_s3`
 
 Dokumentation
-------------------
+-------------
 
 * `Schaltung V1.0.0[PDF] <../_static/files/sch_s3_v1.0.0.pdf>`_
 * `Abmessungen V1.0.0[PDF] <../_static/files/dim_s3_v1.0.0.pdf>`_
@@ -50,7 +50,7 @@ Dokumentation
 
 
 Technische Daten
-------------------
+----------------
 
 +----------------------+---------------+
 | Versorgungsspannung  | 12...33 V     |
@@ -65,7 +65,7 @@ Technische Daten
 +----------------------+---------------+
 | PSRAM                | 8 MB          |
 +----------------------+---------------+
-| Displaygrˆﬂe         | 400 x 300 pix |
+| Displaygr√∂√üe         | 400 x 300 pix |
 +----------------------+---------------+
 | Refteshrate          | 1 Hz          |
 +----------------------+---------------+
@@ -89,7 +89,7 @@ Technische Daten
 +----------------------+---------------+
 
 Anschlussbelegung
-------------------
+-----------------
 
 .. image:: ../_static/boards/s3_v1.0.0_4_16x9.jpg
    :target: ../_static/boards/s3_v1.0.0_4_16x9.jpg
