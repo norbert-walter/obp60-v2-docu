@@ -3,6 +3,9 @@
 .. toctree::
    :maxdepth: 3
 
+Inhaltsverzeichnis
+------------------
+
    Startseite <self>
    Historie <historie>
    Technische Daten <specification>
