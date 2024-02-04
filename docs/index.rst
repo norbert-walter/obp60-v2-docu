@@ -1,3 +1,5 @@
+.. include:: ../README.rst
+
 OBP60 V2 Dokumentation
 ======================
 .. note::
