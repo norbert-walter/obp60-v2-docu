@@ -1,7 +1,7 @@
 .. include:: ../README.rst
 
-Inhaltsverzeichnis
-------------------
+Multifunktionsdisplay OBP60 V2
+------------------------------
 
 .. toctree::
    :maxdepth: 3
