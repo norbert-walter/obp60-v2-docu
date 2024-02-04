@@ -1,5 +1,5 @@
-OBP60 Technische Daten
-======================
+Technische Daten
+================
 
 .. image:: /pictures/OBP60_Case_Front.png
    :scale: 20%
