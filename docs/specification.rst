@@ -22,8 +22,8 @@ Funktionen
 * Akustischer Signalgeber (Buzzer)
 * Optischer Signalgeber (RGB-LED)
 * LED Displaybeleuchtung (RGB-LEDs)
-* NMEA 2000 (vollduplex, isoliert)
-* NMEA 0183 (RX oder TX, konfigurierbar, Isoliert)
+* NMEA2000 (vollduplex, isoliert)
+* NMEA0183 (RX oder TX, konfigurierbar, Isoliert)
 * I2C (isoliert)
 * 1Wire
 * Batteriemonitor (12V Spannungsmessung)
@@ -49,8 +49,8 @@ Dokumentation
 * `ESP32-S3-WROOM-1 Datasheet <https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf>`_
 
 
-Technische Daten
-----------------
+Spezifikation
+-------------
 
 +----------------------+---------------+
 | Versorgungsspannung  | 12...33 V     |
