@@ -8,6 +8,10 @@ Funktionen
 ----------
 
 * E-Ink Display (tageslichttauglich)
+* Nummerische Anzeigeseiten für 1, 2, 3 und 4 Werten (Werte frei wählbar)
+* Grafische Anzeigeseiten (feste Werte)
+* Trendanzeige für Werte
+* Grenzwertüberschreitung akustisch und optisch
 * 6 Sensor-Tasten (Wischgesten-tauglich)
 * Akustischer Signalgeber (Buzzer)
 * Optischer Signalgeber (RGB-LED)
@@ -69,7 +73,7 @@ Spezifikation
 +----------------------+----------------------+
 | NMEA2000             | 250 kBit/s, 50m      |
 +----------------------+----------------------+
-| I2C-Bus              | 5V, 100 kBit/s , 10m |
+| I2C-Bus              | 5V, 100 kBit/s, 10m  |
 +----------------------+----------------------+
 | 1Wire-Bus            | 3.3V, 10m            |
 +----------------------+----------------------+
