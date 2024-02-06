@@ -90,7 +90,6 @@ Spezifikation
 
 Anschlussbelegung
 -----------------
-
-.. image:: ../_static/boards/s3_v1.0.0_4_16x9.jpg
-   :target: ../_static/boards/s3_v1.0.0_4_16x9.jpg
+.. image:: /pictures/OBP60_Back_Side_3.png
+   :scale: 50%
 
