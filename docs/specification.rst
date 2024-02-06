@@ -21,6 +21,7 @@ Funktionen
 * NMEA2000/NMEA0183 Gate4way (bidirektional)
 * I2C (isoliert)
 * 1Wire (nicht isoliert)
+* Spannungsausgang 5V für ext. Sensorik
 * USB-C (OTG, Debug, NMEA0183)
 * Batteriemonitor (12V Spannungsmessung)
 * BMP280 (Temperatur, Luftdruck)
