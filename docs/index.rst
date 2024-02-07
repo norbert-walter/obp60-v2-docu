@@ -3,9 +3,6 @@
 Multifunktionsdisplay OBP60 V2
 ==============================
 
-Inhalt
-------
-
 .. toctree::
    :maxdepth: 3
    :caption: Description
