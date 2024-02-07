@@ -2,7 +2,7 @@
 
 .. toctree::
    :maxdepth: 3
-   :caption: Description
+   :caption: Einführung
    :name: sec-description
 
    Startseite <self>
