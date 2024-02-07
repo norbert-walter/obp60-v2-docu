@@ -7,7 +7,9 @@ Inhalt
 ------
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 1
+   :caption: Description
+   :name: sec-description
 
    Startseite <self>
    Historie <historie>
