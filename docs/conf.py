@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = "OBP60 V2 Documentation"
+project = "OBP60 V2 Dokumentation"
 copyright = "2024, Open Boat Projects"
 author = "Norbert Walter"
 
