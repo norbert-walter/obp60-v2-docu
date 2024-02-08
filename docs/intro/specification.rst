@@ -18,7 +18,7 @@ Funktionen
 * LED Displaybeleuchtung (RGB-LEDs)
 * NMEA2000 (vollduplex, isoliert)
 * NMEA0183 (RX oder TX, konfigurierbar, Isoliert)
-* NMEA2000/NMEA0183 Gate4way (bidirektional)
+* NMEA2000/NMEA0183 Gateway (bidirektional)
 * I2C (isoliert)
 * 1Wire (nicht isoliert)
 * Spannungsausgang 5V für ext. Sensorik
