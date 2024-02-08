@@ -1,11 +1,9 @@
-.. include:: ../README.rst
-
 .. toctree::
    :maxdepth: 3
    :caption: Einführung
    :name: sec-description
 
-   Startseite <self>
+   Startseite <index>
    Historie <historie>
    Technische Daten <specification>
    
