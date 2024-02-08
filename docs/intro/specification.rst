@@ -1,7 +1,7 @@
 Technische Daten
 ================
 
-.. image:: /pics/OBP60_Case_Front_t.png
+.. image:: /OBP60_Case_Front_t.png
    :scale: 20%
 
 Funktionen
@@ -91,6 +91,6 @@ Spezifikation
 
 Anschlussbelegung
 -----------------
-.. image:: /pics/OBP60_Back_Side_3.png
+.. image:: /OBP60_Back_Side_3.png
    :scale: 50%
 
