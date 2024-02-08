@@ -94,3 +94,4 @@ Anschlussbelegung
 .. image:: ../pics/OBP60_Back_Side_3.png
    :scale: 50%
 
+Letzte Aktualisierung |today|
