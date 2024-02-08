@@ -3,7 +3,7 @@
    :caption: Einführung
    :name: sec-description
 
-   Startseite <index>
+   Startseite <self>
    Historie <historie>
    Technische Daten <specification>
    
