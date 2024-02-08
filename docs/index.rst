@@ -17,7 +17,7 @@ Das Mutifunktionsdisplay OBP60 dient zur Anzeige von Daten aus Boots-Netzen wie 
 .. toctree::
    :maxdepth: 3
    :caption: Einführung
-   :name: sec-description
+   :name: sec-introduction
 
    Startseite <self>
    Historie <historie>
@@ -26,7 +26,7 @@ Das Mutifunktionsdisplay OBP60 dient zur Anzeige von Daten aus Boots-Netzen wie 
 .. toctree::
    :maxdepth: 3
    :caption: Bedienung
-   :name: sec-description
+   :name: sec-usermanual
 
    Teile <parts>
    Benutzung <usage>
@@ -34,7 +34,7 @@ Das Mutifunktionsdisplay OBP60 dient zur Anzeige von Daten aus Boots-Netzen wie 
 .. toctree::
    :maxdepth: 3
    :caption: Zusammenbau
-   :name: sec-description
+   :name: sec-assembling
 
    API <api>
 
