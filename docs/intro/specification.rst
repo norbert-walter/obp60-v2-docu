@@ -17,7 +17,7 @@ Funktionen
 * Optischer Signalgeber (RGB-LED)
 * LED Displaybeleuchtung (RGB-LEDs)
 * NMEA2000 (vollduplex, isoliert)
-* NMEA0183 (RX oder TX, konfigurierbar, Isoliert)
+* NMEA0183 (RX oder TX, konfigurierbar, isoliert)
 * NMEA2000/NMEA0183 Gateway (bidirektional)
 * I2C (isoliert)
 * 1Wire (nicht isoliert)
