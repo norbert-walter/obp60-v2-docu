@@ -14,7 +14,7 @@ Die Statuszeile dient zur Anzeige von Statusinformationen. Dazu zählen:
    * **N2K** - NMEA2000
    * **183** - NMEA0183
    * **USB** - NMEA0183
-   * **TCP** - NMEA0183 via TCP
+   * **TCP** - NMEA0183 via TCP (WiFi)
 * Lebenszeichen (pulierender Punkt)
 * Datum und Uhrzeit (landesspezifisch)
 * Anzeige der Zeitzone
@@ -44,7 +44,12 @@ Die Entstehung von Geisterbildern ist von der Display-Temperatur des OBP60 abhä
 Fußzeile
 ---------
 
-Die Fußzeile dient zur Darstellung der Tastenfunktionen. Die Belegung der Tasten ändert sich abhängig vom Inhalt der Anzeigeseiten. Aktive Tatsen sind mit Kurzbezeichnungen in eckigen Klammern versehen, wie z.B. ``[AVG]``. Es kann auch Anzeigeseiten geben, die keine Tastenfunktionen enthalten.
+Die Fußzeile dient zur Darstellung der Tastenfunktionen. Die Belegung der Tasten ändert sich abhängig vom Inhalt der Anzeigeseiten. Aktive Tatsen sind mit Kurzbezeichnungen in eckigen Klammern versehen, wie z.B. ``[AVG]``. Es kann auch Anzeigeseiten geben, die keine Tastenfunktionen enthalten. In der Mitte der Fußzeile werden weiter Informationen eingeblendet:
+
+* [ <<<< 1/5 >>>> ] - Wischgeste aktiv
+* [ Keylock active ] - Tasten gesperrt
+
+Sofern die Wischgeste aktiv ist, wird im Infobereich die aktuelle Seite und die Seitenanzahl angezeigt. 
 
 Sensor-Tasten
 -------------
@@ -60,7 +65,7 @@ Das OBP60 hat 6 kapazitive Sensor-Tasten am unteren Display-Rand. Die Tasten rea
 
 Die Tasten-Sensitivität kann über die Konfigurationsseite eingestellt werden. Damit lässt sich die Schwelle einstellen ab der ein Tastendruck erkannt wird. Die Tasten haben in der Mitte alle eine Vertiefung. So kann die Mitte der Taste besser erfühlt werden. Erkannte Tastenberührungen werden akustisch mit einem Piepton signalisiert.
 
-Die Tasten sind bündig in das Display eingelassen. So ist es möglich, mit Wischgesten die Seiteninhalte umzuschalten. Dazu wischt man zügig rechts oder links entlang über mindstens zwei Tasten. Die Software erkennt automatisch wenn mehrere Tasten hintereinander ausgelöst werden und bestimmt daraus die Wischrichtung. Für die Wischgeste wird ein akustisches Feadback gegeben. Rechts wischen wird mit der Tonfolge tief-hoch signalisiert, links wischen mit hoch-tief.
+Die Tasten sind bündig in das Display eingelassen. So ist es möglich, mit Wischgesten die Seiteninhalte umzuschalten. Dazu wischt man zügig rechts oder links entlang über mindstens zwei Tasten. Die Software erkennt automatisch wenn mehrere Tasten hintereinander ausgelöst werden und bestimmt daraus die Wischrichtung. Für die Wischgeste wird ein akustisches Feadback gegeben. Rechts wischen wird mit der Tonfolge tief-hoch signalisiert, links wischen mit hoch-tief. Die Seitenweiterschaltung ist ann den Enden rollierend.
 
 Beim kurzen Tippen wird kein Piepton ausgegeben. Kurzes tippen der zwei äußeren Tasten nacheinander aktiviert die Tastensperre, gefolgt von einem langen Piepton. Danach kann keine Taste mehr normal gedrückt werden und es wird keine Wischgeste mehr erkannt. Im Display ist die Meldung ``[Keylock active]`` zu sehen. Welche Taste beim Aktivieren der Tastensperre zu erst gedrückt wird ist unerheblich, ebenso die Reihenfolge. Die Deaktivierung der Tastensperre erfolgt auf die selbe Weise.
 
