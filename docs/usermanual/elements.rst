@@ -87,7 +87,7 @@ Um das Display bei Nacht ablesen zu können, kann eine Hintergrundbeleuchtung ü
 * Über Sonnenstand automatisch schaltbar
 
 .. important::
-   Wenn Sie den Sonnenstand zum Schalten der Hintergrundbeleuchtung verwenden wollen, benötigen sie ein gültiges GPS-Signal, damit die Schaltzustände ausgelöst werden können. Die Hintergrundbeleuchtung wird automatisch beim Sonnenuntergang eingeschaltet und beim Sonnenaufgang abgeschaltet. Ist kein gültiges GPS-Signal vorhanden, so erfolgt keine Anderung der Schaltzustände.
+   Wenn Sie den Sonnenstand zum Schalten der Hintergrundbeleuchtung verwenden wollen, benötigen sie ein gültiges GPS-Signal, damit die Schaltzustände ausgelöst werden können. Die Hintergrundbeleuchtung wird automatisch beim Sonnenuntergang eingeschaltet und beim Sonnenaufgang abgeschaltet. Ist kein gültiges GPS-Signal vorhanden, so erfolgt keine Änderung der Schaltzustände.
    
 Buzzer
 ------
@@ -102,5 +102,5 @@ Reset-Taster
 
 Der Reset-Taster befindet sich auf der Rückseite des Displays an der Unterseite des gorßen linken Steckverbinders CN1. Der Reset-Taster wird beim normalen Betrieb nicht genutzt. Bei Programmiervorgängen kann es nützlich sein, einen manuellen Reset auszulösen. Benutzen sie zum Auslösen des Reset einen nicht leitenden schmalen Gegenstand und drücken sie die Taste vorsichtig, bis ein überwundener Druckpunkt spürbar ist.
 
-.. important::
+.. warning::
    Verwenden sie keine leitenden Gegenstände. Damit können Kurzschlüsse auf der Platine ausgelöst werden und das Gerät kann beschädigt werden.
