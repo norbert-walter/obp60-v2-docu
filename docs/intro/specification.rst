@@ -2,7 +2,7 @@ Technische Daten
 ================
 
 .. image:: ../pics/OBP60_Case_Front_t.png
-   :scale: 40%
+   :scale: 45%
 
 Funktionen
 ----------
@@ -36,7 +36,7 @@ Aufbau
 ------
 
 .. image:: ../pics/OBP60_Explode_View.png
-   :scale: 40%
+   :scale: 45%
 
 
 Spezifikation
