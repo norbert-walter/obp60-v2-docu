@@ -9,17 +9,17 @@ Statuszeile
 
 Die Statuszeile dient zur Anzeige von Statusinformationen. Dazu zählen:
 
-#. Zustandsanzeige des Access Points
-#. Zustandsanzeige aktiver Bussysteme
-  * **N2K** - NMEA2000
-  * **183** - NMEA0183
-  * **USB** - NMEA0183
-  * **TCP** - NMEA0183 via TCP
-#. Lebenszeichen (pulierender Punkt)
-#. Datum und Uhrzeit (landesspezifisch)
-#. Anzeige der Zeitzone
-  * **UTC** - Weltzeit
-  * **LOT** - Lokalzeit
+* Zustandsanzeige des Access Points
+* Zustandsanzeige aktiver Bussysteme
+   * **N2K** - NMEA2000
+   * **183** - NMEA0183
+   * **USB** - NMEA0183
+   * **TCP** - NMEA0183 via TCP
+* Lebenszeichen (pulierender Punkt)
+* Datum und Uhrzeit (landesspezifisch)
+* Anzeige der Zeitzone
+   * **UTC** - Weltzeit
+   * **LOT** - Lokalzeit
 
 Die Statuszeile ist in allen Anzeigeseiten zu sehen und zeigt den aktuellen Status des Gerätes an.
 
