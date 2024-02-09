@@ -3,10 +3,6 @@ OBP60 V2 Dokumentation
 ######################
 Letzte Aktualisierung |today|
 
-.. image:: https://readthedocs.org/projects/obp60-v2-docu/badge/?version=latest
-    :target: https://obp60-v2-docu.readthedocs.io/de/latest/?badge=latest
-    :alt: Documentation Status
-
 .. note::
 
    Diese Seiten sind noch in Bearbeitung.
