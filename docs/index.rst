@@ -25,7 +25,7 @@ Das Mutifunktionsdisplay OBP60 dient zur Anzeige von Daten aus Boots-Netzen wie 
    :caption: Bedienung
    :name: sec-usermanual
 
-   Funktionsweise <usermanual/funktionality>
+   Funktionsweise <usermanual/functionality>
    Bendienelemente <usermanual/elements>
    Inbetriebnahme <usermanual/start>
    Konfiguration <usermanual/configuration>
