@@ -98,7 +98,7 @@ Um das Display bei Nacht ablesen zu können, kann eine Hintergrundbeleuchtung ü
 Buzzer
 ------
 
-Der Buzzer dient zur akustischen Signalisirung bei Störungen und als Feadback bei Zustandsänderungen. Die Funktion und Lautstärke des Buzzers kann in der Konfiguration eingestellt werden. Beim Einschalten und beim manuellen oder automatischen Reset des OBP60 erfolgt eine kurzer Signalton, um das Hochfahren des Gerätes zu signalisieren.
+Der Buzzer dient zur akustischen Signalisierung bei Störungen und als Feadback bei Zustandsänderungen. Die Funktion und Lautstärke des Buzzers kann in der Konfiguration eingestellt werden. Beim Einschalten und beim manuellen oder automatischen Reset des OBP60 erfolgt eine kurzer Signalton, um das Hochfahren des Gerätes zu signalisieren.
 
 Reset-Taster
 ------------
@@ -106,7 +106,7 @@ Reset-Taster
 .. image:: ../pics/OBP60_Back_Side_3.png
              :scale: 45%
 
-Der Reset-Taster befindet sich auf der Rückseite des Displays an der Unterseite des gorßen linken Steckverbinders CN1. Der Reset-Taster wird beim normalen Betrieb nicht genutzt. Bei Programmiervorgängen kann es nützlich sein, einen manuellen Reset auszulösen. Benutzen sie zum Auslösen des Reset einen nicht leitenden schmalen Gegenstand und drücken sie die Taste vorsichtig, bis ein überwundener Druckpunkt spürbar ist.
+Der Reset-Taster befindet sich auf der Rückseite des Displays an der Unterseite des gorßen linken Steckverbinders **CN1**. Der Reset-Taster wird beim normalen Betrieb nicht genutzt. Bei Programmiervorgängen kann es nützlich sein, einen manuellen Reset auszulösen. Benutzen sie zum Auslösen des Reset einen nicht leitenden schmalen Gegenstand und drücken sie die Taste vorsichtig, bis ein überwundener Druckpunkt spürbar ist.
 
 .. warning::
    Verwenden sie keine leitenden Gegenstände. Damit können Kurzschlüsse auf der Platine ausgelöst werden und das Gerät kann beschädigt werden.
