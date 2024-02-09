@@ -32,18 +32,11 @@ Funktionen
 * Low Power Modus
 
 
-Tutorials
----------
+Aufbau
+------
 
-* :doc:`../tutorials/s3/get_started_with_micropython_s3`
-* :doc:`../tutorials/s3/get_started_with_arduino_s3`
-
-Dokumentation
--------------
-
-* `Schaltung V1.0.0[PDF] <../_static/files/sch_s3_v1.0.0.pdf>`_
-* `Abmessungen V1.0.0[PDF] <../_static/files/dim_s3_v1.0.0.pdf>`_
-* `ESP32-S3-WROOM-1 Datasheet <https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf>`_
+.. image:: ../pics/OBP60_Explode_View.png
+   :scale: 20%
 
 
 Spezifikation
@@ -91,5 +84,5 @@ Spezifikation
 
 Anschlussbelegung
 -----------------
-.. image:: ../pics/OBP60_Back_Side_3.png
+.. image:: ../pics/Bus_Systems.png
    :scale: 50%
