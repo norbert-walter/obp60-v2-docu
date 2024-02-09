@@ -71,7 +71,7 @@ Die Tasten sind bündig in das Display eingelassen. So ist es möglich, mit Wisc
 Beim kurzen Tippen wird kein Piepton ausgegeben. Kurzes tippen der zwei äußeren Tasten nacheinander aktiviert die Tastensperre, gefolgt von einem langen Piepton. Danach kann keine Taste mehr normal gedrückt werden und es wird keine Wischgeste mehr erkannt. Im Display ist die Meldung ``[Keylock active]`` zu sehen. Welche Taste beim Aktivieren der Tastensperre zu erst gedrückt wird ist unerheblich, ebenso die Reihenfolge. Die Deaktivierung der Tastensperre erfolgt auf die selbe Weise.
 
 .. important::
-   Sollte ihr OBP60 so platziert sein, dass sich eine Person versehentlich dagegen lehnen kann, so stellen sie die Tasten-Sensitivität entsprechend niedriger ein. So vermeiden sie versehentliches Auslösen der Tasten. Sie können auch die Tasten-Sperrfunktion activieren. 
+   Sollte ihr OBP60 so platziert sein, dass sich eine Person versehentlich dagegen lehnen kann, so stellen sie die Tasten-Sensitivität entsprechend niedriger ein. So vermeiden sie versehentliches Auslösen der Tasten. Sie können auch die Tasten-Sperrfunktion aktivieren. 
 
 Flash LED
 ---------
