@@ -29,14 +29,46 @@ Das Mutifunktionsdisplay OBP60 dient zur Anzeige von Daten aus Boots-Netzen wie 
    :caption: Bedienung
    :name: sec-usermanual
 
-   Teile <parts>
-   Benutzung <usermanual/usage>
+   Funktionsweise <usermanual/funktionality>
+   Bendienelemente <usermanual/elements>
+   Inbetriebnahme <usermanual/start>
+   Konfiguration <usermanual/configuration>
+   Bussysteme <usermanual/bussystems>
+   Datenaustausch <usermanual/dataexchange>
+   Erweiterte Sensorik <usermanual/sensors>
+   Beispielkonfiguration <usermanual/samples>
+   Sicherheitshinweise <usermanual/safety>
 
 .. toctree::
    :maxdepth: 3
    :caption: Zusammenbau
    :name: sec-assembling
+   
+   Funktionsweise <assembling/functionality>
+   Vorbereitung <assembling/preparation>
+   Bauteilliste <assembling/partlist>
+   Durchführung <assembling/actionsteps>
+   Funktionstest <assembling/tests>
+   
+.. toctree::
+   :maxdepth: 3
+   :caption: Programmierung
+   :name: sec-programming   
 
-   API <assembling/api>
+   Programmierumgebung <programming/environment>
+   Seitenerstellung <programming/pages>
+   Kompilieren und Download <programming/activating>
+   
+.. toctree::
+   :maxdepth: 3
+   :caption: Hilfe
+   :name: sec-help   
+
+   Fragen und Antworten <help/faq>
+   Bekannte Fehler <help/errors>
+   Unterstützung <help/support>
+   Service <help/service>
+   Mitarbeit <help/cooperation>
+   Spenden <help/donation>
 
 
