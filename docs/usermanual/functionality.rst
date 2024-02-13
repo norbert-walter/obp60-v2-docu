@@ -4,6 +4,9 @@ Funktionsweise
 Bussysteme
 ----------
 
+.. image:: ../pics/NMEA_Bus.png
+             :scale: 35%
+
 Das OBP60 ist ein Datenanzeigegerät für den Marinebereich mit dem verschiedenste Informationen aus Bussystemen ausgelesen und angezeigt werden. Zu den typischen Bussystemen im Marinebereich, die verwendet werden können gehören:
 
 * NMEA0183 (RS485, isoliert)
@@ -18,6 +21,9 @@ Diese beiden Busssysteme kommen aus dem Elektronikbereich und sind dort oft anzu
 
 Gateway
 -------
+
+.. image:: ../pics/NMEA_Gateway.png
+             :scale: 35%
 
 Im OBP60 ist ein Gateway intergriert, das Daten zwischen dem NMEA0183-Bus und dem NMEA2000-Bus bidirektional austauschen kann. Dabei werden die Daten des einen Busses in die Daten des anderen Busses übersetzt. Die Übersetzung funktioniert dabei in beide Richtungen.
 
@@ -36,6 +42,9 @@ Das OBP60 hat einen Access Point und einen kleinen Webserver intergriert mit den
 
 Anzeige und Bedienung
 ---------------------
+
+.. image:: ../pics/Front_View_Screen.png
+             :scale: 35%
 
 Als Anzeige wird ein E-Ink Display verwendet. Es besitzt einen hohen Kontrast und eine gute Ablesbarkeit auch bei starkem Sonnenlicht. Zudem verbraucht es sehr wenig Energie. Beim Nachtbetrieb ist das Display beleuchtbar. Die Hintergrundfarbe kann frei gewählt werden. So lässt sich das OBP60 auch gut mit anderen Anzeigegeräten kombinieren und eine einheitliches Aussehen erreichen. Eine kleine Flash-LED und ein Buzzer signalisieren dem Anwender optisch und akustisch Gernzwertüberschreitungen. Die Grenzwerte lassen sich frei einstellen.
 
