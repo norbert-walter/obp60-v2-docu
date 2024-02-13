@@ -19,12 +19,12 @@ vom Bordsnetz isoliert aufgebaut.
 
 Abb.: Sicherheitskonzept
 
-Im OBP60 ist dazu eine zusätzliche Stromversorgung enthalten, die die isolierten Schaltungsteile versorgt. Die zusätzliche Stromversorgung hat die Ausgänge ``+5Viso`` und ``GND2``, die am Steckverbinder CN1 und CN2 anliegen. Darüber können auch externe Schaltungen bis 200 mA versorgt werden.
+Im OBP60 ist dazu eine zusätzliche 5V-Stromversorgung enthalten, die die isolierten Schaltungsteile versorgt. Die zusätzliche Stromversorgung hat die Ausgänge ``+5Viso`` und ``GND2``, die am Steckverbinder CN1 und CN2 anliegen. Darüber können auch externe Schaltungen bis 200 mA versorgt werden.
 
 .. warning::
 	Verbinden sie die unterschiedlichen Massepotenziale ``GNDS``, ``GND``, ``GND2`` und ``Shield`` niemals miteinander! Dadurch geht die Isolations- und Schutzwirkung verloren. Die Massepotenziale dürfen nicht gleichberechtigt verwendet werden.
 	
-.. image:: ../pics/Safe_areas.png
+.. image:: ../pics/Safe_Areas.png
              :scale: 45%
 
 Abb.: Sichere Bereiche
