@@ -44,14 +44,19 @@ Abb.: Sichere Bereiche
 Stromversorgung
 ---------------
 
-Die Stromversorgung des OBP60 erfolgt über den Steckverbinder CN2. Beim Zuschalten der Versorgungsspannung schaltet sich das OBP60 automatisch ein. Es gibt keinen gesonderten Ein- oder Ausschaltknopf am Gerät. Benutzen sie für die Stromversorgung die Anschlüsse ``+12V`` und ``GNDS``. Dabei wird ``+12V`` mit dem positiven Pol der Batterie verbunden und ``GNDS`` mit dem negativen Pol. Die beiden Anschlüsse der Stromversorgung sind:
+Die Stromversorgung des OBP60 erfolgt über den Steckverbinder CN2. Beim Zuschalten der Versorgungsspannung schaltet sich das OBP60 automatisch ein. Es gibt keinen gesonderten Ein- oder Ausschalter am Gerät. Benutzen sie für die Stromversorgung die Anschlüsse ``+12V`` und ``GNDS``. Dabei wird ``+12V`` mit dem positiven Pol der Batterie verbunden und ``GNDS`` mit dem negativen Pol. Die beiden Anschlüsse der Stromversorgung sind:
 
 * verpolungssicher
 * kurzschlussfest
 * überspannungssicher
 * ESD-geschützt
 
-Der zulässige Spannungsbereich liegt zwischen 10V...28V. Das OBP60 kann in 12V als auch in 24V Bord-Versorgungsnetzen verwendet werden. Bei Spannungen größer 28V wird die interne Sicherung im Gerät ausgelöst.
+Der zulässige Spannungsbereich liegt zwischen 10V...28V.
+
+.. image:: ../pics/Power_Connection.png
+             :scale: 100%
+
+Das OBP60 kann in 12V als auch in 24V Bord-Versorgungsnetzen verwendet werden. Bei Spannungen größer 28V wird die interne Sicherung im Gerät ausgelöst.
 
 .. note::
 	Im Gerät ist eine selbtsrückstellende Sicherung verbaut, die bei zu hohem Stromverbrauch die Versorgungsspannung selbständig trennt. Sie können die Sicherung zurücksetzen, indem sie die Stromversorgung zum OBP60 trennen und den Grund des übermäßigen Stromverbrauchs beseitigen. Danach warten sie ein paar Minuten und schalten dann die Versorgungsspannung wieder zu.
