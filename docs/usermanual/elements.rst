@@ -7,9 +7,6 @@ Bedienelemente
 Statuszeile
 -----------
 
-.. image:: ../pics/Header.png
-             :scale: 45%
-
 Die Statuszeile dient zur Anzeige von Statusinformationen. Dazu zählen:
 
 * Zustandsanzeige des Access Points
@@ -24,6 +21,9 @@ Die Statuszeile dient zur Anzeige von Statusinformationen. Dazu zählen:
 * Anzeige der Zeitzone
    * **UTC** - Weltzeit
    * **LOT** - Lokalzeit
+
+.. image:: ../pics/Header.png
+             :scale: 45%
 
 Die Statuszeile ist in allen Anzeigeseiten zu sehen und zeigt den aktuellen Status des Gerätes an.
 
