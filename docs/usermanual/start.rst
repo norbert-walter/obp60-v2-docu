@@ -26,10 +26,10 @@ Im OBP60 ist dazu eine zusätzliche 5V-Stromversorgung enthalten, die die isolie
 	
 Die unterschiedlichen Massepotenziale haben folgende Bedeutung:
 
-* GNDS - Masse der Versorgungsspannung
-* GND - Interne Masse der Elektronik
-* GND2 - Masse der isolierten Bus-Elektronik
-* Shield - Schutzleiter für die Kabelschirmung
+* ``GNDS`` - Masse der Versorgungsspannung
+* ``GND`` - Interne Masse der Elektronik
+* ``GND2`` - Masse der isolierten Bus-Elektronik
+* ``Shield`` - Schutzleiter für die Kabelschirmung
 	
 Im folgenden Bild sind die geschützten und ungeschützten Anschlüsse zu sehen. 
 	
