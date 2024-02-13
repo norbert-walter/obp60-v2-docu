@@ -32,7 +32,7 @@ Das OBP60 verfügt über eine WiFi-Funktionalität im 2.4 GHz Funkbereich. Darü
 Konfiguration
 -------------
 
-Das OBP60 hat einen Access Point und einen kleinen Webserver intergriert mit denen das Gerät konfiguriert werden kann. Im Gegensatz zu anderen kommerziellen Geräten erfolgt die Konfiguration des OBP60 ausschließlich webbasiert. Dazu kann z.B. ein Handy benutzt werden. So ist die Konfiguration des Gerätes deutlich einfacher und komfortabkler. Im Gerät lassen sich bis zu 10 Anzeigeseiten frei definieren. Der Anwender kann zwischen nummerischen und grafischen Anzeigeseiten auswählen. Für jede nummerische Anzeigeseite können beliebige Daten der Bussysteme angezeigt werden. Bei den grafischen Anzeigeseiten sind die Dateninhalte vorgegeben, da sie spezielle Funktionalitäten bieten.
+Das OBP60 hat einen Access Point und einen kleinen Webserver intergriert mit denen das Gerät konfiguriert werden kann. Im Gegensatz zu anderen kommerziellen Geräten erfolgt die Konfiguration des OBP60 ausschließlich webbasiert. Dazu kann z.B. ein Handy benutzt werden. So ist die Konfiguration des Gerätes deutlich einfacher und komfortabler. Im Gerät lassen sich bis zu 10 Anzeigeseiten frei definieren. Der Anwender kann zwischen nummerischen und grafischen Anzeigeseiten auswählen. Für jede nummerische Anzeigeseite können beliebige Daten der Bussysteme angezeigt werden. Bei den grafischen Anzeigeseiten sind die Dateninhalte vorgegeben, da sie spezielle Funktionalitäten bieten.
 
 Anzeige und Bedienung
 ---------------------
