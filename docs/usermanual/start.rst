@@ -54,7 +54,7 @@ Die Stromversorgung des OBP60 erfolgt über den Steckverbinder CN2. Beim Zuschal
 Der zulässige Spannungsbereich liegt zwischen 10V...28V.
 
 .. image:: ../pics/Power_Connection.png
-             :scale: 100%
+             :scale: 80%
 
 Das OBP60 kann in 12V als auch in 24V Bord-Versorgungsnetzen verwendet werden. Bei Spannungen größer 28V wird die interne Sicherung im Gerät ausgelöst.
 
