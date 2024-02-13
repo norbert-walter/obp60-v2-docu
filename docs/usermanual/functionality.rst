@@ -23,7 +23,7 @@ Gateway
 -------
 
 .. image:: ../pics/NMEA_Gateway.png
-             :scale: 35%
+             :scale: 20%
 
 Im OBP60 ist ein Gateway intergriert, das Daten zwischen dem NMEA0183-Bus und dem NMEA2000-Bus bidirektional austauschen kann. Dabei werden die Daten des einen Busses in die Daten des anderen Busses übersetzt. Die Übersetzung funktioniert dabei in beide Richtungen.
 
