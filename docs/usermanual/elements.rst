@@ -7,6 +7,9 @@ Bedienelemente
 Statuszeile
 -----------
 
+.. image:: ../pics/Header.png
+             :scale: 45%
+
 Die Statuszeile dient zur Anzeige von Statusinformationen. Dazu zählen:
 
 * Zustandsanzeige des Access Points
@@ -44,6 +47,8 @@ Die Entstehung von Geisterbildern ist von der Display-Temperatur des OBP60 abhä
    
 Fußzeile
 ---------
+.. image:: ../pics/Footer.png
+             :scale: 45%
 
 Die Fußzeile dient zur Darstellung der Tastenfunktionen. Die Belegung der Tasten ändert sich abhängig vom Inhalt der Anzeigeseiten. Aktive Tatsen sind mit Kurzbezeichnungen in eckigen Klammern versehen, wie z.B. ``[AVG]``. Es kann auch Anzeigeseiten geben, die keine Tastenfunktionen enthalten. In der Mitte der Fußzeile werden weiter Informationen eingeblendet:
 
@@ -76,6 +81,9 @@ Beim kurzen Tippen wird kein Piepton ausgegeben. Kurzes tippen der zwei äußere
 Flash LED
 ---------
 
+.. image:: ../pics/Flash_LED.png
+             :scale: 45%
+
 Links oberhalb des Displays befindet sich eine kleine Flash-LED. Diese LED dient zur Signalisierung von Zuständen. Die LED kann dabei verschiedene Farben annehmen. Die LED leuchet mit maximaler Helligkeit, so dass sie optisch wahr genommen werden kann.
 
 * Rot - Alarmierung bei Grenzwertüberschreitung
@@ -98,7 +106,7 @@ Um das Display bei Nacht ablesen zu können, kann eine Hintergrundbeleuchtung ü
 Buzzer
 ------
 
-Der Buzzer dient zur akustischen Signalisierung bei Störungen und als Feadback bei Zustandsänderungen. Die Funktion und Lautstärke des Buzzers kann in der Konfiguration eingestellt werden. Beim Einschalten und beim manuellen oder automatischen Reset des OBP60 erfolgt eine kurzer Signalton, um das Hochfahren des Gerätes zu signalisieren.
+Der Buzzer dient zur akustischen Signalisierung bei Störungen und als Feadback bei Zustandsänderungen. Der Buzzer befindet sich im Inneren des Gerätes. Die Funktion und Lautstärke des Buzzers kann in der Konfiguration eingestellt werden. Beim Einschalten und beim manuellen oder automatischen Reset des OBP60 erfolgt eine kurzer Signalton, um das Hochfahren des Gerätes zu signalisieren.
 
 Reset-Taster
 ------------
