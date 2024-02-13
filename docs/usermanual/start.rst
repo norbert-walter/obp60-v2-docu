@@ -24,10 +24,15 @@ Im OBP60 ist dazu eine zusätzliche 5V-Stromversorgung enthalten, die die isolie
 .. warning::
 	Verbinden sie die unterschiedlichen Massepotenziale ``GNDS``, ``GND``, ``GND2`` und ``Shield`` niemals miteinander! Dadurch geht die Isolations- und Schutzwirkung verloren. Die Massepotenziale dürfen nicht gleichberechtigt verwendet werden.
 	
+Im folgenden Bild sind die geschützten und ungeschützten Anschlüsse zu sehen. 
+	
 .. image:: ../pics/Safe_Areas.png
              :scale: 45%
 
 Abb.: Sichere Bereiche
+
+.. warning::
+	Bitte beachten sie, dass der 1Wire-Bus ungeschützt ist und entsprechend durch Schirmung geschütz werden muss. ``GND`` darf mit keinen externen weiteren Schaltungsteilen verbunden werden und dient ausschließlich als Masseleitung für den 1Wire-Bus.
 
 Stromversorgung
 ---------------
