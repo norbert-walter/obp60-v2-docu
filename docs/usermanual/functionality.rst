@@ -44,7 +44,7 @@ Anzeige und Bedienung
 ---------------------
 
 .. image:: ../pics/Front_View_Screen.png
-             :scale: 35%
+             :scale: 20%
 
 Als Anzeige wird ein E-Ink Display verwendet. Es besitzt einen hohen Kontrast und eine gute Ablesbarkeit auch bei starkem Sonnenlicht. Zudem verbraucht es sehr wenig Energie. Beim Nachtbetrieb ist das Display beleuchtbar. Die Hintergrundfarbe kann frei gewählt werden. So lässt sich das OBP60 auch gut mit anderen Anzeigegeräten kombinieren und eine einheitliches Aussehen erreichen. Eine kleine Flash-LED und ein Buzzer signalisieren dem Anwender optisch und akustisch Gernzwertüberschreitungen. Die Grenzwerte lassen sich frei einstellen.
 
