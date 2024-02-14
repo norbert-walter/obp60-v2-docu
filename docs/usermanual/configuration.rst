@@ -47,6 +47,43 @@ Config
 XDR
 ---
 
+Über die Konfigurationsseite XDR können XDR-Sentences für NMEA0183 erstellt werden. XDR-Sentences sind Telegramme für generische Sensorwerte, die verwendet werden, wenn sich kein geeignetes NMEA0183 Telegramme findet, mit dem man die Sensorwerte übertragen kann. Es ist ein universelles Telegramm zur Übertragung von Sensordaten. XDR-Sentences werden immer dann benutzt, wenn Daten aus dem I2C-Bus, dem 1Wire-Bus oder interne Sensordaten vom ESP32 übertragen werden sollen. Sofern nicht zugewiesene Sensordaten im OBP60 vorhanden sind, können diese über ein XDR-Mapping zugewiesen werden. Damit sind diese daten als NMEA0183 Telegramme allgemein nutzbar.
+
+Ein XDR-Sentence ist folgendermaßen aufgebaut:
+
+**Transducer Values**
+
+          1 2   3   4          n
+          | |   |   |          | 
+*  $--XDR,a,x.x,a,c--c, ..... *hh<CR><LF>
+
+    Field Number:
+    1) Transducer Type
+    2) Measurement Data
+    3) Units of measurement
+    4) Name of transducer
+    x) More of the same
+    n) Checksum
+
+    Example:
+    $IIXDR,C,19.52,C,TempAir*19
+    $IIXDR,P,1.02481,B,Barometer*29
+	
++-----------------+-----------------+---------------------------------+-----------------+-----------------------------+
+|Measured Value   | Transducer Type | Measured Data                   | Unit of measure | Transducer Name             |
++=================+=================+=================================+=================+=============================+
+| barometric      | "P" pressure    | 0.8..1.1 or 800..1100           | "B" bar         | "Barometer"                 |
++-----------------+-----------------+---------------------------------+-----------------+-----------------------------+
+| air temperature | "C" temperature |   2 decimals                    | "C" celsius     | "TempAir" or "ENV_OUTAIR_T" |
++-----------------+-----------------+---------------------------------+-----------------+-----------------------------+
+| pitch           | "A" angle       |-180..0 nose down 0..180 nose up | "D" degrees     | "PTCH" or "PITCH"           |
++-----------------+-----------------+---------------------------------+-----------------+-----------------------------+
+| rolling         | "A" angle       |-180..0 L         0..180 R       | "D" degrees     | "ROLL"                      |
++-----------------+-----------------+---------------------------------+-----------------+-----------------------------+
+| water temp      | "C" temperature |   2 decimals                    | "C" celsius     | "ENV_WATER_T"               |
++-----------------+-----------------+---------------------------------+-----------------+-----------------------------+
+
+
 
 
 Update
