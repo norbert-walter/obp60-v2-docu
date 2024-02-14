@@ -52,22 +52,21 @@ XDR
 Ein XDR-Sentence ist folgendermaßen aufgebaut:
 
 **Transducer Values**
-
           1 2   3   4    x     n
           | |   |   |          | 
-   $--XDR,a,x.x,a,c--c, ..... *hh<CR><LF>
+   $--XDR,a,x.x,a,c--c, ..... \*hh<CR><LF>
 
     Field Number:
-    1) Transducer Type
-    2) Measurement Data
-    3) Units of measurement
-    4) Name of transducer
-    x) More of the same
-    n) Checksum
+		1 - Transducer Type
+		2 - Measurement Data
+		3 - Units of measurement
+		4 - Name of transducer
+		x - More of the same
+		n - Checksum
 
-    Example:
-    $IIXDR,C,19.52,C,TempAir*19
-    $IIXDR,P,1.02481,B,Barometer*29
+    Example:	
+		$IIXDR,C,19.52,C,TempAir*19
+		$IIXDR,P,1.02481,B,Barometer*29
 	
 +-----------------+-----------------+---------------------------------+-----------------+-----------------------------+
 |Measured Value   | Transducer Type | Measured Data                   | Unit of measure | Transducer Name             |
@@ -118,7 +117,7 @@ Sie sollten das OBP60 nur mit vertrauenswürdigen WiFi-Netzwerken verbinden. Es 
 .. note::
 	Sie können die Sicherheit erhöhen, indem sie einen eigenen WiFi- oder LTE-Router in ihrem Boot verwenden. Die Router können so eingerichtet werden, dass sie ein eigenes WiFi-Netz aufspannen können, in dem alle Geräte an Bord verbunden sind. Über eine Firewall ist das eigene WiFi-Netz mit dem Internet verbunden. So haben auch alle Geräte einen Internet-Zugriff und sind ausreichend geschützt. Die Firewall verhindert fremden Zugriff von außen auf ihre Geräte.
 
-Die Verbindungsqualität von WiFi-Netzwerken hängt maßgeblich von der Auslastung der Funkkanäle ab, die aktuell benutzt werden. Sie teilen sich die selben Funkkanälen mit anderen Teilnehmern anderer WiFi-Nnetzte. Das OBP60 nutzt die Funkkanäle des 2.4 GHz Frequenzbandes. Bei hoher Auslastung, wie z.B. in Häfen, kann die Verbindungsqualität des eigenes WiFi-Netzwerks beeinträchtigt sein. Sie müssen dann mit Verzögerungen bei der Datenübertragung rechnen, insbesondere dann, wenn sie TCP-Datenverbindungen zum oder vom OBP60 nutzen. Stellen sie sicher, dass sie solchen Situationen bei der Bootsführung beherrschen.
+Die Verbindungsqualität von WiFi-Netzwerken hängt maßgeblich von der Auslastung der Funkkanäle ab, die aktuell benutzt werden. Sie teilen sich die selben Funkkanälen mit anderen Teilnehmern anderer WiFi-Nnetzte. Das OBP60 nutzt die Funkkanäle des 2.4 GHz Frequenzbandes. Bei hoher Auslastung, wie z.B. in Häfen, kann die Verbindungsqualität des eigenes WiFi-Netzwerks beeinträchtigt sein. Sie müssen dann mit Verzögerungen bei der Datenübertragung rechnen, insbesondere dann, wenn sie TCP-Datenverbindungen zum oder vom OBP60 nutzen. Stellen sie sicher, dass sie solche Situationen bei der Bootsführung beherrschen.
 
 .. note::
 	Verwenden sie bei hoher Kanalauslastung Kanäle mit geringer Auslastung. Die Kanäle 1 und 13 haben keine Nachbarkanäle und sind deutlich robuster gegen hohe Auslastung als die anderen Kanäle. Am besten eignet sich der Kanal 13, da er seltener benutzt wird.
