@@ -53,7 +53,6 @@ Ein XDR-Sentence ist folgendermaßen aufgebaut:
 
 **Transducer Values**
 
-.. code-block:: RST
           1 2   3   4    x     n
           | |   |   |          | 
    $--XDR,a,x.x,a,c--c, ..... *hh<CR><LF>
