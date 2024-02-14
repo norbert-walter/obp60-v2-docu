@@ -63,5 +63,3 @@ Das OBP60 kann in 12V als auch in 24V Bord-Versorgungsnetzen verwendet werden. B
 
 .. important::
 	Die bereitgestellte Stromversorgung des OBP60 sollte im Bordnetz mit einer zusätzlichen Sicherung von mindestens 5A abgesichert werden. Das erfolgt typischer Weise durch das Board-Panel worüber die Stromkreise im Boot zugeschaltet werden können. So vermeiden sie Brände bei aufgescheuerten Versorgungsleitungen im Boot. Die interen Sicherung im OBP60 schützt nur das Gerät und nicht die Versorgungsleitungen!
-
-	
