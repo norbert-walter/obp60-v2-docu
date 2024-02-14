@@ -57,16 +57,16 @@ Ein XDR-Sentence ist folgendermaßen aufgebaut:
    $--XDR,a,x.x,a,c--c, ..... \*hh<CR><LF>
 
     Field Number:
-		1 - Transducer Type
-		2 - Measurement Data
-		3 - Units of measurement
-		4 - Name of transducer
-		x - More of the same
-		n - Checksum
+		* 1 - Transducer Type
+		* 2 - Measurement Data
+		* 3 - Units of measurement
+		* 4 - Name of transducer
+		* x - More of the same
+		* n - Checksum
 
     Example:	
-		$IIXDR,C,19.52,C,TempAir*19
-		$IIXDR,P,1.02481,B,Barometer*29
+		* $IIXDR,C,19.52,C,TempAir*19
+		* $IIXDR,P,1.02481,B,Barometer*29
 	
 +-----------------+-----------------+---------------------------------+-----------------+-----------------------------+
 |Measured Value   | Transducer Type | Measured Data                   | Unit of measure | Transducer Name             |
