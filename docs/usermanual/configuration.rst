@@ -22,24 +22,37 @@ Status
 
 Auf der Statusseite sieht man im oberen Bereich den Ethernet-Verbindungsstatus. Die Informationen haben folgende Bedeutung:
 
-* **Version** - Aktuelle Firmware-Version
-* **Access Point IP** - IP-Adresse des Access Points
-* **WiFi Client connected** - Zeigt an, ob das OBP60 mit einem anderen externen WiFi-Netzwerk als Client verbunden ist
-* **WiFi Client IP** - IP-Adresse die das Gwerät vom anderen WiFi-Netzwerk erhalten hat
-* **# TCP Clients** - Anzahl externer TCP-Clients die sich am OBP60 angemeldet haben
-* **NMEA2000 in** - Anzahl der NMEA2000 Telegramme die empfangen wurden
-* **NMEA2000 out** - Anzahl der NMEA2000 Telegramme die gesendet wurden
-* **TCP in** - Anzahl der NMEA0183 Telegramme die über TCP empfangen wurden
-* **TCP out** - Anzahl der NMEA0183 Telegramme die über TCP gesendet wurden
-* **USB in** - Anzahl der NMEA0183 Telegramme die über USB empfangen wurden
-* **USB out** - Anzahl der NMEA0183 Telegramme die über USB gesendet wurden
-* **Serial in** - Anzahl der NMEA0183 Telegramme die über RS485 empfangen wurden
-* **Serial out** - Anzahl der NMEA0183 Telegramme die über RS485 gesendet wurden
+**Version**
+	Aktuelle Firmware-Version
+**Access Point IP**
+	IP-Adresse des Access Points
+**WiFi Client connected**
+	Zeigt an, ob das OBP60 mit einem anderen externen WiFi-Netzwerk als Client verbunden ist
+**WiFi Client IP**
+	IP-Adresse die das Gwerät vom anderen WiFi-Netzwerk erhalten hat
+**# TCP Clients**
+	Anzahl externer TCP-Clients die sich am OBP60 angemeldet haben
+**NMEA2000 in**
+	Anzahl der NMEA2000 Telegramme die empfangen wurden
+**NMEA2000 out**
+	Anzahl der NMEA2000 Telegramme die gesendet wurden
+**TCP in**
+	Anzahl der NMEA0183 Telegramme die über TCP empfangen wurden
+**TCP out**
+	Anzahl der NMEA0183 Telegramme die über TCP gesendet wurden
+**USB in**
+	Anzahl der NMEA0183 Telegramme die über USB empfangen wurden
+**USB out**
+	Anzahl der NMEA0183 Telegramme die über USB gesendet wurden
+**Serial in**
+	Anzahl der NMEA0183 Telegramme die über RS485 empfangen wurden
+**Serial out**
+	Anzahl der NMEA0183 Telegramme die über RS485 gesendet wurden
 
-Wenn  sie auf das Fragezeichen hinter **Version** klicken, werden alle Telegramme angezeigt, die das OBP60 verarbeiten kann. Detailliertere Informationen zu den empfangenen Telegrammen sehen sie, wenn die Zeile des Bussystems aufgeklappt wird.
+Wenn sie auf das Fragezeichen hinter **Version** klicken, werden alle Telegramme angezeigt, die das OBP60 verarbeiten kann. Detailliertere Informationen zu den empfangenen Telegrammen sehen sie, wenn sie die Zeile des Bussystems aufgeklappen. Im Anhang finden sie eine Tabelle mit allen NMEA0183 und NMEA2000 Telegrammen, die verarbeitet werden können.
 
 .. note::
-	Zum besseren Verständnis ist zu beachten, dass das OBP60 eigenständig ein Wifi-Netzwerk aufbauen und damit autark arbeiten kann. Das OBP60 kann aber auch zusätzlich Teil eines anderen externen WiFi-Netzwerks sein, in dem es sich als Client dort anmeldet. In dem Fall ist das lokale Wifi-Netz des OBP60 mit dem externen WiFi-Netz gebrückt und alle Daten sind in beiden Netzwerken verfügbar. Die Anzahl der TCP Clients in der Statuszeile bezieht sich dabei immer nur auf Clients die sich beim OBP60 anmelden.
+	Zum besseren Verständnis ist zu beachten, dass das OBP60 eigenständig ein WiFi-Netzwerk aufbauen und damit autark arbeiten kann. Das OBP60 kann aber auch zusätzlich Teil eines anderen externen WiFi-Netzwerks sein, in dem es sich als Client dort anmeldet. In dem Fall ist das lokale WiFi-Netz des OBP60 mit dem externen WiFi-Netz gebrückt und alle Daten sind in beiden Netzwerken verfügbar. Die Anzahl der TCP Clients in der Statuszeile bezieht sich dabei immer nur auf Clients die sich beim OBP60 anmelden.
 	
 Config
 ------
@@ -51,35 +64,35 @@ XDR
 
 Ein XDR-Sentence ist folgendermaßen aufgebaut:
 
-**Transducer Values**
+**Sensor Werte**
 
    $--XDR,a,x.x,b,c--c,x--x*hh<CR><LF>
 
-    Field Number:
-		* a - Transducer Type
-		* x.x - Measurement Data
-		* b - Units of measurement
-		* c - Name of transducer
-		* x - More of the same
-		* hh - Checksum
+    Feld Nummer:
+		* a - Sensor-Typ
+		* x.x - Messwerrt
+		* b - Einheit des Messwertes
+		* c - Name des Sensors
+		* x - Weitere Sensordaten
+		* hh - Checksumme
 
-    Example:	
+    Beispiele:	
 		* $IIXDR,C,19.52,C,TempAir*19
 		* $IIXDR,P,1.02481,B,Barometer*29
 	
-+-----------------+-----------------+---------------------------------+-----------------+-----------------------------+
-|Measured Value   | Transducer Type | Measured Data                   | Unit of measure | Transducer Name             |
-+=================+=================+=================================+=================+=============================+
-| barometric      | "P" pressure    | 0.8..1.1 or 800..1100           | "B" bar         | "Barometer"                 |
-+-----------------+-----------------+---------------------------------+-----------------+-----------------------------+
-| air temperature | "C" temperature | 2 decimals                      | "C" celsius     | "TempAir" or "ENV_OUTAIR_T" |
-+-----------------+-----------------+---------------------------------+-----------------+-----------------------------+
-| pitch           | "A" angle       |-180..0 nose down 0..180 nose up | "D" degrees     | "PTCH" or "PITCH"           |
-+-----------------+-----------------+---------------------------------+-----------------+-----------------------------+
-| rolling         | "A" angle       |-180..0 L         0..180 R       | "D" degrees     | "ROLL"                      |
-+-----------------+-----------------+---------------------------------+-----------------+-----------------------------+
-| water temp      | "C" temperature | 2 decimals                      | "C" celsius     | "ENV_WATER_T"               |
-+-----------------+-----------------+---------------------------------+-----------------+-----------------------------+
++------------------+-----------------+---------------------------------+-----------------+-----------------------------+
+|Messwert          | Sensor-Typ      | ´Beispiele für messdaten        | Einheit         | Name des Sensors            |
++==================+=================+=================================+=================+=============================+
+| Luftdruck        | "P" Druck       | 0.8..1.1 oder 800..1100         | "B" Bar         | "Barometer"                 |
++------------------+-----------------+---------------------------------+-----------------+-----------------------------+
+| Lufttemperatur   | "C" Temperatur  | 2 Dezimalstellen                | "C" Celsius     | "TempAir" or "ENV_OUTAIR_T" |
++------------------+-----------------+---------------------------------+-----------------+-----------------------------+
+| Pitch            | "A" Winkel      |-180..0 runter    0..180 hoch    | "D" Degrees     | "PTCH" or "PITCH"           |
++------------------+-----------------+---------------------------------+-----------------+-----------------------------+
+| Rolling          | "A" Winkel      |-180..0 links     0..180 rechts  | "D" Degrees     | "ROLL"                      |
++------------------+-----------------+---------------------------------+-----------------+-----------------------------+
+| Wassertemperatur | "C" Temperatur  | 2 decimals                      | "C" Celsius     | "ENV_WATER_T"               |
++------------------+-----------------+---------------------------------+-----------------+-----------------------------+
 
 
 
@@ -90,10 +103,10 @@ Update
 Um die Firmware eines Gerätes zu aktualisieren, können Sie die **Registerkarte Update** verwenden. Es gibt zwei Arten von Firmware-Updates.
 
 **Initial Firmware-Update**
-	Beim Initial Firmware-Update wird der komplette Flash-Speicher des OBP60 gelöscht und anschließend alle Firmware-Bestandteile im Flash gespeichert. Dabei wird eine initiale Konfiguration erstellt. Eine vorherige alte Konfoguration wird überschrieben. Die Initial Firmware Updates sind mit dem Dateinamen **xxx-all.bin** versehen.
+	Beim Initial Firmware-Update wird der komplette Flash-Speicher des OBP60 gelöscht und anschließend alle Firmware-Bestandteile im Flash gespeichert. Dabei wird eine initiale Konfiguration erstellt. Eine vorherige alte Konfoguration wird überschrieben. Die Initial Firmware Updates verwenden den Dateinamen **xxx-all.bin**.
 	
 **Normales Firmware-Update**
-	Beim normalen Firmware-Update wird nur der Programmteil der Firmware aktualisiert. Eine vorhandene Konfiguration bleibt dabei erhalten und ist nach dem Firmware-Update wieder nutzbar. Normale Firmware-Updates sind mit dem Dateinamen **xxx-update.bin** versehen.
+	Beim normalen Firmware-Update wird nur der Programmteil der Firmware aktualisiert. Eine vorhandene Konfiguration bleibt dabei erhalten und ist nach dem Firmware-Update wieder nutzbar. Normale Firmware-Updates verwenden den Dateinamen **xxx-update.bin**.
 
 Die letzte aktuelle Firmware können sie auf folgender Webseite herunter laden:
 
@@ -101,20 +114,23 @@ https://github.com/norbert-walter/esp32-nmea2000-obp60/releases
 
 Unter Releases sind eine Reihe verfügbarer Firmware-Updates für das OBP60 zu finden. Beachten sie dabei die jeweilige Hardware-Version für die sie eine Firmware herunterladen wollen.
 
-Für ein Firmware-Update laden sie sich die gewünschte Firmware als Datei herunter und speichern sie die Datei auf ihrem Gerät. Über die Taste ``Choose File`` wählen sie die heruntergeladene Datei aus. Es wird dann der Firmware-Type und die Firmware-Version angezeigt. Sollte die Firmware nicht zur verwendeten Hardware passen, so erhalten sie eine Meldung. Die Firmware kann dann nicht geflsht werden. Über die Taste ``Upload`` starten sie den Flash-Vorgang. Im Fortschrittsbalken sehen sie den Verlauf des Vorgangs. Nach einem erfolgreichen Firmware-Update wird eine Reboot des Systems durchgeführt. In dieser Zeit ist die Web-Konfigurationseite offline (roter Punkt). Nach kurzer Zeit ist die Seite wieder online (grüner Punkt), wenn das System betriebsbereit ist.
+Für ein Firmware-Update laden sie sich die gewünschte Firmware als Datei herunter und speichern sie die Datei auf ihrem Gerät. Über die Taste ``Choose File`` wählen sie die heruntergeladene Datei aus. Es wird dann der Firmware-Type und die Firmware-Version angezeigt. Sollte die Firmware nicht zur verwendeten Hardware passen, so erhalten sie eine Meldung. Die Firmware kann dann nicht geflasht werden. Über die Taste ``Upload`` starten sie den Flash-Vorgang. Im Fortschrittsbalken sehen sie den Verlauf des Vorgangs. Nach einem erfolgreichen Firmware-Update wird eine Reboot des Systems durchgeführt. In dieser Zeit ist die Web-Konfigurationseite offline (roter Punkt). Nach kurzer Zeit ist die Seite wieder online (grüner Punkt). Dann ist das System wieder betriebsbereit.
 
 .. warning::
-	Beachten sie, dass sie bei einem Firmware-Update auf eine ältere Version ein Initial Firmware Update durchführen. So vermeiden sie Komplikationen mit den gespeicherten Konfigurationsdaten. Unter Umständen ist das System nicht nutzbar und kann komplett einfrieren. Ein Firmware-Update über die Konfigurationsseiten ist dann nicht mehr möglich und die Firmware muss über USB geflasht werden.
+	Beachten sie, dass sie bei einem Firmware-Update auf eine ältere Version ein Initial Firmware Update durchführen müssen. So vermeiden sie Komplikationen mit den gespeicherten Konfigurationsdaten. Unter Umständen ist das System nicht nutzbar und kann komplett einfrieren. Ein Firmware-Update über die Konfigurationsseiten ist dann nicht mehr möglich und die Firmware muss über USB geflasht werden.
 
 Wie man die Firmware eines OBP60 über USB flasht, ist unter xxx beschrieben.	
 
 Sicherheit im WiFi-Netzwerk
 ---------------------------
 
-Sie sollten das OBP60 nur mit vertrauenswürdigen WiFi-Netzwerken verbinden. Es gibt nur einen sehr begrenzten Schutz gegen Netzwerk-Sniffing oder Denial-of-Service-Angriffe. Solange sie ein autarkes WiFi-Netzt benutzen, können fremde Personen ihr WiFi-Netzt nicht verwenden. Die Datenübertragung läuft geschützt in ihrem eigenen WiFi-Netzwerk. Verbinden sie das Gerät niemals direkt mit dem Internet ohne eine Firewall und vermeiden sie direkte Verbindungen zu offenen Hafen-Netzwerken. Damit können auch fremde Personen auf ihre Geräte im Netzwerk zugreifen.
+Sie sollten das OBP60 nur mit vertrauenswürdigen WiFi-Netzwerken verbinden. Es gibt nur einen sehr begrenzten Schutz gegen Netzwerk-Sniffing oder Denial-of-Service-Angriffe. Solange sie das eigene autarke WiFi-Netzt des OBP60 nutzen, können fremde Personen ihr WiFi-Netzt nicht verwenden. Die Datenübertragung läuft geschützt in ihrem eigenen WiFi-Netzwerk. Verbinden sie das Gerät niemals direkt mit dem Internet ohne eine Firewall und vermeiden sie direkte Verbindungen zu offenen Hafen-Netzwerken. Damit können auch fremde Personen auf ihre Geräte im Netzwerk zugreifen.
 
 .. note::
-	Sie können die Sicherheit erhöhen, indem sie einen eigenen WiFi- oder LTE-Router in ihrem Boot verwenden. Die Router können so eingerichtet werden, dass sie ein eigenes WiFi-Netz aufspannen können, in dem alle Geräte an Bord verbunden sind. Über eine Firewall ist das eigene WiFi-Netz mit dem Internet verbunden. So haben auch alle Geräte einen Internet-Zugriff und sind ausreichend geschützt. Die Firewall verhindert fremden Zugriff von außen auf ihre Geräte.
+	Sie können die Sicherheit erhöhen, indem sie einen separaten WiFi- oder LTE-Router in ihrem Boot verwenden. Die Router können so eingerichtet werden, dass sie ein eigenes WiFi-Netz aufspannen können, in dem alle Geräte an Bord verbunden sind. Über eine Firewall ist das eigene WiFi-Netz mit dem Internet verbunden. So haben auch alle Geräte einen Internet-Zugriff und sind ausreichend geschützt. Die Firewall verhindert fremden Zugriff von außen auf ihre Geräte.
+
+.. image:: ../pics/WiFi_Channels.png
+             :scale: 35%
 
 Die Verbindungsqualität von WiFi-Netzwerken hängt maßgeblich von der Auslastung der Funkkanäle ab, die aktuell benutzt werden. Sie teilen sich die selben Funkkanälen mit anderen Teilnehmern anderer WiFi-Nnetzte. Das OBP60 nutzt die Funkkanäle des 2.4 GHz Frequenzbandes. Bei hoher Auslastung, wie z.B. in Häfen, kann die Verbindungsqualität des eigenes WiFi-Netzwerks beeinträchtigt sein. Sie müssen dann mit Verzögerungen bei der Datenübertragung rechnen, insbesondere dann, wenn sie TCP-Datenverbindungen zum oder vom OBP60 nutzen. Stellen sie sicher, dass sie in solchen Situationen die Bootsführung beherrschen.
 
