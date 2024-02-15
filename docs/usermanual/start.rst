@@ -62,4 +62,6 @@ Das OBP60 kann in 12V- und in 24V-Bord-Versorgungsnetzen verwendet werden. Bei S
 	Im Gerät ist eine selbst rückstellende Sicherung verbaut, die bei zu hohem Stromverbrauch die Versorgungsspannung selbständig trennt. Sie können die Sicherung zurücksetzen, indem Sie die Stromversorgung zum OBP60 trennen und den Grund des übermäßigen Stromverbrauchs beseitigen. Danach warten Sie einige Minuten, schalten Sie dann die Versorgungsspannung wieder ein.
 
 .. important::
-	Die interne Sicherung im OBP60 schützt nur das Gerät und nicht die Versorgungsleitungen! Daher sollte die bereitgestellte Stromversorgung des OBP60 im Bordnetz mit einer zusätzlichen Sicherung von mindestens 5A abgesichert werden. Das erfolgt typischerweise durch das Board-Panel (die Schalttafel?), über das / die die Stromkreise im Boot geschaltet werden können. So vermeiden Sie Brände zum Beispiel durch aufgescheuerte oder überhitzte Versorgungsleitungen. 
+	Die interne Sicherung im OBP60 schützt nur das Gerät und nicht die Versorgungsleitungen! 
+
+	Daher sollte die bereitgestellte Stromversorgung des OBP60 im Bordnetz mit einer zusätzlichen Sicherung von mindestens 5A abgesichert werden. Das erfolgt typischerweise durch das Board-Panel (die Schalttafel?), über das / die die Stromkreise im Boot geschaltet werden können. So vermeiden Sie Brände zum Beispiel durch aufgescheuerte oder überhitzte Versorgungsleitungen. 
