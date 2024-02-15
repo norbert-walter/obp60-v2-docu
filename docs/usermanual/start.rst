@@ -21,7 +21,7 @@ Abb.: Sicherheitskonzept
 
 Im OBP60 ist dazu eine zusätzliche 5V-Stromversorgung enthalten, die die isolierten Schaltungsteile versorgt. Die zusätzliche Stromversorgung hat die Ausgänge ``+5Viso`` und ``GND2``, die am Steckverbinder CN1 und CN2 anliegen. Darüber können auch externe Schaltungen bis 200 mA versorgt werden.
 
-.. warning::
+.. Warnung::
 	Verbinden Sie die unterschiedlichen Massepotenziale ``GNDS``, ``GND``, ``GND2`` und ``Shield`` niemals miteinander! Dadurch geht die Isolations- und Schutzwirkung verloren. Die Massepotenziale dürfen nicht gleichberechtigt verwendet werden.
 	
 Die unterschiedlichen Massepotenziale haben folgende Bedeutung:
