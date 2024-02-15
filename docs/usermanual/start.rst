@@ -56,7 +56,7 @@ Der zulässige Spannungsbereich liegt zwischen 10V...28V.
 .. image:: ../pics/Power_Connection.png
              :scale: 80%
 
-Das OBP60 kann in 12V- als auch in 24V-Bord-Versorgungsnetzen verwendet werden. Bei Spannungen höher als 28V wird die interne Sicherung im Gerät ausgelöst.
+Das OBP60 kann in 12V- und in 24V-Bord-Versorgungsnetzen verwendet werden. Bei Spannungen höher als 28V wird die interne Sicherung im Gerät ausgelöst.
 
 .. note::
 	Im Gerät ist eine selbst rückstellende Sicherung verbaut, die bei zu hohem Stromverbrauch die Versorgungsspannung selbständig trennt. Sie können die Sicherung zurücksetzen, indem Sie die Stromversorgung zum OBP60 trennen und den Grund des übermäßigen Stromverbrauchs beseitigen. Danach warten Sie einige Minuten, schalten Sie dann die Versorgungsspannung wieder ein.
