@@ -31,7 +31,7 @@ Die Informationen haben folgende Bedeutung:
 **Version**
 	Aktuelle Firmware-Version
 **Access Point IP**
-	IP-Adresse des Access Points``
+	IP-Adresse des Access Points
 **WiFi Client connected**
 	Zeigt an, ob das OBP60 mit einem anderen externen WiFi-Netzwerk als Client verbunden ist
 **WiFi Client IP**
