@@ -97,17 +97,17 @@ Ein XDR-Sentence ist folgendermaßen aufgebaut:
 Über die XDR Konfigurationsseite lassen sich 30 XDR-Telegramme individuell erstellen.
 
 .. image:: ../pics/XDR_1.png
-             :scale: 50%
+             :scale: 80%
 
 Dazu öffnet man als erstes über ``Show Unmapped`` eine Liste der nicht verknüpften Sensordaten.
 
 .. image:: ../pics/XDR_Show_Unmapped.png
-             :scale: 50%
+             :scale: 80%
              
 In der Liste sehen sie welche Daten zur Verfügung stehen. Über ``+`` werden die Daten in die letzte frei verfügbare XDR-Konfiguration automatisch eingefügt und der richtigen Kategorie zugeordnet. Der Sensorname muss noch im Feld **Transducer** hinzugefügt werden. 
 
 .. image:: ../pics/XDR_2.png
-             :scale: 50%
+             :scale: 80%
 
 Nach der Zuordnung des Sensornamens wird unter **Example** ein Beispiel für das XDR-Telegramm angezeigt. Danach können alle Einstellungen noch individuell geändert werden. Die Erklärung zu den Einstellungen ist nachfolgend aufgeführt.
 
