@@ -25,7 +25,7 @@ Auf der Statusseite sieht man im oberen Bereich den Ethernet-Verbindungsstatus. 
 **Version**
 	Aktuelle Firmware-Version
 **Access Point IP**
-	IP-Adresse des Access Points
+	IP-Adresse des Access Points``
 **WiFi Client connected**
 	Zeigt an, ob das OBP60 mit einem anderen externen WiFi-Netzwerk als Client verbunden ist
 **WiFi Client IP**
@@ -60,7 +60,7 @@ Config
 XDR
 ---
 
-Über die Konfigurationsseite XDR können XDR-Sentences für NMEA0183 erstellt werden. XDR-Sentences sind Telegramme für generische Sensorwerte, die verwendet werden, wenn sich kein geeignetes NMEA0183 Telegramme findet, mit dem man die Sensorwerte übertragen kann. Es ist ein universelles Telegramm zur Übertragung von Sensordaten. XDR-Sentences werden immer dann benutzt, wenn Daten aus dem I2C-Bus, dem 1Wire-Bus oder interne Sensordaten vom ESP32 übertragen werden sollen. Sofern nicht zugewiesene Sensordaten im OBP60 vorhanden sind, können diese über ein XDR-Mapping zugewiesen werden. Damit sind diese Daten als NMEA0183 Telegramme allgemein nutzbar.
+Über die Konfigurationsseite XDR können XDR-Sentences für NMEA0183 erstellt werden. XDR-Sentences sind Telegramme für generische Sensorwerte, die verwendet werden, wenn sich kein geeignetes NMEA0183 Telegramme findet, mit dem man die Sensorwerte übertragen kann. Es ist ein universelles Telegramm zur Übertragung von Sensordaten. XDR-Sentences werden immer dann benutzt, wenn Daten aus dem I2C-Bus, dem 1Wire-Bus oder interne Sensordaten vom ESP32 übertragen werden sollen. Sofern nicht zugewiesene Sensordaten im OBP60 vorhanden sind, können diese über ein XDR-Mapping zugewiesen werden. Damit sind diese Daten als NMEA0183 Telegramme allgemein nutzbar und werden im OBP60 dargestellt. Die Daten lassen sich dann auch über NMEA0183 in andere Systeme übertragen und dort nutzen.
 
 Ein XDR-Sentence ist folgendermaßen aufgebaut:
 
@@ -94,7 +94,59 @@ Ein XDR-Sentence ist folgendermaßen aufgebaut:
 | Wassertemperatur | "C" Temperatur  | 2 decimals                      | "C" Celsius     | "ENV_WATER_T"               |
 +------------------+-----------------+---------------------------------+-----------------+-----------------------------+
 
+Über die XDR Konfigurationsseite lassen sich 30 XDR-Telegramme individuell erstellen.
 
+.. image:: ../pics/XDR_1.png
+             :scale: 50%
+
+Dazu öffnet man als erstes über ``Show Unmapped`` eine Liste der nicht verknüpften Sensordaten.
+
+.. image:: ../pics/XDR_Show_Unmapped.png
+             :scale: 50%
+             
+In der Liste sehen sie welche Daten zur Verfügung stehen. Über ``+`` werden die Daten in die letzte frei verfügbare XDR-Konfiguration automatisch eingefügt und der richtigen Kategorie zugeordnet. Der Sensorname muss noch im Feld **Transducer** hinzugefügt werden. 
+
+.. image:: ../pics/XDR_2png
+             :scale: 50%
+
+Nach der Zuordnung des Sensornamens wird unter **Example** ein Beispiel für das XDR-Telegramm angezeigt. Danach können alle Einstellungen noch individuell geändert werden. Die Erklärung zu den Einstellungen ist nachfolgend aufgeführt.
+
+**Direction**
+    Über Direction lässt sich einstellen wie Sensordaten eingelesen werden sollen und wohin sie übertragen werden. 
+    **off** - Die Sensordaten werden nicht benutzt. Damit können sie ein bereits konfiguriertes XDR-Telegramm deaktivieren.
+    **bidir** - Die Sensordaten werden zwischen NMEA0183 und NMEA2000 ausgetauscht
+    **to2K** - Das Sensordaten werden nur nach NMEA2000 gesendet
+    **from2k** - Unbekannte Sensordaten von NMEA2000 werden eingelesen
+     
+**Category**
+    Über Category kann Sensor-Typ zugeordnet werden. 
+    **Temperature** - Temperatursensoren für Luft, Wasser, Kühlschrank
+    **Humidity** - Luftfeuchtigkeitssensoren
+    **Pressure** - Drucksensoren für Luftdruck und andere Drücke wie z.B. Öldruck
+    **Fluid** - Sensoren für Flüssigkeiten wie Durchfluss und Füllstand
+    **Battery** - Batteriesensoren für Spannung, Strom, Leistung, Baterietemperatur
+    **Engine** - Motorsensoren für Drehzahl, Anstellung, Trimmklappen, Öl, Kühlwasser
+    **Attitude** - Höhendaten aus GPS-Sensor ermittelt
+    
+**Source**
+    Über Source lässt sich die Quelle der Sensordaten genauer einstellen. Je nach verwendeten Sensortyp stehen verschiedene Sensor-Quellen zur Verfügung
+    
+**Field**
+    Mit Field kann genauer beschrieben werden wie die Sensordaten zu verstehen sind. Es sind Zusatzdaten die kontextabhängig je nach verwendeten Sensor-Typ einstellabr sind. So kann z.B. festgelegt werden, ob es sich um einen Anzeigewert oder um einen Einstellwert handelt.
+    
+**Instance**
+    Mit Instance kann festgelegt werden, ob es mehrere Sensoren des selben Typs gibt. Das kann z.B. auftreten, wenn zwei Motoren in einem Boot verbaut sind und zwei Tankwerte angezeigt werden sollen. Mit Hilfe einer Instanz-Nummer werden die Sensoren unterschieden. An den Sensornamen wird dann z.B. **#1** angefügt. Die Arte der Instanzierung kann folgendermaßen festgelegt werden:
+        **singel** - Es wird ein Sensor instanziert, dem einen freie Instanz-Nummer zugeordnet werden kann. So können z.B. zwei Sensoren die selben Daten in ein XDR-Telegramm übertragen werden, wenn die Sensoren redundant sind.
+        **ignore** - Es existiert nur genau ein einziger Sensor dieses Typs.
+        **auto** - Die Instanzierung wird automatisch übernommen. Sobals ein neuer Sensor des gleichen Typs und der selben Source verwendet wir, wird eine neue Instanz des Sensors angelegt.
+        
+**Transducer**
+    Über Transducer wird der Sensorname festgelegt. Es handelt sich dabei im eine Klartextbeschreibung des Sensors mit ASCII Zeichen. Verwenden sie nur Buchstaben und Zahlen ohne Freizeichen und Sonderzeichen.
+    
+**Example**
+    Beispiel wie der Inhalt des XDR-Telegramms aussehen wird.
+    
+    
 Update
 ------
 
