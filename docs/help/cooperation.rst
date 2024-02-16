@@ -8,4 +8,13 @@ Wenn sie das Projekt interessant finden und mitarbeiten wollen, so können sie u
 
 Wir sind eine begeisterne Community und pflegen einen kollegialen und freundlichen Umgang miteinander. Im Vordergrund steht der Gedanke von Open Source und Open Hardware sowie der Ideenaustausch mit Gleichgesinnten. Wir laden alle Interessierten ein, sich am Ideenaustausch zu beteiligen. Dazu muss man kein Experte sein. Jeder der tolle Ideen hat, kann sie gerne beisteuern.
 
+Unterstützung für folgende Themenbereiche ist immer willkommen:
 
+* Software
+* Hardware
+* Dokumentation
+* Organisation (Messe, Events, Workshops)
+* Übersetzungen
+* Korrekturen
+* PR Arbeit
+* Plege der Internetseiten und der Social Media Kanäle
