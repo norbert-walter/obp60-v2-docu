@@ -20,7 +20,12 @@ Nachdem sie im WiFi-Netzwerk eigebucht sind, öffnen Sie in einen Web-Browser di
 Status
 ------
 
-Auf der Statusseite sieht man im oberen Bereich den Ethernet-Verbindungsstatus. Die Informationen haben folgende Bedeutung:
+Auf der Statusseite sieht man im oberen Bereich den Ethernet-Verbindungsstatus.
+
+.. image:: ../pics/Status_1.png
+             :scale: 80%
+
+Die Informationen haben folgende Bedeutung:
 
 **Version**
 	Aktuelle Firmware-Version
@@ -144,12 +149,16 @@ Nach der Zuordnung des Sensornamens wird unter **Example** ein Beispiel für das
     * **auto** - Die Instanzierung wird automatisch übernommen. Sobals ein neuer Sensor des gleichen Typs und der selben Source verwendet wir, wird eine neue Instanz des Sensors angelegt.
         
 **Transducer**
-    Über Transducer wird der Sensorname festgelegt. Es handelt sich dabei im eine Klartextbeschreibung des Sensors mit ASCII Zeichen. Verwenden sie nur Buchstaben und Zahlen ohne Freizeichen und Sonderzeichen.
+    Über Transducer wird der Sensorname festgelegt. Es handelt sich dabei um eine Klartextbeschreibung des Sensors mit ASCII Zeichen. Verwenden sie nur Buchstaben und Zahlen ohne Freizeichen und Sonderzeichen.
     
 **Example**
     Beispiel wie der Inhalt des XDR-Telegramms aussehen wird.
     
+Data
+----
+
     
+
 Update
 ------
 
