@@ -6,7 +6,7 @@ Wenn diese Dokumentation hilfreich war, würden wir uns freuen, wenn sie uns mit
 |IMG|_ 
 
 .. |IMG| image:: ../pics/PayPal.png
-    :scale: 60%
+    :scale: 40%
 
 .. _IMG: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=5QZJZBM252F2L
 
