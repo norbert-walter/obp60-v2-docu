@@ -13,6 +13,7 @@ Nachdem sie im WiFi-Netzwerk eigebucht sind, öffnen Sie in einen Web-Browser di
 * **XDR** - Konfigurationsseite für NMEA0183 XDR-Sentences
 * **Data** - Dashboard zur Datenanzeige
 * **Update** - Seite zum Firmware-Update
+* **Help** - Aufruf der Github-Projektseite
 
 .. note::
 	Beachten sie, dass beim erstmaligen Aufruf der Konfigurationsoberfläche kein Passwort beim Speichern der Konfiguration notwendig ist. Als **Default-Passwort** wird **esp32admin** verwendet. Ändern sie das Passwort auf ihre Belange ab und verwenden sie nur Zeichen des ASCII Zeichensatzes. Die Passwortabfrage kann auch deaktiviert werden.
@@ -213,7 +214,7 @@ Wie man die Firmware eines OBP60 über USB flasht, ist unter xxx beschrieben.
 Help
 ----
 
-Unter Help erfolgt ein Sprung ins Internet zur Github-Seite auf der das Projekt gehostet wird. Dort sind einige weitergehende Informationen zum NMEA2000-gateway zu finden, das die Basis für diese Firmware ist
+Unter Help erfolgt ein Sprung ins Internet zur Github-Seite auf der das Projekt gehostet wird. Dort sind einige weitergehende Informationen zum NMEA2000-Gateway zu finden, das die Basis für diese Firmware ist.
 
 .. note::
     Die Github-Seite lässt sich nur aufrufen, wenn das OBP60 auf das Internet zugreifen kann.
