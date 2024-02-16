@@ -85,19 +85,19 @@ Ein XDR-Sentence ist folgendermaßen aufgebaut:
 
 **Sensor Werte**
 
-   $--XDR,a,x.x,b,c--c,x--x*hh<CR><LF>
+    $--XDR,a,x.x,b,c--c,x--x*hh<CR><LF>
 
     Feld Nummer:
-		* a - Sensor-Typ
-		* x.x - Messwerrt
-		* b - Einheit des Messwertes
-		* c - Name des Sensors
-		* x - Weitere Sensordaten
-		* hh - Checksumme
+	    * a - Sensor-Typ
+	    * x.x - Messwerrt
+	    * b - Einheit des Messwertes
+	    * c - Name des Sensors
+	    * x - Weitere Sensordaten
+	    * hh - Checksumme
 
     Beispiele:	
-		* $IIXDR,C,19.52,C,TempAir*19
-		* $IIXDR,P,1.02481,B,Barometer*29
+	    * $IIXDR,C,19.52,C,TempAir*19
+	    * $IIXDR,P,1.02481,B,Barometer*29
 	
 +------------------+-----------------+---------------------------------+-----------------+-----------------------------+
 |Messwert          | Sensor-Typ      | ´Beispiele für messdaten        | Einheit         | Name des Sensors            |
@@ -171,7 +171,16 @@ Nach der Zuordnung des Sensornamens wird unter **Example** ein Beispiel für das
 Data
 ----
 
-    
+.. image:: ../pics/Data_1.png
+             :scale: 80%
+             
+Unter Data werden alle Sensordaten aller Bussysteme angezeigt, die derzeit verarbeitet werden können. Sensodaten die nicht verfügbar sind werden mit ``---`` gekennzeichnet. Man kann die Datenanzeige auch so konfigurieren, dass nur aktuelle Daten angezeigt werden. Die nicht verfügbaren Daten sind dann ausgeblendet.
+
+.. image:: ../pics/Data_2.png
+             :scale: 80%
+
+.. note::
+    Die Beschränkung der Datenanzeige auf aktuelle Daten führt dazu, dass sich die Anordnung der Daten ändert, wenn einige Sensordaten nicht mehr verfügbar sind. Die Datenfelder werden dann ausgeblendet. Wenn sie ein festes Anzeigeformat haben wollen, lassen sie sich alle Daten anzeigen.  
 
 Update
 ------
@@ -190,12 +199,23 @@ https://github.com/norbert-walter/esp32-nmea2000-obp60/releases
 
 Unter Releases sind eine Reihe verfügbarer Firmware-Updates für das OBP60 zu finden. Beachten sie dabei die jeweilige Hardware-Version für die sie eine Firmware herunterladen wollen.
 
-Für ein Firmware-Update laden sie sich die gewünschte Firmware als Datei herunter und speichern sie die Datei auf ihrem Gerät. Über die Taste ``Choose File`` wählen sie die heruntergeladene Datei aus. Es wird dann der Firmware-Type und die Firmware-Version angezeigt. Sollte die Firmware nicht zur verwendeten Hardware passen, so erhalten sie eine Meldung. Die Firmware kann dann nicht geflasht werden. Über die Taste ``Upload`` starten sie den Flash-Vorgang. Im Fortschrittsbalken sehen sie den Verlauf des Vorgangs. Nach einem erfolgreichen Firmware-Update wird eine Reboot des Systems durchgeführt. In dieser Zeit ist die Web-Konfigurationseite offline (roter Punkt). Nach kurzer Zeit ist die Seite wieder online (grüner Punkt). Dann ist das System wieder betriebsbereit.
+.. image:: ../pics/Update.png
+             :scale: 80%
+
+Für ein Firmware-Update laden sie sich die gewünschte Firmware als Datei herunter und speichern sie die Datei auf ihrem Gerät. Über die Taste ``Choose File`` wählen sie die heruntergeladene Datei aus. Es wird dann der Firmware-Type, der Chip-Type und die Firmware-Version angezeigt. Sollte die Firmware nicht zur verwendeten Hardware passen, so erhalten sie eine Meldung. Die Firmware kann dann nicht geflasht werden. Über die Taste ``Upload`` starten sie den Flash-Vorgang. Im Fortschrittsbalken sehen sie den Verlauf des Vorgangs. Nach einem erfolgreichen Firmware-Update wird eine Reboot des Systems durchgeführt. In dieser Zeit ist die Web-Konfigurationseite offline (roter Punkt). Nach kurzer Zeit ist die Seite wieder online (grüner Punkt). Dann ist das System wieder betriebsbereit.
 
 .. warning::
 	Beachten sie, dass sie bei einem Firmware-Update auf eine ältere Version ein Initial Firmware Update durchführen müssen. So vermeiden sie Komplikationen mit den gespeicherten Konfigurationsdaten. Unter Umständen ist das System nicht nutzbar und kann komplett einfrieren. Ein Firmware-Update über die Konfigurationsseiten ist dann nicht mehr möglich und die Firmware muss über USB geflasht werden.
 
-Wie man die Firmware eines OBP60 über USB flasht, ist unter xxx beschrieben.	
+Wie man die Firmware eines OBP60 über USB flasht, ist unter xxx beschrieben.
+
+Help
+----
+
+Unter Help erfolgt ein Sprung ins Internet zur Github-Seite auf der das Projekt gehostet wird. Dort sind einige weitergehende Informationen zum NMEA2000-gateway zu finden, das die Basis für diese Firmware ist
+
+.. note::
+    Die Github-Seite lässt sich nur aufrufen, wenn das OBP60 auf das Internet zugreifen kann.
 
 Sicherheit im WiFi-Netzwerk
 ---------------------------
