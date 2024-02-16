@@ -138,6 +138,7 @@ Nach der Zuordnung des Sensornamens wird unter **Example** ein Beispiel für das
     
 **Instance**
     Mit Instance kann festgelegt werden, ob es mehrere Sensoren des selben Typs gibt. Das kann z.B. auftreten, wenn zwei Motoren in einem Boot verbaut sind und zwei Tankwerte angezeigt werden sollen. Mit Hilfe einer Instanz-Nummer werden die Sensoren unterschieden. An den Sensornamen wird dann z.B. \#1 angefügt. Die Arte der Instanzierung kann folgendermaßen festgelegt werden:
+    
     * **singel** - Es wird ein Sensor instanziert, dem einen freie Instanz-Nummer zugeordnet werden kann. So können z.B. zwei Sensoren die selben Daten in ein XDR-Telegramm übertragen werden, wenn die Sensoren redundant sind.
     * **ignore** - Es existiert nur genau ein einziger Sensor dieses Typs.
     * **auto** - Die Instanzierung wird automatisch übernommen. Sobals ein neuer Sensor des gleichen Typs und der selben Source verwendet wir, wird eine neue Instanz des Sensors angelegt.
