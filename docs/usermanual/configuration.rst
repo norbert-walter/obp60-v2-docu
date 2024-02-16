@@ -106,27 +106,27 @@ Dazu öffnet man als erstes über ``Show Unmapped`` eine Liste der nicht verknü
              
 In der Liste sehen sie welche Daten zur Verfügung stehen. Über ``+`` werden die Daten in die letzte frei verfügbare XDR-Konfiguration automatisch eingefügt und der richtigen Kategorie zugeordnet. Der Sensorname muss noch im Feld **Transducer** hinzugefügt werden. 
 
-.. image:: ../pics/XDR_2png
+.. image:: ../pics/XDR_2.png
              :scale: 50%
 
 Nach der Zuordnung des Sensornamens wird unter **Example** ein Beispiel für das XDR-Telegramm angezeigt. Danach können alle Einstellungen noch individuell geändert werden. Die Erklärung zu den Einstellungen ist nachfolgend aufgeführt.
 
 **Direction**
     Über Direction lässt sich einstellen wie Sensordaten eingelesen werden sollen und wohin sie übertragen werden. 
-    **off** - Die Sensordaten werden nicht benutzt. Damit können sie ein bereits konfiguriertes XDR-Telegramm deaktivieren.
-    **bidir** - Die Sensordaten werden zwischen NMEA0183 und NMEA2000 ausgetauscht
-    **to2K** - Das Sensordaten werden nur nach NMEA2000 gesendet
-    **from2k** - Unbekannte Sensordaten von NMEA2000 werden eingelesen
+    * **off** - Die Sensordaten werden nicht benutzt. Damit können sie ein bereits konfiguriertes XDR-Telegramm deaktivieren.
+    * **bidir** - Die Sensordaten werden zwischen NMEA0183 und NMEA2000 ausgetauscht
+    * **to2K** - Das Sensordaten werden nur nach NMEA2000 gesendet
+    * **from2k** - Unbekannte Sensordaten von NMEA2000 werden eingelesen
      
 **Category**
     Über Category kann Sensor-Typ zugeordnet werden. 
-    **Temperature** - Temperatursensoren für Luft, Wasser, Kühlschrank
-    **Humidity** - Luftfeuchtigkeitssensoren
-    **Pressure** - Drucksensoren für Luftdruck und andere Drücke wie z.B. Öldruck
-    **Fluid** - Sensoren für Flüssigkeiten wie Durchfluss und Füllstand
-    **Battery** - Batteriesensoren für Spannung, Strom, Leistung, Baterietemperatur
-    **Engine** - Motorsensoren für Drehzahl, Anstellung, Trimmklappen, Öl, Kühlwasser
-    **Attitude** - Höhendaten aus GPS-Sensor ermittelt
+    * **Temperature** - Temperatursensoren für Luft, Wasser, Kühlschrank
+    * **Humidity** - Luftfeuchtigkeitssensoren
+    * **Pressure** - Drucksensoren für Luftdruck und andere Drücke wie z.B. Öldruck
+    * **Fluid** - Sensoren für Flüssigkeiten wie Durchfluss und Füllstand
+    * **Battery** - Batteriesensoren für Spannung, Strom, Leistung, Baterietemperatur
+    * **Engine** - Motorsensoren für Drehzahl, Anstellung, Trimmklappen, Öl, Kühlwasser
+    * **Attitude** - Höhendaten aus GPS-Sensor ermittelt
     
 **Source**
     Über Source lässt sich die Quelle der Sensordaten genauer einstellen. Je nach verwendeten Sensortyp stehen verschiedene Sensor-Quellen zur Verfügung
@@ -136,9 +136,9 @@ Nach der Zuordnung des Sensornamens wird unter **Example** ein Beispiel für das
     
 **Instance**
     Mit Instance kann festgelegt werden, ob es mehrere Sensoren des selben Typs gibt. Das kann z.B. auftreten, wenn zwei Motoren in einem Boot verbaut sind und zwei Tankwerte angezeigt werden sollen. Mit Hilfe einer Instanz-Nummer werden die Sensoren unterschieden. An den Sensornamen wird dann z.B. **#1** angefügt. Die Arte der Instanzierung kann folgendermaßen festgelegt werden:
-        **singel** - Es wird ein Sensor instanziert, dem einen freie Instanz-Nummer zugeordnet werden kann. So können z.B. zwei Sensoren die selben Daten in ein XDR-Telegramm übertragen werden, wenn die Sensoren redundant sind.
-        **ignore** - Es existiert nur genau ein einziger Sensor dieses Typs.
-        **auto** - Die Instanzierung wird automatisch übernommen. Sobals ein neuer Sensor des gleichen Typs und der selben Source verwendet wir, wird eine neue Instanz des Sensors angelegt.
+        * **singel** - Es wird ein Sensor instanziert, dem einen freie Instanz-Nummer zugeordnet werden kann. So können z.B. zwei Sensoren die selben Daten in ein XDR-Telegramm übertragen werden, wenn die Sensoren redundant sind.
+        * **ignore** - Es existiert nur genau ein einziger Sensor dieses Typs.
+        * **auto** - Die Instanzierung wird automatisch übernommen. Sobals ein neuer Sensor des gleichen Typs und der selben Source verwendet wir, wird eine neue Instanz des Sensors angelegt.
         
 **Transducer**
     Über Transducer wird der Sensorname festgelegt. Es handelt sich dabei im eine Klartextbeschreibung des Sensors mit ASCII Zeichen. Verwenden sie nur Buchstaben und Zahlen ohne Freizeichen und Sonderzeichen.
