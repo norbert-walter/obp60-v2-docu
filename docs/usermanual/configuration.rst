@@ -35,8 +35,22 @@ Die Informationen haben folgende Bedeutung:
 	Zeigt an, ob das OBP60 mit einem anderen externen WiFi-Netzwerk als Client verbunden ist
 **WiFi Client IP**
 	IP-Adresse die das Gwerät vom anderen WiFi-Netzwerk erhalten hat
-**# TCP Clients**
+**Clients**
 	Anzahl externer TCP-Clients die sich am OBP60 angemeldet haben
+**TCP Clients Connected**
+	Status, ob sich das OBP60 als Client angemeldet hat
+**TCP Client Error**
+    Fehlermeldungen zur Client-Anbindung des OBP60
+**Free Heap**
+    Verfügbarer Heap-Speicher für die Programmausführung
+**NMEA2000 State**
+    Status zum NMEA2000-Treiber
+    
+Im unteren Teil findet man Informationen zu den jeweiligen Bussystemen.
+	
+.. image:: ../pics/Status_2.png
+             :scale: 80%
+	
 **NMEA2000 in**
 	Anzahl der NMEA2000 Telegramme die empfangen wurden
 **NMEA2000 out**
@@ -122,7 +136,7 @@ Nach der Zuordnung des Sensornamens wird unter **Example** ein Beispiel für das
     * **off** - Die Sensordaten werden nicht benutzt. Damit können sie ein bereits konfiguriertes XDR-Telegramm deaktivieren.
     * **bidir** - Die Sensordaten werden zwischen NMEA0183 und NMEA2000 ausgetauscht
     * **to2K** - Das Sensordaten werden nur nach NMEA2000 gesendet
-    * **from2k** - Unbekannte Sensordaten von NMEA2000 werden eingelesen
+    * **from2k** - Sensordaten werden von NMEA2000 eingelesen
      
 **Category**
     Über Category kann Sensor-Typ zugeordnet werden:
