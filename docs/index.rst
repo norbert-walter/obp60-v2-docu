@@ -61,6 +61,7 @@ Das Mutifunktionsdisplay OBP60 dient zur Anzeige von Daten aus Boots-Netzen wie 
    :name: sec-help   
 
    Fragen und Antworten <help/faq>
+   Meinungen und Tipps <help/opinions>
    Bekannte Fehler <help/errors>
    Unterstützung <help/support>
    Service <help/service>
