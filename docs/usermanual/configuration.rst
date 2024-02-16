@@ -46,7 +46,12 @@ Die Informationen haben folgende Bedeutung:
 **NMEA2000 State**
     Status zum NMEA2000-Treiber
     
-Im unteren Teil findet man Informationen zu den jeweiligen Bussystemen.
+Wenn sie auf das Fragezeichen hinter **Version** klicken, werden alle Telegramme angezeigt, die das OBP60 verarbeiten kann. Detailliertere Informationen zu den empfangenen Telegrammen sehen sie, wenn sie die Zeile des Bussystems aufgeklappen. Im Anhang finden sie eine Tabelle mit allen NMEA0183 und NMEA2000 Telegrammen, die verarbeitet werden können.
+
+.. note::
+	Zum besseren Verständnis ist zu beachten, dass das OBP60 eigenständig ein WiFi-Netzwerk aufbauen und damit autark arbeiten kann. Das OBP60 kann aber auch zusätzlich Teil eines anderen externen WiFi-Netzwerks sein, in dem es sich als Client dort anmeldet. In dem Fall ist das lokale WiFi-Netz des OBP60 mit dem externen WiFi-Netz gebrückt und alle Daten sind in beiden Netzwerken verfügbar. Die Anzahl der TCP Clients in der Statuszeile bezieht sich dabei immer nur auf Clients die sich beim OBP60 anmelden.    
+    
+Im unteren Teil findet man Informationen zu den jeweiligen Bussystemen. Durch aufklappen der jeweiligen Zeile können detaillierte Informationen des Datenverkehrs eingesehen werden. Es werden die entsprechenden Telegramme in Kurzform und die Anzahl der verarbeiteten Telegramme angezeigt. 
 	
 .. image:: ../pics/Status_2.png
              :scale: 80%
@@ -68,10 +73,6 @@ Im unteren Teil findet man Informationen zu den jeweiligen Bussystemen.
 **Serial out**
 	Anzahl der NMEA0183 Telegramme die über RS485 gesendet wurden
 
-Wenn sie auf das Fragezeichen hinter **Version** klicken, werden alle Telegramme angezeigt, die das OBP60 verarbeiten kann. Detailliertere Informationen zu den empfangenen Telegrammen sehen sie, wenn sie die Zeile des Bussystems aufgeklappen. Im Anhang finden sie eine Tabelle mit allen NMEA0183 und NMEA2000 Telegrammen, die verarbeitet werden können.
-
-.. note::
-	Zum besseren Verständnis ist zu beachten, dass das OBP60 eigenständig ein WiFi-Netzwerk aufbauen und damit autark arbeiten kann. Das OBP60 kann aber auch zusätzlich Teil eines anderen externen WiFi-Netzwerks sein, in dem es sich als Client dort anmeldet. In dem Fall ist das lokale WiFi-Netz des OBP60 mit dem externen WiFi-Netz gebrückt und alle Daten sind in beiden Netzwerken verfügbar. Die Anzahl der TCP Clients in der Statuszeile bezieht sich dabei immer nur auf Clients die sich beim OBP60 anmelden.
 	
 Config
 ------
