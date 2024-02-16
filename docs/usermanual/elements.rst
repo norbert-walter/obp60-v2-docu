@@ -120,5 +120,5 @@ Reset-Taster
 
 Der Reset-Taster befindet sich auf der Rückseite des Displays an der Unterseite des gorßen linken Steckverbinders **CN1**. Der Reset-Taster wird beim normalen Betrieb nicht genutzt. Bei Programmiervorgängen kann es nützlich sein, einen manuellen Reset auszulösen. Benutzen sie zum Auslösen des Reset einen nicht leitenden schmalen Gegenstand und drücken sie die Taste vorsichtig, bis ein überwundener Druckpunkt spürbar ist.
 
-.. warning::
+.. danger::
    Verwenden sie keine leitenden Gegenstände. Damit können Kurzschlüsse auf der Platine ausgelöst werden und das Gerät kann beschädigt werden.
