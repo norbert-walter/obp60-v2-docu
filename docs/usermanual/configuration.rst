@@ -112,14 +112,16 @@ In der Liste sehen sie welche Daten zur Verfügung stehen. Über ``+`` werden di
 Nach der Zuordnung des Sensornamens wird unter **Example** ein Beispiel für das XDR-Telegramm angezeigt. Danach können alle Einstellungen noch individuell geändert werden. Die Erklärung zu den Einstellungen ist nachfolgend aufgeführt.
 
 **Direction**
-    Über Direction lässt sich einstellen wie Sensordaten eingelesen werden sollen und wohin sie übertragen werden. 
+    Über Direction lässt sich einstellen wie Sensordaten eingelesen werden sollen und wohin sie übertragen werden:
+     
     * **off** - Die Sensordaten werden nicht benutzt. Damit können sie ein bereits konfiguriertes XDR-Telegramm deaktivieren.
     * **bidir** - Die Sensordaten werden zwischen NMEA0183 und NMEA2000 ausgetauscht
     * **to2K** - Das Sensordaten werden nur nach NMEA2000 gesendet
     * **from2k** - Unbekannte Sensordaten von NMEA2000 werden eingelesen
      
 **Category**
-    Über Category kann Sensor-Typ zugeordnet werden. 
+    Über Category kann Sensor-Typ zugeordnet werden:
+     
     * **Temperature** - Temperatursensoren für Luft, Wasser, Kühlschrank
     * **Humidity** - Luftfeuchtigkeitssensoren
     * **Pressure** - Drucksensoren für Luftdruck und andere Drücke wie z.B. Öldruck
