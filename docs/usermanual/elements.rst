@@ -60,18 +60,18 @@ Sofern die Wischgeste aktiv ist, werden im Infobereich die aktuelle Seite und di
 Sensor-Tasten
 -------------
 
-Das OBP60 hat 6 kapazitive Sensor-Tasten am unteren Displayrand. Die Tasten reagieren auf Berührung durch Veränderung des Bezugspotenzials. Wassertropfen oder Regen haben so gut wie keinen Einfluss auf die Auslösefunktion der Tasten. Aktuell sind folgende Tastenfunktionen realisiert:
+Das OBP60 hat 6 kapazitive Sensortasten am unteren Displayrand. Die Tasten reagieren auf Berührung durch Veränderung des Bezugspotenzials. Wassertropfen oder Regen haben so gut wie keinen Einfluss auf die Auslösefunktion der Tasten. Aktuell sind folgende Tastenfunktionen realisiert:
 
 * Konfiguration der Tasten-Sensitivität
 * Wischen links / rechts
 * kurzes Tippen
 * normales Drücken
-* drücken mehrerer Tasten gleichzeitig
+* Drücken mehrerer Tasten gleichzeitig
 * Tasten sperren
 
 Die Tasten-Sensitivität kann über die Konfigurationsseite eingestellt werden. Damit lässt sich die Schwelle einstellen, ab der ein Tastendruck erkannt wird. Die Tasten haben in der Mitte eine Vertiefung. So kann das Zentrum der Taste besser erfühlt werden. Erkannte Tastenberührungen werden akustisch mit einem Piepton signalisiert.
 
-Die Tasten sind bündig in das Display eingelassen. So ist es möglich, mit Wischgesten die Seiteninhalte umzuschalten. Dazu wischt man zügig nach rechts oder links über mindestens zwei Tasten. Die Software erkennt automatisch, wenn mehrere Tasten hintereinander ausgelöst werden und bestimmt daraus die Wischrichtung. Für die Wischgeste wird ein akustisches Feadback gegeben. Rechts wischen wird mit der Tonfolge tief-hoch signalisiert, links wischen mit hoch-tief. Die Seitenweiterschaltung ist an den Enden rollierend.
+Die Tasten sind bündig in das Display eingelassen. So ist es möglich, mit Wischgesten die Seiteninhalte umzuschalten. Dazu wischt man zügig nach rechts oder links über mindestens zwei Tasten. Die Software erkennt automatisch, wenn mehrere Tasten hintereinander ausgelöst werden, und bestimmt daraus die Wischrichtung. Für die Wischgeste wird ein akustisches Feedback gegeben. <Rechts wischen> wird mit der Tonfolge <tief-hoch> signalisiert, <links wischen> mit <hoch-tief>. Die Seitenweiterschaltung ist an den Enden rollierend.
 
 Bei kurzem Tippen wird kein Piepton ausgegeben. Kurzes Tippen der zwei äußeren Tasten nacheinander aktiviert die Tastensperre, gefolgt von einem langen Piepton. Danach sind die normalen Tastenfunktionen deaktiviert und es wird keine Wischgeste mehr erkannt. Im Display ist die Meldung ``[Keylock active]`` zu sehen. Welche (der äußeren?) Taste(n) beim Aktivieren der Tastensperre zu erst gedrückt wird, ist unerheblich, ebenso die Reihenfolge. Die Deaktivierung der Tastensperre erfolgt auf die gleiche Weise.
 
