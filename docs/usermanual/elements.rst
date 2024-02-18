@@ -73,7 +73,7 @@ Die Tasten-Sensitivität kann über die Konfigurationsseite eingestellt werden. 
 
 Die Tasten sind bündig in das Display eingelassen. So ist es möglich, mit Wischgesten die Seiteninhalte umzuschalten. Dazu wischt man zügig nach rechts oder links über mindestens zwei Tasten. Die Software erkennt automatisch, wenn mehrere Tasten hintereinander ausgelöst werden, und bestimmt daraus die Wischrichtung. Für die Wischgeste wird ein akustisches Feedback gegeben. <Rechts wischen> wird mit der Tonfolge <tief-hoch> signalisiert, <links wischen> mit <hoch-tief>. Die Seitenweiterschaltung ist an den Enden rollierend.
 
-Bei kurzem Tippen wird kein Piepton ausgegeben. Kurzes Tippen der zwei äußeren Tasten nacheinander aktiviert die Tastensperre, gefolgt von einem langen Piepton. Danach sind die normalen Tastenfunktionen deaktiviert und es wird keine Wischgeste mehr erkannt. Im Display ist die Meldung ``[Keylock active]`` zu sehen. Welche (der äußeren?) Taste(n) beim Aktivieren der Tastensperre zu erst gedrückt wird, ist unerheblich, ebenso die Reihenfolge. Die Deaktivierung der Tastensperre erfolgt auf die gleiche Weise.
+Bei kurzem Tippen wird kein Piepton ausgegeben. Kurzes Tippen der zwei äußeren Tasten nacheinander aktiviert die Tastensperre, gefolgt von einem langen Piepton. Danach sind die normalen Tastenfunktionen deaktiviert und es wird keine Wischgeste mehr erkannt. Im Display ist die Meldung ``[Keylock active]`` zu sehen. Welche (der äußeren?) Taste(n) beim Aktivieren der Tastensperre zuerst gedrückt wird, ist unerheblich, ebenso die Reihenfolge. Die Deaktivierung der Tastensperre erfolgt auf die gleiche Weise.
 
 .. important::
    Sollte Ihr OBP60 so platziert sein, dass sich eine Person versehentlich dagegen lehnen kann, so stellen Sie die Tasten-Sensitivität entsprechend niedriger ein. So vermeiden Sie versehentliches Auslösen der Tasten. Sie können als zusätzlichen Schutz gegen unbeabsichtigtes Bedienen auch die Tasten-Sperrfunktion aktivieren. 
@@ -93,12 +93,12 @@ Links oberhalb des Displays befindet sich eine kleine Flash-LED. Diese LED dient
 Hintergrundbeleuchtung
 ----------------------
 
-Um das Display bei Nacht ablesen zu können, kann eine Hintergrundbeleuchtung über die rechte Sensortatste zugeschaltet werden. Die Farbe und die Helligkeit können über die Konfiguration eingestellt werden. Grundsätzlich lässt sich die Hintergrundbeleuchtung folgendermaßen verwenden:
+Um das Display bei Nacht ablesen zu können, kann eine Hintergrundbeleuchtung über die rechte Sensortaste zugeschaltet werden. Die Farbe und die Helligkeit können über die Konfiguration eingestellt werden. Grundsätzlich lässt sich die Hintergrundbeleuchtung folgendermaßen verwenden:
 
 * Dauerhaft an
 * Dauerhaft aus
 * Manuell einschaltbar über Sensortaste
-* Über Sonnenstand automatisch schaltbar Vorschlag: Automatisch schaltbar abhängig vom Sonnenstand
+* Über Sonnenstand automatisch schaltbar >Vorschlag: Automatisch schaltbar abhängig vom Sonnenstand<
 
 .. important::
    Wenn Sie den Sonnenstand zum Schalten der Hintergrundbeleuchtung verwenden wollen, benötigen Sie ein gültiges GPS-Signal, damit die Schaltzustände ausgelöst werden können. Die Hintergrundbeleuchtung wird automatisch beim Sonnenuntergang eingeschaltet und beim Sonnenaufgang abgeschaltet. Ist kein gültiges GPS-Signal vorhanden, so erfolgt keine Änderung der Schaltzustände.
@@ -106,7 +106,7 @@ Um das Display bei Nacht ablesen zu können, kann eine Hintergrundbeleuchtung ü
 Buzzer
 ------
 
-Der Buzzer dient zur akustischen Signalisierung von Störungen und als Feedback bei Zustandsänderungen. Der Buzzer befindet sich im Inneren des Gerätes. Die Funktion und Lautstärke des Buzzers kann in der Konfiguration eingestellt werden. Beim Einschalten und beim manuellen oder automatischen Reset des OBP60 erfolgt eine kurzer Signalton, um das Hochfahren des Gerätes zu signalisieren.
+Der Buzzer dient zur akustischen Signalisierung von Störungen und als Feedback bei Zustandsänderungen. Der Buzzer befindet sich im Inneren des Gerätes. Die Funktion und Lautstärke des Buzzers kann in der Konfiguration eingestellt werden. Beim Einschalten und beim manuellen oder automatischen Reset des OBP60 erfolgt ein kurzer Signalton, um das Hochfahren des Gerätes zu signalisieren.
 
 Reset-Taster
 ------------
@@ -114,7 +114,7 @@ Reset-Taster
 .. image:: ../pics/OBP60_Back_Side_3.png
              :scale: 45%
 
-Der Reset-Taster befindet sich auf der Rückseite des Displays an der Unterseite des gorßen linken Steckverbinders **CN1**. Der Reset-Taster wird im normalen Betrieb nicht genutzt. Bei Programmiervorgängen kann es nützlich sein, einen manuellen Reset auszulösen. Benutzen Sie zum Auslösen des Reset einen nicht leitenden, schmalen Gegenstand und drücken Sie die Taste vorsichtig, bis ein überwundener Druckpunkt spürbar ist.
+Der Reset-Taster befindet sich auf der Rückseite des Displays an der Unterseite des großen linken Steckverbinders **CN1**. Der Reset-Taster wird im normalen Betrieb nicht genutzt. Bei Programmiervorgängen kann es nützlich sein, einen manuellen Reset auszulösen. Benutzen Sie zum Auslösen des Reset einen nicht leitenden, schmalen Gegenstand und drücken Sie die Taste vorsichtig, bis ein überwundener Druckpunkt spürbar ist.
 
 .. warning::
    Verwenden Sie keine leitenden Gegenstände. Damit können Kurzschlüsse auf der Platine ausgelöst werden und das Gerät kann beschädigt werden.
