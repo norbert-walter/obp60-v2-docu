@@ -45,3 +45,15 @@ img  {
     background: none;
     margin-top: 15pt;
 }
+
+.wy-side-nav-search {
+    background: #343131;
+}
+
+.wy-nav-top {
+    background: #343131;
+}
+
+.wy-body-for-nav {
+	background: #fcfcfc;
+}
