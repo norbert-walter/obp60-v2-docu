@@ -101,7 +101,7 @@ Um das Display bei Nacht ablesen zu können, kann eine Hintergrundbeleuchtung ü
 * Über Sonnenstand automatisch schaltbar >Vorschlag: Automatisch schaltbar abhängig vom Sonnenstand<
 
 .. important::
-   Wenn Sie den Sonnenstand zum Schalten der Hintergrundbeleuchtung verwenden wollen, benötigen Sie ein gültiges GPS-Signal, damit die Schaltzustände ausgelöst werden können. Die Hintergrundbeleuchtung wird automatisch beim Sonnenuntergang eingeschaltet und beim Sonnenaufgang abgeschaltet. Ist kein gültiges GPS-Signal vorhanden, so erfolgt keine Änderung der Schaltzustände.
+   Wenn Sie den Sonnenstand zum Schalten der Hintergrundbeleuchtung verwenden wollen, benötigen Sie ein gültiges GPS-Signal, damit die Schaltzustände ausgelöst werden können. Die Hintergrundbeleuchtung wird dann automatisch bei Sonnenuntergang eingeschaltet und bei Sonnenaufgang abgeschaltet. Ist kein gültiges GPS-Signal vorhanden, so erfolgt keine Änderung der Schaltzustände.
    
 Buzzer
 ------
