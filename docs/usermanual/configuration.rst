@@ -12,7 +12,10 @@ Nachdem Sie im WiFi-Netzwerk eigebucht sind, öffnen Sie in einem Web-Browser di
 * **Config** - Allgemeine Konfigurationsseite
 * **XDR** - Konfigurationsseite für NMEA0183 XDR-Sentences
 * **Data** - Dashboard zur Datenanzeige
-* **Update** - Seite für das Firmware-Update
+
+=======
+* **Update** - Seite zum Firmware-Update
+* **Help** - Aufruf der Github-Projektseite
 
 .. note::
 	Beachten Sie, dass beim erstmaligen Aufruf der Konfigurationsoberfläche kein Passwort beim Speichern der Konfiguration notwendig ist. Als **Default-Passwort** wird **esp32admin** verwendet. Ändern Sie das Passwort für ihre Belange ab, verwenden Sie dabei nur Zeichen des ASCII-Zeichensatzes. Die Passwortabfrage kann auch deaktiviert werden.
@@ -20,7 +23,12 @@ Nachdem Sie im WiFi-Netzwerk eigebucht sind, öffnen Sie in einem Web-Browser di
 Status
 ------
 
-Auf der Statusseite sieht man im oberen Bereich den Ethernet-Verbindungsstatus. Die Informationen haben folgende Bedeutung:
+Auf der Statusseite sieht man im oberen Bereich den Ethernet-Verbindungsstatus.
+
+.. image:: ../pics/Status_1.png
+             :scale: 80%
+
+Die Informationen haben folgende Bedeutung:
 
 **Version**
 	Aktuelle Firmware-Version
@@ -29,9 +37,7 @@ Auf der Statusseite sieht man im oberen Bereich den Ethernet-Verbindungsstatus. 
 **WiFi Client connected**
 	Zeigt an, ob das OBP60 mit einem anderen externen WiFi-Netzwerk als Client verbunden ist
 **WiFi Client IP**
-	IP-Adresse, die das Gerät vom externen WiFi-Netzwerk erhalten hat
-**# TCP Clients**
-	Anzahl externer TCP-Clients, die sich am OBP60 angemeldet haben
+
 **NMEA2000 in**
 	Anzahl der NMEA2000-Telegramme, die empfangen wurden
 **NMEA2000 out**
@@ -54,6 +60,8 @@ Wenn Sie auf das Fragezeichen hinter **Version** klicken, werden alle Telegramme
 .. note::
 	Zum besseren Verständnis ist zu beachten, dass das OBP60 ein eigenes, unabhängiges WiFi-Netzwerk aufbaut, diese Funktion wird auch als Access Point bezeichnet. Die Anzahl der TCP-Clients in der Statuszeile bezieht sich dabei immer nur auf die Clients, die sich beim OBP60 im Access Point-Modus anmelden.
 	Das OBP60 kann darüber hinaus Teil eines anderen externen WiFi-Netzwerks sein, indem es sich dort als Client anmeldet. In dem Fall wird das eigene WiFi-Netz des OBP60 mit dem externen WiFi-Netz gebrückt. Alle Daten des OPB60 sind dann in beiden Netzwerken verfügbar. 
+=======
+
 	
 Config
 ------
@@ -61,25 +69,26 @@ Config
 XDR
 ---
 
-Über die Konfigurationsseite <XDR> können XDR-Sentences für NMEA0183 erstellt werden. XDR-Sentences sind Telegramme für generische Sensorwerte, die verwendet werden, wenn sich kein geeignetes NMEA0183-Telegramm findet, mit dem man die Sensorwerte übertragen kann. Es ist ein universelles Telegramm zur Übertragung von Sensordaten. XDR-Sentences werden immer dann benutzt, wenn Daten aus dem I2C-Bus, dem 1Wire-Bus oder interne Sensordaten vom ESP32 übertragen werden sollen. Sofern nicht zugewiesene Sensordaten im OBP60 vorhanden sind, können diese über ein XDR-Mapping zugewiesen werden. Damit sind diese Daten als NMEA0183-Telegramme allgemein nutzbar.
+=======
+Über die Konfigurationsseite XDR können XDR-Sentences für NMEA0183 erstellt werden. XDR-Sentences sind Telegramme für generische Sensorwerte, die verwendet werden, wenn sich kein geeignetes NMEA0183 Telegramme findet, mit dem man die Sensorwerte übertragen kann. Es ist ein universelles Telegramm zur Übertragung von Sensordaten. XDR-Sentences werden immer dann benutzt, wenn Daten aus dem I2C-Bus, dem 1Wire-Bus oder interne Sensordaten vom ESP32 übertragen werden sollen. Sofern nicht zugewiesene Sensordaten im OBP60 vorhanden sind, können diese über ein XDR-Mapping zugewiesen werden. Damit sind diese Daten als NMEA0183 Telegramme allgemein nutzbar und werden im OBP60 dargestellt. Die Daten lassen sich dann auch über NMEA0183 in andere Systeme übertragen und dort nutzen.
 
 Ein XDR-Sentence ist folgendermaßen aufgebaut:
 
 **Sensor Werte**
 
-   $--XDR,a,x.x,b,c--c,x--x*hh<CR><LF>
+    $--XDR,a,x.x,b,c--c,x--x*hh<CR><LF>
 
     Feld Nummer:
-		* a - Sensor-Typ
-		* x.x - Messwerrt
-		* b - Einheit des Messwertes
-		* c - Name des Sensors
-		* x - Weitere Sensordaten
-		* hh - Checksumme
+	    * a - Sensor-Typ
+	    * x.x - Messwerrt
+	    * b - Einheit des Messwertes
+	    * c - Name des Sensors
+	    * x - Weitere Sensordaten
+	    * hh - Checksumme
 
     Beispiele:	
-		* $IIXDR,C,19.52,C,TempAir*19
-		* $IIXDR,P,1.02481,B,Barometer*29
+	    * $IIXDR,C,19.52,C,TempAir*19
+	    * $IIXDR,P,1.02481,B,Barometer*29
 	
 +------------------+-----------------+---------------------------------+-----------------+-----------------------------+
 |Messwert          | Sensor-Typ      | Beispiele für Messdaten         | Einheit         | Name des Sensors            |
@@ -95,6 +104,74 @@ Ein XDR-Sentence ist folgendermaßen aufgebaut:
 | Wassertemperatur | "C" Temperatur  | 2 decimals                      | "C" Celsius     | "ENV_WATER_T"               |
 +------------------+-----------------+---------------------------------+-----------------+-----------------------------+
 
+Über die XDR Konfigurationsseite lassen sich 30 XDR-Telegramme individuell erstellen.
+
+.. image:: ../pics/XDR_1.png
+             :scale: 80%
+
+Dazu öffnet man als erstes über ``Show Unmapped`` eine Liste der nicht verknüpften Sensordaten.
+
+.. image:: ../pics/XDR_Show_Unmapped.png
+             :scale: 80%
+             
+In der Liste sehen sie welche Daten zur Verfügung stehen. Über ``+`` werden die Daten in die letzte frei verfügbare XDR-Konfiguration automatisch eingefügt und der richtigen Kategorie zugeordnet. Der Sensorname muss noch im Feld **Transducer** hinzugefügt werden. 
+
+.. image:: ../pics/XDR_2.png
+             :scale: 80%
+
+Nach der Zuordnung des Sensornamens wird unter **Example** ein Beispiel für das XDR-Telegramm angezeigt. Danach können alle Einstellungen noch individuell geändert werden. Die Erklärung zu den Einstellungen ist nachfolgend aufgeführt.
+
+**Direction**
+    Über Direction lässt sich einstellen wie Sensordaten eingelesen werden sollen und wohin sie übertragen werden:
+     
+    * **off** - Die Sensordaten werden nicht benutzt. Damit können sie ein bereits konfiguriertes XDR-Telegramm deaktivieren.
+    * **bidir** - Die Sensordaten werden zwischen NMEA0183 und NMEA2000 ausgetauscht
+    * **to2K** - Das Sensordaten werden nur nach NMEA2000 gesendet
+    * **from2k** - Sensordaten werden von NMEA2000 eingelesen
+     
+**Category**
+    Über Category kann Sensor-Typ zugeordnet werden:
+     
+    * **Temperature** - Temperatursensoren für Luft, Wasser, Kühlschrank
+    * **Humidity** - Luftfeuchtigkeitssensoren
+    * **Pressure** - Drucksensoren für Luftdruck und andere Drücke wie z.B. Öldruck
+    * **Fluid** - Sensoren für Flüssigkeiten wie Durchfluss und Füllstand
+    * **Battery** - Batteriesensoren für Spannung, Strom, Leistung, Baterietemperatur
+    * **Engine** - Motorsensoren für Drehzahl, Anstellung, Trimmklappen, Öl, Kühlwasser
+    * **Attitude** - Höhendaten aus GPS-Sensor ermittelt
+    
+**Source**
+    Über Source lässt sich die Quelle der Sensordaten genauer einstellen. Je nach verwendeten Sensortyp stehen verschiedene Sensor-Quellen zur Verfügung
+    
+**Field**
+    Mit Field kann genauer beschrieben werden wie die Sensordaten zu verstehen sind. Es sind Zusatzdaten die kontextabhängig je nach verwendeten Sensor-Typ einstellabr sind. So kann z.B. festgelegt werden, ob es sich um einen Anzeigewert oder um einen Einstellwert handelt.
+    
+**Instance**
+    Mit Instance kann festgelegt werden, ob es mehrere Sensoren des selben Typs gibt. Das kann z.B. auftreten, wenn zwei Motoren in einem Boot verbaut sind und zwei Tankwerte angezeigt werden sollen. Mit Hilfe einer Instanz-Nummer werden die Sensoren unterschieden. An den Sensornamen wird dann z.B. \#1 angefügt. Die Arte der Instanzierung kann folgendermaßen festgelegt werden:
+    
+    * **singel** - Es wird ein Sensor instanziert, dem einen freie Instanz-Nummer zugeordnet werden kann. So können z.B. zwei Sensoren die selben Daten in ein XDR-Telegramm übertragen werden, wenn die Sensoren redundant sind.
+    * **ignore** - Es existiert nur genau ein einziger Sensor dieses Typs.
+    * **auto** - Die Instanzierung wird automatisch übernommen. Sobals ein neuer Sensor des gleichen Typs und der selben Source verwendet wir, wird eine neue Instanz des Sensors angelegt.
+        
+**Transducer**
+    Über Transducer wird der Sensorname festgelegt. Es handelt sich dabei um eine Klartextbeschreibung des Sensors mit ASCII Zeichen. Verwenden sie nur Buchstaben und Zahlen ohne Freizeichen und Sonderzeichen.
+    
+**Example**
+    Beispiel wie der Inhalt des XDR-Telegramms aussehen wird.
+    
+Data
+----
+
+.. image:: ../pics/Data_1.png
+             :scale: 80%
+             
+Unter Data werden alle Sensordaten aller Bussysteme angezeigt, die derzeit verarbeitet werden können. Sensodaten die nicht verfügbar sind werden mit ``---`` gekennzeichnet. Man kann die Datenanzeige auch so konfigurieren, dass nur aktuelle Daten angezeigt werden. Die nicht verfügbaren Daten sind dann ausgeblendet.
+
+.. image:: ../pics/Data_2.png
+             :scale: 80%
+
+.. note::
+    Die Beschränkung der Datenanzeige auf aktuelle Daten führt dazu, dass sich die Anordnung der Daten ändert, wenn einige Sensordaten nicht mehr verfügbar sind. Die Datenfelder werden dann ausgeblendet. Wenn sie ein festes Anzeigeformat haben wollen, lassen sie sich alle Daten anzeigen.  
 
 Update
 ------
@@ -113,12 +190,23 @@ https://github.com/norbert-walter/esp32-nmea2000-obp60/releases
 
 Unter <Releases> sind eine Reihe verfügbarer Firmware-Updates für das OBP60 zu finden. Beachten Sie dabei die jeweilige Hardware-Version, für die Sie eine Firmware herunterladen wollen.
 
-Für ein Firmware-Update laden Sie sich die gewünschte Firmware als Datei herunter und speichern diese auf Ihrem Gerät. Über die Taste ``Choose File`` wählen Sie die heruntergeladene Datei aus. Es wird dann der Firmware-Type und die Firmware-Version angezeigt. Sollte die Firmware nicht zur verwendeten Hardware passen, erhalten Sie eine entsprechende Meldung. Die Firmware kann dann nicht geflasht werden. Über die Taste ``Upload`` starten Sie den Flash-Vorgang. Im Fortschrittsbalken sehen Sie den Verlauf des Vorgangs. Nach einem erfolgreichen Firmware-Update wird ein Reboot des Systems durchgeführt. In dieser Zeit ist die Web-Konfigurationseite offline (roter Punkt). Nach kurzer Zeit ist die Seite wieder online (grüner Punkt). Dann ist das System wieder betriebsbereit.
+.. image:: ../pics/Update.png
+             :scale: 80%
+
+Für ein Firmware-Update laden sie sich die gewünschte Firmware als Datei herunter und speichern sie die Datei auf ihrem Gerät. Über die Taste ``Choose File`` wählen sie die heruntergeladene Datei aus. Es wird dann der Firmware-Type, der Chip-Type und die Firmware-Version angezeigt. Sollte die Firmware nicht zur verwendeten Hardware passen, so erhalten sie eine Meldung. Die Firmware kann dann nicht geflasht werden. Über die Taste ``Upload`` starten sie den Flash-Vorgang. Im Fortschrittsbalken sehen sie den Verlauf des Vorgangs. Nach einem erfolgreichen Firmware-Update wird eine Reboot des Systems durchgeführt. In dieser Zeit ist die Web-Konfigurationseite offline (roter Punkt). Nach kurzer Zeit ist die Seite wieder online (grüner Punkt). Dann ist das System wieder betriebsbereit.
 
 .. warning::
 	Beachten Sie, dass Sie bei einem Firmware-Update auf eine ältere Version ein **Initial Firmware Update** durchführen müssen. So vermeiden Sie Komplikationen mit den gespeicherten Konfigurationsdaten. Unter Umständen ist das System nicht nutzbar und kann komplett einfrieren. Ein Firmware-Update über die Konfigurationsseiten ist dann nicht mehr möglich und die Firmware muss über USB geflasht werden.
 
-Wie man die Firmware eines OBP60 über USB flasht, ist unter xxx beschrieben.	
+Wie man die Firmware eines OBP60 über USB flasht, ist unter xxx beschrieben.
+
+Help
+----
+
+Unter Help erfolgt ein Sprung ins Internet zur Github-Seite auf der das Projekt gehostet wird. Dort sind einige weitergehende Informationen zum NMEA2000-Gateway zu finden, das die Basis für diese Firmware ist.
+
+.. note::
+    Die Github-Seite lässt sich nur aufrufen, wenn das OBP60 auf das Internet zugreifen kann.
 
 Sicherheit im WiFi-Netzwerk
 ---------------------------
@@ -137,3 +225,4 @@ Die Verbindungsqualität von WiFi-Netzwerken hängt maßgeblich von der Auslastu
 	Verwenden Sie bei hoher Kanalauslastung Kanäle mit geringer Auslastung. Die Kanäle 1, 13 und 14 haben keine Nachbarkanäle und sind deutlich robuster gegen hohe Auslastung als die anderen Kanäle. Am besten eignet sich der Kanal 13, da er seltener benutzt wird. In den USA kann auch der Kanal 14 verwendet werden. Moderne Reiserouter bieten häufig eine Automatik in ihrer Konfiguration an, die die Kanalauswahl optimieren hilft.
 
 Bei Änderungen der Konfiguration des OPB60 werden Sie immer nach dem Admin-Passwort gefragt. Die Übertragung des Passwortes erfolgt dabei immer verschlüsselt. Wenn Sie jedoch das Passwort für den WLAN-Zugangspunkt oder das WiFi-Client-Passwort ändern, wird es im Klartext gesendet. Wenn Sie das ``Remember me`` für das Admin-Passwort aktivieren, wird es im Klartext in Ihrem Browser gespeichert. Um es von dort zu entfernen, verwenden Sie ``ForgetPassword``.
+

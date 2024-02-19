@@ -9,16 +9,19 @@ Statuszeile
 
 Die Statuszeile dient zur Anzeige von Statusinformationen. Dazu zählen:
 
-* Zustandsanzeige des Access Points
+**Zustandsanzeige des Access Points**
    * **AP** - Access Point
-* Zustandsanzeige aktiver Bussysteme
+   
+**Zustandsanzeige aktiver Bussysteme**
    * **N2K** - NMEA2000
    * **183** - NMEA0183
    * **USB** - NMEA0183
    * **TCP** - NMEA0183 via TCP (WiFi)
+
 * Lebenszeichen (pulsierender Punkt)
 * Datum und Uhrzeit (landesspezifisch)
 * Anzeige der Zeitzone
+
    * **UTC** - Weltzeit
    * **LOT** - Lokalzeit
 
@@ -118,3 +121,4 @@ Der Reset-Taster befindet sich auf der Rückseite des Displays an der Unterseite
 
 .. warning::
    Verwenden Sie keine leitenden Gegenstände. Damit können Kurzschlüsse auf der Platine ausgelöst werden und das Gerät kann beschädigt werden.
+
