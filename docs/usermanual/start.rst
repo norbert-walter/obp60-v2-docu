@@ -6,7 +6,7 @@ In diesem Abschnitt wird erklärt, wie die Erstinbetriebnahme eines OBP60 erfolg
 Schutzkonzept
 -------------
 
-Das OBP60 verfügt über ein mehrstufiges Schutzkonzept. Das soll verhindern, dass sich Störungen im Versorgungsnetz und auf den Datenleitungen im System ausbreiten. Damit wird sichergestellt, dass das OBP60 trotz Störungen nicht komplett ausfällt und in wichtigen Teilen weitesgehend funktionsfähig bleibt. Um dies zu erreichen, sind die Busssysteme:
+Das OBP60 verfügt über ein mehrstufiges Schutzkonzept. Das soll verhindern, dass sich Störungen im Versorgungsnetz und auf den Datenleitungen im System ausbreiten. Damit wird sichergestellt, dass das OBP60 trotz Störungen nicht komplett ausfällt und in wichtigen Teilen weitestgehend funktionsfähig bleibt. Um dies zu erreichen, sind die Busssysteme:
 
 * NMEA2000
 * NMEA0182
