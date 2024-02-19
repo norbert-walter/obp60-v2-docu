@@ -1,11 +1,11 @@
 Technische Daten
-################
+================
 
 .. image:: ../pics/OBP60_Case_Front_t.png
    :scale: 45%
 
 Funktionen
-**********
+----------
 
 * E-Ink Display (tageslichttauglich)
 * Nummerische Anzeigeseiten für 1, 2, 3 und 4 Werten (Werte frei wählbar)
@@ -33,14 +33,14 @@ Funktionen
 
 
 Aufbau
-******
+------
 
 .. image:: ../pics/OBP60_Explode_View.png
    :scale: 45%
 
 
 Spezifikation
-*************
+-------------
 
 +----------------------+-----------------------------+
 | Versorgungsspannung  | 12...28 V                   |
@@ -83,24 +83,24 @@ Spezifikation
 +----------------------+-----------------------------+
 
 Anschlussbelegung
-*****************
+-----------------
 .. image:: ../pics/Bus_Systems.png
    :scale: 50%
    
 Schaltplan
-**********
+----------
 
 * `Schaltplan V2.1[PDF] <../_static/files/Schematic_OBP60_V2.pdf>`_
 
 
 Maßbilder
-*********
+---------
 
 * `Maßbild[PDF] <../_static/files/Drawing_OBP60_V2.pdf>`_
 
    
 Nutzbare und konvertierbare Telegramme
-**************************************
+--------------------------------------
 
 **NMEA0183**
     * AIVDM, AIVDO, DBK, DBS, DBT, DPT, GGA, GLL, GSA, GSV, HDG, HDM, HDT, MTW, MWD, MWV, RMB, RMC, ROT, RSA, VHW, VTG, VWR, XDR, XTE, ZDA
