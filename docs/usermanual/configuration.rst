@@ -53,7 +53,7 @@ Wenn Sie auf das Fragezeichen hinter **Version** klicken, werden alle Telegramme
 
 .. note::
 	Zum besseren Verständnis ist zu beachten, dass das OBP60 ein eigenes, unabhängiges WiFi-Netzwerk aufbaut, diese Funktion wird auch als Access Point bezeichnet. Die Anzahl der TCP-Clients in der Statuszeile bezieht sich dabei immer nur auf die Clients, die sich beim OBP60 im Access Point-Modus anmelden.
-	Das OBP60 kann darüber hinaus Teil eines anderen externen WiFi-Netzwerks sein, in dem es sich dort als Client anmeldet. In dem Fall wird das eigene WiFi-Netz des OBP60 mit dem externen WiFi-Netz gebrückt. Alle Daten des OPB60 sind dann in beiden Netzwerken verfügbar. 
+	Das OBP60 kann darüber hinaus Teil eines anderen externen WiFi-Netzwerks sein, indem es sich dort als Client anmeldet. In dem Fall wird das eigene WiFi-Netz des OBP60 mit dem externen WiFi-Netz gebrückt. Alle Daten des OPB60 sind dann in beiden Netzwerken verfügbar. 
 	
 Config
 ------
