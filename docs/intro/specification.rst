@@ -90,6 +90,10 @@ Anschlussbelegung
 Schaltplan
 ----------
 
+`Schaltplan`_ zum OBP60 V2
+
+.. _Schaltplan: https://open-boat-projects.org/de/kontakt/
+
 Maßbilder
 ---------
    
