@@ -26,6 +26,8 @@ author = "Norbert Walter"
 # -- General configuration
 
 extensions = [
+	"xref", 
+    "youtube",
     "sphinx.ext.duration",
     "sphinx.ext.doctest",
     "sphinx.ext.autodoc",
