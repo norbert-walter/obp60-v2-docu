@@ -39,7 +39,7 @@ Im folgenden Bild sind die geschützten und ungeschützten Anschlüsse zu sehen.
 Abb.: Sichere Bereiche
 
 .. warning::
-	Bitte beachten Sie, dass der 1Wire-Bus (gegen Störungen?) ungeschützt ist und entsprechend durch Schirmung geschützt werden muss. ``GND`` darf mit keinen weiteren externen Schaltungsteilen verbunden werden, denn ``GND`` dient ausschließlich als Masseleitung für den 1Wire-Bus.
+	Bitte beachten Sie, dass der 1Wire-Bus (gegen Störungen?) ungeschützt ist und entsprechend durch Schirmung geschützt werden muss. Vorschlag: Daher sollte für die Leitungen des 1Wire-Bus nur abgeschirmtes Kabel verwendet werden. ``GND`` darf mit keinen weiteren externen Schaltungsteilen verbunden werden, denn ``GND`` dient ausschließlich als Masseleitung für den 1Wire-Bus.
 
 Stromversorgung
 ---------------
