@@ -96,7 +96,7 @@ Schaltplan
 Maßbilder
 ---------
 
-* `Maßbild[PDF] <..../_static/files/Drawing_OBP60_V2.pdf>`_
+* `Maßbild[PDF] <../_static/files/Drawing_OBP60_V2.pdf>`_
 
    
 Nutzbare und konvertierbare Telegramme
