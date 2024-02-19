@@ -82,7 +82,7 @@ Ein XDR-Sentence ist folgendermaßen aufgebaut:
 		* $IIXDR,P,1.02481,B,Barometer*29
 	
 +------------------+-----------------+---------------------------------+-----------------+-----------------------------+
-|Messwert          | Sensor-Typ      | ´Beispiele für Messdaten        | Einheit         | Name des Sensors            |
+|Messwert          | Sensor-Typ      | Beispiele für Messdaten        | Einheit         | Name des Sensors            |
 +==================+=================+=================================+=================+=============================+
 | Luftdruck        | "P" Druck       | 0.8..1.1 oder 800..1100         | "B" Bar         | "Barometer"                 |
 +------------------+-----------------+---------------------------------+-----------------+-----------------------------+
