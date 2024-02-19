@@ -116,7 +116,7 @@ Unter <Releases> sind eine Reihe verfügbarer Firmware-Updates für das OBP60 zu
 Für ein Firmware-Update laden Sie sich die gewünschte Firmware als Datei herunter und speichern diese auf Ihrem Gerät. Über die Taste ``Choose File`` wählen Sie die heruntergeladene Datei aus. Es wird dann der Firmware-Type und die Firmware-Version angezeigt. Sollte die Firmware nicht zur verwendeten Hardware passen, erhalten Sie eine entsprechende Meldung. Die Firmware kann dann nicht geflasht werden. Über die Taste ``Upload`` starten Sie den Flash-Vorgang. Im Fortschrittsbalken sehen Sie den Verlauf des Vorgangs. Nach einem erfolgreichen Firmware-Update wird ein Reboot des Systems durchgeführt. In dieser Zeit ist die Web-Konfigurationseite offline (roter Punkt). Nach kurzer Zeit ist die Seite wieder online (grüner Punkt). Dann ist das System wieder betriebsbereit.
 
 .. warning::
-	Beachten Sie, dass Sie bei einem Firmware-Update auf eine ältere Version ein Initial Firmware Update durchführen müssen. So vermeiden Sie Komplikationen mit den gespeicherten Konfigurationsdaten. Unter Umständen ist das System nicht nutzbar und kann komplett einfrieren. Ein Firmware-Update über die Konfigurationsseiten ist dann nicht mehr möglich und die Firmware muss über USB geflasht werden.
+	Beachten Sie, dass Sie bei einem Firmware-Update auf eine ältere Version ein **Initial Firmware Update** durchführen müssen. So vermeiden Sie Komplikationen mit den gespeicherten Konfigurationsdaten. Unter Umständen ist das System nicht nutzbar und kann komplett einfrieren. Ein Firmware-Update über die Konfigurationsseiten ist dann nicht mehr möglich und die Firmware muss über USB geflasht werden.
 
 Wie man die Firmware eines OBP60 über USB flasht, ist unter xxx beschrieben.	
 
