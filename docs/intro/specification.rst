@@ -90,13 +90,13 @@ Anschlussbelegung
 Schaltplan
 ----------
 
-* `Schaltplan V2.1[PDF] <../_static/documents/Schematic_OBP60_V2.pdf>`_
+* `Schaltplan V2.1[PDF] <../_static/files/Schematic_OBP60_V2.pdf>`_
 
 
 Maßbilder
 ---------
 
-* `Maßbild[PDF] <../_static/documents/Drawing_OBP60_V2.pdf>`_
+* `Maßbild[PDF] <..../_static/files/Drawing_OBP60_V2.pdf>`_
 
    
 Nutzbare und konvertierbare Telegramme
