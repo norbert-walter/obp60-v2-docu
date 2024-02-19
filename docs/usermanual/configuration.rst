@@ -82,7 +82,7 @@ Ein XDR-Sentence ist folgendermaßen aufgebaut:
 		* $IIXDR,P,1.02481,B,Barometer*29
 	
 +------------------+-----------------+---------------------------------+-----------------+-----------------------------+
-|Messwert          | Sensor-Typ      | Beispiele für Messdaten        | Einheit         | Name des Sensors            |
+|Messwert          | Sensor-Typ      | Beispiele für Messdaten         | Einheit         | Name des Sensors            |
 +==================+=================+=================================+=================+=============================+
 | Luftdruck        | "P" Druck       | 0.8..1.1 oder 800..1100         | "B" Bar         | "Barometer"                 |
 +------------------+-----------------+---------------------------------+-----------------+-----------------------------+
@@ -113,7 +113,7 @@ https://github.com/norbert-walter/esp32-nmea2000-obp60/releases
 
 Unter <Releases> sind eine Reihe verfügbarer Firmware-Updates für das OBP60 zu finden. Beachten Sie dabei die jeweilige Hardware-Version, für die Sie eine Firmware herunterladen wollen.
 
-Für ein Firmware-Update laden Sie sich die gewünschte Firmware als Datei herunter und speichern Sie die Datei auf Ihrem Gerät. Über die Taste ``Choose File`` wählen Sie die heruntergeladene Datei aus. Es wird dann der Firmware-Type und die Firmware-Version angezeigt. Sollte die Firmware nicht zur verwendeten Hardware passen, erhalten Sie eine entsprechende Meldung. Die Firmware kann dann nicht geflasht werden. Über die Taste ``Upload`` starten Sie den Flash-Vorgang. Im Fortschrittsbalken sehen Sie den Verlauf des Vorgangs. Nach einem erfolgreichen Firmware-Update wird ein Reboot des Systems durchgeführt. In dieser Zeit ist die Web-Konfigurationseite offline (roter Punkt). Nach kurzer Zeit ist die Seite wieder online (grüner Punkt). Dann ist das System wieder betriebsbereit.
+Für ein Firmware-Update laden Sie sich die gewünschte Firmware als Datei herunter und speichern diese auf Ihrem Gerät. Über die Taste ``Choose File`` wählen Sie die heruntergeladene Datei aus. Es wird dann der Firmware-Type und die Firmware-Version angezeigt. Sollte die Firmware nicht zur verwendeten Hardware passen, erhalten Sie eine entsprechende Meldung. Die Firmware kann dann nicht geflasht werden. Über die Taste ``Upload`` starten Sie den Flash-Vorgang. Im Fortschrittsbalken sehen Sie den Verlauf des Vorgangs. Nach einem erfolgreichen Firmware-Update wird ein Reboot des Systems durchgeführt. In dieser Zeit ist die Web-Konfigurationseite offline (roter Punkt). Nach kurzer Zeit ist die Seite wieder online (grüner Punkt). Dann ist das System wieder betriebsbereit.
 
 .. warning::
 	Beachten Sie, dass Sie bei einem Firmware-Update auf eine ältere Version ein Initial Firmware Update durchführen müssen. So vermeiden Sie Komplikationen mit den gespeicherten Konfigurationsdaten. Unter Umständen ist das System nicht nutzbar und kann komplett einfrieren. Ein Firmware-Update über die Konfigurationsseiten ist dann nicht mehr möglich und die Firmware muss über USB geflasht werden.
