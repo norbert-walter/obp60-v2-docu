@@ -50,7 +50,7 @@ Fußzeile
 .. image:: ../pics/Footer.png
              :scale: 45%
 
-Die Fußzeile dient zur Darstellung der Tastenfunktionen. Die Belegung der Tasten ändert sich abhängig vom Inhalt der Anzeigeseiten. Aktive Tasten sind mit Kurzbezeichnungen in eckigen Klammern versehen wie z.B. ``[AVG]``. Es kann auch Anzeigeseiten geben, die keine Tastenfunktionen enthalten. In der Mitte der Fußzeile werden weitere Informationen eingeblendet:
+Die Fußzeile dient zur Bezeichnung der Tastenfunktionen. Die Belegung der Tasten ändert sich abhängig vom Inhalt der Anzeigeseiten. Aktive Tasten sind mit Kurzbezeichnungen in eckigen Klammern versehen wie z.B. ``[AVG]``. Es kann auch Anzeigeseiten geben, die keine Tastenfunktionen enthalten. In der Mitte der Fußzeile werden weitere Informationen eingeblendet:
 
 * ``[ <<<< 1/5 >>>> ]`` - Wischgeste aktiv
 * ``[ Keylock active ]`` - Tasten gesperrt
