@@ -91,11 +91,15 @@ Schaltplan
 ----------
 
 .. image:: ../documents/Schematic_OBP60_V2.pdf
+   :scale: 50%
+
 
 Maßbilder
 ---------
 
 .. image:: ../documents/Drawing_OBP60_V2.pdf
+   :scale: 50%
+
    
 Nutzbare und konvertierbare Telegramme
 --------------------------------------
