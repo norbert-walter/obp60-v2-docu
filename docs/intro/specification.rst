@@ -90,21 +90,12 @@ Anschlussbelegung
 Schaltplan
 ----------
 
-Schaltplan zum OBP60 V2
-
 .. image:: ../documents/Schematic_OBP60_V2.pdf
-	:scale: 50%
-	
-`Schaltplan`_ zum OBP60 V2
-.. _Schaltplan: https://obp60-v2-docu.readthedocs.io/de/latest/_images/Schematic_OBP60_V2.pdf
 
 Maßbilder
 ---------
 
-Schaltplan zum OBP60 V2
-
 .. image:: ../documents/Drawing_OBP60_V2.pdf
-	:scale: 50%
    
 Nutzbare und konvertierbare Telegramme
 --------------------------------------
