@@ -25,7 +25,7 @@ Die Statuszeile dient zur Anzeige von Statusinformationen. Dazu zählen:
 .. image:: ../pics/Header.png
              :scale: 45%
 
-Die Statuszeile ist in allen Anzeigeseiten zu sehen und zeigt den aktuellen Status des Gerätes an.
+Die Statuszeile ist in allen Anzeigeseiten zu sehen, sie zeigt den aktuellen Status des Gerätes an.
 
 .. note::
    Der Anzeigeinhalt eines E-Ink Displays bleibt beim Ausschalten des Gerätes erhalten. (Um ein aktives Gerät zu erkennen, gibt es ein Lebenszeichen in Form eines pulsierenden Punktes in der Statuszeile.) Vorschlag: Der pulsierende Punkt in der Statuszeile kennzeichnet das Gerät als aktiv.  Sollte der Punkt nicht blinken, so ist die Software inaktiv oder das Gerät wurde ausgeschaltet.
