@@ -17,7 +17,7 @@ Damit lässt sich das OBP60 in vorhandene Bootsnetze integrieren. Es kann selbst
 * I2C-Bus (5V, isoliert)
 * 1Wire-Bus (3.3V, nicht isoliert)
 
-Diese beiden Busssysteme kommen aus dem Elektronikbereich und sind dort oft anzutreffen. Über diese beiden Busse lassen sich günstige Sensoren anbinden, um deren Daten anzuzeigen. Über den isolierten I2C-Bus können zudem recht einfach und sicher eigene Hardwareerweiterungen eingebunden werden.
+Diese beiden Busssysteme kommen aus dem Elektronikbereich. Über diese beiden Busse lassen sich günstige Sensoren anbinden, um deren Daten anzuzeigen. Über den isolierten I2C-Bus können zudem recht einfach und sicher eigene Hardwareerweiterungen eingebunden werden.
 
 Gateway
 -------
@@ -25,15 +25,15 @@ Gateway
 .. image:: ../pics/NMEA_Gateway.png
              :scale: 20%
 
-Im OBP60 ist ein Gateway integriert, das Daten zwischen dem NMEA0183-Bus und dem NMEA2000-Bus bidirektional austauschen kann. Dabei werden die Daten des einen Busses in die Daten des anderen Busses übersetzt. Die Übersetzung funktioniert dabei in beide Richtungen.
+Im OBP60 ist ein Gateway integriert, das Daten zwischen NMEA0183 und NMEA2000 bidirektional austauschen kann. Dabei werden die Daten des einen Busses in die Daten des anderen Busses übersetzt. Die Übersetzung funktioniert dabei in beide Richtungen.
 
 .. note::
-   Dabei ist zu beachten, dass nicht alle Daten des NMEA2000-Busses in Daten des NMEA0183-Busses übersetzt werden können, weil dafür nicht immer geeignete Telegramme in NMEA0183 existieren.
+   Dabei ist zu beachten, dass nicht alle NMEA2000-Daten in NMEA0183-Daten übersetzt werden können, weil dafür nicht immer geeignete Telegramme in NMEA0183 existieren.
    
 WiFi-Verbindung
 ---------------
 
-Das OBP60 verfügt über eine WiFi-Funktionalität im 2.4 GHz Funkbereich. Darüber hinaus kann das Gerät mit dem Internet oder mit anderen WiFi-Netzwerken verbunden werden und so mit anderen Geräten kommunizieren. So lassen sich z.B. Daten aus den Bussystemen an einen Laptop, einen PC oder ein Handy übertragen oder von dort beziehen.
+Das OBP60 verfügt über eine WiFi-Funktionalität im 2.4 GHz Funkbereich. Darüber hinaus kann das Gerät mit dem Internet oder mit anderen WiFi-Netzwerken verbunden werden und so mit anderen Geräten kommunizieren. So lassen sich z.B. Daten aus den Bussystemen an einen Laptop, einen PC oder ein Handy übertragen oder von dort beziehen. Damit ist es möglich, die Sensordaten auch in Drittanbieter-Software wie Navionics, NMEA-Remote oder WinGPS zu verwenden.
 
 Konfiguration
 -------------

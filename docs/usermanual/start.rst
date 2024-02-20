@@ -36,10 +36,10 @@ Im folgenden Bild sind die geschützten und ungeschützten Anschlüsse zu sehen.
 .. image:: ../pics/Safe_Areas.png
              :scale: 45%
 
-Abb.: Sichere Bereiche
+Abb.: Sichere und unsichere Bereiche
 
 .. warning::
-	Bitte beachten Sie, dass der 1Wire-Bus (gegen Störungen?) ungeschützt ist (und entsprechend durch Schirmung geschützt werden muss). Vorschlag: Daher sollte für die Leitungen des 1Wire-Bus nur abgeschirmte Kabel verwendet werden. ``GND`` darf mit keinen weiteren externen Schaltungsteilen verbunden werden, denn ``GND`` dient ausschließlich als Masseleitung für den 1Wire-Bus.
+	Bitte beachten Sie, dass der 1Wire-Bus gegenüber Störungen nicht geschützt ist und entsprechend durch Schirmung geschützt werden muss. Daher sollte für die Leitungen des 1Wire-Bus nur abgeschirmte Kabel verwendet werden. ``GND`` darf mit keinen weiteren externen Schaltungsteilen verbunden werden, denn ``GND`` dient ausschließlich als Masseleitung für den 1Wire-Bus.
 
 Stromversorgung
 ---------------
@@ -59,9 +59,9 @@ Der zulässige Spannungsbereich liegt zwischen 10V...28V.
 Das OBP60 kann in 12V- und in 24V-Bord-Versorgungsnetzen verwendet werden. Bei Spannungen höher als 28V wird die interne Sicherung im Gerät ausgelöst.
 
 .. note::
-	Im Gerät ist eine selbst rückstellende Sicherung verbaut, die bei zu hohem Stromverbrauch die Versorgungsspannung selbständig trennt. Sie können die Sicherung zurücksetzen, indem Sie die Stromversorgung zum OBP60 trennen und den Grund des übermäßigen Stromverbrauchs beseitigen. Danach warten Sie einige Minuten, schalten Sie dann die Versorgungsspannung wieder ein.
+	Im Gerät ist eine selbst rückstellende Sicherung verbaut, die bei zu hohem Stromverbrauch die Versorgungsspannung selbständig trennt. Sie können die Sicherung zurücksetzen, indem Sie die Stromversorgung zum OBP60 trennen und den Grund des übermäßigen Stromverbrauchs beseitigen. Danach warten Sie einige Minuten und schalten dann die Versorgungsspannung wieder ein.
 
 .. important::
 	Die interne Sicherung im OBP60 schützt nur das Gerät und nicht die Versorgungsleitungen! 
 
-	Daher sollte die bereitgestellte Stromversorgung des OBP60 im Bordnetz mit einer zusätzlichen Sicherung von mindestens 5A abgesichert werden. Das erfolgt typischerweise durch das Board-Panel (die Schalttafel?), über das / die die Stromkreise im Boot geschaltet werden können. So vermeiden Sie Brände zum Beispiel durch aufgescheuerte oder überhitzte Versorgungsleitungen. 
+	Daher sollte die bereitgestellte Stromversorgung des OBP60 im Bordnetz mit einer zusätzlichen Sicherung von mindestens 5A abgesichert werden. Das erfolgt typischerweise über die Schalttafel, über die die Stromkreise im Boot geschaltet werden können. So vermeiden Sie Brände zum Beispiel durch aufgescheuerte oder überhitzte Versorgungsleitungen. 

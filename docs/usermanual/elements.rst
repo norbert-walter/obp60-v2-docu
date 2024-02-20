@@ -31,14 +31,14 @@ Die Statuszeile dient zur Anzeige von Statusinformationen. Dazu zählen:
 Die Statuszeile ist in allen Anzeigeseiten zu sehen, sie zeigt den aktuellen Status des Gerätes an.
 
 .. note::
-   Der Anzeigeinhalt eines E-Ink Displays bleibt beim Ausschalten des Gerätes erhalten. (Um ein aktives Gerät zu erkennen, gibt es ein Lebenszeichen in Form eines pulsierenden Punktes in der Statuszeile.) Vorschlag: Der pulsierende Punkt in der Statuszeile kennzeichnet das Gerät als aktiv.  Sollte der Punkt nicht blinken, so ist die Software inaktiv oder das Gerät wurde ausgeschaltet.
+   Der Anzeigeinhalt eines E-Ink Displays bleibt beim Ausschalten des Gerätes erhalten. Der pulsierende Punkt in der Statuszeile kennzeichnet das Gerät als aktiv. Sollte der Punkt nicht blinken, so ist die Software inaktiv oder das Gerät wurde ausgeschaltet.
    
 Anzeigebereich
 --------------
 
 Im mittleren Bereich befindet sich der Anzeigebereich. In ihm werden alle relevanten Informationen angezeigt. Bei einem Wechsel auf eine neue Seite wird der Inhalt des Anzeigebereichs verändert. Die Aktualisierung des Anzeigebereichs erfolgt jede Sekunde als partieller Bild-Refresh.
 
-Bedingt durch die E-Ink Technologie sind im Display nach einiger Zeit Geisterbilder von alten Anzeigezuständen zu sehen. Um die Geisterbilder zu entfernen, wird in regelmäßigen Abständen von 10 min ein Voll-Refresh der Anzeige durchgeführt. Dabei wird der komplette Bildinhalt mehrmals invertiert, dann gelöscht und anschließend neu geschrieben. Man erkennt einen Voll-Refresh am kurzen Flackern der Anzeige. Das gleiche passiert 4 Sekunden nach einem Seitenwechsel. Dadurch kann man schnell mehrere Anzeigeseiten nacheinander aufrufen. Erst bei der zuletzt aufgerufenen Seite wird nach 4 Sekunden ein Voll-Refresh durchgeführt, damit werden Geisterbilder alter Anzeigeseiten entfernt. Der regelmäßige Voll-Refresh ist per Default eingestellt und kann bei Bedarf über die Konfiguration deaktiviert werden.
+Bedingt durch die E-Ink Technologie, sind im Display nach einiger Zeit Geisterbilder von alten Anzeigezuständen zu sehen. Um die Geisterbilder zu entfernen, wird in regelmäßigen Abständen von 10 min ein Voll-Refresh der Anzeige durchgeführt. Dabei wird der komplette Bildinhalt mehrmals invertiert, dann gelöscht und anschließend neu geschrieben. Man erkennt einen Voll-Refresh am kurzen Flackern der Anzeige. Das gleiche passiert 4 Sekunden nach einem Seitenwechsel. Dadurch kann man schnell mehrere Anzeigeseiten nacheinander aufrufen. Erst bei der zuletzt aufgerufenen Seite wird nach 4 Sekunden ein Voll-Refresh durchgeführt, damit werden Geisterbilder alter Anzeigeseiten entfernt. Der regelmäßige Voll-Refresh ist per Default eingestellt und kann bei Bedarf über die Konfiguration deaktiviert werden.
 
 Die Entstehung von Geisterbildern ist von der Display-Temperatur des OBP60 abhängig. Bei tiefen Temperaturen sind Geisterbilder deutlicher zu sehen und die Anzeige reagiert träger als bei warmen Temperaturen. Kurz nach dem Einschalten wird für die ersten 5 Minuten jede Minute ein Voll-Refresh durchgeführt, damit sich das Display akklimatisieren kann. Die Plexiglasscheibe schützt vor zu großer UV-Strahlung der Sonne, ein IR-Filter vor übermäßiger Erwärmung.
 
@@ -67,16 +67,16 @@ Das OBP60 hat 6 kapazitive Sensortasten am unteren Displayrand. Die Tasten reagi
 
 * Konfiguration der Tasten-Sensitivität
 * Wischen links / rechts
-* kurzes Tippen
-* normales Drücken
+* Kurzes Tippen
+* Normales Drücken
 * Drücken mehrerer Tasten gleichzeitig
 * Tasten sperren
 
 Die Tasten-Sensitivität kann über die Konfigurationsseite eingestellt werden. Damit lässt sich die Schwelle einstellen, ab der ein Tastendruck erkannt wird. Die Tasten haben in der Mitte eine Vertiefung. So kann das Zentrum der Taste besser erfühlt werden. Erkannte Tastenberührungen werden akustisch mit einem Piepton signalisiert.
 
-Die Tasten sind bündig in das Display eingelassen. So ist es möglich, mit Wischgesten die Seiteninhalte umzuschalten. Dazu wischt man zügig nach rechts oder links über mindestens zwei Tasten. Die Software erkennt automatisch, wenn mehrere Tasten hintereinander ausgelöst werden, und bestimmt daraus die Wischrichtung. Für die Wischgeste wird ein akustisches Feedback gegeben. <Rechts wischen> wird mit der Tonfolge <tief-hoch> signalisiert, <links wischen> mit <hoch-tief>. Die Seitenweiterschaltung ist an den Enden rollierend.
+Die Tasten sind bündig in das Display eingelassen. So ist es möglich, mit Wischgesten die Seiteninhalte umzuschalten. Dazu wischt man zügig nach rechts oder links über mindestens zwei Tasten. Die Software erkennt automatisch, wenn mehrere Tasten hintereinander ausgelöst werden, und bestimmt daraus die Wischrichtung. Für die Wischgeste wird ein akustisches Feedback gegeben. **Rechts wischen** wird mit der Tonfolge **tief-hoch** signalisiert, **links wischen** mit **hoch-tief**. Die Seitenweiterschaltung ist an den Enden rollierend.
 
-Bei kurzem Tippen wird kein Piepton ausgegeben. Kurzes Tippen der zwei äußeren Tasten nacheinander aktiviert die Tastensperre, gefolgt von einem langen Piepton. Danach sind die normalen Tastenfunktionen deaktiviert und es wird keine Wischgeste mehr erkannt. Im Display ist die Meldung ``[Keylock active]`` zu sehen. Welche (der äußeren?) Taste(n) beim Aktivieren der Tastensperre zuerst gedrückt wird, ist unerheblich, ebenso die Reihenfolge. Die Deaktivierung der Tastensperre erfolgt auf die gleiche Weise.
+Bei kurzem Tippen wird kein Piepton ausgegeben. Kurzes Tippen der zwei äußeren Tasten links und rechts nacheinander aktiviert die Tastensperre, gefolgt von einem langen Piepton. Danach sind die normalen Tastenfunktionen deaktiviert und es wird keine Wischgeste mehr erkannt. Im Display ist die Meldung ``[Keylock active]`` zu sehen. Welche Taste beim Aktivieren der Tastensperre zuerst gedrückt wird, ist unerheblich, ebenso die Reihenfolge. Die Deaktivierung der Tastensperre erfolgt auf die gleiche Weise.
 
 .. important::
    Sollte Ihr OBP60 so platziert sein, dass sich eine Person versehentlich dagegen lehnen kann, so stellen Sie die Tasten-Sensitivität entsprechend niedriger ein. So vermeiden Sie versehentliches Auslösen der Tasten. Sie können als zusätzlichen Schutz gegen unbeabsichtigtes Bedienen auch die Tasten-Sperrfunktion aktivieren. 
@@ -87,7 +87,7 @@ Flash LED
 .. image:: ../pics/Flash_LED.png
              :scale: 45%
 
-Links oberhalb des Displays befindet sich eine kleine Flash-LED. Diese LED dient zur Signalisierung von Zuständen (von was?) Vorschlag: Betriebszuständen des OPB60. Die LED kann dabei verschiedene Farben annehmen. Die LED leuchet mit maximaler Helligkeit, sodass sie optisch gut wahrgenommen werden kann.
+Links oberhalb des Displays befindet sich eine kleine Flash-LED. Diese LED dient zur Signalisierung von Betriebszuständen des OPB60. Die LED kann dabei verschiedene Farben annehmen. Die LED leuchet mit maximaler Helligkeit, sodass sie optisch auch bei hellen Sonnenlicht gut wahrgenommen werden kann.
 
 * Rot - Alarmierung bei Grenzwertüberschreitung
 * Grün - Bestätigung von Zustandsänderungen (z.B. Autopilot ein/aus)
@@ -101,10 +101,10 @@ Um das Display bei Nacht ablesen zu können, kann eine Hintergrundbeleuchtung ü
 * Dauerhaft an
 * Dauerhaft aus
 * Manuell einschaltbar über Sensortaste
-* Über Sonnenstand automatisch schaltbar >Vorschlag: Automatisch schaltbar abhängig vom Sonnenstand<
+* Automatisch schaltbar abhängig vom Sonnenstand
 
 .. important::
-   Wenn Sie den Sonnenstand zum Schalten der Hintergrundbeleuchtung verwenden wollen, benötigen Sie ein gültiges GPS-Signal, damit die Schaltzustände ausgelöst werden können. Die Hintergrundbeleuchtung wird dann automatisch bei Sonnenuntergang eingeschaltet und bei Sonnenaufgang abgeschaltet. Ist kein gültiges GPS-Signal vorhanden, so erfolgt keine Änderung der Schaltzustände.
+   Wenn Sie den Sonnenstand zum Schalten der Hintergrundbeleuchtung verwenden wollen, benötigen Sie ein gültiges GPS-Signal, damit die Schaltzustände korrekt ausgelöst werden können. Die Hintergrundbeleuchtung wird dann automatisch bei astronomischen Sonnenuntergang eingeschaltet und bei Sonnenaufgang abgeschaltet. Dabei wird der geografische Ort berücksichtigt. Ist kein gültiges GPS-Signal vorhanden, so erfolgt keine Änderung der Schaltzustände.
    
 Buzzer
 ------
@@ -117,7 +117,7 @@ Reset-Taster
 .. image:: ../pics/OBP60_Back_Side_3.png
              :scale: 45%
 
-Der Reset-Taster befindet sich auf der Rückseite des Displays an der Unterseite des großen linken Steckverbinders **CN1**. Der Reset-Taster wird im normalen Betrieb nicht genutzt. Bei Programmiervorgängen kann es nützlich sein, einen manuellen Reset auszulösen. Benutzen Sie zum Auslösen des Reset einen nicht leitenden, schmalen Gegenstand und drücken Sie die Taste vorsichtig, bis ein überwundener Druckpunkt spürbar ist.
+Der Reset-Taster befindet sich auf der Rückseite des Displays an der Unterseite des großen linken Steckverbinders **CN1**. Der Reset-Taster wird im normalen Betrieb nicht genutzt. Bei Programmiervorgängen kann es nützlich sein, einen manuellen Reset auszulösen. Benutzen Sie zum Auslösen des Reset einen nicht leitenden, schmalen Gegenstand und drücken Sie die Taste vorsichtig, bis der Druckpunkt spürbar überwunden ist.
 
 .. warning::
    Verwenden Sie keine leitenden Gegenstände. Damit können Kurzschlüsse auf der Platine ausgelöst werden und das Gerät kann beschädigt werden.
