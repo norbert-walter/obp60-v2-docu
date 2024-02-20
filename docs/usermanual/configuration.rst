@@ -102,7 +102,7 @@ Ein XDR-Sentence ist folgendermaßen aufgebaut:
 +------------------+-----------------+---------------------------------+-----------------+---------------------------------+
 | Rolling          | **A** Winkel    |-180..0 links     0..180 rechts  | **D*+ Degrees   | **ROLL**                        |
 +------------------+-----------------+---------------------------------+-----------------+---------------------------------+
-| Wassertemperatur | **C** Temperatur| 2 decimals                      | **C** Celsius   | **ENV_WATER_T**                 |
+| Wassertemperatur | **C** Temperatur| 2 Dezimalstellen                | **C** Celsius   | **ENV_WATER_T**                 |
 +------------------+-----------------+---------------------------------+-----------------+---------------------------------+
 
 Über die XDR Konfigurationsseite lassen sich 30 XDR-Telegramme individuell erstellen.
