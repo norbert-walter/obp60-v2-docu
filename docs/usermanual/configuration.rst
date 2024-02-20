@@ -128,7 +128,7 @@ Unter **System** werden grundlegende Einstellungen vorgenommen wie:
 		* ``log`` - Nur Fehlermeldungen und Statusinformationen ausgeben
 		* ``debug`` - Alle Meldungen inklusive Debug-Meldungen ausgeben 
 		
-.. note::
+.. hint::
 	Wenn Sie beabsichtigen über die USB-C-Schnittstelle einen NMEA0183-Datenaustausch durchzuführen, dann sollten Sie den **Log Level** auf ``off`` stellen. Beachten Sie das nicht, so kann es zu Störungen bei der Datenauswertung kommen, da Logging-Daten und NMEA0183-Telegramme gemischt ausgegeben werden.
 
 XDR
