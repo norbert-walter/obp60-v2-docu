@@ -91,19 +91,19 @@ Ein XDR-Sentence ist folgendermaßen aufgebaut:
 	    * $IIXDR,C,19.52,C,TempAir*19
 	    * $IIXDR,P,1.02481,B,Barometer*29
 	
-+------------------+-----------------+---------------------------------+-----------------+---------------------------------+
-|Messwert          | Sensor-Typ      | Beispiele für Messdaten         | Einheit         | Name des Sensors                |
-+==================+=================+=================================+=================+=================================+
-| Luftdruck        | **P** Druck     | 0.8..1.1 oder 800..1100         | **B** Bar       | **Barometer**                   |
-+------------------+-----------------+---------------------------------+-----------------+---------------------------------+
-| Lufttemperatur   | **C** Temperatur| 2 Dezimalstellen                | **C** Celsius   | **TempAir** or **ENV_OUTAIR_T** |
-+------------------+-----------------+---------------------------------+-----------------+---------------------------------+
-| Pitch            | **A** Winkel    |-180..0 runter    0..180 hoch    | **D** Degrees   | **PTCH** or **PITCH**           |
-+------------------+-----------------+---------------------------------+-----------------+---------------------------------+
-| Rolling          | **A** Winkel    |-180..0 links     0..180 rechts  | **D*+ Degrees   | **ROLL**                        |
-+------------------+-----------------+---------------------------------+-----------------+---------------------------------+
-| Wassertemperatur | **C** Temperatur| 2 Dezimalstellen                | **C** Celsius   | **ENV_WATER_T**                 |
-+------------------+-----------------+---------------------------------+-----------------+---------------------------------+
++------------------+-----------------+---------------------------------+-----------------+-----------------------------------+
+|Messwert          | Sensor-Typ      | Beispiele für Messdaten         | Einheit         | Name des Sensors                  |
++==================+=================+=================================+=================+===================================+
+| Luftdruck        | **P** Druck     | 0.8..1.1 oder 800..1100         | **B** Bar       | **Barometer**                     |
++------------------+-----------------+---------------------------------+-----------------+-----------------------------------+
+| Lufttemperatur   | **C** Temperatur| 2 Dezimalstellen                | **C** Celsius   | **TempAir** oder **ENV_OUTAIR_T** |
++------------------+-----------------+---------------------------------+-----------------+-----------------------------------+
+| Pitch            | **A** Winkel    |-180..0 runter    0..180 hoch    | **D** Degrees   | **PTCH** oder **PITCH**           |
++------------------+-----------------+---------------------------------+-----------------+-----------------------------------+
+| Rolling          | **A** Winkel    |-180..0 links     0..180 rechts  | **D*+ Degrees   | **ROLL**                          |
++------------------+-----------------+---------------------------------+-----------------+-----------------------------------+
+| Wassertemperatur | **C** Temperatur| 2 Dezimalstellen                | **C** Celsius   | **ENV_WATER_T**                   |
++------------------+-----------------+---------------------------------+-----------------+-----------------------------------+
 
 Über die XDR Konfigurationsseite lassen sich 30 XDR-Telegramme individuell erstellen.
 
@@ -137,7 +137,7 @@ Nach der Zuordnung des Sensornamens wird unter **Example** ein Beispiel für das
     * **Humidity** - Luftfeuchtigkeitssensoren
     * **Pressure** - Drucksensoren für Luftdruck und andere Drücke wie z.B. Öldruck
     * **Fluid** - Sensoren für Flüssigkeiten wie Durchfluss und Füllstand
-    * **Battery** - Batteriesensoren für Spannung, Strom, Leistung, Baterietemperatur
+    * **Battery** - Batteriesensoren für Spannung, Strom, Leistung, Batterietemperatur
     * **Engine** - Motorsensoren für Drehzahl, Anstellung, Trimmklappen, Öl, Kühlwasser
     * **Attitude** - Höhendaten aus GPS-Sensor ermittelt
     
@@ -145,14 +145,14 @@ Nach der Zuordnung des Sensornamens wird unter **Example** ein Beispiel für das
     Über Source lässt sich die Quelle der Sensordaten genauer einstellen. Je nach verwendeten Sensortyp stehen verschiedene Sensor-Quellen zur Verfügung
     
 **Field**
-    Mit Field kann genauer beschrieben werden, wie die Sensordaten zu verstehen sind. Es sind Zusatzdaten die kontextabhängig je nach verwendeten Sensor-Typ einstellabr sind. So kann z.B. festgelegt werden, ob es sich um einen Anzeigewert oder um einen Einstellwert handelt.
+    Mit Field kann genauer beschrieben werden, wie die Sensordaten zu verstehen sind. Es sind Zusatzdaten die kontextabhängig je nach verwendeten Sensor-Typ einstellbar sind. So kann z.B. festgelegt werden, ob es sich um einen Anzeigewert oder um einen Einstellwert handelt.
     
 **Instance**
-    Mit Instance kann festgelegt werden, ob es mehrere Sensoren des selben Typs gibt. Das kann z.B. auftreten, wenn zwei Motoren in einem Boot verbaut sind und zwei Tankwerte angezeigt werden sollen. Mit Hilfe einer Instanz-Nummer werden die Sensoren unterschieden. An den Sensornamen wird dann z.B. \#1 angefügt. Die Arte der Instanzierung kann folgendermaßen festgelegt werden:
+    Mit Instance kann festgelegt werden, ob es mehrere Sensoren des selben Typs gibt. Das kann z.B. auftreten, wenn zwei Motoren in einem Boot verbaut sind und zwei Tankwerte angezeigt werden sollen. Mit Hilfe einer Instanz-Nummer werden die Sensoren unterschieden. An den Sensornamen wird dann z.B. \#1 angefügt. Die Arte der Instanziierung kann folgendermaßen festgelegt werden:
     
-    * **singel** - Es wird ein Sensor instanziert, dem einen freie Instanz-Nummer zugeordnet werden kann. So können z.B. zwei Sensoren die selben Daten in ein XDR-Telegramm übertragen, wenn die Sensoren redundant sind.
+    * **singel** - Es wird ein Sensor instanziiert, dem einen freie Instanz-Nummer zugeordnet werden kann. So können z.B. zwei Sensoren die selben Daten in ein XDR-Telegramm übertragen, wenn die Sensoren redundant sind.
     * **ignore** - Es existiert nur genau ein einziger Sensor dieses Typs.
-    * **auto** - Die Instanzierung wird automatisch übernommen. Sobals ein neuer Sensor des gleichen Typs und der selben Source verwendet wir, wird eine neue Instanz des Sensors angelegt.
+    * **auto** - Die Instanziierung wird automatisch übernommen. Sobals ein neuer Sensor des gleichen Typs und der selben Source verwendet wir, wird eine neue Instanz des Sensors angelegt.
         
 **Transducer**
     Über Transducer wird der Sensorname festgelegt. Es handelt sich dabei um eine Klartextbeschreibung des Sensors mit ASCII Zeichen. Verwenden sie nur Buchstaben und Zahlen ohne Freizeichen und Sonderzeichen.
@@ -166,7 +166,7 @@ Data
 .. image:: ../pics/Data_1.png
              :scale: 60%
              
-Unter Data werden alle Sensordaten aller Bussysteme angezeigt, die derzeit verarbeitet werden können. Sensodaten die nicht verfügbar sind werden mit ``---`` gekennzeichnet. Man kann die Datenanzeige auch so konfigurieren, dass nur aktuelle Daten angezeigt werden. Die nicht verfügbaren Daten sind dann ausgeblendet.
+Unter Data werden alle Sensordaten aller Bussysteme angezeigt, die derzeit verarbeitet werden können. Sensordaten die nicht verfügbar sind werden mit ``---`` gekennzeichnet. Man kann die Datenanzeige auch so konfigurieren, dass nur aktuelle Daten angezeigt werden. Die nicht verfügbaren Daten sind dann ausgeblendet.
 
 .. image:: ../pics/Data_2.png
              :scale: 60%
@@ -180,12 +180,12 @@ Update
 Um die Firmware eines Gerätes zu aktualisieren, können Sie die Registerkarte ``Update`` verwenden. Es gibt zwei Arten von Firmware-Updates.
 
 **Initial Firmware-Update**
-	Beim Initial Firmware-Update wird der komplette Flash-Speicher des OBP60 gelöscht. Anschließend werden alle Firmware-Bestandteile im Flash gespeichert. Dabei wird eine initiale Konfiguration erstellt. Eine vorherige alte Konfoguration wird überschrieben. Die Initial Firmware-Updates verwenden den Dateinamen **xxx-all.bin**.
+	Beim Initial Firmware-Update wird der komplette Flash-Speicher des OBP60 gelöscht. Anschließend werden alle Firmware-Bestandteile im Flash gespeichert. Dabei wird eine initiale Konfiguration erstellt. Eine vorherige alte Konfiguration wird überschrieben. Die Initial Firmware-Updates verwenden den Dateinamen **xxx-all.bin**.
 	
 **Normales Firmware-Update**
 	Beim normalen Firmware-Update wird nur der Programmteil der Firmware aktualisiert. Eine vorhandene Konfiguration bleibt dabei erhalten und ist nach dem Firmware-Update wieder nutzbar. Normale Firmware-Updates verwenden den Dateinamen **xxx-update.bin**.
 
-Die letzte aktuelle Firmware können Sie auf folgender Webseite herunter laden:
+Die letzte aktuelle Firmware können Sie auf folgender Webseite herunterladen:
 
 https://github.com/norbert-walter/esp32-nmea2000-obp60/releases
 
@@ -194,7 +194,7 @@ Unter **Releases** sind eine Reihe verfügbarer Firmware-Updates für das OBP60 
 .. image:: ../pics/Update.png
              :scale: 60%
 
-Für ein Firmware-Update laden sie sich die gewünschte Firmware als Datei herunter und speichern sie die Datei auf ihrem Gerät. Über die Taste ``Choose File`` wählen sie die heruntergeladene Datei aus. Es wird dann der Firmware-Type, der Chip-Type und die Firmware-Version angezeigt. Sollte die Firmware nicht zur verwendeten Hardware passen, so erhalten sie eine Meldung. Die Firmware kann dann nicht geflasht werden. Über die Taste ``Upload`` starten sie den Flash-Vorgang. Im Fortschrittsbalken sehen Sie den Verlauf des Vorgangs. Nach einem erfolgreichen Firmware-Update wird eine Reboot des Systems durchgeführt. In dieser Zeit ist die Web-Konfigurationseite offline (roter Punkt). Nach kurzer Zeit ist die Seite wieder online (grüner Punkt). Dann ist das System wieder betriebsbereit.
+Für ein Firmware-Update laden sie sich die gewünschte Firmware als Datei herunter und speichern sie die Datei auf ihrem Gerät. Über die Taste ``Choose File`` wählen sie die heruntergeladene Datei aus. Es wird dann der Firmware-Type, der Chip-Type und die Firmware-Version angezeigt. Sollte die Firmware nicht zur verwendeten Hardware passen, so erhalten sie eine Meldung. Die Firmware kann dann nicht geflasht werden. Über die Taste ``Upload`` starten sie den Flash-Vorgang. Im Fortschrittsbalken sehen Sie den Verlauf des Vorgangs. Nach einem erfolgreichen Firmware-Update wird eine Reboot des Systems durchgeführt. In dieser Zeit ist die Web-Konfigurationsseite offline (roter Punkt). Nach kurzer Zeit ist die Seite wieder online (grüner Punkt). Dann ist das System wieder betriebsbereit.
 
 .. warning::
 	Beachten Sie, dass Sie bei einem Firmware-Update auf eine ältere Version ein **Initial Firmware Update** durchführen müssen. So vermeiden Sie Komplikationen mit den gespeicherten Konfigurationsdaten. Unter Umständen ist das System nicht nutzbar und kann komplett einfrieren. Ein Firmware-Update über die Konfigurationsseiten ist dann nicht mehr möglich und die Firmware muss über USB geflasht werden.
@@ -215,7 +215,7 @@ Sicherheit im WiFi-Netzwerk
 Sie sollten das OBP60 nur mit vertrauenswürdigen WiFi-Netzwerken verbinden. Es gibt im Gerät nur einen sehr begrenzten Schutz gegen Netzwerk-Sniffing oder Denial-of-Service-Angriffe. Solange Sie das eigene autarke WiFi-Netz des OBP60 nutzen, können fremde Personen ihr WiFi-Netz nicht verwenden. Auf diese Weise läuft die Datenübertragung in ihrem eigenen WiFi-Netzwerk geschützt. Verbinden Sie das Gerät niemals ohne eine Firewall direkt mit dem Internet und vermeiden Sie direkte Verbindungen zu offenen Hafen-Netzwerken. Dadurch können auch fremde Personen auf Ihre Geräte im Netzwerk zugreifen.
 
 .. note::
-	Sie können die Sicherheit erhöhen, indem Sie einen separaten WiFi- oder LTE-Router in Ihrem Boot verwenden. Die Router können so eingerichtet werden, dass Sie ein eigenes WiFi-Netz aufspannen können, mit dem alle Geräte an Bord verbunden sind. Gängige mobule Router verfügen in der Regel über eine bereits eingeschaltete Firewall, über die Sie Ihr eigenes WiFi-Netz mit dem Internet verbinden können. Die Firewall verhindert fremden Zugriff von außen auf Ihre Geräte. So haben alle Geräte in Ihrem Netz einen gemeinsamen Internet-Zugriff und sind zugleich ausreichend geschützt.
+	Sie können die Sicherheit erhöhen, indem Sie einen separaten WiFi- oder LTE-Router in Ihrem Boot verwenden. Die Router können so eingerichtet werden, dass Sie ein eigenes WiFi-Netz aufspannen können, mit dem alle Geräte an Bord verbunden sind. Gängige mobile Router verfügen in der Regel über eine bereits eingeschaltete Firewall, über die Sie Ihr eigenes WiFi-Netz mit dem Internet verbinden können. Die Firewall verhindert fremden Zugriff von außen auf Ihre Geräte. So haben alle Geräte in Ihrem Netz einen gemeinsamen Internet-Zugriff und sind zugleich ausreichend geschützt.
 
 .. image:: ../pics/WiFi_Channels.png
              :scale: 35%
@@ -228,5 +228,5 @@ Die Verbindungsqualität von WiFi-Netzwerken hängt maßgeblich von der Auslastu
 .. note::
 	Verwenden Sie bei hoher Kanalauslastung Kanäle mit geringer Auslastung. Die Kanäle 1, 13 und 14 haben keine Nachbarkanäle und sind deutlich robuster gegen hohe Auslastung als die anderen Kanäle. Am besten eignet sich der Kanal 13, da er seltener benutzt wird. In den USA kann auch der Kanal 14 verwendet werden. Moderne mobile Router bieten häufig eine Automatik in ihrer Konfiguration an, die die Kanalauswahl optimieren kann.
 
-Bei Änderungen der Konfiguration des OPB60 werden Sie immer nach dem Admin-Passwort gefragt. Die Übertragung des Passwortes erfolgt dabei immer verschlüsselt. Wenn Sie jedoch das Passwort für den WLAN-Zugangspunkt oder das WiFi-Client-Passwort ändern, wird es im Klartext gesendet. Wenn Sie das ``Remember me`` für das Admin-Passwort aktivieren, wird es im Klartext in Ihrem Browser gespeichert. Um es von dort zu entfernen, verwenden Sie ``ForgetPassword``.
+Bei Änderungen der Konfiguration des OPB60 werden Sie immer nach dem Admin-Passwort gefragt. Die Übertragung des Passwortes erfolgt dabei immer verschlüsselt. Wenn Sie jedoch das Passwort für den WLAN-Zugangspunkt oder das WiFi-Client-Passwort ändern, wird es im Klartext gesendet. Wenn Sie das ``Remember me`` für das Admin-Passwort aktivieren, wird es im Klartext in Ihrem Browser gespeichert. Um es von dort zu entfernen, verwenden Sie ``Forget Password``.
 
