@@ -95,7 +95,7 @@ Unter **System** werden grundlegende Einstellungen vorgenommen wie:
 **NMEA0183 ID**
 	* Hier kann festgelegt werden, welcher Prefix als Geräte ID im NMEA0183-Telegramms verwendet wird. Es lassen sich verschiedene Geräte ID einstellen. Details dazu sind unter folgendem `Link`_ zu finden.
 
-.. _Link: https://de.wikipedia.org/wiki/NMEA_0183
+.. _Link: https://de.wikipedia.org/wiki/NMEA_0183#Ger%C3%A4te-IDs
 
 **Stop AP Time**
 	* Hierüber kann angegeben werden, nach wlcher Zeit der WiFi Access Point abgeschaltet werden soll. Die Angabe der Zeit erfolgt in Sekunden. Wird 0s verwendet, so bleibt der WiFi Access Point dauerhaft an.
