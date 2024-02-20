@@ -121,4 +121,3 @@ Der Reset-Taster befindet sich auf der Rückseite des Displays an der Unterseite
 
 .. warning::
    Verwenden Sie keine leitenden Gegenstände. Damit können Kurzschlüsse auf der Platine ausgelöst werden und das Gerät kann beschädigt werden.
-

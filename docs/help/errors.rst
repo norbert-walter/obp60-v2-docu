@@ -16,5 +16,3 @@ Software
 
 Hardware
 --------
-
-

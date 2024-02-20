@@ -68,5 +68,3 @@ Das Mutifunktionsdisplay OBP60 dient zur Anzeige von Daten aus Boots-Netzen wie 
    Mitarbeit <help/cooperation>
    Spenden <help/donation>
    Glossar <help/glossar>
-
-
