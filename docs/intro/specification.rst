@@ -121,9 +121,11 @@ Nutzbare I2C Sensorik
 	
 **Spannungs- und Stromsensoren**
 	* INA226
-	* ACS712 (in Vorbereitung)
+	* INA219 (in Vorbereitung)
+	
 **Winkelsensoren**
 	* AS5600
+	* MT6701 (in Vorbereitung)
 	
 **Port Erweiterungen**
 	* PCF8574 (in Vorbereitung)
