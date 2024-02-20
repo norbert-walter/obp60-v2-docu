@@ -62,8 +62,8 @@ Wenn Sie auf das Fragezeichen hinter **Version** klicken, werden alle Telegramme
 	Zum besseren Verständnis ist zu beachten, dass das OBP60 ein eigenes, unabhängiges WiFi-Netzwerk aufbaut, diese Funktion wird auch als Access Point bezeichnet. Die Anzahl der TCP-Clients in der Statuszeile bezieht sich dabei immer nur auf die Clients, die sich beim OBP60 im Access Point-Modus anmelden.
 	Das OBP60 kann darüber hinaus Teil eines anderen externen WiFi-Netzwerks sein, indem es sich dort als Client anmeldet. In dem Fall wird das eigene WiFi-Netz des OBP60 mit dem externen WiFi-Netz gebrückt. Alle Daten des OPB60 sind dann in beiden Netzwerken verfügbar. 
 	
-Config Allgemein
-----------------
+Config
+------
 
 Die Konfigurationsseite unterteilt sich in zwei Bereiche. Die Firmware basiert auf dem NMEA2000-Gateway-Projekt und nutzt die gesamte Grundstruktur dieses Software-Projektes. Die Funktionalität des OBP60 ist als eigenständiger Task in der NMEA2000-Gateway-Firmware implementiert. Der erste Bereich enthält die Konfiguration für das NMEA2000-Gateway. Im zweiten Bereich ist die Konfiguration zur OBP60 Hardware und Software zu finden. Den zweiten Bereich erkennt man an dem Prefix OBP.
 
@@ -78,11 +78,11 @@ Auf der Konfigurationsseite sind im oberen Bereich verschiedene Tasten zu sehen.
 * **Forget Pass** - Entfernen des Login-Passwortes aus dem Cach-Speiches des Browsers
 * **Save & Restart** - Speichern der Konfiguration mit anschließendem Neustart der Firmware
 * **Export** - Export einer Konfiguration als JSON-File
-* **Import* - Import einer Konfiguration über ein JSON-File
+* **Import** - Import einer Konfiguration über ein JSON-File
 * **Factory Reset** - Rücksetzen aller Einstellungen auf Werkszustand
 
-Config System
--------------
+Config - System
+---------------
 
 .. image:: ../pics/Config_System.png
              :scale: 60%
@@ -110,7 +110,7 @@ Unter **System** werden grundlegende Einstellungen vorgenommen wie:
 	* An diese Stelle wird die Subnetz-Maske für den WiFi Access Point angegeben. Per Default steht die Subnetz-Maske auf 255.255.255.0 
 	
 .. warning::	
-	* Achten Sie darauf, dass das Subnetz verschieden zu anderen Subnetzwn ist, in das sich das OBP60 als WiFi-Client eingebunden hat und das Sie eine korrekte Subnetz-Maske verwenden. Das Subnetz ist über die ersten drei Zahlen der IP-Adresse gekennzeichnet. Beachten Sie das nicht, so können Netzwerkploblemen auftreten in dessen Folge Sie den Konfigurationsseiten nicht mehr öffnen können. In den meisten Fällen wird eine Änderung der IP-Adresse oder der Subentz-Maske nicht notwendig sein. Ändern Sie die IP und Subnetz-Maske nur, wenn Sie über Netzwerkerfahrung verfügen und die Auswirkung der Änderung verstehen.
+	Achten Sie darauf, dass das Subnetz verschieden zu anderen Subnetzen ist, in das sich das OBP60 als WiFi-Client eingebunden hat und das Sie eine korrekte Subnetz-Maske verwenden. Das Subnetz ist über die ersten drei Zahlen der IP-Adresse gekennzeichnet. Beachten Sie das nicht, so können Netzwerkploblemen auftreten in dessen Folge Sie die Konfigurationsseiten nicht mehr öffnen können. In den meisten Fällen wird eine Änderung der IP-Adresse oder der Subentz-Maske nicht notwendig sein. Ändern Sie die IP und Subnetz-Maske nur, wenn Sie über Netzwerkerfahrung verfügen und die Auswirkung der Änderungen verstehen.
 
 **Use Admin Pass**
 	* Hiermit kann festgelegt werden, ob für Änderungen der Konfiguration ein Passwort notwendig ist.
@@ -121,12 +121,12 @@ Unter **System** werden grundlegende Einstellungen vorgenommen wie:
 **Show All Data**
 	* Ist der Wert auf ``on``, so werden im Data-Bereich alle Sensordaten angezeigt. Mit ``off`` können alle Sensordaten auf der Data-Seite deaktiviert werden.
 	
-*Log Level**
+**Log Level**
 	* Über **Log Level** lässt sich der Grad der Benachichtigung über die USB-C-Schnittstelle einstellen. Hierbei gibt es folgende Einstellungen:
 		* ``off`` - Keine Logging-Ausgaben
 		* ``error`` - Nur Fehlermeldungen ausgeben
-		* ``log`` - Nur Fehlermeldungen und einige Statusinformationen ausgeben
-		* ``debug`` - Alle Meldungen ausgeben
+		* ``log`` - Nur Fehlermeldungen und Statusinformationen ausgeben
+		* ``debug`` - Alle Meldungen inklusive Debug-Meldungen ausgeben 
 		
 .. note::
 	Wenn Sie beabsichtigen über die USB-C-Schnittstelle einen NMEA0183-Datenaustausch durchzuführen, dann sollten Sie den **Log Level** auf ``off`` stellen. Beachten Sie das nicht, so kann es zu Störungen bei der Datenauswertung kommen, da Logging-Daten und NMEA0183-Telegramme gemischt ausgegeben werden.
