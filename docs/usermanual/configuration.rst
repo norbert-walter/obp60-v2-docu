@@ -104,10 +104,10 @@ Unter **System** werden grundlegende Einstellungen vorgenommen wie:
 	* An dieser Stelle wird das Passwort für den WiFi Access Point angegeben. Es dürfen nur Zeichen des ASCII-Zeichensatzes verwendet werden.
 	
 **AP IP**
-	* Hier kann die IP-Adresse des WiFi Access Point eingestellt werden. Per Default steht die IP-Adresse auf 192.168.15.1. In Ausnahmefällen kann die IP auf eine andere Adresse eingestellt werden.
+	* Hier kann die IP-Adresse des WiFi Access Point eingestellt werden. Per Default steht die IP-Adresse auf **192.168.15.1**. In Ausnahmefällen kann die IP auf eine andere Adresse eingestellt werden.
 	
 **AP Mask**
-	* An diese Stelle wird die Subnetz-Maske für den WiFi Access Point angegeben. Per Default steht die Subnetz-Maske auf 255.255.255.0 
+	* An diese Stelle wird die Subnetz-Maske für den WiFi Access Point angegeben. Per Default steht die Subnetz-Maske auf **255.255.255.0**. 
 	
 .. warning::	
 	Achten Sie darauf, dass das Subnetz verschieden zu anderen Subnetzen ist, in das sich das OBP60 als WiFi-Client eingebunden hat und das Sie eine korrekte Subnetz-Maske verwenden. Das Subnetz ist über die ersten drei Zahlen der IP-Adresse gekennzeichnet. Beachten Sie das nicht, so können Netzwerkploblemen auftreten in dessen Folge Sie die Konfigurationsseiten nicht mehr öffnen können. In den meisten Fällen wird eine Änderung der IP-Adresse oder der Subentz-Maske nicht notwendig sein. Ändern Sie die IP und Subnetz-Maske nur, wenn Sie über Netzwerkerfahrung verfügen und die Auswirkung der Änderungen verstehen.
@@ -130,6 +130,85 @@ Unter **System** werden grundlegende Einstellungen vorgenommen wie:
 		
 .. hint::
 	Wenn Sie beabsichtigen über die USB-C-Schnittstelle einen NMEA0183-Datenaustausch durchzuführen, dann sollten Sie den **Log Level** auf ``off`` stellen. Beachten Sie das nicht, so kann es zu Störungen bei der Datenauswertung kommen, da Logging-Daten und NMEA0183-Telegramme gemischt ausgegeben werden.
+
+Congig - Converter
+------------------
+
+.. image:: ../pics/Config_Converter.png
+             :scale: 60%
+
+Mit den nachfolgenden Einstellungen können Sie die Funktion des NMEA2000-Gateways verändern.
+
+**Min XDR Interval**
+	* Hier wird die Intervallzeit der XDR-Signalverarbeitung der eingestellt. XDR-Telegramme sind frei definierbare Sensor-Telegramme. Die Intervallzeit kann ab 10 ms oder größer eingestellt werden. Der Defaultwert steht auf 100 ms. Mit der kleinstenm Intervallzeit von 10 ms wird eine Datenverarbeitungsrate von 100 Hz erreicht.
+	
+**Min N2K Interval**
+	* Hier wird die Intervallzeit der NMEA2000-Signalverarbeitung der eingestellt. Die Intervallzeit kann ab 5 ms oder größer eingestellt werden. Der Defaultwert steht auf 50 ms.
+	
+.. note::
+	Bedenken Sie, dass kleine Intervallzeiten eine große Prozessorlast bewirken. Stellen Sie den Wert möglichst groß ein, so dass ihre Daten noch zeitlich korrekt verarbeitet werden können. Mit dem Standardwert von 100 ms für das XDR-Interval und 50 ms für das N2K-Interval können die meisten Anwendungen sinnvoll betrieben werden und die Daten werden ausreichend schnell zur Verfügung gestellt.
+	
+**NMEA2000 Out**
+	* Hier kann eingestellt werden, ob NMEA2000-Telegramme in das NMEA-Netzwerk übertragen werden
+		* ``on`` - Ausgabe der NMEA2000-Daten
+		* ``off`` - Keine Ausgabe der NMEA2000-Daten
+		
+Config - USB Port
+-----------------
+
+.. image:: ../pics/Config_USB_Port.png
+             :scale: 60%
+
+Über USB Port können die Funktionen des USB-Ports detailliert eingestellt werden.
+
+**USB Mode**
+	* Bescheibt die Art wie die Daten am USB-Port verarbeitet werden. Mit dem Actisense-Format können NMEA2000-Telegramme in der Firmware von externer Software empfangen und verarbeitet werden. Actisense-Daten werden in NMEA2000-Daten und in NMEA0183-Daten innerhalb der Firmware übersetzt. So kann z.B. `Simulations- und Diagnosefirmware`_ der Fa. Actisense zur Analyse der Busdaten verwendet werden.
+	
+.. _Simulations- und Diagnosefirmware: https://de.wikipedia.org/wiki/NMEA_0183#Ger%C3%A4te-IDs
+	
+		* ``nmea0183`` - Verarbeitung im NMEA0183-Format
+		* ``actisense`` - Verarbeitung im Actisense-Format
+		
+**USB Baud Rate**
+	* Hier kann die Schnittstellengeschwindigkeit der seriellen USB-Schnittstelle eingestellt werden. Es lassen sich Geschwindigkeiten zwischen 1200 Bd und 460800 Bd einstellen.
+	
+.. hint::
+	Stellen Sie die Schnittstellengeschwindigkeit so ein, dass sie ausreichend hoch ist, um alle Datentelegramme im Sendeintervall verarbeiten zu können. Mit dem Defaultwert von 115200 Bd können die meisten Anwendungen sinnvoll betrieben werden.
+
+In den nachfolgenden drei Einstellungen lässt sich die Datenrichtung an der USB-C-Schnittstelle einstellen. Dabei wird zwischen NMEA0183 und NMEA2000 unterschieden.
+	
+**NMEA To USB**
+	* ``on`` - NMEA0183-Daten an USB-Schnittstelle ausgeben
+	* ``off`` - NMEA0183-Daten an USB-Schnittstelle nicht ausgeben
+	
+**NMEA From USB**
+	* ``on`` - NMEA0183-Daten von der USB-Schnittstelle empfangen
+	* ``off`` - NMEA0183-Daten von der USB-Schnittstelle nicht empfangen
+	
+**USB To NMEA2000**
+	* ``on`` - Daten von der USB-Schnittstelle an NMEA2000 weiterleiten
+	* ``off`` - Daten von der USB-Schnittstelle nicht an NMEA2000 weiterleiten
+	
+In den nächsten beiden Einstellungen werden die Filterfunktionen **USB Read Filter** und **USB Write Filter** für das Lesen und Schreiben an der USB-Schnittstelle vorgenommen. Es lassen sich nur NMEA0183-Daten filtern. Dabei lässt sich einstellen, ob AIS-Positionssignale verarbeitet werden. Als Filterformen stehen Whitelist und Blacklist zur Verfügung.
+
+** USB Filter**
+	* ``aison`` - AIS-Daten an der USB-Schnittstelle werden verarbeitet
+	* ``aisoff`` - AIS-Daten an der USB-Schnittstelle werden nicht verarbeitet
+	* ``blacklist`` - Der Filter funktioniert als Blacklist. Gekennzeichnete Telegramme werden nicht verarbeitet.
+	* ``whitelist`` - Der Filter funktioniert als Whitelist. Nur aufgelistete Telegramme werden verarbeitet.
+	
+Im Eingabefeld werden die Kurzbezeichner der NMEA0183-Telegramme eingetragen, Mehreren Einträge werden durch Komma ``,`` getrennt. Folgende Kurzbezeichner können verwendet werden:
+	* AIVDM, AIVDO, DBK, DBS, DBT, DPT, GGA, GLL, GSA, GSV, HDG, HDM, HDT, MTW, MWD, MWV, RMB, RMC, ROT, RSA, VHW, VTG, VWR, XDR, XTE, ZDA
+	
+Die genaue Bedeutung der Kurzbezeichner ist `hier`_ erklärt.
+
+.. _hier: https://de.wikipedia.org/wiki/NMEA_0183
+
+.. hint::
+	Filterfunktionen sind ein mächtiges Werkzeug, um Datenflüsse zu steuern. Überlegen Sie sich vor der Konfiguration wie Ihre Datenflüsse im Boot aussehen und erstellen sich dazu eine Zeichnung. Setzen Sie die Filter so ein, dass sie nur die Daten senden und empfangen, die sie auch wirklich benötigen. Unterscheiden Sie dabei was gesendet oder empfangen wird und vermeiden Sie Datenschleifen.
+	
+.. warning::
+	Datenschleifen führen zu Fehlfunktionen des Gerätes. Bei Datenschleifen laufen die selben Daten über mehrere Geräte im Kreis. Dadurch entstehen extrem hohe Senderaten, weil foltlaufend Daten gesendet und empfangen werden. Die Prozessorlast erhöht sich dabei auf ein Maximum. Unter Umständen kann das Gerät ausfallen, nicht mehr zeitnah die Daten verarbeiten oder unbedienbar sein. Beachten Sie, dass der Zustand auch erst eintreten kann, wenn weitere Geräte am Bussystemen zugeschaltet werden.
 
 XDR
 ---
