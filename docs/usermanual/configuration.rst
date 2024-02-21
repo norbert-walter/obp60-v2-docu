@@ -90,15 +90,15 @@ Config - System
 Unter **System** werden grundlegende Einstellungen vorgenommen wie:
 
 **System Name**
-	* System-Name zum OBP60. Hier kann ein Namen verwendet werden der aus bis zu 10 ASCII-Zeichen besteht. Dabei dürfen nur Buchstaben und Zahlen verwendet werden. Zusätzlich sind das Minus-Zeichen und der Unterstrich erlaubt. Sonderzeichen sind nicht erlaubt, da dieser Gerätename auch als SSID im WiFi-Netzwerk verwendet wird.
+	* System-Name zum OBP60. Hier kann ein Name verwendet werden der aus bis zu 10 ASCII-Zeichen besteht. Dabei dürfen nur Buchstaben und Zahlen verwendet werden. Zusätzlich sind das Minus-Zeichen und der Unterstrich erlaubt. Sonderzeichen sind nicht erlaubt, da dieser Gerätename auch als SSID im WiFi-Netzwerk verwendet wird.
 	
 **NMEA0183 ID**
-	* Hier kann festgelegt werden, welcher Prefix als Geräte ID im NMEA0183-Telegramms verwendet wird. Es lassen sich verschiedene Geräte ID einstellen. Details dazu sind unter folgendem `Link`_ zu finden.
+	* Hier kann festgelegt werden, welcher Präfix als Geräte ID im NMEA0183-Telegramms verwendet wird. Es lassen sich verschiedene Geräte ID einstellen. Details dazu sind unter folgendem `Link`_ zu finden.
 
 .. _Link: https://de.wikipedia.org/wiki/NMEA_0183#Ger%C3%A4te-IDs
 
 **Stop AP Time**
-	* Hierüber kann angegeben werden, nach wlcher Zeit der WiFi Access Point abgeschaltet werden soll. Die Angabe der Zeit erfolgt in Sekunden. Wird 0s verwendet, so bleibt der WiFi Access Point dauerhaft an.
+	* Hierüber kann angegeben werden, nach welcher Zeit der WiFi Access Point abgeschaltet werden soll. Die Angabe der Zeit erfolgt in Sekunden. Wird 0s verwendet, so bleibt der WiFi Access Point dauerhaft an.
 	
 **AP Password**
 	* An dieser Stelle wird das Passwort für den WiFi Access Point angegeben. Es dürfen nur Zeichen des ASCII-Zeichensatzes verwendet werden.
@@ -110,7 +110,7 @@ Unter **System** werden grundlegende Einstellungen vorgenommen wie:
 	* An diese Stelle wird die Subnetz-Maske für den WiFi Access Point angegeben. Per Default steht die Subnetz-Maske auf **255.255.255.0**. 
 	
 .. warning::	
-	Achten Sie darauf, dass das Subnetz verschieden zu anderen Subnetzen ist, in das sich das OBP60 als WiFi-Client eingebunden hat und das Sie eine korrekte Subnetz-Maske verwenden. Das Subnetz ist über die ersten drei Zahlen der IP-Adresse gekennzeichnet. Beachten Sie das nicht, so können Netzwerkploblemen auftreten in dessen Folge Sie die Konfigurationsseiten nicht mehr öffnen können. In den meisten Fällen wird eine Änderung der IP-Adresse oder der Subentz-Maske nicht notwendig sein. Ändern Sie die IP und Subnetz-Maske nur, wenn Sie über Netzwerkerfahrung verfügen und die Auswirkung der Änderungen verstehen.
+	Achten Sie darauf, dass das Subnetz verschieden zu anderen Subnetzen ist, in das sich das OBP60 als WiFi-Client eingebunden hat und das Sie eine korrekte Subnetz-Maske verwenden. Das Subnetz ist über die ersten drei Zahlen der IP-Adresse gekennzeichnet. Beachten Sie das nicht, so können Netzwerkplobleme auftreten in dessen Folge Sie die Konfigurationsseiten nicht mehr öffnen können. In den meisten Fällen wird eine Änderung der IP-Adresse oder der Subnetz-Maske nicht notwendig sein. Ändern Sie die IP und Subnetz-Maske nur, wenn Sie über Netzwerkerfahrung verfügen und die Auswirkung der Änderungen verstehen.
 
 **Use Admin Pass**
 	* Hiermit kann festgelegt werden, ob für Änderungen der Konfiguration ein Passwort notwendig ist.
@@ -122,7 +122,7 @@ Unter **System** werden grundlegende Einstellungen vorgenommen wie:
 	* Ist der Wert auf ``on``, so werden im Data-Bereich alle Sensordaten angezeigt. Mit ``off`` können alle Sensordaten auf der Data-Seite deaktiviert werden.
 	
 **Log Level**
-	* Über **Log Level** lässt sich der Grad der Benachichtigung über die USB-C-Schnittstelle einstellen. Hierbei gibt es folgende Einstellungen:
+	* Über **Log Level** lässt sich der Grad der Benachrichtigung über die USB-C-Schnittstelle einstellen. Hierbei gibt es folgende Einstellungen:
 		* ``off`` - Keine Logging-Ausgaben
 		* ``error`` - Nur Fehlermeldungen ausgeben
 		* ``log`` - Nur Fehlermeldungen und Statusinformationen ausgeben
@@ -131,7 +131,7 @@ Unter **System** werden grundlegende Einstellungen vorgenommen wie:
 .. hint::
 	Wenn Sie beabsichtigen über die USB-C-Schnittstelle einen NMEA0183-Datenaustausch durchzuführen, dann sollten Sie den **Log Level** auf ``off`` stellen. Beachten Sie das nicht, so kann es zu Störungen bei der Datenauswertung kommen, da Logging-Daten und NMEA0183-Telegramme gemischt ausgegeben werden.
 
-Congig - Converter
+Config - Converter
 ------------------
 
 .. image:: ../pics/Config_Converter.png
@@ -140,13 +140,13 @@ Congig - Converter
 Mit den nachfolgenden Einstellungen können Sie die Funktion des NMEA2000-Gateways verändern.
 
 **Min XDR Interval**
-	* Hier wird die Intervallzeit der XDR-Signalverarbeitung der eingestellt. XDR-Telegramme sind frei definierbare Sensor-Telegramme. Die Intervallzeit kann ab 10 ms oder größer eingestellt werden. Der Defaultwert steht auf 100 ms. Mit der kleinstenm Intervallzeit von 10 ms wird eine Datenverarbeitungsrate von 100 Hz erreicht.
+	* Hier wird die Intervallzeit der XDR-Signalverarbeitung der eingestellt. XDR-Telegramme sind frei definierbare Sensor-Telegramme. Die Intervallzeit kann ab 10 ms oder größer eingestellt werden. Der Default-Wert steht auf 100 ms. Mit der kleinsten Intervallzeit von 10 ms wird eine Datenverarbeitungsrate von 100 Hz erreicht.
 	
 **Min N2K Interval**
 	* Hier wird die Intervallzeit der NMEA2000-Signalverarbeitung der eingestellt. Die Intervallzeit kann ab 5 ms oder größer eingestellt werden. Der Defaultwert steht auf 50 ms.
 	
 .. note::
-	Bedenken Sie, dass kleine Intervallzeiten eine große Prozessorlast bewirken. Stellen Sie den Wert möglichst groß ein, so dass ihre Daten noch zeitlich korrekt verarbeitet werden können. Mit dem Standardwert von 100 ms für das XDR-Interval und 50 ms für das N2K-Interval können die meisten Anwendungen sinnvoll betrieben werden und die Daten werden ausreichend schnell zur Verfügung gestellt.
+	Bedenken Sie, dass kleine Intervallzeiten eine große Prozessorlast bewirken. Stellen Sie den Wert möglichst groß ein, so dass ihre Daten noch zeitlich korrekt verarbeitet werden können. Mit dem Standardwert von 100 ms für das XDR-Interval und 50 ms für das N2K-Intervall können die meisten Anwendungen sinnvoll betrieben werden und die Daten werden ausreichend schnell zur Verfügung gestellt.
 	
 **NMEA2000 Out**
 	* Hier kann eingestellt werden, ob NMEA2000-Telegramme in das NMEA-Netzwerk übertragen werden
@@ -159,10 +159,10 @@ Config - USB Port
 .. image:: ../pics/Config_USB_Port.png
              :scale: 60%
 
-Über USB Port können die Funktionen des USB-Ports detailliert eingestellt werden.
+Über **USB** Port können die Funktionen des USB-Ports detailliert eingestellt werden.
 
 **USB Mode**
-	* Bescheibt die Art wie die Daten am USB-Port verarbeitet werden. Mit dem Actisense-Format können NMEA2000-Telegramme in der Firmware von externer Software empfangen und verarbeitet werden. Actisense-Daten werden in NMEA2000-Daten und in NMEA0183-Daten innerhalb der Firmware übersetzt. So kann z.B. `Simulations- und Diagnosefirmware`_ der Fa. Actisense zur Analyse der Busdaten verwendet werden.
+	* Beschreibt die Art wie die Daten am USB-Port verarbeitet werden. Mit dem Actisense-Format können NMEA2000-Telegramme in der Firmware von externer Software empfangen und verarbeitet werden. Actisense-Daten werden in NMEA2000-Daten und in NMEA0183-Daten innerhalb der Firmware übersetzt. So kann z.B. `Simulations- und Diagnosefirmware`_ der Fa. Actisense zur Analyse der Busdaten verwendet werden.
 	
 .. _Simulations- und Diagnosefirmware: https://de.wikipedia.org/wiki/NMEA_0183#Ger%C3%A4te-IDs
 	
@@ -173,7 +173,7 @@ Config - USB Port
 	* Hier kann die Schnittstellengeschwindigkeit der seriellen USB-Schnittstelle eingestellt werden. Es lassen sich Geschwindigkeiten zwischen 1200 Bd und 460800 Bd einstellen.
 	
 .. hint::
-	Stellen Sie die Schnittstellengeschwindigkeit so ein, dass sie ausreichend hoch ist, um alle Datentelegramme im Sendeintervall verarbeiten zu können. Mit dem Defaultwert von 115200 Bd können die meisten Anwendungen sinnvoll betrieben werden.
+	Stellen Sie die Schnittstellengeschwindigkeit so ein, dass sie ausreichend hoch ist, um alle Datentelegramme im Sendeintervall verarbeiten zu können. Mit dem Default-Wert von 115200 Bd können die meisten Anwendungen sinnvoll betrieben werden.
 
 In den nachfolgenden drei Einstellungen lässt sich die Datenrichtung an der USB-C-Schnittstelle einstellen. Dabei wird zwischen NMEA0183 und NMEA2000 unterschieden.
 	
@@ -198,6 +198,7 @@ In den nächsten beiden Einstellungen werden die Filterfunktionen **USB Read Fil
 	* ``whitelist`` - Der Filter funktioniert als Whitelist. Nur aufgelistete Telegramme werden verarbeitet.
 	
 Im Eingabefeld werden die Kurzbezeichner der NMEA0183-Telegramme eingetragen, Mehreren Einträge werden durch Komma ``,`` getrennt. Folgende Kurzbezeichner können verwendet werden:
+
 	* AIVDM, AIVDO, DBK, DBS, DBT, DPT, GGA, GLL, GSA, GSV, HDG, HDM, HDT, MTW, MWD, MWV, RMB, RMC, ROT, RSA, VHW, VTG, VWR, XDR, XTE, ZDA
 	
 Die genaue Bedeutung der Kurzbezeichner ist `hier`_ erklärt.
@@ -208,7 +209,7 @@ Die genaue Bedeutung der Kurzbezeichner ist `hier`_ erklärt.
 	Filterfunktionen sind ein mächtiges Werkzeug, um Datenflüsse zu steuern. Überlegen Sie sich vor der Konfiguration wie Ihre Datenflüsse im Boot aussehen und erstellen sich dazu eine Zeichnung. Setzen Sie die Filter so ein, dass sie nur die Daten senden und empfangen, die sie auch wirklich benötigen. Unterscheiden Sie dabei was gesendet oder empfangen wird und vermeiden Sie Datenschleifen.
 	
 .. warning::
-	Datenschleifen führen zu Fehlfunktionen des Gerätes. Bei Datenschleifen laufen die selben Daten über mehrere Geräte im Kreis. Dadurch entstehen extrem hohe Senderaten, weil foltlaufend Daten gesendet und empfangen werden. Die Prozessorlast erhöht sich dabei auf ein Maximum. Unter Umständen kann das Gerät ausfallen, nicht mehr zeitnah die Daten verarbeiten oder unbedienbar sein. Beachten Sie, dass der Zustand auch erst eintreten kann, wenn weitere Geräte am Bussystemen zugeschaltet werden.
+	Datenschleifen führen zu Fehlfunktionen des Gerätes. Bei Datenschleifen laufen dieselben Daten über mehrere Geräte im Kreis. Dadurch entstehen hohe Senderaten, weil fortlaufend Daten gesendet und empfangen werden. Die Prozessorlast erhöht sich dabei auf ein Maximum. Unter Umständen kann das Gerät ausfallen, nicht mehr zeitnah die Daten verarbeiten oder unbedienbar sein. Beachten Sie, dass der Zustand auch erst eintreten kann, wenn weitere Geräte am Bussystem später zugeschaltet werden.
 
 XDR
 ---
