@@ -192,7 +192,7 @@ In den nachfolgenden drei Einstellungen lässt sich die Datenrichtung an der USB
 	
 In den nächsten beiden Einstellungen werden die Filterfunktionen **USB Read Filter** und **USB Write Filter** für das Lesen und Schreiben an der USB-Schnittstelle vorgenommen. Es lassen sich nur NMEA0183-Daten filtern. Dabei lässt sich gesondert einstellen, ob AIS-Positionssignale verarbeitet werden. Als Filterformen stehen Whitelist und Blacklist zur Verfügung.
 
-** USB Filter**
+**USB Filter**
 	* ``aison`` - AIS-Daten an der USB-Schnittstelle werden verarbeitet
 	* ``aisoff`` - AIS-Daten an der USB-Schnittstelle werden nicht verarbeitet
 	* ``blacklist`` - Der Filter funktioniert als Blacklist. Gekennzeichnete Telegramme werden nicht verarbeitet.
