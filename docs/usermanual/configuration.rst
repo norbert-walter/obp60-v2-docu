@@ -122,6 +122,7 @@ Unter **System** werden grundlegende Einstellungen vorgenommen wie:
 	* Ist der Wert auf ``on``, so werden im Data-Bereich alle Sensordaten angezeigt. Mit ``off`` können alle Sensordaten auf der Data-Seite deaktiviert werden.
 	
 **Log Level**
+
 	* Über **Log Level** lässt sich der Grad der Benachrichtigung über die USB-C-Schnittstelle einstellen. Hierbei gibt es folgende Einstellungen:
 		* ``off`` - Keine Logging-Ausgaben
 		* ``error`` - Nur Fehlermeldungen ausgeben
