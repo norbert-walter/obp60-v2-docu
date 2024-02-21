@@ -162,7 +162,7 @@ Config - USB Port
 Über **USB** Port können die Funktionen des USB-Ports detailliert eingestellt werden.
 
 **USB Mode**
-	* Beschreibt die Art wie die Daten am USB-Port verarbeitet werden. Mit dem Actisense-Format können NMEA2000-Telegramme in der Firmware von externer Software empfangen und verarbeitet werden. Actisense-Daten werden in NMEA2000-Daten und in NMEA0183-Daten innerhalb der Firmware übersetzt. So kann z.B. `Simulations- und Diagnosefirmware`_ der Fa. Actisense zur Analyse der Busdaten verwendet werden.
+	* Beschreibt die Art wie die Daten am USB-Port verarbeitet werden. Mit dem Actisense-Format können NMEA2000-Telegramme von externer Software empfangen und verarbeitet werden. Actisense-Daten werden in NMEA2000-Daten und in NMEA0183-Daten innerhalb der Firmware übersetzt. So kann z.B. die `Simulations- und Diagnosefirmware`_ der Fa. Actisense zur Analyse der Busdaten verwendet werden.
 	
 .. _Simulations- und Diagnosefirmware: https://de.wikipedia.org/wiki/NMEA_0183#Ger%C3%A4te-IDs
 	
@@ -189,7 +189,7 @@ In den nachfolgenden drei Einstellungen lässt sich die Datenrichtung an der USB
 	* ``on`` - Daten von der USB-Schnittstelle an NMEA2000 weiterleiten
 	* ``off`` - Daten von der USB-Schnittstelle nicht an NMEA2000 weiterleiten
 	
-In den nächsten beiden Einstellungen werden die Filterfunktionen **USB Read Filter** und **USB Write Filter** für das Lesen und Schreiben an der USB-Schnittstelle vorgenommen. Es lassen sich nur NMEA0183-Daten filtern. Dabei lässt sich einstellen, ob AIS-Positionssignale verarbeitet werden. Als Filterformen stehen Whitelist und Blacklist zur Verfügung.
+In den nächsten beiden Einstellungen werden die Filterfunktionen **USB Read Filter** und **USB Write Filter** für das Lesen und Schreiben an der USB-Schnittstelle vorgenommen. Es lassen sich nur NMEA0183-Daten filtern. Dabei lässt sich gesondert einstellen, ob AIS-Positionssignale verarbeitet werden. Als Filterformen stehen Whitelist und Blacklist zur Verfügung.
 
 ** USB Filter**
 	* ``aison`` - AIS-Daten an der USB-Schnittstelle werden verarbeitet
@@ -199,7 +199,7 @@ In den nächsten beiden Einstellungen werden die Filterfunktionen **USB Read Fil
 	
 Im Eingabefeld werden die Kurzbezeichner der NMEA0183-Telegramme eingetragen, Mehreren Einträge werden durch Komma ``,`` getrennt. Folgende Kurzbezeichner können verwendet werden:
 
-	* AIVDM, AIVDO, DBK, DBS, DBT, DPT, GGA, GLL, GSA, GSV, HDG, HDM, HDT, MTW, MWD, MWV, RMB, RMC, ROT, RSA, VHW, VTG, VWR, XDR, XTE, ZDA
+	* DBK, DBS, DBT, DPT, GGA, GLL, GSA, GSV, HDG, HDM, HDT, MTW, MWD, MWV, RMB, RMC, ROT, RSA, VHW, VTG, VWR, XDR, XTE, ZDA
 	
 Die genaue Bedeutung der Kurzbezeichner ist `hier`_ erklärt.
 
