@@ -1,7 +1,7 @@
 Spenden
 =======
 
-Wenn diese Dokumentation hilfreich war, würden wir uns freuen, wenn sie uns mit einer Spende unterstützen. Wir haben viel ehrenamtliche Arbeit und Energie in das Projekt gesteckt, um es in einer qualitativ hochwertigen Form anbieten zu können. Ihre Spende ist eine Wertschätzung unserer Arbeit gegenüber. Wir verpflichten uns den Prinzipien hinter Open Source, Open Hardware und Open Data. Wir stellen unser Wissen der Allgemeinheit kostenlos zur verfügung. Mit Ihrer Hilfe können wir weitere interessante Projekte veröffentlichen. Sie tragen auch dazu bei, dass diese Seite weiterhin der Allgemeinheit kostenlos zur Verfügung steht.
+Wenn diese Dokumentation hilfreich war, würden wir uns freuen, wenn sie uns mit einer Spende unterstützen. Wir haben viel ehrenamtliche Arbeit und Energie in das Projekt gesteckt, um es in einer qualitativ hochwertigen Form anbieten zu können. Ihre Spende ist eine Wertschätzung unserer Arbeit gegenüber. Wir verpflichten uns den Prinzipien hinter Open Source, Open Hardware und Open Data. Wir stellen unser Wissen der Allgemeinheit kostenlos zur Verfügung. Mit Ihrer Hilfe können wir weitere interessante Projekte veröffentlichen. Sie tragen auch dazu bei, dass diese Seite weiterhin der Allgemeinheit kostenlos zur Verfügung steht.
 
 |IMG|_ 
 
