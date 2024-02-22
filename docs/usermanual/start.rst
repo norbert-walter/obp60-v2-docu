@@ -39,7 +39,7 @@ Im folgenden Bild sind die geschützten und ungeschützten Anschlüsse zu sehen.
 Abb.: Sichere Bereiche
 
 .. warning::
-	Bitte beachten Sie, dass der 1Wire-Bus (gegen Störungen?) ungeschützt ist (und entsprechend durch Schirmung geschützt werden muss). Vorschlag: Daher sollte für die Leitungen des 1Wire-Bus nur abgeschirmte Kabel verwendet werden. ``GND`` darf mit keinen weiteren externen Schaltungsteilen verbunden werden, denn ``GND`` dient ausschließlich als Masseleitung für den 1Wire-Bus.
+	Bitte beachten Sie, dass der 1Wire-Bus (gegen Störungen?) ungeschützt ist (und entsprechend durch Schirmung geschützt werden muss). Vorschlag: Daher sollten für die Leitungen des 1Wire-Bus nur abgeschirmte Kabel verwendet werden. ``GND`` darf mit keinen weiteren externen Schaltungsteilen verbunden werden, denn ``GND`` dient ausschließlich als Masseleitung für den 1Wire-Bus.
 
 Stromversorgung
 ---------------
@@ -64,4 +64,4 @@ Das OBP60 kann in 12V- und in 24V-Bord-Versorgungsnetzen verwendet werden. Bei S
 .. important::
 	Die interne Sicherung im OBP60 schützt nur das Gerät und nicht die Versorgungsleitungen! 
 
-	Daher sollte die bereitgestellte Stromversorgung des OBP60 im Bordnetz mit einer zusätzlichen Sicherung von mindestens 5A abgesichert werden. Das erfolgt typischerweise durch das Board-Panel (die Schalttafel?), über das / die die Stromkreise im Boot geschaltet werden können. So vermeiden Sie Brände zum Beispiel durch aufgescheuerte oder überhitzte Versorgungsleitungen. 
+	Daher sollte die bereitgestellte Stromversorgung des OBP60 im Bordnetz mit einer zusätzlichen Sicherung von mindestens 5A abgesichert werden. Das erfolgt typischerweise durch die Schalttafel, über die die Stromkreise im Boot geschaltet werden können. So vermeiden Sie Brände zum Beispiel durch aufgescheuerte oder überhitzte Versorgungsleitungen. 
