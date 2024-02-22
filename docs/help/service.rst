@@ -1,11 +1,11 @@
 Service
 =======
 
-Die Hauptidee ist es, dass jeder durch die offe Projektbeschreibung und Dokumentation in die Lage versetzt wird, sich technisch selbst helfen zu können. Neben der Dokumentation, den Projekt-Webseiten und dem Internet gibt es viele Informationsquellen zur Wissnsgewinnung. Wir haben auch eine starke Community durch das `Segeln-Forum`_, die ihnen bei Fragen helfen kann. In erster Linie sollten sie versuchen technische Probleme selbst zu lösen. In einigen Fälen wird das nicht immer möglich sein, wenn sie z.B. nicht über die nötigen Werkzeue verfügen. Serviceleistungen für Reparaturen von Hardware können wir im begrenzten Umfang durch Open Boat Projects durchgeführen. Bedenken sie aber, dass diese Arbeit einen Teil der Freizeit abfordert und nicht immer zeitnah erfolgen kann.
+Die Hauptidee ist es, dass jeder durch die offene Projektbeschreibung und Dokumentation in die Lage versetzt wird, sich technisch selbst helfen zu können. Neben der Dokumentation, den Projekt-Webseiten und dem Internet gibt es viele Informationsquellen zur Wissensgewinnung. Wir haben auch eine starke Community durch das `Segeln-Forum`_, die Ihnen bei Fragen helfen kann. In erster Linie sollten Sie versuchen, technische Probleme selbst zu lösen. In einigen Fälen wird das nicht immer möglich sein, wenn Sie z.B. nicht über die nötigen Werkzeue verfügen. Serviceleistungen für Reparaturen von Hardware können wir in begrenztem Umfang durch Open Boat Projects durchführen. Bedenken Sie aber, dass diese Arbeit einen Teil unserer Freizeit abfordert und daher nicht immer zeitnah erfolgen kann.
 
 .. _Segeln-Forum: https://www.segeln-forum.de/board/195-open-boat-projects-org/
 
-Bei Fragen zu einem Hardware-Service verwenden sie folgedndes Kontaktformular:
+Bei Fragen zu einem Hardware-Service verwenden Sie folgendes Kontaktformular:
 
 * https://open-boat-projects.org/de/kontakt/
 
