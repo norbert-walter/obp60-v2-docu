@@ -8,27 +8,27 @@ Funktionen
 ----------
 
 * E-Ink Display (tageslichttauglich)
-* Nummerische Anzeigeseiten für 1, 2, 3 und 4 Werten (Werte frei wählbar)
+* Numerische Anzeigeseiten für 1, 2, 3 und 4 Werte (Werte frei wählbar)
 * Grafische Anzeigeseiten (feste Werte)
 * Trendanzeige für Werte
 * Grenzwertüberschreitung akustisch und optisch
-* 6 Sensor-Tasten (Wischgesten-tauglich)
+* 6 Sensor-Tasten (geeignet für Wischgesten)
 * Akustischer Signalgeber (Buzzer)
 * Optischer Signalgeber (RGB-LED)
-* LED Displaybeleuchtung (RGB-LEDs)
+* LED-Displaybeleuchtung (RGB-LEDs)
 * NMEA2000 (vollduplex, isoliert)
 * NMEA0183 (RX oder TX, konfigurierbar, isoliert)
 * NMEA2000/NMEA0183 Gateway (bidirektional)
 * I2C (isoliert)
 * 1Wire (nicht isoliert)
-* Spannungsausgang 5V für ext. Sensorik
+* Spannungsausgang 5V (max. 200mA) für ext. Sensorik
 * USB-C (OTG, Debug, NMEA0183)
-* Batteriemonitor (12V Spannungsmessung)
+* Batteriemonitor (12V-Spannungsmessung)
 * BMP280 (Temperatur, Luftdruck)
 * GPS-Empfäger (GPS, Glonas, Baidu, int. oder ext. GPS-Antenne)
 * WiFi 2.4GHz (HTTP, TCP, UDP)
 * Bluetooth (aktuell ungenutzt)
-* Batterie Tiefentladeschutz < 9.0V
+* Batterie-Tiefentladeschutz < 9.0V
 * Low Power Modus
 
 
@@ -59,7 +59,7 @@ Spezifikation
 +----------------------+-----------------------------+
 | Displaygröße         | 400 x 300 pix               |
 +----------------------+-----------------------------+
-| Refteshrate          | 1 Hz                        |
+| Refreshrate          | 1 Hz                        |
 +----------------------+-----------------------------+
 | Sensortasten         | kapazitiv                   |
 +----------------------+-----------------------------+
@@ -71,7 +71,7 @@ Spezifikation
 +----------------------+-----------------------------+
 | 1Wire-Bus            | 3.3V, 10m                   |
 +----------------------+-----------------------------+
-| 5V Ausgang           | 200 mA, isoliert            |
+| 5V-Ausgang           | 200 mA, isoliert            |
 +----------------------+-----------------------------+
 | ESD-Schutz           | 8 kV                        |
 +----------------------+-----------------------------+

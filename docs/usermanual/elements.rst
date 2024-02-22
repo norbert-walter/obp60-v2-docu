@@ -86,7 +86,6 @@ Flash LED
 
 .. image:: ../pics/Flash_LED.png
              :scale: 45%
-
 Links oberhalb des Displays befindet sich eine kleine Flash-LED. Diese LED dient zur Signalisierung von Betriebszuständen des OPB60. Die LED kann dabei verschiedene Farben annehmen. Die LED leuchet mit maximaler Helligkeit, sodass sie optisch auch bei hellen Sonnenlicht gut wahrgenommen werden kann.
 
 * Rot - Alarmierung bei Grenzwertüberschreitung
@@ -96,15 +95,17 @@ Links oberhalb des Displays befindet sich eine kleine Flash-LED. Diese LED dient
 Hintergrundbeleuchtung
 ----------------------
 
-Um das Display bei Nacht ablesen zu können, kann eine Hintergrundbeleuchtung über die rechte Sensortaste zugeschaltet werden. Die Farbe und die Helligkeit können über die Konfiguration eingestellt werden. Grundsätzlich lässt sich die Hintergrundbeleuchtung folgendermaßen verwenden:
+Um das Display bei Nacht ablesen zu können, kann eine Hintergrundbeleuchtung über die rechte Sensortaste zugeschaltet werden. Die Farbe und die Helligkeit können über die Konfiguration eingestellt werden. Grundsätzlich lässt sich die Hintergrundbeleuchtung folgendermaßen konfigurieren:
 
 * Dauerhaft an
 * Dauerhaft aus
 * Manuell einschaltbar über Sensortaste
-* Automatisch schaltbar abhängig vom Sonnenstand
+* Automatisch schaltbar abhängig vom Sonnenstand<
 
 .. important::
-   Wenn Sie den Sonnenstand zum Schalten der Hintergrundbeleuchtung verwenden wollen, benötigen Sie ein gültiges GPS-Signal, damit die Schaltzustände korrekt ausgelöst werden können. Die Hintergrundbeleuchtung wird dann automatisch bei astronomischen Sonnenuntergang eingeschaltet und bei Sonnenaufgang abgeschaltet. Dabei wird der geografische Ort berücksichtigt. Ist kein gültiges GPS-Signal vorhanden, so erfolgt keine Änderung der Schaltzustände.
+   Wenn Sie den Sonnenstand zum Schalten der Hintergrundbeleuchtung verwenden wollen, benötigen Sie ein gültiges GPS-Signal, damit die Schaltzustände ausgelöst werden können. Die Hintergrundbeleuchtung wird dann automatisch bei astronomischem Sonnenuntergang eingeschaltet und bei Sonnenaufgang abgeschaltet. Dabei wird der geografische Ort berücksichtigt. Ist kein gültiges GPS-Signal vorhanden, so erfolgt keine Änderung der Schaltzustände.
+=======
+
    
 Buzzer
 ------
