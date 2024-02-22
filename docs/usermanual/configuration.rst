@@ -24,7 +24,7 @@ Nachdem Sie im WiFi-Netzwerk eigebucht sind, öffnen Sie in einem Web-Browser di
 Status
 ------
 
-Auf der Statusseite sieht man im oberen Bereich den Ethernet-Verbindungsstatus.
+Auf der Statusseite sieht man im oberen Bereich den WiFi-Verbindungsstatus.
 
 .. image:: ../pics/Status_1.png
              :scale: 60%
@@ -75,7 +75,7 @@ Die Konfigurationsseite unterteilt sich in zwei Bereiche. Die Firmware basiert a
 Auf der Konfigurationsseite sind im oberen Bereich verschiedene Tasten zu sehen. Die Bedeutung der Tasten ist nachfolgend aufgeführt:
 
 * **Reload Config** - Erneutes laden der Konfiguration
-* **Forget Pass** - Entfernen des Login-Passwortes aus dem Cach-Speiches des Browsers
+* **Forget Pass** - Entfernen des Login-Passwortes aus dem Cache-Speiches des Browsers
 * **Save & Restart** - Speichern der Konfiguration mit anschließendem Neustart der Firmware
 * **Export** - Export einer Konfiguration als JSON-File
 * **Import** - Import einer Konfiguration über ein JSON-File
@@ -294,7 +294,7 @@ Nach der Zuordnung des Sensornamens wird unter **Example** ein Beispiel für das
 **Instance**
     Mit Instance kann festgelegt werden, ob es mehrere Sensoren des selben Typs gibt. Das kann z.B. auftreten, wenn zwei Motoren in einem Boot verbaut sind und zwei Tankwerte angezeigt werden sollen. Mit Hilfe einer Instanz-Nummer werden die Sensoren unterschieden. An den Sensornamen wird dann z.B. \#1 angefügt. Die Arte der Instanziierung kann folgendermaßen festgelegt werden:
     
-    * **singel** - Es wird ein Sensor instanziiert, dem einen freie Instanz-Nummer zugeordnet werden kann. So können z.B. zwei Sensoren die selben Daten in ein XDR-Telegramm übertragen, wenn die Sensoren redundant sind.
+    * **single** - Es wird ein Sensor instanziiert, dem einen freie Instanz-Nummer zugeordnet werden kann. So können z.B. zwei Sensoren die selben Daten in ein XDR-Telegramm übertragen, wenn die Sensoren redundant sind.
     * **ignore** - Es existiert nur genau ein einziger Sensor dieses Typs.
     * **auto** - Die Instanziierung wird automatisch übernommen. Sobals ein neuer Sensor des gleichen Typs und der selben Source verwendet wir, wird eine neue Instanz des Sensors angelegt.
         
