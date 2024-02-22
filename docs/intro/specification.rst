@@ -23,12 +23,12 @@ Funktionen
 * 1Wire (nicht isoliert)
 * Spannungsausgang 5V (max. 200mA) für ext. Sensorik
 * USB-C (OTG, Debug, NMEA0183)
-* Batteriemonitor (12V Spannungsmessung)
+* Batteriemonitor (12V-Spannungsmessung)
 * BMP280 (Temperatur, Luftdruck)
 * GPS-Empfäger (GPS, Glonas, Baidu, int. oder ext. GPS-Antenne)
 * WiFi 2.4GHz (HTTP, TCP, UDP)
 * Bluetooth (aktuell ungenutzt)
-* Batterie Tiefentladeschutz < 9.0V
+* Batterie-Tiefentladeschutz < 9.0V
 * Low Power Modus
 
 
@@ -59,7 +59,7 @@ Spezifikation
 +----------------------+-----------------------------+
 | Displaygröße         | 400 x 300 pix               |
 +----------------------+-----------------------------+
-| Refteshrate          | 1 Hz                        |
+| Refreshrate          | 1 Hz                        |
 +----------------------+-----------------------------+
 | Sensortasten         | kapazitiv                   |
 +----------------------+-----------------------------+
@@ -71,7 +71,7 @@ Spezifikation
 +----------------------+-----------------------------+
 | 1Wire-Bus            | 3.3V, 10m                   |
 +----------------------+-----------------------------+
-| 5V Ausgang           | 200 mA, isoliert            |
+| 5V-Ausgang           | 200 mA, isoliert            |
 +----------------------+-----------------------------+
 | ESD-Schutz           | 8 kV                        |
 +----------------------+-----------------------------+
