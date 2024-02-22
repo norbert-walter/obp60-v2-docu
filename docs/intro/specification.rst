@@ -8,20 +8,20 @@ Funktionen
 ----------
 
 * E-Ink Display (tageslichttauglich)
-* Nummerische Anzeigeseiten für 1, 2, 3 und 4 Werten (Werte frei wählbar)
+* Numerische Anzeigeseiten für 1, 2, 3 und 4 Werte (Werte frei wählbar)
 * Grafische Anzeigeseiten (feste Werte)
 * Trendanzeige für Werte
 * Grenzwertüberschreitung akustisch und optisch
-* 6 Sensor-Tasten (Wischgesten-tauglich)
+* 6 Sensor-Tasten (geeignet für Wischgesten)
 * Akustischer Signalgeber (Buzzer)
 * Optischer Signalgeber (RGB-LED)
-* LED Displaybeleuchtung (RGB-LEDs)
+* LED-Displaybeleuchtung (RGB-LEDs)
 * NMEA2000 (vollduplex, isoliert)
 * NMEA0183 (RX oder TX, konfigurierbar, isoliert)
 * NMEA2000/NMEA0183 Gateway (bidirektional)
 * I2C (isoliert)
 * 1Wire (nicht isoliert)
-* Spannungsausgang 5V für ext. Sensorik
+* Spannungsausgang 5V (max. 200mA) für ext. Sensorik
 * USB-C (OTG, Debug, NMEA0183)
 * Batteriemonitor (12V Spannungsmessung)
 * BMP280 (Temperatur, Luftdruck)
