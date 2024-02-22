@@ -14,5 +14,3 @@ Wenn Sie mehr erfahren wollen, was wir mit Ihren Spenden machen, dann schauen Si
 
 * https://open-boat-projects.org/sponsors/
 * https://open-boat-projects.org/de/boot-2023/
-
-

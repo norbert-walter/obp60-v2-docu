@@ -8,5 +8,3 @@ Die Hauptidee ist es, dass jeder durch die offene Projektbeschreibung und Dokume
 Bei Fragen zu einem Hardware-Service verwenden Sie folgendes Kontaktformular:
 
 * https://open-boat-projects.org/de/kontakt/
-
-

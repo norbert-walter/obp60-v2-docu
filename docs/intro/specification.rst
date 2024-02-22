@@ -90,16 +90,45 @@ Anschlussbelegung
 Schaltplan
 ----------
 
+* `Schaltplan V2.1[PDF] <../_static/files/Schematic_OBP60_V2.pdf>`_
+
+
 Maßbilder
 ---------
+
+* `Maßbild[PDF] <../_static/files/Drawing_OBP60_V2.pdf>`_
+
    
 Nutzbare und konvertierbare Telegramme
 --------------------------------------
 
-**NMEA0183 -> NMEA2000**
+**NMEA0183**
     * AIVDM, AIVDO, DBK, DBS, DBT, DPT, GGA, GLL, GSA, GSV, HDG, HDM, HDT, MTW, MWD, MWV, RMB, RMC, ROT, RSA, VHW, VTG, VWR, XDR, XTE, ZDA
     
-**NMEA2000 -> NMEA0183**
+**NMEA2000**
     * 126992, 127245, 127250, 127251, 127257, 127258, 127488, 127489, 127505, 127508, 128259, 128267, 128275, 129025, 129026, 129029, 129033, 129038, 129039, 129283, 129284, 129539, 129540, 129794, 129809, 129810, 130306, 130310, 130311, 130312, 130313, 130314, 130316
-    
+	
+Nutzbare I2C Sensorik
+---------------------
 
+**Temperatursensoren**
+	* BMP085
+	* BMP180
+	* BMP280
+	* BME280
+	* SHT20
+	* HTU21
+	
+**Spannungs- und Stromsensoren**
+	* INA226
+	* INA219 (in Vorbereitung)
+	
+**Winkelsensoren**
+	* AS5600
+	* MT6701 (in Vorbereitung)
+	
+**Port Erweiterungen**
+	* PCF8574 (in Vorbereitung)
+	
+**Echtzeit-Uhren**
+	* DS1388

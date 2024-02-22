@@ -3,8 +3,11 @@ OBP60 V2 Dokumentation
 ######################
 Letzte Aktualisierung |today|
 
-.. note::
+.. image:: https://readthedocs.org/projects/obp60-v2-docu/badge/?version=latest
+    :target: https://obp60-v2-docu.readthedocs.io/de/latest/?badge=latest
+    :alt: Documentation Status
 
+.. note::
    Diese Seiten sind noch in Bearbeitung.
 
 .. image:: /pics/OBP60_Case_Front_t.png
@@ -68,5 +71,3 @@ Das Mutifunktionsdisplay OBP60 dient zur Anzeige von Daten aus Boots-Netzen wie 
    Mitarbeit <help/cooperation>
    Spenden <help/donation>
    Glossar <help/glossar>
-
-
