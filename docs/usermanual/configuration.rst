@@ -211,7 +211,167 @@ Die genaue Bedeutung der Kurzbezeichner ist `hier`_ erklärt.
 	
 .. warning::
 	Datenschleifen führen zu Fehlfunktionen des Gerätes. Bei Datenschleifen laufen dieselben Daten über mehrere Geräte im Kreis. Dadurch entstehen hohe Senderaten, weil fortlaufend Daten gesendet und empfangen werden. Die Prozessorlast erhöht sich dabei auf ein Maximum. Unter Umständen kann das Gerät ausfallen, nicht mehr zeitnah die Daten verarbeiten oder unbedienbar sein. Beachten Sie, dass der Zustand auch erst eintreten kann, wenn weitere Geräte am Bussystem später zugeschaltet werden.
+	
+Config - Serial Port
+--------------------
 
+.. image:: ../pics/Config_Serial_Port.png
+             :scale: 60%
+
+Über **Serial Port** können Einstellungen zur seriellen NMEA0183-Schnittstelle vorgenommen werden. Diese Einstellungen beziehen sich auf die RS485-Schnittstelle am Steckverbinder CN1 mit den Signalen ``A``, ``B`` und ``Shield``.
+
+**Serial Direction**
+	* ``off`` - Die NMEA0183-Schnittstelle ist ausgeschaltet
+	* ``send`` - Die NMEA0183-Schnittstelle sendet
+	* ``receive`` - Die NMEA0183-Schnittstelle empfängt
+	
+.. note::
+	Die serielle Schnittstelle ist konform zu RS485 und RS422 und arbeitet im Halbduplex-Betrieb. Es kann entweder gesendet oder empfangen werden. Beides gleichzeitig ist nicht möglich. Wenn Sie eine Vollduplex-Übertragung für NMEA0183-Daten benötigen, dann können Sie die USB-C-Schnittstelle benutzen. Diese Schnittstelle ist aber nicht zu RS485 oder RS422 konform. Sie kann sinnvoll verwendet werden wenn die Daten z.B. in OpenCPN auf einem PC oder Laptop verarbeitet werden sollen.
+	
+**Serial Baud Rate**
+	* Einstellung der Baudrate zwischen 1200 und 460800 Bd.
+	
+**Serial to NMEA2000**
+	* ``on`` - Daten an der Schnittstelle werden nach NMEA2000 übertragen (Gateway-Funktion)
+	* ``off`` - Daten an der Schnittstelle werden nicht nach NMEA2000 übertragen
+	
+In den nächsten beiden Einstellungen werden die Filterfunktionen **Serial Read Filter** und **Serial Write Filter** für das Lesen und Schreiben an der seriellen Schnittstelle vorgenommen. Es lassen sich nur NMEA0183-Daten filtern. Dabei lässt sich gesondert einstellen, ob AIS-Positionssignale verarbeitet werden. Als Filterformen stehen Whitelist und Blacklist zur Verfügung.
+
+**Serial Filter**
+	* ``aison`` - AIS-Daten an der USB-Schnittstelle werden verarbeitet
+	* ``aisoff`` - AIS-Daten an der USB-Schnittstelle werden nicht verarbeitet
+	* ``blacklist`` - Der Filter funktioniert als Blacklist. Gekennzeichnete Telegramme werden nicht verarbeitet.
+	* ``whitelist`` - Der Filter funktioniert als Whitelist. Nur aufgelistete Telegramme werden verarbeitet.
+	
+Im Eingabefeld werden die Kurzbezeichner der NMEA0183-Telegramme eingetragen, Mehreren Einträge werden durch Komma ``,`` getrennt. Folgende Kurzbezeichner können verwendet werden:
+
+	* DBK, DBS, DBT, DPT, GGA, GLL, GSA, GSV, HDG, HDM, HDT, MTW, MWD, MWV, RMB, RMC, ROT, RSA, VHW, VTG, VWR, XDR, XTE, ZDA
+	
+Die genaue Bedeutung der Kurzbezeichner ist `hier`_ erklärt.
+
+Config - TCP Server
+-------------------
+
+.. image:: ../pics/Config_TCP_Server.png
+             :scale: 60%
+             
+An dieser Stelle werden die Einstellungen zum TCP-Server vorgenommen. Der TCP-Server ist ein Server-Dienst über den Daten schreibend und lesend ausgetauscht werden können. Dabei meldet sich ein Netzwerk-Gerät als Client aktiv über einen TCP-Port am Server an und kann dann Daten mit dem TCP-Server austauschen.
+
+.. note::
+    Der Anmeldevorgang muss immer vom Client initiiert werden. Bei Verbindungsabbrüchen muss der Client die Verbindung wieder selbständig aufbauen. Achten Sie darauf, dass der Client über eine Auto-Connect-Funktion verfügt. Anderenfalls verlieren Sie die Datenverbindung dauerhaft bei Verbindungsabbrüchen.
+
+**TCP Port**
+	* Angabe des TCP-Port auf den der Server auf eingehende Verbindungsanfragen wartet. Der Default-Wert ist 10110. Verwenden Sie nur Ports größer 1024, da Ports unterhalb von 1024 für feste Anwendungen reserviert sind. Der Maximalwert liegt bei 65535.
+	
+**Max TCP Clients**
+	* Angabe, wie viele Clients sich maximal mit dem TCP-Server verbinden dürfen. Der Defualt-Wert ist 6.
+	
+.. note::	
+	Beachten Sie, dass viele Clients eine große Rechenlast der CPU verursachen kann. Sorgen Sie dafür, dass sich nicht mehr als 6 Clients mit dem Server verbinden können. Anderenfalls kann es zur Beeinträchtigung der Datenverarbeitung kommen oder das Gerät reagiert nicht mehr korrekt.
+
+**NMEA0183 OUT**
+    * ``on`` - Am TCP-Port werden NMEA0183-Daten ausgegeben
+	* ``off`` - Am TCP-Port werden keine NMEA0183-Daten ausgegeben
+	
+**NMEA0183 IN**
+    * ``on`` - Am TCP-Port werden NMEA0183-Daten empfangen
+	* ``off`` - Am TCP-Port werden keine NMEA0183-Daten empfangen
+	
+**To NMEA2000**
+	* ``on`` - Daten am TCP-Port werden nach NMEA2000 übertragen (Gateway-Funktion)
+	* ``off`` - Daten am TCP-Port werden nicht nach NMEA2000 übertragen
+	
+In den nächsten beiden Einstellungen werden die Filterfunktionen **NMEA Read Filter** und **NMEA Write Filter** für das Lesen und Schreiben am TCP-Port vorgenommen. Es lassen sich nur NMEA0183-Daten filtern. Dabei lässt sich gesondert einstellen, ob AIS-Positionssignale verarbeitet werden. Als Filterformen stehen Whitelist und Blacklist zur Verfügung.
+
+**NMEA Filter**
+	* ``aison`` - AIS-Daten an der USB-Schnittstelle werden verarbeitet
+	* ``aisoff`` - AIS-Daten an der USB-Schnittstelle werden nicht verarbeitet
+	* ``blacklist`` - Der Filter funktioniert als Blacklist. Gekennzeichnete Telegramme werden nicht verarbeitet.
+	* ``whitelist`` - Der Filter funktioniert als Whitelist. Nur aufgelistete Telegramme werden verarbeitet.
+	
+Im Eingabefeld werden die Kurzbezeichner der NMEA0183-Telegramme eingetragen, Mehreren Einträge werden durch Komma ``,`` getrennt. Folgende Kurzbezeichner können verwendet werden:
+
+	* DBK, DBS, DBT, DPT, GGA, GLL, GSA, GSV, HDG, HDM, HDT, MTW, MWD, MWV, RMB, RMC, ROT, RSA, VHW, VTG, VWR, XDR, XTE, ZDA
+	
+Die genaue Bedeutung der Kurzbezeichner ist `hier`_ erklärt.
+
+**Seasmart**
+    * Über Seasmart lassen sich NMEA2000-Daten in NMEA0183-Telegrammen verpacken. Wenn Sie Seasmart aktivieren, werden alle NMEA2000-Daten über NMEA0183-Telegramme ausgegeben und getunnelt. Die Daten werden dabei in Binärform in einem NMEA0183-Telegramm übertragen. Somit können Sie von einem OBP60 (TCP-Server) zu einem anderen OBP60 (TCP-Client) NMEA2000-Daten über Wifi übertragen. Achten Sie darauf, dass auf der Gegenseite ebenfalls Seasmart aktiviert ist.
+    * ``on`` - Der TCP-Server kann Seasmart-Daten senden und empfangen
+	* ``off`` - Seasmart wird vom TCP-Server nicht unterstützt
+	
+Config - TCP Client
+-------------------
+
+.. image:: ../pics/Config_TCP_Client.png
+             :scale: 60%
+             
+An dieser Stelle werden die Einstellungen zum TCP-Client vorgenommen. Das OBP60 kann als TCP-Client Daten mit einem TCP-Server lesend und schreibend austauschen. Dabei meldet sich das OBP60 als Client aktiv über einen TCP-Port am TCP-Server an und kann dann Daten mit dem Server austauschen.
+
+**Enable**
+    * ``on`` - Der TCP-Client-Modus ist im OBP60 aktiviert
+	* ``off`` - Der TCP-Client-Modus ist deaktiviert
+	
+**Remote Port**
+	* Angabe des entfernten TCP-Port über den daten mit einem TCP-Server ausgetauscht werden sollen. Der Default-Wert ist 10110. Damit ein Datenaustausch mit einem TCP-Server und einem TCP-Clinetstattfinden kann, muss der selbe Port vom TCP-Client verwendet werden, den der TCP-Server für die Kommunikation verwendet. Benutzen Sie nur Ports größer 1024, da Ports unterhalb von 1024 für feste Anwendungen reserviert sind. Der Maximalwert liegt bei 65535.
+	
+**Remote Address**
+    Die Remote Address ist die Adresse des TCP-Servers im WiFi-Netzwerk mit dem Sie Daten austauschen wollen. Sie können eine IP-Adresse wie z.B. **192.168.15.1** oder einen MDNS-Hostnamen wie z.B. **OBP60V2.local** verwenden.
+
+.. warning::
+    Wenn Sie Daten zwischen zwei OBP60 via WiFi austauschen wollen, müssen sich beide Geräte im selben Funknetz befinden und müssen unterschiedliche System-Namen und Access Point IP-Adressen besitzen. Eine Gerät muss als TCP-Server und das andere Gerät als TCP-Client konfiguriert sein. Die Einstellungen dazu werden unter **Config - System** vorgenommen. Wenn Sie das nicht beachten, kann es zu Störungen im WiFi-Datenverkehr kommen und Sie können unter Umständen die Web-Konfigurationsoberflächen der Geräte nicht mehr erreichen.
+    
+**NMEA0183 OUT**
+    * ``on`` - Am TCP-Port werden NMEA0183-Daten ausgegeben
+	* ``off`` - Am TCP-Port werden keine NMEA0183-Daten ausgegeben
+	
+**NMEA0183 IN**
+    * ``on`` - Am TCP-Port werden NMEA0183-Daten empfangen
+	* ``off`` - Am TCP-Port werden keine NMEA0183-Daten empfangen
+	
+**To NMEA2000**
+	* ``on`` - Daten am TCP-Port werden nach NMEA2000 übertragen (Gateway-Funktion)
+	* ``off`` - Daten am TCP-Port werden nicht nach NMEA2000 übertragen
+	
+In den nächsten beiden Einstellungen werden die Filterfunktionen **NMEA Read Filter** und **NMEA Write Filter** für das Lesen und Schreiben am TCP-Port vorgenommen. Es lassen sich nur NMEA0183-Daten filtern. Dabei lässt sich gesondert einstellen, ob AIS-Positionssignale verarbeitet werden. Als Filterformen stehen Whitelist und Blacklist zur Verfügung.
+
+**NMEA Filter**
+	* ``aison`` - AIS-Daten an der USB-Schnittstelle werden verarbeitet
+	* ``aisoff`` - AIS-Daten an der USB-Schnittstelle werden nicht verarbeitet
+	* ``blacklist`` - Der Filter funktioniert als Blacklist. Gekennzeichnete Telegramme werden nicht verarbeitet.
+	* ``whitelist`` - Der Filter funktioniert als Whitelist. Nur aufgelistete Telegramme werden verarbeitet.
+	
+Im Eingabefeld werden die Kurzbezeichner der NMEA0183-Telegramme eingetragen, Mehreren Einträge werden durch Komma ``,`` getrennt. Folgende Kurzbezeichner können verwendet werden:
+
+	* DBK, DBS, DBT, DPT, GGA, GLL, GSA, GSV, HDG, HDM, HDT, MTW, MWD, MWV, RMB, RMC, ROT, RSA, VHW, VTG, VWR, XDR, XTE, ZDA
+	
+Die genaue Bedeutung der Kurzbezeichner ist `hier`_ erklärt.
+
+**Seasmart**
+    * Über Seasmart lassen sich NMEA2000-Daten in NMEA0183-Telegrammen verpacken. Wenn Sie Seasmart aktivieren, werden alle NMEA2000-Daten über NMEA0183-Telegramme ausgegeben und getunnelt. Die Daten werden dabei in Binärform in einem NMEA0183-Telegramm übertragen. Somit können Sie von einem OBP60 (TCP-Server) zu einem anderen OBP60 (TCP-Client) NMEA2000-Daten über Wifi übertragen. Achten Sie darauf, dass auf der Gegenseite ebenfalls Seasmart aktiviert ist.
+    * ``on`` - Der TCP-Server kann Seasmart-Daten senden und empfangen
+	* ``off`` - Seasmart wird vom TCP-Server nicht unterstützt
+	
+Config _ WiFi Client
+--------------------
+
+Das OBP60 kann neben dem WiFi-Access Point auch als WiFi-Client betrieben werden. Damit kann das OBP60 einem externen WiFi-Netz beitreten und Daten austauschen. Das OBP60 ist dann ein Teilnehmer des externen Netzwerkes.
+
+**WiFi Client**
+    * ``on`` - Der WiFi-Client_Modus ist aktiviert
+	* ``off`` - Der WiFi-Client-Modus wird nicht unterstützt
+	
+**WiFi Client SSID**
+    * Über **Wifi Client SSID** wird der WiFi-Netzwerkname angeben. Als Namen könne alle Zeichen des ASCII-Zeichensatzes verwendet werden.
+    
+**WiFi Client Pasword**
+    * Über **Wifi Client Password** wird der WiFi-Passwort angeben. Als Passwort könne alle Zeichen des ASCII-Zeichensatzes verwendet werden. Bei der Eingabe wird das Passwort verdeckt mit Sternchen ``*****`` angezeigt. Über das Augen-Symbol kann das Passwort im Klartext angezeigt werden.
+    
+.. hint::
+    Wenn Sie Probleme mit der Verbindung zu externen WiFi-Netzwerken haben, dann überprüfen Sie, ob der Netzwerkname oder das Passwort Sonderzeichen enthält. In einigen Situationen können Sonderzeichen oder zu lange Passworte Verbindungsprobleme verursachen. Ändern Sie dann versuchsweise den Netzwerknamen oder das Passwort ab.
+    
+
+		
 XDR
 ---
 
