@@ -394,8 +394,8 @@ Die Einstellung der Einheiten wird unter **OBP Units** vorgenommen. Für die jew
 **Date Format**
     Mit **Date Format** kann das Ausgabeformat des Datums angepasst werden.
     * ``DE`` - Deutsches Datumsformat ``31.12.2024``
-    * ``GB`` - Britisches Datumsformat ``31-12-2024``
-    * ``US`` - US Datumsformat ``12-31-2024``
+    * ``GB`` - Britisches Datumsformat ``31/12/2024``
+    * ``US`` - US Datumsformat ``12/31/2024``
 
 OBP - Hardware
 --------------
@@ -404,12 +404,114 @@ Unter **Hardware** werden alle Einstellungen bezüglich verbauter Hardware oder 
 
 **GPS Sensor**
      Typ des GPS-Sensors
-     * ``NEO-6M`` GPS-Sensor NEO-6M (Standard)
-     * ``NEO-M8N`` Höherwertiger GPS-Sensor NEO-M8N
+     * ``NEO-6M`` - GPS-Sensor NEO-6M (Standard)
+     * ``NEO-M8N`` - Höherwertiger GPS-Sensor NEO-M8N
      
 **Env. Sensor**
-    Angaben zum verwendeten Umgebungssensor. Dabei können verschiedene Sensoren ausgewählt werden. 
-     
+    Angaben zum verwendeten Umgebungssensor. Dabei können verschiedene Sensoren ausgewählt werden. Die Sensoren sind am I2C-Bus angebunden. Es können interne Gerätesensoren oder externe Sensoren ausgewählt werden.   
+    * ``off`` - Es wird kein Umgebungssensor benutzt
+    * ``BME280`` - Sensor für Temperatur, Luftfeuchtigkeit und Luftdruck
+    * ``BMP280`` - Sensor für Temperatur und Luftdruck
+    * ``BMP180`` - Sensor für Temperatur und Luftdruck
+    * ``BME085`` - Sensor für Temperatur und Luftdruck
+    * ``HTU21`` - Sensor für Temperatur und Luftfeuchtigkeit
+    * ``SHT21`` - Sensor für Temperatur und Luftfeuchtigkeit
+    
+**Battery Sensor**
+    Hier können Sensoren ausgewählt werden die am externen I2C-Bus angeschlossen sind und Batterie-Werte auslesen.
+    * ``off`` - Es wird kein Sensor benutzt
+    * ``INA219`` - Sensor für Spannung 0...36V, Strom 0...500A und Leistung, I2C-Addresse 0x41
+    * ``INA226`` - Sensor für Spannung 0...36V, Strom 0...500A und Leistung, I2C-Addresse 0x41
+    
+**Battery Shunt**
+    Hier kann der Shunt ausgewählt werden, der zur Messung des Batterie-Stroms dient. Es können nur Shunts verwendet werden, die 75 mV als Spannungsabfall bei Maximalstrom verwenden. Diese Angabe ist am Shunt zu finden.
+    * ``10`` - Shunt für 10A
+    * ``50`` - Shunt für 50A
+    * ``100`` - Shunt für 100A
+    * ``200`` - Shunt für 200A
+    * ``300`` - Shunt für 300A
+    * ``400`` - Shunt für 400A
+    * ``500`` - Shunt für 500A
+    
+**Solar Sensor**
+    Hier können Sensoren ausgewählt werden die am externen I2C-Bus angeschlossen sind und Solar-Werte auslesen.
+    * ``off`` - Es wird kein Sensor benutzt
+    * ``INA219`` - Sensor für Spannung 0...36V, Strom 0...500A und Leistung, I2C-Addresse 0x44
+    * ``INA226`` - Sensor für Spannung 0...36V, Strom 0...500A und Leistung, I2C-Addresse 0x44
+    
+**Solar Shunt**
+    Hier kann der Shunt ausgewählt werden, der zur Messung des Solar-Stroms dient. Es können nur Shunts verwendet werden, die 75 mV als Spannungsabfall bei Maximalstrom verwenden. Diese Angabe ist am Shunt zu finden.
+    * ``10`` - Shunt für 10A
+    * ``50`` - Shunt für 50A
+    * ``100`` - Shunt für 100A
+    * ``200`` - Shunt für 200A
+    * ``300`` - Shunt für 300A
+    * ``400`` - Shunt für 400A
+    * ``500`` - Shunt für 500A
+    
+**Generator Sensor**
+    Hier können Sensoren ausgewählt werden die am externen I2C-Bus angeschlossen sind und Generator-Werte auslesen.
+    * ``off`` - Es wird kein Sensor benutzt
+    * ``INA219`` - Sensor für Spannung 0...36V, Strom 0...500A und Leistung, I2C-Addresse 0x45
+    * ``INA226`` - Sensor für Spannung 0...36V, Strom 0...500A und Leistung, I2C-Addresse 0x45
+    
+**Solar Shunt**
+    Hier kann der Shunt ausgewählt werden, der zur Messung des Generator-Stroms dient. Es können nur Shunts verwendet werden, die 75 mV als Spannungsabfall bei Maximalstrom verwenden. Diese Angabe ist am Shunt zu finden.
+    * ``10`` - Shunt für 10A
+    * ``50`` - Shunt für 50A
+    * ``100`` - Shunt für 100A
+    * ``200`` - Shunt für 200A
+    * ``300`` - Shunt für 300A
+    * ``400`` - Shunt für 400A
+    * ``500`` - Shunt für 500A
+    
+**Rot. Sensor**
+    Über **Rot.Sensor** kann der Sensor zur Winkelmessung ausgewählt werden, der sich am externen I2C-Bus befindet.
+    * ``off`` - Es wird kein Sensor benutzt
+    * ``AS5600`` - Magnetischer Sensor zur Winkelmessung, 0...360°, ohne Endanschlag, I2C-Adresse 0x36
+    
+**Rot- Fuction**
+    Funktion des Winkelsensors
+    * ``Rudder`` - Winkelsensor für Ruderstellung
+    * ``Wind`` - Winkelsensor für Windrichtung
+    * ``Mast`` - Winkelsensor für Mastausrichtung bei drehbaren Masten
+    * ``Keel`` - Winkelsensor für Kielneigung
+    * ``Trim`` - Winkelsensor für Trimmklappen oder Foils
+    * ``Boom`` - Winkelsensor für Großbaum
+    
+**Rot. Offset**
+    Offset des Winkelsensors. Damit kann der Nullpunkt des Winkelsensors korrigiert werden.
+    
+**Roll Limit**
+    **Roll Limit** gibt den maximal zulässigen seitlichen Neigungswinkel für das Rollen des Bootes an.
+    
+**Roll Offset**
+    Offset des Neigungs-Winkelsensors. Damit kann der Nullpunkt des Sensors korrigiert werden.
+    
+**Pitch Offset**
+    Offset des Winkelsensors für Pitch. Damit kann der Nullpunkt des Sensors korrigiert werden.
+    
+**Temp Sensor**
+    Hier kann der Sensortyp ausgewählt werden, der am 1Wire-Bus verwendet wird.
+    * ``off`` - Es wird kein Sensor benutzt
+    * ``DS18B20`` - Temperatursensor -10...+85°C
+    
+**Power Mode**
+    Der **Power Mode** bezieht sich auf die Art der Stromversorgung, die im OBP60 angewendet wird.
+    * ``Max Power`` - Alle Stromversorgungen sind eingeschaltet. Hierbei ist das Gerät am leistungsfähigsten und es entsteht der maximale Stromverbrauch.
+    * ``Only 3.3V`` - Es ist nur die zusätzliche Stromversorgung für 3.3 V eingeschaltet.
+    * ``Only 5.0V`` - Es ist nur die zusätzliche Stromversorgung für 5.0 V eingeschaltet.
+    * ``Min Power`` - Es sind nur die Stromversorgungen eingeschaltet, um die Minimal-Funktionen bereitzustellen. Hierbei entsteht der geringste Stromverbrauch.
+    
+**Undervoltage**
+    Erkennung der Unterspannung der Stromversorgung. Wenn eine Unterspannung erkannt wird, kann das OBP60 automatisch deaktiviert werden, um eine Tiefentladung der Batterie zu vermeiden. In kritischen Situationen kann das OBP60 trotz Unterspannung bis 7V funktionsfähig bleiben, wenn der Unterspannungsschutz deaktiviert ist. Als Default-Wert ist der Unterspannungsschutz aktiviert.
+    * ``on`` - Der Unterspannungsschutz ist aktiviert
+	* ``off`` - Der Unterspannungsschutz ist ausgeschaltet
+	
+**Simulation Data**
+    Mit **Simulation Data** können Bus- und Sensordaten simuliert werden. Die Funktion ist nützlich, wenn die Funktionalität des Gerätes im ausgebauten Zustand ohne angeschlossene Busse oder Sensoren getestet werden soll. Das Gerät befindet sich dann in einem Demo-Mode.
+    * ``on`` - Sensordaten werden durch Simulationsdaten ersetzt
+	* ``off`` - Es werden Live-Sensordaten verwendet
 
 OBP - Calibrations
 ------------------
