@@ -370,8 +370,8 @@ Das OBP60 kann neben dem WiFi-Access Point auch als WiFi-Client betrieben werden
 .. hint::
     Wenn Sie Probleme mit der Verbindung zu externen WiFi-Netzwerken haben, dann überprüfen Sie, ob der Netzwerkname oder das Passwort Sonderzeichen enthält. In einigen Situationen können Sonderzeichen oder zu lange Passworte Verbindungsprobleme verursachen. Ändern Sie dann versuchsweise den Netzwerknamen oder das Passwort ab.
     
-OBP - Settings
---------------
+Config - OBP Settings
+---------------------
 
 .. image:: ../pics/Config_OBP60_Settings.png
              :scale: 60%
@@ -383,8 +383,8 @@ Unter **OBP60 Settings** werden eine Reihe von Einstellungen vorgenommen die das
 
 Die weiteren Einstellungen sollten selbsterklärend sein. Sofern Sie keine Solarpanele benutzen, belassen Sie den Wert auf 0. **Generator Power** bezieht sich auf einen Elektrogenerator der im Boot vorhanden ist. Das kann eine Lichtmaschine, ein Windgenerator, ein Schleppgenerator oder ein Zusatz-Generator sein. Die Leistungsangaben für **Solar Power** und **Genrator Power** werden zur Visualisierung der Energieflüsse benötigt.
 
-OBP - Units
------------
+Config - OBP Units
+------------------
 
 .. image:: ../pics/Config_OBP60_Units.png
              :scale: 60%
@@ -397,8 +397,8 @@ Die Einstellung der Einheiten wird unter **OBP Units** vorgenommen. Für die jew
     * ``GB`` - Britisches Datumsformat ``31/12/2024``
     * ``US`` - US Datumsformat ``12/31/2024``
 
-OBP - Hardware
---------------
+Config - OBP Hardware
+---------------------
 
 .. image:: ../pics/Config_OBP60_Hardware.png
              :scale: 60%
@@ -519,20 +519,20 @@ Unter **Hardware** werden alle Einstellungen bezüglich verbauter Hardware oder 
 .. warning::
     Bedenken Sie, dass Simulationsdaten als Live-Daten fehlinterpretiert werden können. Benutzen Sie Simulationsdaten nur, wenn Sie das OBP60 nicht nur Navigation benötigen und stellen es nach der Benutzung wieder auf Live-Daten um, in dem Sie den Simulations-Modus beenden.
 
-OBP - Calibrations
+Config - OBP Calibrations
+-------------------------
+
+Config - OBP Display
+--------------------
+
+Config - OBP Buzzer
+-------------------
+
+Config - OBP Pages
 ------------------
 
-OBP - Display
--------------
-
-OBP - Buzzer
-------------
-
-OBP - Pages
------------
-
-OBP - Page X
-------------
+Config - OBP Page X
+-------------------
 		
 XDR
 ---
