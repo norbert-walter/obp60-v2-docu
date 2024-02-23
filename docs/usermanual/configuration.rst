@@ -507,7 +507,7 @@ Unter **Hardware** werden alle Einstellungen bezüglich verbauter Hardware oder 
     * ``Min Power`` - Es sind nur die Stromversorgungen eingeschaltet, um die Minimal-Funktionen bereitzustellen. Hierbei entsteht der geringste Stromverbrauch.
     
 **Undervoltage**
-    * rkennung der Unterspannung der Stromversorgung. Wenn eine Unterspannung erkannt wird, kann das OBP60 automatisch deaktiviert werden, um eine Tiefentladung der Batterie zu vermeiden. In kritischen Situationen kann das OBP60 trotz Unterspannung bis 7V funktionsfähig bleiben, wenn der Unterspannungsschutz deaktiviert ist. Als Default-Wert ist der Unterspannungsschutz aktiviert.
+    * Erkennung der Unterspannung der Stromversorgung. Wenn eine Unterspannung erkannt wird, kann das OBP60 automatisch deaktiviert werden, um eine Tiefentladung der Batterie zu vermeiden. In kritischen Situationen kann das OBP60 trotz Unterspannung bis 7 V funktionsfähig bleiben, wenn der Unterspannungsschutz deaktiviert ist. Als Default-Wert ist der Unterspannungsschutz aktiviert.
     * ``on`` - Der Unterspannungsschutz ist aktiviert
     * ``off`` - Der Unterspannungsschutz ist ausgeschaltet
 	
@@ -517,13 +517,95 @@ Unter **Hardware** werden alle Einstellungen bezüglich verbauter Hardware oder 
     * ``off`` - Es werden Live-Sensordaten verwendet
 	
 .. warning::
-    Bedenken Sie, dass Simulationsdaten als Live-Daten fehlinterpretiert werden können. Benutzen Sie Simulationsdaten nur, wenn Sie das OBP60 nicht nur Navigation benötigen und stellen es nach der Benutzung wieder auf Live-Daten um, in dem Sie den Simulations-Modus beenden.
+    Bedenken Sie, dass Simulationsdaten als Live-Daten fehlinterpretiert werden können. Benutzen Sie Simulationsdaten nur, wenn Sie das OBP60 nicht zur Navigation benötigen und stellen es nach der Benutzung wieder auf Live-Daten um, in dem Sie den Simulations-Modus beenden.
 
 Config - OBP Calibrations
 -------------------------
 
+Unter **Calibrations** können Einstellungen zur Kalibrierung vorgenommen werden. Damit lassen sich Ungenauigkeiten der Messwerte korrigieren. Die Korrektur kann je nach Sensor mit einer linearen oder quadratischen Korrektur durchgeführt werden.  
+
+**VSensor Offset**
+    * Offset der Korrekturfunktion des internen Spannungssensors des OBP60
+    
+**VSensor Slope**
+    * Steigung der Korrekturfunktion des internen Spannungssensors des OBP60
+
 Config - OBP Display
 --------------------
+
+Der Bereich **Display** enthält alle Einstellungen die das Display betreffen.
+
+**Display Mode**
+    * Über den **Display Mode** wird eingestellt wie sich das Display unmittelbar nach dem Einschaltern verhält.
+    * ``Logo + QR Code`` - Es wird das Logo und der QR-Code für den WiFi-Zugang angezeigt
+    * ``Logo`` - Es wird nur das Logo angezeigt
+    * ``White Screen`` - Es wird eine weiße Seite angezeigt
+    * ``off`` - Das Display wird zur Anzeige nicht verwendet
+    
+**Inverted Display Mode**
+    * ``Normal`` - Der Bildschirminhalt wird schwarz auf weißen Untergrund angezeigt
+    * ``Inverse`` - Der Bildschirminhalt wird weiß auf schwarzen Untergrund angezeigt
+    
+**Status Line**
+    * ``on`` - Die Statuszeile wird im oberen Bereich des Bildschirms angezeigt
+    * ``off`` - Die Statuszeile ist deaktiviert
+    
+**Refresh**
+    * ``on`` - Auto-Refresh des Bildschirminhaltes ist aktiviert. Damit werden Geisterbilder beim Seitenwechsel unterbunden. Es wird ein Voll-Refresh des E-Ink-Displays durchgeführt. Alle 10 min erfolgt ebenfalls ein Voll-Refresh.
+    * ``off`` - Auto-Refresh ist deaktiviert
+    
+.. note::
+    Die Entstehung von Geisterbildern ist von der Display-Temperatur des OBP60 abhängig. Bei tiefen Temperaturen sind Geisterbilder deutlicher zu sehen und die Anzeige reagiert träger als bei warmen Temperaturen. Kurz nach dem Einschalten wird für die ersten 5 Minuten jede Minute ein Voll-Refresh durchgeführt, damit sich das Display akklimatisieren kann. Bei extrem großer Sonneneinstrahlung kann es vorkommen, dass der Kontrast des Display-Inhaltes verloren geht. Schwarze Anzeigebereiche werden dann nur noch grau dargestellt. Das Display ist in dem Fall nicht defekt. Nach einem Voll-Refresh regeneriert sich das Display und der Kontrast wird wieder vollständig hergestellt.
+    
+**Hold Values**
+    * ``on`` - Anzeigewerte werden gehalten, wenn kurzzeitig die Datenverbindung fehlen sollte und die Daten nicht aktualisiert werden können. Diese Einstellung kann nützlich bei TCP-Verbindungen über WiFi sein. 
+    * ``off`` - Anzeigewerte werden nicht gehalten. Bei unterbrochener Datenverbindung länger als 5 s werden fehlende Daten mit ``---`` gekennzeichnet.
+    
+**Backlight Mode**
+    * ``Off`` - Die Hintergrundbeleuchtung ist dauerhaft ausgeschaltet
+    * ``Control by Sun`` - Einstellung der Beleuchtung durch den Sonnenstand
+    * ``Control by Bus`` - Einstellung der Beleuchtung über den Bus durch NMEA2000
+    * ``Control by Time`` - Einstellung der Beleuchtung durch ein vorgegebenes Zeitintervall
+    * ``Control by Key`` - Manuelle Einstellung der Beleuchtung durch eine Sensortaste
+    * ``On`` - Die Hintergrundbeleuchtung ist dauerhaft eingeschaltet
+    
+**Backlight Color**
+    * Die Farbe der Hintergrundbeleuchtung kann durch 6 RGB-LEDs verschieden eingestellt werden.
+    * ``Red`` - rot
+    * ``Orange`` - orange
+    * ``Yellow`` - gelb
+    * ``Green`` - grün
+    * ``Blue`` - blau
+    * ``Aqua`` - wasser
+    * ``Violet``- violett
+    * ``White`` - weiß (höchster Stromverbrauch)
+    
+**Brightness**
+    Über **Brightness** kann die Helligkeit der Hintergrundbeleuchtung der RGB-LEDs zwischen 20... 100% eingestellt werden. Der Default-Wert ist bei 50%. Damit wird sehr wenig Strom für die Hintergrundbeleuchtung benötigt. Die Helligkeit ist ausreichend stark für den Nachtbetrieb eingestellt, so dass das die Beleuchtung nicht blendet.
+    
+.. hint::
+    Für längere Nachtfahrten ist eine rote Hintergrundbeleuchtung empfehlenswert, die moderat in der Helligkeit auf z.B. 50% eingestellt ist. Bei rotem Licht muss sich das Auge nicht ständig an wechselnde Lichtverhältnisse anpassen. So können Sie ohne Probleme das Display ablesen und in der Nacht die Sehfähigkeit bewahren. 
+    
+.. note::
+   Je höher die Helligkeit der Hintergrundbeleuchtung eingestellt wird, um so mehr Strom wird verbraucht. Bei weißer Hintergrundbeleuchtung tritt der größte Stromverbrauch auf, da alle 3 Farben der RGB-LED zur Erzeugung von weißem Licht benötigt werden. Bei reinen Grundfarben wie rot, grün und blau wird am wenigsten Strom verbraucht. Bei Mischfarben weden die RGB-LEDs unterschiedlich stark angesteuert und der Stromverbrauch ist höher als bei den Grundfarben. Nachfolgend zwei Beispiele:
+        * 100%, weiß - 2 W
+        * 50%, rot - 0.2W
+        
+**Flash LED Mode**
+
+.. image:: ../pics/Flash_LED.png
+             :scale: 45%
+             
+Die Flash-LED befindet sich in der linken oberen Ecke über dem E-Ink-Display und zeigt verschiedene Zustände des OBP60 an. Die LED kann dabei verschiedene Farben annehmen, die je nach Verwendung unterschiedliche Bedeutung haben.
+    * ``Off`` - Die Flash-LED ist dauerhaft ausgeschaltet
+    * ``Bus Data`` - Bei eintreffenden Busdaten leuchtet die LED kurz blau auf 
+    * ``GPS Fix Lost`` - Bei dauerhaft roter Flash-LED ist der GPS-Fix verloren. Die GPS-Daten sind ungültig.
+    * ``Limit Violation`` - Bei blinkend roter Flash-LED ist ein Grenzwert verletzt worden.
+    
+Die LED leuchtet mit maximaler Helligkeit, sodass sie optisch auch bei hellen Sonnenlicht gut wahrgenommen werden kann. Die Bedeutung der Farben ist folgende:
+    * Rot - Alarmierung bei Grenzwertüberschreitung
+    * Grün - Bestätigung von Zustandsänderungen (z.B. Autopilot ein/aus)
+    * Blau - Signalisierung von Zuständen (z.B. GPS-Empfang, Datentransfer usw.)    
 
 Config - OBP Buzzer
 -------------------

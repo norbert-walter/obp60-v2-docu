@@ -86,7 +86,7 @@ Flash LED
 
 .. image:: ../pics/Flash_LED.png
              :scale: 45%
-Links oberhalb des Displays befindet sich eine kleine Flash-LED. Diese LED dient zur Signalisierung von Betriebszuständen des OPB60. Die LED kann dabei verschiedene Farben annehmen. Die LED leuchet mit maximaler Helligkeit, sodass sie optisch auch bei hellen Sonnenlicht gut wahrgenommen werden kann.
+Links oberhalb des Displays befindet sich eine kleine Flash-LED. Diese LED dient zur Signalisierung von Betriebszuständen des OPB60. Die LED kann dabei verschiedene Farben annehmen. Die LED leuchtet mit maximaler Helligkeit, sodass sie optisch auch bei hellen Sonnenlicht gut wahrgenommen werden kann.
 
 * Rot - Alarmierung bei Grenzwertüberschreitung
 * Grün - Bestätigung von Zustandsänderungen (z.B. Autopilot ein/aus)
