@@ -1,13 +1,16 @@
 Konfiguration
 =============
 
-Nachdem die Stromversorgung zugeschaltet wurde, startet die Firmware des OBP60. Nach Abschluss der Initialisierungsphase ertönt ein Piepton. Im Display wird zuerst das Open Boat Projects-Logo angezeigt, gefolgt von einem QR-Code, der die Zugangsdaten zum Access Point anzeigt. Beide Bilder sind für einige Sekunden sichtbar. Sie können mit Ihrer Handy-Kamera den QR-Code scannen und sich dann in das WiFi-Netz des OBP60 mit folgenden Zugangsdaten einloggen:
+Nachdem die Stromversorgung zugeschaltet wurde, startet die Firmware des OBP60. Nach Abschluss der Initialisierungsphase ertönt ein Piepton. Im Display wird zuerst das Open Boat Projects-Logo angezeigt, gefolgt von einem QR-Code, der die Zugangsdaten zum Access Point anzeigt. Beide Bilder sind für einige Sekunden sichtbar. Sie können mit Ihrer Handy-Kamera den QR-Code scannen und sich dann in das WiFi-Netz des OBP60 einloggen. Ab Android 10 öffnen Sie dazu die Wifi-Einstellungen und lassen sich alle WiFi-Netzwerke der Umgebung anzeigen. Am Ende der Liste finde Sie unten **Netzwerke hinzufügen** rechts ein kleines QR-Symbol. Wenn Sie das Symbol anklicken öffnet sich ein Fenster zum Scannen das QR-Codes. Nach einem erfolgreichen Scann bucht sich das Gerät selbständig in das WiFi-Netzwerk ein. Sie müssen keine Eingaben zur SSID oder zum Passwort vornehmen. Für ältere Android-Versionen gibt es Scanner-Apps die ähnliche Funktionalität aufweisen. 
 
 .. image:: ../pics/QR_Code_WiFi.png
              :scale: 50%
 
+.. note::
+    Sollten Sie sich  nicht per QR-Code in das WiFi-Netzwerk des OBP60 einbuchen können, so nehmen Sie die Konfiguration manuell vor und verwenden die folgende Zugansdaten.
+
 * **SSID:** OBP60V2
-* **Passwort:** esp32nmea2k
+* **Passwort:** esp32nmea2k  
 
 Nachdem Sie im WiFi-Netzwerk eigebucht sind, öffnen Sie in einem Web-Browser die Adresse **OBP60V2.local** oder die IP-Adresse **192.168.15.1**. Sie gelangen so auf die Benutzeroberfläche des OPB60 und können den aktuellen Status des Geräts überprüfen. Auf der Benutzeroberfläche befinden sich Tabs, mit denen verschiedene Bereiche der Konfiguration ausgewählt werden können:
 
@@ -71,7 +74,14 @@ Die Konfigurationsseite unterteilt sich in zwei Bereiche. Die Firmware basiert a
 
 .. image:: ../pics/Config_1.png
              :scale: 60%
-			 
+             
+Abb.: Konfiguration zum NMEA2000-Gateway
+
+.. image:: ../pics/Config_2.png
+             :scale: 60%
+             
+Abb.: Konfiguration zur OBP60 Hardware
+
 Auf der Konfigurationsseite sind im oberen Bereich verschiedene Tasten zu sehen. Die Bedeutung der Tasten ist nachfolgend aufgeführt:
 
 * **Reload Config** - Erneutes laden der Konfiguration
@@ -403,7 +413,7 @@ Config - OBP Hardware
 .. image:: ../pics/Config_OBP60_Hardware.png
              :scale: 60%
 
-Unter **Hardware** werden alle Einstellungen bezüglich verbauter Hardware oder externer Zusatz-Hardware des OPB60 vorgenommen. Die Default-Einstellungen entsprechen den Minimal-Einstellungen für ein OBP60-Gerät. Je nach verbauter Hardware können unterschiedliche Sensoren und Funktionen ausgewählt werden.
+Unter **Hardware** werden alle Einstellungen bezüglich verbauter Hardware oder externer Zusatz-Hardware des OPB60 vorgenommen. Die Default-Einstellungen entsprechen den Minimal-Einstellungen für ein OBP60-Gerät. Je nach verbauter Hardware können unterschiedliche Sensoren und Funktionen zum Einsatz kommen.
 
 **GPS Sensor**
      * Typ des GPS-Sensors
@@ -411,7 +421,7 @@ Unter **Hardware** werden alle Einstellungen bezüglich verbauter Hardware oder 
      * ``NEO-M8N`` - Höherwertiger GPS-Sensor NEO-M8N
      
 **Env. Sensor**
-    * Angaben zum verwendeten Umgebungssensor. Dabei können verschiedene Sensoren ausgewählt werden. Die Sensoren sind am I2C-Bus angebunden. Es können interne Gerätesensoren oder externe Sensoren ausgewählt werden.   
+    * Angaben zum verwendeten Umgebungssensor. Dabei können verschiedene Sensoren ausgewählt werden. Die Sensoren sind am I2C-Bus angebunden. Es können interne Gerätesensoren des OBP60 oder externe Sensoren ausgewählt werden.   
     * ``off`` - Es wird kein Umgebungssensor benutzt
     * ``BME280`` - Sensor für Temperatur, Luftfeuchtigkeit und Luftdruck
     * ``BMP280`` - Sensor für Temperatur und Luftdruck
@@ -603,12 +613,14 @@ Der Bereich **Display** enthält alle Einstellungen die das Display betreffen.
              :scale: 45%
              
 Die Flash-LED befindet sich in der linken oberen Ecke über dem E-Ink-Display und zeigt verschiedene Zustände des OBP60 an. Die LED kann dabei verschiedene Farben annehmen, die je nach Verwendung unterschiedliche Bedeutung haben.
+
     * ``Off`` - Die Flash-LED ist dauerhaft ausgeschaltet
     * ``Bus Data`` - Bei eintreffenden Busdaten leuchtet die LED kurz blau auf 
     * ``GPS Fix Lost`` - Bei dauerhaft roter Flash-LED ist der GPS-Fix verloren. Die GPS-Daten sind ungültig.
     * ``Limit Violation`` - Bei blinkend roter Flash-LED ist ein Grenzwert verletzt worden.
     
 Die LED leuchtet mit maximaler Helligkeit, sodass sie optisch auch bei hellen Sonnenlicht gut wahrgenommen werden kann. Die Bedeutung der Farben ist folgende:
+
     * Rot - Alarmierung bei Grenzwertüberschreitung
     * Grün - Bestätigung von Zustandsänderungen (z.B. Autopilot ein/aus)
     * Blau - Signalisierung von Zuständen (z.B. GPS-Empfang, Datentransfer usw.)    
