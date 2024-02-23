@@ -271,11 +271,11 @@ An dieser Stelle werden die Einstellungen zum TCP-Server vorgenommen. Der TCP-Se
 
 **NMEA0183 OUT**
     * ``on`` - Am TCP-Port werden NMEA0183-Daten ausgegeben
-	* ``off`` - Am TCP-Port werden keine NMEA0183-Daten ausgegeben
+    * ``off`` - Am TCP-Port werden keine NMEA0183-Daten ausgegeben
 	
 **NMEA0183 IN**
     * ``on`` - Am TCP-Port werden NMEA0183-Daten empfangen
-	* ``off`` - Am TCP-Port werden keine NMEA0183-Daten empfangen
+    * ``off`` - Am TCP-Port werden keine NMEA0183-Daten empfangen
 	
 **To NMEA2000**
 	* ``on`` - Daten am TCP-Port werden nach NMEA2000 übertragen (Gateway-Funktion)
@@ -323,11 +323,11 @@ An dieser Stelle werden die Einstellungen zum TCP-Client vorgenommen. Das OBP60 
     
 **NMEA0183 OUT**
     * ``on`` - Am TCP-Port werden NMEA0183-Daten ausgegeben
-	* ``off`` - Am TCP-Port werden keine NMEA0183-Daten ausgegeben
+    * ``off`` - Am TCP-Port werden keine NMEA0183-Daten ausgegeben
 	
 **NMEA0183 IN**
     * ``on`` - Am TCP-Port werden NMEA0183-Daten empfangen
-	* ``off`` - Am TCP-Port werden keine NMEA0183-Daten empfangen
+    * ``off`` - Am TCP-Port werden keine NMEA0183-Daten empfangen
 	
 **To NMEA2000**
 	* ``on`` - Daten am TCP-Port werden nach NMEA2000 übertragen (Gateway-Funktion)
@@ -392,7 +392,7 @@ OBP - Units
 Die Einstellung der Einheiten wird unter **OBP Units** vorgenommen. Für die jeweiligen physikalischen Größen lassen sich verschiedene Einheiten verwenden. 
 
 **Date Format**
-    Mit **Date Format** kann das Ausgabeformat des Datums angepasst werden.
+    * Mit **Date Format** kann das Ausgabeformat des Datums angepasst werden.
     * ``DE`` - Deutsches Datumsformat ``31.12.2024``
     * ``GB`` - Britisches Datumsformat ``31/12/2024``
     * ``US`` - US Datumsformat ``12/31/2024``
@@ -400,15 +400,18 @@ Die Einstellung der Einheiten wird unter **OBP Units** vorgenommen. Für die jew
 OBP - Hardware
 --------------
 
+.. image:: ../pics/Config_OBP60_Hardware.png
+             :scale: 60%
+
 Unter **Hardware** werden alle Einstellungen bezüglich verbauter Hardware oder externer Zusatz-Hardware des OPB60 vorgenommen. Die Default-Einstellungen entsprechen den Minimal-Einstellungen für ein OBP60-Gerät. Je nach verbauter Hardware können unterschiedliche Sensoren und Funktionen ausgewählt werden.
 
 **GPS Sensor**
-     Typ des GPS-Sensors
+     * Typ des GPS-Sensors
      * ``NEO-6M`` - GPS-Sensor NEO-6M (Standard)
      * ``NEO-M8N`` - Höherwertiger GPS-Sensor NEO-M8N
      
 **Env. Sensor**
-    Angaben zum verwendeten Umgebungssensor. Dabei können verschiedene Sensoren ausgewählt werden. Die Sensoren sind am I2C-Bus angebunden. Es können interne Gerätesensoren oder externe Sensoren ausgewählt werden.   
+    * Angaben zum verwendeten Umgebungssensor. Dabei können verschiedene Sensoren ausgewählt werden. Die Sensoren sind am I2C-Bus angebunden. Es können interne Gerätesensoren oder externe Sensoren ausgewählt werden.   
     * ``off`` - Es wird kein Umgebungssensor benutzt
     * ``BME280`` - Sensor für Temperatur, Luftfeuchtigkeit und Luftdruck
     * ``BMP280`` - Sensor für Temperatur und Luftdruck
@@ -418,13 +421,13 @@ Unter **Hardware** werden alle Einstellungen bezüglich verbauter Hardware oder 
     * ``SHT21`` - Sensor für Temperatur und Luftfeuchtigkeit
     
 **Battery Sensor**
-    Hier können Sensoren ausgewählt werden die am externen I2C-Bus angeschlossen sind und Batterie-Werte auslesen.
+    * Hier können Sensoren ausgewählt werden die am externen I2C-Bus angeschlossen sind und Batterie-Werte auslesen.
     * ``off`` - Es wird kein Sensor benutzt
     * ``INA219`` - Sensor für Spannung 0...36V, Strom 0...500A und Leistung, I2C-Addresse 0x41
     * ``INA226`` - Sensor für Spannung 0...36V, Strom 0...500A und Leistung, I2C-Addresse 0x41
     
 **Battery Shunt**
-    Hier kann der Shunt ausgewählt werden, der zur Messung des Batterie-Stroms dient. Es können nur Shunts verwendet werden, die 75 mV als Spannungsabfall bei Maximalstrom verwenden. Diese Angabe ist am Shunt zu finden.
+    * Hier kann der Shunt ausgewählt werden, der zur Messung des Batterie-Stroms dient. Es können nur Shunts verwendet werden, die 75 mV als Spannungsabfall bei Maximalstrom verwenden. Diese Angabe ist am Shunt zu finden.
     * ``10`` - Shunt für 10A
     * ``50`` - Shunt für 50A
     * ``100`` - Shunt für 100A
@@ -434,13 +437,13 @@ Unter **Hardware** werden alle Einstellungen bezüglich verbauter Hardware oder 
     * ``500`` - Shunt für 500A
     
 **Solar Sensor**
-    Hier können Sensoren ausgewählt werden die am externen I2C-Bus angeschlossen sind und Solar-Werte auslesen.
+    * Hier können Sensoren ausgewählt werden die am externen I2C-Bus angeschlossen sind und Solar-Werte auslesen.
     * ``off`` - Es wird kein Sensor benutzt
     * ``INA219`` - Sensor für Spannung 0...36V, Strom 0...500A und Leistung, I2C-Addresse 0x44
     * ``INA226`` - Sensor für Spannung 0...36V, Strom 0...500A und Leistung, I2C-Addresse 0x44
     
 **Solar Shunt**
-    Hier kann der Shunt ausgewählt werden, der zur Messung des Solar-Stroms dient. Es können nur Shunts verwendet werden, die 75 mV als Spannungsabfall bei Maximalstrom verwenden. Diese Angabe ist am Shunt zu finden.
+    * Hier kann der Shunt ausgewählt werden, der zur Messung des Solar-Stroms dient. Es können nur Shunts verwendet werden, die 75 mV als Spannungsabfall bei Maximalstrom verwenden. Diese Angabe ist am Shunt zu finden.
     * ``10`` - Shunt für 10A
     * ``50`` - Shunt für 50A
     * ``100`` - Shunt für 100A
@@ -450,13 +453,13 @@ Unter **Hardware** werden alle Einstellungen bezüglich verbauter Hardware oder 
     * ``500`` - Shunt für 500A
     
 **Generator Sensor**
-    Hier können Sensoren ausgewählt werden die am externen I2C-Bus angeschlossen sind und Generator-Werte auslesen.
+    * Hier können Sensoren ausgewählt werden die am externen I2C-Bus angeschlossen sind und Generator-Werte auslesen.
     * ``off`` - Es wird kein Sensor benutzt
     * ``INA219`` - Sensor für Spannung 0...36V, Strom 0...500A und Leistung, I2C-Addresse 0x45
     * ``INA226`` - Sensor für Spannung 0...36V, Strom 0...500A und Leistung, I2C-Addresse 0x45
     
 **Solar Shunt**
-    Hier kann der Shunt ausgewählt werden, der zur Messung des Generator-Stroms dient. Es können nur Shunts verwendet werden, die 75 mV als Spannungsabfall bei Maximalstrom verwenden. Diese Angabe ist am Shunt zu finden.
+    * Hier kann der Shunt ausgewählt werden, der zur Messung des Generator-Stroms dient. Es können nur Shunts verwendet werden, die 75 mV als Spannungsabfall bei Maximalstrom verwenden. Diese Angabe ist am Shunt zu finden.
     * ``10`` - Shunt für 10A
     * ``50`` - Shunt für 50A
     * ``100`` - Shunt für 100A
@@ -466,12 +469,12 @@ Unter **Hardware** werden alle Einstellungen bezüglich verbauter Hardware oder 
     * ``500`` - Shunt für 500A
     
 **Rot. Sensor**
-    Über **Rot.Sensor** kann der Sensor zur Winkelmessung ausgewählt werden, der sich am externen I2C-Bus befindet.
+    * Über **Rot.Sensor** kann der Sensor zur Winkelmessung ausgewählt werden, der sich am externen I2C-Bus befindet.
     * ``off`` - Es wird kein Sensor benutzt
     * ``AS5600`` - Magnetischer Sensor zur Winkelmessung, 0...360°, ohne Endanschlag, I2C-Adresse 0x36
     
 **Rot- Fuction**
-    Funktion des Winkelsensors
+    * Funktion des Winkelsensors
     * ``Rudder`` - Winkelsensor für Ruderstellung
     * ``Wind`` - Winkelsensor für Windrichtung
     * ``Mast`` - Winkelsensor für Mastausrichtung bei drehbaren Masten
@@ -492,26 +495,29 @@ Unter **Hardware** werden alle Einstellungen bezüglich verbauter Hardware oder 
     Offset des Winkelsensors für Pitch. Damit kann der Nullpunkt des Sensors korrigiert werden.
     
 **Temp Sensor**
-    Hier kann der Sensortyp ausgewählt werden, der am 1Wire-Bus verwendet wird.
+    * Hier kann der Sensortyp ausgewählt werden, der am 1Wire-Bus verwendet wird.
     * ``off`` - Es wird kein Sensor benutzt
     * ``DS18B20`` - Temperatursensor -10...+85°C
     
 **Power Mode**
-    Der **Power Mode** bezieht sich auf die Art der Stromversorgung, die im OBP60 angewendet wird.
+    * Der **Power Mode** bezieht sich auf die Art der Stromversorgung, die im OBP60 angewendet wird.
     * ``Max Power`` - Alle Stromversorgungen sind eingeschaltet. Hierbei ist das Gerät am leistungsfähigsten und es entsteht der maximale Stromverbrauch.
     * ``Only 3.3V`` - Es ist nur die zusätzliche Stromversorgung für 3.3 V eingeschaltet.
     * ``Only 5.0V`` - Es ist nur die zusätzliche Stromversorgung für 5.0 V eingeschaltet.
     * ``Min Power`` - Es sind nur die Stromversorgungen eingeschaltet, um die Minimal-Funktionen bereitzustellen. Hierbei entsteht der geringste Stromverbrauch.
     
 **Undervoltage**
-    Erkennung der Unterspannung der Stromversorgung. Wenn eine Unterspannung erkannt wird, kann das OBP60 automatisch deaktiviert werden, um eine Tiefentladung der Batterie zu vermeiden. In kritischen Situationen kann das OBP60 trotz Unterspannung bis 7V funktionsfähig bleiben, wenn der Unterspannungsschutz deaktiviert ist. Als Default-Wert ist der Unterspannungsschutz aktiviert.
+    * rkennung der Unterspannung der Stromversorgung. Wenn eine Unterspannung erkannt wird, kann das OBP60 automatisch deaktiviert werden, um eine Tiefentladung der Batterie zu vermeiden. In kritischen Situationen kann das OBP60 trotz Unterspannung bis 7V funktionsfähig bleiben, wenn der Unterspannungsschutz deaktiviert ist. Als Default-Wert ist der Unterspannungsschutz aktiviert.
     * ``on`` - Der Unterspannungsschutz ist aktiviert
 	* ``off`` - Der Unterspannungsschutz ist ausgeschaltet
 	
 **Simulation Data**
-    Mit **Simulation Data** können Bus- und Sensordaten simuliert werden. Die Funktion ist nützlich, wenn die Funktionalität des Gerätes im ausgebauten Zustand ohne angeschlossene Busse oder Sensoren getestet werden soll. Das Gerät befindet sich dann in einem Demo-Mode.
+    * Mit **Simulation Data** können Bus- und Sensordaten simuliert werden. Die Funktion ist nützlich, wenn die Funktionalität des Gerätes im ausgebauten Zustand ohne angeschlossene Busse oder Sensoren getestet werden soll. Das Gerät befindet sich dann in einem Demo-Mode.
     * ``on`` - Sensordaten werden durch Simulationsdaten ersetzt
 	* ``off`` - Es werden Live-Sensordaten verwendet
+	
+.. warning::
+    Bedenken Sie, dass Simulationsdaten als Live-Daten fehlinterpretiert werden können. Benutzen Sie Simulationsdaten nur, wenn Sie das OBP60 nicht nur Navigation benötigen und stellen es nach der Benutzung wieder auf Live-Daten um, in dem Sie den Simulations-Modus beenden.
 
 OBP - Calibrations
 ------------------
