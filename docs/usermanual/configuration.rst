@@ -522,6 +522,9 @@ Unter **Hardware** werden alle Einstellungen bezüglich verbauter Hardware oder 
 Config - OBP Calibrations
 -------------------------
 
+.. image:: ../pics/Config_OBP60_Calibrations.png
+             :scale: 60%
+
 Unter **Calibrations** können Einstellungen zur Kalibrierung vorgenommen werden. Damit lassen sich Ungenauigkeiten der Messwerte korrigieren. Die Korrektur kann je nach Sensor mit einer linearen oder quadratischen Korrektur durchgeführt werden.  
 
 **VSensor Offset**
@@ -532,6 +535,9 @@ Unter **Calibrations** können Einstellungen zur Kalibrierung vorgenommen werden
 
 Config - OBP Display
 --------------------
+
+.. image:: ../pics/Config_OBP60_Display.png
+             :scale: 60%
 
 Der Bereich **Display** enthält alle Einstellungen die das Display betreffen.
 
@@ -610,8 +616,45 @@ Die LED leuchtet mit maximaler Helligkeit, sodass sie optisch auch bei hellen So
 Config - OBP Buzzer
 -------------------
 
+.. image:: ../pics/Config_OBP60_Buzzer.png
+             :scale: 60%
+             
+In diesem Bereich lassen sich die Funktion des Buzzer einstellen. Der Buzzer dient zur Signalisierung von Systemzuständen und Störungen des OBP60. 
+             
+**Buzzer Error**
+    * ``on`` - Der Buzzer ertönt bei Störungen und Fehlern
+    * ``off`` - Die Funktion ist deaktiviert
+
+**Buzzer GPS Fix**
+    * ``on`` - Der Buzzer ertönt, wenn das GPS-Signal verloren wurde
+    * ``off`` - Die Funktion ist deaktiviert
+
+**Buzzer by Limits**
+    * ``on`` - Der Buzzer ertönt bei Grenzwertverletzungen
+    * ``off`` - Die Funktion ist deaktiviert
+
+**Buzzer Mode**
+    * ``Off`` - Die Buzzer ist dauerhaft ausgeschaltet
+    * ``Short Single Beep`` - Bei Aktivierung ertönt ein kurzer Einzelton 
+    * ``Longer Single Beep`` - Bei Aktivierung ertönt ein längerer Einzelton 
+    * ``Beep until Confirmation`` - Bei Aktivierung ertönt der Buzzer so lange, bis er durch einen Tastendruck auf irgend eine Taste deaktiviert wird.
+
+**Buzzer Power**
+    Über **Buzzer Power** kann die Lautstärke des Warntons zwischen 0...100% eingestellt werden. Die Lautstärke gilt global für alle Tonausgaben.
+
 Config - OBP Pages
 ------------------
+
+.. image:: ../pics/Config_OBP60_Pages.png
+             :scale: 60%
+             
+Die Definition der Anzeigeseiten erfolgt mit den Einstellungen unter **Pages**. Hier wird festgelegt wie viele AQnzeigeseiten benutzt werden und welche Anzeigeseite beim Einschalten zu erst gezeigt werden soll.
+
+**Number of Pages**
+    * Hier wird die maximale Anzahl der Anzeigeseiten festgelegt. Es muss mindestens eine Anzeigeseite definiert sein und es können bis zu 10 Anzeigeseiten aktiviert werden.
+    
+**Start Page**
+    * Dieser Wert legt fest, welche Seite beim Start angezeigt werden soll. Es können nur die Seiten angezeigt werden, die unter **Number of Pages** definiert wurden.
 
 Config - OBP Page X
 -------------------
