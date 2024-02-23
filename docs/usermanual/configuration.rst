@@ -171,10 +171,10 @@ Config - USB Port
 		* ``actisense`` - Verarbeitung im Actisense-Format
 		
 **USB Baud Rate**
-	* Hier kann die Schnittstellengeschwindigkeit der seriellen USB-Schnittstelle eingestellt werden. Es lassen sich Geschwindigkeiten zwischen 1200 Bd und 460800 Bd einstellen.
+	* Hier kann die Schnittstellengeschwindigkeit der seriellen USB-Schnittstelle eingestellt werden. Es lassen sich Geschwindigkeiten zwischen 1.200 Bd und 460.800 Bd einstellen.
 	
 .. hint::
-	Stellen Sie die Schnittstellengeschwindigkeit so ein, dass sie ausreichend hoch ist, um alle Datentelegramme im Sendeintervall verarbeiten zu können. Mit dem Default-Wert von 115200 Bd können die meisten Anwendungen sinnvoll betrieben werden.
+	Stellen Sie die Schnittstellengeschwindigkeit so ein, dass sie ausreichend hoch ist, um alle Datentelegramme im Sendeintervall verarbeiten zu können. Mit dem Default-Wert von 115.200 Bd können die meisten Anwendungen sinnvoll betrieben werden.
 
 In den nachfolgenden drei Einstellungen lässt sich die Datenrichtung an der USB-C-Schnittstelle einstellen. Dabei wird zwischen NMEA0183 und NMEA2000 unterschieden.
 	
@@ -226,11 +226,11 @@ Config - Serial Port
 	* ``receive`` - Die NMEA0183-Schnittstelle empfängt
 	
 .. note::
-	Die serielle Schnittstelle ist konform zu RS485 und RS422 und arbeitet im Halbduplex-Betrieb. Es kann entweder gesendet oder empfangen werden. Beides gleichzeitig ist nicht möglich. Wenn Sie eine Vollduplex-Übertragung für NMEA0183-Daten benötigen, dann können Sie die USB-C-Schnittstelle benutzen. Diese Schnittstelle ist aber nicht zu RS485 oder RS422 konform. Sie kann sinnvoll verwendet werden wenn die Daten z.B. in OpenCPN auf einem PC oder Laptop verarbeitet werden sollen.
+	Die serielle Schnittstelle ist konform zu RS485 und RS422 und arbeitet im Halbduplex-Betrieb. Es kann entweder gesendet oder empfangen werden. Beides gleichzeitig ist nicht möglich. Wenn Sie eine Vollduplex-Übertragung für NMEA0183-Daten benötigen, dann können Sie die USB-C-Schnittstelle benutzen. Diese Schnittstelle ist aber nicht zu RS485 oder RS422 konform. Sie kann sinnvoll verwendet werden wenn Sie Daten z.B. in OpenCPN auf einem PC oder Laptop verarbeitet wollen.
 	
 **Serial Baud Rate**
-	* Einstellung der Baudrate zwischen 1200 und 460800 Bd.
-	
+	* Einstellung der Baudrate zwischen 1.200 und 460.800 Bd.
+
 **Serial to NMEA2000**
 	* ``on`` - Daten an der Schnittstelle werden nach NMEA2000 übertragen (Gateway-Funktion)
 	* ``off`` - Daten an der Schnittstelle werden nicht nach NMEA2000 übertragen
@@ -306,7 +306,7 @@ Config - TCP Client
 .. image:: ../pics/Config_TCP_Client.png
              :scale: 60%
              
-An dieser Stelle werden die Einstellungen zum TCP-Client vorgenommen. Das OBP60 kann als TCP-Client Daten mit einem TCP-Server lesend und schreibend austauschen. Dabei meldet sich das OBP60 als Client aktiv über einen TCP-Port am TCP-Server an und kann dann Daten mit dem Server austauschen.
+An dieser Stelle werden die Einstellungen zum TCP-Client vorgenommen. Das OBP60 kann als TCP-Client Daten mit einem TCP-Server lesend und schreibend austauschen. Dabei meldet sich das OBP60 als Client aktiv über einen TCP-Port am TCP-Server an und kann dann Daten mit dem Server austauschen. Der TCP-Client-Modus enthält ein Auto-Connect, um bei Verbindungsabbrüchen automatisch die Verbindung wieder aufnehmen zu können.
 
 **Enable**
     * ``on`` - Der TCP-Client-Modus ist im OBP60 aktiviert
@@ -352,10 +352,10 @@ Die genaue Bedeutung der Kurzbezeichner ist `hier`_ erklärt.
     * ``on`` - Der TCP-Server kann Seasmart-Daten senden und empfangen
 	* ``off`` - Seasmart wird vom TCP-Server nicht unterstützt
 	
-Config _ WiFi Client
+Config - WiFi Client
 --------------------
 
-Das OBP60 kann neben dem WiFi-Access Point auch als WiFi-Client betrieben werden. Damit kann das OBP60 einem externen WiFi-Netz beitreten und Daten austauschen. Das OBP60 ist dann ein Teilnehmer des externen Netzwerkes.
+Das OBP60 kann neben dem WiFi-Access Point auch als WiFi-Client betrieben werden. Damit kann das OBP60 einem externen WiFi-Netz beitreten und Daten austauschen. Das OBP60 ist dann ein Teilnehmer des externen Netzwerkes. Der WiFi-Client-Modus enthält ein Auto-Connect, um bei Verbindungsabbrüchen automatisch die Verbindung wieder aufnehmen zu können.
 
 **WiFi Client**
     * ``on`` - Der WiFi-Client_Modus ist aktiviert
