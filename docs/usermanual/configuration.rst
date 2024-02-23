@@ -22,7 +22,7 @@ Nachdem Sie im WiFi-Netzwerk eigebucht sind, öffnen Sie in einem Web-Browser di
 * **Help** - Aufruf der Github-Projektseite
 
 .. note::
-	Beachten Sie, dass beim erstmaligen Aufruf der Konfigurationsoberfläche kein Passwort beim Speichern der Konfiguration notwendig ist. Als **Default-Passwort** wird **esp32admin** verwendet. Ändern Sie das Passwort für ihre Belange ab, verwenden Sie dabei nur Zeichen des ASCII-Zeichensatzes. Die Passwortabfrage kann auch deaktiviert werden.
+	Beachten Sie, dass beim erstmaligen Aufruf der Konfigurationsoberfläche kein Passwort beim Speichern der Konfiguration notwendig ist. Als **Default-Passwort** wird **esp32admin** verwendet. Ändern Sie das Passwort für ihre Belange ab. Verwenden Sie dabei nur Zeichen des ASCII-Zeichensatzes. Die Passwortabfrage kann auch deaktiviert werden.
 
 Status
 ------
@@ -80,7 +80,7 @@ Abb.: Konfiguration zum NMEA2000-Gateway
 .. image:: ../pics/Config_2.png
              :scale: 60%
              
-Abb.: Konfiguration zur OBP60 Hardware
+Abb.: Konfiguration zur OBP60-Hardware
 
 Auf der Konfigurationsseite sind im oberen Bereich verschiedene Tasten zu sehen. Die Bedeutung der Tasten ist nachfolgend aufgeführt:
 
@@ -217,7 +217,7 @@ Die genaue Bedeutung der Kurzbezeichner ist `hier`_ erklärt.
 .. _hier: https://de.wikipedia.org/wiki/NMEA_0183
 
 .. hint::
-	Filterfunktionen sind ein mächtiges Werkzeug, um Datenflüsse zu steuern. Überlegen Sie sich vor der Konfiguration wie Ihre Datenflüsse im Boot aussehen und erstellen sich dazu eine Zeichnung. Setzen Sie die Filter so ein, dass sie nur die Daten senden und empfangen, die sie auch wirklich benötigen. Unterscheiden Sie dabei was gesendet oder empfangen wird und vermeiden Sie Datenschleifen.
+	Filterfunktionen sind ein mächtiges Werkzeug, um Datenflüsse zu steuern. Überlegen Sie sich vor der Konfiguration wie Ihre Datenflüsse im Boot aussehen und erstellen sich dazu eine Skizze. Setzen Sie die Filter so ein, dass sie nur die Daten senden und empfangen, die sie auch wirklich benötigen. Unterscheiden Sie dabei was gesendet oder empfangen wird und vermeiden Sie Datenschleifen.
 	
 .. warning::
 	Datenschleifen führen zu Fehlfunktionen des Gerätes. Bei Datenschleifen laufen dieselben Daten über mehrere Geräte im Kreis. Dadurch entstehen hohe Senderaten, weil fortlaufend Daten gesendet und empfangen werden. Die Prozessorlast erhöht sich dabei auf ein Maximum. Unter Umständen kann das Gerät ausfallen, nicht mehr zeitnah die Daten verarbeiten oder unbedienbar sein. Beachten Sie, dass der Zustand auch erst eintreten kann, wenn weitere Geräte am Bussystem später zugeschaltet werden.
