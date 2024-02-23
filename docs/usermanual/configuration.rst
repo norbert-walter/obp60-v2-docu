@@ -298,7 +298,7 @@ Die genaue Bedeutung der Kurzbezeichner ist `hier`_ erklärt.
 **Seasmart**
     * Über Seasmart lassen sich NMEA2000-Daten in NMEA0183-Telegrammen verpacken. Wenn Sie Seasmart aktivieren, werden alle NMEA2000-Daten über NMEA0183-Telegramme ausgegeben und getunnelt. Die Daten werden dabei in Binärform in einem NMEA0183-Telegramm übertragen. Somit können Sie von einem OBP60 (TCP-Server) zu einem anderen OBP60 (TCP-Client) NMEA2000-Daten über Wifi übertragen. Achten Sie darauf, dass auf der Gegenseite ebenfalls Seasmart aktiviert ist.
     * ``on`` - Der TCP-Server kann Seasmart-Daten senden und empfangen
-	* ``off`` - Seasmart wird vom TCP-Server nicht unterstützt
+    * ``off`` - Seasmart wird vom TCP-Server nicht unterstützt
 	
 Config - TCP Client
 -------------------
@@ -310,7 +310,7 @@ An dieser Stelle werden die Einstellungen zum TCP-Client vorgenommen. Das OBP60 
 
 **Enable**
     * ``on`` - Der TCP-Client-Modus ist im OBP60 aktiviert
-	* ``off`` - Der TCP-Client-Modus ist deaktiviert
+    * ``off`` - Der TCP-Client-Modus ist deaktiviert
 	
 **Remote Port**
 	* Angabe des entfernten TCP-Port über den daten mit einem TCP-Server ausgetauscht werden sollen. Der Default-Wert ist 10110. Damit ein Datenaustausch mit einem TCP-Server und einem TCP-Clinetstattfinden kann, muss der selbe Port vom TCP-Client verwendet werden, den der TCP-Server für die Kommunikation verwendet. Benutzen Sie nur Ports größer 1024, da Ports unterhalb von 1024 für feste Anwendungen reserviert sind. Der Maximalwert liegt bei 65535.
@@ -350,7 +350,7 @@ Die genaue Bedeutung der Kurzbezeichner ist `hier`_ erklärt.
 **Seasmart**
     * Über Seasmart lassen sich NMEA2000-Daten in NMEA0183-Telegrammen verpacken. Wenn Sie Seasmart aktivieren, werden alle NMEA2000-Daten über NMEA0183-Telegramme ausgegeben und getunnelt. Die Daten werden dabei in Binärform in einem NMEA0183-Telegramm übertragen. Somit können Sie von einem OBP60 (TCP-Server) zu einem anderen OBP60 (TCP-Client) NMEA2000-Daten über Wifi übertragen. Achten Sie darauf, dass auf der Gegenseite ebenfalls Seasmart aktiviert ist.
     * ``on`` - Der TCP-Server kann Seasmart-Daten senden und empfangen
-	* ``off`` - Seasmart wird vom TCP-Server nicht unterstützt
+    * ``off`` - Seasmart wird vom TCP-Server nicht unterstützt
 	
 Config - WiFi Client
 --------------------
@@ -359,7 +359,7 @@ Das OBP60 kann neben dem WiFi-Access Point auch als WiFi-Client betrieben werden
 
 **WiFi Client**
     * ``on`` - Der WiFi-Client_Modus ist aktiviert
-	* ``off`` - Der WiFi-Client-Modus wird nicht unterstützt
+    * ``off`` - Der WiFi-Client-Modus wird nicht unterstützt
 	
 **WiFi Client SSID**
     * Über **Wifi Client SSID** wird der WiFi-Netzwerkname angeben. Als Namen könne alle Zeichen des ASCII-Zeichensatzes verwendet werden.
@@ -509,12 +509,12 @@ Unter **Hardware** werden alle Einstellungen bezüglich verbauter Hardware oder 
 **Undervoltage**
     * rkennung der Unterspannung der Stromversorgung. Wenn eine Unterspannung erkannt wird, kann das OBP60 automatisch deaktiviert werden, um eine Tiefentladung der Batterie zu vermeiden. In kritischen Situationen kann das OBP60 trotz Unterspannung bis 7V funktionsfähig bleiben, wenn der Unterspannungsschutz deaktiviert ist. Als Default-Wert ist der Unterspannungsschutz aktiviert.
     * ``on`` - Der Unterspannungsschutz ist aktiviert
-	* ``off`` - Der Unterspannungsschutz ist ausgeschaltet
+    * ``off`` - Der Unterspannungsschutz ist ausgeschaltet
 	
 **Simulation Data**
     * Mit **Simulation Data** können Bus- und Sensordaten simuliert werden. Die Funktion ist nützlich, wenn die Funktionalität des Gerätes im ausgebauten Zustand ohne angeschlossene Busse oder Sensoren getestet werden soll. Das Gerät befindet sich dann in einem Demo-Mode.
     * ``on`` - Sensordaten werden durch Simulationsdaten ersetzt
-	* ``off`` - Es werden Live-Sensordaten verwendet
+    * ``off`` - Es werden Live-Sensordaten verwendet
 	
 .. warning::
     Bedenken Sie, dass Simulationsdaten als Live-Daten fehlinterpretiert werden können. Benutzen Sie Simulationsdaten nur, wenn Sie das OBP60 nicht nur Navigation benötigen und stellen es nach der Benutzung wieder auf Live-Daten um, in dem Sie den Simulations-Modus beenden.
