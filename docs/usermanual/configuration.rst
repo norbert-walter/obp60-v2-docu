@@ -370,7 +370,61 @@ Das OBP60 kann neben dem WiFi-Access Point auch als WiFi-Client betrieben werden
 .. hint::
     Wenn Sie Probleme mit der Verbindung zu externen WiFi-Netzwerken haben, dann überprüfen Sie, ob der Netzwerkname oder das Passwort Sonderzeichen enthält. In einigen Situationen können Sonderzeichen oder zu lange Passworte Verbindungsprobleme verursachen. Ändern Sie dann versuchsweise den Netzwerknamen oder das Passwort ab.
     
+OBP - Settings
+--------------
 
+.. image:: ../pics/Config_OBP60_Settings.png
+             :scale: 60%
+             
+Unter **OBP60 Settings** werden eine Reihe von Einstellungen vorgenommen die das Boot betreffen in dem das OBP60 eingebaut ist. Die Einstellungen dienen dazu Betriebszustände korrekt in Grafiken darzustellen. Die Werte werden auch dazu benutzt eine Art Reichweitenbestimmung für Wasser, Kraftstoff und Batterie vornehmen zu können. Geben Sie bitte die Werte möglichst genau ein und beachten Sie die entsprechenden Einheiten.
+
+**Time Zone**
+    * Über **Time Zone** kann die Zeitzone in Bereich -12 und +14 Stunden eingestellt werden.
+
+Die weiteren Einstellungen sollten selbsterklärend sein. Sofern Sie keine Solarpanele benutzen, belassen Sie den Wert auf 0. **Generator Power** bezieht sich auf einen Elektrogenerator der im Boot vorhanden ist. Das kann eine Lichtmaschine, ein Windgenerator, ein Schleppgenerator oder ein Zusatz-Generator sein. Die Leistungsangaben für **Solar Power** und **Genrator Power** werden zur Visualisierung der Energieflüsse benötigt.
+
+OBP - Units
+-----------
+
+.. image:: ../pics/Config_OBP60_Units.png
+             :scale: 60%
+             
+Die Einstellung der Einheiten wird unter **OBP Units** vorgenommen. Für die jeweiligen physikalischen Größen lassen sich verschiedene Einheiten verwenden. 
+
+**Date Format**
+    Mit **Date Format** kann das Ausgabeformat des Datums angepasst werden.
+    * ``DE`` - Deutsches Datumsformat ``31.12.2024``
+    * ``GB`` - Britisches Datumsformat ``31-12-2024``
+    * ``US`` - US Datumsformat ``12-31-2024``
+
+OBP - Hardware
+--------------
+
+Unter **Hardware** werden alle Einstellungen bezüglich verbauter Hardware oder externer Zusatz-Hardware des OPB60 vorgenommen. Die Default-Einstellungen entsprechen den Minimal-Einstellungen für ein OBP60-Gerät. Je nach verbauter Hardware können unterschiedliche Sensoren und Funktionen ausgewählt werden.
+
+**GPS Sensor**
+     Typ des GPS-Sensors
+     * ``NEO-6M`` GPS-Sensor NEO-6M (Standard)
+     * ``NEO-M8N`` Höherwertiger GPS-Sensor NEO-M8N
+     
+**Env. Sensor**
+    Angaben zum verwendeten Umgebungssensor. Dabei können verschiedene Sensoren ausgewählt werden. 
+     
+
+OBP - Calibrations
+------------------
+
+OBP - Display
+-------------
+
+OBP - Buzzer
+------------
+
+OBP - Pages
+-----------
+
+OBP - Page X
+------------
 		
 XDR
 ---
