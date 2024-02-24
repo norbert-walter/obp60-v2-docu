@@ -1,13 +1,13 @@
 Konfiguration
 =============
 
-Nachdem die Stromversorgung zugeschaltet wurde, startet die Firmware des OBP60. Nach Abschluss der Initialisierungsphase ertönt ein Piepton. Im Display wird zuerst das Open Boat Projects-Logo angezeigt, gefolgt von einem QR-Code, der die Zugangsdaten zum Access Point anzeigt. Beide Bilder sind für einige Sekunden sichtbar. Sie können mit Ihrer Handy-Kamera den QR-Code scannen und sich dann in das WiFi-Netz des OBP60 einloggen. Ab Android 10 öffnen Sie dazu die Wifi-Einstellungen und lassen sich alle WiFi-Netzwerke der Umgebung anzeigen. Am Ende der Liste finde Sie unter **Netzwerke hinzufügen** rechts ein kleines QR-Symbol. Wenn Sie das Symbol anklicken, öffnet sich ein Fenster zum Scannen das QR-Codes. Nach einem erfolgreichen Scann bucht sich das Gerät selbständig in das WiFi-Netzwerk ein. Sie müssen keine Eingaben zur SSID oder zum Passwort vornehmen. Für ältere Android-Versionen gibt es Scanner-Apps die ähnliche Funktionalität aufweisen. 
+Nachdem die Stromversorgung zugeschaltet wurde, startet die Firmware des OBP60. Nach Abschluss der Initialisierungsphase ertönt ein Piepton. Im Display wird zuerst das Open Boat Projects-Logo angezeigt, gefolgt von einem QR-Code, der die Zugangsdaten zum Access Point anzeigt. Beide Bilder sind für einige Sekunden sichtbar. Sie können mit Ihrer Handy-Kamera den QR-Code scannen und sich dann in das WiFi-Netz des OBP60 einloggen. Ab Android 10 öffnen Sie dazu die Wifi-Einstellungen und lassen sich alle WiFi-Netzwerke der Umgebung anzeigen. Am Ende der Liste finde Sie unter **Netzwerke hinzufügen** rechts ein kleines QR-Symbol. Wenn Sie das Symbol anklicken, öffnet sich ein Fenster zum Scannen das QR-Codes. Nach einem erfolgreichen Scan bucht sich das Gerät selbständig in das WiFi-Netzwerk ein. Sie müssen keine Eingaben zur SSID oder zum Passwort vornehmen. Für ältere Android-Versionen gibt es Scanner-Apps, die ähnliche Funktionalität aufweisen. 
 
 .. image:: ../pics/QR_Code_WiFi.png
              :scale: 50%
 
 .. note::
-    Sollten Sie sich  nicht per QR-Code in das WiFi-Netzwerk des OBP60 einbuchen können, so nehmen Sie die Konfiguration manuell vor und verwenden die folgende Zugansdaten.
+    Sollten Sie sich  nicht per QR-Code in das WiFi-Netzwerk des OBP60 einbuchen können, nehmen Sie die Konfiguration manuell vor und verwenden die folgende Zugansdaten.
 
 * **SSID:** OBP60V2
 * **Passwort:** esp32nmea2k  
@@ -59,7 +59,7 @@ Die Informationen haben folgende Bedeutung:
 **Serial out**
 	Anzahl der NMEA0183-Telegramme, die über RS485 gesendet wurden
 
-Wenn Sie auf das Fragezeichen hinter **Version** klicken, werden alle Telegramme angezeigt, die das OBP60 verarbeiten kann. Detailliertere Informationen zu den empfangenen Telegrammen sehen Sie, wenn Sie die Zeile des Bussystems aufklappen. Im Anhang finden Sie eine Tabelle mit allen NMEA0183- und NMEA2000-Telegrammen, die verarbeitet werden können.
+Wenn Sie auf das Fragezeichen hinter **Version** klicken, werden alle Telegramme angezeigt, die das OBP60 verarbeiten kann. Detailliertere Informationen zu den empfangenen Telegrammen sehen Sie, wenn Sie die Zeile des jeweiligen Bussystems aufklappen. Im Anhang finden Sie eine Tabelle mit allen NMEA0183- und NMEA2000-Telegrammen, die verarbeitet werden können.
 
 .. note::
 	Zum besseren Verständnis ist zu beachten, dass das OBP60 ein eigenes, unabhängiges WiFi-Netzwerk aufbaut, diese Funktion wird auch als Access Point bezeichnet. Die Anzahl der TCP-Clients in der Statuszeile bezieht sich dabei immer nur auf die Clients, die sich beim OBP60 im Access Point-Modus anmelden.
@@ -68,7 +68,7 @@ Wenn Sie auf das Fragezeichen hinter **Version** klicken, werden alle Telegramme
 Config
 ------
 
-Die Konfigurationsseite unterteilt sich in zwei Bereiche. Die Firmware basiert auf dem NMEA2000-Gateway-Projekt und nutzt die gesamte Grundstruktur dieses Software-Projektes. Die Funktionalität des OBP60 ist als eigenständiger Task in der NMEA2000-Gateway-Firmware implementiert. Der erste Bereich enthält die Konfiguration für das NMEA2000-Gateway. Im zweiten Bereich ist die Konfiguration zur OBP60 Hardware und Software zu finden. Den zweiten Bereich erkennt man an dem Prefix OBP.
+Die Konfigurationsseite unterteilt sich in zwei Bereiche. Die Firmware basiert auf dem NMEA2000-Gateway-Projekt und nutzt die gesamte Grundstruktur dieses Software-Projektes. Die Funktionalität des OBP60 ist als eigenständiger Task in der NMEA2000-Gateway-Firmware implementiert. Der erste Bereich enthält die Konfiguration für das NMEA2000-Gateway. Im zweiten Bereich ist die Konfiguration zur OBP60-Hardware und -Software zu finden. Den zweiten Bereich erkennt man an dem Prefix OBP.
 
 **Konfiguration zum NMEA2000-Gateway**
 
@@ -84,7 +84,7 @@ Abb.: Konfiguration zur OBP60-Hardware
 
 Auf der Konfigurationsseite sind im oberen Bereich verschiedene Tasten zu sehen. Die Bedeutung der Tasten ist nachfolgend aufgeführt:
 
-* **Reload Config** - Erneutes laden der Konfiguration
+* **Reload Config** - Erneutes Laden der Konfiguration
 * **Forget Pass** - Entfernen des Login-Passwortes aus dem Cache-Speiches des Browsers
 * **Save & Restart** - Speichern der Konfiguration mit anschließendem Neustart der Firmware
 * **Export** - Export einer Konfiguration als JSON-File
@@ -99,48 +99,48 @@ Config - System
 
 Unter **System** werden grundlegende Einstellungen vorgenommen wie:
 
-**System Name**
-	* System-Name zum OBP60. Hier kann ein Name verwendet werden der aus bis zu 10 ASCII-Zeichen besteht. Dabei dürfen nur Buchstaben und Zahlen verwendet werden. Zusätzlich sind das Minus-Zeichen und der Unterstrich erlaubt. Sonderzeichen sind nicht erlaubt, da dieser Gerätename auch als SSID im WiFi-Netzwerk verwendet wird.
+**system name**
+	* Gerätename des OBP60. Hier kann ein Name verwendet werden, der aus bis zu 10 ASCII-Zeichen besteht. Dabei dürfen nur Buchstaben und Zahlen verwendet werden. Zusätzlich sind das Minus-Zeichen und der Unterstrich erlaubt. Sonderzeichen sind nicht erlaubt, da dieser Gerätename auch als SSID im WiFi-Netzwerk verwendet wird.
 	
 **NMEA0183 ID**
-	* Hier kann festgelegt werden, welcher Präfix als Geräte ID im NMEA0183-Telegramms verwendet wird. Es lassen sich verschiedene Geräte ID einstellen. Details dazu sind unter folgendem `Link`_ zu finden.
+	* Hier kann festgelegt werden, welcher Präfix als Geräte-ID im NMEA0183-Telegramms verwendet wird. Es lassen sich verschiedene Geräte-IDs einstellen. Details dazu sind unter folgendem `Link`_ zu finden.
 
 .. _Link: https://de.wikipedia.org/wiki/NMEA_0183#Ger%C3%A4te-IDs
 
-**Stop AP Time**
-	* Hierüber kann angegeben werden, nach welcher Zeit der WiFi Access Point abgeschaltet werden soll. Die Angabe der Zeit erfolgt in Sekunden. Wird 0s verwendet, so bleibt der WiFi Access Point dauerhaft an.
+**StopAPTime**
+	* Hierüber kann angegeben werden, nach welcher Zeit der WiFi Access Point abgeschaltet werden soll. Die Angabe der Zeit erfolgt in Sekunden. Der Wert <0s> sorgt für einen dauerhaften Betrieb des WiFi Access Points.
 	
-**AP Password**
+**ApPassword**
 	* An dieser Stelle wird das Passwort für den WiFi Access Point angegeben. Es dürfen nur Zeichen des ASCII-Zeichensatzes verwendet werden.
 	
-**AP IP**
-	* Hier kann die IP-Adresse des WiFi Access Point eingestellt werden. Per Default steht die IP-Adresse auf **192.168.15.1**. In Ausnahmefällen kann die IP auf eine andere Adresse eingestellt werden.
+**APIp**
+	* Hier kann die IP-Adresse des WiFi Access Point eingestellt werden. Per Default steht die IP-Adresse auf **192.168.15.1**. In Ausnahmefällen kann die IP auf eine andere Adresse eingestellt werden. Beachten Sie dabei, dass das OPB60 bei veränderter IP-Adresse im Ihrem WLAN unter Umständen nicht mehr erreichbar sein könnte.
 	
-**AP Mask**
-	* An diese Stelle wird die Subnetz-Maske für den WiFi Access Point angegeben. Per Default steht die Subnetz-Maske auf **255.255.255.0**. 
+**APMask**
+	* An diese Stelle wird die Subnetz-Maske für den WiFi Access Point angegeben. Per Default steht die Subnetz-Maske auf **255.255.255.0**. Es wird dringend empfohlen, diesen Wert nicht zu verändern, es sei denn, Sie wissen genau, welche Auswirkungen eine Änderung hat.
 	
 .. warning::	
-	Achten Sie darauf, dass das Subnetz verschieden zu anderen Subnetzen ist, in das sich das OBP60 als WiFi-Client eingebunden hat und das Sie eine korrekte Subnetz-Maske verwenden. Das Subnetz ist über die ersten drei Zahlen der IP-Adresse gekennzeichnet. Beachten Sie das nicht, so können Netzwerkplobleme auftreten in dessen Folge Sie die Konfigurationsseiten nicht mehr öffnen können. In den meisten Fällen wird eine Änderung der IP-Adresse oder der Subnetz-Maske nicht notwendig sein. Ändern Sie die IP und Subnetz-Maske nur, wenn Sie über Netzwerkerfahrung verfügen und die Auswirkung der Änderungen verstehen.
+	Achten Sie darauf, dass der Adressbereich des WiFi Access Points  sich zu dem Adressbereich des Netzes unterscheiden muss, in das sich das OBP60 als WiFi-Client einwählt. Der Adressbereich eines Netzwerks ist über die ersten 3 Zifferngruppen gekennzeichnet (111.222.333.xxx). Nur die letzte Gruppe (xxx) wird für die Gerätekennzeichnung im gleichen Netz benutzt. Verändern Sie die ersten 3 Zifferngruppen des Adressbereichs, werden Sie die Konfigurationsseiten des OPB60 nicht mehr ohne weiteres öffnen können. In den meisten Fällen wird eine Änderung der IP-Adresse oder der Subnetz-Maske nicht notwendig sein. Ändern Sie die IP-Adresse und die Subnetz-Maske daher nur, wenn Sie über Netzwerkerfahrung verfügen und die Auswirkungen der Änderungen verstehen.
 
-**Use Admin Pass**
+**UseAdminPass**
 	* Hiermit kann festgelegt werden, ob für Änderungen der Konfiguration ein Passwort notwendig ist.
 	
-**Admin Password**
-	* An der Stelle wird das Admin Passwort eingegeben. Es dürfen nur Zeichen des ASCII-Zeichensatzes verwendet werden.
+**adminPassword**
+	* Hier wird das Admin-Passwort eingegeben. Es dürfen nur Zeichen des ASCII-Zeichensatzes verwendet werden.
 	
-**Show All Data**
-	* Ist der Wert auf ``on``, so werden im Data-Bereich alle Sensordaten angezeigt. Mit ``off`` können alle Sensordaten auf der Data-Seite deaktiviert werden.
+**show all data**
+	* Zeigt das Menü ``on``, werden im Data-Bereich alle Sensordaten angezeigt. Das Umstellen auf ``off`` deaktiviert alle Sensordaten im Data-Bereich.
 	
-**Log Level**
+**log level**
 
-	* Über **Log Level** lässt sich der Grad der Benachrichtigung über die USB-C-Schnittstelle einstellen. Hierbei gibt es folgende Einstellungen:
+	* Über **Log Level** lässt sich der Detailgrad der Benachrichtigungen über die USB-C-Schnittstelle einstellen. Folgende Einstellungen stehen zur Verfügung:
 		* ``off`` - Keine Logging-Ausgaben
-		* ``error`` - Nur Fehlermeldungen ausgeben
-		* ``log`` - Nur Fehlermeldungen und Statusinformationen ausgeben
-		* ``debug`` - Alle Meldungen inklusive Debug-Meldungen ausgeben 
+		* ``error`` - Es werden nur Fehlermeldungen ausgegeben
+		* ``log`` - Es werden Fehlermeldungen und Statusinformationen ausgegeben
+		* ``debug`` - Es werden alle vorgesehenen Meldungen inklusive Debug-Meldungen ausgegeben 
 		
 .. hint::
-	Wenn Sie beabsichtigen über die USB-C-Schnittstelle einen NMEA0183-Datenaustausch durchzuführen, dann sollten Sie den **Log Level** auf ``off`` stellen. Beachten Sie das nicht, so kann es zu Störungen bei der Datenauswertung kommen, da Logging-Daten und NMEA0183-Telegramme gemischt ausgegeben werden.
+	Wenn Sie beabsichtigen, einen NMEA0183-Datenaustausch über die USB-C-Schnittstelle  durchzuführen, sollten Sie den **Log Level** auf ``off`` stellen. Beachten Sie das nicht, kann die Auswertung von Logging-Ausgaben sehr unübersichtlich werden, da Logging-Daten und NMEA0183-Telegramme dann gemischt ausgegeben werden.
 
 Config - Converter
 ------------------
@@ -150,16 +150,16 @@ Config - Converter
 
 Mit den nachfolgenden Einstellungen können Sie die Funktion des NMEA2000-Gateways verändern.
 
-**Min XDR Interval**
+**min XDR interval**
 	* Hier wird die Intervallzeit der XDR-Signalverarbeitung eingestellt. XDR-Telegramme sind frei definierbare Sensor-Telegramme. Die Intervallzeit kann ab 10 ms eingestellt werden. Der Default-Wert steht auf 100 ms. Mit der kleinsten Intervallzeit von 10 ms wird eine Datenverarbeitungsrate von 100 Hz erreicht.
 	
-**Min N2K Interval**
+**min N2K interval**
 	* Hier wird die Intervallzeit der NMEA2000-Signalverarbeitung eingestellt. Die Intervallzeit kann ab 5 ms eingestellt werden. Der Defaultwert steht auf 50 ms.
 	
 .. note::
 	Bedenken Sie, dass kleine Intervallzeiten eine große Prozessorlast bewirken. Stellen Sie den Wert möglichst groß ein, so dass ihre Daten noch zeitlich korrekt verarbeitet werden können. Mit dem Standardwert von 100 ms für das XDR-Interval und 50 ms für das N2K-Intervall können die meisten Anwendungen sinnvoll betrieben werden.
 	
-**NMEA2000 Out**
+**NMEA2000 out**
 	* Hier kann eingestellt werden, ob NMEA2000-Telegramme in das NMEA-Netzwerk übertragen werden
 		* ``on`` - Ausgabe der NMEA2000-Daten
 		* ``off`` - Keine Ausgabe der NMEA2000-Daten
@@ -170,45 +170,45 @@ Config - USB Port
 .. image:: ../pics/Config_USB_Port.png
              :scale: 60%
 
-Über **USB** Port können die Funktionen des USB-Ports detailliert eingestellt werden.
+Über die Seite **USB** Port können die Funktionen des USB-Ports detailliert eingestellt werden.
 
-**USB Mode**
-	* Beschreibt die Art wie die Daten am USB-Port verarbeitet werden. Mit dem Actisense-Format können NMEA2000-Telegramme von externer Software empfangen und verarbeitet werden. Actisense-Daten werden in NMEA2000-Daten und in NMEA0183-Daten innerhalb der Firmware übersetzt. So kann z.B. die `Simulations- und Diagnosefirmware`_ der Fa. Actisense zur Analyse der Busdaten verwendet werden.
+**USB mode**
+	* legt das Format fest, wie Daten am USB-Port verarbeitet werden. Mit dem Actisense-Format können NMEA2000-Telegramme von externer Software empfangen und verarbeitet werden. Actisense-Daten werden in NMEA2000-Daten und in NMEA0183-Daten innerhalb der Firmware übersetzt. So kann z.B. die `Simulations- und Diagnosefirmware`_ der Fa. Actisense zur Analyse der Busdaten verwendet werden.
 	
 .. _Simulations- und Diagnosefirmware: https://de.wikipedia.org/wiki/NMEA_0183#Ger%C3%A4te-IDs
 	
 		* ``nmea0183`` - Verarbeitung im NMEA0183-Format
 		* ``actisense`` - Verarbeitung im Actisense-Format
 		
-**USB Baud Rate**
+**USB baud rate**
 	* Hier kann die Schnittstellengeschwindigkeit der seriellen USB-Schnittstelle eingestellt werden. Es lassen sich Geschwindigkeiten zwischen 1.200 Bd und 460.800 Bd einstellen.
 	
 .. hint::
 	Stellen Sie die Schnittstellengeschwindigkeit so ein, dass sie ausreichend hoch ist, um alle Datentelegramme im Sendeintervall verarbeiten zu können. Mit dem Default-Wert von 115.200 Bd können die meisten Anwendungen sinnvoll betrieben werden.
 
-In den nachfolgenden drei Einstellungen lässt sich die Datenrichtung an der USB-C-Schnittstelle einstellen. Dabei wird zwischen NMEA0183 und NMEA2000 unterschieden.
+Mit den nachfolgenden drei Einstellungen lässt sich die Datenrichtung an der USB-C-Schnittstelle einstellen. Dabei wird zwischen NMEA0183 und NMEA2000 unterschieden.
 	
-**NMEA To USB**
+**NMEA to USB**
 	* ``on`` - NMEA0183-Daten an USB-Schnittstelle ausgeben
 	* ``off`` - NMEA0183-Daten an USB-Schnittstelle nicht ausgeben
 	
-**NMEA From USB**
+**NMEA from USB**
 	* ``on`` - NMEA0183-Daten von der USB-Schnittstelle empfangen
 	* ``off`` - NMEA0183-Daten von der USB-Schnittstelle nicht empfangen
 	
-**USB To NMEA2000**
+**USB to NMEA2000**
 	* ``on`` - Daten von der USB-Schnittstelle an NMEA2000 weiterleiten
 	* ``off`` - Daten von der USB-Schnittstelle nicht an NMEA2000 weiterleiten
 	
-In den nächsten beiden Einstellungen werden die Filterfunktionen **USB Read Filter** und **USB Write Filter** für das Lesen und Schreiben an der USB-Schnittstelle vorgenommen. Es lassen sich nur NMEA0183-Daten filtern. Dabei lässt sich gesondert einstellen, ob AIS-Positionssignale verarbeitet werden. Als Filterformen stehen Whitelist und Blacklist zur Verfügung.
+In den nächsten beiden Einstellungen werden die Filterfunktionen **USB read Filter** und **USB write Filter** für das Lesen und Schreiben an der USB-Schnittstelle gesetzt. Es lassen sich nur NMEA0183-Daten filtern. Dabei lässt sich gesondert einstellen, ob AIS-Positionssignale verarbeitet werden. Als Filterformen stehen <Whitelist> und <Blacklist> zur Verfügung, also einmal die Angabe von Filterkriterien, die eingeschlossen werden sollen (Whitelist), dann solche, die zum Ausschluss von Daten führen (Blacklist).
 
 **USB Filter**
 	* ``aison`` - AIS-Daten an der USB-Schnittstelle werden verarbeitet
 	* ``aisoff`` - AIS-Daten an der USB-Schnittstelle werden nicht verarbeitet
-	* ``blacklist`` - Der Filter funktioniert als Blacklist. Gekennzeichnete Telegramme werden nicht verarbeitet.
-	* ``whitelist`` - Der Filter funktioniert als Whitelist. Nur aufgelistete Telegramme werden verarbeitet.
+	* ``blacklist`` - Der Filter arbeitet mit einer Blacklist. Die gekennzeichneten Telegramme werden nicht verarbeitet.
+	* ``whitelist`` - Der Filter arbeitet mit einer Whitelist. Nur die aufgelisteten Telegramme werden verarbeitet.
 	
-Im Eingabefeld werden die Kurzbezeichner der NMEA0183-Telegramme eingetragen, Mehreren Einträge werden durch Komma ``,`` getrennt. Folgende Kurzbezeichner können verwendet werden:
+Im Eingabefeld werden die Kurzbezeichner der NMEA0183-Telegramme eingetragen, Mehrere Einträge werden durch Komma ``,`` getrennt. Folgende Kurzbezeichner können verwendet werden:
 
 	* DBK, DBS, DBT, DPT, GGA, GLL, GSA, GSV, HDG, HDM, HDT, MTW, MWD, MWV, RMB, RMC, ROT, RSA, VHW, VTG, VWR, XDR, XTE, ZDA
 	
@@ -217,10 +217,10 @@ Die genaue Bedeutung der Kurzbezeichner ist `hier`_ erklärt.
 .. _hier: https://de.wikipedia.org/wiki/NMEA_0183
 
 .. hint::
-	Filterfunktionen sind ein mächtiges Werkzeug, um Datenflüsse zu steuern. Überlegen Sie sich vor der Konfiguration wie Ihre Datenflüsse im Boot aussehen und erstellen sich dazu eine Skizze. Setzen Sie die Filter so ein, dass sie nur die Daten senden und empfangen, die sie auch wirklich benötigen. Unterscheiden Sie dabei was gesendet oder empfangen wird und vermeiden Sie Datenschleifen.
+	Filterfunktionen sind ein mächtiges Werkzeug, um Datenflüsse zu steuern. Überlegen Sie sich vor der Konfiguration, wie Ihre Datenflüsse im Boot aussehen sollen, und erstellen sich dazu eine Skizze. Setzen Sie die Filter so ein, dass sie nur die Daten senden und empfangen, die sie auch wirklich benötigen. Unterscheiden Sie dabei, was gesendet und was empfangen werden soll, vermeiden Sie dabei auf alle Fälle Datenschleifen.
 	
 .. warning::
-	Datenschleifen führen zu Fehlfunktionen des Gerätes. Bei Datenschleifen laufen dieselben Daten über mehrere Geräte im Kreis. Dadurch entstehen hohe Senderaten, weil fortlaufend Daten gesendet und empfangen werden. Die Prozessorlast erhöht sich dabei auf ein Maximum. Unter Umständen kann das Gerät ausfallen, nicht mehr zeitnah die Daten verarbeiten oder unbedienbar sein. Beachten Sie, dass der Zustand auch erst eintreten kann, wenn weitere Geräte am Bussystem später zugeschaltet werden.
+	Datenschleifen führen zu Fehlfunktionen des Gerätes. Bei Datenschleifen laufen dieselben Daten über mehrere Geräte im Kreis. Dadurch entstehen hohe Senderaten, weil fortlaufend die gleichen Daten gesendet und empfangen werden. Die Prozessorlast erhöht sich dabei auf ein Maximum. Unter Umständen kann das Gerät ausfallen, nicht mehr zeitnah die Daten verarbeiten oder nicht mehr bedienbar sein. Beachten Sie, dass der Zustand auch erst dann eintreten kann, wenn weitere Geräte am Bussystem später zugeschaltet werden.
 	
 Config - Serial Port
 --------------------
@@ -228,32 +228,32 @@ Config - Serial Port
 .. image:: ../pics/Config_Serial_Port.png
              :scale: 60%
 
-Über **Serial Port** können Einstellungen zur seriellen NMEA0183-Schnittstelle vorgenommen werden. Diese Einstellungen beziehen sich auf die RS485-Schnittstelle am Steckverbinder CN1 mit den Signalen ``A``, ``B`` und ``Shield``.
+Über **serial port** können Einstellungen zur seriellen NMEA0183-Schnittstelle vorgenommen werden. Diese Einstellungen beziehen sich auf die RS485-Schnittstelle am Steckverbinder <CN1> mit den Signalen ``A``, ``B`` und ``Shield``.
 
-**Serial Direction**
+**serial direction**
 	* ``off`` - Die NMEA0183-Schnittstelle ist ausgeschaltet
 	* ``send`` - Die NMEA0183-Schnittstelle sendet
 	* ``receive`` - Die NMEA0183-Schnittstelle empfängt
 	
 .. note::
-	Die serielle Schnittstelle ist konform zu RS485 und RS422 und arbeitet im Halbduplex-Betrieb. Es kann entweder gesendet oder empfangen werden. Beides gleichzeitig ist nicht möglich. Wenn Sie eine Vollduplex-Übertragung für NMEA0183-Daten benötigen, dann können Sie die USB-C-Schnittstelle benutzen. Diese Schnittstelle ist aber nicht zu RS485 oder RS422 konform. Sie kann sinnvoll verwendet werden wenn Sie Daten z.B. in OpenCPN auf einem PC oder Laptop verarbeitet wollen.
+	Die serielle Schnittstelle ist konform zu RS485 und RS422 und arbeitet im Halbduplex-Betrieb. Es kann entweder gesendet oder empfangen werden. Beides gleichzeitig ist nicht möglich. Wenn Sie eine Vollduplex-Übertragung für NMEA0183-Daten benötigen, dann können Sie die USB-C-Schnittstelle benutzen. Diese Schnittstelle ist aber nicht zu RS485 oder RS422 konform. Sie kann sinnvoll verwendet werden, wenn Sie Daten z.B. in OpenCPN auf einem PC oder Laptop verarbeitet wollen.
 	
-**Serial Baud Rate**
+**serial baud rate**
 	* Einstellung der Baudrate zwischen 1.200 und 460.800 Bd.
 
-**Serial to NMEA2000**
+**serial to NMEA2000**
 	* ``on`` - Daten an der Schnittstelle werden nach NMEA2000 übertragen (Gateway-Funktion)
 	* ``off`` - Daten an der Schnittstelle werden nicht nach NMEA2000 übertragen
 	
-In den nächsten beiden Einstellungen werden die Filterfunktionen **Serial Read Filter** und **Serial Write Filter** für das Lesen und Schreiben an der seriellen Schnittstelle vorgenommen. Es lassen sich nur NMEA0183-Daten filtern. Dabei lässt sich gesondert einstellen, ob AIS-Positionssignale verarbeitet werden. Als Filterformen stehen Whitelist und Blacklist zur Verfügung.
+In den nächsten beiden Einstellungen werden die Filterfunktionen **Serial read Filter** und **Serial write Filter** für das Lesen und Schreiben an der seriellen Schnittstelle vorgenommen. Es lassen sich nur NMEA0183-Daten filtern. Dabei lässt sich gesondert einstellen, ob auch AIS-Positionssignale verarbeitet werden. Als Filterformen stehen <Whitelist> und <Blacklist> zur Verfügung.
 
 **Serial Filter**
 	* ``aison`` - AIS-Daten an der USB-Schnittstelle werden verarbeitet
 	* ``aisoff`` - AIS-Daten an der USB-Schnittstelle werden nicht verarbeitet
-	* ``blacklist`` - Der Filter funktioniert als Blacklist. Gekennzeichnete Telegramme werden nicht verarbeitet.
-	* ``whitelist`` - Der Filter funktioniert als Whitelist. Nur aufgelistete Telegramme werden verarbeitet.
+	* ``blacklist`` - Der Filter arbeitet mit einer Blacklist. Die gekennzeichneten Telegramme werden nicht verarbeitet.
+	* ``whitelist`` - Der Filter arbeitet mit einer Whitelist. Nur die aufgelisteten Telegramme werden verarbeitet.
 	
-Im Eingabefeld werden die Kurzbezeichner der NMEA0183-Telegramme eingetragen, Mehreren Einträge werden durch Komma ``,`` getrennt. Folgende Kurzbezeichner können verwendet werden:
+Im Eingabefeld werden die Kurzbezeichner der NMEA0183-Telegramme eingetragen, mehrere Einträge werden durch Komma ``,`` getrennt. Folgende Kurzbezeichner können verwendet werden:
 
 	* DBK, DBS, DBT, DPT, GGA, GLL, GSA, GSV, HDG, HDM, HDT, MTW, MWD, MWV, RMB, RMC, ROT, RSA, VHW, VTG, VWR, XDR, XTE, ZDA
 	
@@ -265,71 +265,77 @@ Config - TCP Server
 .. image:: ../pics/Config_TCP_Server.png
              :scale: 60%
              
-An dieser Stelle werden die Einstellungen zum TCP-Server vorgenommen. Der TCP-Server ist ein Server-Dienst über den Daten schreibend und lesend ausgetauscht werden können. Dabei meldet sich ein Netzwerk-Gerät als Client aktiv über einen TCP-Port am Server an und kann dann Daten mit dem TCP-Server austauschen.
+Hier werden die Einstellungen zum Betrieb des OPB60 als TCP-Server vorgenommen. Der TCP-Server ist ein Server-Dienst, über den Daten schreibend und lesend ausgetauscht werden können. Dabei meldet sich ein Netzwerk-Gerät als Client aktiv über einen TCP-Port am Server an und kann dann Daten mit dem TCP-Server austauschen.
 
 .. note::
     Der Anmeldevorgang muss immer vom Client initiiert werden. Bei Verbindungsabbrüchen muss der Client die Verbindung wieder selbständig aufbauen. Achten Sie darauf, dass der Client über eine Auto-Connect-Funktion verfügt. Anderenfalls verlieren Sie die Datenverbindung dauerhaft bei Verbindungsabbrüchen.
 
-**TCP Port**
-	* Angabe des TCP-Port auf den der Server auf eingehende Verbindungsanfragen wartet. Der Default-Wert ist 10110. Verwenden Sie nur Ports größer 1024, da Ports unterhalb von 1024 für feste Anwendungen reserviert sind. Der Maximalwert liegt bei 65535.
+**TCP port**
+	* Angabe des TCP-Port, auf dem der Server auf eingehende Verbindungsanfragen wartet. Der Default-Wert ist 10110. Verwenden Sie nur Ports größer 1024, da Ports unterhalb von 1024 für feste Anwendungen reserviert sind. Der Maximalwert liegt bei 65535.
 	
-**Max TCP Clients**
-	* Angabe, wie viele Clients sich maximal mit dem TCP-Server verbinden dürfen. Der Defualt-Wert ist 6.
+**max TCP Clients**
+	* Angabe, wieviele Clients sich maximal mit dem TCP-Server verbinden dürfen. Der Default-Wert ist 6.
 	
 .. note::	
-	Beachten Sie, dass viele Clients eine große Rechenlast der CPU verursachen kann. Sorgen Sie dafür, dass sich nicht mehr als 6 Clients mit dem Server verbinden können. Anderenfalls kann es zur Beeinträchtigung der Datenverarbeitung kommen oder das Gerät reagiert nicht mehr korrekt.
+	Beachten Sie, dass eine hohe Zahl an Clients eine große Rechenlast der CPU verursachen können. Sorgen Sie daher dafür, dass sich nicht mehr als 6 Clients mit dem Server verbinden können. Anderenfalls kann es zur Beeinträchtigung der Datenverarbeitung kommen oder das Gerät reagiert nicht mehr korrekt.
 
-**NMEA0183 OUT**
+**NMEA0183 out**
     * ``on`` - Am TCP-Port werden NMEA0183-Daten ausgegeben
     * ``off`` - Am TCP-Port werden keine NMEA0183-Daten ausgegeben
 	
-**NMEA0183 IN**
+**NMEA0183 in**
     * ``on`` - Am TCP-Port werden NMEA0183-Daten empfangen
     * ``off`` - Am TCP-Port werden keine NMEA0183-Daten empfangen
 	
-**To NMEA2000**
+**to NMEA2000**
 	* ``on`` - Daten am TCP-Port werden nach NMEA2000 übertragen (Gateway-Funktion)
 	* ``off`` - Daten am TCP-Port werden nicht nach NMEA2000 übertragen
 	
 In den nächsten beiden Einstellungen werden die Filterfunktionen **NMEA Read Filter** und **NMEA Write Filter** für das Lesen und Schreiben am TCP-Port vorgenommen. Es lassen sich nur NMEA0183-Daten filtern. Dabei lässt sich gesondert einstellen, ob AIS-Positionssignale verarbeitet werden. Als Filterformen stehen Whitelist und Blacklist zur Verfügung.
 
-**NMEA Filter**
+**NMEA read Filter**
 	* ``aison`` - AIS-Daten an der USB-Schnittstelle werden verarbeitet
 	* ``aisoff`` - AIS-Daten an der USB-Schnittstelle werden nicht verarbeitet
-	* ``blacklist`` - Der Filter funktioniert als Blacklist. Gekennzeichnete Telegramme werden nicht verarbeitet.
-	* ``whitelist`` - Der Filter funktioniert als Whitelist. Nur aufgelistete Telegramme werden verarbeitet.
+	* ``blacklist`` - Der Filter arbeitet mit einer Blacklist. Die gekennzeichneten Telegramme werden nicht verarbeitet.
+	* ``whitelist`` - Der Filter arbeitet mit einer Whitelist. Nur die aufgelisteten Telegramme werden verarbeitet.
+
+**NMEA write Filter**
+	* ``aison`` - AIS-Daten an der USB-Schnittstelle werden verarbeitet
+	* ``aisoff`` - AIS-Daten an der USB-Schnittstelle werden nicht verarbeitet
+	* ``blacklist`` - Der Filter arbeitet mit einer Blacklist. Die gekennzeichneten Telegramme werden nicht verarbeitet.
+	* ``whitelist`` - Der Filter arbeitet mit einer Whitelist. Nur die aufgelisteten Telegramme werden verarbeitet.
 	
-Im Eingabefeld werden die Kurzbezeichner der NMEA0183-Telegramme eingetragen, Mehreren Einträge werden durch Komma ``,`` getrennt. Folgende Kurzbezeichner können verwendet werden:
+Im Eingabefeld werden die Kurzbezeichner der NMEA0183-Telegramme eingetragen, mehrere Einträge werden durch Komma ``,`` getrennt. Folgende Kurzbezeichner können verwendet werden:
 
 	* DBK, DBS, DBT, DPT, GGA, GLL, GSA, GSV, HDG, HDM, HDT, MTW, MWD, MWV, RMB, RMC, ROT, RSA, VHW, VTG, VWR, XDR, XTE, ZDA
 	
 Die genaue Bedeutung der Kurzbezeichner ist `hier`_ erklärt.
 
-**Seasmart**
-    * Über Seasmart lassen sich NMEA2000-Daten in NMEA0183-Telegrammen verpacken. Wenn Sie Seasmart aktivieren, werden alle NMEA2000-Daten über NMEA0183-Telegramme ausgegeben und getunnelt. Die Daten werden dabei in Binärform in einem NMEA0183-Telegramm übertragen. Somit können Sie von einem OBP60 (TCP-Server) zu einem anderen OBP60 (TCP-Client) NMEA2000-Daten über Wifi übertragen. Achten Sie darauf, dass auf der Gegenseite ebenfalls Seasmart aktiviert ist.
+**Seasmart out**
+    * Über Seasmart lassen sich NMEA2000-Daten in NMEA0183-Telegrammen übersetzen. Wenn Sie <Seasmart> aktivieren, werden alle NMEA2000-Daten über NMEA0183-Telegramme ausgegeben und getunnelt. Die Daten werden dabei in Binärform in einem NMEA0183-Telegramm übertragen. Auf diese Weise können Sie von einem OBP60 (TCP-Server) zu einem weiteren OBP60 (TCP-Client) NMEA2000-Daten über Wifi übertragen. Achten Sie darauf, dass auf der Gegenseite ebenfalls <Seasmart> aktiviert ist.
     * ``on`` - Der TCP-Server kann Seasmart-Daten senden und empfangen
     * ``off`` - Seasmart wird vom TCP-Server nicht unterstützt
 	
-Config - TCP Client
+Config - TCP client
 -------------------
 
 .. image:: ../pics/Config_TCP_Client.png
              :scale: 60%
              
-An dieser Stelle werden die Einstellungen zum TCP-Client vorgenommen. Das OBP60 kann als TCP-Client Daten mit einem TCP-Server lesend und schreibend austauschen. Dabei meldet sich das OBP60 als Client aktiv über einen TCP-Port am TCP-Server an und kann dann Daten mit dem Server austauschen. Der TCP-Client-Modus enthält ein Auto-Connect, um bei Verbindungsabbrüchen automatisch die Verbindung wieder aufnehmen zu können.
+Hier werden die Einstellungen für den Betrieb des OPB60 als TCP-Client vorgenommen. Das OBP60 kann als TCP-Client Daten mit einem TCP-Server lesend und schreibend austauschen. Dabei meldet sich das OBP60 als Client aktiv über einen TCP-Port am TCP-Server an und kann dann Daten mit dem Server austauschen. Der TCP-Client-Modus enthält ein Auto-Connect, um bei Verbindungsabbrüchen automatisch die Verbindung wieder aufnehmen zu können.
 
-**Enable**
+**enable**
     * ``on`` - Der TCP-Client-Modus ist im OBP60 aktiviert
     * ``off`` - Der TCP-Client-Modus ist deaktiviert
 	
-**Remote Port**
-	* Angabe des entfernten TCP-Port über den daten mit einem TCP-Server ausgetauscht werden sollen. Der Default-Wert ist 10110. Damit ein Datenaustausch mit einem TCP-Server und einem TCP-Clinetstattfinden kann, muss der selbe Port vom TCP-Client verwendet werden, den der TCP-Server für die Kommunikation verwendet. Benutzen Sie nur Ports größer 1024, da Ports unterhalb von 1024 für feste Anwendungen reserviert sind. Der Maximalwert liegt bei 65535.
+**remote port**
+	* Angabe des TCP-Ports, über den Daten mit einem TCP-Server ausgetauscht werden sollen. Der Default-Wert ist 10110. Damit der Datenaustausch zwischen einem TCP-Server und einem TCP-Client stattfinden kann, muss der selbe Port vom TCP-Client verwendet werden, den der TCP-Server für die Kommunikation verwendet. Benutzen Sie nur Ports größer 1024, da Ports unterhalb von 1024 für festgelegte Anwendungen reserviert sind. Der Maximalwert liegt bei 65535.
 	
-**Remote Address**
-    Die Remote Address ist die Adresse des TCP-Servers im WiFi-Netzwerk mit dem Sie Daten austauschen wollen. Sie können eine IP-Adresse wie z.B. **192.168.15.1** oder einen MDNS-Hostnamen wie z.B. **OBP60V2.local** verwenden.
+**remote address**
+    Die <remote address> ist die Adresse des TCP-Servers im WiFi-Netzwerk, mit dem Sie Daten austauschen wollen. Sie können eine IP-Adresse wie z.B. **192.168.15.1** oder einen MDNS-Hostnamen wie z.B. **OBP60V2.local** verwenden.
 
 .. warning::
-    Wenn Sie Daten zwischen zwei OBP60 via WiFi austauschen wollen, müssen sich beide Geräte im selben Funknetz befinden und müssen unterschiedliche System-Namen und Access Point IP-Adressen besitzen. Eine Gerät muss als TCP-Server und das andere Gerät als TCP-Client konfiguriert sein. Die Einstellungen dazu werden unter **Config - System** vorgenommen. Wenn Sie das nicht beachten, kann es zu Störungen im WiFi-Datenverkehr kommen und Sie können unter Umständen die Web-Konfigurationsoberflächen der Geräte nicht mehr erreichen.
+    Wenn Sie Daten zwischen zwei OBP60 via WiFi austauschen wollen, müssen sich beide Geräte im selben Funknetz befinden, auch müssen sie unterschiedliche System-Namen haben. Ihre Access Points müssen im gleichen IP-Adressbereich liegen, aber unterschiedliche Geräteadressen haben. Eine Gerät muss als TCP-Server und das andere Gerät als TCP-Client konfiguriert sein. Die Einstellungen dazu werden unter **Config - System** vorgenommen. Wenn Sie das nicht beachten, kann es zu Störungen im WiFi-Datenverkehr kommen und Sie können unter Umständen die Web-Konfigurationsoberflächen der Geräte nicht mehr erreichen.
     
 **NMEA0183 OUT**
     * ``on`` - Am TCP-Port werden NMEA0183-Daten ausgegeben
