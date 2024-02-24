@@ -21,15 +21,15 @@ Funktionen
 * NMEA2000/NMEA0183 Gateway (bidirektional)
 * I2C (isoliert)
 * 1Wire (nicht isoliert)
-* Spannungsausgang 5V (max. 200mA) für ext. Sensorik
+* Spannungsausgang 5V (max. 200mA) für externe Sensorik
 * USB-C (OTG, Debug, NMEA0183)
 * Batteriemonitor (12V-Spannungsmessung)
 * BMP280 (Temperatur, Luftdruck)
-* GPS-Empfäger (GPS, Glonas, Baidu, int. oder ext. GPS-Antenne)
+* GPS-Empfäger (GPS, Glonas, Baidu, interne oder externe GPS-Antenne)
 * WiFi 2.4GHz (HTTP, TCP, UDP)
 * Bluetooth (aktuell ungenutzt)
 * Batterie-Tiefentladeschutz < 9.0V
-* Low Power Modus
+* Low Power-Modus
 
 
 Aufbau
