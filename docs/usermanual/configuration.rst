@@ -99,7 +99,7 @@ Config - System
 
 Unter **System** werden grundlegende Einstellungen vorgenommen wie:
 
-**system name**
+**System Name**
 	* Gerätename des OBP60. Hier kann ein Name verwendet werden, der aus bis zu 10 ASCII-Zeichen besteht. Dabei dürfen nur Buchstaben und Zahlen verwendet werden. Zusätzlich sind das Minus-Zeichen und der Unterstrich erlaubt. Sonderzeichen sind nicht erlaubt, da dieser Gerätename auch als SSID im WiFi-Netzwerk verwendet wird.
 	
 **NMEA0183 ID**
@@ -107,31 +107,31 @@ Unter **System** werden grundlegende Einstellungen vorgenommen wie:
 
 .. _Link: https://de.wikipedia.org/wiki/NMEA_0183#Ger%C3%A4te-IDs
 
-**StopAPTime**
+**Stop AP Time**
 	* Hierüber kann angegeben werden, nach welcher Zeit der WiFi Access Point abgeschaltet werden soll. Die Angabe der Zeit erfolgt in Sekunden. Der Wert <0s> sorgt für einen dauerhaften Betrieb des WiFi Access Points.
 	
-**ApPassword**
+**Ap Password**
 	* An dieser Stelle wird das Passwort für den WiFi Access Point angegeben. Es dürfen nur Zeichen des ASCII-Zeichensatzes verwendet werden.
 	
-**APIp**
+**AP Ip**
 	* Hier kann die IP-Adresse des WiFi Access Point eingestellt werden. Per Default steht die IP-Adresse auf **192.168.15.1**. In Ausnahmefällen kann die IP auf eine andere Adresse eingestellt werden. Beachten Sie dabei, dass das OPB60 bei veränderter IP-Adresse im Ihrem WLAN unter Umständen nicht mehr erreichbar sein könnte.
 	
-**APMask**
+**AP Mask**
 	* An diese Stelle wird die Subnetz-Maske für den WiFi Access Point angegeben. Per Default steht die Subnetz-Maske auf **255.255.255.0**. Es wird dringend empfohlen, diesen Wert nicht zu verändern, es sei denn, Sie wissen genau, welche Auswirkungen eine Änderung hat.
 	
 .. warning::	
 	Achten Sie darauf, dass der Adressbereich des WiFi Access Points  sich zu dem Adressbereich des Netzes unterscheiden muss, in das sich das OBP60 als WiFi-Client einwählt. Der Adressbereich eines Netzwerks ist über die ersten 3 Zifferngruppen gekennzeichnet (111.222.333.xxx). Nur die letzte Gruppe (xxx) wird für die Gerätekennzeichnung im gleichen Netz benutzt. Verändern Sie die ersten 3 Zifferngruppen des Adressbereichs, werden Sie die Konfigurationsseiten des OPB60 nicht mehr ohne weiteres öffnen können. In den meisten Fällen wird eine Änderung der IP-Adresse oder der Subnetz-Maske nicht notwendig sein. Ändern Sie die IP-Adresse und die Subnetz-Maske daher nur, wenn Sie über Netzwerkerfahrung verfügen und die Auswirkungen der Änderungen verstehen.
 
-**UseAdminPass**
+**Use Admin Pass**
 	* Hiermit kann festgelegt werden, ob für Änderungen der Konfiguration ein Passwort notwendig ist.
 	
-**adminPassword**
+**Admin Password**
 	* Hier wird das Admin-Passwort eingegeben. Es dürfen nur Zeichen des ASCII-Zeichensatzes verwendet werden.
 	
-**show all data**
+**Show All Data**
 	* Zeigt das Menü ``on``, werden im Data-Bereich alle Sensordaten angezeigt. Das Umstellen auf ``off`` deaktiviert alle Sensordaten im Data-Bereich.
 	
-**log level**
+**Log Level**
 
 	* Über **Log Level** lässt sich der Detailgrad der Benachrichtigungen über die USB-C-Schnittstelle einstellen. Folgende Einstellungen stehen zur Verfügung:
 		* ``off`` - Keine Logging-Ausgaben
@@ -150,10 +150,10 @@ Config - Converter
 
 Mit den nachfolgenden Einstellungen können Sie die Funktion des NMEA2000-Gateways verändern.
 
-**min XDR interval**
+**Min XDR interval**
 	* Hier wird die Intervallzeit der XDR-Signalverarbeitung eingestellt. XDR-Telegramme sind frei definierbare Sensor-Telegramme. Die Intervallzeit kann ab 10 ms eingestellt werden. Der Default-Wert steht auf 100 ms. Mit der kleinsten Intervallzeit von 10 ms wird eine Datenverarbeitungsrate von 100 Hz erreicht.
 	
-**min N2K interval**
+**Min N2K Interval**
 	* Hier wird die Intervallzeit der NMEA2000-Signalverarbeitung eingestellt. Die Intervallzeit kann ab 5 ms eingestellt werden. Der Defaultwert steht auf 50 ms.
 	
 .. note::
@@ -172,7 +172,7 @@ Config - USB Port
 
 Über die Seite **USB** Port können die Funktionen des USB-Ports detailliert eingestellt werden.
 
-**USB mode**
+**USB Mode**
 	* legt das Format fest, wie Daten am USB-Port verarbeitet werden. Mit dem Actisense-Format können NMEA2000-Telegramme von externer Software empfangen und verarbeitet werden. Actisense-Daten werden in NMEA2000-Daten und in NMEA0183-Daten innerhalb der Firmware übersetzt. So kann z.B. die `Simulations- und Diagnosefirmware`_ der Fa. Actisense zur Analyse der Busdaten verwendet werden.
 	
 .. _Simulations- und Diagnosefirmware: https://de.wikipedia.org/wiki/NMEA_0183#Ger%C3%A4te-IDs
@@ -180,7 +180,7 @@ Config - USB Port
 		* ``nmea0183`` - Verarbeitung im NMEA0183-Format
 		* ``actisense`` - Verarbeitung im Actisense-Format
 		
-**USB baud rate**
+**USB Baud Rate**
 	* Hier kann die Schnittstellengeschwindigkeit der seriellen USB-Schnittstelle eingestellt werden. Es lassen sich Geschwindigkeiten zwischen 1.200 Bd und 460.800 Bd einstellen.
 	
 .. hint::
@@ -238,10 +238,10 @@ Config - Serial Port
 .. note::
 	Die serielle Schnittstelle ist konform zu RS485 und RS422 und arbeitet im Halbduplex-Betrieb. Es kann entweder gesendet oder empfangen werden. Beides gleichzeitig ist nicht möglich. Wenn Sie eine Vollduplex-Übertragung für NMEA0183-Daten benötigen, dann können Sie die USB-C-Schnittstelle benutzen. Diese Schnittstelle ist aber nicht zu RS485 oder RS422 konform. Sie kann sinnvoll verwendet werden, wenn Sie Daten z.B. in OpenCPN auf einem PC oder Laptop verarbeitet wollen.
 	
-**serial baud rate**
+**Serial Baud Rate**
 	* Einstellung der Baudrate zwischen 1.200 und 460.800 Bd.
 
-**serial to NMEA2000**
+**Serial to NMEA2000**
 	* ``on`` - Daten an der Schnittstelle werden nach NMEA2000 übertragen (Gateway-Funktion)
 	* ``off`` - Daten an der Schnittstelle werden nicht nach NMEA2000 übertragen
 	
