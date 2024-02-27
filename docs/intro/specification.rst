@@ -29,7 +29,7 @@ Funktionen
 * WiFi 2.4GHz (HTTP, TCP, UDP)
 * Bluetooth (aktuell ungenutzt)
 * Batterie-Tiefentladeschutz < 9.0V
-* Low Power-Modus
+* Low Power Modus
 
 
 Aufbau
