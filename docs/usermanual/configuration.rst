@@ -110,7 +110,7 @@ Unter **System** werden grundlegende Einstellungen vorgenommen wie:
 **Stop AP Time**
 	* Hierüber kann angegeben werden, nach welcher Zeit der WiFi Access Point abgeschaltet werden soll. Die Angabe der Zeit erfolgt in Sekunden. Der Wert <0s> sorgt für einen dauerhaften Betrieb des WiFi Access Points.
 	
-**Ap Password**
+**AP Password**
 	* An dieser Stelle wird das Passwort für den WiFi Access Point angegeben. Es dürfen nur Zeichen des ASCII-Zeichensatzes verwendet werden.
 	
 **AP Ip**
@@ -150,7 +150,7 @@ Config - Converter
 
 Mit den nachfolgenden Einstellungen können Sie die Funktion des NMEA2000-Gateways verändern.
 
-**Min XDR interval**
+**Min XDR Interval**
 	* Hier wird die Intervallzeit der XDR-Signalverarbeitung eingestellt. XDR-Telegramme sind frei definierbare Sensor-Telegramme. Die Intervallzeit kann ab 10 ms eingestellt werden. Der Default-Wert steht auf 100 ms. Mit der kleinsten Intervallzeit von 10 ms wird eine Datenverarbeitungsrate von 100 Hz erreicht.
 	
 **Min N2K Interval**
@@ -230,7 +230,7 @@ Config - Serial Port
 
 Über **serial port** können Einstellungen zur seriellen NMEA0183-Schnittstelle vorgenommen werden. Diese Einstellungen beziehen sich auf die RS485-Schnittstelle am Steckverbinder <CN1> mit den Signalen ``A``, ``B`` und ``Shield``.
 
-**serial direction**
+**Serial Direction**
 	* ``off`` - Die NMEA0183-Schnittstelle ist ausgeschaltet
 	* ``send`` - Die NMEA0183-Schnittstelle sendet
 	* ``receive`` - Die NMEA0183-Schnittstelle empfängt
@@ -241,7 +241,7 @@ Config - Serial Port
 **Serial Baud Rate**
 	* Einstellung der Baudrate zwischen 1.200 und 460.800 Bd.
 
-**Serial to NMEA2000**
+**Serial To NMEA2000**
 	* ``on`` - Daten an der Schnittstelle werden nach NMEA2000 übertragen (Gateway-Funktion)
 	* ``off`` - Daten an der Schnittstelle werden nicht nach NMEA2000 übertragen
 	
@@ -270,36 +270,36 @@ Hier werden die Einstellungen zum Betrieb des OPB60 als TCP-Server vorgenommen. 
 .. note::
     Der Anmeldevorgang muss immer vom Client initiiert werden. Bei Verbindungsabbrüchen muss der Client die Verbindung wieder selbständig aufbauen. Achten Sie darauf, dass der Client über eine Auto-Connect-Funktion verfügt. Anderenfalls verlieren Sie die Datenverbindung dauerhaft bei Verbindungsabbrüchen.
 
-**TCP port**
+**TCP Port**
 	* Angabe des TCP-Port, auf dem der Server auf eingehende Verbindungsanfragen wartet. Der Default-Wert ist 10110. Verwenden Sie nur Ports größer 1024, da Ports unterhalb von 1024 für feste Anwendungen reserviert sind. Der Maximalwert liegt bei 65535.
 	
-**max TCP Clients**
+**Max TCP Clients**
 	* Angabe, wieviele Clients sich maximal mit dem TCP-Server verbinden dürfen. Der Default-Wert ist 6.
 	
 .. note::	
 	Beachten Sie, dass eine hohe Zahl an Clients eine große Rechenlast der CPU verursachen können. Sorgen Sie daher dafür, dass sich nicht mehr als 6 Clients mit dem Server verbinden können. Anderenfalls kann es zur Beeinträchtigung der Datenverarbeitung kommen oder das Gerät reagiert nicht mehr korrekt.
 
-**NMEA0183 out**
+**NMEA0183 Out**
     * ``on`` - Am TCP-Port werden NMEA0183-Daten ausgegeben
     * ``off`` - Am TCP-Port werden keine NMEA0183-Daten ausgegeben
 	
-**NMEA0183 in**
+**NMEA0183 In**
     * ``on`` - Am TCP-Port werden NMEA0183-Daten empfangen
     * ``off`` - Am TCP-Port werden keine NMEA0183-Daten empfangen
 	
-**to NMEA2000**
+**To NMEA2000**
 	* ``on`` - Daten am TCP-Port werden nach NMEA2000 übertragen (Gateway-Funktion)
 	* ``off`` - Daten am TCP-Port werden nicht nach NMEA2000 übertragen
 	
 In den nächsten beiden Einstellungen werden die Filterfunktionen **NMEA Read Filter** und **NMEA Write Filter** für das Lesen und Schreiben am TCP-Port vorgenommen. Es lassen sich nur NMEA0183-Daten filtern. Dabei lässt sich gesondert einstellen, ob AIS-Positionssignale verarbeitet werden. Als Filterformen stehen Whitelist und Blacklist zur Verfügung.
 
-**NMEA read Filter**
+**NMEA Read Filter**
 	* ``aison`` - AIS-Daten an der USB-Schnittstelle werden verarbeitet
 	* ``aisoff`` - AIS-Daten an der USB-Schnittstelle werden nicht verarbeitet
 	* ``blacklist`` - Der Filter arbeitet mit einer Blacklist. Die gekennzeichneten Telegramme werden nicht verarbeitet.
 	* ``whitelist`` - Der Filter arbeitet mit einer Whitelist. Nur die aufgelisteten Telegramme werden verarbeitet.
 
-**NMEA write Filter**
+**NMEA Write Filter**
 	* ``aison`` - AIS-Daten an der USB-Schnittstelle werden verarbeitet
 	* ``aisoff`` - AIS-Daten an der USB-Schnittstelle werden nicht verarbeitet
 	* ``blacklist`` - Der Filter arbeitet mit einer Blacklist. Die gekennzeichneten Telegramme werden nicht verarbeitet.
@@ -311,12 +311,12 @@ Im Eingabefeld werden die Kurzbezeichner der NMEA0183-Telegramme eingetragen, me
 	
 Die genaue Bedeutung der Kurzbezeichner ist `hier`_ erklärt.
 
-**Seasmart out**
+**Seasmart Out**
     * Über Seasmart lassen sich NMEA2000-Daten in NMEA0183-Telegrammen übersetzen. Wenn Sie <Seasmart> aktivieren, werden alle NMEA2000-Daten über NMEA0183-Telegramme ausgegeben und getunnelt. Die Daten werden dabei in Binärform in einem NMEA0183-Telegramm übertragen. Auf diese Weise können Sie von einem OBP60 (TCP-Server) zu einem weiteren OBP60 (TCP-Client) NMEA2000-Daten über Wifi übertragen. Achten Sie darauf, dass auf der Gegenseite ebenfalls <Seasmart> aktiviert ist.
     * ``on`` - Der TCP-Server kann Seasmart-Daten senden und empfangen
     * ``off`` - Seasmart wird vom TCP-Server nicht unterstützt
 	
-Config - TCP client
+Config - TCP Client
 -------------------
 
 .. image:: ../pics/Config_TCP_Client.png
@@ -324,40 +324,40 @@ Config - TCP client
              
 Hier werden die Einstellungen für den Betrieb des OPB60 als TCP-Client vorgenommen. Das OBP60 kann als TCP-Client Daten mit einem TCP-Server lesend und schreibend austauschen. Dabei meldet sich das OBP60 als Client aktiv über einen TCP-Port am TCP-Server an und kann dann Daten mit dem Server austauschen. Der TCP-Client-Modus enthält ein Auto-Connect, um bei Verbindungsabbrüchen automatisch die Verbindung wieder aufnehmen zu können.
 
-**enable**
+**Enable**
     * ``on`` - Der TCP-Client-Modus ist im OBP60 aktiviert
     * ``off`` - Der TCP-Client-Modus ist deaktiviert
 	
-**remote port**
+**Remote Port**
 	* Angabe des TCP-Ports, über den Daten mit einem TCP-Server ausgetauscht werden sollen. Der Default-Wert ist 10110. Damit der Datenaustausch zwischen einem TCP-Server und einem TCP-Client stattfinden kann, muss der selbe Port vom TCP-Client verwendet werden, den der TCP-Server für die Kommunikation verwendet. Benutzen Sie nur Ports größer 1024, da Ports unterhalb von 1024 für festgelegte Anwendungen reserviert sind. Der Maximalwert liegt bei 65535.
 	
-**remote address**
-    Die <remote address> ist die Adresse des TCP-Servers im WiFi-Netzwerk, mit dem Sie Daten austauschen wollen. Sie können eine IP-Adresse wie z.B. **192.168.15.1** oder einen MDNS-Hostnamen wie z.B. **OBP60V2.local** verwenden.
+**Remote Address**
+    Die <Remote Address> ist die Adresse des TCP-Servers im WiFi-Netzwerk, mit dem Sie Daten austauschen wollen. Sie können eine IP-Adresse wie z.B. **192.168.15.1** oder einen MDNS-Hostnamen wie z.B. **OBP60V2.local** verwenden.
 
 .. warning::
     Wenn Sie Daten zwischen zwei OBP60 via WiFi austauschen wollen, müssen sich beide Geräte im selben Funknetz befinden, auch müssen sie unterschiedliche System-Namen haben. Ihre Access Points müssen im gleichen IP-Adressbereich liegen, aber unterschiedliche Geräteadressen haben. Eine Gerät muss als TCP-Server und das andere Gerät als TCP-Client konfiguriert sein. Die Einstellungen dazu werden unter **Config - System** vorgenommen. Wenn Sie das nicht beachten, kann es zu Störungen im WiFi-Datenverkehr kommen und Sie können unter Umständen die Web-Konfigurationsoberflächen der Geräte nicht mehr erreichen.
     
-**NMEA0183 out**
+**NMEA0183 Out**
     * ``on`` - Am TCP-Port werden NMEA0183-Daten ausgegeben
     * ``off`` - Am TCP-Port werden keine NMEA0183-Daten ausgegeben
 	
-**NMEA0183 in**
+**NMEA0183 In**
     * ``on`` - Am TCP-Port werden NMEA0183-Daten empfangen
     * ``off`` - Am TCP-Port werden keine NMEA0183-Daten empfangen
 	
-**to NMEA2000**
+**To NMEA2000**
 	* ``on`` - Daten am TCP-Port werden nach NMEA2000 übertragen (Gateway-Funktion)
 	* ``off`` - Daten am TCP-Port werden nicht nach NMEA2000 übertragen
 	
 In den nächsten beiden Einstellungen werden die Filterfunktionen **NMEA Read Filter** und **NMEA Write Filter** für das Lesen und Schreiben am TCP-Port vorgenommen. Es lassen sich nur NMEA0183-Daten filtern. Dabei lässt sich gesondert einstellen, ob AIS-Positionssignale verarbeitet werden. Als Filterformen stehen Whitelist und Blacklist zur Verfügung.
 
-**NMEA read Filter**
+**NMEA Read Filter**
 	* ``aison`` - AIS-Daten an der USB-Schnittstelle werden verarbeitet
 	* ``aisoff`` - AIS-Daten an der USB-Schnittstelle werden nicht verarbeitet
 	* ``blacklist`` - Der Filter arbeitet mit einer Blacklist. Die gekennzeichneten Telegramme werden nicht verarbeitet.
 	* ``whitelist`` - Der Filter arbeitet mit einer Whitelist. Nur die aufgelisteten Telegramme werden verarbeitet.
 
-**NMEA write Filter**
+**NMEA Write Filter**
 	* ``aison`` - AIS-Daten an der USB-Schnittstelle werden verarbeitet
 	* ``aisoff`` - AIS-Daten an der USB-Schnittstelle werden nicht verarbeitet
 	* ``blacklist`` - Der Filter arbeitet mit einer Blacklist. Die gekennzeichneten Telegramme werden nicht verarbeitet.
@@ -369,7 +369,7 @@ Im Eingabefeld werden die Kurzbezeichner der NMEA0183-Telegramme eingetragen, me
 	
 Die genaue Bedeutung der Kurzbezeichner ist `hier`_ erklärt.
 
-**Seasmart out**
+**Seasmart Out**
     * Über Seasmart lassen sich NMEA2000-Daten in NMEA0183-Telegrammen übersetzen. Wenn Sie <Seasmart> aktivieren, werden alle NMEA2000-Daten über NMEA0183-Telegramme ausgegeben und getunnelt. Die Daten werden dabei in Binärform in einem NMEA0183-Telegramm übertragen. Auf diese Weise können Sie von einem OBP60 (TCP-Server) zu einem weiteren OBP60 (TCP-Client) NMEA2000-Daten über Wifi übertragen. Achten Sie darauf, dass auf der Gegenseite ebenfalls <Seasmart> aktiviert ist.
     * ``on`` - Der TCP-Server kann Seasmart-Daten senden und empfangen
     * ``off`` - Seasmart wird vom TCP-Server nicht unterstützt
@@ -495,7 +495,7 @@ Unter **Hardware** werden alle Einstellungen bezüglich verbauter Hardware oder 
     * ``off`` - Es wird kein Sensor benutzt
     * ``AS5600`` - Magnetischer Sensor zur Winkelmessung von 0° bis 360° ohne Endanschlag, I2C-Adresse 0x36
     
-**Rot- Fuction**
+**Rot. Function**
     * Funktion des Winkelsensors
     * ``Rudder`` - Winkelsensor für Ruderstellung
     * ``Wind`` - Winkelsensor für Windrichtung
@@ -694,7 +694,7 @@ Ein XDR-Sentence ist folgendermaßen aufgebaut:
 
     $--XDR,a,x.x,b,c--c,x--x*hh<CR><LF>
 
-    Feld Nummer:
+    Feldnummer:
 	    * a - Sensor-Typ
 	    * x.x - Messwerrt
 	    * b - Einheit des Messwertes
@@ -843,4 +843,4 @@ Die Verbindungsqualität von WiFi-Netzwerken hängt maßgeblich von der Auslastu
 .. hint::
 	Verwenden Sie bei hoher Kanalauslastung Kanäle mit geringer Auslastung. Die Kanäle 1, 13 und 14 haben keine Nachbarkanäle und sind deutlich robuster gegen hohe Auslastung als die anderen Kanäle. Am besten eignet sich der Kanal 13, da er seltener benutzt wird. In den USA kann auch der Kanal 14 verwendet werden. Moderne mobile Router bieten häufig eine Automatik in ihrer Konfiguration an, die die Kanalauswahl optimieren kann.
 
-Bei Änderungen der Konfiguration des OPB60 werden Sie immer nach dem Admin-Passwort gefragt. Die Übertragung des Passwortes erfolgt dabei immer verschlüsselt. Wenn Sie jedoch das Passwort für den WLAN-Zugangspunkt oder das WiFi-Client-Passwort ändern, wird es im Klartext gesendet. Wenn Sie das ``Remember me`` für das Admin-Passwort aktivieren, wird es im Klartext in Ihrem Browser gespeichert. Um es von dort zu entfernen, verwenden Sie ``Forget Password``.
+Bei Änderungen der Konfiguration des OPB60 werden Sie grundsätzlich nach dem Admin-Passwort gefragt. Die Übertragung des Passwortes erfolgt dabei immer verschlüsselt. Wenn Sie jedoch das Passwort für den WLAN-Zugangspunkt oder das WiFi-Client-Passwort ändern, wird es im Klartext gesendet. Wenn Sie das ``Remember me`` für das Admin-Passwort aktivieren, wird es im Klartext in Ihrem Browser gespeichert. Um es von dort zu entfernen, verwenden Sie ``Forget Password``.
