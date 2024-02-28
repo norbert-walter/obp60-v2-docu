@@ -61,7 +61,7 @@ Abb.: Stecker und Buchse (Sicht auf Kontakte)
 Abb.: NMEA2000 Stecker zur Selbstmontage
 
 .. note::
-	SeaTalk NG und Simnet sind ähnliche Bussysteme die auf CAN-Bus als physischen Layer aufsetzen. Jedoch weichen sie in einigen Spezifikationen von NMEA2000 ab und sind nicht 100% kompatibel. Zudem benutzt jeder Hersteller noch eigene Steckverbinder die untereinander nicht zu NMEA2000 kompatibel sind. Mit entsprechenden Konverter-Kabeln kann aber ein Datenaustausch zwischen diesen Netzen vorgenommen werden. Grundsätzlich sollte eine Mischung verschiedener Bustechnologien vermieden werden.
+	SeaTalk NG und Simnet benutzen eigene Steckverbinder die untereinander nicht zu NMEA2000 kompatibel sind. Mit entsprechenden Konverter-Kabeln kann aber ein Datenaustausch zwischen diesen Netzen vorgenommen werden. Grundsätzlich sollte eine Mischung verschiedener Bustechnologien vermieden werden.
 
 **Stromversorgung aus dem NMEA2000-Bus**
 
