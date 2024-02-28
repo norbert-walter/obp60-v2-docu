@@ -11,7 +11,7 @@ Das OBP60 unterstützt mehrere Bussysteme.
 * **I2C-Bus** (isoliert)
 * **1-Wire-Bus** (nicht isoliert)
 
-Die NMEA2000 und NMEA0183 sind Bussysteme, die im Marine-Bereich verwendet werden. Der I2C-Bus und der 1Wire-Bus kommer aus dem Elektronikbereich udn es lassen sich darüber viele günstige Sensorik einbinden. Im Nachfolgenden werden die jeweiligen Bussysteme näher beschrieben.
+Die NMEA2000 und NMEA0183 sind Bussysteme, die im Marine-Bereich verwendet werden. Der I2C-Bus und der 1Wire-Bus kommer aus dem Elektronikbereich und es lassen sich darüber viele günstige Sensorik einbinden. Im Nachfolgenden werden die jeweiligen Bussysteme näher beschrieben.
 
 NMEA2000
 --------
