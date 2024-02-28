@@ -3,10 +3,10 @@ Bussysteme
 
 Das OBP60 unterstützt mehrere Bussysteme.
 
-* MNEA2000 über CAN-Bus (isoliert)
-* NMEA0183 über RS485/RS422-Bus (isoliert)
-* I2C-Bus (isoliert)
-* 1-Wire-Bus (nicht isoliert)
+* **MNEA2000** über CAN-Bus (isoliert)
+* **NMEA0183** über RS485/RS422-Bus (isoliert)
+* **I2C-Bus** (isoliert)
+* **1-Wire-Bus** (nicht isoliert)
 
 Die NMEA2000 und NMEA0183 sind Bussysteme, die im Marine-Bereich verwendet werden. Der I2C-Bus und der 1Wire-Bus kommer aus dem Elektronikbereich udn es lassen sich darüber viele günstige Sensorik einbinden. Im Nachfolgenden werden die jeweiligen Bussysteme näher beschrieben.
 
@@ -35,19 +35,17 @@ Ein CAN-Bus verwendet an den beiden Enden des Bussystems Abschluss-Widerstände 
 
 .. image:: ../pics/CAN_Termination.png
              :scale: 60%
-
 Abb.: CAN-Terminierung
 
 .. warning::
-	Einige Geräte besitzen eingebaute Abschluss-Widerstände, die durch entsprechende Schalter zu- oder abgeschaltet werden können. Vergewissern sie sich vor dem Einbau neuer Geräte ob integrierte Abschluss-Widerstände benutzt werden und wie sie konfiguriert sind. Falsch terminierte Busse können Übertragungsprobleme verursachen die schwer zu finden sind.
+	Einige Geräte besitzen eingebaute Abschluss-Widerstände, die durch entsprechende Schalter zu- oder abgeschaltet werden können. Vergewissern sie sich vor dem Einbau neuer Geräte ob integrierte Abschluss-Widerstände benutzt werden und wie sie konfiguriert sind. Falsch terminierte Busse können Übertragungsprobleme verursachen, die schwer zu finden sind.
 	
 **NMEA2000-Kabel**
 	
 Als Buskabel sollten nur hochwertige, wasserdichte und geschirmte Industrie-Kabel verwendet werden. Wer eigene Buskabel herstellen möchte, sollte Kabel wie wie z.B. Lapp Busleitung UNITRONIC 2 x 2 x 0.34 mm² verwenden.
 
 .. image:: ../pics/CAN_Cable.png
-             :scale: 60%
-			 
+             :scale: 60%			 
 Abb. CAN-Buskabel
 
 Dabei sind 2x zwei Einzeladern paarweise verdrillt und zusätzlich mit einem äußeren Schirmgeflecht umgeben. Ein verdrilltes Aderpaar wird für CAN-H und CAN-L verwendet und das andere Aderpaar für GND und 12V. Das Schirmgeflecht wird mit GND einseitig verbunden. Damit erzielt man die besten Ergebnisse und hat eine sichere und langlebige Installation. Dünnere Kabel als 0.34 mm² sollten nicht verwendet werden, wenn die Versorgung aus den Bus erfolgen soll. Die Länge des Buskabels sollte in Summe 40 m nicht übersteigen.
@@ -59,6 +57,8 @@ Abb.: NMEA2000 Stecker zur Selbstmontage
 .. note::
 	SeaTalk NG und Simnet sind ähnliche Bussysteme die auf CAN-Bus als physischen Layer aufsetzen. Jedoch weichen sie in einigen Spezifikationen von NMEA2000 ab und sind nicht 100% kompatibel. Zudem benutzt jeder Hersteller noch eigene Steckverbinder die untereinander nicht zu NMEA2000 kompatibel sind. Mit entsprechenden Konverter-Kabeln kann aber ein Datenaustausch zwischen diesen Netzen vorgenommen werden. Grundsätzlich sollte eine Mischung verschiedener Bustechnologien vermieden werden.
 	
+.. _Bussysteme - Stromversorgung:
+
 **Stromversorgung aus dem NMEA2000-Bus**
 
 NMEA2000 Geräte mit geringem Stromverbrauch wie z.B. Sensoren können auch aus dem Bussystem mit Strom versorgt werden. So sind keine zusätzlichen Versorgungskabel notwendig. Die Einspeisung der 12V-Versorgungsspannung in den NMEA2000 Bus erfolgt entweder über ein Einspeisekabel oder einen Plotter mit Buseinspeisung. Allerdings ist darauf zu achten, dass aus dem NMEA2000 Bus nur eine begrenzte Leistung von bis zu 35W entnommen werden darf. Die NMEA2000 Geräte sind dazu mit Load-Werten gekennzeichnet, die die Stromentnahme aus dem Bus angeben. Die Load wird als Vielfaches von 50 mA angegeben.  Ein Gerät mit Load 3 würde demnach 150 mA an 12V benötigen und 1,8 W an Leistung verbrauchen. Die Einspeisung der 12V-Versorgungsspannung in den Bus sollte idealer Weise in der Mitte erfolgen, da so Leitungsverluste durch Leitungswiderstände minimiert werden.
