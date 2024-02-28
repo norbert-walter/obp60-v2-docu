@@ -1,6 +1,9 @@
 Bussysteme
 ==========
 
+.. image:: ../pics/NMEA_Bus.png
+             :scale: 35%
+
 Das OBP60 unterstützt mehrere Bussysteme.
 
 * **MNEA2000** über CAN-Bus (isoliert)
