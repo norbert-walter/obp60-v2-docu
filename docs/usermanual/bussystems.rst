@@ -44,7 +44,7 @@ Abb.: CAN-Terminierung
 	Einige Geräte besitzen eingebaute Abschluss-Widerstände, die durch entsprechende Schalter zu- oder abgeschaltet werden können. Vergewissern sie sich vor dem Einbau neuer Geräte ob integrierte Abschluss-Widerstände benutzt werden und wie sie konfiguriert sind. Falsch terminierte Busse können Übertragungsprobleme verursachen, die schwer zu finden sind.
 	
 .. tip::
-	Um herauszufinden, ob nur zwei Widerstände im NMEA-Bus aktiv sind, können Sie ein Digitalvoltmeter benutzen. Wenn Sie eine Widerstandsmessung bei **spannungslosen NMEA-Bus** zwischen den Leitungen **CAN-High** und **CAN-Low** machen, so sollte ein Widerstand von **60 Ohm** zu messen sein. Ist der Widerstand deutlich kleiner als 60 Ohm, so sind weitere Geräte im Bussystem vorhanden, dessen Abschlusswiderstand aktiv sind. Nehmen Sie dann nacheinander alle Geräte vom NMEA2000-Bus, bis der Wert bei 60 Ohm liegt. Beim zu letzt entnommenen Gerät ist der Abschlusswiderstand noch aktiv.  
+	Um herauszufinden, ob nur zwei Widerstände im NMEA-Bus aktiv sind, können Sie ein Digitalvoltmeter benutzen. Wenn Sie eine Widerstandsmessung bei **spannungslosen NMEA-Bus** zwischen den Leitungen **CAN-High** und **CAN-Low** vornehmen, so sollte ein Widerstand von **60 Ohm** zu messen sein. Ist der Widerstand deutlich kleiner als 60 Ohm, so sind weitere Geräte im Bussystem vorhanden, dessen Abschlusswiderstand aktiv sind. Nehmen Sie dann nacheinander alle Geräte vom NMEA2000-Bus, bis der Wert bei 60 Ohm liegt. Beim zu letzt entnommenen Gerät ist der Abschlusswiderstand noch aktiv.  
 	
 **NMEA2000-Kabel**
 	
