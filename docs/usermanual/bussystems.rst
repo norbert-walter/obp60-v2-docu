@@ -11,7 +11,7 @@ Das OBP60 unterstützt mehrere Bussysteme.
 * **I2C-Bus** (isoliert)
 * **1-Wire-Bus** (nicht isoliert)
 
-Die NMEA2000 und NMEA0183 sind Bussysteme, die im Marine-Bereich verwendet werden. Der I2C-Bus und der 1Wire-Bus kommer aus dem Elektronikbereich und es lassen sich darüber viele günstige Sensorik einbinden. Im Nachfolgenden werden die jeweiligen Bussysteme näher beschrieben.
+NMEA2000 und NMEA0183 sind Bussysteme, die im Marine-Bereich verwendet werden. Der I2C-Bus und der 1Wire-Bus kommen aus dem Elektronikbereich. Darüber lassen sich viele günstige Sensor-Module einbinden. Im Nachfolgenden werden die jeweiligen Bussysteme näher beschrieben.
 
 NMEA2000
 --------
@@ -27,10 +27,10 @@ Die Datenübertragung auf dem CAN-Bus erfolgt diffenziell. Es werden jeweils zwe
 
 Abb.: Differenzielle Datenübertragung (rot CAN-H, blau CAN-L)
 
-Die Datenrate von NMEA2000 beträgt **250 kbps** (Kilobits pro Sekunde). Sie wurde gewählt, um eine ausreichend hohe Übertragungsgeschwindigkeit für eine Vielzahl von Anwendungen in Booten zu gewährleisten, während gleichzeitig eine möglichst effiziente Nutzung des Netzwerks sichergestellt wird. Mit einer Datenrate von 250 kbps können Sensordaten in Echtzeit übertragen werden, was für eine Vielzahl von Anwendungen wichtig ist, wie z.B. die Überwachung der Schiffsposition, der Navigations- und Kommunikationsgeräte sowie der Motor- und anderer Systeme an Bord.
+Die Datenrate von NMEA2000 beträgt **250 kbps**. Sie wurde gewählt, um eine ausreichend hohe Übertragungsgeschwindigkeit für eine Vielzahl von Anwendungen in Booten zu gewährleisten, während gleichzeitig eine möglichst effiziente Nutzung des Netzwerks sichergestellt wird. Mit einer Datenrate von 250 kbps können Sensordaten in Echtzeit übertragen werden, was für eine Vielzahl von Anwendungen wichtig ist, wie z.B. die Überwachung der Schiffsposition, der Navigations- und Kommunikationsgeräte sowie der Motor- und anderer Systeme an Bord.
 
 .. note::
-	SeaTalk NG, SIMnet, Raynet, C-Net 2000 und CANet haben einige Ähnlichkeiten zu NMEA2000. Sie unterscheiden sich jedoch durch ihre spezifische Auslegung der Hardware und der Datentelegramme. SeaTalk NG und SIMnet sind teilweise kompatibel mit NMEA2000, was bedeutet, dass einige Geräte, die für SeaTalk NG und SimNet entwickelt wurden, auch mit NMEA2000-Geräten kommunizieren können.
+	SeaTalk NG, SIMnet, Raynet, C-Net 2000 und CANet haben einige Ähnlichkeiten zu NMEA2000. Sie unterscheiden sich jedoch durch ihre spezifische Auslegung der Hardware und der Datentelegramme. SeaTalk NG und SIMnet sind teilweise kompatibel mit NMEA2000. Das bedeutet, dass einige Geräte, die für SeaTalk NG und SimNet entwickelt wurden, auch mit NMEA2000-Geräten kommunizieren können.
 	
 **Terminierung des Bussystems**
 	
@@ -44,7 +44,7 @@ Abb.: CAN-Terminierung
 	Einige Geräte besitzen eingebaute Abschluss-Widerstände, die durch entsprechende Schalter zu- oder abgeschaltet werden können. Vergewissern sie sich vor dem Einbau neuer Geräte ob integrierte Abschluss-Widerstände benutzt werden und wie sie konfiguriert sind. Falsch terminierte Busse können Übertragungsprobleme verursachen, die schwer zu finden sind.
 	
 .. tip::
-	Um herauszufinden, ob nur zwei Widerstände im NMEA-Bus aktiv sind, können Sie ein Digitalvoltmeter benutzen. Wenn Sie eine Widerstandsmessung bei **spannungslosen NMEA-Bus** zwischen den Leitungen **CAN-High** und **CAN-Low** vornehmen, so sollte ein Widerstand von **60 Ohm** zu messen sein. Ist der Widerstand deutlich kleiner als 60 Ohm, so sind weitere Geräte im Bussystem vorhanden, dessen Abschlusswiderstand aktiv sind. Nehmen Sie dann nacheinander alle Geräte vom NMEA2000-Bus, bis der Wert bei 60 Ohm liegt. Beim zu letzt entnommenen Gerät ist der Abschlusswiderstand noch aktiv.  
+	Um herauszufinden, ob nur zwei Widerstände im NMEA-Bus aktiv sind, können Sie ein Digitalvoltmeter benutzen. Wenn Sie eine Widerstandsmessung bei **spannungslosen NMEA-Bus** zwischen den Leitungen **CAN-High** und **CAN-Low** vornehmen, so sollte ein Widerstand von ca. **60 Ohm** zu messen sein. Ist der Widerstand deutlich kleiner als 60 Ohm, so sind weitere Geräte im Bussystem vorhanden, dessen Abschlusswiderstände aktiv sind. Nehmen Sie dann nacheinander alle Geräte vom NMEA2000-Bus, bis sich der Widerstandswert deutlich erhöht. Beim zu letzt entnommenen Gerät ist der Abschlusswiderstand noch aktiv gewesen. Ist der Widerstandwert noch nicht bei 60 Ohm, so suchen Sie nach weiteren Geräten.  
 	
 **NMEA2000-Kabel**
 	
