@@ -77,14 +77,14 @@ Die Belegung und Aderfarben sind in der nachfolgenden Tabelle zu sehen. Beachten
 +----+-----------+--------+--------------------+
 Tab.: Steckerbelegung
 
-.. image:: ../pics/NMEA2000_Cable.png
+.. image:: ../pics/NMEA2000_Cable.jpg
              :scale: 60%			 
 Abb. NMEA2000-Buskabel
 
 
 Wer eigene Buskabel herstellen möchte, sollte Kabel wie wie z.B. Lapp Busleitung UNITRONIC 2 x 2 x 0.34 mm² verwenden.
 
-.. image:: ../pics/CAN_Cable.jpg
+.. image:: ../pics/CAN_Cable.png
              :scale: 60%			 
 Abb. CAN-Buskabel
 
