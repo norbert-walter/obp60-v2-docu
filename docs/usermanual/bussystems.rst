@@ -48,7 +48,34 @@ Abb.: CAN-Terminierung
 	
 **NMEA2000-Kabel**
 	
-Als Buskabel sollten nur hochwertige, wasserdichte und geschirmte Industrie-Kabel verwendet werden. Wer eigene Buskabel herstellen möchte, sollte Kabel wie wie z.B. Lapp Busleitung UNITRONIC 2 x 2 x 0.34 mm² verwenden.
+Als Buskabel sollten nur hochwertige, wasserdichte und geschirmte Industrie-Kabel verwendet werden. Der Marine-Einzelhandel bietet dazu eine breite Auswahl an Produkten mit M12-Verbindungstechnik an, die sich sehr gut verwenden lassen.
+
+.. tip::
+	Im Industriebereich findet man gleichwertige Kabel mit M12-Verbindungstechnik, die deutlich günstiger sind und ebenfalls verwendet werden können. Achten Sie dabei auf Steckverbinder mit **D-Kodierung**. Die Indexkerbe befindet sich zwischen Pin 1 und 2.
+
+.. image:: ../pics/NMEA2000_Connectors.png
+             :scale: 60%
+Abb.: Stecker und Buchse (Sicht auf Kontakte)
+
+Die Belegung und Aderfarben sind in der nachfolgenden Tabelle zu sehen. Beachten Sie, dass die Farbbelegung bei Industriekabeln anders ausfallen kann. In dem Fall müssen Sie die Zuordnung der Aderfarben zu den Pins mit einem Ohmmeter ermitteln.
+
++----+-----------+--------+--------------------+
+|Pin |Belegung   |Farbe   |Bedeutung           |
++====+===========+========+====================+
+| 1  |Schrimung  |ohne    |Schirmgeflecht      |
++----+-----------+--------+--------------------+
+| 2  |+12V       |rot     |Versorgungsspannung |
++----+-----------+--------+--------------------+
+| 3  |GND        |schwarz |Bord-Masse          |
++----+-----------+--------+--------------------+
+| 4  |CAN-H      |weiß    | CAN High-Signal    |
++----+-----------+--------+--------------------+
+| 5  |CAN-L      |blau    | CAN Low-Signal     |
++----+-----------+--------+--------------------+
+Tab.: Steckerbelegung
+
+
+Wer eigene Buskabel herstellen möchte, sollte Kabel wie wie z.B. Lapp Busleitung UNITRONIC 2 x 2 x 0.34 mm² verwenden.
 
 .. image:: ../pics/CAN_Cable.png
              :scale: 60%			 
@@ -56,8 +83,8 @@ Abb. CAN-Buskabel
 
 Dabei sind 2x zwei Einzeladern paarweise verdrillt und zusätzlich mit einem äußeren Schirmgeflecht umgeben. Ein verdrilltes Aderpaar wird für CAN-H und CAN-L verwendet und das andere Aderpaar für GND und 12V. Das Schirmgeflecht wird mit GND einseitig verbunden. Damit erzielt man die besten Ergebnisse und hat eine sichere und langlebige Installation. Dünnere Kabel als 0.34 mm² sollten nicht verwendet werden, wenn die Versorgung aus den Bus erfolgen soll. Die Länge des Buskabels sollte in Summe 40 m nicht übersteigen.
 
-Abb.: Stecker und Buchse (Sicht auf Kontakte)
-
+.. image:: ../pics/NMEA2000_Filed_Connectors.png
+             :scale: 60%	
 Abb.: NMEA2000 Stecker zur Selbstmontage
 
 .. note::
