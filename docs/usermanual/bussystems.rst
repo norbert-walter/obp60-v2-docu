@@ -118,7 +118,7 @@ Um das OBP an den NMEA2000-Bus anzuschließen, können Sie am einfachsten ein NM
              :scale: 60%	
 Abb.: OBP60 NMEA2000-Verbindung
 
-Eine Minimal-Konfigutration könnte folgendermaßen aussehen.
+Eine Minimal-Konfigutration könnte folgendermaßen aussehen. Dabei ist zu beachten, dass der NMEA2000-Bus auf der rechten Seite durch das OBP60 terminiert ist, indem die interne Busterminierung über den Jumper ``TN2K`` aktiviert wurde. Der Jumper ``TN2K`` befindet sich mittig zwischen den beiden Steckverbindern **CN1** und **CN2**. 
 
 .. image:: ../pics/NMEA2000_Sample_Setup_Minimal_Configuration.png
              :scale: 60%	
