@@ -75,7 +75,7 @@ Die Belegung und Aderfarben sind in der nachfolgenden Tabelle zu sehen. Beachten
 +----+-----------+--------+--------------------+
 | 5  |CAN-L      |blau    | CAN Low-Signal     |
 +----+-----------+--------+--------------------+
-Tab.: Steckerbelegung
+Tab.: NMEA2000 Steckerbelegung
 
 .. image:: ../pics/NMEA2000_Cable.jpg
              :scale: 60%			 
@@ -102,7 +102,18 @@ Abb.: NMEA2000 Stecker zur Selbstmontage
 NMEA2000 Geräte mit geringem Stromverbrauch wie z.B. Sensoren können auch aus dem Bussystem mit Strom versorgt werden. So sind keine zusätzlichen Versorgungskabel notwendig. Die Einspeisung der 12V-Versorgungsspannung in den NMEA2000 Bus erfolgt entweder über ein Einspeisekabel oder einen Plotter mit Buseinspeisung. Allerdings ist darauf zu achten, dass aus dem NMEA2000 Bus nur eine begrenzte Leistung von bis zu 35W entnommen werden darf. Die NMEA2000 Geräte sind dazu mit Load-Werten gekennzeichnet, die die Stromentnahme aus dem Bus angeben. Die Load wird als Vielfaches von 50 mA angegeben.  Ein Gerät mit Load 3 würde demnach 150 mA an 12V benötigen und 1,8 W an Leistung verbrauchen. Die Einspeisung der 12V-Versorgungsspannung in den Bus sollte idealer Weise in der Mitte erfolgen, da so Leitungsverluste durch Leitungswiderstände minimiert werden.
 
 .. note::
-	Das OBP60 hat einen Load-Wert von 5 und benötigt maximal 250 mA Strom. Sie können das OBP60 direkt mit Strom aus dem NMA2000-Bus versorgen.
+	Das OBP60 hat einen Load-Wert von 5 und benötigt maximal 250 mA Strom. Sie können das OBP60 direkt mit Strom aus dem NMA2000-Bus versorgen. Im Normalbetrieb liegt der Stromverbrauch des OBP60 bei ca. 120 mA.
 
 **Verkabelung für NMEA2000**
 
+Für NMEA2000 wird eine Busstruktur verwendet. In dem Hauptstrang sind ein oder mehrere Buskoppler-Einheiten enthalten, über die die jeweiligen Geräte eingebunden werden. Die Buslänge darf 30m nicht übersteigen und die Stichleitungen zu den Geräten sollte nicht länger als 1.5 m sein. An den Enden des Hautstranges befinden sich Abschlusswiderstände zur Bus-Terminierung. Um das OBP an den NMEA2000-Bus anzuschließen, können Sie am einfachsten ein NMEA2000-Verlängerungskabel benutzen, indem Sie es in der Mitte trennen und die offenen Kabelenden an den Schraubklemmen auflegen.
+
+.. image:: ../pics/OBP60_NMEA2000_Connection.png
+             :scale: 60%	
+Abb.: OBP60 NMEA2000-Verbindung
+
+Eine Minimal-Konfigutration könnte folgendermaßen aussehen.
+
+.. image:: ../pics/NMEA2000_Minimal_Configuration.png
+             :scale: 60%	
+Abb.: NMEA2000 Minimal-Konfiguration mit einem Sensor
