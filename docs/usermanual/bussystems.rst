@@ -106,7 +106,13 @@ NMEA2000 Geräte mit geringem Stromverbrauch wie z.B. Sensoren können auch aus 
 
 **Verkabelung für NMEA2000**
 
-Für NMEA2000 wird eine Busstruktur verwendet. In dem Hauptstrang sind ein oder mehrere Buskoppler-Einheiten enthalten, über die die jeweiligen Geräte eingebunden werden. Die Buslänge darf 30m nicht übersteigen und die Stichleitungen zu den Geräten sollte nicht länger als 1.5 m sein. An den Enden des Hautstranges befinden sich Abschlusswiderstände zur Bus-Terminierung. Um das OBP an den NMEA2000-Bus anzuschließen, können Sie am einfachsten ein NMEA2000-Verlängerungskabel benutzen, indem Sie es in der Mitte trennen und die offenen Kabelenden an den Schraubklemmen auflegen. Es ist ratsam die Kabelenden mit Aderendhülsen zu versehen oder die Kupferkabel zu verzinnen.
+Für NMEA2000 wird eine Busstruktur verwendet. In dem Hauptstrang sind ein oder mehrere Buskoppler-Einheiten enthalten, über die die jeweiligen Geräte eingebunden werden. Die Buslänge darf 30m nicht übersteigen und die Stichleitungen zu den Geräten sollte nicht länger als 1.5 m sein. An den Enden des Hautstranges befinden sich Abschlusswiderstände zur Bus-Terminierung.
+
+.. image:: ../pics/NMEA2000_Sample_Setup_Plotter.png
+             :scale: 60%	
+Abb.: NMEA2000-Bussystem mit Sensoren und Anzeigegeräten
+
+Um das OBP an den NMEA2000-Bus anzuschließen, können Sie am einfachsten ein NMEA2000-Verlängerungskabel benutzen, indem Sie es in der Mitte trennen und die offenen Kabelenden an den Schraubklemmen auflegen. Es ist ratsam die Kabelenden mit Aderendhülsen zu versehen oder die Kupferkabel zu verzinnen.
 
 .. image:: ../pics/OBP60_NMEA2000_Connection.png
              :scale: 60%	
