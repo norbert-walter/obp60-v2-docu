@@ -47,6 +47,9 @@ Abb.: CAN-Terminierung
 	Um herauszufinden, ob nur zwei Widerstände im NMEA-Bus aktiv sind, können Sie ein Digitalvoltmeter benutzen. Wenn Sie eine Widerstandsmessung bei **spannungslosen NMEA-Bus** zwischen den Leitungen **CAN-High** und **CAN-Low** vornehmen, so sollte ein Widerstand von ca. **60 Ohm** zu messen sein. Ist der Widerstand deutlich kleiner als 60 Ohm, so sind weitere Geräte im Bussystem vorhanden, dessen Abschlusswiderstände aktiv sind. Nehmen Sie dann nacheinander alle Geräte vom NMEA2000-Bus, bis sich der Widerstandswert deutlich erhöht. Beim zu letzt entnommenen Gerät ist der Abschlusswiderstand noch aktiv gewesen. Ist der Widerstandwert noch nicht bei 60 Ohm, so suchen Sie nach weiteren Geräten.  
 	
 **NMEA2000-Kabel**
+
+.. image:: ../pics/NMEA_Bus.png
+             :scale: 35%
 	
 Als Buskabel sollten nur hochwertige, wasserdichte und geschirmte Industrie-Kabel verwendet werden. Der Marine-Einzelhandel bietet dazu eine breite Auswahl an Produkten mit M12-Verbindungstechnik an, die sich sehr gut verwenden lassen.
 
@@ -73,6 +76,10 @@ Die Belegung und Aderfarben sind in der nachfolgenden Tabelle zu sehen. Beachten
 | 5  |CAN-L      |blau    | CAN Low-Signal     |
 +----+-----------+--------+--------------------+
 Tab.: Steckerbelegung
+
+.. image:: ../pics/NMEA2000_Cable.png
+             :scale: 60%			 
+Abb. NMEA2000-Buskabel
 
 
 Wer eigene Buskabel herstellen möchte, sollte Kabel wie wie z.B. Lapp Busleitung UNITRONIC 2 x 2 x 0.34 mm² verwenden.
