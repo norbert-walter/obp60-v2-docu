@@ -6,6 +6,10 @@ Bussysteme
 
 Das OBP60 unterstützt mehrere Bussysteme.
 
+.. image:: ../pics/Bus_Systems.png
+   :scale: 40%
+Abb.: Anschlussbelegung der Bussysteme
+
 * **MNEA2000** über CAN-Bus (isoliert)
 * **NMEA0183** über RS485/RS422-Bus (isoliert)
 * **I2C-Bus** (isoliert)
@@ -234,7 +238,7 @@ Auf der Empfängerseite ist der NMEA0183-Bus terminiert. Im OBP60 findet man zwi
 
 **Multiplexer**
 
-Insgesamt ist NMEA 0183 ein nützlicher Standard für die Übertragung von Navigationsdaten auf Booten, aber es hat seine Beschränkungen und kann nicht in allen Einsatzfällen mit moderneren Technologien wie NMEA2000 mithalten. Um Daten von mehreren Datenquellen wie z.B. Sensoren zu einem Datenstrom zusammenfassen zu können, gibt es sogenannte Multiplexer.
+Insgesamt ist NMEA 0183 ein nützlicher Standard für die Übertragung von Navigationsdaten auf Booten, aber es hat seine Beschränkungen und kann nicht in allen Einsatzfällen mit moderneren Technologien wie NMEA2000 mithalten. Um Daten von mehreren Datenquellen wie z.B. Sensoren zu einem Datenstrom zusammenfassen zu können, sind Multiplexer notwendig.
 
 .. image:: ../pics/NMEA0183_Multiplexer.png
              :scale: 60%
@@ -280,7 +284,7 @@ Wer mehr Informationen zu NMEA0183-Telegrammen erfahren möchte findet auf diese
 Im nachfolgenden Bild ist eine Konfiguration zu sehen wo ein NMEA0183-Windsensor mit dem OBP60 verbunden ist. Der Windsensor sendet die Daten zum OBP60. Der OBP60 ist als NMEA0183-Empfänger konfiguriert. Die Bus-Terminierung ist über den Jumper ``T183`` aktiviert.
 
 .. image:: ../pics/NMEA0183_Sample_Setup_Minimal.png
-             :scale: 60%
+             :scale: 50%
 Abb.: NMEA0183 Minimalkonfiguration
 
 
