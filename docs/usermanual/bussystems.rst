@@ -219,8 +219,8 @@ Tab.: Zulässige Leitungslängen für RS232
 Die Datenübertragung erfolgt mit differenziellen Signalen ähnlich wie bei NMEA2000. Damit können Gleichtaktstörungen über lange Leitungslängen sicher unterdrückt werden.
 
 .. image:: ../pics/RS422.png
-             :scale: 60%	
-Abb.: RS422 Übertragungsmodell
+             :scale: 40%	
+Abb.: RS422 Übertragungsmodell Sender - Empfänger
 
 **Busterminierung**
 
@@ -228,16 +228,16 @@ Abb.: RS422 Übertragungsmodell
              :scale: 35%
 Abb.: Bus-Terminierung für NMEA0183
 
-Auf der Empfängerseite ist der NMEA0183-Bus terminiert. Im OBP60 findet man zwischen den Steckverbindern CN1 und CN2 einen Jumper ``T183`` für die Busterminierung. Der Jumper ist zu setzen, wenn das OBP60 als Empfänger von NMEA0183-Telegrammen als **Serial Direction Receive** konfiguriert wurde (siehe Kapitel `Config`_ - Serial Port).
+Auf der Empfängerseite ist der NMEA0183-Bus terminiert. Im OBP60 findet man zwischen den Steckverbindern CN1 und CN2 einen Jumper ``T183`` für die Busterminierung. Der Jumper ist zu setzen, wenn das OBP60 als Empfänger von NMEA0183-Telegrammen als **Serial Direction Receive** konfiguriert wurde (siehe Kapitel `Config - Serial Port`_).
 
-.. _Config: https://obp60-v2-docu.readthedocs.io/de/latest/usermanual/configuration.html#config-serial-port
+.. _Config - Serial Port: https://obp60-v2-docu.readthedocs.io/de/latest/usermanual/configuration.html#config-serial-port
 
 **Multiplexer**
 
 Insgesamt ist NMEA 0183 ein nützlicher Standard für die Übertragung von Navigationsdaten auf Booten, aber es hat seine Beschränkungen und kann nicht in allen Einsatzfällen mit moderneren Technologien wie NMEA2000 mithalten. Um Daten von mehreren Datenquellen wie z.B. Sensoren zu einem Datenstrom zusammenfassen zu können, gibt es sogenannte Multiplexer.
 
 .. image:: ../pics/NMEA0183_Multiplexer.jpg
-             :scale: 100%
+             :scale: 30%
 Abb.: NMEA0183 Multiplexer (Ship Modul)
 
 Der Multiplexer empfängt verschiedene Datentelegramme an unterschiedlichen Ports und gibt den zusammengefassten Datenstrom mehrerer Sensoren an einem neuen Datenport aus. So lassen sich mehrere Sensorsignale über eine Leitung an ein Datenendgerät wie z.B. ein Plotter oder Multifunktionsdisplay übertragen. Viele Multiplexer bieten auch die Möglichkeit, bestimmte Datentelegramme im Datenstrom mit einer Filterfunktion zu unterdrücken. So können z.B. nur die wirklich notwendigen Daten an einen Autopiloten übertragen oder Mehrdeutigkeiten durch mehrere GPS-Empfänger vermieden werden.
