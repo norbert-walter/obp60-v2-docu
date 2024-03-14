@@ -133,7 +133,7 @@ Abb.: NMEA2000-Verbindung mit Stromversorgung des NMEA2000-Bus des OBP60
 .. warning::
 	Beachten Sie, dass der NMEA2000-Bus nur von einer Quelle gespeist sein darf. Anderenfalls kann es zu Störungen im Bussystem kommen.
 	
-Ein Anwendungsbeispiel könnte dann so aussehen wie im folgenden Bild. Die Busterminierung ist dabei im OBP60 deaktiviert und wird am Busverteiler vorgenommen.
+Ein Anwendungsbeispiel könnte dann so aussehen wie im folgenden Bild. Die Bus-Terminierung ist dabei im OBP60 deaktiviert und wird am Busverteiler vorgenommen.
 
 .. image:: ../pics/NMEA2000_Sample_Setup_Minimal_Configuration_2.png
              :scale: 60%	
