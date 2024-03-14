@@ -79,7 +79,7 @@ Tab.: NMEA2000 Steckerbelegung
 
 .. image:: ../pics/NMEA2000_Cable.jpg
              :scale: 60%			 
-Abb. NMEA2000-Buskabel
+Abb. NMEA2000-Buskabel mit Schirmung
 
 
 Wer eigene Buskabel herstellen möchte, sollte Kabel wie wie z.B. Lapp Busleitung UNITRONIC 2 x 2 x 0.34 mm² verwenden.
@@ -88,7 +88,7 @@ Wer eigene Buskabel herstellen möchte, sollte Kabel wie wie z.B. Lapp Busleitun
              :scale: 60%			 
 Abb. CAN-Buskabel
 
-Dabei sind 2x zwei Einzeladern paarweise verdrillt und zusätzlich mit einem äußeren Schirmgeflecht umgeben. Ein verdrilltes Aderpaar wird für CAN-H und CAN-L verwendet und das andere Aderpaar für GND und 12V. Das Schirmgeflecht wird mit GND einseitig verbunden. Damit erzielt man die besten Ergebnisse und hat eine sichere und langlebige Installation. Dünnere Kabel als 0.34 mm² sollten nicht verwendet werden, wenn die Versorgung aus den Bus erfolgen soll. Die Länge des Buskabels sollte in Summe 40 m nicht übersteigen.
+Dabei sind 2x zwei Einzeladern paarweise verdrillt und zusätzlich mit einem äußeren Schirmgeflecht umgeben. Ein verdrilltes Aderpaar wird für CAN-H und CAN-L verwendet und das andere Aderpaar für GND und 12V. Das Schirmgeflecht wird mit GND einseitig verbunden. Damit erzielt man die besten Ergebnisse und hat eine sichere und langlebige Installation. Dünnere Kabel als 0.34 mm² sollten nicht verwendet werden, wenn die Versorgung aus den Bus erfolgen soll. Die Länge des Buskabels sollte in Summe 30 m nicht übersteigen.
 
 .. image:: ../pics/NMEA2000_Filed_Connectors.png
              :scale: 60%	
@@ -106,7 +106,7 @@ NMEA2000 Geräte mit geringem Stromverbrauch wie z.B. Sensoren können auch aus 
 
 **Verkabelung für NMEA2000**
 
-Für NMEA2000 wird eine Busstruktur verwendet. In dem Hauptstrang sind ein oder mehrere Buskoppler-Einheiten enthalten, über die die jeweiligen Geräte eingebunden werden. Die Buslänge darf 30m nicht übersteigen und die Stichleitungen zu den Geräten sollte nicht länger als 1.5 m sein. An den Enden des Hautstranges befinden sich Abschlusswiderstände zur Bus-Terminierung.
+Für NMEA2000 wird eine Busstruktur verwendet. In dem Hauptstrang sind ein oder mehrere Buskoppler-Einheiten enthalten, über die die jeweiligen Geräte eingebunden werden. Die Buslänge darf 30 m nicht übersteigen und die Stichleitungen zu den Geräten sollte nicht länger als 1.5 m sein. An den Enden des Hautstranges befinden sich Abschlusswiderstände zur Bus-Terminierung. Die Einspeisung der Stromversorgung des NMEA2000-Busses erfolgt im unteren Bild über den Plotter.
 
 .. image:: ../pics/NMEA2000_Sample_Setup_Plotter.png
              :scale: 60%	
@@ -116,10 +116,25 @@ Um das OBP an den NMEA2000-Bus anzuschließen, können Sie am einfachsten ein NM
 
 .. image:: ../pics/OBP60_NMEA2000_Connection.png
              :scale: 60%	
-Abb.: OBP60 NMEA2000-Verbindung
+Abb.: OBP60 NMEA2000-Verbindung mit Stromversorgung über den NMEA2000-Bus
 
 Eine Minimal-Konfigutration könnte folgendermaßen aussehen. Dabei ist zu beachten, dass der NMEA2000-Bus auf der rechten Seite durch das OBP60 terminiert ist, indem die interne Busterminierung über den Jumper ``TN2K`` aktiviert wurde. Der Jumper ``TN2K`` befindet sich mittig zwischen den beiden Steckverbindern **CN1** und **CN2**. 
 
 .. image:: ../pics/NMEA2000_Sample_Setup_Minimal_Configuration.png
+             :scale: 60%	
+Abb.: NMEA2000 Minimal-Konfiguration mit einem Sensor
+
+Die Stromversorgung des NMEA2000-Bus kann auch über das OBP60 erfolgen. Die Einspeisung in den Bus sieht dann so aus:
+
+.. image:: ../pics/OBP60_NMEA2000_Connection_Power.png
+             :scale: 60%	
+Abb.: NMEA2000-Verbindung mit Stromversorgung des NMEA2000-Bus des OBP60
+
+.. warning::
+	Beachten Sie, dass der NMEA2000-Bus nur von einer Quelle gespeist sein darf. Anderenfalls kann es zu Störungen im Bussystem kommen.
+	
+Ein Anwendungsbeispiel könnte dann so aussehen wie im folgenden Bild. Die Busterminierung ist dabei im OBP60 deaktiviert und wird am Busverteiler vorgenommen.
+
+.. image:: ../pics/NMEA2000_Sample_Setup_Minimal_Configuration_2.png
              :scale: 60%	
 Abb.: NMEA2000 Minimal-Konfiguration mit einem Sensor
