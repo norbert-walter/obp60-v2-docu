@@ -127,7 +127,7 @@ Abb.: NMEA2000 Minimal-Konfiguration mit einem Sensor
 Die Stromversorgung des NMEA2000-Bus kann auch über das OBP60 erfolgen. Die Einspeisung in den Bus sieht dann so aus:
 
 .. image:: ../pics/OBP60_NMEA2000_Connection_Power.png
-             :scale: 60%	
+             :scale: 50%	
 Abb.: NMEA2000-Verbindung mit Stromversorgung des NMEA2000-Bus des OBP60
 
 .. warning::
@@ -137,4 +137,4 @@ Ein Anwendungsbeispiel könnte dann so aussehen wie im folgenden Bild. Die Bus-T
 
 .. image:: ../pics/NMEA2000_Sample_Setup_Minimal_Configuration_2.png
              :scale: 60%	
-Abb.: NMEA2000 Minimal-Konfiguration mit einem Sensor
+Abb.: NMEA2000 Minimal-Konfiguration mit Buseinspeisung
