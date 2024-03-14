@@ -236,7 +236,7 @@ Auf der Empfängerseite ist der NMEA0183-Bus terminiert. Im OBP60 findet man zwi
 
 Insgesamt ist NMEA 0183 ein nützlicher Standard für die Übertragung von Navigationsdaten auf Booten, aber es hat seine Beschränkungen und kann nicht in allen Einsatzfällen mit moderneren Technologien wie NMEA2000 mithalten. Um Daten von mehreren Datenquellen wie z.B. Sensoren zu einem Datenstrom zusammenfassen zu können, gibt es sogenannte Multiplexer.
 
-.. image:: ../pics/NMEA0183_Multiplexer.jpg
+.. image:: ../pics/NMEA0183_Multiplexer.png
              :scale: 30%
 Abb.: NMEA0183 Multiplexer (Ship Modul)
 
