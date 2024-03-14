@@ -212,11 +212,23 @@ Abb.: Zulässige Kabellängen für RS422 und RS485
 +-----------------+--------------------+
 Tab.: Zulässige Leitungslängen für RS232
 
-Die Datenübertragung erfolgt mit differenziellen Signalen ähnlich wie bei NMEA2000. Damit können Gleichtaktstörungen über lange Leitungslängen sicher unterdrückt werden. Auf der Empfängerseite ist der NMEA0183-Bus terminiert.
+Die Datenübertragung erfolgt mit differenziellen Signalen ähnlich wie bei NMEA2000. Damit können Gleichtaktstörungen über lange Leitungslängen sicher unterdrückt werden.
 
 .. image:: ../pics/RS422.png
              :scale: 100%	
 Abb.: RS422 Übertragungsmodell
+
+**Busterminierung**
+
+.. image:: ../pics/OBP60_Back_Side_3.png
+             :scale: 60%
+Abb.: Bus-Terminierung für NMEA0183
+
+Auf der Empfängerseite ist der NMEA0183-Bus terminiert. Im OBP60 findet man zwischen den Steckverbindern CN1 und CN2 einen Jumper ``T183`` für die Busterminierung. Der Jumper ist zu setzen, wenn das OBP60 als Empfänger von NMEA0183-Telegrammen als **Serial Direction Receive** konfiguriert wurde (siehe Kapitel `Config`_ - Serial Port).
+
+.. _Config: https://obp60-v2-docu.readthedocs.io/de/latest/usermanual/configuration.html#config-serial-port
+
+**Multiplexer**
 
 Insgesamt ist NMEA 0183 ein nützlicher Standard für die Übertragung von Navigationsdaten auf Booten, aber es hat seine Beschränkungen und kann nicht in allen Einsatzfällen mit moderneren Technologien wie NMEA2000 mithalten. Um Daten von mehreren Datenquellen wie z.B. Sensoren zu einem Datenstrom zusammenfassen zu können, gibt es sogenannte Multiplexer.
 
@@ -255,3 +267,8 @@ Je nach Komplexität eines Telegramms, können auch mehrere Sensordaten oder Sta
 Wer mehr Informationen zu NMEA0183-Telegrammen erfahren möchte findet auf dieser `Webseite`_ ausführliche Informationen.
 
 .. _Webseite: https://open-boat-projects.org/de/kontakt/
+
+**Verkabelung für NMEA0183**
+
+
+
