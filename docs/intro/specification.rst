@@ -111,21 +111,14 @@ Nutzbare und konvertierbare Telegramme
 Nutzbare I2C Sensorik
 ---------------------
 
-**Temperatursensoren**
-	* BMP085
-	* BMP180
-	* BMP280
-	* BME280
-	* SHT20
-	* HTU21
+**Umgebungssensoren**
+	* BMP085, BMP180, BMP280, BME280, SHT20, HTU21
 	
 **Spannungs- und Stromsensoren**
-	* INA226
-	* INA219 (in Vorbereitung)
+	* INA226, INA219 (in Vorbereitung)
 	
 **Winkelsensoren**
-	* AS5600
-	* MT6701 (in Vorbereitung)
+	* AS5600, MT6701 (in Vorbereitung)
 	
 **Port Erweiterungen**
 	* PCF8574 (in Vorbereitung)
