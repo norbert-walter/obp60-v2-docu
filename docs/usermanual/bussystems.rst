@@ -150,7 +150,7 @@ Die Stromversorgung des NMEA2000-Bus kann auch über das OBP60 erfolgen. Die Ein
 Abb.: NMEA2000-Verbindung mit Stromeinspeisung über OBP60
 
 .. warning::
-	Beachten Sie, dass der NMEA2000-Bus nur von einer Quelle gespeist sein darf. Anderenfalls kann es zu Störungen im Bussystem kommen.
+	Beachten Sie, dass der NMEA2000-Bus nur von einer Quelle gespeist sein darf. Anderenfalls kann es zu Störungen im Bussystem kommen. Achten Sie darauf, dass die Stromeinspeisung in den Bus über eine 3A Sicherrung verfügt.
 	
 Ein Anwendungsbeispiel könnte dann so aussehen wie im folgenden Bild. Die Bus-Terminierung ist dabei im OBP60 deaktiviert und wird am Busverteiler vorgenommen.
 
