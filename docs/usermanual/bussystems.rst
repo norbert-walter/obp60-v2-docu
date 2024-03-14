@@ -18,6 +18,20 @@ NMEA2000
 
 NMEA2000 ist ein Bussystem und dient der Datenübertragung zwischen elektronischen Geräten in Booten. NMEA2000 verwendet **CAN** zur Datenübertragung. Die Übertragung erfolgt über ein zentrales Kabel, an das alle Geräte parallel angeschlossen sind. Jedes Gerät im NMEA2000-Netzwerk hat eine eindeutige Geräte-ID, um Datenquellen und Datenanzeigegeräte zu identifizieren und zu adressieren. Daten werden in Parameter Group Numbers (**PGN**) organisiert. PGN sind eindeutige Daten-IDs, um bestimmte Typen von Daten zu beschreiben, wie beispielsweise Geschwindigkeit, Kurs, Temperatur usw. Alle Geräte können PGN empfangen und senden, und es kann festgelegt werden, welche PGN von einem bestimmten Gerät gesendet oder empfangen werden sollen.
 
+**Spezifikation NMEA2000**
+
+* Differenzielles bidirektionales Datenprotokoll auf Binär-Basis
+* halbduplex mit Kollisionserkennung und Vermeidung
+* Busstruktur
+* Beidseitige Bus-Terminierung
+* Unterstützte Protokolle
+	* CAN (Standard, mit speziellen Datenpaketen)
+* Datenrate 250.000 Bd fix
+* Stromversorgung von Sensoren und Anzeigegeräten über den Bus
+* Buslänge bis zu 30 m (Stichleitungen <1.5 m)
+* Kabelart 5-polig geschirmt mit 2x2 verdrillten Leitungen 0,25 mm²
+* Steckerart M12 5-polig D-Codiert	
+
 **Differenzielle Datenübertragung**
 
 Die Datenübertragung auf dem CAN-Bus erfolgt diffenziell. Es werden jeweils zwei Signale mit entgegengesetzter Polarität vom Sender übertragen und im Empfänger durch Subtraktion aus den zwei Signalen ein Einzelsignal erzeugt. Störungen die sich in selber Weise auf beide Signalleitungen auswirken werden durch die Subtraktion im Empfänger eliminiert. Dadurch wird eine robuste und störunanfällige Signalübertragung ermöglicht.
@@ -138,3 +152,106 @@ Ein Anwendungsbeispiel könnte dann so aussehen wie im folgenden Bild. Die Bus-T
 .. image:: ../pics/NMEA2000_Sample_Setup_Minimal_Configuration_2.png
              :scale: 60%	
 Abb.: NMEA2000 Minimal-Konfiguration mit Buseinspeisung
+
+NMEA0183
+--------
+
+NMEA 0183 ist ein Standard für serielle Datenübertragung in der Schifffahrt. Es definiert ein Format für die Übertragung von Informationen zwischen Navigationsgeräten und anderen elektronischen Geräten auf Booten. NMEA0183 ist ein weit verbreiteter Standard, der von vielen alten Geräten unterstützt wird.
+
+**Spezifikation NMEA0183**
+
+* Serielles unidirektionales Datenprotokoll auf ASCII-Basis
+* Punkt zu Punkt-Verbindung
+* halbduplex ohne Kollisionserkennung und Vermeidung
+* Bus-Terminierung am Empfänger
+* Unterstützte Protokolle
+	* RS422 (Standard)
+	* RS485
+	* RS232
+	* RS232 3.3V TTL
+	* RS232 5.0V TTL
+* Datenrate 4.900...115.200 Bd variabel
+* Stromversorgung von Sensoren und Anzeigegeräten über 12V-Bordnetz
+* Buslänge bis zu 1000 m (abhängig von Datenrate und Kabelart)
+* Kabelart nicht spezifiziert
+* Steckerart nicht spezifiziert	
+
+**Datenübertragung**
+
+Die Datenübertragung erfolgt im OBP60 halbduplex auf serielle Weise über zwei einfache Kabel. Das bedeutet, dass man etweder senden oder empfangen kann. Beides gleichzeitig ist nicht möglich. Die Standard-Datenrate liegt bei 4800 Bd, was für heutige Verhältnisse recht langsam ist, aber Buslängen von bis zu 1000 m zulässt. Als Datenübertragungsrate lassen sich folgende Einstellungen verwenden:
+
+* 4.800 Bd
+* 9.600 Bd
+* 14.400 Bd
+* 19.200 Bd
+* 28.800 Bd
+* 38.400 Bd
+* 56.600 Bd
+* 57.600 Bd
+* 115.200 Bd
+
+Je nach Datenrate und Protokoll können die zulässigen Kabellängen unterschiedlich lang ausfallen. Im realen Betrieb sollten diese Werte beachtet werden.
+
+.. image:: ../pics/RS422_RS485_Bus_Lenghts.png
+             :scale: 100%	
+Abb.: Zulässige Kabellängen für RS422 und RS485
+
++-----------------+--------------------+
+|Übertragungsrate | zul. Leitungslänge |
+|[Bd]             | [m]                |
++=================+====================+
+|4.800            | 300                |
++-----------------+--------------------+
+|9.600            | 152                |
++-----------------+--------------------+
+|19.200           | 15                 |
++-----------------+--------------------+
+|57.600           | 5                  |
++-----------------+--------------------+
+|115.200          | 2                  |
++-----------------+--------------------+
+Tab.: Zulässige Leitungslängen für RS232
+
+Die Datenübertragung erfolgt mit differenziellen Signalen ähnlich wie bei NMEA2000. Damit können Gleichtaktstörungen über lange Leitungslängen sicher unterdrückt werden. Auf der Empfängerseite ist der NMEA0183-Bus terminiert.
+
+.. image:: ../pics/RS422.png
+             :scale: 100%	
+Abb.: RS422 Übertragungsmodell
+
+Insgesamt ist NMEA 0183 ein nützlicher Standard für die Übertragung von Navigationsdaten auf Booten, aber es hat seine Beschränkungen und kann nicht in allen Einsatzfällen mit moderneren Technologien wie NMEA2000 mithalten. Um Daten von mehreren Datenquellen wie z.B. Sensoren zu einem Datenstrom zusammenfassen zu können, gibt es sogenannte Multiplexer.
+
+.. image:: ../pics/NMEA0183_Multiplexer.png
+             :scale: 100%
+Abb.: NMEA0183 Multiplexer (Ship Modul)
+
+Der Multiplexer empfängt verschiedene Datentelegramme an unterschiedlichen Ports und gibt den zusammengefassten Datenstrom mehrerer Sensoren an einem neuen Datenport aus. So lassen sich mehrere Sensorsignale über eine Leitung an ein Datenendgerät wie z.B. ein Plotter oder Multifunktionsdisplay übertragen. Viele Multiplexer bieten auch die Möglichkeit, bestimmte Datentelegramme im Datenstrom mit einer Filterfunktion zu unterdrücken. So können z.B. nur die wirklich notwendigen Daten an einen Autopiloten übertragen oder Mehrdeutigkeiten durch mehrere GPS-Empfänger vermieden werden.
+
+**NMEA0183 Telegrammstruktur**
+
+NMEA0183-Telegramme sind recht einfach aufgebaut und werden als ASCII-Datensätze übertragen. Ein NMEA0183-Telegramm besteht aus folgenden Informationen.
+
+* Kennung
+* Telegrammtyp
+* Sensordaten
+* Einheit
+* Status
+* CRC-Checksumme
+
+Je nach Komplexität eines Telegramms, können auch mehrere Sensordaten oder Statusinformationen in einem Telegramm übertragen werden. Nachfolgend ein Beispiel für ein Telegramm vom Tiefenmesser.
+
+**DBT** - Depth below transducer
+
+ **$--DBT,1.1,2,3.3,4,5.5,6*77<CR><LF>**
+
+ Field Number: 
+  1) Tiefe in Fuß
+  2) f = Fuß
+  3) Tiefe in Meter
+  4) M = Meter
+  5) Tiefe in Fathoms
+  6) F = Fathoms
+  7) Checksumme
+
+Wer mehr Informationen zu NMEA0183-Telegrammen erfahren möchte findet auf dieser `Webseite`_ ausführliche Informationen.
+
+.. _Webseite: https://open-boat-projects.org/de/kontakt/
