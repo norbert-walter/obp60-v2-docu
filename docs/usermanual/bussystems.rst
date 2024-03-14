@@ -228,7 +228,7 @@ Abb.: RS422 Übertragungsmodell Sender - Empfänger
              :scale: 35%
 Abb.: Bus-Terminierung für NMEA0183
 
-Auf der Empfängerseite ist der NMEA0183-Bus terminiert. Im OBP60 findet man zwischen den Steckverbindern CN1 und CN2 einen Jumper ``T183`` für die Busterminierung. Der Jumper ist zu setzen, wenn das OBP60 als Empfänger von NMEA0183-Telegrammen als **Serial Direction Receive** konfiguriert wurde (siehe Kapitel `Config - Serial Port`_).
+Auf der Empfängerseite ist der NMEA0183-Bus terminiert. Im OBP60 findet man zwischen den Steckverbindern **CN1** und **CN2** einen Jumper ``T183`` für die Busterminierung. Der Jumper ist zu setzen, wenn das OBP60 als Empfänger von NMEA0183-Telegrammen als **Serial Direction Receive** konfiguriert wurde (siehe Kapitel `Config - Serial Port`_).
 
 .. _Config - Serial Port: https://obp60-v2-docu.readthedocs.io/de/latest/usermanual/configuration.html#config-serial-port
 
@@ -237,7 +237,7 @@ Auf der Empfängerseite ist der NMEA0183-Bus terminiert. Im OBP60 findet man zwi
 Insgesamt ist NMEA 0183 ein nützlicher Standard für die Übertragung von Navigationsdaten auf Booten, aber es hat seine Beschränkungen und kann nicht in allen Einsatzfällen mit moderneren Technologien wie NMEA2000 mithalten. Um Daten von mehreren Datenquellen wie z.B. Sensoren zu einem Datenstrom zusammenfassen zu können, gibt es sogenannte Multiplexer.
 
 .. image:: ../pics/NMEA0183_Multiplexer.png
-             :scale: 45%
+             :scale: 60%
 Abb.: NMEA0183 Multiplexer (Ship Modul)
 
 Der Multiplexer empfängt verschiedene Datentelegramme an unterschiedlichen Ports und gibt den zusammengefassten Datenstrom mehrerer Sensoren an einem neuen Datenport aus. So lassen sich mehrere Sensorsignale über eine Leitung an ein Datenendgerät wie z.B. ein Plotter oder Multifunktionsdisplay übertragen. Viele Multiplexer bieten auch die Möglichkeit, bestimmte Datentelegramme im Datenstrom mit einer Filterfunktion zu unterdrücken. So können z.B. nur die wirklich notwendigen Daten an einen Autopiloten übertragen oder Mehrdeutigkeiten durch mehrere GPS-Empfänger vermieden werden.
@@ -260,13 +260,13 @@ Je nach Komplexität eines Telegramms, können auch mehrere Sensordaten oder Sta
 	$--DBT,a.a,b,c.c,d,e.e,f*hh<CR><LF>
 
 	Fieldnumber: 
-		*a.a - Tiefe in Fuß
-		*b - f = Fuß
-		*c.c - Tiefe in Meter
-		*d - M = Meter
-		*e.e - Tiefe in Fathoms
-		*f - F = Fathoms
-		*hh - Checksumme
+		* a.a - Tiefe in Fuß
+		* b - f = Fuß
+		* c.c - Tiefe in Meter
+		* d - M = Meter
+		* e.e - Tiefe in Fathoms
+		* f - F = Fathoms
+		* hh - Checksumme
 		
 	Beispiel:	
 	    * $IIDBT,12.8,f,39.0,M,21.3,F*20
@@ -276,6 +276,12 @@ Wer mehr Informationen zu NMEA0183-Telegrammen erfahren möchte findet auf diese
 .. _Webseite: http://www.nmea.de/nmea0183datensaetze.html
 
 **Verkabelung für NMEA0183**
+
+Im nachfolgenden Bild ist eine Konfiguration zu sehen wo ein NMEA0183-Windsensor mit dem OBP60 verbunden ist. Der Windsensor sendet die Daten zum OBP60. Der OBP60 ist als NMEA0183-Empfänger konfiguriert. Die Bus-Terminierung ist über den Jumper ``T183`` aktiviert.
+
+.. image:: ../pics/NMEA0183_Sample_Setup_Minimal.png
+             :scale: 60%
+Abb.: NMEA0183 Minimalkonfiguration
 
 
 
