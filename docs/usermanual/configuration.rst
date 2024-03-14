@@ -398,12 +398,15 @@ Config - OBP Settings
 .. image:: ../pics/Config_OBP60_Settings.png
              :scale: 60%
              
-Auf der Seite **OBP60 Settings** können Sie Einstellungen vornehmen, die in Verbindung mit Boot stehen, in dem das OBP60 eingebaut ist.  Die eingetragenen Werte werden dazu benutzt, zum Beispiel in Grenzen eine Reichweitenbestimmung für Wasser, Kraftstoff und Batterie vornehmen zu können. Geben Sie bitte die Werte für Ihr Boot möglichst genau ein und beachten Sie die entsprechenden Einheiten. Die Einstellungen dienen dazu, verschiedene Betriebszustände auf dem OPB60 in Grafiken darzustellen.
+Auf der Seite **OBP60 Settings** können Sie Einstellungen vornehmen, die in Verbindung mit Boot stehen, in dem das OBP60 eingebaut ist.  Die eingetragenen Werte werden dazu benutzt, um zum Beispiel eine ungefähre Reichweitenbestimmung für Wasser, Kraftstoff und Batterie vornehmen zu können. Geben Sie bitte die Werte für Ihr Boot möglichst genau ein und beachten Sie die entsprechenden Einheiten. Die Einstellungen dienen dazu, verschiedene Betriebszustände auf dem OPB60 in Grafiken darzustellen.
+
+.. warning::
+    Bedenken Sie, dass die Reichweitenbestimmungen nur als Richtwerte verwendet werden können. Insbesondere bei den Batterietypen AGM und LiFePo4 müssen Sie mit größeren Ungenauigkeiten rechnen. Beobachten und überprüfen Sie die Ergebnisse unter realen Bedingungen, bevor Sie den Anzeigewerten vertrauen. 
 
 **Time Zone**
-    * Über **Time Zone** kann die Zeitzone in Bereich -12 und +14 Stunden eingestellt werden.
+    * Über **Time Zone** kann die Zeitzone im Bereich von -12 und +14 Stunden eingestellt werden.
 
-Die meisten Einstellungen sollten selbsterklärend sein. Sofern Sie keine Solarpanele benutzen, belassen Sie den Wert von **Solar Power**  auf 0. **Generator Power** bezieht sich auf einen Elektrogenerator, der im Boot arbeitet. Das kann eine Lichtmaschine, ein Windgenerator, ein Schleppgenerator oder ein Zusatz-Generator sein. Die Leistungsangaben für **Solar Power** und **Genrator Power** werden zur Visualisierung der Energieflüsse benötigt.
+Die meisten Einstellungen sollten selbsterklärend sein. Sofern Sie keine Solarpaneele benutzen, belassen Sie den Wert von **Solar Power**  auf 0. **Generator Power** bezieht sich auf einen Elektrogenerator, der im Boot arbeitet. Das kann eine Lichtmaschine, ein Windgenerator, ein Schleppgenerator oder ein Zusatz-Generator sein. Die Leistungsangaben für **Solar Power** und **Genrator Power** werden zur Visualisierung der Energieflüsse benötigt.
 
 Config - OBP Units
 ------------------

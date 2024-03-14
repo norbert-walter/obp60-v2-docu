@@ -134,7 +134,7 @@ Um das OBP an den NMEA2000-Bus anzuschließen, können Sie am einfachsten ein NM
 
 .. image:: ../pics/OBP60_NMEA2000_Connection.png
              :scale: 60%	
-Abb.: OBP60 NMEA2000-Verbindung mit Stromversorgung über den NMEA2000-Bus
+Abb.: NMEA2000-Verbindung mit Stromversorgung über den NMEA2000-Bus
 
 Eine Minimal-Konfigutration könnte folgendermaßen aussehen. Dabei ist zu beachten, dass der NMEA2000-Bus auf der rechten Seite durch das OBP60 terminiert ist, indem die interne Busterminierung über den Jumper ``TN2K`` aktiviert wurde. Der Jumper ``TN2K`` befindet sich mittig zwischen den beiden Steckverbindern **CN1** und **CN2**. 
 
@@ -174,7 +174,7 @@ NMEA 0183 ist ein Standard für serielle Datenübertragung in der Schifffahrt. E
 	* RS232
 	* RS232 3.3V TTL
 	* RS232 5.0V TTL
-* Datenrate 4.900...115.200 Bd variabel
+* Datenrate 1.200...460.800 Bd variabel
 * Stromversorgung von Sensoren und Anzeigegeräten über 12V-Bordnetz
 * Buslänge bis zu 1000 m (abhängig von Datenrate und Kabelart)
 * Kabelart nicht spezifiziert
@@ -226,13 +226,13 @@ Die Datenübertragung erfolgt mit differenziellen Signalen ähnlich wie bei NMEA
              :scale: 40%	
 Abb.: RS422 Übertragungsmodell Sender - Empfänger
 
-**Busterminierung**
+**Bus-Terminierung**
 
 .. image:: ../pics/OBP60_Back_Side_3.png
              :scale: 35%
 Abb.: Bus-Terminierung für NMEA0183
 
-Auf der Empfängerseite ist der NMEA0183-Bus terminiert. Im OBP60 findet man zwischen den Steckverbindern **CN1** und **CN2** einen Jumper ``T183`` für die Busterminierung. Der Jumper ist zu setzen, wenn das OBP60 als Empfänger von NMEA0183-Telegrammen als **Serial Direction Receive** konfiguriert wurde (siehe Kapitel `Config - Serial Port`_).
+Auf der Empfängerseite ist der NMEA0183-Bus terminiert. Im OBP60 findet man zwischen den Steckverbindern **CN1** und **CN2** einen Jumper ``T183`` für die Bus-Terminierung. Der Jumper ist zu setzen, wenn das OBP60 als Empfänger von NMEA0183-Telegrammen als **Serial Direction Receive** konfiguriert wurde (siehe Kapitel `Config - Serial Port`_).
 
 .. _Config - Serial Port: https://obp60-v2-docu.readthedocs.io/de/latest/usermanual/configuration.html#config-serial-port
 
@@ -244,7 +244,7 @@ Insgesamt ist NMEA 0183 ein nützlicher Standard für die Übertragung von Navig
              :scale: 60%
 Abb.: NMEA0183 Multiplexer (Ship Modul)
 
-Der Multiplexer empfängt verschiedene Datentelegramme an unterschiedlichen Ports und gibt den zusammengefassten Datenstrom mehrerer Sensoren an einem neuen Datenport aus. So lassen sich mehrere Sensorsignale über eine Leitung an ein Datenendgerät wie z.B. ein Plotter oder Multifunktionsdisplay übertragen. Viele Multiplexer bieten auch die Möglichkeit, bestimmte Datentelegramme im Datenstrom mit einer Filterfunktion zu unterdrücken. So können z.B. nur die wirklich notwendigen Daten an einen Autopiloten übertragen oder Mehrdeutigkeiten durch mehrere GPS-Empfänger vermieden werden.
+Der Multiplexer empfängt verschiedene Datentelegramme an unterschiedlichen Ports und gibt den zusammengefassten Datenstrom mehrerer Sensoren an einem neuen Datenport aus. So lassen sich mehrere Sensorsignale über eine Leitung an ein Datenendgerät wie z.B. einen Plotter oder ein Multifunktionsdisplay übertragen. Viele Multiplexer bieten auch die Möglichkeit, bestimmte Datentelegramme im Datenstrom mit einer Filterfunktion zu unterdrücken. So können z.B. nur die wirklich notwendigen Daten an einen Autopiloten übertragen oder Mehrdeutigkeiten durch mehrere GPS-Empfänger vermieden werden.
 
 **NMEA0183 Telegrammstruktur**
 
@@ -257,13 +257,13 @@ NMEA0183-Telegramme sind recht einfach aufgebaut und werden als ASCII-Datensätz
 * Status
 * CRC-Checksumme
 
-Je nach Komplexität eines Telegramms, können auch mehrere Sensordaten oder Statusinformationen in einem Telegramm übertragen werden. Nachfolgend ein Beispiel für ein Telegramm vom Tiefenmesser.
+Je nach Komplexität eines Telegramms, können auch mehrere Sensordaten oder Statusinformationen in einem Telegramm übertragen werden. Nachfolgend ist beispielhaft ein Telegramm vom Tiefenmesser dargestellt.
 
 **DBT** - Depth below transducer
 
 	$--DBT,a.a,b,c.c,d,e.e,f*hh<CR><LF>
 
-	Fieldnumber: 
+	Feldnummer: 
 		* a.a - Tiefe in Fuß
 		* b - f = Fuß
 		* c.c - Tiefe in Meter
@@ -281,13 +281,16 @@ Wer mehr Informationen zu NMEA0183-Telegrammen erfahren möchte, findet auf dies
 
 **Verkabelung für NMEA0183**
 
-Im nachfolgenden Bild ist eine Konfiguration zu sehen in dem ein NMEA0183-Windsensor mit dem OBP60 verbunden ist. Der Windsensor sendet die Daten zum OBP60. Der OBP60 ist als NMEA0183-Empfänger konfiguriert. Die Bus-Terminierung ist über den Jumper ``T183`` aktiviert.
+Im nachfolgenden Bild ist eine Konfiguration zu sehen in der ein NMEA0183-Windsensor mit dem OBP60 verbunden ist. Der Windsensor sendet die Daten zum OBP60. Der OBP60 ist als NMEA0183-Empfänger konfiguriert. Die Bus-Terminierung ist über den Jumper ``T183`` aktiviert.
 
 .. image:: ../pics/NMEA0183_Sample_Setup_Minimal.png
              :scale: 50%
 Abb.: NMEA0183 Minimalkonfiguration
 
-In ähnlicher Art und Weise können auch andere Sensoren an das OBP60 angebunden werden. Dabei ist aber zu berücksichtigen, dass immer nur ein Gerät oder Sensor mit dem OBP60 verbunden werden kann. Wenn mehere Geräte eingebunden werden sollen, dann benötigt man einen Multiplexer. Die meisten Multiplexer haben mehrere NMEA0183-Eingänge und mindestens einen NMEA0183-Ausgang. Bei der verwendung eines Multiplexers werden alle Sensoren an die NMEA0183-Eingänge des Multiplexers angeschlossen und der NMEA0183-Ausgang mit dem OBP60 verbunden. Das OBP60 ist auf empfangen komfiguriert und die Terminierung des Bussystems ist deaktiviert.
+.. hint::
+    In ähnlicher Art und Weise können auch andere Sensoren an das OBP60 angebunden werden. Dabei ist aber zu berücksichtigen, dass immer nur ein Gerät oder Sensor mit dem OBP60 verbunden werden kann. Wenn mehere Geräte eingebunden werden sollen, dann benötigt man einen Multiplexer.
+
+Die meisten Multiplexer haben mehrere NMEA0183-Eingänge und mindestens einen NMEA0183-Ausgang. Bei der verwendung eines Multiplexers werden alle Sensoren an die NMEA0183-Eingänge des Multiplexers angeschlossen und der NMEA0183-Ausgang mit dem OBP60 verbunden. Das OBP60 ist auf empfangen komfiguriert und die Terminierung des Bussystems ist deaktiviert.
 
 .. image:: ../pics/NMEA0183_Sample_Setup_Multiplexer.png
              :scale: 50%
