@@ -180,6 +180,8 @@ NMEA 0183 ist ein Standard für serielle Datenübertragung in der Schifffahrt. E
 
 Die Datenübertragung erfolgt im OBP60 halbduplex auf serielle Weise über zwei einfache Kabel. Das bedeutet, dass man etweder senden oder empfangen kann. Beides gleichzeitig ist nicht möglich. Die Standard-Datenrate liegt bei 4800 Bd, was für heutige Verhältnisse recht langsam ist, aber Buslängen von bis zu 1000 m zulässt. Als Datenübertragungsrate lassen sich folgende Einstellungen verwenden:
 
+* 1.200 Bd
+* 2.400 Bd
 * 4.800 Bd
 * 9.600 Bd
 * 14.400 Bd
@@ -189,6 +191,8 @@ Die Datenübertragung erfolgt im OBP60 halbduplex auf serielle Weise über zwei 
 * 56.600 Bd
 * 57.600 Bd
 * 115.200 Bd
+* 230.400 Bd
+* 460.800 Bd
 
 Je nach Datenrate und Protokoll können die zulässigen Kabellängen unterschiedlich lang ausfallen. Im realen Betrieb sollten diese Werte beachtet werden.
 
@@ -221,7 +225,7 @@ Abb.: RS422 Übertragungsmodell
 **Busterminierung**
 
 .. image:: ../pics/OBP60_Back_Side_3.png
-             :scale: 60%
+             :scale: 35%
 Abb.: Bus-Terminierung für NMEA0183
 
 Auf der Empfängerseite ist der NMEA0183-Bus terminiert. Im OBP60 findet man zwischen den Steckverbindern CN1 und CN2 einen Jumper ``T183`` für die Busterminierung. Der Jumper ist zu setzen, wenn das OBP60 als Empfänger von NMEA0183-Telegrammen als **Serial Direction Receive** konfiguriert wurde (siehe Kapitel `Config`_ - Serial Port).
