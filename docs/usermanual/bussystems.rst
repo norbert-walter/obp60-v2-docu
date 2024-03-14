@@ -275,17 +275,23 @@ Je nach Komplexität eines Telegramms, können auch mehrere Sensordaten oder Sta
 	Beispiel:	
 	    * $IIDBT,12.8,f,39.0,M,21.3,F*20
 
-Wer mehr Informationen zu NMEA0183-Telegrammen erfahren möchte findet auf dieser `Webseite`_ ausführliche Informationen.
+Wer mehr Informationen zu NMEA0183-Telegrammen erfahren möchte, findet auf dieser `Webseite`_ ausführliche Informationen.
 
 .. _Webseite: http://www.nmea.de/nmea0183datensaetze.html
 
 **Verkabelung für NMEA0183**
 
-Im nachfolgenden Bild ist eine Konfiguration zu sehen wo ein NMEA0183-Windsensor mit dem OBP60 verbunden ist. Der Windsensor sendet die Daten zum OBP60. Der OBP60 ist als NMEA0183-Empfänger konfiguriert. Die Bus-Terminierung ist über den Jumper ``T183`` aktiviert.
+Im nachfolgenden Bild ist eine Konfiguration zu sehen in dem ein NMEA0183-Windsensor mit dem OBP60 verbunden ist. Der Windsensor sendet die Daten zum OBP60. Der OBP60 ist als NMEA0183-Empfänger konfiguriert. Die Bus-Terminierung ist über den Jumper ``T183`` aktiviert.
 
 .. image:: ../pics/NMEA0183_Sample_Setup_Minimal.png
              :scale: 50%
 Abb.: NMEA0183 Minimalkonfiguration
+
+In ähnlicher Art und Weise können auch andere Sensoren an das OBP60 angebunden werden. Dabei ist aber zu berücksichtigen, dass immer nur ein Gerät oder Sensor mit dem OBP60 verbunden werden kann. Wenn mehere Geräte eingebunden werden sollen, dann benötigt man einen Multiplexer. Die meisten Multiplexer haben mehrere NMEA0183-Eingänge und mindestens einen NMEA0183-Ausgang. Bei der verwendung eines Multiplexers werden alle Sensoren an die NMEA0183-Eingänge des Multiplexers angeschlossen und der NMEA0183-Ausgang mit dem OBP60 verbunden. Das OBP60 ist auf empfangen komfiguriert und die Terminierung des Bussystems ist deaktiviert.
+
+.. image:: ../pics/NMEA0183_Sample_Setup_Multiplexer.png
+             :scale: 50%
+Abb.: NMEA0183-Verbindung zu einem Multiplexer
 
 
 
