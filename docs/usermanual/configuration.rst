@@ -619,8 +619,8 @@ Der Bereich **Display** enthält alle Einstellungen, die das Display betreffen.
     
 .. note::
    Je höher die Helligkeit der Hintergrundbeleuchtung eingestellt wird, um so mehr Strom wird verbraucht. Bei weißer Hintergrundbeleuchtung tritt der größte Stromverbrauch auf, da alle 3 Farben der RGB-LED zur Erzeugung von weißem Licht benötigt werden. Bei reinen Grundfarben wie rot, grün und blau wird am wenigsten Strom verbraucht. Bei Mischfarben weden die RGB-LEDs unterschiedlich stark angesteuert und der Stromverbrauch ist höher als bei den Grundfarben. Nachfolgend zwei Beispiele:
-        100%, weiß - 2 W
-        50%, rot - 0.2W
+        * 100%, weiß - 2 W
+        * 50%, rot - 0.2W
         
 **Flash LED Mode**
 
