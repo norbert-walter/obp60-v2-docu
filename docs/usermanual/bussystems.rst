@@ -237,7 +237,7 @@ Auf der Empfängerseite ist der NMEA0183-Bus terminiert. Im OBP60 findet man zwi
 Insgesamt ist NMEA 0183 ein nützlicher Standard für die Übertragung von Navigationsdaten auf Booten, aber es hat seine Beschränkungen und kann nicht in allen Einsatzfällen mit moderneren Technologien wie NMEA2000 mithalten. Um Daten von mehreren Datenquellen wie z.B. Sensoren zu einem Datenstrom zusammenfassen zu können, gibt es sogenannte Multiplexer.
 
 .. image:: ../pics/NMEA0183_Multiplexer.png
-             :scale: 30%
+             :scale: 45%
 Abb.: NMEA0183 Multiplexer (Ship Modul)
 
 Der Multiplexer empfängt verschiedene Datentelegramme an unterschiedlichen Ports und gibt den zusammengefassten Datenstrom mehrerer Sensoren an einem neuen Datenport aus. So lassen sich mehrere Sensorsignale über eine Leitung an ein Datenendgerät wie z.B. ein Plotter oder Multifunktionsdisplay übertragen. Viele Multiplexer bieten auch die Möglichkeit, bestimmte Datentelegramme im Datenstrom mit einer Filterfunktion zu unterdrücken. So können z.B. nur die wirklich notwendigen Daten an einen Autopiloten übertragen oder Mehrdeutigkeiten durch mehrere GPS-Empfänger vermieden werden.
@@ -257,16 +257,19 @@ Je nach Komplexität eines Telegramms, können auch mehrere Sensordaten oder Sta
 
 **DBT** - Depth below transducer
 
- **$--DBT,1.1,2,3.3,4,5.5,6*77<CR><LF>**
+	$--DBT,a.a,b,c.c,d,e.e,f*hh<CR><LF>
 
- Field Number: 
-  1) Tiefe in Fuß
-  2) f = Fuß
-  3) Tiefe in Meter
-  4) M = Meter
-  5) Tiefe in Fathoms
-  6) F = Fathoms
-  7) Checksumme
+	Fieldnumber: 
+		*a.a - Tiefe in Fuß
+		*b - f = Fuß
+		*c.c - Tiefe in Meter
+		*d - M = Meter
+		*e.e - Tiefe in Fathoms
+		*f - F = Fathoms
+		*hh - Checksumme
+		
+	Beispiel:	
+	    * $IIDBT,12.8,f,39.0,M,21.3,F*20
 
 Wer mehr Informationen zu NMEA0183-Telegrammen erfahren möchte findet auf dieser `Webseite`_ ausführliche Informationen.
 
