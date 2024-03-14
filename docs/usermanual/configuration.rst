@@ -228,7 +228,7 @@ Config - Serial Port
 .. image:: ../pics/Config_Serial_Port.png
              :scale: 60%
 
-Über **serial port** können Einstellungen zur seriellen NMEA0183-Schnittstelle vorgenommen werden. Diese Einstellungen beziehen sich auf die RS485-Schnittstelle am Steckverbinder <CN1> mit den Signalen ``A``, ``B`` und ``Shield``.
+Über **serial port** können Einstellungen zur seriellen NMEA0183-Schnittstelle vorgenommen werden. Diese Einstellungen beziehen sich auf die RS485-Schnittstelle am Steckverbinder **CN1** mit den Signalen ``A``, ``B`` und ``Shield``.
 
 **Serial Direction**
 	* ``off`` - Die NMEA0183-Schnittstelle ist ausgeschaltet
@@ -312,7 +312,7 @@ Im Eingabefeld werden die Kurzbezeichner der NMEA0183-Telegramme eingetragen, me
 Die genaue Bedeutung der Kurzbezeichner ist `hier`_ erklärt.
 
 **Seasmart Out**
-    * Über Seasmart lassen sich NMEA2000-Daten in NMEA0183-Telegrammen übersetzen. Wenn Sie <Seasmart> aktivieren, werden alle NMEA2000-Daten über NMEA0183-Telegramme ausgegeben und getunnelt. Die Daten werden dabei in Binärform in einem NMEA0183-Telegramm übertragen. Auf diese Weise können Sie von einem OBP60 (TCP-Server) zu einem weiteren OBP60 (TCP-Client) NMEA2000-Daten über Wifi übertragen. Achten Sie darauf, dass auf der Gegenseite ebenfalls <Seasmart> aktiviert ist.
+    * Über Seasmart lassen sich NMEA2000-Daten in NMEA0183-Telegrammen übersetzen. Wenn Sie **Seasmart** aktivieren, werden alle NMEA2000-Daten über NMEA0183-Telegramme ausgegeben und getunnelt. Die Daten werden dabei in Binärform in einem NMEA0183-Telegramm übertragen. Auf diese Weise können Sie von einem OBP60 (TCP-Server) zu einem weiteren OBP60 (TCP-Client) NMEA2000-Daten über Wifi übertragen. Achten Sie darauf, dass auf der Gegenseite ebenfalls **Seasmart** aktiviert ist.
     * ``on`` - Der TCP-Server kann Seasmart-Daten senden und empfangen
     * ``off`` - Seasmart wird vom TCP-Server nicht unterstützt
 	
@@ -370,7 +370,7 @@ Im Eingabefeld werden die Kurzbezeichner der NMEA0183-Telegramme eingetragen, me
 Die genaue Bedeutung der Kurzbezeichner ist `hier`_ erklärt.
 
 **Seasmart Out**
-    * Über Seasmart lassen sich NMEA2000-Daten in NMEA0183-Telegrammen übersetzen. Wenn Sie <Seasmart> aktivieren, werden alle NMEA2000-Daten über NMEA0183-Telegramme ausgegeben und getunnelt. Die Daten werden dabei in Binärform in einem NMEA0183-Telegramm übertragen. Auf diese Weise können Sie von einem OBP60 (TCP-Server) zu einem weiteren OBP60 (TCP-Client) NMEA2000-Daten über Wifi übertragen. Achten Sie darauf, dass auf der Gegenseite ebenfalls <Seasmart> aktiviert ist.
+    * Über Seasmart lassen sich NMEA2000-Daten in NMEA0183-Telegrammen übersetzen. Wenn Sie **Seasmart** aktivieren, werden alle NMEA2000-Daten über NMEA0183-Telegramme ausgegeben und getunnelt. Die Daten werden dabei in Binärform in einem NMEA0183-Telegramm übertragen. Auf diese Weise können Sie von einem OBP60 (TCP-Server) zu einem weiteren OBP60 (TCP-Client) NMEA2000-Daten über Wifi übertragen. Achten Sie darauf, dass auf der Gegenseite ebenfalls **Seasmart** aktiviert ist.
     * ``on`` - Der TCP-Server kann Seasmart-Daten senden und empfangen
     * ``off`` - Seasmart wird vom TCP-Server nicht unterstützt
 	
@@ -619,8 +619,8 @@ Der Bereich **Display** enthält alle Einstellungen, die das Display betreffen.
     
 .. note::
    Je höher die Helligkeit der Hintergrundbeleuchtung eingestellt wird, um so mehr Strom wird verbraucht. Bei weißer Hintergrundbeleuchtung tritt der größte Stromverbrauch auf, da alle 3 Farben der RGB-LED zur Erzeugung von weißem Licht benötigt werden. Bei reinen Grundfarben wie rot, grün und blau wird am wenigsten Strom verbraucht. Bei Mischfarben weden die RGB-LEDs unterschiedlich stark angesteuert und der Stromverbrauch ist höher als bei den Grundfarben. Nachfolgend zwei Beispiele:
-        * 100%, weiß - 2 W
-        * 50%, rot - 0.2W
+        100%, weiß - 2 W
+        50%, rot - 0.2W
         
 **Flash LED Mode**
 
