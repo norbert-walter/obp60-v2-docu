@@ -36,9 +36,9 @@ Die Datenrate von NMEA2000 beträgt **250 kbps**. Sie wurde gewählt, um eine au
 	
 Ein CAN-Bus verwendet an den beiden Enden des Bussystems Abschluss-Widerstände von 120 Ohm zwischen den Leitungen CAN-H und CAN-L. Die beiden Abschluss-Widerstände entsprechen dem Leitungswiderstand von 120 Ohm und verhindern Signalreflexionen an den Leitungsenden bei hohen Datenübertragungsraten. Der CAN-Bus besteht aus einem langen Busstrang mit kurzen Stichleitungen kleiner 1.5 m. Eine Sternstruktur des Bussystems ist nicht erlaubt. Die beiden Abschluss-Widerstände dürfen nur am Busende verbaut sein und dürfen sich nicht dazwischen befinden.
 
-.. image:: ../pics/CAN_Termination.png
+.. image:: ../pics/NMEA2000_Termination_Sample.png
              :scale: 60%
-Abb.: CAN-Terminierung
+Abb.: CAN-Bus-Terminierung für NMEA2000
 
 .. warning::
 	Einige Geräte besitzen eingebaute Abschluss-Widerstände, die durch entsprechende Schalter zu- oder abgeschaltet werden können. Vergewissern sie sich vor dem Einbau neuer Geräte ob integrierte Abschluss-Widerstände benutzt werden und wie sie konfiguriert sind. Falsch terminierte Busse können Übertragungsprobleme verursachen, die schwer zu finden sind.
