@@ -27,7 +27,7 @@ NMEA2000 ist ein Bussystem und dient der Datenübertragung zwischen elektronisch
 
 * Differenzielles bidirektionales Datenprotokoll auf Binär-Basis
 * halb duplex mit Kollisionserkennung und Vermeidung
-* Busstruktur
+* Busstruktur (isoliert)
 * Beidseitige Bus-Terminierung
 * Unterstützte Protokolle
 	* CAN (Standard, mit speziellen Datenpaketen)
@@ -169,8 +169,8 @@ NMEA 0183 ist ein Standard für serielle Datenübertragung in der Schifffahrt. E
 **Spezifikation NMEA0183**
 
 * Serielles unidirektionales Datenprotokoll auf ASCII-Basis
-* Punkt zu Punkt-Verbindung
-* halb duplex ohne Kollisionserkennung und Vermeidung
+* Punkt zu Punkt-Verbindung (isoliert)
+* simplex ohne Kollisionserkennung und Vermeidung
 * Bus-Terminierung am Empfänger
 * Unterstützte Protokolle
 	* RS422 (Standard)
@@ -313,8 +313,8 @@ Der I2C-Bus dient zur Anbindung von elektronischen Komponenten. Er wird hauptsä
 
 **Spezifikation I2C**
 
-* Serielles bidirektionales Datenprotokoll auf Binär-Basis
-* Busstruktur
+* Serielles bidirektionales synchrones Datenprotokoll auf Binär-Basis
+* Busstruktur (isoliert)
 * halb duplex mit Kollisionserkennung und Vermeidung
 * Bus-Terminierung intern über PullUp-Widerstände
 * Unterstützte Protokolle
@@ -358,4 +358,47 @@ Abb.: I2C-Anbindung von externen Sensoren
    
     
 .. danger::
-    Bestimmen Sie den Strombedarf Ihrer externen Sensoren und achten Sie darauf, dass die Stromversorgung ``5Viso`` nicht überlastet wird oder einen Kurzschluss bekommt. Der maximal zulässige Strom liegt bei **200 mA**. Anderenfalls fallen sonst alle isolierten Bussysteme wie NMEA2000, NMEA0183 und I2C aus, da sie mit der selben Stromquelle versorgt werden. Die Folge ist ein Kommunikationsverlust auf allen genannten Bussystemen, der schwere Folgen für die Navigation des Bootes haben kann.
+    Bestimmen Sie den Strombedarf Ihrer externen Sensoren und achten Sie darauf, dass die Stromversorgung ``5Viso`` nicht überlastet wird oder einen Kurzschluss bekommt. Der maximal zulässige Strom liegt bei **200 mA**. Anderenfalls fallen sonst alle isolierten Bussysteme wie NMEA2000, NMEA0183 und I2C aus, da sie mit der selben Stromquelle versorgt werden. Die Folge ist ein Kommunikationsverlust auf allen genannten Bussystemen, der schwere Folgen für die Navigation des Bootes haben kann. Verbinden Sie ``GND2`` nicht mit ``GND`` oder ``GNDS``, da die Isolationswirkung verloren geht und die Empfindlichkeit auf Störungen steigt.
+    
+1Wire
+-----
+
+Der 1Wire-Bus ist ein Eindraht-Bus zur seriellen Übertragung von Daten in elektronischen Schaltungen. Neben der Datenleitung wird noch eine Masseleitung als Potenzialbezug benötigt. Die Übertragung ist bidirektional und asynchron. Der 1Wire-Bus wird oft für einfache Sensoren verwendet die nur kleine Datenmengen übertragen, wie z.B. für die Temperatursensoren **DS18B20**. Beim OBP60 ist der 1Wire-Bus an der Anschlussklemme CN2 herausgeführt.
+
+**Spezifikation 1Wire**
+
+* Serielles bidirektionales asynchrones Datenprotokoll auf Binär-Basis
+* Busstruktur (nicht isoliert)
+* halb duplex mit Kollisionserkennung und Vermeidung
+* Bus-Terminierung über PullUp-Widerstand am Ausgang
+* Unterstützte Protokolle
+	* 1Wire, TTL 3.3V
+* Datenrate 9600 kBit/s (bei parasitärer Stromversorgung über Datenleitung)
+* Stromversorgung von Sensoren über Datenleitung
+* Buslänge bis zu 10 m (abhängig von Datenrate und Stromversorgung)
+* Kabelart nicht spezifiziert
+* Steckerart für einige Anwendungen spezifiziert
+
+Der 1Wire-Bus bietet eine einfache und kostengünstige Möglichkeit, Temperatursensoren einzubinden. Zur Anbindung werden nur 3 Leitungen am OBP60 benötigt.
+
++--------+--------------------+
+|Ausgang |Bedeutung           |
++========+====================+
+|1Wire   |Datenleitung        |
++--------+--------------------+
+|GND     |Masse 1Wire         |
++--------+--------------------+
+|GND2    |Schirmung           |
++--------+--------------------+
+
+Die Stromversorgung der Temperatursensoren erfolgt parasitär über die Datenleitung. Intern im Sensor befindet sich ein Kondensator der eine gewisse Menge an Energie für den Zeitpunkt der Übertragung speichern kann, wenn der Datenpegel auf 3.3V liegt. Die Sensoren werden über eindeutige Adressen angesprochen und können mit dem OBP60 Daten austauschen. Durch die parasitäre Stromversorgung ist die Datenrate auf 9600 kBit/s limitiert. Die Sensoren können nur wenige Male in der Minute abgefragt werden, da sie ihre Energie über einen längeren Zeitraum über die Datenleitung sammeln müssen. 1Wire-Temperatur-Sensoren eignen sich daher nur für die Verarbeitung unkritische Temperaturwerte.
+
+Nachfolgend ist eine Beispielanwendung für 1Wire-Temperatur-Sensoren zu sehen.
+
+.. image:: ../pics/1Wire_Sample_Setup.png
+             :scale: 50%
+Abb.: 1Wire-Anbindung von externen Temperatur-Sensoren DS18B20
+
+
+
+
