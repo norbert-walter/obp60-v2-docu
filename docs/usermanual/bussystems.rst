@@ -291,11 +291,48 @@ Abb.: NMEA0183 Minimalkonfiguration
 .. hint::
     In ähnlicher Art und Weise können auch andere Sensoren an das OBP60 angebunden werden. Dabei ist aber zu berücksichtigen, dass immer nur ein Gerät oder Sensor mit dem OBP60 verbunden werden kann. Wenn mehere Geräte eingebunden werden sollen, dann benötigt man einen Multiplexer.
 
-Die meisten Multiplexer haben mehrere NMEA0183-Eingänge und mindestens einen NMEA0183-Ausgang. Bei der Verwendung eines Multiplexers werden alle Sensoren an die NMEA0183-Eingänge des Multiplexers angeschlossen und der NMEA0183-Ausgang mit dem OBP60 verbunden. Das OBP60 ist auf empfangen konfiguriert und die Terminierung des Bussystems ist deaktiviert.
+Die meisten Multiplexer haben mehrere NMEA0183-Eingänge und mindestens einen NMEA0183-Ausgang. Bei der Verwendung eines Multiplexers werden alle Sensoren an die NMEA0183-Eingänge des Multiplexers angeschlossen und der NMEA0183-Ausgang mit dem OBP60 verbunden. Der Multiplexer bündelt dann die Datenströme aller Sensoren zu einem gemeinsamen Datenstrom am Ausgang. Über Filter am Datenausgang lässt sich die Datenmenge auf wichtige Daten eingrenzen. Das OBP60 ist in dem Beispiel auf empfangen konfiguriert. Die Terminierung des Bussystems ist deaktiviert.
 
 .. image:: ../pics/NMEA0183_Sample_Setup_Multiplexer.png
              :scale: 50%
 Abb.: NMEA0183-Verbindung zu einem Multiplexer
 
+.. hint::
+    Alle NMEA0183-Daten werden vom OBP60-Gateway automatisch nach NMEA2000 konvertiert. Die Konvertierung ist dabei unidirektional und funktioniert nur in Richtung NMEA2000. In umgekehrte Richtung nach NMEA0183 werden keine Daten konvertiert, da der NMEA0183-Port des OBP60 im Empfangs-Modus arbeitet.
+    
+I2C
+---
+
+Der I2C-Bus dient zur Anbindung von elektronischen Komponenten. Er wird hauptsächlich im Elektronikbereich eingesetzt, um verschiedene Komponenten auf einer Platine miteinander kostengünstig zu verbinden. Die Verbindung erfolgt über eine Zweidrahtleitung und arbeitet mit Signalpegeln von 3.3V oder 5.0V. Es gibt das Taktsignal **SCL* und das Datensignal **SDA**. Die Kommunikation läuft als Master und Slave System. Dabei steuert der Master die Slaves über eine Adresse an und kann mit ihnen Daten austauschen.
+
+**Spezifikation I2C**
+
+* Serielles bidirektionales Datenprotokoll auf Binär-Basis
+* Busstruktur
+* halb duplex mit Kollisionserkennung und Vermeidung
+* Bus-Terminierung intern über PullUp-Widerstände
+* Unterstützte Protokolle
+	* I2C, TTL 5.0V
+* Datenrate 100.000 kBit/s variabel
+* Stromversorgung von Sensoren und Anzeigegeräten über separate Leitungen
+* Buslänge bis zu 10 m (abhängig von Datenrate und Kabelart)
+* Kabelart nicht spezifiziert
+* Steckerart nicht spezifiziert
+
+Im OBP60 ist der I2C-Bus isoliert gegenüber der Außenwelt aufgebaut und verwendet 5.0V TTL-Signalpegel. Der Takt- und Datenausgang sind über Leitungstreiber herausgeführt, die lange Leitungen mit einer hohen Leitungskapazität treiben können. Damit wird verhindert, dass sich Störungen im Bussystem negativ auf die Funktionssicherheit des OBP60 auswirken. Der I2C-Bus hat 5 Leitungen, über die externe Geräte angeschlossen werden können.
+
++--------+--------------------+
+|Ausgang |Bedeutung           |
++========+====================+
+|5V iso  |Versorgungsspannung |
++--------+--------------------+
+|GND2    |Masse I2C           |
++--------+--------------------+
+|Shield  |Schirmung I2C       |
++--------+--------------------+
+|SCL     |Bus-Takt            |
++--------+--------------------+
+|SDA     |Datenleitung        |
++--------+--------------------+
 
 
