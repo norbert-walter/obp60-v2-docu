@@ -137,7 +137,10 @@ Um das OBP60 an den NMEA2000-Bus anzuschließen, können Sie am einfachsten ein 
              :scale: 60%	
 Abb.: NMEA2000-Verbindung mit Stromversorgung über den NMEA2000-Bus
 
-Eine Minimal-Konfigutration könnte folgendermaßen aussehen. Dabei ist zu beachten, dass der NMEA2000-Bus auf der rechten Seite durch das OBP60 terminiert ist, indem die interne Busterminierung über den Jumper ``TN2K`` aktiviert wurde. Der Jumper ``TN2K`` befindet sich mittig zwischen den beiden Steckverbindern **CN1** und **CN2**. 
+Eine Minimal-Konfigutration könnte folgendermaßen aussehen. Dabei ist zu beachten, dass der NMEA2000-Bus auf der rechten Seite durch das OBP60 terminiert ist, indem die interne Busterminierung über den Jumper ``TN2K`` aktiviert wurde. Der Jumper ``TN2K`` befindet sich mittig zwischen den beiden Steckverbindern **CN1** und **CN2**.
+
+.. note::
+    Legen Sie den Schirm des NMEA2000-Kabels am Eingang ``Shield`` auf. Verbinden Sie den Schirm **nicht** mit GND, GND2 oder GNDS, da Sie damit Masseschleifen erzeugen oder die Isolationswirkung verloren geht. Der gesamte Schirm der Busleitung darf nur an Eingang ``Shield`` des NMEA2000-Bus am OBP60 einseitig aufgelegt werden. Andere Schrimeingänge dürfen nicht benutzt werden. 
 
 .. image:: ../pics/NMEA2000_Sample_Setup_Minimal_Configuration.png
              :scale: 60%	
@@ -292,7 +295,7 @@ Abb.: NMEA0183 Minimalkonfiguration
     In ähnlicher Art und Weise können auch andere Sensoren an das OBP60 angebunden werden. Dabei ist aber zu berücksichtigen, dass immer nur ein Gerät oder Sensor mit dem OBP60 verbunden werden kann. Wenn mehere Geräte eingebunden werden sollen, dann benötigt man einen Multiplexer.
     
 .. note::
-    Verwenden Sie für die Verkabelung externer Sensoren an NMEA0183 möglichst geschirmte Kabel und führen den Schirm direkt bis zum Sensor. Verbinden Sie den Schirm am Sensor **nicht** mit GND2, da Sie damit Masseschleifen erzeugen. Der gesamte Schirm der Busleitung darf nur an Eingang ``Shield`` des NMEA0183-Bus am OBP60 aufgelegt werden. Andere Schrimeingänge dürfen nicht benutzt werden.
+    Verwenden Sie für die Verkabelung externer Sensoren an NMEA0183 möglichst geschirmte Kabel und führen den Schirm direkt bis zum Sensor. Verbinden Sie den Schirm am Sensor **nicht** mit GND2, da Sie damit Masseschleifen erzeugen. Der gesamte Schirm der Busleitung darf nur einseitig an Eingang ``Shield`` des NMEA0183-Bus am OBP60 aufgelegt werden. Der Schirm am anderen Ende der Leitung beleibt offen. Andere Schrimeingänge dürfen nicht benutzt werden.
 
 Die meisten Multiplexer haben mehrere NMEA0183-Eingänge und mindestens einen NMEA0183-Ausgang. Bei der Verwendung eines Multiplexers werden alle Sensoren an die NMEA0183-Eingänge des Multiplexers angeschlossen und der NMEA0183-Ausgang mit dem OBP60 verbunden. Der Multiplexer bündelt dann die Datenströme aller Sensoren zu einem gemeinsamen Datenstrom am Ausgang. Über Filter am Datenausgang lässt sich die Datenmenge auf wichtige Daten eingrenzen. Das OBP60 ist in dem Beispiel auf empfangen konfiguriert. Die Terminierung des Bussystems ist deaktiviert.
 
@@ -345,10 +348,10 @@ Im folgenden Bild ist ein I2C-Busaufbau zu sehen mit 3 I2C-Sensoren. Alle Sensor
 Abb.: I2C-Anbindung von externen Sensoren
 
 .. note::
-    Verwenden Sie für die Verkabelung externer Sensoren möglichst geschirmte Kabel und führen den Schirm direkt bis zum Sensor. Verbinden Sie den Schirm am Sensor **nicht** mit GND2, da Sie damit Masseschleifen erzeugen. Der gesamte Schirm der Busleitung darf nur an Eingang ``Shield`` des I2C-Bus am OBP60 aufgelegt werden. Andere Schrimeingänge dürfen nicht benutzt werden. Halten Sie Stichleitungen vom Buss zu den Sensoren möglichst kurz.
+    Verwenden Sie für die Verkabelung externer Sensoren möglichst geschirmte Kabel und führen den Schirm direkt bis zum Sensor. Verbinden Sie den Schirm am Sensor **nicht** mit GND2, da Sie damit Masseschleifen erzeugen. Der gesamte Schirm der Busleitung darf nur einseitig an Eingang ``Shield`` des I2C-Bus am OBP60 aufgelegt werden. Der Schirm am anderen Ende der Leitung beleibt offen. Andere Schrimeingänge dürfen nicht benutzt werden. Halten Sie Stichleitungen vom Buss zu den Sensoren möglichst kurz.
     
 .. caution::
-    Wenn Sie externe Sensoren oder Module am I2C-Bus verwenden wollen, dann prüfen Sie, ob es zu einem Adresskonflikt zwischen den Sensoren oder Modulen kommen kann. Achten Sie darauf, dass eine I2C-Adresse nicht mehrfach vergeben ist. Es kommt dann zu Kommunikationsstörungen auf dem I2C-Bus. Insbesondere bei mehrfacher Verwendung gleicher Module müssen die I2C-Adressen verschieden eingestellt werden. Bei einigen I2C-Modulen ist das nicht möglich. In dem Fall können Sie nur ein I2C-Modul im Bus verwenden. Das OBP60 benutzt bereits folgende Adressen: 0x76, 0xD0
+    Wenn Sie externe Sensoren oder Module am I2C-Bus verwenden wollen, dann prüfen Sie, ob es zu einem Adresskonflikt zwischen den Sensoren oder Modulen kommen kann. Achten Sie darauf, dass eine I2C-Adresse nicht mehrfach vergeben ist. Es kommt dann zu Kommunikationsstörungen auf dem I2C-Bus. Insbesondere bei mehrfacher Verwendung gleicher Module müssen die I2C-Adressen verschieden eingestellt werden. Bei einigen I2C-Modulen ist das nicht möglich. In dem Fall können Sie nur ein I2C-Modul im Bus verwenden. Das OBP60 benutzt bereits folgende Adressen, die nicht benutzt wrden dürfen: 0x76, 0xD0
     
 .. danger::
     Bestimmen Sie den Strombedarf Ihrer externen Sensoren und achten Sie darauf, dass die Stromversorgung **5Viso** nicht überlastet wird oder einen Kurzschluss bekommt. Der maximal zulässige Strom liegt bei **200 mA**. Anderenfalls fallen sonst alle isolierten Bussysteme wie NMEA2000, NMEA0183 und I2C aus, da sie mit der selben Stromquelle versorgt werden. Die Folge ist ein Kommunikationsverlust auf allen genannten Bussystemen, der schwere Folgen für die Navigation des Bootes haben kann.
