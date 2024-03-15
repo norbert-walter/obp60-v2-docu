@@ -459,7 +459,7 @@ Die USB-C-Schnittstelle dient primär der Kommunikation mit anderen Geräten. Da
     
 **Kommunikation** 
 
-Die USB-C-Schnittselle kann zur voll duplex-fähigen NMEA0183-Kommunikation mit weitern Geräten verwendet werden. Denkbar wären folgende Nutzungs-Szenarien:
+Die USB-C-Schnittselle kann zur voll duplex-fähigen NMEA0183-Kommunikation mit weiteren Geräten verwendet werden. Denkbar wären folgende Nutzungs-Szenarien:
 
 * Kommunikation mit einem Marine Control Server
 * Datenlieferant für ein Andriod-Autoradio als Plotter
