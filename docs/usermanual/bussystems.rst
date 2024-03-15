@@ -140,7 +140,7 @@ Abb.: NMEA2000-Verbindung mit Stromversorgung über den NMEA2000-Bus
 Eine Minimal-Konfigutration könnte folgendermaßen aussehen. Dabei ist zu beachten, dass der NMEA2000-Bus auf der rechten Seite durch das OBP60 terminiert ist, indem die interne Busterminierung über den Jumper ``TN2K`` aktiviert wurde. Der Jumper ``TN2K`` befindet sich mittig zwischen den beiden Steckverbindern **CN1** und **CN2**.
 
 .. note::
-    Legen Sie den Schirm des NMEA2000-Kabels am Eingang ``Shield`` auf. Verbinden Sie den Schirm **nicht** mit GND, GND2 oder GNDS, da Sie damit Masseschleifen erzeugen oder die Isolationswirkung verloren geht. Der gesamte Schirm der Busleitung darf nur an Eingang ``Shield`` des NMEA2000-Bus am OBP60 einseitig aufgelegt werden. Andere Schrimeingänge dürfen nicht benutzt werden. 
+    Legen Sie den Schirm des NMEA2000-Kabels am Eingang ``Shield`` auf. Verbinden Sie den Schirm **nicht** mit ``GND``, ``GND2`` oder ``GNDS``, da Sie damit Masseschleifen erzeugen oder die Isolationswirkung verloren geht. Der gesamte Schirm der Busleitung darf nur an Eingang ``Shield`` des NMEA2000-Bus am OBP60 einseitig aufgelegt werden. Andere Schrimeingänge dürfen nicht benutzt werden. 
 
 .. image:: ../pics/NMEA2000_Sample_Setup_Minimal_Configuration.png
              :scale: 60%	
@@ -295,7 +295,7 @@ Abb.: NMEA0183 Minimalkonfiguration
     In ähnlicher Art und Weise können auch andere Sensoren an das OBP60 angebunden werden. Dabei ist aber zu berücksichtigen, dass immer nur ein Gerät oder Sensor mit dem OBP60 verbunden werden kann. Wenn mehere Geräte eingebunden werden sollen, dann benötigt man einen Multiplexer.
     
 .. note::
-    Verwenden Sie für die Verkabelung externer Sensoren an NMEA0183 möglichst geschirmte Kabel und führen den Schirm direkt bis zum Sensor. Verbinden Sie den Schirm am Sensor **nicht** mit GND2, da Sie damit Masseschleifen erzeugen. Der gesamte Schirm der Busleitung darf nur einseitig an Eingang ``Shield`` des NMEA0183-Bus am OBP60 aufgelegt werden. Der Schirm am anderen Ende der Leitung beleibt offen. Andere Schrimeingänge dürfen nicht benutzt werden.
+    Verwenden Sie für die Verkabelung externer Sensoren an NMEA0183 möglichst geschirmte Kabel und führen den Schirm direkt bis zum Sensor. Verbinden Sie den Schirm am Sensor **nicht** mit ``GND2``, da Sie damit Masseschleifen erzeugen. Der gesamte Schirm der Busleitung darf nur einseitig an Eingang ``Shield`` des NMEA0183-Bus am OBP60 aufgelegt werden. Der Schirm am anderen Ende der Leitung beleibt offen. Andere Schrimeingänge dürfen nicht benutzt werden.
 
 Die meisten Multiplexer haben mehrere NMEA0183-Eingänge und mindestens einen NMEA0183-Ausgang. Bei der Verwendung eines Multiplexers werden alle Sensoren an die NMEA0183-Eingänge des Multiplexers angeschlossen und der NMEA0183-Ausgang mit dem OBP60 verbunden. Der Multiplexer bündelt dann die Datenströme aller Sensoren zu einem gemeinsamen Datenstrom am Ausgang. Über Filter am Datenausgang lässt sich die Datenmenge auf wichtige Daten eingrenzen. Das OBP60 ist in dem Beispiel auf empfangen konfiguriert. Die Terminierung des Bussystems ist deaktiviert.
 
@@ -341,21 +341,21 @@ Im OBP60 ist der I2C-Bus isoliert gegenüber der Außenwelt aufgebaut und verwen
 |SDA     |Datenleitung        |
 +--------+--------------------+
 
-Im folgenden Bild ist ein I2C-Busaufbau zu sehen mit 3 I2C-Sensoren. Alle Sensoren sind mit geschirmten Kabeln mit dem I2C-Eingang am OBP60 verbunden. Die Stromversorgung der externen Sensoren erfolgt direkt über das OBP60 über den integrierten isolierenden DC/DC-Wandler (5Viso, GND2). Der Versorgungsausgang kann bis zu 200 mA bei 5Viso liefern und einige Sensoren mit Strom versorgen.
+Im folgenden Bild ist ein I2C-Busaufbau zu sehen mit 3 I2C-Sensoren. Alle Sensoren sind mit geschirmten Kabeln mit dem I2C-Eingang am OBP60 verbunden. Die Stromversorgung der externen Sensoren erfolgt direkt über das OBP60 über den integrierten isolierenden DC/DC-Wandler (``5Viso``, ``GND2``). Der Versorgungsausgang kann bis zu 200 mA bei ``5Viso`` liefern und einige Sensoren mit Strom versorgen.
 
 .. image:: ../pics/I2C_Sample_Setup.png
              :scale: 50%
 Abb.: I2C-Anbindung von externen Sensoren
 
 .. note::
-    Verwenden Sie für die Verkabelung externer Sensoren möglichst geschirmte Kabel und führen den Schirm direkt bis zum Sensor. Verbinden Sie den Schirm am Sensor **nicht** mit GND2, da Sie damit Masseschleifen erzeugen. Der gesamte Schirm der Busleitung darf nur einseitig an Eingang ``Shield`` des I2C-Bus am OBP60 aufgelegt werden. Der Schirm am anderen Ende der Leitung beleibt offen. Andere Schrimeingänge dürfen nicht benutzt werden. Halten Sie Stichleitungen vom Buss zu den Sensoren möglichst kurz.
+    Verwenden Sie für die Verkabelung externer Sensoren möglichst geschirmte Kabel und führen den Schirm direkt bis zum Sensor. Verbinden Sie den Schirm am Sensor **nicht** mit ``GND2``, da Sie damit Masseschleifen erzeugen. Der gesamte Schirm der Busleitung darf nur einseitig an Eingang ``Shield`` des I2C-Bus am OBP60 aufgelegt werden. Der Schirm am anderen Ende der Leitung beleibt offen. Andere Schrimeingänge dürfen nicht benutzt werden. Halten Sie Stichleitungen vom Buss zu den Sensoren möglichst kurz.
 
 .. attention::
-    Einige I2C-Module können zwar mit 5V versorgt werden, benutzenn aber 3.3V TTL-Signale für SCL und SDA. In diesem Fall benötigen Sie einen Pegelwandler für das SCL- und SDA-Signal auf 5V TTL-Signale. Beachten Sie das nicht, so kann der I2C-Sensor oder das I2C-Modul beschädigt werden. Das Gleiche git auch für Module die nur mit 3,3V versorgt werden. Dann benötigen Sie neben dem Pegelwandler noch zusätzlich einen DC/DC-Wandler zur Reduzierung der Versorgungsspannung. Die meisten I2C-Module die für einen **Arduino Uno** verwendet werden können, lassen sich auch am OBP60 verwenden. Diese Module sind für 5V-Signale geeignet.
+    Einige I2C-Module können zwar mit 5V versorgt werden, benutzen aber 3.3V TTL-Signale für ``SCL`` und ``SDA``. In diesem Fall benötigen Sie einen Pegelwandler für das SCL- und SDA-Signal auf 5V TTL-Signale. Beachten Sie das nicht, so kann der I2C-Sensor oder das I2C-Modul beschädigt werden. Das Gleiche git auch für Module die nur mit 3,3V versorgt werden. Dann benötigen Sie neben dem Pegelwandler noch zusätzlich einen DC/DC-Wandler zur Reduzierung der Versorgungsspannung. Die meisten I2C-Module die für einen **Arduino Uno** verwendet werden können, lassen sich auch am OBP60 verwenden. Diese Module sind für 5V-TTL-Signale geeignet.
    
 .. caution::
     Wenn Sie externe Sensoren oder Module am I2C-Bus verwenden wollen, dann prüfen Sie, ob es zu einem Adresskonflikt zwischen den Sensoren oder Modulen kommen kann. Achten Sie darauf, dass eine I2C-Adresse nicht mehrfach vergeben ist. Es kommt dann zu Kommunikationsstörungen auf dem I2C-Bus. Insbesondere bei mehrfacher Verwendung gleicher Module müssen die I2C-Adressen verschieden eingestellt werden. Bei einigen I2C-Modulen ist das nicht möglich. In dem Fall können Sie nur ein I2C-Modul im Bus verwenden. Das OBP60 benutzt bereits folgende Adressen, die nicht benutzt wrden dürfen: 0x76, 0xD0
    
     
 .. danger::
-    Bestimmen Sie den Strombedarf Ihrer externen Sensoren und achten Sie darauf, dass die Stromversorgung **5Viso** nicht überlastet wird oder einen Kurzschluss bekommt. Der maximal zulässige Strom liegt bei **200 mA**. Anderenfalls fallen sonst alle isolierten Bussysteme wie NMEA2000, NMEA0183 und I2C aus, da sie mit der selben Stromquelle versorgt werden. Die Folge ist ein Kommunikationsverlust auf allen genannten Bussystemen, der schwere Folgen für die Navigation des Bootes haben kann.
+    Bestimmen Sie den Strombedarf Ihrer externen Sensoren und achten Sie darauf, dass die Stromversorgung ``5Viso`` nicht überlastet wird oder einen Kurzschluss bekommt. Der maximal zulässige Strom liegt bei **200 mA**. Anderenfalls fallen sonst alle isolierten Bussysteme wie NMEA2000, NMEA0183 und I2C aus, da sie mit der selben Stromquelle versorgt werden. Die Folge ist ein Kommunikationsverlust auf allen genannten Bussystemen, der schwere Folgen für die Navigation des Bootes haben kann.
