@@ -397,8 +397,25 @@ Nachfolgend ist eine Beispielanwendung für 1Wire-Temperatur-Sensoren zu sehen.
 
 .. image:: ../pics/1Wire_Sample_Setup.png
              :scale: 50%
-Abb.: 1Wire-Anbindung von externen Temperatur-Sensoren DS18B20
+Abb.: 1Wire-Anbindung von externen Temperatur-Sensoren (parasitär)
 
+Die Belegung der Temperatur-Sensoren ist folgendermaßen durchzuführen.
 
++--------+--------------------+
+|Ausgang |Temperatursensor    |
++========+====================+
+|1Wire   |gelb, Datenleitung  |
++--------+--------------------+
+|GND     |schwarz + rot       |
++--------+--------------------+
+|GND2    |Schirm              |
++--------+--------------------+
 
+.. note::
+    Verwenden Sie für die Verkabelung externer Temperatur-Sensoren möglichst geschirmte Kabel und führen den Schirm direkt bis zum Sensor. Verbinden Sie den Schirm am Sensor **nicht** mit ``GND``, da Sie damit Masseschleifen erzeugen. Der gesamte Schirm der Busleitung darf nur einseitig an Eingang ``GND2`` des 1Wire-Bus am OBP60 aufgelegt werden. Der Schirm am anderen Ende der Leitung beleibt offen. Andere Schrimeingänge dürfen nicht benutzt werden. Halten Sie Stichleitungen vom Buss zu den Sensoren möglichst kurz.
+    
+.. hint::
+    Wenn möglich, verwenden Sie Temperatursensoren am I2C-Bus anstatt am 1Wire-Bus. Sie erhöhen damit die Betriebssicherheit des Gesamtsystems, da der I2C-Bus gegenüber der Außenwelt isoliert ist.
 
+.. caution::
+    Der 1Wire-Bus ist nicht isoliert gegenüber der internen Schaltung des OBP60. Das erhöht das Risiko, dass eingekoppelte Störungen in die Busleitungen die Funktion und Stabilität des OBP60 beeinträchtigen können. Im schlimmsten Fall kann es zum kompletten Ausfall des OBP60 führen mit schweren Folgen für die Navigationsfähigkeit des Bootes.
