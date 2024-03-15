@@ -290,6 +290,9 @@ Abb.: NMEA0183 Minimalkonfiguration
 
 .. hint::
     In ähnlicher Art und Weise können auch andere Sensoren an das OBP60 angebunden werden. Dabei ist aber zu berücksichtigen, dass immer nur ein Gerät oder Sensor mit dem OBP60 verbunden werden kann. Wenn mehere Geräte eingebunden werden sollen, dann benötigt man einen Multiplexer.
+    
+.. note::
+    Verwenden Sie für die Verkabelung externer Sensoren an NMEA0183 möglichst geschirmte Kabel und führen den Schirm direkt bis zum Sensor. Verbinden Sie den Schirm am Sensor **nicht** mit GND2, da Sie damit Masseschleifen erzeugen. Der gesamte Schirm der Busleitung darf nur an Eingang ``Shield`` des NMEA0183-Bus am OBP60 aufgelegt werden. Andere Schrimeingänge dürfen nicht benutzt werden.
 
 Die meisten Multiplexer haben mehrere NMEA0183-Eingänge und mindestens einen NMEA0183-Ausgang. Bei der Verwendung eines Multiplexers werden alle Sensoren an die NMEA0183-Eingänge des Multiplexers angeschlossen und der NMEA0183-Ausgang mit dem OBP60 verbunden. Der Multiplexer bündelt dann die Datenströme aller Sensoren zu einem gemeinsamen Datenstrom am Ausgang. Über Filter am Datenausgang lässt sich die Datenmenge auf wichtige Daten eingrenzen. Das OBP60 ist in dem Beispiel auf empfangen konfiguriert. Die Terminierung des Bussystems ist deaktiviert.
 
@@ -303,7 +306,7 @@ Abb.: NMEA0183-Verbindung zu einem Multiplexer
 I2C
 ---
 
-Der I2C-Bus dient zur Anbindung von elektronischen Komponenten. Er wird hauptsächlich im Elektronikbereich eingesetzt, um verschiedene Komponenten auf einer Platine miteinander kostengünstig zu verbinden. Die Verbindung erfolgt über eine Zweidrahtleitung und arbeitet mit Signalpegeln von 3.3V oder 5.0V. Es gibt das Taktsignal **SCL* und das Datensignal **SDA**. Die Kommunikation läuft als Master und Slave System. Dabei steuert der Master die Slaves über eine Adresse an und kann mit ihnen Daten austauschen.
+Der I2C-Bus dient zur Anbindung von elektronischen Komponenten. Er wird hauptsächlich im Elektronikbereich eingesetzt, um verschiedene Komponenten auf einer Platine miteinander kostengünstig zu verbinden. Die Verbindung erfolgt über eine Zweidrahtleitung und arbeitet mit Signalpegeln von 3.3V oder 5.0V. Es gibt das Taktsignal **SCL** und das Datensignal **SDA**. Die Kommunikation läuft als Master und Slave System. Dabei steuert der Master die Slaves über eine eindeutige Adresse an und kann mit ihnen Daten austauschen.
 
 **Spezifikation I2C**
 
@@ -324,7 +327,7 @@ Im OBP60 ist der I2C-Bus isoliert gegenüber der Außenwelt aufgebaut und verwen
 +--------+--------------------+
 |Ausgang |Bedeutung           |
 +========+====================+
-|5V iso  |Versorgungsspannung |
+|5Viso   |Versorgungsspannung |
 +--------+--------------------+
 |GND2    |Masse I2C           |
 +--------+--------------------+
@@ -335,14 +338,17 @@ Im OBP60 ist der I2C-Bus isoliert gegenüber der Außenwelt aufgebaut und verwen
 |SDA     |Datenleitung        |
 +--------+--------------------+
 
-Im folgenden Bild ist ein I2C-Busaufbau zu sehen mit 3 I2C-Sensoren. Alle Sensoren sind mit geschirmten Kabeln mit dem I2C-Eingang am OBP60 verbunden. Die Stromversorgung der externen Sensoren erfolgt direkt über das OBP60 über den integrierten isolierenden DC/DC-Wandler (5.0Viso, GND2). Der Versorgungsausgang kann bis zu 200 mA bei 5V liefern und einige Sensoren mit Strom versorgen.
+Im folgenden Bild ist ein I2C-Busaufbau zu sehen mit 3 I2C-Sensoren. Alle Sensoren sind mit geschirmten Kabeln mit dem I2C-Eingang am OBP60 verbunden. Die Stromversorgung der externen Sensoren erfolgt direkt über das OBP60 über den integrierten isolierenden DC/DC-Wandler (5Viso, GND2). Der Versorgungsausgang kann bis zu 200 mA bei 5Viso liefern und einige Sensoren mit Strom versorgen.
 
 .. image:: ../pics/I2C_Sample_Setup.png
              :scale: 50%
 Abb.: I2C-Anbindung von externen Sensoren
 
 .. note::
-    Verwenden Sie für die Verkabelung externer Sensoren geschirmte Kabel und führen den Schirm direkt bis zum Sensor. Verbinden Sie den Schirm am Sensor **nicht** mit GND2, da Sie damit Masseschleifen erzeugen. Der gesamte Schirm der Busleitung darf nur an Eingang ``Shield`` des OBP60 aufgelegt werden. Halten Sie Stichleitungen vom Buss zu den Sensoren möglichst kurz.
+    Verwenden Sie für die Verkabelung externer Sensoren möglichst geschirmte Kabel und führen den Schirm direkt bis zum Sensor. Verbinden Sie den Schirm am Sensor **nicht** mit GND2, da Sie damit Masseschleifen erzeugen. Der gesamte Schirm der Busleitung darf nur an Eingang ``Shield`` des I2C-Bus am OBP60 aufgelegt werden. Andere Schrimeingänge dürfen nicht benutzt werden. Halten Sie Stichleitungen vom Buss zu den Sensoren möglichst kurz.
+    
+.. caution::
+    Wenn Sie externe Sensoren oder Module am I2C-Bus verwenden wollen, dann prüfen Sie, ob es zu einem Adresskonflikt zwischen den Sensoren oder Modulen kommen kann. Achten Sie darauf, dass eine I2C-Adresse nicht mehrfach vergeben ist. Es kommt dann zu Kommunikationsstörungen auf dem I2C-Bus. Insbesondere bei mehrfacher Verwendung gleicher Module müssen die I2C-Adressen verschieden eingestellt werden. Bei einigen I2C-Modulen ist das nicht möglich. In dem Fall können Sie nur ein I2C-Modul im Bus verwenden. Das OBP60 benutzt bereits folgende Adressen: 0x76, 0xD0
     
 .. danger::
-    Bestimmen Sie den Strombedarf Ihrer externen Sensoren und achten Sie darauf, dass die Stromversorgung **5Viso** nicht überlastet wird oder einen Kurzschluss bekommt. Der maximal zulässige Strom liegt bei 200 mA. Anderenfalls fallen sonst alle isolierten Bussysteme wie NMEA2000, NMEA0183 und I2C aus, da sie mit der selben Stromquelle versorgt werden. Die Folge ist ein Kommunikationsverlust auf allen genannten Bussystemen, der schwere Folgen für die Navigation des Bootes haben kann.
+    Bestimmen Sie den Strombedarf Ihrer externen Sensoren und achten Sie darauf, dass die Stromversorgung **5Viso** nicht überlastet wird oder einen Kurzschluss bekommt. Der maximal zulässige Strom liegt bei **200 mA**. Anderenfalls fallen sonst alle isolierten Bussysteme wie NMEA2000, NMEA0183 und I2C aus, da sie mit der selben Stromquelle versorgt werden. Die Folge ist ein Kommunikationsverlust auf allen genannten Bussystemen, der schwere Folgen für die Navigation des Bootes haben kann.
