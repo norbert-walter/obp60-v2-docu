@@ -285,7 +285,7 @@ Wer mehr Informationen zu NMEA0183-Telegrammen erfahren möchte, findet auf dies
 
 **Verkabelung für NMEA0183**
 
-Im nachfolgenden Bild ist eine Konfiguration zu sehen in der ein NMEA0183-Windsensor mit dem OBP60 verbunden ist. Der Windsensor sendet die Daten zum OBP60. Der OBP60 ist als NMEA0183-Empfänger konfiguriert. Die Bus-Terminierung ist über den Jumper ``T183`` aktiviert.
+Im nachfolgenden Bild ist eine Konfiguration zu sehen in der ein NMEA0183-Windsensor mit dem OBP60 verbunden ist. Der Windsensor sendet die Daten zum OBP60 und ist als NMEA0183-Empfänger konfiguriert. Die Bus-Terminierung ist über den Jumper ``T183`` aktiviert.
 
 .. image:: ../pics/NMEA0183_Sample_Setup_Minimal.png
              :scale: 50%
@@ -449,7 +449,7 @@ Die USB-C-Schnittstelle im OBP60 dient zum Flashen der Firmware und zum Debuggin
 
 **Stromversorgung**
 
-Die USB-C-Schnittstelle dient primär der Kommunikation mit anderen Geräten. Das OBP60 kann auch über USB-C mit Strom versorgt werden. Das ist ganz nützlich, wenn man z.B. eine Software-Entwicklung durchführt und das Gerät am Schreibtisch nutzen möchte. Das stromliefernde Gerät muss bis zu 500 mA Strom mit einer Spannung von 5V bereitstellen können. Die USB-C-Schnittstelle verfügt über einen Rücklaufschutz, so dass kein Strom aus dem OBP60 herausfließen kann. Das OBP60 kann auch gleichzeitig mit 12V und über USB-C mit 5V versorgt werden.
+Das OBP60 kann auch über USB-C mit Strom versorgt werden. Das ist ganz nützlich, wenn man z.B. eine Software-Entwicklung durchführt und das Gerät am Schreibtisch nutzen möchte. Das stromliefernde Gerät muss bis zu 500 mA Strom mit einer Spannung von 5V bereitstellen können. Die USB-C-Schnittstelle verfügt über einen Rücklaufschutz, so dass kein Strom aus dem OBP60 herausfließen kann. Das OBP60 kann auch gleichzeitig mit 12V und über USB-C mit 5V versorgt werden.
 
 .. hint::
     Die reguläre Stromversorgung des OBP60 im Boot erfolgt immer über 12V aus dem Bordnetz. Es wird nicht empfohlen eine Versorgung über USB-C durchzuführen. 
