@@ -418,6 +418,9 @@ Die Belegung der DS18B20-Temperatur-Sensoren ist folgendermaßen durchzuführen.
     
 .. hint::
     Wenn möglich, verwenden Sie Temperatursensoren am I2C-Bus anstatt am 1Wire-Bus. Sie erhöhen damit die Betriebssicherheit des Gesamtsystems, da der I2C-Bus gegenüber der Außenwelt isoliert ist.
+    
+.. hint::
+    Im Internet-Handel sind schlechte Kopien von DS18B20-Temperatur-Sensoren im Umlauf, die eine parasitäte Stromversorgung nicht unterstützen. Wenn Sie keine Kommunikation mit dem OBP60 zustande bekommen, dann versuchen Sie andere Sensoren. Wenn das zu keinem Erfolg führt, dann benutzen Sie eine normale Stromversorgung für die Temperatursensoren. Mit dieser Art der Stromversorgung sollten nahezu alle Sensoren funktionieren.
 
 .. caution::
     Der 1Wire-Bus ist nicht isoliert gegenüber der internen Schaltung des OBP60. Das erhöht bei unsachgemäßer Installation das Risiko, dass eingekoppelte Störungen in die Busleitungen die Funktion und Stabilität des OBP60 beeinträchtigen können. Im schlimmsten Fall kann es zum kompletten Ausfall des OBP60 führen mit schweren Folgen für die Navigationsfähigkeit des Bootes.
@@ -428,4 +431,38 @@ Die Belegung der DS18B20-Temperatur-Sensoren ist folgendermaßen durchzuführen.
 USB
 ---
 
+Die USB-C-Schnittstelle im OBP60 dient zum Flashen der Firmware und zum Debugging. Die USB-Schnittstelle ist als serielle Schnittstelle ausgeführt. Darüber hinaus kann auch eine bidirektionale, voll duplex-fähige NMEA0183-Kommunikation zu anderen Geräten wie einem Laptop, PC oder einem Marine Control Server aufgebaut werden.
 
+**Spezifikation USB**
+
+* Serielles bidirektionales asynchrones Datenprotokoll auf Binär-Basis
+* Punkt zu Punkt (nicht isoliert)
+* voll duplex
+* Bus-Terminierung über PullUp-Widerstand im ESP32
+* Unterstützte Protokolle
+	* USB 1.1, TTL 3.3V
+* Datenrate 1 MBit/s
+* Stromversorgung von externen Geräten nicht möglich
+* Buslänge bis zu 3 m
+* Kabelart geschirmt
+* Steckerart USB-C mit Kodierung
+
+**Stromversorgung**
+
+Die USB-C-Schnittstelle dient primär der Kommunikation mit anderen Geräten. Das OBP60 kann auch über USB-C mit Strom versorgt werden. Das ist ganz nützlich, wenn man z.B. eine Software-Entwicklung durchführt und das Gerät am Schreibtisch nutzen möchte. Das stromliefernde Gerät muss bis zu 500 mA Strom mit einer Spannung von 5V bereitstellen können. Die USB-C-Schnittstelle verfügt über einen Rücklaufschutz, so dass kein Strom aus dem OBP60 herausfließen kann. Das OBP60 kann auch gleichzeitig mit 12V und über USB-C mit 5V versorgt werden.
+
+.. hint::
+    Die reguläre Stromversorgung des OBP60 im Boot erfolgt immer über 12V aus dem Bordnetz. Es wird nicht empfohlen eine Versorgung über USB-C durchzuführen. 
+
+.. danger::
+    In einigen Situationen kann es vorkommen, dass unzulässige Ausgleichsströme über die nicht isolierte USB-C-Schnittstelle fließen und das OBP60 beschädigen können. Das passiert z.B. dann, wenn Ladegeräte mit dem 230V Landstrom verbunden sind und die Bord-Batterie aufladen und gleichzeitig ein Laptop mit Netzversorgung mit dem OBP60 über USB-C verbunden ist. Bei einem isolierten Betrieb des Laptops über den einegbauten Akku entstehen solche Probleme nicht. Wenn Sie beabsichtigen die USB-C-Verbindung dauerhaft zur Kommunikation im Boot zu nutzen, sollten sie einen USB-Isolator verwenden, um Schäden zu vermeiden.
+    
+**Kommunikation** 
+
+Die USB-C-Schnittselle kann zur voll duplex-fähigen NMEA0183-Kommunikation mit weitern Geräten verwendet werden. Denkbar wären folgende Nutzungs-Szenarien:
+
+* Kommunikation mit einem Marine Control Server
+* Datenlieferant für ein Andriod-Autoradio als Plotter
+* Kommunikation mit einem Laptop oder PC zur Softwareentwicklung, Diagnose und zum Flashen der Firmware
+* Zur Diagnose der Buskommunikation mit externer Software wie dem Actisense Reader
+* Einspeisung von Simulationsdaten in die Bussysteme mit dem NMEA-Simulator
