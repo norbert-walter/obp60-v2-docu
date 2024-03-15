@@ -399,7 +399,7 @@ Nachfolgend ist eine Beispielanwendung für 1Wire-Temperatur-Sensoren zu sehen.
              :scale: 50%
 Abb.: 1Wire-Anbindung von externen Temperatur-Sensoren (parasitär)
 
-Die Belegung der Temperatur-Sensoren ist folgendermaßen durchzuführen.
+Die Belegung der DS18B20-Temperatur-Sensoren ist folgendermaßen durchzuführen.
 
 +--------+--------------------+
 |Ausgang |Temperatursensor    |
@@ -418,4 +418,7 @@ Die Belegung der Temperatur-Sensoren ist folgendermaßen durchzuführen.
     Wenn möglich, verwenden Sie Temperatursensoren am I2C-Bus anstatt am 1Wire-Bus. Sie erhöhen damit die Betriebssicherheit des Gesamtsystems, da der I2C-Bus gegenüber der Außenwelt isoliert ist.
 
 .. caution::
-    Der 1Wire-Bus ist nicht isoliert gegenüber der internen Schaltung des OBP60. Das erhöht das Risiko, dass eingekoppelte Störungen in die Busleitungen die Funktion und Stabilität des OBP60 beeinträchtigen können. Im schlimmsten Fall kann es zum kompletten Ausfall des OBP60 führen mit schweren Folgen für die Navigationsfähigkeit des Bootes.
+    Der 1Wire-Bus ist nicht isoliert gegenüber der internen Schaltung des OBP60. Das erhöht bei unsachgemäßer Installation das Risiko, dass eingekoppelte Störungen in die Busleitungen die Funktion und Stabilität des OBP60 beeinträchtigen können. Im schlimmsten Fall kann es zum kompletten Ausfall des OBP60 führen mit schweren Folgen für die Navigationsfähigkeit des Bootes.
+    
+.. danger::
+    Es darf auf keinen Fall eine Spannung von 12V an den Ausgang ``1Wire`` angelegt werden. Das hat direkt zur Folge, dass das OBP60 beschädigt wird.
