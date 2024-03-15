@@ -335,4 +335,14 @@ Im OBP60 ist der I2C-Bus isoliert gegenüber der Außenwelt aufgebaut und verwen
 |SDA     |Datenleitung        |
 +--------+--------------------+
 
+Im folgenden Bild ist ein I2C-Busaufbau zu sehen mit 3 I2C-Sensoren. Alle Sensoren sind mit geschirmten Kabeln mit dem I2C-Eingang am OBP60 verbunden. Die Stromversorgung der externen Sensoren erfolgt direkt über das OBP60 über den integrierten isolierenden DC/DC-Wandler (5.0Viso, GND2). Der Versorgungsausgang kann bis zu 200 mA bei 5V liefern und einige Sensoren mit Strom versorgen.
 
+.. image:: ../pics/I2C_Sample_Setup.png
+             :scale: 50%
+Abb.: I2C-Anbindung von externen Sensoren
+
+.. note::
+    Verwenden Sie für die Verkabelung externer Sensoren geschirmte Kabel und führen den Schirm direkt bis zum Sensor. Verbinden Sie den Schirm am Sensor **nicht** mit GND2, da Sie damit Masseschleifen erzeugen. Der gesamte Schirm der Busleitung darf nur an Eingang ``Shield`` des OBP60 aufgelegt werden. Halten Sie Stichleitungen vom Buss zu den Sensoren möglichst kurz.
+    
+.. danger::
+    Bestimmen Sie den Strombedarf Ihrer externen Sensoren und achten Sie darauf, dass die Stromversorgung **5Viso** nicht überlastet wird oder einen Kurzschluss bekommt. Der maximal zulässige Strom liegt bei 200 mA. Anderenfalls fallen sonst alle isolierten Bussysteme wie NMEA2000, NMEA0183 und I2C aus, da sie mit der selben Stromquelle versorgt werden. Die Folge ist ein Kommunikationsverlust auf allen genannten Bussystemen, der schwere Folgen für die Navigation des Bootes haben kann.
