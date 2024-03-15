@@ -285,7 +285,7 @@ Wer mehr Informationen zu NMEA0183-Telegrammen erfahren möchte, findet auf dies
 
 **Verkabelung für NMEA0183**
 
-Im nachfolgenden Bild ist eine Konfiguration zu sehen in der ein NMEA0183-Windsensor mit dem OBP60 verbunden ist. Der Windsensor sendet die Daten zum OBP60 und ist als NMEA0183-Empfänger konfiguriert. Die Bus-Terminierung ist über den Jumper ``T183`` aktiviert.
+Im nachfolgenden Bild ist eine Konfiguration zu sehen in der ein NMEA0183-Windsensor mit dem OBP60 verbunden ist. Der Windsensor sendet die Daten zum OBP60 und ist als NMEA0183-Empfänger konfiguriert. Die Bus-Terminierung ist über den Jumper ``T183`` eingeschaltet.
 
 .. image:: ../pics/NMEA0183_Sample_Setup_Minimal.png
              :scale: 50%
