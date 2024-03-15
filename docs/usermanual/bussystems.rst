@@ -26,7 +26,7 @@ NMEA2000 ist ein Bussystem und dient der Datenübertragung zwischen elektronisch
 **Spezifikation NMEA2000**
 
 * Differenzielles bidirektionales Datenprotokoll auf Binär-Basis
-* halbduplex mit Kollisionserkennung und Vermeidung
+* halb duplex mit Kollisionserkennung und Vermeidung
 * Busstruktur
 * Beidseitige Bus-Terminierung
 * Unterstützte Protokolle
@@ -39,7 +39,7 @@ NMEA2000 ist ein Bussystem und dient der Datenübertragung zwischen elektronisch
 
 **Differenzielle Datenübertragung**
 
-Die Datenübertragung auf dem CAN-Bus erfolgt diffenziell. Es werden jeweils zwei Signale mit entgegengesetzter Polarität vom Sender übertragen und im Empfänger durch Subtraktion aus den zwei Signalen ein Einzelsignal erzeugt. Störungen die sich in selber Weise auf beide Signalleitungen auswirken werden durch die Subtraktion im Empfänger eliminiert. Dadurch wird eine robuste und störunanfällige Signalübertragung ermöglicht.
+Die Datenübertragung auf dem CAN-Bus erfolgt differenziell. Es werden jeweils zwei Signale mit entgegengesetzter Polarität vom Sender übertragen und im Empfänger durch Subtraktion aus den zwei Signalen ein Einzelsignal erzeugt. Störungen die sich in selber Weise auf beide Signalleitungen auswirken werden durch die Subtraktion im Empfänger eliminiert. Dadurch wird eine robuste und störunanfällige Signalübertragung ermöglicht.
 
 .. image:: ../pics/CAN_Signal.png
              :scale: 60%
@@ -63,7 +63,7 @@ Abb.: CAN-Bus-Terminierung für NMEA2000
 	Einige Geräte besitzen eingebaute Abschluss-Widerstände, die durch entsprechende Schalter zu- oder abgeschaltet werden können. Vergewissern sie sich vor dem Einbau neuer Geräte ob integrierte Abschluss-Widerstände benutzt werden und wie sie konfiguriert sind. Falsch terminierte Busse können Übertragungsprobleme verursachen, die schwer zu finden sind.
 	
 .. tip::
-	Um herauszufinden, ob nur zwei Widerstände im NMEA-Bus aktiv sind, können Sie ein Digitalvoltmeter benutzen. Wenn Sie eine Widerstandsmessung bei **spannungslosen NMEA-Bus** zwischen den Leitungen **CAN-High** und **CAN-Low** vornehmen, so sollte ein Widerstand von ca. **60 Ohm** zu messen sein. Ist der Widerstand deutlich kleiner als 60 Ohm, so sind weitere Geräte im Bussystem vorhanden, dessen Abschlusswiderstände aktiv sind. Nehmen Sie dann nacheinander alle Geräte vom NMEA2000-Bus, bis sich der Widerstandswert deutlich erhöht. Beim zu letzt entnommenen Gerät ist der Abschlusswiderstand noch aktiv gewesen. Ist der Widerstandwert noch nicht bei 60 Ohm, so suchen Sie nach weiteren Geräten.  
+	Um herauszufinden, ob nur zwei Widerstände im NMEA-Bus aktiv sind, können Sie ein Digitalvoltmeter benutzen. Wenn Sie eine Widerstandsmessung bei **spannungslosen NMEA-Bus** zwischen den Leitungen **CAN-High** und **CAN-Low** vornehmen, so sollte ein Widerstand von ca. **60 Ohm** zu messen sein. Ist der Widerstand deutlich kleiner als 60 Ohm, so sind weitere Geräte im Bussystem vorhanden, dessen Abschlusswiderstände aktiv sind. Nehmen Sie dann nacheinander alle Geräte vom NMEA2000-Bus, bis sich der Widerstandswert deutlich erhöht. Beim zu letzt entnommenen Gerät ist der Abschlusswiderstand noch aktiv gewesen. Ist der Widerstandswert noch nicht bei 60 Ohm, so suchen Sie nach weiteren Geräten.  
 	
 **NMEA2000-Kabel**
 
@@ -84,15 +84,15 @@ Die Belegung und Aderfarben sind in der nachfolgenden Tabelle zu sehen. Beachten
 +----+-----------+--------+--------------------+
 |Pin |Belegung   |Farbe   |Bedeutung           |
 +====+===========+========+====================+
-| 1  |Schrimung  |ohne    |Schirmgeflecht      |
+|1   |Schirmung  |ohne    |Schirmgeflecht      |
 +----+-----------+--------+--------------------+
-| 2  |+12V       |rot     |Versorgungsspannung |
+|2   |+12V       |rot     |Versorgungsspannung |
 +----+-----------+--------+--------------------+
-| 3  |GND        |schwarz |Bord-Masse          |
+|3   |GND        |schwarz |Bord-Masse          |
 +----+-----------+--------+--------------------+
-| 4  |CAN-H      |weiß    | CAN High-Signal    |
+|4   |CAN-H      |weiß    | CAN High-Signal    |
 +----+-----------+--------+--------------------+
-| 5  |CAN-L      |blau    | CAN Low-Signal     |
+|5   |CAN-L      |blau    | CAN Low-Signal     |
 +----+-----------+--------+--------------------+
 Tab.: NMEA2000 Steckerbelegung
 
@@ -131,7 +131,7 @@ Für NMEA2000 wird eine Busstruktur verwendet. In dem Hauptstrang sind ein oder 
              :scale: 60%	
 Abb.: NMEA2000-Bussystem mit Sensoren und Anzeigegeräten
 
-Um das OBP an den NMEA2000-Bus anzuschließen, können Sie am einfachsten ein NMEA2000-Verlängerungskabel benutzen, indem Sie es in der Mitte trennen und die offenen Kabelenden an den Schraubklemmen auflegen. Es ist ratsam die Kabelenden mit Aderendhülsen zu versehen oder die Kupferkabel zu verzinnen.
+Um das OBP60 an den NMEA2000-Bus anzuschließen, können Sie am einfachsten ein NMEA2000-Verlängerungskabel benutzen, indem Sie es in der Mitte trennen und die offenen Kabelenden an den Schraubklemmen auflegen. Es ist ratsam die Kabelenden mit Aderendhülsen zu versehen oder die Kupferkabel zu verzinnen.
 
 .. image:: ../pics/OBP60_NMEA2000_Connection.png
              :scale: 60%	
@@ -167,7 +167,7 @@ NMEA 0183 ist ein Standard für serielle Datenübertragung in der Schifffahrt. E
 
 * Serielles unidirektionales Datenprotokoll auf ASCII-Basis
 * Punkt zu Punkt-Verbindung
-* halbduplex ohne Kollisionserkennung und Vermeidung
+* halb duplex ohne Kollisionserkennung und Vermeidung
 * Bus-Terminierung am Empfänger
 * Unterstützte Protokolle
 	* RS422 (Standard)
@@ -183,7 +183,7 @@ NMEA 0183 ist ein Standard für serielle Datenübertragung in der Schifffahrt. E
 
 **Datenübertragung**
 
-Die Datenübertragung erfolgt im OBP60 halbduplex auf serielle Weise über zwei einfache Kabel. Das bedeutet, dass man etweder senden oder empfangen kann. Beides gleichzeitig ist nicht möglich. Die Standard-Datenrate liegt bei 4800 Bd, was für heutige Verhältnisse recht langsam ist, aber Buslängen von bis zu 1000 m zulässt. Als Datenübertragungsrate lassen sich folgende Einstellungen verwenden:
+Die Datenübertragung erfolgt im OBP60 halb duplex auf serielle Weise über zwei einfache Kabel. Das bedeutet, dass man etweder senden oder empfangen kann. Beides gleichzeitig ist nicht möglich. Die Standard-Datenrate liegt bei 4800 Bd, was für heutige Verhältnisse recht langsam ist, aber Buslängen von bis zu 1000 m zulässt. Als Datenübertragungsrate lassen sich folgende Einstellungen verwenden:
 
 * 1.200 Bd
 * 2.400 Bd
@@ -291,7 +291,7 @@ Abb.: NMEA0183 Minimalkonfiguration
 .. hint::
     In ähnlicher Art und Weise können auch andere Sensoren an das OBP60 angebunden werden. Dabei ist aber zu berücksichtigen, dass immer nur ein Gerät oder Sensor mit dem OBP60 verbunden werden kann. Wenn mehere Geräte eingebunden werden sollen, dann benötigt man einen Multiplexer.
 
-Die meisten Multiplexer haben mehrere NMEA0183-Eingänge und mindestens einen NMEA0183-Ausgang. Bei der verwendung eines Multiplexers werden alle Sensoren an die NMEA0183-Eingänge des Multiplexers angeschlossen und der NMEA0183-Ausgang mit dem OBP60 verbunden. Das OBP60 ist auf empfangen komfiguriert und die Terminierung des Bussystems ist deaktiviert.
+Die meisten Multiplexer haben mehrere NMEA0183-Eingänge und mindestens einen NMEA0183-Ausgang. Bei der Verwendung eines Multiplexers werden alle Sensoren an die NMEA0183-Eingänge des Multiplexers angeschlossen und der NMEA0183-Ausgang mit dem OBP60 verbunden. Das OBP60 ist auf empfangen konfiguriert und die Terminierung des Bussystems ist deaktiviert.
 
 .. image:: ../pics/NMEA0183_Sample_Setup_Multiplexer.png
              :scale: 50%
