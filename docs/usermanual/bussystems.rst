@@ -137,7 +137,7 @@ Um das OBP60 an den NMEA2000-Bus anzuschließen, können Sie am einfachsten ein 
              :scale: 60%	
 Abb.: NMEA2000-Verbindung mit Stromversorgung über den NMEA2000-Bus
 
-Eine Minimal-Konfigutration könnte folgendermaßen aussehen. Dabei ist zu beachten, dass der NMEA2000-Bus auf der rechten Seite durch das OBP60 terminiert ist, indem die interne Busterminierung über den Jumper ``TN2K`` aktiviert wurde. Der Jumper ``TN2K`` befindet sich mittig zwischen den beiden Steckverbindern **CN1** und **CN2**.
+Eine Minimal-Konfigutration könnte folgendermaßen aussehen. Dabei ist zu beachten, dass der NMEA2000-Bus auf der rechten Seite durch das OBP60 terminiert ist, indem die interne Bus-Terminierung über den Jumper ``TN2K`` aktiviert wurde. Der Jumper ``TN2K`` befindet sich mittig zwischen den beiden Steckverbindern **CN1** und **CN2**.
 
 .. note::
     Legen Sie den Schirm des NMEA2000-Kabels am Eingang ``Shield`` auf. Verbinden Sie den Schirm **nicht** mit ``GND``, ``GND2`` oder ``GNDS``, da Sie damit Masseschleifen erzeugen oder die Isolationswirkung verloren geht. Der gesamte Schirm der Busleitung darf nur an Eingang ``Shield`` des NMEA2000-Bus am OBP60 einseitig aufgelegt werden. Andere Schrimeingänge dürfen nicht benutzt werden. 
@@ -354,7 +354,7 @@ Abb.: I2C-Anbindung von externen Sensoren
     Einige I2C-Module können zwar mit 5V versorgt werden, benutzen aber 3.3V TTL-Signale für ``SCL`` und ``SDA``. In diesem Fall benötigen Sie einen Pegelwandler für das SCL- und SDA-Signal auf 5V TTL-Signale. Beachten Sie das nicht, so kann der I2C-Sensor oder das I2C-Modul beschädigt werden. Das Gleiche git auch für Module die nur mit 3,3V versorgt werden. Dann benötigen Sie neben dem Pegelwandler noch zusätzlich einen DC/DC-Wandler zur Reduzierung der Versorgungsspannung. Die meisten I2C-Module die für einen **Arduino Uno** verwendet werden können, lassen sich auch am OBP60 verwenden. Diese Module sind für 5V-TTL-Signale geeignet.
    
 .. caution::
-    Wenn Sie externe Sensoren oder Module am I2C-Bus verwenden wollen, dann prüfen Sie, ob es zu einem Adresskonflikt zwischen den Sensoren oder Modulen kommen kann. Achten Sie darauf, dass eine I2C-Adresse nicht mehrfach vergeben ist. Es kommt dann zu Kommunikationsstörungen auf dem I2C-Bus. Insbesondere bei mehrfacher Verwendung gleicher Module müssen die I2C-Adressen verschieden eingestellt werden. Bei einigen I2C-Modulen ist das nicht möglich. In dem Fall können Sie nur ein I2C-Modul im Bus verwenden. Das OBP60 benutzt bereits folgende Adressen, die nicht benutzt wrden dürfen: 0x76, 0xD0
+    Wenn Sie externe Sensoren oder Module am I2C-Bus verwenden wollen, dann prüfen Sie, ob es zu einem Adresskonflikt zwischen den Sensoren oder Modulen kommen kann. Achten Sie darauf, dass eine I2C-Adresse nicht mehrfach vergeben ist. Es kommt dann zu Kommunikationsstörungen auf dem I2C-Bus. Insbesondere bei mehrfacher Verwendung gleicher Module müssen die I2C-Adressen verschieden eingestellt werden. Bei einigen I2C-Modulen ist das nicht möglich. In dem Fall können Sie nur ein I2C-Modul im Bus verwenden. Das OBP60 benutzt bereits folgende Adressen, die nicht benutzt werden dürfen: 0x76, 0xD0
    
     
 .. danger::
