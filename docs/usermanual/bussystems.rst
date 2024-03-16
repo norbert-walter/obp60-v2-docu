@@ -10,6 +10,7 @@ Das OBP60 unterstützt mehrere Bussysteme.
 * **NMEA0183** über RS485/RS422-Bus (isoliert)
 * **I2C-Bus** (isoliert)
 * **1-Wire-Bus** (nicht isoliert)
+* **USB-C** (nicht isoliert)
 
 
 .. image:: ../pics/Bus_Systems.png
@@ -31,10 +32,10 @@ NMEA2000 ist ein Bussystem und dient der Datenübertragung zwischen elektronisch
 * Beidseitige Bus-Terminierung
 * Unterstützte Protokolle
 	* CAN (Standard, mit speziellen Datenpaketen)
-* Datenrate 250.000 Bd fix
+* Datenrate 250.000 Bit/s fix
 * Stromversorgung von Sensoren und Anzeigegeräten über den Bus
 * Buslänge bis zu 30 m (Stichleitungen <1.5 m)
-* Kabelart 5-polig geschirmt mit 2x2 verdrillten Leitungen 0,25 mm²
+* Kabelart 5-polig geschirmt mit 2x2 verdrillten Leitungen 0,35 mm²
 * Steckerart M12 5-polig D-Codiert	
 
 **Differenzielle Datenübertragung**
@@ -70,7 +71,7 @@ Abb.: CAN-Bus-Terminierung für NMEA2000
 .. image:: ../pics/NMEA_Bus.png
              :scale: 35%
 	
-Als Buskabel sollten nur hochwertige, wasserdichte und geschirmte Industrie-Kabel verwendet werden. Der Marine-Einzelhandel bietet dazu eine breite Auswahl an Produkten mit M12-Verbindungstechnik an, die sich sehr gut verwenden lassen.
+Als Buskabel sollten nur hochwertige, wasserdichte und geschirmte Industrie-Kabel verwendet werden. Der Marine-Einzelhandel bietet dazu eine breite Auswahl an Produkten mit M12-Verbindungstechnik an, die sehr gut geeignet sind.
 
 .. tip::
 	Im Industriebereich findet man gleichwertige Kabel mit M12-Verbindungstechnik, die deutlich günstiger sind und ebenfalls verwendet werden können. Achten Sie dabei auf Steckverbinder mit **D-Kodierung**. Die Indexkerbe befindet sich zwischen Pin 1 und 2.
@@ -175,9 +176,6 @@ NMEA 0183 ist ein Standard für serielle Datenübertragung in der Schifffahrt. E
 * Unterstützte Protokolle
 	* RS422 (Standard)
 	* RS485
-	* RS232
-	* RS232 3.3V TTL
-	* RS232 5.0V TTL
 * Datenrate 1.200...460.800 Bd variabel
 * Stromversorgung von Sensoren und Anzeigegeräten über 12V-Bordnetz
 * Buslänge bis zu 1000 m (abhängig von Datenrate und Kabelart)
@@ -295,7 +293,7 @@ Abb.: NMEA0183 Minimalkonfiguration
     In ähnlicher Art und Weise können auch andere Sensoren an das OBP60 angebunden werden. Dabei ist aber zu berücksichtigen, dass immer nur ein Gerät oder Sensor mit dem OBP60 verbunden werden kann. Wenn mehere Geräte eingebunden werden sollen, dann benötigt man einen Multiplexer.
     
 .. note::
-    Verwenden Sie für die Verkabelung externer Sensoren an NMEA0183 möglichst geschirmte Kabel und führen den Schirm direkt bis zum Sensor. Verbinden Sie den Schirm am Sensor **nicht** mit ``GND2``, da Sie damit Masseschleifen erzeugen. Der gesamte Schirm der Busleitung darf nur einseitig an Eingang ``Shield`` des NMEA0183-Bus am OBP60 aufgelegt werden. Der Schirm am anderen Ende der Leitung beleibt offen. Andere Schrimeingänge dürfen nicht benutzt werden.
+    Verwenden Sie für die Verkabelung externer Sensoren an NMEA0183 möglichst geschirmte Kabel und führen den Schirm direkt bis zum Sensor. Verbinden Sie den Schirm am Sensor **nicht** mit ``GND2``, da Sie damit Masseschleifen erzeugen. Der gesamte Schirm der Busleitung darf nur einseitig an Eingang ``Shield`` des NMEA0183-Bus am OBP60 aufgelegt werden. Der Schirm am anderen Ende der Leitung beleibt offen. Andere Schirmeingänge dürfen nicht benutzt werden.
 
 Die meisten Multiplexer haben mehrere NMEA0183-Eingänge und mindestens einen NMEA0183-Ausgang. Bei der Verwendung eines Multiplexers werden alle Sensoren an die NMEA0183-Eingänge des Multiplexers angeschlossen und der NMEA0183-Ausgang mit dem OBP60 verbunden. Der Multiplexer bündelt dann die Datenströme aller Sensoren zu einem gemeinsamen Datenstrom am Ausgang. Über Filter am Datenausgang lässt sich die Datenmenge auf wichtige Daten eingrenzen. Das OBP60 ist in dem Beispiel auf empfangen konfiguriert. Die Terminierung des Bussystems ist deaktiviert.
 
@@ -309,7 +307,7 @@ Abb.: NMEA0183-Verbindung zu einem Multiplexer
 I2C
 ---
 
-Der I2C-Bus dient zur Anbindung von elektronischen Komponenten. Er wird hauptsächlich im Elektronikbereich eingesetzt, um verschiedene Komponenten auf einer Platine miteinander kostengünstig zu verbinden. Die Verbindung erfolgt über eine Zweidrahtleitung und arbeitet mit Signalpegeln von 3.3V oder 5.0V. Es gibt das Taktsignal **SCL** und das Datensignal **SDA**. Die Kommunikation läuft als Master und Slave System. Dabei steuert der Master die Slaves über eine eindeutige Adresse an und kann mit ihnen Daten austauschen.
+Der I2C-Bus dient zur Anbindung von elektronischen Komponenten. Er wird hauptsächlich im Elektronikbereich eingesetzt, um verschiedene Komponenten auf einer Platine miteinander kostengünstig zu verbinden. Die Verbindung erfolgt über eine Zweidrahtleitung und arbeitet mit Signalpegeln von 5.0V. Es gibt das Taktsignal **SCL** und das Datensignal **SDA**. Die Kommunikation läuft als Master und Slave System. Dabei steuert der Master die Slaves über eine eindeutige Adresse an und kann mit ihnen Daten austauschen.
 
 **Spezifikation I2C**
 
@@ -341,7 +339,7 @@ Im OBP60 ist der I2C-Bus isoliert gegenüber der Außenwelt aufgebaut und verwen
 |SDA     |Datenleitung        |
 +--------+--------------------+
 
-Im folgenden Bild ist ein I2C-Busaufbau zu sehen mit 3 I2C-Sensoren. Alle Sensoren sind mit geschirmten Kabeln mit dem I2C-Eingang am OBP60 verbunden. Die Stromversorgung der externen Sensoren erfolgt direkt über das OBP60 über den integrierten isolierenden DC/DC-Wandler (``5Viso``, ``GND2``). Der Versorgungsausgang kann bis zu 200 mA bei ``5Viso`` liefern und einige Sensoren mit Strom versorgen.
+Im folgenden Bild ist ein I2C-Busaufbau mit 3 I2C-Sensoren zu sehen. Alle Sensoren sind mit geschirmten Kabeln mit dem I2C-Eingang am OBP60 verbunden. Die Stromversorgung der externen Sensoren erfolgt direkt über das OBP60 über den integrierten isolierenden DC/DC-Wandler (``5Viso``, ``GND2``). Der Versorgungsausgang kann bis zu 200 mA bei ``5Viso`` liefern und einige Sensoren mit Strom versorgen.
 
 .. image:: ../pics/I2C_Sample_Setup.png
              :scale: 50%
@@ -357,7 +355,7 @@ Abb.: I2C-Anbindung von externen Sensoren
     Wenn Sie externe Sensoren oder Module am I2C-Bus verwenden wollen, dann prüfen Sie, ob es zu einem Adresskonflikt zwischen den Sensoren oder Modulen kommen kann. Achten Sie darauf, dass eine I2C-Adresse nicht mehrfach vergeben ist. Es kommt dann zu Kommunikationsstörungen auf dem I2C-Bus. Insbesondere bei mehrfacher Verwendung gleicher Module müssen die I2C-Adressen verschieden eingestellt werden. Bei einigen I2C-Modulen ist das nicht möglich. In dem Fall können Sie nur ein I2C-Modul im Bus verwenden. Das OBP60 benutzt bereits folgende Adressen, die nicht benutzt werden dürfen: 0x76, 0xD0
 
 .. caution::
-    Nicht vorhandene externe I2C-Sensoren, die jedoch in der Konfiguration aktiviert sind, führen dazu, dass die Reaktionsfähigkeit des OBP60 beeinträchtigt wird. Die Sensoren antworten nicht und laufen in ein Timeout. Deaktivieren Sie in einem solchen Fall die Sensoren in der Konfiguration. 
+    Nicht vorhandene externe I2C-Sensoren, die jedoch in der Konfiguration aktiviert sind, führen dazu, dass die Reaktionsfähigkeit des OBP60 beeinträchtigt wird. Die Sensoren antworten nicht und die Software läuft in ein Timeout. Deaktivieren Sie in einem solchen Fall die Sensoren in der Konfiguration. 
     
 .. danger::
     Bestimmen Sie den Strombedarf Ihrer externen Sensoren und achten Sie darauf, dass die Stromversorgung ``5Viso`` nicht überlastet wird oder einen Kurzschluss bekommt. Der maximal zulässige Strom liegt bei **200 mA**. Anderenfalls fallen sonst alle isolierten Bussysteme wie **NMEA2000**, **NMEA0183** und **I2C** aus, da sie mit der selben Stromquelle versorgt werden. Die Folge ist ein Kommunikationsverlust auf allen genannten Bussystemen, der schwere Folgen für die Navigation des Bootes haben kann. Verbinden Sie ``GND2`` **nicht** mit ``GND`` oder ``GNDS``, da die Isolationswirkung verloren geht und die Empfindlichkeit auf Störungen steigt.
@@ -420,10 +418,10 @@ Die Belegung der DS18B20-Temperatur-Sensoren ist folgendermaßen durchzuführen.
     Wenn möglich, verwenden Sie Temperatursensoren am I2C-Bus anstatt am 1Wire-Bus. Sie erhöhen damit die Betriebssicherheit des Gesamtsystems, da der I2C-Bus gegenüber der Außenwelt isoliert ist.
     
 .. hint::
-    Im Internet-Handel sind schlechte Kopien von DS18B20-Temperatur-Sensoren im Umlauf, die eine parasitäte Stromversorgung nicht unterstützen. Wenn Sie keine Kommunikation mit dem OBP60 zustande bekommen, dann versuchen Sie andere Sensoren. Wenn das zu keinem Erfolg führt, dann benutzen Sie eine normale Stromversorgung für die Temperatursensoren. Mit dieser Art der Stromversorgung sollten nahezu alle Sensoren funktionieren.
+    Im Internet-Handel sind Nachbauten von DS18B20-Temperatur-Sensoren im Umlauf, die eine parasitäte Stromversorgung nicht unterstützen. Wenn Sie keine Kommunikation mit dem OBP60 zustande bekommen, dann versuchen Sie andere Sensoren. Wenn das zu keinem Erfolg führt, dann benutzen Sie eine normale Stromversorgung für die Temperatursensoren. Mit dieser Art der Stromversorgung sollten nahezu alle Sensoren funktionieren.
 
 .. caution::
-    Der 1Wire-Bus ist nicht isoliert gegenüber der internen Schaltung des OBP60. Das erhöht bei unsachgemäßer Installation das Risiko, dass eingekoppelte Störungen in die Busleitungen die Funktion und Stabilität des OBP60 beeinträchtigen können. Im schlimmsten Fall kann es zum kompletten Ausfall des OBP60 führen mit schweren Folgen für die Navigationsfähigkeit des Bootes.
+    Der 1Wire-Bus ist nicht isoliert gegenüber der internen Schaltung des OBP60. Das erhöht bei unsachgemäßer Installation das Risiko, dass eingekoppelte Störungen in die Busleitungen die Funktion und Stabilität des OBP60 beeinträchtigen können. Halten Sie daher die Buslänge so kurz wie möglich. Im schlimmsten Fall kann es zum kompletten Ausfall des OBP60 führen mit schweren Folgen für die Navigationsfähigkeit des Bootes.
     
 .. danger::
     Es darf auf keinen Fall eine Spannung von 12V an den Ausgang ``1Wire`` angelegt werden. Das hat direkt zur Folge, dass das OBP60 beschädigt wird.
@@ -449,10 +447,10 @@ Die USB-C-Schnittstelle im OBP60 dient zum Flashen der Firmware und zum Debuggin
 
 **Stromversorgung**
 
-Das OBP60 kann auch über USB-C mit Strom versorgt werden. Das ist ganz nützlich, wenn man z.B. eine Software-Entwicklung durchführt und das Gerät am Schreibtisch nutzen möchte. Das stromliefernde Gerät muss bis zu 500 mA Strom mit einer Spannung von 5V bereitstellen können. Die USB-C-Schnittstelle verfügt über einen Rücklaufschutz, so dass kein Strom aus dem OBP60 herausfließen kann. Das OBP60 kann auch gleichzeitig mit 12V und über USB-C mit 5V versorgt werden.
+Das OBP60 kann auch über USB-C mit Strom versorgt werden. Das ist ganz nützlich, wenn man z.B. eine Software-Entwicklung durchführt und das Gerät am Schreibtisch nutzen möchte. Das stromliefernde Gerät muss bis zu 500 mA mit einer Spannung von 5V bereitstellen können. Die USB-C-Schnittstelle verfügt über einen Rücklaufschutz, so dass kein Strom aus dem OBP60 herausfließen kann. Das OBP60 kann auch gleichzeitig mit 12V und über USB-C mit 5V versorgt werden.
 
 .. hint::
-    Die reguläre Stromversorgung des OBP60 im Boot erfolgt immer über 12V aus dem Bordnetz. Es wird nicht empfohlen eine Versorgung über USB-C durchzuführen. 
+    Die reguläre Stromversorgung des OBP60 im Boot erfolgt immer über 12V aus dem Bordnetz. Es wird nicht empfohlen eine Versorgung über USB-C durchzuführen, da die Steckverbindung nicht gegen unbeabsichtigtes Lösen gesichert ist. 
 
 .. danger::
     In einigen Situationen kann es vorkommen, dass unzulässige Ausgleichsströme über die nicht isolierte USB-C-Schnittstelle fließen und das OBP60 beschädigen können. Das passiert z.B. dann, wenn Ladegeräte mit dem 230V Landstrom verbunden sind und die Bord-Batterie aufladen und gleichzeitig ein Laptop mit Netzversorgung mit dem OBP60 über USB-C verbunden ist. Bei einem isolierten Betrieb des Laptops über den einegbauten Akku entstehen solche Probleme nicht. Wenn Sie beabsichtigen die USB-C-Verbindung dauerhaft zur Kommunikation im Boot zu nutzen, sollten sie einen USB-Isolator verwenden, um Schäden zu vermeiden.
