@@ -24,7 +24,7 @@ NMEA2000
 
 NMEA2000 ist ein Bussystem und dient der Datenübertragung zwischen elektronischen Geräten in Booten. NMEA2000 verwendet **CAN** zur Datenübertragung. Die Übertragung erfolgt über ein zentrales Kabel, an das alle Geräte parallel angeschlossen sind. Jedes Gerät im NMEA2000-Netzwerk hat eine eindeutige Geräte-ID, um Datenquellen und Datenanzeigegeräte zu identifizieren und zu adressieren. Daten werden in Parameter Group Numbers (**PGN**) organisiert. PGN sind eindeutige Daten-IDs, um bestimmte Typen von Daten zu beschreiben, wie beispielsweise Geschwindigkeit, Kurs, Temperatur usw. Alle Geräte können PGN empfangen und senden, und es kann festgelegt werden, welche PGN von einem bestimmten Gerät gesendet oder empfangen werden sollen.
 
-**Spezifikation NMEA2000**
+**Spezifikation NMEA2000 im OBP60**
 
 * Differenzielles bidirektionales Datenprotokoll auf Binär-Basis
 * halb duplex mit Kollisionserkennung und Vermeidung
@@ -141,7 +141,7 @@ Abb.: NMEA2000-Verbindung mit Stromversorgung über den NMEA2000-Bus
 Eine Minimal-Konfigutration könnte folgendermaßen aussehen. Dabei ist zu beachten, dass der NMEA2000-Bus auf der rechten Seite durch das OBP60 terminiert ist, indem die interne Bus-Terminierung über den Jumper ``TN2K`` aktiviert wurde. Der Jumper ``TN2K`` befindet sich mittig zwischen den beiden Steckverbindern **CN1** und **CN2**.
 
 .. note::
-    Legen Sie den Schirm des NMEA2000-Kabels am Eingang ``Shield`` auf. Verbinden Sie den Schirm **nicht** mit ``GND``, ``GND2`` oder ``GNDS``, da Sie damit Masseschleifen erzeugen oder die Isolationswirkung verloren geht. Der gesamte Schirm der Busleitung darf nur an Eingang ``Shield`` des NMEA2000-Bus am OBP60 einseitig aufgelegt werden. Andere Schrimeingänge dürfen nicht benutzt werden. 
+    Legen Sie den Schirm des NMEA2000-Kabels am Eingang ``Shield`` auf. Verbinden Sie den Schirm **nicht** mit ``GND``, ``GND2`` oder ``GNDS``, da Sie damit Masseschleifen erzeugen oder die Isolationswirkung verloren geht. Der gesamte Schirm der Busleitung darf nur an Eingang ``Shield`` des NMEA2000-Bus am OBP60 einseitig aufgelegt werden. Andere Schirmeingänge dürfen nicht benutzt werden. 
 
 .. image:: ../pics/NMEA2000_Sample_Setup_Minimal_Configuration.png
              :scale: 60%	
@@ -167,7 +167,7 @@ NMEA0183
 
 NMEA 0183 ist ein Standard für serielle Datenübertragung in der Schifffahrt. Es definiert ein Format für die Übertragung von Informationen zwischen Navigationsgeräten und anderen elektronischen Geräten auf Booten. NMEA0183 ist ein weit verbreiteter Standard, der von vielen alten Geräten unterstützt wird.
 
-**Spezifikation NMEA0183**
+**Spezifikation NMEA0183 im OBP60**
 
 * Serielles unidirektionales Datenprotokoll auf ASCII-Basis
 * Punkt zu Punkt-Verbindung (isoliert)
@@ -309,7 +309,7 @@ I2C
 
 Der I2C-Bus dient zur Anbindung von elektronischen Komponenten. Er wird hauptsächlich im Elektronikbereich eingesetzt, um verschiedene Komponenten auf einer Platine miteinander kostengünstig zu verbinden. Die Verbindung erfolgt über eine Zweidrahtleitung und arbeitet mit Signalpegeln von 5.0V. Es gibt das Taktsignal **SCL** und das Datensignal **SDA**. Die Kommunikation läuft als Master und Slave System. Dabei steuert der Master die Slaves über eine eindeutige Adresse an und kann mit ihnen Daten austauschen.
 
-**Spezifikation I2C**
+**Spezifikation I2C im OBP60**
 
 * Serielles bidirektionales synchrones Datenprotokoll auf Binär-Basis
 * Busstruktur (isoliert)
@@ -346,7 +346,7 @@ Im folgenden Bild ist ein I2C-Busaufbau mit 3 I2C-Sensoren zu sehen. Alle Sensor
 Abb.: I2C-Anbindung von externen Sensoren
 
 .. note::
-    Verwenden Sie für die Verkabelung externer Sensoren möglichst geschirmte Kabel und führen den Schirm direkt bis zum Sensor. Verbinden Sie den Schirm am Sensor **nicht** mit ``GND2``, da Sie damit Masseschleifen erzeugen. Der gesamte Schirm der Busleitung darf nur einseitig an Eingang ``Shield`` des I2C-Bus am OBP60 aufgelegt werden. Der Schirm am anderen Ende der Leitung beleibt offen. Andere Schrimeingänge dürfen nicht benutzt werden. Halten Sie Stichleitungen vom Buss zu den Sensoren möglichst kurz.
+    Verwenden Sie für die Verkabelung externer Sensoren möglichst geschirmte Kabel und führen den Schirm direkt bis zum Sensor. Verbinden Sie den Schirm am Sensor **nicht** mit ``GND2``, da Sie damit Masseschleifen erzeugen. Der gesamte Schirm der Busleitung darf nur einseitig an Eingang ``Shield`` des I2C-Bus am OBP60 aufgelegt werden. Der Schirm am anderen Ende der Leitung beleibt offen. Andere Schirmeingänge dürfen nicht benutzt werden. Halten Sie Stichleitungen vom Buss zu den Sensoren möglichst kurz.
 
 .. attention::
     Einige I2C-Module können zwar mit 5V versorgt werden, benutzen aber 3.3V TTL-Signale für ``SCL`` und ``SDA``. In diesem Fall benötigen Sie einen Pegelwandler für das SCL- und SDA-Signal auf 5V TTL-Signale. Beachten Sie das nicht, so kann der I2C-Sensor oder das I2C-Modul beschädigt werden. Das Gleiche git auch für Module die nur mit 3,3V versorgt werden. Dann benötigen Sie neben dem Pegelwandler noch zusätzlich einen DC/DC-Wandler zur Reduzierung der Versorgungsspannung. Die meisten I2C-Module die für einen **Arduino Uno** verwendet werden können, lassen sich auch am OBP60 verwenden. Diese Module sind für 5V-TTL-Signale geeignet.
@@ -412,7 +412,7 @@ Die Belegung der DS18B20-Temperatur-Sensoren ist folgendermaßen durchzuführen.
 +--------+--------------------+
 
 .. note::
-    Verwenden Sie für die Verkabelung externer Temperatur-Sensoren möglichst geschirmte Kabel und führen den Schirm direkt bis zum Sensor. Verbinden Sie den Schirm am Sensor **nicht** mit ``GND``, da Sie damit Masseschleifen erzeugen. Der gesamte Schirm der Busleitung darf nur einseitig an Eingang ``GND2`` des 1Wire-Bus am OBP60 aufgelegt werden. Der Schirm am anderen Ende der Leitung beleibt offen. Andere Schrimeingänge dürfen nicht benutzt werden. Halten Sie Stichleitungen vom Buss zu den Sensoren möglichst kurz. Die maximale Anzahl der Sensoren am 1Wire-Bus ist auf 3 Sensoren begrenzt.
+    Verwenden Sie für die Verkabelung externer Temperatur-Sensoren möglichst geschirmte Kabel und führen den Schirm direkt bis zum Sensor. Verbinden Sie den Schirm am Sensor **nicht** mit ``GND``, da Sie damit Masseschleifen erzeugen. Der gesamte Schirm der Busleitung darf nur einseitig an Eingang ``GND2`` des 1Wire-Bus am OBP60 aufgelegt werden. Der Schirm am anderen Ende der Leitung beleibt offen. Andere Schirmeingänge dürfen nicht benutzt werden. Halten Sie Stichleitungen vom Buss zu den Sensoren möglichst kurz. Die maximale Anzahl der Sensoren am 1Wire-Bus ist auf 3 Sensoren begrenzt.
     
 .. hint::
     Wenn möglich, verwenden Sie Temperatursensoren am I2C-Bus anstatt am 1Wire-Bus. Sie erhöhen damit die Betriebssicherheit des Gesamtsystems, da der I2C-Bus gegenüber der Außenwelt isoliert ist.
@@ -431,7 +431,7 @@ USB
 
 Die USB-C-Schnittstelle im OBP60 dient zum Flashen der Firmware und zum Debugging. Die USB-Schnittstelle ist als serielle Schnittstelle ausgeführt. Darüber hinaus kann auch eine bidirektionale, voll duplex-fähige NMEA0183-Kommunikation zu anderen Geräten wie einem Laptop, PC oder einem Marine Control Server aufgebaut werden.
 
-**Spezifikation USB**
+**Spezifikation USB im OBP60**
 
 * Serielles bidirektionales asynchrones Datenprotokoll auf Binär-Basis
 * Punkt zu Punkt (nicht isoliert)
@@ -454,6 +454,12 @@ Das OBP60 kann auch über USB-C mit Strom versorgt werden. Das ist ganz nützlic
 
 .. danger::
     In einigen Situationen kann es vorkommen, dass unzulässige Ausgleichsströme über die nicht isolierte USB-C-Schnittstelle fließen und das OBP60 beschädigen können. Das passiert z.B. dann, wenn Ladegeräte mit dem 230V Landstrom verbunden sind und die Bord-Batterie aufladen und gleichzeitig ein Laptop mit Netzversorgung mit dem OBP60 über USB-C verbunden ist. Bei einem isolierten Betrieb des Laptops über den einegbauten Akku entstehen solche Probleme nicht. Wenn Sie beabsichtigen die USB-C-Verbindung dauerhaft zur Kommunikation im Boot zu nutzen, sollten sie einen USB-Isolator verwenden, um Schäden zu vermeiden.
+    
+. image:: ../pics/USB_Isolator.png
+             :scale: 30%
+Abb.: USB-Isolator
+    
+USB-Isolatoren haben den Nachteil, dass sie nur einen sehr geringen Strom von ca. 150 mA für die isolierte Seite in Richtung OBP60 liefern können. Damit lässt sich das OBP60 nur eingeschränkt mit Strom eigenständig versorgen. Das OBP60 muss dann je nach Bedarf noch zusätzlich mit 12V über den Steckverbinder **CN2** versorgt werden.
     
 **Kommunikation** 
 
