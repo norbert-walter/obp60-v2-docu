@@ -455,7 +455,7 @@ Das OBP60 kann auch über USB-C mit Strom versorgt werden. Das ist ganz nützlic
 .. danger::
     In einigen Situationen kann es vorkommen, dass unzulässige Ausgleichsströme über die nicht isolierte USB-C-Schnittstelle fließen und das OBP60 beschädigen können. Das passiert z.B. dann, wenn Ladegeräte mit dem 230V Landstrom verbunden sind und die Bord-Batterie aufladen und gleichzeitig ein Laptop mit Netzversorgung mit dem OBP60 über USB-C verbunden ist. Wenn Sie beabsichtigen die USB-C-Verbindung dauerhaft zur Kommunikation im Boot zu nutzen, sollten sie einen USB-Isolator verwenden, um Schäden zu vermeiden. Bei einem isolierten Betrieb des Laptops über den einegbauten Akku entstehen solche Probleme nicht.
     
-. image:: ../pics/USB_Isolator.png
+.. image:: ../pics/USB_Isolator.png
              :scale: 30%
 Abb.: USB-Isolator
     
