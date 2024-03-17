@@ -294,6 +294,9 @@ Abb.: NMEA0183 Minimalkonfiguration
     
 .. note::
     Verwenden Sie für die Verkabelung externer Sensoren an NMEA0183 möglichst geschirmte Kabel und führen den Schirm direkt bis zum Sensor. Verbinden Sie den Schirm am Sensor **nicht** mit ``GND2``, da Sie damit Masseschleifen erzeugen. Der gesamte Schirm der Busleitung darf nur einseitig an Eingang ``Shield`` des NMEA0183-Bus am OBP60 aufgelegt werden. Der Schirm am anderen Ende der Leitung beleibt offen. Andere Schirmeingänge dürfen nicht benutzt werden.
+    
+.. attention::
+    Beachten Sie, dass bei NMEA0183-Datenübertragungen die selbe Übertragungsgeschwindigkeit für Sender und Empfänger und das selbe Übertragungsprotokoll verwendet werden muss. Anderenfalls kann sonst keine Datenübertragung stattfinden. Die NMEA0183-Schnittstelle im OBP60 unterstützt kein RS232.
 
 Die meisten Multiplexer haben mehrere NMEA0183-Eingänge und mindestens einen NMEA0183-Ausgang. Bei der Verwendung eines Multiplexers werden alle Sensoren an die NMEA0183-Eingänge des Multiplexers angeschlossen und der NMEA0183-Ausgang mit dem OBP60 verbunden. Der Multiplexer bündelt dann die Datenströme aller Sensoren zu einem gemeinsamen Datenstrom am Ausgang. Über Filter am Datenausgang lässt sich die Datenmenge auf wichtige Daten eingrenzen. Das OBP60 ist in dem Beispiel auf empfangen konfiguriert. Die Terminierung des Bussystems ist deaktiviert.
 
