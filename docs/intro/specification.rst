@@ -57,7 +57,7 @@ Spezifikation
 +----------------------+-----------------------------+
 | PSRAM                | 8 MB                        |
 +----------------------+-----------------------------+
-| Displaygröße         | 400 x 300 pix               |
+| Displaygröße         | 400 x 300 pix, 120 dpi      |
 +----------------------+-----------------------------+
 | Refreshrate          | 1 Hz                        |
 +----------------------+-----------------------------+
@@ -65,7 +65,7 @@ Spezifikation
 +----------------------+-----------------------------+
 | NMEA0183-Bus         | RS485, max. 115.2 kBd, 30 m |
 +----------------------+-----------------------------+
-| NMEA2000-Bus         | CAN, 250 kBit/s, 50 m       |
+| NMEA2000-Bus         | CAN, 250 kBit/s, 30 m       |
 +----------------------+-----------------------------+
 | I2C-Bus              | 5V, 100 kBit/s, 10 m        |
 +----------------------+-----------------------------+
@@ -111,21 +111,14 @@ Nutzbare und konvertierbare Telegramme
 Nutzbare I2C-Sensorik
 ---------------------
 
-**Temperatursensoren**
-	* BMP085
-	* BMP180
-	* BMP280
-	* BME280
-	* SHT20
-	* HTU21
+**Umgebungssensoren**
+	* BMP085, BMP180, BMP280, BME280, SHT20, HTU21
 	
 **Spannungs- und Stromsensoren**
-	* INA226
-	* INA219 (in Vorbereitung)
+	* INA226, INA219 (in Vorbereitung)
 	
 **Winkelsensoren**
-	* AS5600
-	* MT6701 (in Vorbereitung)
+	* AS5600, MT6701 (in Vorbereitung)
 	
 **Port-Erweiterungen**
 	* PCF8574 (in Vorbereitung)
