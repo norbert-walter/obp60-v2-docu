@@ -43,7 +43,7 @@ Das Mutifunktionsdisplay OBP60 dient zur Anzeige von Daten aus Boots-Netzen wie 
    :caption: Zusammenbau
    :name: sec-assembling
    
-   Geräteaufbau <assembling/functionality>
+   Geräteaufbau <assembling/device>
    Vorbereitung <assembling/preparation>
    Bauteilliste <assembling/partlist>
    Durchführung <assembling/actionsteps>
