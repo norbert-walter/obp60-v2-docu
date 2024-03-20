@@ -1,4 +1,4 @@
-Geräteaufbau
+GerÃ¤teaufbau
 ============
 
 
