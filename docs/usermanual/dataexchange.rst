@@ -1,70 +1,70 @@
 Datenaustausch
 ==============
 
-Der Datenaustausch im OBP60 kann auf verschiedene Weise erfolgen. Grundsätzlich stehen mehrere Übertragungsarten über verschiedene Übertragungswege zur Verfügung:
+Der Datenaustausch im OBP60 kann auf verschiedene Weise erfolgen. GrundsÃ¤tzlich stehen mehrere Ãœbertragungsarten Ã¼ber verschiedene Ãœbertragungswege zur VerfÃ¼gung:
 
-Übertragungsarten
+Ãœbertragungsarten
 -----------------
 
 * Simplex
-	* Daten können in nur eine Richtung übertragen werden
+	* Daten kÃ¶nnen in nur eine Richtung Ã¼bertragen werden
 * Halbduplex
-	* Daten können abwechselnd, aber nicht gleichzeitig, in beide Richtungen fließen
+	* Daten kÃ¶nnen abwechselnd, aber nicht gleichzeitig, in beide Richtungen flieÃŸen
 * Vollduplex
-	* Daten können in beide Richtungengleichzeitig gleichzeitig übertragen werden. 
+	* Daten kÃ¶nnen in beide Richtungengleichzeitig gleichzeitig Ã¼bertragen werden. 
 	
-Übertragungswege
+Ãœbertragungswege
 ----------------
 
 * NMEA2000
 	* Kabelgebunden NMEA2000-Bus (halbduplex)
 	* USB via SeaSmart (vollduplex)
-	* Über WiFi via SeaSmart (vollduplex)
+	* Ãœber WiFi via SeaSmart (vollduplex)
 * NMEA0183
 	* Kabelgebunden NMEA0183-Bus (simplex)
 	* USB (vollduplex)
-	* Über WiFi via TCP (vollduplex)
-	* Über externen Multiplexer (simplex)
+	* Ãœber WiFi via TCP (vollduplex)
+	* Ãœber externen Multiplexer (simplex)
 * I2C (halbduplex)
 * 1Wire (halbduplex)
 
 Datenquellen
 ------------
 
-Als Datenquellen werden Geräte bezeichnet, die überwiegend Daten zur anderen Geräten senden und selber nur Daten zur Parametrierung empfangen. Dazu zählen folgende Geräte:
+Als Datenquellen werden GerÃ¤te bezeichnet, die Ã¼berwiegend Daten zur anderen GerÃ¤ten senden und selber nur Daten zur Parametrierung empfangen. Dazu zÃ¤hlen folgende GerÃ¤te:
 
-* GPS-Empfänger (Position, Geschwindigkeit, Richtung)
+* GPS-EmpfÃ¤nger (Position, Geschwindigkeit, Richtung)
 * Windsensor (Geschwindigkeit, Richtung, Temperatur)
 * Tiefen-Sensor (Tiefe, Geschwindigkeit, Wassertemperatur, Entfernung)
 * Ruderlage (Winkel)
-* Winkelsensoren (Mast, Großbaum, Foil, Trimmklappen)
+* Winkelsensoren (Mast, GroÃŸbaum, Foil, Trimmklappen)
 * Elektro-Sensor (Spannung, Strom, Leistung, Energie)
 * Umgebungssensoren (Lufttemperatur, Fuftdruck, Luftfeuchtigkeit, Helligkeit, Niederschlag, Zustand, Bewegung)
-* Durchflusssensoren (Kühlwasserfluss, Kühlwassertemperatur)
-* Druck- und Zugsensoren (Öldruck, Achterstag, Vorstag)
-* Füllstandsensoren (Level für Wasser, Abwasser, Krafstoff)
-* Lagesensoren (Roll-, Pitch-, Nick-Winkel, Beschleunigung, Rotation)
-* Temperatursensoren (Luft, Kühlwasser, Raum, Kühlschrank, Wasser, Maschinenraum)
+* Durchflusssensoren (KÃ¼hlwasserfluss, KÃ¼hlwassertemperatur)
+* Druck- und Zugsensoren (Ã–ldruck, Achterstag, Vorstag)
+* FÃ¼llstandsensoren (Level fÃ¼r Wasser, Abwasser, Krafstoff)
+* Lagesensoren (Roll-, Pitch-, Nick-Winkel, Beschleunigung, Rotation, Magnetfeld)
+* Temperatursensoren (Luft, KÃ¼hlwasser, Raum, KÃ¼hlschrank, Wasser, Maschinenraum)
 * Elektrogeneratoren (Solar, Wind-, Schlepp- Dieselgenerator,
-* Radargeräte
-* Funkgeräte (Position, AIS-Schiffsverkehr, Anrufer, Meldungen, Notrufe)
-* Anzeigegeräte (Multifunktionsdisplays, Plotter)
+* RadargerÃ¤te
+* FunkgerÃ¤te (Position, AIS-Schiffsverkehr, Anrufer, Meldungen, Notrufe)
+* AnzeigegerÃ¤te (Multifunktionsdisplays, Plotter)
 
 Datensenken
 -----------
 
-Datensenken empfangen Informationen und fühern bestimmte Aktionen aus.
+Datensenken empfangen Informationen und fÃ¼hern bestimmte Aktionen aus.
 
 * Ruder-Aktuator (linear, rotatorisch, hydraulisch, elektrisch)
-* Relais und Schalter (elektrische Verbraucher wie Ankerwinde, Licht, Positionsleuchten, Lüftung, Heizung, Ladegeräte)
-* Anzeigegeräte (Multifunktionsdisplays, Plotter)
-* Multimediageräte (Radio, Lautsprecher)
+* Relais und Schalter (elektrische Verbraucher wie Ankerwinde, Licht, Positionsleuchten, LÃ¼ftung, Heizung, LadegerÃ¤te)
+* AnzeigegerÃ¤te (Multifunktionsdisplays, Plotter)
+* MultimediagerÃ¤te (Radio, Lautsprecher)
 
-Einige komplexere Geräte können sowohl Datenquelle als auch Datensenke sein, wie z.B. Multifunktionsdisplays oder Plotter.
+Einige komplexere GerÃ¤te kÃ¶nnen sowohl Datenquelle als auch Datensenke sein, wie z.B. Multifunktionsdisplays oder Plotter.
 
-Nachfolgend werden die Übertragungswege näher beschrieben.
+Nachfolgend werden die Ãœbertragungswege nÃ¤her beschrieben.
 
 NMEA2000 - Kabelgebunden NMEA2000-Bus
 -------------------------------------
 
-Der kabelgebundene NMEA2000-Bus ist der aktuelle Standard in der Bootsvernetzung. Über ein NMEA2000-Backbone auf CAN-Basis werden verschiedene Geräte an das Bussystem angeschlossen. Alle Bus-Teilnehmer können Daten lesen und schreiben. Dabei sind Sensoren Datenlieferanten, die ihre Daten an Displays und Plotter übertragen.
+Der kabelgebundene NMEA2000-Bus ist der aktuelle Standard in der Bootsvernetzung. Ãœber ein NMEA2000-Backbone auf CAN-Basis werden verschiedene GerÃ¤te an das Bussystem angeschlossen. Alle Bus-Teilnehmer kÃ¶nnen Daten lesen und schreiben. Dabei sind Sensoren Datenlieferanten, die ihre Daten an Displays und Plotter Ã¼bertragen. das NMEA2000-Backbone kann Sensoren auch mitv Strom versorgen. Die Einspeisung der Versorgunsgspannung erfolgt Ã¼ber einen Plotter oder Ã¼ber ein Einspeisekabel.
