@@ -1,4 +1,4 @@
-Bauteilliste
+Geräteaufbau
 ============
 
 

@@ -1,4 +1,4 @@
-Funktionsweise
-==============
+Erweiterte Sensorik
+===================
 
 
