@@ -35,9 +35,8 @@ Als Datenquellen werden Geräte bezeichnet, die überwiegend Daten zur anderen G
 
 * GPS-Empfänger (Position, Geschwindigkeit, Richtung)
 * Windsensor (Geschwindigkeit, Richtung, Temperatur)
-* Tiefen-Sensor (Tiefe, Geschwindigkeit, Wassertemperatur, Entfernung)
-* Ruderlage (Winkel)
-* Winkelsensoren (Mast, Großbaum, Foil, Trimmklappen)
+* Tiefen-Sensor (Tiefe, Geschwindigkeit, Wassertemperatur, zurückgelegte Strecke)
+* Winkelsensoren (Ruderlage, Mast, Großbaum, Foil, Trimmklappen)
 * Elektro-Sensor (Spannung, Strom, Leistung, Energie)
 * Umgebungssensoren (Lufttemperatur, Fuftdruck, Luftfeuchtigkeit, Helligkeit, Niederschlag, Zustand, Bewegung)
 * Durchflusssensoren (Kühlwasserfluss, Kühlwassertemperatur)
@@ -49,7 +48,7 @@ Als Datenquellen werden Geräte bezeichnet, die überwiegend Daten zur anderen G
 * Radargeräte
 * Funkgeräte (Position, AIS-Schiffsverkehr, Anrufer, Meldungen, Notrufe)
 * Anzeigegeräte (Multifunktionsdisplays, Plotter)
-* Videokameras
+* Videokameras (Bild, Ton, Bewegung)
 
 Datensenken
 -----------
