@@ -45,7 +45,7 @@ Als Datenquellen werden Geräte bezeichnet, die überwiegend Daten zur anderen G
 * Lagesensoren (Roll-, Pitch-, Nick-Winkel, Beschleunigung, Rotation, Magnetfeld)
 * Temperatursensoren (Luft, Kühlwasser, Raum, Kühlschrank, Wasser, Maschinenraum)
 * Elektrogeneratoren (Solar, Wind-, Schlepp- Dieselgenerator,
-* Radargeräte
+* Radargeräte (Umgebungskarte
 * Funkgeräte (Position, AIS-Schiffsverkehr, Anrufer, Meldungen, Notrufe)
 * Anzeigegeräte (Multifunktionsdisplays, Plotter)
 * Videokameras (Bild, Ton, Bewegung)
