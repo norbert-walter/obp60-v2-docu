@@ -49,6 +49,7 @@ Als Datenquellen werden Geräte bezeichnet, die überwiegend Daten zur anderen G
 * Radargeräte
 * Funkgeräte (Position, AIS-Schiffsverkehr, Anrufer, Meldungen, Notrufe)
 * Anzeigegeräte (Multifunktionsdisplays, Plotter)
+* Videokameras
 
 Datensenken
 -----------
@@ -57,6 +58,7 @@ Datensenken empfangen Informationen und fühern bestimmte Aktionen aus.
 
 * Ruder-Aktuator (linear, rotatorisch, hydraulisch, elektrisch)
 * Relais und Schalter (elektrische Verbraucher wie Ankerwinde, Licht, Positionsleuchten, Lüftung, Heizung, Ladegeräte)
+* Winkelaktuator (Trimmklappen, Foil-Einstellung)
 * Anzeigegeräte (Multifunktionsdisplays, Plotter)
 * Multimediageräte (Radio, Lautsprecher)
 
@@ -67,4 +69,8 @@ Nachfolgend werden die Übertragungswege näher beschrieben.
 NMEA2000 - Kabelgebunden NMEA2000-Bus
 -------------------------------------
 
-Der kabelgebundene NMEA2000-Bus ist der aktuelle Standard in der Bootsvernetzung. Über ein NMEA2000-Backbone auf CAN-Basis werden verschiedene Geräte an das Bussystem angeschlossen. Alle Bus-Teilnehmer können Daten lesen und schreiben. Dabei sind Sensoren Datenlieferanten, die ihre Daten an Displays und Plotter übertragen. das NMEA2000-Backbone kann Sensoren auch mitv Strom versorgen. Die Einspeisung der Versorgunsgspannung erfolgt über einen Plotter oder über ein Einspeisekabel.
+Der kabelgebundene NMEA2000-Bus ist der aktuelle Standard in der Bootsvernetzung. Über ein NMEA2000-Backbone auf CAN-Basis werden verschiedene Geräte an das Bussystem angeschlossen. Alle Bus-Teilnehmer können Daten lesen und schreiben. Dabei sind Sensoren Datenlieferanten, die ihre Daten an Displays und Plotter übertragen. das NMEA2000-Backbone kann Sensoren auch mit Strom versorgen. Die Einspeisung der Versorgunsgspannung erfolgt über einen Plotter oder über ein Einspeisekabel.
+
+.. image:: ../pics/NMEA2000_Sample_Setup_Plotter.png
+             :scale: 60%	
+Abb.: NMEA2000-Bussystem mit Sensoren und Anzeigegeräten
