@@ -22,7 +22,7 @@ NMEA2000 und NMEA0183 sind Bussysteme, die im Marine-Bereich verwendet werden. D
 NMEA2000
 --------
 
-NMEA2000 ist ein Bussystem und dient der Datenübertragung zwischen elektronischen Geräten in Booten. NMEA2000 verwendet **CAN** zur Datenübertragung. Die Übertragung erfolgt über ein zentrales Kabel, an das alle Geräte parallel angeschlossen sind. Jedes Gerät im NMEA2000-Netzwerk hat eine eindeutige Geräte-ID, um Datenquellen und Datenanzeigegeräte zu identifizieren und zu adressieren. Daten werden in Parameter Group Numbers (**PGN**) organisiert. PGN sind eindeutige Daten-IDs, um bestimmte Typen von Daten zu beschreiben wie beispielsweise Geschwindigkeit, Kurs, Temperatur usw. Alle Geräte können PGN empfangen und senden, aauch kann festgelegt werden, welche PGN von einem bestimmten Gerät gesendet oder empfangen werden sollen.
+NMEA2000 ist ein Bussystem und dient der Datenübertragung zwischen elektronischen Geräten in Booten. NMEA2000 verwendet **CAN** zur Datenübertragung. Die Übertragung erfolgt über ein zentrales Kabel, an das alle Geräte parallel angeschlossen sind. Jedes Gerät im NMEA2000-Netzwerk hat eine eindeutige Geräte-ID, um Datenquellen und Datenanzeigegeräte zu identifizieren und zu adressieren. Daten werden in Parameter Group Numbers (**PGN**) organisiert. PGN sind eindeutige Daten-IDs, um bestimmte Typen von Daten zu beschreiben wie beispielsweise Geschwindigkeit, Kurs, Temperatur usw. Alle Geräte können PGN empfangen und senden, auch kann festgelegt werden, welche PGN von einem bestimmten Gerät gesendet oder empfangen werden sollen.
 
 **Spezifikation NMEA2000 im OBP60**
 
@@ -47,7 +47,7 @@ Die Datenübertragung auf dem CAN-Bus erfolgt differenziell. Es werden jeweils z
 
 Abb.: Differenzielle Datenübertragung (rot CAN-H, blau CAN-L)
 
-Die Datenrate von NMEA2000 beträgt **250 kbps**. Sie wurde gewählt, um eine ausreichend hohe Übertragungsgeschwindigkeit für eine Vielzahl von Anwendungen in Booten zu gewährleisten, während gleichzeitig eine möglichst effiziente Nutzung des Netzwerks sichergestellt wird. Mit einer Datenrate von 250 kbps können Sensordaten in Echtzeit übertragen werden, was für eine Vielzahl von Anwendungen wichtig ist, wie z.B. die Überwachung der Schiffsposition, der Navigations- und Kommunikationsgeräte sowie der Motor- und anderer Systeme an Bord.
+Die Datenrate von NMEA2000 beträgt **250 kbps**. Sie wurde gewählt, um eine ausreichend hohe Übertragungsgeschwindigkeit für eine Vielzahl von Anwendungen in Booten zu gewährleisten, während gleichzeitig eine möglichst effiziente Nutzung des Netzwerks sichergestellt wird. Mit einer Datenrate von 250 kbps können Sensordaten in Echtzeit übertragen werden, was für eine Vielzahl von Anwendungen wichtig ist, z.B. für die Überwachung der Schiffsposition, für Navigations- und Kommunikationsgeräte, Motorsysteme und weitere Systeme an Bord.
 
 .. note::
 	SeaTalk NG, SIMnet, Raynet, C-Net 2000 und CANet haben einige Ähnlichkeiten zu NMEA2000. Sie unterscheiden sich jedoch durch ihre spezifische Auslegung der Hardware und der Datentelegramme. SeaTalk NG und SIMnet sind teilweise kompatibel mit NMEA2000. Das bedeutet, dass einige Geräte, die für SeaTalk NG und SimNet entwickelt wurden, mit Abstrichen auch mit NMEA2000-Geräten kommunizieren können.
@@ -64,7 +64,7 @@ Abb.: CAN-Bus-Terminierung für NMEA2000
 	Einige Geräte besitzen eingebaute Abschluss-Widerstände, die durch entsprechende Schalter zu- oder abgeschaltet werden können. Vergewissern Sie sich vor dem Einfügen neuer Geräte in Ihr NMEA-2000-Netzwerk, ob integrierte Abschluss-Widerstände benutzt werden und wie sie konfiguriert sind. Falsch terminierte Busse können Übertragungsprobleme verursachen, die schwer zu finden sind.
 	
 .. tip::
-	Um herauszufinden, ob nur zwei Widerstände im NMEA-Bus aktiv sind, können Sie ein Digitalvoltmeter benutzen. Wenn Sie eine Widerstandsmessung bei **spannungslosen NMEA-Bus** zwischen den Leitungen **CAN-High** und **CAN-Low** vornehmen, so sollte ein Widerstand von ca. **60 Ohm** zu messen sein. Ist der Widerstand deutlich kleiner als 60 Ohm, so sind weitere Geräte im Bussystem vorhanden, deren Abschlusswiderstände fäschlicherweise aktiv ist. Trennen Sie, während Sie laufend weiter den Widerstand messen, nacheinander ein Gerät nach dem anderen vom NMEA2000-Bus, bis sich der Widerstandswert deutlich erhöht. Beim zuletzt entnommenen Gerät sollte der Abschlusswiderstand dann noch aktiv sein. Ist der Widerstandswert danach noch immer nicht bei 60 Ohm, suchen Sie nach weiteren Geräten.  
+	Um herauszufinden, ob nur zwei Widerstände im NMEA-Bus aktiv sind, können Sie ein Digitalvoltmeter benutzen. Wenn Sie eine Widerstandsmessung bei **spannungslosen NMEA-Bus** zwischen den Leitungen **CAN-High** und **CAN-Low** vornehmen, sollte ein Widerstand von ca. **60 Ohm** zu messen sein. Ist der Widerstand deutlich kleiner als 60 Ohm, sind weitere Geräte im Bussystem vorhanden, deren Abschlusswiderstände fälschlicherweise aktiv ist. Trennen Sie, während Sie laufend weiter den Widerstand messen, nacheinander ein Gerät nach dem anderen vom NMEA2000-Bus, bis sich der Widerstandswert deutlich erhöht. Beim zuletzt entnommenen Gerät sollte der Abschlusswiderstand dann aktiv bleiben. Ist der Widerstandswert danach noch immer nicht bei 60 Ohm, suchen Sie nach weiteren Geräten mit offensichtlich aktiviertem Abschlusswiderstand.  
 	
 **NMEA2000-Kabel**
 
@@ -108,7 +108,7 @@ Wer eigene Buskabel herstellen möchte, sollte Kabel vergleichbar zum Typ "Lapp 
              :scale: 60%			 
 Abb. CAN-Buskabel
 
-Dabei sind 2x zwei Einzeladern paarweise verdrillt und zusätzlich mit einem äußeren Schirmgeflecht umgeben. Ein verdrilltes Aderpaar wird für CAN-H und CAN-L verwendet und das andere Aderpaar für GND und 12V. Das Schirmgeflecht wird mit GND nur an einem Kabelende verbunden. Damit erzielt man die besten Ergebnisse und hat eine sichere und langlebige Installation. Dünnere Kabel als 0.34 mm² sollten nicht verwendet werden, wenn die Versorgung aus dem Bus erfolgen soll. Die Länge des Buskabels sollte in Summe 30 m nicht übersteigen.
+Dabei sind 2x zwei Einzeladern paarweise verdrillt und zusätzlich mit einem äußeren Schirmgeflecht umgeben. Ein verdrilltes Aderpaar wird für CAN-H und CAN-L verwendet und das andere Aderpaar für GND und 12V. Das Schirmgeflecht wird mit GND an nur einem Kabelende verbunden. Damit erzielt man die besten Ergebnisse und hat eine sichere und langlebige Installation. Dünnere Kabel als 0.34 mm² sollten nicht verwendet werden, wenn die Versorgung aus dem Bus erfolgen soll. Die Länge des Buskabels sollte in Summe 30 m nicht übersteigen.
 
 .. image:: ../pics/NMEA2000_Filed_Connectors.png
              :scale: 60%	
@@ -141,7 +141,7 @@ Abb.: NMEA2000-Verbindung mit Stromversorgung über den NMEA2000-Bus
 Eine Minimal-Konfiguration könnte folgendermaßen aussehen. Dabei ist zu beachten, dass der NMEA2000-Bus auf der rechten Seite durch das OBP60 terminiert ist, indem die interne Bus-Terminierung über den Jumper ``TN2K`` aktiviert wurde. Der Jumper ``TN2K`` befindet sich mittig zwischen den beiden Steckverbindern **CN1** und **CN2**.
 
 .. note::
-    Legen Sie den Schirm des NMEA2000-Kabels am Eingang ``Shield`` auf. Verbinden Sie den Schirm **nicht** mit ``GND``, ``GND2`` oder ``GNDS``, da Sie damit Masseschleifen erzeugen und die Isolationswirkung verloren geht. Der gesamte Schirm der Busleitung darf nur am Eingang ``Shield`` des NMEA2000-Bus am OBP60 einseitig aufgelegt werden. An anderen Stellen darf die Kabelschirmung nicht verbunden werden. 
+    Legen Sie den Schirm des NMEA2000-Kabels am Eingang ``Shield`` auf. Verbinden Sie den Schirm **nicht** mit ``GND``, ``GND2`` oder ``GNDS``, da Sie damit Masseschleifen erzeugen und die Isolationswirkung verloren geht. Der gesamte Schirm der Busleitung darf nur einseitig am Eingang ``Shield`` des NMEA2000-Bus am OBP60 aufgelegt werden. An anderen Stellen darf die Kabelschirmung nicht verbunden werden. 
 
 .. image:: ../pics/NMEA2000_Sample_Setup_Minimal_Configuration.png
              :scale: 60%	
@@ -165,7 +165,7 @@ Abb.: NMEA2000 Minimal-Konfiguration mit Buseinspeisung
 NMEA0183
 --------
 
-NMEA0183 ist ein Standard für serielle Datenübertragung in der Schifffahrt. Es definiert ein Format für die Übertragung von Informationen zwischen Navigationsgeräten und anderen elektronischen Geräten auf Booten. NMEA0183 ist ein weit verbreiteter Standard, der vor allem von vielen alten Geräten unterstützt wird.
+NMEA0183 ist ein Standard für serielle Datenübertragung in der Schifffahrt. Es definiert ein Format für die Übertragung von Informationen zwischen Navigationsgeräten und anderen elektronischen Geräten auf Booten. NMEA0183 ist ein weit verbreiteter Standard, der vor allem von vielen älteren Geräten unterstützt wird.
 
 **Spezifikation NMEA0183 im OBP60**
 
@@ -234,13 +234,13 @@ Abb.: RS422-Übertragungsmodell Sender - Empfänger
              :scale: 35%
 Abb.: Bus-Terminierung für NMEA0183
 
-Auf der Empfängerseite ist der NMEA0183-Bus terminiert. Im OBP60 findet man zwischen den Steckverbindern **CN1** und **CN2** einen Jumper ``T183`` für die Bus-Terminierung. Der Jumper ist zu setzen, wenn das OBP60 als Empfänger von NMEA0183-Telegrammen als **Serial Direction Receive** konfiguriert wurde (siehe Kapitel `Config - Serial Port`_).
+Auf der Empfängerseite ist der NMEA0183-Bus terminiert. Im OBP60 findet man den Jumper ``T183`` für die Bus-Terminierung zwischen den Steckverbindern **CN1** und **CN2**. Der Jumper ist zu setzen, wenn das OBP60 als Empfänger von NMEA0183-Telegrammen als **Serial Direction Receive** konfiguriert wurde (siehe Kapitel `Config - Serial Port`_).
 
 .. _Config - Serial Port: https://obp60-v2-docu.readthedocs.io/de/latest/usermanual/configuration.html#config-serial-port
 
 **Multiplexer**
 
-Insgesamt ist NMEA0183 ein nützlicher Standard für die Übertragung von Navigationsdaten auf Booten, aber es hat seine Beschränkungen und kann nicht in allen Einsatzfällen mit moderneren Technologien wie NMEA2000 mithalten. Um Daten von mehreren Datenquellen wie z.B. Sensoren zu einem Datenstrom zusammenfassen zu können, sind Multiplexer notwendig.
+Insgesamt ist NMEA0183 ein nützlicher Standard für die Übertragung von Navigationsdaten auf Booten, aber er hat seine Beschränkungen und kann nicht in allen Einsatzfällen mit moderneren Technologien wie NMEA2000 mithalten. Um zum Beispiel Daten von mehreren Datenquellen wie z.B. Sensoren zu einem Datenstrom zusammenfassen zu können, sind in der NMEA0183-Welt Multiplexer notwendig.
 
 .. image:: ../pics/NMEA0183_Multiplexer.png
              :scale: 60%
@@ -248,7 +248,7 @@ Abb.: NMEA0183 Multiplexer (Ship Modul)
 
 Der Multiplexer empfängt verschiedene Datentelegramme an unterschiedlichen Ports und gibt den zusammengefassten Datenstrom mehrerer Sensoren an einem neuen Datenport aus. So lassen sich mehrere Sensorsignale über eine Leitung an ein Datenendgerät wie z.B. einen Plotter oder ein Multifunktionsdisplay übertragen. Viele Multiplexer bieten auch die Möglichkeit, bestimmte Datentelegramme im Datenstrom mit einer Filterfunktion zu unterdrücken. So können z.B. nur die wirklich notwendigen Daten an einen Autopiloten übertragen oder Mehrdeutigkeiten durch mehrere GPS-Empfänger vermieden werden.
 
-**NMEA0183 Telegrammstruktur**
+**NMEA0183-Telegrammstruktur**
 
 NMEA0183-Telegramme sind recht einfach aufgebaut und werden als ASCII-Datensätze übertragen. Ein NMEA0183-Telegramm besteht aus folgenden Informationen.
 
@@ -259,7 +259,7 @@ NMEA0183-Telegramme sind recht einfach aufgebaut und werden als ASCII-Datensätz
 * Status
 * CRC-Checksumme
 
-Je nach Komplexität eines Telegramms können auch mehrere Sensordaten oder Statusinformationen in einem Telegramm übertragen werden. Nachfolgend ist beispielhaft ein Telegramm eines Tiefenmessers dargestellt.
+Je nach Komplexität eines Telegramms können auch mehrere Sensordaten oder Statusinformationen in einem Telegramm übertragen werden. Nachfolgend ist beispielhaft das Telegramm eines Tiefenmessers dargestellt.
 
 **DBT** - Depth below transducer
 
@@ -298,14 +298,14 @@ Abb.: NMEA0183-Minimalkonfiguration
 .. attention::
     Beachten Sie, dass bei NMEA0183-Datenübertragungen die selbe Übertragungsgeschwindigkeit für Sender und Empfänger und das selbe Übertragungsprotokoll verwendet werden muss. Anderenfalls kann keine Datenübertragung stattfinden. Die NMEA0183-Schnittstelle im OBP60 unterstützt das RS232-Protokoll nicht.
 
-Die meisten Multiplexer haben mehrere NMEA0183-Eingänge und mindestens einen NMEA0183-Ausgang. Bei der Verwendung eines Multiplexers werden alle Sensoren an die NMEA0183-Eingänge des Multiplexers angeschlossen und der NMEA0183-Ausgang mit dem OBP60 verbunden. Der Multiplexer bündelt dann die Datenströme aller Sensoren zu einem gemeinsamen Datenstrom am Ausgang. Über Filter am Datenausgang lässt sich die Datenmenge auf wichtige Daten eingrenzen. Das OBP60 ist in diesem Beispiel auf Empfang konfiguriert. Die Terminierung des Bussystems ist deaktiviert.
+Die meisten Multiplexer haben mehrere NMEA0183-Eingänge und mindestens einen NMEA0183-Ausgang. Bei der Verwendung eines Multiplexers werden alle Sensoren an die NMEA0183-Eingänge des Multiplexers angeschlossen und der NMEA0183-Ausgang mit dem OBP60 verbunden. Der Multiplexer bündelt dann wie beschrieben die Datenströme aller Sensoren zu einem gemeinsamen Datenstrom am Ausgang. Über Filter am Datenausgang lässt sich die Datenmenge auf wichtige Daten eingrenzen. Das OBP60 ist in diesem Beispiel auf Empfang konfiguriert. Die Terminierung des Bussystems ist deaktiviert.
 
 .. image:: ../pics/NMEA0183_Sample_Setup_Multiplexer.png
              :scale: 50%
 Abb.: NMEA0183-Verbindung zu einem Multiplexer
 
 .. hint::
-    Alle NMEA0183-Daten werden vom OBP60-Gateway automatisch nach NMEA2000 konvertiert. Die Konvertierung ist dabei unidirektional und funktioniert nur in Richtung NMEA2000. In umgekehrte Richtung nach NMEA0183 werden keine Daten konvertiert, da der NMEA0183-Port des OBP60 immer im Empfangs-Modus arbeitet.
+    Alle NMEA0183-Daten werden vom OBP60-Gateway automatisch nach NMEA2000 konvertiert. Die Konvertierung ist dabei unidirektional nur in Richtung NMEA2000. In umgekehrte Richtung nach NMEA0183 werden keine Daten konvertiert, da der NMEA0183-Port des OBP60 immer im Empfangs-Modus arbeitet.
     
 I2C
 ---
@@ -349,24 +349,24 @@ Im folgenden Bild ist ein I2C-Busaufbau mit 3 I2C-Sensoren zu sehen. Alle Sensor
 Abb.: I2C-Anbindung von externen Sensoren
 
 .. note::
-    Verwenden Sie für die Verkabelung externer Sensoren möglichst geschirmte Kabel und führen Sie den Schirm direkt bis zum Sensor. Verbinden Sie den Schirm am Sensor **nicht** mit ``GND2``, da Sie damit Masseschleifen erzeugen. Der gesamte Schirm der Busleitung darf nur einseitig an Eingang ``Shield`` des I2C-Bus am OBP60 aufgelegt werden. Der Schirm am anderen Ende der Leitung beleibt offen. Andere Schirmeingänge dürfen nicht benutzt werden. Halten Sie Stichleitungen vom Bus zu den Sensoren möglichst kurz.
+    Verwenden Sie für die Verkabelung externer Sensoren möglichst geschirmte Kabel und führen Sie den Schirm direkt bis zum Sensor. Verbinden Sie den Schirm des Sensorkabels **nicht** mit ``GND2``, da Sie damit Masseschleifen erzeugen. Der gesamte Schirm der Busleitung darf nur einseitig an Eingang ``Shield`` des I2C-Bus am OBP60 aufgelegt werden. Der Schirm am anderen Ende der Leitung beleibt offen. Andere Schirmeingänge dürfen nicht benutzt werden. Halten Sie Stichleitungen vom Bus zu den Sensoren möglichst kurz.
 
 .. attention::
     Einige I2C-Module können zwar mit 5V versorgt werden, benutzen aber 3.3V TTL-Signale für ``SCL`` und ``SDA``. In diesem Fall benötigen Sie einen Pegelwandler für das SCL- und SDA-Signal auf 5V TTL-Signale. Beachten Sie das nicht, so können der I2C-Sensor oder das I2C-Modul beschädigt werden. Das Gleiche git auch für Module, die nur mit 3,3V versorgt werden. Dann benötigen Sie neben dem Pegelwandler noch zusätzlich einen DC/DC-Wandler zur Reduzierung der Versorgungsspannung. Die meisten I2C-Module, die für einen **Arduino Uno** verwendet werden können, lassen sich auch am OBP60 verwenden. Diese Module sind für 5V-TTL-Signale geeignet.
    
 .. caution::
-    Wenn Sie externe Sensoren oder Module am I2C-Bus verwenden wollen, dann prüfen Sie, ob es zu einem Adresskonflikt zwischen den Sensoren oder Modulen kommen kann. Achten Sie darauf, dass I2C-Adressen nicht mehrfach vergeben sind. Es kommt dann zu Kommunikationsstörungen auf dem I2C-Bus. Insbesondere bei mehrfacher Verwendung gleicher Module müssen die I2C-Adressen verschieden eingestellt werden. Bei einigen I2C-Modulen ist das nicht möglich. In dem Fall können Sie nur ein I2C-Modul des jeweiligen Typs im Bus verwenden. Das OBP60 belegt bereits folgende Adressen, die nicht von Sensoren benutzt werden dürfen: 0x76, 0xD0.
+    Wenn Sie externe Sensoren oder Module am I2C-Bus verwenden wollen, dann prüfen Sie, ob es zu einem Adresskonflikt zwischen den verwendeten Sensoren oder Modulen kommen kann. Achten Sie darauf, dass I2C-Adressen nicht mehrfach vergeben sind. Es kommt dann zu Kommunikationsstörungen auf dem I2C-Bus. Insbesondere bei mehrfacher Verwendung gleicher Module müssen die I2C-Adressen verschieden eingestellt werden. Bei einigen I2C-Modulen ist das nicht möglich. In dem Fall können Sie nur ein I2C-Modul des jeweiligen Typs im Bus verwenden. Das OBP60 belegt bereits folgende Adressen, die nicht von Sensoren benutzt werden dürfen: 0x76, 0xD0.
 
 .. caution::
-    Nicht angeschlossene externe I2C-Sensoren, die jedoch in der Konfiguration aktiviert sind, führen dazu, dass die Reaktionsfähigkeit des OBP60 beeinträchtigt wird. Die Sensoren antworten nicht, sie erzeugen dadurch einen Software-Timeout. Deaktivieren Sie in einem solchen Fall die Sensoren in der Konfiguration. 
+    Nicht angeschlossene externe I2C-Sensoren, die jedoch in der Konfiguration aktiviert sind, führen dazu, dass die Reaktionsfähigkeit des OBP60 beeinträchtigt wird. Diese Sensoren können nicht auf das System antworten, sie erzeugen dadurch einen Software-Timeout. Deaktivieren Sie in einem solchen Fall die Sensoren in der Konfiguration. 
     
 .. danger::
-    Bestimmen Sie den Strombedarf Ihrer externen Sensoren und achten Sie darauf, dass die Stromversorgung ``5Viso`` nicht überlastet wird oder einen Kurzschluss bekommt. Der maximal zulässige Strom liegt bei **200 mA**. Anderenfalls fallen sonst alle isolierten Bussysteme wie **NMEA2000**, **NMEA0183** und **I2C** aus, da sie mit der selben Stromquelle versorgt werden. Die Folge ist ein Kommunikationsverlust auf allen genannten Bussystemen, der schwere Folgen für die Navigation des Bootes haben kann. Verbinden Sie ``GND2`` **nicht** mit ``GND`` oder ``GNDS``, da die Isolationswirkung verloren geht und die Empfindlichkeit für Störungen steigt.
+    Bestimmen Sie den Strombedarf Ihrer externen Sensoren und achten Sie darauf, dass die Stromversorgung ``5Viso`` nicht überlastet oder kurzgeschlossen wird. Der maximal zulässige Strom liegt bei **200 mA**. Anderenfalls fallen sonst alle isolierten Bussysteme wie **NMEA2000**, **NMEA0183** und **I2C** aus, da sie mit der selben Stromquelle versorgt werden. Die Folge ist ein Kommunikationsverlust auf allen genannten Bussystemen, der schwere Folgen für die Navigation des Bootes haben kann. Verbinden Sie ``GND2`` **nicht** mit ``GND`` oder ``GNDS``, da die Isolationswirkung verloren geht und die Empfindlichkeit für Störungen steigt.
     
 1Wire
 -----
 
-Der 1Wire-Bus ist ein Eindraht-Bus zur seriellen Übertragung von Daten in elektronischen Schaltungen. Neben der Datenleitung wird noch eine Masseleitung als Potenzialbezug benötigt. Die Übertragung ist bidirektional und asynchron. Der 1Wire-Bus wird oft für einfache Sensoren verwendet, die nur kleine Datenmengen übertragen, wie z.B. für die Temperatursensoren **DS18B20**. Beim OBP60 ist der 1Wire-Bus an der Anschlussklemme CN2 herausgeführt.
+Der 1Wire-Bus ist ein Eindraht-Bus zur seriellen Übertragung von Daten in elektronischen Schaltungen. Neben der Datenleitung wird noch eine Masseleitung als Potenzialbezug benötigt. Die Übertragung ist bidirektional und asynchron. Der 1Wire-Bus wird oft für einfache Sensoren verwendet, die nur kleine Datenmengen übertragen wie z.B. für die Temperatursensoren **DS18B20**. Beim OBP60 ist der 1Wire-Bus an der Anschlussklemme CN2 herausgeführt.
 
 **Spezifikation 1Wire**
 
@@ -394,7 +394,7 @@ Der 1Wire-Bus bietet eine einfache und kostengünstige Möglichkeit, Temperaturs
 |GND2    |Schirmung           |
 +--------+--------------------+
 
-Die Stromversorgung der Temperatursensoren erfolgt parasitär über die Datenleitung. Intern im Sensor befindet sich ein Kondensator, der eine gewisse Menge an Energie für den Zeitpunkt der Übertragung speichern kann, wenn der Datenpegel auf 3.3V liegt. Die Sensoren werden über eindeutige Adressen angesprochen und können mit dem OBP60 Daten austauschen. Durch die parasitäre Stromversorgung ist die Datenrate auf 9600 kBit/s limitiert. Die Sensoren können nur wenige Male in der Minute abgefragt werden, da sie ihre Energie über einen längeren Zeitraum über die Datenleitung sammeln müssen. 1Wire-Temperatur-Sensoren eignen sich daher nur für die Verarbeitung unkritischer Temperaturwerte.
+Die Stromversorgung der Temperatursensoren erfolgt parasitär über die Datenleitung. Intern im Sensor befindet sich ein Kondensator, der eine gewisse Menge an Energie für den Zeitpunkt der Übertragung speichern kann, wenn der Datenpegel auf 3.3V liegt. Die Sensoren werden über eindeutige Adressen angesprochen und können mit dem OBP60 Daten austauschen. Durch die parasitäre Stromversorgung ist die Datenrate auf max. 9600 kBit/s limitiert. Die Sensoren können nur wenige Male in der Minute abgefragt werden, da sie ihre Energie über einen längeren Zeitraum über die Datenleitung sammeln müssen. 1Wire-Temperatur-Sensoren eignen sich daher nur für die Verarbeitung unkritischer Temperaturwerte.
 
 Nachfolgend ist eine Beispielanwendung für 1Wire-Temperatur-Sensoren zu sehen.
 
@@ -415,13 +415,13 @@ Die Belegung der DS18B20-Temperatur-Sensoren ist folgendermaßen durchzuführen.
 +--------+--------------------+
 
 .. note::
-    Verwenden Sie für die Verkabelung externer Temperatur-Sensoren möglichst geschirmte Kabel und führen Sie den Schirm direkt bis zum Sensor. Verbinden Sie den Schirm am Sensor **nicht** mit ``GND``, da Sie damit Masseschleifen erzeugen. Der gesamte Schirm der Busleitung darf nur einseitig an Eingang ``GND2`` des 1Wire-Bus am OBP60 aufgelegt werden. Der Schirm am anderen Ende der Leitung bleibt offen. Andere Schirmeingänge dürfen nicht benutzt werden. Halten Sie Stichleitungen vom Bus zu den Sensoren möglichst kurz. Die maximale Anzahl der Sensoren am 1Wire-Bus ist auf 3 Sensoren begrenzt.
+    Verwenden Sie für die Verkabelung externer Temperatur-Sensoren möglichst geschirmte Kabel und führen Sie den Schirm direkt bis zum Sensor. Verbinden Sie den Schirm des Sensorkabels **nicht** mit ``GND``, da Sie damit Masseschleifen erzeugen. Der gesamte Schirm der Busleitung darf nur einseitig an Eingang ``GND2`` des 1Wire-Bus am OBP60 aufgelegt werden. Der Schirm am anderen Ende der Leitung bleibt offen. Andere Schirmeingänge dürfen nicht benutzt werden. Halten Sie Stichleitungen vom Bus zu den Sensoren möglichst kurz. Die maximale Anzahl der Sensoren am 1Wire-Bus ist auf 3 Sensoren begrenzt.
     
 .. hint::
     Wenn möglich, verwenden Sie Temperatursensoren am I2C-Bus statt am 1Wire-Bus. Sie erhöhen damit die Betriebssicherheit des Gesamtsystems, da der I2C-Bus gegenüber der Außenwelt isoliert ist.
     
 .. hint::
-    Im Internet-Handel sind Nachbauten von DS18B20-Temperatur-Sensoren im Umlauf, die eine parasitäte Stromversorgung nicht unterstützen. Wenn Sie keine Kommunikation mit dem OBP60 zustande bekommen, dann versuchen Sie andere Sensoren. Wenn das zu keinem Erfolg führt, dann benutzen Sie eine normale Stromversorgung für die Temperatursensoren. Mit dieser Art der Stromversorgung sollten nahezu alle Sensoren funktionieren.
+    Im Internet-Handel sind Nachbauten von DS18B20-Temperatur-Sensoren im Umlauf, die eine parasitäte Stromversorgung nicht unterstützen. Wenn Sie keine Kommunikation mit dem OBP60 zustande bekommen, dann probieren Sie andere Sensoren aus. Wenn auch das zu keinem Erfolg führt, benutzen Sie eine normale Stromversorgung für die Temperatursensoren. Mit dieser Art der Stromversorgung sollten nahezu alle Sensoren funktionieren.
 
 .. caution::
     Der 1Wire-Bus ist nicht isoliert gegenüber der internen Schaltung des OBP60. Das erhöht bei unsachgemäßer Installation das Risiko, dass eingekoppelte Störungen in die Busleitungen die Funktion und Stabilität des OBP60 beeinträchtigen können. Halten Sie daher die Buslänge so kurz wie möglich. Im schlimmsten Fall kann es zum kompletten Ausfall des OBP60 führen mit daraus resultierenden schweren Folgen für die Navigationsfähigkeit des Bootes.
@@ -456,7 +456,7 @@ Das OBP60 kann auch über USB-C mit Strom versorgt werden. Das ist nützlich, we
     Die reguläre Stromversorgung des OBP60 im Boot erfolgt immer über 12V aus dem Bordnetz. Es wird nicht empfohlen, eine Versorgung nur über USB-C durchzuführen, da die Steckverbindung nicht gegen unbeabsichtigtes Lösen gesichert ist. 
 
 .. danger::
-    In einigen Situationen kann es vorkommen, dass unzulässige Ausgleichsströme über die nicht isolierte USB-C-Schnittstelle fließen und das OBP60 beschädigen können. Das passiert z.B. dann, wenn Ladegeräte mit dem 230V-Landstrom verbunden sind, die Bord-Batterie aufladen und gleichzeitig ein Laptop mit 230V-Versorgung mit dem OBP60 über USB-C verbunden ist. Wenn Sie beabsichtigen, die USB-C-Verbindung dauerhaft zur Kommunikation im Boot zu nutzen, sollten sie einen USB-Isolator verwenden, um Schäden zu vermeiden. Beim Betrieb des Laptops nur über den eingebauten Akku entstehen die beschriebenen Probleme nicht.
+    In einigen Situationen kann es vorkommen, dass unzulässige Ausgleichsströme über die nicht isolierte USB-C-Schnittstelle fließen und das OBP60 so beschädigen können. Das passiert z.B. dann, wenn Ladegeräte mit dem 230V-Landstrom verbunden sind, die Bord-Batterie aufladen und gleichzeitig ein Laptop mit 230V-Versorgung mit dem OBP60 über USB-C verbunden ist. Wenn Sie beabsichtigen, die USB-C-Verbindung dauerhaft zur Kommunikation im Boot zu nutzen, sollten sie einen USB-Isolator verwenden, um Schäden zu vermeiden. Beim Betrieb des Laptops nur über seinen eingebauten Akku entstehen die beschriebenen Probleme nicht.
     
 .. image:: ../pics/USB_Isolator.png
              :scale: 30%
