@@ -108,7 +108,7 @@ Nutzbare und konvertierbare Telegramme
 **NMEA2000**
     * 126992, 127245, 127250, 127251, 127257, 127258, 127488, 127489, 127505, 127508, 128259, 128267, 128275, 129025, 129026, 129029, 129033, 129038, 129039, 129283, 129284, 129539, 129540, 129794, 129809, 129810, 130306, 130310, 130311, 130312, 130313, 130314, 130316
 	
-Nutzbare I2C Sensorik
+Nutzbare I2C-Sensorik
 ---------------------
 
 **Umgebungssensoren**
@@ -120,7 +120,7 @@ Nutzbare I2C Sensorik
 **Winkelsensoren**
 	* AS5600, MT6701 (in Vorbereitung)
 	
-**Port Erweiterungen**
+**Port-Erweiterungen**
 	* PCF8574 (in Vorbereitung)
 	
 **Echtzeit-Uhren**
