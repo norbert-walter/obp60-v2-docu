@@ -713,18 +713,18 @@ Im OBP60 gibt es insgesamt bis zu 10 Seiten die man frei auswählen und gestalte
     * **FourValue2** - Vier Anzeigewerte (andere Anordnung vertikal/horizontal)
 
 * Seiten mit festem Inhalt
-    * **Voltage** - Anzeige der Bordspannung 12V (xdrVBat)
-    * **DST810** - Anzeige für Tiefe, Speed, Log und Wassertemperatur (DBT, STW, Log, WTemp)
-    * **Clock** - Grafische Zeitanzeige mit Sonnenauf- und Sonnenuntergang (GPST, GPSD)
+    * **Voltage** - Anzeige der Bordspannung 12V (**xdrVBat**)
+    * **DST810** - Anzeige für Tiefe, Speed, Log und Wassertemperatur (**DBT, STW, Log, WTemp**)
+    * **Clock** - Grafische Zeitanzeige mit Sonnenauf- und Sonnenuntergang (**GPST, GPSD**)
     * **White Page** - Leere weiße Seite, um Display in StandBy zu schalten
-    * **BME280** - Anzeige von Umweltdaten wie Temperatur, Luftdruck und Feuchtigkeit (BME280 I2C)
-    * **Rudder Position** - Grafische Anzeige der Ruderposition (RPOS)
-    * **Keel Position** - Grafische Anzeige der Kielposition (AS5600 I2C)
-    * **Battery** - Anzeige von Spannung, Strom und Leistung (INA219, INA226 I2C)
-    * **Battery2** - Grafische Anzeige des Batterie-Ladezustandes (INA219, INA226 I2C)
-    * **RollPitch** - Grafische Anzeige von Roll und Pitch (xdrRoll, xdrPitch)
-    * **Solar** - Grafische Anzeige des Solar-Ladezustandes (INA219, INA226 I2C)
-    * **Generator** - Grafische Anzeige des Generator-Ladezustandes (INA219, INA226 I2C)
+    * **BME280** - Anzeige von Umweltdaten wie Temperatur, Luftdruck und Feuchtigkeit (**BME280** I2C)
+    * **Rudder Position** - Grafische Anzeige der Ruderposition (**RPOS**)
+    * **Keel Position** - Grafische Anzeige der Kielposition (**AS5600** I2C)
+    * **Battery** - Anzeige von Spannung, Strom und Leistung (**INA219, INA226** I2C)
+    * **Battery2** - Grafische Anzeige des Batterie-Ladezustandes (**INA219, INA226** I2C)
+    * **RollPitch** - Grafische Anzeige von Roll und Pitch (**xdrRoll, xdrPitch**)
+    * **Solar** - Grafische Anzeige des Solar-Ladezustandes (**INA219, INA226** I2C)
+    * **Generator** - Grafische Anzeige des Generator-Ladezustandes (**INA219, INA226** I2C)
     
 .. note::
     Bitte beachten Sie, dass alle Seiten mit festen Inhalten bestimmte Sensorwerte vorausetzen, um Messwerte angezeigen zu können. Unter dem Register **Data** kann die Verfügbarkeit der notwendigen Daten geprüft werden. 
