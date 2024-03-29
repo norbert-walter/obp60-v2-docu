@@ -4,19 +4,19 @@ Konfiguration
 Nachdem die Stromversorgung zugeschaltet wurde, startet die Firmware des OBP60. Nach Abschluss der Initialisierungsphase ertönt ein Piepton. Im Display wird zuerst das Open Boat Projects-Logo angezeigt, gefolgt von einem QR-Code, der die Zugangsdaten zum Access Point anzeigt. Beide Bilder sind für einige Sekunden sichtbar. Sie können mit Ihrer Handy-Kamera den QR-Code scannen und sich dann in das WiFi-Netz des OBP60 einloggen.
 
 .. image:: ../pics/OBP60_OBP_Logo_tr.png
-             :scale: 50%
+             :scale: 30%
              
 Abb.: Startbildschirm mit OBP-Logo
              
 .. image:: ../pics/OBP60_QR_Code_tr.png
-             :scale: 50%
+             :scale: 30%
              
 Abb.: QR-Code für WiFi-Zugang
 
 Ab Android 10 öffnen Sie dazu die Wifi-Einstellungen und lassen sich alle WiFi-Netzwerke der Umgebung anzeigen. Am Ende der Liste finde Sie unter **Netzwerke hinzufügen** rechts ein kleines blaues QR-Symbol. Wenn Sie das Symbol anklicken, öffnet sich ein Fenster zum Scannen das QR-Codes. Nach einem erfolgreichen Scan bucht sich das Gerät selbständig in das WiFi-Netzwerk ein. Sie müssen keine Eingaben zur SSID oder zum Passwort vornehmen. Für ältere Android-Versionen gibt es Scanner-Apps, die ähnliche Funktionalität aufweisen. 
 
 .. image:: ../pics/WiFi_QR_Code_Settings.png
-             :scale: 50%
+             :scale: 30%
              
 Abb.: WLAN Settings unter Android 11
 
