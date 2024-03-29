@@ -6,13 +6,19 @@ Nachdem die Stromversorgung zugeschaltet wurde, startet die Firmware des OBP60. 
 .. image:: ../pics/OBP60_OBP_Logo_tr.png
              :scale: 50%
              
+Abb.: Startbildschirm mit OBP-Logo
+             
 .. image:: ../pics/OBP60_QR_Code_tr.png
              :scale: 50%
+             
+Abb.: QR-Code für WiFi-Zugang
 
 Ab Android 10 öffnen Sie dazu die Wifi-Einstellungen und lassen sich alle WiFi-Netzwerke der Umgebung anzeigen. Am Ende der Liste finde Sie unter **Netzwerke hinzufügen** rechts ein kleines blaues QR-Symbol. Wenn Sie das Symbol anklicken, öffnet sich ein Fenster zum Scannen das QR-Codes. Nach einem erfolgreichen Scan bucht sich das Gerät selbständig in das WiFi-Netzwerk ein. Sie müssen keine Eingaben zur SSID oder zum Passwort vornehmen. Für ältere Android-Versionen gibt es Scanner-Apps, die ähnliche Funktionalität aufweisen. 
 
 .. image:: ../pics/WiFi_QR_Code_Settings.png
              :scale: 50%
+             
+Abb.: WLAN Settings unter Android 11
 
 .. note::
     Sollten Sie sich  nicht per QR-Code in das WiFi-Netzwerk des OBP60 einbuchen können, nehmen Sie die Konfiguration manuell vor und verwenden die folgende Zugansdaten.
