@@ -714,38 +714,40 @@ Im OBP60 gibt es insgesamt bis zu 10 Seiten die man frei auswählen und gestalte
 
 * Seiten mit festem Inhalt
     * **Voltage** - Anzeige der Bordspannung 12V
-        * xdrVBat
+        xdrVBat
     * **DST810** - Anzeige für Tiefe, Speed, Log und Wassertemperatur (universell verwendbar)
-        * DBT, STW, Log, WTemp
+        DBT, STW, Log, WTemp
     * **Clock** - Grafische Zeitanzeige mit Sonnenauf- und Sonnenuntergang
-        * GPST, GPSD
+        GPST, GPSD
     * **White Page** - Leere weiße Seite, um Display in StandBy zu schalten
     * **BME280** - Anzeige von Umweltdaten wie Temperatur, Luftdruck und Feuchtigkeit
-        * BME280 am I2C-Bus
+        BME280 am I2C-Bus
     * **Rudder Position** - Grafische Anzeige der Ruderposition
-        * RPOS
+        RPOS
     * **Keel Position** - Grafische Anzeige der Kielposition
-        * Rotationssensor AS5600 am I2C-Bus
+        Rotationssensor AS5600 am I2C-Bus
     * **Battery** - Anzeige von Spannung, Strom und Leistung
-        * Stromsensor INA219 oder INA226 am I2C-Bus
+        Stromsensor INA219 oder INA226 am I2C-Bus
     * **Battery2** - Grafische Anzeige des Batterie-Ladezustandes
-        * Stromsensor INA219 oder INA226 am I2C-Bus (auch ohne Sensor teilweise benutzbar)
+        Stromsensor INA219 oder INA226 am I2C-Bus (auch ohne Sensor teilweise benutzbar)
     * **RollPitch** - Grafische Anzeige von Roll und Pitch (über XDR)
-        * xdrRoll, xdrPitch
+        xdrRoll, xdrPitch
     * **Solar** - Grafische Anzeige des Solar-Ladezustandes
-        * Stromsensor INA219 oder INA226 am I2C-Bus
+        Stromsensor INA219 oder INA226 am I2C-Bus
     * **Generator** - Grafische Anzeige des Generator-Ladezustandes
-        * * Stromsensor INA219 oder INA226 am I2C-Bus
+        Stromsensor INA219 oder INA226 am I2C-Bus
     
 .. note::
-    Bitte beachten Sie, dass einige Seiten bestimmte Sensorwerte vorausetzen, damit Messwerte angezeigt werden können.
+    Bitte beachten Sie, dass alle Seiten mit festen Inhalten bestimmte Sensorwerte vorausetzen, damit Messwerte angezeigt werden können. Unter dem Register **Data** kann die Verfügbarkeit der notwendigen Daten geprüft werden. 
     
-Bei den Seiten mit veränderlichen Inhalt stehen je nach Anzahl der angezeigten Werte Eingabefelder zur Verfügung über die die anzuzeigenden Daten ausgewählt werden können:
+Bei Seiten mit veränderlichen Inhalt, stehen je nach Anzahl der Anzeigewerte, unterschiedlich viele Eingabefelder zur Verfügung. Darüber können die anzuzeigenden Daten ausgewählt werden.
 
 .. image:: /pics/Config_OBP60_Page_4Value.png
              :scale: 60%
 
-* Datenpool
+Abb.: Seite mit 4 Anzeigewerten
+
+* Datenpool auswählbarer Daten
     * **ALT** - Altitude, Höhe über Grund
     * **AWA** - Apparant Wind Angle, Scheinbare Windrichtung
     * **AWS** - Apparant Wind Speed, Scheinbare Windgeschwindigkeit
