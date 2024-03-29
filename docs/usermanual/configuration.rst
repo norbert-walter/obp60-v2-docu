@@ -727,7 +727,7 @@ Im OBP60 gibt es insgesamt bis zu 10 Seiten die man frei auswählen und gestalte
     * **Generator** - Grafische Anzeige des Generator-Ladezustandes (INA219, INA226 I2C)
     
 .. note::
-    Bitte beachten Sie, dass alle Seiten mit festen Inhalten bestimmte Sensorwerte vorausetzen, damit Messwerte angezeigt werden können. Unter dem Register **Data** kann die Verfügbarkeit der notwendigen Daten geprüft werden. 
+    Bitte beachten Sie, dass alle Seiten mit festen Inhalten bestimmte Sensorwerte vorausetzen, um Messwerte angezeigen zu können. Unter dem Register **Data** kann die Verfügbarkeit der notwendigen Daten geprüft werden. 
     
 Bei Seiten mit veränderlichen Inhalt, stehen je nach Anzahl der Anzeigewerte, unterschiedlich viele Eingabefelder zur Verfügung. Darüber können die anzuzeigenden Daten ausgewählt werden.
 
