@@ -713,7 +713,7 @@ Im OBP60 gibt es insgesamt bis zu 10 Seiten die man frei auswählen und gestalte
     * **FourValue2** - Vier Anzeigewerte (andere Anordnung vertikal/horizontal)
 
 * Seiten mit festem Inhalt
-    * **Voltage** - Anzeige der Bordspannung 12V (**xdrVBat**)
+    * **Voltage** - Anzeige der Bordspannung (**xdrVBat**)
     * **DST810** - Anzeige für Tiefe, Speed, Log und Wassertemperatur (**DBT, STW, Log, WTemp**)
     * **Clock** - Grafische Zeitanzeige mit Sonnenauf- und Sonnenuntergang (**GPST, GPSD**)
     * **White Page** - Leere weiße Seite, um Display in StandBy zu schalten
@@ -745,7 +745,7 @@ Abb.: Seite mit 4 Anzeigewerten
     * **DBS** - Depth Below Surface, Tiefe über Wasseroberfläche
     * **DBT** - Depth Below Transducer, Tiefe ab Sensor
     * **DEV** - Deviation, Kursabweichung
-    * **DTW** - Distance To Waipoint, Entfernung zum aktuellen Wegpunkt
+    * **DTW** - Distance To Waypoint, Entfernung zum aktuellen Wegpunkt
     * **GPSD** - GPS Date, GPS-Datum
     * **GPDT** - GPS Time, GPS-Zeit als UTC (Weltzeit)
     * **HDG** - Heading, Rechtweisender Kurs
