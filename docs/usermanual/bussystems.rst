@@ -58,7 +58,7 @@ Ein CAN-Bus verwendet an den beiden Enden des Bussystems Abschluss-Widerstände 
 
 .. image:: ../pics/NMEA2000_Termination_Sample.png
              :scale: 60%
-Abb.: CAN-Bus-Terminierung für NMEA2000
+Abb.: CAN-Bus-Terminierung für NMEA2000 über ``T183``
 
 .. warning::
 	Einige Geräte besitzen eingebaute Abschluss-Widerstände, die durch entsprechende Schalter zu- oder abgeschaltet werden können. Vergewissern Sie sich vor dem Einfügen neuer Geräte in Ihr NMEA-2000-Netzwerk, ob integrierte Abschluss-Widerstände benutzt werden und wie sie konfiguriert sind. Falsch terminierte Busse können Übertragungsprobleme verursachen, die schwer zu finden sind.
