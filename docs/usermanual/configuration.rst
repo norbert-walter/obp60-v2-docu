@@ -706,25 +706,39 @@ Config - OBP Page X
 Im OBP60 gibt es insgesamt bis zu 10 Seiten die man frei auswählen und gestalten kann. Je nach Seite können unterschiedlich viele Daten angezeigt werden. Es gibt frei definierbare Seiten in denen die Inhalte zum Anzeigen ausgewählt werden können und es gibt Seiten mit vorgegebenen Inhalt, der nicht änderbar ist. Die meisten numerischen Seiten sind änderbar, währen die grafischen Seiten oft vordefinierte Inhalte anzeigen.
 
 * Seiten mit veränderbarem Inhalt
-    * OneValue - Ein Anzeigewert
-    * TwoValue - Zwei Anzeigewerte
-    * ThreeValue - Drei Anzeigewerte
-    * FourValue - Vier Anzeigewerte
-    * FourValue2 - Vier Anzeigewerte (andere Anordnung vertikal/horizontal)
+    * **OneValue** - Ein Anzeigewert
+    * **TwoValue** - Zwei Anzeigewerte
+    * **ThreeValue** - Drei Anzeigewerte
+    * **FourValue** - Vier Anzeigewerte
+    * **FourValue2** - Vier Anzeigewerte (andere Anordnung vertikal/horizontal)
 
 * Seiten mit festem Inhalt
-    * Voltage - Anzeige der Bordspannung 12V
-    * DST810 - Anzeige für Tiefe, Speed, Log und Wassertemperatur
-    * Clock - Grafische Uhr mit Sonnenauf- und Sonnenuntergang
-    * White Page - Leere weiße Seite, um Display in StandBy zu schalten
-    * BME280 - Anzeige von Umweltdaten wie Temperatur, Luftdruck und Feuchtigkeit
-    * Rudder Position - Grafische Anzeige der Ruderposition
-    * Keel Position - Grafische Anzeige der Kielposition
-    * Battery - Anzeige von Spannung, Strom und Leistung
-    * Battery2 - Grafische Anzeige des Batterie-Ladezustandes
-    * RollPitch - Grafische Anzeige von Roll und Pitch (über XDR)
-    * Solar - Grafische Anzeige des Solar-Ladezustandes
-    * Generator - Grafische Anzeige des Generator-Ladezustandes
+    * **Voltage** - Anzeige der Bordspannung 12V
+        * xdrVBat
+    * **DST810** - Anzeige für Tiefe, Speed, Log und Wassertemperatur (universell verwendbar)
+        * DBT, STW, Log, WTemp
+    * **Clock** - Grafische Zeitanzeige mit Sonnenauf- und Sonnenuntergang
+        * GPST, GPSD
+    * **White Page** - Leere weiße Seite, um Display in StandBy zu schalten
+    * **BME280** - Anzeige von Umweltdaten wie Temperatur, Luftdruck und Feuchtigkeit
+        * BME280 am I2C-Bus
+    * **Rudder Position** - Grafische Anzeige der Ruderposition
+        * RPOS
+    * **Keel Position** - Grafische Anzeige der Kielposition
+        * Rotationssensor AS5600 am I2C-Bus
+    * **Battery** - Anzeige von Spannung, Strom und Leistung
+        * Stromsensor INA219 oder INA226 am I2C-Bus
+    * **Battery2** - Grafische Anzeige des Batterie-Ladezustandes
+        * Stromsensor INA219 oder INA226 am I2C-Bus (auch ohne Sensor teilweise benutzbar)
+    * **RollPitch** - Grafische Anzeige von Roll und Pitch (über XDR)
+        * xdrRoll, xdrPitch
+    * **Solar** - Grafische Anzeige des Solar-Ladezustandes
+        * Stromsensor INA219 oder INA226 am I2C-Bus
+    * **Generator** - Grafische Anzeige des Generator-Ladezustandes
+        * * Stromsensor INA219 oder INA226 am I2C-Bus
+    
+.. note::
+    Bitte beachten Sie, dass einige Seiten bestimmte Sensorwerte vorausetzen, damit Messwerte angezeigt werden können.
     
 Bei den Seiten mit veränderlichen Inhalt stehen je nach Anzahl der angezeigten Werte Eingabefelder zur Verfügung über die die anzuzeigenden Daten ausgewählt werden können:
 
