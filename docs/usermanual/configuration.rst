@@ -383,13 +383,16 @@ Im Eingabefeld werden die Kurzbezeichner der NMEA0183-Telegramme eingetragen, me
 	
 Die genaue Bedeutung der Kurzbezeichner ist `hier`_ erklärt.
 
-**Seasmart Out**
-    * Über Seasmart lassen sich NMEA2000-Daten in NMEA0183-Telegrammen übersetzen. Wenn Sie **Seasmart** aktivieren, werden alle NMEA2000-Daten über NMEA0183-Telegramme ausgegeben und getunnelt. Die Daten werden dabei in Binärform in einem NMEA0183-Telegramm übertragen. Auf diese Weise können Sie von einem OBP60 (TCP-Server) zu einem weiteren OBP60 (TCP-Client) NMEA2000-Daten über Wifi übertragen. Achten Sie darauf, dass auf der Gegenseite ebenfalls **Seasmart** aktiviert ist.
-    * ``on`` - Der TCP-Server kann Seasmart-Daten senden und empfangen
-    * ``off`` - Seasmart wird vom TCP-Server nicht unterstützt
+**SeaSmart Out**
+    * Über SeaSmart lassen sich NMEA2000-Daten in NMEA0183-Telegrammen übersetzen. Wenn Sie **SeaSmart** aktivieren, werden alle NMEA2000-Daten über NMEA0183-Telegramme ausgegeben und getunnelt. Die Daten werden dabei in Binärform in einem NMEA0183-Telegramm übertragen. Auf diese Weise können Sie von einem OBP60 (TCP-Server) zu einem weiteren OBP60 (TCP-Client) NMEA2000-Daten über Wifi übertragen. Achten Sie darauf, dass auf der Gegenseite ebenfalls **SeaSmart** aktiviert ist.
+    * ``on`` - Der TCP-Server kann SeaSmart-Daten senden und empfangen
+    * ``off`` - SeaSmart wird vom TCP-Server nicht unterstützt
 	
 Config - WiFi Client
 --------------------
+
+.. image:: ../pics/Config_WiFi_Client.png
+             :scale: 60%
 
 Das OBP60 kann neben dem WiFi Access Point auch als WiFi-Client betrieben werden. In diesem Modus kann das OBP60 einem anderen WiFi-Netz beitreten und dort Daten austauschen. Auf diese Weise lässt sich das OPB60 in Ihr bestehendes Bord-WLAN integrieren. Der WiFi-Client-Modus enthält ein Auto-Connect, um bei Verbindungsabbrüchen automatisch die Verbindung wieder aufnehmen zu können.
 

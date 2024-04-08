@@ -34,7 +34,6 @@ Der Datenaustausch im OBP60 kann auf verschiedene Weise erfolgen. Grundsätzlich
 
 * NMEA2000
 	* Kabelgebunden NMEA2000-Bus (halbduplex)
-	* USB via SeaSmart (vollduplex)
 	* Über WiFi via SeaSmart (vollduplex)
 * NMEA0183
 	* Kabelgebunden NMEA0183-Bus (simplex)
@@ -90,3 +89,39 @@ Der kabelgebundene NMEA2000-Bus ist der aktuelle Standard in der Bootsvernetzung
              :scale: 60%	
 Abb.: NMEA2000-Bussystem mit Sensoren und Anzeigegeräten
 
+Für den Betrieb von NMEA2000 muss nichts speziell konfiguriert werden. Die Standardeinstellungen sind so gesetzt, dass ein Betrieb problemlos möglich ist. Bei Bedarf kann das Senden von NMEA2000-Telegrammen unterbunden werden. Dann ist nur ein Empfang von NMEA2000-Telegrammen möglich. Die Einstellungen zu NMEA2000 findet man unter `Config - Converter`_.
+
+.. _Config - Converter: https://obp60-v2-docu.readthedocs.io/de/latest/usermanual/configuration.html#config-converter
+
+NMEA2000 - WiFi via SeaSmart
+----------------------------
+
+Über das SeaSmart-Protokoll besteht die Möglichkeit, NMEA2000-Telegramme über Ethernet und WiFi übertragen zu können. Dazu werden die Binärdaten der NMEA2000-Telegramme in propritäre NMEA0183-Telegramme eingebettet. Ein SeaSmart-Telegramm sieht wie folgt aus:
+
+    $PCDIN,a--a,b--b,b,cc,d--d*hh<CR><LF>
+
+    Feldnummer:
+	    * a - PGN in Binärform
+	    * b - Zeitstempel in Binärform
+	    * c - Source-ID
+	    * d - PGN-Daten in Binärform
+	    * hh - Checksumme
+
+    Beispiele:	
+	    * $PCDIN,01F211,0B9CF01B,03,008061480D0000FF*5C
+		
+Der Vorteil ist, dass sich SeaSmart-Telegramme genauso wie NMEA0183-Telegramme übertragen lassen. Damit ist es möglich, NMEA2000-Telegramme drahtlos über Wifi von einem OBP60 zu einem anderen OBP60 zu übertragen. Diese Funktion kann z.B. genutzt werden, um Bus-Sensordaten von einem OBP60 oder einem `NMEA2000-Gateway`_ auf einem OBP60-Tochtergerät anzeigen zu lassen.
+
+.. _NMEA2000-Gateway: https://open-boat-projects.org/de/nmea2000-gateway-mit-m5stack-atom/
+
+.. image:: ../pics/SeaSmart1.png
+             :scale: 60%	
+Abb.: Datenübertragung via WiFi OBP60 - OBP60
+
+.. image:: ../pics/SeaSmart2.png
+             :scale: 60%	
+Abb.: Datenübertragung via M5Stack OBP60 - OBP60
+
+.. hint::
+	Beide Geräte müssen sich im selben WiFi-Netzwerk befinden und unterschiedliche Netzwerknamen und IP-Adressen besitzen. Dabei muss ein Gerät als TCP-Server und das andere Gerät als TCP-Client konfiguriert sein und auf beiden Geräten **SeaSmart out** aktiviert werden.
+	
