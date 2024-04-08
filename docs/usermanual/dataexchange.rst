@@ -101,10 +101,10 @@ NMEA2000 - WiFi via SeaSmart
     $PCDIN,a--a,b--b,b,cc,d--d*hh<CR><LF>
 
     Feldnummer:
-	    * a - PGN in Binärform
-	    * b - Zeitstempel in Binärform
+	    * a - PGN im Binärform
+	    * b - Zeitstempel im Binärform
 	    * c - Source-ID
-	    * d - PGN-Daten in Binärform
+	    * d - PGN-Daten im Binärform
 	    * hh - Checksumme
 
     Beispiele:	
@@ -120,8 +120,12 @@ Abb.: Datenübertragung via WiFi OBP60 - OBP60
 
 .. image:: ../pics/SeaSmart2.png
              :scale: 60%	
-Abb.: Datenübertragung via M5Stack OBP60 - OBP60
+Abb.: Datenübertragung via WiFi M5Stack - OBP60
 
 .. hint::
 	Beide Geräte müssen sich im selben WiFi-Netzwerk befinden und unterschiedliche Netzwerknamen und IP-Adressen besitzen. Dabei muss ein Gerät als TCP-Server und das andere Gerät als TCP-Client konfiguriert sein und auf beiden Geräten **SeaSmart out** aktiviert werden.
+	
+Tabelle mit den Settings:
+
+
 	
