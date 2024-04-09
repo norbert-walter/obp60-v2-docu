@@ -125,10 +125,10 @@ Abb.: Datenübertragung via WiFi M5Stack - OBP60
 .. hint::
 	Beide Geräte müssen sich im selben WiFi-Netzwerk befinden und unterschiedliche Netzwerknamen und IP-Adressen besitzen. Dabei muss ein Gerät als TCP-Server und das andere Gerät als TCP-Client konfiguriert sein und auf beiden Geräten **SeaSmart out** aktiviert werden.
 	
-Nachfolgend ist ein Konfigurationsbeispiel gezeigt in dem ein Datenaustausch über WiFi zwischen zwei OBP60 stattfindet. Das Gerät 1 ist dabei als TCP-Server und Gerät 2 als TCP-Client konfiguriert. Das Gerät 2 bucht sich in das WiFi-Netzwerk vom Gerät 1 ein und tauscht darüber bidirektional Daten aus.
+Nachfolgend ist ein Konfigurationsbeispiel für die obere Abbildung gezeigt, in dem ein Datenaustausch über WiFi zwischen zwei OBP60 stattfindet. Das Gerät 1 ist dabei als TCP-Server und Gerät 2 als TCP-Client konfiguriert. Das Gerät 2 bucht sich in das WiFi-Netzwerk vom Gerät 1 ein und tauscht darüber bidirektional Daten aus.
 
 +-------------------------+---------------------+---------------------+
-|Einstellung              |Wertw für Gerät 1    |Werte für Gerät 2    |
+|Einstellung              |Gerät 1              |Gerät 2              |
 +=========================+=====================+=====================+
 |**Config - System**      |                     |                     |
 +-------------------------+---------------------+---------------------+
@@ -140,7 +140,7 @@ Nachfolgend ist ein Konfigurationsbeispiel gezeigt in dem ein Datenaustausch üb
 +-------------------------+---------------------+---------------------+
 |**Config - TCP Server**  |                     |                     |
 +-------------------------+---------------------+---------------------+
-|SeaSamart Out            |on                   |off                  |
+|SeaSmart Out             |on                   |off                  |
 +-------------------------+---------------------+---------------------+
 |**Config - TCP Client**  |                     |                     |
 +-------------------------+---------------------+---------------------+
@@ -152,7 +152,7 @@ Nachfolgend ist ein Konfigurationsbeispiel gezeigt in dem ein Datenaustausch üb
 +-------------------------+---------------------+---------------------+
 |**Config - WiFi Client** |                     |                     |
 +-------------------------+---------------------+---------------------+
-|WiFi Clinet              |off                  |on                   |
+|WiFi Client              |off                  |on                   |
 +-------------------------+---------------------+---------------------+
 |WiFi Client SSID         |---                  |OBP60-1              |
 +-------------------------+---------------------+---------------------+
