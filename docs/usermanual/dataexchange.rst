@@ -80,8 +80,8 @@ Einige komplexere Geräte können sowohl Datenquelle als auch Datensenke sein, w
 
 Nachfolgend werden die Übertragungswege näher beschrieben.
 
-NMEA2000 - Kabelgebunden NMEA2000-Bus
--------------------------------------
+NMEA2000 - Kabelgebunden
+------------------------
 
 Der kabelgebundene NMEA2000-Bus ist der aktuelle Standard in der Bootsvernetzung. Über ein NMEA2000-Backbone auf CAN-Basis werden verschiedene Geräte an das Bussystem angeschlossen. Alle Bus-Teilnehmer können Daten lesen und schreiben. Dabei sind Sensoren Datenlieferanten, die ihre Daten an Displays und Plotter übertragen. Das NMEA2000-Backbone kann Sensoren auch mit Strom versorgen. Die Einspeisung der Versorgunsgspannung erfolgt über einen Plotter oder über ein Einspeisekabel.
 
@@ -107,7 +107,7 @@ NMEA2000 - WiFi via SeaSmart
 	    * d - PGN-Daten im Binärform
 	    * hh - Checksumme
 
-    Beispiele:	
+    Beispiel:	
 	    * $PCDIN,01F211,0B9CF01B,03,008061480D0000FF*5C
 		
 Der Vorteil ist, dass sich SeaSmart-Telegramme genauso wie NMEA0183-Telegramme übertragen lassen. Damit ist es möglich, NMEA2000-Telegramme drahtlos über Wifi von einem OBP60 zu einem anderen OBP60 zu übertragen. Diese Funktion kann z.B. genutzt werden, um Bus-Sensordaten von einem OBP60 oder einem `NMEA2000-Gateway`_ auf einem OBP60-Tochtergerät anzeigen zu lassen.
@@ -125,7 +125,40 @@ Abb.: Datenübertragung via WiFi M5Stack - OBP60
 .. hint::
 	Beide Geräte müssen sich im selben WiFi-Netzwerk befinden und unterschiedliche Netzwerknamen und IP-Adressen besitzen. Dabei muss ein Gerät als TCP-Server und das andere Gerät als TCP-Client konfiguriert sein und auf beiden Geräten **SeaSmart out** aktiviert werden.
 	
-Tabelle mit den Settings:
+Nachfolgend ist ein Konfigurationsbeispiel gezeigt in dem ein Datenaustausch über WiFi zwischen zwei OBP60 stattfindet. Das Gerät 1 ist dabei als TCP-Server und Gerät 2 als TCP-Client konfiguriert. Das Gerät 2 bucht sich in den WiFi-Netzwerk vom Gerät 1 ein und tauscht darüber bidirektional die Daten aus.
+
++-------------------------+---------------------+---------------------+
+|Einstellung              |Wertw für Gerät 1    |Werte für Gerät 2    |
++=========================+=====================+=====================+
+|**Config - System**                                                  |
++-------------------------+---------------------+---------------------+
+|System Name              |OBP60-1              |OBP60-2              |
++-------------------------+---------------------+---------------------+
+|ApPassword               |11111111             |22222222             |
++-------------------------+---------------------+---------------------+
+|ApIP                     |192.168.15.1         |192.168.16.1         |
++-------------------------+---------------------+---------------------+
+|**Config - TCP Server**                                              |
++-------------------------+---------------------+---------------------+
+|SeaSamart Out            |on                   |off                  |
++-------------------------+---------------------+---------------------+
+|**Config - TCP Client**                                               |
++-------------------------+---------------------+---------------------+
+|Enable                   |off                  |on                   |
++-------------------------+---------------------+---------------------+
+|Remote Address           |---                  |192.168.15.1         |
++-------------------------+---------------------+---------------------+
+|SeaSamart Out            |off                  |on                   |
++-------------------------+---------------------+---------------------+
+|**Config - WiFi Client**                                             |
++-------------------------+---------------------+---------------------+
+|WiFi Clinet              |off                  |on                   |
++-------------------------+---------------------+---------------------+
+|WiFi Client SSID         |---                  |OBP60-1              |
++-------------------------+---------------------+---------------------+
+|WiFi Client Password     |---                  |11111111             |
++-------------------------+---------------------+---------------------+
+
 
 
 	
