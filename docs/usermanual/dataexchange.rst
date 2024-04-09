@@ -125,12 +125,12 @@ Abb.: Datenübertragung via WiFi M5Stack - OBP60
 .. hint::
 	Beide Geräte müssen sich im selben WiFi-Netzwerk befinden und unterschiedliche Netzwerknamen und IP-Adressen besitzen. Dabei muss ein Gerät als TCP-Server und das andere Gerät als TCP-Client konfiguriert sein und auf beiden Geräten **SeaSmart out** aktiviert werden.
 	
-Nachfolgend ist ein Konfigurationsbeispiel gezeigt in dem ein Datenaustausch über WiFi zwischen zwei OBP60 stattfindet. Das Gerät 1 ist dabei als TCP-Server und Gerät 2 als TCP-Client konfiguriert. Das Gerät 2 bucht sich in den WiFi-Netzwerk vom Gerät 1 ein und tauscht darüber bidirektional die Daten aus.
+Nachfolgend ist ein Konfigurationsbeispiel gezeigt in dem ein Datenaustausch über WiFi zwischen zwei OBP60 stattfindet. Das Gerät 1 ist dabei als TCP-Server und Gerät 2 als TCP-Client konfiguriert. Das Gerät 2 bucht sich in das WiFi-Netzwerk vom Gerät 1 ein und tauscht darüber bidirektional Daten aus.
 
 +-------------------------+---------------------+---------------------+
 |Einstellung              |Wertw für Gerät 1    |Werte für Gerät 2    |
 +=========================+=====================+=====================+
-|**Config - System**                                                  |
+|**Config - System**      |                     |                     |
 +-------------------------+---------------------+---------------------+
 |System Name              |OBP60-1              |OBP60-2              |
 +-------------------------+---------------------+---------------------+
@@ -138,11 +138,11 @@ Nachfolgend ist ein Konfigurationsbeispiel gezeigt in dem ein Datenaustausch üb
 +-------------------------+---------------------+---------------------+
 |ApIP                     |192.168.15.1         |192.168.16.1         |
 +-------------------------+---------------------+---------------------+
-|**Config - TCP Server**                                              |
+|**Config - TCP Server**  |                     |                     |
 +-------------------------+---------------------+---------------------+
 |SeaSamart Out            |on                   |off                  |
 +-------------------------+---------------------+---------------------+
-|**Config - TCP Client**                                               |
+|**Config - TCP Client**  |                     |                     |
 +-------------------------+---------------------+---------------------+
 |Enable                   |off                  |on                   |
 +-------------------------+---------------------+---------------------+
@@ -150,7 +150,7 @@ Nachfolgend ist ein Konfigurationsbeispiel gezeigt in dem ein Datenaustausch üb
 +-------------------------+---------------------+---------------------+
 |SeaSamart Out            |off                  |on                   |
 +-------------------------+---------------------+---------------------+
-|**Config - WiFi Client**                                             |
+|**Config - WiFi Client** |                     |                     |
 +-------------------------+---------------------+---------------------+
 |WiFi Clinet              |off                  |on                   |
 +-------------------------+---------------------+---------------------+
