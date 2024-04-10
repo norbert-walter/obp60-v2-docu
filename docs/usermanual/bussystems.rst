@@ -4,7 +4,9 @@ Bussysteme
 .. image:: ../pics/NMEA_Bus.png
              :scale: 35%
 
-Das OBP60 unterstützt mehrere Bussysteme.
+Das OBP60 unterstützt mehrere Bussysteme. In diesem Kapitel geht es ausschließlich um die Vernetzung der Komponenten. Die dafür notwendige Software-Konfiguration finden Sie im darauf folgenden Kapitel `Datenaustausch`_.
+
+.. _Datenaustausch: https://obp60-v2-docu.readthedocs.io/de/latest/usermanual/dataexchange.html
 
 * **MNEA2000** über CAN-Bus (isoliert)
 * **NMEA0183** über RS485/RS422-Bus (isoliert)
@@ -441,8 +443,9 @@ Die USB-C-Schnittstelle im OBP60 dient zum Flashen der Firmware und zum Debuggin
 * Voll duplex
 * Bus-Terminierung über PullUp-Widerstand im ESP32
 * Unterstützte Protokolle
-	USB 1.1, TTL 3.3V
+	* USB 1.1, TTL 3.3V
 * Datenrate 1 MBit/s
+* Stromversorgung des OBP60 über USB möglich
 * Stromversorgung von externen Geräten aus dem OBP60 heraus nicht möglich
 * Buslänge bis zu 3 m
 * Kabelart geschirmt
@@ -453,7 +456,7 @@ Die USB-C-Schnittstelle im OBP60 dient zum Flashen der Firmware und zum Debuggin
 Das OBP60 kann auch über USB-C mit Strom versorgt werden. Das ist nützlich, wenn man z.B. eine Software-Entwicklung durchführt und das Gerät am Schreibtisch nutzen möchte. Das stromliefernde Gerät muss bis zu 500 mA mit einer Spannung von 5V bereitstellen können. Die USB-C-Schnittstelle verfügt über einen Rücklaufschutz, so dass kein Strom aus dem OBP60 herausfließen kann. Das OBP60 kann zudem auch gleichzeitig mit 12V und über USB-C mit 5V versorgt werden.
 
 .. hint::
-    Die reguläre Stromversorgung des OBP60 im Boot erfolgt immer über 12V aus dem Bordnetz. Es wird nicht empfohlen, eine Versorgung nur über USB-C durchzuführen, da die Steckverbindung nicht gegen unbeabsichtigtes Lösen gesichert ist. 
+    Die reguläre Stromversorgung des OBP60 im Boot erfolgt immer über 12V aus dem Bordnetz. Es wird nicht empfohlen, eine Versorgung nur über USB-C durchzuführen, da die Steckverbindung nicht gegen unbeabsichtigtes Lösen gesichert ist. Kabellängen größer 1,5 m sollten nur für eine Datenübertragung und nicht für eine Stromversorgung genutzt werden, da der Spannungsabfall auf den Leitungen zu groß ist. Die Kabellänge ist auf maximal 3 m begrenzt. Wenn Sie größere Strecken überbrücken wollen, müssen Sie aktive USB-Repeater-Kabel verwenden, die die Signalpegel auffrischen.
 
 .. danger::
     In einigen Situationen kann es vorkommen, dass unzulässige Ausgleichsströme über die nicht isolierte USB-C-Schnittstelle fließen und das OBP60 so beschädigen können. Das passiert z.B. dann, wenn Ladegeräte mit dem 230V-Landstrom verbunden sind, die Bord-Batterie aufladen und gleichzeitig ein Laptop mit 230V-Versorgung mit dem OBP60 über USB-C verbunden ist. Wenn Sie beabsichtigen, die USB-C-Verbindung dauerhaft zur Kommunikation im Boot zu nutzen, sollten sie einen USB-Isolator verwenden, um Schäden zu vermeiden. Beim Betrieb des Laptops nur über seinen eingebauten Akku entstehen die beschriebenen Probleme nicht.
@@ -465,7 +468,7 @@ Abb.: USB-Isolator
 USB-Isolatoren haben allerdings den Nachteil, dass sie nur einen sehr geringen Strom von ca. 150 mA für ihre isolierte Seite in Richtung OBP60 liefern können. Das OBP60 wird so nur eingeschränkt mit Strom versorgt, was Funktionsbeeinträchtigungen nach sich ziehen kann. Das OBP60 muss dann je nach Bedarf wie beschrieben noch zusätzlich mit 12V über den Steckverbinder **CN2** versorgt werden.
 
 .. attention::
-		Wenn das OBP60 über USB versorgt wird, kann es vorkommen, dass das Gerät gelegentlich je nach Stromverbrauch ungewollt einen Reboot durchführt. Der Grund liegt oft in einer unzureichenden Stromversorgung des USB-Ports in einem PC oder Laptop. Entweder ist die Ausgangsspannung nicht exakt 5V oder der Strom nicht ausreichend. Um solche Probleme zu vernmeiden, benutzen Sie die Stromversorgung über 12V an der Anschlussklemme **CN2** oder ein eigenständiges Netzteil mit 5,2 V/2 A. 
+	Wenn das OBP60 über USB versorgt wird, kann es vorkommen, dass das Gerät gelegentlich je nach Stromverbrauch ungewollt einen Reboot durchführt. Der Grund liegt oft in einer unzureichenden Stromversorgung des USB-Ports in einem PC oder Laptop. Entweder ist die Ausgangsspannung nicht exakt 5V oder der Strom nicht ausreichend. Um solche Probleme zu vernmeiden, benutzen Sie die Stromversorgung über 12V an der Anschlussklemme **CN2** oder ein eigenständiges Netzteil mit 5,2 V/2 A. 
 		
 **Kommunikation** 
 

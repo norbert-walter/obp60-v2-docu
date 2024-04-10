@@ -173,7 +173,7 @@ Bei der kabelgebunden Datenübertragung für NMEA0183 handelt es sich um eine Si
 An dieser Stelle wird ein Beispiel gezeigt wie Daten von einem NMEA0183-Multiplexer in ein OBP60 eingebunden werden können. Dabei sammelt der Multiplexer alle Sensordaten über die Eingänge ein und erzeugt einen zusammengefassten Datenstrom an seinem Ausgang. Die Daten werden lesend vom OBP60 empfangen und können dann entsprechend verwendet werden.
 
 .. note::
-	Die Konfiguration des Multiplexers ist Modellabhängig. Konsultieren Sie dazu das Handbuch und achten Sie auf die korrekte Einstellung der Baudraten für die Eingänge und Ausgänge des Multiplexers.
+	Die Konfiguration des Multiplexers ist vom Modell abhängig. Konsultieren Sie dazu das Handbuch und achten Sie auf die korrekte Einstellung der Baudraten für die Eingänge und Ausgänge des Multiplexers.
 	
 .. image:: ../pics/NMEA0183_Sample_Setup_Multiplexer_2.png
              :scale: 40%
@@ -186,12 +186,14 @@ Abb.: NMEA0183-Verbindung zu einem Multiplexer (empfangen)
 +-------------------------+---------------------+
 |Serial Direction         |receive              |
 +-------------------------+---------------------+
+|Serial Baud Rate         |115200               |
++-------------------------+---------------------+
 |Serial to NMEA2000       |on                   |
 +-------------------------+---------------------+
 
 .. _Config - Serial Port: https://obp60-v2-docu.readthedocs.io/de/latest/usermanual/configuration.html#config-serial-port
 
-Zum Senden von NMEA0183-Daten hier ein Beispiel für einen Autopiloten. Dabei werden Daten aus den verwendeten Kommunikationsmöglichkeiten genutzt und diese an einen Autopiloten gesendet. Die Ausgabe der Daten erfolgt über einen Filter, so dass nur relevante Informationen den Autopiloten erreichen. In dem gezeigten Beispiel verwendet der Autopilot eine NMEA0183-Eingang nach RS422 oder RS485 mit einer Schnittstellengeschwindigkeit von 4800 Bd.
+Zum Senden von NMEA0183-Daten hier ein Beispiel für einen Autopiloten. Dabei werden Daten aus den verwendeten Kommunikationsmöglichkeiten genutzt und diese an einen Autopiloten gesendet. Die Ausgabe der Daten erfolgt über einen Filter, so dass nur relevante Informationen den Autopiloten erreichen. In dem gezeigten Beispiel verwendet der Autopilot eine NMEA0183-Eingang nach RS422 oder RS485 mit einer Schnittstellengeschwindigkeit von 4800 Bd. Unter Umständen müssen Sie die Geschwindigkeit an ihren Autopiloten anpassen.
 
 .. image:: ../pics/NMEA0183_Sample_Setup_Autopilot.png
              :scale: 40%
@@ -204,12 +206,15 @@ Abb.: NMEA0183-Verbindung zu einem Autopiloten (senden)
 +-------------------------+---------------------+
 |Serial Direction         |send                 |
 +-------------------------+---------------------+
+|Serial Baud Rate         |4800                 |
++-------------------------+---------------------+
 |Serial to NMEA2000       |on                   |
 +-------------------------+---------------------+
 |Serial Read Filter       |---                  |
 +-------------------------+---------------------+
 |Serial Write Filter      |XTE,XDR,RMB,RMC,ROT  |
 +-------------------------+---------------------+
+
 
 .. _Config - Serial Port: https://obp60-v2-docu.readthedocs.io/de/latest/usermanual/configuration.html#config-serial-port
 
@@ -218,12 +223,84 @@ Dem Autopiloten werden nur die NMEA0183-Telegramme **XTE**, **XDR**, **RMB**, **
 .. note::
 	Prüfen Sie in der Dokumentation des Autopiloten, ob die übermittelten NMEA0183-Telegramme zur Navigation verwendet werden können und ausreichend sind. In einigen Fällen kann es sein, dass der Autopilot andere Telegramme zur Kursregelung benutzt. In dem Fall kann der Autopilot nicht angesteuert werden.
 
+NMEA0183 - USB
+--------------
+
+NMEA0183-Telegramme lassen sich auch über USB vollduplex übertragen. Das bedeutet, dass Daten gleichzeitig gesendet und empfangen werden können. Den USB-Port für die Datenübertragung findet man auf der Rückseite des OBP60 unterhalb des Steckverbinders **CN2**. Er ist als USB-C ausgeführt. Die USB-Schnittstelle im OBP60 ist als serelles RS232 Device implementiert und unterstützt die Übertragungsgeschwindigkeiten 1.200...460.800 Bd. Die Defaulteinstellung für die Datenübertragung ist auf 115.200 Bd eingestellt und sollte für die meisten Anwendungen ausreichend schnell sein. Die Daten werden ausschließlich als NMEA0183-Daten über USB übertragen.
+
+Als mögliche Endpunkte könnte folgende Hardware verwendet werden:
+
+* Raspberry Pi 3, 3B, 4B, 5
+* Laptop
+* PC
+* Android Autoradio
+
+Die NMEA0183-Daten lassen sich in unterschiedliche Software einbinden wie:
+
+* AVnav
+* OpenPlotter
+* OpenCPN
+* qtVlm
+* Navionics
+* WinGPS
+* NMEA Simulator
+
+Für alle oben aufgeführten Endpunkte sind folgende Einstellungen im OBP60 vorzunehmen. Dabei werden NMEA0183-Daten auf der USB-Schnittstelle empfangen und gesendet und gleichzeitig nach NMEA2000 bidirektional konvertiert. 
+ 
++-------------------------+---------------------+
+|Einstellung              |OBP60                |
++=========================+=====================+
+|`Config - System`_       |                     |
++-------------------------+---------------------+
+|Log Level                |off                  |
++-------------------------+---------------------+
+|`Config - USB Port`_     |                     |
++-------------------------+---------------------+
+|USB Mode                 |nmea0183             |
++-------------------------+---------------------+
+|USB Baud Rate            |115200               |
++-------------------------+---------------------+
+|NMEA to USB              |on                   |
++-------------------------+---------------------+
+|NMEA from USB            |on                   |
++-------------------------+---------------------+
+|USB to NMEA2000          |on                   |
++-------------------------+---------------------+
+
+.. _Config - System: https://obp60-v2-docu.readthedocs.io/de/latest/usermanual/configuration.html#config-system
+.. _Config - USB Port: https://obp60-v2-docu.readthedocs.io/de/latest/usermanual/configuration.html#config-usb-port
+
+.. hint::
+	Achten Sie darauf, dass der **Log Level** auf ``off`` gestellt ist. Anderenfalls kann es sonst zu Störungen in der Kommunikation kommen, da Logging-Ausgaben in den Datenstrom eingespeist werden.
+	
+Nachfolgend sind einige Konfigurationsbeispiele aufgeführt und es wird gezeigt wie die Konfiguration auf dem System erfolgt.
+	
+**Konfigurationsbeispiel AVnav auf Raspberry Pi**
+
+Dieses Beispiel zeigt die Einbindung eines OBP60 über USB in AVnav, das auf einem Rasberry Pi läuft. Dabei werden NMEA2000 Busdaten ausgelesen und nach NMEA0183 übertragen. Die Anbindung erfolgt direkt in AVnav als Device und die Daten stehen dann der Anwendung zu Verfügung. In diesem Fall wird das AVnav-Image benutzt. Wer AVnav unter OpenPlotter als Plugin benutzt sollte dem **Konfigurationsbeispiel OpenPlotter auf Raspberry Pi** folgten.
+
+Da die Datenübertragung über USB erfolgt, sollte eine USB-Verbindung zwischen dem OBP60 und dem Raspberry Pi hergestellt werden. Sie benötigen dazu ein **USB-C zu USB-A Kabel**. Am Raspberry Pi könne Sie jeden beliebigen USB-A-Port verwenden. Es ist aber ratsam die schwarzen USB-A-Ports zu benutzen, da das OBP60 nur USB 1.1 unterstützt und dadurch die leistungsfähigeren USB 3.0-Ports anderweitig genutzt werden können.
+
+
+Abb.: Verbindung OBP60 - Raspberry Pi
+
+**Konfigurationsbeispiel AVnav auf Android-Autoradio**
+
+Für die Datenübertragung zu einem Andriod-Autoradio benötigen Sie ein **USB-C zu USB-A Kabel**, sofern ein passende Adapterbuchse zur Verfügung steht. In einigen Situation müssen Sie die USB-Kabel direkt über spezielle Stecker am Autoradio auflegen. Konsultieren Sie dazu das Handbuch zum Android-Autoradio und stellen Sie die USB-Verbindung wie gefordert her.
+
+
+**Konfigurationsbeispiel SignalK auf Raspberry Pi**
+
+**Konfigurationsbeispiel OpenPlotter auf Raspberry Pi**
+
+**Konfigurationsbeispiel Navionics auf Android Autoradio**
+
 
 
 +-------------------------+---------------------+
 |Einstellung              |OBP60                |
 +=========================+=====================+
-|`Config - Serial Port`_  |                     |
+|`Config - USB Port`_     |                     |
 +-------------------------+---------------------+
 |Serial Direction         |send                 |
 +-------------------------+---------------------+

@@ -21,7 +21,7 @@ Ab Android 10 öffnen Sie dazu die Wifi-Einstellungen und lassen sich alle WiFi-
 Abb.: WLAN Settings unter Android 11
 
 .. note::
-    Sollten Sie sich  nicht per QR-Code in das WiFi-Netzwerk des OBP60 einbuchen können, nehmen Sie die Konfiguration manuell vor und verwenden die folgende Zugansdaten.
+    Sollten Sie sich nicht per QR-Code in das WiFi-Netzwerk des OBP60 einbuchen können, nehmen Sie die Konfiguration manuell vor und verwenden die folgenden Zugangsdaten.
 
 * **SSID:** OBP60V2
 * **Passwort:** esp32nmea2k  
@@ -154,7 +154,7 @@ Unter **System** werden grundlegende Einstellungen vorgenommen wie:
 		* ``debug`` - Es werden alle vorgesehenen Meldungen inklusive Debug-Meldungen ausgegeben 
 		
 .. hint::
-	Wenn Sie beabsichtigen, einen NMEA0183-Datenaustausch über die USB-C-Schnittstelle  durchzuführen, sollten Sie den **Log Level** auf ``off`` stellen. Beachten Sie das nicht, kann die Auswertung von Logging-Ausgaben sehr unübersichtlich werden, da Logging-Daten und NMEA0183-Telegramme dann gemischt ausgegeben werden.
+	Wenn Sie beabsichtigen, einen NMEA0183-Datenaustausch über die USB-C-Schnittstelle  durchzuführen, sollten Sie den **Log Level** auf ``off`` stellen. Beachten Sie das nicht, kann die Auswertung von Logging-Ausgaben sehr unübersichtlich werden, da Logging-Daten und NMEA0183-Telegramme dann gemischt ausgegeben werden. Wenn Sie nur Logging-Ausgaben sehen wollen, stellen Sie **NMEA to USB** und **NMEA from USB** auf ``off``.
 
 Config - Converter
 ------------------
