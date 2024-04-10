@@ -421,7 +421,7 @@ Die Belegung der DS18B20-Temperatur-Sensoren ist folgendermaßen durchzuführen.
     Wenn möglich, verwenden Sie Temperatursensoren am I2C-Bus statt am 1Wire-Bus. Sie erhöhen damit die Betriebssicherheit des Gesamtsystems, da der I2C-Bus gegenüber der Außenwelt isoliert ist.
     
 .. hint::
-    Im Internet-Handel sind Nachbauten von DS18B20-Temperatur-Sensoren im Umlauf, die eine parasitäte Stromversorgung nicht unterstützen. Wenn Sie keine Kommunikation mit dem OBP60 zustande bekommen, dann probieren Sie andere Sensoren aus. Wenn auch das zu keinem Erfolg führt, benutzen Sie eine normale Stromversorgung für die Temperatursensoren. Mit dieser Art der Stromversorgung sollten nahezu alle Sensoren funktionieren.
+    Im Internet-Handel sind Nachbauten von DS18B20-Temperatur-Sensoren im Umlauf, die eine parasitäre Stromversorgung nicht unterstützen. Wenn Sie keine Kommunikation mit dem OBP60 zustande bekommen, dann probieren Sie andere Sensoren aus. Wenn auch das zu keinem Erfolg führt, benutzen Sie eine normale Stromversorgung für die Temperatursensoren. Mit dieser Art der Stromversorgung sollten nahezu alle Sensoren funktionieren.
 
 .. caution::
     Der 1Wire-Bus ist nicht isoliert gegenüber der internen Schaltung des OBP60. Das erhöht bei unsachgemäßer Installation das Risiko, dass eingekoppelte Störungen in die Busleitungen die Funktion und Stabilität des OBP60 beeinträchtigen können. Halten Sie daher die Buslänge so kurz wie möglich. Im schlimmsten Fall kann es zum kompletten Ausfall des OBP60 führen mit daraus resultierenden schweren Folgen für die Navigationsfähigkeit des Bootes.
@@ -441,12 +441,12 @@ Die USB-C-Schnittstelle im OBP60 dient zum Flashen der Firmware und zum Debuggin
 * Voll duplex
 * Bus-Terminierung über PullUp-Widerstand im ESP32
 * Unterstützte Protokolle
-	* USB 1.1, TTL 3.3V
+	USB 1.1, TTL 3.3V
 * Datenrate 1 MBit/s
-* Stromversorgung von externen Geräten nicht möglich
+* Stromversorgung von externen Geräten aus dem OBP60 heraus nicht möglich
 * Buslänge bis zu 3 m
 * Kabelart geschirmt
-* Steckerart USB-C mit Kodierung
+* Steckerart USB-C
 
 **Stromversorgung**
 
@@ -463,13 +463,20 @@ Das OBP60 kann auch über USB-C mit Strom versorgt werden. Das ist nützlich, we
 Abb.: USB-Isolator
     
 USB-Isolatoren haben allerdings den Nachteil, dass sie nur einen sehr geringen Strom von ca. 150 mA für ihre isolierte Seite in Richtung OBP60 liefern können. Das OBP60 wird so nur eingeschränkt mit Strom versorgt, was Funktionsbeeinträchtigungen nach sich ziehen kann. Das OBP60 muss dann je nach Bedarf wie beschrieben noch zusätzlich mit 12V über den Steckverbinder **CN2** versorgt werden.
-    
+
+.. attention::
+		Wenn das OBP60 über USB versorgt wird, kann es vorkommen, dass das Gerät gelegentlich je nach Stromverbrauch ungewollt einen Reboot durchführt. Der Grund liegt oft in einer unzureichenden Stromversorgung des USB-Ports in einem PC oder Laptop. Entweder ist die Ausgangsspannung nicht exakt 5V oder der Strom nicht ausreichend. Um solche Probleme zu vernmeiden, benutzen Sie die Stromversorgung über 12V an der Anschlussklemme **CN2** oder ein eigenständiges Netzteil mit 5,2 V/2 A. 
+		
 **Kommunikation** 
 
-Die USB-C-Schnittselle kann zur voll duplex-fähigen NMEA0183-Kommunikation mit weiteren Geräten verwendet werden. Denkbar wären folgende Nutzungs-Szenarien:
+Die USB-C-Schnittselle kann zur voll duplexfähigen NMEA0183-Kommunikation mit weiteren Geräten verwendet werden. Denkbar wären folgende Nutzungs-Szenarien:
 
 * Kommunikation mit einem Marine Control Server
 * Datenlieferant für ein Andriod-Autoradio als Plotter
 * Kommunikation mit einem Laptop oder PC zur Softwareentwicklung, Diagnose und zum Flashen der Firmware
-* Diagnose der Buskommunikation mit externer Software wie dem Actisense Reader
-* Einspeisung von Simulationsdaten in die Bussysteme mit dem NMEA-Simulator
+* Diagnose der Buskommunikation mit externer Software wie dem `Actisense Reader`_
+* Einspeisung von Simulationsdaten in die Bussysteme mit dem `NMEA-Simulator`_
+
+.. _Actisense Reader: https://actisense.com/acti_software/nmea-reader/
+.. _NMEA-Simulator: https://www.kave.fi/Apps/index.html
+

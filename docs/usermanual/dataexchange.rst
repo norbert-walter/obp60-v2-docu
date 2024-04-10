@@ -130,7 +130,7 @@ Nachfolgend ist ein Konfigurationsbeispiel für die obere Abbildung gezeigt, in 
 +-------------------------+---------------------+---------------------+
 |Einstellung              |Gerät 1              |Gerät 2              |
 +=========================+=====================+=====================+
-|**Config - System**      |                     |                     |
+|`Config - System`_       |                     |                     |
 +-------------------------+---------------------+---------------------+
 |System Name              |OBP60-1              |OBP60-2              |
 +-------------------------+---------------------+---------------------+
@@ -138,11 +138,11 @@ Nachfolgend ist ein Konfigurationsbeispiel für die obere Abbildung gezeigt, in 
 +-------------------------+---------------------+---------------------+
 |ApIP                     |192.168.15.1         |192.168.16.1         |
 +-------------------------+---------------------+---------------------+
-|**Config - TCP Server**  |                     |                     |
+|`Config - TCP Server`_   |                     |                     |
 +-------------------------+---------------------+---------------------+
 |SeaSmart Out             |on                   |off                  |
 +-------------------------+---------------------+---------------------+
-|**Config - TCP Client**  |                     |                     |
+|`Config - TCP Client`_   |                     |                     |
 +-------------------------+---------------------+---------------------+
 |Enable                   |off                  |on                   |
 +-------------------------+---------------------+---------------------+
@@ -150,7 +150,7 @@ Nachfolgend ist ein Konfigurationsbeispiel für die obere Abbildung gezeigt, in 
 +-------------------------+---------------------+---------------------+
 |SeaSamart Out            |off                  |on                   |
 +-------------------------+---------------------+---------------------+
-|**Config - WiFi Client** |                     |                     |
+|`Config - WiFi Client`_  |                     |                     |
 +-------------------------+---------------------+---------------------+
 |WiFi Client              |off                  |on                   |
 +-------------------------+---------------------+---------------------+
@@ -158,6 +158,27 @@ Nachfolgend ist ein Konfigurationsbeispiel für die obere Abbildung gezeigt, in 
 +-------------------------+---------------------+---------------------+
 |WiFi Client Password     |---                  |11111111             |
 +-------------------------+---------------------+---------------------+
+
+.. _Config - System: https://obp60-v2-docu.readthedocs.io/de/latest/usermanual/configuration.html#config-system
+.. _Config - TCP Server: https://obp60-v2-docu.readthedocs.io/de/latest/usermanual/configuration.html#config-tcp-server
+.. _Config - TCP Client: https://obp60-v2-docu.readthedocs.io/de/latest/usermanual/configuration.html#config-tcp-client
+.. _Config - WiFi Client: https://obp60-v2-docu.readthedocs.io/de/latest/usermanual/configuration.html#config-wifi-client
+
+
+NMEA0183 - Kabelgebunden
+------------------------
+
+Bei der kabelgebunden Datenübertragung für NMEA0183 handelt es sich um eine Simplex-Übertragung. Das bedeutet, dass man entweder senden oder empfangen kann. Als Default ist das OBP60 auf Empfang eingestellt. Es ist aber auch möglich, NMEA0183-Daten zu senden. Die Einstellung dazu erfolgt unter **Config - Serial Port**. Über **Serial Direction** kann die Datenrichtung eingestellt werden.
+
+An dieser Stelle wird ein Beispiel gezeigt wie Daten von einem NMEA0183-Multiplexer in ein OBP60 eingebunden werden können. Dabei sammelt der Multiplexer alle Sensordaten über die Eingänge ein und erzeugt einen zusammengefassten Datenstrom an seinem Ausgang. Die Daten werden lesend vom OBP60 empfangen und können dann entsprechend verwendet werden.
+
+.. note::
+	Die Konfiguration des Multiplexers ist Modellabhängig. Konsultieren Sie dazu das Handbuch und achten Sie auf die korrekte Einstellung der Baudraten für die Eingänge und Ausgänge des Multiplexers.
+	
+.. image:: ../pics/NMEA0183_Sample_Setup_Multiplexer_2.png
+             :scale: 50%
+Abb.: NMEA0183-Verbindung zu einem Multiplexer (empfangen)
+
 
 
 
