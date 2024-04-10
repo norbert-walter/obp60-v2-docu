@@ -440,6 +440,7 @@ Die USB-C-Schnittstelle im OBP60 dient zum Flashen der Firmware und zum Debuggin
 
 * Serielles, bidirektionales asynchrones Datenprotokoll auf Binär-Basis
 * Punkt zu Punkt (nicht isoliert)
+* USB-OTG (serielles Device)
 * Voll duplex
 * Bus-Terminierung über PullUp-Widerstand im ESP32
 * Unterstützte Protokolle
@@ -450,6 +451,11 @@ Die USB-C-Schnittstelle im OBP60 dient zum Flashen der Firmware und zum Debuggin
 * Buslänge bis zu 3 m
 * Kabelart geschirmt
 * Steckerart USB-C
+
+.. note::
+	Für Linux und Win10/11 sind entsprechende USB-Treiber im Betriebssystem integriert. Für die älteren Win7/8-Versionen benötigen Sie `zusätzliche Treiber`_, um die USB-Schnittstelle benutzen zu können.
+	
+.. _zusätzliche Treiber: https://github.com/kutukvpavel/Esp32-Win7-VCP-drivers
 
 **Stromversorgung**
 
