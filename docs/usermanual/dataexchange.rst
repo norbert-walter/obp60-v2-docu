@@ -176,7 +176,7 @@ An dieser Stelle wird ein Beispiel gezeigt wie Daten von einem NMEA0183-Multiple
 	Die Konfiguration des Multiplexers ist Modellabhängig. Konsultieren Sie dazu das Handbuch und achten Sie auf die korrekte Einstellung der Baudraten für die Eingänge und Ausgänge des Multiplexers.
 	
 .. image:: ../pics/NMEA0183_Sample_Setup_Multiplexer_2.png
-             :scale: 50%
+             :scale: 40%
 Abb.: NMEA0183-Verbindung zu einem Multiplexer (empfangen)
 
 
