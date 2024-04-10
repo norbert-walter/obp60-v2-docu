@@ -168,7 +168,9 @@ Nachfolgend ist ein Konfigurationsbeispiel für die obere Abbildung gezeigt, in 
 NMEA0183 - Kabelgebunden
 ------------------------
 
-Bei der kabelgebunden Datenübertragung für NMEA0183 handelt es sich um eine Simplex-Übertragung. Das bedeutet, dass man entweder senden oder empfangen kann. Als Default ist das OBP60 auf Empfang eingestellt. Es ist aber auch möglich, NMEA0183-Daten zu senden. Die Einstellung dazu erfolgt unter **Config - Serial Port**. Über **Serial Direction** kann die Datenrichtung eingestellt werden.
+Bei der kabelgebunden Datenübertragung für NMEA0183 handelt es sich um eine Simplex-Übertragung. Das bedeutet, dass man entweder senden oder empfangen kann. Als Default ist das OBP60 auf Empfang eingestellt. Es ist aber auch möglich, NMEA0183-Daten zu senden. Die Einstellung dazu erfolgt unter `Config - Serial Port`_. Über **Serial Direction** kann die Datenrichtung eingestellt werden.
+
+.. _Config - Serial Port: https://obp60-v2-docu.readthedocs.io/de/latest/usermanual/configuration.html#config-serial-port
 
 An dieser Stelle wird ein Beispiel gezeigt wie Daten von einem NMEA0183-Multiplexer in ein OBP60 eingebunden werden können. Dabei sammelt der Multiplexer alle Sensordaten über die Eingänge ein und erzeugt einen zusammengefassten Datenstrom an seinem Ausgang. Die Daten werden lesend vom OBP60 empfangen und können dann entsprechend verwendet werden.
 
@@ -286,14 +288,29 @@ Abb.: Verbindung OBP60 - Raspberry Pi
 
 **Konfigurationsbeispiel AVnav auf Android-Autoradio**
 
-Für die Datenübertragung zu einem Andriod-Autoradio benötigen Sie ein **USB-C zu USB-A Kabel**, sofern ein passende Adapterbuchse zur Verfügung steht. In einigen Situation müssen Sie die USB-Kabel direkt über spezielle Stecker am Autoradio auflegen. Konsultieren Sie dazu das Handbuch zum Android-Autoradio und stellen Sie die USB-Verbindung wie gefordert her.
+In dem Beispiel wird gezeigt, wie man Busdaten in ein Android-Radio einspeisen kann, um die Daten in AVnav nutzen zu können. Für die Datenübertragung zum Andriod-Autoradio benötigen Sie ein **USB-C zu USB-A Kabel**, sofern ein passende Adapterbuchse zur Verfügung steht. In einigen Situation müssen Sie die USB-Kabel direkt über spezielle Stecker am Autoradio auflegen. Konsultieren Sie dazu das Handbuch zum Android-Autoradio und stellen Sie die USB-Verbindung wie gefordert her.
 
 
 **Konfigurationsbeispiel SignalK auf Raspberry Pi**
 
 **Konfigurationsbeispiel OpenPlotter auf Raspberry Pi**
 
-**Konfigurationsbeispiel Navionics auf Android Autoradio**
+**Konfigurationsbeispiel Navionics auf Android-Autoradio**
+
+In dem Beispiel wird gezeigt, wie man Busdaten in ein Android-Radio einspeisen kann, um die Daten in Navionics nutzen zu können. Für die Datenübertragung zum Andriod-Autoradio benötigen Sie ein **USB-C zu USB-A Kabel**, sofern ein passende Adapterbuchse zur Verfügung steht. In einigen Situation müssen Sie die USB-Kabel direkt über spezielle Stecker am Autoradio auflegen. Konsultieren Sie dazu das Handbuch zum Android-Autoradio und stellen Sie die USB-Verbindung wie gefordert her.
+
+.. note::
+	Bedingt durch die Navigationssoftware können nicht alle Busdaten in Navionics verwendet werden. Aktuell lassen sich nur einige Daten nutzen. Die nachfolgende Liste zeigt die derzeitig verarbeitbaren NMEA0183 Sentences.
+	
+* **AIVDM** (AIS-Daten)
+* **AIVDO** (AIS-Daten)
+* **DBT**  (Depth below transducer - Tiefe unter Sensor)
+* **DPT**  (Depth - korrigierte Tiefe)
+* **GGA**  (Position)
+* **GLL**  (Position)
+* **RMC**  (Minimum GPS sentence includes Pos/Time.COG/SOG)
+* **VTG**  (COG and SOG)
+* **ZD**A  (Time and Date)
 
 
 
