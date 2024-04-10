@@ -179,7 +179,84 @@ An dieser Stelle wird ein Beispiel gezeigt wie Daten von einem NMEA0183-Multiple
              :scale: 40%
 Abb.: NMEA0183-Verbindung zu einem Multiplexer (empfangen)
 
++-------------------------+---------------------+
+|Einstellung              |OBP60                |
++=========================+=====================+
+|`Config - Serial Port`_  |                     |
++-------------------------+---------------------+
+|Serial Direction         |receive              |
++-------------------------+---------------------+
+|Serial to NMEA2000       |on                   |
++-------------------------+---------------------+
+
+.. _Config - Serial Port: https://obp60-v2-docu.readthedocs.io/de/latest/usermanual/configuration.html#config-serial-port
+
+Zum Senden von NMEA0183-Daten hier ein Beispiel für einen Autopiloten. Dabei werden Daten aus den verwendeten Kommunikationsmöglichkeiten genutzt und diese an einen Autopiloten gesendet. Die Ausgabe der Daten erfolgt über einen Filter, so dass nur relevante Informationen den Autopiloten erreichen. In dem gezeigten Beispiel verwendet der Autopilot eine NMEA0183-Eingang nach RS422 oder RS485 mit einer Schnittstellengeschwindigkeit von 4800 Bd.
+
+.. image:: ../pics/NMEA0183_Sample_Setup_Autopilot.png
+             :scale: 40%
+Abb.: NMEA0183-Verbindung zu einem Autopiloten (senden)
+
++-------------------------+---------------------+
+|Einstellung              |OBP60                |
++=========================+=====================+
+|`Config - Serial Port`_  |                     |
++-------------------------+---------------------+
+|Serial Direction         |send                 |
++-------------------------+---------------------+
+|Serial to NMEA2000       |on                   |
++-------------------------+---------------------+
+|Serial Read Filter       |---                  |
++-------------------------+---------------------+
+|Serial Write Filter      |XTE,XDR,RMB,RMC,ROT  |
++-------------------------+---------------------+
+
+.. _Config - Serial Port: https://obp60-v2-docu.readthedocs.io/de/latest/usermanual/configuration.html#config-serial-port
+
+Dem Autopiloten werden nur die NMEA0183-Telegramme **XTE**, **XDR**, **RMB**, **RMC** und **ROT** gesendet.
+
+.. note::
+	Prüfen Sie in der Dokumentation des Autopiloten, ob die übermittelten NMEA0183-Telegramme zur Navigation verwendet werden können und ausreichend sind. In einigen Fällen kann es sein, dass der Autopilot andere Telegramme zur Kursregelung benutzt. In dem Fall kann der Autopilot nicht angesteuert werden.
 
 
+
++-------------------------+---------------------+
+|Einstellung              |OBP60                |
++=========================+=====================+
+|`Config - Serial Port`_  |                     |
++-------------------------+---------------------+
+|Serial Direction         |send                 |
++-------------------------+---------------------+
+|Serial to NMEA2000       |on                   |
++-------------------------+---------------------+
+|Serial Read Filter       |---                  |
++-------------------------+---------------------+
+|Serial Write Filter      |XTE,RMB,RMC          |
++-------------------------+---------------------+
+|`Config - TCP Server`_   |                     |
++-------------------------+---------------------+
+|SeaSmart Out             |on                   |
++-------------------------+---------------------+
+|`Config - TCP Client`_   |                     |
++-------------------------+---------------------+
+|Enable                   |off                  |
++-------------------------+---------------------+
+|Remote Address           |---                  |
++-------------------------+---------------------+
+|SeaSamart Out            |off                  |
++-------------------------+---------------------+
+|`Config - WiFi Client`_  |                     |
++-------------------------+---------------------+
+|WiFi Client              |off                  |
++-------------------------+---------------------+
+|WiFi Client SSID         |---                  |
++-------------------------+---------------------+
+|WiFi Client Password     |---                  |
++-------------------------+---------------------+
+
+.. _Config - System: https://obp60-v2-docu.readthedocs.io/de/latest/usermanual/configuration.html#config-system
+.. _Config - TCP Server: https://obp60-v2-docu.readthedocs.io/de/latest/usermanual/configuration.html#config-tcp-server
+.. _Config - TCP Client: https://obp60-v2-docu.readthedocs.io/de/latest/usermanual/configuration.html#config-tcp-client
+.. _Config - WiFi Client: https://obp60-v2-docu.readthedocs.io/de/latest/usermanual/configuration.html#config-wifi-client
 
 	
