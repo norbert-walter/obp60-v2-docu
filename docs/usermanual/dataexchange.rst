@@ -233,15 +233,17 @@ NMEA0183-Telegramme lassen sich auch über USB vollduplex übertragen. Das bedeu
 Als mögliche Endpunkte könnte folgende Hardware verwendet werden:
 
 * Raspberry Pi 3, 3B, 4B, 5
+* Android Autoradio
 * Laptop
 * PC
-* Android Autoradio
 
 Die NMEA0183-Daten lassen sich in unterschiedliche Software einbinden wie:
 
 * AVnav
 * OpenPlotter
 * OpenCPN
+* BBN
+* SignalK
 * qtVlm
 * Navionics
 * WinGPS
@@ -281,12 +283,20 @@ Nachfolgend sind einige Konfigurationsbeispiele aufgeführt und es wird gezeigt 
 
 Dieses Beispiel zeigt die Einbindung eines OBP60 über USB in AVnav, das auf einem Rasberry Pi läuft. Dabei werden NMEA2000 Busdaten ausgelesen und nach NMEA0183 übertragen. Die Anbindung erfolgt direkt in AVnav als Device und die Daten stehen dann der Anwendung zu Verfügung. In diesem Fall wird das AVnav-Image benutzt. Wer AVnav unter OpenPlotter als Plugin benutzt sollte dem **Konfigurationsbeispiel OpenPlotter auf Raspberry Pi** folgten.
 
-Da die Datenübertragung über USB erfolgt, sollte eine USB-Verbindung zwischen dem OBP60 und dem Raspberry Pi hergestellt werden. Sie benötigen dazu ein **USB-C zu USB-A Kabel**. Am Raspberry Pi könne Sie jeden beliebigen USB-A-Port verwenden. Es ist aber ratsam die schwarzen USB-A-Ports zu benutzen, da das OBP60 nur USB 1.1 unterstützt und dadurch die leistungsfähigeren USB 3.0-Ports anderweitig genutzt werden können.
+Da die Datenübertragung über USB erfolgt, sollte eine USB-Verbindung zwischen dem OBP60 und dem Raspberry Pi hergestellt werden. Sie benötigen dazu ein **USB-C zu USB-A Kabel**. Am Raspberry Pi könne Sie jeden beliebigen USB-A-Port verwenden.
 
+.. hint::
+	Es ist aber ratsam die schwarzen USB-A-Ports zu benutzen, da das OBP60 nur USB 1.1 unterstützt und dadurch die leistungsfähigeren USB 3.0-Ports anderweitig genutzt werden können.
 
+.. image:: ../pics/OBP60_USB_Connection_Raspi.png
+             :scale: 60%	
 Abb.: Verbindung OBP60 - Raspberry Pi
 
 **Konfigurationsbeispiel AVnav auf Android-Autoradio**
+
+.. image:: ../pics/OBP60_USB_Connection_Radio_AVnav
+             :scale: 60%	
+Abb.: Verbindung OBP60 - Android Autoradio AVnav
 
 In dem Beispiel wird gezeigt, wie man Busdaten in ein Android-Radio einspeisen kann, um die Daten in AVnav nutzen zu können. Für die Datenübertragung zum Andriod-Autoradio benötigen Sie ein **USB-C zu USB-A Kabel**, sofern ein passende Adapterbuchse zur Verfügung steht. In einigen Situation müssen Sie die USB-Kabel direkt über spezielle Stecker am Autoradio auflegen. Konsultieren Sie dazu das Handbuch zum Android-Autoradio und stellen Sie die USB-Verbindung wie gefordert her.
 
@@ -296,6 +306,10 @@ In dem Beispiel wird gezeigt, wie man Busdaten in ein Android-Radio einspeisen k
 **Konfigurationsbeispiel OpenPlotter auf Raspberry Pi**
 
 **Konfigurationsbeispiel Navionics auf Android-Autoradio**
+
+.. image:: ../pics/OBP60_USB_Connection_Radio_Navionics
+             :scale: 60%	
+Abb.: Verbindung OBP60 - Android Autoradio Navionics
 
 In dem Beispiel wird gezeigt, wie man Busdaten in ein Android-Radio einspeisen kann, um die Daten in Navionics nutzen zu können. Für die Datenübertragung zum Andriod-Autoradio benötigen Sie ein **USB-C zu USB-A Kabel**, sofern ein passende Adapterbuchse zur Verfügung steht. In einigen Situation müssen Sie die USB-Kabel direkt über spezielle Stecker am Autoradio auflegen. Konsultieren Sie dazu das Handbuch zum Android-Autoradio und stellen Sie die USB-Verbindung wie gefordert her.
 
@@ -312,7 +326,7 @@ In dem Beispiel wird gezeigt, wie man Busdaten in ein Android-Radio einspeisen k
 * **VTG**  (COG and SOG)
 * **ZD**A  (Time and Date)
 
-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 +-------------------------+---------------------+
 |Einstellung              |OBP60                |
