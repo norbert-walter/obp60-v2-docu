@@ -324,9 +324,12 @@ In dem Beispiel wird gezeigt, wie man Busdaten in ein Android-Radio einspeisen k
 * **GLL**  (Position)
 * **RMC**  (Minimum GPS sentence includes Pos/Time.COG/SOG)
 * **VTG**  (COG and SOG)
-* **ZD**A  (Time and Date)
+* **ZDA**  (Time and Date)
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Testüberschrift
+~~~~~~~~~~~~~~~
 
 +-------------------------+---------------------+
 |Einstellung              |OBP60                |
