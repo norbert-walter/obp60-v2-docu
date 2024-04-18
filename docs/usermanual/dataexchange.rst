@@ -353,7 +353,7 @@ Abb.: I2C-Anbindung magnetischer Winkelmesser AS5600
 	
 Der Winkelsensor wird im Bereich Konfiguration unter Hardware entsprechend konfiguriert. 
 
--------------------------+---------------------+
++-------------------------+---------------------+
 |Einstellung              |OBP60                |
 +=========================+=====================+
 |`Config - OBP Hardware`_ |                     |
@@ -385,7 +385,7 @@ Abb.: I2C-Anbindung magnetischer Winkelmesser AS5600
 	
 Der Winkelsensor wird im Bereich Konfiguration unter Hardware entsprechend konfiguriert. 
 
--------------------------+---------------------+
++-------------------------+---------------------+
 |Einstellung              |OBP60                |
 +=========================+=====================+
 |`Config - OBP Hardware`_ |                     |
