@@ -289,7 +289,7 @@ Verbinden Sie das OBP60 und den Raspberry Pi über USB. Sie benötigen dazu ein 
 	Es ist aber ratsam die schwarzen USB-A-Ports zu benutzen, da das OBP60 nur USB 1.1 unterstützt und dadurch die leistungsfähigeren USB 3.0-Ports frei bleiben und anderweitig genutzt werden können.
 
 .. image:: ../pics/OBP60_USB_Connection_Raspi.png
-             :scale: 60%	
+             :scale: 40%	
 Abb.: Verbindung OBP60 - Raspberry Pi
 
 **Konfigurationsbeispiel AVnav auf Android-Autoradio**
