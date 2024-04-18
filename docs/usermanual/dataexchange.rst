@@ -228,7 +228,7 @@ Dem Autopiloten werden nur die NMEA0183-Telegramme **XTE**, **XDR**, **RMB**, **
 NMEA0183 - USB
 --------------
 
-NMEA0183-Telegramme lassen sich auch über USB vollduplex übertragen. Das bedeutet, dass Daten gleichzeitig gesendet und empfangen werden können. Den USB-Port für die Datenübertragung findet man auf der Rückseite des OBP60 unterhalb des Steckverbinders **CN2**. Er ist als USB-C ausgeführt. Die USB-Schnittstelle im OBP60 ist als serelles RS232 Device implementiert und unterstützt die Übertragungsgeschwindigkeiten 1.200...460.800 Bd. Die Defaulteinstellung für die Datenübertragung ist auf 115.200 Bd eingestellt und sollte für die meisten Anwendungen ausreichend schnell sein. Die Daten werden ausschließlich als NMEA0183-Daten über USB übertragen.
+NMEA0183-Telegramme lassen sich auch über USB vollduplex übertragen. Das bedeutet, dass Daten gleichzeitig gesendet und empfangen werden können. Den USB-Port für die Datenübertragung findet man auf der Rückseite des OBP60 unterhalb des Steckverbinders **CN2**. Er ist als USB-C ausgeführt. Die USB-Schnittstelle im OBP60 ist als serielles RS232 Device implementiert und unterstützt die Übertragungsgeschwindigkeiten 1.200...460.800 Bd. Die Defaulteinstellung für die Datenübertragung ist auf 115.200 Bd eingestellt und sollte für die meisten Anwendungen ausreichend schnell sein. Die Daten werden ausschließlich als NMEA0183-Daten über USB übertragen.
 
 Als mögliche Endpunkte könnte folgende Hardware verwendet werden:
 
@@ -275,7 +275,7 @@ Für alle oben aufgeführten Endpunkte sind folgende Einstellungen im OBP60 vorz
 .. _Config - USB Port: https://obp60-v2-docu.readthedocs.io/de/latest/usermanual/configuration.html#config-usb-port
 
 .. hint::
-	Achten Sie darauf, dass der **Log Level** auf ``off`` gestellt ist. Anderenfalls kann es sonst zu Störungen in der Kommunikation kommen, da Logging-Ausgaben in den Datenstrom eingespeist werden.
+	Achten Sie darauf, dass der **Log Level** auf ``off`` gestellt ist. Anderenfalls kann es sonst zu Störungen in der Kommunikation kommen, da Logging-Ausgaben in den Datenstrom eingespeist werden, die ebenfalls über USB-C ausgegeben werden.
 	
 Nachfolgend sind einige Konfigurationsbeispiele aufgeführt und es wird gezeigt wie die Konfiguration auf dem System erfolgt.
 	
@@ -283,10 +283,10 @@ Nachfolgend sind einige Konfigurationsbeispiele aufgeführt und es wird gezeigt 
 
 Dieses Beispiel zeigt die Einbindung eines OBP60 über USB in AVnav, das auf einem Rasberry Pi läuft. Dabei werden NMEA2000 Busdaten ausgelesen und nach NMEA0183 übertragen. Die Anbindung erfolgt direkt in AVnav als Device und die Daten stehen dann der Anwendung zu Verfügung. In diesem Fall wird das AVnav-Image benutzt. Wer AVnav unter OpenPlotter als Plugin benutzt sollte dem **Konfigurationsbeispiel OpenPlotter auf Raspberry Pi** folgten.
 
-Da die Datenübertragung über USB erfolgt, sollte eine USB-Verbindung zwischen dem OBP60 und dem Raspberry Pi hergestellt werden. Sie benötigen dazu ein **USB-C zu USB-A Kabel**. Am Raspberry Pi könne Sie jeden beliebigen USB-A-Port verwenden.
+Verbinden Sie das OBP60 und den Raspberry Pi über USB. Sie benötigen dazu ein **USB-C zu USB-A Kabel**. Am Raspberry Pi könne Sie jeden beliebigen USB-A-Port verwenden.
 
 .. hint::
-	Es ist aber ratsam die schwarzen USB-A-Ports zu benutzen, da das OBP60 nur USB 1.1 unterstützt und dadurch die leistungsfähigeren USB 3.0-Ports anderweitig genutzt werden können.
+	Es ist aber ratsam die schwarzen USB-A-Ports zu benutzen, da das OBP60 nur USB 1.1 unterstützt und dadurch die leistungsfähigeren USB 3.0-Ports frei bleiben und anderweitig genutzt werden können.
 
 .. image:: ../pics/OBP60_USB_Connection_Raspi.png
              :scale: 60%	
@@ -294,7 +294,7 @@ Abb.: Verbindung OBP60 - Raspberry Pi
 
 **Konfigurationsbeispiel AVnav auf Android-Autoradio**
 
-.. image:: ../pics/OBP60_USB_Connection_Radio_AVnav
+.. image:: ../pics/OBP60_USB_Connection_Radio_AVnav.png
              :scale: 60%	
 Abb.: Verbindung OBP60 - Android Autoradio AVnav
 
@@ -307,7 +307,7 @@ In dem Beispiel wird gezeigt, wie man Busdaten in ein Android-Radio einspeisen k
 
 **Konfigurationsbeispiel Navionics auf Android-Autoradio**
 
-.. image:: ../pics/OBP60_USB_Connection_Radio_Navionics
+.. image:: ../pics/OBP60_USB_Connection_Radio_Navionics.png
              :scale: 60%	
 Abb.: Verbindung OBP60 - Android Autoradio Navionics
 
