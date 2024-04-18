@@ -278,7 +278,8 @@ Für alle oben aufgeführten Endpunkte sind folgende Einstellungen im OBP60 vorz
 	
 Nachfolgend sind einige Konfigurationsbeispiele aufgeführt und es wird gezeigt wie die Konfiguration auf dem System erfolgt.
 	
-**Konfigurationsbeispiel AVnav auf Raspberry Pi**
+Konfigurationsbeispiel AVnav auf Raspberry Pi
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Dieses Beispiel zeigt die Einbindung eines OBP60 über USB in AVnav, das auf einem Rasberry Pi läuft. Dabei werden NMEA2000 Busdaten ausgelesen und nach NMEA0183 übertragen. Die Anbindung erfolgt direkt in AVnav als Device und die Daten stehen dann der Anwendung zu Verfügung. In diesem Fall wird das AVnav-Image benutzt. Wer AVnav unter OpenPlotter als Plugin benutzt sollte dem **Konfigurationsbeispiel OpenPlotter auf Raspberry Pi** folgten.
 
@@ -291,7 +292,8 @@ Verbinden Sie das OBP60 und den Raspberry Pi über USB. Sie benötigen dazu ein 
              :scale: 40%	
 Abb.: Verbindung OBP60 - Raspberry Pi
 
-**Konfigurationsbeispiel AVnav auf Android-Autoradio**
+Konfigurationsbeispiel AVnav auf Android-Autoradio
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. image:: ../pics/OBP60_USB_Connection_Radio_AVnav.png
              :scale: 60%	
@@ -300,11 +302,14 @@ Abb.: Verbindung OBP60 - Android Autoradio AVnav
 In dem Beispiel wird gezeigt, wie man Busdaten in ein Android-Radio einspeisen kann, um die Daten in AVnav nutzen zu können. Für die Datenübertragung zum Andriod-Autoradio benötigen Sie ein **USB-C zu USB-A Kabel**, sofern ein passende Adapterbuchse zur Verfügung steht. In einigen Situation müssen Sie die USB-Kabel direkt über spezielle Stecker am Autoradio auflegen. Konsultieren Sie dazu das Handbuch zum Android-Autoradio und stellen Sie die USB-Verbindung wie gefordert her.
 
 
-**Konfigurationsbeispiel SignalK auf Raspberry Pi**
+Konfigurationsbeispiel SignalK auf Raspberry Pi
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Konfigurationsbeispiel OpenPlotter auf Raspberry Pi**
+Konfigurationsbeispiel OpenPlotter auf Raspberry Pi
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-**Konfigurationsbeispiel Navionics auf Android-Autoradio**
+Konfigurationsbeispiel Navionics auf Android-Autoradio
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. image:: ../pics/OBP60_USB_Connection_Radio_Navionics.png
              :scale: 60%	
@@ -324,6 +329,8 @@ In dem Beispiel wird gezeigt, wie man Busdaten in ein Android-Radio einspeisen k
 * **RMC**  (Minimum GPS sentence includes Pos/Time.COG/SOG)
 * **VTG**  (COG and SOG)
 * **ZDA**  (Time and Date)
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Testüberschrift
 ^^^^^^^^^^^^^^^
