@@ -326,10 +326,9 @@ In dem Beispiel wird gezeigt, wie man Busdaten in ein Android-Radio einspeisen k
 * **VTG**  (COG and SOG)
 * **ZDA**  (Time and Date)
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 Testüberschrift
-~~~~~~~~~~~~~~~
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 +-------------------------+---------------------+
 |Einstellung              |OBP60                |
