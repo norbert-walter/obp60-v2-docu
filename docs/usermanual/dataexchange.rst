@@ -278,8 +278,8 @@ Für alle oben aufgeführten Endpunkte sind folgende Einstellungen im OBP60 vorz
 	
 Nachfolgend sind einige Konfigurationsbeispiele aufgeführt und es wird gezeigt wie die Konfiguration auf dem System erfolgt.
 	
-Konfigurationsbeispiel AVnav auf Raspberry Pi
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Beispiel AVnav auf Raspberry Pi
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Dieses Beispiel zeigt die Einbindung eines OBP60 über USB in AVnav, das auf einem Rasberry Pi läuft. Dabei werden NMEA2000 Busdaten ausgelesen und nach NMEA0183 übertragen. Die Anbindung erfolgt direkt in AVnav als Device und die Daten stehen dann der Anwendung zu Verfügung. In diesem Fall wird das AVnav-Image benutzt. Wer AVnav unter OpenPlotter als Plugin benutzt sollte dem **Konfigurationsbeispiel OpenPlotter auf Raspberry Pi** folgten.
 
@@ -292,8 +292,8 @@ Verbinden Sie das OBP60 und den Raspberry Pi über USB. Sie benötigen dazu ein 
              :scale: 40%	
 Abb.: Verbindung OBP60 - Raspberry Pi
 
-Konfigurationsbeispiel AVnav auf Android-Autoradio
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Beispiel AVnav auf Android-Autoradio
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. image:: ../pics/OBP60_USB_Connection_Radio_AVnav.png
              :scale: 60%	
@@ -302,14 +302,14 @@ Abb.: Verbindung OBP60 - Android Autoradio AVnav
 In dem Beispiel wird gezeigt, wie man Busdaten in ein Android-Radio einspeisen kann, um die Daten in AVnav nutzen zu können. Für die Datenübertragung zum Andriod-Autoradio benötigen Sie ein **USB-C zu USB-A Kabel**, sofern ein passende Adapterbuchse zur Verfügung steht. In einigen Situation müssen Sie die USB-Kabel direkt über spezielle Stecker am Autoradio auflegen. Konsultieren Sie dazu das Handbuch zum Android-Autoradio und stellen Sie die USB-Verbindung wie gefordert her.
 
 
-Konfigurationsbeispiel SignalK auf Raspberry Pi
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Beispiel SignalK auf Raspberry Pi
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Konfigurationsbeispiel OpenPlotter auf Raspberry Pi
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Beispiel OpenPlotter auf Raspberry Pi
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Konfigurationsbeispiel Navionics auf Android-Autoradio
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Beispiel Navionics auf Android-Autoradio
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. image:: ../pics/OBP60_USB_Connection_Radio_Navionics.png
              :scale: 60%	
@@ -330,10 +330,32 @@ In dem Beispiel wird gezeigt, wie man Busdaten in ein Android-Radio einspeisen k
 * **VTG**  (COG and SOG)
 * **ZDA**  (Time and Date)
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Beispiel I2C Ruderlagensensor
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Testüberschrift
-^^^^^^^^^^^^^^^
+Es wird an dieser Stelle gezeigt wie man einen I2C-Winkelsensor als Ruderlagensensor am I2C-Bus benutzt. Grundsätzlich kann der Winkelsensor für folgende Winkelmessungen benutzt werden:
+
+* Ruderlage
+* Windrichtung
+* Mastausrichtung bei drehbaren Masten
+* Kielneigung
+* Winkelsensor für Trimmklappen oder Foils
+* Großbaum
+
+Als I2C-Winkelsensor wird eine kleine Platine mit einem AS5600 verwendet, die auf Adresse 0x36 angesprochen werden kann. Der AS5600 ist ein magnetischer Winkelsensor, der die Ausrichtung eines Magnetfeldes erkennen kann. Über einen diametralen Magneten, dessen Magnetfeld in der Scheibenebene geteilt ist und mit der Ruderachse verbunden ist, kann der Ruderausschlag gemessen werden.
+
+.. image:: ../pics/I2C_Sample_Setup_AS5600.png
+             :scale: 50%
+Abb.: I2C-Anbindung magnetischer Winkelmesser AS5600
+
+.. note::
+	Bedenken Sie, dass nur ein AS5600 als Winkelmesser verwendet werden kann, da die I2C-Adresse nicht änderbar ist. Das Verbindungskabel sollte ein geschirmetes Kabel sein und eine Länge von 10 m nicht überschreiten.
+
+
+Konfigurationsbeispiel 1Wire
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 +-------------------------+---------------------+
