@@ -39,7 +39,6 @@ Der Datenaustausch im OBP60 kann auf verschiedene Weise erfolgen. Grundsätzlich
 	* Kabelgebunden NMEA0183-Bus (simplex)
 	* USB (vollduplex)
 	* Über WiFi via TCP (vollduplex)
-	* Über externen Multiplexer (simplex)
 * **I2C** (halbduplex)
 * **1Wire** (halbduplex)
 
@@ -326,8 +325,7 @@ In dem Beispiel wird gezeigt, wie man Busdaten in ein Android-Radio einspeisen k
 * **VTG**  (COG and SOG)
 * **ZDA**  (Time and Date)
 
-Testüberschrift
-
+**Testüberschrift**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 +-------------------------+---------------------+
