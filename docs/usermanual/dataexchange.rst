@@ -342,7 +342,7 @@ Es wird an dieser Stelle gezeigt wie man einen I2C-Winkelsensor als Ruderlagense
 * Winkelsensor für Trimmklappen oder Foils
 * Großbaum
 
-Als I2C-Winkelsensor wird eine kleine Platine mit einem AS5600 verwendet, die auf Adresse 0x36 angesprochen werden kann. Der AS5600 ist ein magnetischer Winkelsensor, der die Ausrichtung eines Magnetfeldes erkennen kann. Über einen diametralen Magneten, dessen Magnetfeld in der Scheibenebene geteilt ist und mit der Ruderachse verbunden ist, kann der Ruderausschlag gemessen werden.
+Als I2C-Winkelsensor wird eine kleine Platine mit einem AS5600 verwendet, die auf Adresse 0x36 angesprochen werden kann. Der AS5600 ist ein magnetischer Winkelsensor, der die Ausrichtung eines Magnetfeldes erkennt. Über einen diametralen Magneten, dessen Magnetfeld in der Scheibenebene geteilt ist und mit der Ruderachse verbunden ist, kann der Ruderausschlag gemessen werden.
 
 .. image:: ../pics/I2C_Sample_Setup_AS5600.png
              :scale: 50%
@@ -350,10 +350,57 @@ Abb.: I2C-Anbindung magnetischer Winkelmesser AS5600
 
 .. note::
 	Bedenken Sie, dass nur ein AS5600 als Winkelmesser verwendet werden kann, da die I2C-Adresse nicht änderbar ist. Das Verbindungskabel sollte ein geschirmetes Kabel sein und eine Länge von 10 m nicht überschreiten.
+	
+Der Winkelsensor wird im Bereich Konfiguration unter Hardware entsprechend konfiguriert. 
 
+-------------------------+---------------------+
+|Einstellung              |OBP60                |
++=========================+=====================+
+|`Config - OBP Hardware`_ |                     |
++-------------------------+---------------------+
+|Rot. Sensor              |AS5600               |
++-------------------------+---------------------+
+|Rot. Function            |Rudder               |
++-------------------------+---------------------+
+|Rot. Offset              |0                    |
++-------------------------+---------------------+
 
-Konfigurationsbeispiel 1Wire
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+.. _Config - OBP Hardware: https://obp60-v2-docu.readthedocs.io/de/latest/usermanual/configuration.html#config-obp-hardware
+
+Nach der Konfiguration steht der Ruderwinkel als NMEA0183-Telegramm (RSA) und NMEA2000-Telegramm (127245) zur Verfügung.
+
+Beispiel I2C Kielneigungssensor
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Es wird gezeigt wie man einen I2C-Winkelsensor als Kielneigungssensor am I2C-Bus benutzt. Die Besonderheit besteht darin, dass es für den Neigungswert des Kiels keine Telegramme für NMEA0183 und NMEA2000 gibt. Die Kielneigung kann nur auf dem Display angezeigt werden.
+
+Als I2C-Winkelsensor wird wieder die kleine Platine mit einem AS5600 verwendet, die auf Adresse 0x36 angesprochen werden kann. Der AS5600 ist ein magnetischer Winkelsensor, der die Ausrichtung eines Magnetfeldes erkennt. Über einen diametralen Magneten kann die Kielneigung mit Hilfe einer angepassten Mechanik gemessen werden.
+
+.. image:: ../pics/I2C_Sample_Setup_AS5600.png
+             :scale: 50%
+Abb.: I2C-Anbindung magnetischer Winkelmesser AS5600
+
+.. note::
+	Bedenken Sie, dass nur ein AS5600 als Winkelmesser verwendet werden kann, da die I2C-Adresse nicht änderbar ist. Das Verbindungskabel sollte ein geschirmetes Kabel sein und eine Länge von 10 m nicht überschreiten.
+	
+Der Winkelsensor wird im Bereich Konfiguration unter Hardware entsprechend konfiguriert. 
+
+-------------------------+---------------------+
+|Einstellung              |OBP60                |
++=========================+=====================+
+|`Config - OBP Hardware`_ |                     |
++-------------------------+---------------------+
+|Rot. Sensor              |AS5600               |
++-------------------------+---------------------+
+|Rot. Function            |Keel                 |
++-------------------------+---------------------+
+|Rot. Offset              |0                    |
++-------------------------+---------------------+
+
+.. _Config - OBP Hardware: https://obp60-v2-docu.readthedocs.io/de/latest/usermanual/configuration.html#config-obp-hardware
+
+Beispiel 1Wire Temperaturmessung
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
