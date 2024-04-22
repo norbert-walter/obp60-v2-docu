@@ -322,13 +322,13 @@ In dem Beispiel wird gezeigt, wie man Busdaten in ein Android-Radio einspeisen k
 	
 * **AIVDM** (AIS-Daten)
 * **AIVDO** (AIS-Daten)
-* **DBT**  (Depth below transducer - Tiefe unter Sensor)
-* **DPT**  (Depth - korrigierte Tiefe)
+* **DBT**  (Tiefe unter Sensor)
+* **DPT**  (Korrigierte Tiefe)
 * **GGA**  (Position)
 * **GLL**  (Position)
-* **RMC**  (Minimum GPS sentence includes Pos/Time.COG/SOG)
-* **VTG**  (COG and SOG)
-* **ZDA**  (Time and Date)
+* **RMC**  (Notwenige minimale Navigationsdaten - Zeit, Position, Kurs, Speed)
+* **VTG**  (Kurs und Speed über Grund)
+* **ZDA**  (Uhrzeit und Datum)
 
 I2C-Bus
 -------
