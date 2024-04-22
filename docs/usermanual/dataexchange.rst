@@ -330,6 +330,9 @@ In dem Beispiel wird gezeigt, wie man Busdaten in ein Android-Radio einspeisen k
 * **VTG**  (COG and SOG)
 * **ZDA**  (Time and Date)
 
+I2C-Bus
+-------
+
 Beispiel I2C Ruderlagensensor
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -397,7 +400,12 @@ Der Winkelsensor wird im Bereich Konfiguration unter Hardware entsprechend konfi
 |Rot. Offset              |0                    |
 +-------------------------+---------------------+
 
+<<<<<<< Updated upstream
 .. _Config - OBP Hardware: https://obp60-v2-docu.readthedocs.io/de/latest/usermanual/configuration.html#config-obp-hardware
+=======
+1Wire-Bus
+---------
+>>>>>>> Stashed changes
 
 Beispiel 1Wire Temperaturmessung
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
