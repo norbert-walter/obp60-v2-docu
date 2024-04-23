@@ -57,6 +57,7 @@ Das Mutifunktionsdisplay OBP60 dient zur Anzeige von Daten aus Boots-Netzen wie 
    Programmierumgebung <programming/environment>
    Seitenerstellung <programming/pages>
    Kompilieren und Download <programming/activating>
+   Web-Flashtool <programming/webflashtool>
    
 .. toctree::
    :maxdepth: 3
