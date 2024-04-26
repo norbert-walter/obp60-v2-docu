@@ -447,16 +447,23 @@ Config - OBP Hardware
 
 Unter **Hardware** werden alle Einstellungen bezüglich verbauter Hardware oder externer Zusatz-Hardware des OPB60 vorgenommen. Die Default-Einstellungen entsprechen den Minimal-Einstellungen für ein OBP60-Gerät. Je nach verbauter Hardware können unterschiedliche Sensoren und Funktionen zum Einsatz kommen.
 
+**RTC Modul**
+     * Typ der Echtzeituhr
+     * ``off`` - Es wird keine Echtzeituhr benutzt
+     * ``DS1388`` - Echtzeituhr DS1388 
+
 **GPS Sensor**
      * Typ des GPS-Sensors
-     * ``NEO-6M`` - GPS-Sensor NEO-6M (Standard)
+     * ``off`` - Es wird kein GPS-Sensor benutzt
+     * ``NEO-6M`` - GPS-Sensor NEO-6M
      * ``NEO-M8N`` - Höherwertiger GPS-Sensor NEO-M8N
+     * ``ATGM336H`` - GPS-Sensor ATGM336H (Default)
      
 **Env. Sensor**
     * Angaben zum verwendeten Umgebungssensor. Dabei können verschiedene Sensoren ausgewählt werden. Die Sensoren sind am I2C-Bus angeschlossen. Es können interne Gerätesensoren des OBP60 oder externe Sensoren ausgewählt werden.   
     * ``off`` - Es wird kein Umgebungssensor benutzt
     * ``BME280`` - Sensor für Temperatur, Luftfeuchtigkeit und Luftdruck
-    * ``BMP280`` - Sensor für Temperatur und Luftdruck
+    * ``BMP280`` - Sensor für Temperatur und Luftdruck (Default)
     * ``BMP180`` - Sensor für Temperatur und Luftdruck
     * ``BME085`` - Sensor für Temperatur und Luftdruck
     * ``HTU21`` - Sensor für Temperatur und Luftfeuchtigkeit
@@ -539,7 +546,7 @@ Unter **Hardware** werden alle Einstellungen bezüglich verbauter Hardware oder 
 **Temp Sensor**
     * Hier kann der Sensortyp ausgewählt werden, der am 1Wire-Bus verwendet wird.
     * ``off`` - Es wird kein Sensor benutzt
-    * ``DS18B20`` - Temperatursensor -10...+85°C
+    * ``DS18B20`` - Temperatursensor -10...+85°C (1...8 Sensoren)
     
 **Power Mode**
     * Der **Power Mode** bezieht sich auf die Art der Stromversorgung, die im OBP60 angewendet wird.
@@ -549,9 +556,12 @@ Unter **Hardware** werden alle Einstellungen bezüglich verbauter Hardware oder 
     * ``Min Power`` - Es sind nur die Stromversorgungen eingeschaltet, um die Minimal-Funktionen bereitzustellen. Hierbei entsteht der geringste Stromverbrauch.
     
 **Undervoltage**
-    * Erkennung einer Unterspannung der Stromversorgung. Wenn eine Unterspannung erkannt wird, kann das OBP60 automatisch deaktiviert werden, um eine Tiefentladung der Batterie zu vermeiden. In kritischen Situationen kann das OBP60 trotz Unterspannung bis 7 V funktionsfähig bleiben, wenn der Unterspannungsschutz deaktiviert ist. Als Default-Wert ist der Unterspannungsschutz aktiviert.
+    * Erkennung einer Unterspannung der Stromversorgung. Wenn eine Unterspannung kleiner 9 V erkannt wird, kann das OBP60 automatisch deaktiviert werden, um eine Tiefentladung der Batterie zu vermeiden. In kritischen Situationen kann das OBP60 trotz Unterspannung bis 7 V funktionsfähig bleiben, wenn der Unterspannungsschutz deaktiviert ist. Als Default-Wert ist der Unterspannungsschutz aktiviert. Wenn im aktivierten Zustand eine Unterspannung auftritt, wird das OBP60 angehalten und in den Tiefschlaf versetzt. Im Display erscheint die Meldung **Undervoltage**. Der Zustand kann nur verlassen werden, wenn die Versorgungsspannung vollständig ausgeschaltet und wieder eingeschaltet wird.
     * ``on`` - Der Unterspannungsschutz ist aktiviert
     * ``off`` - Der Unterspannungsschutz ist ausgeschaltet
+    
+.. hint::
+    Wenn Sie das OBP60 über USB mit Strom versorgen möchten, muss die Erkennung der Unterspannung abgeschaltet werden, da sich das Gerät sonst automatisch abschaltet.
 	
 **Simulation Data**
     * Mit **Simulation Data** können Bus- und Sensordaten simuliert werden. Die Funktion ist nützlich, wenn die Funktionalität des Gerätes im ausgebauten Zustand ohne angeschlossene Busse oder Sensoren getestet werden soll. Das Gerät befindet sich dann in einem Demo-Mode.
@@ -568,6 +578,9 @@ Config - OBP Calibrations
              :scale: 60%
 
 Auf der Seite **Calibrations** können Einstellungen zur Kalibrierung vorgenommen werden. Damit lassen sich Ungenauigkeiten von bestimmten Messwerten korrigieren. Die Korrektur kann je nach Sensor mit einer linearen oder quadratischen Korrektur durchgeführt werden.  
+
+**Touch Sensitivity**
+    * Einstellung der Tastenempfindlichkeit 0...100%. 0% bedeutet minimale Empfindlichkeit. 100% bedeutet maximale Empfindlichkeit.
 
 **VSensor Offset**
     * Offset der Korrekturfunktion des internen Spannungssensors des OBP60
