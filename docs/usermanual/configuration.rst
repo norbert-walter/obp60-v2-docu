@@ -472,7 +472,7 @@ Unter **Hardware** werden alle Einstellungen bezüglich verbauter Hardware oder 
 **Battery Sensor**
     * Hier können Sensoren ausgewählt werden, die am externen I2C-Bus angeschlossen sind und Batterie-Werte auslesen.
     * ``off`` - Es wird kein Sensor benutzt
-    * ``INA219`` - Sensor für Spannung 0...36V, Strom 0...500A und Leistung, I2C-Addresse 0x41
+    * ``INA219`` - Sensor für Spannung 0...36V, Strom 0...500A und Leistung, I2C-Addresse 0x40
     * ``INA226`` - Sensor für Spannung 0...36V, Strom 0...500A und Leistung, I2C-Addresse 0x41
     
 **Battery Shunt**
@@ -488,7 +488,7 @@ Unter **Hardware** werden alle Einstellungen bezüglich verbauter Hardware oder 
 **Solar Sensor**
     * Hier können Sensoren ausgewählt werden, die am externen I2C-Bus angeschlossen sind und Solar-Werte auslesen.
     * ``off`` - Es wird kein Sensor benutzt
-    * ``INA219`` - Sensor für Spannung 0...36V, Strom 0...500A und Leistung, I2C-Addresse 0x44
+    * ``INA219`` - Sensor für Spannung 0...36V, Strom 0...500A und Leistung, I2C-Addresse 0x41
     * ``INA226`` - Sensor für Spannung 0...36V, Strom 0...500A und Leistung, I2C-Addresse 0x44
     
 **Solar Shunt**
