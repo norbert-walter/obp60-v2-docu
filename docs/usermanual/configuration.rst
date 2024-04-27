@@ -418,7 +418,7 @@ Config - OBP Settings
 Auf der Seite **OBP60 Settings** können Sie Einstellungen vornehmen, die in Verbindung mit Boot stehen, in dem das OBP60 eingebaut ist.  Die eingetragenen Werte werden dazu benutzt, um zum Beispiel eine ungefähre Reichweitenbestimmung für Wasser, Kraftstoff und Batterie vornehmen zu können. Geben Sie bitte die Werte für Ihr Boot möglichst genau ein und beachten Sie die entsprechenden Einheiten. Die Einstellungen dienen dazu, verschiedene Betriebszustände auf dem OPB60 in Grafiken darzustellen.
 
 .. warning::
-    Bedenken Sie, dass die Reichweitenbestimmungen nur als Richtwerte verwendet werden können. Insbesondere bei den Batterietypen AGM und LiFePo4 müssen Sie mit größeren Ungenauigkeiten rechnen. Beobachten und überprüfen Sie die Ergebnisse unter realen Bedingungen, bevor Sie den Anzeigewerten vertrauen. 
+    Bedenken Sie, dass die Reichweitenbestimmungen mit dem internen Spannungssensor nur als Richtwerte verwendet werden können. Insbesondere bei den Batterietypen AGM und LiFePo4 müssen Sie mit größeren Ungenauigkeiten rechnen. Beobachten und überprüfen Sie die Ergebnisse unter realen Bedingungen, bevor Sie den Anzeigewerten vertrauen. 
 
 **Time Zone**
     * Über **Time Zone** kann die Zeitzone im Bereich von -12 und +14 Stunden eingestellt werden.
@@ -450,7 +450,7 @@ Unter **Hardware** werden alle Einstellungen bezüglich verbauter Hardware oder 
 **RTC Modul**
      * Typ der Echtzeituhr
      * ``off`` - Es wird keine Echtzeituhr benutzt
-     * ``DS1388`` - Echtzeituhr DS1388 
+     * ``DS1388`` - Echtzeituhr DS1388 (Default)
 
 **GPS Sensor**
      * Typ des GPS-Sensors
@@ -532,16 +532,16 @@ Unter **Hardware** werden alle Einstellungen bezüglich verbauter Hardware oder 
     * ``Boom`` - Winkelsensor für Großbaum
     
 **Rot. Offset**
-    Offset des Winkelsensors. Damit kann der Nullpunkt des Winkelsensors korrigiert werden.
+    Offset des Winkelsensors. Damit kann der Nullpunkt der externen Winkelsensoren am I2C-Bus korrigiert werden.
     
 **Roll Limit**
-    **Roll Limit** gibt den maximal zulässigen seitlichen Neigungswinkel für das Rollen des Bootes an.
+    **Roll Limit** gibt den maximal zulässigen seitlichen Neigungswinkel für das Rollen des Bootes an. Unter realen Bedingungen sind 20 Grad als Grenzwert realistisch.
     
 **Roll Offset**
-    Offset des Neigungs-Winkelsensors. Damit kann der Nullpunkt des Sensors korrigiert werden.
+    Offset des Neigungs-Winkelsensors. Damit kann der Nullpunkt des Winkelsensors für das seitliche rollen korrigiert werden.
     
 **Pitch Offset**
-    Offset des Winkelsensors für Pitch. Damit kann der Nullpunkt des Sensors korrigiert werden.
+    Offset des Winkelsensors für Pitch. Damit kann der Nullpunkt des Winkelsensors für das nicken korrigiert werden.
     
 **Temp Sensor**
     * Hier kann der Sensortyp ausgewählt werden, der am 1Wire-Bus verwendet wird.
@@ -551,7 +551,6 @@ Unter **Hardware** werden alle Einstellungen bezüglich verbauter Hardware oder 
 **Power Mode**
     * Der **Power Mode** bezieht sich auf die Art der Stromversorgung, die im OBP60 angewendet wird.
     * ``Max Power`` - Alle Stromversorgungen sind eingeschaltet. Hierbei ist das Gerät am leistungsfähigsten und es entsteht der maximale Stromverbrauch.
-    * ``Only 3.3V`` - Es ist nur die zusätzliche Stromversorgung für 3.3 V eingeschaltet.
     * ``Only 5.0V`` - Es ist nur die zusätzliche Stromversorgung für 5.0 V eingeschaltet.
     * ``Min Power`` - Es sind nur die Stromversorgungen eingeschaltet, um die Minimal-Funktionen bereitzustellen. Hierbei entsteht der geringste Stromverbrauch.
     
