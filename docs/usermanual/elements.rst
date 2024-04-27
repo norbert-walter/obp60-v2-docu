@@ -12,11 +12,12 @@ Die Statuszeile dient zur Anzeige von Statusinformationen. Dazu zählen:
 **Zustandsanzeige des Access Points**
    * **AP** - Access Point
    
-**Zustandsanzeige aktiver Bussysteme**
+**Zustandsanzeige aktiver Bussysteme und Komponenten**
    * **N2K** - NMEA2000
    * **183** - NMEA0183
    * **USB** - NMEA0183
    * **TCP** - NMEA0183 via TCP (WiFi)
+   * **GPS** - GPS-Sensor des OBP60 (Position gefunden)
 
 * Lebenszeichen (pulsierender Punkt)
 * Datum und Uhrzeit (landesspezifisch)
