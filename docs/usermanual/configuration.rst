@@ -21,7 +21,7 @@ Ab Android 10 öffnen Sie dazu die Wifi-Einstellungen und lassen sich alle WiFi-
 Abb.: WLAN Settings unter Android 11
 
 .. note::
-    Sollte das Einbuchen in das WiFi-Netzwerk des OBP60 per QR-Code nicht funktionieren, können Sie die Konfiguration manuell vornehmen. Verwenden Sie dazu die folgenden Zugangsdaten:
+    Sollte das Einbuchen in das WiFi-Netzwerk des OBP60 per QR-Code nicht funktionieren, können Sie die Konfiguration auch manuell vornehmen. Verwenden Sie dazu die folgenden Zugangsdaten:
 
 * **SSID:** OBP60V2
 * **Passwort:** esp32nmea2k  
@@ -165,7 +165,7 @@ Config - Converter
 Mit den nachfolgenden Einstellungen können Sie die Funktion des NMEA2000-Gateways verändern.
 
 **Min XDR Interval**
-	* Hier wird die Intervallzeit der XDR-Signalverarbeitung eingestellt. XDR-Telegramme sind frei definierbare Sensor-Telegramme. Die Intervallzeit kann ab 10 ms eingestellt werden. Der Default-Wert steht auf 100 ms. Mit der kleinsten Intervallzeit von 10 ms wird eine Datenverarbeitungsrate von 100 Hz erreicht.
+	* Hier wird die Intervallzeit der XDR-Signalverarbeitung eingestellt. XDR-Telegramme sind frei definierbare Sensor-Telegramme. Die Intervallzeit kann ab 10 ms eingestellt werden. Der Default-Wert steht auf 100 ms. Mit der kürzesten Intervallzeit von 10 ms wird eine Datenverarbeitungsrate von 100 Hz erreicht.
 	
 **Min N2K Interval**
 	* Hier wird die Intervallzeit der NMEA2000-Signalverarbeitung eingestellt. Die Intervallzeit kann ab 5 ms eingestellt werden. Der Defaultwert steht auf 50 ms.
@@ -187,7 +187,7 @@ Config - USB Port
 Über die Seite **USB** Port können die Funktionen des USB-Ports detailliert eingestellt werden.
 
 **USB Mode**
-	* legt das Format fest, wie Daten am USB-Port verarbeitet werden. Mit dem Actisense-Format können NMEA2000-Telegramme von externer Software empfangen und verarbeitet werden. Actisense-Daten werden in NMEA2000-Daten und in NMEA0183-Daten innerhalb der Firmware übersetzt. So kann z.B. die `Simulations- und Diagnosefirmware`_ der Fa. Actisense zur Analyse der Busdaten verwendet werden.
+	* legt das Format fest, wie Daten am USB-Port verarbeitet werden. Mit dem Actisense-Format können NMEA2000-Telegramme von externer Software empfangen und verarbeitet werden. Actisense-Daten werden innerhalb des Geräts in NMEA2000-Daten und in NMEA0183-Daten  übersetzt. So kann z.B. die `Simulations- und Diagnosefirmware`_ der Fa. Actisense zur Analyse der Busdaten verwendet werden.
 	
 .. _Simulations- und Diagnosefirmware: https://actisense.com/de/software/
 	
@@ -203,18 +203,18 @@ Config - USB Port
 Mit den nachfolgenden drei Einstellungen lässt sich die Datenrichtung an der USB-C-Schnittstelle einstellen. Dabei wird zwischen NMEA0183 und NMEA2000 unterschieden.
 	
 **NMEA to USB**
-	* ``on`` - NMEA0183-Daten an USB-Schnittstelle ausgeben
-	* ``off`` - NMEA0183-Daten an USB-Schnittstelle nicht ausgeben
+	* ``on`` - NMEA0183-Daten werden an die USB-Schnittstelle ausgegeben
+	* ``off`` - NMEA0183-Daten werden nicht an die USB-Schnittstelle ausgeben
 	
 **NMEA from USB**
-	* ``on`` - NMEA0183-Daten von der USB-Schnittstelle empfangen
-	* ``off`` - NMEA0183-Daten von der USB-Schnittstelle nicht empfangen
+	* ``on`` - NMEA0183-Daten werden von der USB-Schnittstelle empfangen
+	* ``off`` - NMEA0183-Daten werden nicht von der USB-Schnittstelle empfangen
 	
 **USB to NMEA2000**
-	* ``on`` - Daten von der USB-Schnittstelle an NMEA2000 weiterleiten
-	* ``off`` - Daten von der USB-Schnittstelle nicht an NMEA2000 weiterleiten
+	* ``on`` - Daten werden von der USB-Schnittstelle an den NMEA2000-Bus weitergeleitet
+	* ``off`` - Daten werden nicht von der USB-Schnittstelle an den NMEA2000-Bus weitergeleiten
 	
-In den nächsten beiden Einstellungen werden die Filterfunktionen **USB read Filter** und **USB write Filter** für das Lesen und Schreiben an der USB-Schnittstelle gesetzt. Es lassen sich nur NMEA0183-Daten filtern. Dabei lässt sich gesondert einstellen, ob AIS-Positionssignale verarbeitet werden. Als Filterformen stehen <Whitelist> und <Blacklist> zur Verfügung, also einmal die Angabe von Filterkriterien, die eingeschlossen werden sollen (Whitelist), dann solche, die zum Ausschluss von Daten führen (Blacklist).
+In den nächsten beiden Einstellungen werden die Filterfunktionen **USB read Filter** und **USB write Filter** für das Lesen und Schreiben an der USB-Schnittstelle gesetzt. Es lassen sich nur NMEA0183-Daten filtern. Dabei lässt sich gesondert einstellen, ob AIS-Positionssignale verarbeitet werden. Als Filterformen stehen <Whitelist> und <Blacklist> zur Verfügung, also einmal die Angabe von Filterkriterien, die die betroffenen Daten einschliessen sollen (Whitelist), dann solche, die zum Ausschluss von Daten führen (Blacklist).
 
 **USB Filter**
 	* ``aison`` - AIS-Daten an der USB-Schnittstelle werden verarbeitet
@@ -234,7 +234,7 @@ Die genaue Bedeutung der Kurzbezeichner ist `hier`_ erklärt.
 	Filterfunktionen sind ein mächtiges Werkzeug, um Datenflüsse zu steuern. Überlegen Sie sich vor der Konfiguration, wie Ihre Datenflüsse im Boot aussehen sollen, und erstellen sich dazu eine Skizze. Setzen Sie die Filter so ein, dass sie nur die Daten senden und empfangen, die sie auch wirklich benötigen. Unterscheiden Sie dabei, was gesendet und was empfangen werden soll, vermeiden Sie dabei auf alle Fälle Datenschleifen.
 	
 .. warning::
-	Datenschleifen führen zu Fehlfunktionen des Gerätes. Bei Datenschleifen laufen dieselben Daten über mehrere Geräte im Kreis. Dadurch entstehen hohe Senderaten, weil fortlaufend die gleichen Daten gesendet und empfangen werden. Die Prozessorlast erhöht sich dabei auf ein Maximum. Unter Umständen kann das Gerät ausfallen, nicht mehr zeitnah die Daten verarbeiten oder nicht mehr bedienbar sein. Beachten Sie, dass der Zustand auch erst dann eintreten kann, wenn weitere Geräte am Bussystem später zugeschaltet werden.
+	Datenschleifen führen zu Fehlfunktionen des Gerätes. Bei Datenschleifen laufen die selben Daten über mehrere Geräte im Kreis. Dadurch entstehen hohe Senderaten, weil fortlaufend die gleichen Daten gesendet und empfangen werden. Die Prozessorlast erhöht sich dabei auf ein Maximum. Unter Umständen kann das Gerät ausfallen, nicht mehr zeitnah die Daten verarbeiten oder nicht mehr bedienbar sein. Beachten Sie, dass der Zustand auch erst dann eintreten kann, wenn weitere Geräte am Bussystem später zugeschaltet werden.
 	
 Config - Serial Port
 --------------------
@@ -250,7 +250,7 @@ Config - Serial Port
 	* ``receive`` - Die NMEA0183-Schnittstelle empfängt
 	
 .. note::
-	Die serielle Schnittstelle ist konform zu RS485 und RS422 und arbeitet im Halbduplex-Betrieb. Es kann entweder gesendet oder empfangen werden. Beides gleichzeitig ist nicht möglich. Wenn Sie eine Vollduplex-Übertragung für NMEA0183-Daten benötigen, dann können Sie die USB-C-Schnittstelle benutzen. Diese Schnittstelle ist aber nicht zu RS485 oder RS422 konform. Sie kann sinnvoll verwendet werden, wenn Sie Daten z.B. in OpenCPN auf einem PC oder Laptop verarbeitet wollen.
+	Die serielle Schnittstelle ist konform zu RS485 und RS422 und arbeitet im Halbduplex-Betrieb. Es kann entweder gesendet oder empfangen werden. Beides gleichzeitig ist nicht möglich. Wenn Sie eine Vollduplex-Übertragung für NMEA0183-Daten benötigen, nutzen Sie am besten die USB-C-Schnittstelle. Diese Schnittstelle ist aber nicht zu RS485 oder RS422 konform. Sie kann sinnvoll verwendet werden, wenn Sie Daten z.B. in OpenCPN auf einem PC oder Laptop verarbeitet wollen.
 	
 **Serial Baud Rate**
 	* Einstellung der Baudrate zwischen 1.200 und 460.800 Bd.
@@ -282,7 +282,7 @@ Config - TCP Server
 Hier werden die Einstellungen zum Betrieb des OPB60 als TCP-Server vorgenommen. Der TCP-Server ist ein Server-Dienst, über den Daten schreibend und lesend ausgetauscht werden können. Dabei meldet sich ein Netzwerk-Gerät als Client aktiv über einen TCP-Port am Server an und kann dann Daten mit dem TCP-Server austauschen.
 
 .. note::
-    Der Anmeldevorgang muss immer vom Client initiiert werden. Bei Verbindungsabbrüchen muss der Client die Verbindung wieder selbständig aufbauen. Achten Sie darauf, dass der Client über eine Auto-Connect-Funktion verfügt. Anderenfalls verlieren Sie die Datenverbindung dauerhaft bei Verbindungsabbrüchen.
+    Der Anmeldevorgang muss immer vom Client initiiert werden. Bei Verbindungsabbrüchen muss der Client die Verbindung wieder selbständig aufbauen. Achten Sie darauf, dass der Client über eine Auto-Connect-Funktion verfügt. Anderenfalls verlieren Sie die Datenverbindung bei Verbindungsabbrüchen dauerhaft.
 
 **TCP Port**
 	* Angabe des TCP-Port, auf dem der Server auf eingehende Verbindungsanfragen wartet. Der Default-Wert ist 10110. Verwenden Sie nur Ports größer 1024, da Ports unterhalb von 1024 für feste Anwendungen reserviert sind. Der Maximalwert liegt bei 65535.
@@ -291,7 +291,7 @@ Hier werden die Einstellungen zum Betrieb des OPB60 als TCP-Server vorgenommen. 
 	* Angabe, wieviele Clients sich maximal mit dem TCP-Server verbinden dürfen. Der Default-Wert ist 6.
 	
 .. note::	
-	Beachten Sie, dass eine hohe Zahl an Clients eine große Rechenlast der CPU verursachen können. Sorgen Sie daher dafür, dass sich nicht mehr als 6 Clients mit dem Server verbinden können. Anderenfalls kann es zur Beeinträchtigung der Datenverarbeitung kommen oder das Gerät reagiert nicht mehr korrekt.
+	Beachten Sie, dass eine hohe Zahl an Clients eine große Rechenlast der CPU verursachen kann. Sorgen Sie daher dafür, dass sich nie mehr als 6 Clients mit dem Server verbinden können. Anderenfalls kann es zur Beeinträchtigung der Datenverarbeitung kommen oder das Gerät reagiert nicht mehr korrekt.
 
 **NMEA0183 Out**
     * ``on`` - Am TCP-Port werden NMEA0183-Daten ausgegeben
@@ -305,17 +305,17 @@ Hier werden die Einstellungen zum Betrieb des OPB60 als TCP-Server vorgenommen. 
 	* ``on`` - Daten am TCP-Port werden nach NMEA2000 übertragen (Gateway-Funktion)
 	* ``off`` - Daten am TCP-Port werden nicht nach NMEA2000 übertragen
 	
-In den nächsten beiden Einstellungen werden die Filterfunktionen **NMEA Read Filter** und **NMEA Write Filter** für das Lesen und Schreiben am TCP-Port vorgenommen. Es lassen sich nur NMEA0183-Daten filtern. Dabei lässt sich gesondert einstellen, ob AIS-Positionssignale verarbeitet werden. Als Filterformen stehen Whitelist und Blacklist zur Verfügung.
+In den nächsten beiden Einstellungen werden die Filterfunktionen **NMEA Read Filter** und **NMEA Write Filter** für das Lesen und Schreiben am TCP-Port vorgenommen. Es lassen sich nur NMEA0183-Daten filtern. Dabei lässt sich gesondert einstellen, ob AIS-Positionssignale verarbeitet werden. Als Filterformen stehen "Whitelist" und "Blacklist" zur Verfügung.
 
 **NMEA Read Filter**
-	* ``aison`` - AIS-Daten an der USB-Schnittstelle werden verarbeitet
-	* ``aisoff`` - AIS-Daten an der USB-Schnittstelle werden nicht verarbeitet
+	* ``aison`` - Einkommende AIS-Daten an der USB-Schnittstelle werden verarbeitet
+	* ``aisoff`` - Einkommende AIS-Daten an der USB-Schnittstelle werden nicht verarbeitet
 	* ``blacklist`` - Der Filter arbeitet mit einer Blacklist. Die gekennzeichneten Telegramme werden nicht verarbeitet.
 	* ``whitelist`` - Der Filter arbeitet mit einer Whitelist. Nur die aufgelisteten Telegramme werden verarbeitet.
 
 **NMEA Write Filter**
-	* ``aison`` - AIS-Daten an der USB-Schnittstelle werden verarbeitet
-	* ``aisoff`` - AIS-Daten an der USB-Schnittstelle werden nicht verarbeitet
+	* ``aison`` - Zu sendende AIS-Daten an der USB-Schnittstelle werden verarbeitet
+	* ``aisoff`` - Zu sendende AIS-Daten an der USB-Schnittstelle werden nicht verarbeitet
 	* ``blacklist`` - Der Filter arbeitet mit einer Blacklist. Die gekennzeichneten Telegramme werden nicht verarbeitet.
 	* ``whitelist`` - Der Filter arbeitet mit einer Whitelist. Nur die aufgelisteten Telegramme werden verarbeitet.
 	
@@ -366,14 +366,14 @@ Hier werden die Einstellungen für den Betrieb des OPB60 als TCP-Client vorgenom
 In den nächsten beiden Einstellungen werden die Filterfunktionen **NMEA Read Filter** und **NMEA Write Filter** für das Lesen und Schreiben am TCP-Port vorgenommen. Es lassen sich nur NMEA0183-Daten filtern. Dabei lässt sich gesondert einstellen, ob AIS-Positionssignale verarbeitet werden. Als Filterformen stehen Whitelist und Blacklist zur Verfügung.
 
 **NMEA Read Filter**
-	* ``aison`` - AIS-Daten an der USB-Schnittstelle werden verarbeitet
-	* ``aisoff`` - AIS-Daten an der USB-Schnittstelle werden nicht verarbeitet
+	* ``aison`` - Einkommende AIS-Daten an der USB-Schnittstelle werden verarbeitet
+	* ``aisoff`` - Einkommende AIS-Daten an der USB-Schnittstelle werden nicht verarbeitet
 	* ``blacklist`` - Der Filter arbeitet mit einer Blacklist. Die gekennzeichneten Telegramme werden nicht verarbeitet.
 	* ``whitelist`` - Der Filter arbeitet mit einer Whitelist. Nur die aufgelisteten Telegramme werden verarbeitet.
 
 **NMEA Write Filter**
-	* ``aison`` - AIS-Daten an der USB-Schnittstelle werden verarbeitet
-	* ``aisoff`` - AIS-Daten an der USB-Schnittstelle werden nicht verarbeitet
+	* ``aison`` - Zu sendende AIS-Daten an der USB-Schnittstelle werden verarbeitet
+	* ``aisoff`` - Zu sendende AIS-Daten an der USB-Schnittstelle werden nicht verarbeitet
 	* ``blacklist`` - Der Filter arbeitet mit einer Blacklist. Die gekennzeichneten Telegramme werden nicht verarbeitet.
 	* ``whitelist`` - Der Filter arbeitet mit einer Whitelist. Nur die aufgelisteten Telegramme werden verarbeitet.
 	
@@ -401,10 +401,10 @@ Das OBP60 kann neben dem WiFi Access Point auch als WiFi-Client betrieben werden
     * ``off`` - Der WiFi-Client-Modus wird nicht unterstützt
 	
 **WiFi Client SSID**
-    * Tragen Sie hier einen WiFi-Netzwerknamen ein, zum Beispiel den Ihres Bord-WLANs. Als Namen könne alle Zeichen des ASCII-Zeichensatzes verwendet werden.
+    * Tragen Sie hier einen WiFi-Netzwerknamen ein, zum Beispiel den Ihres Bord-WLANs. Als Namen können alle Zeichen des ASCII-Zeichensatzes verwendet werden.
     
 **WiFi Client Pasword**
-    * Tragen Sie hier das zur o.g. SSID gehörende WiFi-Passwort ein. Als Passwort könne alle Zeichen des ASCII-Zeichensatzes verwendet werden. Bei der Eingabe wird das Passwort verdeckt mit Sternchen ``*****`` angezeigt. Über das Augen-Symbol kann das Passwort im Klartext angezeigt werden.
+    * Tragen Sie hier das zur o.g. SSID gehörende WiFi-Passwort ein. Als Passwort können alle Zeichen des ASCII-Zeichensatzes verwendet werden. Bei der Eingabe wird das Passwort verdeckt mit Sternchen ``*****`` angezeigt. Über das Augen-Symbol kann das Passwort im Klartext angezeigt werden.
     
 .. hint::
     Wenn Sie Probleme mit der Verbindung zu weiteren WiFi-Netzwerken haben, dann überprüfen Sie, ob der Netzwerkname oder das Passwort Sonderzeichen enthält. In einigen Situationen können Sonderzeichen oder zu lange Passwörter Verbindungsprobleme verursachen. Ändern Sie dann versuchsweise den Netzwerknamen oder das Passwort. Mitunter hilft auch ein Neustart Ihres Bord-Routers, in dessen WLAN Sie das OPB60 einbuchen möchten.
@@ -415,15 +415,15 @@ Config - OBP Settings
 .. image:: ../pics/Config_OBP60_Settings.png
              :scale: 60%
              
-Auf der Seite **OBP60 Settings** können Sie Einstellungen vornehmen, die in Verbindung mit Boot stehen, in dem das OBP60 eingebaut ist.  Die eingetragenen Werte werden dazu benutzt, um zum Beispiel eine ungefähre Reichweitenbestimmung für Wasser, Kraftstoff und Batterie vornehmen zu können. Geben Sie bitte die Werte für Ihr Boot möglichst genau ein und beachten Sie die entsprechenden Einheiten. Die Einstellungen dienen dazu, verschiedene Betriebszustände auf dem OPB60 in Grafiken darzustellen.
+Auf der Seite **OBP60 Settings** können Sie Einstellungen vornehmen, die sich auf Ihr Boot beziehen, in dem das OBP60 eingebaut ist.  Die eingetragenen Werte werden dazu benutzt, um zum Beispiel eine ungefähre Reichweitenbestimmung für Wasser, Kraftstoff und Batterie vornehmen zu können. Geben Sie bitte die Werte für Ihr Boot möglichst genau ein und beachten Sie die entsprechenden Einheiten. Die Einstellungen dienen dazu, verschiedene Betriebszustände auf dem OPB60 in Grafiken darzustellen.
 
 .. warning::
-    Bedenken Sie, dass die Reichweitenbestimmungen mit dem internen Spannungssensor nur als Richtwerte verwendet werden können. Insbesondere bei den Batterietypen AGM und LiFePo4 müssen Sie mit größeren Ungenauigkeiten rechnen. Beobachten und überprüfen Sie die Ergebnisse unter realen Bedingungen, bevor Sie den Anzeigewerten vertrauen. 
+    Bedenken Sie, dass die Reichweitenbestimmung mit dem internen Spannungssensor nur als Richtwert verstanden werden sollte. Insbesondere bei den Batterietypen AGM und LiFePo4 müssen Sie mit größeren Ungenauigkeiten rechnen. Beobachten und überprüfen Sie die Ergebnisse unter realen Bedingungen, bevor Sie den Anzeigewerten vertrauen. 
 
 **Time Zone**
     * Über **Time Zone** kann die Zeitzone im Bereich von -12 und +14 Stunden eingestellt werden.
 
-Die meisten Einstellungen sollten selbsterklärend sein. Sofern Sie keine Solarpaneele benutzen, belassen Sie den Wert von **Solar Power**  auf 0. **Generator Power** bezieht sich auf einen Elektrogenerator, der im Boot arbeitet. Das kann eine Lichtmaschine, ein Windgenerator, ein Schleppgenerator oder ein Zusatz-Generator sein. Die Leistungsangaben für **Solar Power** und **Genrator Power** werden zur Visualisierung der Energieflüsse benötigt.
+Die meisten Einstellungen sollten selbsterklärend sein. Sofern Sie keine Solarpaneele benutzen, belassen Sie den Wert von **Solar Power**  auf 0. **Generator Power** bezieht sich auf einen Elektrogenerator, der im Boot arbeitet. Das kann eine Lichtmaschine, ein Windgenerator, ein Schleppgenerator oder ein weiterer Zusatz-Generator sein. Die Leistungsangaben für **Solar Power** und **Generator Power** werden zur Visualisierung der Energieflüsse benötigt.
 
 Config - OBP Units
 ------------------
@@ -508,7 +508,7 @@ Unter **Hardware** werden alle Einstellungen bezüglich verbauter Hardware oder 
     * ``INA226`` - Sensor für Spannung 0...36V, Strom 0...500A und Leistung, I2C-Addresse 0x45
     
 **Solar Shunt**
-    * Hier kann der Shunt ausgewählt werden, der zur Messung des Generator-Stroms dient. Es können nur Shunts verwendet werden, die 75 mV als Spannungsabfall bei Maximalstrom verwenden. Diese Angabe ist am Shunt zu finden.
+    * Hier kann der Shunt ausgewählt werden, der zur Messung des Solarstroms dient. Es können nur Shunts verwendet werden, die 75 mV als Spannungsabfall bei Maximalstrom verwenden. Diese Angabe ist am Shunt zu finden.
     * ``10`` - Shunt für 10A
     * ``50`` - Shunt für 50A
     * ``100`` - Shunt für 100A
@@ -538,10 +538,10 @@ Unter **Hardware** werden alle Einstellungen bezüglich verbauter Hardware oder 
     **Roll Limit** gibt den maximal zulässigen seitlichen Neigungswinkel für das Rollen des Bootes an. Unter realen Bedingungen sind 20 Grad als Grenzwert realistisch.
     
 **Roll Offset**
-    Offset des Neigungs-Winkelsensors. Damit kann der Nullpunkt des Winkelsensors für das seitliche rollen korrigiert werden.
+    Offset des Neigungs-Winkelsensors. Damit kann der Nullpunkt des Winkelsensors für das seitliche Rollen Ihres Bootes korrigiert werden.
     
 **Pitch Offset**
-    Offset des Winkelsensors für Pitch. Damit kann der Nullpunkt des Winkelsensors für das nicken korrigiert werden.
+    Offset des Winkelsensors für Pitch. Damit kann der Nullpunkt des Winkelsensors für das Nicken Ihres Bootes korrigiert werden.
     
 **Temp Sensor**
     * Hier kann der Sensortyp ausgewählt werden, der am 1Wire-Bus verwendet wird.
@@ -549,13 +549,13 @@ Unter **Hardware** werden alle Einstellungen bezüglich verbauter Hardware oder 
     * ``DS18B20`` - Temperatursensor -10...+85°C (1...8 Sensoren)
     
 **Power Mode**
-    * Der **Power Mode** bezieht sich auf die Art der Stromversorgung, die im OBP60 angewendet wird.
+    * Der **Power Mode** bezieht sich auf die Art der Stromversorgung, die für das OBP60 verwendet wird.
     * ``Max Power`` - Alle Stromversorgungen sind eingeschaltet. Hierbei ist das Gerät am leistungsfähigsten und es entsteht der maximale Stromverbrauch.
     * ``Only 5.0V`` - Es ist nur die zusätzliche Stromversorgung für 5.0 V eingeschaltet.
-    * ``Min Power`` - Es sind nur die Stromversorgungen eingeschaltet, um die Minimal-Funktionen bereitzustellen. Hierbei entsteht der geringste Stromverbrauch.
+    * ``Min Power`` - Es sind nur die Stromversorgungen eingeschaltet, die die Minimal-Funktionen bereitstellen. Hierbei entsteht der geringste Stromverbrauch.
     
 **Undervoltage**
-    * Erkennung einer Unterspannung der Stromversorgung. Wenn eine Unterspannung kleiner 9 V erkannt wird, kann das OBP60 automatisch deaktiviert werden, um eine Tiefentladung der Batterie zu vermeiden. In kritischen Situationen kann das OBP60 trotz Unterspannung bis 7 V funktionsfähig bleiben, wenn der Unterspannungsschutz deaktiviert ist. Als Default-Wert ist der Unterspannungsschutz aktiviert. Wenn im aktivierten Zustand eine Unterspannung auftritt, wird das OBP60 angehalten und in den Tiefschlaf versetzt. Im Display erscheint die Meldung **Undervoltage**. Der Zustand kann nur verlassen werden, wenn die Versorgungsspannung vollständig ausgeschaltet und wieder eingeschaltet wird.
+    * Erkennung einer Unterspannung der Stromversorgung. Wenn eine Unterspannung niedriger als 9 V erkannt wird, kann das OBP60 automatisch deaktiviert werden, um eine Tiefentladung der Bordbatterie vermeiden zu helfen. In kritischen Situationen kann das OBP60 trotz Unterspannung bis 7 V funktionsfähig bleiben, wenn der Unterspannungsschutz deaktiviert ist. Als Default-Wert ist der Unterspannungsschutz aktiviert. Wenn im aktivierten Zustand eine Unterspannung auftritt, wird das OBP60 deaktiviert und in den Tiefschlaf versetzt. Im Display erscheint die Meldung **Undervoltage**. Dieser Zustand kann nur verändert werden, wenn die Versorgungsspannung vollständig ausgeschaltet und wieder eingeschaltet wird.
     * ``on`` - Der Unterspannungsschutz ist aktiviert
     * ``off`` - Der Unterspannungsschutz ist ausgeschaltet
     
@@ -615,7 +615,7 @@ Der Bereich **Display** enthält alle Einstellungen, die das Display betreffen.
     * ``off`` - Auto-Refresh ist deaktiviert
     
 .. note::
-    Die Entstehung von Geisterbildern ist von der Display-Temperatur des OBP60 abhängig. Bei tiefen Temperaturen sind Geisterbilder deutlicher zu sehen und die Anzeige reagiert träger als bei warmen Temperaturen. Kurz nach dem Einschalten wird für die ersten 5 Minuten jede Minute ein Voll-Refresh durchgeführt, damit sich das Display akklimatisieren kann. Bei extrem großer Sonneneinstrahlung kann es vorkommen, dass der Kontrast des Display-Inhaltes verloren geht. Schwarze Anzeigebereiche werden dann nur noch grau dargestellt. Das Display ist in dem Fall nicht defekt. Nach einem Voll-Refresh regeneriert sich das Display und der Kontrast wird wieder vollständig hergestellt.
+    Die Entstehung von Geisterbildern ist von der Display-Temperatur des OBP60 abhängig. Bei tiefen Temperaturen sind Geisterbilder deutlicher zu sehen und die Anzeige reagiert träger als bei höheren Temperaturen. Kurz nach dem Einschalten wird für die ersten 5 Minuten jede Minute ein Voll-Refresh durchgeführt, damit sich das Display akklimatisieren kann. Bei extrem großer Sonneneinstrahlung kann es vorkommen, dass der Kontrast des Display-Inhaltes verloren geht. Schwarze Anzeigebereiche werden dann nur noch grau dargestellt. Das Display ist in diesem Fall nicht defekt. Nach einem Voll-Refresh regeneriert sich das Display und der Kontrast wird wieder vollständig hergestellt.
     
 **Hold Values**
     * ``on`` - Anzeigewerte werden gehalten, wenn die Datenverbindung kurzzeitig fehlen sollte und die Daten nicht aktualisiert werden können. Diese Einstellung kann bei TCP-Verbindungen über WiFi nützlich sein. 
@@ -623,10 +623,10 @@ Der Bereich **Display** enthält alle Einstellungen, die das Display betreffen.
     
 **Backlight Mode**
     * ``Off`` - Die Hintergrundbeleuchtung ist dauerhaft ausgeschaltet.
-    * ``Control by Sun`` - Automatische Einstellung der Beleuchtung durch den Sonnenstand
-    * ``Control by Bus`` - Automatische Einstellung der Beleuchtung über den Bus durch NMEA2000
-    * ``Control by Time`` - Einstellung der Beleuchtung durch ein vorgegebenes Zeitintervall
-    * ``Control by Key`` - Manuelle Einstellung der Beleuchtung durch eine Sensortaste
+    * ``Control by Sun`` - Automatisches Schalten der Beleuchtung durch den Sonnenstand
+    * ``Control by Bus`` - Automatisches Schalten der Beleuchtung über den Bus durch NMEA2000
+    * ``Control by Time`` - Schalten der Beleuchtung durch ein vorgegebenes Zeitintervall
+    * ``Control by Key`` - Manuelles Schalten der Beleuchtung durch eine Sensortaste
     * ``On`` - Die Hintergrundbeleuchtung ist dauerhaft eingeschaltet.
     
 **Backlight Color**
@@ -647,7 +647,7 @@ Der Bereich **Display** enthält alle Einstellungen, die das Display betreffen.
     Für längere Nachtfahrten ist eine rote Hintergrundbeleuchtung empfehlenswert, die moderat in der Helligkeit auf z.B. 50% eingestellt ist. Bei rotem Licht muss sich das Auge nicht ständig an wechselnde Lichtverhältnisse anpassen. So können Sie nachts das Display ohne Sichteinschränkungen ablesen. 
     
 .. note::
-   Je höher die Helligkeit der Hintergrundbeleuchtung eingestellt wird, um so mehr Strom wird verbraucht. Bei weißer Hintergrundbeleuchtung tritt der größte Stromverbrauch auf, da alle 3 Farben der RGB-LED zur Erzeugung von weißem Licht benötigt werden. Bei reinen Grundfarben wie rot, grün und blau wird am wenigsten Strom verbraucht. Bei Mischfarben weden die RGB-LEDs unterschiedlich stark angesteuert und der Stromverbrauch ist höher als bei den Grundfarben. Nachfolgend zwei Beispiele:
+   Je höher die Helligkeit der Hintergrundbeleuchtung eingestellt wird, um so mehr Strom wird verbraucht. Bei weißer Hintergrundbeleuchtung tritt der größte Stromverbrauch auf, da alle 3 Farben der RGB-LED zur Erzeugung von weißem Licht benutzt werden. Bei reinen Grundfarben wie rot, grün und blau wird am wenigsten Strom verbraucht. Bei Mischfarben weden die RGB-LEDs unterschiedlich stark angesteuert und der Stromverbrauch ist höher als bei den Grundfarben. Nachfolgend zwei Beispiele:
         * 100%, weiß - 2 W
         * 50%, rot - 0.2W
         
@@ -661,7 +661,7 @@ Die Flash-LED befindet sich in der linken oberen Ecke über dem E-Ink-Display un
     * ``Off`` - Die Flash-LED ist dauerhaft ausgeschaltet.
     * ``Bus Data`` - Bei eintreffenden Busdaten leuchtet die LED kurz blau auf.
     * ``GPS Fix Lost`` - Bei dauerhaft roter Flash-LED wurde der GPS-Fix verloren. Die GPS-Daten sind ungültig.
-    * ``Limit Violation`` - Bei blinkend roter Flash-LED ist ein Grenzwert verletzt worden.
+    * ``Limit Violation`` - Bei blinkend roter Flash-LED ist ein Grenzwert über- oder unterschritten worden.
     
 Die Flash-LED leuchtet mit maximaler Helligkeit, sodass sie optisch auch bei hellen Sonnenlicht gut wahrgenommen werden kann. Die Bedeutung der Farben ist folgende:
 
@@ -686,17 +686,17 @@ In diesem Bereich lassen sich die Funktionen des Buzzer einstellen. Der Buzzer d
     * ``off`` - Die Funktion ist deaktiviert.
 
 **Buzzer by Limits**
-    * ``on`` - Der Buzzer ertönt bei Grenzwertverletzungen.
+    * ``on`` - Der Buzzer ertönt bei Grenzwertüberschreitungen.
     * ``off`` - Die Funktion ist deaktiviert.
 
 **Buzzer Mode**
     * ``Off`` - Die Buzzer ist dauerhaft ausgeschaltet.
     * ``Short Single Beep`` - Bei Aktivierung ertönt ein kurzer Einzelton.
     * ``Longer Single Beep`` - Bei Aktivierung ertönt ein längerer Einzelton. 
-    * ``Beep until Confirmation`` - Bei Aktivierung ertönt der Buzzer so lange, bis er durch einen Tastendruck auf irgendeine Taste deaktiviert wird.
+    * ``Beep until Confirmation`` - Bei Aktivierung ertönt der Buzzer so lange, bis er durch Betätigen einer beliebigen Taste deaktiviert wird.
 
 **Buzzer Power**
-    Über **Buzzer Power** kann die Lautstärke des Warntons zwischen 0...100% eingestellt werden. Die Lautstärke gilt grundsätzlich für alle Tonausgaben.
+    Über **Buzzer Power** kann die Lautstärke des Warntons zwischen 0...100% eingestellt werden. Die Lautstärke gilt grundsätzlich für alle Audioausgaben.
 
 Config - OBP Pages
 ------------------
@@ -704,7 +704,7 @@ Config - OBP Pages
 .. image:: ../pics/Config_OBP60_Pages.png
              :scale: 60%
              
-Die Konfiguration der möglichen Anzeigeseiten des OPB60 erfolgt auf der Seite **Pages**. Hier wird festgelegt, wieviele Anzeigeseiten das OPB60 darstellen soll. Außerdem lässt sich festlegen, welche Anzeigeseite beim Einschalten zuerst gezeigt werden soll.
+Die Konfiguration der möglichen Anzeigeseiten des OPB60 erfolgt auf der Seite **Pages**. Hier wird festgelegt, wie viele Anzeigeseiten das OPB60 darstellen soll. Außerdem lässt sich festlegen, welche Anzeigeseite beim Einschalten gezeigt werden soll.
 
 **Number of Pages**
     * Hier wird die maximale Anzahl der Anzeigeseiten festgelegt. Es muss mindestens eine Anzeigeseite definiert sein, es können maximal 10 Anzeigeseiten aktiviert werden.
@@ -718,7 +718,7 @@ Config - OBP Page X
 .. image:: /pics/Screen_Overview.png
              :scale: 50%
 
-Im OBP60 gibt es insgesamt bis zu 10 Seiten die man frei auswählen und gestalten kann. Je nach Seite können unterschiedlich viele Daten angezeigt werden. Es gibt frei definierbare Seiten in denen die Inhalte zum Anzeigen ausgewählt werden können und es gibt Seiten mit vorgegebenen Inhalt, der nicht änderbar ist. Die meisten numerischen Seiten sind änderbar, währen die grafischen Seiten oft vordefinierte Inhalte anzeigen.
+Im OBP60 gibt es insgesamt bis zu 10 Seiten, die man frei auswählen und gestalten kann. Je nach Seite können unterschiedlich viele Daten angezeigt werden. Es gibt frei definierbare Seiten, in denen die Inhalte zum Anzeigen ausgewählt werden können. Dann gibt es Seiten mit vorgegebenem, nicht veränderbaren Inhalt. Die meisten numerischen Seiten sind änderbar, während die grafischen Seiten oft vordefinierte Inhalte anzeigen.
 
 * Seiten mit veränderbarem Inhalt
     * **OneValue** - Ein Anzeigewert
@@ -744,7 +744,7 @@ Im OBP60 gibt es insgesamt bis zu 10 Seiten die man frei auswählen und gestalte
 .. note::
     Bitte beachten Sie, dass alle Seiten mit festen Inhalten bestimmte Sensorwerte vorausetzen, um Messwerte angezeigen zu können. Unter dem Register **Data** kann die Verfügbarkeit der notwendigen Daten geprüft werden. 
     
-Bei Seiten mit veränderlichen Inhalt, stehen je nach Anzahl der Anzeigewerte, unterschiedlich viele Eingabefelder zur Verfügung. Darüber können die anzuzeigenden Daten ausgewählt werden.
+Bei Seiten mit veränderlichem Inhalt stehen je nach Anzahl der Anzeigewerte unterschiedlich viele Eingabefelder zur Verfügung. Darüber können die anzuzeigenden Daten ausgewählt werden.
 
 .. image:: /pics/Config_OBP60_Page_4Value.png
              :scale: 60%
@@ -753,24 +753,24 @@ Abb.: Seite mit 4 Anzeigewerten
 
 * Datenpool auswählbarer Daten
     * **ALT** - Altitude, Höhe über Grund
-    * **AWA** - Apparant Wind Angle, Scheinbare Windrichtung
-    * **AWS** - Apparant Wind Speed, Scheinbare Windgeschwindigkeit
+    * **AWA** - Apparant Wind Angle, scheinbare Windrichtung
+    * **AWS** - Apparant Wind Speed, scheinbare Windgeschwindigkeit
     * **BTW** - Bearing To Waipoint, Winkel zum aktuellen Wegpunkt
     * **COG** - Course over Ground, Kurs über Grund
-    * **DBS** - Depth Below Surface, Tiefe über Wasseroberfläche
-    * **DBT** - Depth Below Transducer, Tiefe ab Sensor
+    * **DBS** - Depth Below Surface, Tiefe unter Wasseroberfläche
+    * **DBT** - Depth Below Transducer, Tiefe unter Sensor
     * **DEV** - Deviation, Kursabweichung
     * **DTW** - Distance To Waypoint, Entfernung zum aktuellen Wegpunkt
     * **GPSD** - GPS Date, GPS-Datum
     * **GPDT** - GPS Time, GPS-Zeit als UTC (Weltzeit)
-    * **HDG** - Heading, Rechtweisender Kurs
+    * **HDG** - Heading, rechtweisender Kurs
     * **HDOP** - GPS-Genauigkeit in der Horizontalen
     * **LAT** - Latitude, geografische Breite
     * **LON** - Longitude, geografische Höhe
     * **Log** - Log, Entfernung
     * **MHDG** - Magnetic Heading, magnetischer rechtweisender Kurs
-    * **MaxAws** - Maximum Apperant Wind Speed, Maximum der relativen Windgeschwindigkeit
-    * **MaxTws** - Maximum True Wind Speed, Maximum der wahren Windgeschwindigkeit
+    * **MaxAws** - Maximum Apperant Wind Speed, Maximum der relativen Windgeschwindigkeit seit Gerätestart
+    * **MaxTws** - Maximum True Wind Speed, Maximum der wahren Windgeschwindigkeit seit Gerätestart
     * **PDOP** - GPS-Genauigkeit über alle 3 Raumachsen
     * **PRPOS** - Auslenkung Sekundärruder
     * **ROT** - Rotation, Drehrate
@@ -778,14 +778,14 @@ Abb.: Seite mit 4 Anzeigewerten
     * **SOG** - Speed Over Ground, Geschwindigkeit über Grund
     * **STW** - Speed Through Water, Geschwindigkeit durch das Wasser
     * **SatInfo** - Satellit Info, Anzahl der sichtbaren Satelliten
-    * **TWD** - True Wind Direction, Wahre Windrichtung
-    * **TWS** - True Wind Speed, Wahre Windgeschwindigkeit
+    * **TWD** - True Wind Direction, wahre Windrichtung
+    * **TWS** - True Wind Speed, wahre Windgeschwindigkeit
     * **TZ** - Time Zone, Zeitzone
     * **TripLog** - Trip Log, Tages-Entfernungszähler
-    * **VAR** - Variation, Abweichung vom Kurs
+    * **VAR** - Variation, Abweichung vom Sollkurs
     * **VDOP** - GPS-Genauigkeit in der Vertikalen
-    * **WPLat** - Waypoint Latitude, Latitude des Wegpunktes
-    * **WPLon** - Waypoint Longitude, Longitude des Wegpunktes
+    * **WPLat** - Waypoint Latitude, geogr. Breite des Wegpunktes
+    * **WPLon** - Waypoint Longitude, geogr. Länge des Wegpunktes
     * **WTemp** - Water Temperature, Wassertemperatur
     * **XTE** - Cross Track Error, Kursfehler 
     * **xdrVBat** - Bordspannung
@@ -794,7 +794,7 @@ Abb.: Seite mit 4 Anzeigewerten
 XDR
 ---
 
-Über die Konfigurationsseite XDR können XDR-Sentences für NMEA0183 erstellt werden. XDR-Sentences sind Telegramme für generische Sensorwerte, die verwendet werden, wenn sich kein geeignetes NMEA0183 Telegramme findet, mit dem man die Sensorwerte übertragen kann. Es ist ein universelles Telegramm zur Übertragung von Sensordaten. XDR-Sentences werden immer dann benutzt, wenn Daten aus dem I2C-Bus, dem 1Wire-Bus oder interne Sensordaten vom ESP32 übertragen werden sollen. Sofern nicht zugewiesene Sensordaten im OBP60 vorhanden sind, können diese über ein XDR-Mapping zugewiesen werden. Damit sind diese Daten als NMEA0183 Telegramme allgemein nutzbar und werden im OBP60 dargestellt. Die Daten lassen sich dann auch über NMEA0183 in andere Systeme übertragen und dort nutzen.
+Über die Konfigurationsseite XDR können XDR-Sentences für NMEA0183 erstellt werden. XDR-Sentences sind Telegramme für generische Sensorwerte, die verwendet werden, wenn sich kein geeignetes NMEA0183 Telegramme findet, mit dem man die gewünschten Sensorwerte übertragen kann. Es ist ein universelles Telegramm zur Übertragung von Sensordaten. Sofern nicht zugewiesene Sensordaten im OBP60 vorhanden sind, können diese über ein XDR-Mapping zugewiesen werden. Damit sind diese Daten als NMEA0183 Telegramme allgemein nutzbar und werden im OBP60 dargestellt. Die Daten lassen sich dann auch über NMEA0183 in andere Systeme übertragen und dort nutzen. XDR-Sentences werden immer dann benutzt, wenn Daten aus dem I2C-Bus, dem 1Wire-Bus oder interne Sensordaten vom ESP32 übertragen werden sollen.
 
 Ein XDR-Sentence ist folgendermaßen aufgebaut:
 
@@ -833,12 +833,12 @@ Ein XDR-Sentence ist folgendermaßen aufgebaut:
 .. image:: ../pics/XDR_1.png
              :scale: 60%
 
-Dazu öffnet man als erstes über ``Show Unmapped`` eine Liste der nicht verknüpften Sensordaten.
+Dazu öffnet man zuerst über ``Show Unmapped`` eine Liste der nicht verknüpften Sensordaten.
 
 .. image:: ../pics/XDR_Show_Unmapped.png
              :scale: 60%
              
-In der Liste sehen Sie, welche Daten zur Verfügung stehen. Über ``+`` werden die Daten in die letzte, frei verfügbare XDR-Konfiguration automatisch eingefügt und der richtigen Kategorie zugeordnet. Der Sensorname muss noch im Feld **Transducer** hinzugefügt werden. 
+In der Liste sehen Sie dann, welche Daten zur Verfügung stehen. Über ``+`` werden die Daten in die letzte, frei verfügbare XDR-Konfiguration automatisch eingefügt und der richtigen Kategorie zugeordnet. Der Sensorname muss noch im Feld **Transducer** hinzugefügt werden. 
 
 .. image:: ../pics/XDR_2.png
              :scale: 60%
@@ -861,24 +861,24 @@ Nach der Zuordnung des Sensornamens wird unter **Example** ein Beispiel für das
     * **Pressure** - Drucksensoren für Luftdruck und andere Drücke wie z.B. Öldruck
     * **Fluid** - Sensoren für Flüssigkeiten wie Durchfluss und Füllstand
     * **Battery** - Batteriesensoren für Spannung, Strom, Leistung, Batterietemperatur
-    * **Engine** - Motorsensoren für Drehzahl, Anstellung, Trimmklappen, Öl, Kühlwasser
+    * **Engine** - Motorsensoren für Drehzahl, Anstellung, Trimmklappen, Kühlwasser
     * **Attitude** - Höhendaten, aus GPS-Sensordaten ermittelt
     
 **Source**
     Über <Source> lässt sich die Quelle der Sensordaten genauer einstellen. Je nach verwendetem Sensortyp stehen verschiedene Sensor-Quellen zur Verfügung.
     
 **Field**
-    Mit <Field> kann genauer beschrieben werden, wie die Sensordaten zu verstehen sind. Es sind Zusatzdaten, die kontextabhängig je nach verwendeten Sensor-Typ einstellbar sind. So kann z.B. festgelegt werden, ob es sich um einen Anzeigewert oder um einen Einstellwert handelt.
+    Mit <Field> kann genauer beschrieben werden, wie die Sensordaten zu verstehen sind. Es sind Zusatzdaten, die kontextabhängig je nach verwendetem Sensor-Typ einstellbar sind. So kann z.B. festgelegt werden, ob es sich um einen Anzeigewert oder um einen Einstellwert handelt.
     
 **Instance**
-    Mit <Instance> kann festgelegt werden, ob es mehrere Sensoren des selben Typs gibt. Das kann z.B. auftreten, wenn zwei Motoren in einem Boot verbaut sind und zwei Tankwerte angezeigt werden sollen. Mit Hilfe einer Instanz-Nummer werden die Sensoren unterschieden. An den Sensornamen wird dann z.B. \#1 angefügt. Die Arte der Instanziierung kann folgendermaßen festgelegt werden:
+    Mit <Instance> kann festgelegt werden, ob es mehrere Sensoren des gleichen Typs gibt. Das kann z.B. auftreten, wenn zwei Motoren in einem Boot verbaut sind, für die zwei Tankwerte angezeigt werden sollen. Mit Hilfe einer Instanz-Nummer werden die Sensoren unterschieden. An den Sensornamen wird dann z.B. \#1 angefügt. Die Art der Instanziierung kann folgendermaßen festgelegt werden:
     
     * **single** - Es wird ein Sensor instanziiert, dem einen freie Instanz-Nummer zugeordnet werden kann. So können z.B. zwei Sensoren die selben Daten in ein XDR-Telegramm übertragen, wenn die Sensoren redundant sind.
-    * **ignore** - Es existiert nur genau ein einziger Sensor dieses Typs.
-    * **auto** - Die Instanziierung wird automatisch übernommen. Sobald ein neuer Sensor des gleichen Typs und der selben Source verwendet wird, wird eine neue Instanz des Sensors angelegt.
+    * **ignore** - Es existiert nur genau ein einziger Sensor diesen Typs.
+    * **auto** - Die Instanziierung wird automatisch übernommen. Sobald ein neuer Sensor des gleichen Typs und der selben Datenherkunft verwendet wird, wird eine neue Instanz des Sensors angelegt.
         
 **Transducer**
-    Über <Transducer> wird der Sensorname festgelegt. Es handelt sich dabei um eine Klartextbeschreibung des Sensors mit ASCII Zeichen. Verwenden Sie nur Buchstaben und Zahlen ohne Freizeichen und Sonderzeichen.
+    Über <Transducer> wird der Sensorname festgelegt. Es handelt sich dabei um eine Klartextbeschreibung des Sensors mit ASCII-Zeichen. Verwenden Sie nur Buchstaben und Zahlen ohne Freizeichen und Sonderzeichen.
     
 **Example**
     Beispiel, wie der Inhalt des XDR-Telegramms aussehen wird.
@@ -908,7 +908,7 @@ Um die Firmware eines Gerätes zu aktualisieren, können Sie die Registerkarte `
 **Normales Firmware-Update**
 	Beim normalen Firmware-Update wird nur der Programmteil der Firmware aktualisiert. Eine vorhandene Konfiguration bleibt dabei erhalten und ist nach dem Firmware-Update wieder nutzbar. Normale Firmware-Updates verwenden den Dateinamen **xxx-update.bin**.
 
-Die letzte aktuelle Firmware können Sie auf folgender Webseite herunterladen:
+Die letzte aktuelle Firmware können Sie von folgender Webseite herunterladen:
 
 https://github.com/norbert-walter/esp32-nmea2000-obp60/releases
 
@@ -927,7 +927,7 @@ Wie man die Firmware eines OBP60 über USB flasht, ist unter xxx beschrieben.
 Help
 ----
 
-Unter **Help** erfolgt ein Sprung ins Internet zur Github-Seite, auf der das Projekt gehostet wird. Dort sind einige weitergehende Informationen zum NMEA2000-Gateway zu finden, das die Basis für diese Firmware ist.
+Unter **Help** erfolgt ein Wechsel ins Internet zur Github-Seite, auf der das Projekt gehostet wird. Dort sind einige weitergehende Informationen zum NMEA2000-Gateway zu finden, das die Basis für diese Firmware ist. 
 
 .. note::
     Die Github-Seite lässt sich nur aufrufen, wenn das OBP60 auf das Internet zugreifen kann. Das lässt sich realisieren, wenn das OPB60 zum Beispiel als Client in Ihrem Boots-WLAN arbeitet und Ihr Boots-WLAN Internetzugang hat. Alternativ starten Sie zum Beispiel einen Hotspot auf Ihrem Handy und verbinden das OPB60 als WLAN-Client mit Ihrem Handy.
@@ -943,12 +943,12 @@ Sie sollten das OBP60 nur mit vertrauenswürdigen WiFi-Netzwerken verbinden. Es 
 .. image:: ../pics/WiFi_Channels.png
              :scale: 35%
 
-Die Verbindungsqualität von WiFi-Netzwerken hängt maßgeblich von der Auslastung der Funkkanäle ab, die in Ihrer Umgebung aktuell benutzt werden, denn Sie teilen sich die selben Funkkanälen mit anderen Teilnehmern anderer WiFi-Netze. Das OBP60 nutzt die Funkkanäle des 2.4 GHz-Frequenzbandes.
+Die Verbindungsqualität von WiFi-Netzwerken hängt maßgeblich von der Auslastung der Funkkanäle ab, die in Ihrer Umgebung aktuell benutzt werden, denn Ihr Gerät teilt sich die selben Funkkanälen mit anderen Teilnehmern anderer WiFi-Netze. Das OBP60 nutzt die Funkkanäle des 2.4 GHz-Frequenzbandes.
 
 .. warning::
 	Bei hoher Auslastung wie z.B. in Häfen kann die Verbindungsqualität des eigenen WiFi-Netzwerks dadurch beeinträchtigt sein. Sie müssen dann mit Verzögerungen bei der Datenübertragung rechnen, insbesondere, wenn Sie TCP-Datenverbindungen zum oder vom OBP60 nutzen. Stellen Sie aber auf alle Fälle sicher, dass in solchen Situationen die Bootsführung nicht beeinträchtigt wird.
 
 .. hint::
-	Verwenden Sie bei hoher Kanalauslastung Kanäle mit geringer Auslastung. Die Kanäle 1, 13 und 14 haben keine Nachbarkanäle und sind deutlich robuster gegen hohe Auslastung als die anderen Kanäle. Am besten eignet sich der Kanal 13, da er seltener benutzt wird. In den USA kann auch der Kanal 14 verwendet werden. Moderne mobile Router bieten häufig eine Automatik in ihrer Konfiguration an, die die Kanalauswahl optimieren kann.
+	Verwenden Sie bei hoher Kanalauslastung Kanäle mit geringer Auslastung. Die Kanäle 1, 13 und 14 haben keine Nachbarkanäle und sind deutlich robuster gegen hohe Auslastung als die anderen Kanäle. Am besten eignet sich der Kanal 13, da er seltener benutzt wird. In den USA kann auch der Kanal 14 verwendet werden. Moderne mobile Router bieten häufig eine Automatik in ihrer Konfiguration an, die die Kanalauswahl optimieren hilft.
 
 Bei Änderungen der Konfiguration des OPB60 werden Sie grundsätzlich nach dem Admin-Passwort gefragt. Die Übertragung des Passwortes erfolgt dabei immer verschlüsselt. Wenn Sie jedoch das Passwort für den WLAN-Zugangspunkt oder das WiFi-Client-Passwort ändern, wird es im Klartext gesendet. Wenn Sie das ``Remember me`` für das Admin-Passwort aktivieren, wird es im Klartext in Ihrem Browser gespeichert. Um es von dort zu entfernen, verwenden Sie ``Forget Password``.
