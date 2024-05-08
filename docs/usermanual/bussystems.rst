@@ -383,6 +383,7 @@ Der 1Wire-Bus ist ein Eindraht-Bus zur seriellen Übertragung von Daten in elekt
 * Buslänge bis zu 10 m (abhängig von Datenrate und Stromversorgung)
 * Kabelart nicht spezifiziert
 * Steckerart für einige Anwendungen spezifiziert
+* Maximal 8 DS18B20 Sensoren nutzbar
 
 Der 1Wire-Bus bietet eine einfache und kostengünstige Möglichkeit, Temperatursensoren einzubinden. Zur Anbindung werden nur 3 Leitungen am OBP60 benötigt.
 
@@ -400,9 +401,9 @@ Die Stromversorgung der Temperatursensoren erfolgt parasitär über die Datenlei
 
 Nachfolgend ist eine Beispielanwendung für 1Wire-Temperatur-Sensoren zu sehen.
 
-.. image:: ../pics/1Wire_Sample_Setup.png
+.. image:: ../pics/DS18B20_Parsitc_Supplay.png
              :scale: 50%
-Abb.: 1Wire-Anbindung von externen Temperatur-Sensoren (parasitär)
+Abb.: 1Wire-Anbindung von externen Temperatur-Sensoren (parasitär versorgt)
 
 Die Belegung der DS18B20-Temperatur-Sensoren ist folgendermaßen durchzuführen.
 
@@ -417,13 +418,17 @@ Die Belegung der DS18B20-Temperatur-Sensoren ist folgendermaßen durchzuführen.
 +--------+--------------------+
 
 .. note::
-    Verwenden Sie für die Verkabelung externer Temperatur-Sensoren möglichst geschirmte Kabel und führen Sie den Schirm direkt bis zum Sensor. Verbinden Sie den Schirm des Sensorkabels **nicht** mit ``GND``, da Sie damit Masseschleifen erzeugen. Der gesamte Schirm der Busleitung darf nur einseitig an Eingang ``GND2`` des 1Wire-Bus am OBP60 aufgelegt werden. Der Schirm am anderen Ende der Leitung bleibt offen. Andere Schirmeingänge dürfen nicht benutzt werden. Halten Sie Stichleitungen vom Bus zu den Sensoren möglichst kurz. Die maximale Anzahl der Sensoren am 1Wire-Bus ist auf 3 Sensoren begrenzt.
+    Verwenden Sie für die Verkabelung externer Temperatur-Sensoren möglichst geschirmte Kabel und führen Sie den Schirm direkt bis zum Sensor. Verbinden Sie den Schirm des Sensorkabels **nicht** mit ``GND``, da Sie damit Masseschleifen erzeugen. Der gesamte Schirm der Busleitung darf nur einseitig an Eingang ``GND2`` des 1Wire-Bus am OBP60 aufgelegt werden. Der Schirm am anderen Ende der Leitung bleibt offen. Andere Schirmeingänge dürfen nicht benutzt werden. Halten Sie Stichleitungen vom Bus zu den Sensoren möglichst kurz. Die maximale Anzahl der Sensoren am 1Wire-Bus ist auf 8 Sensoren begrenzt.
     
 .. hint::
     Wenn möglich, verwenden Sie Temperatursensoren am I2C-Bus statt am 1Wire-Bus. Sie erhöhen damit die Betriebssicherheit des Gesamtsystems, da der I2C-Bus gegenüber der Außenwelt isoliert ist.
     
 .. hint::
     Im Internet-Handel sind Nachbauten von DS18B20-Temperatur-Sensoren im Umlauf, die eine parasitäre Stromversorgung nicht unterstützen. Wenn Sie keine Kommunikation mit dem OBP60 zustande bekommen, dann probieren Sie andere Sensoren aus. Wenn auch das zu keinem Erfolg führt, benutzen Sie eine normale Stromversorgung für die Temperatursensoren. Mit dieser Art der Stromversorgung sollten nahezu alle Sensoren funktionieren.
+	
+.. image:: ../pics/DS18B20_Direct_Supplay.png
+             :scale: 50%
+Abb.: 1Wire-Anbindung von externen Temperatur-Sensoren (direkt versorgt)
 
 .. caution::
     Der 1Wire-Bus ist nicht isoliert gegenüber der internen Schaltung des OBP60. Das erhöht bei unsachgemäßer Installation das Risiko, dass eingekoppelte Störungen in die Busleitungen die Funktion und Stabilität des OBP60 beeinträchtigen können. Halten Sie daher die Buslänge so kurz wie möglich. Im schlimmsten Fall kann es zum kompletten Ausfall des OBP60 führen mit daraus resultierenden schweren Folgen für die Navigationsfähigkeit des Bootes.
