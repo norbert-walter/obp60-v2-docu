@@ -307,7 +307,7 @@ Die meisten Multiplexer haben mehrere NMEA0183-Eingänge und mindestens einen NM
 Abb.: NMEA0183-Verbindung zu einem Multiplexer
 
 .. hint::
-    Alle NMEA0183-Daten werden vom OBP60-Gateway automatisch nach NMEA2000 konvertiert. Die Konvertierung ist dabei unidirektional nur in Richtung NMEA2000. In umgekehrte Richtung nach NMEA0183 werden keine Daten konvertiert, da der NMEA0183-Port des OBP60 immer im Empfangs-Modus arbeitet.
+    Alle NMEA0183-Daten werden vom OBP60-Gateway automatisch nach NMEA2000 konvertiert. Die Konvertierung ist dabei unidirektional nur in Richtung NMEA2000. In umgekehrte Richtung nach NMEA0183 werden keine Daten konvertiert, da der NMEA0183-Port des OBP60 in der dargestellten Konfiguration im Empfangs-Modus arbeitet.
     
 I2C
 ---
