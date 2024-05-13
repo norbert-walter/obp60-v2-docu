@@ -611,7 +611,7 @@ Der Bereich **Display** enthält alle Einstellungen, die das Display betreffen.
     * ``off`` - Die Statuszeile ist deaktiviert.
     
 **Refresh**
-    * ``on`` - Der Auto-Refresh des Bildschirminhaltes ist aktiviert. Damit werden Geisterbilder beim Seitenwechsel unterbunden. Es wird ein Voll-Refresh des E-Ink-Displays durchgeführt. Alle 10 min erfolgt zusätzlich automatisch ein Voll-Refresh.
+    * ``on`` - Der Auto-Refresh des Bildschirminhaltes ist aktiviert. Damit werden Geisterbilder beim Seitenwechsel unterbunden. Es wird ein Voll-Refresh des E-Paper-Displays durchgeführt. Alle 10 min erfolgt zusätzlich automatisch ein Voll-Refresh.
     * ``off`` - Auto-Refresh ist deaktiviert
     
 .. note::
@@ -656,7 +656,7 @@ Der Bereich **Display** enthält alle Einstellungen, die das Display betreffen.
 .. image:: ../pics/Flash_LED.png
              :scale: 45%
              
-Die Flash-LED befindet sich in der linken oberen Ecke über dem E-Ink-Display und zeigt verschiedene Zustände des OBP60 an. Die LED kann dabei verschiedene Farben annehmen, die je nach Verwendung unterschiedliche Bedeutung haben.
+Die Flash-LED befindet sich in der linken oberen Ecke über dem E-Paper-Display und zeigt verschiedene Zustände des OBP60 an. Die LED kann dabei verschiedene Farben annehmen, die je nach Verwendung unterschiedliche Bedeutung haben.
 
     * ``Off`` - Die Flash-LED ist dauerhaft ausgeschaltet.
     * ``Bus Data`` - Bei eintreffenden Busdaten leuchtet die LED kurz blau auf.
