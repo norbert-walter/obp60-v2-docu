@@ -833,7 +833,7 @@ Ein XDR-Sentence ist folgendermaßen aufgebaut:
 .. image:: ../pics/XDR_1.png
              :scale: 60%
 
-Dazu öffnet man als erstes über ``Show Unmapped`` eine Liste der nicht verknüpften Sensordaten.
+Dazu öffnet man als erstes über **Show Unmapped** eine Liste der nicht verknüpften Sensordaten.
 
 .. image:: ../pics/XDR_Show_Unmapped.png
              :scale: 60%
@@ -846,39 +846,39 @@ In der Liste sehen Sie, welche Daten zur Verfügung stehen. Über ``+`` werden d
 Nach der Zuordnung des Sensornamens wird unter **Example** ein Beispiel für das XDR-Telegramm angezeigt. Danach können alle Einstellungen noch individuell geändert werden. Die Erklärung zu den Einstellungen ist nachfolgend aufgeführt.
 
 **Direction**
-    Über <Direction> lässt sich einstellen, wie Sensordaten eingelesen werden sollen und wohin sie übertragen werden:
+    Über **Direction** lässt sich einstellen, wie Sensordaten eingelesen werden sollen und wohin sie übertragen werden:
      
-    * **off** - Die Sensordaten werden nicht benutzt. Damit können Sie ein bereits konfiguriertes XDR-Telegramm deaktivieren.
-    * **bidir** - Die Sensordaten werden zwischen NMEA0183 und NMEA2000 ausgetauscht.
-    * **to2K** - Das Sensordaten werden nur nach NMEA2000 gesendet.
-    * **from2k** - Sensordaten werden von NMEA2000 eingelesen.
+    * ``off`` - Die Sensordaten werden nicht benutzt. Damit können Sie ein bereits konfiguriertes XDR-Telegramm deaktivieren.
+    * ``bidir`` - Die Sensordaten werden zwischen NMEA0183 und NMEA2000 ausgetauscht.
+    * ``to2K`` - Das Sensordaten werden nur nach NMEA2000 gesendet.
+    * ``from2k`` - Sensordaten werden von NMEA2000 eingelesen.
      
 **Category**
-    Über <Category> kann ein Sensor-Typ zugeordnet werden:
+    Über **Category** kann ein Sensor-Typ zugeordnet werden:
      
-    * **Temperature** - Temperatursensoren z.B. für Luft, Wasser, Kühlschrank
-    * **Humidity** - Luftfeuchtigkeitssensoren
-    * **Pressure** - Drucksensoren für Luftdruck und andere Drücke wie z.B. Öldruck
-    * **Fluid** - Sensoren für Flüssigkeiten wie Durchfluss und Füllstand
-    * **Battery** - Batteriesensoren für Spannung, Strom, Leistung, Batterietemperatur
-    * **Engine** - Motorsensoren für Drehzahl, Anstellung, Trimmklappen, Öl, Kühlwasser
-    * **Attitude** - Höhendaten, aus GPS-Sensordaten ermittelt
+    * ``Temperature`` - Temperatursensoren z.B. für Luft, Wasser, Kühlschrank
+    * ``Humidity`` - Luftfeuchtigkeitssensoren
+    * ``Pressure`` - Drucksensoren für Luftdruck und andere Drücke wie z.B. Öldruck
+    * ``Fluid`` - Sensoren für Flüssigkeiten wie Durchfluss und Füllstand
+    * ``Battery`` - Batteriesensoren für Spannung, Strom, Leistung, Batterietemperatur
+    * ``Engine`` - Motorsensoren für Drehzahl, Anstellung, Trimmklappen, Öl, Kühlwasser
+    * ``Attitude`` - Höhendaten, aus GPS-Sensordaten ermittelt
     
 **Source**
-    Über <Source> lässt sich die Quelle der Sensordaten genauer einstellen. Je nach verwendetem Sensortyp stehen verschiedene Sensor-Quellen zur Verfügung.
+    Über **Source** lässt sich die Quelle der Sensordaten genauer einstellen. Je nach verwendetem Sensortyp stehen verschiedene Sensor-Quellen zur Verfügung.
     
 **Field**
-    Mit <Field> kann genauer beschrieben werden, wie die Sensordaten zu verstehen sind. Es sind Zusatzdaten, die kontextabhängig je nach verwendeten Sensor-Typ einstellbar sind. So kann z.B. festgelegt werden, ob es sich um einen Anzeigewert oder um einen Einstellwert handelt.
+    Mit **Field** kann genauer beschrieben werden, wie die Sensordaten zu verstehen sind. Es sind Zusatzdaten, die kontextabhängig je nach verwendeten Sensor-Typ einstellbar sind. So kann z.B. festgelegt werden, ob es sich um einen Anzeigewert oder um einen Einstellwert handelt.
     
 **Instance**
-    Mit <Instance> kann festgelegt werden, ob es mehrere Sensoren des selben Typs gibt. Das kann z.B. auftreten, wenn zwei Motoren in einem Boot verbaut sind und zwei Tankwerte angezeigt werden sollen. Mit Hilfe einer Instanz-Nummer werden die Sensoren unterschieden. An den Sensornamen wird dann z.B. \#1 angefügt. Die Arte der Instanziierung kann folgendermaßen festgelegt werden:
+    Mit **Instance** kann festgelegt werden, ob es mehrere Sensoren des selben Typs gibt. Das kann z.B. auftreten, wenn zwei Motoren in einem Boot verbaut sind und zwei Tankwerte angezeigt werden sollen. Mit Hilfe einer Instanz-Nummer werden die Sensoren unterschieden. An den Sensornamen wird dann z.B. \#1 angefügt. Die Arte der Instanziierung kann folgendermaßen festgelegt werden:
     
-    * **single** - Es wird ein Sensor instanziiert, dem einen freie Instanz-Nummer zugeordnet werden kann. So können z.B. zwei Sensoren die selben Daten in ein XDR-Telegramm übertragen, wenn die Sensoren redundant sind.
-    * **ignore** - Es existiert nur genau ein einziger Sensor dieses Typs.
-    * **auto** - Die Instanziierung wird automatisch übernommen. Sobald ein neuer Sensor des gleichen Typs und der selben Source verwendet wird, wird eine neue Instanz des Sensors angelegt.
+    * ``single`` - Es wird ein Sensor instanziiert, dem einen freie Instanz-Nummer zugeordnet werden kann. So können z.B. zwei Sensoren die selben Daten in ein XDR-Telegramm übertragen, wenn die Sensoren redundant sind.
+    * ``ignore`` - Es existiert nur genau ein einziger Sensor dieses Typs.
+    * ``auto`` - Die Instanziierung wird automatisch übernommen. Sobald ein neuer Sensor des gleichen Typs und der selben Source verwendet wird, wird eine neue Instanz des Sensors angelegt.
         
 **Transducer**
-    Über <Transducer> wird der Sensorname festgelegt. Es handelt sich dabei um eine Klartextbeschreibung des Sensors mit ASCII Zeichen. Verwenden Sie nur Buchstaben und Zahlen ohne Freizeichen und Sonderzeichen.
+    Über **Transducer** wird der Sensorname festgelegt. Es handelt sich dabei um eine Klartextbeschreibung des Sensors mit ASCII Zeichen. Verwenden Sie nur Buchstaben und Zahlen ohne Freizeichen und Sonderzeichen.
     
 **Example**
     Beispiel, wie der Inhalt des XDR-Telegramms aussehen wird.
