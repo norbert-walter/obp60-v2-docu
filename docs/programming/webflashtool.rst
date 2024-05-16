@@ -8,7 +8,7 @@ Mit dem Web-Flashtool kann die Firmware für das OBP60 mit einem Webbrowser übe
 	
 Rufen Sie als nächstes die Webseite des `Online-Flashtools`_ auf.
 
-.. _Online-Flashtools: https://norbert-walter.github.io/LoRa-Boat-Monitor/flash_tool/esp_flash_tool.html
+.. _Online-Flashtools: https://norbert-walter.github.io/obp60-v2-docu/flash_tool/esp_flash_tool.html
 
 Drücken Sie dann auf **Connect** und wählen die entsprechende serielle Schnittstelle aus. Je nachdem, welches Betriebssystem Sie verwenden, sind die Schnittstellen verschieden bezeichnet.
 
