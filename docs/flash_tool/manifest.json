@@ -1,0 +1,13 @@
+{
+    "name": "OBP60 V2 Firmware",
+    "version": "Latest GitHub Version",
+    "new_install_prompt_erase": false,
+    "builds": [
+      {
+        "chipFamily": "ESP32-S3",
+        "parts": [
+          { "path": "https://github.com/norbert-walter/esp32-nmea2000-obp60/releases/download/20231218/nodemcu32s_obp60-20231218-all.bin", "offset": 0 }
+        ]
+      }
+    ]
+  }
