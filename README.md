@@ -9,3 +9,5 @@ Documentation as PDF: https://obp60-v2-docu.readthedocs.io/_/downloads/de/latest
 Documentation as Epub: https://obp60-v2-docu.readthedocs.io/_/downloads/de/latest/epub/
 
 Documentation as HTML Zip file: https://obp60-v2-docu.readthedocs.io/_/downloads/de/latest/htmlzip/
+
+Web Flash Tool: https://norbert-walter.github.io/obp60-v2-docu/flash_tool/esp_flash_tool.html
