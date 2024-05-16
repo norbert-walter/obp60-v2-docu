@@ -15,7 +15,7 @@ Die Statuszeile dient zur Anzeige von Statusinformationen. Dazu zählen:
 **Zustandsanzeige aktiver Bussysteme und Komponenten**
    * **N2K** - NMEA2000
    * **183** - NMEA0183
-   * **USB** - NMEA0183
+   * **USB** - NMEA0183 via USB
    * **TCP** - NMEA0183 via TCP (WiFi)
    * **GPS** - GPS-Sensor des OBP60 (Position gefunden)
 

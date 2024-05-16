@@ -7,7 +7,7 @@ Technische Daten
 Funktionen
 ----------
 
-* E-Ink Display (tageslichttauglich)
+* E-Paper Display (tageslichttauglich)
 * Numerische Anzeigeseiten für 1, 2, 3 und 4 Werte (Werte frei wählbar)
 * Grafische Anzeigeseiten (feste Werte)
 * Trendanzeige für Werte
@@ -24,7 +24,7 @@ Funktionen
 * Spannungsausgang 5V (max. 200mA) für externe Sensorik
 * USB-C (OTG, Debug, NMEA0183)
 * Batteriemonitor (12V-Spannungsmessung)
-* BMP280 (Temperatur, Luftdruck)
+* Umgebungssensor BMP280 (Temperatur, Luftdruck)
 * GPS-Empfäger (GPS, Glonas, Baidu, interne oder externe GPS-Antenne)
 * WiFi 2.4GHz (HTTP, TCP, UDP)
 * Bluetooth (aktuell ungenutzt)
@@ -43,7 +43,7 @@ Spezifikation
 -------------
 
 +----------------------+-----------------------------+
-| Versorgungsspannung  | 12...28 V                   |
+| Versorgungsspannung  | 10...28 V                   |
 +----------------------+-----------------------------+
 | Stromverbrauch       | 2 W                         |
 +----------------------+-----------------------------+

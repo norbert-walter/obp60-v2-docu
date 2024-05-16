@@ -250,7 +250,7 @@ Config - Serial Port
 	* ``receive`` - Die NMEA0183-Schnittstelle empfängt
 	
 .. note::
-	Die serielle Schnittstelle ist konform zu RS485 und RS422 und arbeitet im Halbduplex-Betrieb. Es kann entweder gesendet oder empfangen werden. Beides gleichzeitig ist nicht möglich. Wenn Sie eine Vollduplex-Übertragung für NMEA0183-Daten benötigen, nutzen Sie am besten die USB-C-Schnittstelle. Diese Schnittstelle ist aber nicht zu RS485 oder RS422 konform. Sie kann sinnvoll verwendet werden, wenn Sie Daten z.B. in OpenCPN auf einem PC oder Laptop verarbeitet wollen.
+	Die serielle Schnittstelle ist konform zu RS485 und RS422 und arbeitet im Halbduplex-Betrieb. Es kann entweder gesendet oder empfangen werden. Beides gleichzeitig ist nicht möglich. Wenn Sie eine Vollduplex-Übertragung für NMEA0183-Daten benötigen, dann können Sie die USB-C-Schnittstelle benutzen. Diese Schnittstelle ist aber nicht zu RS485 oder RS422 konform. Sie kann sinnvoll verwendet werden, wenn Sie Daten z.B. in OpenCPN auf einem PC oder Laptop verarbeiten wollen.
 	
 **Serial Baud Rate**
 	* Einstellung der Baudrate zwischen 1.200 und 460.800 Bd.
@@ -259,7 +259,7 @@ Config - Serial Port
 	* ``on`` - Daten an der Schnittstelle werden nach NMEA2000 übertragen (Gateway-Funktion)
 	* ``off`` - Daten an der Schnittstelle werden nicht nach NMEA2000 übertragen
 	
-In den nächsten beiden Einstellungen werden die Filterfunktionen **Serial read Filter** und **Serial write Filter** für das Lesen und Schreiben an der seriellen Schnittstelle vorgenommen. Es lassen sich nur NMEA0183-Daten filtern. Dabei lässt sich gesondert einstellen, ob auch AIS-Positionssignale verarbeitet werden. Als Filterformen stehen <Whitelist> und <Blacklist> zur Verfügung.
+In den nächsten beiden Einstellungen werden die Filterfunktionen **Serial read Filter** und **Serial write Filter** für das Lesen und Schreiben an der seriellen Schnittstelle vorgenommen. Es lassen sich nur NMEA0183-Daten filtern. Dabei lässt sich gesondert einstellen, ob auch AIS-Positionssignale verarbeitet werden. Als Filterformen stehen Whitelist und Blacklist zur Verfügung.
 
 **Serial Filter**
 	* ``aison`` - AIS-Daten an der USB-Schnittstelle werden verarbeitet
@@ -611,7 +611,7 @@ Der Bereich **Display** enthält alle Einstellungen, die das Display betreffen.
     * ``off`` - Die Statuszeile ist deaktiviert.
     
 **Refresh**
-    * ``on`` - Der Auto-Refresh des Bildschirminhaltes ist aktiviert. Damit werden Geisterbilder beim Seitenwechsel unterbunden. Es wird ein Voll-Refresh des E-Ink-Displays durchgeführt. Alle 10 min erfolgt zusätzlich automatisch ein Voll-Refresh.
+    * ``on`` - Der Auto-Refresh des Bildschirminhaltes ist aktiviert. Damit werden Geisterbilder beim Seitenwechsel unterbunden. Es wird ein Voll-Refresh des E-Paper-Displays durchgeführt. Alle 10 min erfolgt zusätzlich automatisch ein Voll-Refresh.
     * ``off`` - Auto-Refresh ist deaktiviert
     
 .. note::
@@ -656,7 +656,7 @@ Der Bereich **Display** enthält alle Einstellungen, die das Display betreffen.
 .. image:: ../pics/Flash_LED.png
              :scale: 45%
              
-Die Flash-LED befindet sich in der linken oberen Ecke über dem E-Ink-Display und zeigt verschiedene Zustände des OBP60 an. Die LED kann dabei verschiedene Farben annehmen, die je nach Verwendung unterschiedliche Bedeutung haben.
+Die Flash-LED befindet sich in der linken oberen Ecke über dem E-Paper-Display und zeigt verschiedene Zustände des OBP60 an. Die LED kann dabei verschiedene Farben annehmen, die je nach Verwendung unterschiedliche Bedeutung haben.
 
     * ``Off`` - Die Flash-LED ist dauerhaft ausgeschaltet.
     * ``Bus Data`` - Bei eintreffenden Busdaten leuchtet die LED kurz blau auf.
@@ -833,7 +833,7 @@ Ein XDR-Sentence ist folgendermaßen aufgebaut:
 .. image:: ../pics/XDR_1.png
              :scale: 60%
 
-Dazu öffnet man zuerst über ``Show Unmapped`` eine Liste der nicht verknüpften Sensordaten.
+Dazu öffnet man als erstes über **Show Unmapped** eine Liste der nicht verknüpften Sensordaten.
 
 .. image:: ../pics/XDR_Show_Unmapped.png
              :scale: 60%
@@ -846,39 +846,39 @@ In der Liste sehen Sie dann, welche Daten zur Verfügung stehen. Über ``+`` wer
 Nach der Zuordnung des Sensornamens wird unter **Example** ein Beispiel für das XDR-Telegramm angezeigt. Danach können alle Einstellungen noch individuell geändert werden. Die Erklärung zu den Einstellungen ist nachfolgend aufgeführt.
 
 **Direction**
-    Über <Direction> lässt sich einstellen, wie Sensordaten eingelesen werden sollen und wohin sie übertragen werden:
+    Über **Direction** lässt sich einstellen, wie Sensordaten eingelesen werden sollen und wohin sie übertragen werden:
      
-    * **off** - Die Sensordaten werden nicht benutzt. Damit können Sie ein bereits konfiguriertes XDR-Telegramm deaktivieren.
-    * **bidir** - Die Sensordaten werden zwischen NMEA0183 und NMEA2000 ausgetauscht.
-    * **to2K** - Das Sensordaten werden nur nach NMEA2000 gesendet.
-    * **from2k** - Sensordaten werden von NMEA2000 eingelesen.
+    * ``off`` - Die Sensordaten werden nicht benutzt. Damit können Sie ein bereits konfiguriertes XDR-Telegramm deaktivieren.
+    * ``bidir`` - Die Sensordaten werden zwischen NMEA0183 und NMEA2000 ausgetauscht.
+    * ``to2K`` - Das Sensordaten werden nur nach NMEA2000 gesendet.
+    * ``from2k`` - Sensordaten werden von NMEA2000 eingelesen.
      
 **Category**
-    Über <Category> kann ein Sensor-Typ zugeordnet werden:
+    Über **Category** kann ein Sensor-Typ zugeordnet werden:
      
-    * **Temperature** - Temperatursensoren z.B. für Luft, Wasser, Kühlschrank
-    * **Humidity** - Luftfeuchtigkeitssensoren
-    * **Pressure** - Drucksensoren für Luftdruck und andere Drücke wie z.B. Öldruck
-    * **Fluid** - Sensoren für Flüssigkeiten wie Durchfluss und Füllstand
-    * **Battery** - Batteriesensoren für Spannung, Strom, Leistung, Batterietemperatur
-    * **Engine** - Motorsensoren für Drehzahl, Anstellung, Trimmklappen, Kühlwasser
-    * **Attitude** - Höhendaten, aus GPS-Sensordaten ermittelt
+    * ``Temperature`` - Temperatursensoren z.B. für Luft, Wasser, Kühlschrank
+    * ``Humidity`` - Luftfeuchtigkeitssensoren
+    * ``Pressure`` - Drucksensoren für Luftdruck und andere Drücke wie z.B. Öldruck
+    * ``Fluid`` - Sensoren für Flüssigkeiten wie Durchfluss und Füllstand
+    * ``Battery`` - Batteriesensoren für Spannung, Strom, Leistung, Batterietemperatur
+    * ``Engine`` - Motorsensoren für Drehzahl, Anstellung, Trimmklappen, Öl, Kühlwasser
+    * ``Attitude`` - Höhendaten, aus GPS-Sensordaten ermittelt
     
 **Source**
-    Über <Source> lässt sich die Quelle der Sensordaten genauer einstellen. Je nach verwendetem Sensortyp stehen verschiedene Sensor-Quellen zur Verfügung.
+    Über **Source** lässt sich die Quelle der Sensordaten genauer einstellen. Je nach verwendetem Sensortyp stehen verschiedene Sensor-Quellen zur Verfügung.
     
 **Field**
-    Mit <Field> kann genauer beschrieben werden, wie die Sensordaten zu verstehen sind. Es sind Zusatzdaten, die kontextabhängig je nach verwendetem Sensor-Typ einstellbar sind. So kann z.B. festgelegt werden, ob es sich um einen Anzeigewert oder um einen Einstellwert handelt.
+    Mit **Field** kann genauer beschrieben werden, wie die Sensordaten zu verstehen sind. Es sind Zusatzdaten, die kontextabhängig je nach verwendeten Sensor-Typ einstellbar sind. So kann z.B. festgelegt werden, ob es sich um einen Anzeigewert oder um einen Einstellwert handelt.
     
 **Instance**
-    Mit <Instance> kann festgelegt werden, ob es mehrere Sensoren des gleichen Typs gibt. Das kann z.B. auftreten, wenn zwei Motoren in einem Boot verbaut sind, für die zwei Tankwerte angezeigt werden sollen. Mit Hilfe einer Instanz-Nummer werden die Sensoren unterschieden. An den Sensornamen wird dann z.B. \#1 angefügt. Die Art der Instanziierung kann folgendermaßen festgelegt werden:
+    Mit **Instance** kann festgelegt werden, ob es mehrere Sensoren des selben Typs gibt. Das kann z.B. auftreten, wenn zwei Motoren in einem Boot verbaut sind und zwei Tankwerte angezeigt werden sollen. Mit Hilfe einer Instanz-Nummer werden die Sensoren unterschieden. An den Sensornamen wird dann z.B. \#1 angefügt. Die Arte der Instanziierung kann folgendermaßen festgelegt werden:
     
-    * **single** - Es wird ein Sensor instanziiert, dem einen freie Instanz-Nummer zugeordnet werden kann. So können z.B. zwei Sensoren die selben Daten in ein XDR-Telegramm übertragen, wenn die Sensoren redundant sind.
-    * **ignore** - Es existiert nur genau ein einziger Sensor diesen Typs.
-    * **auto** - Die Instanziierung wird automatisch übernommen. Sobald ein neuer Sensor des gleichen Typs und der selben Datenherkunft verwendet wird, wird eine neue Instanz des Sensors angelegt.
+    * ``single`` - Es wird ein Sensor instanziiert, dem einen freie Instanz-Nummer zugeordnet werden kann. So können z.B. zwei Sensoren die selben Daten in ein XDR-Telegramm übertragen, wenn die Sensoren redundant sind.
+    * ``ignore`` - Es existiert nur genau ein einziger Sensor dieses Typs.
+    * ``auto`` - Die Instanziierung wird automatisch übernommen. Sobald ein neuer Sensor des gleichen Typs und der selben Source verwendet wird, wird eine neue Instanz des Sensors angelegt.
         
 **Transducer**
-    Über <Transducer> wird der Sensorname festgelegt. Es handelt sich dabei um eine Klartextbeschreibung des Sensors mit ASCII-Zeichen. Verwenden Sie nur Buchstaben und Zahlen ohne Freizeichen und Sonderzeichen.
+    Über **Transducer** wird der Sensorname festgelegt. Es handelt sich dabei um eine Klartextbeschreibung des Sensors mit ASCII Zeichen. Verwenden Sie nur Buchstaben und Zahlen ohne Freizeichen und Sonderzeichen.
     
 **Example**
     Beispiel, wie der Inhalt des XDR-Telegramms aussehen wird.
