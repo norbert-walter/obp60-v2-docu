@@ -6,7 +6,7 @@
       {
         "chipFamily": "ESP32-S3",
         "parts": [
-          { "path": "https://github.com/norbert-walter/esp32-nmea2000-obp60/releases/download/20240516/obp60_s3-dev20240429-all.bin", "offset": 0 }
+          { "path": "https://norbert-walter.github.io/obp60-v2-docu/flash_tool/obp60_s3-dev20240429-all.bin", "offset": 0 }
         ]
       }
     ]
