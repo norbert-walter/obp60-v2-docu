@@ -53,5 +53,5 @@ Für den Flash-Vorgang benötigen Sie folgende Materialien:
 	Entfernen Sie das USB-Verbindungskabel und versorgen Sie das OBP60 über ``+12V`` und ``GND`` von **CN2** mit 12V. Beim Starten der Firmware erfolgt ein kurzer Piepton. Nach kurzer Zeit sollte eine Anzeigeseite zu sehen sein. Je nach Einstellung wird vorher noch das OBP-Logo und der QR-Code für den WiFi-Zugang angezeigt.
 	
 	.. image:: ../pics/OBP60_FourValue2_tr.png
-	   :scale: 50%
+	   :scale: 40%
 	Abb.: Übertragung der Firmware

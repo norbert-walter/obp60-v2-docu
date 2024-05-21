@@ -2,7 +2,7 @@ Technische Daten
 ================
 
 .. image:: ../pics/OBP60_OBP_Logo_tr.png
-   :scale: 45%
+   :scale: 40%
 
 Funktionen
 ----------
