@@ -54,4 +54,4 @@ Für den Flash-Vorgang benötigen Sie folgende Materialien:
 	
 	.. image:: ../pics/OBP60_FourValue2_tr.png
 	   :scale: 30%
-	Abb.: Übertragung der Firmware
+	Abb.: Anzeigeseite
