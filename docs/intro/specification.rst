@@ -1,7 +1,7 @@
 Technische Daten
 ================
 
-.. image:: ../pics/OBP60_Case_Front_t.png
+.. image:: ../pics/OBP60_OBP_Logo_tr.png
    :scale: 45%
 
 Funktionen
