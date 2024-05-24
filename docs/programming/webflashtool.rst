@@ -39,7 +39,7 @@ Für den Flash-Vorgang benötigt man folgende Materialien:
 
 	Drücken Sie dann auf **Connect** und wählen die entsprechende serielle Schnittstelle aus. Je nachdem, welches Betriebssystem Sie verwenden, sind die Schnittstellen verschieden bezeichnet.
 
-	* **Windows:** COMx
+	* **Windows:** USB JTAG/serial debug unit COMx
 	* **Linux:** /dev/ttyACM0
 
 	.. image:: ../pics/Serial_Connection.png
