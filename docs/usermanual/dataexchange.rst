@@ -345,7 +345,7 @@ Es wird an dieser Stelle gezeigt wie man einen I2C-Winkelsensor als Ruderlagense
 * Winkelsensor für Trimmklappen oder Foils
 * Großbaum
 
-Als I2C-Winkelsensor wird eine kleine Platine mit einem AS5600 verwendet, die auf Adresse 0x36 angesprochen werden kann. Der AS5600 ist ein magnetischer Winkelsensor, der die Ausrichtung eines Magnetfeldes erkennen kann. Über einen diametralen Magneten, dessen Magnetfeld in der Scheibenebene geteilt ist und mit der Ruderachse verbunden ist, kann der Ruderausschlag gemessen werden.
+Als I2C-Winkelsensor wird eine kleine Platine mit einem AS5600 verwendet, die auf Adresse 0x36 angesprochen werden kann. Der AS5600 ist ein magnetischer Winkelsensor, der die Ausrichtung eines Magnetfeldes erkennt. Über einen diametralen Magneten, dessen Magnetfeld in der Scheibenebene geteilt ist und mit der Ruderachse verbunden ist, kann der Ruderausschlag gemessen werden. Der Magnet entspricht dabei der Drehachse des Ruders.
 
 .. image:: ../pics/I2C_Sample_Setup_AS5600.png
              :scale: 50%
@@ -353,53 +353,57 @@ Abb.: I2C-Anbindung magnetischer Winkelmesser AS5600
 
 .. note::
 	Bedenken Sie, dass nur ein AS5600 als Winkelmesser verwendet werden kann, da die I2C-Adresse nicht änderbar ist. Das Verbindungskabel sollte ein geschirmetes Kabel sein und eine Länge von 10 m nicht überschreiten.
-
-1Wire-Bus
----------
-
-Konfigurationsbeispiel 1Wire
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
+	
+Folgende Einstellungen sind im OBP60 vorzunehmen.
 
 +-------------------------+---------------------+
 |Einstellung              |OBP60                |
 +=========================+=====================+
-|`Config - USB Port`_     |                     |
+|`Config - OBP Hardware`_ |                     |
 +-------------------------+---------------------+
-|Serial Direction         |send                 |
+|Rot. Sensor              |AS5600               |
 +-------------------------+---------------------+
-|Serial to NMEA2000       |on                   |
+|Rot. Function            |Rudder               |
 +-------------------------+---------------------+
-|Serial Read Filter       |---                  |
-+-------------------------+---------------------+
-|Serial Write Filter      |XTE,RMB,RMC          |
-+-------------------------+---------------------+
-|`Config - TCP Server`_   |                     |
-+-------------------------+---------------------+
-|SeaSmart Out             |on                   |
-+-------------------------+---------------------+
-|`Config - TCP Client`_   |                     |
-+-------------------------+---------------------+
-|Enable                   |off                  |
-+-------------------------+---------------------+
-|Remote Address           |---                  |
-+-------------------------+---------------------+
-|SeaSamart Out            |off                  |
-+-------------------------+---------------------+
-|`Config - WiFi Client`_  |                     |
-+-------------------------+---------------------+
-|WiFi Client              |off                  |
-+-------------------------+---------------------+
-|WiFi Client SSID         |---                  |
-+-------------------------+---------------------+
-|WiFi Client Password     |---                  |
+|Rot. Offset              |0                    |
 +-------------------------+---------------------+
 
-.. _Config - System: https://obp60-v2-docu.readthedocs.io/de/latest/usermanual/configuration.html#config-system
-.. _Config - TCP Server: https://obp60-v2-docu.readthedocs.io/de/latest/usermanual/configuration.html#config-tcp-server
-.. _Config - TCP Client: https://obp60-v2-docu.readthedocs.io/de/latest/usermanual/configuration.html#config-tcp-client
-.. _Config - WiFi Client: https://obp60-v2-docu.readthedocs.io/de/latest/usermanual/configuration.html#config-wifi-client
+.. _Config - OBP Hardware: https://obp60-v2-docu.readthedocs.io/de/latest/usermanual/configuration.html#config-obp-hardware
 
-	
+Je nach Erfordernissen muss noch der Offset über **Rot. Offset** eingestellt werden.
+
+
+1Wire-Bus
+---------
+
+Über den 1Wire-Buss lassen sich bis zu 8 Temperatursensoren des Typs DS18B20 anschließen. Damit können Temperaturen im Bereich von -55°C bis 125°C an verschiedenen Stellen im Boot gemessen werden. Die Sensoren gibt es als elektronisches Bauteil in Transistorform (TO-92) oder in einer wasserdichten Metallhülse mit Kabel. Die letzte Varriante eignet sich am besten im Marinebereich.
+
+.. image:: ../pics/DS18B20.png
+             :scale: 50%
+Abb.: DS18B20 TO-92
+
+.. image:: ../pics/DS18B20_waterproof.png
+             :scale: 50%
+Abb.: DS18B20 Wasserdicht
+
+Wenn Sie im Boot an verschiedenen Stellen Temperaturen messen möchten, erstellen Sie sich ein Backbone mit Abzweigdosen und schließen die Sensoren an den Abzweigdosen an. So entstehen im 1Wire-Bussystem nicht ungewollt lange Stichleitungen.
+
+Konfigurationsbeispiel 1Wire
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Im unteren Bild ist eine Schaltung zu sehen in der 4 DS18B20 verwendet werden. Die Sensoren sind dabei über einen Spannungswandler LM7805 direkt versorgt.
+
+.. image:: ../pics/DS18B20_Direct_Supplay.png
+             :scale: 50%
+Abb.: 1Wire-Anbindung von externen Temperatur-Sensoren (direkt versorgt)
+
++-------------------------+---------------------+
+|Einstellung              |OBP60                |
++=========================+=====================+
+|`Config - OBP Hardware`_ |                     |
++-------------------------+---------------------+
+|Temp. Sensor             |DS18B20              |
++-------------------------+---------------------+
+
+.. _Config - OBP Hardware: https://obp60-v2-docu.readthedocs.io/de/latest/usermanual/configuration.html#config-obp-hardware
+
