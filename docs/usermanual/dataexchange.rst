@@ -292,17 +292,25 @@ Verbinden Sie das OBP60 und den Raspberry Pi über USB. Sie benötigen dazu ein 
              :scale: 40%	
 Abb.: Verbindung OBP60 - Raspberry Pi
 
+.. image:: ../pics/AVnav_Start_Page.png
+             :scale: 50%	
+Abb.: AVnav Startseite
+
 Unter AVnav kicken Sie auf der Startseite oben rechts das Symbol mit den 3 Strichen.
 
 .. image:: ../pics/AVnav_Server_Status_Icon.png
 
-Sie gelangen dann auf die Seite zum Serverstatus. Dort können sie über das Plus-Symbol weitere Verbindungen zum AVnavServer einrichten. Für die bidirektionale Kommunikation über USB legen Sie eine neue **AVNSerialWriter**-Verbindung an.
+Sie gelangen dann auf die Seite zum Serverstatus. Dort können sie über das Plus-Symbol weitere Verbindungen zum AVnavServer einrichten.
+
+.. image:: ../pics/AVnav_Add_Icon.png
+
+Für die bidirektionale Kommunikation über USB legen Sie eine neue **AVNSerialWriter**-Verbindung an.
 
 .. image:: ../pics/AVnav_Select_Handler.png
              :scale: 50%	
 Abb.: Verbindungstypen
 
-Unter **Port** wählen Sie die serielle Verbindung aus unter der das OBP60 mit dem Raspberry Pi verbunden ist. Als Schnittstellengeschwindigkeit wird 115200 Bd eingestellt. Um nicht nur Daten zu senden, sondern auch empfangen zu können, aktivieren Sie **combined**.
+Unter **Port** wählen Sie die serielle Verbindung aus unter der das OBP60 mit dem Raspberry Pi verbunden ist. Als Schnittstellengeschwindigkeit wird **115200 Bd** eingestellt. Um nicht nur Daten zu senden, sondern auch empfangen zu können, aktivieren Sie **combined**.
 
 .. image:: ../pics/AVnav_AVNSerialWriter.png
              :scale: 50%	
