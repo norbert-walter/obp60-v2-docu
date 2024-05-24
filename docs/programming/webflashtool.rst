@@ -42,7 +42,7 @@ Für den Flash-Vorgang benötigt man folgende Materialien:
 	* **Windows:** USB JTAG/serial debug unit COMx
 	* **Linux:** /dev/ttyACM0
 
-	.. image:: ../pics/Serial_Connection.png
+	.. image:: ../pics/Serial_Connection_Win.png
 	   :scale: 50%
 	Abb.: Auswahl der Schnittstelle
 
