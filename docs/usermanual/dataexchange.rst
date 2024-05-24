@@ -286,11 +286,33 @@ Dieses Beispiel zeigt die Einbindung eines OBP60 über USB in AVnav, das auf ein
 Verbinden Sie das OBP60 und den Raspberry Pi über USB. Sie benötigen dazu ein **USB-C zu USB-A Kabel**. Am Raspberry Pi können Sie jeden beliebigen USB-A-Port verwenden.
 
 .. hint::
-	Es ist aber ratsam die schwarzen USB-A-Ports zu benutzen, da das OBP60 nur USB 1.1 unterstützt und dadurch die leistungsfähigeren USB 3.0-Ports frei bleiben und anderweitig genutzt werden können.
+	Es ist aber ratsam die schwarzen USB-A-Ports zu benutzen, da das OBP60 nur USB 1.1 unterstützt und dadurch die leistungsfähigeren USB 3.0-Ports frei bleiben und anderweitig genutzt werden können. Versorgen Sie auf jeden Fall das OBP60 zusätzlich mit 12V, da der Raspberry Pi zu wenig Strom an seinen USB-Ports liefert.
 
 .. image:: ../pics/OBP60_USB_Connection_Raspi.png
              :scale: 40%	
 Abb.: Verbindung OBP60 - Raspberry Pi
+
+Unter AVnav kicken Sie auf der Startseite oben rechts das Symbol mit den 3 Strichen.
+
+.. image:: ../pics/AVnav_Server_Status_Icon.png
+
+Sie gelangen dann auf die Seite zum Serverstatus. Dort können sie über das Plus-Symbol weitere Verbindungen zum AVnavServer einrichten. Für die bidirektionale Kommunikation über USB legen Sie eine neue **AVNSerialWriter**-Verbindung an.
+
+.. image:: ../pics/AVnav_Select_Handler.png
+             :scale: 50%	
+Abb.: Verbindungstypen
+
+Unter **Port** wählen Sie die serielle Verbindung aus unter der das OBP60 mit dem Raspberry Pi verbunden ist. Als Schnittstellengeschwindigkeit wird 115200 Bd eingestellt. Um nicht nur Daten zu senden, sondern auch empfangen zu können, aktivieren Sie **combined**.
+
+.. image:: ../pics/AVnav_AVNSerialWriter.png
+             :scale: 50%	
+Abb.: Einstellungen zum AVNSerailWriter
+
+Nach der Übernahme aller Daten ist die neue Verbindung im Server-Status zu sehen.
+
+.. image:: ../pics/AVnav_Server_Status_SerialWriter.png
+             :scale: 50%	
+Abb.: Server-Status
 
 Beispiel AVnav auf Android-Autoradio
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -391,7 +413,7 @@ Wenn Sie im Boot an verschiedenen Stellen Temperaturen messen möchten, erstelle
 Konfigurationsbeispiel 1Wire
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Im unteren Bild ist eine Schaltung zu sehen in der 4 DS18B20 verwendet werden. Die Sensoren sind dabei über einen Spannungswandler LM7805 direkt versorgt.
+Im unteren Bild ist eine Schaltung zu sehen in der 4 DS18B20 verwendet werden. Die Sensoren sind dabei über einen Spannungswandler LM7805 direkt versorgt. Diese Schaltung funktioniert für alle Sensorn die am Markt erhältlich sind.
 
 .. image:: ../pics/DS18B20_Direct_Supplay.png
              :scale: 50%
