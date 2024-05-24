@@ -6,6 +6,9 @@ Mit dem Web-Flashtool kann die Firmware für das OBP60 mit einem Webbrowser übe
 .. note::
 	Andere Webbrowser als Chrome oder Edge werden derzeit nicht unterstützt, da die Funktionalität für den Zugriff auf eine serielle Schnittstelle in anderen Webbrowsern nicht implementiert ist.
 	
+.. warning::
+	Beachten Sie, dass das Web-Flashtool nur für ein OBP60 verwendet werden kann, das als Prozessor einen **ESP32-S3 N16R8** und als Display ein GDEY042T81 verwenden. Sofern Sie andere Hardware benutzen, müssen Sie sich eine angepasste Firmwareversion für ihre Hardware kompilieren. Folgen Sie den Anweisungen im Kapitel **Kompilieren und Download**.  
+	
 Für den Flash-Vorgang benötigt man folgende Materialien:
 	* OBP60
 	* USB-C zu USB-A Verbindungskabel < 1,5m
