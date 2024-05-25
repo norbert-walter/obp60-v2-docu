@@ -276,12 +276,12 @@ Für alle oben aufgeführten Endpunkte sind folgende Einstellungen im OBP60 vorz
 .. hint::
 	Achten Sie darauf, dass der **Log Level** auf ``off`` gestellt ist. Anderenfalls kann es sonst zu Störungen in der Kommunikation kommen, da Logging-Ausgaben in den Datenstrom eingespeist werden, die ebenfalls über USB-C ausgegeben werden.
 	
-Nachfolgend sind einige Konfigurationsbeispiele aufgeführt und es wird gezeigt wie die Konfiguration auf dem System erfolgt.
+Nachfolgend sind einige Konfigurationsbeispiele aufgeführt und es wird gezeigt wie die weitere Konfiguration auf dem System erfolgt.
 	
 Beispiel AVnav auf Raspberry Pi
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Dieses Beispiel zeigt die Einbindung eines OBP60 über USB in AVnav, das auf einem Rasberry Pi läuft. Dabei werden NMEA2000 Busdaten ausgelesen und nach NMEA0183 übertragen. Die Anbindung erfolgt direkt in AVnav als Device und die Daten stehen dann der Anwendung zu Verfügung. In diesem Fall wird das AVnav-Image benutzt. Wer AVnav unter OpenPlotter als Plugin benutzt sollte dem **Konfigurationsbeispiel OpenPlotter auf Raspberry Pi** folgten.
+Dieses Beispiel zeigt die Einbindung eines OBP60 über USB in AVnav, das auf einem Rasberry Pi läuft. Dabei werden NMEA2000 Busdaten ausgelesen und nach NMEA0183 übertragen. Die Anbindung erfolgt direkt in AVnav als Device und die Daten stehen dann der Anwendung zu Verfügung. In diesem Fall wird das AVnav-Image benutzt. Wer AVnav unter OpenPlotter als Plugin benutzt, sollte dem **Konfigurationsbeispiel OpenPlotter auf Raspberry Pi** folgten.
 
 Zur Verbindung des OBP60 und den Raspberry Pi über benötigen Sie ein **USB-C zu USB-A Kabel**. Am Raspberry Pi können Sie jeden beliebigen USB-A-Port verwenden.
 
@@ -313,13 +313,15 @@ Sie gelangen dann auf die Seite zum Serverstatus.
              :scale: 50%	
 Abb.: Server-Status ohne OBP60
 
-AVnav ist so eingerichtet, dass es automatisch alle seriellen USB-Geräte erkennen kann und automatisch zuordnet. Sowoh das Gerät wird erkannt als auch die Übertragungsrate. Verschaffen Sie sich als erstes einen Überblick welche Geräte bereits mit USB verbunden sind. Im oderen Bild sehen Sie unter Punkt 3 **USBSerialReader** alle aktuell erkannten und zugeordneten Geräte. In unserem Fall ist bereits ein GPS-Stick an USB angeschlossen. Das Gerät ist der Schnittstelle **/dev/ttyACM0** zugeordnet und arbeitet mit einer Übertragungsrate von 38400 Bd. 
+AVnav ist so eingerichtet, dass es automatisch alle seriellen USB-Geräte erkennen kann und automatisch zuordnet. Sowoh das Gerät wird erkannt als auch die Übertragungsrate. Verschaffen Sie sich als erstes einen Überblick welche Geräte bereits mit USB verbunden sind. Im oderen Bild sehen Sie unter Punkt **[3] USBSerialReader** alle aktuell erkannten und zugeordneten Geräte. In unserem Fall ist bereits ein GPS-Stick an USB angeschlossen. Das Gerät ist der Schnittstelle **/dev/ttyACM0** zugeordnet und arbeitet mit einer Übertragungsrate von 38400 Bd. 
 
 .. image:: ../pics/AVnav_Server_Status_USBSerialReader_2.png
              :scale: 50%	
 Abb.: Server-Status mit OBP60 (noch nicht konfiguriert) 
 
-Wenn man das OBP60 mit den Raspberry Pi über USB verbindet, sieht man im oberen Bild unter Punkt 3 ein neu hinzugefügtes Gerät **/dev/ttyACM1**. Es handelt sich dabei um das OBP60. Die Schnittstellengeschwindigkeit ist aber noch nicht korrekt eingestellt. Wenn Sie auf das Stiftsymbol hinter der Zeile mit dem Eintrag **/dev/ttyACM1** klicken, können die Einstellungen zum Gerät vorgenommen werden. Folgende Werte sind anzupassen:
+Wenn man das OBP60 mit den Raspberry Pi über USB verbindet, sieht man im oberen Bild unter Punkt 3 ein neu hinzugefügtes Gerät **/dev/ttyACM1**. Es handelt sich dabei um das OBP60. Die Schnittstellengeschwindigkeit ist aber noch nicht korrekt eingestellt.
+
+Wenn Sie auf das Stiftsymbol hinter der Zeile mit dem Eintrag **/dev/ttyACM1** klicken, können die Einstellungen zum Gerät vorgenommen werden. Folgende Werte sind anzupassen:
 
     * **Baud** ``115200``
     * **Type** ``combined``
@@ -329,7 +331,7 @@ Wenn man das OBP60 mit den Raspberry Pi über USB verbindet, sieht man im oberen
              :scale: 50%	
 Abb.: Einstellungen für das OBP60
 
-Durch die Änderung des Typs von ``read`` auf ``combined`` ist eine bidirektionale Kommunikation über USB mit einer Übertragungsgeschwindigkeit von 115200 Bd möglich. Das OBP60 ist nun mit AVnav verbunden. Solange Sie die selben USB-Ports verwenden, werden nach jedem Neustart des Systems die USB-Geräte korrekt zugeordnet und die Übertragungsgeschwindigkeit eingestellt.
+Durch die Änderung des Typs von ``read`` auf ``combined`` ist eine bidirektionale Kommunikation über USB mit einer Übertragungsgeschwindigkeit von 115200 Bd möglich. Das OBP60 ist nun mit AVnav verbunden. Solange Sie die selben USB-Ports verwenden, werden nach jedem Neustart des Systems die USB-Geräte korrekt zugeordnet und die Übertragungsgeschwindigkeit richtig eingestellt.
 
 .. image:: ../pics/AVnav_Server_Status_USBSerialReader_3.png
              :scale: 50%	
@@ -345,9 +347,19 @@ Abb.: Verbindung OBP60 - Android Autoradio AVnav
 
 In dem Beispiel wird gezeigt, wie man Busdaten in ein Android-Radio einspeisen kann, um die Daten in AVnav nutzen zu können. Für die Datenübertragung zum Andriod-Autoradio benötigen Sie ein **USB-C zu USB-A Kabel**, sofern ein passende Adapterbuchse zur Verfügung steht. In einigen Situation müssen Sie die USB-Kabel direkt über spezielle Stecker am Autoradio auflegen. Konsultieren Sie dazu das Handbuch zum Android-Autoradio und stellen Sie die USB-Verbindung wie gefordert her.
 
-.. image:: ../pics/AVnav_Start_Page.png
+.. warning::
+    Verwenden Sie zur Verbindung des OBP60 mit dem Android Autoradio nur hochwertige geschirmte USB-C-Kabel. Die Länge sollte 1,5 m nicht überschreiten, damit die Signalpegel nicht zu stark reduziert werden und eine hohe Übertragungsrate möglich ist. Bei Überbrückung größerer Längen verwenden sie aktive USB-Verlängerungskabel
+
+.. image:: ../pics/USB_Activ_Repeater.png
              :scale: 40%	
-Abb.: Android Startseite
+Abb.: Aktive USB-Verlängerung für 5 m
+
+.. hint::
+    Die Konfiguration von AVnav für Android läuft in einigen Schritten verschieden zur Server-Version von AVnav auf einem Rasberry Pi ab. Beachten Sie, dass es keine automatische Konfiguration von seriellen USB-Devices gibt. USB-Geräte müssen immer manuell hinzugefügt werden. 
+
+.. image:: ../pics/Android_Start_Page.png
+             :scale: 40%	
+Abb.: Startseite AVnav für Android
 
 Unter AVnav kicken Sie auf der Startseite oben rechts das Symbol mit den 3 Strichen.
 
@@ -371,10 +383,9 @@ Abb.: Einstellungen zur USB-Verbindung
 
 Nach der Übernahme aller Daten ist die neue Verbindung im Server-Status zu sehen.
 
-.. image:: ../pics/Android_Server_Status.jpg
+.. image:: ../pics/Android_Server_Status_2.jpg
              :scale: 40%	
 Abb.: Server-Status
-
 
 
 Beispiel SignalK auf Raspberry Pi
