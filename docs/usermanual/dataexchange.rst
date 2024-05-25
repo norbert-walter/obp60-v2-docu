@@ -332,7 +332,7 @@ Abb.: Verbindung OBP60 - Android Autoradio AVnav
 In dem Beispiel wird gezeigt, wie man Busdaten in ein Android-Radio einspeisen kann, um die Daten in AVnav nutzen zu können. Für die Datenübertragung zum Andriod-Autoradio benötigen Sie ein **USB-C zu USB-A Kabel**, sofern ein passende Adapterbuchse zur Verfügung steht. In einigen Situation müssen Sie die USB-Kabel direkt über spezielle Stecker am Autoradio auflegen. Konsultieren Sie dazu das Handbuch zum Android-Autoradio und stellen Sie die USB-Verbindung wie gefordert her.
 
 .. image:: ../pics/AVnav_Start_Page.png
-             :scale: 50%	
+             :scale: 40%	
 Abb.: Android Startseite
 
 Unter AVnav kicken Sie auf der Startseite oben rechts das Symbol mit den 3 Strichen.
@@ -345,20 +345,20 @@ Sie gelangen dann auf die Seite zum Serverstatus. Dort können sie über das Plu
 
 Für die bidirektionale Kommunikation über USB wählen Sie **UsbConnection**.
 
-.. image:: ../pics/Android_Select_Handler.png
-             :scale: 50%	
+.. image:: ../pics/Android_Select_Handler.jpg
+             :scale: 40%	
 Abb.: Verbindungstypen
 
-Unter *Device** wählen Sie die serielle Verbindung aus unter der das OBP60 mit dem Raspberry Pi verbunden ist. Als Schnittstellengeschwindigkeit wird **115200 Bd** eingestellt. Um nicht nur Daten zu senden, sondern auch empfangen zu können, aktivieren Sie **SendOut**.
+Unter **Device** wählen Sie die serielle Verbindung aus unter der das OBP60 mit dem Raspberry Pi verbunden ist. Als Schnittstellengeschwindigkeit wird **115200 Bd** eingestellt. Um nicht nur Daten zu senden, sondern auch empfangen zu können, aktivieren Sie **SendOut**.
 
 .. image:: ../pics/Android_Add_Handler.jpg
-             :scale: 50%	
+             :scale: 40%	
 Abb.: Einstellungen zur USB-Verbindung
 
 Nach der Übernahme aller Daten ist die neue Verbindung im Server-Status zu sehen.
 
 .. image:: ../pics/Android_Server_Status.jpg
-             :scale: 50%	
+             :scale: 40%	
 Abb.: Server-Status
 
 
