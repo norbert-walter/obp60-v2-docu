@@ -357,7 +357,7 @@ Abb.: Aktive USB-Verlängerung für 5 m
 .. hint::
     Die Konfiguration von AVnav für Android läuft in einigen Schritten verschieden zur Server-Version von AVnav auf einem Rasberry Pi ab. Beachten Sie, dass es keine automatische Konfiguration von seriellen USB-Devices gibt. USB-Geräte müssen immer manuell hinzugefügt werden. 
 
-.. image:: ../pics/Android_Start_Page.png
+.. image:: ../pics/Android_Start_Page.jpg
              :scale: 40%	
 Abb.: Startseite AVnav für Android
 
@@ -375,7 +375,7 @@ Für die bidirektionale Kommunikation über USB wählen Sie **UsbConnection**.
              :scale: 40%	
 Abb.: Verbindungstypen
 
-Unter **Device** wählen Sie die serielle Verbindung aus unter der das OBP60 mit dem Raspberry Pi verbunden ist. Als Schnittstellengeschwindigkeit wird **115200 Bd** eingestellt. Um nicht nur Daten zu senden, sondern auch empfangen zu können, aktivieren Sie **SendOut**.
+Unter **Device** wählen Sie die serielle Verbindung aus unter der das OBP60 mit dem Raspberry Pi verbunden ist (``/dev/bus/usb/001/003``). Als Schnittstellengeschwindigkeit wird ``115200 Bd`` eingestellt. Um nicht nur Daten zu senden, sondern auch empfangen zu können, aktivieren Sie **SendOut**.
 
 .. image:: ../pics/Android_Add_Handler.jpg
              :scale: 40%	

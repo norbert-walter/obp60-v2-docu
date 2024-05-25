@@ -468,6 +468,10 @@ Das OBP60 kann auch über USB-C mit Strom versorgt werden. Das ist nützlich, we
 
 .. hint::
     Die reguläre Stromversorgung des OBP60 im Boot erfolgt immer über 12V aus dem Bordnetz. Es wird nicht empfohlen, eine Versorgung nur über USB-C durchzuführen, da die Steckverbindung nicht gegen unbeabsichtigtes Lösen gesichert ist. Kabellängen größer 1,5 m sollten nur für eine Datenübertragung und nicht für eine Stromversorgung genutzt werden, da der Spannungsabfall auf den Leitungen zu groß ist. Die Kabellänge ist auf maximal 3 m begrenzt. Wenn Sie größere Strecken überbrücken wollen, müssen Sie aktive USB-Repeater-Kabel verwenden, die die Signalpegel auffrischen.
+    
+.. image:: ../pics/USB_Activ_Repeater.png
+             :scale: 40%	
+Abb.: Aktive USB-Verlängerung für 5 m
 
 .. danger::
     In einigen Situationen kann es vorkommen, dass unzulässige Ausgleichsströme über die nicht isolierte USB-C-Schnittstelle fließen und das OBP60 so beschädigen können. Das passiert z.B. dann, wenn Ladegeräte mit dem 230V-Landstrom verbunden sind, die Bord-Batterie aufladen und gleichzeitig ein Laptop mit 230V-Versorgung mit dem OBP60 über USB-C verbunden ist. Wenn Sie beabsichtigen, die USB-C-Verbindung dauerhaft zur Kommunikation im Boot zu nutzen, sollten sie einen USB-Isolator verwenden, um Schäden zu vermeiden. Beim Betrieb des Laptops nur über seinen eingebauten Akku entstehen die beschriebenen Probleme nicht.
@@ -479,7 +483,7 @@ Abb.: USB-Isolator
 USB-Isolatoren haben allerdings den Nachteil, dass sie nur einen sehr geringen Strom von ca. 150 mA für ihre isolierte Seite in Richtung OBP60 liefern können. Das OBP60 wird so nur eingeschränkt mit Strom versorgt, was Funktionsbeeinträchtigungen nach sich ziehen kann. Das OBP60 muss dann je nach Bedarf wie beschrieben noch zusätzlich mit 12V über den Steckverbinder **CN2** versorgt werden.
 
 .. attention::
-	Wenn das OBP60 über USB versorgt wird, kann es vorkommen, dass das Gerät gelegentlich je nach Stromverbrauch ungewollt einen Reboot durchführt. Der Grund liegt oft in einer unzureichenden Stromversorgung des USB-Ports in einem PC oder Laptop. Entweder ist die Ausgangsspannung nicht exakt 5V oder der Strom nicht ausreichend. Um solche Probleme zu vernmeiden, benutzen Sie die Stromversorgung über 12V an der Anschlussklemme **CN2** oder ein eigenständiges Netzteil mit 5,2 V/2 A. 
+	Wenn das OBP60 über USB versorgt wird, kann es vorkommen, dass das Gerät gelegentlich je nach Stromverbrauch ungewollt einen Reboot durchführt. Der Grund liegt oft in einer unzureichenden Stromversorgung des USB-Ports oder an ungeigneten oder zu langen USB-Kabeln. Entweder ist die Ausgangsspannung nicht exakt 5V oder der Strom nicht ausreichend. Um solche Probleme zu vernmeiden, benutzen Sie die Stromversorgung über 12V an der Anschlussklemme **CN2** oder ein eigenständiges Netzteil mit 5,2 V/2 A. 
 		
 **Kommunikation** 
 
