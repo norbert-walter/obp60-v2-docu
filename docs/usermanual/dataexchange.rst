@@ -283,14 +283,21 @@ Beispiel AVnav auf Raspberry Pi
 
 Dieses Beispiel zeigt die Einbindung eines OBP60 über USB in AVnav, das auf einem Rasberry Pi läuft. Dabei werden NMEA2000 Busdaten ausgelesen und nach NMEA0183 übertragen. Die Anbindung erfolgt direkt in AVnav als Device und die Daten stehen dann der Anwendung zu Verfügung. In diesem Fall wird das AVnav-Image benutzt. Wer AVnav unter OpenPlotter als Plugin benutzt sollte dem **Konfigurationsbeispiel OpenPlotter auf Raspberry Pi** folgten.
 
-Verbinden Sie das OBP60 und den Raspberry Pi über USB. Sie benötigen dazu ein **USB-C zu USB-A Kabel**. Am Raspberry Pi können Sie jeden beliebigen USB-A-Port verwenden.
+Zur Verbindung des OBP60 und den Raspberry Pi über benötigen Sie ein **USB-C zu USB-A Kabel**. Am Raspberry Pi können Sie jeden beliebigen USB-A-Port verwenden.
 
 .. hint::
 	Es ist ratsam die schwarzen USB-A-Ports zu benutzen, da das OBP60 nur USB 1.1 unterstützt und dadurch die leistungsfähigeren USB 3.0-Ports frei bleiben und anderweitig genutzt werden können. Versorgen Sie auf jeden Fall das OBP60 zusätzlich mit 12V, da der Raspberry Pi zu wenig Strom an seinen USB-Ports liefert.
-
+	
 .. image:: ../pics/OBP60_USB_Connection_Raspi.png
              :scale: 40%	
 Abb.: Verbindung OBP60 - Raspberry Pi
+	
+.. warning::
+    Verwenden Sie zur Verbindung des OBP60 mit dem Raspberry Pi nur hochwertige geschirmte USB-C-Kabel. Die Länge sollte 1,5 m nicht überschreiten, damit die Signalpegel nicht zu stark reduziert werden und eine hohe Übertragungsrate möglich ist. Bei Überbrückung größerer Längen verwenden sie aktive USB-Verlängerungskabel
+
+.. image:: ../pics/USB_Activ_Repeater.png
+             :scale: 40%	
+Abb.: Aktive USB-Verlängerung für 5 m
 
 .. image:: ../pics/AVnav_Start_Page.png
              :scale: 50%	
