@@ -300,27 +300,34 @@ Unter AVnav kicken Sie auf der Startseite oben rechts das Symbol mit den 3 Stric
 
 .. image:: ../pics/AVnav_Server_Status_Icon.png
 
-Sie gelangen dann auf die Seite zum Serverstatus. Dort können sie über das Plus-Symbol weitere Verbindungen zum AVnavServer einrichten.
+Sie gelangen dann auf die Seite zum Serverstatus. 
 
-.. image:: ../pics/AVnav_Add_Icon.png
-
-Für die bidirektionale Kommunikation über USB legen Sie eine neue **AVNSerialWriter**-Verbindung an.
-
-.. image:: ../pics/AVnav_Select_Handler.png
+.. image:: ../pics/AVnav_Server_Status_USBSerialReader_1.png
              :scale: 50%	
-Abb.: Verbindungstypen
+Abb.: Server-Status ohne OBP60
 
-Unter **Port** wählen Sie die serielle Verbindung aus unter der das OBP60 mit dem Raspberry Pi verbunden ist. Als Schnittstellengeschwindigkeit wird **115200 Bd** eingestellt. Um nicht nur Daten zu senden, sondern auch empfangen zu können, aktivieren Sie **combined**.
+AVnav ist so eingerichtet, dass es automatisch alle seriellen USB-Geräte erkennen kann und automatisch zuordnet. Sowoh das Gerät wird erkannt als auch die Übertragungsrate. Verschaffen Sie sich als erstes einen Überblick welche Geräte bereits mit USB verbunden sind. Im oderen Bild sehen Sie unter Punkt 3 **USBSerialReader** alle aktuell erkannten und zugeordneten Geräte. In unserem Fall ist bereits ein GPS-Stick an USB angeschlossen. Das Gerät ist der Schnittstelle **/dev/ttyACM0** zugeordnet und arbeitet mit einer Übertragungsrate von 38400 Bd. 
 
-.. image:: ../pics/AVnav_AVNSerialWriter.png
+.. image:: ../pics/AVnav_Server_Status_USBSerialReader_2.png
              :scale: 50%	
-Abb.: Einstellungen zum AVNSerailWriter
+Abb.: Server-Status mit OBP60 (noch nicht konfiguriert) 
 
-Nach der Übernahme aller Daten ist die neue Verbindung im Server-Status zu sehen.
+Wenn man das OBP60 mit den Raspberry Pi über USB verbindet, sieht man im oberen Bild unter Punkt 3 ein neu hinzugefügtes Gerät **/dev/ttyACM1**. Es handelt sich dabei um das OBP60. Die Schnittstellengeschwindigkeit ist aber noch nicht korrekt eingestellt. Wenn Sie auf das Stiftsymbol hinter der Zeile mit dem Eintrag **/dev/ttyACM1** klicken, können die Einstellungen zum Gerät vorgenommen werden. Folgende Werte sind anzupassen:
 
-.. image:: ../pics/AVnav_Server_Status_SerialWriter.png
+    * **Baud** ``115200``
+    * **Type** ``combined``
+    * **Name** ``OBP60V2``
+    
+.. image:: ../pics/AVnav_Edit_Handler.png
              :scale: 50%	
-Abb.: Server-Status
+Abb.: Einstellungen für das OBP60
+
+Durch die Änderung des Typs von ``read`` auf ``combined`` ist eine bidirektionale Kommunikation über USB mit einer Übertragungsgeschwindigkeit von 115200 Bd möglich. Das OBP60 ist nun mit AVnav verbunden. Solange Sie die selben USB-Ports verwenden, werden nach jedem Neustart des Systems die USB-Geräte korrekt zugeordnet und die Übertragungsgeschwindigkeit eingestellt.
+
+.. image:: ../pics/AVnav_Server_Status_USBSerialReader_3.png
+             :scale: 50%	
+Abb.: Server-Status mit OBP60 (korrekt konfiguriert)
+    
 
 Beispiel AVnav auf Android-Autoradio
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
