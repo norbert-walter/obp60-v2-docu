@@ -3,8 +3,6 @@ Bekannte Fehler
 
 An dieser Stelle werden bekannte Fehler aufgeführt, die noch nicht behoben wurden. Darüber hinaus gibt es für die Firmware und Hardware eine `Projektseite`_ bei Github, in der ein System zur Fehlerverfolgung implementiert ist. Wenn Sie gemeldete und behobene Fehler einsehen wollen, so gehen Sie in die Rubrik **Issues**.
 
-.. _Projektseite: https://open-boat-projects.org/de/kontakt/
-
 https://github.com/norbert-walter/esp32-nmea2000-obp60/issues
 
 Dort können Sie nach Fehlern suchen und die Fehlerbeschreibungen und deren Lösungen einsehen. Sie können über die Rubrik **Issues** aber auch selbst Fehler melden, die noch nicht im System enthalten sind. Beschreiben Sie dann möglichst genau, unter welchen Umständen der Fehler auftritt. Der Fehler muss für uns nachvollziehbar sein, nur dann kann er behoben werden. Wenn Sie Tipps haben, wie man Dinge verbessern kann, oder wenn Sie bestimmte Funktionen vermissen, möchten wir Sie bitten, diese ebenfalls zu melden.

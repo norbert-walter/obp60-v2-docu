@@ -15,7 +15,9 @@ Die auf dieser Webseite veröffentlichten Informationen sind im Rahmen eines Hob
 .. danger::
 	Die Integration von Open-Source-Implementierungen in zertifizierte Bussysteme kann zu Fehlern, Störungen und Totalausfällen führen.
 
-Bei auftretenden Problemen oder Mängeln bitte wir Sie, uns eine Information über das Kontaktformular zukommen zu lassen. So können wir auf Qualitäts- und Sicherheitsprobleme eingehen und für Abhilfe sorgen.
+Bei auftretenden Problemen oder Mängeln bitte wir Sie, uns eine Information über das `Kontaktformular`_ zukommen zu lassen. So können wir auf Qualitäts- und Sicherheitsprobleme eingehen und für Abhilfe sorgen.
+
+.. _Kontaktformular: https://open-boat-projects.org/de/kontakt/
 
 Sicherheit im WiFi-Netzwerk
 ---------------------------	

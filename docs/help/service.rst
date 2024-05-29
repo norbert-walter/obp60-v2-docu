@@ -5,6 +5,6 @@ Unser Grundgedanke ist, dass durch die offene Projektbeschreibung und Dokumentat
 
 .. _Segeln-Forum: https://www.segeln-forum.de/board/195-open-boat-projects-org/
 
-Bei Fragen zu einem Hardware-Service verwenden Sie folgendes Kontaktformular:
+Bei Fragen zu einem Hardware-Service verwenden Sie das `Kontaktformular`_:
 
-* https://open-boat-projects.org/de/kontakt/
+.. _Kontaktformular: https://open-boat-projects.org/de/kontakt/
