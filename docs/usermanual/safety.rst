@@ -1,8 +1,8 @@
 Sicherheitshinweise
 ===================
 
-Allgemeine Sicherheitshinweise
-------------------------------
+Allgemeine Hinweise
+-------------------
 
 Die auf dieser Webseite veröffentlichten Informationen sind im Rahmen eines Hobbyprojektes entstanden. Das Open-Source-Projekt ist als Machbarkeitsstudien zu verstehen, das zeigen soll mit welchen begrenzten Möglichkeiten private Projekte umgesetzt werden können. Die Qualität hinsichtlich Funktionalität, Sicherheit und Dokumentation ist nicht mit kommerziellen Produkten vergleichbar. Die Benutzung der Open-Source-Software und Hardware erfolgt auf eigene Gefahr unter Ausschluss von Haftungsansprüchen.
 
@@ -10,7 +10,7 @@ Die auf dieser Webseite veröffentlichten Informationen sind im Rahmen eines Hob
 	Jedem Interessierten sollte klar sein, dass die Nutzung des hier vorgestellten Projektes auf eigene Gefahr erfolgt und mit Fehlern und Störungen zu rechnen ist, die schwerwiegende Konsequenzen haben können. Führen Sie vor dem Einsatz des OBP60 eine Risikoanalyse durch und treffen geeignete Maßnahmen, um Schäden und Gefährdung anderer Personen zu vermeiden.
 
 .. note::
-	**NMEA2000** (TM), **NMEA0183** (TM), **SeaTalk** (TM), **SeaSmart** (TM) sind eingetragene Marken der jeweiligen Markeninhaber. Die Namen werden auf dieser Seite als Synonym für diese Protokoll-Typen benutzt. Wenn in den Beschreibungen darauf Bezug genommen wird, so sind **Open-Source-Implementierungen** damit gemeint, die nicht in allen Punkten den Qualitätsanforderungen und Spezifikationen der jeweiligen Markeninhaber entsprechen. Die Software und Hardware versteht sich als experimentell zur Wissensgewinnung und sollte nicht mit sicherheitskritischen Systemen wie z.B. einem Autopiloten verbunden und betrieben werden. Es kann keine Garantie für die korrekte Implementierung der Protokolle und deren Funktionssicherheit übernommen werden.
+	**NMEA2000** (TM), **NMEA0183** (TM), **SeaTalk** (TM), **SeaSmart** (TM) sind eingetragene Marken der jeweiligen Markeninhaber. Die Namen werden auf dieser Seite als Synonym für diese Protokoll-Typen benutzt. Wenn in den Beschreibungen darauf Bezug genommen wird, so sind Open-Source-Implementierungen damit gemeint, die nicht in allen Punkten den Qualitätsanforderungen und Spezifikationen der jeweiligen Markeninhaber entsprechen. Die Software und Hardware versteht sich als experimentell zur Wissensgewinnung und sollte nicht mit sicherheitskritischen Systemen wie z.B. einem Autopiloten verbunden und betrieben werden. Es kann keine Garantie für die korrekte Implementierung der Protokolle und deren Funktionssicherheit übernommen werden.
 
 .. danger::
 	Die Integration von Open-Source-Implementierungen in zertifizierte Bussysteme kann zu Fehlern, Störungen und Totalausfällen führen.
