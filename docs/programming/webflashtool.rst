@@ -1,22 +1,22 @@
 Web-Flashtool
 =============
 
-Mit dem Web-Flashtool kann die Firmware für das OBP60 mit einem Webbrowser über eine USB-Verbindung in das Gerät übertragen werden. Dazu wird das OBP60 über die USB-C-Buchse mit einem PC oder Laptop verbunden und der **Chrome-** oder **Edge-Webbrowser** gestartet. Im OBP60 ist ein USB-Seriell-Konverter integriert, über den die Datenübertragung durchgeführt wird. Mit dem USB-C-Kabel lässt sich nur die Firmware übertragen. Ein Betrieb des Gerätes ist damit nicht möglich. 
+Mit dem Web-Flashtool kann die Firmware für das OBP60 mit einem Webbrowser über eine USB-Verbindung in das Gerät übertragen werden. Dazu wird das OBP60 über die USB-C-Buchse mit einem PC oder Laptop verbunden und der **Chrome-** oder **Edge-Webbrowser** gestartet. Im OBP60 ist ein USB-Seriell-Konverter integriert, über den die Datenübertragung durchgeführt wird. Mit dem USB-C-Kabel lässt sich nur die Firmware übertragen. Ein Betrieb des Gerätes über USB ist damit nicht möglich. Es wird lediglich die Firmware übertragen.
 
 .. note::
-	Andere Webbrowser als Chrome oder Edge werden derzeit nicht unterstützt, da die Funktionalität für den Zugriff auf eine serielle Schnittstelle in anderen Webbrowsern nicht implementiert ist.
+	Andere Webbrowser als **Chrome** oder **Edge** werden derzeit nicht unterstützt, da die Funktionalität für den Zugriff auf eine serielle Schnittstelle in anderen Webbrowsern nicht implementiert ist.
 	
 .. warning::
-	Beachten Sie, dass das Web-Flashtool nur für ein OBP60 verwendet werden kann, das als Prozessor einen **ESP32-S3 N16R8** und als Display ein **GDEY042T81** verwenden. Sofern Sie andere Hardware benutzen, müssen Sie sich eine angepasste Firmwareversion für ihre Hardware kompilieren. Folgen Sie den Anweisungen im Kapitel **Kompilieren und Download**.  
+	Beachten Sie, dass das Web-Flashtool nur für ein OBP60 verwendet werden kann, das als Prozessor einen **ESP32-S3 N16R8** und als E-Paper-Display ein **GDEY042T81** verwenden. Sofern Sie andere Hardware benutzen, müssen Sie sich eine angepasste Firmwareversion für ihre Hardware kompilieren. Folgen Sie den Anweisungen im Kapitel **Kompilieren und Download**.  
 	
-Für den Flash-Vorgang benötigt man folgende Materialien:
-	* OBP60 (ESP32-S3 N16R8, E-Papaer GDEY042T81)
+Für den Flash-Vorgang benötigt man folgende Dinge:
+	* OBP60 (ESP32-S3 N16R8, E-Paper GDEY042T81)
 	* USB-C zu USB-A Verbindungskabel < 1,5m
 	* Drahtbrücke 5 cm
 	* PC mit Chrome- oder Edge-Browser
 
 **1. OBP60 in den Flash-Modus setzen**
-	Öffnen Sie die hintere Gehäusreabdeckung und Stellen Sie mit der Drahtbrücke eine Verbindung von ``GND`` (CN2) zum ``Pin 27`` (ESP32-S3) her. Dann verbinden Sie das OBP60 mit dem PC über das USB-Verbindungskabel. Sobald sie USB-Schnittstelle erkannt wird, erfolgt eine Tonausgabe auf dem PC. Sie können dann die Drahtbrücke zwischen ``GND`` und ``Pin 27`` trennen. Der ESP32-S3 befindet sich jetzt im Flash-Modus.
+	Öffnen Sie die hintere Gehäusreabdeckung und stellen Sie mit der Drahtbrücke eine Verbindung von ``GND`` (CN2) zum ``Pin 27`` (ESP32-S3) her. Dann verbinden Sie das OBP60 mit dem PC über das USB-Verbindungskabel. Sobald sie USB-Schnittstelle erkannt wird, erfolgt eine Tonausgabe auf dem PC. Sie können dann die Drahtbrücke zwischen ``GND`` und ``Pin 27`` trennen. Der ESP32-S3 befindet sich jetzt im Flash-Modus.
 	
 	.. image:: ../pics/ESP32-S3_Pin27.png
 	   :scale: 40%
@@ -40,7 +40,7 @@ Für den Flash-Vorgang benötigt man folgende Materialien:
 	Drücken Sie dann auf **Connect** und wählen die entsprechende serielle Schnittstelle aus. Je nachdem, welches Betriebssystem Sie verwenden, sind die Schnittstellen verschieden bezeichnet.
 
 	* **Windows:** USB JTAG/serial debug unit COMx
-	* **Linux:** /dev/ttyACM0
+	* **Linux:** /dev/ttyACMx
 
 	.. image:: ../pics/Serial_Connection_Win.png
 	   :scale: 50%
