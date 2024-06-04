@@ -790,6 +790,67 @@ Abb.: Seite mit 4 Anzeigewerten
     * **XTE** - Cross Track Error, Kursfehler 
     * **xdrVBat** - Bordspannung
     
+OneValue
+^^^^^^^^
+
+.. image:: /pics/OBP60_OneValue_tr.png
+             :scale: 50%
+Abb.: Anzeige OneValue
+
+Bei der OneValue Anzeige kann ein beliebiger Messwert aus dem Datenpool angezeigt werden. Neben dem Messwert werden der Kurzbezeichner und die Einheit angezeigt.
+
+TwoValue
+^^^^^^^^
+
+.. image:: /pics/OBP60_TwoValue_tr.png
+             :scale: 50%
+Abb.: Anzeige TwoValue
+
+Bei der TwoValue Anzeige können zwei beliebige Messwerte aus dem Datenpool vertikal übereinander angezeigt werden. Neben den Messwerten werden die Kurzbezeichner und die Einheiten angezeigt.
+
+ThreeValue
+^^^^^^^^^^
+
+.. image:: /pics/OBP60_ThreeValue.png
+             :scale: 50%
+Abb.: Anzeige ThreeValue
+
+Bei der ThreeValue Anzeige können drei beliebige Messwerte aus dem Datenpool vertikal übereinander angezeigt werden. Neben den Messwerten werden die Kurzbezeichner und die Einheiten angezeigt.
+
+FourValue
+^^^^^^^^^
+
+.. image:: /pics/OBP60_FourValue_tr.png
+             :scale: 50%
+Abb.: Anzeige FourValue
+
+Bei der ThreeValue Anzeige können vier beliebige Messwerte aus dem Datenpool vertikal übereinander angezeigt werden. Neben den Messwerten werden die Kurzbezeichner und die Einheiten angezeigt.
+
+FourValue2
+^^^^^^^^^^
+
+.. image:: /pics/OBP60_FourValue2_tr.png
+             :scale: 50%
+Abb.: Anzeige FourValue
+
+Bei der ThreeValue Anzeige können vier beliebige Messwerte aus dem Datenpool vertikal übereinander und horizontal nebeneinander angezeigt werden. Neben den Messwerten werden die Kurzbezeichner und die Einheiten angezeigt. Diese Darstellung entspricht der alten Darstellung vom Raymarine ST60 TriData mit dem Unterschied, dass hier beliebige Werte angezeigt werden können. Es gibt noch die Anzeigeseite **DST810** mit festen Inhalten, die die selben Messwerte anzeigt wie beim ST60 TriData.
+
+Voltage
+^^^^^^^
+
+.. image:: /pics/OBP60_Voltage.png
+             :scale: 50%
+Abb.: Anzeige OneValue
+
+Bei der Voltage Anzeige wird die Versorgungsspannung der Batterie angezeigt, so wie die Spannung am Eingang von CN2 zur Verfügung gestellt wird.
+
+.. note::
+	Beachten Sie, dass die Spannung nicht exakt der Batteriespannung entsprechen muss. Durch Leitungsverluste können Spannungsabfälle auftreten und der gemessene Wert kann kleiner sein als die tatsächliche Batteriespannung.
+	
+Ein Trendindikator zeigt den Trend an in welche Richtung sich die Spannung bewegt. Über die Tasten können folgende Funktionen genutzt werden.
+
+	* ``[AVG]`` - Einstellung der Mittelungstiefe in Sekunden [1|30|60|300]
+	* ``[TRD]`` - Trendanzeige aktivieren oder deaktivieren
 
 XDR
 ---
