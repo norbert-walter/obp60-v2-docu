@@ -840,17 +840,42 @@ Voltage
 
 .. image:: /pics/OBP60_Voltage.png
              :scale: 30%
-Abb.: Anzeige OneValue
+Abb.: Anzeige Voltage
 
 Bei der Voltage Anzeige wird die Versorgungsspannung der Batterie angezeigt, so wie die Spannung am Eingang von CN2 zur Verfügung gestellt wird.
 
 .. note::
 	Beachten Sie, dass die Spannung nicht exakt der Batteriespannung entsprechen muss. Durch Leitungsverluste können Spannungsabfälle auftreten und der gemessene Wert kann kleiner sein als die tatsächliche Batteriespannung.
 	
-Ein Trendindikator zeigt den Trend an in welche Richtung sich die Spannung bewegt. Über die Tasten können folgende Funktionen genutzt werden.
+Ein Trendindikator zeigt den Trend an in welche Richtung sich die Spannung bewegt. Hinter der Einheit Volt werden der Batterietyp [Pb|AGM|Gel|LiFePo4] und die aktuell benutzte Mittelungstiefe angezeigt. Über die Tasten können folgende Funktionen genutzt werden.
 
 	* ``[AVG]`` - Einstellung der Mittelungstiefe in Sekunden [1|30|60|300]
 	* ``[TRD]`` - Trendanzeige aktivieren oder deaktivieren
+	
+Die Anzeigeseite benötigt folgende Messwerte: **xdrVBat**
+	
+DST810
+^^^^^^
+
+.. image:: /pics/OBP60_FourValue2_tr.png
+             :scale: 30%
+Abb.: Anzeige FourValue
+
+Bei der DST810 Anzeige werden der Speed durchs Wasser, die Tiefe, die zurückgelegte Strecke und die Wassertemperatur angezeigt. Neben den Messwerten werden die Kurzbezeichner und die Einheiten angezeigt. Die Anzeigeseite entspricht der alten Darstellung vom Raymarine ST60 TriData. Damit die Daten angezeigt werden können, müssen sich gültige Informationen im Datenpool befinden. Neben dem DST810 von Airmar können auch Messwerte anderer Sensorhersteller angezeigt werden, die die selben Daten oder einen Teil der Daten liefern. Die Anzeigeseite benötigt folgende Messwerte: **DBT, STW, Log, WTemp**
+
+Clock
+^^^^^^^^
+
+.. image:: /pics/OBP60_Clock_tr.png
+             :scale: 30%
+Abb.: Anzeige Clock
+
+Bei der Clock Anzeige werden die Uhrzeit, das Datum, die Sonnenaufgangszeit und die Sonnenuntergangszeit angezeigt. Die Anzeigewerte werden primär aus den GPS-Daten gewonnen. Die Auf- und Untergangszeit der Sonne wird anhängig vom geografischen Ort berechnet und entspricht der astronomischen Sonnenaufgangs- und Untergangszeit. Als Zeitanzeige kann die globale Weltzeit UTC oder die lokale Ortszeit angezeigt werden. Die Auswahl der Zeitzone kann über die Konfigurationsseite **Config - OBP Settings** eingestellt werden.
+
+Die Einstellung der Uhrzeit erfolgt automatisch über die GPS-Zeit. Stellen Sie vor der Benutzung des OBP60 sicher, dass ein GPS-Empfang möglich ist, damit sich die Zeit einstellen kann. In regelmäßigen Abständen wird die RTC-Zeit mit der GPS-Zeit synchronisiert, so dass Sie auch über Zeitinformationen verfügen, wenn kein GPS-Empfang möglich ist.
+
+.. note::
+	Stehen keine GPS-Daten zur Verfügung, so wird die Zeit und das Datum aus der RTC benutzt. In dem Fall stehen keine Sonnenaufgangszeit und Sonnenuntergangszeit zur Verfügung, da die geografischen Ortsdaten fehlen.
 
 XDR
 ---
