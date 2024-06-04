@@ -900,7 +900,7 @@ Abb.: Anzeige BME280
 Bei der BME-Anzeige werden die 3 Messwerte Lufttemperatur, Luftdruck und Luftfeuchtigkeit des BME280 angezeigt. Der BME280 muss dazu an den externen I2C-Bus angeschlossen werden und auf die Adresse 0x77 eingestellt sein.
 
 .. warning::
-	Bedenken Sie, dass der externe I2C-Bus **5V* Signalpegel für **SCL** und **SDA** benutzt. Benutzen Sie solche Module die tolerant für VV sind oder verwenden Sie Pegelumsetzer von 5V auf 3.3V für die Signale SCL und SDA. Beachten Sie das nicht, so können die externen Module beschädigt werden oder fehlerhaft funktionieren.
+	Bedenken Sie, dass der externe I2C-Bus **5V* Signalpegel für **SCL** und **SDA** benutzt. Benutzen Sie solche Module die tolerant für 5V sind oder verwenden Sie Pegelumsetzer von 5V auf 3.3V für die Signale SCL und SDA. Beachten Sie das nicht, so können die externen Module beschädigt werden oder fehlerhaft funktionieren.
 	
 Ein 5V taugliches BME280-Modul ist das **GYBME** Elektronikmodul:
 
@@ -934,13 +934,13 @@ Abb.: Anzeige Keel
 
 Bei der Keel-Anzeige wird die Kielstellung eines Neigekiels angezeigt. Die Kielstellung ist im Bereich von +/-45° grafisch darstellbar. Wenn keine Sensorwerte für die Keelstellung vorliegen, ist der Kiel nicht sichtbar.
 
-Damit die Kielstellung angezeigt werden kann, muss ein Rotationssensor-Modul **AS5600** am I2C-Bus angeschlossen und der Sensor als Kielsensor auf der Konfigurationsseite **Config - OBP Hardware** parametriert werden. 
+Damit die Kielstellung angezeigt werden kann, muss ein Rotationssensor-Modul **AS5600** am I2C-Bus angeschlossen und der Sensor als **Kielsensor** auf der Konfigurationsseite **Config - OBP Hardware** parametriert werden. 
 
 .. image:: /pics/I2C_Sample_Setup_AS5600.png
-             :scale: 30%
+             :scale: 50%
 Abb.: Magnetischer Rotationssensor AS5600 zur Anzeige der Kielstellung
 
-Beachten Sie auch die Hinweise im Kapitel **Datenaustausch / I2C-Bus**.
+Beachten Sie auch die Hinweise im Kapitel **Datenaustausch - I2C-Bus** und **Bussysteme - I2C**.
 
 Battery
 ^^^^^^^
@@ -949,7 +949,7 @@ Battery
              :scale: 30%
 Abb.: Anzeige Battery
 
-Bei der Battery-Anzeige werden die aktuellen Werte für Bord-Spannung, Strom und Leistung angezeigt. Neben den Messwerten werden die Kurzbezeichner und die Einheiten dargestellt. Um die Batterie-Werte anzeigen zu können, muss ein I2C-Modul **INA226** am I2C-Bus angeschlossen und auf die Adresse 0x41 eingestellt sein.
+Bei der Battery-Anzeige werden die aktuellen Werte für Bord-Spannung, Strom und Leistung angezeigt. Neben den Messwerten werden die Kurzbezeichner und die Einheiten dargestellt. Um die Batterie-Werte anzeigen zu können, muss ein I2C-Modul **INA226** am I2C-Bus angeschlossen und auf die Adresse **0x41** eingestellt sein.
 
 .. image:: /pics/INA226.png
              :scale: 30%
