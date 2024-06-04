@@ -884,9 +884,35 @@ Die Anzeigeseite benötigt folgende Messwerte: **GPST, GPSD**
 WhitePage
 ^^^^^^^^^
 
+.. image:: /pics/OBP60_Blank_tr.png
+             :scale: 30%
+Abb.: Anzeige WhitePage
+
 Bei der WhitePage handelt es sich um eine Anzeigeseite die nur eine weiße leere Seite anzeigt. Diese Seite kann dazu benutzt werden, den Bildschirminhalt vor dem Ausschalten definiert zu löschen.
 
+BME280
+^^^^^^
 
+.. image:: /pics/OBP60_ThreeValue.png
+             :scale: 30%
+Abb.: Anzeige BME280
+
+Bei der BME Anzeige werden die 3 Messwerte Lufttemperatur, Luftdruck und Luftfeuchtigkeit des BME280 angezeigt. Der BME280 muss dazu an den externen I2C-Bus angeschlossen werden und auf die Adresse 0x77 eingestellt sein.
+
+.. warning::
+	Bedenken Sie, dass der externe I2C-Bus **5V* Signalpegel für **SCL** und **SDA** benutzt. Benutzen Sie solche Module die tolerant für VV sind oder verwenden Sie Pegelumsetzer von 5V auf 3.3V für die Signale SCL und SDA. Beachten Sie das nicht, so können die externen Module beschädigt werden oder fehlerhaft funktionieren.
+	
+Ein 5V taugliches BME280-Modul ist das **GYBME** Elektronikmodul:
+
+.. image:: /pics/BME280.png
+             :scale: 50%
+Abb.: BME280-Modul
+	
+Die Messwerte vom externen Sensor müssen als XDR-Telegramme angelegt werden (siehe Konfigurationsseite: **XDR**) . Dabei sind folgende Zuordnungen zu beachten:
+
+	* **TAir** - Lufttemperatur
+	* **PAir** - Luftdruck
+	* **HAir** - Luftfeuchtigkeit
 
 XDR
 ---
