@@ -861,21 +861,32 @@ DST810
              :scale: 30%
 Abb.: Anzeige FourValue
 
-Bei der DST810 Anzeige werden der Speed durchs Wasser, die Tiefe, die zurückgelegte Strecke und die Wassertemperatur angezeigt. Neben den Messwerten werden die Kurzbezeichner und die Einheiten angezeigt. Die Anzeigeseite entspricht der alten Darstellung vom Raymarine ST60 TriData. Damit die Daten angezeigt werden können, müssen sich gültige Informationen im Datenpool befinden. Neben dem DST810 von Airmar können auch Messwerte anderer Sensorhersteller angezeigt werden, die die selben Daten oder einen Teil der Daten liefern. Die Anzeigeseite benötigt folgende Messwerte: **DBT, STW, Log, WTemp**
+Bei der DST810 Anzeige werden der Speed durchs Wasser, die Tiefe, die zurückgelegte Strecke und die Wassertemperatur angezeigt. Neben den Messwerten werden die Kurzbezeichner und die Einheiten dargestellt. Die Anzeigeseite entspricht der alten Darstellung vom **Raymarine ST60 TriData**. Damit die Daten angezeigt werden können, müssen sich gültige Informationen im Datenpool befinden. Neben dem DST810 von Airmar können auch Messwerte anderer Sensorhersteller angezeigt werden, die die selben Daten oder einen Teil der Daten liefern
+
+Die Anzeigeseite benötigt folgende Messwerte: **DBT, STW, Log, WTemp**
 
 Clock
-^^^^^^^^
+^^^^^
 
 .. image:: /pics/OBP60_Clock_tr.png
              :scale: 30%
 Abb.: Anzeige Clock
 
-Bei der Clock Anzeige werden die Uhrzeit, das Datum, die Sonnenaufgangszeit und die Sonnenuntergangszeit angezeigt. Die Anzeigewerte werden primär aus den GPS-Daten gewonnen. Die Auf- und Untergangszeit der Sonne wird anhängig vom geografischen Ort berechnet und entspricht der astronomischen Sonnenaufgangs- und Untergangszeit. Als Zeitanzeige kann die globale Weltzeit UTC oder die lokale Ortszeit angezeigt werden. Die Auswahl der Zeitzone kann über die Konfigurationsseite **Config - OBP Settings** eingestellt werden.
+Bei der Clock Anzeige werden die Uhrzeit, das Datum, die Sonnenaufgangszeit und die Sonnenuntergangszeit angezeigt. Die Anzeigewerte werden primär aus den GPS-Daten gewonnen. Die Auf- und Untergangszeit der Sonne wird anhängig vom geografischen Ort berechnet und entspricht der astronomischen Sonnenaufgangs- und Untergangszeit. Als Zeitanzeige kann die globale Weltzeit **UTC** oder die lokale Ortszeit **LOT** angezeigt werden. Die Auswahl der Zeitzone kann über die Konfigurationsseite **Config - OBP Settings** eingestellt werden.
 
 Die Einstellung der Uhrzeit erfolgt automatisch über die GPS-Zeit. Stellen Sie vor der Benutzung des OBP60 sicher, dass ein GPS-Empfang möglich ist, damit sich die Zeit einstellen kann. In regelmäßigen Abständen wird die RTC-Zeit mit der GPS-Zeit synchronisiert, so dass Sie auch über Zeitinformationen verfügen, wenn kein GPS-Empfang möglich ist.
 
 .. note::
 	Stehen keine GPS-Daten zur Verfügung, so wird die Zeit und das Datum aus der RTC benutzt. In dem Fall stehen keine Sonnenaufgangszeit und Sonnenuntergangszeit zur Verfügung, da die geografischen Ortsdaten fehlen.
+	
+Die Anzeigeseite benötigt folgende Messwerte: **GPST, GPSD**
+
+WhitePage
+^^^^^^^^^
+
+Bei der WhitePage handelt es sich um eine Anzeigeseite die nur eine weiße leere Seite anzeigt. Diese Seite kann dazu benutzt werden, den Bildschirminhalt vor dem Ausschalten definiert zu löschen.
+
+
 
 XDR
 ---
