@@ -76,8 +76,9 @@ Der Einbau des OBP60 erfolgt über die Rückseite. Zum Anzeichnen der Öffnung u
 .. warning::
 	Die Köpfe der Sechskantschrauben sollten in den Vertiefungen eingeklebt werden, damit sie beim Einbau nicht in Gehäuseinnere geschoben werden und dort einen Kurzschluss auf der Platine verursachen können.
 	
-Danach wird das Gehäuse zusammengebaut.
+Danach wird das Gehäuse wieder vollständig zusammen gebaut.
 
 Vor der Montage wird zwischen Rückseite und Cockpitwand eine 2 mm dicke Moosgummidichtung platziert. Die Moosgummidichtung kann Unebenheiten der Oberfläche in gewissen Grenzen ausgleichen. Mit den Unterlegscheiben und den Muttern befestigt man das OBP60. Ziehen Sie die Muttern nicht zu fest an. Die Verdrehsicherung oder die Rückwand können beschädigt werden.
 
-
+.. image:: ../pics/Mounting_OBP60.png
+             :scale: 50%
