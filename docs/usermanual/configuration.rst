@@ -900,7 +900,7 @@ Abb.: Anzeige BME280
 Bei der BME-Anzeige werden die 3 Messwerte Lufttemperatur, Luftdruck und Luftfeuchtigkeit des BME280 angezeigt. Der BME280 muss dazu an den externen I2C-Bus angeschlossen werden und auf die Adresse 0x77 eingestellt sein.
 
 .. warning::
-	Bedenken Sie, dass der externe I2C-Bus **5V* Signalpegel für **SCL** und **SDA** benutzt. Benutzen Sie solche Module die tolerant für 5V sind oder verwenden Sie Pegelumsetzer von 5V auf 3.3V für die Signale SCL und SDA. Beachten Sie das nicht, so können die externen Module beschädigt werden oder fehlerhaft funktionieren.
+	Bedenken Sie, dass der externe I2C-Bus **5V** Signalpegel für **SCL** und **SDA** benutzt. Benutzen Sie solche Module die tolerant für 5V sind oder verwenden Sie Pegelumsetzer von 5V auf 3.3V für die Signale SCL und SDA. Beachten Sie das nicht, so können die externen Module beschädigt werden oder fehlerhaft funktionieren.
 	
 Ein 5V taugliches BME280-Modul ist das **GYBME** Elektronikmodul:
 
@@ -955,7 +955,14 @@ Bei der Battery-Anzeige werden die aktuellen Werte für Bord-Spannung, Strom und
              :scale: 30%
 Abb.: I2C-Adresszuweisung INA226
 
+Für die Messung mit einem externen Leistungs-Shunt muss der schwarze große Widerstand **R100** auf der Frontseite der Platine entfernt werden. Danach ist das Modul wie folgt zu verschalten.
 
+.. warning::
+	Verwenden Sie für den Leistungskreis ausreichend groß dimensionierte Leitungsquerschnitte, die auf den maximalen Strom ausgelegt sein müssen. Verwenden Sie in den Leistungskreisen passende Sicherungen, um Kabelbrände bei Kurzschlüssen zu vermeiden. Für eine langlebige Installation sollten Sie Litze mit verzinnten Einzeladern verwenden. Wenn das aus Kostengründen nicht möglich ist, sollten die Kabelenden mit gequetschten Kabelösen oder Aderendhülsen versehen sein. Kabelösen sollten dann zusätzlich mit Zinn verlötet werden, um Korrosion in den Kabelhülsen zu unterbinden. Ein Überzug der Chrimp- und Lötstellen mit Schrumpfschlauch verhindert aufsteigende Feuchtigkeit im Kabel, die ebenso Korrosion über lange Zeiträume verursachen kann. Sorgen Sie dafür, dass der INA226 wassergeschützt in einem isolierten Gehäuse untergebracht ist und die Sensoranschlüsse In+ und In- mit einer Feinsicherung 100 mA geschützt sind. Wenn Sie nicht über ausreichendes Fachwissen verfügen, sollten Sie die Installation des Sensors einem Fachmann überlassen oder ihre Installation durch einen Fachmann prüfen lassen. Unsachgemäße oder defekte Installationen von Leistungsstromkreisen können Brände verurschan und Leben gefährden. Prüfen Sie die Installation in regelmäßigen Abständen bezüglich Funktion und Sicherheit.
+	
+.. image:: /pics/Wire_Diameter.png
+             :scale: 50%
+Abb.: Leitungsquerschnitte
 
 XDR
 ---
