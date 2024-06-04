@@ -72,7 +72,7 @@ In einigen Situationen ist es günstiger, die Stromversorgung direkt über den N
 Einbau
 ------
 
-Der Einbau des OBP60 erfolgt über die Rückseite. Zum Anzeichnen der Öffnung und der Löcher in der Cockpitwand kann die Moosgummidichtung als Schablone benutzt werden. Vor der Montage des OBP60 ist die Rückseite abzunehmen. Die 2 Sechskantschrauben werden in die dafür vorgesehenen Vertiefungen eingeführt und gegen herausfallen gesichert.
+Der Einbau des OBP60 erfolgt über die Rückseite. Zum Anzeichnen der Öffnung und der Löcher in der Cockpitwand kann die Moosgummidichtung als Schablone benutzt werden. Vor der Montage des OBP60 ist die Rückseite abzunehmen. Die 2 Sechskantschrauben werden in die dafür vorgesehenen Vertiefungen eingeführt und gegen herausfallen gesichert. Prüfen Sie vor dem Einbau, ob die Länge der M5x25 Schrauben ausreichend ist. Gegebenenfalls ersetzen Sie die Schrauben in passiger Länge. 
 
 .. warning::
 	Die Köpfe der Sechskantschrauben sollten in den Vertiefungen eingeklebt werden, damit sie beim Einbau nicht in das Gehäuseinnere geschoben werden und dort einen Kurzschluss auf der Platine verursachen können.
