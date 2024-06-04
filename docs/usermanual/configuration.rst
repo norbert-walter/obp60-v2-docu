@@ -733,8 +733,8 @@ Im OBP60 gibt es insgesamt bis zu 10 Seiten, die man frei auswählen und gestalt
     * **Clock** - Grafische Zeitanzeige mit Sonnenauf- und Sonnenuntergang (**GPST, GPSD**)
     * **White Page** - Leere weiße Seite, um Display in StandBy zu schalten
     * **BME280** - Anzeige von Umweltdaten wie Temperatur, Luftdruck und Feuchtigkeit (**BME280** I2C)
-    * **Rudder Position** - Grafische Anzeige der Ruderposition (**RPOS**)
-    * **Keel Position** - Grafische Anzeige der Kielposition (**AS5600** I2C)
+    * **Rudder** - Grafische Anzeige der Ruderposition (**RPOS**)
+    * **Keel** - Grafische Anzeige der Kielposition (**AS5600** I2C)
     * **Battery** - Anzeige von Spannung, Strom und Leistung (**INA219, INA226** I2C)
     * **Battery2** - Grafische Anzeige des Batterie-Ladezustandes (**INA219, INA226** I2C)
     * **RollPitch** - Grafische Anzeige von Roll und Pitch (**xdrRoll, xdrPitch**)
@@ -797,7 +797,7 @@ OneValue
              :scale: 30%
 Abb.: Anzeige OneValue
 
-Bei der OneValue Anzeige kann ein beliebiger Messwert aus dem Datenpool angezeigt werden. Neben dem Messwert werden der Kurzbezeichner und die Einheit angezeigt.
+Bei der OneValue-Anzeige kann ein beliebiger Messwert aus dem Datenpool angezeigt werden. Neben dem Messwert werden der Kurzbezeichner und die Einheit dargestellt.
 
 TwoValue
 ^^^^^^^^
@@ -806,7 +806,7 @@ TwoValue
              :scale: 30%
 Abb.: Anzeige TwoValue
 
-Bei der TwoValue Anzeige können zwei beliebige Messwerte aus dem Datenpool vertikal übereinander angezeigt werden. Neben den Messwerten werden die Kurzbezeichner und die Einheiten angezeigt.
+Bei der TwoValue-Anzeige können zwei beliebige Messwerte aus dem Datenpool vertikal übereinander angezeigt werden. Neben den Messwerten werden die Kurzbezeichner und die Einheiten dargestellt.
 
 ThreeValue
 ^^^^^^^^^^
@@ -815,7 +815,7 @@ ThreeValue
              :scale: 30%
 Abb.: Anzeige ThreeValue
 
-Bei der ThreeValue Anzeige können drei beliebige Messwerte aus dem Datenpool vertikal übereinander angezeigt werden. Neben den Messwerten werden die Kurzbezeichner und die Einheiten angezeigt.
+Bei der ThreeValue-Anzeige können drei beliebige Messwerte aus dem Datenpool vertikal übereinander angezeigt werden. Neben den Messwerten werden die Kurzbezeichner und die Einheiten dargestellt.
 
 FourValue
 ^^^^^^^^^
@@ -824,7 +824,7 @@ FourValue
              :scale: 30%
 Abb.: Anzeige FourValue
 
-Bei der ThreeValue Anzeige können vier beliebige Messwerte aus dem Datenpool vertikal übereinander angezeigt werden. Neben den Messwerten werden die Kurzbezeichner und die Einheiten angezeigt.
+Bei der ThreeValue-Anzeige können vier beliebige Messwerte aus dem Datenpool vertikal übereinander angezeigt werden. Neben den Messwerten werden die Kurzbezeichner und die Einheiten dargestellt.
 
 FourValue2
 ^^^^^^^^^^
@@ -833,7 +833,7 @@ FourValue2
              :scale: 30%
 Abb.: Anzeige FourValue
 
-Bei der ThreeValue Anzeige können vier beliebige Messwerte aus dem Datenpool vertikal übereinander und horizontal nebeneinander angezeigt werden. Neben den Messwerten werden die Kurzbezeichner und die Einheiten angezeigt. Diese Darstellung entspricht der alten Darstellung vom Raymarine ST60 TriData mit dem Unterschied, dass hier beliebige Werte angezeigt werden können. Es gibt noch die Anzeigeseite **DST810** mit festen Inhalten, die die selben Messwerte anzeigt wie beim ST60 TriData.
+Bei der FourValue-Anzeige können vier beliebige Messwerte aus dem Datenpool vertikal übereinander und horizontal nebeneinander angezeigt werden. Neben den Messwerten werden die Kurzbezeichner und die Einheiten angezeigt. Diese Darstellung entspricht der alten Darstellung vom Raymarine ST60 TriData mit dem Unterschied, dass hier beliebige Werte angezeigt werden können. Es gibt noch die Anzeigeseite **DST810** mit festen Inhalten, die die selben Messwerte anzeigt wie beim ST60 TriData.
 
 Voltage
 ^^^^^^^
@@ -842,7 +842,7 @@ Voltage
              :scale: 30%
 Abb.: Anzeige Voltage
 
-Bei der Voltage Anzeige wird die Versorgungsspannung der Batterie angezeigt, so wie die Spannung am Eingang von CN2 zur Verfügung gestellt wird.
+Bei der Voltage-Anzeige wird die Versorgungsspannung der Batterie angezeigt, so wie die Spannung am Eingang von CN2 zur Verfügung gestellt wird.
 
 .. note::
 	Beachten Sie, dass die Spannung nicht exakt der Batteriespannung entsprechen muss. Durch Leitungsverluste können Spannungsabfälle auftreten und der gemessene Wert kann kleiner sein als die tatsächliche Batteriespannung.
@@ -861,7 +861,7 @@ DST810
              :scale: 30%
 Abb.: Anzeige FourValue
 
-Bei der DST810 Anzeige werden der Speed durchs Wasser, die Tiefe, die zurückgelegte Strecke und die Wassertemperatur angezeigt. Neben den Messwerten werden die Kurzbezeichner und die Einheiten dargestellt. Die Anzeigeseite entspricht der alten Darstellung vom **Raymarine ST60 TriData**. Damit die Daten angezeigt werden können, müssen sich gültige Informationen im Datenpool befinden. Neben dem DST810 von Airmar können auch Messwerte anderer Sensorhersteller angezeigt werden, die die selben Daten oder einen Teil der Daten liefern
+Bei der DST810-Anzeige werden der Speed durchs Wasser, die Tiefe, die zurückgelegte Strecke und die Wassertemperatur angezeigt. Neben den Messwerten werden die Kurzbezeichner und die Einheiten dargestellt. Die Anzeigeseite entspricht der alten Darstellung vom **Raymarine ST60 TriData**. Damit die Daten angezeigt werden können, müssen sich gültige Informationen im Datenpool befinden. Neben dem DST810 von Airmar können auch Messwerte anderer Sensorhersteller angezeigt werden, die die selben Daten oder einen Teil der Daten liefern
 
 Die Anzeigeseite benötigt folgende Messwerte: **DBT, STW, Log, WTemp**
 
@@ -872,7 +872,7 @@ Clock
              :scale: 30%
 Abb.: Anzeige Clock
 
-Bei der Clock Anzeige werden die Uhrzeit, das Datum, die Sonnenaufgangszeit und die Sonnenuntergangszeit angezeigt. Die Anzeigewerte werden primär aus den GPS-Daten gewonnen. Die Auf- und Untergangszeit der Sonne wird anhängig vom geografischen Ort berechnet und entspricht der astronomischen Sonnenaufgangs- und Untergangszeit. Als Zeitanzeige kann die globale Weltzeit **UTC** oder die lokale Ortszeit **LOT** angezeigt werden. Die Auswahl der Zeitzone kann über die Konfigurationsseite **Config - OBP Settings** eingestellt werden.
+Bei der Clock-Anzeige werden die Uhrzeit, das Datum, die Sonnenaufgangszeit und die Sonnenuntergangszeit angezeigt. Die Anzeigewerte werden primär aus den GPS-Daten gewonnen. Die Auf- und Untergangszeit der Sonne wird anhängig vom geografischen Ort berechnet und entspricht der astronomischen Sonnenaufgangs- und Untergangszeit. Als Zeitanzeige kann die globale Weltzeit **UTC** oder die lokale Ortszeit **LOT** angezeigt werden. Die Auswahl der Zeitzone kann über die Konfigurationsseite **Config - OBP Settings** eingestellt werden.
 
 Die Einstellung der Uhrzeit erfolgt automatisch über die GPS-Zeit. Stellen Sie vor der Benutzung des OBP60 sicher, dass ein GPS-Empfang möglich ist, damit sich die Zeit einstellen kann. In regelmäßigen Abständen wird die RTC-Zeit mit der GPS-Zeit synchronisiert, so dass Sie auch über Zeitinformationen verfügen, wenn kein GPS-Empfang möglich ist.
 
@@ -888,7 +888,7 @@ WhitePage
              :scale: 30%
 Abb.: Anzeige WhitePage
 
-Bei der WhitePage handelt es sich um eine Anzeigeseite die nur eine weiße leere Seite anzeigt. Diese Seite kann dazu benutzt werden, den Bildschirminhalt vor dem Ausschalten definiert zu löschen.
+Bei WhitePage handelt es sich um eine Anzeigeseite die nur eine weiße leere Seite darstellt. Diese Seite kann dazu benutzt werden, den Bildschirminhalt vor dem Ausschalten definiert zu löschen.
 
 BME280
 ^^^^^^
@@ -897,7 +897,7 @@ BME280
              :scale: 30%
 Abb.: Anzeige BME280
 
-Bei der BME Anzeige werden die 3 Messwerte Lufttemperatur, Luftdruck und Luftfeuchtigkeit des BME280 angezeigt. Der BME280 muss dazu an den externen I2C-Bus angeschlossen werden und auf die Adresse 0x77 eingestellt sein.
+Bei der BME-Anzeige werden die 3 Messwerte Lufttemperatur, Luftdruck und Luftfeuchtigkeit des BME280 angezeigt. Der BME280 muss dazu an den externen I2C-Bus angeschlossen werden und auf die Adresse 0x77 eingestellt sein.
 
 .. warning::
 	Bedenken Sie, dass der externe I2C-Bus **5V* Signalpegel für **SCL** und **SDA** benutzt. Benutzen Sie solche Module die tolerant für VV sind oder verwenden Sie Pegelumsetzer von 5V auf 3.3V für die Signale SCL und SDA. Beachten Sie das nicht, so können die externen Module beschädigt werden oder fehlerhaft funktionieren.
@@ -905,7 +905,7 @@ Bei der BME Anzeige werden die 3 Messwerte Lufttemperatur, Luftdruck und Luftfeu
 Ein 5V taugliches BME280-Modul ist das **GYBME** Elektronikmodul:
 
 .. image:: /pics/BME280.png
-             :scale: 50%
+             :scale: 30%
 Abb.: BME280-Modul
 	
 Die Messwerte vom externen Sensor müssen als XDR-Telegramme angelegt werden (siehe Konfigurationsseite: **XDR**) . Dabei sind folgende Zuordnungen zu beachten:
@@ -913,6 +913,49 @@ Die Messwerte vom externen Sensor müssen als XDR-Telegramme angelegt werden (si
 	* **TAir** - Lufttemperatur
 	* **PAir** - Luftdruck
 	* **HAir** - Luftfeuchtigkeit
+	
+Rudder
+^^^^^^
+
+.. image:: /pics/OBP60_Rudder_tr.png
+             :scale: 30%
+Abb.: Anzeige Rudder
+
+Bei der Rudder-Anzeige wird der Ruderausschlag angezeigt. Der Ruderausschlag ist im Bereich von +/-45° grafisch darstellbar. Wenn keine Sensorwerte für den Ruderausschlag vorliegen, ist der Zeiger nicht sichtbar.
+
+Die Anzeigeseite benötigt folgende Messwerte: **RPOS**
+
+Keel
+^^^^
+
+.. image:: /pics/OBP60_Keel_tr.png
+             :scale: 30%
+Abb.: Anzeige Keel
+
+Bei der Keel-Anzeige wird die Kielstellung eines Neigekiels angezeigt. Die Kielstellung ist im Bereich von +/-45° grafisch darstellbar. Wenn keine Sensorwerte für die Keelstellung vorliegen, ist der Kiel nicht sichtbar.
+
+Damit die Kielstellung angezeigt werden kann, muss ein Rotationssensor-Modul **AS5600** am I2C-Bus angeschlossen und der Sensor als Kielsensor auf der Konfigurationsseite **Config - OBP Hardware** parametriert werden. 
+
+.. image:: /pics/I2C_Sample_Setup_AS5600.png
+             :scale: 30%
+Abb.: Magnetischer Rotationssensor AS5600 zur Anzeige der Kielstellung
+
+Beachten Sie auch die Hinweise im Kapitel **Datenaustausch / I2C-Bus**.
+
+Battery
+^^^^^^^
+
+.. image:: /pics/OBP60_ThreeValue.png
+             :scale: 30%
+Abb.: Anzeige Battery
+
+Bei der Battery-Anzeige werden die aktuellen Werte für Bord-Spannung, Strom und Leistung angezeigt. Neben den Messwerten werden die Kurzbezeichner und die Einheiten dargestellt. Um die Batterie-Werte anzeigen zu können, muss ein I2C-Modul **INA226** am I2C-Bus angeschlossen und auf die Adresse 0x41 eingestellt sein.
+
+.. image:: /pics/INA226.png
+             :scale: 30%
+Abb.: I2C-Adresszuweisung INA226
+
+
 
 XDR
 ---
