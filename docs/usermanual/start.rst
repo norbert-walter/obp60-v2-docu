@@ -55,6 +55,7 @@ Der zulässige Spannungsbereich liegt zwischen 10V...28V.
 
 .. image:: ../pics/Power_Connection.png
              :scale: 80%
+Abb.: Stromversorgung
 
 Das OBP60 kann in 12V- und in 24V-Bord-Versorgungsnetzen verwendet werden. Bei Spannungen höher als 28V wird die interne Sicherung im Gerät ausgelöst.
 
@@ -74,11 +75,15 @@ Einbau
 Der Einbau des OBP60 erfolgt über die Rückseite. Zum Anzeichnen der Öffnung und der Löcher in der Cockpitwand kann die Moosgummidichtung als Schablone benutzt werden. Vor der Montage des OBP60 ist die Rückseite abzunehmen. Die 2 Sechskantschrauben werden in die dafür vorgesehenen Vertiefungen eingeführt und gegen herausfallen gesichert.
 
 .. warning::
-	Die Köpfe der Sechskantschrauben sollten in den Vertiefungen eingeklebt werden, damit sie beim Einbau nicht in Gehäuseinnere geschoben werden und dort einen Kurzschluss auf der Platine verursachen können.
+	Die Köpfe der Sechskantschrauben sollten in den Vertiefungen eingeklebt werden, damit sie beim Einbau nicht in das Gehäuseinnere geschoben werden und dort einen Kurzschluss auf der Platine verursachen können.
 	
 Danach wird das Gehäuse wieder vollständig zusammen gebaut.
 
-Vor der Montage wird zwischen Rückseite und Cockpitwand eine 2 mm dicke Moosgummidichtung platziert. Die Moosgummidichtung kann Unebenheiten der Oberfläche in gewissen Grenzen ausgleichen. Mit den Unterlegscheiben und den Muttern befestigt man das OBP60. Ziehen Sie die Muttern nicht zu fest an. Die Verdrehsicherung oder die Rückwand können beschädigt werden.
+Vor der Montage wird zwischen Rückseite und Cockpitwand eine 2 mm dicke Moosgummidichtung platziert. Die Moosgummidichtung kann Unebenheiten der Oberfläche in gewissen Grenzen ausgleichen. Mit den Unterlegscheiben und den Muttern befestigt man das OBP60.
+
+.. warning::
+	Ziehen Sie die Muttern nicht zu fest an. Die Verdrehsicherung oder die Rückwand können beschädigt werden.
 
 .. image:: ../pics/Mounting_OBP60.png
              :scale: 50%
+Abb.: Geräteeinbau in Cockpitwand
