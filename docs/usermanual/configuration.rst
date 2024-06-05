@@ -923,6 +923,9 @@ Abb.: Anzeige Rudder
 
 Bei der Rudder-Anzeige wird der Ruderausschlag angezeigt. Der Ruderausschlag ist im Bereich von +/-45° grafisch darstellbar. Wenn keine Sensorwerte für den Ruderausschlag vorliegen, ist der Zeiger nicht sichtbar.
 
+.. hint::
+	Die Ruderanzeige kann sowohl für Daten aus NMEA0183 , NMEA2000 und einem I2C-Rotationssensor benutzt werden. 
+
 Die Anzeigeseite benötigt folgende Messwerte: **RPOS**
 
 Keel
@@ -941,6 +944,9 @@ Damit die Kielstellung angezeigt werden kann, muss ein Rotationssensor-Modul **A
 Abb.: Magnetischer Rotationssensor AS5600 zur Anzeige der Kielstellung
 
 Beachten Sie auch die Hinweise im Kapitel **Datenaustausch - I2C-Bus** und **Bussysteme - I2C**.
+
+.. hint::
+	Die Kielanzeige kann nur in Verbindung mit einem I2C-Rotationssensor benutzt werden.
 
 Battery
 ^^^^^^^
@@ -961,8 +967,8 @@ Für die Messung mit einem externen Leistungs-Shunt muss der schwarze große Wid
              :scale: 45%
 Abb.: Schaltung INA226 Batteriemonitoring
 
-.. hint::
-	Wenn Sie die Battery-Anzeige verwenden, jedoch kein INA226-Modul am I2C-Bus angeschlossen ist, werden keine Messwerte angezeigt.
+.. note::
+	Wenn Sie die Batterieanzeige verwenden, jedoch kein INA226-Modul am I2C-Bus angeschlossen ist, werden keine Messwerte angezeigt.
 
 .. warning::
 	Verwenden Sie für den Leistungskreis ausreichend groß dimensionierte Leitungsquerschnitte, die auf den maximalen Strom ausgelegt sein müssen. Verwenden Sie in den Leistungskreisen passende Sicherungen, um Kabelbrände bei Kurzschlüssen zu vermeiden. Für eine langlebige Installation sollten Sie Litze mit verzinnten Einzeladern verwenden. Wenn das aus Kostengründen nicht möglich ist, sollten die Kabelenden mit gequetschten Kabelösen oder Aderendhülsen versehen sein. Die Kabelösen sollten dann zusätzlich mit Zinn verlötet werden, um Korrosion in den Kabelhülsen zu unterbinden. Ein Überzug der Chrimp- und Lötstellen mit Schrumpfschlauch verhindert aufsteigende Feuchtigkeit im Kabel, die ebenso Korrosion über lange Zeiträume verursachen kann. Sorgen Sie dafür, dass der INA226 wassergeschützt in einem isolierten Gehäuse untergebracht ist und die Sensoranschlüsse **VBS** und **GND** mit einer **Feinsicherung 100 mA** geschützt sind. Wenn Sie nicht über ausreichendes Fachwissen verfügen, sollten Sie die Installation des Sensors einem Fachmann überlassen oder ihre Installation vor der Inbetriebnahme durch einen Fachmann prüfen lassen.
@@ -975,6 +981,43 @@ Abb.: Schaltung INA226 Batteriemonitoring
 Abb.: Leitungsquerschnitte (EP 12/00)
 
 Zu weitergehenden Informationen können Sie das Informationsmaterial **Leitungen und Kabel** :download:`pdf </info_material/Querschnittsbestimmung_Leitungen_Kabel.pdf>` verwenden.
+
+Battery2
+^^^^^^^^
+
+.. image:: /pics/OBP60_Battery2_tr.png
+             :scale: 30%
+Abb.: Anzeige Battery2
+
+Bei der Battery2-Anzeige werden folgende Werte angezeigt:
+
+* Batterietyp [Pb|Gel|AGM|LiFePo4]
+* Nenn-Batteriespannung in V
+* Nenn-Batteriekapazität in Ah
+* Grafische Füllstandsanzeige in %
+* Geschätzte Reichweite in Stunden bei aktuellen Verbrauchswerten
+* Art des Sensormoduls [interner Sensor|INA219|INA226]
+* Aktuelle Batteriespannung in V
+* Aktueller Stromverbrauch in A
+* Aktuelle Leistung in W
+
+Um die Batterie-Werte anzeigen zu können, muss ein I2C-Modul **INA226** am I2C-Bus angeschlossen und auf die Adresse **0x41** eingestellt sein.
+
+.. image:: /pics/INA226.png
+             :scale: 30%
+Abb.: I2C-Adresszuweisung INA226
+
+Für die Messung mit einem externen Leistungs-Shunt muss der schwarze große Widerstand **R100** auf der Frontseite der Platine entfernt werden. Danach ist das Modul wie folgt zu verschalten.
+
+.. image:: /pics/I2C_Sample_Setup_INA226_Battery.png
+             :scale: 45%
+Abb.: Schaltung INA226 Batteriemonitoring
+
+.. note::
+	Wenn Sie die Batterieanzeige verwenden, jedoch kein INA226-Modul am I2C-Bus angeschlossen ist, werden keine Messwerte außer die aktuelle Batteriespannung angezeigt. In diesem Fall wird der interne Spannungssensor des OBP60 benutzt. Der Wert der gemessen Spannung muss nicht direkt der Spannung an der Batterie entsprechen, da durch Leitungsverluste der Spannungswert verfälscht sein kann. 
+
+.. warning::
+	Die Gefahren und Risiken bei der Benutzung des INA226 zum Batteriemonitoring sind die selben wie im Kapitel **Battery** beschrieben. Folgen Sie den Empfehlungen und beachten Sie die Gefahren.
 
 
 XDR
