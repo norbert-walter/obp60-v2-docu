@@ -991,15 +991,25 @@ Abb.: Anzeige Battery2
 
 Bei der Battery2-Anzeige werden folgende Werte angezeigt:
 
-* Batterietyp [Pb|Gel|AGM|LiFePo4]
-* Nenn-Batteriespannung in V
-* Nenn-Batteriekapazität in Ah
-* Grafische Füllstandsanzeige in %
-* Geschätzte Reichweite in Stunden bei aktuellen Verbrauchswerten
-* Art des Sensormoduls [interner Sensor|INA219|INA226]
-* Aktuelle Batteriespannung in V
-* Aktueller Stromverbrauch in A
-* Aktuelle Leistung in W
+	* Batterietyp [Pb|Gel|AGM|LiFePo4]
+	* Nenn-Batteriespannung in V
+	* Nenn-Batteriekapazität in Ah
+	* Grafische Füllstandsanzeige in %
+	* Geschätzte Reichweite in Stunden bei aktuellen Verbrauchswerten
+	* Art des Sensormoduls [interner Sensor|INA219|INA226]
+	* Aktuelle Batteriespannung in V
+	* Aktueller Stromverbrauch in A
+	* Aktuelle Leistung in W
+
+Über die Tasten können folgende Funktionen genutzt werden.
+
+	* ``[AVG]`` - Einstellung der Mittelungstiefe in Sekunden [1|30|60|300]
+
+.. warning::
+	Die Reichweitenanzeige gibt einen ungefähren Zeitwert an wie lange die Batterie benutzt werden kann unter den aktuellen Verbrauchswerten. Die Zeitdauer ist abhängig vom aktuellen Stromverbrauch und passt sich kontinuierlich an. Die Batteriespannung wird zur Reichweitenbestimmung benutzt und damit der Füllstand der Batterie ermittelt. Diese Methode ist nicht sehr genau und vom Alterungszustand der Batterie abhängig. Prüfen Sie in unkritischen Situationen die Genauigkeit der Reichweitenanzeige und planen Sie entsprechende Sicherheitsreserven ein, um keine unerwarteten Ausfälle zu riskieren.
+	
+.. hint::
+	Nutzen Sie eine große Mittelungszeit über die Taste ´´[AVG]´´ von 300s, um eine eralistische Reichweitenanzeige zu bekommen. Dadurch werden Lastspitzen im Stromverbrauch geglättet und der Reichweitenwert ist deutlich ruhiger.
 
 Um die Batterie-Werte anzeigen zu können, muss ein I2C-Modul **INA226** am I2C-Bus angeschlossen und auf die Adresse **0x41** eingestellt sein.
 
