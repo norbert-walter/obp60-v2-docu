@@ -1061,9 +1061,6 @@ Bei der Solar-Anzeige werden folgende Werte angezeigt:
 Über die Tasten können folgende Funktionen genutzt werden.
 
 	* ``[AVG]`` - Einstellung der Mittelungstiefe in Sekunden [1|30|60|300]
-	
-.. hint::
-	Nutzen Sie eine große Mittelungszeit über die Taste ´´[AVG]´´ von 300s, um eine eralistische Reichweitenanzeige zu bekommen. Dadurch werden Lastspitzen im Stromverbrauch geglättet und der Reichweitenwert ist deutlich ruhiger.
 
 Um die Messwerte anzeigen zu können, muss ein I2C-Modul **INA226** am I2C-Bus angeschlossen und auf die Adresse **0x44** eingestellt sein.
 
