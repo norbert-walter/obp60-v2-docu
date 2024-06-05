@@ -967,7 +967,7 @@ Für die Messung mit einem externen Leistungs-Shunt muss der schwarze große Wid
              :scale: 50%
 Abb.: Leitungsquerschnitte (EP 12/00)
 
-Zu weitergehenden Informationen können Sie das Informationsmaterial **Leitungen und Kabel** :download: `pdf <info_material/Querschnittsbestimmung_Leitungen_Kabel.pdf>` verwenden.
+Zu weitergehenden Informationen können Sie das Informationsmaterial **Leitungen und Kabel** :download:`pdf </info_material/Querschnittsbestimmung_Leitungen_Kabel.pdf>` verwenden.
 
 
 XDR
