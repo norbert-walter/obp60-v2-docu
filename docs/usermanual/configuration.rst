@@ -1029,6 +1029,98 @@ Abb.: Schaltung INA226 Batteriemonitoring
 .. warning::
 	Die Gefahren und Risiken bei der Benutzung des INA226 zum Batteriemonitoring sind die selben wie im Kapitel **Battery** beschrieben. Folgen Sie den Empfehlungen und beachten Sie die Gefahren.
 
+RollPitch
+^^^^^^^^^
+
+.. image:: /pics/OBP60_RollPitch_tr.png
+             :scale: 30%
+Abb.: Anzeige RollPitch
+
+Bei der Battery-Anzeige werden die aktuellen Werte für Roll und Pitch angezeigt sowie der Grenzwert ab dem ein optisches Signal über die Flash-LED ausgegeben wird. Picht entspricht der Neigung in Lägsrichtung und Roll in Querrichtung des Bootes. Die Sensorwerte müssen als XDR-Telegramme angelegt werden (siehe Konfigurationsseite: **XDR**) . Dabei sind folgende Zuordnungen zu beachten:
+
+	* **Roll** - Neigung in Querrichtung
+	* **Pitch** - Neigung in Längsrichtung
+	
+Solar
+^^^^^
+
+.. image:: /pics/OBP60_Solar_tr.png
+             :scale: 30%
+Abb.: Anzeige Solar
+
+Bei der Solar-Anzeige werden folgende Werte angezeigt:
+
+	* Nenn-Spannung der Solarmodule in V
+	* Nenn-Leistung der Solarmodule in W
+	* Nutzungsgrad in %
+	* Art des Sensormoduls [interner Sensor|INA219|INA226]
+	* Aktuelle Solarspannung in V
+	* Aktueller Solareinspeisung in A
+	* Aktuelle Einspeiseleistung in W
+
+Über die Tasten können folgende Funktionen genutzt werden.
+
+	* ``[AVG]`` - Einstellung der Mittelungstiefe in Sekunden [1|30|60|300]
+	
+.. hint::
+	Nutzen Sie eine große Mittelungszeit über die Taste ´´[AVG]´´ von 300s, um eine eralistische Reichweitenanzeige zu bekommen. Dadurch werden Lastspitzen im Stromverbrauch geglättet und der Reichweitenwert ist deutlich ruhiger.
+
+Um die Messwerte anzeigen zu können, muss ein I2C-Modul **INA226** am I2C-Bus angeschlossen und auf die Adresse **0x44** eingestellt sein.
+
+.. image:: /pics/INA226.png
+             :scale: 30%
+Abb.: I2C-Adresszuweisung INA226
+
+Für die Messung mit einem externen Leistungs-Shunt muss der schwarze große Widerstand **R100** auf der Frontseite der Platine entfernt werden. Danach ist das Modul wie folgt zu verschalten.
+
+.. image:: /pics/I2C_Sample_Setup_INA226_Solar.png
+             :scale: 45%
+Abb.: Schaltung INA226 Solarmonitoring
+
+.. note::
+	Wenn Sie die Solaranzeige verwenden, jedoch kein INA226-Modul am I2C-Bus angeschlossen ist, werden keine Messwerte außer die aktuelle Batteriespannung angezeigt. In diesem Fall wird der interne Spannungssensor des OBP60 benutzt. Der Wert der gemessen Spannung muss nicht direkt der Spannung am Ausgang des Wechselrichters entsprechen, da durch Leitungsverluste der Spannungswert verfälscht sein kann. 
+
+.. warning::
+	Die Gefahren und Risiken bei der Benutzung des INA226 zum Batteriemonitoring sind die selben wie im Kapitel **Battery** beschrieben. Folgen Sie den Empfehlungen und beachten Sie die Gefahren.
+	
+Generator
+^^^^^^^^^
+
+.. image:: /pics/OBP60_Generator_tr.png
+             :scale: 30%
+Abb.: Anzeige Generator
+
+Bei der Generator-Anzeige werden folgende Werte angezeigt:
+
+	* Nenn-Spannung des Generators in V
+	* Nenn-Leistung des Generators in W
+	* Nutzungsgrad in %
+	* Art des Sensormoduls [interner Sensor|INA219|INA226]
+	* Aktuelle Generatorspannung in V
+	* Aktuelle Generatoreinspeisung in A
+	* Aktuelle Generatorleistung in W
+
+Über die Tasten können folgende Funktionen genutzt werden.
+
+	* ``[AVG]`` - Einstellung der Mittelungstiefe in Sekunden [1|30|60|300]
+
+Um die Messwerte anzeigen zu können, muss ein I2C-Modul **INA226** am I2C-Bus angeschlossen und auf die Adresse **0x45** eingestellt sein.
+
+.. image:: /pics/INA226.png
+             :scale: 30%
+Abb.: I2C-Adresszuweisung INA226
+
+Für die Messung mit einem externen Leistungs-Shunt muss der schwarze große Widerstand **R100** auf der Frontseite der Platine entfernt werden. Danach ist das Modul wie folgt zu verschalten.
+
+.. image:: /pics/I2C_Sample_Setup_INA226_Generator.png
+             :scale: 45%
+Abb.: Schaltung INA226 Generatormonitoring
+
+.. note::
+	Wenn Sie die Generatoranzeige verwenden, jedoch kein INA226-Modul am I2C-Bus angeschlossen ist, werden keine Messwerte außer die aktuelle Batteriespannung angezeigt. In diesem Fall wird der interne Spannungssensor des OBP60 benutzt. Der Wert der gemessen Spannung muss nicht direkt der Spannung am Ausgang des Generator entsprechen, da durch Leitungsverluste der Spannungswert verfälscht sein kann. 
+
+.. warning::
+	Die Gefahren und Risiken bei der Benutzung des INA226 zum Batteriemonitoring sind die selben wie im Kapitel **Battery** beschrieben. Folgen Sie den Empfehlungen und beachten Sie die Gefahren.
 
 XDR
 ---
