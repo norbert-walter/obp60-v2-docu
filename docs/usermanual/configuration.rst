@@ -957,8 +957,8 @@ Abb.: I2C-Adresszuweisung INA226
 
 Für die Messung mit einem externen Leistungs-Shunt muss der schwarze große Widerstand **R100** auf der Frontseite der Platine entfernt werden. Danach ist das Modul wie folgt zu verschalten.
 
-.. image:: /pics/I2C_Sample_Setup_INA226.png
-             :scale: 50%
+.. image:: /pics/I2C_Sample_Setup_INA226_Battery.png
+             :scale: 45%
 Abb.: Schaltung INA226
 
 .. warning::
