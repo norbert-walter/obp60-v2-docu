@@ -1087,7 +1087,7 @@ Abb.: Schaltung INA226 Solarmonitoring
 	Wenn Sie die Solaranzeige verwenden, jedoch kein INA226-Modul am I2C-Bus angeschlossen ist, werden keine Messwerte außer die aktuelle Batteriespannung angezeigt. In diesem Fall wird der interne Spannungssensor des OBP60 benutzt. Der Wert der gemessenen Spannung muss nicht direkt der Spannung am Ausgang des Wechselrichters entsprechen, da durch Leitungsverluste der Spannungswert verfälscht sein kann. 
 
 .. warning::
-	Die Gefahren und Risiken bei der Benutzung des INA226 zum Batteriemonitoring sind die selben wie im Kapitel **Battery** beschrieben. Folgen Sie den Empfehlungen und beachten Sie die Gefahren.
+	Die Gefahren und Risiken bei der Benutzung des INA226 zum Batteriemonitoring sind dieselben wie im Kapitel **Battery** beschrieben. Folgen Sie den Empfehlungen und beachten Sie die Gefahren.
 	
 Generator
 ^^^^^^^^^
@@ -1126,10 +1126,10 @@ Für die Messung mit einem externen Leistungs-Shunt muss der schwarze große Wid
 Abb.: Schaltung INA226 Generatormonitoring
 
 .. note::
-	Wenn Sie die Generatoranzeige verwenden, jedoch kein INA226-Modul am I2C-Bus angeschlossen ist, werden keine Messwerte außer die aktuelle Batteriespannung angezeigt. In diesem Fall wird der interne Spannungssensor des OBP60 benutzt. Der Wert der gemessen Spannung muss nicht direkt der Spannung am Ausgang des Generator entsprechen, da durch Leitungsverluste der Spannungswert verfälscht sein kann. 
+	Wenn Sie die Generatoranzeige verwenden, jedoch kein INA226-Modul am I2C-Bus angeschlossen ist, werden keine Messwerte außer die aktuelle Batteriespannung angezeigt. In diesem Fall wird der interne Spannungssensor des OBP60 benutzt. Der Wert der gemessenen Spannung muss nicht direkt der Spannung am Ausgang des Generator entsprechen, da durch Leitungsverluste der Spannungswert verfälscht sein kann. 
 
 .. warning::
-	Die Gefahren und Risiken bei der Benutzung des INA226 zum Batteriemonitoring sind die selben wie im Kapitel **Battery** beschrieben. Folgen Sie den Empfehlungen und beachten Sie die Gefahren.
+	Die Gefahren und Risiken bei der Benutzung des INA226 zum Batteriemonitoring sind dieselben wie im Kapitel **Battery** beschrieben. Folgen Sie den Empfehlungen und beachten Sie die Gefahren.
 
 XDR
 ---
