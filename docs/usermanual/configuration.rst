@@ -958,7 +958,7 @@ Abb.: Anzeige Battery
 Bei der Battery-Anzeige werden die aktuellen Werte für Bord-Spannung, Strom und Leistung angezeigt. Neben den Messwerten werden die Kurzbezeichner und die Einheiten dargestellt. Um die Batterie-Werte anzeigen zu können, muss ein I2C-Modul **INA226** am I2C-Bus angeschlossen und auf die Adresse **0x41** eingestellt sein. Der Schunt kann für verschiedene maximale Stromstärken in Ampere [10|50|100|200|300|400|500] unter **Config - OBP Hardware** konfiguriert werden.
 
 .. hint::
-Bedenken Sie, dass für höhere Stromstärken die Ungenauigkeit der Messwerte zunimmt. Wählen Sie den Shunt so aus, dass er zu typischen Nutzungszenarien passt und nicht überdimensioniert ist. Die Messeingänge des Shunts sind bis zum zweifachen Wert der Maximalstromstärke eigensicher und vertragen kurzzeitige Überlastungen.
+	Bedenken Sie, dass für höhere Stromstärken die Ungenauigkeit der Messwerte zunimmt. Wählen Sie den Shunt so aus, dass er zu typischen Nutzungszenarien passt und nicht überdimensioniert ist. Die Messeingänge des Shunts sind bis zum zweifachen Wert der Maximalstromstärke eigensicher und vertragen kurzzeitige Überlastungen.
 
 .. image:: /pics/INA226.png
              :scale: 30%
@@ -1017,7 +1017,7 @@ Bei der Battery2-Anzeige werden folgende Werte angezeigt:
 Um die Batterie-Werte anzeigen zu können, muss ein I2C-Modul **INA226** am I2C-Bus angeschlossen und auf die Adresse **0x41** eingestellt sein. Der Schunt kann für verschiedene maximale Stromstärken in Ampere [10|50|100|200|300|400|500] unter **Config - OBP Hardware** konfiguriert werden.
 
 .. hint::
-Bedenken Sie, dass für höhere Stromstärken die Ungenauigkeit der Messwerte zunimmt. Wählen Sie den Shunt so aus, dass er zu typischen Nutzungszenarien passt und nicht überdimensioniert ist. Die Messeingänge des Shunts sind bis zum zweifachen Wert der Maximalstromstärke eigensicher und vertragen kurzzeitige Überlastungen.
+	Bedenken Sie, dass für höhere Stromstärken die Ungenauigkeit der Messwerte zunimmt. Wählen Sie den Shunt so aus, dass er zu typischen Nutzungszenarien passt und nicht überdimensioniert ist. Die Messeingänge des Shunts sind bis zum zweifachen Wert der Maximalstromstärke eigensicher und vertragen kurzzeitige Überlastungen.
 
 .. image:: /pics/INA226.png
              :scale: 30%
@@ -1071,7 +1071,7 @@ Bei der Solar-Anzeige werden folgende Werte angezeigt:
 Um die Messwerte anzeigen zu können, muss ein I2C-Modul **INA226** am I2C-Bus angeschlossen und auf die Adresse **0x44** eingestellt sein. Der Schunt kann für verschiedene maximale Stromstärken in Ampere [10|50|100|200|300|400|500] unter **Config - OBP Hardware** konfiguriert werden.
 
 .. hint::
-Bedenken Sie, dass für höhere Stromstärken die Ungenauigkeit der Messwerte zunimmt. Wählen Sie den Shunt so aus, dass er zu typischen Nutzungszenarien passt und nicht überdimensioniert ist. Die Messeingänge des Shunts sind bis zum zweifachen Wert der Maximalstromstärke eigensicher und vertragen kurzzeitige Überlastungen.
+	Bedenken Sie, dass für höhere Stromstärken die Ungenauigkeit der Messwerte zunimmt. Wählen Sie den Shunt so aus, dass er zu typischen Nutzungszenarien passt und nicht überdimensioniert ist. Die Messeingänge des Shunts sind bis zum zweifachen Wert der Maximalstromstärke eigensicher und vertragen kurzzeitige Überlastungen.
 
 .. image:: /pics/INA226.png
              :scale: 30%
@@ -1113,7 +1113,7 @@ Bei der Generator-Anzeige werden folgende Werte angezeigt:
 Um die Messwerte anzeigen zu können, muss ein I2C-Modul **INA226** am I2C-Bus angeschlossen und auf die Adresse **0x45** eingestellt sein. Der Schunt kann für verschiedene maximale Stromstärken in Ampere [10|50|100|200|300|400|500] unter **Config - OBP Hardware** konfiguriert werden.
 
 .. hint::
-Bedenken Sie, dass für höhere Stromstärken die Ungenauigkeit der Messwerte zunimmt. Wählen Sie den Shunt so aus, dass er zu typischen Nutzungszenarien passt und nicht überdimensioniert ist. Die Messeingänge des Shunts sind bis zum zweifachen Wert der Maximalstromstärke eigensicher und vertragen kurzzeitige Überlastungen.
+	Bedenken Sie, dass für höhere Stromstärken die Ungenauigkeit der Messwerte zunimmt. Wählen Sie den Shunt so aus, dass er zu typischen Nutzungszenarien passt und nicht überdimensioniert ist. Die Messeingänge des Shunts sind bis zum zweifachen Wert der Maximalstromstärke eigensicher und vertragen kurzzeitige Überlastungen.
 
 .. image:: /pics/INA226.png
              :scale: 30%
