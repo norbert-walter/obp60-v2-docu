@@ -718,7 +718,7 @@ Config - OBP Page X
 .. image:: /pics/Screen_Overview.png
              :scale: 50%
 
-Im OBP60 gibt es insgesamt bis zu 10 Seiten, die man frei auswählen und gestalten kann. Je nach Seite können unterschiedlich viele Daten angezeigt werden. Es gibt frei definierbare Seiten, in denen die Inhalte zum Anzeigen ausgewählt werden können. Dann gibt es Seiten mit vorgegebenem, nicht veränderbaren Inhalt. Die meisten numerischen Seiten sind änderbar, während die grafischen Seiten oft vordefinierte Inhalte anzeigen.
+Im OBP60 gibt es insgesamt bis zu 10 Seiten, die man frei auswählen und gestalten kann. Je nach Seite können unterschiedlich viele Daten angezeigt werden. Es gibt frei definierbare Seiten, in denen die Inhalte zum Anzeigen ausgewählt werden können. Dann gibt es Seiten mit vorgegebenem, nicht veränderbarem Inhalt. Die meisten numerischen Seiten sind änderbar, während die grafischen Seiten oft vordefinierte Inhalte anzeigen.
 
 * Seiten mit veränderbarem Inhalt
     * **OneValue** - Ein Anzeigewert
@@ -742,7 +742,7 @@ Im OBP60 gibt es insgesamt bis zu 10 Seiten, die man frei auswählen und gestalt
     * **Generator** - Grafische Anzeige des Generator-Ladezustandes (**INA219, INA226** I2C)
     
 .. note::
-    Bitte beachten Sie, dass alle Seiten mit festen Inhalten bestimmte Sensorwerte vorausetzen, um Messwerte angezeigen zu können. Unter dem Register **Data** kann die Verfügbarkeit der notwendigen Daten geprüft werden. 
+    Bitte beachten Sie, dass alle Seiten mit festen Inhalten bestimmte Sensorwerte voraussetzen, um Messwerte anzeigen zu können. Unter dem Register **Data** kann die Verfügbarkeit der notwendigen Daten geprüft werden. 
     
 Bei Seiten mit veränderlichem Inhalt stehen je nach Anzahl der Anzeigewerte unterschiedlich viele Eingabefelder zur Verfügung. Darüber können die anzuzeigenden Daten ausgewählt werden.
 
@@ -833,7 +833,7 @@ FourValue2
              :scale: 30%
 Abb.: Anzeige FourValue
 
-Bei der FourValue-Anzeige können vier beliebige Messwerte aus dem Datenpool vertikal übereinander und horizontal nebeneinander angezeigt werden. Neben den Messwerten werden die Kurzbezeichner und die Einheiten angezeigt. Diese Darstellung entspricht der alten Darstellung vom Raymarine ST60 TriData mit dem Unterschied, dass hier beliebige Werte angezeigt werden können. Es gibt noch die Anzeigeseite **DST810** mit festen Inhalten, die die selben Messwerte anzeigt wie beim ST60 TriData.
+Bei der FourValue-Anzeige können vier beliebige Messwerte aus dem Datenpool vertikal übereinander und horizontal nebeneinander angezeigt werden. Neben den Messwerten werden die Kurzbezeichner und die Einheiten angezeigt. Diese Darstellung entspricht der alten Darstellung vom Raymarine ST60 TriData mit dem Unterschied, dass hier beliebige Werte angezeigt werden können. Es gibt noch die Anzeigeseite **DST810** mit festen Inhalten, die dieselben Messwerte anzeigt wie beim ST60 TriData.
 
 Voltage
 ^^^^^^^
@@ -861,7 +861,7 @@ DST810
              :scale: 30%
 Abb.: Anzeige FourValue
 
-Bei der DST810-Anzeige werden der Speed durchs Wasser, die Tiefe, die zurückgelegte Strecke und die Wassertemperatur angezeigt. Neben den Messwerten werden die Kurzbezeichner und die Einheiten dargestellt. Die Anzeigeseite entspricht der alten Darstellung vom **Raymarine ST60 TriData**. Damit die Daten angezeigt werden können, müssen sich gültige Informationen im Datenpool befinden. Neben dem DST810 von Airmar können auch Messwerte anderer Sensorhersteller angezeigt werden, die die selben Daten oder einen Teil der Daten liefern
+Bei der DST810-Anzeige werden der Speed durchs Wasser, die Tiefe, die zurückgelegte Strecke und die Wassertemperatur angezeigt. Neben den Messwerten werden die Kurzbezeichner und die Einheiten dargestellt. Die Anzeigeseite entspricht der alten Darstellung vom **Raymarine ST60 TriData**. Damit die Daten angezeigt werden können, müssen sich gültige Informationen im Datenpool befinden. Neben dem DST810 von Airmar können auch Messwerte anderer Sensorhersteller angezeigt werden, die dieselben Daten oder einen Teil der Daten liefern
 
 Die Anzeigeseite benötigt folgende Messwerte: **DBT, STW, Log, WTemp**
 
@@ -888,7 +888,7 @@ WhitePage
              :scale: 30%
 Abb.: Anzeige WhitePage
 
-Bei WhitePage handelt es sich um eine Anzeigeseite die nur eine weiße leere Seite darstellt. Diese Seite kann dazu benutzt werden, den Bildschirminhalt vor dem Ausschalten definiert zu löschen.
+Bei WhitePage handelt es sich um eine Anzeigeseite, die nur eine weiße leere Seite darstellt. Diese Seite kann dazu benutzt werden, den Bildschirminhalt vor dem Ausschalten definiert zu löschen.
 
 BME280
 ^^^^^^
@@ -908,7 +908,7 @@ Ein 5V taugliches BME280-Modul ist das **GYBME** Elektronikmodul:
              :scale: 30%
 Abb.: BME280-Modul
 	
-Die Messwerte vom externen Sensor müssen als XDR-Telegramme angelegt werden (siehe Konfigurationsseite: **XDR**) . Dabei sind folgende Zuordnungen zu beachten:
+Die Messwerte vom externen Sensor müssen als XDR-Telegramme angelegt werden (siehe Konfigurationsseite: **XDR**). Dabei sind folgende Zuordnungen zu beachten:
 
 	* **TAir** - Lufttemperatur
 	* **PAir** - Luftdruck
@@ -935,7 +935,7 @@ Keel
              :scale: 30%
 Abb.: Anzeige Keel
 
-Bei der Keel-Anzeige wird die Kielstellung eines Neigekiels angezeigt. Die Kielstellung ist im Bereich von +/-45° grafisch darstellbar. Wenn keine Sensorwerte für die Keelstellung vorliegen, ist der Kiel nicht sichtbar.
+Bei der Keel-Anzeige wird die Kielstellung eines Neigekiels angezeigt. Die Kielstellung ist im Bereich von +/-45° grafisch darstellbar. Wenn keine Sensorwerte für die Kielstellung vorliegen, ist der Kiel nicht sichtbar.
 
 Damit die Kielstellung angezeigt werden kann, muss ein Rotationssensor-Modul **AS5600** am I2C-Bus angeschlossen und der Sensor als **Kielsensor** auf der Konfigurationsseite **Config - OBP Hardware** parametriert werden. 
 
@@ -958,7 +958,7 @@ Abb.: Anzeige Battery
 Bei der Battery-Anzeige werden die aktuellen Werte für Bord-Spannung, Strom und Leistung angezeigt. Neben den Messwerten werden die Kurzbezeichner und die Einheiten dargestellt. Um die Batterie-Werte anzeigen zu können, muss ein I2C-Modul **INA226** am I2C-Bus angeschlossen und auf die Adresse **0x41** eingestellt sein. Der Shunt kann für verschiedene maximale Stromstärken in Ampere [10|50|100|200|300|400|500] unter **Config - OBP Hardware** konfiguriert werden.
 
 .. hint::
-	Bedenken Sie, dass für höhere Stromstärken die Ungenauigkeit der Messwerte zunimmt. Wählen Sie den Shunt so aus, dass er zu typischen Nutzungszenarien passt und nicht überdimensioniert ist. Die Messeingänge des Shunts sind bis zum zweifachen Wert der Maximalstromstärke eigensicher und vertragen kurzzeitige Überlastungen.
+	Bedenken Sie, dass für höhere Stromstärken die Ungenauigkeit der Messwerte zunimmt. Wählen Sie den Shunt so aus, dass er zu typischen Nutzungsszenarien passt und nicht überdimensioniert ist. Die Messeingänge des Shunts sind bis zum zweifachen Wert der Maximalstromstärke eigensicher und vertragen kurzzeitige Überlastungen.
 
 .. image:: /pics/INA226.png
              :scale: 30%
@@ -977,7 +977,7 @@ Abb.: Schaltung INA226 Batteriemonitoring
 	Verwenden Sie für den Leistungskreis ausreichend groß dimensionierte Leitungsquerschnitte, die auf den maximalen Strom ausgelegt sein müssen. Verwenden Sie in den Leistungskreisen passende Sicherungen, um Kabelbrände bei Kurzschlüssen zu vermeiden. Für eine langlebige Installation sollten Sie Litze mit verzinnten Einzeladern verwenden. Wenn das aus Kostengründen nicht möglich ist, sollten die Kabelenden mit gequetschten Kabelösen oder Aderendhülsen versehen sein. Die Kabelösen sollten dann zusätzlich mit Zinn verlötet werden, um Korrosion in den Kabelhülsen zu unterbinden. Ein Überzug der Chrimp- und Lötstellen mit Schrumpfschlauch verhindert aufsteigende Feuchtigkeit im Kabel, die ebenso Korrosion über lange Zeiträume verursachen kann. Sorgen Sie dafür, dass der INA226 wassergeschützt in einem isolierten Gehäuse untergebracht ist und die Sensoranschlüsse **VBS** und **GND** mit einer **Feinsicherung 100 mA** geschützt sind. Wenn Sie nicht über ausreichendes Fachwissen verfügen, sollten Sie die Installation des Sensors einem Fachmann überlassen oder ihre Installation vor der Inbetriebnahme durch einen Fachmann prüfen lassen.
 	
 .. danger::	
-	Unsachgemäße oder defekte Installationen von Leistungsstromkreisen können Brände verurschan und Leben gefährden. Prüfen Sie die Installation in regelmäßigen Abständen hinsichtlich Funktion und Sicherheit.
+	Unsachgemäße oder defekte Installationen von Leistungsstromkreisen können Brände verursachen und Leben gefährden. Prüfen Sie die Installation in regelmäßigen Abständen hinsichtlich Funktion und Sicherheit.
 	
 .. image:: /pics/Wire_Diameter.png
              :scale: 50%
@@ -1012,12 +1012,12 @@ Bei der Battery2-Anzeige werden folgende Werte angezeigt:
 	Die Reichweitenanzeige gibt einen ungefähren Zeitwert an wie lange die Batterie benutzt werden kann unter den aktuellen Verbrauchswerten. Die Zeitdauer ist abhängig vom aktuellen Stromverbrauch und passt sich kontinuierlich an. Die Batteriespannung wird zur Reichweitenbestimmung benutzt und damit der Füllstand der Batterie ermittelt. Diese Methode ist nicht sehr genau und vom Alterungszustand der Batterie abhängig. Prüfen Sie in unkritischen Situationen die Genauigkeit der Reichweitenanzeige und planen Sie entsprechende Sicherheitsreserven ein, um keine unerwarteten Ausfälle zu riskieren.
 	
 .. hint::
-	Nutzen Sie eine große Mittelungszeit über die Taste ``[AVG]`` von 300s, um eine eralistische Reichweitenanzeige zu bekommen. Dadurch werden Lastspitzen im Stromverbrauch geglättet und der Reichweitenwert ist deutlich ruhiger.
+	Nutzen Sie eine große Mittelungszeit über die Taste ``[AVG]`` von 300s, um eine realistische Reichweitenanzeige zu bekommen. Dadurch werden Lastspitzen im Stromverbrauch geglättet und der Reichweitenwert ist deutlich ruhiger.
 
 Um die Batterie-Werte anzeigen zu können, muss ein I2C-Modul **INA226** am I2C-Bus angeschlossen und auf die Adresse **0x41** eingestellt sein. Der Shunt kann für verschiedene maximale Stromstärken in Ampere [10|50|100|200|300|400|500] unter **Config - OBP Hardware** konfiguriert werden.
 
 .. hint::
-	Bedenken Sie, dass für höhere Stromstärken die Ungenauigkeit der Messwerte zunimmt. Wählen Sie den Shunt so aus, dass er zu typischen Nutzungszenarien passt und nicht überdimensioniert ist. Die Messeingänge des Shunts sind bis zum zweifachen Wert der Maximalstromstärke eigensicher und vertragen kurzzeitige Überlastungen.
+	Bedenken Sie, dass für höhere Stromstärken die Ungenauigkeit der Messwerte zunimmt. Wählen Sie den Shunt so aus, dass er zu typischen Nutzungsszenarien passt und nicht überdimensioniert ist. Die Messeingänge des Shunts sind bis zum zweifachen Wert der Maximalstromstärke eigensicher und vertragen kurzzeitige Überlastungen.
 
 .. image:: /pics/INA226.png
              :scale: 30%
@@ -1030,7 +1030,7 @@ Für die Messung mit einem externen Leistungs-Shunt muss der schwarze große Wid
 Abb.: Schaltung INA226 Batteriemonitoring
 
 .. note::
-	Wenn Sie die Batterieanzeige verwenden, jedoch kein INA226-Modul am I2C-Bus angeschlossen ist, werden keine Messwerte außer die aktuelle Batteriespannung angezeigt. In diesem Fall wird der interne Spannungssensor des OBP60 benutzt. Der Wert der gemessen Spannung muss nicht direkt der Spannung an der Batterie entsprechen, da durch Leitungsverluste der Spannungswert verfälscht sein kann. 
+	Wenn Sie die Batterieanzeige verwenden, jedoch kein INA226-Modul am I2C-Bus angeschlossen ist, werden keine Messwerte außer die aktuelle Batteriespannung angezeigt. In diesem Fall wird der interne Spannungssensor des OBP60 benutzt. Der Wert der gemessenen Spannung muss nicht direkt der Spannung an der Batterie entsprechen, da durch Leitungsverluste der Spannungswert verfälscht sein kann. 
 
 .. warning::
 	Die Gefahren und Risiken bei der Benutzung des INA226 zum Batteriemonitoring sind die selben wie im Kapitel **Battery** beschrieben. Folgen Sie den Empfehlungen und beachten Sie die Gefahren.
@@ -1042,7 +1042,7 @@ RollPitch
              :scale: 30%
 Abb.: Anzeige RollPitch
 
-Bei der Battery-Anzeige werden die aktuellen Werte für Roll und Pitch angezeigt sowie der Grenzwert ab dem ein optisches Signal über die Flash-LED ausgegeben wird. Picht entspricht der Neigung in Lägsrichtung und Roll in Querrichtung des Bootes. Die Sensorwerte müssen als XDR-Telegramme angelegt werden (siehe Konfigurationsseite: **XDR**) . Dabei sind folgende Zuordnungen zu beachten:
+Bei der Battery-Anzeige werden die aktuellen Werte für Roll und Pitch angezeigt sowie der Grenzwert, ab dem ein optisches Signal über die Flash-LED ausgegeben wird. Picht entspricht der Neigung in Längsrichtung und Roll in Querrichtung des Bootes. Die Sensorwerte müssen als XDR-Telegramme angelegt werden (siehe Konfigurationsseite: **XDR**) . Dabei sind folgende Zuordnungen zu beachten:
 
 	* **Roll** - Neigung in Querrichtung
 	* **Pitch** - Neigung in Längsrichtung
@@ -1071,7 +1071,7 @@ Bei der Solar-Anzeige werden folgende Werte angezeigt:
 Um die Messwerte anzeigen zu können, muss ein I2C-Modul **INA226** am I2C-Bus angeschlossen und auf die Adresse **0x44** eingestellt sein. Der Shunt kann für verschiedene maximale Stromstärken in Ampere [10|50|100|200|300|400|500] unter **Config - OBP Hardware** konfiguriert werden.
 
 .. hint::
-	Bedenken Sie, dass für höhere Stromstärken die Ungenauigkeit der Messwerte zunimmt. Wählen Sie den Shunt so aus, dass er zu typischen Nutzungszenarien passt und nicht überdimensioniert ist. Die Messeingänge des Shunts sind bis zum zweifachen Wert der Maximalstromstärke eigensicher und vertragen kurzzeitige Überlastungen.
+	Bedenken Sie, dass für höhere Stromstärken die Ungenauigkeit der Messwerte zunimmt. Wählen Sie den Shunt so aus, dass er zu typischen Nutzungsszenarien passt und nicht überdimensioniert ist. Die Messeingänge des Shunts sind bis zum zweifachen Wert der Maximalstromstärke eigensicher und vertragen kurzzeitige Überlastungen.
 
 .. image:: /pics/INA226.png
              :scale: 30%
@@ -1084,7 +1084,7 @@ Für die Messung mit einem externen Leistungs-Shunt muss der schwarze große Wid
 Abb.: Schaltung INA226 Solarmonitoring
 
 .. note::
-	Wenn Sie die Solaranzeige verwenden, jedoch kein INA226-Modul am I2C-Bus angeschlossen ist, werden keine Messwerte außer die aktuelle Batteriespannung angezeigt. In diesem Fall wird der interne Spannungssensor des OBP60 benutzt. Der Wert der gemessen Spannung muss nicht direkt der Spannung am Ausgang des Wechselrichters entsprechen, da durch Leitungsverluste der Spannungswert verfälscht sein kann. 
+	Wenn Sie die Solaranzeige verwenden, jedoch kein INA226-Modul am I2C-Bus angeschlossen ist, werden keine Messwerte außer die aktuelle Batteriespannung angezeigt. In diesem Fall wird der interne Spannungssensor des OBP60 benutzt. Der Wert der gemessenen Spannung muss nicht direkt der Spannung am Ausgang des Wechselrichters entsprechen, da durch Leitungsverluste der Spannungswert verfälscht sein kann. 
 
 .. warning::
 	Die Gefahren und Risiken bei der Benutzung des INA226 zum Batteriemonitoring sind die selben wie im Kapitel **Battery** beschrieben. Folgen Sie den Empfehlungen und beachten Sie die Gefahren.
