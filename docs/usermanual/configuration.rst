@@ -1012,7 +1012,7 @@ Bei der Battery2-Anzeige werden folgende Werte angezeigt:
 	Die Reichweitenanzeige gibt einen ungefähren Zeitwert an wie lange die Batterie benutzt werden kann unter den aktuellen Verbrauchswerten. Die Zeitdauer ist abhängig vom aktuellen Stromverbrauch und passt sich kontinuierlich an. Die Batteriespannung wird zur Reichweitenbestimmung benutzt und damit der Füllstand der Batterie ermittelt. Diese Methode ist nicht sehr genau und vom Alterungszustand der Batterie abhängig. Prüfen Sie in unkritischen Situationen die Genauigkeit der Reichweitenanzeige und planen Sie entsprechende Sicherheitsreserven ein, um keine unerwarteten Ausfälle zu riskieren.
 	
 .. hint::
-	Nutzen Sie eine große Mittelungszeit über die Taste ´´[AVG]´´ von 300s, um eine eralistische Reichweitenanzeige zu bekommen. Dadurch werden Lastspitzen im Stromverbrauch geglättet und der Reichweitenwert ist deutlich ruhiger.
+	Nutzen Sie eine große Mittelungszeit über die Taste ``[AVG]`` von 300s, um eine eralistische Reichweitenanzeige zu bekommen. Dadurch werden Lastspitzen im Stromverbrauch geglättet und der Reichweitenwert ist deutlich ruhiger.
 
 Um die Batterie-Werte anzeigen zu können, muss ein I2C-Modul **INA226** am I2C-Bus angeschlossen und auf die Adresse **0x41** eingestellt sein. Der Schunt kann für verschiedene maximale Stromstärken in Ampere [10|50|100|200|300|400|500] unter **Config - OBP Hardware** konfiguriert werden.
 
