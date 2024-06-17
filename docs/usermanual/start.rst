@@ -41,8 +41,8 @@ Abb.: Sichere und unsichere Bereiche
 .. warning::
 	Bitte beachten Sie, dass der 1Wire-Bus gegenüber Störungen nicht geschützt ist und entsprechend durch Schirmung geschützt werden muss. Daher sollte für die Leitungen des 1Wire-Bus nur abgeschirmte Kabel verwendet werden. ``GND`` darf mit keinen weiteren externen Schaltungsteilen verbunden werden, denn ``GND`` dient ausschließlich als Masseleitung für den 1Wire-Bus.
 
-Stromversorgung
----------------
+Stromversorgung 12V/24V
+-----------------------
 
 Die Stromversorgung des OBP60 erfolgt über den Steckverbinder CN2. Beim Zuschalten der Versorgungsspannung schaltet sich das OBP60 automatisch ein. Es gibt keinen gesonderten Ein- oder Ausschalter am Gerät. Benutzen Sie für die Stromversorgung die Anschlüsse ``+12V`` und ``GNDS``. Dabei wird ``+12V`` mit dem positiven Pol der Batterie verbunden und ``GNDS`` mit dem negativen Pol. Diese Anschlüsse für die Stromversorgung sind:
 
@@ -68,6 +68,14 @@ In einigen Situationen ist es günstiger, die Stromversorgung direkt über den N
 
 .. important::
 	Die interne Sicherung im OBP60 schützt nur das Gerät und nicht die Versorgungsleitungen! Daher sollte die bereitgestellte Stromversorgung des OBP60 im Bordnetz mit einer zusätzlichen Sicherung von mindestens 5A abgesichert werden. Das erfolgt typischerweise über die Schalttafel, über die die Stromkreise im Boot geschaltet werden können. So vermeiden Sie Brände zum Beispiel durch aufgescheuerte oder überhitzte Versorgungsleitungen.
+	
+Stromversorgung USB-C
+---------------------
+
+Das OBP60 kann auch über USB-C mit Strom versorgt werden. Der USB-Anschluss muss aber ausreichend Spannung von 5,1V und Strom bis 500 mA liefern können. Der USB-Anschluss am OBP60 verfügt über einen Rücklaufschutz, so dass gleichzeitig 12V/24V und 5V über den USB-Port eingespeist werden können. 
+
+.. note::
+	Viele USB-Computeranschlüsse verfügen nicht über einen ausreichend hohen Ausgangsstrom und teilen sich den Strom mit mehreren Anschlüssen. Das kann dazu führen, dass das OBP60 nicht direkt von einem PC aus mit Strom versorgt werden kann. Auch die Kabelqualität und Kabellänge ist entscheidend. Einige Kabel haben zu geringe Querschnitte und erzeugen einen hohen Spannungsabfall auf den Leitungen. Die Spannung ist dann am USB-C-Ausgang zu gering. Benutzen Sie in solchen Fällen den zusätzlichen 12V-Eingang an **CN2** zur Stromversorgung. 
 
 Einbau
 ------
