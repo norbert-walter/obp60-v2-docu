@@ -67,7 +67,7 @@ Abb.: Einstellungen für Gitpod
 Container-Start
 ^^^^^^^^^^^^^^^
 
-Nach der Bestätigung der Einstellungen für Gitpod wird ein neuer Container gestartet und allle notwendigen Softwarebestandteile in den Container geladen. Der Vorgang kann etwas Zeit beanspruchen.
+Nach der Bestätigung der Einstellungen für Gitpod wird ein neuer Container gestartet und allle notwendigen Softwarebestandteile in den Container geladen. Der Vorgang kann etwas Zeit beanspruchen. Am Ende sollten Sie einen fertigen Workplace vorfinden.
 
 .. image:: ../pics/Gitpod_Workplace.png
    :scale: 40%
