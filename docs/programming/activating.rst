@@ -78,8 +78,8 @@ Codeänderung und Kompilieren
 
 Um den Code kompilieren zu können müssen Sie folgende Befehle nacheinander in das Terminal-Fenster unten rechts einfügen. Sie könen dazu die Copy & Paste Funktion benutzen.
 
-cd /workspace/esp32-nmea2000-obp60
-bash /workspace/esp32-nmea2000-obp60/lib/obp60task/run
+	* cd /workspace/esp32-nmea2000-obp60
+	* bash /workspace/esp32-nmea2000-obp60/lib/obp60task/run
 
 Nach dem letzen Befehl werden in den Workplace alle notwendigen Tool-Chains und Bibliotheken geladen. Dieser Vorgang kann einige Minuten dauern. Danach beginnt der eigentliche Kompiliervorgang, der ebenfalls einiges an Zeit benötigt.
 
