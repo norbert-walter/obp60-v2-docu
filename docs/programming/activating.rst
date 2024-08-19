@@ -53,14 +53,14 @@ Sie gelangen dann auf die Startseite von Gitpod und müssen sich dort anmelden. 
 
 .. image:: ../pics/Gitpod_Login.png
    :scale: 40%
-Abb.: Login bei Gitpod
+Abb.: Login bei Gitpod mit Github-Account
 
 Gitpod-Settings
 ^^^^^^^^^^^^^^^
 
 Danach können Sie die Default-Einstellungen übernehmen. Sie sind schon korrekt auf das Projekt eingestellt.
 
-.. image:: ../pics/Gitpod_New_Workspace.png
+.. image:: ../pics/Gitpod_New_Workplace.png
    :scale: 40%
 Abb.: Einstellungen für Gitpod
 
@@ -69,14 +69,29 @@ Container-Start
 
 Nach der Bestätigung der Einstellungen für Gitpod wird ein neuer Container gestartet und allle notwendigen Softwarebestandteile in den Container geladen. Der Vorgang kann etwas Zeit beanspruchen.
 
-.. image:: ../pics/Gitpod_New_Workspace.png
+.. image:: ../pics/Gitpod_Workplace.png
    :scale: 40%
-Abb.: Einstellungen für Gitpod
+Abb.: Fertiger Workplace
 
 Codeänderung und Kompilieren
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Um den Code kompilieren zu können müssen Sie folgende Befehle nacheinander in das Terminal-Fenster unten rechts einfügen. Sie könen dazu die Copy & Paste Funktion benutzen.
 
+cd /workspace/esp32-nmea2000-obp60
+bash /workspace/esp32-nmea2000-obp60/lib/obp60task/run
+
+Nach dem letzen Befehl werden in den Workplace alle notwendigen Tool-Chains und Bibliotheken geladen. Dieser Vorgang kann einige Minuten dauern. Danach beginnt der eigentliche Kompiliervorgang, der ebenfalls einiges an Zeit benötigt.
+
+.. image:: ../pics/Gitpod_Compile_Project.png
+   :scale: 40%
+Abb.: Source-Code kompilieren
+
+Wenn der Kompiliervorgang erfolgreich abgeschlossen ist, sollten Sie folgende Meldung sehen. 
+
+.. image:: ../pics/Gitpod_Compile_Finish.png
+   :scale: 40%
+Abb.: Kompilierung beendet
 
 Binary-Download
 ^^^^^^^^^^^^^^^
