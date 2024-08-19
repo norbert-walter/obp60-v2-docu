@@ -1,13 +1,13 @@
 Web-Flashtool
 =============
 
-Mit dem Web-Flashtool kann die Firmware für das OBP60 mit einem Webbrowser über eine USB-Verbindung in das Gerät übertragen werden. Dazu wird das OBP60 über die USB-C-Buchse mit einem PC oder Laptop verbunden und der **Chrome-** oder **Edge-Webbrowser** gestartet. Im OBP60 ist ein USB-Seriell-Konverter integriert, über den die Datenübertragung durchgeführt wird. Mit dem USB-C-Kabel lässt sich nur die Firmware übertragen. Ein Betrieb des Gerätes über USB ist damit nicht möglich. Es wird lediglich die Firmware übertragen.
+Mit dem Web-Flashtool kann die Firmware für das OBP60 mit einem Webbrowser über eine USB-Verbindung in das Gerät übertragen werden. Dazu wird das OBP60 über die USB-C-Buchse mit einem PC oder Laptop verbunden und der **Chrome-** oder **Edge-Webbrowser** gestartet. Im OBP60 ist ein USB-Seriell-Konverter integriert, über den die Datenübertragung durchgeführt wird. Mit dem USB-C-Kabel lässt sich nur die Firmware übertragen. Ein Betrieb des Gerätes über USB ist damit nicht möglich.
 
 .. note::
 	Andere Webbrowser als **Chrome** oder **Edge** werden derzeit nicht unterstützt, da die Funktionalität für den Zugriff auf eine serielle Schnittstelle in anderen Webbrowsern nicht implementiert ist.
 	
 .. warning::
-	Beachten Sie, dass das Web-Flashtool nur für ein OBP60 verwendet werden kann, das als Prozessor einen **ESP32-S3 N16R8** und als E-Paper-Display ein **GDEY042T81** verwenden. Sofern Sie andere Hardware benutzen, müssen Sie sich eine angepasste Firmwareversion für ihre Hardware kompilieren. Folgen Sie den Anweisungen im Kapitel **Kompilieren und Download**.  
+	Beachten Sie, dass das Web-Flashtool nur für ein OBP60 V2.1 verwendet werden kann, das als Prozessor einen **ESP32-S3 N16R8** und als E-Paper-Display ein **GDEY042T81** verwenden. Sofern Sie andere Hardware benutzen, müssen Sie sich eine angepasste Firmwareversion für ihre Hardware kompilieren. Folgen Sie den Anweisungen im Kapitel **Kompilieren und Download**.  
 	
 Für den Flash-Vorgang benötigt man folgende Dinge:
 	* OBP60 (ESP32-S3 N16R8, E-Paper GDEY042T81)
