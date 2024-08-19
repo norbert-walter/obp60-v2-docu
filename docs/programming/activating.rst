@@ -1,7 +1,7 @@
 Kompilieren und Download
 ========================
 
-Die Firmware zum OBP60 kann recht einfach selber an eigene Bedürfnisse angepasst werden. Der Source-Code befindet sich zentral auf Github im Internet. Alle Software-Revisionen sind dort verfügbar. Es können bei Bedarf aktuelle oder ältere Versionen benutzt werden. Als Betriebssysteme werden Linux, Windows und Mac iOS unterstützt. Zum kompilieren der Firmware gibt es zwei Möglichkeiten.
+Die Firmware zum OBP60 kann recht einfach selber an eigene Bedürfnisse angepasst werden. Der Source-Code befindet sich zentral auf Github im Internet. Alle Software-Revisionen sind dort verfügbar. Es können bei Bedarf aktuelle oder ältere Versionen benutzt werden. Als Betriebssysteme werden Linux, Windows und Mac iOS unterstützt. Zum Kompilieren der Firmware gibt es zwei Möglichkeiten.
 
 	* Verwendung von Gitpod (webbasiert in Cloud)
 	* Visual Studio Code mit PlatformIO Plugin (lokal auf dem PC)
@@ -30,7 +30,7 @@ Github-Projekt forken
 Als erstes wird das Original-Projekt zum OBP60 in das eigene private Repository geforkt. Ein Fork ist so zu sagen eine Aufgabelung bzw. eine Abtrennung des Source-Codes in einen neuen Zweig. Durch einen Fork entsteht eine Kopie des Original-Projektes in ihrem privaten Repository. So können Sie Änderungen am Code vornehmen und in ihrem Repository speichern. Der neu entstandene Code ist dann eine Erweiterung oder Modifikation des Original-Projektes. Nur mit einem Fork ist es möglich, Code-Änderungen zu sichern.
 
 .. image:: ../pics/Github_Fork.png
-   :scale: 80%
+   :scale: 40%
 Abb.: Fork erstellen
 
 Melden Sie sich als erstes bei Github an und gehen dann in das `Original-Projekt zum OBP60`_ und drücken oben rechts auf die Schaltfläche **Fork**. Sie werden danach gefragt, ob sie der Quelle vertrauen und können dann einen neuen Projketnamen vergeben oder den originalen Projektnamen benutzen. Kopieren Sie sich danach den Link zu ihren Github-Projekt aus der Browser-Zeile. Sie sollten dann einen ähnlichen Link haben wie diesen:
@@ -47,12 +47,12 @@ Gitpod-Link öffnen
 
 Das Gitpad-Projekt wird über den Repositorynamen des Github-Projetes aufgerufen:
 
-https://gitpod.io/#https://github.com/*MyPrivatRepositoryName*/esp32-nmea2000-obp60
+https://gitpod.io/#https://github.com/MyPrivatRepositoryName/esp32-nmea2000-obp60
 
 Sie gelangen dann auf die Startseite von Gitpod und müssen sich dort anmelden. Loggen Sie sich dort mit dem bereits vorhandenen Github-Account ein.
 
 .. image:: ../pics/Gitpod_Login.png
-   :scale: 80%
+   :scale: 40%
 Abb.: Login bei Gitpod
 
 Gitpod-Settings
@@ -61,7 +61,7 @@ Gitpod-Settings
 Danach können Sie die Default-Einstellungen übernehmen. Sie sind schon korrekt auf das Projekt eingestellt.
 
 .. image:: ../pics/Gitpod_New_Workspace.png
-   :scale: 80%
+   :scale: 40%
 Abb.: Einstellungen für Gitpod
 
 Container-Start
@@ -70,7 +70,7 @@ Container-Start
 Nach der Bestätigung der Einstellungen für Gitpod wird ein neuer Container gestartet und allle notwendigen Softwarebestandteile in den Container geladen. Der Vorgang kann etwas Zeit beanspruchen.
 
 .. image:: ../pics/Gitpod_New_Workspace.png
-   :scale: 80%
+   :scale: 40%
 Abb.: Einstellungen für Gitpod
 
 Codeänderung und Kompilieren
