@@ -125,7 +125,7 @@ Source-Code Aktualisierung
 Wer die Source-Code-Änderungen in seinem Github-Repository speichern möchte, kann die Github-Funktionalität des Workplaces nutzen. Auf der linken Seite befindet sich ein Icon mit einer Pfadverzweigung und einer kleinen blauen Zahl daran. Dieses Icon teilt dem Benutzer mit, wie viele Änderungen an Dateien durch die Source-Code-Änderungen vorgenommen worden sind. Mit einem Klick auf das Icon kann man eine Beschreibung für die Änderungen hinzufügen. Wenn man dem Dialog rechts am blauen Commit-Button folgt, kann man **Commit und Push** anklicken. Dadurch werden die Code-Änderungen in das eigene Github-Repository hochgeladen und gesichert. Wer später dort weitermachen möchte wo er zuletzt aufgehört hat, kann der Vorgehensweise ab Punkt 2 folgen und den Gitpod-Link zu seinem Projekt öffnen.
 
 .. note::
-	Wenn Sie keinen Beschreibungstext zur Codeänderung hinzufügen, können Sie die Änderungen nicht commiten und nach Github hochladen.
+	Nur mit einem Beschreibungstext zur Codeänderung können Sie die Änderungen commiten und nach Github hochladen.
 
 .. image:: ../pics/Gitpod_Commit_Push.png
    :scale: 40%
