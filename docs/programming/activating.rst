@@ -15,13 +15,13 @@ Gitpod ist eine standardtisierte Entwicklungsumgebung, die webbasiert ist und in
 
 **Der Workflow bei Gitpod sieht folgendermaßen aus:**
 
-	**1.** OBP60-Github-Projekt in eigenes Github-Repository forken
-	**2.** Gitpod-Link zum Projekt öffnen
-	**3.** In Gitpod Entwicklungsumgebung und Hardware auswählen
-	**4.** Start eines Containers mit der Entwicklungsumgebung und Download des Projektes aus dem eigenen Github-Repository
-	**5.** Source-Code in der Entwicklungsumgebung ändern und kompilieren
-	**6.** Download des Binary-Files
-	**7.** Aktualisierung der Änderungen im eigenen Github-Repository
+	1. OBP60-Github-Projekt in eigenes Github-Repository forken
+	2. Gitpod-Link zum Projekt öffnen
+	3. In Gitpod Entwicklungsumgebung und Hardware auswählen
+	4. Start eines Containers mit der Entwicklungsumgebung und Download des Projektes aus dem eigenen Github-Repository
+	5. Source-Code in der Entwicklungsumgebung ändern und kompilieren
+	6. Download des Binary-Files
+	7. Aktualisierung der Änderungen im eigenen Github-Repository
 
    
 Github-Projekt forken
