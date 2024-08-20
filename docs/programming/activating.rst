@@ -117,7 +117,7 @@ Dabei haben die Files folgende Bedeutung:
 	* **obp60_s3-dev20240820-all.bin** - wie obp60_s3-all.bin
 	* **obp60_s3-dev20240820-update.bin** - Binärfile als Update (nur Firmware)
 	
-Je nachdem ob man mit Default-Einstellungen starten möchte oder mit den alten Einstellungen weiter arbeiten möchte, kann man eine der beiden fett hervorgehobenen Files herunter laden. Das geht am einfachsten, wenn man einen rechtsklick auf die Datei im Dateibaum macht und über **Download** die Datei herunterläd. Diese Datei kann man später bei OBP60 auf der Webseite :ref:`Update` hochladen und damit die Firmware aktualisieren.
+Je nachdem ob man mit Default-Einstellungen starten möchte oder mit den alten Einstellungen weiter arbeiten möchte, kann man eine der beiden fett hervorgehobenen Files herunter laden. Das geht am einfachsten, wenn man einen Rechtsklick auf die Datei im Dateibaum macht und über **Download** die Datei herunterläd. Diese Datei kann man später bei OBP60 auf der Webseite :ref:`Update` hochladen und damit die Firmware aktualisieren.
 
 Source-Code Aktualisierung
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
