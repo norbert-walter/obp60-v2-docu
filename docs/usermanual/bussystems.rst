@@ -4,9 +4,7 @@ Bussysteme
 .. image:: ../pics/NMEA_Bus.png
              :scale: 35%
 
-Das OBP60 unterstützt mehrere Bussysteme. In diesem Kapitel geht es ausschließlich um die Vernetzung der Komponenten. Die dafür notwendige Software-Konfiguration finden Sie im darauf folgenden Kapitel `Datenaustausch`_.
-
-.. _Datenaustausch: https://obp60-v2-docu.readthedocs.io/de/latest/usermanual/dataexchange.html
+Das OBP60 unterstützt mehrere Bussysteme. In diesem Kapitel geht es ausschließlich um die Vernetzung der Komponenten. Die dafür notwendige Software-Konfiguration finden Sie im darauf folgenden Kapitel :ref:`Datenaustausch`.
 
 * **MNEA2000** über CAN-Bus (isoliert)
 * **NMEA0183** über RS485/RS422-Bus (isoliert)
@@ -236,9 +234,8 @@ Abb.: RS422-Übertragungsmodell Sender - Empfänger
              :scale: 35%
 Abb.: Bus-Terminierung für NMEA0183
 
-Auf der Empfängerseite ist der NMEA0183-Bus terminiert. Im OBP60 findet man den Jumper ``T183`` für die Bus-Terminierung zwischen den Steckverbindern **CN1** und **CN2**. Der Jumper ist zu setzen, wenn das OBP60 als Empfänger von NMEA0183-Telegrammen als **Serial Direction Receive** konfiguriert wurde (siehe Kapitel `Config - Serial Port`_).
+Auf der Empfängerseite ist der NMEA0183-Bus terminiert. Im OBP60 findet man den Jumper ``T183`` für die Bus-Terminierung zwischen den Steckverbindern **CN1** und **CN2**. Der Jumper ist zu setzen, wenn das OBP60 als Empfänger von NMEA0183-Telegrammen als **Serial Direction Receive** konfiguriert wurde (siehe Kapitel :ref:`Config - Serial Port`).
 
-.. _Config - Serial Port: https://obp60-v2-docu.readthedocs.io/de/latest/usermanual/configuration.html#config-serial-port
 
 **Multiplexer**
 
