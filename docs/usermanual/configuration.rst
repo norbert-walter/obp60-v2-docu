@@ -1237,6 +1237,7 @@ Unter Data werden alle Sensordaten aller Bussysteme angezeigt, die derzeit verar
 .. note::
     Die Beschränkung der Datenanzeige auf aktuelle Daten führt dazu, dass sich die Anordnung der Daten ändert, wenn einige Sensordaten nicht mehr verfügbar sind. Diese Datenfelder werden dann ausgeblendet. Wenn Sie ein festes Anzeigeformat bevorzugen, lassen Sie sich am besten alle Daten anzeigen.  
 
+.. _Update:
 Update
 ------
 
