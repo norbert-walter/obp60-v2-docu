@@ -9,7 +9,7 @@ Die Firmware zum OBP60 kann recht einfach selber an eigene Bedürfnisse angepass
 	* **Visual Studio Code** mit **PlatformIO** Plugin (lokal auf dem PC)
 	
 .. note::
-	Die Arduino IDE wird nicht als Programmier-Etwicklungsumgebung verwendet, da der Source-Code sehr komplex ist und die Arduino IDE nicht über eine sinnvolle Querverweisfunktion verfügt. Notwendige Tool-Chains und Bibliotheken werden in PlatformIO in der richtigen Version hinzugelinkt und ermöglichen eine fehlerfreie Kompilierung.
+	Die Arduino IDE wird nicht als Programmier-Entwicklungsumgebung verwendet, da der Source-Code sehr komplex ist und die Arduino IDE nicht über eine sinnvolle Querverweisfunktion verfügt. Notwendige Tool-Chains und Bibliotheken werden in PlatformIO in der richtigen Version hinzugelinkt und ermöglichen eine fehlerfreie Kompilierung.
 	
 Gitpod
 ------
@@ -88,8 +88,8 @@ Der Code zum OBP60 befindet sich im Ordner: */ESP32-NMEA2000_OBP60/lib/obp60task
 
 Um den Code kompilieren zu können, müssen Sie folgende Befehle nacheinander in das Terminal-Fenster unten rechts einfügen. Sie können dazu die Copy & Paste Funktion benutzen.
 
-	* cd /workspace/esp32-nmea2000-obp60
-	* bash /workspace/esp32-nmea2000-obp60/lib/obp60task/run
+	* ``cd /workspace/esp32-nmea2000-obp60``
+	* ``bash /workspace/esp32-nmea2000-obp60/lib/obp60task/run``
 
 Nach dem letzten Befehl werden in den Workplace alle notwendigen Tool-Chains und Bibliotheken geladen. Dieser Vorgang kann einige Minuten dauern. Danach beginnt der eigentliche Kompiliervorgang, der ebenfalls einiges an Zeit benötigt.
 
@@ -276,7 +276,7 @@ Abb.: Source Code auf Github sichern
 Wer später dort weitermachen möchte, wo er zuletzt aufgehört hat, kann sich den letzten Stand auf Github in seinen Workplace herunterladen und aktualisieren. Dazu klicken Sie links auf das Pfadsymbol und dann oben in selben Fenster auf die kleinen 3 Punkte. Über **Pull** können Sie ihr Projekt aktualisieren.
 
 .. hint::
-	Es ist empfehlenswert vor Beginn jeder Codeänderung einen **Pull** durchzuführen, um ihr Projekt auf den aktuellen Stand zu setzen, denn ein nachträglich ausgeführtes **Pull** würde den bereits veränderten Code überschreiben.
+	Es ist empfehlenswert vor Beginn jeder Codeänderung einen **Pull** durchzuführen, um das Projekt auf den aktuellen Stand zu setzen, denn ein nachträglich ausgeführtes **Pull** würde den bereits veränderten Code überschreiben.
 	
 .. image:: ../pics/VSC_Pull.png
    :scale: 40%
