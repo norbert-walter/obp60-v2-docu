@@ -105,6 +105,8 @@ Auf der Konfigurationsseite sind im oberen Bereich verschiedene Tasten zu sehen.
 * **Import** - Import einer Konfiguration über ein JSON-File
 * **Factory Reset** - Rücksetzen aller Einstellungen auf Werkszustand
 
+.. _Config - System:
+
 Config - System
 ---------------
 
@@ -156,6 +158,8 @@ Unter **System** werden grundlegende Einstellungen vorgenommen wie:
 .. hint::
 	Wenn Sie beabsichtigen, einen NMEA0183-Datenaustausch über die USB-C-Schnittstelle  durchzuführen, sollten Sie den **Log Level** auf ``off`` stellen. Beachten Sie das nicht, kann die Auswertung von Logging-Ausgaben sehr unübersichtlich werden, da Logging-Daten und NMEA0183-Telegramme dann gemischt ausgegeben werden. Wenn Sie nur Logging-Ausgaben sehen wollen, stellen Sie **NMEA to USB** und **NMEA from USB** auf ``off``.
 
+.. _Config - Converter:
+
 Config - Converter
 ------------------
 
@@ -178,6 +182,8 @@ Mit den nachfolgenden Einstellungen können Sie die Funktion des NMEA2000-Gatewa
 		* ``on`` - Ausgabe der NMEA2000-Daten
 		* ``off`` - Keine Ausgabe der NMEA2000-Daten
 		
+.. _Config - USB Port:
+
 Config - USB Port
 -----------------
 
@@ -275,6 +281,8 @@ Im Eingabefeld werden die Kurzbezeichner der NMEA0183-Telegramme eingetragen, me
 	
 Die genaue Bedeutung der Kurzbezeichner ist `hier`_ erklärt.
 
+.. _Config - TCP Server:
+
 Config - TCP Server
 -------------------
 
@@ -332,6 +340,8 @@ Die genaue Bedeutung der Kurzbezeichner ist `hier`_ erklärt.
     * ``on`` - Der TCP-Server kann Seasmart-Daten senden und empfangen
     * ``off`` - Seasmart wird vom TCP-Server nicht unterstützt
 	
+.. _Config - TCP Client:
+
 Config - TCP Client
 -------------------
 
@@ -390,6 +400,8 @@ Die genaue Bedeutung der Kurzbezeichner ist `hier`_ erklärt.
     * ``on`` - Der TCP-Server kann SeaSmart-Daten senden und empfangen
     * ``off`` - SeaSmart wird vom TCP-Server nicht unterstützt
 	
+.. _Config - WiFi Client:
+
 Config - WiFi Client
 --------------------
 
@@ -440,6 +452,8 @@ Die Einstellung der Einheiten wird unter **OBP Units** vorgenommen. Für die jew
     * ``DE`` - Deutsches Datumsformat ``31.12.2024``
     * ``GB`` - Britisches Datumsformat ``31/12/2024``
     * ``US`` - US-Datumsformat ``12/31/2024``
+
+.. _Config - OBP Hardware:
 
 Config - OBP Hardware
 ---------------------
@@ -1132,6 +1146,8 @@ Abb.: Schaltung INA226 Generatormonitoring
 
 .. warning::
 	Die Gefahren und Risiken bei der Benutzung des INA226 zum Batteriemonitoring sind dieselben wie im Kapitel **Battery** beschrieben. Folgen Sie den Empfehlungen und beachten Sie die Gefahren.
+
+.. _XDR:
 
 XDR
 ---

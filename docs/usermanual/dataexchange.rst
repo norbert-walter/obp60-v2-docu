@@ -15,9 +15,7 @@ Die Firmware des OBP60 besteht aus zwei Teilen. Der erste Teil ist das **NMEA200
              :scale: 60%	
 Abb.: Datenflussschema
 
-Die gesamte Datenverarbeitung sämtlicher Bussysteme und Konvertierungen ist Bestandteil des NMEA2000-Gateways. Neben NMEA2000 (**CAN**) und NMEA0183 (**RS485**) werden weitere Bussysteme wie **I2C** und **1Wire** unterstützt. Die Hauptaufgabe des NMEA2000-Gateways besteht darin, alle ankommenden Daten der Busssysteme zu empfangen und in einem gemeinsamen Daten-Pool abzubilden. Diese Daten können über die Webseite **Data** eingesehen werden. Erweiterte Sensorik, die nicht Bestandteil von NMEA2000 und NMEA0183 sind, können über I2C und 1Wire eingefügt werden. So lassen sich preisgünstige Sensoren nutzen. Damit die Daten der erweiterten Sensorik im NMEA2000- und NMEA0183-Netzwerk genutz werden können, werden sie über NMEA0183 als universelle `XDR-Datensätze`_ in den Daten-Pool eingefügt. Als XDR-Datensätze können die Daten dann auch nach NMEA2000 konvertiert werden, sofern im Konverter entsprechende Übersetzungen implementiert sind. Als Ausgabeschnittstellen stehen CAN, RS485 und WiFi zur Verfügung. Über die CAN-Schnittstelle lassen sich nur NMEA2000-Daten austauschen. Über RS485 und WiFi (TCP) lassen sich sowohl NMEA0183-Daten als auch NMEA2000-Daten austauschen, sofern die NMEA2000-Daten in SeaSmart-Telegrammen durch NMEA0183 getunnelt werden.
-
-.. _XDR-Datensätze: https://obp60-v2-docu.readthedocs.io/de/latest/usermanual/configuration.html#xdr
+Die gesamte Datenverarbeitung sämtlicher Bussysteme und Konvertierungen ist Bestandteil des NMEA2000-Gateways. Neben NMEA2000 (**CAN**) und NMEA0183 (**RS485**) werden weitere Bussysteme wie **I2C** und **1Wire** unterstützt. Die Hauptaufgabe des NMEA2000-Gateways besteht darin, alle ankommenden Daten der Busssysteme zu empfangen und in einem gemeinsamen Daten-Pool abzubilden. Diese Daten können über die Webseite **Data** eingesehen werden. Erweiterte Sensorik, die nicht Bestandteil von NMEA2000 und NMEA0183 sind, können über I2C und 1Wire eingefügt werden. So lassen sich preisgünstige Sensoren nutzen. Damit die Daten der erweiterten Sensorik im NMEA2000- und NMEA0183-Netzwerk genutz werden können, werden sie über NMEA0183 als universelle :ref:`XDR`-Datensätze in den Daten-Pool eingefügt. Als XDR-Datensätze können die Daten dann auch nach NMEA2000 konvertiert werden, sofern im Konverter entsprechende Übersetzungen implementiert sind. Als Ausgabeschnittstellen stehen CAN, RS485 und WiFi zur Verfügung. Über die CAN-Schnittstelle lassen sich nur NMEA2000-Daten austauschen. Über RS485 und WiFi (TCP) lassen sich sowohl NMEA0183-Daten als auch NMEA2000-Daten austauschen, sofern die NMEA2000-Daten in SeaSmart-Telegrammen durch NMEA0183 getunnelt werden.
 
 Der Datenaustausch im OBP60 kann auf verschiedene Weise erfolgen. Grundsätzlich stehen mehrere Übertragungsarten über verschiedene Übertragungswege zur Verfügung:
 
@@ -90,9 +88,7 @@ Der kabelgebundene NMEA2000-Bus ist der aktuelle Standard in der Bootsvernetzung
              :scale: 60%	
 Abb.: NMEA2000-Bussystem mit Sensoren und Anzeigegeräten
 
-Für den Betrieb von NMEA2000 muss nichts speziell konfiguriert werden. Die Standardeinstellungen sind so gesetzt, dass ein Betrieb problemlos möglich ist. Bei Bedarf kann das Senden von NMEA2000-Telegrammen unterbunden werden. Dann ist nur ein Empfang von NMEA2000-Telegrammen möglich. Die Einstellungen zu NMEA2000 findet man unter `Config - Converter`_.
-
-.. _Config - Converter: https://obp60-v2-docu.readthedocs.io/de/latest/usermanual/configuration.html#config-converter
+Für den Betrieb von NMEA2000 muss nichts speziell konfiguriert werden. Die Standardeinstellungen sind so gesetzt, dass ein Betrieb problemlos möglich ist. Bei Bedarf kann das Senden von NMEA2000-Telegrammen unterbunden werden. Dann ist nur ein Empfang von NMEA2000-Telegrammen möglich. Die Einstellungen zu NMEA2000 findet man unter :ref:`Config - Converter`.
 
 NMEA2000 - WiFi via SeaSmart
 ----------------------------
@@ -128,50 +124,43 @@ Abb.: Datenübertragung via WiFi M5Stack - OBP60
 	
 Nachfolgend ist ein Konfigurationsbeispiel für die obere Abbildung gezeigt, in dem ein Datenaustausch über WiFi zwischen zwei OBP60 stattfindet. Das Gerät 1 ist dabei als TCP-Server und Gerät 2 als TCP-Client konfiguriert. Das Gerät 2 bucht sich in das WiFi-Netzwerk vom Gerät 1 ein und tauscht darüber bidirektional Daten aus.
 
-+-------------------------+---------------------+---------------------+
-|Einstellung              |Gerät 1              |Gerät 2              |
-+=========================+=====================+=====================+
-|`Config - System`_       |                     |                     |
-+-------------------------+---------------------+---------------------+
-|System Name              |OBP60-1              |OBP60-2              |
-+-------------------------+---------------------+---------------------+
-|ApPassword               |11111111             |22222222             |
-+-------------------------+---------------------+---------------------+
-|ApIP                     |192.168.15.1         |192.168.16.1         |
-+-------------------------+---------------------+---------------------+
-|`Config - TCP Server`_   |                     |                     |
-+-------------------------+---------------------+---------------------+
-|SeaSmart Out             |on                   |off                  |
-+-------------------------+---------------------+---------------------+
-|`Config - TCP Client`_   |                     |                     |
-+-------------------------+---------------------+---------------------+
-|Enable                   |off                  |on                   |
-+-------------------------+---------------------+---------------------+
-|Remote Address           |---                  |192.168.15.1         |
-+-------------------------+---------------------+---------------------+
-|SeaSamart Out            |off                  |on                   |
-+-------------------------+---------------------+---------------------+
-|`Config - WiFi Client`_  |                     |                     |
-+-------------------------+---------------------+---------------------+
-|WiFi Client              |off                  |on                   |
-+-------------------------+---------------------+---------------------+
-|WiFi Client SSID         |---                  |OBP60-1              |
-+-------------------------+---------------------+---------------------+
-|WiFi Client Password     |---                  |11111111             |
-+-------------------------+---------------------+---------------------+
-
-.. _Config - System: https://obp60-v2-docu.readthedocs.io/de/latest/usermanual/configuration.html#config-system
-.. _Config - TCP Server: https://obp60-v2-docu.readthedocs.io/de/latest/usermanual/configuration.html#config-tcp-server
-.. _Config - TCP Client: https://obp60-v2-docu.readthedocs.io/de/latest/usermanual/configuration.html#config-tcp-client
-.. _Config - WiFi Client: https://obp60-v2-docu.readthedocs.io/de/latest/usermanual/configuration.html#config-wifi-client
++---------------------------+---------------------+---------------------+
+|Einstellung                |Gerät 1              |Gerät 2              |
++===========================+=====================+=====================+
+|:ref:`Config - System`     |                     |                     |
++---------------------------+---------------------+---------------------+
+|System Name                |OBP60-1              |OBP60-2              |
++---------------------------+---------------------+---------------------+
+|ApPassword                 |11111111             |22222222             |
++---------------------------+---------------------+---------------------+
+|ApIP                       |192.168.15.1         |192.168.16.1         |
++---------------------------+---------------------+---------------------+
+|:ref:`Config - TCP Server` |                     |                     |
++---------------------------+---------------------+---------------------+
+|SeaSmart Out               |on                   |off                  |
++---------------------------+---------------------+---------------------+
+|:ref:`Config - TCP Client` |                     |                     |
++---------------------------+---------------------+---------------------+
+|Enable                     |off                  |on                   |
++---------------------------+---------------------+---------------------+
+|Remote Address             |---                  |192.168.15.1         |
++---------------------------+---------------------+---------------------+
+|SeaSamart Out              |off                  |on                   |
++---------------------------+---------------------+---------------------+
+|:ref:`Config - WiFi Client`|                     |                     |
++---------------------------+---------------------+---------------------+
+|WiFi Client                |off                  |on                   |
++---------------------------+---------------------+---------------------+
+|WiFi Client SSID           |---                  |OBP60-1              |
++---------------------------+---------------------+---------------------+
+|WiFi Client Password       |---                  |11111111             |
++---------------------------+---------------------+---------------------+
 
 
 NMEA0183 - Kabelgebunden
 ------------------------
 
-Bei der kabelgebunden Datenübertragung für NMEA0183 handelt es sich um eine Simplex-Übertragung. Das bedeutet, dass man entweder senden oder empfangen kann. Als Default ist das OBP60 auf Empfang eingestellt. Es ist aber auch möglich, NMEA0183-Daten zu senden. Die Einstellung dazu erfolgt unter `Config - Serial Port`_. Über **Serial Direction** kann die Datenrichtung eingestellt werden.
-
-.. _Config - Serial Port: https://obp60-v2-docu.readthedocs.io/de/latest/usermanual/configuration.html#config-serial-port
+Bei der kabelgebunden Datenübertragung für NMEA0183 handelt es sich um eine Simplex-Übertragung. Das bedeutet, dass man entweder senden oder empfangen kann. Als Default ist das OBP60 auf Empfang eingestellt. Es ist aber auch möglich, NMEA0183-Daten zu senden. Die Einstellung dazu erfolgt unter :ref:`Config - Serial Port`. Über **Serial Direction** kann die Datenrichtung eingestellt werden.
 
 An dieser Stelle wird ein Beispiel gezeigt wie Daten von einem NMEA0183-Multiplexer in ein OBP60 eingebunden werden können. Dabei sammelt der Multiplexer alle Sensordaten über die Eingänge ein und erzeugt einen zusammengefassten Datenstrom an seinem Ausgang. Die Daten werden lesend vom OBP60 empfangen und können dann entsprechend verwendet werden.
 
@@ -182,19 +171,17 @@ An dieser Stelle wird ein Beispiel gezeigt wie Daten von einem NMEA0183-Multiple
              :scale: 40%
 Abb.: NMEA0183-Verbindung zu einem Multiplexer (empfangen)
 
-+-------------------------+---------------------+
-|Einstellung              |OBP60                |
-+=========================+=====================+
-|`Config - Serial Port`_  |                     |
-+-------------------------+---------------------+
-|Serial Direction         |receive              |
-+-------------------------+---------------------+
-|Serial Baud Rate         |115200               |
-+-------------------------+---------------------+
-|Serial to NMEA2000       |on                   |
-+-------------------------+---------------------+
-
-.. _Config - Serial Port: https://obp60-v2-docu.readthedocs.io/de/latest/usermanual/configuration.html#config-serial-port
++---------------------------+---------------------+
+|Einstellung                |OBP60                |
++===========================+=====================+
+|:ref:`Config - Serial Port`|                     |
++---------------------------+---------------------+
+|Serial Direction           |receive              |
++---------------------------+---------------------+
+|Serial Baud Rate           |115200               |
++---------------------------+---------------------+
+|Serial to NMEA2000         |on                   |
++---------------------------+---------------------+
 
 Zum Senden von NMEA0183-Daten hier ein Beispiel für einen Autopiloten. Dabei werden Daten aus den verwendeten Kommunikationsmöglichkeiten genutzt und diese an einen Autopiloten gesendet. Die Ausgabe der Daten erfolgt über einen Filter, so dass nur relevante Informationen den Autopiloten erreichen. In dem gezeigten Beispiel verwendet der Autopilot eine NMEA0183-Eingang nach RS422 oder RS485 mit einer Schnittstellengeschwindigkeit von 4800 Bd. Unter Umständen müssen Sie die Geschwindigkeit an ihren Autopiloten anpassen.
 
@@ -202,24 +189,21 @@ Zum Senden von NMEA0183-Daten hier ein Beispiel für einen Autopiloten. Dabei we
              :scale: 40%
 Abb.: NMEA0183-Verbindung zu einem Autopiloten (senden)
 
-+-------------------------+---------------------+
-|Einstellung              |OBP60                |
-+=========================+=====================+
-|`Config - Serial Port`_  |                     |
-+-------------------------+---------------------+
-|Serial Direction         |send                 |
-+-------------------------+---------------------+
-|Serial Baud Rate         |4800                 |
-+-------------------------+---------------------+
-|Serial to NMEA2000       |on                   |
-+-------------------------+---------------------+
-|Serial Read Filter       |---                  |
-+-------------------------+---------------------+
-|Serial Write Filter      |XTE,XDR,RMB,RMC,ROT  |
-+-------------------------+---------------------+
-
-
-.. _Config - Serial Port: https://obp60-v2-docu.readthedocs.io/de/latest/usermanual/configuration.html#config-serial-port
++---------------------------+---------------------+
+|Einstellung                |OBP60                |
++===========================+=====================+
+|:ref:`Config - Serial Port`|                     |
++---------------------------+---------------------+
+|Serial Direction           |send                 |
++---------------------------+---------------------+
+|Serial Baud Rate           |4800                 |
++---------------------------+---------------------+
+|Serial to NMEA2000         |on                   |
++---------------------------+---------------------+
+|Serial Read Filter         |---                  |
++---------------------------+---------------------+
+|Serial Write Filter        |XTE,XDR,RMB,RMC,ROT  |
++---------------------------+---------------------+
 
 Dem Autopiloten werden nur die NMEA0183-Telegramme **XTE**, **XDR**, **RMB**, **RMC** und **ROT** gesendet.
 
@@ -255,11 +239,11 @@ Für alle oben aufgeführten Endpunkte sind folgende Einstellungen im OBP60 vorz
 +-------------------------+---------------------+
 |Einstellung              |OBP60                |
 +=========================+=====================+
-|`Config - System`_       |                     |
+|:ref:`Config - System`   |                     |
 +-------------------------+---------------------+
 |Log Level                |off                  |
 +-------------------------+---------------------+
-|`Config - USB Port`_     |                     |
+|:ref:`Config - USB Port` |                     |
 +-------------------------+---------------------+
 |USB Mode                 |nmea0183             |
 +-------------------------+---------------------+
@@ -271,9 +255,6 @@ Für alle oben aufgeführten Endpunkte sind folgende Einstellungen im OBP60 vorz
 +-------------------------+---------------------+
 |USB to NMEA2000          |on                   |
 +-------------------------+---------------------+
-
-.. _Config - System: https://obp60-v2-docu.readthedocs.io/de/latest/usermanual/configuration.html#config-system
-.. _Config - USB Port: https://obp60-v2-docu.readthedocs.io/de/latest/usermanual/configuration.html#config-usb-port
 
 .. hint::
 	Achten Sie darauf, dass der **Log Level** auf ``off`` gestellt ist. Anderenfalls kann es sonst zu Störungen in der Kommunikation kommen, da Logging-Ausgaben in den Datenstrom eingespeist werden, die ebenfalls über USB-C ausgegeben werden.
@@ -444,19 +425,17 @@ Abb.: I2C-Anbindung magnetischer Winkelmesser AS5600
 	
 Folgende Einstellungen sind im OBP60 vorzunehmen.
 
-+-------------------------+---------------------+
-|Einstellung              |OBP60                |
-+=========================+=====================+
-|`Config - OBP Hardware`_ |                     |
-+-------------------------+---------------------+
-|Rot. Sensor              |AS5600               |
-+-------------------------+---------------------+
-|Rot. Function            |Rudder               |
-+-------------------------+---------------------+
-|Rot. Offset              |0                    |
-+-------------------------+---------------------+
-
-.. _Config - OBP Hardware: https://obp60-v2-docu.readthedocs.io/de/latest/usermanual/configuration.html#config-obp-hardware
++----------------------------+---------------------+
+|Einstellung                 |OBP60                |
++============================+=====================+
+|:ref:`Config - OBP Hardware`|                     |
++----------------------------+---------------------+
+|Rot. Sensor                 |AS5600               |
++----------------------------+---------------------+
+|Rot. Function               |Rudder               |
++----------------------------+---------------------+
+|Rot. Offset                 |0                    |
++----------------------------+---------------------+
 
 Je nach Erfordernissen muss noch der Offset über **Rot. Offset** eingestellt werden.
 
@@ -485,13 +464,11 @@ Im unteren Bild ist eine Schaltung zu sehen in der 4 DS18B20 verwendet werden. D
              :scale: 50%
 Abb.: 1Wire-Anbindung von externen Temperatur-Sensoren (direkt versorgt)
 
-+-------------------------+---------------------+
-|Einstellung              |OBP60                |
-+=========================+=====================+
-|`Config - OBP Hardware`_ |                     |
-+-------------------------+---------------------+
-|Temp. Sensor             |DS18B20              |
-+-------------------------+---------------------+
-
-.. _Config - OBP Hardware: https://obp60-v2-docu.readthedocs.io/de/latest/usermanual/configuration.html#config-obp-hardware
++----------------------------+---------------------+
+|Einstellung                 |OBP60                |
++============================+=====================+
+|:ref:`Config - OBP Hardware`|                     |
++----------------------------+---------------------+
+|Temp. Sensor                |DS18B20              |
++----------------------------+---------------------+
 
