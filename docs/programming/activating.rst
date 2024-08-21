@@ -1,10 +1,13 @@
 Kompilieren und Download
 ========================
 
-Die Firmware zum OBP60 kann recht einfach selber an eigene Bedürfnisse angepasst werden. Der Source-Code befindet sich zentral auf Github im Internet. Alle Software-Revisionen sind dort verfügbar. Es können bei Bedarf aktuelle oder ältere Versionen benutzt werden. Als Betriebssysteme werden Linux, Windows und Mac iOS unterstützt. Zum Kompilieren der Firmware gibt es zwei Möglichkeiten.
+Die Firmware zum OBP60 kann recht einfach selber an eigene Bedürfnisse angepasst werden. Als Programmier-Etwicklungsumgebung wird PlatformIO verwendet. Der Source-Code befindet sich zentral auf Github im Internet. Alle Software-Revisionen sind dort verfügbar. Es können bei Bedarf aktuelle oder ältere Versionen benutzt werden. Als Betriebssysteme werden Linux, Windows und Mac iOS unterstützt. Zum Kompilieren der Firmware gibt es zwei Möglichkeiten.
 
 	* Verwendung von **Gitpod** (webbasiert in Cloud)
 	* **Visual Studio Code** mit **PlatformIO** Plugin (lokal auf dem PC)
+	
+.. note::
+	Die Arduino IDE wird nicht als Programmier-Etwicklungsumgebung verwendet, da der Source-Code sehr komplex ist und die Arduino IDE nicht über eine sinnvolle Querverweisfunktion verfügt. Notwendige Tool-Chains und Bibliotheken werden in PlatformIO in der richtigen Version hinzugelinkt und ermöglichen eine fehlerfreie Kompilierung.
 	
 Gitpod
 ------
@@ -117,7 +120,7 @@ Dabei haben die Files folgende Bedeutung:
 	* **obp60_s3-dev20240820-all.bin** - wie obp60_s3-all.bin
 	* **obp60_s3-dev20240820-update.bin** - Binärfile als Update (nur Firmware)
 	
-Je nachdem ob man mit Default-Einstellungen starten möchte oder mit den alten Einstellungen weiter arbeiten möchte, kann man eine der beiden fett hervorgehobenen Files herunter laden. Das geht am einfachsten, wenn man einen Rechtsklick auf die Datei im Dateibaum macht und über **Download** die Datei herunterläd. Diese Datei kann man später bei OBP60 auf der Webseite :ref:`Update` hochladen und damit die Firmware aktualisieren.
+Je nachdem ob man mit Default-Einstellungen starten möchte oder mit den alten Einstellungen weiter arbeiten möchte, kann man eine der beiden fett hervorgehobenen Files herunter laden. Das geht am einfachsten, wenn man einen Rechtsklick auf die Datei im Dateibaum macht und über **Download** die Datei herunterläd. Diese Datei kann man später beim OBP60 auf der Webseite :ref:`Update` hochladen und damit die Firmware aktualisieren.
 
 Source-Code Aktualisierung
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
