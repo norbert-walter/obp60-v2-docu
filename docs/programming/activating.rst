@@ -32,7 +32,7 @@ Github-Projekt forken
 
 Als erstes wird das Original-Projekt zum OBP60 in das eigene private Repository geforkt. Ein Fork ist so zu sagen eine Aufgabelung bzw. eine Abtrennung des Source-Codes in einen neuen Zweig. Durch einen Fork entsteht eine Kopie des Original-Projektes in ihrem privaten Repository. So können Sie Änderungen am Code vornehmen und in ihrem Repository speichern. Der neu entstandene Code ist dann eine Erweiterung oder Modifikation des Original-Projektes.
 
-.. note::
+.. hint::
 	Nur mit einem Fork ist es möglich, eigene Code-Änderungen zu sichern.
 
 .. image:: ../pics/Github_Fork.png
@@ -116,7 +116,7 @@ Dabei haben die Files folgende Bedeutung:
 	* partitions.bin - Partitionstabelle für den Flash Speicher
 	* firmware.bin - Binärfile als Update (nur Firmware)
 	* firmware.elf - ELF-File für Fehlerverfolgung
-	* obp60_s3-all.bin - Binärfile mit allen Bestandteilen (Bootloader, Patitionstabelle, Firmware, Default-Settings)
+	* obp60_s3-all.bin - Binärfile mit allen Bestandteilen (Bootloader, Partitionstabelle, Firmware, Default-Settings)
 	* **obp60_s3-dev20240820-all.bin** - wie obp60_s3-all.bin
 	* **obp60_s3-dev20240820-update.bin** - Binärfile als Update (nur Firmware)
 	
@@ -127,10 +127,155 @@ Source-Code Aktualisierung
 
 Wer die Source-Code-Änderungen in seinem Github-Repository speichern möchte, kann die Github-Funktionalität des Workplaces nutzen. Auf der linken Seite befindet sich ein Icon mit einer Pfadverzweigung und einer kleinen blauen Zahl daran. Dieses Icon teilt dem Benutzer mit, wie viele Änderungen an Dateien durch die Source-Code-Änderungen vorgenommen worden sind. Mit einem Klick auf das Icon kann man eine Beschreibung für die Änderungen hinzufügen. Wenn man dem Dialog rechts am blauen Commit-Button folgt, kann man **Commit und Push** anklicken. Dadurch werden die Code-Änderungen in das eigene Github-Repository hochgeladen und gesichert. Wer später dort weitermachen möchte wo er zuletzt aufgehört hat, kann der Vorgehensweise ab Punkt 2 folgen und den Gitpod-Link zu seinem Projekt öffnen.
 
-.. note::
+.. hint::
 	Nur mit einem Beschreibungstext zur Codeänderung können Sie die Änderungen commiten und nach Github hochladen.
 
 .. image:: ../pics/Gitpod_Commit_Push.png
    :scale: 40%
 Abb.: Source Code auf Github sichern
 
+Visual Studio Code / PlatformIO
+-------------------------------
+
+**Visual Studio Code** (VSC) ist eine weit verbreitete Software-Entwicklungsumgebung, die eine Vielzahl an Programmiersprachen unterstützt und die es für verschiedene Betriebssysteme gibt. Die Entwicklungsumgebung läuft dabei auf einem lokalen PC. Zur Programmierung von Embedded Elektronik auf Mikrocontrollerbasis in C und C++ wurde das Plugin **PlatformIO** für Visual Studio Code geschaffen. Damit ist es unkompliziert möglich, eine Softwareentwicklung für Hardware durchzuführen. In einer umfangreichen Datenbank sind eine Vielzahl an Elektronik-Hardware-Boards aufgeführt. Passend zum Hardware-Board werden die notwendige Tool-Chains und Software-Bibliotheken einem Projekt hinzugefügt, ohne dass man sich um Details kümmern muss.
+
+.. hint::
+	Wer an einer Weiterentwicklung der Firmware zum OBP60 interessiert ist, sollte Visual Studio Code / PlatformIO benutzen. Visual Studio Code verfügt über Mechanismen, mit denen Softwareänderungen über Github eingepflegt und verfolgt werden können.
+	
+Wie man Visual Studio Code installiert und danach das Plugin PlatformIO einrichtet ist in dieser `Anleitung`_ beschrieben. Sie finden auch im Internet eine Menge an Beschreibungen zu diesem Thema.
+
+.. _Anleitung: https://www.az-delivery.de/blogs/azdelivery-blog-fur-arduino-und-raspberry-pi/plattformio
+	
+**Der Workflow für Visual Studio Code sieht folgendermaßen aus:**
+
+	1. OBP60-Github-Projekt in eigenes Github-Repository forken
+	2. Projekt in Visual Studio Code importieren
+	3. Source-Code in der Entwicklungsumgebung ändern und kompilieren
+	4. Flashen der Firmware auf der Zielhardware
+	5. Debuggen der Firmware über serielle USB-Verbindung
+	6. Aktualisierung der Änderungen im eigenen Github-Repository
+	
+Github-Projekt forken
+^^^^^^^^^^^^^^^^^^^^^
+
+Als erstes wird das Original-Projekt zum OBP60 in das eigene private Repository geforkt. Ein Fork ist so zu sagen eine Aufgabelung bzw. eine Abtrennung des Source-Codes in einen neuen Zweig. Durch einen Fork entsteht eine Kopie des Original-Projektes in ihrem privaten Repository. So können Sie Änderungen am Code vornehmen und in ihrem Repository speichern. Der neu entstandene Code ist dann eine Erweiterung oder Modifikation des Original-Projektes.
+
+.. hint::
+	Nur mit einem Fork ist es möglich, eigene Code-Änderungen zu sichern.
+
+.. image:: ../pics/Github_Fork.png
+   :scale: 40%
+Abb.: Fork erstellen
+
+Melden Sie sich als erstes bei Github an und gehen dann in das `Original-Projekt zum OBP60`_ und drücken oben rechts auf die Schaltfläche **Fork**. Sie werden danach gefragt, ob sie der Quelle vertrauen und können dann einen neuen Projektnamen vergeben oder den originalen Projektnamen benutzen. Kopieren Sie sich danach den Link zu ihrem Github-Projekt aus der Browser-Zeile. Sie sollten dann einen ähnlichen Link haben wie diesen:
+
+.. _Original-Projekt zum OBP60: https://github.com/norbert-walter/esp32-nmea2000-obp60
+
+``https://github.com/MyPrivatRepositoryName/esp32-nmea2000-obp60``
+
+Den Part ``MyPrivatRepositoryName`` wird durch ihren eigenen Repository-Namen ersetzt.
+
+Projekt in VSC importieren
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Zu Beginn finden Sie einen leeren Workplace vor. Drücken Sie auf den Button **Clone Repository** und tragen in der oberen Zeile den Link zu ihrem Github-Projekt ein. Danach klicken Sie auf die darunter liegende Zeile **Clone from Github**.
+
+.. image:: ../pics/VSC_Clone_Repository.png
+   :scale: 40%
+Abb.: Projekt clonen
+
+Damit beginnt der Download des Projektes und im Workplace erscheint auf der linken Seite nach einiger Zeit das Projekt mit dem Dateibaum. Als letztes öffnet sich auf rechten Seite ein File mit dem Namen **platformio.ini**. Dieses File schleißen Sie oben rechts am Fenster über das Kreuz. Es handelt sich um das Konfigurationsfile zum NMEA2000-Gateway, das wir in unserem Fall nicht benötigen.
+
+.. image:: ../pics/VSC_Close_Ini.png
+   :scale: 40%
+Abb.: Konfigurationsfile schließen
+
+Gehen Sie gehen dann in den Dateibaum und öffnen den Pfad: ``/esp32-nmea2000/lib/obp60task`` und öffnen dort die Datei **platformio.ini**, die zum OBP60-Projekt gehört. Ändern Sie in der Datei die serielle Schnittstelle entsprechend zum Port an dem Sie das OBP60 angeschlossen haben. Die Schnittstellenbezeichnungen unter Windows und Linux sind dabei unterschiedlich.
+
+	* Windows: COMx
+	* Linux: /dev/ttyACM0
+	
+.. note::
+	Für Linux und Win10/11 sind entsprechende USB-Treiber im Betriebssystem integriert. Für die älteren Win7/8-Versionen benötigen Sie `zusätzliche Treiber`_, um die USB-Schnittstelle benutzen zu können.
+	
+.. _zusätzliche Treiber: https://github.com/kutukvpavel/Esp32-Win7-VCP-drivers
+
+.. image:: ../pics/VSC_Close_Port.png
+   :scale: 40%
+Abb.: Konfigurationsfile schließen und seriellen Port einstellen
+
+Wählen Sie danach die zu benutzende Hardware-Umgebung aus, indem Sie auf die untere Zeile klicken. Es öffnet sich dann oben ein Fenster in dem Sie die Einstellung **env:obp60_s3** auswählen. Damit wird sichergestellt, dass die Firmware für die Hardware OBP60 erstellt wird.
+
+.. image:: ../pics/VSC_Select_Hardware.png
+   :scale: 40%
+Abb.: Hardware-Umgebung auswählen
+
+Codeänderung und Kompilieren
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Wenn Sie Code-Änderungen abgeschlossen haben, können Sie den Kompiliervorgang am Symbol mit dem Haken in der untersten Zeile aktivieren. Vergewissern Sie sich vorher, dass die korrekte Hardware-Umgebung **env:obp60_s3(esp32-nmea2000)** ausgewählt worden ist. Der Kompiliervorgang benötigt einiges an Zeit. Am Ende sollten Sie eine Mitteilung im Terminal-Fenster erhalten, die Sie über das Resultat informiert.
+
+.. image:: ../pics/VSC_Compile.png
+   :scale: 40%
+Abb.: Kompilierung
+
+Der Binary-Code zur Firmware befindet sich nach dem Kompilieren im Verzeichnis: */esp32-nmea2000/.pio/build/obp32_s3*
+
+Dabei haben die Files folgende Bedeutung:
+
+	* bootloader.bin - ESP32-S3 Bootloader für Firmware
+	* partitions.bin - Partitionstabelle für den Flash Speicher
+	* firmware.bin - Binärfile als Update (nur Firmware)
+	* firmware.elf - ELF-File für Fehlerverfolgung
+	* obp60_s3-all.bin - Binärfile mit allen Bestandteilen (Bootloader, Partitionstabelle, Firmware, Default-Settings)
+	* **obp60_s3-dev20240820-all.bin** - wie obp60_s3-all.bin
+	* **obp60_s3-dev20240820-update.bin** - Binärfile als Update (nur Firmware)
+
+Flashen der Firmware
+^^^^^^^^^^^^^^^^^^^^
+
+Wenn Sie die Firmware auf das OBP60 flashen möchten, dann verbinden Sie das OBP60 mit dem USB-Anschluss des PC und drücken danach das Symbol mit dem Pfeil in der untersten Zeile. Zuerst wird die Firmware kompiliert und anschließend an das OBP60 übertragen. Im Terminalfenster sehen Sie den Ablauf der einzelnen Schritte.
+
+.. image:: ../pics/VSC_Compile.png
+   :scale: 40%
+Abb.: Flashen der Firmware
+
+.. hint::
+	Falls keine Verbindung mit dem OBP60 über die USB-Schnittstelle zustande kommt, können Sie das OBP60 manuell in den Flash-Modus versetzen. Trennen Sie zunächst die USB-Verbindung. Öffnen Sie danach die hintere Gehäuseabdeckung des OBP60 und stellen Sie mit der Drahtbrücke eine Verbindung von ``GND`` (CN2) zum ``Pin 27`` (ESP32-S3) her. Dann verbinden Sie das OBP60 mit dem PC über das USB-Verbindungskabel. Sobald sie USB-Schnittstelle erkannt wird, erfolgt eine Tonausgabe auf dem PC. Sie können dann die Drahtbrücke zwischen ``GND`` und ``Pin 27`` trennen. Der ESP32-S3 befindet sich jetzt im Flash-Modus. Danach starten Sie einen erneuten Flash-Vorgang über das Symbol mit dem Pfeil.
+
+.. image:: ../pics/Bridge_GND-Pin27.png
+   :scale: 40%
+Abb.: Brücke zwischen ``GND`` und ``Pin 27``
+
+Debuggen der Firmware
+^^^^^^^^^^^^^^^^^^^^^
+
+Eine einfache Debugging-Möglichkeit besteht darin, dass man Debugging-Ausgaben über die serielle USB-Schnittstelle ausgibt, die man auf dem PC mit einem Terminalprogramm empfangen kann. In der Firmware zum OBP60 sind Funktionen implementiert, mit denen man Debugging-Ausgaben erzeugen kann. In Visual Studio Code ist ein serielles Terminal integriert. Sie können es über das Symbol mit dem Stecker in der untersten Zeile starten. Die Ausgaben erfolgen dann unten rechts unter Terminal. Wenn Sie das Logging beenden wollen, klicken Sie rechts auf den aktuell laufenden Task und beenden ihn, indem Sie auf das Symbol mit dem Papierkorb drücken.
+
+.. note::
+	Beachten Sie, dass die Schnittstellengeschwindigkeit standardmäßig auf **115200 Bd 8N1** eingestellt ist. Der Geschwindigkeit der seriellen USB-Schnittstelle lässt sich bei Bedarf in platformio.ini unter **monitor_speed** verändern.
+
+.. image:: ../pics/VSC_Serial_Monitor.png
+   :scale: 40%
+Abb.: Debugging über Serial Monitot
+
+Source-Code Aktualisierung
+^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Wenn man die Source-Code-Änderungen in seinem Github-Repository speichern möchte, kann man die Github-Funktionalität des Workplaces nutzen. Auf der linken Seite befindet sich ein Icon mit einer Pfadverzweigung und einer kleinen blauen Zahl daran. Dieses Icon teilt dem Benutzer mit, wie viele Änderungen an Dateien durch die Source-Code-Änderungen vorgenommen worden sind. Mit einem Klick auf das Icon kann man eine Beschreibung für die Änderungen hinzufügen. Wenn man dem Dialog rechts am blauen Commit-Button folgt, kann man **Commit und Push** anklicken. Dadurch werden die Code-Änderungen in das eigene Github-Repository hochgeladen und gesichert.
+
+.. hint::
+	Nur mit einem Beschreibungstext zur Codeänderung können Sie die Änderungen commiten und nach Github hochladen.
+
+.. image:: ../pics/VSC_Commit_Push.png
+   :scale: 40%
+Abb.: Source Code auf Github sichern
+
+Wer später dort weitermachen möchte, wo er zuletzt aufgehört hat, kann sich den letzten Stand auf Github in seinen Workplace herunterladen und aktualisieren. Dazu klicken Sie links auf das Pfadsymbol und dann oben in selben Fenster auf die kleinen 3 Punkte. Über **Pull** können Sie ihr Projekt aktualisieren.
+
+.. hint::
+	Es ist empfehlenswert vor Beginn jeder Codeänderung einen **Pull** durchzuführen, um ihr Projekt auf den aktuellen Stand zu setzen, denn ein nachträglich ausgeführtes **Pull** würde den bereits veränderten Code überschreiben.
+	
+.. image:: ../pics/VSC_Pull.png
+   :scale: 40%
+Abb.: Source Code auf Github sichern
