@@ -142,7 +142,7 @@ Visual Studio Code / PlatformIO
 .. hint::
 	Wer an einer Weiterentwicklung der Firmware zum OBP60 interessiert ist, sollte Visual Studio Code / PlatformIO benutzen. Visual Studio Code verfügt über Mechanismen, mit denen Softwareänderungen über Github eingepflegt und verfolgt werden können.
 	
-Wie man Visual Studio Code installiert und danach das Plugin PlatformIO einrichtet ist in dieser `Anleitung`_ beschrieben. Sie finden auch im Internet eine Menge an Beschreibungen zu diesem Thema.
+Wie man Visual Studio Code installiert und danach das Plugin PlatformIO einrichtet ist in dieser `Anleitung`_ beschrieben. Sie finden im Internet auch weitere Beschreibungen zu diesem Thema.
 
 .. _Anleitung: https://www.az-delivery.de/blogs/azdelivery-blog-fur-arduino-und-raspberry-pi/plattformio
 	
@@ -200,7 +200,7 @@ Gehen Sie gehen dann in den Dateibaum und öffnen den Pfad: ``/esp32-nmea2000/li
 	
 .. _zusätzliche Treiber: https://github.com/kutukvpavel/Esp32-Win7-VCP-drivers
 
-.. image:: ../pics/VSC_Close_Port.png
+.. image:: ../pics/VSC_Port.png
    :scale: 40%
 Abb.: Konfigurationsfile schließen und seriellen Port einstellen
 
@@ -236,7 +236,7 @@ Flashen der Firmware
 
 Wenn Sie die Firmware auf das OBP60 flashen möchten, dann verbinden Sie das OBP60 mit dem USB-Anschluss des PC und drücken danach das Symbol mit dem Pfeil in der untersten Zeile. Zuerst wird die Firmware kompiliert und anschließend an das OBP60 übertragen. Im Terminalfenster sehen Sie den Ablauf der einzelnen Schritte.
 
-.. image:: ../pics/VSC_Compile.png
+.. image:: ../pics/VSC_Flash_Hardware.png
    :scale: 40%
 Abb.: Flashen der Firmware
 
@@ -253,11 +253,11 @@ Debuggen der Firmware
 Eine einfache Debugging-Möglichkeit besteht darin, dass man Debugging-Ausgaben über die serielle USB-Schnittstelle ausgibt, die man auf dem PC mit einem Terminalprogramm empfangen kann. In der Firmware zum OBP60 sind Funktionen implementiert, mit denen man Debugging-Ausgaben erzeugen kann. In Visual Studio Code ist ein serielles Terminal integriert. Sie können es über das Symbol mit dem Stecker in der untersten Zeile starten. Die Ausgaben erfolgen dann unten rechts unter Terminal. Wenn Sie das Logging beenden wollen, klicken Sie rechts auf den aktuell laufenden Task und beenden ihn, indem Sie auf das Symbol mit dem Papierkorb drücken.
 
 .. note::
-	Beachten Sie, dass die Schnittstellengeschwindigkeit standardmäßig auf **115200 Bd 8N1** eingestellt ist. Der Geschwindigkeit der seriellen USB-Schnittstelle lässt sich bei Bedarf in platformio.ini unter **monitor_speed** verändern.
+	Beachten Sie, dass die Schnittstellengeschwindigkeit standardmäßig auf **115200 Bd 8N1** eingestellt ist. Die Geschwindigkeit der seriellen USB-Schnittstelle lässt sich bei Bedarf in platformio.ini unter **monitor_speed** verändern.
 
 .. image:: ../pics/VSC_Serial_Monitor.png
    :scale: 40%
-Abb.: Debugging über Serial Monitot
+Abb.: Debugging über Serial Monitor
 
 Source-Code Aktualisierung
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
