@@ -617,6 +617,16 @@ Der Bereich **Display** enthält alle Einstellungen, die das Display betreffen.
 .. note::
     Die Entstehung von Geisterbildern ist von der Display-Temperatur des OBP60 abhängig. Bei tiefen Temperaturen sind Geisterbilder deutlicher zu sehen und die Anzeige reagiert träger als bei höheren Temperaturen. Kurz nach dem Einschalten wird für die ersten 5 Minuten jede Minute ein Voll-Refresh durchgeführt, damit sich das Display akklimatisieren kann. Bei extrem großer Sonneneinstrahlung kann es vorkommen, dass der Kontrast des Display-Inhaltes verloren geht. Schwarze Anzeigebereiche werden dann nur noch grau dargestellt. Das Display ist in diesem Fall nicht defekt. Nach einem Voll-Refresh regeneriert sich das Display und der Kontrast wird wieder vollständig hergestellt.
     
+**Fast Refresh**
+    * ``on`` - Bei aktiviertem Fast Refresh wird eine Voll-Refresh schneller ausgeführt. Es werden weniger Schwarz-Weiß-Wechsel durchgeführt.
+    * ``off`` - Bei deaktiviertem Fast Refresh wird eine Voll-Refresh langsamer ausgeführt, weil mehr Schwarz-Weiß-Wechsel durchgeführt werden.
+    
+**Full Refresh Time**
+    * Über Full Refresh Time kann festgelegt werden nach welcher Zeit ein regelmäßiger Voll-Refresh durchgeführt wird. Full Refreshes sind für das e-Paper Display wichtig, da das Display nach einer gewissen Zeit mit partiellen Updates einen Voll-Refresh zur Erholung durchführen muss, um die Displayfunktionalität zu erhalten. Bei einem Voll-Refresh wird der Displaykontrast wieder vollständig hergestellt.
+    
+.. note::
+    Bei starker Sonneneinstrahlung kann je nach verwendetem Displaytyp ein Kontrastverlust nach einiger Zeit auftreten. Um den Effekt zu minimieren, sollte der **Fast Refresh** deaktiviert werden und die **Full Refresh Time** auf 1 min gesetzt sein. Der Erholungseffekt ist für das Display dadurch wesentlich stärker.
+    
 **Hold Values**
     * ``on`` - Anzeigewerte werden gehalten, wenn die Datenverbindung kurzzeitig fehlen sollte und die Daten nicht aktualisiert werden können. Diese Einstellung kann bei TCP-Verbindungen über WiFi nützlich sein. 
     * ``off`` - Anzeigewerte werden nicht gehalten. Bei unterbrochener Datenverbindung länger als 5 s werden fehlende Daten mit ``---`` gekennzeichnet.
