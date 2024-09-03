@@ -1,6 +1,6 @@
 {
-    "name": "OBP60 V2 Firmware",
-    "version": "Latest GitHub Version",
+    "name": "OBP60 V2.1 Firmware",
+    "version": "dev20240518-all.bin",
     "new_install_prompt_erase": false,
     "builds": [
       {

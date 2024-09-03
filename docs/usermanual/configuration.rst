@@ -105,6 +105,8 @@ Auf der Konfigurationsseite sind im oberen Bereich verschiedene Tasten zu sehen.
 * **Import** - Import einer Konfiguration über ein JSON-File
 * **Factory Reset** - Rücksetzen aller Einstellungen auf Werkszustand
 
+.. _Config - System:
+
 Config - System
 ---------------
 
@@ -156,6 +158,8 @@ Unter **System** werden grundlegende Einstellungen vorgenommen wie:
 .. hint::
 	Wenn Sie beabsichtigen, einen NMEA0183-Datenaustausch über die USB-C-Schnittstelle  durchzuführen, sollten Sie den **Log Level** auf ``off`` stellen. Beachten Sie das nicht, kann die Auswertung von Logging-Ausgaben sehr unübersichtlich werden, da Logging-Daten und NMEA0183-Telegramme dann gemischt ausgegeben werden. Wenn Sie nur Logging-Ausgaben sehen wollen, stellen Sie **NMEA to USB** und **NMEA from USB** auf ``off``.
 
+.. _Config - Converter:
+
 Config - Converter
 ------------------
 
@@ -178,6 +182,8 @@ Mit den nachfolgenden Einstellungen können Sie die Funktion des NMEA2000-Gatewa
 		* ``on`` - Ausgabe der NMEA2000-Daten
 		* ``off`` - Keine Ausgabe der NMEA2000-Daten
 		
+.. _Config - USB Port:
+
 Config - USB Port
 -----------------
 
@@ -236,6 +242,8 @@ Die genaue Bedeutung der Kurzbezeichner ist `hier`_ erklärt.
 .. warning::
 	Datenschleifen führen zu Fehlfunktionen des Gerätes. Bei Datenschleifen laufen die selben Daten über mehrere Geräte im Kreis. Dadurch entstehen hohe Senderaten, weil fortlaufend die gleichen Daten gesendet und empfangen werden. Die Prozessorlast erhöht sich dabei auf ein Maximum. Unter Umständen kann das Gerät ausfallen, nicht mehr zeitnah die Daten verarbeiten oder nicht mehr bedienbar sein. Beachten Sie, dass der Zustand auch erst dann eintreten kann, wenn weitere Geräte am Bussystem später zugeschaltet werden.
 	
+.. _Config - Serial Port:
+
 Config - Serial Port
 --------------------
 
@@ -272,6 +280,8 @@ Im Eingabefeld werden die Kurzbezeichner der NMEA0183-Telegramme eingetragen, me
 	* DBK, DBS, DBT, DPT, GGA, GLL, GSA, GSV, HDG, HDM, HDT, MTW, MWD, MWV, RMB, RMC, ROT, RSA, VHW, VTG, VWR, XDR, XTE, ZDA
 	
 Die genaue Bedeutung der Kurzbezeichner ist `hier`_ erklärt.
+
+.. _Config - TCP Server:
 
 Config - TCP Server
 -------------------
@@ -330,6 +340,8 @@ Die genaue Bedeutung der Kurzbezeichner ist `hier`_ erklärt.
     * ``on`` - Der TCP-Server kann Seasmart-Daten senden und empfangen
     * ``off`` - Seasmart wird vom TCP-Server nicht unterstützt
 	
+.. _Config - TCP Client:
+
 Config - TCP Client
 -------------------
 
@@ -388,6 +400,8 @@ Die genaue Bedeutung der Kurzbezeichner ist `hier`_ erklärt.
     * ``on`` - Der TCP-Server kann SeaSmart-Daten senden und empfangen
     * ``off`` - SeaSmart wird vom TCP-Server nicht unterstützt
 	
+.. _Config - WiFi Client:
+
 Config - WiFi Client
 --------------------
 
@@ -438,6 +452,8 @@ Die Einstellung der Einheiten wird unter **OBP Units** vorgenommen. Für die jew
     * ``DE`` - Deutsches Datumsformat ``31.12.2024``
     * ``GB`` - Britisches Datumsformat ``31/12/2024``
     * ``US`` - US-Datumsformat ``12/31/2024``
+
+.. _Config - OBP Hardware:
 
 Config - OBP Hardware
 ---------------------
@@ -728,7 +744,7 @@ Config - OBP Page X
 .. image:: /pics/Screen_Overview.png
              :scale: 50%
 
-Im OBP60 gibt es insgesamt bis zu 10 Seiten, die man frei auswählen und gestalten kann. Je nach Seite können unterschiedlich viele Daten angezeigt werden. Es gibt frei definierbare Seiten, in denen die Inhalte zum Anzeigen ausgewählt werden können. Dann gibt es Seiten mit vorgegebenem, nicht veränderbaren Inhalt. Die meisten numerischen Seiten sind änderbar, während die grafischen Seiten oft vordefinierte Inhalte anzeigen.
+Im OBP60 gibt es insgesamt bis zu 10 Seiten, die man frei auswählen und gestalten kann. Je nach Seite können unterschiedlich viele Daten angezeigt werden. Es gibt frei definierbare Seiten, in denen die Inhalte zum Anzeigen ausgewählt werden können. Dann gibt es Seiten mit vorgegebenem, nicht veränderbarem Inhalt. Die meisten numerischen Seiten sind änderbar, während die grafischen Seiten oft vordefinierte Inhalte anzeigen.
 
 * Seiten mit veränderbarem Inhalt
     * **OneValue** - Ein Anzeigewert
@@ -743,8 +759,8 @@ Im OBP60 gibt es insgesamt bis zu 10 Seiten, die man frei auswählen und gestalt
     * **Clock** - Grafische Zeitanzeige mit Sonnenauf- und Sonnenuntergang (**GPST, GPSD**)
     * **White Page** - Leere weiße Seite, um Display in StandBy zu schalten
     * **BME280** - Anzeige von Umweltdaten wie Temperatur, Luftdruck und Feuchtigkeit (**BME280** I2C)
-    * **Rudder Position** - Grafische Anzeige der Ruderposition (**RPOS**)
-    * **Keel Position** - Grafische Anzeige der Kielposition (**AS5600** I2C)
+    * **Rudder** - Grafische Anzeige der Ruderposition (**RPOS**)
+    * **Keel** - Grafische Anzeige der Kielposition (**AS5600** I2C)
     * **Battery** - Anzeige von Spannung, Strom und Leistung (**INA219, INA226** I2C)
     * **Battery2** - Grafische Anzeige des Batterie-Ladezustandes (**INA219, INA226** I2C)
     * **RollPitch** - Grafische Anzeige von Roll und Pitch (**xdrRoll, xdrPitch**)
@@ -752,7 +768,7 @@ Im OBP60 gibt es insgesamt bis zu 10 Seiten, die man frei auswählen und gestalt
     * **Generator** - Grafische Anzeige des Generator-Ladezustandes (**INA219, INA226** I2C)
     
 .. note::
-    Bitte beachten Sie, dass alle Seiten mit festen Inhalten bestimmte Sensorwerte vorausetzen, um Messwerte angezeigen zu können. Unter dem Register **Data** kann die Verfügbarkeit der notwendigen Daten geprüft werden. 
+    Bitte beachten Sie, dass alle Seiten mit festen Inhalten bestimmte Sensorwerte voraussetzen, um Messwerte anzeigen zu können. Unter dem Register **Data** kann die Verfügbarkeit der notwendigen Daten geprüft werden. 
     
 Bei Seiten mit veränderlichem Inhalt stehen je nach Anzahl der Anzeigewerte unterschiedlich viele Eingabefelder zur Verfügung. Darüber können die anzuzeigenden Daten ausgewählt werden.
 
@@ -800,6 +816,348 @@ Abb.: Seite mit 4 Anzeigewerten
     * **XTE** - Cross Track Error, Kursfehler 
     * **xdrVBat** - Bordspannung
     
+OneValue
+^^^^^^^^
+
+.. image:: /pics/OBP60_OneValue_tr.png
+             :scale: 30%
+Abb.: Anzeige OneValue
+
+Bei der OneValue-Anzeige kann ein beliebiger Messwert aus dem Datenpool angezeigt werden. Neben dem Messwert werden der Kurzbezeichner und die Einheit dargestellt.
+
+TwoValue
+^^^^^^^^
+
+.. image:: /pics/OBP60_TwoValue_tr.png
+             :scale: 30%
+Abb.: Anzeige TwoValue
+
+Bei der TwoValue-Anzeige können zwei beliebige Messwerte aus dem Datenpool vertikal übereinander angezeigt werden. Neben den Messwerten werden die Kurzbezeichner und die Einheiten dargestellt.
+
+ThreeValue
+^^^^^^^^^^
+
+.. image:: /pics/OBP60_ThreeValue.png
+             :scale: 30%
+Abb.: Anzeige ThreeValue
+
+Bei der ThreeValue-Anzeige können drei beliebige Messwerte aus dem Datenpool vertikal übereinander angezeigt werden. Neben den Messwerten werden die Kurzbezeichner und die Einheiten dargestellt.
+
+FourValue
+^^^^^^^^^
+
+.. image:: /pics/OBP60_FourValue_tr.png
+             :scale: 30%
+Abb.: Anzeige FourValue
+
+Bei der ThreeValue-Anzeige können vier beliebige Messwerte aus dem Datenpool vertikal übereinander angezeigt werden. Neben den Messwerten werden die Kurzbezeichner und die Einheiten dargestellt.
+
+FourValue2
+^^^^^^^^^^
+
+.. image:: /pics/OBP60_FourValue2_tr.png
+             :scale: 30%
+Abb.: Anzeige FourValue
+
+Bei der FourValue-Anzeige können vier beliebige Messwerte aus dem Datenpool vertikal übereinander und horizontal nebeneinander angezeigt werden. Neben den Messwerten werden die Kurzbezeichner und die Einheiten angezeigt. Diese Darstellung entspricht der alten Darstellung vom Raymarine ST60 TriData mit dem Unterschied, dass hier beliebige Werte angezeigt werden können. Es gibt noch die Anzeigeseite **DST810** mit festen Inhalten, die dieselben Messwerte anzeigt wie beim ST60 TriData.
+
+Voltage
+^^^^^^^
+
+.. image:: /pics/OBP60_Voltage.png
+             :scale: 30%
+Abb.: Anzeige Voltage
+
+Bei der Voltage-Anzeige wird die Versorgungsspannung der Batterie angezeigt, so wie die Spannung am Eingang von CN2 zur Verfügung gestellt wird.
+
+.. note::
+	Beachten Sie, dass die Spannung nicht exakt der Batteriespannung entsprechen muss. Durch Leitungsverluste können Spannungsabfälle auftreten und der gemessene Wert kann kleiner sein als die tatsächliche Batteriespannung.
+	
+Ein Trendindikator zeigt den Trend an in welche Richtung sich die Spannung bewegt. Hinter der Einheit Volt werden der Batterietyp [Pb|AGM|Gel|LiFePo4] und die aktuell benutzte Mittelungstiefe angezeigt. Über die Tasten können folgende Funktionen genutzt werden.
+
+	* ``[AVG]`` - Einstellung der Mittelungstiefe in Sekunden [1|30|60|300]
+	* ``[TRD]`` - Trendanzeige aktivieren oder deaktivieren
+	
+Die Anzeigeseite benötigt folgende Messwerte: **xdrVBat**
+	
+DST810
+^^^^^^
+
+.. image:: /pics/OBP60_FourValue2_tr.png
+             :scale: 30%
+Abb.: Anzeige FourValue
+
+Bei der DST810-Anzeige werden der Speed durchs Wasser, die Tiefe, die zurückgelegte Strecke und die Wassertemperatur angezeigt. Neben den Messwerten werden die Kurzbezeichner und die Einheiten dargestellt. Die Anzeigeseite entspricht der alten Darstellung vom **Raymarine ST60 TriData**. Damit die Daten angezeigt werden können, müssen sich gültige Informationen im Datenpool befinden. Neben dem DST810 von Airmar können auch Messwerte anderer Sensorhersteller angezeigt werden, die dieselben Daten oder einen Teil der Daten liefern
+
+Die Anzeigeseite benötigt folgende Messwerte: **DBT, STW, Log, WTemp**
+
+Clock
+^^^^^
+
+.. image:: /pics/OBP60_Clock_tr.png
+             :scale: 30%
+Abb.: Anzeige Clock
+
+Bei der Clock-Anzeige werden die Uhrzeit, das Datum, die Sonnenaufgangszeit und die Sonnenuntergangszeit angezeigt. Die Anzeigewerte werden primär aus den GPS-Daten gewonnen. Die Auf- und Untergangszeit der Sonne wird abhängig vom geografischen Ort berechnet und entspricht der astronomischen Sonnenaufgangs- und Untergangszeit. Als Zeitanzeige kann die globale Weltzeit **UTC** oder die lokale Ortszeit **LOT** angezeigt werden. Die Auswahl der Zeitzone kann über die Konfigurationsseite **Config - OBP Settings** eingestellt werden.
+
+Die Einstellung der Uhrzeit erfolgt automatisch über die GPS-Zeit. Stellen Sie vor der Benutzung des OBP60 sicher, dass ein GPS-Empfang möglich ist, damit sich die Zeit einstellen kann. In regelmäßigen Abständen wird die RTC-Zeit mit der GPS-Zeit synchronisiert, so dass Sie auch über Zeitinformationen verfügen, wenn kein GPS-Empfang möglich ist.
+
+.. note::
+	Stehen keine GPS-Daten zur Verfügung, so wird die Zeit und das Datum aus der RTC benutzt. In dem Fall stehen keine Sonnenaufgangszeit und Sonnenuntergangszeit zur Verfügung, da die geografischen Ortsdaten fehlen.
+	
+Die Anzeigeseite benötigt folgende Messwerte: **GPST, GPSD**
+
+WhitePage
+^^^^^^^^^
+
+.. image:: /pics/OBP60_Blank_tr.png
+             :scale: 30%
+Abb.: Anzeige WhitePage
+
+Bei WhitePage handelt es sich um eine Anzeigeseite, die nur eine weiße leere Seite darstellt. Diese Seite kann dazu benutzt werden, den Bildschirminhalt vor dem Ausschalten definiert zu löschen.
+
+BME280
+^^^^^^
+
+.. image:: /pics/OBP60_ThreeValue.png
+             :scale: 30%
+Abb.: Anzeige BME280
+
+Bei der BME-Anzeige werden die 3 Messwerte Lufttemperatur, Luftdruck und Luftfeuchtigkeit des BME280 angezeigt. Der BME280 muss dazu an den externen I2C-Bus angeschlossen werden und auf die Adresse 0x77 eingestellt sein.
+
+.. warning::
+	Bedenken Sie, dass der externe I2C-Bus **5V** Signalpegel für **SCL** und **SDA** benutzt. Benutzen Sie solche Module die tolerant für 5V sind oder verwenden Sie Pegelumsetzer von 5V auf 3.3V für die Signale SCL und SDA. Beachten Sie das nicht, so können die externen Module beschädigt werden oder fehlerhaft funktionieren.
+	
+Ein 5V taugliches BME280-Modul ist das **GYBME** Elektronikmodul:
+
+.. image:: /pics/BME280.png
+             :scale: 30%
+Abb.: BME280-Modul
+	
+Die Messwerte vom externen Sensor müssen als XDR-Telegramme angelegt werden (siehe Konfigurationsseite: **XDR**). Dabei sind folgende Zuordnungen zu beachten:
+
+	* **TAir** - Lufttemperatur
+	* **PAir** - Luftdruck
+	* **HAir** - Luftfeuchtigkeit
+	
+Rudder
+^^^^^^
+
+.. image:: /pics/OBP60_Rudder_tr.png
+             :scale: 30%
+Abb.: Anzeige Rudder
+
+Bei der Rudder-Anzeige wird der Ruderausschlag angezeigt. Der Ruderausschlag ist im Bereich von +/-45° grafisch darstellbar. Wenn keine Sensorwerte für den Ruderausschlag vorliegen, ist der Zeiger nicht sichtbar.
+
+.. hint::
+	Die Ruderanzeige kann sowohl für Daten aus NMEA0183 , NMEA2000 und einem I2C-Rotationssensor benutzt werden. 
+
+Die Anzeigeseite benötigt folgende Messwerte: **RPOS**
+
+Keel
+^^^^
+
+.. image:: /pics/OBP60_Keel_tr.png
+             :scale: 30%
+Abb.: Anzeige Keel
+
+Bei der Keel-Anzeige wird die Kielstellung eines Neigekiels angezeigt. Die Kielstellung ist im Bereich von +/-45° grafisch darstellbar. Wenn keine Sensorwerte für die Kielstellung vorliegen, ist der Kiel nicht sichtbar.
+
+Damit die Kielstellung angezeigt werden kann, muss ein Rotationssensor-Modul **AS5600** am I2C-Bus angeschlossen und der Sensor als **Kielsensor** auf der Konfigurationsseite **Config - OBP Hardware** parametriert werden. 
+
+.. image:: /pics/I2C_Sample_Setup_AS5600.png
+             :scale: 50%
+Abb.: Magnetischer Rotationssensor AS5600 zur Anzeige der Kielstellung
+
+Beachten Sie auch die Hinweise im Kapitel **Datenaustausch - I2C-Bus** und **Bussysteme - I2C**.
+
+.. hint::
+	Die Kielanzeige kann nur in Verbindung mit einem I2C-Rotationssensor benutzt werden.
+
+Battery
+^^^^^^^
+
+.. image:: /pics/OBP60_ThreeValue.png
+             :scale: 30%
+Abb.: Anzeige Battery
+
+Bei der Battery-Anzeige werden die aktuellen Werte für Bord-Spannung, Strom und Leistung angezeigt. Neben den Messwerten werden die Kurzbezeichner und die Einheiten dargestellt. Um die Batterie-Werte anzeigen zu können, muss ein I2C-Modul **INA226** am I2C-Bus angeschlossen und auf die Adresse **0x41** eingestellt sein. Der Shunt kann für verschiedene maximale Stromstärken in Ampere [10|50|100|200|300|400|500] unter **Config - OBP Hardware** konfiguriert werden.
+
+.. hint::
+	Bedenken Sie, dass für höhere Stromstärken die Ungenauigkeit der Messwerte zunimmt. Wählen Sie den Shunt so aus, dass er zu typischen Nutzungsszenarien passt und nicht überdimensioniert ist. Die Messeingänge des Shunts sind bis zum zweifachen Wert der Maximalstromstärke eigensicher und vertragen kurzzeitige Überlastungen.
+
+.. image:: /pics/INA226.png
+             :scale: 30%
+Abb.: I2C-Adresszuweisung INA226
+
+Für die Messung mit einem externen Leistungs-Shunt muss der schwarze große Widerstand **R100** auf der Frontseite der Platine entfernt werden. Danach ist das Modul wie folgt zu verschalten.
+
+.. image:: /pics/I2C_Sample_Setup_INA226_Battery.png
+             :scale: 45%
+Abb.: Schaltung INA226 Batteriemonitoring
+
+.. note::
+	Wenn Sie die Batterieanzeige verwenden, jedoch kein INA226-Modul am I2C-Bus angeschlossen ist, werden keine Messwerte angezeigt.
+
+.. warning::
+	Verwenden Sie für den Leistungskreis ausreichend groß dimensionierte Leitungsquerschnitte, die auf den maximalen Strom ausgelegt sein müssen. Verwenden Sie in den Leistungskreisen passende Sicherungen, um Kabelbrände bei Kurzschlüssen zu vermeiden. Für eine langlebige Installation sollten Sie Litze mit verzinnten Einzeladern verwenden. Wenn das aus Kostengründen nicht möglich ist, sollten die Kabelenden mit gequetschten Kabelösen oder Aderendhülsen versehen sein. Die Kabelösen sollten dann zusätzlich mit Zinn verlötet werden, um Korrosion in den Kabelhülsen zu unterbinden. Ein Überzug der Chrimp- und Lötstellen mit Schrumpfschlauch verhindert aufsteigende Feuchtigkeit im Kabel, die ebenso Korrosion über lange Zeiträume verursachen kann. Sorgen Sie dafür, dass der INA226 wassergeschützt in einem isolierten Gehäuse untergebracht ist und die Sensoranschlüsse **VBS** und **GND** mit einer **Feinsicherung 100 mA** geschützt sind. Wenn Sie nicht über ausreichendes Fachwissen verfügen, sollten Sie die Installation des Sensors einem Fachmann überlassen oder ihre Installation vor der Inbetriebnahme durch einen Fachmann prüfen lassen.
+	
+.. danger::	
+	Unsachgemäße oder defekte Installationen von Leistungsstromkreisen können Brände verursachen und Leben gefährden. Prüfen Sie die Installation in regelmäßigen Abständen hinsichtlich Funktion und Sicherheit.
+	
+.. image:: /pics/Wire_Diameter.png
+             :scale: 50%
+Abb.: Leitungsquerschnitte (EP 12/00)
+
+Zu weitergehenden Informationen können Sie das Informationsmaterial **Leitungen und Kabel** :download:`pdf </info_material/Querschnittsbestimmung_Leitungen_Kabel.pdf>` verwenden.
+
+Battery2
+^^^^^^^^
+
+.. image:: /pics/OBP60_Battery2_tr.png
+             :scale: 30%
+Abb.: Anzeige Battery2
+
+Bei der Battery2-Anzeige werden folgende Werte angezeigt:
+
+	* Batterietyp [Pb|Gel|AGM|LiFePo4]
+	* Nenn-Batteriespannung in V
+	* Nenn-Batteriekapazität in Ah
+	* Grafische Füllstandsanzeige in %
+	* Geschätzte Reichweite in Stunden bei aktuellen Verbrauchswerten
+	* Art des Sensormoduls [interner Sensor|INA219|INA226]
+	* Aktuelle Batteriespannung in V
+	* Aktueller Stromverbrauch in A
+	* Aktuelle Leistung in W
+
+Über die Tasten können folgende Funktionen genutzt werden.
+
+	* ``[AVG]`` - Einstellung der Mittelungstiefe in Sekunden [1|30|60|300]
+
+.. warning::
+	Die Reichweitenanzeige gibt einen ungefähren Zeitwert an wie lange die Batterie benutzt werden kann unter den aktuellen Verbrauchswerten. Die Zeitdauer ist abhängig vom aktuellen Stromverbrauch und passt sich kontinuierlich an. Die Batteriespannung wird zur Reichweitenbestimmung benutzt und damit der Füllstand der Batterie ermittelt. Diese Methode ist nicht sehr genau und vom Alterungszustand der Batterie abhängig. Prüfen Sie in unkritischen Situationen die Genauigkeit der Reichweitenanzeige und planen Sie entsprechende Sicherheitsreserven ein, um keine unerwarteten Ausfälle zu riskieren.
+	
+.. hint::
+	Nutzen Sie eine große Mittelungszeit über die Taste ``[AVG]`` von 300s, um eine realistische Reichweitenanzeige zu bekommen. Dadurch werden Lastspitzen im Stromverbrauch geglättet und der Reichweitenwert ist deutlich ruhiger.
+
+Um die Batterie-Werte anzeigen zu können, muss ein I2C-Modul **INA226** am I2C-Bus angeschlossen und auf die Adresse **0x41** eingestellt sein. Der Shunt kann für verschiedene maximale Stromstärken in Ampere [10|50|100|200|300|400|500] unter **Config - OBP Hardware** konfiguriert werden.
+
+.. hint::
+	Bedenken Sie, dass für höhere Stromstärken die Ungenauigkeit der Messwerte zunimmt. Wählen Sie den Shunt so aus, dass er zu typischen Nutzungsszenarien passt und nicht überdimensioniert ist. Die Messeingänge des Shunts sind bis zum zweifachen Wert der Maximalstromstärke eigensicher und vertragen kurzzeitige Überlastungen.
+
+.. image:: /pics/INA226.png
+             :scale: 30%
+Abb.: I2C-Adresszuweisung INA226
+
+Für die Messung mit einem externen Leistungs-Shunt muss der schwarze große Widerstand **R100** auf der Frontseite der Platine entfernt werden. Danach ist das Modul wie folgt zu verschalten.
+
+.. image:: /pics/I2C_Sample_Setup_INA226_Battery.png
+             :scale: 45%
+Abb.: Schaltung INA226 Batteriemonitoring
+
+.. note::
+	Wenn Sie die Batterieanzeige verwenden, jedoch kein INA226-Modul am I2C-Bus angeschlossen ist, werden keine Messwerte außer die aktuelle Batteriespannung angezeigt. In diesem Fall wird der interne Spannungssensor des OBP60 benutzt. Der Wert der gemessenen Spannung muss nicht direkt der Spannung an der Batterie entsprechen, da durch Leitungsverluste der Spannungswert verfälscht sein kann. 
+
+.. warning::
+	Die Gefahren und Risiken bei der Benutzung des INA226 zum Batteriemonitoring sind die selben wie im Kapitel **Battery** beschrieben. Folgen Sie den Empfehlungen und beachten Sie die Gefahren.
+
+RollPitch
+^^^^^^^^^
+
+.. image:: /pics/OBP60_RollPitch_tr.png
+             :scale: 30%
+Abb.: Anzeige RollPitch
+
+Bei der Battery-Anzeige werden die aktuellen Werte für Roll und Pitch angezeigt sowie der Grenzwert, ab dem ein optisches Signal über die Flash-LED ausgegeben wird. Picht entspricht der Neigung in Längsrichtung und Roll in Querrichtung des Bootes. Die Sensorwerte müssen als XDR-Telegramme angelegt werden (siehe Konfigurationsseite: **XDR**) . Dabei sind folgende Zuordnungen zu beachten:
+
+	* **Roll** - Neigung in Querrichtung
+	* **Pitch** - Neigung in Längsrichtung
+	
+Solar
+^^^^^
+
+.. image:: /pics/OBP60_Solar_tr.png
+             :scale: 30%
+Abb.: Anzeige Solar
+
+Bei der Solar-Anzeige werden folgende Werte angezeigt:
+
+	* Nenn-Spannung der Solarmodule in V
+	* Nenn-Leistung der Solarmodule in W
+	* Nutzungsgrad in %
+	* Art des Sensormoduls [interner Sensor|INA219|INA226]
+	* Aktuelle Solarspannung in V
+	* Aktueller Solareinspeisung in A
+	* Aktuelle Einspeiseleistung in W
+
+Über die Tasten können folgende Funktionen genutzt werden.
+
+	* ``[AVG]`` - Einstellung der Mittelungstiefe in Sekunden [1|30|60|300]
+
+Um die Messwerte anzeigen zu können, muss ein I2C-Modul **INA226** am I2C-Bus angeschlossen und auf die Adresse **0x44** eingestellt sein. Der Shunt kann für verschiedene maximale Stromstärken in Ampere [10|50|100|200|300|400|500] unter **Config - OBP Hardware** konfiguriert werden.
+
+.. hint::
+	Bedenken Sie, dass für höhere Stromstärken die Ungenauigkeit der Messwerte zunimmt. Wählen Sie den Shunt so aus, dass er zu typischen Nutzungsszenarien passt und nicht überdimensioniert ist. Die Messeingänge des Shunts sind bis zum zweifachen Wert der Maximalstromstärke eigensicher und vertragen kurzzeitige Überlastungen.
+
+.. image:: /pics/INA226.png
+             :scale: 30%
+Abb.: I2C-Adresszuweisung INA226
+
+Für die Messung mit einem externen Leistungs-Shunt muss der schwarze große Widerstand **R100** auf der Frontseite der Platine entfernt werden. Danach ist das Modul wie folgt zu verschalten.
+
+.. image:: /pics/I2C_Sample_Setup_INA226_Solar.png
+             :scale: 45%
+Abb.: Schaltung INA226 Solarmonitoring
+
+.. note::
+	Wenn Sie die Solaranzeige verwenden, jedoch kein INA226-Modul am I2C-Bus angeschlossen ist, werden keine Messwerte außer die aktuelle Batteriespannung angezeigt. In diesem Fall wird der interne Spannungssensor des OBP60 benutzt. Der Wert der gemessenen Spannung muss nicht direkt der Spannung am Ausgang des Wechselrichters entsprechen, da durch Leitungsverluste der Spannungswert verfälscht sein kann. 
+
+.. warning::
+	Die Gefahren und Risiken bei der Benutzung des INA226 zum Batteriemonitoring sind dieselben wie im Kapitel **Battery** beschrieben. Folgen Sie den Empfehlungen und beachten Sie die Gefahren.
+	
+Generator
+^^^^^^^^^
+
+.. image:: /pics/OBP60_Generator_tr.png
+             :scale: 30%
+Abb.: Anzeige Generator
+
+Bei der Generator-Anzeige werden folgende Werte angezeigt:
+
+	* Nenn-Spannung des Generators in V
+	* Nenn-Leistung des Generators in W
+	* Nutzungsgrad in %
+	* Art des Sensormoduls [interner Sensor|INA219|INA226]
+	* Aktuelle Generatorspannung in V
+	* Aktuelle Generatoreinspeisung in A
+	* Aktuelle Generatorleistung in W
+
+Über die Tasten können folgende Funktionen genutzt werden.
+
+	* ``[AVG]`` - Einstellung der Mittelungstiefe in Sekunden [1|30|60|300]
+
+Um die Messwerte anzeigen zu können, muss ein I2C-Modul **INA226** am I2C-Bus angeschlossen und auf die Adresse **0x45** eingestellt sein. Der Shunt kann für verschiedene maximale Stromstärken in Ampere [10|50|100|200|300|400|500] unter **Config - OBP Hardware** konfiguriert werden.
+
+.. hint::
+	Bedenken Sie, dass für höhere Stromstärken die Ungenauigkeit der Messwerte zunimmt. Wählen Sie den Shunt so aus, dass er zu typischen Nutzungszenarien passt und nicht überdimensioniert ist. Die Messeingänge des Shunts sind bis zum zweifachen Wert der Maximalstromstärke eigensicher und vertragen kurzzeitige Überlastungen.
+
+.. image:: /pics/INA226.png
+             :scale: 30%
+Abb.: I2C-Adresszuweisung INA226
+
+Für die Messung mit einem externen Leistungs-Shunt muss der schwarze große Widerstand **R100** auf der Frontseite der Platine entfernt werden. Danach ist das Modul wie folgt zu verschalten.
+
+.. image:: /pics/I2C_Sample_Setup_INA226_Generator.png
+             :scale: 45%
+Abb.: Schaltung INA226 Generatormonitoring
+
+.. note::
+	Wenn Sie die Generatoranzeige verwenden, jedoch kein INA226-Modul am I2C-Bus angeschlossen ist, werden keine Messwerte außer die aktuelle Batteriespannung angezeigt. In diesem Fall wird der interne Spannungssensor des OBP60 benutzt. Der Wert der gemessenen Spannung muss nicht direkt der Spannung am Ausgang des Generator entsprechen, da durch Leitungsverluste der Spannungswert verfälscht sein kann. 
+
+.. warning::
+	Die Gefahren und Risiken bei der Benutzung des INA226 zum Batteriemonitoring sind dieselben wie im Kapitel **Battery** beschrieben. Folgen Sie den Empfehlungen und beachten Sie die Gefahren.
+
+.. _XDR:
 
 XDR
 ---
@@ -907,6 +1265,8 @@ Unter Data werden alle Sensordaten aller Bussysteme angezeigt, die derzeit verar
 .. note::
     Die Beschränkung der Datenanzeige auf aktuelle Daten führt dazu, dass sich die Anordnung der Daten ändert, wenn einige Sensordaten nicht mehr verfügbar sind. Diese Datenfelder werden dann ausgeblendet. Wenn Sie ein festes Anzeigeformat bevorzugen, lassen Sie sich am besten alle Daten anzeigen.  
 
+.. _Update:
+
 Update
 ------
 
@@ -941,24 +1301,3 @@ Unter **Help** erfolgt ein Wechsel ins Internet zur Github-Seite, auf der das Pr
 
 .. note::
     Die Github-Seite lässt sich nur aufrufen, wenn das OBP60 auf das Internet zugreifen kann. Das lässt sich realisieren, wenn das OPB60 zum Beispiel als Client in Ihrem Boots-WLAN arbeitet und Ihr Boots-WLAN Internetzugang hat. Alternativ starten Sie zum Beispiel einen Hotspot auf Ihrem Handy und verbinden das OPB60 als WLAN-Client mit Ihrem Handy.
-
-Sicherheit im WiFi-Netzwerk
----------------------------
-
-Sie sollten das OBP60 nur mit vertrauenswürdigen WiFi-Netzwerken verbinden. Es gibt im Gerät nur einen sehr begrenzten Schutz gegen Netzwerk-Sniffing oder Denial-of-Service-Angriffe. Solange Sie das eigene autarke WiFi-Netz des OBP60 nutzen, können fremde Personen nicht ohne weiteres auf das WiFi-Netz des OPB60 zugreifen. Auf diese Weise läuft die Datenübertragung in Ihrem eigenen WiFi-Netzwerk geschützt. Verbinden Sie das Gerät niemals ohne eine Firewall direkt mit dem Internet und vermeiden Sie direkte Verbindungen zu offenen Hafen-WLANs. Dadurch können auch fremde Personen auf Ihre Geräte im Netzwerk zugreifen.
-
-.. note::
-	Sie können die Sicherheit erhöhen, indem Sie einen separaten WiFi- oder LTE-Router in Ihrem Boot verwenden. Die Router können so eingerichtet werden, dass Sie ein eigenes WiFi-Netz aufspannen können, mit dem alle Geräte an Bord verbunden sind. Gängige mobile Router verfügen in der Regel über eine bereits eingeschaltete Firewall, über die Sie Ihr eigenes WiFi-Netz mit dem Internet verbinden können. Die Firewall verhindert fremden Zugriff von außen auf Ihre Geräte. So haben alle Geräte in Ihrem Netz einen gemeinsamen Internet-Zugriff und sind zugleich ausreichend geschützt.
-
-.. image:: ../pics/WiFi_Channels.png
-             :scale: 35%
-
-Die Verbindungsqualität von WiFi-Netzwerken hängt maßgeblich von der Auslastung der Funkkanäle ab, die in Ihrer Umgebung aktuell benutzt werden, denn Ihr Gerät teilt sich die selben Funkkanälen mit anderen Teilnehmern anderer WiFi-Netze. Das OBP60 nutzt die Funkkanäle des 2.4 GHz-Frequenzbandes.
-
-.. warning::
-	Bei hoher Auslastung wie z.B. in Häfen kann die Verbindungsqualität des eigenen WiFi-Netzwerks dadurch beeinträchtigt sein. Sie müssen dann mit Verzögerungen bei der Datenübertragung rechnen, insbesondere, wenn Sie TCP-Datenverbindungen zum oder vom OBP60 nutzen. Stellen Sie aber auf alle Fälle sicher, dass in solchen Situationen die Bootsführung nicht beeinträchtigt wird.
-
-.. hint::
-	Verwenden Sie bei hoher Kanalauslastung Kanäle mit geringer Auslastung. Die Kanäle 1, 13 und 14 haben keine Nachbarkanäle und sind deutlich robuster gegen hohe Auslastung als die anderen Kanäle. Am besten eignet sich der Kanal 13, da er seltener benutzt wird. In den USA kann auch der Kanal 14 verwendet werden. Moderne mobile Router bieten häufig eine Automatik in ihrer Konfiguration an, die die Kanalauswahl optimieren hilft.
-
-Bei Änderungen der Konfiguration des OPB60 werden Sie grundsätzlich nach dem Admin-Passwort gefragt. Die Übertragung des Passwortes erfolgt dabei immer verschlüsselt. Wenn Sie jedoch das Passwort für den WLAN-Zugangspunkt oder das WiFi-Client-Passwort ändern, wird es im Klartext gesendet. Wenn Sie das ``Remember me`` für das Admin-Passwort aktivieren, wird es im Klartext in Ihrem Browser gespeichert. Um es von dort zu entfernen, verwenden Sie ``Forget Password``.
