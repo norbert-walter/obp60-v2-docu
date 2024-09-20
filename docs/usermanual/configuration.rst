@@ -642,7 +642,19 @@ Der Bereich **Display** enthält alle Einstellungen, die das Display betreffen.
     
 .. note::
     Bei starker Sonneneinstrahlung kann je nach verwendetem Displaytyp ein Kontrastverlust nach einiger Zeit auftreten. Um den Effekt zu minimieren, sollte der **Fast Refresh** deaktiviert werden und die **Full Refresh Time** auf 1 min gesetzt sein. Der Erholungseffekt ist für das Display dadurch wesentlich stärker.
-    
+	
+Als Hilfestellung wie man die Einstellungen zum Display vornehmen kann, dient die nachfolgende Tabelle:
+
++-------------------+-------------+------------+--------------+
+|Parameter          |Temp <= 20°C |Temp > 20°C |Direkte Sonne |
++===================+=============+============+==============+
+|Refresh            |off          |on          |on            |
++-------------------+-------------+------------+--------------+
+|Fast Refresh       |on           |on          |off           |
++-------------------+-------------+------------+--------------+
+|Full Refresh Time  |10 min       |5 min       |1 min         |
++-------------------+-------------+------------+--------------+
+
 **Hold Values**
     * ``on`` - Anzeigewerte werden gehalten, wenn die Datenverbindung kurzzeitig fehlen sollte und die Daten nicht aktualisiert werden können. Diese Einstellung kann bei TCP-Verbindungen über WiFi nützlich sein. 
     * ``off`` - Anzeigewerte werden nicht gehalten. Bei unterbrochener Datenverbindung länger als 5 s werden fehlende Daten mit ``---`` gekennzeichnet.
