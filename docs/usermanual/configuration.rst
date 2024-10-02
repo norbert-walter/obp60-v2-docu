@@ -463,6 +463,12 @@ Config - OBP Hardware
 
 Unter **Hardware** werden alle Einstellungen bezüglich verbauter Hardware oder externer Zusatz-Hardware des OPB60 vorgenommen. Die Default-Einstellungen entsprechen den Minimal-Einstellungen für ein OBP60-Gerät. Je nach verbauter Hardware können unterschiedliche Sensoren und Funktionen zum Einsatz kommen.
 
+**CPU Speed**
+     * Taktfrequenz der CPU
+     * ``80`` - 80 MHz
+     * ``160`` - 160 MHz
+     * ``240`` - 240 MHz
+
 **RTC Modul**
      * Typ der Echtzeituhr
      * ``off`` - Es wird keine Echtzeituhr benutzt
@@ -566,9 +572,44 @@ Unter **Hardware** werden alle Einstellungen bezüglich verbauter Hardware oder 
     
 **Power Mode**
     * Der **Power Mode** bezieht sich auf die Art der Stromversorgung, die für das OBP60 verwendet wird.
-    * ``Max Power`` - Alle Stromversorgungen sind eingeschaltet. Hierbei ist das Gerät am leistungsfähigsten und es entsteht der maximale Stromverbrauch.
+    * ``Max Power`` - Alle Stromversorgungen sind eingeschaltet. Hierbei ist das Gerät am leistungsfähigsten und es kann der höchste Stromverbrauch entstehen.
     * ``Only 5.0V`` - Es ist nur die zusätzliche Stromversorgung für 5.0 V eingeschaltet.
-    * ``Min Power`` - Es sind nur die Stromversorgungen eingeschaltet, die die Minimal-Funktionen bereitstellen. Hierbei entsteht der geringste Stromverbrauch.
+    * ``Min Power`` - Es sind nur die Stromversorgungen eingeschaltet, die die Minimal-Funktionen bereitstellen. Hierbei entsteht der geringste Stromverbrauch. Die Bussysteme, das GPS, die externe 5V-Stromversorgung, die Hintergrundbeleuchtung und der Buzzer sind ausgeschaltet. Das Display, die Tasten, die RTC und der Umweltsensor BMP280 sind eingeschaltet.
+    
++----------------------+--------------+--------------+
+|Baugruppe             |Max Power [W] |Min Power [W] |
++======================+==============+==============+
+|CPU 240 MHz, WiFi, AP |1.78          |1.30          |
++----------------------+--------------+--------------+
+|CPU 160 MHz, WiFi, AP |1.68          |1.20          |
++----------------------+--------------+--------------+
+|CPU 80 MHz, WiFi, AP  |1.58          |1.13          |
++----------------------+--------------+--------------+
+|CPU 240 MHz, WiFi     |1.16          |0.70          |
++----------------------+--------------+--------------+
+|CPU 160 MHz, WiFi     |1.07          |0.60          |
++----------------------+--------------+--------------+
+|CPU 80 MHz, WiFi      |0.96          |0.53          |
++----------------------+--------------+--------------|
+|Externe 5V-Versorgung |0.83          |-             |
++----------------------+--------------+--------------+
+Tab.: Stromverbrauch OBP60 V2.1
+
+Je nach zugeschalteter Farbe und Leistung der Hintergrundbeleuchtung entsteht ein zusätzlicher Stromverbrauch.
+
++----------------------+--------------+--------------+
+|RGB-LED-Beleuchtung   |LED 100% [W]  |LED 50% [W]   |
++======================+==============+==============+
+|LED rot               |0.24          |0.11          |
++----------------------+--------------+--------------+
+|LED grün              |0.24          |0.11          |
++----------------------+--------------+--------------+
+|LED blau              |0.24          |0.11          |
++----------------------+--------------+--------------+
+|LED weiss             |0.61          |0.32          |
++----------------------+--------------+--------------+
+Tab.: Stromverbrauch der LED-Hintergrundbeleuchtung
+
     
 **Undervoltage**
     * Erkennung einer Unterspannung der Stromversorgung. Wenn eine Unterspannung niedriger als 9 V erkannt wird, kann das OBP60 automatisch deaktiviert werden, um eine Tiefentladung der Bordbatterie vermeiden zu helfen. In kritischen Situationen kann das OBP60 trotz Unterspannung bis 7 V funktionsfähig bleiben, wenn der Unterspannungsschutz deaktiviert ist. Als Default-Wert ist der Unterspannungsschutz aktiviert. Wenn im aktivierten Zustand eine Unterspannung auftritt, wird das OBP60 deaktiviert und in den Tiefschlaf versetzt. Im Display erscheint die Meldung **Undervoltage**. Dieser Zustand kann nur verändert werden, wenn die Versorgungsspannung vollständig ausgeschaltet und wieder eingeschaltet wird.
