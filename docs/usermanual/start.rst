@@ -93,3 +93,6 @@ Vor der Montage wird zwischen Rückseite und Cockpitwand eine 2 mm dicke Moosgum
 .. image:: ../pics/Mounting_OBP60.png
              :scale: 50%
 Abb.: Geräteeinbau in Cockpitwand
+
+.. hint::
+	Die GPS-Antenne des GPS-Empfängers befindet sich liks oben in der Ecke auf der Rückseite des OBP60 (von hinten gesehen). Hinter der Anbaufläche sollten sich keine großflächigen Metallteile befinden. Die Metallteile können den GPS-Empfang stören oder unmöglich machen. Wenn Sie Empgangsprobleme haben, können Sie eine externe GPS-Antenne benutzt.   
