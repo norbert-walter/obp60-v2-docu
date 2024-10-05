@@ -591,7 +591,7 @@ Unter **Hardware** werden alle Einstellungen bezüglich verbauter Hardware oder 
 +----------------------+--------------+--------------+
 |CPU 80 MHz, WiFi      |0.96          |0.53          |
 +----------------------+--------------+--------------+ 
-|Externe 5V-Versorgung |0.83          |-             |
+|Externe 5V-Versorgung |0.83          |              |
 +----------------------+--------------+--------------+
 Tab.: Stromverbrauch OBP60 V2.1
 
