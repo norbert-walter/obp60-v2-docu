@@ -1315,6 +1315,9 @@ Nach der Zuordnung des Sensornamens wird unter **Example** ein Beispiel für das
 **Transducer**
     Über **Transducer** wird der Sensorname festgelegt. Es handelt sich dabei um eine Klartextbeschreibung des Sensors mit ASCII Zeichen. Verwenden Sie nur Buchstaben und Zahlen ohne Freizeichen und Sonderzeichen.
     
+.. note::
+	Verwenden Sie nicht mehr als 6 Zeichen und benutzen Sie Abkürzungen die geläufig sind. Längere Namen werden aufgrund des begrenzten Anzeigeplatzes im Display auf 6 Zeichen gekürzt.
+    
 **Example**
     Beispiel, wie der Inhalt des XDR-Telegramms aussehen wird.
     
