@@ -808,6 +808,7 @@ Im OBP60 gibt es insgesamt bis zu 10 Seiten, die man frei auswählen und gestalt
 
 * Seiten mit festem Inhalt
     * **Voltage** - Anzeige der Bordspannung (**xdrVBat**)
+    * **WindRose** - Anzeige der Winddaten (**AWA, AWS, TWD, TWS, DBT, STW**)
     * **DST810** - Anzeige für Tiefe, Speed, Log und Wassertemperatur (**DBT, STW, Log, WTemp**)
     * **Clock** - Grafische Zeitanzeige mit Sonnenauf- und Sonnenuntergang (**GPST, GPSD**)
     * **White Page** - Leere weiße Seite, um Display in StandBy zu schalten
@@ -932,6 +933,19 @@ Ein Trendindikator zeigt den Trend an in welche Richtung sich die Spannung beweg
 	* ``[TRD]`` - Trendanzeige aktivieren oder deaktivieren
 	
 Die Anzeigeseite benötigt folgende Messwerte: **xdrVBat**
+
+WindRose
+^^^^^^^
+
+.. image:: /pics/OBP60_WindRose.png
+             :scale: 30%
+Abb.: Anzeige Windrose
+
+Bei der Windrosen-Anzeige werden Winddaten angezeigt. Auf der linken Seiten sind die Daten des scheinbaren Windes dargestellt und auf der rechten Seite die Daten des wahren Windes. Die Daten des scheinbaren Windes beziehen sich auf den am fahrenden Schiff wahrgenommenen Wind, der sich aus dem Zusammenwirken der vektoriellen Addition des wahren Windes und des Fahrtwindes ergibt. Es handelt sich um relative Daten bezogen auf das Boot. Die Daten des wahren Windes sind die Winddaten wie man sie an Land mit einer Wetterstation messen würde. Der Windwinkel bezieht sich dabei auf die geografische Nordausrichtung.
+
+In der Mitte der Windrose wird die aktuelle Geschwindigkeit durchs Wasser und die Wassertiefe unter dem Sensor angezeigt.
+	
+Die Anzeigeseite benötigt folgende Messwerte: **AWA, AWS, TWD, TWS, DBT, STW**
 	
 DST810
 ^^^^^^
