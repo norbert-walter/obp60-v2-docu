@@ -464,7 +464,7 @@ Config - OBP Hardware
 Unter **Hardware** werden alle Einstellungen bezüglich verbauter Hardware oder externer Zusatz-Hardware des OPB60 vorgenommen. Die Default-Einstellungen entsprechen den Minimal-Einstellungen für ein OBP60-Gerät. Je nach verbauter Hardware können unterschiedliche Sensoren und Funktionen zum Einsatz kommen.
 
 **CPU Speed**
-     * Taktfrequenz der CPU
+     * Taktfrequenz der CPU. Die Taktfrequenz wird 1 min nach dem Abschluss des Bootvorgangs umgestellt.
      * ``80`` - 80 MHz
      * ``160`` - 160 MHz
      * ``240`` - 240 MHz
