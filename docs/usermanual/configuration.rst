@@ -575,6 +575,29 @@ Unter **Hardware** werden alle Einstellungen bezüglich verbauter Hardware oder 
     * ``Max Power`` - Alle Stromversorgungen sind eingeschaltet. Hierbei ist das Gerät am leistungsfähigsten und es kann der höchste Stromverbrauch entstehen.
     * ``Only 5.0V`` - Es ist nur die zusätzliche Stromversorgung für 5.0 V eingeschaltet.
     * ``Min Power`` - Es sind nur die Stromversorgungen eingeschaltet, die die Minimal-Funktionen bereitstellen. Hierbei entsteht der geringste Stromverbrauch. Die Bussysteme, das GPS, die externe 5V-Stromversorgung, die Hintergrundbeleuchtung und der Buzzer sind ausgeschaltet. Das Display, die Tasten, die RTC und der Umweltsensor BMP280 sind eingeschaltet.
+
++----------------------+--------------+--------------+
+|Baugruppe             |Max Power [W] |Min Power [W] |
++======================+==============+==============+
+|CPU ESP32-S3          |on            |on            |
++----------------------+--------------+--------------+
+|e-Paper Display       |on            |on            |
++----------------------+--------------+--------------+
+|Touch-Tasten          |on            |on            |
++----------------------+--------------+--------------+
+|Echtzeituhr RTC       |on            |on            |
++----------------------+--------------+--------------+
+|Sensor BMP280         |on            |on            |
++----------------------+--------------+--------------+
+|1Wire                 |on            |on            |
++----------------------+--------------+--------------+
+|GPS                   |on            |off           |
++----------------------+--------------+--------------+
+|Bussysteme N2k, 0183  |on            |off           |
++----------------------+--------------+--------------+ 
+|Externe 5V-Versorgung |on            |off           |
++----------------------+--------------+--------------+
+Tab.: Aktive Komponenten OBP60 V2.1
     
 +----------------------+--------------+--------------+
 |Baugruppe             |Max Power [W] |Min Power [W] |
