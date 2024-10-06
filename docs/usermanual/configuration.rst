@@ -230,7 +230,7 @@ In den nächsten beiden Einstellungen werden die Filterfunktionen **USB read Fil
 	
 Im Eingabefeld werden die Kurzbezeichner der NMEA0183-Telegramme eingetragen, Mehrere Einträge werden durch Komma ``,`` getrennt. Folgende Kurzbezeichner können verwendet werden:
 
-	* DBK, DBS, DBT, DPT, GGA, GLL, GSA, GSV, HDG, HDM, HDT, MTW, MWD, MWV, RMB, RMC, ROT, RSA, VHW, VTG, VWR, XDR, XTE, ZDA
+	* DBK, DBS, DBT, DPT, GGA, GLL, GSA, GSV, HDM, HDT, MTW, MWD, MWV, RMB, RMC, ROT, RSA, VHW, VTG, VWR, XDR, XTE, ZDA
 	
 Die genaue Bedeutung der Kurzbezeichner ist `hier`_ erklärt.
 
@@ -277,7 +277,7 @@ In den nächsten beiden Einstellungen werden die Filterfunktionen **Serial read 
 	
 Im Eingabefeld werden die Kurzbezeichner der NMEA0183-Telegramme eingetragen, mehrere Einträge werden durch Komma ``,`` getrennt. Folgende Kurzbezeichner können verwendet werden:
 
-	* DBK, DBS, DBT, DPT, GGA, GLL, GSA, GSV, HDG, HDM, HDT, MTW, MWD, MWV, RMB, RMC, ROT, RSA, VHW, VTG, VWR, XDR, XTE, ZDA
+	* DBK, DBS, DBT, DPT, GGA, GLL, GSA, GSV, HDM, HDT, MTW, MWD, MWV, RMB, RMC, ROT, RSA, VHW, VTG, VWR, XDR, XTE, ZDA
 	
 Die genaue Bedeutung der Kurzbezeichner ist `hier`_ erklärt.
 
@@ -331,7 +331,7 @@ In den nächsten beiden Einstellungen werden die Filterfunktionen **NMEA Read Fi
 	
 Im Eingabefeld werden die Kurzbezeichner der NMEA0183-Telegramme eingetragen, mehrere Einträge werden durch Komma ``,`` getrennt. Folgende Kurzbezeichner können verwendet werden:
 
-	* DBK, DBS, DBT, DPT, GGA, GLL, GSA, GSV, HDG, HDM, HDT, MTW, MWD, MWV, RMB, RMC, ROT, RSA, VHW, VTG, VWR, XDR, XTE, ZDA
+	* DBK, DBS, DBT, DPT, GGA, GLL, GSA, GSV, HDM, HDT, MTW, MWD, MWV, RMB, RMC, ROT, RSA, VHW, VTG, VWR, XDR, XTE, ZDA
 	
 Die genaue Bedeutung der Kurzbezeichner ist `hier`_ erklärt.
 
@@ -391,7 +391,7 @@ In den nächsten beiden Einstellungen werden die Filterfunktionen **NMEA Read Fi
 	
 Im Eingabefeld werden die Kurzbezeichner der NMEA0183-Telegramme eingetragen, mehrere Einträge werden durch Komma ``,`` getrennt. Folgende Kurzbezeichner können verwendet werden:
 
-	* DBK, DBS, DBT, DPT, GGA, GLL, GSA, GSV, HDG, HDM, HDT, MTW, MWD, MWV, RMB, RMC, ROT, RSA, VHW, VTG, VWR, XDR, XTE, ZDA
+	* DBK, DBS, DBT, DPT, GGA, GLL, GSA, GSV, HDM, HDT, MTW, MWD, MWV, RMB, RMC, ROT, RSA, VHW, VTG, VWR, XDR, XTE, ZDA
 	
 Die genaue Bedeutung der Kurzbezeichner ist `hier`_ erklärt.
 
@@ -843,12 +843,12 @@ Abb.: Seite mit 4 Anzeigewerten
     * **DTW** - Distance To Waypoint, Entfernung zum aktuellen Wegpunkt
     * **GPSD** - GPS Date, GPS-Datum
     * **GPDT** - GPS Time, GPS-Zeit als UTC (Weltzeit)
-    * **HDG** - Heading, rechtweisender Kurs
+    * **HDM** - Magnetic Heading, magnetischer rechtweisender Kurs
+    * **HDT** - Heading, wahrer rechtweisender Kurs
     * **HDOP** - GPS-Genauigkeit in der Horizontalen
     * **LAT** - Latitude, geografische Breite
     * **LON** - Longitude, geografische Höhe
     * **Log** - Log, Entfernung
-    * **MHDG** - Magnetic Heading, magnetischer rechtweisender Kurs
     * **MaxAws** - Maximum Apperant Wind Speed, Maximum der relativen Windgeschwindigkeit seit Gerätestart
     * **MaxTws** - Maximum True Wind Speed, Maximum der wahren Windgeschwindigkeit seit Gerätestart
     * **PDOP** - GPS-Genauigkeit über alle 3 Raumachsen
