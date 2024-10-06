@@ -591,6 +591,10 @@ Unter **Hardware** werden alle Einstellungen bezüglich verbauter Hardware oder 
 +----------------------+--------------+--------------+
 |1Wire                 |on            |on            |
 +----------------------+--------------+--------------+
+|Flash-LED             |on            |off           |
++----------------------+--------------+--------------+
+|Hintergrundbeleuchtung|on            |off           |
++----------------------+--------------+--------------+
 |Buzzer                |on            |off           |
 +----------------------+--------------+--------------+
 |GPS                   |on            |off           |
@@ -599,10 +603,10 @@ Unter **Hardware** werden alle Einstellungen bezüglich verbauter Hardware oder 
 +----------------------+--------------+--------------+ 
 |Externe 5V-Versorgung |on            |off           |
 +----------------------+--------------+--------------+
-Tab.: Aktive Komponenten OBP60 V2.1
+Tab.: Aktive Baugruppen OBP60 V2.1
     
 +----------------------+--------------+--------------+
-|Baugruppe             |Max Power [W] |Min Power [W] |
+|Komponenten           |Max Power [W] |Min Power [W] |
 +======================+==============+==============+
 |CPU 240 MHz, WiFi, AP |1.78          |1.30          |
 +----------------------+--------------+--------------+
@@ -618,7 +622,7 @@ Tab.: Aktive Komponenten OBP60 V2.1
 +----------------------+--------------+--------------+ 
 |Externe 5V-Versorgung |0.83          |0.00          |
 +----------------------+--------------+--------------+
-Tab.: Stromverbrauch OBP60 V2.1
+Tab.: Stromverbrauch OBP60 V2.1 (AP - Access Point)
 
 Je nach zugeschalteter Farbe und Leistung der Hintergrundbeleuchtung entsteht ein zusätzlicher Stromverbrauch.
 
