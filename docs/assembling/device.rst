@@ -1,6 +1,9 @@
 Geräteaufbau
 ============
 
+Mechanischer Aufbau
+-------------------
+
 .. image:: ../pics/OBP60_Explode_View_Named.png
    :scale: 45%
 Abb.: Explosionsansicht
@@ -11,7 +14,7 @@ In der oberen Abbildung ist der Aufbau des OBP60 zu sehen. Das Gerät besteht au
 		Die Tasten bestehen aus schwarz eloxierten Inbus-Senkschrauben aus Edelstahl (V2A). Die Tasten werden mit einem Dichtmittel in die Frontschale des Gehäuses eingeschraubt, um eine Wasserdichtigkeit zu erreichen.
 	* **Springs**
 		Die Federn hinter den Tasten dienen der elektrischen Kontaktierung der Tasten mit den Sensorflächen auf der Platine.
-	* **FrontCase**
+	* **Front Case**
 		Die Frontschale des Gehäuses nimmt die Tasten auf und enthält die eingeklebte Frontscheibe. Die Außenflächen der Frontschale bestehen aus 2 mm dicken Kunststoff. An einigen Stellen ist das Gehäuse hohl und enthält an den Stellen eine Stützstruktur mit einem Füllgrad von 30%. Das Gehäuse ist als Kastenkonstruktion ausgeführt und dadurch verwindungssteif.
 	* **Brass Inlets**
 		Die Messing-Gewindeeinsätze dienen zur Verstärkung der Gewinde für die Gehäuseschrauben, das der Kunststoff keine ausreichende Festigkeit aufweist, um den nötigen Druck zum Anpressen der Gehäusedichtung aufzubringen. Die Messing-Gewindeeinsätze werden thermisch in den Kunststoff eingeschmolzen und sind gegen eine ungewollte Verdrehung im Kunststoff gesichert.
@@ -36,4 +39,32 @@ In der oberen Abbildung ist der Aufbau des OBP60 zu sehen. Das Gerät besteht au
 	* **Backside Seal**
 		Die Rückwanddichtung dichtet das Gehäuse gegenüber der Einbauöffnung ab. Die Dichtung besteht aus 2 mm dicken Neoprenmaterial. Damit lassen sich kleine Unebenheiten und leichte Krümmungen überbrücken.
 	* **Connectors**
-		Für eine einfachen Montage sind an der Rückseite des Gerätes abnehmbare Stecker angebracht. Über die Steckverbinder mit Schraubverbindungen kann das Gerät mit Strom versorgt und an die Bussysteme angeschlossen werden.
+		Für eine einfachen Montage sind an der Rückseite des Gerätes abnehmbare Steckverbinder angebracht. Über die Steckverbinder mit Schraubverbindungen kann das Gerät mit Strom versorgt und an die Bussysteme angeschlossen werden.
+		
+Main Board
+----------
+
+Das Mainboard enthält alle elektrischen und elektronischen Komponenten wie:
+
+	* Dual Core CPU ESP32-S3
+	* Stromversorgung
+	* Display-Ansteuerung
+	* Sensortasten
+	* GPS-Empfänger
+	* RTC Echtzeituhr
+	* Backup-Batterie
+	* Buzzer
+	* Flash-LED
+	* Hintergrundbeleuchtung
+	* Isolierte Treiber für Bussysteme (NMEA2000; NMEA0183, I2C)
+	* externe Stromversorgung
+	* ESD-Schutzschaltungen
+	* USB-C
+
+.. image:: ../pics/PCB_Top_Side_Named.png
+   :scale: 45%
+Abb.: Mainboard Oberseite
+
+.. image:: ../pics/PCB_Bottom_Side_Named.png
+   :scale: 45%
+Abb.: Mainboard Unterseite
