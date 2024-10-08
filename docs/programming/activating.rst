@@ -3,7 +3,7 @@
 Kompilieren und Download
 ========================
 
-Die Firmware zum OBP60 kann recht einfach selber an eigene Bedürfnisse angepasst werden. Als Programmier-Etwicklungsumgebung wird PlatformIO verwendet. Der Source-Code befindet sich zentral auf Github im Internet. Alle Software-Revisionen sind dort verfügbar. Es können bei Bedarf aktuelle oder ältere Versionen benutzt werden. Als Betriebssysteme werden Linux, Windows und Mac iOS unterstützt. Zum Kompilieren der Firmware gibt es zwei Möglichkeiten.
+Die Firmware zum OBP60 kann recht einfach selber an eigene Bedürfnisse angepasst werden. Als Programmier-Entwicklungsumgebung wird PlatformIO verwendet. Der Source-Code befindet sich zentral auf Github im Internet. Alle Software-Revisionen sind dort verfügbar. Es können bei Bedarf aktuelle oder ältere Versionen benutzt werden. Als Betriebssysteme werden Linux, Windows und Mac iOS unterstützt. Zum Kompilieren der Firmware gibt es zwei Möglichkeiten.
 
 	* Verwendung von **Gitpod** (webbasiert in Cloud)
 	* **Visual Studio Code** mit **PlatformIO** Plugin (lokal auf dem PC)
