@@ -90,7 +90,7 @@ Schaltplan
 Der Schaltplan und die Platine wurde mit dem Online-Entwicklungstool EasyEDA erstellt.
 
 * `Schaltplan V2.1 [PDF] <../_static/files/Schematic_OBP60_V2.1.pdf>`_
-* `Gerber Daten [ZIP] <../_static/files/Schematic_OBP60_V2.1.pdf>`_
+* `Gerber Daten [ZIP] <../_static/files/Gerber_OBP60_V2.1.pdf>`_
 * `Bauteilliste [TXT] <../_static/files/BOM_OBP60_V2.1.txt>`_
 * `Bestückung [HTML] <../_static/files/ibom_multifunktionsdisplay_V2.1.html>`_
 
