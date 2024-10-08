@@ -90,7 +90,7 @@ Anschlussbelegung
 Schaltplan
 ----------
 
-* `Schaltplan V2.1[PDF] <../_static/files/Schematic_OBP60_V2.1.pdf>`_
+* `Schaltplan V2.1 [PDF] <../_static/files/Schematic_OBP60_V2.1.pdf>`_
 
 
 Maßbilder

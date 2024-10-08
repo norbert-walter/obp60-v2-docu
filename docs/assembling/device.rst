@@ -23,7 +23,7 @@ In der oberen Abbildung ist der Aufbau des OBP60 zu sehen. Das Gerät besteht au
 	* **Front Glass**
 		Die Frontscheibe aus 3 mm dicken Plexiglas schützt das Display vor Umwelteinflüssen und vor mechanischen Beschädigungen durch harte Schläge. Die Frontscheibe dient zusätzlich als UV-Filter mit hoher Filterwirkung. Die Außenseite der Frontscheibe ist entspiegelt und verhindert direkte Reflektionen des Sonnenlichts. Eine Besonderheit der Frontscheibe ist, die Fähigkeit das e-Paper-Display bei Nacht zu beleuchten. Dazu koppeln an der oberen Stirnseite der Scheibe 6 RGB-LEDs Licht in die Plexiglasscheibe ein, dessen Licht an Streukörpern innerhalb des Plexiglases auf das e-Papaer-Display umgelenkt werden. Die Ausleuchtung des Displays erfolgt dabei gleichmäßig über die gesamte Displayfläche.
 	* **Filter**
-		Eine IR-Filterfolie wird zusätzlich auf der Rückseite der Frontscheibe aufgebracht und soll die Infrarotstrahlung des Sonnenlichtes reduzieren unmd vom e-Paper-Display fernhalten. Die Infrarotstrahlung wird in der Filterfolie absorbiert und an die Frontscheibe abgegeben, denn bei maximaler Sonenneinstrahlung treffen bis zu 10W an Wärmestrahlung auf das Display.
+		Eine IR-Filterfolie wird zusätzlich auf der Rückseite der Frontscheibe aufgebracht und soll die Infrarotstrahlung des Sonnenlichtes reduzieren unmd vom e-Paper-Display fernhalten. Die Infrarotstrahlung wird in der Filterfolie absorbiert und an die Frontscheibe abgegeben, denn bei maximaler Sonenneinstrahlung treffen bis zu 10 W an Wärmestrahlung auf das Display.
 	* **Display Frame**
 		Der Displayrahmen ist eine Art Maske und verdeckt unerwünschte Bereiche des Displays bei Draufsicht. Zusätzlich ist ein kleiner Steg angebracht, um das Licht der Hintergrundbeleuchtung gegenüber dem Display abzuschirmen, damit kein Fremdlicht in die Glasscheibe des e-Paper-Displays eingekoppelt wird.
 	* **Display**
@@ -71,14 +71,29 @@ Abb.: Mainboard Oberseite
    :scale: 45%
 Abb.: Mainboard Unterseite
 
+Platinen
+--------
+
+Die Platinen für das Mainborad und die Hintergrundbeleuchtung wurden als zweiseitig bestückte SMD-Platine mit Durchkontaktierungen, Stopplack und Bedruckung ausgeführt.
+
+.. image:: ../pics/PCB_Empty_Top_Side.png
+   :scale: 45%
+Abb.: Unbestückte Platinen Oberseite
+
+.. image:: ../pics/PCB_Empty_Bottom_Side.png
+   :scale: 45%
+Abb.: Unbestückte Platinen Unterseite
+
 Schaltplan
 ----------
 
 Der Schaltplan und die Platine wurde mit dem Online-Entwicklungstool EasyEDA erstellt.
 
-* `Schaltplan V2.1[PDF] <../_static/files/Schematic_OBP60_V2.1.pdf>`_
-* `Gerber Daten[ZIP] <../_static/files/Schematic_OBP60_V2.1.pdf>`_
-* `Bauteilliste[ZIP] <../_static/files/Schematic_OBP60_V2.1.pdf>`_
+* `Schaltplan V2.1 [PDF] <../_static/files/Schematic_OBP60_V2.1.pdf>`_
+* `Gerber Daten [ZIP] <../_static/files/Schematic_OBP60_V2.1.pdf>`_
+* `Bauteilliste [TXT] <../_static/files/BOM_OBP60_V2.1.pdf>`_
+* `Bestückung [HTML] <../_static/docs_mirror/ibom_multifunktionsdisplay_V2.1.html>`_
+
 
 Schaltungsbeschreibung
 ----------------------
