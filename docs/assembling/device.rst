@@ -102,6 +102,5 @@ Die Fertigungsdaten Schaltplan, Gerber-Daten und Bauteilliste unterliegen der `C
 .. _Common Creative Lizenz (CC) BY BC SA 4.0: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.de
 .. _Kontaktformular: https://open-boat-projects.org/de/kontakt
 
-
 Schaltungsbeschreibung
 ----------------------
