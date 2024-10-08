@@ -10,7 +10,7 @@ Abb.: Explosionsansicht
 
 In der oberen Abbildung ist der Aufbau des OBP60 zu sehen. Das Gerät besteht aus einzelnen Komponenten die im folgenden beschreiben werden.
 
-	* **Touch Pad**
+	* **Touch Pads**
 		Die Tasten bestehen aus schwarz eloxierten Inbus-Senkschrauben aus Edelstahl (V2A). Die Tasten werden mit einem Dichtmittel in die Frontschale des Gehäuses eingeschraubt, um eine Wasserdichtigkeit zu erreichen.
 	* **Springs**
 		Die Federn hinter den Tasten dienen der elektrischen Kontaktierung der Tasten mit den Sensorflächen auf der Platine.
@@ -32,6 +32,8 @@ In der oberen Abbildung ist der Aufbau des OBP60 zu sehen. Das Gerät besteht au
 		Der Klebefilm hinter der Display dient zur Befestigung des Displays auf dem Displayhalter.
 	* **Display Holder**
 		Der Displayhalter trägt das e-Paper-Display und verhindert ein verwinden des Displays. Das e-Paper-Display ist sehr empfindlich, denn es besteht aus zwei Glassubstraten mit einer Gesamtdicke von nur 0,7 mm. Über den Displayhalter wird das Display über Schrauben mit dem Mainboard verbunden.
+	* **Main Board**
+		Das Mainboard enthält alle elektronischen Komponenten auf einer zweiseitigen Paltine. An der Oberseite des Mainboards ist die LED-Platine für die Hintergrundbeleuchtung angebracht.
 	* **Case Seal**
 		Die Gehäusedichtung stellt eine wasserdichte Verbindung zwischen der Front und Rückschale her. Die Dichtung ist dabei als 1 mm dicke Flächendichtung ausgeführt.
 	* **Backside Case**
@@ -68,3 +70,15 @@ Abb.: Mainboard Oberseite
 .. image:: ../pics/PCB_Bottom_Side_Named.png
    :scale: 45%
 Abb.: Mainboard Unterseite
+
+Schaltplan
+----------
+
+Der Schaltplan und die Platine wurde mit dem Online-Entwicklungstool EasyEDA erstellt.
+
+* `Schaltplan V2.1[PDF] <../_static/files/Schematic_OBP60_V2.1.pdf>`_
+* `Gerber Daten[ZIP] <../_static/files/Schematic_OBP60_V2.1.pdf>`_
+* `Bauteilliste[ZIP] <../_static/files/Schematic_OBP60_V2.1.pdf>`_
+
+Schaltungsbeschreibung
+----------------------
