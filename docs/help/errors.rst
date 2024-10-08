@@ -11,8 +11,22 @@ Dort können Sie nach Fehlern suchen und die Fehlerbeschreibungen und deren Lös
 
 Wir bevorzugen diese Art der Fehlerverfolgung, da wir so strukturiert und zügig Fehler beheben können. Dieses System erlaubt uns, mit mehreren Mitarbeitenden an weltweit verteilten Standorten an der Behebung von Fehlern arbeiten zu können. Mit Ihrer Unterstützung werden wir in die Lage versetzt, eine qualitativ hochwertige Software und Hardware zur Verfügung zu stellen.
 
-Software
---------
+Kritische Fehler
+----------------
 
-Hardware
---------
+https://github.com/norbert-walter/esp32-nmea2000-obp60/issues?q=is%3Aissue+is%3Aopen+label%3A%22critical+bug%22
+
+Software-Fehler
+---------------
+
+https://github.com/norbert-walter/esp32-nmea2000-obp60/issues?q=is%3Aissue+is%3Aopen+label%3Abug+
+
+Hardware-Fehler
+---------------
+
+https://github.com/norbert-walter/esp32-nmea2000-obp60/issues?q=is%3Aissue+is%3Aopen+label%3A%22hardware+bug%22
+
+Behobene Fehler
+---------------
+
+https://github.com/norbert-walter/esp32-nmea2000-obp60/issues?q=label%3Abug+is%3Aclosed
