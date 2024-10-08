@@ -30,3 +30,13 @@ Behobene Fehler
 ---------------
 
 https://github.com/norbert-walter/esp32-nmea2000-obp60/issues?q=label%3Abug+is%3Aclosed
+
+Software-Erweiterungen
+----------------------
+
+https://github.com/norbert-walter/esp32-nmea2000-obp60/issues?q=is%3Aissue+is%3Aopen+label%3Aenhancement
+
+Neue Anzeigeseiten
+------------------
+
+https://github.com/norbert-walter/esp32-nmea2000-obp60/issues?q=is%3Aissue+is%3Aopen+label%3A%22custom+page%22
