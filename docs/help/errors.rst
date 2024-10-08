@@ -51,4 +51,4 @@ Neue Anzeigeseiten
 
 `Neue Anzeigeseiten`_ dienen zur Erweiterung der Funktionalität und werden meistens von den Anwendern vorgeschlagen.
 
-.. _Neue Anzeigeseite: https://github.com/norbert-walter/esp32-nmea2000-obp60/issues?q=is%3Aissue+is%3Aopen+label%3A%22custom+page%22
+.. _Neue Anzeigeseiten: https://github.com/norbert-walter/esp32-nmea2000-obp60/issues?q=is%3Aissue+is%3Aopen+label%3A%22custom+page%22
