@@ -14,29 +14,41 @@ Wir bevorzugen diese Art der Fehlerverfolgung, da wir so strukturiert und zügig
 Kritische Fehler
 ----------------
 
-https://github.com/norbert-walter/esp32-nmea2000-obp60/issues?q=is%3Aissue+is%3Aopen+label%3A%22critical+bug%22
+`Kritische Fehler`_ sind schwerwiegende Fehler, die die Funktion des Gerätes deutlich beeinträchtigen oder wenn eine wichtige Funktion nicht ausgeführt werden kann.
+
+.. _Kritische Fehler: https://github.com/norbert-walter/esp32-nmea2000-obp60/issues?q=is%3Aissue+is%3Aopen+label%3A%22critical+bug%22
 
 Software-Fehler
 ---------------
 
-https://github.com/norbert-walter/esp32-nmea2000-obp60/issues?q=is%3Aissue+is%3Aopen+label%3Abug+
+`Software-Fehler`_ sind Fehler innerhalb der Software. Eine Funktion ist unter bestimmten Umständen fehlerhaft oder nicht gegeben. Der Fehler ist aber nicht kritisch.
+
+.. _Software-Fehler: https://github.com/norbert-walter/esp32-nmea2000-obp60/issues?q=is%3Aissue+is%3Aopen+label%3Abug+
 
 Hardware-Fehler
 ---------------
 
-https://github.com/norbert-walter/esp32-nmea2000-obp60/issues?q=is%3Aissue+is%3Aopen+label%3A%22hardware+bug%22
+`Hardware-Fehler`_ werden durch die Hardware verursacht. Das können Design-Fehler einer Platine oder in Einzelfällen falsch bestückte Platinen sein. Die Konstruktion des Gerüätes oder die Materialauswahl einzelner Komponenten kann auch davon betroffen sein. 
+
+.. _Hardware-Fehler: https://github.com/norbert-walter/esp32-nmea2000-obp60/issues?q=is%3Aissue+is%3Aopen+label%3A%22hardware+bug%22
 
 Behobene Fehler
 ---------------
 
-https://github.com/norbert-walter/esp32-nmea2000-obp60/issues?q=label%3Abug+is%3Aclosed
+`Behobene Fehler`_ wurden gelöst. Es lohnt sich beim Auftreten von Fehlern, auch die behobenen Fehler anzusehen, da teilweise Workarounds zur Beseitigung von Fehlern verwendet werden.
+
+.. _Behobene Fehler: https://github.com/norbert-walter/esp32-nmea2000-obp60/issues?q=label%3Abug+is%3Aclosed
 
 Software-Erweiterungen
 ----------------------
 
-https://github.com/norbert-walter/esp32-nmea2000-obp60/issues?q=is%3Aissue+is%3Aopen+label%3Aenhancement
+`Software-Erweiterungen`_ sind Vorschläge zur Verbesserung der Software oder Erweiterung der Funktionalität.
+
+.. _Software-Erweiterungen: https://github.com/norbert-walter/esp32-nmea2000-obp60/issues?q=is%3Aissue+is%3Aopen+label%3Aenhancement
 
 Neue Anzeigeseiten
 ------------------
 
-https://github.com/norbert-walter/esp32-nmea2000-obp60/issues?q=is%3Aissue+is%3Aopen+label%3A%22custom+page%22
+`Neue Anzeigeseiten`_ dienen zur Erweiterung der Funktionalität und werden meistens von den Anwendern vorgeschlagen.
+
+.. _Neue Anzeigeseite: https://github.com/norbert-walter/esp32-nmea2000-obp60/issues?q=is%3Aissue+is%3Aopen+label%3A%22custom+page%22
