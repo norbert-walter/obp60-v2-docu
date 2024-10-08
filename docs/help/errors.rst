@@ -21,14 +21,14 @@ Kritische Fehler
 Software-Fehler
 ---------------
 
-`Software-Fehler`_ sind Fehler innerhalb der Software. Eine Funktion ist unter bestimmten Umständen fehlerhaft oder nicht gegeben. Der Fehler ist aber nicht kritisch.
+`Software-Fehler`_ sind Fehler innerhalb der Software. Eine Funktion ist unter bestimmten Umständen fehlerhaft oder nicht gegeben. Die Fehler sind nicht kritisch.
 
 .. _Software-Fehler: https://github.com/norbert-walter/esp32-nmea2000-obp60/issues?q=is%3Aissue+is%3Aopen+label%3Abug+
 
 Hardware-Fehler
 ---------------
 
-`Hardware-Fehler`_ werden durch die Hardware verursacht. Das können Design-Fehler einer Platine oder in Einzelfällen falsch bestückte Platinen sein. Die Konstruktion des Gerüätes oder die Materialauswahl einzelner Komponenten kann auch davon betroffen sein. 
+`Hardware-Fehler`_ werden durch die Hardware verursacht. Das können Design-Fehler einer Platine oder in Einzelfällen falsch bestückte Platinen sein. Die Konstruktion des Gerüätes oder die Materialauswahl einzelner Komponenten kann auch davon betroffen sein. Die Fehler sind nicht kritisch.
 
 .. _Hardware-Fehler: https://github.com/norbert-walter/esp32-nmea2000-obp60/issues?q=is%3Aissue+is%3Aopen+label%3A%22hardware+bug%22
 
