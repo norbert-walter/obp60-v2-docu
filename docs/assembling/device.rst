@@ -84,15 +84,23 @@ Abb.: Unbestückte Platinen Oberseite
    :scale: 45%
 Abb.: Unbestückte Platinen Unterseite
 
-Schaltplan
-----------
+Schaltplan und Fertigungsdaten
+------------------------------
 
-Der Schaltplan und die Platine wurde mit dem Online-Entwicklungstool EasyEDA erstellt.
+Der Schaltplan und die Platine wurde mit dem Online-Entwicklungstool EasyEDA erstellt. Nachfolgend sind die Unterlagen für eine Fertigung aufgeführt.
 
 * `Schaltplan V2.1 [PDF] <../_static/files/Schematic_OBP60_V2.1.pdf>`_
 * `Gerber Daten [ZIP] <../_static/files/Gerber_OBP60_V2.1.zip>`_
 * `Bauteilliste [TXT] <../_static/files/BOM_OBP60_V2.1.txt>`_
 * `Bestückung [HTML] <../_static/files/ibom_multifunktionsdisplay_V2.1.html>`_
+
+.. image:: ../pics/Lizenz_by-nc-sa_eu.png
+   :scale: 45%
+
+Die Fertigungsdaten Schaltplan, Gerber-Daten und Bauteilliste unterliegen der `Common Creative Lizenz (CC) BY BC SA 4.0`_. Wenn Sie eine kommerzielle Nutzung des OBP60 beabsichtigen, kontaktieren Sie uns über das `Kontaktformular`_. Es besteht die Möglichkeit, ein nicht exklusives Nutzungsrecht über eine kommerzielle Lizenz zu erwerben.
+
+.. _Common Creative Lizenz (CC) BY BC SA 4.0: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.de
+.. _Kontaktformular: https://open-boat-projects.org/de/kontakt
 
 
 Schaltungsbeschreibung
