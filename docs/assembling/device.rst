@@ -17,7 +17,7 @@ In der oberen Abbildung ist der Aufbau des OBP60 zu sehen. Das Gerät besteht au
 	* **Front Case**
 		Die Frontschale des Gehäuses nimmt die Tasten auf und enthält die eingeklebte Frontscheibe. Die Außenflächen der Frontschale bestehen aus 2 mm dicken Kunststoff. An einigen Stellen ist das Gehäuse hohl und enthält an den Stellen eine Stützstruktur mit einem Füllgrad von 30%. Das Gehäuse ist als Kastenkonstruktion ausgeführt und dadurch verwindungssteif.
 	* **Brass Inlets**
-		Die Messing-Gewindeeinsätze dienen zur Verstärkung der Gewinde für die Gehäuseschrauben, das der Kunststoff keine ausreichende Festigkeit aufweist, um den nötigen Druck zum Anpressen der Gehäusedichtung aufzubringen. Die Messing-Gewindeeinsätze werden thermisch in den Kunststoff eingeschmolzen und sind gegen eine ungewollte Verdrehung im Kunststoff gesichert.
+		Die Messing-Gewindeeinsätze dienen zur Verstärkung der Gewinde für die Gehäuseschrauben, da der Kunststoff keine ausreichende Festigkeit aufweist, um den nötigen Druck zum Anpressen der Gehäusedichtung aufzubringen. Die Messing-Gewindeeinsätze werden thermisch in den Kunststoff eingeschmolzen und sind gegen eine ungewollte Verdrehung im Kunststoff gesichert.
 	* **Glue Film**
 		Der Klebefilm wird auf die Frontscheibe aufgetragen und dient zur wasserdichten Befestigung der Frontscheibe an der Innenseite des Gehäuses.
 	* **Front Glass**
@@ -25,7 +25,7 @@ In der oberen Abbildung ist der Aufbau des OBP60 zu sehen. Das Gerät besteht au
 	* **Filter**
 		Eine IR-Filterfolie wird zusätzlich auf der Rückseite der Frontscheibe aufgebracht und soll die Infrarotstrahlung des Sonnenlichtes reduzieren unmd vom e-Paper-Display fernhalten. Die Infrarotstrahlung wird in der Filterfolie absorbiert und an die Frontscheibe abgegeben, denn bei maximaler Sonenneinstrahlung treffen bis zu 10 W an Wärmestrahlung auf das Display.
 	* **Display Frame**
-		Der Displayrahmen ist eine Art Maske und verdeckt unerwünschte Bereiche des Displays bei Draufsicht. Zusätzlich ist ein kleiner Steg angebracht, um das Licht der Hintergrundbeleuchtung gegenüber dem Display abzuschirmen, damit kein Fremdlicht in die Glasscheibe des e-Paper-Displays eingekoppelt wird.
+		Der Displayrahmen ist eine Art Maske und verdeckt unerwünschte Bereiche des Displays. Zusätzlich ist ein kleiner Steg angebracht, um das Licht der Hintergrundbeleuchtung gegenüber dem Display abzuschirmen, damit kein Fremdlicht in die Glasscheibe des e-Paper-Displays eingekoppelt wird.
 	* **Display**
 		Das Display ist eine e-Paper-Display das Scharz/Weiß und 4 Graustufen abbilden kann. Die Auflösung des Displays beträgt 400 x 300 Pixel. Die Pixeldichte auf die Anzeigefläche bezogen liegt bei 120 dpi. E-Paper-Displays benötigen nur bei der Ansteuerung neuer Bildinhalte Energie. Im ausgeschalteten Zustand wird der Bildinhalt gehalten. Damit ist diese Bildschirm-Technologie sehr energiesparend.
 	* **Glue Film**
