@@ -39,7 +39,7 @@ Im folgenden Bild sind die geschützten und ungeschützten Anschlüsse zu sehen.
 Abb.: Sichere und unsichere Bereiche
 
 .. warning::
-	Bitte beachten Sie, dass der 1Wire-Bus gegenüber Störungen nicht geschützt ist und entsprechend durch Schirmung geschützt werden muss. Daher sollte für die Leitungen des 1Wire-Bus nur abgeschirmte Kabel verwendet werden. ``GND`` darf mit keinen weiteren externen Schaltungsteilen verbunden werden, denn ``GND`` dient ausschließlich als Masseleitung für den 1Wire-Bus.
+	Bitte beachten Sie, dass der 1Wire-Bus gegenüber Störungen nicht geschützt ist und entsprechend durch Schirmung geschützt werden muss. Daher sollten für die Leitungen des 1Wire-Bus nur abgeschirmte Kabel verwendet werden. ``GND`` darf mit keinen weiteren externen Schaltungsteilen verbunden werden, denn ``GND`` dient ausschließlich als Masseleitung für den 1Wire-Bus.
 
 Stromversorgung 12V/24V
 -----------------------
@@ -59,7 +59,7 @@ Abb.: Stromversorgung
 
 Das OBP60 kann in 12V- und in 24V-Bord-Versorgungsnetzen verwendet werden. Bei Spannungen höher als 28V wird die interne Sicherung im Gerät ausgelöst.
 
-In einigen Situationen ist es günstiger, die Stromversorgung direkt über den NMEA2000-Bus vorzunehmen. Dann entfält eine Verkabelung der Stromversorgung zu einer Schalttafel. Nähere Details dazu finden Sie im Kapitel  :ref:`Bussysteme`.
+In einigen Situationen ist es günstiger, die Stromversorgung direkt über den NMEA2000-Bus vorzunehmen. Dann entfällt die Verkabelung der Stromversorgung zu einer Schalttafel. Nähere Details dazu finden Sie im Kapitel  :ref:`Bussysteme`.
 
 .. note::
 	Im Gerät ist eine selbst rückstellende Sicherung verbaut, die bei zu hohem Stromverbrauch die Versorgungsspannung selbständig trennt. Sie können die Sicherung zurücksetzen, indem Sie die Stromversorgung zum OBP60 trennen und den Grund des übermäßigen Stromverbrauchs beseitigen. Danach warten Sie einige Minuten und schalten dann die Versorgungsspannung wieder ein.
@@ -95,4 +95,4 @@ Vor der Montage wird zwischen Rückseite und Cockpitwand eine 2 mm dicke Moosgum
 Abb.: Geräteeinbau in Cockpitwand
 
 .. hint::
-	Die GPS-Antenne des GPS-Empfängers befindet sich liks oben in der Ecke auf der Rückseite des OBP60 (von hinten gesehen). Hinter der Anbaufläche sollten sich keine großflächigen Metallteile befinden. Die Metallteile können den GPS-Empfang stören oder unmöglich machen. Wenn Sie Empgangsprobleme haben, können Sie eine externe GPS-Antenne benutzt.   
+	Die GPS-Antenne des GPS-Empfängers befindet sich links oben in der Ecke auf der Rückseite des OBP60 (von hinten gesehen). Hinter der Anbaufläche sollten sich keine großflächigen Metallteile befinden. Die Metallteile können den GPS-Empfang stören oder unmöglich machen. Wenn Sie Empfangsprobleme haben, können Sie eine externe GPS-Antenne benutzt.   
