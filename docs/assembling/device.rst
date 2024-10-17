@@ -25,7 +25,7 @@ In der oberen Abbildung ist der Aufbau des OBP60 zu sehen. Das Gerät besteht au
 	* **Filter**
 		Eine IR-Filterfolie wird zusätzlich auf der Rückseite der Frontscheibe aufgebracht und soll die Infrarotstrahlung des Sonnenlichtes reduzieren und vom e-Paper-Display fernhalten. Die Infrarotstrahlung wird in der Filterfolie absorbiert und an die Frontscheibe abgegeben, denn bei maximaler Sonenneinstrahlung treffen bis zu 10 W an Wärmestrahlung auf das Display.
 	* **Display Frame**
-		Der Displayrahmen stellt eine Art Maske dar und verdeckt unerwünschte Bereiche des Displays bei Draufsicht. Zusätzlich ist ein kleiner Steg angebracht, um das Licht der Hintergrundbeleuchtung gegenüber dem Display abzuschirmen, damit kein Fremdlicht in die Glasscheibe des e-Paper-Displays eingekoppelt wird.
+		Der Displayrahmen ist eine Art Maske und verdeckt unerwünschte Bereiche des Displays. Zusätzlich ist ein kleiner Steg angebracht, um das Licht der Hintergrundbeleuchtung gegenüber dem Display abzuschirmen, damit kein Fremdlicht in die Glasscheibe des e-Paper-Displays eingekoppelt wird.
 	* **Display**
 		Das Display ist ein e-Paper-Display, das Scharz/Weiß und 4 Graustufen abbilden kann. Die Auflösung des Displays beträgt 400 x 300 Pixel. Die Pixeldichte auf die Anzeigefläche bezogen liegt bei 120 dpi. E-Paper-Displays benötigen nur bei der Ansteuerung neuer Bildinhalte Energie. Im ausgeschalteten Zustand bleibt der Bildinhalt sichtbar. Damit ist diese Bildschirm-Technologie sehr energiesparend.
 	* **Glue Film**
