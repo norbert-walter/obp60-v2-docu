@@ -1,7 +1,7 @@
 Konfiguration
 =============
 
-Um das OBP60 konfigurieren zu können, muss das Gerät in Betrieb sein. Schalten Sie dazu die Stromversorgung zu, die Firmware des OBP60 startet nun. Nach Abschluss der Initialisierungsphase ertönt ein Piepton. Im Display wird zuerst das Open Boat Projects-Logo angezeigt, gefolgt von einem QR-Code, der die Zugangsdaten zum Access Point des OBP60 anzeigt. Beide Bilder sind für einige Sekunden sichtbar. Sie können mit Ihrer Handy-Kamera den QR-Code scannen und sich mit diesen Daten in das WiFi-Netz des OBP60 einloggen.
+Um das OBP60 konfigurieren zu können, muss das Gerät in Betrieb sein. Schalten Sie dazu die Stromversorgung ein, die Firmware des OBP60 startet nun. Nach Abschluss der Initialisierungsphase ertönt ein Piepton. Im Display wird zuerst das Open Boat Projects-Logo angezeigt, gefolgt von einem QR-Code, der die Zugangsdaten zum Access Point des OBP60 anzeigt. Beide Bilder sind für einige Sekunden sichtbar. Sie können mit Ihrer Handy-Kamera den QR-Code scannen und sich mit diesen Daten in das WiFi-Netz des OBP60 einloggen.
 
 .. image:: ../pics/OBP60_OBP_Logo_tr.png
              :scale: 30%
@@ -26,7 +26,7 @@ Abb.: WLAN Settings unter Android 11
 * **SSID:** OBP60V2
 * **Passwort:** esp32nmea2k  
 
-Nachdem Ihr Endgerät im WiFi-Netzwerk eigebucht sind, öffnen Sie in einem Web-Browser die Adresse **OBP60V2.local** oder die IP-Adresse **192.168.15.1**. Sie gelangen so auf die Benutzeroberfläche des OPB60 und können den aktuellen Status des Geräts überprüfen. Auf der Benutzeroberfläche befinden sich Tabs, mit denen verschiedene Bereiche der Konfiguration ausgewählt werden können:
+Nachdem Ihr Endgerät im WiFi-Netzwerk eingebucht ist, öffnen Sie in einem Web-Browser die Adresse **OBP60V2.local** oder die IP-Adresse **192.168.15.1**. Sie gelangen so auf die Benutzeroberfläche des OPB60 und können den aktuellen Status des Geräts überprüfen. Auf der Benutzeroberfläche befinden sich Tabs, mit denen verschiedene Bereiche der Konfiguration ausgewählt werden können:
 
 * **Status** - Statusanzeige mit Übersicht der Bussysteme
 * **Config** - Allgemeine Konfigurationsseite
@@ -136,7 +136,7 @@ Unter **System** werden grundlegende Einstellungen vorgenommen wie:
 	* An diese Stelle wird die Subnetz-Maske für den WiFi Access Point angegeben. Per Default steht die Subnetz-Maske auf **255.255.255.0**. Es wird dringend empfohlen, diesen Wert nicht zu verändern, es sei denn, Sie wissen genau, welche Auswirkungen eine Änderung hat.
 	
 .. warning::	
-	Achten Sie darauf, dass der Adressbereich des WiFi Access Points  sich zu dem Adressbereich des Netzes unterscheiden muss, in das sich das OBP60 als WiFi-Client einwählt. Der Adressbereich eines Netzwerks ist über die ersten 3 Zifferngruppen gekennzeichnet (111.222.333.xxx). Nur die letzte Gruppe (xxx) wird für die Gerätekennzeichnung im gleichen Netz benutzt. Verändern Sie die ersten 3 Zifferngruppen des Adressbereichs, werden Sie die Konfigurationsseiten des OPB60 nicht mehr ohne weiteres öffnen können. In den meisten Fällen wird eine Änderung der IP-Adresse oder der Subnetz-Maske nicht notwendig sein. Ändern Sie die IP-Adresse und die Subnetz-Maske daher nur, wenn Sie über genügend Netzwerkerfahrung verfügen und sich über die Auswirkungen Ihrer Änderungen im Klaren sind.
+	Achten Sie darauf, dass der Adressbereich des WiFi Access Points  sich von dem Adressbereich des Netzes unterscheiden muss, in das sich das OBP60 als WiFi-Client einwählt. Der Adressbereich eines Netzwerks ist über die ersten 3 Zifferngruppen gekennzeichnet (111.222.333.xxx). Nur die letzte Gruppe (xxx) wird für die Gerätekennzeichnung im gleichen Netz benutzt. Verändern Sie die ersten 3 Zifferngruppen des Adressbereichs, werden Sie die Konfigurationsseiten des OPB60 nicht mehr ohne weiteres öffnen können. In den meisten Fällen wird eine Änderung der IP-Adresse oder der Subnetz-Maske nicht notwendig sein. Ändern Sie die IP-Adresse und die Subnetz-Maske daher nur, wenn Sie über genügend Netzwerkerfahrung verfügen und sich über die Auswirkungen Ihrer Änderungen im Klaren sind.
 
 **Use Admin Pass**
 	* Hiermit kann festgelegt werden, ob für Änderungen der Konfiguration ein Passwort notwendig ist.
@@ -429,7 +429,7 @@ Config - OBP Settings
 .. image:: ../pics/Config_OBP60_Settings.png
              :scale: 60%
              
-Auf der Seite **OBP60 Settings** können Sie Einstellungen vornehmen, die sich auf Ihr Boot beziehen, in dem das OBP60 eingebaut ist.  Die eingetragenen Werte werden dazu benutzt, um zum Beispiel eine ungefähre Reichweitenbestimmung für Wasser, Kraftstoff und Batterie vornehmen zu können. Geben Sie bitte die Werte für Ihr Boot möglichst genau ein und beachten Sie die entsprechenden Einheiten. Die Einstellungen dienen dazu, verschiedene Betriebszustände auf dem OPB60 in Grafiken darzustellen.
+Auf der Seite **OBP60 Settings** können Sie Einstellungen vornehmen, die sich auf Ihr Boot beziehen, in dem das OBP60 eingebaut ist.  Die eingetragenen Werte werden dazu benutzt, um zum Beispiel eine ungefähre Reichweitenbestimmung für Wasser, Kraftstoff und Batterie vornehmen zu können. Geben Sie bitte die Werte für Ihr Boot möglichst genau ein, und beachten Sie die entsprechenden Einheiten. Die Einstellungen dienen dazu, verschiedene Betriebszustände auf dem OPB60 in Grafiken darzustellen.
 
 .. warning::
     Bedenken Sie, dass die Reichweitenbestimmung mit dem internen Spannungssensor nur als Richtwert verstanden werden sollte. Insbesondere bei den Batterietypen AGM und LiFePo4 müssen Sie mit größeren Ungenauigkeiten rechnen. Beobachten und überprüfen Sie die Ergebnisse unter realen Bedingungen, bevor Sie den Anzeigewerten vertrauen. 
@@ -749,7 +749,7 @@ Als Hilfestellung wie man die Einstellungen zum Display vornehmen kann, dient di
     * ``White`` - weiß (höchster Stromverbrauch)
     
 **Brightness**
-    Über **Brightness** kann die Helligkeit der Hintergrundbeleuchtung der RGB-LEDs zwischen 20... 100% eingestellt werden. Der Default-Wert liegt bei 50%. Damit wird sehr wenig Strom für die Hintergrundbeleuchtung benötigt. Die Helligkeit ist damit so für den Nachtbetrieb eingestellt, dass die Beleuchtung nicht blenden kann.
+    Über **Brightness** kann die Helligkeit der Hintergrundbeleuchtung der RGB-LEDs zwischen 20... 100% eingestellt werden. Der Default-Wert liegt bei 50%. Damit wird sehr wenig Strom für die Hintergrundbeleuchtung benötigt. Die Helligkeit ist damit für den Nachtbetrieb so eingestellt, dass die Beleuchtung nicht blenden kann.
     
 .. hint::
     Für längere Nachtfahrten ist eine rote Hintergrundbeleuchtung empfehlenswert, die moderat in der Helligkeit auf z.B. 50% eingestellt ist. Bei rotem Licht muss sich das Auge nicht ständig an wechselnde Lichtverhältnisse anpassen. So können Sie nachts das Display ohne Sichteinschränkungen ablesen. 
@@ -862,9 +862,9 @@ Abb.: Seite mit 4 Anzeigewerten
 
 * Datenpool auswählbarer Daten
     * **ALT** - Altitude, Höhe über Grund
-    * **AWA** - Apparant Wind Angle, scheinbare Windrichtung
-    * **AWS** - Apparant Wind Speed, scheinbare Windgeschwindigkeit
-    * **BTW** - Bearing To Waipoint, Winkel zum aktuellen Wegpunkt
+    * **AWA** - Apparent Wind Angle, scheinbare Windrichtung
+    * **AWS** - Apparent Wind Speed, scheinbare Windgeschwindigkeit
+    * **BTW** - Bearing To Waypoint, Winkel zum aktuellen Wegpunkt
     * **COG** - Course over Ground, Kurs über Grund
     * **DBS** - Depth Below Surface, Tiefe unter Wasseroberfläche
     * **DBT** - Depth Below Transducer, Tiefe unter Sensor
@@ -872,13 +872,13 @@ Abb.: Seite mit 4 Anzeigewerten
     * **DTW** - Distance To Waypoint, Entfernung zum aktuellen Wegpunkt
     * **GPSD** - GPS Date, GPS-Datum
     * **GPDT** - GPS Time, GPS-Zeit als UTC (Weltzeit)
-    * **HDM** - Magnetic Heading, magnetischer rechtweisender Kurs
+    * **HDM** - Magnetic Heading, magnetischer Kurs
     * **HDT** - Heading, wahrer rechtweisender Kurs
     * **HDOP** - GPS-Genauigkeit in der Horizontalen
     * **LAT** - Latitude, geografische Breite
     * **LON** - Longitude, geografische Höhe
     * **Log** - Log, Entfernung
-    * **MaxAws** - Maximum Apperant Wind Speed, Maximum der relativen Windgeschwindigkeit seit Gerätestart
+    * **MaxAws** - Maximum Apparent Wind Speed, Maximum der relativen Windgeschwindigkeit seit Gerätestart
     * **MaxTws** - Maximum True Wind Speed, Maximum der wahren Windgeschwindigkeit seit Gerätestart
     * **PDOP** - GPS-Genauigkeit über alle 3 Raumachsen
     * **PRPOS** - Auslenkung Sekundärruder
@@ -942,7 +942,7 @@ FourValue2
              :scale: 30%
 Abb.: Anzeige FourValue
 
-Bei der FourValue-Anzeige können vier beliebige Messwerte aus dem Datenpool vertikal übereinander und horizontal nebeneinander angezeigt werden. Neben den Messwerten werden die Kurzbezeichner und die Einheiten angezeigt. Diese Darstellung entspricht der alten Darstellung vom Raymarine ST60 TriData mit dem Unterschied, dass hier beliebige Werte angezeigt werden können. Es gibt noch die Anzeigeseite **DST810** mit festen Inhalten, die die selben Messwerte anzeigt wie beim ST60 TriData.
+Bei der FourValue-Anzeige können vier beliebige Messwerte aus dem Datenpool vertikal übereinander und horizontal nebeneinander angezeigt werden. Neben den Messwerten werden die Kurzbezeichner und die Einheiten angezeigt. Diese Darstellung entspricht der alten Darstellung vom Raymarine ST60 TriData mit dem Unterschied, dass hier beliebige Werte angezeigt werden können. Es gibt noch die Anzeigeseite **DST810** mit festen Inhalten, die die gleichen Messwerte anzeigt wie beim ST60 TriData.
 
 Voltage
 ^^^^^^^
@@ -954,7 +954,7 @@ Abb.: Anzeige Voltage
 Bei der Voltage-Anzeige wird die Versorgungsspannung der Batterie angezeigt, wie sie am Eingang von CN2 zur Verfügung gestellt wird.
 
 .. note::
-	Beachten Sie, dass die Spannung nicht exakt der Batteriespannung entsprechen muss. Durch Leitungsverluste können Spannungsabfälle auftreten und der gemessene Wert kann kleiner sein als die tatsächliche Batteriespannung.
+	Beachten Sie, dass die Spannung nicht exakt der Batteriespannung entsprechen muss. Durch Leitungsverluste können Spannungsabfälle auftreten, und der gemessene Wert kann kleiner sein als die tatsächliche Batteriespannung.
 	
 Ein Trendindikator zeigt den Trend an, in welche Richtung sich die Spannung bewegt. Hinter der Einheit Volt werden der Batterietyp [Pb|AGM|Gel|LiFePo4] und die aktuell benutzte Mittelungstiefe angezeigt. Über die Tasten können folgende Funktionen genutzt werden.
 
@@ -970,7 +970,7 @@ WindRose
              :scale: 30%
 Abb.: Anzeige Windrose
 
-Bei der Windrosen-Anzeige werden Winddaten angezeigt. Auf der linken Seiten sind die Daten des scheinbaren Windes dargestellt und auf der rechten Seite die Daten des wahren Windes. Die Daten des scheinbaren Windes beziehen sich auf den auf dem fahrenden Schiff wahrgenommenen Wind, der sich aus dem Zusammenwirken der vektoriellen Addition des wahren Windes und des Fahrtwindes ergibt. Es handelt sich um relative Daten bezogen auf das Boot. Die Daten des wahren Windes sind die Winddaten, wie man sie an Land mit einer stationären Wetterstation oder einem ruhenden Boot messen würde. Der Windwinkel bezieht sich dabei auf die geografische Nordausrichtung.
+Bei der Windrosen-Anzeige werden Winddaten angezeigt. Auf der linken Seiten sind die Daten des scheinbaren Windes dargestellt und auf der rechten Seite die Daten des wahren Windes. Die Daten des scheinbaren Windes beziehen sich auf den auf dem fahrenden Schiff wahrgenommenen Wind, der sich aus dem Zusammenwirken des wahren Windes und des Fahrtwindes ergibt. Es handelt sich um relative Daten bezogen auf das Boot. Die Daten des wahren Windes sind die Winddaten, wie man sie am nicht in Fahrt befindlichen Boot messen würde. Der Windwinkel bezieht sich dabei auf den Bug, die Windrichtung auf die geografische Nordausrichtung.
 
 In der Mitte der Windrose wird die aktuelle Geschwindigkeit durchs Wasser und die Wassertiefe unter dem Sensor angezeigt.
 	
