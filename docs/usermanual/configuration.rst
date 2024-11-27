@@ -1164,7 +1164,7 @@ RollPitch
              :scale: 30%
 Abb.: Anzeige RollPitch
 
-Bei der Battery-Anzeige werden die aktuellen Werte für Roll und Pitch angezeigt sowie der Grenzwert, ab dem ein optisches Signal über die Flash-LED ausgegeben wird. Picht entspricht der Neigung in Längsrichtung und Roll in Querrichtung des Bootes. Die Sensorwerte müssen als XDR-Telegramme angelegt werden (siehe Konfigurationsseite: **XDR**) . Dabei sind folgende Zuordnungen zu beachten:
+Bei der Battery-Anzeige werden die aktuellen Werte für Roll und Pitch angezeigt sowie der Grenzwert, ab dem ein optisches Signal über die Flash-LED ausgegeben wird. Picht entspricht der Neigung in Längsrichtung und Roll in Querrichtung des Bootes. Die Sensorwerte müssen als XDR-Telegramme in Form von **xdrRoll** und **xdrPitch** angelegt werden (siehe Konfigurationsseite: :ref:`XDR`) . Dabei sind folgende Zuordnungen zu beachten:
 
 	* **Roll** - Neigung in Querrichtung
 	* **Pitch** - Neigung in Längsrichtung
