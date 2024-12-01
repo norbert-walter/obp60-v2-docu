@@ -344,7 +344,7 @@ Die genaue Bedeutung der Kurzbezeichner ist `hier`_ erklärt.
 
 Config - TCP Client
 -------------------
-
+.. _config_tcp_client:
 .. image:: ../pics/Config_TCP_Client.png
              :scale: 60%
              

@@ -260,6 +260,14 @@ Für alle oben aufgeführten Endpunkte sind folgende Einstellungen im OBP60 vorz
 	Achten Sie darauf, dass der **Log Level** auf ``off`` gestellt ist. Anderenfalls kann es sonst zu Störungen in der Kommunikation kommen, da Logging-Ausgaben in den Datenstrom eingespeist werden, die ebenfalls über USB-C ausgegeben werden.
 	
 Nachfolgend sind einige Konfigurationsbeispiele aufgeführt. Es wird gezeigt, wie die weitere Konfiguration auf dem System erfolgt.
+
+NMEA0183 - WLAN
+------------------------
+
+Mit dem TCP Client könenn (ähnlich wie bei der Übertragung per USB) NMEA0183-Telegramme z.B. von einem Raspberry Pi empfangen werden.
+Dazu muss der TCP-Client entsprechend konfiguriert sein.
+:ref:`_config_tcp_client`
+
 	
 Beispiel AVnav auf Raspberry Pi
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -373,10 +381,25 @@ Abb.: Server-Status
 
 Beispiel SignalK auf Raspberry Pi
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SignalK kann die verfügbaren Daten im NMEA0183-Format über das WiFi-Netzwerk verteilen. Ein Vorteil dieser Varriante ist, dass kein Datenkabel zum OBP60 benötigt wird, sondern sich nur der Raspberry und das OBP60 im selben WLAN angemeldet sein müssen. Hierfür muss in SignalK unter Server  ``Settings  NMEA 0183 over TCP (10110)`` aktiviert sein:
+.. image:: ../pics/SignalK_server.png
+             :scale: 40%	
+Abb.: SignalK Server
+
+ Außerdem muss das signalk-to-nmea0183 Plugin installert und aktiviert sein, in dessen Konfiguration ausgewählt werden kann, welche NMEA0183-Daten ausgegeben werden sollen.  Um diese Funkioanlität zu testen, kann man sich auf dem Raspberry Pi mit folgnedem Kommando in einem Terminal den Datenstrom anzeigen lassen: ``nc localhost 10110``  
+
+.. image:: ../pics/SignalK_plugin.png
+             :scale: 40%	
+Abb.: SignalK Plungin
+
+.. image:: ../pics/SignalK_plugin.png
+             :scale: 40%	
+Abb.: SignalK Plungin Konfigurationsbeispiel
+
 
 Beispiel OpenPlotter auf Raspberry Pi
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
+OpenPlotter stellt alle verfügbaren Daten über SignalK zur Verfügung. Von dort könenn die Daten im NMEA0183-Format mit dem TCP-Client abgerufen werden (wenn ), oder mit dem signalk-to-nmea2000 Plugin übertragen werden. 
 Beispiel Navionics auf Android-Autoradio
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
