@@ -382,7 +382,7 @@ Abb.: Server-Status
 Beispiel SignalK auf Raspberry Pi
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-SignalK kann die verfügbaren Daten im NMEA0183-Format über das WiFi-Netzwerk verteilen. Ein Vorteil dieser Varriante ist, dass kein Datenkabel zum OBP60 benötigt wird, sondern nur der Raspberry und das OBP60 im selben WLAN angemeldet sein müssen. Hierfür muss in SignalK unter Server  ``Settings  NMEA 0183 over TCP (10110)`` aktiviert sein:
+SignalK kann die verfügbaren Daten im NMEA0183-Format über das WiFi-Netzwerk verteilen. Ein Vorteil dieser Varriante ist, dass kein Datenkabel zum OBP60 benötigt wird, sondern nur der Raspberry und das OBP60 im selben WLAN angemeldet sein müssen. Hierfür muss in SignalK unter Server  ``Settings  NMEA 0183 over TCP (10110)`` aktiviert sein.
 
 .. image:: ../pics/SignalK_server.png
              :scale: 40%	
@@ -399,7 +399,7 @@ Abb.: SignalK Plungin
 Abb.: SignalK Plungin Konfigurationsbeispiel
 
 .. note::
-Um diese Funkioanlität zu testen, kann man sich auf dem Raspberry Pi mit folgnedem Kommando in einem Terminal den Datenstrom anzeigen lassen: ``nc localhost 10110``  
+Um diese Funkioanlität zu testen, kann man sich auf dem Raspberry Pi mit folgendem Kommando in einem Terminal den Datenstrom anzeigen lassen: ``nc localhost 10110``  
 
 Beispiel OpenPlotter auf Raspberry Pi
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
