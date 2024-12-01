@@ -400,10 +400,12 @@ Die genaue Bedeutung der Kurzbezeichner ist `hier`_ erklärt.
     * ``on`` - Der TCP-Server kann SeaSmart-Daten senden und empfangen
     * ``off`` - SeaSmart wird vom TCP-Server nicht unterstützt
 	
-.. _Config - WiFi Client:
+
 
 Config - WiFi Client
 --------------------
+
+.. _Config - WiFi Client:
 
 .. image:: ../pics/Config_WiFi_Client.png
              :scale: 60%
