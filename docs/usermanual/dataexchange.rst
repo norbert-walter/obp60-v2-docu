@@ -402,7 +402,7 @@ Abb.: SignalK Plungin Konfigurationsbeispiel
 .. note::
 Um diese Funkioanlität zu testen, kann man sich auf dem Raspberry Pi mit folgendem Kommando in einem Terminal den Datenstrom anzeigen lassen: ``nc localhost 10110``  
 
-Die so bereitgestellten Daten könenn mit den TCP-Client des OBP60 abgerufen werden und stehen dann auf der Seite Data und zur Anzeige in den einzelnen Seiten ausgewählt werden.
+Die so bereitgestellten Daten könenn mit dem :ref:`Config - WiFi Client` des OBP60 abgerufen werden und stehen dann auf der Seite Data und zur Anzeige in den einzelnen Seiten ausgewählt werden.
 
 
 Beispiel OpenPlotter auf Raspberry Pi
