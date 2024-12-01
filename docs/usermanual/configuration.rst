@@ -405,8 +405,6 @@ Die genaue Bedeutung der Kurzbezeichner ist `hier`_ erklärt.
 Config - WiFi Client
 --------------------
 
-.. _Config - WiFi Client:
-
 .. image:: ../pics/Config_WiFi_Client.png
              :scale: 60%
 

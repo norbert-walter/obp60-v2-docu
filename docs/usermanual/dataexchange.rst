@@ -259,16 +259,17 @@ Für alle oben aufgeführten Endpunkte sind folgende Einstellungen im OBP60 vorz
 .. hint::
 	Achten Sie darauf, dass der **Log Level** auf ``off`` gestellt ist. Anderenfalls kann es sonst zu Störungen in der Kommunikation kommen, da Logging-Ausgaben in den Datenstrom eingespeist werden, die ebenfalls über USB-C ausgegeben werden.
 	
-Nachfolgend sind einige Konfigurationsbeispiele aufgeführt. Es wird gezeigt, wie die weitere Konfiguration auf dem System erfolgt.
-
 NMEA0183 - WLAN
 ------------------------
 
-Mit dem TCP Client könenn (ähnlich wie bei der Übertragung per USB) NMEA0183-Telegramme z.B. von einem Raspberry Pi empfangen werden.
+Mit dem TCP Client könenn (ähnlich wie bei der Übertragung per USB) NMEA0183-Telegramme z.B. von einem Raspberry Pi mit OpenPlotter bzw. SignalK empfangen werden.
 Dazu muss der TCP-Client entsprechend konfiguriert sein.
-:ref:`_config_tcp_client`
+:ref:`Config - WiFi Client`
 
-	
+Konfigurationsbeispiele
+------------------------
+Nachfolgend sind einige Konfigurationsbeispiele aufgeführt. Es wird gezeigt, wie die weitere Konfiguration auf dem System erfolgt.
+
 Beispiel AVnav auf Raspberry Pi
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -401,9 +402,12 @@ Abb.: SignalK Plungin Konfigurationsbeispiel
 .. note::
 Um diese Funkioanlität zu testen, kann man sich auf dem Raspberry Pi mit folgendem Kommando in einem Terminal den Datenstrom anzeigen lassen: ``nc localhost 10110``  
 
+Die so bereitgestellten Daten könenn mit den TCP-Client des OBP60 abgerufen werden und stehen dann auf der Seite Data und zur Anzeige in den einzelnen Seiten ausgewählt werden.
+
+
 Beispiel OpenPlotter auf Raspberry Pi
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-OpenPlotter stellt alle verfügbaren Daten über SignalK zur Verfügung. Von dort könenn die Daten im NMEA0183-Format mit dem TCP-Client abgerufen werden (wenn ), oder mit dem signalk-to-nmea2000 Plugin übertragen werden. 
+OpenPlotter stellt alle verfügbaren Daten über SignalK zur Verfügung. Von dort könenn die Daten im NMEA0183-Format mit dem TCP-Client abgerufen werden, oder mit dem signalk-to-nmea2000 Plugin übertragen werden. 
 
 Beispiel Navionics auf Android-Autoradio
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
