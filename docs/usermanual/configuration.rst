@@ -1359,7 +1359,16 @@ Nach der Zuordnung des Sensornamens wird unter **Example** ein Beispiel für das
     
 **Example**
     Beispiel, wie der Inhalt des XDR-Telegramms aussehen wird.
-    
+
+**NMEA0183 XDR einlesen**
+Für eingehende NMEA0183-Daten muss zunächst ein XDR-Mapping angelegt werden, bevor sie auf dem OBP60 zur Verfügung stehen. 
+Wenn NMEA0183 XDR-Daten in folgender Form eingehen:  ``$IIXDR,A,0.9,D,PTCH,A,0.8,D,ROLL*5D`` 
+können sie mit diesen Einstellungen auf dem OBP60 verwendet werden:
+
+.. image:: ../pics/ConfigXDR_NMEA0183_In.png
+             :scale: 60%
+.. image:: ../pics/ConfigXDR_NMEA0183_Data.png
+             :scale: 60%
 Data
 ----
 
