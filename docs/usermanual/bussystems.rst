@@ -8,7 +8,7 @@ Bussysteme
 
 Das OBP60 unterstützt mehrere Bussysteme. In diesem Kapitel geht es ausschließlich um die Vernetzung der Komponenten. Die dafür notwendige Software-Konfiguration finden Sie im darauf folgenden Kapitel :ref:`Datenaustausch`.
 
-* **MNEA2000** über CAN-Bus (isoliert)
+* **NMEA2000** über CAN-Bus (isoliert)
 * **NMEA0183** über RS485/RS422-Bus (isoliert)
 * **I2C-Bus** (isoliert)
 * **1-Wire-Bus** (nicht isoliert)
@@ -24,7 +24,7 @@ NMEA2000 und NMEA0183 sind Bussysteme, die im Marine-Bereich verwendet werden. D
 NMEA2000
 --------
 
-NMEA2000 ist ein Bussystem und dient der Datenübertragung zwischen elektronischen Geräten in der Schifffahrt. NMEA2000 verwendet **CAN** zur Datenübertragung. Die Übertragung erfolgt über ein zentrales Kabel, an das alle Geräte parallel angeschlossen sind. Jedes Gerät im NMEA2000-Netzwerk hat eine eindeutige Geräte-ID, um Datenquellen und Datenanzeigegeräte zu identifizieren und zu adressieren. Daten werden in Parameter Group Numbers (**PGN**) organisiert. PGN sind eindeutige Daten-IDs, um bestimmte Typen von Daten zu beschreiben wie beispielsweise Geschwindigkeit, Kurs, Temperatur usw. Alle Geräte können PGN empfangen und senden, auch kann festgelegt werden, welche PGN von einem bestimmten Gerät gesendet oder empfangen werden sollen.
+NMEA2000 ist ein Bussystem und dient der Datenübertragung zwischen elektronischen Geräten in der Schifffahrt. NMEA2000 verwendet **CAN** zur Datenübertragung. Die Übertragung erfolgt über ein zentrales Kabel, an das alle Geräte parallel angeschlossen sind. Jedes Gerät im NMEA2000-Netzwerk hat eine eindeutige Geräte-ID, um Datenquellen und Datenanzeigegeräte zu identifizieren und zu adressieren. Daten werden in Parameter Group Numbers (**PGN**) organisiert. PGN sind eindeutige Daten-IDs, um bestimmte Typen von Daten zu beschreiben, wie beispielsweise Geschwindigkeit, Kurs, Temperatur usw. Alle Geräte können PGN empfangen und senden, auch kann festgelegt werden, welche PGN von einem bestimmten Gerät gesendet oder empfangen werden sollen.
 
 **Spezifikation NMEA2000 im OBP60**
 
@@ -56,7 +56,7 @@ Die Datenrate von NMEA2000 beträgt **250 kbps**. Sie wurde gewählt, um eine au
 	
 **Terminierung des Bussystems**
 	
-Ein CAN-Bus verwendet an den beiden Enden des Bussystems Abschluss-Widerstände von 120 Ohm zwischen den Leitungen CAN-H und CAN-L. Die beiden Abschluss-Widerstände entsprechen dem Leitungswiderstand von 120 Ohm und verhindern Signalreflexionen an den Leitungsenden bei hohen Datenübertragungsraten. Der CAN-Bus besteht aus einem langen Busstrang (Backbone) mit kurzen Stichleitungen kleiner 1.5 m. Eine Sternstruktur des Bussystems ist nicht erlaubt. Die beiden Abschluss-Widerstände dürfen nur am Busende verbaut sein.
+Ein CAN-Bus verwendet an den beiden Enden des Bussystems Abschluss-Widerstände von 120 Ohm zwischen den Leitungen CAN-H und CAN-L. Die beiden Abschluss-Widerstände entsprechen dem Leitungswiderstand von 120 Ohm und verhindern Signalreflexionen an den Leitungsenden bei hohen Datenübertragungsraten. Der CAN-Bus besteht aus einem langen Busstrang (Backbone) mit kurzen Stichleitungen kürzer als 1.5 m. Eine Sternstruktur des Bussystems ist nicht erlaubt. Die beiden Abschluss-Widerstände dürfen nur am Busende verbaut sein.
 
 .. image:: ../pics/NMEA2000_Termination_Sample.png
              :scale: 60%
@@ -66,7 +66,7 @@ Abb.: CAN-Bus-Terminierung für NMEA2000 über ``T183``
 	Einige Geräte besitzen eingebaute Abschluss-Widerstände, die durch entsprechende Schalter zu- oder abgeschaltet werden können. Vergewissern Sie sich vor dem Einfügen neuer Geräte in Ihr NMEA-2000-Netzwerk, ob integrierte Abschluss-Widerstände benutzt werden und wie sie konfiguriert sind. Falsch terminierte Busse können Übertragungsprobleme verursachen, die schwer zu finden sind.
 	
 .. tip::
-	Um herauszufinden, ob nur zwei Widerstände im NMEA-Bus aktiv sind, können Sie ein Digitalvoltmeter benutzen. Wenn Sie eine Widerstandsmessung bei **spannungslosen NMEA-Bus** zwischen den Leitungen **CAN-High** und **CAN-Low** vornehmen, sollte ein Widerstand von ca. **60 Ohm** zu messen sein. Ist der Widerstand deutlich kleiner als 60 Ohm, sind weitere Geräte im Bussystem vorhanden, deren Abschlusswiderstände fälschlicherweise aktiv ist. Trennen Sie, während Sie laufend weiter den Widerstand messen, nacheinander ein Gerät nach dem anderen vom NMEA2000-Bus, bis sich der Widerstandswert deutlich erhöht. Beim zuletzt entnommenen Gerät sollte der Abschlusswiderstand dann aktiv bleiben. Ist der Widerstandswert danach noch immer nicht bei 60 Ohm, suchen Sie nach weiteren Geräten mit offensichtlich aktiviertem Abschlusswiderstand.  
+	Um herauszufinden, ob nur zwei Widerstände im NMEA-Bus aktiv sind, können Sie ein Digitalvoltmeter benutzen. Wenn Sie eine Widerstandsmessung bei **spannungslosen NMEA-Bus** zwischen den Leitungen **CAN-High** und **CAN-Low** vornehmen, sollte ein Widerstand von ca. **60 Ohm** zu messen sein. Ist der Widerstand deutlich kleiner als 60 Ohm, sind weitere Geräte im Bussystem vorhanden, deren Abschlusswiderstände fälschlicherweise aktiv ist. Trennen Sie, während Sie laufend weiter den Widerstand messen, nacheinander ein Gerät nach dem anderen vom NMEA2000-Bus, bis sich der Widerstandswert deutlich erhöht. Beim zuletzt entnommenen Gerät sollte der Abschlusswiderstand deaktiviert werden. Ist der Widerstandswert danach noch immer nicht bei 60 Ohm, suchen Sie nach weiteren Geräten mit offensichtlich aktiviertem Abschlusswiderstand.  
 	
 **NMEA2000-Kabel**
 
@@ -327,7 +327,7 @@ Der I2C-Bus dient zur Anbindung von elektronischen Komponenten. Er wird hauptsä
 * Kabelart nicht spezifiziert
 * Steckerart nicht spezifiziert
 
-Im OBP60 ist der I2C-Bus isoliert gegenüber der Außenwelt aufgebaut und verwendet 5.0V TTL-Signalpegel. Der Takt- und Datenausgang ist über Leitungstreiber herausgeführt, die lange Leitungen mit einer hohen Leitungskapazität treiben können. Damit wird verhindert, dass sich Störungen im Bussystem negativ auf die Funktionssicherheit des OBP60 auswirken. Der I2C-Bus hat 5 Leitungen, über die externe Geräte angeschlossen werden können.
+Im OBP60 ist der I2C-Bus isoliert gegenüber der Außenwelt aufgebaut und verwendet 5.0V TTL-Signalpegel. Der Takt- und Datenausgang ist über Leitungstreiber herausgeführt, die lange Leitungen mit einer hohen Leitungskapazität betreiben können. Damit wird verhindert, dass sich Störungen im Bussystem negativ auf die Funktionssicherheit des OBP60 auswirken. Der I2C-Bus hat 5 Leitungen, über die externe Geräte angeschlossen werden können.
 
 +--------+--------------------+
 |Ausgang |Bedeutung           |
@@ -400,7 +400,7 @@ Die Stromversorgung der Temperatursensoren erfolgt parasitär über die Datenlei
 
 Nachfolgend ist eine Beispielanwendung für 1Wire-Temperatur-Sensoren zu sehen.
 
-.. image:: ../pics/DS18B20_Parsitc_Supplay.png
+.. image:: ../pics/DS18B20_Parasitic_Supply.png
              :scale: 50%
 Abb.: 1Wire-Anbindung von externen Temperatur-Sensoren (parasitär versorgt)
 
@@ -425,7 +425,7 @@ Die Belegung der DS18B20-Temperatur-Sensoren ist folgendermaßen durchzuführen.
 .. hint::
     Im Internet-Handel sind Nachbauten von DS18B20-Temperatur-Sensoren im Umlauf, die eine parasitäre Stromversorgung nicht unterstützen. Wenn Sie keine Kommunikation mit dem OBP60 zustande bekommen, dann probieren Sie andere Sensoren aus. Wenn auch das zu keinem Erfolg führt, benutzen Sie eine normale Stromversorgung für die Temperatursensoren. Mit dieser Art der Stromversorgung sollten nahezu alle Sensoren funktionieren.
 	
-.. image:: ../pics/DS18B20_Direct_Supplay.png
+.. image:: ../pics/DS18B20_Direct_Supply.png
              :scale: 50%
 Abb.: 1Wire-Anbindung von externen Temperatur-Sensoren (direkt versorgt)
 
@@ -463,10 +463,10 @@ Die USB-C-Schnittstelle im OBP60 dient zum Flashen der Firmware und zum Debuggin
 
 **Stromversorgung**
 
-Das OBP60 kann auch über USB-C mit Strom versorgt werden. Das ist nützlich, wenn man z.B. eine Software-Entwicklung durchführt und das Gerät am Schreibtisch nutzen möchte. Das stromliefernde Gerät muss bis zu 500 mA mit einer Spannung von 5V bereitstellen können. Die USB-C-Schnittstelle verfügt über einen Rücklaufschutz, so dass kein Strom aus dem OBP60 herausfließen kann. Das OBP60 kann zudem auch gleichzeitig mit 12V und über USB-C mit 5V versorgt werden.
+Das OBP60 kann auch über USB-C mit Strom versorgt werden. Das ist nützlich, wenn man z.B. Software-Entwicklung durchführt und das Gerät am Schreibtisch nutzen möchte. Das stromliefernde Gerät muss bis zu 500 mA mit einer Spannung von 5.1V bereitstellen können, wie etwa ein Raspberry Pi Netzteil. Die USB-C-Schnittstelle verfügt über einen Rücklaufschutz, so dass kein Strom aus dem OBP60 herausfließen kann. Das OBP60 kann zudem auch gleichzeitig mit 12V und über USB-C mit 5V versorgt werden.
 
 .. hint::
-    Die reguläre Stromversorgung des OBP60 im Boot erfolgt immer über 12V aus dem Bordnetz. Es wird nicht empfohlen, eine Versorgung nur über USB-C durchzuführen, da die Steckverbindung nicht gegen unbeabsichtigtes Lösen gesichert ist. Kabellängen größer 1,5 m sollten nur für eine Datenübertragung und nicht für eine Stromversorgung genutzt werden, da der Spannungsabfall auf den Leitungen zu groß ist. Die Kabellänge ist auf maximal 3 m begrenzt. Wenn Sie größere Strecken überbrücken wollen, müssen Sie aktive USB-Repeater-Kabel verwenden, die die Signalpegel auffrischen.
+    Die reguläre Stromversorgung des OBP60 im Boot erfolgt immer über 12V aus dem Bordnetz. Es wird nicht empfohlen, eine Versorgung nur über USB-C durchzuführen, da die Steckverbindung nicht gegen unbeabsichtigtes Lösen gesichert ist. Kabellängen größer 1,5 m sollten nur für Datenübertragungen und nicht für die Stromversorgung genutzt werden, da der Spannungsabfall auf den Leitungen zu groß ist. Die Kabellänge ist auf maximal 3 m begrenzt. Wenn Sie größere Strecken überbrücken wollen, müssen Sie aktive USB-Repeater-Kabel verwenden, die die Signalpegel auffrischen.
     
 .. image:: ../pics/USB_Activ_Repeater.png
              :scale: 40%	
@@ -489,7 +489,7 @@ USB-Isolatoren haben allerdings den Nachteil, dass sie nur einen sehr geringen S
 Die USB-C-Schnittselle kann zur voll duplexfähigen NMEA0183-Kommunikation mit weiteren Geräten verwendet werden. Denkbar wären folgende Nutzungs-Szenarien:
 
 * Kommunikation mit einem Marine Control Server
-* Datenlieferant für ein Andriod-Autoradio als Plotter
+* Datenlieferant für ein Android-Autoradio als Plotter
 * Kommunikation mit einem Laptop oder PC zur Softwareentwicklung, Diagnose und zum Flashen der Firmware
 * Diagnose der Buskommunikation mit externer Software wie dem `Actisense Reader`_
 * Einspeisung von Simulationsdaten in die Bussysteme mit dem `NMEA-Simulator`_
