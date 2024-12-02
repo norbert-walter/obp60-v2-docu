@@ -344,7 +344,7 @@ Die genaue Bedeutung der Kurzbezeichner ist `hier`_ erklärt.
 
 Config - TCP Client
 -------------------
-
+.. _config_tcp_client:
 .. image:: ../pics/Config_TCP_Client.png
              :scale: 60%
              
@@ -400,7 +400,7 @@ Die genaue Bedeutung der Kurzbezeichner ist `hier`_ erklärt.
     * ``on`` - Der TCP-Server kann SeaSmart-Daten senden und empfangen
     * ``off`` - SeaSmart wird vom TCP-Server nicht unterstützt
 	
-.. _Config - WiFi Client:
+
 
 Config - WiFi Client
 --------------------
@@ -1359,7 +1359,17 @@ Nach der Zuordnung des Sensornamens wird unter **Example** ein Beispiel für das
     
 **Example**
     Beispiel, wie der Inhalt des XDR-Telegramms aussehen wird.
-    
+
+**NMEA0183 XDR einlesen**
+    Auch für eingehende NMEA0183-Daten muss zunächst ein XDR-Mapping angelegt werden, bevor sie auf dem OBP60 zur Verfügung stehen. 
+    Wenn NMEA0183 XDR-Daten zum Beispiel in folgender Form eingehen:  ``$IIXDR,A,0.9,D,PTCH,A,0.8,D,ROLL*5D`` 
+    können sie mit diesen Einstellungen auf dem OBP60 verwendet werden:
+
+.. image:: ../pics/ConfigXDR_NMEA0183_In.png
+             :scale: 60%
+    Danach sind die Daten auf der Seite Data verfügbar, und können auch in der Konfiguration der Anzeigeseiten ausgewählt werden. Gegebenenfalls muss hierzu allerdings die Seite im Web-Browser neu geladen werden, bevor die neuen Einträge sichtbar werden.
+.. image:: ../pics/ConfigXDR_NMEA0183_Data.png
+             :scale: 60%
 Data
 ----
 

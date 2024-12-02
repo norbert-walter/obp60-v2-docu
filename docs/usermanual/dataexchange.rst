@@ -259,9 +259,18 @@ Für alle oben aufgeführten Endpunkte sind folgende Einstellungen im OBP60 vorz
 .. hint::
 	Achten Sie darauf, dass der **Log Level** auf ``off`` gestellt ist. Anderenfalls kann es sonst zu Störungen in der Kommunikation kommen, da Logging-Ausgaben in den Datenstrom eingespeist werden, die ebenfalls über USB-C ausgegeben werden.
 	
+NMEA0183 - WLAN
+------------------------
+
+Mit dem TCP Client könenn (ähnlich wie bei der Übertragung per USB) NMEA0183-Telegramme z.B. von einem Raspberry Pi mit OpenPlotter bzw. SignalK empfangen werden.
+Dazu muss der TCP-Client entsprechend konfiguriert sein.
+:ref:`Config - WiFi Client`
+
+Konfigurationsbeispiele
+------------------------
 Nachfolgend sind einige Konfigurationsbeispiele aufgeführt. Es wird gezeigt, wie die weitere Konfiguration auf dem System erfolgt.
-	
-Beispiel AvNav auf Raspberry Pi
+
+Beispiel AVnav auf Raspberry Pi
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Dieses Beispiel zeigt die Einbindung eines OBP60 über USB in AvNav, das auf einem Rasberry Pi läuft. Dabei werden NMEA2000 Busdaten ausgelesen und nach NMEA0183 übertragen. Die Anbindung erfolgt direkt in AvNav als Device und die Daten stehen dann der Anwendung zu Verfügung. In diesem Fall wird das AvNav-Image benutzt. Wer AvNav unter OpenPlotter als Plugin benutzt, sollte dem **Konfigurationsbeispiel OpenPlotter auf Raspberry Pi** folgten.
@@ -374,8 +383,31 @@ Abb.: Server-Status
 Beispiel SignalK auf Raspberry Pi
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+SignalK kann die verfügbaren Daten im NMEA0183-Format über das WiFi-Netzwerk verteilen. Ein Vorteil dieser Varriante ist, dass kein Datenkabel zum OBP60 benötigt wird, sondern nur der Raspberry und das OBP60 im selben WLAN angemeldet sein müssen. Hierfür muss in SignalK unter Server  ``Settings  NMEA 0183 over TCP (10110)`` aktiviert sein.
+
+.. image:: ../pics/SignalK_server.png
+             :scale: 40%	
+Abb.: SignalK Server
+
+ Außerdem muss das signalk-to-nmea0183 Plugin installert und aktiviert sein, in dessen Konfiguration ausgewählt werden kann, welche NMEA0183-Daten ausgegeben werden sollen.  
+
+.. image:: ../pics/SignalK_plugin.png
+             :scale: 40%	
+Abb.: SignalK Plungin
+
+.. image:: ../pics/SignalK_data.png
+             :scale: 40%	
+Abb.: SignalK Plungin Konfigurationsbeispiel
+
+.. note::
+Um diese Funkioanlität zu testen, kann man sich auf dem Raspberry Pi mit folgendem Kommando in einem Terminal den Datenstrom anzeigen lassen: ``nc localhost 10110``  
+
+Die so bereitgestellten Daten könenn mit dem :ref:`Config - WiFi Client` des OBP60 abgerufen werden und stehen dann auf der Seite Data und zur Anzeige in den einzelnen Seiten ausgewählt werden.
+
+
 Beispiel OpenPlotter auf Raspberry Pi
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OpenPlotter stellt alle verfügbaren Daten über SignalK zur Verfügung. Von dort könenn die Daten im NMEA0183-Format mit dem TCP-Client abgerufen werden, oder mit dem signalk-to-nmea2000 Plugin übertragen werden. 
 
 Beispiel Navionics auf Android-Autoradio
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
