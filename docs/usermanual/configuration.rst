@@ -978,13 +978,13 @@ In der Mitte der Windrose wird die aktuelle Geschwindigkeit durchs Wasser und di
 Die Anzeigeseite benötigt folgende Messwerte: **AWA, AWS, TWD, TWS, DBT, STW**
 
 WindRoseFlex
-^^^^^^^
+^^^^^^^^^^^^
 
 .. image:: /pics/OBP60_WindRose.png
              :scale: 30%
 Abb.: Anzeige WindroseFlex
 
-Bei dieser Variante der Anzeige WindRose könenn die darzustellenden Werte frei gewählt werden. Der erste Wert wird auf der Windrose grafisch als Richtung dargestellt, hier ist sinnvollerweise AWA oder TWA zu wählen.
+Bei dieser Variante der Anzeige WindRose können die darzustellenden Werte frei gewählt werden. Der erste Wert wird auf der Windrose grafisch als Richtung dargestellt, hier ist sinnvollerweise AWA oder TWA zu wählen.
 
 DST810
 ^^^^^^
