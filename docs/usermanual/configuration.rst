@@ -834,6 +834,7 @@ Im OBP60 gibt es insgesamt bis zu 10 Seiten, die man frei auswählen und gestalt
     * **ThreeValue** - Drei Anzeigewerte
     * **FourValue** - Vier Anzeigewerte
     * **FourValue2** - Vier Anzeigewerte (andere Anordnung vertikal/horizontal)
+    * **WindRoseFlex** - Anzeige der Winddaten (alle Anzeigewerte konfigurierbar, erster Wert wird grafisch auf der Windrose dargestellt)
 
 * Seiten mit festem Inhalt
     * **Voltage** - Anzeige der Bordspannung (**xdrVBat**)
@@ -975,7 +976,16 @@ Bei der Windrosen-Anzeige werden Winddaten angezeigt. Auf der linken Seiten sind
 In der Mitte der Windrose wird die aktuelle Geschwindigkeit durchs Wasser und die Wassertiefe unter dem Sensor angezeigt.
 	
 Die Anzeigeseite benötigt folgende Messwerte: **AWA, AWS, TWD, TWS, DBT, STW**
-	
+
+WindRoseFlex
+^^^^^^^
+
+.. image:: /pics/OBP60_WindRose.png
+             :scale: 30%
+Abb.: Anzeige WindroseFlex
+
+Bei dieser Variante der Anzeige WindRose könenn die darzustellenden Werte frei gewählt werden. Der erste Wert wird auf der Windrose grafisch als Richtung dargestellt, hier ist sinnvollerweise AWA oder TWA zu wählen.
+
 DST810
 ^^^^^^
 
