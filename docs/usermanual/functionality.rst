@@ -17,7 +17,7 @@ Damit lässt sich das OBP60 in vorhandene Bootsnetze integrieren. Es kann selbst
 * I2C-Bus (5V, isoliert)
 * 1Wire-Bus (3.3V, nicht isoliert)
 
-Diese beiden Busssysteme kommen aus dem Elektronikbereich. Über diese beiden Busse lassen sich günstige Sensoren anbinden, um deren Daten anzuzeigen. Über den isolierten I2C-Bus können zudem recht einfach und sicher eigene Hardwareerweiterungen eingebunden werden.
+Diese beiden Bussysteme kommen aus dem Elektronikbereich. Über diese beiden Busse lassen sich günstige Sensoren anbinden, um deren Daten anzuzeigen. Über den isolierten I2C-Bus können zudem recht einfach und sicher eigene Hardwareerweiterungen eingebunden werden.
 
 Gateway
 -------

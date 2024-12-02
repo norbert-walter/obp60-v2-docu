@@ -4,7 +4,7 @@ Sicherheitshinweise
 Allgemeine Hinweise
 -------------------
 
-Die auf dieser Webseite veröffentlichten Informationen sind im Rahmen eines Hobbyprojektes entstanden. Das Open-Source-Projekt ist als Machbarkeitsstudien zu verstehen, das zeigen soll mit welchen begrenzten Möglichkeiten private Projekte umgesetzt werden können. Die Qualität hinsichtlich Funktionalität, Sicherheit und Dokumentation ist nicht mit kommerziellen Produkten vergleichbar. Die Benutzung der Open-Source-Software und Hardware erfolgt auf eigene Gefahr unter Ausschluss von Haftungsansprüchen.
+Die auf dieser Webseite veröffentlichten Informationen sind im Rahmen eines Hobbyprojektes entstanden. Das Open-Source-Projekt ist als Machbarkeitsstudie zu verstehen, die zeigen soll, wie mit begrenzten Möglichkeiten private Projekte umgesetzt werden können. Die Qualität hinsichtlich Funktionalität, Sicherheit und Dokumentation ist nicht mit kommerziellen Produkten vergleichbar. Die Benutzung der Open-Source-Software und Hardware erfolgt auf eigene Gefahr unter Ausschluss von Haftungsansprüchen.
 
 .. danger::
 	Jedem Interessierten sollte klar sein, dass die Nutzung des hier vorgestellten Projektes auf eigene Gefahr erfolgt und mit Fehlern und Störungen zu rechnen ist, die schwerwiegende Konsequenzen haben können. Führen Sie vor dem Einsatz des OBP60 eine Risikoanalyse durch und treffen geeignete Maßnahmen, um Schäden und Gefährdung anderer Personen zu vermeiden.
@@ -22,10 +22,10 @@ Bei auftretenden Problemen oder Mängeln bitte wir Sie, uns eine Information üb
 Sicherheit im WiFi-Netzwerk
 ---------------------------	
 
-Sie sollten das OBP60 nur mit vertrauenswürdigen WiFi-Netzwerken verbinden. Es gibt im Gerät nur einen sehr begrenzten Schutz gegen Netzwerk-Sniffing oder Denial-of-Service-Angriffe. Solange Sie das eigene autarke WiFi-Netz des OBP60 nutzen, können fremde Personen nicht ohne weiteres auf das WiFi-Netz des OPB60 zugreifen. Auf diese Weise läuft die Datenübertragung in Ihrem eigenen WiFi-Netzwerk geschützt. Verbinden Sie das Gerät niemals ohne eine Firewall direkt mit dem Internet und vermeiden Sie direkte Verbindungen zu offenen Hafen-WLANs. Dadurch können auch fremde Personen auf Ihre Geräte im Netzwerk zugreifen.
+Sie sollten das OBP60 nur mit vertrauenswürdigen WiFi-Netzwerken verbinden. Es gibt im Gerät nur einen sehr begrenzten Schutz gegen Netzwerk-Sniffing oder Denial-of-Service-Angriffe. Solange Sie das eigene autarke WiFi-Netz des OBP60 nutzen, können fremde Personen nicht ohne weiteres auf das WiFi-Netz des OPB60 zugreifen. Auf diese Weise läuft die Datenübertragung in Ihrem eigenen WiFi-Netzwerk geschützt. Verbinden Sie das Gerät niemals ohne eine Firewall direkt mit dem Internet, und vermeiden Sie direkte Verbindungen zu offenen Hafen-WLANs. Dadurch können auch fremde Personen auf Ihre Geräte im Netzwerk zugreifen.
 
 .. note::
-	Sie können die Sicherheit erhöhen, indem Sie einen separaten WiFi- oder LTE-Router in Ihrem Boot verwenden. Die Router können so eingerichtet werden, dass Sie ein eigenes WiFi-Netz aufspannen können, mit dem alle Geräte an Bord verbunden sind. Gängige mobile Router verfügen in der Regel über eine bereits eingeschaltete Firewall, über die Sie Ihr eigenes WiFi-Netz mit dem Internet verbinden können. Die Firewall verhindert fremden Zugriff von außen auf Ihre Geräte. So haben alle Geräte in Ihrem Netz einen gemeinsamen Internet-Zugriff und sind zugleich ausreichend geschützt.
+	Sie können die Sicherheit erhöhen, indem Sie einen separaten WiFi- oder LTE-Router in Ihrem Boot verwenden. Die Router können so eingerichtet werden, dass Sie ein eigenes WiFi-Netz aufspannen, mit dem alle Geräte an Bord verbunden sind. Gängige mobile Router verfügen in der Regel über eine bereits eingeschaltete Firewall, über die Sie Ihr eigenes WiFi-Netz mit dem Internet verbinden können. Die Firewall verhindert fremden Zugriff von außen auf Ihre Geräte. So haben alle Geräte in Ihrem Netz einen gemeinsamen Internet-Zugriff und sind zugleich ausreichend geschützt.
 
 .. image:: ../pics/WiFi_Channels.png
              :scale: 35%

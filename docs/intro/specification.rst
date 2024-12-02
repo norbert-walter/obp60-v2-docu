@@ -25,7 +25,7 @@ Funktionen
 * USB-C (OTG, Debug, NMEA0183)
 * Batteriemonitor (12V-Spannungsmessung)
 * Umgebungssensor BMP280 (Temperatur, Luftdruck)
-* GPS-Empfäger (GPS, Glonas, Baidu, interne oder externe GPS-Antenne)
+* GPS-Empfäger (GPS, Glonass, Baidu, interne oder externe GPS-Antenne)
 * WiFi 2.4GHz (HTTP, TCP, UDP)
 * Bluetooth (aktuell ungenutzt)
 * Batterie-Tiefentladeschutz < 9.0V

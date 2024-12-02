@@ -1,7 +1,7 @@
 Konfiguration
 =============
 
-Um das OBP60 konfigurieren zu können, muss das Gerät in Betrieb sein. Schalten Sie dazu die Stromversorgung zu, die Firmware des OBP60 startet nun. Nach Abschluss der Initialisierungsphase ertönt ein Piepton. Im Display wird zuerst das Open Boat Projects-Logo angezeigt, gefolgt von einem QR-Code, der die Zugangsdaten zum Access Point des OBP60 anzeigt. Beide Bilder sind für einige Sekunden sichtbar. Sie können mit Ihrer Handy-Kamera den QR-Code scannen und sich mit diesen Daten in das WiFi-Netz des OBP60 einloggen.
+Um das OBP60 konfigurieren zu können, muss das Gerät in Betrieb sein. Schalten Sie dazu die Stromversorgung ein, die Firmware des OBP60 startet nun. Nach Abschluss der Initialisierungsphase ertönt ein Piepton. Im Display wird zuerst das Open Boat Projects-Logo angezeigt, gefolgt von einem QR-Code, der die Zugangsdaten zum Access Point des OBP60 anzeigt. Beide Bilder sind für einige Sekunden sichtbar. Sie können mit Ihrer Handy-Kamera den QR-Code scannen und sich mit diesen Daten in das WiFi-Netz des OBP60 einloggen.
 
 .. image:: ../pics/OBP60_OBP_Logo_tr.png
              :scale: 30%
@@ -26,7 +26,7 @@ Abb.: WLAN Settings unter Android 11
 * **SSID:** OBP60V2
 * **Passwort:** esp32nmea2k  
 
-Nachdem Ihr Endgerät im WiFi-Netzwerk eigebucht sind, öffnen Sie in einem Web-Browser die Adresse **OBP60V2.local** oder die IP-Adresse **192.168.15.1**. Sie gelangen so auf die Benutzeroberfläche des OPB60 und können den aktuellen Status des Geräts überprüfen. Auf der Benutzeroberfläche befinden sich Tabs, mit denen verschiedene Bereiche der Konfiguration ausgewählt werden können:
+Nachdem Ihr Endgerät im WiFi-Netzwerk eingebucht ist, öffnen Sie in einem Web-Browser die Adresse **OBP60V2.local** oder die IP-Adresse **192.168.15.1**. Sie gelangen so auf die Benutzeroberfläche des OPB60 und können den aktuellen Status des Geräts überprüfen. Auf der Benutzeroberfläche befinden sich Tabs, mit denen verschiedene Bereiche der Konfiguration ausgewählt werden können:
 
 * **Status** - Statusanzeige mit Übersicht der Bussysteme
 * **Config** - Allgemeine Konfigurationsseite
@@ -136,7 +136,7 @@ Unter **System** werden grundlegende Einstellungen vorgenommen wie:
 	* An diese Stelle wird die Subnetz-Maske für den WiFi Access Point angegeben. Per Default steht die Subnetz-Maske auf **255.255.255.0**. Es wird dringend empfohlen, diesen Wert nicht zu verändern, es sei denn, Sie wissen genau, welche Auswirkungen eine Änderung hat.
 	
 .. warning::	
-	Achten Sie darauf, dass der Adressbereich des WiFi Access Points  sich zu dem Adressbereich des Netzes unterscheiden muss, in das sich das OBP60 als WiFi-Client einwählt. Der Adressbereich eines Netzwerks ist über die ersten 3 Zifferngruppen gekennzeichnet (111.222.333.xxx). Nur die letzte Gruppe (xxx) wird für die Gerätekennzeichnung im gleichen Netz benutzt. Verändern Sie die ersten 3 Zifferngruppen des Adressbereichs, werden Sie die Konfigurationsseiten des OPB60 nicht mehr ohne weiteres öffnen können. In den meisten Fällen wird eine Änderung der IP-Adresse oder der Subnetz-Maske nicht notwendig sein. Ändern Sie die IP-Adresse und die Subnetz-Maske daher nur, wenn Sie über genügend Netzwerkerfahrung verfügen und sich über die Auswirkungen Ihrer Änderungen im Klaren sind.
+	Achten Sie darauf, dass der Adressbereich des WiFi Access Points  sich von dem Adressbereich des Netzes unterscheiden muss, in das sich das OBP60 als WiFi-Client einwählt. Der Adressbereich eines Netzwerks ist über die ersten 3 Zifferngruppen gekennzeichnet (111.222.333.xxx). Nur die letzte Gruppe (xxx) wird für die Gerätekennzeichnung im gleichen Netz benutzt. Verändern Sie die ersten 3 Zifferngruppen des Adressbereichs, werden Sie die Konfigurationsseiten des OPB60 nicht mehr ohne weiteres öffnen können. In den meisten Fällen wird eine Änderung der IP-Adresse oder der Subnetz-Maske nicht notwendig sein. Ändern Sie die IP-Adresse und die Subnetz-Maske daher nur, wenn Sie über genügend Netzwerkerfahrung verfügen und sich über die Auswirkungen Ihrer Änderungen im Klaren sind.
 
 **Use Admin Pass**
 	* Hiermit kann festgelegt werden, ob für Änderungen der Konfiguration ein Passwort notwendig ist.
@@ -429,7 +429,7 @@ Config - OBP Settings
 .. image:: ../pics/Config_OBP60_Settings.png
              :scale: 60%
              
-Auf der Seite **OBP60 Settings** können Sie Einstellungen vornehmen, die sich auf Ihr Boot beziehen, in dem das OBP60 eingebaut ist.  Die eingetragenen Werte werden dazu benutzt, um zum Beispiel eine ungefähre Reichweitenbestimmung für Wasser, Kraftstoff und Batterie vornehmen zu können. Geben Sie bitte die Werte für Ihr Boot möglichst genau ein und beachten Sie die entsprechenden Einheiten. Die Einstellungen dienen dazu, verschiedene Betriebszustände auf dem OPB60 in Grafiken darzustellen.
+Auf der Seite **OBP60 Settings** können Sie Einstellungen vornehmen, die sich auf Ihr Boot beziehen, in dem das OBP60 eingebaut ist.  Die eingetragenen Werte werden dazu benutzt, um zum Beispiel eine ungefähre Reichweitenbestimmung für Wasser, Kraftstoff und Batterie vornehmen zu können. Geben Sie bitte die Werte für Ihr Boot möglichst genau ein, und beachten Sie die entsprechenden Einheiten. Die Einstellungen dienen dazu, verschiedene Betriebszustände auf dem OPB60 in Grafiken darzustellen.
 
 .. warning::
     Bedenken Sie, dass die Reichweitenbestimmung mit dem internen Spannungssensor nur als Richtwert verstanden werden sollte. Insbesondere bei den Batterietypen AGM und LiFePo4 müssen Sie mit größeren Ungenauigkeiten rechnen. Beobachten und überprüfen Sie die Ergebnisse unter realen Bedingungen, bevor Sie den Anzeigewerten vertrauen. 
@@ -749,7 +749,7 @@ Als Hilfestellung wie man die Einstellungen zum Display vornehmen kann, dient di
     * ``White`` - weiß (höchster Stromverbrauch)
     
 **Brightness**
-    Über **Brightness** kann die Helligkeit der Hintergrundbeleuchtung der RGB-LEDs zwischen 20... 100% eingestellt werden. Der Default-Wert liegt bei 50%. Damit wird sehr wenig Strom für die Hintergrundbeleuchtung benötigt. Die Helligkeit ist damit so für den Nachtbetrieb eingestellt, dass die Beleuchtung nicht blenden kann.
+    Über **Brightness** kann die Helligkeit der Hintergrundbeleuchtung der RGB-LEDs zwischen 20... 100% eingestellt werden. Der Default-Wert liegt bei 50%. Damit wird sehr wenig Strom für die Hintergrundbeleuchtung benötigt. Die Helligkeit ist damit für den Nachtbetrieb so eingestellt, dass die Beleuchtung nicht blenden kann.
     
 .. hint::
     Für längere Nachtfahrten ist eine rote Hintergrundbeleuchtung empfehlenswert, die moderat in der Helligkeit auf z.B. 50% eingestellt ist. Bei rotem Licht muss sich das Auge nicht ständig an wechselnde Lichtverhältnisse anpassen. So können Sie nachts das Display ohne Sichteinschränkungen ablesen. 
@@ -863,9 +863,9 @@ Abb.: Seite mit 4 Anzeigewerten
 
 * Datenpool auswählbarer Daten
     * **ALT** - Altitude, Höhe über Grund
-    * **AWA** - Apparant Wind Angle, scheinbare Windrichtung
-    * **AWS** - Apparant Wind Speed, scheinbare Windgeschwindigkeit
-    * **BTW** - Bearing To Waipoint, Winkel zum aktuellen Wegpunkt
+    * **AWA** - Apparent Wind Angle, scheinbare Windrichtung
+    * **AWS** - Apparent Wind Speed, scheinbare Windgeschwindigkeit
+    * **BTW** - Bearing To Waypoint, Winkel zum aktuellen Wegpunkt
     * **COG** - Course over Ground, Kurs über Grund
     * **DBS** - Depth Below Surface, Tiefe unter Wasseroberfläche
     * **DBT** - Depth Below Transducer, Tiefe unter Sensor
@@ -873,13 +873,13 @@ Abb.: Seite mit 4 Anzeigewerten
     * **DTW** - Distance To Waypoint, Entfernung zum aktuellen Wegpunkt
     * **GPSD** - GPS Date, GPS-Datum
     * **GPDT** - GPS Time, GPS-Zeit als UTC (Weltzeit)
-    * **HDM** - Magnetic Heading, magnetischer rechtweisender Kurs
+    * **HDM** - Magnetic Heading, magnetischer Kurs
     * **HDT** - Heading, wahrer rechtweisender Kurs
     * **HDOP** - GPS-Genauigkeit in der Horizontalen
     * **LAT** - Latitude, geografische Breite
     * **LON** - Longitude, geografische Höhe
     * **Log** - Log, Entfernung
-    * **MaxAws** - Maximum Apperant Wind Speed, Maximum der relativen Windgeschwindigkeit seit Gerätestart
+    * **MaxAws** - Maximum Apparent Wind Speed, Maximum der relativen Windgeschwindigkeit seit Gerätestart
     * **MaxTws** - Maximum True Wind Speed, Maximum der wahren Windgeschwindigkeit seit Gerätestart
     * **PDOP** - GPS-Genauigkeit über alle 3 Raumachsen
     * **PRPOS** - Auslenkung Sekundärruder
@@ -943,7 +943,7 @@ FourValue2
              :scale: 30%
 Abb.: Anzeige FourValue
 
-Bei der FourValue-Anzeige können vier beliebige Messwerte aus dem Datenpool vertikal übereinander und horizontal nebeneinander angezeigt werden. Neben den Messwerten werden die Kurzbezeichner und die Einheiten angezeigt. Diese Darstellung entspricht der alten Darstellung vom Raymarine ST60 TriData mit dem Unterschied, dass hier beliebige Werte angezeigt werden können. Es gibt noch die Anzeigeseite **DST810** mit festen Inhalten, die die selben Messwerte anzeigt wie beim ST60 TriData.
+Bei der FourValue-Anzeige können vier beliebige Messwerte aus dem Datenpool vertikal übereinander und horizontal nebeneinander angezeigt werden. Neben den Messwerten werden die Kurzbezeichner und die Einheiten angezeigt. Diese Darstellung entspricht der alten Darstellung vom Raymarine ST60 TriData mit dem Unterschied, dass hier beliebige Werte angezeigt werden können. Es gibt noch die Anzeigeseite **DST810** mit festen Inhalten, die die gleichen Messwerte anzeigt wie beim ST60 TriData.
 
 Voltage
 ^^^^^^^
@@ -955,7 +955,7 @@ Abb.: Anzeige Voltage
 Bei der Voltage-Anzeige wird die Versorgungsspannung der Batterie angezeigt, wie sie am Eingang von CN2 zur Verfügung gestellt wird.
 
 .. note::
-	Beachten Sie, dass die Spannung nicht exakt der Batteriespannung entsprechen muss. Durch Leitungsverluste können Spannungsabfälle auftreten und der gemessene Wert kann kleiner sein als die tatsächliche Batteriespannung.
+	Beachten Sie, dass die Spannung nicht exakt der Batteriespannung entsprechen muss. Durch Leitungsverluste können Spannungsabfälle auftreten, und der gemessene Wert kann kleiner sein als die tatsächliche Batteriespannung.
 	
 Ein Trendindikator zeigt den Trend an, in welche Richtung sich die Spannung bewegt. Hinter der Einheit Volt werden der Batterietyp [Pb|AGM|Gel|LiFePo4] und die aktuell benutzte Mittelungstiefe angezeigt. Über die Tasten können folgende Funktionen genutzt werden.
 
@@ -971,7 +971,7 @@ WindRose
              :scale: 30%
 Abb.: Anzeige Windrose
 
-Bei der Windrosen-Anzeige werden Winddaten angezeigt. Auf der linken Seiten sind die Daten des scheinbaren Windes dargestellt und auf der rechten Seite die Daten des wahren Windes. Die Daten des scheinbaren Windes beziehen sich auf den auf dem fahrenden Schiff wahrgenommenen Wind, der sich aus dem Zusammenwirken der vektoriellen Addition des wahren Windes und des Fahrtwindes ergibt. Es handelt sich um relative Daten bezogen auf das Boot. Die Daten des wahren Windes sind die Winddaten, wie man sie an Land mit einer stationären Wetterstation oder einem ruhenden Boot messen würde. Der Windwinkel bezieht sich dabei auf die geografische Nordausrichtung.
+Bei der Windrosen-Anzeige werden Winddaten angezeigt. Auf der linken Seiten sind die Daten des scheinbaren Windes dargestellt und auf der rechten Seite die Daten des wahren Windes. Die Daten des scheinbaren Windes beziehen sich auf den auf dem fahrenden Schiff wahrgenommenen Wind, der sich aus dem Zusammenwirken des wahren Windes und des Fahrtwindes ergibt. Es handelt sich um relative Daten bezogen auf das Boot. Die Daten des wahren Windes sind die Winddaten, wie man sie am nicht in Fahrt befindlichen Boot messen würde. Der Windwinkel bezieht sich dabei auf den Bug, die Windrichtung auf die geografische Nordausrichtung.
 
 In der Mitte der Windrose wird die aktuelle Geschwindigkeit durchs Wasser und die Wassertiefe unter dem Sensor angezeigt.
 	
@@ -1162,7 +1162,7 @@ Für die Messung mit einem externen Leistungs-Shunt muss der schwarze große Wid
 Abb.: Schaltung INA226 Batteriemonitoring
 
 .. note::
-	Wenn Sie die Batterieanzeige verwenden, jedoch kein INA226-Modul am I2C-Bus angeschlossen ist, werden keine Messwerte außer die aktuelle Batteriespannung angezeigt. In diesem Fall wird der interne Spannungssensor des OBP60 benutzt. Der Wert der gemessenen Spannung muss nicht direkt der Spannung an der Batterie entsprechen, da durch Leitungsverluste der Spannungswert verfälscht sein kann. 
+	Wenn Sie die Batterieanzeige verwenden, jedoch kein INA226-Modul am I2C-Bus angeschlossen ist, werden keine Messwerte außer der aktuellen Batteriespannung angezeigt. In diesem Fall wird der interne Spannungssensor des OBP60 benutzt. Der Wert der gemessenen Spannung muss nicht direkt der Spannung an der Batterie entsprechen, da durch Leitungsverluste der Spannungswert verfälscht sein kann. 
 
 .. warning::
 	Die Gefahren und Risiken bei der Benutzung des INA226 zum Batteriemonitoring sind die selben wie im Kapitel **Battery** beschrieben. Folgen Sie den Empfehlungen und beachten Sie die Gefahren.
@@ -1174,7 +1174,7 @@ RollPitch
              :scale: 30%
 Abb.: Anzeige RollPitch
 
-Bei der Battery-Anzeige werden die aktuellen Werte für Roll und Pitch angezeigt sowie der Grenzwert, ab dem ein optisches Signal über die Flash-LED ausgegeben wird. Picht entspricht der Neigung in Längsrichtung und Roll in Querrichtung des Bootes. Die Sensorwerte müssen als XDR-Telegramme in Form von **xdrRoll** und **xdrPitch** angelegt werden (siehe Konfigurationsseite: :ref:`XDR`) . Dabei sind folgende Zuordnungen zu beachten:
+Bei der RollPitch-Anzeige werden die aktuellen Werte für Roll und Pitch angezeigt sowie der Grenzwert, ab dem ein optisches Signal über die Flash-LED ausgegeben wird. Pitch entspricht der Neigung in Längsrichtung und Roll in Querrichtung des Bootes. Die Sensorwerte müssen als XDR-Telegramme in Form von **xdrRoll** und **xdrPitch** angelegt werden (siehe Konfigurationsseite: :ref:`XDR`) . Dabei sind folgende Zuordnungen zu beachten:
 
 	* **Roll** - Neigung in Querrichtung
 	* **Pitch** - Neigung in Längsrichtung
@@ -1336,26 +1336,26 @@ Nach der Zuordnung des Sensornamens wird unter **Example** ein Beispiel für das
     * ``Fluid`` - Sensoren für Flüssigkeiten wie Durchfluss und Füllstand
     * ``Battery`` - Batteriesensoren für Spannung, Strom, Leistung, Batterietemperatur
     * ``Engine`` - Motorsensoren für Drehzahl, Anstellung, Trimmklappen, Öl, Kühlwasser
-    * ``Attitude`` - Höhendaten, aus GPS-Sensordaten ermittelt
+    * ``Attitude`` - Lagedaten, aus Lagesensordaten ermittelt
     
 **Source**
     Über **Source** lässt sich die Quelle der Sensordaten genauer einstellen. Je nach verwendetem Sensortyp stehen verschiedene Sensor-Quellen zur Verfügung.
     
 **Field**
-    Mit **Field** kann genauer beschrieben werden, wie die Sensordaten zu verstehen sind. Es sind Zusatzdaten, die kontextabhängig je nach verwendeten Sensor-Typ einstellbar sind. So kann z.B. festgelegt werden, ob es sich um einen Anzeigewert oder um einen Einstellwert handelt.
+    Mit **Field** kann genauer beschrieben werden, wie die Sensordaten zu verstehen sind. Es sind Zusatzdaten, die kontextabhängig je nach verwendetem Sensor-Typ einstellbar sind. So kann z.B. festgelegt werden, ob es sich um einen Anzeigewert oder um einen Einstellwert handelt.
     
 **Instance**
-    Mit **Instance** kann festgelegt werden, ob es mehrere Sensoren des selben Typs gibt. Das kann z.B. auftreten, wenn zwei Motoren in einem Boot verbaut sind und zwei Tankwerte angezeigt werden sollen. Mit Hilfe einer Instanz-Nummer werden die Sensoren unterschieden. An den Sensornamen wird dann z.B. \#1 angefügt. Die Arte der Instanziierung kann folgendermaßen festgelegt werden:
+    Mit **Instance** kann festgelegt werden, ob es mehrere Sensoren des selben Typs gibt. Das kann z.B. auftreten, wenn zwei Motoren in einem Boot verbaut sind, und zwei Tankwerte angezeigt werden sollen. Mit Hilfe einer Instanz-Nummer werden die Sensoren unterschieden. An den Sensornamen wird dann z.B. \#1 angefügt. Die Instanziierung kann folgendermaßen festgelegt werden:
     
-    * ``single`` - Es wird ein Sensor instanziiert, dem einen freie Instanz-Nummer zugeordnet werden kann. So können z.B. zwei Sensoren die selben Daten in ein XDR-Telegramm übertragen, wenn die Sensoren redundant sind.
+    * ``single`` - Es wird ein Sensor instanziiert, dem einen freie Instanz-Nummer zugeordnet wird. So können z.B. zwei Sensoren die selben Daten in ein XDR-Telegramm übertragen, wenn die Sensoren redundant sind.
     * ``ignore`` - Es existiert nur genau ein einziger Sensor dieses Typs.
     * ``auto`` - Die Instanziierung wird automatisch übernommen. Sobald ein neuer Sensor des gleichen Typs und der selben Source verwendet wird, wird eine neue Instanz des Sensors angelegt.
         
 **Transducer**
-    Über **Transducer** wird der Sensorname festgelegt. Es handelt sich dabei um eine Klartextbeschreibung des Sensors mit ASCII Zeichen. Verwenden Sie nur Buchstaben und Zahlen ohne Freizeichen und Sonderzeichen.
+    Über **Transducer** wird der Sensorname festgelegt. Es handelt sich dabei um eine Klartextbeschreibung des Sensors mit ASCII Zeichen. Verwenden Sie nur Buchstaben und Zahlen ohne Leer- und Sonderzeichen.
     
 .. note::
-	Verwenden Sie nicht mehr als 6 Zeichen und benutzen Sie Abkürzungen die geläufig sind. Längere Namen werden aufgrund des begrenzten Anzeigeplatzes im Display auf 6 Zeichen gekürzt.
+	Verwenden Sie nicht mehr als 6 Zeichen und benutzen Sie Abkürzungen, die geläufig sind. Längere Namen werden aufgrund des begrenzten Anzeigeplatzes im Display auf 6 Zeichen gekürzt.
     
 **Example**
     Beispiel, wie der Inhalt des XDR-Telegramms aussehen wird.
@@ -1376,7 +1376,7 @@ Data
 .. image:: ../pics/Data_1.png
              :scale: 60%
              
-Unter Data werden alle Sensordaten aller Bussysteme angezeigt, die derzeit verarbeitet werden können. Sensordaten, die nicht verfügbar sind, werden mit ``---`` gekennzeichnet. Man kann die Datenanzeige auch so konfigurieren, dass nur aktuelle Daten angezeigt werden. Die nicht verfügbaren Daten sind dann ausgeblendet.
+Unter Data werden die Sensordaten aller Bussysteme angezeigt, die derzeit verarbeitet werden können. Sensordaten, die nicht verfügbar sind, werden mit ``---`` gekennzeichnet. Man kann die Datenanzeige auch so konfigurieren, dass nur verfügbare Daten angezeigt werden. Nicht verfügbare Datenfelder sind dann ausgeblendet.
 
 .. image:: ../pics/Data_2.png
              :scale: 60%
@@ -1406,12 +1406,12 @@ Unter **Releases** ist eine Reihe verfügbarer Firmware-Updates für das OBP60 z
 .. image:: ../pics/Update.png
              :scale: 60%
 
-Für ein Firmware-Update laden Sie sich die gewünschte Firmware als Datei herunter und speichern Sie die Datei auf ihrem Gerät. Über die Taste ``Choose File`` wählen Sie dann die heruntergeladene Datei aus. Danach werden der Firmware-Typ, der Chip-Typ und die Firmware-Version angezeigt. Sollte die Firmware nicht zur verwendeten Hardware passen, so erhalten Sie eine Meldung. Die Firmware kann in diesem Fall nicht geflasht werden. Über die Taste ``Upload`` starten Sie den Flash-Vorgang. Im Fortschrittsbalken sehen Sie den Verlauf des Vorgangs. Nach einem erfolgreichen Firmware-Update wird ein Neustart des Systems durchgeführt. In dieser Zeit ist die Web-Konfigurationsseite offline (roter Punkt). Nach beendetem Neustart ist die Seite wieder online (grüner Punkt). Dann ist das System erneut betriebsbereit.
+Für ein normales Firmware-Update laden Sie sich die gewünschte Firmware als Datei herunter und speichern Sie die Datei auf ihrem Gerät. Über die Taste ``Choose File`` wählen Sie dann die heruntergeladene Datei aus. Danach werden der Firmware-Typ, der Chip-Typ und die Firmware-Version angezeigt. Sollte die Firmware nicht zur verwendeten Hardware passen, so erhalten Sie eine Meldung. Die Firmware kann in diesem Fall nicht geflasht werden. Über die Taste ``Upload`` starten Sie den Flash-Vorgang. Im Fortschrittsbalken sehen Sie den Verlauf des Vorgangs. Nach einem erfolgreichen Firmware-Update wird ein Neustart des Systems durchgeführt. In dieser Zeit ist die Web-Konfigurationsseite offline (roter Punkt). Nach beendetem Neustart ist die Seite wieder online (grüner Punkt). Dann ist das System erneut betriebsbereit.
 
 .. warning::
-	Beachten Sie, dass Sie bei einem Firmware-Update auf eine ältere Version ein **Initial Firmware Update** durchführen müssen. So vermeiden Sie Komplikationen mit den gespeicherten Konfigurationsdaten. Bei Nichtbeachtung ist das System  ansonsten unter Umständen nicht nutzbar und kann komplett einfrieren. Ein Firmware-Update über die Konfigurationsseiten ist dann nicht mehr möglich, die Firmware muss dann über USB geflasht werden.
+	Beachten Sie, dass Sie bei einem Firmware-Update auf eine ältere Version ein **Initial Firmware Update** durchführen sollten. So vermeiden Sie Komplikationen mit den gespeicherten Konfigurationsdaten. Bei Nichtbeachtung ist das System  ansonsten unter Umständen nicht nutzbar und kann komplett einfrieren. Ein Firmware-Update über die Konfigurationsseiten ist dann nicht mehr möglich, die Firmware muss dann über USB geflasht werden.
 
-Wie man die Firmware eines OBP60 über USB flasht, ist unter xxx beschrieben.
+Wie man ein **Initial Firmware Update** durchführt, bzw. die Firmware eines OBP60 über USB flasht, ist unter xxx beschrieben.
 
 Help
 ----
@@ -1419,4 +1419,4 @@ Help
 Unter **Help** erfolgt ein Wechsel ins Internet zur Github-Seite, auf der das Projekt gehostet wird. Dort sind einige weitergehende Informationen zum NMEA2000-Gateway zu finden, das die Basis für diese Firmware ist. 
 
 .. note::
-    Die Github-Seite lässt sich nur aufrufen, wenn das OBP60 auf das Internet zugreifen kann. Das lässt sich realisieren, wenn das OPB60 zum Beispiel als Client in Ihrem Boots-WLAN arbeitet und Ihr Boots-WLAN Internetzugang hat. Alternativ starten Sie zum Beispiel einen Hotspot auf Ihrem Handy und verbinden das OPB60 als WLAN-Client mit Ihrem Handy.
+    Die Github-Seite lässt sich nur aufrufen, wenn das OBP60 auf das Internet zugreifen kann. Das lässt sich realisieren, wenn das OPB60 zum Beispiel als Client in Ihrem Boots-WLAN arbeitet, und Ihr Boots-WLAN Internetzugang hat. Alternativ starten Sie zum Beispiel einen Hotspot auf Ihrem Handy und verbinden das OPB60 als WLAN-Client mit Ihrem Handy.

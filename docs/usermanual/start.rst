@@ -70,7 +70,7 @@ In einigen Situationen ist es günstiger, die Stromversorgung direkt über den N
 Stromversorgung USB-C
 ---------------------
 
-Das OBP60 kann auch über USB-C mit Strom versorgt werden. Der USB-Anschluss muss aber ausreichend Spannung von 5,1V und Strom bis 500 mA liefern können. Der USB-Anschluss am OBP60 verfügt über einen Rücklaufschutz, so dass gleichzeitig 12V/24V und 5V über den USB-Port eingespeist werden können. 
+Das OBP60 kann auch über USB-C mit Strom versorgt werden. Der USB-Anschluss muss aber ausreichend Spannung von 5.1V und Strom bis 500 mA liefern können. Der USB-Anschluss am OBP60 verfügt über einen Rücklaufschutz, so dass gleichzeitig 12V/24V und 5V über den USB-Port eingespeist werden können. 
 
 .. note::
 	Viele USB-Computeranschlüsse verfügen nicht über einen ausreichend hohen Ausgangsstrom und teilen sich den Strom mit mehreren Anschlüssen. Das kann dazu führen, dass das OBP60 nicht direkt von einem PC aus mit Strom versorgt werden kann. Auch die Kabelqualität und Kabellänge ist entscheidend. Einige Kabel haben zu geringe Querschnitte und erzeugen einen hohen Spannungsabfall auf den Leitungen. Die Spannung ist dann am USB-C-Ausgang zu gering. Benutzen Sie in solchen Fällen den zusätzlichen 12V-Eingang an **CN2** zur Stromversorgung. 
@@ -78,7 +78,7 @@ Das OBP60 kann auch über USB-C mit Strom versorgt werden. Der USB-Anschluss mus
 Einbau
 ------
 
-Der Einbau des OBP60 erfolgt über die Rückseite. Zum Anzeichnen der Öffnung und der Löcher in der Cockpitwand kann die Moosgummidichtung als Schablone benutzt werden. Vor der Montage des OBP60 ist die Rückseite abzunehmen. Die 2 Sechskantschrauben werden in die dafür vorgesehenen Vertiefungen eingeführt und gegen herausfallen gesichert. Prüfen Sie vor dem Einbau, ob die Länge der M5x25 Schrauben ausreichend ist. Gegebenenfalls ersetzen Sie die Schrauben in passiger Länge. 
+Der Einbau des OBP60 erfolgt über die Rückseite. Zum Anzeichnen der Öffnung und der Löcher in der Cockpitwand kann die Moosgummidichtung als Schablone benutzt werden. Vor der Montage des OBP60 ist die Rückseite abzunehmen. Die 2 Sechskantschrauben werden in die dafür vorgesehenen Vertiefungen eingeführt und gegen Herausfallen gesichert. Prüfen Sie vor dem Einbau, ob die Länge der M5x25 Schrauben ausreichend ist. Gegebenenfalls ersetzen Sie die Schrauben in passiger Länge. 
 
 .. warning::
 	Die Köpfe der Sechskantschrauben sollten in den Vertiefungen eingeklebt werden, damit sie beim Einbau nicht in das Gehäuseinnere geschoben werden und dort einen Kurzschluss auf der Platine verursachen können.
