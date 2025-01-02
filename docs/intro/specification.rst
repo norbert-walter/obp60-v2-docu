@@ -88,7 +88,7 @@ Anschlussbelegung
    :scale: 50%
    
 .. image:: ../pics/Logo_ESP32-S3_t.png
-   :scale: 100%
+   :scale: 60%
    
 Schaltplan
 ----------
