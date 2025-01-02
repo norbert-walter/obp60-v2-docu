@@ -87,7 +87,7 @@ Anschlussbelegung
 .. image:: ../pics/Bus_Systems.png
    :scale: 50%
    
-.. image:: ../Logo_ESP32-S3_t.png
+.. image:: ../pics/Logo_ESP32-S3_t.png
    :scale: 100%
    
 Schaltplan
