@@ -93,6 +93,7 @@ Der Schaltplan und die Platine wurden mit dem Online-Entwicklungstool EasyEDA er
 * `Gerber Daten [ZIP] <../_static/files/Gerber_OBP60_V2.1.zip>`_
 * `Bauteilliste [TXT] <../_static/files/BOM_OBP60_V2.1.txt>`_
 * `Bestückung [HTML] <../_static/files/ibom_multifunktionsdisplay_V2.1.html>`_
+* `3D-Daten der Kunststoff-Teile [ZIP] <../_static/files/OBP60_3D_Parts_V2.1.zip>`_
 
 .. image:: ../pics/Lizenz_by-nc-sa_eu.png
    :scale: 45%
