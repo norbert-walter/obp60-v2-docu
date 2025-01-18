@@ -847,7 +847,7 @@ Im OBP60 gibt es insgesamt bis zu 10 Seiten, die man frei auswählen und gestalt
     * **Keel** - Grafische Anzeige der Kielposition (**AS5600** I2C)
     * **Battery** - Anzeige von Spannung, Strom und Leistung (**INA219, INA226** I2C)
     * **Battery2** - Grafische Anzeige des Batterie-Ladezustandes (**INA219, INA226** I2C)
-    * **RollPitch** - Grafische Anzeige von Roll und Pitch (**xdrRoll, xdrPitch**)
+    * **RollPitch** - Grafische Anzeige von Roll und Pitch (**xdrRoll, xdrPitch** Obwohl die Seite nur dazu nutzbar ist um Roll und Pitch anzuzeigen, sind die Werte trotzdem konfigurierbar, für den Fall dass die Bezeichnungen leicht unterschiedlich sind, z.b. xdrROLL oder xdrPTCH  )
     * **Solar** - Grafische Anzeige des Solar-Ladezustandes (**INA219, INA226** I2C)
     * **Generator** - Grafische Anzeige des Generator-Ladezustandes (**INA219, INA226** I2C)
     
