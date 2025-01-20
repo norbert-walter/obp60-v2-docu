@@ -826,7 +826,8 @@ Die Konfiguration der möglichen Anzeigeseiten des OPB60 erfolgt auf der Seite *
     * ``Portable Bitmap (PBM)`` - Binäres Bildformat ohne Header (kann nicht im Browser angezeigt werden)
     * ``Windows Bitmap (BMP)`` - Binäres Bildformat mit Header
     
-    Ein Screenshot kann erstellt werden, indem folgende Webseite aufgerufen wird: `http://192.168.15.1/api/user/OBP60Task/screenshot`_
+    Ein Screenshot kann erstellt werden, indem folgende Webseite aufgerufen wird:
+    * `http://192.168.15.1/api/user/OBP60Task/screenshot`_
 
 .. _http://192.168.15.1/api/user/OBP60Task/screenshot: http://192.168.15.1/api/user/OBP60Task/screenshot
     
