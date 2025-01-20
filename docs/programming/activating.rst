@@ -14,7 +14,7 @@ Die Firmware zum OBP60 kann recht einfach an eigene Bedürfnisse angepasst werde
 Gitpod
 ------
 
-Gitpod ist eine standardtisierte Entwicklungsumgebung, die webbasiert ist und in der Cloud läuft. So ist es möglich, auf jedem Rechner, der über einen aktuellen Webbrowser verfügt, eine Code-Entwicklung durchzuführen ohne spezielle Installation von irgendwelchen Softwarebestandteilen. Zur Benutzung des Dienstes ist eine Anmeldung bei Github notwendig. Die Code-Entwicklungsumgebung in Anlehnung an PlatformIO befindet sich jederzeit in einem aktuellen Zustand. Abhängigkeiten zu externen Bibliotheken werden selbständig aufgelöst und integriert. Das System ist sofort benutzbar und ist besonders für Anfänger geeignet oder für kleine Änderungen, die unterwegs mal schnell durchgeführt werden sollen. Die Benutzung von Gitpod ist in der Free-Variante kostenfrei, unterliegt jedoch einigen Einschränkungen bezüglich der Nutzungszeit und bereitgestellten Rechnerhardware. Aktuell sind 50 Stunden Nutzungszeit pro Monat frei und vollkommen ausreichend für einfache Änderungen. Wer mehr Zeit benötigt oder schnellere Hardware einsetzen möchte, kann den kostenpflichtigen Service von Gitpod nutzen. Weitere Details findet man auf der `Webseite von Gitpod`_.
+Gitpod ist eine standartisierte Entwicklungsumgebung, die webbasiert ist und in der Cloud läuft. So ist es möglich, auf jedem Rechner, der über einen aktuellen Webbrowser verfügt, eine Code-Entwicklung durchzuführen ohne spezielle Installation von irgendwelchen Softwarebestandteilen. Zur Benutzung des Dienstes ist eine Anmeldung bei Github notwendig. Die Code-Entwicklungsumgebung in Anlehnung an PlatformIO befindet sich jederzeit in einem aktuellen Zustand. Abhängigkeiten zu externen Bibliotheken werden selbständig aufgelöst und integriert. Das System ist sofort benutzbar und ist besonders für Anfänger geeignet oder für kleine Änderungen, die unterwegs mal schnell durchgeführt werden sollen. Die Benutzung von Gitpod ist in der Free-Variante kostenfrei, unterliegt jedoch einigen Einschränkungen bezüglich der Nutzungszeit und bereitgestellten Rechnerhardware. Aktuell sind 50 Stunden Nutzungszeit pro Monat frei und vollkommen ausreichend für einfache Änderungen. Wer mehr Zeit benötigt oder schnellere Hardware einsetzen möchte, kann den kostenpflichtigen Service von Gitpod nutzen. Weitere Details findet man auf der `Webseite von Gitpod`_.
 
 .. _Webseite von Gitpod: https://www.gitpod.io
 
@@ -45,17 +45,17 @@ Melden Sie sich als erstes bei Github an und gehen dann in das `Original-Projekt
 
 .. _Original-Projekt zum OBP60: https://github.com/norbert-walter/esp32-nmea2000-obp60
 
-``https://github.com/MyPrivatRepositoryName/esp32-nmea2000-obp60``
+``https://github.com/MyAccountName/esp32-nmea2000-obp60``
 
-Den Part ``MyPrivatRepositoryName`` wird durch ihren eigenen Repositorynamen ersetzt.
+Der Part ``MyAccountName`` wird durch ihren eigenen Accountnamen ersetzt.
 
 
 Gitpod-Link öffnen
 ^^^^^^^^^^^^^^^^^^
 
-Das Gitpad-Projekt wird über den Repository-Namen des Github-Projetes aufgerufen:
+Das Gitpad-Projekt wird über den Repository-Namen des Github-Projekts aufgerufen:
 
-``https://gitpod.io/#https://github.com/MyPrivatRepositoryName/esp32-nmea2000-obp60``
+``https://gitpod.io/#https://github.com/MyAccountName/esp32-nmea2000-obp60``
 
 Sie gelangen dann auf die Startseite von Gitpod und müssen sich dort anmelden. Loggen Sie sich dort mit dem bereits vorhandenen Github-Account ein.
 
@@ -75,7 +75,7 @@ Abb.: Einstellungen für Gitpod
 Container-Start
 ^^^^^^^^^^^^^^^
 
-Nach der Bestätigung der Einstellungen für Gitpod wird ein neuer Docker-Container gestartet, danach werden alle notwendigen Softwarebestandteile automatisch in den Container geladen. Der Vorgang kann etwas Zeit beanspruchen. Am Ende sollten Sie einen fertigen Workplace vorfinden. Der Workplace benutzt das Look & Feel von Visual Studio Code, ist jedoch nicht mit ihm verwandt und in einigen Punkten verschieden. So gibt es z.B. keine IntelliSense und die Anzahl der Plugins ist deutlich geringer als beim Original. Zusätzlich fehlen die Buttons zum Kompilieren und zum Download auf die Zielhardware sowie der serielle Monitor, wie man das von Visual Studio Code gewohnt ist. Über den Workplace lässt sich der Code verändern, kompilieren und das Binary herunterladen. Der Download des Binarys auf die Zielhardware muss mit externen Tools durchgeführt werden.
+Nach der Bestätigung der Einstellungen für Gitpod wird ein neuer Docker-Container gestartet, danach werden alle notwendigen Softwarebestandteile automatisch in den Container geladen. Der Vorgang kann etwas Zeit beanspruchen. Am Ende sollten Sie einen fertigen Workplace vorfinden. Der Workplace erscheint im Look & Feel von Visual Studio Code, ist jedoch nicht mit ihm verwandt und in einigen Punkten verschieden. So gibt es z.B. kein IntelliSense und die Anzahl der Plugins ist deutlich geringer als beim Original. Zusätzlich fehlen die Buttons zum Kompilieren und zum Download auf die Zielhardware, sowie der serielle Monitor, wie man das von Visual Studio Code gewohnt ist. Über den Workplace lässt sich der Code verändern, kompilieren und das Binary herunterladen. Der Download des Binarys auf die Zielhardware muss mit externen Tools durchgeführt werden.
 
 .. image:: ../pics/Gitpod_Workplace.png
    :scale: 40%
@@ -91,7 +91,7 @@ Um den Code kompilieren zu können, müssen Sie folgende Befehle nacheinander in
 	* ``cd /workspace/esp32-nmea2000-obp60``
 	* ``bash /workspace/esp32-nmea2000-obp60/lib/obp60task/run``
 
-Nach dem letzten Befehl werden in den Workplace alle notwendigen Tool-Chains und Bibliotheken geladen. Dieser Vorgang kann einige Minuten dauern. Danach beginnt der eigentliche Kompiliervorgang, der ebenfalls einiges an Zeit benötigt.
+Nach dem letzten Befehl werden alle notwendigen Tool-Chains und Bibliotheken in den Workplace geladen. Dieser Vorgang kann einige Minuten dauern. Danach beginnt der eigentliche Kompiliervorgang, der ebenfalls einiges an Zeit benötigt.
 
 .. image:: ../pics/Gitpod_Compile_Project.png
    :scale: 40%
@@ -122,7 +122,7 @@ Dabei haben die Files folgende Bedeutung:
 	* **obp60_s3-dev20240820-all.bin** - wie obp60_s3-all.bin
 	* **obp60_s3-dev20240820-update.bin** - Binärfile als Update (nur Firmware)
 	
-Je nachdem, ob man mit Default-Einstellungen starten oder mit den alten Einstellungen weiter arbeiten möchte, kann man eine der beiden fett hervorgehobenen Dateien herunter laden. Das geht am einfachsten, wenn man die entsprechende Datei im Dateibaum per Rechtsklick auswählt und sie dann über **Download** herunterlädt. Diese Datei kann man später auf dem OBP60 über die Webseite :ref:`Update` hochladen und damit die Firmware aktualisieren.
+Je nachdem, ob man mit Default-Einstellungen starten oder mit den alten Einstellungen weiter arbeiten möchte, kann man eine der beiden fett hervorgehobenen Dateien herunter laden. Das geht am einfachsten, wenn man die entsprechende Datei im Dateibaum per Rechtsklick auswählt und sie dann über **Download** herunterlädt. Die **update-** Datei kann man später auf dem OBP60 über die Webseite :ref:`Update` hochladen und damit die Firmware aktualisieren. Die **all-** Datei muss über USB geflasht werden.
 
 Source-Code Aktualisierung
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -130,7 +130,7 @@ Source-Code Aktualisierung
 Wer die Source-Code-Änderungen in seinem Github-Repository speichern möchte, kann die Github-Funktionalität des Workplace nutzen. Auf der linken Seite befindet sich ein Icon mit einer Pfadverzweigung und einer kleinen blauen Zahl daran. Dieses Icon teilt dem Benutzer mit, wie viele Änderungen an Dateien durch die Source-Code-Änderungen vorgenommen worden sind. Mit einem Klick auf das Icon kann man eine Beschreibung für die Änderungen hinzufügen. Wenn man dem Dialog rechts am blauen Commit-Button folgt, kann man **Commit und Push** anklicken. Dadurch werden die Code-Änderungen in das eigene Github-Repository hochgeladen und gesichert. Wer später dort weitermachen möchte, wo er zuletzt aufgehört hat, kann der Vorgehensweise ab Punkt 2 folgen und den Gitpod-Link zu seinem Projekt öffnen.
 
 .. hint::
-	Nur mit einem Beschreibungstext zur Codeänderung können Sie die Änderungen commiten und nach Github hochladen.
+	Nur mit einem Beschreibungstext zur Codeänderung können Sie die Änderungen committen und nach Github hochladen.
 
 .. image:: ../pics/Gitpod_Commit_Push.png
    :scale: 40%
@@ -139,7 +139,7 @@ Abb.: Source Code auf Github sichern
 Visual Studio Code / PlatformIO
 -------------------------------
 
-**Visual Studio Code** (VSC) ist eine weit verbreitete Software-Entwicklungsumgebung, die eine Vielzahl an Programmiersprachen unterstützt und die es für verschiedene Betriebssysteme gibt. Die Entwicklungsumgebung läuft dabei auf einem lokalen PC. Zur Programmierung von Embedded Elektronik auf Mikrocontrollerbasis in C und C++ wurde das Plugin **PlatformIO** für Visual Studio Code geschaffen. Damit ist es unkompliziert möglich, eine Softwareentwicklung für Hardware durchzuführen. In einer umfangreichen Datenbank sind eine Vielzahl an Elektronik-Hardware-Boards aufgeführt. Passend zum Hardware-Board werden die notwendigen Tool-Chains und Software-Bibliotheken zu einem Projekt hinzugefügt, ohne dass man sich um Details kümmern muss.
+**Visual Studio Code** (VSC) ist eine weit verbreitete Software-Entwicklungsumgebung, die eine Vielzahl an Programmiersprachen unterstützt, und die es für verschiedene Betriebssysteme gibt. Die Entwicklungsumgebung läuft dabei auf einem lokalen PC. Zur Programmierung von Embedded Elektronik auf Mikrocontrollerbasis in C und C++ wurde das Plugin **PlatformIO** für Visual Studio Code geschaffen. Damit ist es unkompliziert möglich, eine Softwareentwicklung für Hardware durchzuführen. In einer umfangreichen Datenbank sind eine Vielzahl an Elektronik-Hardware-Boards aufgeführt. Passend zum Hardware-Board werden die notwendigen Tool-Chains und Software-Bibliotheken zu einem Projekt hinzugefügt, ohne dass man sich um Details kümmern muss.
 
 .. hint::
 Wer an einer Weiterentwicklung der Firmware zum OBP60 interessiert ist, sollte Visual Studio Code / PlatformIO benutzen. Visual Studio Code verfügt über Mechanismen, mit denen Softwareänderungen über Github eingepflegt und verfolgt werden können.
@@ -153,7 +153,7 @@ Wie man Visual Studio Code installiert und danach das Plugin PlatformIO einricht
 	1. OBP60-Github-Projekt in eigenes Github-Repository forken
 	2. Projekt in Visual Studio Code importieren
 	3. Source-Code in der Entwicklungsumgebung ändern und kompilieren
-	4. Flashen der Firmware auf der Zielhardware
+	4. Flashen der Firmware auf die Zielhardware
 	5. Debuggen der Firmware über serielle USB-Verbindung
 	6. Aktualisierung der Änderungen im eigenen Github-Repository
 	
@@ -173,9 +173,9 @@ Melden Sie sich als erstes bei Github an, gehen dann in das `Original-Projekt zu
 
 .. _Original-Projekt zum OBP60: https://github.com/norbert-walter/esp32-nmea2000-obp60
 
-``https://github.com/MyPrivatRepositoryName/esp32-nmea2000-obp60``
+``https://github.com/MyAccountName/esp32-nmea2000-obp60``
 
-Der Part ``MyPrivatRepositoryName`` wird durch Ihren eigenen Repository-Namen ersetzt.
+Der Part ``MyAccountName`` wird durch Ihren eigenen Accountnamen ersetzt.
 
 Projekt in VSC importieren
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -215,7 +215,7 @@ Abb.: Hardware-Umgebung auswählen
 Codeänderung und Kompilieren
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Wenn Sie Code-Änderungen abgeschlossen haben, können Sie den Kompiliervorgang am Symbol mit dem Haken in der untersten Zeile aktivieren. Vergewissern Sie sich vorher, dass die korrekte Hardware-Umgebung **env:obp60_s3(esp32-nmea2000)** ausgewählt worden ist. Der Kompiliervorgang benötigt einiges an Zeit. Am Ende sollten Sie eine Mitteilung im Terminal-Fenster erhalten, die Sie über das Resultat informiert.
+Wenn Sie Ihre Code-Änderungen abgeschlossen haben, können Sie den Kompiliervorgang am Symbol mit dem Haken in der untersten Zeile aktivieren. Vergewissern Sie sich vorher, dass die korrekte Hardware-Umgebung **env:obp60_s3(esp32-nmea2000)** ausgewählt worden ist. Der Kompiliervorgang benötigt einiges an Zeit. Am Ende sollten Sie eine Mitteilung im Terminal-Fenster erhalten, die Sie über das Resultat informiert.
 
 .. image:: ../pics/VSC_Compile.png
    :scale: 40%
@@ -252,7 +252,7 @@ Abb.: Brücke zwischen ``GND`` und ``Pin 27``
 Debuggen der Firmware
 ^^^^^^^^^^^^^^^^^^^^^
 
-Eine einfache Debugging-Möglichkeit besteht darin, dass man Debugging-Ausgaben über die serielle USB-Schnittstelle ausgibt, die man auf dem PC mit einem Terminalprogramm empfangen kann. In der Firmware zum OBP60 sind Funktionen implementiert, mit denen man Debugging-Ausgaben erzeugen kann. In Visual Studio Code ist ein serielles Terminal integriert. Sie können es über das Symbol mit dem Stecker in der untersten Zeile starten. Die Ausgaben erfolgen dann unten rechts im Bereich "Terminal". Wenn Sie das Logging beenden wollen, klicken Sie rechts auf den aktuell laufenden Task und beenden ihn, indem Sie auf das Symbol mit dem Papierkorb drücken.
+Eine einfache Möglichkeit zur Fehlersuche besteht darin, dass man Debugging-Informationen über die serielle USB-Schnittstelle ausgibt, die man auf dem PC mit einem Terminalprogramm empfangen kann. In der Firmware zum OBP60 sind Funktionen implementiert, mit denen man Debugging-Ausgaben erzeugen kann. In Visual Studio Code ist ein serielles Terminal integriert. Sie können es über das Symbol mit dem Stecker in der untersten Zeile starten. Die Ausgaben erfolgen dann unten rechts im Bereich "Terminal". Wenn Sie das Logging beenden wollen, klicken Sie rechts auf den aktuell laufenden Task und beenden ihn, indem Sie auf das Symbol mit dem Papierkorb drücken.
 
 .. note::
 	Beachten Sie, dass die Schnittstellengeschwindigkeit standardmäßig auf **115200 Bd 8N1** eingestellt ist. Die Geschwindigkeit der seriellen USB-Schnittstelle lässt sich bei Bedarf in platformio.ini unter **monitor_speed** verändern.

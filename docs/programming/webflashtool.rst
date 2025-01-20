@@ -16,7 +16,7 @@ Für den Flash-Vorgang benötigt man folgende Dinge:
 	* PC mit Chrome- oder Edge-Browser
 
 **1. OBP60 in den Flash-Modus setzen**
-	Öffnen Sie die hintere Gehäuseabdeckung und stellen Sie mit der Drahtbrücke eine Verbindung von ``GND`` (CN2) zum ``Pin 27`` (ESP32-S3) her. Dann verbinden Sie das OBP60 mit dem PC über das USB-Verbindungskabel. Sobald sie USB-Schnittstelle erkannt wird, erfolgt eine Tonausgabe auf dem PC. Sie können dann die Drahtbrücke zwischen ``GND`` und ``Pin 27`` trennen. Der ESP32-S3 befindet sich jetzt im Flash-Modus.
+	Öffnen Sie die hintere Gehäuseabdeckung und stellen Sie mit der Drahtbrücke eine Verbindung von ``GND`` (CN2) zum ``Pin 27`` (ESP32-S3) her. Dann verbinden Sie das OBP60 mit dem PC über das USB-Verbindungskabel. Sobald die USB-Schnittstelle erkannt wird, erfolgt eine Tonausgabe auf dem PC. Sie können dann die Drahtbrücke zwischen ``GND`` und ``Pin 27`` trennen. Der ESP32-S3 befindet sich jetzt im Flash-Modus.
 	
 	.. image:: ../pics/ESP32-S3_Pin27.png
 	   :scale: 40%

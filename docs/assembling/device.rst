@@ -11,7 +11,7 @@ Abb.: Explosionsansicht
 In der oberen Abbildung ist der Aufbau des OBP60 zu sehen. Das Gerät besteht aus einzelnen Komponenten, die im folgenden beschreiben werden.
 
 	* **Touch Pads**
-		Die Tasten bestehen aus schwarz eloxierten Inbus-Senkschrauben aus Edelstahl (V2A). Die Tasten werden mit einem Dichtmittel in die Frontschale des Gehäuses eingeschraubt, um eine Wasserdichtigkeit zu erreichen.
+		Die Tasten bestehen aus schwarz eloxierten Inbus-Senkschrauben aus Edelstahl (V2A). Die Tasten werden mit einem Dichtmittel in die Frontschale des Gehäuses eingeschraubt, um Wasserdichtigkeit zu erreichen.
 	* **Springs**
 		Die Federn hinter den Tasten dienen der elektrischen Kontaktierung der Tasten mit den Sensorflächen auf der Platine.
 	* **Front Case**
@@ -39,7 +39,7 @@ In der oberen Abbildung ist der Aufbau des OBP60 zu sehen. Das Gerät besteht au
 	* **Backside Case**
 		Die Gehäuserückschale schließt die Rückseite des Gehäuses ab. Sie ist als verwindungssteife Kastenkonstruktion wie die Frontschale ausgeführt.
 	* **Backside Seal**
-		Die Rückwanddichtung dichtet das Gehäuse gegenüber der Einbauöffnung ab. Die Dichtung besteht aus 2 mm dicken Neoprenmaterial. Damit lassen sich kleine Unebenheiten und leichte Krümmungen überbrücken.
+		Die Rückwanddichtung dichtet das Gehäuse gegenüber der Einbauöffnung ab. Die Dichtung besteht aus 2 mm dickem Neoprenmaterial. Damit lassen sich kleine Unebenheiten und leichte Krümmungen überbrücken.
 	* **Connectors**
 		Für eine einfachen Montage sind an der Rückseite des Gerätes abnehmbare Steckverbinder angebracht. Über die Steckverbinder mit Schraubverbindungen kann das Gerät mit Strom versorgt und an die Bussysteme angeschlossen werden.
 		
@@ -74,7 +74,7 @@ Abb.: Mainboard Unterseite
 Platinen
 --------
 
-Die Platinen für das Mainborad und die Hintergrundbeleuchtung wurden als zweiseitig bestückte SMD-Platine mit Durchkontaktierungen, Stopplack und Bedruckung ausgeführt.
+Die Platinen für das Mainboard und die Hintergrundbeleuchtung wurden als zweiseitig bestückte SMD-Platine mit Durchkontaktierungen, Stopplack und Bedruckung ausgeführt.
 
 .. image:: ../pics/PCB_Empty_Top_Side.png
    :scale: 45%
@@ -93,11 +93,12 @@ Der Schaltplan und die Platine wurden mit dem Online-Entwicklungstool EasyEDA er
 * `Gerber Daten [ZIP] <../_static/files/Gerber_OBP60_V2.1.zip>`_
 * `Bauteilliste [TXT] <../_static/files/BOM_OBP60_V2.1.txt>`_
 * `Bestückung [HTML] <../_static/files/ibom_multifunktionsdisplay_V2.1.html>`_
+* `3D-Daten der Kunststoff-Teile [ZIP] <../_static/files/OBP60_3D_Parts_V2.1.zip>`_
 
 .. image:: ../pics/Lizenz_by-nc-sa_eu.png
    :scale: 45%
 
-Die Fertigungsdaten von Schaltplan, Gerber-Daten und Bauteilliste unterliegen der `Common Creative Lizenz (CC) BY BC SA 4.0`_. Das OBP60 darf nachgebaut oder modifiziert werden unter Nennung der Urheber. Es entstehen keinerlei Kosten für eine private Nutzung ohne kommerzielle Absichten. Eine kommerzielle Verwertung wird durch die Lizenz ausgeschlossen. Abgeleitete Werke unterliegen der selben Lizenz. Wenn Sie eine kommerzielle Nutzung des OBP60 beabsichtigen, kontaktieren Sie uns über das `Kontaktformular`_. Es besteht die Möglichkeit, ein nicht exklusives Nutzungsrecht über eine kommerzielle Lizenz zu erwerben.
+Die Fertigungsdaten von Schaltplan, Gerber-Daten und Bauteilliste und die 3D-Daten unterliegen der `Common Creative Lizenz (CC) BY BC SA 4.0`_. Das OBP60 darf unter Nennung der Urheber nachgebaut oder modifiziert werden. Es entstehen keinerlei Kosten für eine private Nutzung ohne kommerzielle Absichten. Eine kommerzielle Verwertung wird durch die Lizenz ausgeschlossen. Abgeleitete Werke unterliegen der selben Lizenz. Wenn Sie eine kommerzielle Nutzung des OBP60 beabsichtigen, kontaktieren Sie uns über das `Kontaktformular`_. Es besteht die Möglichkeit, ein nicht exklusives Nutzungsrecht über eine kommerzielle Lizenz zu erwerben.
 
 .. _Common Creative Lizenz (CC) BY BC SA 4.0: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.de
 .. _Kontaktformular: https://open-boat-projects.org/de/kontakt

@@ -6,7 +6,7 @@ Datenaustausch
 Interne Datenverarbeitung
 -------------------------
 
-Die Firmware des OBP60 besteht aus zwei Teilen. Der erste Teil ist das **NMEA2000-Gateway** und der zweite Teil die **Hardwareansteuerung** des OBP60. Das `NMEA2000-Gateway`_ ist ein Open Source Projekt von Andreas Wellenvogel. Es ist eine Software, mit der man bidirektionale Datenkonvertierungen zwischen NMEA2000 und NMEA0183 durchführen kann. Die Software ist so gestaltet, dass sie unterschiedliche kommerzielle Hardware unterstützen kann. So läuft das NMEA2000-Gateway z.B. auf einer Reihe von Produkten der Firma `M5Stack`_ wie dem **M5Stack Atom**, aber auch auf ESP32-Entwicklerboards wie dem **ESP32 Node MCU**. Es werden ESP32-CPUs in unterschiedlicher Ausprägung unterstützt wie der ESP32-Wroom und der ESP32-S3. Die Hardwareansteuerung des OBP60 ist über eigenständige Tasks implementiert und nutzt die Grundfunktionalität des NMEA2000-Gateways.
+Die Firmware des OBP60 besteht aus zwei Teilen. Der erste Teil ist das **NMEA2000-Gateway** und der zweite Teil die **Hardwareansteuerung** des OBP60. Das `NMEA2000-Gateway`_ ist ein Open Source Projekt von Andreas Vogel. Es ist eine Software, mit der man bidirektionale Datenkonvertierungen zwischen NMEA2000 und NMEA0183 durchführen kann. Die Software ist so gestaltet, dass sie unterschiedliche kommerzielle Hardware unterstützen kann. So läuft das NMEA2000-Gateway z.B. auf einer Reihe von Produkten der Firma `M5Stack`_ wie dem **M5Stack Atom**, aber auch auf ESP32-Entwicklerboards wie dem **ESP32 Node MCU**. Es werden ESP32-CPUs in unterschiedlicher Ausprägung unterstützt wie der ESP32-Wroom und der ESP32-S3. Die Hardwareansteuerung des OBP60 ist über eigenständige Tasks implementiert und nutzt die Grundfunktionalität des NMEA2000-Gateways.
 
 .. _NMEA2000-Gateway: https://open-boat-projects.org/de/nmea2000-gateway-mit-m5stack-atom/
 .. _M5Stack: https://shop.m5stack.com/collections/all-products/m5stack-atom
@@ -15,7 +15,7 @@ Die Firmware des OBP60 besteht aus zwei Teilen. Der erste Teil ist das **NMEA200
              :scale: 60%	
 Abb.: Datenflussschema
 
-Die gesamte Datenverarbeitung sämtlicher Bussysteme und Konvertierungen ist Bestandteil des NMEA2000-Gateways. Neben NMEA2000 (**CAN**) und NMEA0183 (**RS485**) werden weitere Bussysteme wie **I2C** und **1Wire** unterstützt. Die Hauptaufgabe des NMEA2000-Gateways besteht darin, alle ankommenden Daten der Busssysteme zu empfangen und in einem gemeinsamen Daten-Pool abzubilden. Diese Daten können über die Webseite **Data** eingesehen werden. Erweiterte Sensorik, die nicht Bestandteil von NMEA2000 und NMEA0183 sind, kann über I2C und 1Wire eingefügt werden. So lassen sich preisgünstige Sensoren nutzen. Damit die Daten der erweiterten Sensorik im NMEA2000- und NMEA0183-Netzwerk genutzt werden können, werden sie über NMEA0183 als universelle :ref:`XDR`-Datensätze in den Daten-Pool eingefügt. Als XDR-Datensätze können die Daten dann auch nach NMEA2000 konvertiert werden, sofern im Konverter entsprechende Übersetzungen implementiert sind. Als Ausgabeschnittstellen stehen CAN, RS485 und WiFi zur Verfügung. Über die CAN-Schnittstelle lassen sich nur NMEA2000-Daten austauschen. Über RS485 und WiFi (TCP) lassen sich sowohl NMEA0183-Daten, als auch NMEA2000-Daten austauschen, sofern die NMEA2000-Daten in SeaSmart-Telegrammen durch NMEA0183 getunnelt werden.
+Die gesamte Datenverarbeitung sämtlicher Bussysteme und Konvertierungen ist Bestandteil des NMEA2000-Gateways. Neben NMEA2000 (**CAN**) und NMEA0183 (**RS485**) werden weitere Bussysteme wie **I2C** und **1Wire** unterstützt. Die Hauptaufgabe des NMEA2000-Gateways besteht darin, alle ankommenden Daten der Bussysteme zu empfangen und in einem gemeinsamen Daten-Pool abzubilden. Diese Daten können über die Webseite **Data** eingesehen werden. Erweiterte Sensorik, die nicht Bestandteil von NMEA2000 und NMEA0183 sind, kann über I2C und 1Wire eingefügt werden. So lassen sich preisgünstige Sensoren nutzen. Damit die Daten der erweiterten Sensorik im NMEA2000- und NMEA0183-Netzwerk genutzt werden können, werden sie über NMEA0183 als universelle :ref:`XDR`-Datensätze in den Daten-Pool eingefügt. Als XDR-Datensätze können die Daten dann auch nach NMEA2000 konvertiert werden, sofern im Konverter entsprechende Übersetzungen implementiert sind. Als Ausgabeschnittstellen stehen CAN, RS485 und WiFi zur Verfügung. Über die CAN-Schnittstelle lassen sich nur NMEA2000-Daten austauschen. Über RS485 und WiFi (TCP) lassen sich sowohl NMEA0183-Daten, als auch NMEA2000-Daten austauschen, sofern die NMEA2000-Daten in SeaSmart-Telegrammen durch NMEA0183 getunnelt werden.
 
 Der Datenaustausch im OBP60 kann auf verschiedene Weise erfolgen. Grundsätzlich stehen mehrere Übertragungsarten über verschiedene Übertragungswege zur Verfügung:
 
@@ -52,14 +52,14 @@ Als Datenquellen werden Geräte bezeichnet, die überwiegend Daten zur anderen G
 * Tiefen-Sensor (Tiefe, Geschwindigkeit, Wassertemperatur, zurückgelegte Strecke)
 * Winkelsensoren (Ruderlage, Mast, Großbaum, Foil, Trimmklappen)
 * Elektro-Sensor (Spannung, Strom, Leistung, Energie)
-* Umgebungssensoren (Lufttemperatur, Fuftdruck, Luftfeuchtigkeit, Helligkeit, Niederschlag, Zustand, Bewegung)
+* Umgebungssensoren (Lufttemperatur, Luftdruck, Luftfeuchtigkeit, Helligkeit, Niederschlag, Zustand, Bewegung)
 * Durchflusssensoren (Kühlwasserfluss, Kühlwassertemperatur)
 * Druck- und Zugsensoren (Öldruck, Achterstag, Vorstag)
-* Füllstandsensoren (Level für Wasser, Abwasser, Krafstoff)
+* Füllstandsensoren (Level für Wasser, Abwasser, Kraftstoff)
 * Lagesensoren (Roll-, Pitch-, Nick-Winkel, Beschleunigung, Rotation, Magnetfeld)
 * Temperatursensoren (Luft, Kühlwasser, Raum, Kühlschrank, Wasser, Maschinenraum)
-* Elektrogeneratoren (Solar, Wind-, Schlepp- Dieselgenerator,
-* Radargeräte (Umgebungskarte
+* Elektrogeneratoren (Solar, Wind-, Schlepp- Dieselgenerator)
+* Radargeräte (Umgebungskarte)
 * Funkgeräte (Position, AIS-Schiffsverkehr, Anrufer, Meldungen, Notrufe)
 * Anzeigegeräte (Multifunktionsdisplays, Plotter)
 * Videokameras (Bild, Ton, Bewegung)
@@ -82,7 +82,7 @@ Nachfolgend werden die Übertragungswege näher beschrieben.
 NMEA2000 - Kabelgebunden
 ------------------------
 
-Der kabelgebundene NMEA2000-Bus ist der aktuelle Standard in der Bootsvernetzung. Über ein NMEA2000-Backbone auf CAN-Basis werden verschiedene Geräte an das Bussystem angeschlossen. Alle Bus-Teilnehmer können Daten lesen und schreiben. Dabei sind Sensoren Datenlieferanten, die ihre Daten an Displays und Plotter übertragen. Das NMEA2000-Backbone kann Sensoren auch mit Strom versorgen. Die Einspeisung der Versorgunsgspannung erfolgt über einen Plotter oder über ein Einspeisekabel.
+Der kabelgebundene NMEA2000-Bus ist der aktuelle Standard in der Bootsvernetzung. Über ein NMEA2000-Backbone auf CAN-Basis werden verschiedene Geräte an das Bussystem angeschlossen. Alle Bus-Teilnehmer können Daten lesen und schreiben. Dabei sind Sensoren Datenlieferanten, die ihre Daten an Displays und Plotter übertragen. Das NMEA2000-Backbone kann Sensoren auch mit Strom versorgen. Die Einspeisung der Versorgungspannung erfolgt über einen Plotter oder über ein Einspeisekabel.
 
 .. image:: ../pics/NMEA2000_Sample_Setup_Plotter.png
              :scale: 60%	
@@ -93,7 +93,7 @@ Für den Betrieb von NMEA2000 muss nichts speziell konfiguriert werden. Die Stan
 NMEA2000 - WiFi via SeaSmart
 ----------------------------
 
-Über das SeaSmart-Protokoll besteht die Möglichkeit, NMEA2000-Telegramme über Ethernet und WiFi übertragen zu können. Dazu werden die Binärdaten der NMEA2000-Telegramme in proprietäre NMEA0183-Telegramme eingebettet. Ein SeaSmart-Telegramm sieht wie folgt aus:
+Über das SeaSmart-Protokoll besteht die Möglichkeit, NMEA2000-Telegramme über Ethernet und WiFi zu übertragen. Dazu werden die Binärdaten der NMEA2000-Telegramme in proprietäre NMEA0183-Telegramme eingebettet. Ein SeaSmart-Telegramm sieht wie folgt aus:
 
     $PCDIN,a--a,b--b,b,cc,d--d*hh<CR><LF>
 
@@ -224,7 +224,7 @@ Als mögliche Endpunkte könnte folgende Hardware verwendet werden:
 
 Die NMEA0183-Daten lassen sich in unterschiedliche Software einbinden wie:
 
-* AVnav
+* AvNav
 * OpenPlotter
 * OpenCPN
 * BBN
@@ -259,12 +259,21 @@ Für alle oben aufgeführten Endpunkte sind folgende Einstellungen im OBP60 vorz
 .. hint::
 	Achten Sie darauf, dass der **Log Level** auf ``off`` gestellt ist. Anderenfalls kann es sonst zu Störungen in der Kommunikation kommen, da Logging-Ausgaben in den Datenstrom eingespeist werden, die ebenfalls über USB-C ausgegeben werden.
 	
+NMEA0183 - WLAN
+------------------------
+
+Mit dem TCP Client könenn (ähnlich wie bei der Übertragung per USB) NMEA0183-Telegramme z.B. von einem Raspberry Pi mit OpenPlotter bzw. SignalK empfangen werden.
+Dazu muss der TCP-Client entsprechend konfiguriert sein.
+:ref:`Config - WiFi Client`
+
+Konfigurationsbeispiele
+------------------------
 Nachfolgend sind einige Konfigurationsbeispiele aufgeführt. Es wird gezeigt, wie die weitere Konfiguration auf dem System erfolgt.
-	
+
 Beispiel AVnav auf Raspberry Pi
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Dieses Beispiel zeigt die Einbindung eines OBP60 über USB in AVnav, das auf einem Rasberry Pi läuft. Dabei werden NMEA2000 Busdaten ausgelesen und nach NMEA0183 übertragen. Die Anbindung erfolgt direkt in AVnav als Device und die Daten stehen dann der Anwendung zu Verfügung. In diesem Fall wird das AVnav-Image benutzt. Wer AVnav unter OpenPlotter als Plugin benutzt, sollte dem **Konfigurationsbeispiel OpenPlotter auf Raspberry Pi** folgten.
+Dieses Beispiel zeigt die Einbindung eines OBP60 über USB in AvNav, das auf einem Rasberry Pi läuft. Dabei werden NMEA2000 Busdaten ausgelesen und nach NMEA0183 übertragen. Die Anbindung erfolgt direkt in AvNav als Device und die Daten stehen dann der Anwendung zu Verfügung. In diesem Fall wird das AvNav-Image benutzt. Wer AvNav unter OpenPlotter als Plugin benutzt, sollte dem **Konfigurationsbeispiel OpenPlotter auf Raspberry Pi** folgten.
 
 Zur Verbindung des OBP60 und den Raspberry Pi über benötigen Sie ein **USB-C zu USB-A Kabel**. Am Raspberry Pi können Sie jeden beliebigen USB-A-Port verwenden.
 
@@ -282,23 +291,23 @@ Abb.: Verbindung OBP60 - Raspberry Pi
              :scale: 40%	
 Abb.: Aktive USB-Verlängerung für 5 m
 
-.. image:: ../pics/AVnav_Start_Page.png
+.. image:: ../pics/AvNav_Start_Page.png
              :scale: 50%	
-Abb.: AVnav Startseite
+Abb.: AvNav Startseite
 
-Unter AVnav kicken Sie auf der Startseite oben rechts das Symbol mit den 3 Strichen.
+Unter AvNav kicken Sie auf der Startseite oben rechts das Symbol mit den 3 Strichen.
 
-.. image:: ../pics/AVnav_Server_Status_Icon.png
+.. image:: ../pics/AvNav_Server_Status_Icon.png
 
 Sie gelangen dann auf die Seite zum Serverstatus. 
 
-.. image:: ../pics/AVnav_Server_Status_USBSerialReader_1.png
+.. image:: ../pics/AvNav_Server_Status_USBSerialReader_1.png
              :scale: 50%	
 Abb.: Server-Status ohne OBP60
 
-AVnav ist so eingerichtet, dass es automatisch alle seriellen USB-Geräte erkennen kann und automatisch zuordnet. Sowohl das Gerät, als auch die Übertragungsrate werden erkannt. Verschaffen Sie sich als erstes einen Überblick, welche Geräte bereits mit USB verbunden sind. Im oberen Bild sehen Sie unter Punkt **[3] USBSerialReader** alle aktuell erkannten und zugeordneten Geräte. In unserem Fall ist bereits ein GPS-Stick an USB angeschlossen. Das Gerät ist der Schnittstelle **/dev/ttyACM0** zugeordnet und arbeitet mit einer Übertragungsrate von 38.400 Bd. 
+AvNav ist so eingerichtet, dass es automatisch alle seriellen USB-Geräte erkennen kann und automatisch zuordnet. Sowohl das Gerät, als auch die Übertragungsrate werden erkannt. Verschaffen Sie sich als erstes einen Überblick, welche Geräte bereits mit USB verbunden sind. Im oberen Bild sehen Sie unter Punkt **[3] USBSerialReader** alle aktuell erkannten und zugeordneten Geräte. In unserem Fall ist bereits ein GPS-Stick an USB angeschlossen. Das Gerät ist der Schnittstelle **/dev/ttyACM0** zugeordnet und arbeitet mit einer Übertragungsrate von 38.400 Bd. 
 
-.. image:: ../pics/AVnav_Server_Status_USBSerialReader_2.png
+.. image:: ../pics/AvNav_Server_Status_USBSerialReader_2.png
              :scale: 50%	
 Abb.: Server-Status mit OBP60 (noch nicht konfiguriert) 
 
@@ -310,25 +319,25 @@ Wenn Sie auf das Stiftsymbol hinter der Zeile mit dem Eintrag **/dev/ttyACM1** k
     * **Type** ``combined``
     * **Name** ``OBP60V2``
     
-.. image:: ../pics/AVnav_Edit_Handler.png
+.. image:: ../pics/AvNav_Edit_Handler.png
              :scale: 50%	
 Abb.: Einstellungen für das OBP60
 
-Durch die Änderung des Typs von ``read`` auf ``combined`` ist eine bidirektionale Kommunikation über USB mit einer Übertragungsgeschwindigkeit von 115200 Bd möglich. Das OBP60 ist nun mit AVnav verbunden. Solange Sie die selben USB-Ports verwenden, werden nach jedem Neustart des Systems die USB-Geräte korrekt zugeordnet und die Übertragungsgeschwindigkeit richtig eingestellt.
+Durch die Änderung des Typs von ``read`` auf ``combined`` ist eine bidirektionale Kommunikation über USB mit einer Übertragungsgeschwindigkeit von 115200 Bd möglich. Das OBP60 ist nun mit AvNav verbunden. Solange Sie die selben USB-Ports verwenden, werden nach jedem Neustart des Systems die USB-Geräte korrekt zugeordnet und die Übertragungsgeschwindigkeit richtig eingestellt.
 
-.. image:: ../pics/AVnav_Server_Status_USBSerialReader_3.png
+.. image:: ../pics/AvNav_Server_Status_USBSerialReader_3.png
              :scale: 50%	
 Abb.: Server-Status mit OBP60 (korrekt konfiguriert)
     
 
-Beispiel AVnav auf Android-Autoradio
+Beispiel AvNav auf Android-Autoradio
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. image:: ../pics/OBP60_USB_Connection_Radio_AVnav.png
+.. image:: ../pics/OBP60_USB_Connection_Radio_AvNav.png
              :scale: 60%	
-Abb.: Verbindung OBP60 - Android Autoradio AVnav
+Abb.: Verbindung OBP60 - Android Autoradio AvNav
 
-In diesem Beispiel wird gezeigt, wie man Busdaten in ein Android-Radio einspeisen kann, um die Daten dort in AVnav nutzen zu können. Für die Datenübertragung zum Android-Autoradio benötigen Sie ein **USB-C zu USB-A Kabel**, sofern eine passende Adapterbuchse zur Verfügung steht. In einigen Situation müssen Sie die USB-Kabel direkt über spezielle Stecker am Autoradio auflegen. Konsultieren Sie dazu das Handbuch zum Android-Autoradio und stellen Sie die USB-Verbindung wie gefordert her.
+In diesem Beispiel wird gezeigt, wie man Busdaten in ein Android-Radio einspeisen kann, um die Daten dort in AvNav nutzen zu können. Für die Datenübertragung zum Android-Autoradio benötigen Sie ein **USB-C zu USB-A Kabel**, sofern eine passende Adapterbuchse zur Verfügung steht. In einigen Situation müssen Sie die USB-Kabel direkt über spezielle Stecker am Autoradio anschließen. Konsultieren Sie dazu das Handbuch zum Android-Autoradio und stellen Sie die USB-Verbindung wie gefordert her.
 
 .. warning::
     Verwenden Sie zur Verbindung des OBP60 mit dem Android Autoradio nur hochwertige geschirmte USB-C-Kabel. Die Länge sollte 1,5 m nicht überschreiten, damit die Signalpegel nicht zu stark reduziert werden und eine hohe Übertragungsrate möglich ist. Bei Überbrückung größerer Längen verwenden sie aktive USB-Verlängerungskabel.
@@ -338,19 +347,19 @@ In diesem Beispiel wird gezeigt, wie man Busdaten in ein Android-Radio einspeise
 Abb.: Aktive USB-Verlängerung für 5 m
 
 .. hint::
-    Die Konfiguration von AVnav für Android läuft in einigen Schritten verschieden zur Server-Version von AVnav auf einem Rasberry Pi ab. Beachten Sie, dass es unter Android keine automatische Konfiguration von seriellen USB-Devices gibt. USB-Geräte müssen hier immer manuell hinzugefügt werden. 
+    Die Konfiguration von AvNav für Android läuft in einigen Schritten verschieden zur Server-Version von AvNav auf einem Rasberry Pi ab. Beachten Sie, dass es unter Android keine automatische Konfiguration von seriellen USB-Devices gibt. USB-Geräte müssen hier immer manuell hinzugefügt werden. 
 
 .. image:: ../pics/Android_Start_Page.jpg
              :scale: 40%	
-Abb.: Startseite AVnav für Android
+Abb.: Startseite AvNav für Android
 
-Unter AVnav kicken Sie auf der Startseite oben rechts das Symbol mit den 3 Strichen.
+Unter AvNav kicken Sie auf der Startseite oben rechts das Symbol mit den 3 Strichen.
 
-.. image:: ../pics/AVnav_Server_Status_Icon.png
+.. image:: ../pics/AvNav_Server_Status_Icon.png
 
-Sie gelangen dann auf die Seite zum Serverstatus. Dort können Sie über das Plus-Symbol weitere Verbindungen zum AVnavServer einrichten.
+Sie gelangen dann auf die Seite zum Serverstatus. Dort können Sie über das Plus-Symbol weitere Verbindungen zum AvNavServer einrichten.
 
-.. image:: ../pics/AVnav_Add_Icon.png
+.. image:: ../pics/AvNav_Add_Icon.png
 
 Für die bidirektionale Kommunikation über USB wählen Sie **UsbConnection**.
 
@@ -374,8 +383,31 @@ Abb.: Server-Status
 Beispiel SignalK auf Raspberry Pi
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+SignalK kann die verfügbaren Daten im NMEA0183-Format über das WiFi-Netzwerk verteilen. Ein Vorteil dieser Varriante ist, dass kein Datenkabel zum OBP60 benötigt wird, sondern nur der Raspberry und das OBP60 im selben WLAN angemeldet sein müssen. Hierfür muss in SignalK unter Server  ``Settings  NMEA 0183 over TCP (10110)`` aktiviert sein.
+
+.. image:: ../pics/SignalK_server.png
+             :scale: 40%	
+Abb.: SignalK Server
+
+ Außerdem muss das signalk-to-nmea0183 Plugin installert und aktiviert sein, in dessen Konfiguration ausgewählt werden kann, welche NMEA0183-Daten ausgegeben werden sollen.  
+
+.. image:: ../pics/SignalK_plugin.png
+             :scale: 40%	
+Abb.: SignalK Plungin
+
+.. image:: ../pics/SignalK_data.png
+             :scale: 40%	
+Abb.: SignalK Plungin Konfigurationsbeispiel
+
+.. note::
+Um diese Funkioanlität zu testen, kann man sich auf dem Raspberry Pi mit folgendem Kommando in einem Terminal den Datenstrom anzeigen lassen: ``nc localhost 10110``  
+
+Die so bereitgestellten Daten könenn mit dem :ref:`Config - WiFi Client` des OBP60 abgerufen werden und stehen dann auf der Seite Data und zur Anzeige in den einzelnen Seiten ausgewählt werden.
+
+
 Beispiel OpenPlotter auf Raspberry Pi
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OpenPlotter stellt alle verfügbaren Daten über SignalK zur Verfügung. Von dort könenn die Daten im NMEA0183-Format mit dem TCP-Client abgerufen werden, oder mit dem signalk-to-nmea2000 Plugin übertragen werden. 
 
 Beispiel Navionics auf Android-Autoradio
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -384,7 +416,7 @@ Beispiel Navionics auf Android-Autoradio
              :scale: 60%	
 Abb.: Verbindung OBP60 - Android Autoradio Navionics
 
-In dem Beispiel wird gezeigt, wie man Busdaten in ein Android-Radio einspeisen kann, um die Daten in Navionics nutzen zu können. Für die Datenübertragung zum Android-Autoradio benötigen Sie ein **USB-C zu USB-A Kabel**, sofern eine passende Adapterbuchse zur Verfügung steht. In einigen Situation müssen Sie die USB-Kabel direkt über spezielle Stecker am Autoradio auflegen. Konsultieren Sie dazu das Handbuch zum Android-Autoradio und stellen Sie die USB-Verbindung wie gefordert her.
+In dem Beispiel wird gezeigt, wie man Busdaten in ein Android-Radio einspeisen kann, um die Daten in Navionics nutzen zu können. Für die Datenübertragung zum Android-Autoradio benötigen Sie ein **USB-C zu USB-A Kabel**, sofern eine passende Adapterbuchse zur Verfügung steht. In einigen Situation müssen Sie die USB-Kabel direkt über spezielle Stecker am Autoradio anschließen. Konsultieren Sie dazu das Handbuch zum Android-Autoradio und stellen Sie die USB-Verbindung wie gefordert her.
 
 .. note::
 	Bedingt durch die Navigationssoftware können nicht alle Busdaten in Navionics verwendet werden. Aktuell lassen sich nur einige Daten nutzen. Die nachfolgende Liste zeigt die derzeitig verarbeitbaren NMEA0183 Sentences.
@@ -443,7 +475,7 @@ Je nach Erfordernissen muss noch der Offset über **Rot. Offset** eingestellt we
 1Wire-Bus
 ---------
 
-Über den 1Wire-Buss lassen sich bis zu 8 Temperatursensoren des Typs DS18B20 anschließen. Damit können Temperaturen im Bereich von -55°C bis 125°C an verschiedenen Stellen im Boot gemessen werden. Die Sensoren gibt es als elektronisches Bauteil in Transistorform (TO-92) oder in einer wasserdichten Metallhülse mit Kabel. Die letzte Varriante eignet sich am besten im Marinebereich.
+Über den 1Wire-Buss lassen sich bis zu 8 Temperatursensoren des Typs DS18B20 anschließen. Damit können Temperaturen im Bereich von -55°C bis 125°C an verschiedenen Stellen im Boot gemessen werden. Die Sensoren gibt es als elektronisches Bauteil in Transistorform (TO-92) oder in einer wasserdichten Metallhülse mit Kabel. Die letztere Variante eignet sich am besten im Marinebereich.
 
 .. image:: ../pics/DS18B20.png
              :scale: 50%
@@ -460,7 +492,7 @@ Konfigurationsbeispiel 1Wire
 
 Im unteren Bild ist eine Schaltung zu sehen, in der 4 DS18B20 verwendet werden. Die Sensoren sind dabei über einen Spannungswandler LM7805 direkt versorgt. Diese Schaltung funktioniert für alle Sensoren, die am Markt erhältlich sind.
 
-.. image:: ../pics/DS18B20_Direct_Supplay.png
+.. image:: ../pics/DS18B20_Direct_Supply.png
              :scale: 50%
 Abb.: 1Wire-Anbindung von externen Temperatur-Sensoren (direkt versorgt)
 

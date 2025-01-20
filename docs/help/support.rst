@@ -1,7 +1,7 @@
 Unterstützung
 =============
 
-Wenn Sie im Bereich **Fragen und Antworten** keine Informationen gefunden haben die Ihnen weiterhelfen oder ganz spezielle Fragen haben, so treten Sie dem `Segeln-Forum`_ bei und stellen dort Ihre Fragen. Wir haben einen `eigenen Bereich`_ im Forum eingerichtet, in dem solche Fragen gestellt werden können. Sie können mit uns in Deutsch oder Englisch kommunizieren. Ihnen antworten Forenmitglieder, die auch ein OBP60 im Einsatz haben und über Erfahrungen verfügen. Auch das Core-Entwicklerteam für Hard- und Software ist dort zu finden und gibt ihnen Antworten.
+Wenn Sie im Bereich **Fragen und Antworten** keine Informationen gefunden haben die Ihnen weiterhelfen oder ganz spezielle Fragen haben, so treten Sie dem `Segeln-Forum`_ bei und stellen dort Ihre Fragen. Wir haben einen `eigenen Bereich`_ im Forum eingerichtet, in dem solche Fragen gestellt werden können. Sie können mit uns in Deutsch oder Englisch kommunizieren. Ihnen antworten Forenmitglieder, die auch ein OBP60 im Einsatz haben und über Erfahrungen verfügen. Auch das Core-Entwicklerteam für Hard- und Software ist dort zu finden und gibt Ihnen Antworten.
 
 .. _Segeln-Forum: https://www.segeln-forum.de/board/195-open-boat-projects-org/
 
