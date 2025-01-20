@@ -819,6 +819,17 @@ Die Konfiguration der möglichen Anzeigeseiten des OPB60 erfolgt auf der Seite *
     
 **Start Page**
     * Dieser Wert legt fest, welche Seite beim Start angezeigt werden soll. Es können nur die Seiten angezeigt werden, die innerhalb der Seitenanzahl (**Number of Pages**) liegen.
+    
+**Screenshot Format**
+    * Legt fest welches Bildausgabeformat für Screenshots benutzt wird. Es stehen folgende Formate zur Verfügung:
+    * ``Compressed Image (GIF)`` - Komprimierte GIF-Datei 
+    * ``Portable Bitmap (PBM)`` - Binäres Bildformat ohne Header (kann nicht im Browser angezeigt werden)
+    * ``Windows Bitmap (BMP)`` - Binäres Bildformat mit Header
+    
+    Ein Screenshot kann erstellt werden, indem folgende Webseite aufgerufen wird: `http://192.168.15.1/api/user/OBP60Task/screenshot`_
+
+.. _http://192.168.15.1/api/user/OBP60Task/screenshot: http://192.168.15.1/api/user/OBP60Task/screenshot
+    
 
 Config - OBP Page X
 -------------------
