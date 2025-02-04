@@ -7,7 +7,7 @@ Bussysteme
 .. image:: ../pics/NMEA_Bus.png
              :scale: 35%
 
-Das OBP60 ist ein Datenanzeigegerät für den Marinebereich, mit dem verschiedenste Informationen aus Bussystemen ausgelesen und angezeigt werden. Zu den typischen Bussystemen im Marinebereich, die das OPB60 verarbeitet, gehören:
+Das OBP60 ist ein Datenanzeigegerät für den Marinebereich, mit dem verschiedenste Informationen aus Bussystemen ausgelesen und angezeigt werden. Zu den typischen Bussystemen im Marinebereich, die das OBP60 verarbeitet, gehören:
 
 * NMEA0183 (RS485, isoliert)
 * NMEA2000 (CAN, isoliert)
