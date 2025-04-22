@@ -577,7 +577,7 @@ Unter **Hardware** werden alle Einstellungen bezüglich verbauter Hardware oder 
     Offset des Winkelsensors für Pitch. Damit kann der Nullpunkt des Winkelsensors für das Nicken Ihres Bootes korrigiert werden.
     
 **Temp Sensor**
-    * Hier kann der Sensortyp ausgewählt werden, der am 1Wire-Bus verwendet wird.
+    * Hier kann der Sensortyp ausgewählt werden, der am 1Wire-Bus verwendet wird. Es werden bis zu 8 Sensoren am 1Wire-Bus unterstützt.
     * ``off`` - Es wird kein Sensor benutzt
     * ``DS18B20`` - Temperatursensor -10...+85°C (1...8 Sensoren)
     
