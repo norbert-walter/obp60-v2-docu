@@ -56,7 +56,7 @@ Die Informationen haben folgende Bedeutung:
 	Zeigt an, ob das OBP60 mit einem anderen externen WiFi-Netzwerk als Client verbunden ist
 **WiFi Client IP**
     IP-Adresse, die dem OBP60 zugewiesen wurde
-**#clients
+**Clients
 	Anzahl der Clients, die sich mit dem OBP60 verbunden haben
 **TCP client connected
 	Hier wird der Verbindungsstatus des OBP60 angezeigt. false = OBP60 ist nicht als TCP-Client mit einem anderen Gerät verbunden. true = OBP60 ist als TCP-Client mit einem anderen Gerät verbunden.
