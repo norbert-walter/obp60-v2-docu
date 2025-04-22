@@ -133,10 +133,10 @@ Unter **System** werden grundlegende Einstellungen vorgenommen wie:
 .. _Link: https://de.wikipedia.org/wiki/NMEA_0183#Ger%C3%A4te-IDs
 
 **Stop AP Time**
-	* Hierüber kann angegeben werden, nach welcher Zeit der WiFi Access Point abgeschaltet werden soll. Die Angabe der Zeit erfolgt in Sekunden. Der Wert <0s> sorgt für einen dauerhaften Betrieb des WiFi Access Points.
+	* Hierüber kann angegeben werden, nach welcher Zeit der WiFi Access Point abgeschaltet werden soll. Die Angabe der Zeit erfolgt in Sekunden. Der Wert **0** sorgt für einen dauerhaften Betrieb des WiFi Access Points.
 	
 **AP Password**
-	* An dieser Stelle wird das Passwort für den WiFi Access Point angegeben. Es dürfen nur Zeichen des ASCII-Zeichensatzes verwendet werden.
+	* An dieser Stelle wird das Passwort für den WiFi Access Point angegeben. Es dürfen nur Zeichen des ASCII-Zeichensatzes verwendet werden. Per Default ist die Passwortabfrage aktiviert. Es wird das Passwort **nmea32admin** verwendet. Beim ersten Speichern einer Konfiguration nach einem Reboot wird kein Passwort benötigt. So können Sie das Passwort jederzeit ändern.
 	
 **AP Ip**
 	* Hier kann die IP-Adresse des WiFi Access Points eingestellt werden. Per Default steht die IP-Adresse auf **192.168.15.1**. In Ausnahmefällen kann die IP auf eine andere Adresse eingestellt werden. Beachten Sie dabei, dass das OPB60 bei veränderter IP-Adresse im Ihrem WLAN unter Umständen nicht mehr erreichbar sein könnte.
@@ -165,7 +165,9 @@ Unter **System** werden grundlegende Einstellungen vorgenommen wie:
 		* ``debug`` - Es werden alle vorgesehenen Meldungen inklusive Debug-Meldungen ausgegeben 
 		
 .. hint::
-	Wenn Sie beabsichtigen, einen NMEA0183-Datenaustausch über die USB-C-Schnittstelle  durchzuführen, sollten Sie den **Log Level** auf ``off`` stellen. Beachten Sie das nicht, kann die Auswertung von Logging-Ausgaben sehr unübersichtlich werden, da Logging-Daten und NMEA0183-Telegramme dann gemischt ausgegeben werden. Wenn Sie nur Logging-Ausgaben sehen wollen, stellen Sie **NMEA to USB** und **NMEA from USB** auf ``off``.
+	Wenn Sie beabsichtigen, einen NMEA0183-Datenaustausch über die USB-C-Schnittstelle  durchzuführen, sollten Sie den **Log Level** auf ``off`` stellen. Beachten Sie das nicht, kann die Auswertung von Logging-Ausgaben sehr unübersichtlich werden, da Logging-Daten und NMEA0183-Telegramme dann gemischt ausgegeben werden. Wenn Sie nur Logging-Ausgaben sehen wollen, stellen Sie **NMEA to USB** und **NMEA from USB** unter :ref:`Config - USB Port` auf ``off``.
+	
+
 
 .. _Config - Converter:
 
