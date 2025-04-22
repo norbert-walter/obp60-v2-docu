@@ -55,7 +55,17 @@ Die Informationen haben folgende Bedeutung:
 **WiFi Client connected**
 	Zeigt an, ob das OBP60 mit einem anderen externen WiFi-Netzwerk als Client verbunden ist
 **WiFi Client IP**
-    IP-Adresse, die dem OBP60 zugewiesen wurde 
+    IP-Adresse, die dem OBP60 zugewiesen wurde
+**#clients
+	Anzahl der Clients, die sich am OBP60 angedockt haben
+**TCP client connected
+	Hier wird der Verbindungsstatus des OBP60 angezeigt. false = OBP60 ist nicht als TCP-Client mit einem anderen Gerät verbunden. true = OBP60 ist als TCP-Client verbunden.
+**TCP client error
+	Hier wird der Fehlerstatus des OBP60 für TCP-Client-Verbindungen angezeigt.
+**Free heap
+	Anzeige des freien Heap-Speichers in Bayte. Der Heap-Speicher wird zur Verarbeitung von Informationen benötigt und darf nicht zu klein werden. Die Speichergröße ändert sich dynamisch je nach Auslastung der CPU. Der Wert kann zur Diagnose verwendet werden.
+**NMEA2000 State
+	Anzeige des Status des NMEA2000-Busses.
 **NMEA2000 in**
 	Anzahl der NMEA2000-Telegramme, die empfangen wurden
 **NMEA2000 out**
