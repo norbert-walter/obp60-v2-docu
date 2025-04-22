@@ -652,7 +652,7 @@ Tab.: Stromverbrauch der LED-Hintergrundbeleuchtung
 
     
 **Undervoltage**
-    * Erkennung einer Unterspannung der Stromversorgung. Wenn eine Unterspannung niedriger als 9 V erkannt wird, kann das OBP60 automatisch deaktiviert werden, um eine Tiefentladung der Bordbatterie vermeiden zu helfen. In kritischen Situationen kann das OBP60 trotz Unterspannung bis 7 V funktionsfähig bleiben, wenn der Unterspannungsschutz deaktiviert ist. Als Default-Wert ist der Unterspannungsschutz aktiviert. Wenn im aktivierten Zustand eine Unterspannung auftritt, wird das OBP60 deaktiviert und in den Tiefschlaf versetzt. Im Display erscheint die Meldung **Undervoltage**. Dieser Zustand kann nur verändert werden, wenn die Versorgungsspannung vollständig ausgeschaltet und wieder eingeschaltet wird.
+    * Erkennung einer Unterspannung der Stromversorgung. Wenn eine Unterspannung niedriger als 9 V erkannt wird, kann das OBP60 automatisch deaktiviert werden, um eine Tiefentladung der Bordbatterie zu vermeiden. In kritischen Situationen kann das OBP60 trotz Unterspannung bis 7 V funktionsfähig bleiben, wenn der Unterspannungsschutz deaktiviert ist. Als Default-Wert ist der Unterspannungsschutz aktiviert. Wenn im aktivierten Zustand eine Unterspannung auftritt, wird das OBP60 deaktiviert und in den Tiefschlaf versetzt. Im Display erscheint die Meldung **Undervoltage**. Dieser Zustand kann nur verändert werden, wenn die Versorgungsspannung vollständig ausgeschaltet und wieder eingeschaltet wird.
     * ``on`` - Der Unterspannungsschutz ist aktiviert
     * ``off`` - Der Unterspannungsschutz ist ausgeschaltet
     
@@ -857,6 +857,7 @@ Im OBP60 gibt es insgesamt bis zu 10 Seiten, die man frei auswählen und gestalt
     * **FourValue** - Vier Anzeigewerte
     * **FourValue2** - Vier Anzeigewerte (andere Anordnung vertikal/horizontal)
     * **WindRoseFlex** - Anzeige der Winddaten (alle Anzeigewerte konfigurierbar, erster Wert wird grafisch auf der Windrose dargestellt)
+	* **RollPitch** - Grafische Anzeige von Roll und Pitch
 
 * Seiten mit festem Inhalt
     * **Voltage** - Anzeige der Bordspannung (**xdrVBat**)
@@ -869,7 +870,6 @@ Im OBP60 gibt es insgesamt bis zu 10 Seiten, die man frei auswählen und gestalt
     * **Keel** - Grafische Anzeige der Kielposition (**AS5600** I2C)
     * **Battery** - Anzeige von Spannung, Strom und Leistung (**INA219, INA226** I2C)
     * **Battery2** - Grafische Anzeige des Batterie-Ladezustandes (**INA219, INA226** I2C)
-    * **RollPitch** - Grafische Anzeige von Roll und Pitch (**xdrRoll, xdrPitch** Obwohl die Seite nur dazu nutzbar ist um Roll und Pitch anzuzeigen, sind die Werte trotzdem konfigurierbar, für den Fall dass die Bezeichnungen leicht unterschiedlich sind, z.b. xdrROLL oder xdrPTCH  )
     * **Solar** - Grafische Anzeige des Solar-Ladezustandes (**INA219, INA226** I2C)
     * **Generator** - Grafische Anzeige des Generator-Ladezustandes (**INA219, INA226** I2C)
     
@@ -1389,7 +1389,9 @@ Nach der Zuordnung des Sensornamens wird unter **Example** ein Beispiel für das
 
 .. image:: ../pics/ConfigXDR_NMEA0183_In.png
              :scale: 60%
+			 
     Danach sind die Daten auf der Seite Data verfügbar, und können auch in der Konfiguration der Anzeigeseiten ausgewählt werden. Gegebenenfalls muss hierzu allerdings die Seite im Web-Browser neu geladen werden, bevor die neuen Einträge sichtbar werden.
+	
 .. image:: ../pics/ConfigXDR_NMEA0183_Data.png
              :scale: 60%
 Data
