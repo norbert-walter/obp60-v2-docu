@@ -136,7 +136,7 @@ Unter **System** werden grundlegende Einstellungen vorgenommen wie:
 	* Hierüber kann angegeben werden, nach welcher Zeit der WiFi Access Point abgeschaltet werden soll. Die Angabe der Zeit erfolgt in Sekunden. Der Wert **0** sorgt für einen dauerhaften Betrieb des WiFi Access Points.
 	
 **AP Password**
-	* An dieser Stelle wird das Passwort für den WiFi Access Point angegeben. Es dürfen nur Zeichen des ASCII-Zeichensatzes verwendet werden. Per Default ist die Passwortabfrage aktiviert. Es wird das Passwort **nmea32admin** verwendet. Beim ersten Speichern einer Konfiguration nach einem Reboot wird kein Passwort benötigt. So können Sie das Passwort jederzeit ändern.
+	* An dieser Stelle wird das Passwort für den WiFi Access Point angegeben. Es dürfen nur Zeichen des ASCII-Zeichensatzes verwendet werden. Per Default ist ein Passwort aktiviert. Es wird das Passwort **esp32nmea2k** verwendet.
 	
 **AP Ip**
 	* Hier kann die IP-Adresse des WiFi Access Points eingestellt werden. Per Default steht die IP-Adresse auf **192.168.15.1**. In Ausnahmefällen kann die IP auf eine andere Adresse eingestellt werden. Beachten Sie dabei, dass das OPB60 bei veränderter IP-Adresse im Ihrem WLAN unter Umständen nicht mehr erreichbar sein könnte.
@@ -151,7 +151,7 @@ Unter **System** werden grundlegende Einstellungen vorgenommen wie:
 	* Hiermit kann festgelegt werden, ob für Änderungen der Konfiguration ein Passwort notwendig ist.
 	
 **Admin Password**
-	* Hier wird das Admin-Passwort eingegeben. Es dürfen nur Zeichen des ASCII-Zeichensatzes verwendet werden.
+	* Hier wird das Admin-Passwort eingegeben. Es dürfen nur Zeichen des ASCII-Zeichensatzes verwendet werden. Per Default ist die Passwortabfrage aktiviert. Es wird das Passwort **esp32admin** verwendet. Beim ersten Speichern einer Konfiguration nach einem Reboot wird kein Passwort benötigt. So können Sie das Passwort jederzeit ändern.
 	
 **Show All Data**
 	* Zeigt das Menü ``on``, werden im Data-Bereich alle Sensordaten angezeigt. Das Umstellen auf ``off`` deaktiviert alle Sensordaten im Data-Bereich.
