@@ -372,7 +372,7 @@ Hier werden die Einstellungen für den Betrieb des OPB60 als TCP-Client vorgenom
     Die <Remote Address> ist die Adresse des TCP-Servers im WiFi-Netzwerk, mit dem Sie Daten austauschen wollen. Sie können eine IP-Adresse wie z.B. **192.168.15.1** oder einen MDNS-Hostnamen wie z.B. **OBP60V2.local** verwenden.
 
 .. warning::
-    Wenn Sie Daten zwischen zwei OBP60 via WiFi austauschen wollen, müssen sich beide Geräte im selben Funknetz befinden, auch müssen sie unterschiedliche System-Namen haben. Ihre Access Points müssen im gleichen IP-Adressbereich liegen, aber unterschiedliche Geräteadressen haben. Eine Gerät muss als TCP-Server und das andere Gerät als TCP-Client konfiguriert sein. Die Einstellungen dazu werden unter **Config - System** vorgenommen. Wenn Sie das nicht beachten, kann es zu Störungen im WiFi-Datenverkehr kommen und Sie können unter Umständen die Web-Konfigurationsoberflächen der Geräte nicht mehr erreichen.
+    Wenn Sie Daten zwischen zwei OBP60 via WiFi austauschen wollen, müssen sich beide Geräte im selben Funknetz befinden, auch müssen sie unterschiedliche System-Namen haben. Ihre Access Points müssen im gleichen IP-Adressbereich liegen, aber unterschiedliche Geräteadressen haben. Eine Gerät muss als TCP-Server und das andere Gerät als TCP-Client konfiguriert sein. Die Einstellungen dazu werden unter :ref:`Config - System` vorgenommen. Wenn Sie das nicht beachten, kann es zu Störungen im WiFi-Datenverkehr kommen und Sie können unter Umständen die Web-Konfigurationsoberflächen der Geräte nicht mehr erreichen.
     
 **NMEA0183 Out**
     * ``on`` - Am TCP-Port werden NMEA0183-Daten ausgegeben
