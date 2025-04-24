@@ -333,7 +333,7 @@ Abb.: Server-Status mit OBP60 (korrekt konfiguriert)
 Beispiel AvNav auf Android-Autoradio
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. image:: ../pics/OBP60_USB_Connection_Radio_AvNav.png
+.. image:: ../pics/OBP60_USB_Connection_Radio_AVnav.png
              :scale: 60%	
 Abb.: Verbindung OBP60 - Android Autoradio AvNav
 
