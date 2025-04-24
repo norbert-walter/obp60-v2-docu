@@ -291,23 +291,23 @@ Abb.: Verbindung OBP60 - Raspberry Pi
              :scale: 40%	
 Abb.: Aktive USB-Verlängerung für 5 m
 
-.. image:: ../pics/AvNav_Start_Page.png
+.. image:: ../pics/AVnav_Start_Page.png
              :scale: 50%	
 Abb.: AvNav Startseite
 
 Unter AvNav kicken Sie auf der Startseite oben rechts das Symbol mit den 3 Strichen.
 
-.. image:: ../pics/AvNav_Server_Status_Icon.png
+.. image:: ../pics/AVnav_Server_Status_Icon.png
 
 Sie gelangen dann auf die Seite zum Serverstatus. 
 
-.. image:: ../pics/AvNav_Server_Status_USBSerialReader_1.png
+.. image:: ../pics/AVnav_Server_Status_USBSerialReader_1.png
              :scale: 50%	
 Abb.: Server-Status ohne OBP60
 
 AvNav ist so eingerichtet, dass es automatisch alle seriellen USB-Geräte erkennen kann und automatisch zuordnet. Sowohl das Gerät, als auch die Übertragungsrate werden erkannt. Verschaffen Sie sich als erstes einen Überblick, welche Geräte bereits mit USB verbunden sind. Im oberen Bild sehen Sie unter Punkt **[3] USBSerialReader** alle aktuell erkannten und zugeordneten Geräte. In unserem Fall ist bereits ein GPS-Stick an USB angeschlossen. Das Gerät ist der Schnittstelle **/dev/ttyACM0** zugeordnet und arbeitet mit einer Übertragungsrate von 38.400 Bd. 
 
-.. image:: ../pics/AvNav_Server_Status_USBSerialReader_2.png
+.. image:: ../pics/AVnav_Server_Status_USBSerialReader_2.png
              :scale: 50%	
 Abb.: Server-Status mit OBP60 (noch nicht konfiguriert) 
 
@@ -319,13 +319,13 @@ Wenn Sie auf das Stiftsymbol hinter der Zeile mit dem Eintrag **/dev/ttyACM1** k
     * **Type** ``combined``
     * **Name** ``OBP60V2``
     
-.. image:: ../pics/AvNav_Edit_Handler.png
+.. image:: ../pics/AVnav_Edit_Handler.png
              :scale: 50%	
 Abb.: Einstellungen für das OBP60
 
 Durch die Änderung des Typs von ``read`` auf ``combined`` ist eine bidirektionale Kommunikation über USB mit einer Übertragungsgeschwindigkeit von 115200 Bd möglich. Das OBP60 ist nun mit AvNav verbunden. Solange Sie die selben USB-Ports verwenden, werden nach jedem Neustart des Systems die USB-Geräte korrekt zugeordnet und die Übertragungsgeschwindigkeit richtig eingestellt.
 
-.. image:: ../pics/AvNav_Server_Status_USBSerialReader_3.png
+.. image:: ../pics/AVnav_Server_Status_USBSerialReader_3.png
              :scale: 50%	
 Abb.: Server-Status mit OBP60 (korrekt konfiguriert)
     
@@ -355,7 +355,7 @@ Abb.: Startseite AvNav für Android
 
 Unter AvNav kicken Sie auf der Startseite oben rechts das Symbol mit den 3 Strichen.
 
-.. image:: ../pics/AvNav_Server_Status_Icon.png
+.. image:: ../pics/AVnav_Server_Status_Icon.png
 
 Sie gelangen dann auf die Seite zum Serverstatus. Dort können Sie über das Plus-Symbol weitere Verbindungen zum AvNavServer einrichten.
 
