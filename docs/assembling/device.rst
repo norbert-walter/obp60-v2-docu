@@ -8,7 +8,7 @@ Mechanischer Aufbau
    :scale: 45%
 Abb.: Explosionsansicht
 
-In der oberen Abbildung ist der Aufbau des OBP60 zu sehen. Das Gerät besteht aus einzelnen Komponenten, die im folgenden beschreiben werden.
+In der oberen Abbildung ist der Aufbau des OBP60 zu sehen. Das Gerät besteht aus einzelnen Komponenten, die im folgenden beschrieben werden.
 
 	* **Touch Pads**
 		Die Tasten bestehen aus schwarz eloxierten Inbus-Senkschrauben aus Edelstahl (V2A). Die Tasten werden mit einem Dichtmittel in die Frontschale des Gehäuses eingeschraubt, um Wasserdichtigkeit zu erreichen.
