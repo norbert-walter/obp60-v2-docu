@@ -856,7 +856,7 @@ Im OBP60 gibt es insgesamt bis zu 10 Seiten, die man frei auswählen und gestalt
     * **ThreeValue** - Drei Anzeigewerte
     * **FourValue** - Vier Anzeigewerte
     * **FourValue2** - Vier Anzeigewerte (andere Anordnung vertikal/horizontal)
-    * **WindRoseFlex** - Anzeige der Winddaten (alle Anzeigewerte konfigurierbar, erster Wert wird grafisch auf der Windrose dargestellt)
+    * **WindRoseFlex** - Anzeige der Winddaten (alle Anzeigewerte konfigurierbar, erster Wert wird grafisch auf der Windrose dargestellt, die fünf anderen Werte als Zahlen)
 	* **RollPitch** - Grafische Anzeige von Roll und Pitch
 
 * Seiten mit festem Inhalt
