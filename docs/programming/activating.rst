@@ -89,7 +89,7 @@ Der Code zum OBP60 befindet sich im Ordner: */ESP32-NMEA2000_OBP60/lib/obp60task
 Um den Code kompilieren zu können, müssen Sie folgende Befehle nacheinander in das Terminal-Fenster unten rechts einfügen. Sie können dazu die Copy & Paste Funktion benutzen.
 
 	* ``cd /workspace/esp32-nmea2000-obp60``
-	* ``bash /workspace/esp32-nmea2000-obp60/lib/obp60task/run_installing_tools``
+	* ``bash /workspace/esp32-nmea2000-obp60/lib/obp60task/run_install_tools``
 	* ``bash /workspace/esp32-nmea2000-obp60/lib/obp60task/run_obp60_s3``
 
 Nach dem zweiten Befehl werden alle notwendigen Tool-Chains und Bibliotheken in den Workplace geladen. Dieser Vorgang kann einige Minuten dauern. Mit dem letzten Befehl beginnt der eigentliche Kompiliervorgang, der ebenfalls einiges an Zeit benötigt. Wenn Sie den Code später geändert haben und erneut kompilieren wollen, so benutzen Sie einfach den letzten Befehl erneut.
