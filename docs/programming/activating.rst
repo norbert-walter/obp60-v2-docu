@@ -84,7 +84,7 @@ Abb.: Fertiger Workplace
 Codeänderung und Kompilieren
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Der Code zum OBP60 befindet sich im Ordner: */ESP32-NMEA2000_OBP60/lib/obp60task* . Durch Editieren der Datei *platformio.ini* können einige Hardwareanpassungen zur Variante des ESP32-S3 und zum e-Paper-Display vorgenommen werden. 
+Der Code zum OBP60 befindet sich im Ordner: */ESP32-NMEA2000-OBP60/lib/obp60task* . Durch Editieren der Datei *platformio.ini* können einige Hardwareanpassungen zur Variante des ESP32-S3 und zum e-Paper-Display vorgenommen werden. 
 
 Um den Code kompilieren zu können, müssen Sie folgende Befehle nacheinander in das Terminal-Fenster unten rechts einfügen. Sie können dazu die Copy & Paste Funktion benutzen.
 
@@ -109,7 +109,7 @@ Binary-Download
 
 Der Binary-Code zur Firmware befindet sich nach dem Kompilieren im Verzeichnis:
 
-	* */ESP32-NMEA2000_OBP60/.pio/build/obp60_s3* (für OBP60)
+	* */ESP32-NMEA2000-OBP60/.pio/build/obp60_s3* (für OBP60)
 
 .. image:: ../pics/Gitpod_Download.png
    :scale: 40%
@@ -224,7 +224,7 @@ Wenn Sie Ihre Code-Änderungen abgeschlossen haben, können Sie den Kompiliervor
    :scale: 40%
 Abb.: Kompilierung
 
-Der Binary-Code zur Firmware befindet sich nach dem Kompilieren im Verzeichnis: */esp32-nmea2000/.pio/build/obp32_s3*
+Der Binary-Code zur Firmware befindet sich nach dem Kompilieren im Verzeichnis: */esp32-nmea2000-obp60/.pio/build/obp32_s3*
 
 Dabei haben die Dateien folgende Bedeutung:
 
