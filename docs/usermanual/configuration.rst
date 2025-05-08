@@ -1435,7 +1435,7 @@ Für ein normales Firmware-Update laden Sie sich die gewünschte Firmware als Da
 .. warning::
 	Beachten Sie, dass Sie bei einem Firmware-Update auf eine ältere Version ein **Initial Firmware Update** durchführen sollten. So vermeiden Sie Komplikationen mit den gespeicherten Konfigurationsdaten. Bei Nichtbeachtung ist das System  ansonsten unter Umständen nicht nutzbar und kann komplett einfrieren. Ein Firmware-Update über die Konfigurationsseiten ist dann nicht mehr möglich. Die Firmware muss dann über USB geflasht werden.
 
-Wie man ein **Initial Firmware Update** durchführt, bzw. die Firmware eines OBP60 über USB flasht, ist unter xxx beschrieben.
+Wie man ein **Initial Firmware Update** durchführt, bzw. die Firmware eines OBP60 über USB flasht, ist unter :ref:`Update` beschrieben.
 
 Help
 ----
