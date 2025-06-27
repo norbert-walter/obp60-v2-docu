@@ -434,24 +434,25 @@ In dem Beispiel wird gezeigt, wie man Busdaten in ein Android-Radio einspeisen k
 Zur Konfiguration der Verbindung zum OBP60 geht man auf **Menue** und den Unterpunkt **Paired Devices**.
 
 .. image:: ../pics/Navionics_Paired_Devices.png
-             :scale: 60%	
+             :scale: 40%	
 Abb.: Verbindung OBP60 - Menue Paired Devices
 
 Über den Button **Add Device** kann eine neue Verbindung zum Device OBP60 angelegt werden, wenn sich beide Geräte im selben WiFi-Netzwerk befinden.
 
 .. image:: ../pics/Navionica_Add_Decvice.png
-             :scale: 60%	
+             :scale: 40%	
 Abb.: Verbindung OBP60 - Add Device
 
 Ermitteln Sie die IP-Adresse des OBP60,indem sie auf die Webseite des OBP60 gehen. Unter **WiFi client IP** finden Sie die IP-Adresse. In unserem Beispiel wird die Adresse 192.168.15.1 verwendet. In Ihrem Fall kann das eine andere IP-Adresse sein. Vergeben Sie einen Namen für das Device und verwenden Sie als Verbindungsart **TCP**. Speichern Sie die Einstellungen unter **Save**.
 
 .. image:: ../pics/Navionics_TCP_Parameter.png
-             :scale: 60%	
+             :scale: 40%	
 Abb.: Verbindung OBP60 - Add Device
 
 Unter **Paired Devices** sollten jetzt das OBP60 zu finden sein und der Status auf **Connected** stehen. Sofern Daten übertagen werden, sehen Sie den Typ der Daten. In unserem Fall wurden das externe GPS-Signal des OBP60 erkannt und die Daten in der Karte im Instrumententeil dargestellt.
 
 .. image:: ../pics/Navionics_Connected_Device.png
+             :scale: 40%
 Abb.: Verbindung OBP60 - Add Device
 
 I2C-Bus
