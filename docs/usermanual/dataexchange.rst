@@ -416,7 +416,7 @@ Beispiel Navionics auf Android-Autoradio
              :scale: 60%	
 Abb.: Verbindung OBP60 - Android Autoradio Navionics
 
-In dem Beispiel wird gezeigt, wie man Busdaten in ein Android-Radio einspeisen kann, um die Daten in Navionics nutzen zu können. Für die Datenübertragung zum Android-Autoradio benötigen Sie ein **USB-C zu USB-A Kabel**, sofern eine passende Adapterbuchse zur Verfügung steht. In einigen Situation müssen Sie die USB-Kabel direkt über spezielle Stecker am Autoradio anschließen. Konsultieren Sie dazu das Handbuch zum Android-Autoradio und stellen Sie die USB-Verbindung wie gefordert her.
+In dem Beispiel wird gezeigt, wie man Busdaten in ein Android-Radio einspeisen kann, um die Daten in Navionics nutzen zu können. Für die Datenübertragung zum Android-Autoradio muss eine WiFi-Verbindung benutzt werden. Eine USB-Kabelverbindung zur Datenübertragung ist nicht möglich. Stellen Sie sicher, dass das WiFi des Android Autoradios angeschaltet ist und sich beide Geräte im selben WiFi-Netzwerk befinden.
 
 .. note::
 	Bedingt durch die Navigationssoftware können nicht alle Busdaten in Navionics verwendet werden. Aktuell lassen sich nur einige Daten nutzen. Die nachfolgende Liste zeigt die derzeitig verarbeitbaren NMEA0183 Sentences.
@@ -430,6 +430,29 @@ In dem Beispiel wird gezeigt, wie man Busdaten in ein Android-Radio einspeisen k
 * **RMC**  (Notwendige minimale Navigationsdaten - Zeit, Position, Kurs, Speed)
 * **VTG**  (Kurs und Speed über Grund)
 * **ZDA**  (Uhrzeit und Datum)
+
+Zur Konfiguration der Verbindung zum OBP60 geht man auf **Menue** und den Unterpunkt **Paired Devices**.
+
+.. image:: ../pics/Navionics_Paired_Devices.png
+             :scale: 60%	
+Abb.: Verbindung OBP60 - Menue Paired Devices
+
+Über den Button **Add Device** kann eine neue Verbindung zum Device OBP60 angelegt werden, wenn sich beide Geräte im selben WiFi-Netzwerk befinden.
+
+.. image:: ../pics/Navionica_Add_Decvice.png
+             :scale: 60%	
+Abb.: Verbindung OBP60 - Add Device
+
+Ermitteln Sie die IP-Adresse des OBP60,indem sie auf die Webseite des OBP60 gehen. Unter **WiFi client IP** finden Sie die IP-Adresse. In unserem Beispiel wird die Adresse 192.168.15.1 verwendet. In Ihrem Fall kann das eine andere IP-Adresse sein. Vergeben Sie einen Namen für das Device und verwenden Sie als Verbindungsart **TCP**. Speichern Sie die Einstellungen unter **Save**.
+
+.. image:: ../pics/Navionics_TCP_Parameter.png
+             :scale: 60%	
+Abb.: Verbindung OBP60 - Add Device
+
+Unter **Paired Devices** sollten jetzt das OBP60 zu finden sein und der Status auf **Connected** stehen. Sofern Daten übertagen werden, sehen Sie den Typ der Daten. In unserem Fall wurden das externe GPS-Signal des OBP60 erkannt und die Daten in der Karte im Instrumententeil dargestellt.
+
+.. image:: ../pics/Navionics_Connected_Device.png
+Abb.: Verbindung OBP60 - Add Device
 
 I2C-Bus
 -------
