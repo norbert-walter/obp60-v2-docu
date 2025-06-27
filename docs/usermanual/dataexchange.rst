@@ -441,7 +441,7 @@ Abb.: Verbindung OBP60 - Menu Paired Devices
 .. image:: ../pics/Navionica_Add_Decvice.png
 Abb.: Verbindung OBP60 - Add Device
 
-Ermitteln Sie die IP-Adresse des OBP60,indem sie auf die Webseite des OBP60 gehen. Unter **WiFi client IP** finden Sie die IP-Adresse. In unserem Beispiel werden die Adresse 192.168.15.1 und der Port 10110 verwendet. In Ihrem Fall kann das eine andere IP-Adresse sein. Vergeben Sie einen Namen für das Device und verwenden Sie als Verbindungsart **TCP**. Speichern Sie die Einstellungen oben rechts unter **Save**.
+Ermitteln Sie die IP-Adresse des OBP60, indem sie auf die Webseite des OBP60 gehen. Unter **WiFi client IP** finden Sie die IP-Adresse. In unserem Beispiel werden die Adresse 192.168.15.1 und der **Port 10110** verwendet. In Ihrem Fall kann das eine andere IP-Adresse sein. Vergeben Sie einen Namen für das Device und verwenden Sie als Verbindungsart **TCP**. Speichern Sie die Einstellungen oben rechts unter **Save**.
 
 .. image:: ../pics/Navionics_TCP_Parameter.png
 Abb.: Verbindung OBP60 - Add Device
