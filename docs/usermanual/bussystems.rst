@@ -38,7 +38,7 @@ NMEA2000 ist ein Bussystem und dient der Datenübertragung zwischen elektronisch
 * Stromversorgung von Sensoren und Anzeigegeräten über den Bus
 * Buslänge bis zu 30 m (Stichleitungen <1.5 m)
 * Kabelart 5-polig geschirmt mit 2x2 verdrillten Leitungen 0,35 mm²
-* Steckerart M12 5-polig D-codiert	
+* Steckerart M12 5-polig A-kodiert	
 
 **Differenzielle Datenübertragung**
 
@@ -76,7 +76,7 @@ Abb.: CAN-Bus-Terminierung für NMEA2000 über ``T183``
 Als Buskabel sollten nur hochwertige, wasserdichte und geschirmte Industrie-Kabel verwendet werden. Der Marine-Einzelhandel bietet dazu eine breite Auswahl an Produkten mit M12-Verbindungstechnik an, die sehr gut geeignet sind.
 
 .. tip::
-	Im Industriebereich findet man gleichwertige Kabel mit M12-Verbindungstechnik, die deutlich günstiger sind und ebenfalls verwendet werden können. Achten Sie dabei auf Steckverbinder mit **D-Kodierung**. Die Indexkerbe befindet sich zwischen Pin 1 und 2.
+	Im Industriebereich findet man gleichwertige Kabel mit M12-Verbindungstechnik, die deutlich günstiger sind und ebenfalls verwendet werden können. Achten Sie dabei auf Steckverbinder mit **A-Kodierung**. Die Indexkerbe befindet sich zwischen Pin 1 und 2.
 
 .. image:: ../pics/NMEA2000_Connectors.png
              :scale: 60%
