@@ -434,7 +434,7 @@ In dem Beispiel wird gezeigt, wie man Busdaten in ein Android-Radio einspeisen k
 Zur Konfiguration der Verbindung zum OBP60 geht man auf **Menue** und den Unterpunkt **Paired Devices**.
 
 .. image:: ../pics/Navionics_Paired_Devices.png
-Abb.: Verbindung OBP60 - Menue Paired Devices
+Abb.: Verbindung OBP60 - Menu Paired Devices
 
 Über den Button **Add Device** kann eine neue Verbindung zum Device OBP60 angelegt werden, wenn sich beide Geräte im selben WiFi-Netzwerk befinden.
 
