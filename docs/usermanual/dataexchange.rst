@@ -451,6 +451,9 @@ Unter **Paired Devices** sollten jetzt das OBP60 zu finden sein und der Status a
 .. image:: ../pics/Navionics_Connected_Device.png
 Abb.: Verbindung OBP60 - Add Device
 
+.. warning::
+    Navionics ist aktuell (Stand 2025) nicht in der Lage WiFi-Verbindungsabbrüche zu erkennen und kann sich nach einem Verbindungsverlust nicht wieder automatisch an das OBP60 anbinden. Der Verbindungsstatus wird fortlaufend mit Connected angezeigt, obwohl die Verbindung unterbrochen sein kann. Nur durch deaktivieren und neustarten der Navionics App wird der Verbindungsstatus richtig angezeigt.
+
 I2C-Bus
 -------
 
