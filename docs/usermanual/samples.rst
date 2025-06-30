@@ -91,7 +91,7 @@ Abb.: Schema Datenübertragung
 Konfiguration OBP60
 ^^^^^^^^^^^^^^^^^^^
 
-.. image:: ../pics/OBP60_OneValue_tr
+.. image:: ../pics/OBP60_OneValue_tr.png
              :scale: 30%
 Abb.: OBP60
 
@@ -171,8 +171,8 @@ Nach der Konfiguration sollten Sie im Status nachfolgende Informationen sehen. D
 
 Die Verbindung des OBP60 mit dem NMEA2000-Netzwerk erfolgt wie im nachfolgenden Bild angezeigt. Ist das OBP60 ein normaler Teilnehmer des Bussystems, so muss die Terminierung deaktiviert sein.
 
-.. image:: ../pics/OBP60_NMEA2000_Connection
-	:scale: 50%
+.. image:: ../pics/OBP60_NMEA2000_Connection.png
+			:scale: 50%
 Abb. CAN-Bus Anbindung OBP60
 
 Konfiguration Yachta
