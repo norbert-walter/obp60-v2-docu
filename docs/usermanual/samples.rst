@@ -85,7 +85,7 @@ Datenübertragung
 Das folgende Schema zeigt die Datenübertragung und welche Geräte Server oder Client bei der Datenübertragung sind.
 
 .. image:: ../pics/Data_Transmission_2.png
-             :scale: 80%
+             :scale: 60%
 Abb.: Schema Datenübertragung
 	
 Konfiguration OBP60
