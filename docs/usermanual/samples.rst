@@ -93,7 +93,6 @@ Konfiguration OBP60
 
 .. image:: ../pics/OBP60_OneValue_tr.png
              :scale: 10%
-Abb.: OBP60
 
 Das OBP60 wird mit dem WiFi-Netzwerk des LTE-Routers verbunden. Der TCP-Server ist so konfiguriert, dass zum Tablett Daten übertragen werden können. Die TCP-Client-Verbindung dient zur Kommunikation mit dem Windsensor Yachta. Das OBP60 ist per Kabel mit dem NMEA2000-Netzwerk des Bootes verbunden. Sensordaten die im OBP60 vorliegen, wie z.B. die Windsensor-Daten, werden auch in den NMEA2000-Bus übertragen.
 
