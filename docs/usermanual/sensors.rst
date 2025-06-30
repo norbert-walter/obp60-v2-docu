@@ -11,7 +11,7 @@ Bei der erweiterten Sensorik handelt es sich um Sensoren, die nicht am NMEA0183-
 |**OBP60**| 1W  | 3.3V TTL | nein      |
 +---------+-----+----------+-----------+
 
-In der nachfolgenden Tabelle sind einige Sensoren aufgelistet, die am OBP40 und am OBP60 verwendet werden können.
+In der nachfolgenden Tabelle sind einige Sensoren aufgelistet, die am OBP60 verwendet werden können.
 
 .. warning::
 	Die Sensormodule sind für bestimmte Spannungsbereiche ausgelegt. Achten Sie darauf, die richtigen Sensoren zu verwenden. Werden 3.3V-Module in 5V-Systemen benutzt, können die 3.3V-Module beschädigt werden. Es sind in diesem Fall Pegelkonverter notwendig. Die meisten 5V-Module sind auch an 3.3V-Systemen nutzbar, wenn sie mit 3.3V betrieben werden.
