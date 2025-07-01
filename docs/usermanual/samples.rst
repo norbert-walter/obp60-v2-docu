@@ -45,7 +45,7 @@ Abb.: Mobiler 4G-LTE-Dualband-Router TP-Link M7450
 	.. [#f2] Kein gleichzeitiger Dualbetrieb möglich
 
 .. warning::
-	Der LTE-Router TP-Link M7450 kann nicht gleichzeitig in beiden Frequenzbändern arbeiten. Daher müssen Sie den TP-Link M7450 fest auf das Frequenzband 2.4 GHz einstellen. Das OBP40 und der M5Stack ATOM CAN arbeiten nur im 2.4 GHz Bereich.
+	Der LTE-Router TP-Link M7450 kann nicht gleichzeitig in beiden Frequenzbändern arbeiten. Daher müssen Sie den TP-Link M7450 fest auf das Frequenzband 2.4 GHz einstellen. Das OBP60 arbeitet nur im 2.4 GHz Bereich.
 	
 		
 .. image:: ../pics/LTE-Router_RUT360.png
@@ -180,7 +180,7 @@ Konfiguration Yachta
 .. image:: ../pics/Yachta_Wind_Sensor.png
              :scale: 100%
 
-Der Windsensor Yachta ist so konfiguriert, dass er im WiFi-Netzwerk des LTE-Routers eingebucht ist. Der Windsensor stellt über den Port 6666 dem M5Stack Winddaten zur Verfügung. Es werden dabei nur Daten vom Windsensor Yachta zum M5Stack übertragen. 
+Der Windsensor Yachta ist so konfiguriert, dass er im WiFi-Netzwerk des LTE-Routers eingebucht ist. Der Windsensor stellt über den Port 6666 dem OBP60 Winddaten zur Verfügung. Es werden dabei nur Daten vom Windsensor Yachta zum OBP60 übertragen. 
 
 Folgende Einstellungen werden für den Windsensor Yachta vorgenommen:
 
@@ -249,7 +249,7 @@ Das Android-Tablett wird in das WiFi-Netzwerk des LTE-Routers hinzugefügt und a
 |App-Installation           |AvNav                |
 +---------------------------+---------------------+
 
-Nachfolgend wird gezeigt, wie man Busdaten über ein Tablett in AvNav nutzen kann. Die Datenübertragung erfolgt über WiFi. Das Tablett tauscht dabei die Daten mit dem M5Stack über einen TCP-Verbindung aus. Dabei wird das Tablett als TCP-Client an die M5Stack ATOM CAN angedockt. Unter AvNav wird die Verbindung als TCPReader eingerichtet.
+Nachfolgend wird gezeigt, wie man Busdaten über ein Tablett in AvNav nutzen kann. Die Datenübertragung erfolgt über WiFi. Das Tablett tauscht dabei die Daten mit dem OBP60 über einen TCP-Verbindung aus. Dabei wird das Tablett als TCP-Client an den OBP60 angedockt. Unter AvNav wird die Verbindung als TCPReader eingerichtet.
 
 .. image:: ../pics/Android_Start_Page.jpg
              :scale: 40%	
@@ -269,7 +269,7 @@ Für die bidirektionale Kommunikation über USB wählen Sie **TCPReader**.
              :scale: 40%	
 Abb.: Verbindungstypen
 
-Unter **IP-Address** tragen Sie die IP-Adresse des M5Stack ein und als **Port** die 10110. Um nicht nur Daten senden, sondern auch empfangen zu können, aktivieren Sie **SendOut**.
+Unter **IP-Address** tragen Sie die IP-Adresse des OBP60 ein und als **Port** die 10110. Um nicht nur Daten senden, sondern auch empfangen zu können, aktivieren Sie **SendOut**.
 
 .. image:: ../pics/Android_Select_Handler_TCPReader.jpg
              :scale: 40%	
