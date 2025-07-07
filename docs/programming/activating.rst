@@ -58,7 +58,7 @@ Das Gitpad-Projekt wird über den Repository-Namen des Github-Projekts aufgerufe
 ``https://gitpod.io/#https://github.com/norbert-walter/esp32-nmea2000-obp60/tree/master``
 
 .. hint::
-	Wer eine ganz bestimmte Release-Version kompilieren möchte, benutzt anstatt ``master`` die Nummer der Release-Version wie z.B. ``20250304``. Branches und getaggte Versionen können auf die selbe Weise verwendet werden.
+	Wer eine ganz bestimmte Release-Version kompilieren möchte, benutzt anstatt ``master`` die Nummer der Release-Version wie z.B. ``20250304``. Branches und getaggte Versionen können auf die selbe Weise verwendet werden, indem der Banch- oder Tagname verwendet wird.
 
 Sie gelangen dann auf die Startseite von Gitpod und müssen sich dort anmelden. Loggen Sie sich dort mit dem bereits vorhandenen Github-Account ein.
 
