@@ -43,14 +43,11 @@ Abb.: Fork erstellen
 
 Melden Sie sich als erstes bei Github an und gehen dann in das `Original-Projekt zum OBP60`_ und drücken oben rechts auf die Schaltfläche **Fork**. Sie werden danach gefragt, ob sie der Quelle vertrauen und können dann einen neuen Projektnamen vergeben oder den originalen Projektnamen benutzen. Kopieren Sie sich danach den Link zu ihrem Github-Projekt aus der Browser-Zeile. Sie sollten dann einen ähnlichen Link haben wie diesen:
 
-.. _Original-Projekt zum OBP60: https://https://github.com/norbert-walter/esp32-nmea2000-obp60/tree/master
+.. _Original-Projekt zum OBP60: https://github.com/norbert-walter/esp32-nmea2000-obp60/tree/master
 
 ``https://github.com/norbert-walter/esp32-nmea2000-obp60/tree/master``
 
 Der Part ``MyAccountName`` wird durch ihren eigenen Accountnamen ersetzt.
-
-.. hint::
-	Wer eine ganz bestimmte Release-Version kompilieren möchte, benutzt anstatt ``master`` die Release-Version wie z.B. ``20250304``. Branches und getaggte Versionen können auf die selbe Weise verwendet werden.
 
 
 Gitpod-Link öffnen
@@ -58,7 +55,10 @@ Gitpod-Link öffnen
 
 Das Gitpad-Projekt wird über den Repository-Namen des Github-Projekts aufgerufen:
 
-``https://gitpod.io/#https://github.com/MyAccountName/esp32-nmea2000-obp60``
+``https://gitpod.io/#https://github.com/norbert-walter/esp32-nmea2000-obp60/tree/master``
+
+.. hint::
+	Wer eine ganz bestimmte Release-Version kompilieren möchte, benutzt anstatt ``master`` die Nummer der Release-Version wie z.B. ``20250304``. Branches und getaggte Versionen können auf die selbe Weise verwendet werden.
 
 Sie gelangen dann auf die Startseite von Gitpod und müssen sich dort anmelden. Loggen Sie sich dort mit dem bereits vorhandenen Github-Account ein.
 
