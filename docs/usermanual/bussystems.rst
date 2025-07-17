@@ -467,7 +467,7 @@ Die USB-C-Schnittstelle im OBP60 dient zum Flashen der Firmware und zum Debuggin
 
 **Stromversorgung**
 
-Das OBP60 kann auch über USB-C mit Strom versorgt werden. Das ist nützlich, wenn man z.B. Software-Entwicklung durchführt und das Gerät am Schreibtisch nutzen möchte. Das stromliefernde Gerät muss bis zu 500 mA mit einer Spannung von 5.1V bereitstellen können, wie etwa ein Raspberry Pi Netzteil. Die USB-C-Schnittstelle verfügt über einen Rücklaufschutz, so dass kein Strom aus dem OBP60 herausfließen kann. Das OBP60 kann zudem auch gleichzeitig mit 12V und über USB-C mit 5V versorgt werden.
+Das OBP60 kann auch über USB-C mit Strom versorgt werden. Das ist nützlich, wenn man z.B. Software-Entwicklung durchführt und das Gerät am Schreibtisch nutzen möchte. Das stromliefernde Gerät muss bis zu 1 A mit einer Spannung von 5.1V bereitstellen können, wie etwa ein Raspberry Pi Netzteil. Die USB-C-Schnittstelle verfügt über einen Rücklaufschutz, so dass kein Strom aus dem OBP60 herausfließen kann. Das OBP60 kann zudem auch gleichzeitig mit 12V und über USB-C mit 5V versorgt werden.
 
 .. hint::
     Die reguläre Stromversorgung des OBP60 im Boot erfolgt immer über 12V aus dem Bordnetz. Es wird nicht empfohlen, eine Versorgung nur über USB-C durchzuführen, da die Steckverbindung nicht gegen unbeabsichtigtes Lösen gesichert ist. Kabellängen größer 1,5 m sollten nur für Datenübertragungen und nicht für die Stromversorgung genutzt werden, da der Spannungsabfall auf den Leitungen zu groß ist. Die Kabellänge ist auf maximal 3 m begrenzt. Wenn Sie größere Strecken überbrücken wollen, müssen Sie aktive USB-Repeater-Kabel verwenden, die die Signalpegel auffrischen.
