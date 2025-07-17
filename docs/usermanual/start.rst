@@ -78,7 +78,7 @@ Das OBP60 kann auch über USB-C mit Strom versorgt werden. Der USB-Anschluss mus
 .. note::
 	Viele USB-Computeranschlüsse verfügen nicht über einen ausreichend hohen Ausgangsstrom und teilen sich den Strom mit mehreren Anschlüssen. Das kann dazu führen, dass das OBP60 nicht direkt von einem PC aus mit Strom versorgt werden kann. Auch die Kabelqualität und Kabellänge ist entscheidend. Einige Kabel haben zu geringe Querschnitte und erzeugen einen hohen Spannungsabfall auf den Leitungen. Die Spannung ist dann am USB-C-Ausgang zu gering. Benutzen Sie in solchen Fällen den zusätzlichen 12V-Eingang an **CN2** zur Stromversorgung.
 
-Zum Testen, ob die USB-C-Versorgung genügend Spannung und Strom leifert, kann man ein USB-C Diagnosegerät verwenden. Das Diagnosegerät wird am Eingang des OBP60 angesteckt und das USB-C Stromversorgungskabel in das Diagnosegerät gesteckt. Auf dem Display kann die bereitgestellte Spannung und der aktuelle Stromverbrauch abgelesen werden. Die Spannung sollte bei mindestens 5.0 V liegen. Die Stoman-Anzeige variiert dabei je nach Stromverbrauch.
+Zum Testen, ob die USB-C-Versorgung genügend Spannung und Strom leifert, kann man ein USB-C Diagnosegerät verwenden. Das Diagnosegerät wird am Eingang des OBP60 angesteckt und das USB-C Stromversorgungskabel in das Diagnosegerät gesteckt. Auf dem Display kann die bereitgestellte Spannung und der aktuelle Stromverbrauch abgelesen werden. Die Spannung sollte bei mindestens 5.0 V liegen. Der Stoman variiert dabei je nach Stromverbrauch.
 
 .. note::
 	Je nach verwendeten USB-C Diagnosegerät kann es sein, dass nur die Stromversorgungspins angeschlossen sind aber keine Daten übertragen werden können. Wenn Sie eine Kommunikation über USB-C benötigen, müssen Sie das Diagnosegerät wieder entfernen.
