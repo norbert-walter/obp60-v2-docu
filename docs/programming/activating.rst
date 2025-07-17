@@ -177,8 +177,6 @@ Abb.: Fork erstellen
 
 Melden Sie sich als erstes bei Github an, gehen dann in das `Original-Projekt zum OBP60`_ und drücken oben rechts auf die Schaltfläche **Fork**. Sie werden danach gefragt, ob Sie der Quelle vertrauen, und können dann einen neuen Projektnamen vergeben oder den originalen Projektnamen benutzen. Kopieren Sie sich danach den Link zu Ihrem Github-Projekt aus der Browser-Zeile. Sie sollten dann einen ähnlichen Link haben wie diesen:
 
-.. _Original-Projekt zum OBP60: https://github.com/norbert-walter/esp32-nmea2000-obp60
-
 ``https://github.com/MyAccountName/esp32-nmea2000-obp60``
 
 Der Part ``MyAccountName`` wird durch Ihren eigenen Accountnamen ersetzt.
