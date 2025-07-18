@@ -43,9 +43,7 @@ Abb.: Fork erstellen
 
 Melden Sie sich als erstes bei Github an und gehen dann in das `Original-Projekt zum OBP60`_ und drücken oben rechts auf die Schaltfläche **Fork**. Sie werden danach gefragt, ob sie der Quelle vertrauen und können dann einen neuen Projektnamen vergeben oder den originalen Projektnamen benutzen. Kopieren Sie sich danach den Link zu ihrem Github-Projekt aus der Browser-Zeile. Sie sollten dann einen ähnlichen Link haben wie diesen:
 
-.. _Original-Projekt zum OBP60: https://github.com/norbert-walter/esp32-nmea2000-obp60
-
-``https://github.com/MyAccountName/esp32-nmea2000-obp60``
+``https://github.com/MyAccountName/esp32-nmea2000-obp60/tree/master``
 
 Der Part ``MyAccountName`` wird durch ihren eigenen Accountnamen ersetzt.
 
@@ -55,7 +53,10 @@ Gitpod-Link öffnen
 
 Das Gitpad-Projekt wird über den Repository-Namen des Github-Projekts aufgerufen:
 
-``https://gitpod.io/#https://github.com/MyAccountName/esp32-nmea2000-obp60``
+``https://gitpod.io/#https://github.com/norbert-walter/esp32-nmea2000-obp60/tree/master``
+
+.. hint::
+	Wer eine ganz bestimmte Release-Version kompilieren möchte, benutzt anstatt ``master`` die Nummer der Release-Version wie z.B. ``20250304``. Branches und getaggte Versionen können auf die selbe Weise verwendet werden, indem der Banch- oder Tagname verwendet wird.
 
 Sie gelangen dann auf die Startseite von Gitpod und müssen sich dort anmelden. Loggen Sie sich dort mit dem bereits vorhandenen Github-Account ein.
 
@@ -84,7 +85,7 @@ Abb.: Fertiger Workplace
 Codeänderung und Kompilieren
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Der Code zum OBP60 befindet sich im Ordner: */ESP32-NMEA2000_OBP60/lib/obp60task* . Durch Editieren der Datei *platformio.ini* können einige Hardwareanpassungen zur Variante des ESP32-S3 und zum e-Paper-Display vorgenommen werden. 
+Der Code zum OBP60 befindet sich im Ordner: */ESP32-NMEA2000-OBP60/lib/obp60task* . Durch Editieren der Datei *platformio.ini* können einige Hardwareanpassungen zur Variante des ESP32-S3 und zum e-Paper-Display vorgenommen werden. 
 
 Um den Code kompilieren zu können, müssen Sie folgende Befehle nacheinander in das Terminal-Fenster unten rechts einfügen. Sie können dazu die Copy & Paste Funktion benutzen.
 
@@ -109,7 +110,7 @@ Binary-Download
 
 Der Binary-Code zur Firmware befindet sich nach dem Kompilieren im Verzeichnis:
 
-	* */ESP32-NMEA2000_OBP60/.pio/build/obp60_s3* (für OBP60)
+	* */ESP32-NMEA2000-OBP60/.pio/build/obp60_s3* (für OBP60)
 
 .. image:: ../pics/Gitpod_Download.png
    :scale: 40%
@@ -174,7 +175,7 @@ Abb.: Fork erstellen
 
 Melden Sie sich als erstes bei Github an, gehen dann in das `Original-Projekt zum OBP60`_ und drücken oben rechts auf die Schaltfläche **Fork**. Sie werden danach gefragt, ob Sie der Quelle vertrauen, und können dann einen neuen Projektnamen vergeben oder den originalen Projektnamen benutzen. Kopieren Sie sich danach den Link zu Ihrem Github-Projekt aus der Browser-Zeile. Sie sollten dann einen ähnlichen Link haben wie diesen:
 
-.. _Original-Projekt zum OBP60: https://github.com/norbert-walter/esp32-nmea2000-obp60
+.. _Original-Projekt zum OBP60: https://github.com/norbert-walter/esp32-nmea2000-obp60/tree/master
 
 ``https://github.com/MyAccountName/esp32-nmea2000-obp60``
 
@@ -195,7 +196,7 @@ Damit beginnt der Download des Projektes und im Workplace erscheint auf der link
    :scale: 40%
 Abb.: Konfigurationsdatei schließen
 
-Gehen Sie gehen dann in den Dateibaum und öffnen den Pfad: ``/esp32-nmea2000/lib/obp60task`` und öffnen dort die Datei **platformio.ini**, die zum OBP60-Projekt gehört. Ändern Sie in der Datei die serielle Schnittstelle entsprechend zum Port, an dem Sie das OBP60 angeschlossen haben. Die Schnittstellenbezeichnungen unter Windows und Linux sind dabei unterschiedlich.
+Gehen Sie dann in den Dateibaum und öffnen den Pfad: ``/esp32-nmea2000/lib/obp60task`` und öffnen dort die Datei **platformio.ini**, die zum OBP60-Projekt gehört. Ändern Sie in der Datei die serielle Schnittstelle entsprechend zum Port, an dem Sie das OBP60 angeschlossen haben. Die Schnittstellenbezeichnungen unter Windows und Linux sind dabei unterschiedlich.
 
 	* Windows: COMx
 	* Linux: /dev/ttyACM0
@@ -224,7 +225,7 @@ Wenn Sie Ihre Code-Änderungen abgeschlossen haben, können Sie den Kompiliervor
    :scale: 40%
 Abb.: Kompilierung
 
-Der Binary-Code zur Firmware befindet sich nach dem Kompilieren im Verzeichnis: */esp32-nmea2000/.pio/build/obp32_s3*
+Der Binary-Code zur Firmware befindet sich nach dem Kompilieren im Verzeichnis: */esp32-nmea2000-obp60/.pio/build/obp32_s3*
 
 Dabei haben die Dateien folgende Bedeutung:
 

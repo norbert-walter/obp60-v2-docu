@@ -38,7 +38,7 @@ NMEA2000 ist ein Bussystem und dient der Datenübertragung zwischen elektronisch
 * Stromversorgung von Sensoren und Anzeigegeräten über den Bus
 * Buslänge bis zu 30 m (Stichleitungen <1.5 m)
 * Kabelart 5-polig geschirmt mit 2x2 verdrillten Leitungen 0,35 mm²
-* Steckerart M12 5-polig D-codiert	
+* Steckerart M12 5-polig A-kodiert	
 
 **Differenzielle Datenübertragung**
 
@@ -76,7 +76,7 @@ Abb.: CAN-Bus-Terminierung für NMEA2000 über ``T183``
 Als Buskabel sollten nur hochwertige, wasserdichte und geschirmte Industrie-Kabel verwendet werden. Der Marine-Einzelhandel bietet dazu eine breite Auswahl an Produkten mit M12-Verbindungstechnik an, die sehr gut geeignet sind.
 
 .. tip::
-	Im Industriebereich findet man gleichwertige Kabel mit M12-Verbindungstechnik, die deutlich günstiger sind und ebenfalls verwendet werden können. Achten Sie dabei auf Steckverbinder mit **D-Kodierung**. Die Indexkerbe befindet sich zwischen Pin 1 und 2.
+	Im Industriebereich findet man gleichwertige Kabel mit M12-Verbindungstechnik, die deutlich günstiger sind und ebenfalls verwendet werden können. Achten Sie dabei auf Steckverbinder mit **A-Kodierung**. Die Indexkerbe befindet sich zwischen Pin 1 und 2.
 
 .. image:: ../pics/NMEA2000_Connectors.png
              :scale: 60%
@@ -163,6 +163,10 @@ Das folgende Bild zeigt ein mögliches Anwendungsbeispiel. Die Bus-Terminierung 
 .. image:: ../pics/NMEA2000_Sample_Setup_Minimal_Configuration_2.png
              :scale: 60%	
 Abb.: NMEA2000 Minimal-Konfiguration mit Buseinspeisung
+
+**Kompatibilität zu Simnet und SeaTalk NG**
+
+Simnet und SeaTalk GN besitzen eine eingeschränkte Kompatibitität zu NMEA2000. Beide Bussysteme setzen auf eigene Steckersysteme und verwenden teilweise propritäre NMEA2000-Telegramme. Die meisten gängigen NMEA2000-Bustelegramme werden von beiden Systemen unterstützt. Mit speziellen einfachen passiven Adapterkabeln können Simnet und SeaTalk GN Bussysteme mit einem NMEA2000 Bussystem verbunden werden. Das OBP60 kann dann Informationen aus Simnet oder SeaTalk NG über den CAN-Bus oder über WiFi mit dem SeaSmart-Protokoll verarbeiten und auch Informationen in diese Bussysteme senden. Properitäre Telegramme werden nicht unterstützt, jedoch im Bussystem übertragen und weitergeleitet. 
 
 NMEA0183
 --------
@@ -356,7 +360,7 @@ Abb.: I2C-Anbindung von externen Sensoren
     Einige I2C-Module können zwar mit 5V versorgt werden, benutzen aber 3.3V TTL-Signale für ``SCL`` und ``SDA``. In diesem Fall benötigen Sie einen Pegelwandler für das SCL- und SDA-Signal auf 5V TTL-Signale. Beachten Sie das nicht, so können der I2C-Sensor oder das I2C-Modul beschädigt werden. Das Gleiche gilt auch für Module, die nur mit 3,3V versorgt werden. Dann benötigen Sie neben dem Pegelwandler noch zusätzlich einen DC/DC-Wandler zur Reduzierung der Versorgungsspannung. Die meisten I2C-Module, die für einen **Arduino Uno** verwendet werden können, lassen sich auch am OBP60 verwenden. Diese Module sind für 5V-TTL-Signale geeignet.
    
 .. caution::
-    Wenn Sie externe Sensoren oder Module am I2C-Bus verwenden wollen, dann prüfen Sie, ob es zu einem Adresskonflikt zwischen den verwendeten Sensoren oder Modulen kommen kann. Achten Sie darauf, dass I2C-Adressen nicht mehrfach vergeben sind. Es kommt dann zu Kommunikationsstörungen auf dem I2C-Bus. Insbesondere bei mehrfacher Verwendung gleicher Module müssen die I2C-Adressen verschieden eingestellt werden. Bei einigen I2C-Modulen ist das nicht möglich. In dem Fall können Sie nur ein I2C-Modul des jeweiligen Typs im Bus verwenden. Das OBP60 belegt bereits folgende Adressen, die nicht von Sensoren benutzt werden dürfen: 0x76, 0xD0.
+    Wenn Sie externe Sensoren oder Module am I2C-Bus verwenden wollen, dann prüfen Sie, ob es zu einem Adresskonflikt zwischen den verwendeten Sensoren oder Modulen kommen kann. Achten Sie darauf, dass I2C-Adressen nicht mehrfach vergeben sind. Es kommt dann zu Kommunikationsstörungen auf dem I2C-Bus. Insbesondere bei mehrfacher Verwendung gleicher Module müssen die I2C-Adressen verschieden eingestellt werden. Bei einigen I2C-Modulen ist das nicht möglich. In dem Fall können Sie nur ein I2C-Modul des jeweiligen Typs im Bus verwenden. Das OBP60 belegt bereits folgende Adressen, die nicht von Sensoren benutzt werden dürfen: 0x76, 0x68.
 
 .. caution::
     Nicht angeschlossene externe I2C-Sensoren, die jedoch in der Konfiguration aktiviert sind, führen dazu, dass die Reaktionsfähigkeit des OBP60 beeinträchtigt wird. Diese Sensoren können nicht auf das System antworten, sie erzeugen dadurch einen Software-Timeout. Deaktivieren Sie in einem solchen Fall die Sensoren in der Konfiguration. 
@@ -463,7 +467,7 @@ Die USB-C-Schnittstelle im OBP60 dient zum Flashen der Firmware und zum Debuggin
 
 **Stromversorgung**
 
-Das OBP60 kann auch über USB-C mit Strom versorgt werden. Das ist nützlich, wenn man z.B. Software-Entwicklung durchführt und das Gerät am Schreibtisch nutzen möchte. Das stromliefernde Gerät muss bis zu 500 mA mit einer Spannung von 5.1V bereitstellen können, wie etwa ein Raspberry Pi Netzteil. Die USB-C-Schnittstelle verfügt über einen Rücklaufschutz, so dass kein Strom aus dem OBP60 herausfließen kann. Das OBP60 kann zudem auch gleichzeitig mit 12V und über USB-C mit 5V versorgt werden.
+Das OBP60 kann auch über USB-C mit Strom versorgt werden. Das ist nützlich, wenn man z.B. Software-Entwicklung durchführt und das Gerät am Schreibtisch nutzen möchte. Das stromliefernde Gerät muss bis zu 1 A mit einer Spannung von 5.1V bereitstellen können, wie etwa ein Raspberry Pi Netzteil. Die USB-C-Schnittstelle verfügt über einen Rücklaufschutz, so dass kein Strom aus dem OBP60 herausfließen kann. Das OBP60 kann zudem auch gleichzeitig mit 12V und über USB-C mit 5V versorgt werden.
 
 .. hint::
     Die reguläre Stromversorgung des OBP60 im Boot erfolgt immer über 12V aus dem Bordnetz. Es wird nicht empfohlen, eine Versorgung nur über USB-C durchzuführen, da die Steckverbindung nicht gegen unbeabsichtigtes Lösen gesichert ist. Kabellängen größer 1,5 m sollten nur für Datenübertragungen und nicht für die Stromversorgung genutzt werden, da der Spannungsabfall auf den Leitungen zu groß ist. Die Kabellänge ist auf maximal 3 m begrenzt. Wenn Sie größere Strecken überbrücken wollen, müssen Sie aktive USB-Repeater-Kabel verwenden, die die Signalpegel auffrischen.
