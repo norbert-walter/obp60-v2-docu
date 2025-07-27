@@ -164,6 +164,10 @@ Das folgende Bild zeigt ein mögliches Anwendungsbeispiel. Die Bus-Terminierung 
              :scale: 60%	
 Abb.: NMEA2000 Minimal-Konfiguration mit Buseinspeisung
 
+**Kompatibilität zu Simnet und SeaTalk NG**
+
+Simnet und SeaTalk GN besitzen eine eingeschränkte Kompatibitität zu NMEA2000. Beide Bussysteme setzen auf eigene Steckersysteme und verwenden teilweise propritäre NMEA2000-Telegramme. Die meisten gängigen NMEA2000-Bustelegramme werden von beiden Systemen unterstützt. Mit speziellen einfachen passiven Adapterkabeln können Simnet und SeaTalk GN Bussysteme mit einem NMEA2000 Bussystem verbunden werden. Das OBP60 kann dann Informationen aus Simnet oder SeaTalk NG über den CAN-Bus oder über WiFi mit dem SeaSmart-Protokoll verarbeiten und auch Informationen in diese Bussysteme senden. Properitäre Telegramme werden nicht unterstützt, jedoch im Bussystem übertragen und weitergeleitet. 
+
 NMEA0183
 --------
 
@@ -463,7 +467,7 @@ Die USB-C-Schnittstelle im OBP60 dient zum Flashen der Firmware und zum Debuggin
 
 **Stromversorgung**
 
-Das OBP60 kann auch über USB-C mit Strom versorgt werden. Das ist nützlich, wenn man z.B. Software-Entwicklung durchführt und das Gerät am Schreibtisch nutzen möchte. Das stromliefernde Gerät muss bis zu 500 mA mit einer Spannung von 5.1V bereitstellen können, wie etwa ein Raspberry Pi Netzteil. Die USB-C-Schnittstelle verfügt über einen Rücklaufschutz, so dass kein Strom aus dem OBP60 herausfließen kann. Das OBP60 kann zudem auch gleichzeitig mit 12V und über USB-C mit 5V versorgt werden.
+Das OBP60 kann auch über USB-C mit Strom versorgt werden. Das ist nützlich, wenn man z.B. Software-Entwicklung durchführt und das Gerät am Schreibtisch nutzen möchte. Das stromliefernde Gerät muss bis zu 1 A mit einer Spannung von 5.1V bereitstellen können, wie etwa ein Raspberry Pi Netzteil. Die USB-C-Schnittstelle verfügt über einen Rücklaufschutz, so dass kein Strom aus dem OBP60 herausfließen kann. Das OBP60 kann zudem auch gleichzeitig mit 12V und über USB-C mit 5V versorgt werden.
 
 .. hint::
     Die reguläre Stromversorgung des OBP60 im Boot erfolgt immer über 12V aus dem Bordnetz. Es wird nicht empfohlen, eine Versorgung nur über USB-C durchzuführen, da die Steckverbindung nicht gegen unbeabsichtigtes Lösen gesichert ist. Kabellängen größer 1,5 m sollten nur für Datenübertragungen und nicht für die Stromversorgung genutzt werden, da der Spannungsabfall auf den Leitungen zu groß ist. Die Kabellänge ist auf maximal 3 m begrenzt. Wenn Sie größere Strecken überbrücken wollen, müssen Sie aktive USB-Repeater-Kabel verwenden, die die Signalpegel auffrischen.

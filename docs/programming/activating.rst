@@ -43,9 +43,7 @@ Abb.: Fork erstellen
 
 Melden Sie sich als erstes bei Github an und gehen dann in das `Original-Projekt zum OBP60`_ und drücken oben rechts auf die Schaltfläche **Fork**. Sie werden danach gefragt, ob sie der Quelle vertrauen und können dann einen neuen Projektnamen vergeben oder den originalen Projektnamen benutzen. Kopieren Sie sich danach den Link zu ihrem Github-Projekt aus der Browser-Zeile. Sie sollten dann einen ähnlichen Link haben wie diesen:
 
-.. _Original-Projekt zum OBP60: https://github.com/norbert-walter/esp32-nmea2000-obp60
-
-``https://github.com/MyAccountName/esp32-nmea2000-obp60``
+``https://github.com/MyAccountName/esp32-nmea2000-obp60/tree/master``
 
 Der Part ``MyAccountName`` wird durch ihren eigenen Accountnamen ersetzt.
 
@@ -55,7 +53,10 @@ Gitpod-Link öffnen
 
 Das Gitpad-Projekt wird über den Repository-Namen des Github-Projekts aufgerufen:
 
-``https://gitpod.io/#https://github.com/MyAccountName/esp32-nmea2000-obp60``
+``https://gitpod.io/#https://github.com/norbert-walter/esp32-nmea2000-obp60/tree/master``
+
+.. hint::
+	Wer eine ganz bestimmte Release-Version kompilieren möchte, benutzt anstatt ``master`` die Nummer der Release-Version wie z.B. ``20250304``. Branches und getaggte Versionen können auf die selbe Weise verwendet werden, indem der Banch- oder Tagname verwendet wird.
 
 Sie gelangen dann auf die Startseite von Gitpod und müssen sich dort anmelden. Loggen Sie sich dort mit dem bereits vorhandenen Github-Account ein.
 
@@ -174,7 +175,7 @@ Abb.: Fork erstellen
 
 Melden Sie sich als erstes bei Github an, gehen dann in das `Original-Projekt zum OBP60`_ und drücken oben rechts auf die Schaltfläche **Fork**. Sie werden danach gefragt, ob Sie der Quelle vertrauen, und können dann einen neuen Projektnamen vergeben oder den originalen Projektnamen benutzen. Kopieren Sie sich danach den Link zu Ihrem Github-Projekt aus der Browser-Zeile. Sie sollten dann einen ähnlichen Link haben wie diesen:
 
-.. _Original-Projekt zum OBP60: https://github.com/norbert-walter/esp32-nmea2000-obp60
+.. _Original-Projekt zum OBP60: https://github.com/norbert-walter/esp32-nmea2000-obp60/tree/master
 
 ``https://github.com/MyAccountName/esp32-nmea2000-obp60``
 
@@ -195,7 +196,7 @@ Damit beginnt der Download des Projektes und im Workplace erscheint auf der link
    :scale: 40%
 Abb.: Konfigurationsdatei schließen
 
-Gehen Sie gehen dann in den Dateibaum und öffnen den Pfad: ``/esp32-nmea2000/lib/obp60task`` und öffnen dort die Datei **platformio.ini**, die zum OBP60-Projekt gehört. Ändern Sie in der Datei die serielle Schnittstelle entsprechend zum Port, an dem Sie das OBP60 angeschlossen haben. Die Schnittstellenbezeichnungen unter Windows und Linux sind dabei unterschiedlich.
+Gehen Sie dann in den Dateibaum und öffnen den Pfad: ``/esp32-nmea2000/lib/obp60task`` und öffnen dort die Datei **platformio.ini**, die zum OBP60-Projekt gehört. Ändern Sie in der Datei die serielle Schnittstelle entsprechend zum Port, an dem Sie das OBP60 angeschlossen haben. Die Schnittstellenbezeichnungen unter Windows und Linux sind dabei unterschiedlich.
 
 	* Windows: COMx
 	* Linux: /dev/ttyACM0
