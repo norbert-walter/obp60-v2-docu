@@ -684,6 +684,21 @@ Auf der Seite **Calibrations** können Einstellungen zur Kalibrierung vorgenomme
 **VSensor Slope**
     * Steigung der Korrekturfunktion des internen Spannungssensors des OBP60
 
+**Calibration Data Instance [1..3]**
+    * Auswahl von bis zu drei Datentypen, die kalibriert werden sollen. Die zur Auswahl stehenden Datentypen erscheinen, wenn man die Pulldown-Auswahlliste öffnet. Sobald man einen Datentyp ausgewählt hat, erscheinen die im Folgenden beschriebenen Konfigurationsparameter. Eine Auswahl von "---" deaktiviert die Kalibrierung für diesen Datentyp.
+
+**Data Instance [1..3] Calibration Offset**
+    * Offset der Korrekturfunktion für den gewählten Datentyp
+
+**Data Instance [1..3] Calibration Slope**
+    * Steigung der Korrekturfunktion für den gewählten Datentyp
+
+**Data Instance [1..] Smoothing**
+    * Hiermit wird eine Glättung bzw. Dämpfung des jeweiligen Datentyps durchgeführt. Es ist eine Einstellung im Bereich [0..10] möglich. "0" bedeutet "keine Glättung", "10" erzielt eine maximale Glättung.
+
+.. hint::
+    Achtung: Der Default für die Steigung (Slope) jedes Kalibrierungswertes ist "1". Wird hier eine "0" eingetragen, wird jeder Datenwert auch auf "0" gesetzt. Der Default für die Konfigurationsparameter "Offset" und "Smoothing" ist "0".
+
 Config - OBP Display
 --------------------
 
