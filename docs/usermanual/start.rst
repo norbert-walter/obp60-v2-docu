@@ -80,7 +80,7 @@ Das OBP60 kann auch über USB-C mit Strom versorgt werden. Der USB-Anschluss mus
 
 Zum Testen, ob die USB-C-Versorgung genügend Spannung und Strom liefert, kann man ein **USB-C Diagnosegerät** verwenden. Das Diagnosegerät wird am Eingang des OBP60 angesteckt und das USB-C Stromversorgungskabel in das Diagnosegerät gesteckt. Auf dem Display kann die bereitgestellte Spannung und der aktuelle Stromverbrauch abgelesen werden. Die Spannung sollte bei mindestens 5.0 V liegen. Der Strom variiert dabei je nach Stromverbrauch.
 
-.. note::
+.. hint::
 	Je nach verwendeten USB-C Diagnosegerät kann es sein, dass nur die Stromversorgungspins angeschlossen sind aber keine Daten übertragen werden können. Wenn Sie eine Kommunikation über USB-C benötigen, müssen Sie das Diagnosegerät wieder entfernen.
 
 .. image:: ../pics/USB-C_Diagnostic_Device.png
