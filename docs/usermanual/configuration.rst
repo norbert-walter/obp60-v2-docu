@@ -691,13 +691,11 @@ Für bis zu drei Sensorwerte kann zusätzlich eine Kalibrierung und eine Glättu
 
 Zur Glättung wird der exponetnial smoothing Algorithmus verwendet, dessen Stärke über einen Parameter (Werte zwischen 0 und 10) eingestellt werden kann. Dabei wird der neue geglättete Wert s aus den aktuellen Messwert x und dem vorherigen geglätteten Wert berechnet:  
 
-.. math::
-s_t=s_{t-1}+a(x_t-s_{t-1})
+.. math:: s_t=s_{t-1}+a(x_t-s_{t-1})
 
 Auf der Konfiguratiosseite wird nicht direkt der Wert a eingegeben, sondern der Hilfsparameter k, wobei die Einstellung k=0 zu keiner Dämpfung (d.h. a=1) führt, und Werte größer als 0 folgendermaßen verrechnet werden:
 
-.. math::
-a=1-(0.3 + ((k - 0.01) * (0.95 - 0.3) / (10 - 0.01)))
+.. math:: a=1-(0.3 + ((k - 0.01) * (0.95 - 0.3) / (10 - 0.01)))
  
 
 Hier dargestellt ist, wie verschiedene Werte dieses Parameters auf ein Signal wirken: In der ersten Abbildung ist erkennbar, wie ein einzelner Ausreißer bei verschiedenen Einstellungen unterdrückt wird. Die zweite Abbildung zeigt, wie ein Sprung in den Eingangsdaten in einen langsameren Anstieg umgewandelt wird. In der Praxis ist hier ein Kompromiss zu wählen, so dass einerseits kurzfristige Schwankungen gut gedämpft werden, und andererseits tatsächliche Änderungen nicht zu lange dauern, bis sie sichtbar sind.
