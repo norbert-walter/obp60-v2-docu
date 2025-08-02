@@ -393,11 +393,11 @@ Abb.: SignalK Server
 
 .. image:: ../pics/SignalK_plugin.png
              :scale: 40%	
-Abb.: SignalK Plungin
+Abb.: SignalK Plugin
 
 .. image:: ../pics/SignalK_data.png
              :scale: 40%	
-Abb.: SignalK Plungin Konfigurationsbeispiel
+Abb.: SignalK Plugin Konfigurationsbeispiel
 
 .. note::
 Um diese Funkioanlität zu testen, kann man sich auf dem Raspberry Pi mit folgendem Kommando in einem Terminal den Datenstrom anzeigen lassen: ``nc localhost 10110``  
