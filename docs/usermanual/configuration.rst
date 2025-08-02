@@ -702,6 +702,7 @@ Hier dargestellt ist, wie verschiedene Werte dieses Parameters auf ein Signal wi
 .. image:: ../pics/jump.png
 .. image:: ../pics/impulse.png
 
+Die x-Achse der Diagramme zeigt die Zahl der Datenaktualisierungen, d.h. sie ensprechen einer Zeitachse in Sekunden, wenn der Messwert 1x pro Sekunde aktualisiert wird.
 
 Config - OBP Display
 --------------------
