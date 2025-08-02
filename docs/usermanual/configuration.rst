@@ -684,6 +684,25 @@ Auf der Seite **Calibrations** können Einstellungen zur Kalibrierung vorgenomme
 **VSensor Slope**
     * Steigung der Korrekturfunktion des internen Spannungssensors des OBP60
 
+.. image:: ../pics/OBP60_Datenkalibrierung.png
+
+Für bis zu drei Sensorwerte kann zusätzlich eine Kalibrierung und eine Glättung der Daten konfiguriert werden. Zur Glättung wird der exponetnial smoothing Algorithmus verwendet, dessen Stärke über einen Parameter (Werte zwischen 0 und 10) eingestellt werden kann. 
+
+..math::
+s_t=s_{t-1}+a(x_t-s_{t-1})
+
+In der Konfirmation wird nicht direkt der Wert a eingegeben, sondern der Hilfsparameter k, wobei die Einstellung k=0 zu keiner Dämpfung (d.h. a=1) führt, und Werte größer als 0 folgendermaßen verrechnet werden:
+
+..math::
+a=1-(0.3 + ((k - 0.01) * (0.95 - 0.3) / (10 - 0.01)))
+ 
+
+Hier dargestellt ist, wie verschiedene Werte dieses Parameters auf ein Signal wirken: In der ersten Abbildung ist erkennbar, wie ein einzelner Ausreißer bei verschiedenen Einstellungen unterdrückt wird. Die zweite Abbildung zeigt, wie ein Sprung in den Eingangsdaten in einen langsameren Anstieg umgewandelt wird. In der Praxis ist hier ein Kompromiss zu wählen, so dass einerseits kurzfristige Schwankungen gut gedämpft werden, und andererseits tatsächliche Änderungen nicht zu lange dauern, bis sie sichtbar sind.
+
+.. image:: ../pics/jump.png
+.. image:: ../pics/impulse.png
+
+
 Config - OBP Display
 --------------------
 
