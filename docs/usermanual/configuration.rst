@@ -684,12 +684,10 @@ Auf der Seite **Calibrations** können Einstellungen zur Kalibrierung vorgenomme
 **VSensor Slope**
     * Steigung der Korrekturfunktion des internen Spannungssensors des OBP60
 
-Für bis zu drei Sensorwerte kann zusätzlich eine Kalibrierung und eine Glättung der Daten konfiguriert werden. 
-
-.. image:: ../pics/OBP60_Datenkalibrierung.png
-
 **Calibration Data Instance [1..3]**
-    * Auswahl von bis zu drei Datentypen, die kalibriert werden sollen. Die zur Auswahl stehenden Datentypen erscheinen, wenn man die Pulldown-Auswahlliste öffnet. Sobald man einen Datentyp ausgewählt hat, erscheinen die im Folgenden beschriebenen Konfigurationsparameter. Eine Auswahl von "---" deaktiviert die Kalibrierung für diesen Datentyp.
+    * Auswahl von bis zu drei Datentypen, die kalibriert werden sollen. Die zur Auswahl stehenden Datentypen erscheinen, wenn man die Pulldown-Auswahlliste öffnet. Sobald man einen Datentyp ausgewählt hat, erscheinen die im Folgenden beschriebenen Konfigurationsparameter. Eine Auswahl von ``---`` deaktiviert die Kalibrierung für diesen Datentyp.
+    
+.. image:: ../pics/OBP60_Datenkalibrierung.png
 
 **Data Instance [1..3] Calibration Offset**
     * Offset der Korrekturfunktion für den gewählten Datentyp
@@ -698,20 +696,23 @@ Für bis zu drei Sensorwerte kann zusätzlich eine Kalibrierung und eine Glättu
     * Steigung der Korrekturfunktion für den gewählten Datentyp
 
 **Data Instance [1..3] Smoothing**
-    * Hiermit wird eine Glättung bzw. Dämpfung des jeweiligen Datentyps durchgeführt. Es ist eine Einstellung im Bereich [0..10] möglich. "0" bedeutet "keine Glättung", "10" erzielt eine maximale Glättung.
+    * Hiermit wird eine Glättung bzw. Dämpfung des jeweiligen Datentyps durchgeführt. Es ist eine Einstellung im Bereich [0..10] möglich. ``0`` bedeutet "keine Glättung", ``10`` erzielt eine maximale Glättung.
 
-Zur Glättung wird der exponetnial smoothing Algorithmus verwendet, dessen Stärke über einen Parameter (Werte zwischen 0 und 10) eingestellt werden kann. Dabei wird der neue geglättete Wert s aus den aktuellen Messwert x und dem vorherigen geglätteten Wert berechnet:  
+Zur Glättung wird der **Exponetnial Smoothing Algorithmus** verwendet, dessen Stärke über einen Parameter (Werte zwischen 0 und 10) eingestellt werden kann. Dabei wird der neue geglättete Wert **s** aus den aktuellen Messwert **x**, dem vorherigen geglätteten Wert und dem Gewichtungsfaktor **a** berechnet:  
 
 .. math:: s_t=s_{t-1}+a(x_t-s_{t-1})
 
-Auf der Konfiguratiosseite wird nicht direkt der Wert a eingegeben, sondern der Hilfsparameter k, wobei die Einstellung k=0 zu keiner Dämpfung (d.h. a=1) führt, und Werte größer als 0 folgendermaßen verrechnet werden:
+Auf der Konfiguratiosseite wird nicht direkt der Wert **a** eingegeben, sondern der Hilfsparameter **k**, wobei die Einstellung k=0 zu keiner Dämpfung (d.h. a=1) führt, und Werte für **k** größer als 0 folgendermaßen verrechnet werden:
 
 .. math:: a=1-(0.3 + ((k - 0.01) * (0.95 - 0.3) / (10 - 0.01))) 
 
-Hier dargestellt ist, wie verschiedene Werte dieses Parameters auf ein Signal wirken: In der ersten Abbildung ist erkennbar, wie ein einzelner Ausreißer bei verschiedenen Einstellungen unterdrückt wird. Die zweite Abbildung zeigt, wie ein Sprung in den Eingangsdaten in einen langsameren Anstieg umgewandelt wird. In der Praxis ist hier ein Kompromiss zu wählen, so dass einerseits kurzfristige Schwankungen gut gedämpft werden, und andererseits tatsächliche Änderungen nicht zu lange dauern, bis sie sichtbar sind.
+Hier ist dargestellt, wie verschiedene Werte dieses Parameters auf ein Signal wirken: In der ersten Abbildung ist erkennbar, wie ein einzelner Ausreißer bei verschiedenen Einstellungen unterdrückt wird. Die zweite Abbildung zeigt, wie ein Sprung in den Eingangsdaten in einen langsameren Anstieg umgewandelt wird. In der Praxis ist hier ein Kompromiss zu wählen, so dass einerseits kurzfristige Schwankungen gut gedämpft werden, und andererseits tatsächliche Änderungen nicht zu lange dauern, bis sie sichtbar sind.
 
 .. image:: ../pics/impulse.png
+Abb.: Dämpfungswirkung bei Ausreißern
+
 .. image:: ../pics/jump.png
+Abb.: Dämfung schneller sprunghafter Änderungen
 
 Die x-Achse der Diagramme zeigt die Zahl der Datenaktualisierungen, d.h. sie ensprechen einer Zeitachse in Sekunden, wenn der Messwert 1x pro Sekunde aktualisiert wird.
 
