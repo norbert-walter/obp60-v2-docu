@@ -702,7 +702,7 @@ Zur Glättung wird der **Exponetnial Smoothing Algorithmus** verwendet, dessen S
 
 .. math:: s_t=s_{t-1}+a(x_t-s_{t-1})
 
-Auf der Konfiguratiosseite wird nicht direkt der Wert **a** eingegeben, sondern der Hilfsparameter **k**, wobei die Einstellung k=0 zu keiner Dämpfung (d.h. a=1) führt, und Werte für **k** größer als 0 folgendermaßen verrechnet werden:
+Auf der Konfigurationsseite wird nicht direkt der Wert **a** eingegeben, sondern der Hilfsparameter **k**, wobei die Einstellung k=0 zu keiner Dämpfung (d.h. a=1) führt, und Werte für **k** größer als 0 folgendermaßen verrechnet werden:
 
 .. math:: a=1-(0.3 + ((k - 0.01) * (0.95 - 0.3) / (10 - 0.01))) 
 
