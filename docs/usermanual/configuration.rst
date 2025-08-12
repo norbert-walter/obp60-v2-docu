@@ -684,10 +684,21 @@ Auf der Seite **Calibrations** können Einstellungen zur Kalibrierung vorgenomme
 **VSensor Slope**
     * Steigung der Korrekturfunktion des internen Spannungssensors des OBP60
 
-
 Für bis zu drei Sensorwerte kann zusätzlich eine Kalibrierung und eine Glättung der Daten konfiguriert werden. 
 
 .. image:: ../pics/OBP60_Datenkalibrierung.png
+
+**Calibration Data Instance [1..3]**
+    * Auswahl von bis zu drei Datentypen, die kalibriert werden sollen. Die zur Auswahl stehenden Datentypen erscheinen, wenn man die Pulldown-Auswahlliste öffnet. Sobald man einen Datentyp ausgewählt hat, erscheinen die im Folgenden beschriebenen Konfigurationsparameter. Eine Auswahl von "---" deaktiviert die Kalibrierung für diesen Datentyp.
+
+**Data Instance [1..3] Calibration Offset**
+    * Offset der Korrekturfunktion für den gewählten Datentyp
+
+**Data Instance [1..3] Calibration Slope**
+    * Steigung der Korrekturfunktion für den gewählten Datentyp
+
+**Data Instance [1..3] Smoothing**
+    * Hiermit wird eine Glättung bzw. Dämpfung des jeweiligen Datentyps durchgeführt. Es ist eine Einstellung im Bereich [0..10] möglich. "0" bedeutet "keine Glättung", "10" erzielt eine maximale Glättung.
 
 Zur Glättung wird der exponetnial smoothing Algorithmus verwendet, dessen Stärke über einen Parameter (Werte zwischen 0 und 10) eingestellt werden kann. Dabei wird der neue geglättete Wert s aus den aktuellen Messwert x und dem vorherigen geglätteten Wert berechnet:  
 
@@ -695,8 +706,7 @@ Zur Glättung wird der exponetnial smoothing Algorithmus verwendet, dessen Stär
 
 Auf der Konfiguratiosseite wird nicht direkt der Wert a eingegeben, sondern der Hilfsparameter k, wobei die Einstellung k=0 zu keiner Dämpfung (d.h. a=1) führt, und Werte größer als 0 folgendermaßen verrechnet werden:
 
-.. math:: a=1-(0.3 + ((k - 0.01) * (0.95 - 0.3) / (10 - 0.01)))
- 
+.. math:: a=1-(0.3 + ((k - 0.01) * (0.95 - 0.3) / (10 - 0.01))) 
 
 Hier dargestellt ist, wie verschiedene Werte dieses Parameters auf ein Signal wirken: In der ersten Abbildung ist erkennbar, wie ein einzelner Ausreißer bei verschiedenen Einstellungen unterdrückt wird. Die zweite Abbildung zeigt, wie ein Sprung in den Eingangsdaten in einen langsameren Anstieg umgewandelt wird. In der Praxis ist hier ein Kompromiss zu wählen, so dass einerseits kurzfristige Schwankungen gut gedämpft werden, und andererseits tatsächliche Änderungen nicht zu lange dauern, bis sie sichtbar sind.
 
@@ -704,6 +714,9 @@ Hier dargestellt ist, wie verschiedene Werte dieses Parameters auf ein Signal wi
 .. image:: ../pics/jump.png
 
 Die x-Achse der Diagramme zeigt die Zahl der Datenaktualisierungen, d.h. sie ensprechen einer Zeitachse in Sekunden, wenn der Messwert 1x pro Sekunde aktualisiert wird.
+
+.. hint::
+    Achtung: Der Default für die Steigung (Slope) jedes Kalibrierungswertes ist "1". Wird hier eine "0" eingetragen, wird jeder Datenwert auch auf "0" gesetzt. Der Default für die Konfigurationsparameter "Offset" und "Smoothing" ist "0".
 
 Config - OBP Display
 --------------------
@@ -877,7 +890,7 @@ Im OBP60 gibt es insgesamt bis zu 10 Seiten, die man frei auswählen und gestalt
     * **ThreeValue** - Drei Anzeigewerte
     * **FourValue** - Vier Anzeigewerte
     * **FourValue2** - Vier Anzeigewerte (andere Anordnung vertikal/horizontal)
-    * **WindRoseFlex** - Anzeige der Winddaten (alle Anzeigewerte konfigurierbar, erster Wert wird grafisch auf der Windrose dargestellt)
+    * **WindRoseFlex** - Anzeige der Winddaten (alle Anzeigewerte konfigurierbar, erster Wert wird grafisch auf der Windrose dargestellt, die fünf anderen Werte als Zahlen)
 	* **RollPitch** - Grafische Anzeige von Roll und Pitch
 
 * Seiten mit festem Inhalt

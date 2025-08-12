@@ -9,6 +9,7 @@ legend {
 }
 
 h1  {
+    font-family: Ubuntu,Arial,sans-serif;
     margin-top: 40px;
     margin-bottom: 30px;
     padding-bottom: 20px;
@@ -17,6 +18,7 @@ h1  {
 }
 
 h2  {
+    font-family: Ubuntu,Arial,sans-serif;
     margin-top: 30px;
     margin-bottom: 20px;
     padding-bottom: 15px;
@@ -25,6 +27,7 @@ h2  {
 }
 
 h3  {
+    font-family: Ubuntu,Arial,sans-serif;
     margin-top: 15px;
     margin-bottom: 10px;
     padding-bottom: 0px;
