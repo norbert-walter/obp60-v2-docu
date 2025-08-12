@@ -716,8 +716,8 @@ Abb.: Dämfung schneller sprunghafter Änderungen
 
 Die x-Achse der Diagramme zeigt die Zahl der Datenaktualisierungen, d.h. sie ensprechen einer Zeitachse in Sekunden, wenn der Messwert 1x pro Sekunde aktualisiert wird.
 
-.. attention::
-    Der Default für die Steigung (Slope) jedes Kalibrierungswertes ist ``1``. Wird hier eine ``0`` eingetragen, wird jeder Datenwert auch auf 0 gesetzt. Der Default für die Konfigurationsparameter **Offset** und **Smoothin** ist ``0``.
+.. attention**
+    Der Default für die Steigung (Slope) jedes Kalibrierungswertes ist **1**. Wird hier eine **0** eingetragen, wird jeder Datenwert auch auf **0** gesetzt. Der Default für die Konfigurationsparameter **Offset** und **Smoothing** ist **0**.
 
 Config - OBP Display
 --------------------
