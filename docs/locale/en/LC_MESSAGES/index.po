@@ -1,0 +1,230 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Boat Projects
+# This file is distributed under the same license as the OBP60 V2
+# Dokumentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OBP60 V2 Dokumentation\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-08-21 08:07+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../index.rst:18
+#, fuzzy
+msgid "Historie"
+msgstr "History"
+
+#: ../../index.rst:18
+#, fuzzy
+msgid "Technische Daten"
+msgstr "Technical data"
+
+#: ../../index.rst:18
+#, fuzzy
+msgid "Einführung"
+msgstr "introduction"
+
+#: ../../index.rst:26
+#, fuzzy
+msgid "Funktionsweise"
+msgstr "How it works"
+
+#: ../../index.rst:26
+#, fuzzy
+msgid "Bedienelemente"
+msgstr "Controls"
+
+#: ../../index.rst:26
+#, fuzzy
+msgid "Inbetriebnahme"
+msgstr "Commissioning"
+
+#: ../../index.rst:26
+#, fuzzy
+msgid "Konfiguration"
+msgstr "configuration"
+
+#: ../../index.rst:26
+#, fuzzy
+msgid "Bussysteme"
+msgstr "Bus systems"
+
+#: ../../index.rst:26
+#, fuzzy
+msgid "Datenaustausch"
+msgstr "Data exchange"
+
+#: ../../index.rst:26
+#, fuzzy
+msgid "Erweiterte Sensorik"
+msgstr "Advanced sensor technology"
+
+#: ../../index.rst:26
+#, fuzzy
+msgid "Beispielkonfiguration"
+msgstr "Example configuration"
+
+#: ../../index.rst:26
+#, fuzzy
+msgid "Sicherheitshinweise"
+msgstr "Safety instructions"
+
+#: ../../index.rst:26
+#, fuzzy
+msgid "Bedienung"
+msgstr "Operation"
+
+#: ../../index.rst:41
+#, fuzzy
+msgid "Geräteaufbau"
+msgstr "Device structure"
+
+#: ../../index.rst:41
+#, fuzzy
+msgid "Vorbereitung"
+msgstr "Preparation"
+
+#: ../../index.rst:41
+#, fuzzy
+msgid "Bauteilliste"
+msgstr "Component list"
+
+#: ../../index.rst:41
+#, fuzzy
+msgid "Durchführung"
+msgstr "Implementation"
+
+#: ../../index.rst:41
+#, fuzzy
+msgid "Funktionstest"
+msgstr "Functional test"
+
+#: ../../index.rst:41
+#, fuzzy
+msgid "Zusammenbau"
+msgstr "assembly"
+
+#: ../../index.rst:52
+#, fuzzy
+msgid "Programmierumgebung"
+msgstr "programming environment"
+
+#: ../../index.rst:52
+#, fuzzy
+msgid "Seitenerstellung"
+msgstr "Page creation"
+
+#: ../../index.rst:52
+#, fuzzy
+msgid "Kompilieren und Download"
+msgstr "Compile and download"
+
+#: ../../index.rst:52
+#, fuzzy
+msgid "Web-Flashtool"
+msgstr "Web-Flashtool"
+
+#: ../../index.rst:52
+#, fuzzy
+msgid "Programmierung"
+msgstr "programming"
+
+#: ../../index.rst:62
+#, fuzzy
+msgid "Fragen und Antworten"
+msgstr "questions and answers"
+
+#: ../../index.rst:62
+#, fuzzy
+msgid "Meinungen und Tipps"
+msgstr "Opinions and tips"
+
+#: ../../index.rst:62
+#, fuzzy
+msgid "Bekannte Fehler"
+msgstr "Known bugs"
+
+#: ../../index.rst:62
+#, fuzzy
+msgid "Technische Unterstützung"
+msgstr "Technical support"
+
+#: ../../index.rst:62
+#, fuzzy
+msgid "Service"
+msgstr "Service"
+
+#: ../../index.rst:62
+#, fuzzy
+msgid "Mitarbeit"
+msgstr "cooperation"
+
+#: ../../index.rst:62
+#, fuzzy
+msgid "Spenden"
+msgstr "Donate"
+
+#: ../../index.rst:62
+#, fuzzy
+msgid "Glossar"
+msgstr "glossary"
+
+#: ../../index.rst:62
+#, fuzzy
+msgid "Hilfe"
+msgstr "Help"
+
+#: ../../index.rst:3 b61a89cc08f2424c86111fd2ad5c69c4
+#, fuzzy
+msgid "OBP60 V2 Dokumentation"
+msgstr "OBP60 V2 Documentation"
+
+#: ../../index.rst:4 5a1e5b3120534d3bb9102fd0ea0dc164
+#, fuzzy
+msgid "Letzte Aktualisierung |today|"
+msgstr "Last updated |today|"
+
+#: ../../index.rst:6 8dc2da484e4f45af8332c76b048a209e
+#, fuzzy
+msgid "Documentation Status"
+msgstr "Documentation Status"
+
+#: ../../index.rst:11 a521eda0988d4de59a517fc4db87b8b7
+#, fuzzy
+msgid "Diese Seiten sind noch in Bearbeitung."
+msgstr "These pages are still under construction."
+
+#: ../../index.rst:16 ffb1f9de22ed432c8474d59607a7cd8d
+#, fuzzy
+msgid ""
+"Das Multifunktionsdisplay OBP60 dient zur Anzeige von Daten aus Boots-Netzen"
+" wie NMEA0183, NMEA2000. Darüber hinaus können Daten aus dem 1Wire-Bus und "
+"dem I2C-Bus ausgelesen werden. Das OBP60 enthält ein Gateway, das Daten "
+"bidirektional zwischen NMEA0183 und NMEA2000 austauschen kann. Über WiFi "
+"lassen sich die Daten importieren oder exportieren und können auf anderen "
+"Geräten oder in Drittanbietersoftware verwendet werden. Die Konfiguration "
+"erfolgt über eine Webseite. Darüber lassen sich vordefinierte Anzeigeseiten "
+"auswählen, und es können dessen Anzeigeinhalte festgelegt werden. Das OBP60 "
+"basiert auf Open Hardware, Open Software und Open Data. Das Gerät lässt sich"
+" durch die Offenheit an beliebige Anforderungen über die Software anpassen."
+msgstr ""
+"The OBP60 multifunction display is used to display data from boat networks "
+"such as NMEA 0183 and NMEA 2000. It can also read data from the 1Wire bus "
+"and the I2C bus. The OBP60 contains a gateway that can exchange data "
+"bidirectionally between NMEA 0183 and NMEA 2000. Data can be imported or "
+"exported via WiFi and used on other devices or in third-party software. "
+"Configuration is done via a website. This allows you to select predefined "
+"display pages and specify their display content. The OBP60 is based on open "
+"hardware, open software, and open data. Thanks to its openness, the device "
+"can be adapted to any requirements via the software."
