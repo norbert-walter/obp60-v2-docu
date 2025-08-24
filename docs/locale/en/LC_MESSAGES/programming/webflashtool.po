@@ -1,0 +1,227 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Boat Projects
+# This file is distributed under the same license as the OBP60 V2
+# Dokumentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OBP60 V2 Dokumentation\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-08-21 08:07+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../programming/webflashtool.rst:2 f458caccd9b34b2f838142dd4218e2b7
+#, fuzzy
+msgid "Web-Flashtool"
+msgstr "Web-Flashtool"
+
+#: ../../programming/webflashtool.rst:4 07792eac7d4c4a5dbf81680d9f2228e6
+#, fuzzy
+msgid ""
+"Mit dem Web-Flashtool kann die Firmware für das OBP60 mit einem Webbrowser "
+"über eine USB-Verbindung in das Gerät übertragen werden. Dazu wird das OBP60"
+" über die USB-C-Buchse mit einem PC oder Laptop verbunden und der "
+"**Chrome-** oder **Edge-Webbrowser** gestartet. Im OBP60 ist ein USB-"
+"Seriell-Konverter integriert, über den die Datenübertragung durchgeführt "
+"wird. Mit dem USB-C-Kabel lässt sich nur die Firmware übertragen. Ein "
+"Betrieb des Gerätes über USB ist damit nicht möglich."
+msgstr ""
+"The web flash tool allows you to transfer the firmware for the OBP60 to the "
+"device using a web browser via a USB connection. To do this, connect the "
+"OBP60 to a PC or laptop via the USB-C port and launch the Chrome or Edge web"
+" browser. The OBP60 has a built-in USB-to-serial converter for data "
+"transfer. The USB-C cable can only be used to transfer the firmware. "
+"Operating the device via USB is not possible."
+
+#: ../../programming/webflashtool.rst:7 7d6c859b39904c27a9143ee7a110269c
+#, fuzzy
+msgid ""
+"Andere Webbrowser als **Chrome** oder **Edge** werden derzeit nicht "
+"unterstützt, da die Funktionalität für den Zugriff auf eine serielle "
+"Schnittstelle in anderen Webbrowsern nicht implementiert ist."
+msgstr ""
+"Web browsers other than **Chrome** or **Edge** are not currently supported "
+"because the functionality for accessing a serial port is not implemented in "
+"other web browsers."
+
+#: ../../programming/webflashtool.rst:10 48ca36bb01904ca7b7d679ea1cef23af
+#, fuzzy
+msgid ""
+"Beachten Sie, dass das Web-Flashtool nur für ein OBP60 V2.1 verwendet werden"
+" kann, das als Prozessor einen **ESP32-S3 N16R8** und als E-Paper-Display "
+"ein **GDEY042T81** verwenden. Sofern Sie andere Hardware benutzen, müssen "
+"Sie sich eine angepasste Firmwareversion für ihre Hardware kompilieren. "
+"Folgen Sie den Anweisungen im Kapitel :ref:`Kompilieren und Download`."
+msgstr ""
+"Please note that the web flash tool can only be used with an OBP60 V2.1 that"
+" uses an **ESP32-S3 N16R8** processor and a **GDEY042T81** e-paper display. "
+"If you use other hardware, you will need to compile a customized firmware "
+"version for your hardware. Follow the instructions in the :ref:`Kompilieren "
+"und Download` chapter."
+
+#: ../../programming/webflashtool.rst:12 1123ef38a93941e9b19ccbc36ce6b694
+#, fuzzy
+msgid "Für den Flash-Vorgang benötigt man folgende Dinge:"
+msgstr "For the flashing process you need the following things:"
+
+#: ../../programming/webflashtool.rst:13 436267f8642d401cbe60c7a8f28ecb6e
+#, fuzzy
+msgid "OBP60 (ESP32-S3 N16R8, E-Paper GDEY042T81)"
+msgstr "OBP60 (ESP32-S3 N16R8, E-Paper GDEY042T81)"
+
+#: ../../programming/webflashtool.rst:14 7a3b514f7fb24a55ba2db5798bea5f78
+#, fuzzy
+msgid "USB-C zu USB-A Verbindungskabel < 1,5m"
+msgstr "USB-C to USB-A connection cable < 1.5m"
+
+#: ../../programming/webflashtool.rst:15 ee801ad8c26042908847fe912a4c06dd
+#, fuzzy
+msgid "Drahtbrücke 5 cm"
+msgstr "Wire bridge 5 cm"
+
+#: ../../programming/webflashtool.rst:16 8ea3f010f79e47fe92f9fb5a2f73494e
+#, fuzzy
+msgid "PC mit Chrome- oder Edge-Browser"
+msgstr "PC with Chrome or Edge browser"
+
+#: ../../programming/webflashtool.rst:18 b11a7b6b69144f16bfff5b4a49927b99
+#, fuzzy
+msgid "**1. OBP60 in den Flash-Modus setzen**"
+msgstr "**1. Set OBP60 to flash mode**"
+
+#: ../../programming/webflashtool.rst:19 3ee8e38030ff4f1ea0b2fa784c696f6a
+#, fuzzy
+msgid ""
+"Öffnen Sie die hintere Gehäuseabdeckung und stellen Sie mit der Drahtbrücke "
+"eine Verbindung von ``GND`` (CN2) zum ``Pin 27`` (ESP32-S3) her. Dann "
+"verbinden Sie das OBP60 mit dem PC über das USB-Verbindungskabel. Sobald die"
+" USB-Schnittstelle erkannt wird, erfolgt eine Tonausgabe auf dem PC. Sie "
+"können dann die Drahtbrücke zwischen ``GND`` und ``Pin 27`` trennen. Der "
+"ESP32-S3 befindet sich jetzt im Flash-Modus."
+msgstr ""
+"Open the rear cover and use the jumper wire to connect ``GND`` (CN2) to "
+"``Pin 27`` (ESP32-S3). Then connect the OBP60 to the PC using the USB cable."
+" Once the USB interface is recognized, a sound will be heard on the PC. You "
+"can then remove the jumper wire between ``GND`` and ``Pin 27``. The ESP32-S3"
+" is now in flash mode."
+
+#: ../../programming/webflashtool.rst:23 3849a88dd7014733ab08c6e6cb6ea975
+#, fuzzy
+msgid "Abb.: Pin27 am OBP60"
+msgstr "Abb.: Pin27 am OBP60"
+
+#: ../../programming/webflashtool.rst:27 49e50953b0e349019d381e87e3ad41e3
+#, fuzzy
+msgid "Abb.: Brücke zwischen ``GND`` und ``Pin 27``"
+msgstr "Fig.: Bridge between ``GND`` and ``Pin 27``"
+
+#: ../../programming/webflashtool.rst:30 466a6463e1ee488ea84e16c0b8240037
+#, fuzzy
+msgid "**2. Flashtool starten**"
+msgstr "**2. Launch Flashtool**"
+
+#: ../../programming/webflashtool.rst:32 2a51083c48d746b48048679c612b11c1
+#, fuzzy
+msgid "Rufen Sie als nächstes die Webseite des `Online-Flashtools`_ auf."
+msgstr "Next, go to the `Online-Flashtools`_ website."
+
+#: ../../programming/webflashtool.rst:38 b8246bade78b435c8ddb9eb0e794e86f
+#, fuzzy
+msgid "Abb.: Startseite Web-Flashtool"
+msgstr "Fig.: Home page Web Flashtool"
+
+#: ../../programming/webflashtool.rst:40 9f96b0f73477482b9ea7366f68af9a07
+#, fuzzy
+msgid ""
+"Drücken Sie dann auf **Connect** und wählen die entsprechende serielle "
+"Schnittstelle aus. Je nachdem, welches Betriebssystem Sie verwenden, sind "
+"die Schnittstellen verschieden bezeichnet."
+msgstr ""
+"Then press **Connect** and select the appropriate serial port. Depending on "
+"the operating system you're using, the ports are labeled differently."
+
+#: ../../programming/webflashtool.rst:42 b32916f4a21b437c8245f05de4ba0b20
+#, fuzzy
+msgid "**Windows:** USB JTAG/serial debug unit COMx"
+msgstr "**Windows:** USB JTAG/serial debug unit COMx"
+
+#: ../../programming/webflashtool.rst:43 f47d165665b04db1bf5fc5b5658345b3
+#, fuzzy
+msgid "**Linux:** /dev/ttyACMx"
+msgstr "**Linux:** /dev/ttyACMx"
+
+#: ../../programming/webflashtool.rst:47 841c2285735c4deaa9fbf829994e57ff
+#, fuzzy
+msgid "Abb.: Auswahl der Schnittstelle"
+msgstr "Fig.: Selecting the interface"
+
+#: ../../programming/webflashtool.rst:50 c0bfae9c4ee14f83b7a8a9eacd14faee
+#, fuzzy
+msgid ""
+"Beachten Sie, dass durchaus noch andere serielle Schnittstellen im System "
+"benutzt werden. Wählen Sie die Schnittstelle aus, die nach dem Anstecken des"
+" OBP60 an den USB-Port im System neu auftaucht. Bereits bestehende "
+"Schnittstellen dürfen Sie nicht nutzen, sie werden bereits anderweitig "
+"verwendet."
+msgstr ""
+"Please note that other serial ports may still be in use in the system. "
+"Select the port that appears after connecting the OBP60 to the USB port. Do "
+"not use existing ports; they are already in use for another device."
+
+#: ../../programming/webflashtool.rst:52 83889af112c645749acc6e9e4f3730ac
+#, fuzzy
+msgid "**3. Firmware übertragen**"
+msgstr "**3. Transfer firmware**"
+
+#: ../../programming/webflashtool.rst:55 a6520ecec2894af09e08542c1edbd77e
+#, fuzzy
+msgid "Abb.: Start Flashvorgang"
+msgstr "Fig.: Start flashing process"
+
+#: ../../programming/webflashtool.rst:57 28e199f2ae7e4e4c8c3cea5d75d43585
+#, fuzzy
+msgid ""
+"Starten Sie den Installationsvorgang über ``INSTALL OBP60 V2 FIRMWARE``. "
+"Nach erfolgreicher Übertragung wird eine Meldung ausgeben."
+msgstr ""
+"Start the installation process via ``INSTALL OBP60 V2 FIRMWARE``. A message "
+"will appear after the transfer is successful."
+
+#: ../../programming/webflashtool.rst:61 09ae18ce8c8c4327acae25afd5c952b4
+#, fuzzy
+msgid "Abb.: Übertragung der Firmware"
+msgstr "Fig.: Transferring the firmware"
+
+#: ../../programming/webflashtool.rst:64 2391a3527f3f47eaabc57a99f1bf9500
+#, fuzzy
+msgid "**4. OBP60 starten**"
+msgstr "**4. Start OBP60**"
+
+#: ../../programming/webflashtool.rst:65 151a8c025c7b40eaa8ea4bb1fda13b50
+#, fuzzy
+msgid ""
+"Entfernen Sie das USB-Verbindungskabel und versorgen Sie das OBP60 über "
+"``+12V`` und ``GND`` von **CN2** mit 12V. Beim Starten der Firmware erfolgt "
+"ein kurzer Piepton. Nach kurzer Zeit sollte eine Anzeigeseite zu sehen sein."
+" Je nach Einstellung wird vorher noch das OBP-Logo und der QR-Code für den "
+"WiFi-Zugang angezeigt."
+msgstr ""
+"Remove the USB connection cable and supply the OBP60 with 12V via ``+12V`` "
+"and ``GND`` of **CN2**. A short beep will sound when the firmware starts. "
+"After a short time, a display page should appear. Depending on the settings,"
+" the OBP logo and the QR code for Wi-Fi access may also be displayed."
+
+#: ../../programming/webflashtool.rst:69 b6d55719656b4eb8b1ab5538049eaa68
+#, fuzzy
+msgid "Abb.: Anzeigeseite"
+msgstr "Fig.: Display page"

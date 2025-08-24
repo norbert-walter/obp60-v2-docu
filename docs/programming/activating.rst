@@ -146,7 +146,7 @@ Visual Studio Code / PlatformIO
 **Visual Studio Code** (VSC) ist eine weit verbreitete Software-Entwicklungsumgebung, die eine Vielzahl an Programmiersprachen unterstützt, und die es für verschiedene Betriebssysteme gibt. Die Entwicklungsumgebung läuft dabei auf einem lokalen PC. Zur Programmierung von Embedded Elektronik auf Mikrocontrollerbasis in C und C++ wurde das Plugin **PlatformIO** für Visual Studio Code geschaffen. Damit ist es unkompliziert möglich, eine Softwareentwicklung für Hardware durchzuführen. In einer umfangreichen Datenbank sind eine Vielzahl an Elektronik-Hardware-Boards aufgeführt. Passend zum Hardware-Board werden die notwendigen Tool-Chains und Software-Bibliotheken zu einem Projekt hinzugefügt, ohne dass man sich um Details kümmern muss.
 
 .. hint::
-Wer an einer Weiterentwicklung der Firmware zum OBP60 interessiert ist, sollte Visual Studio Code / PlatformIO benutzen. Visual Studio Code verfügt über Mechanismen, mit denen Softwareänderungen über Github eingepflegt und verfolgt werden können.
+	Wer an einer Weiterentwicklung der Firmware zum OBP60 interessiert ist, sollte Visual Studio Code / PlatformIO benutzen. Visual Studio Code verfügt über Mechanismen, mit denen Softwareänderungen über Github eingepflegt und verfolgt werden können.
 	
 Wie man Visual Studio Code installiert und danach das Plugin PlatformIO einrichtet, ist in dieser `Anleitung`_ beschrieben. Sie finden im Internet auch weitere Beschreibungen zu diesem Thema.
 

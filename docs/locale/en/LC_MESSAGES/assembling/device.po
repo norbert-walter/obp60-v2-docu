@@ -1,0 +1,514 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Boat Projects
+# This file is distributed under the same license as the OBP60 V2
+# Dokumentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OBP60 V2 Dokumentation\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-08-21 08:07+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../assembling/device.rst:2 d931c930058746c59607959ccf2b71c1
+#, fuzzy
+msgid "Geräteaufbau"
+msgstr "Device structure"
+
+#: ../../assembling/device.rst:5 6584e3cbc8c9468a9cb82452247ceb5d
+#, fuzzy
+msgid "Mechanischer Aufbau"
+msgstr "Mechanical structure"
+
+#: ../../assembling/device.rst:9 9a2b50f5771b44fe93217cce815295fd
+#, fuzzy
+msgid "Abb.: Explosionsansicht"
+msgstr "Fig.: Exploded view"
+
+#: ../../assembling/device.rst:11 00f49ff4f2f24b08b3ab41aaf1feb4f8
+#, fuzzy
+msgid ""
+"In der oberen Abbildung ist der Aufbau des OBP60 zu sehen. Das Gerät besteht"
+" aus einzelnen Komponenten, die im folgenden beschrieben werden."
+msgstr ""
+"The diagram above shows the structure of the OBP60. The device consists of "
+"individual components, which are described below."
+
+#: ../../assembling/device.rst:13 a6358726517c46d0b8509d4ac200768f
+#, fuzzy
+msgid "**Touch Pads**"
+msgstr "**Touch Pads**"
+
+#: ../../assembling/device.rst:14 f7ddca2622034bbbb8ad96121970d976
+#, fuzzy
+msgid ""
+"Die Tasten bestehen aus schwarz eloxierten Inbus-Senkschrauben aus Edelstahl"
+" (V2A). Die Tasten werden mit einem Dichtmittel in die Frontschale des "
+"Gehäuses eingeschraubt, um Wasserdichtigkeit zu erreichen."
+msgstr ""
+"The buttons are made of black anodized countersunk Allen screws made of "
+"stainless steel (V2A). The buttons are screwed into the front shell of the "
+"case with a sealant to ensure watertightness."
+
+#: ../../assembling/device.rst:15 ead40585df3e4480abd3c54efb5b6941
+#, fuzzy
+msgid "**Springs**"
+msgstr "**Springs**"
+
+#: ../../assembling/device.rst:16 4c6592252f05464f923c0f24a4630553
+#, fuzzy
+msgid ""
+"Die Federn hinter den Tasten dienen der elektrischen Kontaktierung der "
+"Tasten mit den Sensorflächen auf der Platine."
+msgstr ""
+"The springs behind the keys serve to make electrical contact between the "
+"keys and the sensor surfaces on the circuit board."
+
+#: ../../assembling/device.rst:17 b9dce2ad653e43c29ac1cdbadecf4601
+#, fuzzy
+msgid "**Front Case**"
+msgstr "**Front Case**"
+
+#: ../../assembling/device.rst:18 f69f38a669fd44bc96c358501d340ccc
+#, fuzzy
+msgid ""
+"Die Frontschale des Gehäuses nimmt die Tasten auf und enthält die "
+"eingeklebte Frontscheibe. Die Außenflächen der Frontschale bestehen aus 2 mm"
+" dickem Kunststoff. An einigen Stellen ist das Gehäuse hohl und enthält an "
+"den Stellen eine Stützstruktur mit einem Füllgrad von 30%. Das Gehäuse ist "
+"als Kastenkonstruktion ausgeführt und dadurch verwindungssteif."
+msgstr ""
+"The front shell of the housing houses the buttons and contains the glued-in "
+"front panel. The outer surfaces of the front shell are made of 2 mm thick "
+"plastic. The housing is hollow in some places and contains a support "
+"structure with a 30% fill level. The housing is designed as a box "
+"construction and is therefore torsionally rigid."
+
+#: ../../assembling/device.rst:19 4f8264a0c43948eeb61a9b9a41e2d3a2
+#, fuzzy
+msgid "**Brass Inlets**"
+msgstr "**Brass Inlets**"
+
+#: ../../assembling/device.rst:20 22d1f40c0c884109945b9989a3802bf9
+#, fuzzy
+msgid ""
+"Die Messing-Gewindeeinsätze dienen zur Verstärkung der Gewinde für die "
+"Gehäuseschrauben, da der Kunststoff keine ausreichende Festigkeit aufweist, "
+"um den nötigen Druck zum Anpressen der Gehäusedichtung aufzubringen. Die "
+"Messing-Gewindeeinsätze werden thermisch in den Kunststoff eingeschmolzen "
+"und sind gegen eine ungewollte Verdrehung im Kunststoff gesichert."
+msgstr ""
+"The brass thread inserts are used to reinforce the threads for the housing "
+"screws, as the plastic is not strong enough to exert the necessary pressure "
+"to press the housing seal in place. The brass thread inserts are thermally "
+"fused into the plastic and are secured against unintentional twisting within"
+" the plastic."
+
+#: ../../assembling/device.rst:21 ../../assembling/device.rst:31
+#: b4133aa73cbd4f599d782d262c40d55f fda1c61a51f24372836953af912a20f6
+#, fuzzy
+msgid "**Glue Film**"
+msgstr "**Glue Film**"
+
+#: ../../assembling/device.rst:22 d78c226ae95e4905b3135194db10fa10
+#, fuzzy
+msgid ""
+"Der Klebefilm wird auf die Frontscheibe aufgetragen und dient zur "
+"wasserdichten Befestigung der Frontscheibe an der Innenseite des Gehäuses."
+msgstr ""
+"The adhesive film is applied to the front screen and is used to watertightly"
+" attach the front screen to the inside of the housing."
+
+#: ../../assembling/device.rst:23 97638c6179ec4fa2a40698342eee9728
+#, fuzzy
+msgid "**Front Glass**"
+msgstr "**Front Glass**"
+
+#: ../../assembling/device.rst:24 a837b8e525634fcebca78d3175d70ff9
+#, fuzzy
+msgid ""
+"Die Frontscheibe aus 3 mm dickem Plexiglas schützt das Display vor "
+"Umwelteinflüssen und vor mechanischen Beschädigungen durch harte Schläge. "
+"Die Frontscheibe dient zusätzlich als UV-Filter mit hoher Filterwirkung. Die"
+" Außenseite der Frontscheibe ist entspiegelt und verhindert direkte "
+"Reflexionen des Sonnenlichts. Eine Besonderheit der Frontscheibe ist ihre "
+"Fähigkeit, das e-Paper-Display bei Nacht zu beleuchten. Dazu koppeln an der "
+"oberen Stirnseite der Scheibe 6 RGB-LEDs Licht in die Plexiglasscheibe ein. "
+"Das Licht der LEDs wird an Streukörpern innerhalb des Plexiglases auf das "
+"e-Paper-Display umgelenkt. Die Ausleuchtung des Displays erfolgt daher "
+"gleichmäßig über die gesamte Displayfläche."
+msgstr ""
+"The front panel, made of 3 mm thick Plexiglas, protects the display from "
+"environmental influences and mechanical damage caused by hard impacts. The "
+"front panel also serves as a high-efficiency UV filter. The exterior of the "
+"front panel is anti-reflective, preventing direct sunlight reflections. A "
+"special feature of the front panel is its ability to illuminate the e-paper "
+"display at night. For this purpose, six RGB LEDs on the upper end of the "
+"panel couple light into the Plexiglas panel. The light from the LEDs is "
+"redirected onto the e-paper display by diffusers within the Plexiglas. The "
+"display is therefore evenly illuminated across the entire surface."
+
+#: ../../assembling/device.rst:25 d31038202f9546e79f2b4ff7840aedc6
+#, fuzzy
+msgid "**Filter**"
+msgstr "**Filter**"
+
+#: ../../assembling/device.rst:26 0395e0a3b43744d5a878500ba0a5a758
+#, fuzzy
+msgid ""
+"Eine IR-Filterfolie wird zusätzlich auf der Rückseite der Frontscheibe "
+"aufgebracht und soll die Infrarotstrahlung des Sonnenlichtes reduzieren und "
+"vom e-Paper-Display fernhalten. Die Infrarotstrahlung wird in der "
+"Filterfolie absorbiert und an die Frontscheibe abgegeben, denn bei maximaler"
+" Sonenneinstrahlung treffen bis zu 10 W an Wärmestrahlung auf das Display."
+msgstr ""
+"An IR filter film is also applied to the back of the front panel to reduce "
+"infrared radiation from sunlight and keep it away from the e-paper display. "
+"The infrared radiation is absorbed by the filter film and emitted to the "
+"front panel, as up to 10 W of thermal radiation hits the display at maximum "
+"sunlight."
+
+#: ../../assembling/device.rst:27 b3e624fd994f45169cb8cf1f756f30bc
+#, fuzzy
+msgid "**Display Frame**"
+msgstr "**Display Frame**"
+
+#: ../../assembling/device.rst:28 e1c60a76f0da413b8f62d73fed0b9081
+#, fuzzy
+msgid ""
+"Der Displayrahmen ist eine Art Maske und verdeckt unerwünschte Bereiche des "
+"Displays. Zusätzlich ist ein kleiner Steg angebracht, um das Licht der "
+"Hintergrundbeleuchtung gegenüber dem Display abzuschirmen, damit kein "
+"Fremdlicht in die Glasscheibe des e-Paper-Displays eingekoppelt wird."
+msgstr ""
+"The display frame acts as a kind of mask and conceals unwanted areas of the "
+"display. A small bar is also attached to shield the backlight from the "
+"display, preventing extraneous light from being coupled into the glass pane "
+"of the e-paper display."
+
+#: ../../assembling/device.rst:29 94265aa901b244eeba99647b1ce5fc94
+#, fuzzy
+msgid "**Display**"
+msgstr "**Display**"
+
+#: ../../assembling/device.rst:30 f3a922ee644947fe907698ae50b2e362
+#, fuzzy
+msgid ""
+"Das Display ist ein e-Paper-Display, das Scharz/Weiß und 4 Graustufen "
+"abbilden kann. Die Auflösung des Displays beträgt 400 x 300 Pixel. Die "
+"Pixeldichte auf die Anzeigefläche bezogen liegt bei 120 dpi. E-Paper-"
+"Displays benötigen nur bei der Ansteuerung neuer Bildinhalte Energie. Im "
+"ausgeschalteten Zustand bleibt der Bildinhalt sichtbar. Damit ist diese "
+"Bildschirm-Technologie sehr energiesparend."
+msgstr ""
+"The display is an e-paper display capable of black/white and four shades of "
+"gray. The display resolution is 400 x 300 pixels. The pixel density relative"
+" to the display area is 120 dpi. E-paper displays only require energy when "
+"displaying new image content. When turned off, the image content remains "
+"visible. This makes this screen technology very energy-efficient."
+
+#: ../../assembling/device.rst:32 a5c11afb81404168848de8c2fc7021aa
+#, fuzzy
+msgid ""
+"Der Klebefilm hinter dem Display dient zur Befestigung des Displays auf dem "
+"Displayhalter."
+msgstr ""
+"The adhesive film behind the display is used to attach the display to the "
+"display holder."
+
+#: ../../assembling/device.rst:33 2a51d65298244523b06bcaac0db72e93
+#, fuzzy
+msgid "**Display Holder**"
+msgstr "**Display Holder**"
+
+#: ../../assembling/device.rst:34 2a0297c57f5348d69df2bfabdc5ea12d
+#, fuzzy
+msgid ""
+"Der Displayhalter trägt das e-Paper-Display und verhindert ein Verwinden des"
+" Displays. Das e-Paper-Display ist sehr empfindlich, denn es besteht aus "
+"zwei Glassubstraten mit einer Gesamtdicke von nur 0,7 mm. Über den "
+"Displayhalter wird das Display mittels Schrauben mit dem Mainboard "
+"verbunden."
+msgstr ""
+"The display holder supports the e-paper display and prevents it from "
+"twisting. The e-paper display is very delicate, as it consists of two glass "
+"substrates with a total thickness of only 0.7 mm. The display holder "
+"connects the display to the motherboard using screws."
+
+#: ../../assembling/device.rst:35 f16be79dd6bc48118d5683b0f24f30b3
+#, fuzzy
+msgid "**Main Board**"
+msgstr "**Main Board**"
+
+#: ../../assembling/device.rst:36 878badced63042318df074b7c0e52061
+#, fuzzy
+msgid ""
+"Das Mainboard enthält alle elektronischen Komponenten auf einer zweiseitigen"
+" Platine. An der Oberseite des Mainboards ist die LED-Platine für die "
+"Hintergrundbeleuchtung angebracht."
+msgstr ""
+"The motherboard contains all electronic components on a double-sided circuit"
+" board. The LED board for the backlight is mounted on the top of the "
+"motherboard."
+
+#: ../../assembling/device.rst:37 f8f95b0822f34c29bec92f87f604f923
+#, fuzzy
+msgid "**Case Seal**"
+msgstr "**Case Seal**"
+
+#: ../../assembling/device.rst:38 015483af30924ceba2e168541ed0be09
+#, fuzzy
+msgid ""
+"Die Gehäusedichtung stellt eine wasserdichte Verbindung zwischen der Front- "
+"und Rückschale her. Die Dichtung ist dabei als 1 mm dicke Flächendichtung "
+"ausgeführt."
+msgstr ""
+"The housing seal creates a watertight connection between the front and rear "
+"shells. The seal is designed as a 1 mm thick surface seal."
+
+#: ../../assembling/device.rst:39 271101871b304f8b863b482b5b2871e8
+#, fuzzy
+msgid "**Backside Case**"
+msgstr "**Backside Case**"
+
+#: ../../assembling/device.rst:40 5187803cc59f49b7a725c675e25b6d71
+#, fuzzy
+msgid ""
+"Die Gehäuserückschale schließt die Rückseite des Gehäuses ab. Sie ist als "
+"verwindungssteife Kastenkonstruktion wie die Frontschale ausgeführt."
+msgstr ""
+"The rear housing cover completes the rear of the case. It is designed as a "
+"torsion-resistant box construction, just like the front cover."
+
+#: ../../assembling/device.rst:41 5fded2b8cc8e4b6cb940bb1f3568763e
+#, fuzzy
+msgid "**Backside Seal**"
+msgstr "**Backside Seal**"
+
+#: ../../assembling/device.rst:42 dc5754fdb2bd4791b80dc1eebc0e5e67
+#, fuzzy
+msgid ""
+"Die Rückwanddichtung dichtet das Gehäuse gegenüber der Einbauöffnung ab. Die"
+" Dichtung besteht aus 2 mm dickem Neoprenmaterial. Damit lassen sich kleine "
+"Unebenheiten und leichte Krümmungen überbrücken."
+msgstr ""
+"The rear panel seal seals the enclosure against the mounting opening. The "
+"seal is made of 2 mm thick neoprene material. This allows it to accommodate "
+"small bumps and slight curvatures."
+
+#: ../../assembling/device.rst:43 13fc6286cf3d4cb18d71053a42fc40d0
+#, fuzzy
+msgid "**Connectors**"
+msgstr "**Connectors**"
+
+#: ../../assembling/device.rst:44 e75f825b5f204c44883d40ae98e8e6f4
+#, fuzzy
+msgid ""
+"Für eine einfachen Montage sind an der Rückseite des Gerätes abnehmbare "
+"Steckverbinder angebracht. Über die Steckverbinder mit Schraubverbindungen "
+"kann das Gerät mit Strom versorgt und an die Bussysteme angeschlossen "
+"werden."
+msgstr ""
+"For easy installation, removable connectors are attached to the rear of the "
+"device. These connectors with screw connections allow the device to be "
+"supplied with power and connected to the bus systems."
+
+#: ../../assembling/device.rst:47 20357cab63574c838a1ca1c1498d9220
+#, fuzzy
+msgid "Main Board"
+msgstr "Main Board"
+
+#: ../../assembling/device.rst:49 4f88cfa2281447f9ab95b69e5d24a0d5
+#, fuzzy
+msgid ""
+"Das Mainboard enthält alle elektrischen und elektronischen Komponenten wie:"
+msgstr ""
+"The mainboard contains all electrical and electronic components such as:"
+
+#: ../../assembling/device.rst:51 09b42e27026c47faba30fed1dfc79b1e
+#, fuzzy
+msgid "Dual Core CPU ESP32-S3"
+msgstr "Dual Core CPU ESP32-S3"
+
+#: ../../assembling/device.rst:52 3f36b51507244ee8a694fe5fbff02f50
+#, fuzzy
+msgid "Stromversorgung"
+msgstr "Power supply"
+
+#: ../../assembling/device.rst:53 d72f45a2f3824d6bbae840074a41fdfe
+#, fuzzy
+msgid "Display-Ansteuerung"
+msgstr "Display control"
+
+#: ../../assembling/device.rst:54 054787a52b1f4860b3286fe2034c62c3
+#, fuzzy
+msgid "Sensortasten"
+msgstr "Sensor buttons"
+
+#: ../../assembling/device.rst:55 3b158a4114c74a12bce4c9487b4e20be
+#, fuzzy
+msgid "GPS-Empfänger"
+msgstr "GPS receiver"
+
+#: ../../assembling/device.rst:56 6ffc3611792444bba2c70297ac53218e
+#, fuzzy
+msgid "RTC Echtzeituhr"
+msgstr "RTC real-time clock"
+
+#: ../../assembling/device.rst:57 7bc7d38aa4a04ff59b917fe4535ace54
+#, fuzzy
+msgid "Backup-Batterie"
+msgstr "Backup Battery"
+
+#: ../../assembling/device.rst:58 6ca504eb09144befbbd2098f178daa5d
+#, fuzzy
+msgid "Buzzer"
+msgstr "Buzzer"
+
+#: ../../assembling/device.rst:59 168921bbd9ed4ae9b023d01d14ddc25d
+#, fuzzy
+msgid "Flash-LED"
+msgstr "Flash-LED"
+
+#: ../../assembling/device.rst:60 82daffe775e34779b55742893dfa042c
+#, fuzzy
+msgid "Hintergrundbeleuchtung"
+msgstr "Backlight"
+
+#: ../../assembling/device.rst:61 163ae65cfc5c40da97bfbaa08baa35de
+#, fuzzy
+msgid "Isolierte Treiber für Bussysteme (NMEA2000; NMEA0183, I2C)"
+msgstr "Isolated drivers for bus systems (NMEA2000; NMEA0183, I2C)"
+
+#: ../../assembling/device.rst:62 ceef3a5e950b49f195d1fac627e15741
+#, fuzzy
+msgid "externe Stromversorgung"
+msgstr "external power supply"
+
+#: ../../assembling/device.rst:63 ee3ca0c6dc95415eaee234db3191a366
+#, fuzzy
+msgid "ESD-Schutzschaltungen"
+msgstr "ESD protection circuits"
+
+#: ../../assembling/device.rst:64 dbb66267597b44ad88f6173eb65938f3
+#, fuzzy
+msgid "USB-C"
+msgstr "USB-C"
+
+#: ../../assembling/device.rst:68 de5751ee735a4dc4bf80d1591c0f8152
+#, fuzzy
+msgid "Abb.: Mainboard Oberseite"
+msgstr "Fig.: Mainboard top"
+
+#: ../../assembling/device.rst:72 661a089eeccb4a6e82da5c84d9c5887b
+#, fuzzy
+msgid "Abb.: Mainboard Unterseite"
+msgstr "Fig.: Mainboard bottom"
+
+#: ../../assembling/device.rst:75 95536892a7f546f8b69405150a3b384b
+#, fuzzy
+msgid "Platinen"
+msgstr "Circuit boards"
+
+#: ../../assembling/device.rst:77 dde309da1ea548ffa763f11ab8f309a4
+#, fuzzy
+msgid ""
+"Die Platinen für das Mainboard und die Hintergrundbeleuchtung wurden als "
+"zweiseitig bestückte SMD-Platine mit Durchkontaktierungen, Stopplack und "
+"Bedruckung ausgeführt."
+msgstr ""
+"The boards for the mainboard and the backlight were designed as double-sided"
+" SMD boards with through-holes, resist coating and printing."
+
+#: ../../assembling/device.rst:81 bd25dab800f042e1ae14c81fb9493591
+#, fuzzy
+msgid "Abb.: Unbestückte Platinen-Oberseite"
+msgstr "Fig.: Unpopulated board top side"
+
+#: ../../assembling/device.rst:85 80244f00c78e487a87813f390aab29f7
+#, fuzzy
+msgid "Abb.: Unbestückte Platinen-Unterseite"
+msgstr "Fig.: Unpopulated board bottom side"
+
+#: ../../assembling/device.rst:88 e1bf6f9fe5e64377a68f5599da4d2bf7
+#, fuzzy
+msgid "Schaltplan und Fertigungsdaten"
+msgstr "Circuit diagram and manufacturing data"
+
+#: ../../assembling/device.rst:90 5f686b76b1094e96b47296a63a4fbcaf
+#, fuzzy
+msgid ""
+"Der Schaltplan und die Platine wurden mit dem Online-Entwicklungstool "
+"EasyEDA erstellt. Nachfolgend sind die Unterlagen für eine Fertigung "
+"aufgeführt."
+msgstr ""
+"The circuit diagram and the circuit board were created using the online "
+"development tool EasyEDA. The documentation for production is listed below."
+
+#: ../../assembling/device.rst:92 f28d12a2a29d414e8e9ea4846c9dcad4
+#, fuzzy
+msgid "`Schaltplan V2.1 [PDF] <../_static/files/Schematic_OBP60_V2.1.pdf>`_"
+msgstr "`Schaltplan V2.1 [PDF] <../_static/files/Schematic_OBP60_V2.1.pdf>`_"
+
+#: ../../assembling/device.rst:93 8b45b49a62c6404a9cb685b86880e01e
+#, fuzzy
+msgid "`Gerber Daten [ZIP] <../_static/files/Gerber_OBP60_V2.1.zip>`_"
+msgstr "`Gerber Daten [ZIP] <../_static/files/Gerber_OBP60_V2.1.zip>`_"
+
+#: ../../assembling/device.rst:94 9405eb7f9d96479fbd9c02cc7966493f
+#, fuzzy
+msgid "`Bauteilliste [TXT] <../_static/files/BOM_OBP60_V2.1.txt>`_"
+msgstr "`Bauteilliste [TXT] <../_static/files/BOM_OBP60_V2.1.txt>`_"
+
+#: ../../assembling/device.rst:95 bcce485076e045218deae48903d84313
+#, fuzzy
+msgid ""
+"`Bestückung [HTML] <../_static/files/ibom_multifunktionsdisplay_V2.1.html>`_"
+msgstr ""
+"`Bestückung [HTML] <../_static/files/ibom_multifunktionsdisplay_V2.1.html>`_"
+
+#: ../../assembling/device.rst:96 988b158505bd488da18fc9edda8d365c
+#, fuzzy
+msgid ""
+"`3D-Daten der Kunststoff-Teile [ZIP] "
+"<../_static/files/OBP60_3D_Parts_V2.1.zip>`_"
+msgstr ""
+"`3D-Daten der Kunststoff-Teile [ZIP] "
+"<../_static/files/OBP60_3D_Parts_V2.1.zip>`_"
+
+#: ../../assembling/device.rst:101 9d138ed4e850439aa3c253c99835684d
+#, fuzzy
+msgid ""
+"Die Fertigungsdaten von Schaltplan, Gerber-Daten und Bauteilliste und die "
+"3D-Daten unterliegen der `Common Creative Lizenz (CC) BY BC SA 4.0`_. Das "
+"OBP60 darf unter Nennung der Urheber nachgebaut oder modifiziert werden. Es "
+"entstehen keinerlei Kosten für eine private Nutzung ohne kommerzielle "
+"Absichten. Eine kommerzielle Verwertung wird durch die Lizenz "
+"ausgeschlossen. Abgeleitete Werke unterliegen der selben Lizenz. Wenn Sie "
+"eine kommerzielle Nutzung des OBP60 beabsichtigen, kontaktieren Sie uns über"
+" das `Kontaktformular`_. Es besteht die Möglichkeit, ein nicht exklusives "
+"Nutzungsrecht über eine kommerzielle Lizenz zu erwerben."
+msgstr ""
+"The manufacturing data of the circuit diagram, Gerber data, and component "
+"list, as well as the 3D data, are subject to the `Common Creative Lizenz "
+"(CC) BY BC SA 4.0`_. The OBP60 may be reproduced or modified provided the "
+"authors are cited. There are no costs for private, non-commercial use. "
+"Commercial exploitation is prohibited by the license. Derivative works are "
+"subject to the same license. If you intend to use the OBP60 commercially, "
+"please contact us via the `Kontaktformular`_. It is possible to acquire a "
+"non-exclusive right of use through a commercial license."
+
+#: ../../assembling/device.rst:107 61ec07911bb14ac486f515256ca09651
+#, fuzzy
+msgid "Schaltungsbeschreibung"
+msgstr "Circuit description"

@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = "OBP60 V2 Dokumentation"
-copyright = "2024, Open Boat Projects"
+copyright = "2025, Open Boat Projects"
 author = "Norbert Walter"
 
 
@@ -87,5 +87,13 @@ html_theme_options = {
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ["_static"]
 
-def setup(app):
-    app.add_stylesheet("my-styles.css")
+# ---- i18n / translation ----
+language = "de"                 # Basis language German
+locale_dirs = ['locale/']       # Path for translations .po/.mo
+gettext_compact = False         # Better file separation
+gettext_uuid = True             # Stable IDs for text (recommended)
+gettext_allow_fuzzy_translations = True # Activate direct translation
+
+# Paths for static files and CSS
+html_static_path = ['_static']          # Need folder /docs/_static
+html_css_files = ['my-styles.css']      # CSS located in /docs/_static/
