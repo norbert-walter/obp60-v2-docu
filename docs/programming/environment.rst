@@ -1,7 +1,7 @@
 Programmierumgebung
 ===================
 
-Als Programmierumgebung für das OBP40 wird das kostenlose Entwicklungstool **Visual Studio Code** in Verbindung mit **PlatformIO** verwendet. Diese Kombination bietet Vorteile gegenüber der Arduino-IDE, da projektbezogen die verwendete Hardware und die Bibliotheken in den richtigen Versionen hinzugelinkt sind und Sie sich um diese Dinge nicht kümmern müssen. Zusätzlich verfügt Visual Studio Code über eine mächtige Querverweisliste, so dass Sie den Code besser verstehen und nachvollziehen können. Intellisense unterstützt Sie bei der korrekten Verwendung von Funktionsaufrufen und Variablen. Über Github können Sie von Visual Studio Code aus auf den aktuellsten Firmware-Code zugreifen und sind damit immer auf dem aktuellsten Stand.
+Als Programmierumgebung für das OBP60 wird das kostenlose Entwicklungstool **Visual Studio Code** in Verbindung mit **PlatformIO** verwendet. Diese Kombination bietet Vorteile gegenüber der Arduino-IDE, da projektbezogen die verwendete Hardware und die Bibliotheken in den richtigen Versionen hinzugelinkt sind und Sie sich um diese Dinge nicht kümmern müssen. Zusätzlich verfügt Visual Studio Code über eine mächtige Querverweisliste, so dass Sie den Code besser verstehen und nachvollziehen können. Intellisense unterstützt Sie bei der korrekten Verwendung von Funktionsaufrufen und Variablen. Über Github können Sie von Visual Studio Code aus auf den aktuellsten Firmware-Code zugreifen und sind damit immer auf dem aktuellsten Stand.
 
 .. image:: ../pics/VSC_Flash_Hardware.png
    :scale: 40%
@@ -32,3 +32,5 @@ Wer an der Weiterentwicklung des Firmware-Codes interessiert ist, sollte Visual 
 Wie man Visual Studio Code installiert und benutzt ist im Kapitel :ref:`Visual Studio Code / PlatformIO` beschrieben.
 
 Wer kleine Änderungen am Code unterwegs unkompliziert vornehmen möchte ohne eine aufwändige Installation von Visual Studio Code und PlatformIO durchzuführen, kann Gitpod benutzen. Gitpod ist vollständig webbasiert. Sie benötigen nur einen aktuellen Webbrowser und können sofort mit der Programmierung beginnen. Der Workplace von Gitpod orientiert sich an Visual Studio Code und enthält alle vorinstallierten Komponenten die Sie zur Softwareentwicklung benötigen. Gitpod eignet sich dahzer hervorragend für Anfänger. Im Kapitel :ref:`Gitpod` ist die Benutzung beschrieben.
+
+Wer alternativ unter Linux gerne auf der Kommandozeile arbeitet, kann auf dem lokalen Rechner  PlatformIO installieren ( wie in https://docs.platformio.org/en/latest/core/installation/methods/index.html beschrieben), per ``git clone`` eine lokale Kopie des jeweiligen Repository erzeugen, und dort per ``pio run`` das Projekt kompilieren. 
