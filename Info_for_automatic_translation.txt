@@ -1,0 +1,40 @@
+Notes for automatic document translation
+########################################
+
+The base document is German and is located in the folder:
+
+/docs
+
+The derived and automatically translated languages ​​are located in the folder:
+
+/docs/locale/en/LCMESSAGES (English)
+
+Additional languages ​​can be translated automatically. To do this, the workflow must be adjusted in the i18n-google.yml file.
+
+/.github/workflows/i18n-google.yml
+
+lang: [en] # Example: [en, fr, es]
+
+For automatic translation into different languages, a Google Translate API Key V2 is required. The API key can be created in the Google Cloud Console. The following settings are required for the API key:
+
+https://console.cloud.google.com
+
+Application restrictions: none
+API restrictions: Restrict the key and make it available for the Cloud Translation API.
+
+It is sufficient to use the basic version of Google Translation, "v2 and v3 general model." This translation tool is the most cost-effective. Details on Google Translate pricing can be found here:
+
+https://cloud.google.com/translate/pricing
+
+The basic model provides 500,000 characters per month free of charge. Any additional translations must be paid for according to the plan. This is perfectly sufficient for simple translations. There should be no additional costs. When setting up the API key, a payment account must be set up, even if you want to use the free quota of 500,000 characters. To avoid unwanted payments, you should use budgets with notifications. This way, you will be notified by email before a cost limit is exceeded. You can also set up quotas for API usage.
+
+The API key is securely stored in GitHub as a secret in a variable. It must be created manually:
+
+Project -> Settings -> Secrets and variables -> Actions
+
+Click the "New repository secret" button and create a new variable:
+
+Name: GOOGLE_API_KEY
+Secret: Your-Google-API-Key
+
+Note! The stored secret will not be transferred when the project is forked. The API key must be set again in the forked project.

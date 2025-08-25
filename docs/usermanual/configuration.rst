@@ -891,8 +891,8 @@ Im OBP60 gibt es insgesamt bis zu 10 Seiten, die man frei auswählen und gestalt
     * **ThreeValue** - Drei Anzeigewerte
     * **FourValue** - Vier Anzeigewerte
     * **FourValue2** - Vier Anzeigewerte (andere Anordnung vertikal/horizontal)
-    * **WindRoseFlex** - Anzeige der Winddaten (alle Anzeigewerte konfigurierbar, erster Wert wird grafisch auf der Windrose dargestellt, die fünf anderen Werte als Zahlen)
-	* **RollPitch** - Grafische Anzeige von Roll und Pitch
+    * **WindRoseFlex** - Anzeige von Windrichtung (grafisch auf einer Windrose) und Windgeschwindigkeit sowie 4 weiteren frei konfigurierbaren Werten. Mit einem Button kann zwischen wahrem und scheinbarem Wind umgeschaltet werden
+    * **RollPitch** - Grafische Anzeige von Roll und Pitch
 
 * Seiten mit festem Inhalt
     * **Voltage** - Anzeige der Bordspannung (**xdrVBat**)

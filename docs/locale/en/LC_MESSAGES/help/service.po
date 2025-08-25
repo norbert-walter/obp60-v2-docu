@@ -1,0 +1,66 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Open Boat Projects
+# This file is distributed under the same license as the OBP60 V2
+# Dokumentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OBP60 V2 Dokumentation\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-08-21 08:07+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../help/service.rst:2 84b2364c549c449e8a8071f4882618c8
+#, fuzzy
+msgid "Service"
+msgstr "Service"
+
+#: ../../help/service.rst:4 93564b33a1fe4012bc6c8c978aad0395
+#, fuzzy
+msgid ""
+"Unser Grundgedanke ist, dass durch die offene Projektbeschreibung und "
+"Dokumentation jeder in die Lage versetzt wird, sich technisch erst einmal "
+"selbst helfen zu können. Neben der Dokumentation, den Projekt-Webseiten und "
+"der Recherche im Internet gibt es viele weitere Informationsquellen zur "
+"Wissensgewinnung. Wir haben darüber hinaus eine starke Community durch das "
+"`Segeln-Forum`_, die Ihnen bei Fragen helfen kann, wenn Sie selbst nicht "
+"weiter wissen. In erster Linie sollten Sie aber versuchen, technische "
+"Probleme selbst zu lösen. In einigen Fällen wird das nicht immer möglich "
+"sein, wenn Sie z.B. nicht über die nötigen Werkzeuge verfügen. "
+"Serviceleistungen für Reparaturen von Hardware können wir in begrenztem "
+"Umfang durch Open Boat Projects ehrenamtlich durchführen. Bedenken Sie aber,"
+" dass diese Arbeit einen Teil unserer Freizeit einnimmt und daher nicht "
+"immer zeitnah erfolgen kann. Und natürlich freuen wir uns in solchen Fällen "
+"auch immer über eine kleine, angemessene Spende, um weitere Projekte für die"
+" Community realisieren zu können."
+msgstr ""
+"Our basic idea is that the open project description and documentation should"
+" enable everyone to help themselves with technical matters. In addition to "
+"the documentation, the project websites, and online research, there are many"
+" other sources of information for gaining knowledge. We also have a strong "
+"community through the `Segeln-Forum`_ that can help you with questions if "
+"you're stuck. First and foremost, however, you should try to solve technical"
+" problems yourself. In some cases, this will not always be possible, for "
+"example, if you don't have the necessary tools. We can provide limited "
+"hardware repair services on a voluntary basis through Open Boat Projects. "
+"Please keep in mind, however, that this work takes up some of our free time "
+"and therefore cannot always be completed promptly. And of course, in such "
+"cases, we are always happy to receive a small, appropriate donation so that "
+"we can realize further projects for the community."
+
+#: ../../help/service.rst:8 f328d78013d04cc1a9ab0f2ab80aa149
+#, fuzzy
+msgid ""
+"Bei Fragen zu einem Hardware-Service verwenden Sie das `Kontaktformular`_."
+msgstr ""
+"For questions about hardware service, please use the `Kontaktformular`_."
