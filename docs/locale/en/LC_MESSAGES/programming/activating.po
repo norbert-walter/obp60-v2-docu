@@ -186,7 +186,7 @@ msgstr "Only with a fork is it possible to save your own code changes."
 #: 26e04ace6b584e04824ea83858134e12 30de6f58ac1548799ca02c1e64391af9
 #, fuzzy
 msgid "Abb.: Fork erstellen"
-msgstr "Fig.: Create a fork"
+msgstr "Fig.: Create fork"
 
 #: ../../programming/activating.rst:44 e3eae403a22549a7b247719ddcbd4f9a
 #, fuzzy
