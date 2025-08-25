@@ -58,7 +58,7 @@ msgid ""
 msgstr ""
 "The buttons are made of black anodized countersunk Allen screws made of "
 "stainless steel (V2A). The buttons are screwed into the front shell of the "
-"housing with a sealant to ensure watertightness."
+"case with a sealant to ensure watertightness."
 
 #: ../../assembling/device.rst:15 ead40585df3e4480abd3c54efb5b6941
 #, fuzzy
