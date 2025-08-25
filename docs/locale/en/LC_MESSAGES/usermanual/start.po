@@ -219,7 +219,7 @@ msgid ""
 "Bei Spannungen höher als 28V wird die interne Sicherung im Gerät ausgelöst."
 msgstr ""
 "The OBP60 can be used in 12V and 24V on-board power systems. Voltages higher"
-" than 28V will trigger the device's internal fuse."
+" than 28V will blow the device's internal fuse."
 
 #: ../../usermanual/start.rst:63 c13fe4a2400a409a9b62f676077bff34
 #, fuzzy
