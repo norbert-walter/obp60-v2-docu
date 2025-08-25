@@ -79,7 +79,7 @@ msgstr "**GPS** - GPS sensor of the OBP60 (position found)"
 #: ../../usermanual/elements.rst:22 39fd6049a2ce406b9ae37a4f9d8b6292
 #, fuzzy
 msgid "Lebenszeichen (pulsierender Punkt)"
-msgstr "Vital sign (pulsating point)"
+msgstr "Sign of life (pulsating point)"
 
 #: ../../usermanual/elements.rst:23 88e410fb1274483b95fc2c4de99ceea7
 #, fuzzy
