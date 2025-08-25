@@ -9,7 +9,7 @@ Letzte Aktualisierung |today|
     
 Frage `ChatGPT`_ über diese Seite
 
-.. _ChatGPT: https://chat.openai.com/?q=Lese%20https://obp60-v2-docu.readthedocs.io/en/latest/index.html%20und%20beantworte%20Fragen%20u&umlber%20den%20Inhalt.
+.. _ChatGPT: https://chat.openai.com/?q=Lese%20https://obp60-v2-docu.readthedocs.io/en/latest/index.html%20und%20beantworte%20Fragen%20u&uml;ber%20den%20Inhalt.
 
 .. note::
    Diese Seiten sind noch in Bearbeitung.
