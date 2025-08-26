@@ -1,0 +1,151 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Open Boat Projects
+# This file is distributed under the same license as the OBP60 V2
+# Dokumentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OBP60 V2 Dokumentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-08-26 14:37+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../usermanual/safety.rst:2 f239cf9702b2444aaf02c601435df1ad
+msgid "Sicherheitshinweise"
+msgstr ""
+
+#: ../../usermanual/safety.rst:5 b2af30cde54648aa94c9543c80bfb058
+msgid "Allgemeine Hinweise"
+msgstr ""
+
+#: ../../usermanual/safety.rst:7 46909fb2ef4046aa989ab0feaff67cbb
+msgid ""
+"Die auf dieser Webseite veröffentlichten Informationen sind im Rahmen "
+"eines Hobbyprojektes entstanden. Das Open-Source-Projekt ist als "
+"Machbarkeitsstudie zu verstehen, die zeigen soll, wie mit begrenzten "
+"Möglichkeiten private Projekte umgesetzt werden können. Die Qualität "
+"hinsichtlich Funktionalität, Sicherheit und Dokumentation ist nicht mit "
+"kommerziellen Produkten vergleichbar. Die Benutzung der Open-Source-"
+"Software und Hardware erfolgt auf eigene Gefahr unter Ausschluss von "
+"Haftungsansprüchen."
+msgstr ""
+
+#: ../../usermanual/safety.rst:10 5fbb102a67f34d0ebfce63f162a0f189
+msgid ""
+"Jedem Interessierten sollte klar sein, dass die Nutzung des hier "
+"vorgestellten Projektes auf eigene Gefahr erfolgt und mit Fehlern und "
+"Störungen zu rechnen ist, die schwerwiegende Konsequenzen haben können. "
+"Führen Sie vor dem Einsatz des OBP60 eine Risikoanalyse durch und treffen"
+" geeignete Maßnahmen, um Schäden und Gefährdung anderer Personen zu "
+"vermeiden."
+msgstr ""
+
+#: ../../usermanual/safety.rst:13 fe955c447af74b45bc3ddc5b9039f914
+msgid ""
+"**NMEA2000** (TM), **NMEA0183** (TM), **SeaTalk** (TM), **SeaSmart** (TM)"
+" sind eingetragene Marken der jeweiligen Markeninhaber. Die Namen werden "
+"auf dieser Seite als Synonym für diese Protokoll-Typen benutzt. Wenn in "
+"den Beschreibungen darauf Bezug genommen wird, so sind Open-Source-"
+"Implementierungen damit gemeint, die nicht in allen Punkten den "
+"Qualitätsanforderungen und Spezifikationen der jeweiligen Markeninhaber "
+"entsprechen. Die Software und Hardware versteht sich als experimentell "
+"zur Wissensgewinnung und sollte nicht mit sicherheitskritischen Systemen "
+"wie z.B. einem Autopiloten verbunden und betrieben werden. Es kann keine "
+"Garantie für die korrekte Implementierung der Protokolle und deren "
+"Funktionssicherheit übernommen werden."
+msgstr ""
+
+#: ../../usermanual/safety.rst:16 4b6597b355ff44dfa02bd34fb16f95a3
+msgid ""
+"Die Integration von Open-Source-Implementierungen in zertifizierte "
+"Bussysteme kann zu Fehlern, Störungen und Totalausfällen führen."
+msgstr ""
+
+#: ../../usermanual/safety.rst:18 8d051b9e75404b9482eff84a01914b91
+msgid ""
+"Bei auftretenden Problemen oder Mängeln bitte wir Sie, uns eine "
+"Information über das `Kontaktformular`_ zukommen zu lassen. So können wir"
+" auf Qualitäts- und Sicherheitsprobleme eingehen und für Abhilfe sorgen."
+msgstr ""
+
+#: ../../usermanual/safety.rst:23 7cca6e45ed1044ff9f509ba1f231376d
+msgid "Sicherheit im WiFi-Netzwerk"
+msgstr ""
+
+#: ../../usermanual/safety.rst:25 428d621af3924259b682499e47e47316
+msgid ""
+"Sie sollten das OBP60 nur mit vertrauenswürdigen WiFi-Netzwerken "
+"verbinden. Es gibt im Gerät nur einen sehr begrenzten Schutz gegen "
+"Netzwerk-Sniffing oder Denial-of-Service-Angriffe. Solange Sie das eigene"
+" autarke WiFi-Netz des OBP60 nutzen, können fremde Personen nicht ohne "
+"weiteres auf das WiFi-Netz des OBP60 zugreifen. Auf diese Weise läuft die"
+" Datenübertragung in Ihrem eigenen WiFi-Netzwerk geschützt. Verbinden Sie"
+" das Gerät niemals ohne eine Firewall direkt mit dem Internet, und "
+"vermeiden Sie direkte Verbindungen zu offenen Hafen-WLANs. Dadurch können"
+" auch fremde Personen auf Ihre Geräte im Netzwerk zugreifen."
+msgstr ""
+
+#: ../../usermanual/safety.rst:28 7e1074ee7fe94aee89ffcc0829416ab7
+msgid ""
+"Sie können die Sicherheit erhöhen, indem Sie einen separaten WiFi- oder "
+"LTE-Router in Ihrem Boot verwenden. Die Router können so eingerichtet "
+"werden, dass Sie ein eigenes WiFi-Netz aufspannen, mit dem alle Geräte an"
+" Bord verbunden sind. Gängige mobile Router verfügen in der Regel über "
+"eine bereits eingeschaltete Firewall, über die Sie Ihr eigenes WiFi-Netz "
+"mit dem Internet verbinden können. Die Firewall verhindert fremden "
+"Zugriff von außen auf Ihre Geräte. So haben alle Geräte in Ihrem Netz "
+"einen gemeinsamen Internet-Zugriff und sind zugleich ausreichend "
+"geschützt."
+msgstr ""
+
+#: ../../usermanual/safety.rst:33 5fba7d4c7c0549eb89b38ca6ea0c89cb
+msgid ""
+"Die Verbindungsqualität von WiFi-Netzwerken hängt maßgeblich von der "
+"Auslastung der Funkkanäle ab, die in Ihrer Umgebung aktuell benutzt "
+"werden, denn Ihr Gerät teilt sich die selben Funkkanälen mit anderen "
+"Teilnehmern anderer WiFi-Netze. Das OBP60 nutzt die Funkkanäle des 2.4 "
+"GHz-Frequenzbandes."
+msgstr ""
+
+#: ../../usermanual/safety.rst:36 c1e54ba23f5f482a9219f6229bd7bb1b
+msgid ""
+"Bei hoher Auslastung wie z.B. in Häfen kann die Verbindungsqualität des "
+"eigenen WiFi-Netzwerks dadurch beeinträchtigt sein. Sie müssen dann mit "
+"Verzögerungen bei der Datenübertragung rechnen, insbesondere, wenn Sie "
+"TCP-Datenverbindungen zum oder vom OBP60 nutzen. Stellen Sie aber auf "
+"alle Fälle sicher, dass in solchen Situationen die Bootsführung nicht "
+"beeinträchtigt wird."
+msgstr ""
+
+#: ../../usermanual/safety.rst:39 f774046e8f2d48d783f77d4880f27e22
+msgid ""
+"Verwenden Sie bei hoher Kanalauslastung Kanäle mit geringer Auslastung. "
+"Die Kanäle 1, 13 und 14 haben nur einen Nachbarkanal und sind deutlich "
+"robuster gegen hohe Auslastung als die anderen Kanäle. Am besten eignet "
+"sich der Kanal 13, da er seltener benutzt wird. In den USA kann auch der "
+"Kanal 14 verwendet werden. Moderne mobile Router bieten häufig eine "
+"Automatik in ihrer Konfiguration an, die die Kanalauswahl optimieren "
+"hilft."
+msgstr ""
+
+#: ../../usermanual/safety.rst:41 7b2f4f0706a14608a4cfa2650b159b11
+msgid ""
+"Bei Änderungen der Konfiguration des OBP60 werden Sie grundsätzlich nach "
+"dem Admin-Passwort gefragt. Die Übertragung des Passwortes erfolgt dabei "
+"immer verschlüsselt. Wenn Sie jedoch das Passwort für den WLAN-"
+"Zugangspunkt oder das WiFi-Client-Passwort ändern, wird es im Klartext "
+"gesendet. Wenn Sie das ``Remember me`` für das Admin-Passwort aktivieren,"
+" wird es im Klartext in Ihrem Browser gespeichert. Um es von dort zu "
+"entfernen, verwenden Sie ``Forget Password``."
+msgstr ""
+

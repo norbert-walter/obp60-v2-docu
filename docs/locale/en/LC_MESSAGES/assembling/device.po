@@ -1,0 +1,379 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Open Boat Projects
+# This file is distributed under the same license as the OBP60 V2
+# Dokumentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OBP60 V2 Dokumentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-08-26 14:37+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../assembling/device.rst:2 83b5d4fc212548d387c7fb1fc03a9ede
+msgid "Geräteaufbau"
+msgstr ""
+
+#: ../../assembling/device.rst:5 e680343716a44569aed4a797c379dec0
+msgid "Mechanischer Aufbau"
+msgstr ""
+
+#: ../../assembling/device.rst:9 d25b0ba49e464dd58fb9e3c27b500cc5
+msgid "Abb.: Explosionsansicht"
+msgstr ""
+
+#: ../../assembling/device.rst:11 80e0bce45dd44ec1b0244850b15a3214
+msgid ""
+"In der oberen Abbildung ist der Aufbau des OBP60 zu sehen. Das Gerät "
+"besteht aus einzelnen Komponenten, die im folgenden beschrieben werden."
+msgstr ""
+
+#: ../../assembling/device.rst:13 a925b58f5e5f428888e8bc57ea3558c7
+msgid "**Touch Pads**"
+msgstr ""
+
+#: ../../assembling/device.rst:14 8d7d06e81f9842008b71070878ff6647
+msgid ""
+"Die Tasten bestehen aus schwarz eloxierten Inbus-Senkschrauben aus "
+"Edelstahl (V2A). Die Tasten werden mit einem Dichtmittel in die "
+"Frontschale des Gehäuses eingeschraubt, um Wasserdichtigkeit zu "
+"erreichen."
+msgstr ""
+
+#: ../../assembling/device.rst:15 56c050692f8c4d06a63248602851e9d3
+msgid "**Springs**"
+msgstr ""
+
+#: ../../assembling/device.rst:16 f2eddb0f9d484ac690b0ed87a44df06e
+msgid ""
+"Die Federn hinter den Tasten dienen der elektrischen Kontaktierung der "
+"Tasten mit den Sensorflächen auf der Platine."
+msgstr ""
+
+#: ../../assembling/device.rst:17 ff534a7a76a34af3a250fbba66136f57
+msgid "**Front Case**"
+msgstr ""
+
+#: ../../assembling/device.rst:18 9c04241cf11f42f38861fc2e93f7a58c
+msgid ""
+"Die Frontschale des Gehäuses nimmt die Tasten auf und enthält die "
+"eingeklebte Frontscheibe. Die Außenflächen der Frontschale bestehen aus 2"
+" mm dickem Kunststoff. An einigen Stellen ist das Gehäuse hohl und "
+"enthält an den Stellen eine Stützstruktur mit einem Füllgrad von 30%. Das"
+" Gehäuse ist als Kastenkonstruktion ausgeführt und dadurch "
+"verwindungssteif."
+msgstr ""
+
+#: ../../assembling/device.rst:19 7c53e51e1b324057853dea961438c95e
+msgid "**Brass Inlets**"
+msgstr ""
+
+#: ../../assembling/device.rst:20 885c8fae2d7047d9abb19b0c8d76e2d4
+msgid ""
+"Die Messing-Gewindeeinsätze dienen zur Verstärkung der Gewinde für die "
+"Gehäuseschrauben, da der Kunststoff keine ausreichende Festigkeit "
+"aufweist, um den nötigen Druck zum Anpressen der Gehäusedichtung "
+"aufzubringen. Die Messing-Gewindeeinsätze werden thermisch in den "
+"Kunststoff eingeschmolzen und sind gegen eine ungewollte Verdrehung im "
+"Kunststoff gesichert."
+msgstr ""
+
+#: ../../assembling/device.rst:21 ../../assembling/device.rst:31
+#: 2a4e9eb56b894782afdb4c92e5f10681 fc5c85fa4711490b8a6b1d3ece2f0294
+msgid "**Glue Film**"
+msgstr ""
+
+#: ../../assembling/device.rst:22 4d2629480cf14ab88e371c07c9c9d744
+msgid ""
+"Der Klebefilm wird auf die Frontscheibe aufgetragen und dient zur "
+"wasserdichten Befestigung der Frontscheibe an der Innenseite des "
+"Gehäuses."
+msgstr ""
+
+#: ../../assembling/device.rst:23 1ceac01f4a9741bda18f7a93eed42f10
+msgid "**Front Glass**"
+msgstr ""
+
+#: ../../assembling/device.rst:24 e07c9eaa5e1a49cd8a405f620016bce1
+msgid ""
+"Die Frontscheibe aus 3 mm dickem Plexiglas schützt das Display vor "
+"Umwelteinflüssen und vor mechanischen Beschädigungen durch harte Schläge."
+" Die Frontscheibe dient zusätzlich als UV-Filter mit hoher Filterwirkung."
+" Die Außenseite der Frontscheibe ist entspiegelt und verhindert direkte "
+"Reflexionen des Sonnenlichts. Eine Besonderheit der Frontscheibe ist ihre"
+" Fähigkeit, das e-Paper-Display bei Nacht zu beleuchten. Dazu koppeln an "
+"der oberen Stirnseite der Scheibe 6 RGB-LEDs Licht in die "
+"Plexiglasscheibe ein. Das Licht der LEDs wird an Streukörpern innerhalb "
+"des Plexiglases auf das e-Paper-Display umgelenkt. Die Ausleuchtung des "
+"Displays erfolgt daher gleichmäßig über die gesamte Displayfläche."
+msgstr ""
+
+#: ../../assembling/device.rst:25 e9b1a062bca54b5abd8d3e944c97da5e
+msgid "**Filter**"
+msgstr ""
+
+#: ../../assembling/device.rst:26 1bded09fff4647c5abb8c41931b0ff86
+msgid ""
+"Eine IR-Filterfolie wird zusätzlich auf der Rückseite der Frontscheibe "
+"aufgebracht und soll die Infrarotstrahlung des Sonnenlichtes reduzieren "
+"und vom e-Paper-Display fernhalten. Die Infrarotstrahlung wird in der "
+"Filterfolie absorbiert und an die Frontscheibe abgegeben, denn bei "
+"maximaler Sonenneinstrahlung treffen bis zu 10 W an Wärmestrahlung auf "
+"das Display."
+msgstr ""
+
+#: ../../assembling/device.rst:27 95394e6ee8424dc6ab38e9123e9edbcb
+msgid "**Display Frame**"
+msgstr ""
+
+#: ../../assembling/device.rst:28 cc22d4ebdd0a45a5889a4585ab68d651
+msgid ""
+"Der Displayrahmen ist eine Art Maske und verdeckt unerwünschte Bereiche "
+"des Displays. Zusätzlich ist ein kleiner Steg angebracht, um das Licht "
+"der Hintergrundbeleuchtung gegenüber dem Display abzuschirmen, damit kein"
+" Fremdlicht in die Glasscheibe des e-Paper-Displays eingekoppelt wird."
+msgstr ""
+
+#: ../../assembling/device.rst:29 8869d4c41e0b4232ac216946f0dcdf16
+msgid "**Display**"
+msgstr ""
+
+#: ../../assembling/device.rst:30 7abb581bb73d47659eff9c7be4d179f3
+msgid ""
+"Das Display ist ein e-Paper-Display, das Scharz/Weiß und 4 Graustufen "
+"abbilden kann. Die Auflösung des Displays beträgt 400 x 300 Pixel. Die "
+"Pixeldichte auf die Anzeigefläche bezogen liegt bei 120 dpi. E-Paper-"
+"Displays benötigen nur bei der Ansteuerung neuer Bildinhalte Energie. Im "
+"ausgeschalteten Zustand bleibt der Bildinhalt sichtbar. Damit ist diese "
+"Bildschirm-Technologie sehr energiesparend."
+msgstr ""
+
+#: ../../assembling/device.rst:32 c0f2a6e8895e489cb8006978864a0c04
+msgid ""
+"Der Klebefilm hinter dem Display dient zur Befestigung des Displays auf "
+"dem Displayhalter."
+msgstr ""
+
+#: ../../assembling/device.rst:33 b02fd57c139e455895d2520a95d9062f
+msgid "**Display Holder**"
+msgstr ""
+
+#: ../../assembling/device.rst:34 28d782ae8b2c48539df608bf5ff7eb78
+msgid ""
+"Der Displayhalter trägt das e-Paper-Display und verhindert ein Verwinden "
+"des Displays. Das e-Paper-Display ist sehr empfindlich, denn es besteht "
+"aus zwei Glassubstraten mit einer Gesamtdicke von nur 0,7 mm. Über den "
+"Displayhalter wird das Display mittels Schrauben mit dem Mainboard "
+"verbunden."
+msgstr ""
+
+#: ../../assembling/device.rst:35 d0073501725d4c77902eb88fd8c113c8
+msgid "**Main Board**"
+msgstr ""
+
+#: ../../assembling/device.rst:36 1401e86cc6664515914f5d598a0a84e0
+msgid ""
+"Das Mainboard enthält alle elektronischen Komponenten auf einer "
+"zweiseitigen Platine. An der Oberseite des Mainboards ist die LED-Platine"
+" für die Hintergrundbeleuchtung angebracht."
+msgstr ""
+
+#: ../../assembling/device.rst:37 0fa8008bfd5b44029eadb97fcbc59655
+msgid "**Case Seal**"
+msgstr ""
+
+#: ../../assembling/device.rst:38 6427221dd444447a9faa792638ceb3b7
+msgid ""
+"Die Gehäusedichtung stellt eine wasserdichte Verbindung zwischen der "
+"Front- und Rückschale her. Die Dichtung ist dabei als 1 mm dicke "
+"Flächendichtung ausgeführt."
+msgstr ""
+
+#: ../../assembling/device.rst:39 834c1095162246b7af596fbb6f87faa0
+msgid "**Backside Case**"
+msgstr ""
+
+#: ../../assembling/device.rst:40 adcd321b777f430faa470803299995fd
+msgid ""
+"Die Gehäuserückschale schließt die Rückseite des Gehäuses ab. Sie ist als"
+" verwindungssteife Kastenkonstruktion wie die Frontschale ausgeführt."
+msgstr ""
+
+#: ../../assembling/device.rst:41 c7506ee8db6a472e9f33adb827655e00
+msgid "**Backside Seal**"
+msgstr ""
+
+#: ../../assembling/device.rst:42 e86e384477914d2295219e69b02cafba
+msgid ""
+"Die Rückwanddichtung dichtet das Gehäuse gegenüber der Einbauöffnung ab. "
+"Die Dichtung besteht aus 2 mm dickem Neoprenmaterial. Damit lassen sich "
+"kleine Unebenheiten und leichte Krümmungen überbrücken."
+msgstr ""
+
+#: ../../assembling/device.rst:43 d6c3a16d61b44993b173e2f49ee660ba
+msgid "**Connectors**"
+msgstr ""
+
+#: ../../assembling/device.rst:44 4b5b3bcd04104cb29dd173a4fcf8f301
+msgid ""
+"Für eine einfachen Montage sind an der Rückseite des Gerätes abnehmbare "
+"Steckverbinder angebracht. Über die Steckverbinder mit "
+"Schraubverbindungen kann das Gerät mit Strom versorgt und an die "
+"Bussysteme angeschlossen werden."
+msgstr ""
+
+#: ../../assembling/device.rst:47 16ab3e2bac5741c2b93701987d3b8369
+msgid "Main Board"
+msgstr ""
+
+#: ../../assembling/device.rst:49 47c54a2f130643988dc5002d14c9ea90
+msgid ""
+"Das Mainboard enthält alle elektrischen und elektronischen Komponenten "
+"wie:"
+msgstr ""
+
+#: ../../assembling/device.rst:51 ca5b797016c744718f23f5deb46d59f7
+msgid "Dual Core CPU ESP32-S3"
+msgstr ""
+
+#: ../../assembling/device.rst:52 040cfdb1477a424d8bc7c085aeaa1fcc
+msgid "Stromversorgung"
+msgstr ""
+
+#: ../../assembling/device.rst:53 dec1d25a55754266a915b94002ecdc6b
+msgid "Display-Ansteuerung"
+msgstr ""
+
+#: ../../assembling/device.rst:54 caf09dfd54ab4dcabf4540ba8de4c3f6
+msgid "Sensortasten"
+msgstr ""
+
+#: ../../assembling/device.rst:55 6ca418d3839146c6a7c0c3cec036f8c5
+msgid "GPS-Empfänger"
+msgstr ""
+
+#: ../../assembling/device.rst:56 e4d6c9fd129741f794f5a11480dcc601
+msgid "RTC Echtzeituhr"
+msgstr ""
+
+#: ../../assembling/device.rst:57 082890a36a154c998191d2ea43c27629
+msgid "Backup-Batterie"
+msgstr ""
+
+#: ../../assembling/device.rst:58 b537d8aaf842448697f3fbda6c8c00ec
+msgid "Buzzer"
+msgstr ""
+
+#: ../../assembling/device.rst:59 c2f289d3e1374fa4a4b9597e9fcd7c24
+msgid "Flash-LED"
+msgstr ""
+
+#: ../../assembling/device.rst:60 59506aebef844409bb7b51630dbaf27e
+msgid "Hintergrundbeleuchtung"
+msgstr ""
+
+#: ../../assembling/device.rst:61 6ba409612d5c4a15a3f403e020e4b29f
+msgid "Isolierte Treiber für Bussysteme (NMEA2000; NMEA0183, I2C)"
+msgstr ""
+
+#: ../../assembling/device.rst:62 df3dd9caba7b4195a0823d6455340ee9
+msgid "externe Stromversorgung"
+msgstr ""
+
+#: ../../assembling/device.rst:63 3cd633b8f10b419e8710900f271f465f
+msgid "ESD-Schutzschaltungen"
+msgstr ""
+
+#: ../../assembling/device.rst:64 3214267acf924619bd550d6c659befdf
+msgid "USB-C"
+msgstr ""
+
+#: ../../assembling/device.rst:68 036512eff07a40aa9c69e004cf6084ed
+msgid "Abb.: Mainboard Oberseite"
+msgstr ""
+
+#: ../../assembling/device.rst:72 2903f4706a144565ad8b07ac0ada0958
+msgid "Abb.: Mainboard Unterseite"
+msgstr ""
+
+#: ../../assembling/device.rst:75 43643f8e986c4a37a382a671eb913e78
+msgid "Platinen"
+msgstr ""
+
+#: ../../assembling/device.rst:77 f9ea8ae43d4042da87dde2923ee11daf
+msgid ""
+"Die Platinen für das Mainboard und die Hintergrundbeleuchtung wurden als "
+"zweiseitig bestückte SMD-Platine mit Durchkontaktierungen, Stopplack und "
+"Bedruckung ausgeführt."
+msgstr ""
+
+#: ../../assembling/device.rst:81 f956d784287f42e0a7a2d40f84968f7c
+msgid "Abb.: Unbestückte Platinen-Oberseite"
+msgstr ""
+
+#: ../../assembling/device.rst:85 4583cde7801943c2a5696edb4740c6f9
+msgid "Abb.: Unbestückte Platinen-Unterseite"
+msgstr ""
+
+#: ../../assembling/device.rst:88 c6797c66b8ac421dbbf1efb9f0ef23cf
+msgid "Schaltplan und Fertigungsdaten"
+msgstr ""
+
+#: ../../assembling/device.rst:90 897d5ac0075043cc9d0876eff1ceb244
+msgid ""
+"Der Schaltplan und die Platine wurden mit dem Online-Entwicklungstool "
+"EasyEDA erstellt. Nachfolgend sind die Unterlagen für eine Fertigung "
+"aufgeführt."
+msgstr ""
+
+#: ../../assembling/device.rst:92 abcfe7b8dd1740f88dc5a84b50797297
+msgid "`Schaltplan V2.1 [PDF] <../_static/files/Schematic_OBP60_V2.1.pdf>`_"
+msgstr ""
+
+#: ../../assembling/device.rst:93 036cbd690e7f44c5b945d40a305be144
+msgid "`Gerber Daten [ZIP] <../_static/files/Gerber_OBP60_V2.1.zip>`_"
+msgstr ""
+
+#: ../../assembling/device.rst:94 61d484da45564d1dbcbec7e5434dc9aa
+msgid "`Bauteilliste [TXT] <../_static/files/BOM_OBP60_V2.1.txt>`_"
+msgstr ""
+
+#: ../../assembling/device.rst:95 ed4ec4ba79774b01af6d6d2d9ec1142e
+msgid ""
+"`Bestückung [HTML] "
+"<../_static/files/ibom_multifunktionsdisplay_V2.1.html>`_"
+msgstr ""
+
+#: ../../assembling/device.rst:96 232ce786e3854678a1fdc54d80a57ba4
+msgid ""
+"`3D-Daten der Kunststoff-Teile [ZIP] "
+"<../_static/files/OBP60_3D_Parts_V2.1.zip>`_"
+msgstr ""
+
+#: ../../assembling/device.rst:101 e95b0ded00054a77b534b2976cbe642d
+msgid ""
+"Die Fertigungsdaten von Schaltplan, Gerber-Daten und Bauteilliste und die"
+" 3D-Daten unterliegen der `Common Creative Lizenz (CC) BY BC SA 4.0`_. "
+"Das OBP60 darf unter Nennung der Urheber nachgebaut oder modifiziert "
+"werden. Es entstehen keinerlei Kosten für eine private Nutzung ohne "
+"kommerzielle Absichten. Eine kommerzielle Verwertung wird durch die "
+"Lizenz ausgeschlossen. Abgeleitete Werke unterliegen der selben Lizenz. "
+"Wenn Sie eine kommerzielle Nutzung des OBP60 beabsichtigen, kontaktieren "
+"Sie uns über das `Kontaktformular`_. Es besteht die Möglichkeit, ein "
+"nicht exklusives Nutzungsrecht über eine kommerzielle Lizenz zu erwerben."
+msgstr ""
+
+#: ../../assembling/device.rst:107 91aa033505b140f7a11e47c4510222a8
+msgid "Schaltungsbeschreibung"
+msgstr ""
+

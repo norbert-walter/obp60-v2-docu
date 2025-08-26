@@ -1,0 +1,189 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Open Boat Projects
+# This file is distributed under the same license as the OBP60 V2
+# Dokumentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OBP60 V2 Dokumentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-08-26 14:37+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../index.rst:23
+msgid "Historie"
+msgstr ""
+
+#: ../../index.rst:23
+msgid "Technische Daten"
+msgstr ""
+
+#: ../../index.rst:23
+msgid "Einführung"
+msgstr ""
+
+#: ../../index.rst:31
+msgid "Funktionsweise"
+msgstr ""
+
+#: ../../index.rst:31
+msgid "Bedienelemente"
+msgstr ""
+
+#: ../../index.rst:31
+msgid "Inbetriebnahme"
+msgstr ""
+
+#: ../../index.rst:31
+msgid "Konfiguration"
+msgstr ""
+
+#: ../../index.rst:31
+msgid "Bussysteme"
+msgstr ""
+
+#: ../../index.rst:31
+msgid "Datenaustausch"
+msgstr ""
+
+#: ../../index.rst:31
+msgid "Erweiterte Sensorik"
+msgstr ""
+
+#: ../../index.rst:31
+msgid "Beispielkonfiguration"
+msgstr ""
+
+#: ../../index.rst:31
+msgid "Sicherheitshinweise"
+msgstr ""
+
+#: ../../index.rst:31
+msgid "Bedienung"
+msgstr ""
+
+#: ../../index.rst:46
+msgid "Geräteaufbau"
+msgstr ""
+
+#: ../../index.rst:46
+msgid "Vorbereitung"
+msgstr ""
+
+#: ../../index.rst:46
+msgid "Bauteilliste"
+msgstr ""
+
+#: ../../index.rst:46
+msgid "Durchführung"
+msgstr ""
+
+#: ../../index.rst:46
+msgid "Funktionstest"
+msgstr ""
+
+#: ../../index.rst:46
+msgid "Zusammenbau"
+msgstr ""
+
+#: ../../index.rst:57
+msgid "Programmierumgebung"
+msgstr ""
+
+#: ../../index.rst:57
+msgid "Seitenerstellung"
+msgstr ""
+
+#: ../../index.rst:57
+msgid "Kompilieren und Download"
+msgstr ""
+
+#: ../../index.rst:57
+msgid "Web-Flashtool"
+msgstr ""
+
+#: ../../index.rst:57
+msgid "Programmierung"
+msgstr ""
+
+#: ../../index.rst:67
+msgid "Fragen und Antworten"
+msgstr ""
+
+#: ../../index.rst:67
+msgid "Meinungen und Tipps"
+msgstr ""
+
+#: ../../index.rst:67
+msgid "Bekannte Fehler"
+msgstr ""
+
+#: ../../index.rst:67
+msgid "Technische Unterstützung"
+msgstr ""
+
+#: ../../index.rst:67
+msgid "Service"
+msgstr ""
+
+#: ../../index.rst:67
+msgid "Mitarbeit"
+msgstr ""
+
+#: ../../index.rst:67
+msgid "Spenden"
+msgstr ""
+
+#: ../../index.rst:67
+msgid "Glossar"
+msgstr ""
+
+#: ../../index.rst:67
+msgid "Hilfe"
+msgstr ""
+
+#: ../../index.rst:3 fce35fa86acc4788826d22f20d8f4be3
+msgid "OBP60 V2 Dokumentation"
+msgstr ""
+
+#: ../../index.rst:4 b4d26413238a415a8f2533891235cb67
+msgid "Letzte Aktualisierung |today|"
+msgstr ""
+
+#: ../../index.rst:6 0c36811b78494c1f82550dc5c78f0f92
+msgid "Documentation Status"
+msgstr ""
+
+#: ../../index.rst:10 bb61d68a196647058e23e7b9f11e192c
+msgid "Frage `ChatGPT`_ über diese Seite"
+msgstr ""
+
+#: ../../index.rst:15 5f1a0355dc264278bfd90a4a08cb29fd
+msgid "Diese Seiten sind noch in Bearbeitung."
+msgstr ""
+
+#: ../../index.rst:21 ca38aee2c82f469d83a95cfe4ada2760
+msgid ""
+"Das Multifunktionsdisplay OBP60 dient zur Anzeige von Daten aus Boots-"
+"Netzen wie NMEA0183, NMEA2000. Darüber hinaus können Daten aus dem 1Wire-"
+"Bus und dem I2C-Bus ausgelesen werden. Das OBP60 enthält ein Gateway, das"
+" Daten bidirektional zwischen NMEA0183 und NMEA2000 austauschen kann. "
+"Über WiFi lassen sich die Daten importieren oder exportieren und können "
+"auf anderen Geräten oder in Drittanbietersoftware verwendet werden. Die "
+"Konfiguration erfolgt über eine Webseite. Darüber lassen sich "
+"vordefinierte Anzeigeseiten auswählen, und es können dessen "
+"Anzeigeinhalte festgelegt werden. Das OBP60 basiert auf Open Hardware, "
+"Open Software und Open Data. Das Gerät lässt sich durch die Offenheit an "
+"beliebige Anforderungen über die Software anpassen."
+msgstr ""
+

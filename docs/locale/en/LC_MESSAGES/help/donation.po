@@ -1,0 +1,62 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Open Boat Projects
+# This file is distributed under the same license as the OBP60 V2
+# Dokumentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OBP60 V2 Dokumentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-08-26 14:37+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../help/donation.rst:2 19c45804209a4c5aaec7158948a4199e
+msgid "Spenden"
+msgstr ""
+
+#: ../../help/donation.rst:4 6ab79a4e7390428a81214430e587e017
+msgid ""
+"Wenn diese Dokumentation für Sie hilfreich war, würden wir uns freuen, "
+"wenn Sie uns mit einer Spende unterstützen. Wir haben sehr viel "
+"ehrenamtliche Arbeit und Energie in das Projekt gesteckt, um es in einer "
+"qualitativ hochwertigen Form anbieten zu können. Ihre Spende ist eine "
+"Wertschätzung unserer Arbeit gegenüber. Wir sehen uns in der "
+"Verpflichtung, den Prinzipien von Open Source, Open Hardware und Open "
+"Data zu folgen. Wir stellen daher unser Wissen der Allgemeinheit "
+"kostenlos zur Verfügung. Mit Ihrer Hilfe können wir weitere interessante "
+"Projekte veröffentlichen. Sie tragen auch dazu bei, dass diese Seite "
+"weiterhin der Allgemeinheit kostenlos zur Verfügung steht."
+msgstr ""
+
+#: ../../help/donation.rst:6 5220fa823c094be0b82b5f2105478b3c
+msgid "|IMG|_"
+msgstr ""
+
+#: ../../help/donation.rst:8 0cf134c761db4e9babbddeb81727229f
+msgid "IMG"
+msgstr ""
+
+#: ../../help/donation.rst:13 020b29af29484aafb1060b481405b0e7
+msgid ""
+"Wenn Sie mehr erfahren wollen, was wir mit Ihren Spenden machen, dann "
+"schauen Sie sich folgende Links an:"
+msgstr ""
+
+#: ../../help/donation.rst:15 76194ed7ec0f4c9985256819b1b4f45b
+msgid "https://open-boat-projects.org/sponsors/"
+msgstr ""
+
+#: ../../help/donation.rst:16 3cef6ea7b09d4ca29c639f9c5207417c
+msgid "https://open-boat-projects.org/de/boot-2023/"
+msgstr ""
+

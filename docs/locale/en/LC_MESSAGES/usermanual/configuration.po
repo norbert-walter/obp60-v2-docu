@@ -1,0 +1,4236 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Open Boat Projects
+# This file is distributed under the same license as the OBP60 V2
+# Dokumentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OBP60 V2 Dokumentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-08-26 14:37+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../usermanual/configuration.rst:2 8de3a78690374a07af90f4c203986ff3
+msgid "Konfiguration"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:4 1c6f55e70c3940fbb71c4fac7d491caa
+msgid ""
+"Um das OBP60 konfigurieren zu können, muss das Gerät in Betrieb sein. "
+"Schalten Sie dazu die Stromversorgung ein, die Firmware des OBP60 startet"
+" nun. Nach Abschluss der Initialisierungsphase ertönt ein Piepton. Im "
+"Display wird zuerst das Open Boat Projects-Logo angezeigt, gefolgt von "
+"einem QR-Code, der die Zugangsdaten zum Access Point des OBP60 anzeigt. "
+"Beide Bilder sind für einige Sekunden sichtbar. Sie können mit Ihrer "
+"Handy-Kamera den QR-Code scannen und sich mit diesen Daten in das WiFi-"
+"Netz des OBP60 einloggen."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:9 95086e0285e14fcc84a3a82a5d2119e2
+msgid "Abb.: Startbildschirm mit OBP-Logo"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:14 288867fc88104e8ba0d70e942a178efa
+msgid "Abb.: QR-Code für WiFi-Zugang"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:16 8920b4e2b384478197d3aecc19eba497
+msgid ""
+"Ab Android 10 öffnen Sie dazu die Wifi-Einstellungen und lassen sich alle"
+" WiFi-Netzwerke der Umgebung anzeigen. Am Ende der Liste finden Sie unter"
+" **Netzwerk hinzufügen** rechts ein kleines, blaues QR-Symbol. Wenn Sie "
+"das Symbol anklicken, öffnet sich ein Fenster zum Scannen das QR-Codes. "
+"Nach einem erfolgreichen Scan bucht sich das Gerät selbständig in das "
+"WiFi-Netzwerk ein. Sie müssen keine Eingaben zur SSID oder zum Passwort "
+"vornehmen. Für ältere Android-Versionen gibt es Scanner-Apps, die eine "
+"ähnliche Funktionalität aufweisen."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:21 a0f87759f90d4c05bfcf36d69455cc59
+msgid "Abb.: WLAN Settings unter Android 11"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:24 17c92ab84baf4fe2b4209abe9c238976
+msgid ""
+"Sollte das Einbuchen in das WiFi-Netzwerk des OBP60 per QR-Code nicht "
+"funktionieren, können Sie die Konfiguration auch manuell vornehmen. "
+"Verwenden Sie dazu die folgenden Zugangsdaten:"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:26 3c96f1d97e944a519347d8ac5cea94a1
+msgid "**SSID:** OBP60V2"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:27 0dc317cefea647238997fcd08a71857b
+msgid "**Passwort:** esp32nmea2k"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:29 d4993af11e36458899f9e34ee75637e1
+msgid ""
+"Nachdem Ihr Endgerät im WiFi-Netzwerk eingebucht ist, öffnen Sie in einem"
+" Web-Browser die Adresse **OBP60V2.local** oder die IP-Adresse "
+"**192.168.15.1**. Sie gelangen so auf die Benutzeroberfläche des OPB60 "
+"und können den aktuellen Status des Geräts überprüfen. Auf der "
+"Benutzeroberfläche befinden sich Tabs, mit denen verschiedene Bereiche "
+"der Konfiguration ausgewählt werden können:"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:31 321b1f96200541268b38979126fb6a47
+msgid "**Status** - Statusanzeige mit Übersicht der Bussysteme"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:32 7d83ec5cd7424641861916e41e1ff9bd
+msgid "**Config** - Allgemeine Konfigurationsseite"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:33 b21a3149a8674919814fb7e2f891e27a
+msgid "**XDR** - Konfigurationsseite für NMEA0183-XDR-Sentences"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:34 0b52f96832c14f1daf3aa676212ce33c
+msgid "**Data** - Dashboard zur Datenanzeige"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:35 2aba7571f9a54d5790ab95bd93dff124
+msgid "**Update** - Seite zum Firmware-Update"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:36 906f31c0ed6e46e79e5031a55fc5a210
+msgid "**Help** - Aufruf der Github-Projektseite"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:39 857ec50747e449598953d71f54bca868
+msgid ""
+"Beachten Sie, dass beim erstmaligen Aufruf der Konfigurationsoberfläche "
+"kein Passwort beim Speichern der Konfiguration notwendig ist. Als "
+"**Default-Passwort** wird **esp32admin** verwendet. Sie können auch ein "
+"eigenes Passwort eintragen. Verwenden Sie dabei nur Zeichen des ASCII-"
+"Zeichensatzes. Die Passwortabfrage kann zudem deaktiviert werden."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:42 dacb107a08e54eb59c37a3c0a960f43b
+msgid "Status"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:44 ff9e5e169dc942478fb0657fa9ca525a
+msgid ""
+"Auf der Statusseite sieht man im oberen Bereich den WiFi-"
+"Verbindungsstatus."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:49 827f5fecfce04bb589816511250d5238
+msgid "Die Informationen haben folgende Bedeutung:"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:51 4a8683afb4ba4bc1b2eca33e9641b1bd
+msgid "**Version**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:52 2649a291439a4e2c814edcc0f037fd18
+msgid "Aktuelle Firmware-Version"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:53 cc66a96946fd48c9820de9c46dfd69a1
+msgid "**Access Point IP**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:54 69cc908ca75b4585b42913db17cb3cba
+msgid "IP-Adresse des Access Points"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:55 07c5e78324f2400ea7e941d8f8d06c02
+msgid "**WiFi Client connected**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:56 2ec777c4c5fa4ea1bc7fb67b7bac7afd
+msgid ""
+"Zeigt an, ob das OBP60 mit einem anderen externen WiFi-Netzwerk als "
+"Client verbunden ist"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:57 788f1be1367d49f195d6cc1e769bd693
+msgid "**WiFi Client IP**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:58 707d13d5841744278f67015cc57400d8
+msgid "IP-Adresse, die dem OBP60 zugewiesen wurde"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:59 e453f3aeb3c848f89d0a9652fcc7df4e
+msgid "**#clients**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:60 e23888ca19fd4705aef5884a92f08b2a
+msgid "Anzahl der Clients, die sich mit dem OBP60 verbunden haben"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:61 74bea55c75e84fb0849c7cf7e1d8b2f9
+msgid "**TCP client connected**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:62 b5eba6d071e54537a42e34a25812ecc7
+msgid ""
+"Hier wird der Verbindungsstatus des OBP60 angezeigt. false = OBP60 ist "
+"nicht als TCP-Client mit einem anderen Gerät verbunden. true = OBP60 ist "
+"als TCP-Client mit einem anderen Gerät verbunden."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:63 7480f21a95534f49b2da0aecf0d38bcf
+msgid "**TCP client error**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:64 9dac5267d8214e7895428f48f1c665cb
+msgid ""
+"Hier wird der Fehlerstatus des OBP60 für TCP-Client-Verbindungen "
+"angezeigt."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:65 e6d6b55959e44c4198c6dcd01a946e8d
+msgid "**Free heap**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:66 19456da6b7aa45c495d1411a1034af86
+msgid ""
+"Anzeige des freien Heap-Speichers in Byte. Der Heap-Speicher wird zur "
+"Verarbeitung von Informationen benötigt und darf nicht zu klein werden. "
+"Die Speichergröße ändert sich dynamisch je nach Auslastung der CPU. Der "
+"Wert kann zur Diagnose verwendet werden."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:67 84b279bf376440c89f095c40d1f409dd
+msgid "**NMEA2000 State**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:68 3469947153084072bd027f611fcd8c4d
+msgid "Anzeige des Status des NMEA2000-Busses."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:69 4c079b907b9649438abb52c1053abe1c
+msgid "**NMEA2000 in**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:70 76f94d5a32de4dce95b23faf4a87da96
+msgid "Anzahl der NMEA2000-Telegramme, die empfangen wurden"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:71 ../../usermanual/configuration.rst:191
+#: 496b809e3ccb441587b99bc6b0376bda a8582e4ff5134ef3b8ac22a0f325861a
+msgid "**NMEA2000 out**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:72 f7280675a10b4673a326740180e4ab7b
+msgid "Anzahl der NMEA2000-Telegramme, die gesendet wurden"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:73 6ca29ece895949358eafa48b8b4638a3
+msgid "**TCP in**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:74 e4be21e2a77d460b90dc301c5013f7dd
+msgid "Anzahl der NMEA0183-Telegramme, die über TCP empfangen wurden"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:75 b1f7b18c03f047ebbcc99f229df06344
+msgid "**TCP out**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:76 3b83a4717b88497984fc35b93a2d91bd
+msgid "Anzahl der NMEA0183-Telegramme, die über TCP gesendet wurden"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:77 5ed1817dbfb0407eaa3b04d6ce0b165e
+msgid "**USB in**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:78 5c48a44eb5dd4d78afc149823ac79518
+msgid "Anzahl der NMEA0183-Telegramme, die über USB empfangen wurden"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:79 437e1b0bdd31440590855ff3a5f0b1ae
+msgid "**USB out**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:80 3abb40b92ee74b13835781b0b3a1bf10
+msgid "Anzahl der NMEA0183-Telegramme, die über USB gesendet wurden"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:81 96f230aa76304d2f852db8cc4d054e22
+msgid "**Serial in**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:82 5a573c9f6de8428c8a6e90f5686329b3
+msgid "Anzahl der NMEA0183-Telegramme, die über RS485 empfangen wurden"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:83 8bc01a36e77c464a996d41c4de2de22f
+msgid "**Serial out**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:84 bbc2556fdfda498fa7a31af2db6337eb
+msgid "Anzahl der NMEA0183-Telegramme, die über RS485 gesendet wurden"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:86 60bcf3fd039049f29762101e433c6b7d
+msgid ""
+"Wenn Sie auf das Fragezeichen hinter **Version** klicken, werden alle "
+"Telegramme angezeigt, die das OBP60 verarbeiten kann. Detailliertere "
+"Informationen zu den empfangenen Telegrammen sehen Sie, wenn Sie die "
+"Zeile des jeweiligen Bussystems aufklappen. Im Anhang finden Sie eine "
+"Tabelle mit allen NMEA0183- und NMEA2000-Telegrammen, die verarbeitet "
+"werden können."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:89 b9f4457ecf5047d69257dfdf68b83622
+msgid ""
+"Zum besseren Verständnis ist zu beachten, dass das OBP60 ein eigenes, "
+"unabhängiges WiFi-Netzwerk aufbaut, diese Funktion wird auch als Access "
+"Point bezeichnet. Die Anzahl der TCP-Clients in der Statuszeile "
+"**#clients** bezieht sich dabei immer nur auf die Clients, die sich beim "
+"OBP60 im Access Point-Modus anmelden. Das OBP60 kann darüber hinaus in "
+"ein anderes, externes WiFi-Netzwerk eingebucht werden, indem es sich dort"
+" als Client anmeldet. In dem Fall wird das eigene WiFi-Netz des OBP60 mit"
+" dem externen WiFi-Netz gebrückt. Alle Daten des OPB60 sind dann in "
+"beiden Netzwerken verfügbar."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:92 d788067a632b45ab8c60001b6cc33c48
+msgid "Config"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:94 5fee043584ea4811b1749f902c3fc642
+msgid ""
+"Die Konfigurationsseite unterteilt sich in zwei Bereiche. Die Firmware "
+"basiert auf dem NMEA2000-Gateway-Projekt und nutzt die gesamte "
+"Grundstruktur dieses Software-Projektes. Die Funktionalität des OBP60 ist"
+" als eigenständiger Task in der NMEA2000-Gateway-Firmware implementiert. "
+"Der erste Bereich enthält die Konfiguration für das NMEA2000-Gateway. Im "
+"zweiten Bereich ist die Konfiguration zur OBP60-Hardware und -Software zu"
+" finden. Den zweiten Bereich erkennt man an dem Prefix OBP."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:96 700e63b6fc0742e189bad0b1eab374bc
+msgid "**Konfiguration zum NMEA2000-Gateway**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:101 8dfe4eef0d684411ace704d3937e639e
+msgid "Abb.: Konfiguration zum NMEA2000-Gateway"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:106 d59ab613ac204b1b94a699b39dd86962
+msgid "Abb.: Konfiguration zur OBP60-Hardware"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:108 ce8705b1518a43cb8231d284ec2ffb7a
+msgid ""
+"Auf der Konfigurationsseite sind im oberen Bereich verschiedene Tasten zu"
+" sehen. Die Bedeutung der Tasten ist nachfolgend aufgeführt:"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:110 97099a4f1c3647f3bdb5f4156d316ec3
+msgid "**Reload Config** - Erneutes Laden der Konfiguration"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:111 dc81ddebfa704f3ebd2092965f370f13
+msgid ""
+"**Forget Pass** - Entfernen des Login-Passwortes aus dem Cache-Speiches "
+"des Browsers"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:112 aa300e2f889c4da5a152850aa22caac8
+msgid ""
+"**Save & Restart** - Speichern der Konfiguration mit anschließendem "
+"Neustart der Firmware"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:113 c5a3b737648f473ba1f5eb28d1602a9d
+msgid "**Export** - Export einer Konfiguration als JSON-File"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:114 8031eed8bf2e431d9337051641afc6c9
+msgid "**Import** - Import einer Konfiguration über ein JSON-File"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:115 d5706b3420c1418fa01af872fa869bad
+msgid "**Factory Reset** - Rücksetzen aller Einstellungen auf Werkszustand"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:120 9fa3ef9a82b34bada9296b1e7c25a35b
+msgid "Config - System"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:125 c8b3d4c2ec7b4bbda982edaf13e67b98
+msgid "Unter **System** werden grundlegende Einstellungen vorgenommen wie:"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:127 0d2ec417fcbd45e882deca9deb2953be
+msgid "**System Name**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:128 297a51b035314fb2a19d12404ec5b105
+msgid ""
+"Gerätename des OBP60. Hier kann ein Name verwendet werden, der aus bis zu"
+" 10 ASCII-Zeichen besteht. Dabei dürfen nur Buchstaben und Zahlen "
+"verwendet werden. Zusätzlich sind das Minus-Zeichen und der Unterstrich "
+"erlaubt. Sonderzeichen sind nicht erlaubt, da der Gerätename gleichzeitig"
+" auch als SSID im WiFi-Netzwerk verwendet wird."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:130 4a88cd530a91496d9869bebf8325d7c7
+msgid "**NMEA0183 ID**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:131 f53751f7f90e4fa397b6fbbac231eb25
+msgid ""
+"Hier kann festgelegt werden, welches Präfix als Geräte-ID im "
+"NMEA0183-Telegrammen verwendet wird. Es lassen sich verschiedene Geräte-"
+"IDs einstellen. Details dazu sind unter folgendem `Link`_ zu finden."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:135 2acda3f591be460bbf093fa17a27b84a
+msgid "**Stop AP Time**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:136 4154b642c3a84cedaebff05e03720e89
+msgid ""
+"Hierüber kann angegeben werden, nach welcher Zeit der WiFi Access Point "
+"abgeschaltet werden soll. Die Angabe der Zeit erfolgt in Sekunden. Der "
+"Wert **0** sorgt für einen dauerhaften Betrieb des WiFi Access Points."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:138 aef0ae2754e34655a19e3246793de44a
+msgid "**AP Password**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:139 32809b8fb2f5467db2e244e7c13053b3
+msgid ""
+"An dieser Stelle wird das Passwort für den WiFi Access Point angegeben. "
+"Es dürfen nur Zeichen des ASCII-Zeichensatzes verwendet werden. Per "
+"Default ist ein Passwort aktiviert. Es wird das Passwort **esp32nmea2k** "
+"verwendet."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:141 5415d5769e48463c8b3cc9876b47037f
+msgid "**AP Ip**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:142 4cce137de5e04bdf895cb6596f398eaf
+msgid ""
+"Hier kann die IP-Adresse des WiFi Access Points eingestellt werden. Per "
+"Default steht die IP-Adresse auf **192.168.15.1**. In Ausnahmefällen kann"
+" die IP auf eine andere Adresse eingestellt werden. Beachten Sie dabei, "
+"dass das OPB60 bei veränderter IP-Adresse im Ihrem WLAN unter Umständen "
+"nicht mehr erreichbar sein könnte."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:144 ced4a2030c8a407e88b8c593719a4c8c
+msgid "**AP Mask**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:145 70188bf50d3a467fa32052d5410f4005
+msgid ""
+"An diese Stelle wird die Subnetz-Maske für den WiFi Access Point "
+"angegeben. Per Default steht die Subnetz-Maske auf **255.255.255.0**. Es "
+"wird dringend empfohlen, diesen Wert nicht zu verändern, es sei denn, Sie"
+" wissen genau, welche Auswirkungen eine Änderung hat."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:148 659644ddaaaa495393bbc8c1400e1331
+msgid ""
+"Achten Sie darauf, dass der Adressbereich des WiFi Access Points  sich "
+"von dem Adressbereich des Netzes unterscheiden muss, in das sich das "
+"OBP60 als WiFi-Client einwählt. Der Adressbereich eines Netzwerks ist "
+"über die ersten 3 Zifferngruppen gekennzeichnet (111.222.333.xxx). Nur "
+"die letzte Gruppe (xxx) wird für die Gerätekennzeichnung im gleichen Netz"
+" benutzt. Verändern Sie die ersten 3 Zifferngruppen des Adressbereichs, "
+"werden Sie die Konfigurationsseiten des OPB60 nicht mehr ohne weiteres "
+"öffnen können. In den meisten Fällen wird eine Änderung der IP-Adresse "
+"oder der Subnetz-Maske nicht notwendig sein. Ändern Sie die IP-Adresse "
+"und die Subnetz-Maske daher nur, wenn Sie über genügend Netzwerkerfahrung"
+" verfügen und sich über die Auswirkungen Ihrer Änderungen im Klaren sind."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:150 6ab6eb790d90484bb97b13e67254f038
+msgid "**Use Admin Pass**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:151 5812a3988fc947e1ab915cc6992e5a07
+msgid ""
+"Hiermit kann festgelegt werden, ob für Änderungen der Konfiguration ein "
+"Passwort notwendig ist."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:153 171bce7034484d6eaf98c4bffd4d527a
+msgid "**Admin Password**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:154 11aa854ed5b94f0493534a340238e7a9
+msgid ""
+"Hier wird das Admin-Passwort eingegeben. Es dürfen nur Zeichen des ASCII-"
+"Zeichensatzes verwendet werden. Per Default ist die Passwortabfrage "
+"aktiviert. Es wird das Passwort **esp32admin** verwendet. Beim ersten "
+"Speichern einer Konfiguration nach einem Reboot wird kein Passwort "
+"benötigt. So können Sie das Passwort jederzeit ändern."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:156 f9d2f8164d364437b4fc4f0ab4ca9ad9
+msgid "**Show All Data**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:157 94d95e42b06f4507ac4e60eb78f32532
+msgid ""
+"Zeigt das Menü ``on``, werden im Data-Bereich alle Sensordaten angezeigt."
+" Das Umstellen auf ``off`` deaktiviert alle Sensordaten im Data-Bereich."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:159 324adc0bafdb445bb60af1feceef282f
+msgid "**Log Level**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:161 949d844dd0384b80a4ebd6ccbed221f5
+msgid ""
+"Über **Log Level** lässt sich der Detailgrad der Benachrichtigungen über "
+"die USB-C-Schnittstelle einstellen. Folgende Einstellungen stehen zur "
+"Verfügung:"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:162 57dbe917b8654ac797f7fd5d1b1dd20f
+msgid "``off`` - Keine Logging-Ausgaben"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:163 a4bf68e32600403fad3414093a6c444a
+msgid "``error`` - Es werden nur Fehlermeldungen ausgegeben"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:164 1da791fe82d34a3b9bc0744da9e5c1c4
+msgid "``log`` - Es werden Fehlermeldungen und Statusinformationen ausgegeben"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:165 35fc43d5ce9d493eab44e914e93a3d9d
+msgid ""
+"``debug`` - Es werden alle vorgesehenen Meldungen inklusive Debug-"
+"Meldungen ausgegeben"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:168 f7aa4161e5024f4db440abc179eb3ad3
+msgid ""
+"Wenn Sie beabsichtigen, einen NMEA0183-Datenaustausch über die "
+"USB-C-Schnittstelle  durchzuführen, sollten Sie den **Log Level** auf "
+"``off`` stellen. Beachten Sie das nicht, kann die Auswertung von Logging-"
+"Ausgaben sehr unübersichtlich werden, da Logging-Daten und "
+"NMEA0183-Telegramme dann gemischt ausgegeben werden. Wenn Sie nur "
+"Logging-Ausgaben sehen wollen, stellen Sie **NMEA to USB** und **NMEA "
+"from USB** unter :ref:`Config - USB Port` auf ``off``."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:175 4ee2195d462c4418bffea806e361f1ba
+msgid "Config - Converter"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:180 20acb381cb8f4b5babb019732685145a
+msgid ""
+"Mit den nachfolgenden Einstellungen können Sie die Funktion des "
+"NMEA2000-Gateways verändern."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:182 da069bf5f81145748c73b7c535f969c6
+msgid "**Min XDR Interval**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:183 64aebdafaa1c4272986a4ab5be873205
+msgid ""
+"Hier wird die Intervallzeit der XDR-Signalverarbeitung eingestellt. XDR-"
+"Telegramme sind frei definierbare Sensor-Telegramme. Die Intervallzeit "
+"kann ab 10 ms eingestellt werden. Der Default-Wert steht auf 100 ms. Mit "
+"der kürzesten Intervallzeit von 10 ms wird eine Datenverarbeitungsrate "
+"von 100 Hz erreicht."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:185 96abc860478e45789ecd69033a4680b9
+msgid "**Min N2K Interval**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:186 8b9e558a57074a0e9b7590d4248a970e
+msgid ""
+"Hier wird die Intervallzeit der NMEA2000-Signalverarbeitung eingestellt. "
+"Die Intervallzeit kann ab 5 ms eingestellt werden. Der Defaultwert steht "
+"auf 50 ms."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:189 f2cc7152e5e04de7a3e74bd82a1443d0
+msgid ""
+"Bedenken Sie, dass kurze Intervallzeiten eine große Prozessorlast "
+"bewirken. Stellen Sie den Wert möglichst so ein, so dass ihre Daten noch "
+"zeitlich korrekt verarbeitet werden können. Mit dem Standardwert von 100 "
+"ms für das XDR-Interval und 50 ms für das N2K-Intervall können die "
+"meisten Anwendungen sinnvoll betrieben werden."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:192 6c2cfa213c744efabdefa17a388a7e32
+msgid ""
+"Hier kann eingestellt werden, ob NMEA2000-Telegramme in das NMEA-Netzwerk"
+" übertragen werden"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:193 feff892cc4494ade99f2fea264a4a233
+msgid "``on`` - Ausgabe der NMEA2000-Daten"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:194 42ef79d3c9df459cb9e8167ab019dc1a
+msgid "``off`` - Keine Ausgabe der NMEA2000-Daten"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:199 cafff724227246a39fedbee12213b0ca
+msgid "Config - USB Port"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:204 333ad3c9339a4e4fb9a520ea3b2e3cd4
+msgid ""
+"Über die Seite **USB** Port können die Funktionen des USB-Ports "
+"detailliert eingestellt werden."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:206 761956e1118746868cb56662857ebf9f
+msgid "**USB Mode**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:207 4c064e75f8a641f683d98ec435eefd25
+msgid ""
+"legt das Format fest, wie Daten am USB-Port verarbeitet werden. Mit dem "
+"Actisense-Format können NMEA2000-Telegramme von externer Software "
+"empfangen und verarbeitet werden. Actisense-Daten werden innerhalb des "
+"Geräts in NMEA2000-Daten und in NMEA0183-Daten  übersetzt. So kann z.B. "
+"die `Simulations- und Diagnosesoftware`_ der Fa. Actisense zur Analyse "
+"der Busdaten verwendet werden."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:211 c36227ac591b4074895014089134059a
+msgid "``nmea0183`` - Verarbeitung im NMEA0183-Format"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:212 1779789a25e44146b7f509bc46ef1885
+msgid "``actisense`` - Verarbeitung im Actisense-Format"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:214 4b0ce119b841441ca1a907c7821378fe
+msgid "**USB Baud Rate**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:215 4c25f6960dcc4383951494031b2b1e08
+msgid ""
+"Hier kann die Schnittstellengeschwindigkeit der seriellen USB-"
+"Schnittstelle eingestellt werden. Es lassen sich Geschwindigkeiten "
+"zwischen 1.200 Bd und 460.800 Bd einstellen."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:218 c72fdeebd87f47a080d4db65d6930535
+msgid ""
+"Stellen Sie die Schnittstellengeschwindigkeit so ein, dass sie "
+"ausreichend hoch ist, um alle Datentelegramme im Sendeintervall "
+"verarbeiten zu können. Mit dem Default-Wert von 115.200 Bd können die "
+"meisten Anwendungen sinnvoll betrieben werden."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:220 c5feea815be14bf298d5727c0fb56e22
+msgid ""
+"Mit den nachfolgenden drei Einstellungen lässt sich die Datenrichtung an "
+"der USB-C-Schnittstelle einstellen. Dabei wird zwischen NMEA0183 und "
+"NMEA2000 unterschieden."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:222 cfdcd96d46854ff5b8f852f0352a57a5
+msgid "**NMEA to USB**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:223 57a913acb5484122913c43aecbd6f9b4
+msgid "``on`` - NMEA0183-Daten werden an die USB-Schnittstelle ausgegeben"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:224 571966f75b9042568d30dbf8a1bc0f4f
+msgid "``off`` - NMEA0183-Daten werden nicht an die USB-Schnittstelle ausgeben"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:226 ed693ef1935b4d2687947759f79dcaca
+msgid "**NMEA from USB**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:227 529ead7f127a4873b8783ece2b649cfd
+msgid "``on`` - NMEA0183-Daten werden von der USB-Schnittstelle empfangen"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:228 aa0c323e07e14a56a8571e0933b7800b
+msgid "``off`` - NMEA0183-Daten werden nicht von der USB-Schnittstelle empfangen"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:230 6c429281f02c4a82b46c9532a7eafb33
+msgid "**USB to NMEA2000**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:231 bd9faf4ad2c448b0a753c99b8427ef24
+msgid ""
+"``on`` - Daten werden von der USB-Schnittstelle an den NMEA2000-Bus "
+"weitergeleitet"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:232 8eb7122e2bd842938fb8b533a8d25778
+msgid ""
+"``off`` - Daten werden nicht von der USB-Schnittstelle an den "
+"NMEA2000-Bus weitergeleiten"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:234 84edd5abf0494f0e8c1c970e8206db1a
+msgid ""
+"In den nächsten beiden Einstellungen werden die Filterfunktionen **USB "
+"read Filter** und **USB write Filter** für das Lesen und Schreiben an der"
+" USB-Schnittstelle gesetzt. Es lassen sich nur NMEA0183-Daten filtern. "
+"Dabei lässt sich gesondert einstellen, ob AIS-Positionssignale "
+"verarbeitet werden. Als Filterformen stehen <Whitelist> und <Blacklist> "
+"zur Verfügung, also einmal die Angabe von Filterkriterien, die die "
+"betroffenen Daten einschliessen sollen (Whitelist), dann solche, die zum "
+"Ausschluss von Daten führen (Blacklist)."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:236 a376c82c6ceb4e2590349e1cb99c82c2
+msgid "**USB Filter**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:237
+#: ../../usermanual/configuration.rst:284 aa45cdf9e019470f900f8cf9bf47a17e
+#: f9cadc74259b4c11bdbf9bb36873a6cd
+msgid "``aison`` - AIS-Daten an der USB-Schnittstelle werden verarbeitet"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:238
+#: ../../usermanual/configuration.rst:285 31547314435440c08b8c8b8b2b39dc57
+#: 39c9cf736ec245fc800e682df3657000
+msgid "``aisoff`` - AIS-Daten an der USB-Schnittstelle werden nicht verarbeitet"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:239
+#: ../../usermanual/configuration.rst:286
+#: ../../usermanual/configuration.rst:334
+#: ../../usermanual/configuration.rst:340
+#: ../../usermanual/configuration.rst:394
+#: ../../usermanual/configuration.rst:400 01a4c37e25c14521bef06355f207fdad
+#: 51ca000278c14528810785a099a0fa66 6867793f93274c30befab1168b76b200
+#: 695e1871282543f4b128afe43de67320 aa447cb087f54a93a46b47338079a3fc
+#: e47c7fcbd4f04e0080284b6c5dd78512
+msgid ""
+"``blacklist`` - Der Filter arbeitet mit einer Blacklist. Die "
+"gekennzeichneten Telegramme werden nicht verarbeitet."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:240
+#: ../../usermanual/configuration.rst:287
+#: ../../usermanual/configuration.rst:335
+#: ../../usermanual/configuration.rst:341
+#: ../../usermanual/configuration.rst:395
+#: ../../usermanual/configuration.rst:401 2f5c2028b5a647abb168b25f008413d4
+#: 82534d57e23e46a18e34a7d020d87944 8ad9667442b1431587966b9fb1e0e047
+#: c103757009984cedb679c5208db41e1f e05c15cc9a6c46d89d4f8ce71bfece5b
+#: e5064cbecb064c88980bb6ccdfc1c414
+msgid ""
+"``whitelist`` - Der Filter arbeitet mit einer Whitelist. Nur die "
+"aufgelisteten Telegramme werden verarbeitet."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:242 dc8302b716534fec8be13ecd097873a6
+msgid ""
+"Im Eingabefeld werden die Kurzbezeichner der NMEA0183-Telegramme "
+"eingetragen, Mehrere Einträge werden durch Komma ``,`` getrennt. Folgende"
+" Kurzbezeichner können verwendet werden:"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:244
+#: ../../usermanual/configuration.rst:291
+#: ../../usermanual/configuration.rst:345
+#: ../../usermanual/configuration.rst:405 1d69829a8cb64b62b1296d22459cfff2
+#: 3b6e9777c93b4bd888d9ae097f1edeb2 60cabe225220430c8fcad41271bdff96
+#: 61a55412463a43349f8add49098de317
+msgid ""
+"DBK, DBS, DBT, DPT, GGA, GLL, GSA, GSV, HDM, HDT, MTW, MWD, MWV, RMB, "
+"RMC, ROT, RSA, VHW, VTG, VWR, XDR, XTE, ZDA"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:246
+#: ../../usermanual/configuration.rst:293
+#: ../../usermanual/configuration.rst:347
+#: ../../usermanual/configuration.rst:407 1da42aba59194ecdbfd7bd03aaab75b4
+#: 6804783b0714453a820164cf79efd935 8f39ffcf137f475db8130a7869250643
+#: b88548762926458bae40a5409f2aa611
+msgid "Die genaue Bedeutung der Kurzbezeichner ist `hier`_ erklärt."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:251 c993dac308c74f44bc36e1a24233566a
+msgid ""
+"Filterfunktionen sind ein mächtiges Werkzeug, um Datenflüsse zu steuern. "
+"Überlegen Sie sich vor der Konfiguration, wie Ihre Datenflüsse im Boot "
+"aussehen sollen, und erstellen sich dazu eine Skizze. Setzen Sie die "
+"Filter so ein, dass sie nur die Daten senden und empfangen, die sie auch "
+"wirklich benötigen. Unterscheiden Sie dabei, was gesendet und was "
+"empfangen werden soll, vermeiden Sie dabei auf alle Fälle Datenschleifen."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:254 acae109d965d4e31a6d6d5a87e9364e6
+msgid ""
+"Datenschleifen führen zu Fehlfunktionen des Gerätes. Bei Datenschleifen "
+"laufen die selben Daten über mehrere Geräte im Kreis. Dadurch entstehen "
+"hohe Senderaten, weil fortlaufend die gleichen Daten gesendet und "
+"empfangen werden. Die Prozessorlast erhöht sich dabei auf ein Maximum. "
+"Unter Umständen kann das Gerät ausfallen, die anfallenden Daten nicht "
+"mehr zeitnah verarbeiten oder nicht mehr bedienbar sein. Beachten Sie, "
+"dass der Zustand auch erst dann eintreten kann, wenn weitere Geräte am "
+"Bussystem später zugeschaltet werden."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:259 88fe3b8c42dc4b7bb85ea48da6561c77
+msgid "Config - Serial Port"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:264 74026eb5e2034cc790cf0b437a3d2f85
+msgid ""
+"Über **serial port** können Einstellungen zur seriellen "
+"NMEA0183-Schnittstelle vorgenommen werden. Diese Einstellungen beziehen "
+"sich auf die RS485-Schnittstelle am Steckverbinder **CN1** mit den "
+"Signalen ``A``, ``B`` und ``Shield``."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:266 00bb09cdc0874d6fbc09fc05469b963f
+msgid "**Serial Direction**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:267 49d5fc47cb15443b9ba77c0e79ab5fb6
+msgid "``off`` - Die NMEA0183-Schnittstelle ist ausgeschaltet"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:268 50ef11ff78a64d94b83280a39bf4be87
+msgid "``send`` - Die NMEA0183-Schnittstelle sendet"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:269 cff7c5652cf3436ca8c697d0fea42fb8
+msgid "``receive`` - Die NMEA0183-Schnittstelle empfängt"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:272 2e9968be23364a3086f69a2daecfcde6
+msgid ""
+"Die serielle Schnittstelle ist konform zu RS485 und RS422 und arbeitet im"
+" Halbduplex-Betrieb. Es kann entweder gesendet oder empfangen werden. "
+"Beides gleichzeitig ist nicht möglich. Wenn Sie eine Vollduplex-"
+"Übertragung für NMEA0183-Daten benötigen, dann können Sie die "
+"USB-C-Schnittstelle benutzen. Diese Schnittstelle ist aber nicht zu RS485"
+" oder RS422 konform. Sie kann sinnvoll verwendet werden, wenn Sie Daten "
+"z.B. in OpenCPN auf einem PC oder Laptop verarbeiten wollen."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:274 caf9fef09f1b4b7282f3d6afe111063e
+msgid "**Serial Baud Rate**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:275 e7e77ce5657e414ebf8e08cb2a6c10b2
+msgid "Einstellung der Baudrate zwischen 1.200 und 460.800 Bd."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:277 dce2f4a7eccd4c4aaa045c7e48c2d2db
+msgid "**Serial To NMEA2000**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:278 0846f9e1efc74da28714126c4bc2bf2a
+msgid ""
+"``on`` - Daten an der Schnittstelle werden nach NMEA2000 übertragen "
+"(Gateway-Funktion)"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:279 bb11f50e2e6c4c38b7d833092d22d6f9
+msgid "``off`` - Daten an der Schnittstelle werden nicht nach NMEA2000 übertragen"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:281 46fca8f064b04541aca26d4d35de33ec
+msgid ""
+"In den nächsten beiden Einstellungen werden die Filterfunktionen **Serial"
+" read Filter** und **Serial write Filter** für das Lesen und Schreiben an"
+" der seriellen Schnittstelle vorgenommen. Es lassen sich nur "
+"NMEA0183-Daten filtern. Dabei lässt sich gesondert einstellen, ob auch "
+"AIS-Positionssignale verarbeitet werden. Als Filterformen stehen "
+"Whitelist und Blacklist zur Verfügung."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:283 adcc430cb239437e9e43137031197dc0
+msgid "**Serial Filter**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:289
+#: ../../usermanual/configuration.rst:343
+#: ../../usermanual/configuration.rst:403 4477b761b5d945d4a7285679f764c565
+#: 5b2ce8fcb7494cd889e063b51f5ba190 91e9bfccce6846c58802de0aa09b96b1
+msgid ""
+"Im Eingabefeld werden die Kurzbezeichner der NMEA0183-Telegramme "
+"eingetragen, mehrere Einträge werden durch Komma ``,`` getrennt. Folgende"
+" Kurzbezeichner können verwendet werden:"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:298 8b171e305f2d4fbaab864c877b6779fb
+msgid "Config - TCP Server"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:303 1536186f805747a184dad4a9db18fc54
+msgid ""
+"Hier werden die Einstellungen zum Betrieb des OPB60 als TCP-Server "
+"vorgenommen. Der TCP-Server ist ein Server-Dienst, über den Daten "
+"schreibend und lesend ausgetauscht werden können. Dabei meldet sich ein "
+"Netzwerk-Gerät als Client aktiv über einen TCP-Port am Server an und kann"
+" dann Daten mit dem TCP-Server austauschen."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:306 56b1a56bc78b486685348ed5360298e4
+msgid ""
+"Der Anmeldevorgang muss immer vom Client initiiert werden. Bei "
+"Verbindungsabbrüchen muss der Client die Verbindung wieder selbständig "
+"aufbauen. Achten Sie darauf, dass der Client über eine Auto-Connect-"
+"Funktion verfügt. Anderenfalls verlieren Sie die Datenverbindung bei "
+"Verbindungsabbrüchen dauerhaft."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:308 2568ce3c5bdb4b3ab5a0baf2c9ff0860
+msgid "**TCP Port**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:309 1c7b4b3c48f149a2b8c723ce925833c1
+msgid ""
+"Angabe des TCP-Port, auf dem der Server auf eingehende "
+"Verbindungsanfragen wartet. Der Default-Wert ist 10110. Verwenden Sie nur"
+" Ports größer 1024, da Ports unterhalb von 1024 für feste Anwendungen "
+"reserviert sind. Der Maximalwert liegt bei 65535."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:311 9a9bd0b980884298ab7cb5e9d1bf6062
+msgid "**Max TCP Clients**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:312 29549e14a57047dc815565bf8ec49b69
+msgid ""
+"Angabe, wieviele Clients sich maximal mit dem TCP-Server verbinden "
+"dürfen. Der Default-Wert ist 6."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:315 31972ae6794f4a5b8c4798ff329fabce
+msgid ""
+"Beachten Sie, dass eine hohe Zahl an Clients eine große Rechenlast der "
+"CPU verursachen kann. Sorgen Sie daher dafür, dass sich nie mehr als 6 "
+"Clients mit dem Server verbinden können. Anderenfalls kann es zur "
+"Beeinträchtigung der Datenverarbeitung kommen oder das Gerät reagiert "
+"nicht mehr korrekt."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:317
+#: ../../usermanual/configuration.rst:377 1762367f077c4e509e130abc806ca2a0
+#: c64f16a40f294cbfb1d9aa1e757afe34
+msgid "**NMEA0183 Out**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:318
+#: ../../usermanual/configuration.rst:378 0fee34e7b333427eb8b510ecd9c2bfa3
+#: b5a8d57fdbf04831b65ddaad60e2e0be
+msgid "``on`` - Am TCP-Port werden NMEA0183-Daten ausgegeben"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:319
+#: ../../usermanual/configuration.rst:379 3e5bb4391e224819bb3a016a1283c424
+#: bcea992ba75d4f2980dba8bfc1984487
+msgid "``off`` - Am TCP-Port werden keine NMEA0183-Daten ausgegeben"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:321
+#: ../../usermanual/configuration.rst:381 3336ad3e89e94409955521cba9ed6100
+#: e475224a30cd4c6fbd7412e493e8b366
+msgid "**NMEA0183 In**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:322
+#: ../../usermanual/configuration.rst:382 61c292df095a4cd290e2d0038db0d9fe
+#: ecf0d438b1b9487e9827213f49760253
+msgid "``on`` - Am TCP-Port werden NMEA0183-Daten empfangen"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:323
+#: ../../usermanual/configuration.rst:383 1990554ac862422aad787156ed420c73
+#: d667e780863a4bbf8a36091db55c9b57
+msgid "``off`` - Am TCP-Port werden keine NMEA0183-Daten empfangen"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:325
+#: ../../usermanual/configuration.rst:385 99c76896cef2487c968e1c7fee0c79b8
+#: ffaca69643e040feb2fc28c6f9a13e19
+msgid "**To NMEA2000**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:326
+#: ../../usermanual/configuration.rst:386 84ba117bc9014721afaa0f94e6747d2a
+#: f481849bdfaa467b8a1b65bafdbb71bd
+msgid ""
+"``on`` - Daten am TCP-Port werden nach NMEA2000 übertragen (Gateway-"
+"Funktion)"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:327
+#: ../../usermanual/configuration.rst:387 31956995a60e43f3aa50e60acf8fda7b
+#: 35b11f5ae6c240d68f2ed38e1a06fc82
+msgid "``off`` - Daten am TCP-Port werden nicht nach NMEA2000 übertragen"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:329 0a9d8a56ebc34db3aa2bc2f512b183d1
+msgid ""
+"In den nächsten beiden Einstellungen werden die Filterfunktionen **NMEA "
+"Read Filter** und **NMEA Write Filter** für das Lesen und Schreiben am "
+"TCP-Port vorgenommen. Es lassen sich nur NMEA0183-Daten filtern. Dabei "
+"lässt sich gesondert einstellen, ob AIS-Positionssignale verarbeitet "
+"werden. Als Filterformen stehen \"Whitelist\" und \"Blacklist\" zur "
+"Verfügung."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:331
+#: ../../usermanual/configuration.rst:391 11adbd868f184b46814ecdd0eb4d22f7
+#: ec47deed1db0426fa871849677a52c92
+msgid "**NMEA Read Filter**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:332
+#: ../../usermanual/configuration.rst:392 2dd706cbb7074b6aafe957200ff379f4
+#: 7fc04ce56ff34e56bf2ba31a244e33fe
+msgid ""
+"``aison`` - Einkommende AIS-Daten an der USB-Schnittstelle werden "
+"verarbeitet"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:333
+#: ../../usermanual/configuration.rst:393 8099e7107e70408bb65c338370027b51
+#: f9ebae893e034926820734e006075842
+msgid ""
+"``aisoff`` - Einkommende AIS-Daten an der USB-Schnittstelle werden nicht "
+"verarbeitet"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:337
+#: ../../usermanual/configuration.rst:397 8f73134dce174e1595073234cd6043fd
+#: e976efcc4613413a876ee76f34dcfedb
+msgid "**NMEA Write Filter**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:338
+#: ../../usermanual/configuration.rst:398 4bb41cf4e43c408692976b0019f842b3
+#: 90a1f32d86e94cc4bb57a6665ac7c555
+msgid ""
+"``aison`` - Zu sendende AIS-Daten an der USB-Schnittstelle werden "
+"verarbeitet"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:339
+#: ../../usermanual/configuration.rst:399 428c8eebfb0b47a39d0c0f735999b532
+#: 9eb6c11a578544fdba9f94fbc81d2751
+msgid ""
+"``aisoff`` - Zu sendende AIS-Daten an der USB-Schnittstelle werden nicht "
+"verarbeitet"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:349 bb301a898aa24306a0b2a0b6c99dcb21
+msgid "**Seasmart Out**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:350 c6996f09442f4b49a3b01a8cd64178c6
+msgid ""
+"Über Seasmart lassen sich NMEA2000-Daten in NMEA0183-Telegrammen "
+"übersetzen. Wenn Sie **Seasmart** aktivieren, werden alle NMEA2000-Daten "
+"über NMEA0183-Telegramme ausgegeben und getunnelt. Die Daten werden dabei"
+" in Binärform in einem NMEA0183-Telegramm übertragen. Auf diese Weise "
+"können Sie von einem OBP60 (TCP-Server) zu einem weiteren OBP60 (TCP-"
+"Client) NMEA2000-Daten über Wifi übertragen. Achten Sie darauf, dass auf "
+"der Gegenseite ebenfalls **Seasmart** aktiviert ist."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:351 c944fd338fe745619c1bc7d42bf4bbef
+msgid "``on`` - Der TCP-Server kann Seasmart-Daten senden und empfangen"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:352 a3ded412c8f140a7aaee3053b12f395e
+msgid "``off`` - Seasmart wird vom TCP-Server nicht unterstützt"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:357 4ba692f43c6d42198bb4349a305b71f6
+msgid "Config - TCP Client"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:362 134f7662af074ad5853d274ad6b61ca3
+msgid ""
+"Hier werden die Einstellungen für den Betrieb des OPB60 als TCP-Client "
+"vorgenommen. Das OBP60 kann als TCP-Client Daten mit einem TCP-Server "
+"lesend und schreibend austauschen. Dabei meldet sich das OBP60 als Client"
+" aktiv über einen TCP-Port am TCP-Server an und kann dann Daten mit dem "
+"Server austauschen. Der TCP-Client-Modus enthält ein Auto-Connect, um bei"
+" Verbindungsabbrüchen automatisch die Verbindung wieder aufnehmen zu "
+"können."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:364 36d572feb5a84e83b20930f0b90d92c3
+msgid "**Enable**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:365 8aa06595986d4cc1b5f7f5a8fd7ad5f6
+msgid "``on`` - Der TCP-Client-Modus ist im OBP60 aktiviert"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:366 d3e01c455903447fb1669b81ce17979f
+msgid "``off`` - Der TCP-Client-Modus ist deaktiviert"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:368 54e76453ce1344f7b43675f7fc6ef23d
+msgid "**Remote Port**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:369 5427e5e6a29a4cf89c43f81657c13db5
+msgid ""
+"Angabe des TCP-Ports, über den Daten mit einem TCP-Server ausgetauscht "
+"werden sollen. Der Default-Wert ist 10110. Damit der Datenaustausch "
+"zwischen einem TCP-Server und einem TCP-Client stattfinden kann, muss der"
+" selbe Port vom TCP-Client verwendet werden, den der TCP-Server für die "
+"Kommunikation verwendet. Benutzen Sie nur Ports größer 1024, da Ports "
+"unterhalb von 1024 für festgelegte Anwendungen reserviert sind. Der "
+"Maximalwert liegt bei 65535."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:371 9e6237b322004cae80582482ece3a815
+msgid "**Remote Address**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:372 3bdf4d1417d44842b452b9b4344537b0
+msgid ""
+"Die <Remote Address> ist die Adresse des TCP-Servers im WiFi-Netzwerk, "
+"mit dem Sie Daten austauschen wollen. Sie können eine IP-Adresse wie z.B."
+" **192.168.15.1** oder einen MDNS-Hostnamen wie z.B. **OBP60V2.local** "
+"verwenden."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:375 c9d9f9f2fa494e56be2702097628bbff
+msgid ""
+"Wenn Sie Daten zwischen zwei OBP60 via WiFi austauschen wollen, müssen "
+"sich beide Geräte im selben Funknetz befinden, auch müssen sie "
+"unterschiedliche System-Namen haben. Ihre Access Points müssen im "
+"gleichen IP-Adressbereich liegen, aber unterschiedliche Geräteadressen "
+"haben. Eine Gerät muss als TCP-Server und das andere Gerät als TCP-Client"
+" konfiguriert sein. Die Einstellungen dazu werden unter :ref:`Config - "
+"System` vorgenommen. Wenn Sie das nicht beachten, kann es zu Störungen im"
+" WiFi-Datenverkehr kommen und Sie können unter Umständen die Web-"
+"Konfigurationsoberflächen der Geräte nicht mehr erreichen."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:389 e90710b509e745b08a89fdfd5442fc3b
+msgid ""
+"In den nächsten beiden Einstellungen werden die Filterfunktionen **NMEA "
+"Read Filter** und **NMEA Write Filter** für das Lesen und Schreiben am "
+"TCP-Port vorgenommen. Es lassen sich nur NMEA0183-Daten filtern. Dabei "
+"lässt sich gesondert einstellen, ob AIS-Positionssignale verarbeitet "
+"werden. Als Filterformen stehen Whitelist und Blacklist zur Verfügung."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:409 d6392555b5d5421e819b0001610c0008
+msgid "**SeaSmart Out**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:410 305fd497823a4a3f807c628c2f47cfa6
+msgid ""
+"Über SeaSmart lassen sich NMEA2000-Daten in NMEA0183-Telegrammen "
+"übersetzen. Wenn Sie **SeaSmart** aktivieren, werden alle NMEA2000-Daten "
+"über NMEA0183-Telegramme ausgegeben und getunnelt. Die Daten werden dabei"
+" in Binärform in einem NMEA0183-Telegramm übertragen. Auf diese Weise "
+"können Sie von einem OBP60 (TCP-Server) zu einem weiteren OBP60 (TCP-"
+"Client) NMEA2000-Daten über Wifi übertragen. Achten Sie darauf, dass auf "
+"der Gegenseite ebenfalls **SeaSmart** aktiviert ist."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:411 57259b31855c4c20a0dd83c096cbb673
+msgid "``on`` - Der TCP-Server kann SeaSmart-Daten senden und empfangen"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:412 7dffaa07828b406ba81413f0b8c7a160
+msgid "``off`` - SeaSmart wird vom TCP-Server nicht unterstützt"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:417 b7a294deec4f4dd898e0c207a30cf756
+msgid "Config - WiFi Client"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:422 bc296e434e3e47f28fac74fe1a5f9fe7
+msgid ""
+"Das OBP60 kann neben dem WiFi Access Point auch als WiFi-Client betrieben"
+" werden. In diesem Modus kann das OBP60 einem anderen WiFi-Netz beitreten"
+" und dort Daten austauschen. Auf diese Weise lässt sich das OPB60 in Ihr "
+"bestehendes Bord-WLAN integrieren. Der WiFi-Client-Modus enthält ein "
+"Auto-Connect, um bei Verbindungsabbrüchen automatisch die Verbindung "
+"wieder aufnehmen zu können."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:424 23867c36d1dd48b980020cb60bc98fa8
+msgid "**WiFi Client**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:425 23aac6372ba74e0f8e2cbd91c0661dfe
+msgid "``on`` - Der WiFi-Client-Modus ist aktiviert"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:426 fd62b99eaadc46a195e19afcce280ed0
+msgid "``off`` - Der WiFi-Client-Modus wird nicht unterstützt"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:428 4eac4d8978584e46b5aef9812b9f31d0
+msgid "**WiFi Client SSID**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:429 d11b3d65880349178ffcd48389c0b2af
+msgid ""
+"Tragen Sie hier einen WiFi-Netzwerknamen ein, zum Beispiel den Ihres "
+"Bord-WLANs. Als Namen können alle Zeichen des ASCII-Zeichensatzes "
+"verwendet werden."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:431 42bcae3dd44b47c69b805acb6eb66ff1
+msgid "**WiFi Client Pasword**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:432 7140e75f699b4b69a8115139cd62db4c
+msgid ""
+"Tragen Sie hier das zur o.g. SSID gehörende WiFi-Passwort ein. Als "
+"Passwort können alle Zeichen des ASCII-Zeichensatzes verwendet werden. "
+"Bei der Eingabe wird das Passwort verdeckt mit Sternchen ``*****`` "
+"angezeigt. Über das Augen-Symbol kann das Passwort im Klartext angezeigt "
+"werden."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:435 19b2f21bc18f4ca5b3c241b26a026b5a
+msgid ""
+"Wenn Sie Probleme mit der Verbindung zu weiteren WiFi-Netzwerken haben, "
+"dann überprüfen Sie, ob der Netzwerkname oder das Passwort Sonderzeichen "
+"enthält. In einigen Situationen können Sonderzeichen oder zu lange "
+"Passwörter Verbindungsprobleme verursachen. Ändern Sie dann versuchsweise"
+" den Netzwerknamen oder das Passwort. Mitunter hilft auch ein Neustart "
+"Ihres Bord-Routers, in dessen WLAN Sie das OPB60 einbuchen möchten."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:438 a36475d145ec43689a8d77a8c8cb91fe
+msgid "Config - OBP Settings"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:443 88bc1fee1bee4fb687c97908386dc9f6
+msgid ""
+"Auf der Seite **OBP60 Settings** können Sie Einstellungen vornehmen, die "
+"sich auf Ihr Boot beziehen, in dem das OBP60 eingebaut ist.  Die "
+"eingetragenen Werte werden dazu benutzt, um zum Beispiel eine ungefähre "
+"Reichweitenbestimmung für Wasser, Kraftstoff und Batterie vornehmen zu "
+"können. Geben Sie bitte die Werte für Ihr Boot möglichst genau ein, und "
+"beachten Sie die entsprechenden Einheiten. Die Einstellungen dienen dazu,"
+" verschiedene Betriebszustände auf dem OPB60 in Grafiken darzustellen."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:446 3b646431d30643189dd86ab655ec9a07
+msgid ""
+"Bedenken Sie, dass die Reichweitenbestimmung mit dem internen "
+"Spannungssensor nur als Richtwert verstanden werden sollte. Insbesondere "
+"bei den Batterietypen AGM und LiFePo4 müssen Sie mit größeren "
+"Ungenauigkeiten rechnen. Beobachten und überprüfen Sie die Ergebnisse "
+"unter realen Bedingungen, bevor Sie den Anzeigewerten vertrauen."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:448 0ef04168999e4003b57aae5f4ab2c4b6
+msgid "**Time Zone**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:449 d2421443e18e480b8825a9f572c04bea
+msgid ""
+"Über **Time Zone** kann die Zeitzone im Bereich von -12 und +14 Stunden "
+"eingestellt werden."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:451 aabfc4c57bba40f3908d730d58c40a48
+msgid ""
+"Die meisten Einstellungen sollten selbsterklärend sein. Sofern Sie keine "
+"Solarpaneele benutzen, belassen Sie den Wert von **Solar Power**  auf 0. "
+"**Generator Power** bezieht sich auf einen Elektrogenerator, der im Boot "
+"arbeitet. Das kann eine Lichtmaschine, ein Windgenerator, ein "
+"Schleppgenerator oder ein weiterer Zusatz-Generator sein. Die "
+"Leistungsangaben für **Solar Power** und **Generator Power** werden zur "
+"Visualisierung der Energieflüsse benötigt."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:454 f8512546538f4197a11980334c36fc65
+msgid "Config - OBP Units"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:459 a5b4b66f03334df6b4812b83e4866c89
+msgid ""
+"Die Einstellung der Einheiten wird unter **OBP Units** vorgenommen. Für "
+"die jeweiligen physikalischen Größen lassen sich verschiedene Einheiten "
+"verwenden."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:461 705d469c7e7c49a8adb1f21379ca2d6c
+msgid "**Date Format**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:462 fda9176b6d8a4cff9bbafc539ebe8c99
+msgid "Mit **Date Format** kann das Ausgabeformat des Datums angepasst werden."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:463 7eb1c41b2abe42618a220682ad00a250
+msgid "``DE`` - Deutsches Datumsformat ``31.12.2024``"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:464 633b46946dd448d5a88895591c4ecf77
+msgid "``GB`` - Britisches Datumsformat ``31/12/2024``"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:465 076eed03219649898ade90dfb718b0c4
+msgid "``US`` - US-Datumsformat ``12/31/2024``"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:470 ea970ab2af734a23af594a957ba0c98b
+msgid "Config - OBP Hardware"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:475 b64845d8b82e428d8c817eebaa6dae0c
+msgid ""
+"Unter **Hardware** werden alle Einstellungen bezüglich verbauter Hardware"
+" oder externer Zusatz-Hardware des OPB60 vorgenommen. Die Default-"
+"Einstellungen entsprechen den Minimal-Einstellungen für ein OBP60-Gerät. "
+"Je nach verbauter Hardware können unterschiedliche Sensoren und "
+"Funktionen zum Einsatz kommen."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:477 d0bcdaf548b04ea9b95ec7b4794473ad
+msgid "**CPU Speed**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:478 3e2e08fab68e4dafa1bdbea795a2b2f4
+msgid ""
+"Taktfrequenz der CPU. Die Taktfrequenz wird 1 min nach dem Abschluss des "
+"Bootvorgangs umgestellt."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:479 9bd09a8cf51c4303a3a650df4c8ab62c
+msgid "``80`` - 80 MHz"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:480 bcbb5022b4df458ea752059be81c4df5
+msgid "``160`` - 160 MHz"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:481 74cb110214e0470dbbb1807aca58837f
+msgid "``240`` - 240 MHz"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:483 c54d7f813eee42d6924119095b2b12aa
+msgid "**RTC Modul**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:484 53b01dcd4b224835a1802004c0d67948
+msgid "Typ der Echtzeituhr"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:485 90529f2d124e4b8e92dd8e4544391cfe
+msgid "``off`` - Es wird keine Echtzeituhr benutzt"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:486 3b41f9b058fa459f85e3ce5750b43fb8
+msgid "``DS1388`` - Echtzeituhr DS1388 (Default)"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:488 9cf132a2bb4d43439b18ac77b7ba567d
+msgid "**GPS Sensor**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:489 d06f4186c2794de79ac9a21bbc28e2b5
+msgid "Typ des GPS-Sensors"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:490 3e291dceeed64ea1a82492a86f7945f9
+msgid "``off`` - Es wird kein GPS-Sensor benutzt"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:491 fc0078ba8e27425d93fa5504deab353c
+msgid "``NEO-6M`` - GPS-Sensor NEO-6M"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:492 b19cb8d9af79427f808318841cf9fbd6
+msgid "``NEO-M8N`` - Höherwertiger GPS-Sensor NEO-M8N"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:493 933f65a96f014953b867776706555745
+msgid "``ATGM336H`` - GPS-Sensor ATGM336H (Default)"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:495 0b9b91f9c34b434e89ec575f60477f05
+msgid "**Env. Sensor**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:496 8eacf48a72e04b179abbe56383dbe157
+msgid ""
+"Angaben zum verwendeten Umgebungssensor. Dabei können verschiedene "
+"Sensoren ausgewählt werden. Die Sensoren sind am I2C-Bus angeschlossen. "
+"Es können interne Gerätesensoren des OBP60 oder externe Sensoren "
+"ausgewählt werden."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:497 f7333715dde34bc9b73cceab72c88726
+msgid "``off`` - Es wird kein Umgebungssensor benutzt"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:498 2be48f3b40f2493f90dd662e58ff3880
+msgid "``BME280`` - Sensor für Temperatur, Luftfeuchtigkeit und Luftdruck"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:499 b8f668c6bcc34d019b8c0399e00af595
+msgid "``BMP280`` - Sensor für Temperatur und Luftdruck (Default)"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:500 0e78821c07cd4dbdac9462a07278099a
+msgid "``BMP180`` - Sensor für Temperatur und Luftdruck"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:501 8e198a3198e3479eb060ffbc67cbbe5b
+msgid "``BME085`` - Sensor für Temperatur und Luftdruck"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:502 1bd6745f34004b2f8eedd154f706ef63
+msgid "``HTU21`` - Sensor für Temperatur und Luftfeuchtigkeit"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:503 f793d9378c1d4cc28041be45053567c5
+msgid "``SHT21`` - Sensor für Temperatur und Luftfeuchtigkeit"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:505 2c9096bcac4f461b9c0fe6f5f605be46
+msgid "**Battery Sensor**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:506 e665041289f34c5a8f2415069d095335
+msgid ""
+"Hier können Sensoren ausgewählt werden, die am externen I2C-Bus "
+"angeschlossen sind und Batterie-Werte auslesen."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:507
+#: ../../usermanual/configuration.rst:523
+#: ../../usermanual/configuration.rst:539
+#: ../../usermanual/configuration.rst:555
+#: ../../usermanual/configuration.rst:581 27e34ed9c8ac46b19238c63c0aa0a28b
+#: 4f609115194141689201d5db512b97d1 8c18bedbd3ba43c182273a2632243474
+#: b29ac99db9ef45b1a318b5ff3aa1d885 b911ef1a7a254e87bcb9bc567588b680
+msgid "``off`` - Es wird kein Sensor benutzt"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:508 c77c4d423f6e4a2d85ed645e8ff5c5d0
+msgid ""
+"``INA219`` - Sensor für Spannung 0...36V, Strom 0...500A und Leistung, "
+"I2C-Addresse 0x40"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:509 34e5b47bbdf346b8ab765f62e5065232
+msgid ""
+"``INA226`` - Sensor für Spannung 0...36V, Strom 0...500A und Leistung, "
+"I2C-Addresse 0x41"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:511 2aec52b986e946c8a2fa2e958fd60a80
+msgid "**Battery Shunt**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:512 eb43981fc5114be6a4b6888808726df2
+msgid ""
+"Hier kann der Shunt ausgewählt werden, der zur Messung des Batterie-"
+"Stroms dient. Es können nur Shunts verwendet werden, die 75 mV als "
+"Spannungsabfall bei Maximalstrom verwenden. Diese Angabe ist am Shunt zu "
+"finden."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:513
+#: ../../usermanual/configuration.rst:529
+#: ../../usermanual/configuration.rst:545 44ef1089feaa44dd919f9d463e2b24e9
+#: 6159bff9b245445c8219c4767eead6c0 faf9f76c712447b088db355f1b8b020e
+msgid "``10`` - Shunt für 10A"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:514
+#: ../../usermanual/configuration.rst:530
+#: ../../usermanual/configuration.rst:546 047ed22f04084f33a1bb06815ca1d77e
+#: 23d7a9630f7f4ae4bb5b19ef17f3f080 288c5930865945cdac77453b11cae851
+msgid "``50`` - Shunt für 50A"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:515
+#: ../../usermanual/configuration.rst:531
+#: ../../usermanual/configuration.rst:547 022273af76be4ac4bfef04e23075e87a
+#: 2a492a96fe1146c8b77dfd2c4871d5f7 ef45e09082a749d282097bad0b204576
+msgid "``100`` - Shunt für 100A"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:516
+#: ../../usermanual/configuration.rst:532
+#: ../../usermanual/configuration.rst:548 13bf9a9280c7444288343f916ddd43d0
+#: 83b57b2eeb334ae78106535bfdf1cd32 9edcd62ed28d4c26befdb440adda8366
+msgid "``200`` - Shunt für 200A"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:517
+#: ../../usermanual/configuration.rst:533
+#: ../../usermanual/configuration.rst:549 4ca7f61e419d42f38bc7cd28dc4bf192
+#: 6c48ca0f47d541cd9f6a56612fecc1fc 9aba18f3380949c0bda94f7222372462
+msgid "``300`` - Shunt für 300A"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:518
+#: ../../usermanual/configuration.rst:534
+#: ../../usermanual/configuration.rst:550 4f13901c94114806a2ed7db1e793a057
+#: ed2dace2ac8d4c64b4bddbf920572ca7 fd7420d2f930430686d8b2e7354e7a3d
+msgid "``400`` - Shunt für 400A"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:519
+#: ../../usermanual/configuration.rst:535
+#: ../../usermanual/configuration.rst:551 5e4c41de28b948d5b068a726a94c71b3
+#: 8eb39b5780334b78ae03114276344688 9a08018e885348f8b4197ebd107163aa
+msgid "``500`` - Shunt für 500A"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:521 2813aa197baa4f6b87ddf200cd2a6dcd
+msgid "**Solar Sensor**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:522 b61dde8062ae419181314d970722c4bc
+msgid ""
+"Hier können Sensoren ausgewählt werden, die am externen I2C-Bus "
+"angeschlossen sind und Solar-Werte auslesen."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:524 a4b0782882dd4e08986eac5344248d20
+msgid ""
+"``INA219`` - Sensor für Spannung 0...36V, Strom 0...500A und Leistung, "
+"I2C-Addresse 0x41"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:525 fc2a16c5e4414db2ac59ff6ceec53f60
+msgid ""
+"``INA226`` - Sensor für Spannung 0...36V, Strom 0...500A und Leistung, "
+"I2C-Addresse 0x44"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:527
+#: ../../usermanual/configuration.rst:543 3b4b94664fe344739bccab9fbbfeb9a8
+#: 41ffad00c14c4b8eb9ed7f527badaefc
+msgid "**Solar Shunt**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:528 5f5c8ddc710d4d148885b39290a3a68a
+msgid ""
+"Hier kann der Shunt ausgewählt werden, der zur Messung des Solar-Stroms "
+"dient. Es können nur Shunts verwendet werden, die 75 mV als "
+"Spannungsabfall bei Maximalstrom verwenden. Diese Angabe ist am Shunt zu "
+"finden."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:537 74c885c188e743c6884cba0b4032dd69
+msgid "**Generator Sensor**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:538 9b040c2b835941a9a7f016dca4a8522b
+msgid ""
+"Hier können Sensoren ausgewählt werden, die am externen I2C-Bus "
+"angeschlossen sind und Generator-Werte auslesen."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:540 c2652afc5038454daba34c9d400d5601
+msgid ""
+"``INA219`` - Sensor für Spannung 0...36V, Strom 0...500A und Leistung, "
+"I2C-Addresse 0x45"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:541 7b1a7f5efd7e4952be59848fa52a9776
+msgid ""
+"``INA226`` - Sensor für Spannung 0...36V, Strom 0...500A und Leistung, "
+"I2C-Addresse 0x45"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:544 789ef4268a6a40bba8708d8697995576
+msgid ""
+"Hier kann der Shunt ausgewählt werden, der zur Messung des Solarstroms "
+"dient. Es können nur Shunts verwendet werden, die 75 mV als "
+"Spannungsabfall bei Maximalstrom verwenden. Diese Angabe ist am Shunt zu "
+"finden."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:553 667b025f92f74157a3f156211fa3e53c
+msgid "**Rot. Sensor**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:554 3f790aa6b8194e4d80b526265f81a2ec
+msgid ""
+"Über **Rot.Sensor** kann der Sensor zur Winkelmessung ausgewählt werden, "
+"der sich am externen I2C-Bus befindet."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:556 b207812a2e1543e296ef0e48ae6285e8
+msgid ""
+"``AS5600`` - Magnetischer Sensor zur Winkelmessung von 0° bis 360° ohne "
+"Endanschlag, I2C-Adresse 0x36"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:558 a18d838e375a4427baa6fe74caa29f8e
+msgid "**Rot. Function**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:559 6c1534d16bc54738858b21375cdb2818
+msgid "Funktion des Winkelsensors"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:560 112b11c8b97a4ed58695e33e0597b39d
+msgid "``Rudder`` - Winkelsensor für Ruderstellung"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:561 970d4570c371451e98518013e2114d8c
+msgid "``Wind`` - Winkelsensor für Windrichtung"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:562 b086f1c3aa2b4d6f98e7ee1f5309b3b3
+msgid "``Mast`` - Winkelsensor für Mastausrichtung bei drehbaren Masten"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:563 0bb2844805f34f719d91b7fdaa60a116
+msgid "``Keel`` - Winkelsensor für Kielneigung"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:564 1f47d54a100d4693897c4ec407f97ba9
+msgid "``Trim`` - Winkelsensor für Trimmklappen oder Foils"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:565 6bc747bab509495dba85e2815f11ad17
+msgid "``Boom`` - Winkelsensor für Großbaum"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:567 134505e8173c47e697f68c70e5b8be6c
+msgid "**Rot. Offset**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:568 0021999945db44b4a54d83da58b9cfb8
+msgid ""
+"Offset des Winkelsensors. Damit kann der Nullpunkt der externen "
+"Winkelsensoren am I2C-Bus korrigiert werden."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:570 9f76797f078944179776eb72f9c39fc0
+msgid "**Roll Limit**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:571 3c9bd65818394c33abb982dac7c07901
+msgid ""
+"**Roll Limit** gibt den maximal zulässigen seitlichen Neigungswinkel für "
+"das Rollen des Bootes an. Unter realen Bedingungen sind 20 Grad als "
+"Grenzwert realistisch."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:573 c3a5a07a1fe34d61a9f31e7bdf0460b3
+msgid "**Roll Offset**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:574 287ea722603b4e18b8df02e900c7deb0
+msgid ""
+"Offset des Neigungs-Winkelsensors. Damit kann der Nullpunkt des "
+"Winkelsensors für das seitliche Rollen Ihres Bootes korrigiert werden."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:576 5f73a20f92bf4078b2b61ecf0b5b62cb
+msgid "**Pitch Offset**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:577 5e2d8945c4b945a08f23934e01dddf0f
+msgid ""
+"Offset des Winkelsensors für Pitch. Damit kann der Nullpunkt des "
+"Winkelsensors für das Nicken Ihres Bootes korrigiert werden."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:579 74dcadda2fbf40bf9042f1f946fd4b84
+msgid "**Temp Sensor**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:580 bd9d7cd6ab9e43ccb80c356f44d060d7
+msgid ""
+"Hier kann der Sensortyp ausgewählt werden, der am 1Wire-Bus verwendet "
+"wird. Es werden bis zu 8 Sensoren am 1Wire-Bus unterstützt."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:582 16851ac8b19f49309814672c891074b2
+msgid "``DS18B20`` - Temperatursensor -10...+85°C (1...8 Sensoren)"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:584 1a2b7345262a4c08aaac4a048cc54771
+msgid "**Power Mode**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:585 6568e8c0438e44a48dcdbfd9b8073c69
+msgid ""
+"Der **Power Mode** bezieht sich auf die Art der Stromversorgung, die für "
+"das OBP60 verwendet wird."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:586 dd3e2038775c47d78a6e88b887418c9b
+msgid ""
+"``Max Power`` - Alle Stromversorgungen sind eingeschaltet. Hierbei ist "
+"das Gerät am leistungsfähigsten und es kann der höchste Stromverbrauch "
+"entstehen."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:587 ef5efbeee57b465eb4738d99c3a40805
+msgid ""
+"``Only 5.0V`` - Es ist nur die zusätzliche Stromversorgung für 5.0 V "
+"eingeschaltet."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:588 e95e6f27374448568f6ed290dc68aee0
+msgid ""
+"``Min Power`` - Es sind nur die Stromversorgungen eingeschaltet, die die "
+"Minimal-Funktionen bereitstellen. Hierbei entsteht der geringste "
+"Stromverbrauch. Die Bussysteme, das GPS, die externe 5V-Stromversorgung, "
+"die Hintergrundbeleuchtung und der Buzzer sind ausgeschaltet. Das "
+"Display, die Tasten, die RTC und der Umweltsensor BMP280 sind "
+"eingeschaltet."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:591 6fe4e1877d544b729cf011276e84f7ea
+msgid "Baugruppe"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:591
+#: ../../usermanual/configuration.rst:620 4c32525637be4864af07d6b859992174
+#: 502fd20e0b344b36a44377ff1b36c6b5
+msgid "Max Power [W]"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:591
+#: ../../usermanual/configuration.rst:620 622c6cc6d0654bc48ec183a8a6f0ff15
+#: 7a55cef9aa6441ab82efdc094147fea1
+msgid "Min Power [W]"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:593 e7443de025cc46cda93dea6f56e7b2d2
+msgid "CPU ESP32-S3"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:593
+#: ../../usermanual/configuration.rst:595
+#: ../../usermanual/configuration.rst:597
+#: ../../usermanual/configuration.rst:599
+#: ../../usermanual/configuration.rst:601
+#: ../../usermanual/configuration.rst:603
+#: ../../usermanual/configuration.rst:605
+#: ../../usermanual/configuration.rst:607
+#: ../../usermanual/configuration.rst:609
+#: ../../usermanual/configuration.rst:611
+#: ../../usermanual/configuration.rst:613
+#: ../../usermanual/configuration.rst:615
+#: ../../usermanual/configuration.rst:767
+#: ../../usermanual/configuration.rst:769 110dd91d93924e1087deb3e17aab3460
+#: 1ff36ede889540f58676a504eb061b76 217c6e4574aa4f34ba2c9500ca24bf61
+#: 219d48dfe92844528c7b01d07c354884 39fb7e00d79645718a4a3b3ec38786ef
+#: 3ee1ab97bb4c4527ab7d58ebaf501e42 464a33255c1b4be5b46730773d0cad15
+#: 6c2962c5bfce408d85c0260dd3f14cd1 77e8b8b73169445f97d451187ddf205f
+#: 79a6c6ff807f40219a2bb148dd23feda 79c99a8d3c3748f6ba6600683a9eb919
+#: 7fad43e01d884802b113c53b5047033b 85a3c3377346450abc39a304ec45ce50
+#: 89d6142a367b497dadf872b164d3a59d 917f31abf51048c5a17df40f72dadf09
+#: a2ea3ecd1c77471c92cc4fae76da8085 a8cf28603fa04cdb86f41d4e1c25edee
+#: ae0f75e925294428b3c50594247c26d2 bdab3b2690d24dc08f56c67224fc9fd1
+#: c80031bc76f54aaf91fe014f466a64ba e538fcf6e35442a5b8834792c3ce914d
+#: f43d6fab9a644da9a242f55d6a2e55cf
+msgid "on"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:595 31eb081b8e4947d5b836c285ff1a9e07
+msgid "e-Paper Display"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:597 73a9caeb690447d2ba9e0bca8b575cbc
+msgid "Touch-Tasten"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:599 2d641a129df64c1b97dc181f2337175e
+msgid "Echtzeituhr RTC"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:601 f5afdab32cfc44c8a127ab7020696196
+msgid "Sensor BMP280"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:603 17f734542a294a36bec16def0e1335a6
+msgid "1Wire"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:605 3e0d1951898845599e50a90cf3d89c1b
+msgid "Flash-LED"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:605
+#: ../../usermanual/configuration.rst:607
+#: ../../usermanual/configuration.rst:609
+#: ../../usermanual/configuration.rst:611
+#: ../../usermanual/configuration.rst:613
+#: ../../usermanual/configuration.rst:615
+#: ../../usermanual/configuration.rst:767
+#: ../../usermanual/configuration.rst:769 2b5463cd65b043eab9f59ea581667338
+#: 2dcaa2156bd6467da579871cc70e98ee 424930abe0f64b848805f9585843474d
+#: 56c17ae9935c4e8f931f669814c620ea 5a608a56d0f644689f72f1606c8d4d9d
+#: 62d28c40e371417ca9a546bc4fca53dc c3add0542d674881b3abf8b40f922ed7
+#: e8dafc5ab8e644d6bc220c182a74c72e
+msgid "off"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:607 b3e0fe9fca54410a98eb0a8b86ca8e8c
+msgid "Hintergrundbeleuchtung"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:609 bb042584912744fe8a998a4a139d24be
+msgid "Buzzer"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:611 3718c922178d43b482429f119851cd3a
+msgid "GPS"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:613 72f4634fa52f428d93247dde2bb9d8ec
+msgid "Bussysteme N2k, 0183"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:615
+#: ../../usermanual/configuration.rst:634 76f8becfa57645a3995b18d828c35d3f
+#: ba8e648030fb4780b07d0d29fde649da
+msgid "Externe 5V-Versorgung"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:617 0f752f44e4054c57ad05b094032980fd
+msgid "Tab.: Aktive Baugruppen OBP60 V2.1"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:620 5a7d63e736724707bc97d515995c81f8
+msgid "Komponenten"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:622 5cfd4c45a0fd48b0b83cf5c8994d8bcc
+msgid "CPU 240 MHz, WiFi, AP"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:622 023e7010efa94712bf6a221768f9a494
+msgid "1.78"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:622 89d59f56846046b2968cf5d04bee7406
+msgid "1.30"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:624 a8e97db9eed74dd0b44bab7748a2ce8b
+msgid "CPU 160 MHz, WiFi, AP"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:624 d6cd1f2999704b26883a08005d8bd1cf
+msgid "1.68"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:624 24371110f40946378d31908e504e46b4
+msgid "1.20"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:626 12e3a1fb114a4e60974a424b831b2f6e
+msgid "CPU 80 MHz, WiFi, AP"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:626 3fc27391b3234effac75b914d4e3e80e
+msgid "1.58"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:626 6d3a219dc7c445678366404fcc93b837
+msgid "1.13"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:628 e35f2a265a3d44f3bd35f8c224f38d42
+msgid "CPU 240 MHz, WiFi"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:628 8e4a163183754fe5975ec7c759bc2b38
+msgid "1.16"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:628 cf7a3b54f07942eda3563d3ca239b442
+msgid "0.70"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:630 99fbed50f4374e248f9f73e0c77b839e
+msgid "CPU 160 MHz, WiFi"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:630 0dcfb411682d4c0db1b45041d2a40e55
+msgid "1.07"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:630 5ce67212d01749309fc0c323d53e8f8d
+msgid "0.60"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:632 28494a6e1cf448719b11f16ee1b11ad2
+msgid "CPU 80 MHz, WiFi"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:632 076ab99428444031ae8ad8c74af42627
+msgid "0.96"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:632 a4f60e6c36a8442da354a7b0fb961c59
+msgid "0.53"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:634 7e87f473e1ff4b42bbff7becda9e2d52
+msgid "0.83"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:634 20cf5d87a3d04a98851ac2665f953e23
+msgid "0.00"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:636 94e476edc70943edac7d387295428cf7
+msgid "Tab.: Stromverbrauch OBP60 V2.1 (AP - Access Point)"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:638 49ba81edbbc841d19f07b15152f837b0
+msgid ""
+"Je nach zugeschalteter Farbe und Leistung der Hintergrundbeleuchtung "
+"entsteht ein zusätzlicher Stromverbrauch."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:641 086a33248d414fed9ba4e1f07856cbb6
+msgid "RGB-LED-Beleuchtung"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:641 90513a7a46264e6d9304f59dc9b59b1e
+msgid "LED 100% [W]"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:641 dbe699e1ed9248a19cd50e3d27427748
+msgid "LED 50% [W]"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:643 ba757ea313864fbb94dcd2f78f882ccb
+msgid "LED rot"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:643
+#: ../../usermanual/configuration.rst:645
+#: ../../usermanual/configuration.rst:647 130bfc2943504bddad60900e68022fff
+#: 8ce37ca837454758b49a286e2e898cf7 cf77cfcfca4f4afa9fc12869a4462212
+msgid "0.24"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:643
+#: ../../usermanual/configuration.rst:645
+#: ../../usermanual/configuration.rst:647 50d6150b2397467f96adbd8921ead93c
+#: b52dd5bf6be5422bb80b2511ded7e827 eed927d799ef4069ae2022eeebdc5244
+msgid "0.11"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:645 411d95c1c5984b7dba5f569da1cc0b73
+msgid "LED grün"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:647 ed63b149535e400981c545f39d1df050
+msgid "LED blau"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:649 c2a041fda3ec43ef941d6e500ae9693b
+msgid "LED weiss"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:649 0230f04147b3448889b51ad0647b91e5
+msgid "0.61"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:649 e83570697a8c40f398321a2fceb37649
+msgid "0.32"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:651 dbf7b702dc0f4135ad52c7ae48633e3a
+msgid "Tab.: Stromverbrauch der LED-Hintergrundbeleuchtung"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:654 e75bdcec03884c08a1f4b34968e95737
+msgid "**Undervoltage**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:655 8ef09e13fab64efe930be9a8e68e85b2
+msgid ""
+"Erkennung einer Unterspannung der Stromversorgung. Wenn eine "
+"Unterspannung niedriger als 9 V erkannt wird, kann das OBP60 automatisch "
+"deaktiviert werden, um eine Tiefentladung der Bordbatterie zu vermeiden. "
+"In kritischen Situationen kann das OBP60 trotz Unterspannung bis 7 V "
+"funktionsfähig bleiben, wenn der Unterspannungsschutz deaktiviert ist. "
+"Als Default-Wert ist der Unterspannungsschutz aktiviert. Wenn im "
+"aktivierten Zustand eine Unterspannung auftritt, wird das OBP60 "
+"deaktiviert und in den Tiefschlaf versetzt. Im Display erscheint die "
+"Meldung **Undervoltage**. Dieser Zustand kann nur verändert werden, wenn "
+"die Versorgungsspannung vollständig ausgeschaltet und wieder "
+"eingeschaltet wird."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:656 56e1989a4ba64be086e4e0e8bf44f8c5
+msgid "``on`` - Der Unterspannungsschutz ist aktiviert"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:657 34006a7c1c06435a9f886d6f5b1e5076
+msgid "``off`` - Der Unterspannungsschutz ist ausgeschaltet"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:660 028ae703a9ac4388b109da259a1c8a84
+msgid ""
+"Wenn Sie das OBP60 über USB mit Strom versorgen möchten, muss die "
+"Erkennung der Unterspannung abgeschaltet werden, da sich das Gerät sonst "
+"automatisch abschaltet."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:662 688fe522982a48a9a853b4d276bd0cfa
+msgid "**Simulation Data**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:663 a32e23570ce54a50b2200dbc550adaa0
+msgid ""
+"Mit **Simulation Data** können Bus- und Sensordaten simuliert werden. Die"
+" Funktion ist nützlich, wenn die Funktionalität des Gerätes im "
+"ausgebauten Zustand ohne angeschlossene Busse oder Sensoren getestet "
+"werden soll. Das Gerät befindet sich dann in einem Demo-Mode."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:664 0421326ae8c24a5cb76b51dc93b47a09
+msgid "``on`` - Sensordaten werden durch Simulationsdaten ersetzt"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:665 f2b9a0badd974d3097873c504d4a7d48
+msgid "``off`` - Es werden Live-Sensordaten verwendet"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:668 a23c45c2b3f34976897044c116552a43
+msgid ""
+"Bedenken Sie, dass Simulationsdaten als Live-Daten fehlinterpretiert "
+"werden können. Benutzen Sie Simulationsdaten nur, wenn Sie das OBP60 "
+"nicht zur Navigation benötigen und stellen es nach der Benutzung wieder "
+"auf Live-Daten um, indem Sie den Simulations-Modus beenden."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:671 179b79aa2863496ab62477adee468474
+msgid "Config - OBP Calibrations"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:676 eb3a34dd2395494b96712e407159b009
+msgid ""
+"Auf der Seite **Calibrations** können Einstellungen zur Kalibrierung "
+"vorgenommen werden. Damit lassen sich Ungenauigkeiten von bestimmten "
+"Messwerten korrigieren. Die Korrektur kann je nach Sensor mit einer "
+"linearen oder quadratischen Korrektur durchgeführt werden."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:678 8541dbc918344c3cbe5728f458cc2ebb
+msgid "**Touch Sensitivity**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:679 d987edfa72e64a129f5a148168cef94a
+msgid ""
+"Einstellung der Tastenempfindlichkeit 0...100%. 0% bedeutet minimale "
+"Empfindlichkeit. 100% bedeutet maximale Empfindlichkeit."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:681 cbab3fc451194508887774f766abaeb6
+msgid "**VSensor Offset**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:682 bed0586f7e9a4c5f82dae1173da3d857
+msgid "Offset der Korrekturfunktion des internen Spannungssensors des OBP60"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:684 f800aa3251734e4b85f42d469270fd4f
+msgid "**VSensor Slope**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:685 f5add47ffc45464ca82c9d26bc982785
+msgid "Steigung der Korrekturfunktion des internen Spannungssensors des OBP60"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:687 a17529cb0606462495bf69e8464424f7
+msgid "**Calibration Data Instance [1..3]**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:688 50dbe2b9163e420f9298668c8e3abbb4
+msgid ""
+"Auswahl von bis zu drei Datentypen, die kalibriert werden sollen. Die zur"
+" Auswahl stehenden Datentypen erscheinen, wenn man die Pulldown-"
+"Auswahlliste öffnet. Sobald man einen Datentyp ausgewählt hat, erscheinen"
+" die im Folgenden beschriebenen Konfigurationsparameter. Eine Auswahl von"
+" ``---`` deaktiviert die Kalibrierung für diesen Datentyp."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:692 89856ca834984905a9fe72cc7b8849ef
+msgid "**Data Instance [1..3] Calibration Offset**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:693 32ae64a9687849d4818065a85c03faae
+msgid "Offset der Korrekturfunktion für den gewählten Datentyp"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:695 7c092acf34624bfba54d40ef7f9b9cb5
+msgid "**Data Instance [1..3] Calibration Slope**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:696 e497842873e84faca53a98d1f46cd138
+msgid "Steigung der Korrekturfunktion für den gewählten Datentyp"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:698 cfbd407464114cc3a4174af8bca99f2c
+msgid "**Data Instance [1..3] Smoothing**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:699 35db13f8a230401c8cf63e977634b709
+msgid ""
+"Hiermit wird eine Glättung bzw. Dämpfung des jeweiligen Datentyps "
+"durchgeführt. Es ist eine Einstellung im Bereich [0..10] möglich. ``0`` "
+"bedeutet \"keine Glättung\", ``10`` erzielt eine maximale Glättung."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:701 4dacf4ec03534a12a66cde1fdfd29823
+msgid ""
+"Zur Glättung wird der **Exponetnial Smoothing Algorithmus** verwendet, "
+"dessen Stärke über einen Parameter (Werte zwischen 0 und 10) eingestellt "
+"werden kann. Dabei wird der neue geglättete Wert **s** aus den aktuellen "
+"Messwert **x**, dem vorherigen geglätteten Wert und dem Gewichtungsfaktor"
+" **a** berechnet:"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:703 c15dc8780eb643919a96f1e29b22927c
+#, python-brace-format
+msgid ""
+"s_t=s_{t-1}+a(x_t-s_{t-1})\n"
+"\n"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:705 1ae5ccbb2103428aa06196c24bc1b3f1
+msgid ""
+"Auf der Konfigurationsseite wird nicht direkt der Wert **a** eingegeben, "
+"sondern der Hilfsparameter **k**, wobei die Einstellung k=0 zu keiner "
+"Dämpfung (d.h. a=1) führt, und Werte für **k** größer als 0 "
+"folgendermaßen verrechnet werden:"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:707 421eb2525b4e4483b314e686800532e6
+msgid ""
+"a=1-(0.3 + ((k - 0.01) * (0.95 - 0.3) / (10 - 0.01)))\n"
+"\n"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:709 1b9ab1eb23b148c0bd0330d7c649843a
+msgid ""
+"Hier ist dargestellt, wie verschiedene Werte dieses Parameters auf ein "
+"Signal wirken: In der ersten Abbildung ist erkennbar, wie ein einzelner "
+"Ausreißer bei verschiedenen Einstellungen unterdrückt wird. Die zweite "
+"Abbildung zeigt, wie ein Sprung in den Eingangsdaten in einen langsameren"
+" Anstieg umgewandelt wird. In der Praxis ist hier ein Kompromiss zu "
+"wählen, so dass einerseits kurzfristige Schwankungen gut gedämpft werden,"
+" und andererseits tatsächliche Änderungen nicht zu lange dauern, bis sie "
+"sichtbar sind."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:712 fc1dc48a5d5b40f1aa290d10d3f8290b
+msgid "Abb.: Dämpfungswirkung bei Ausreißern"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:715 ca2b0b2cc80f461d9ab43fcae986d38f
+msgid "Abb.: Dämfung schneller sprunghafter Änderungen"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:717 c0f57d7e68fa43a6aabdd34bd6e530e1
+msgid ""
+"Die x-Achse der Diagramme zeigt die Zahl der Datenaktualisierungen, d.h. "
+"sie ensprechen einer Zeitachse in Sekunden, wenn der Messwert 1x pro "
+"Sekunde aktualisiert wird."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:720 0e77c0a215b243ec91ecbe337cf5ff40
+msgid ""
+"Der Default für die Steigung (Slope) jedes Kalibrierungswertes ist **1**."
+" Wird hier eine **0** eingetragen, wird jeder Datenwert auch auf **0** "
+"gesetzt. Der Default für die Konfigurationsparameter **Offset** und "
+"**Smoothing** ist **0**."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:723 ed06cca5b4704897935ddffc529ad984
+msgid "Config - OBP Display"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:728 a3b0efeb08f946d1b8a4b6e5926fc4da
+msgid ""
+"Der Bereich **Display** enthält alle Einstellungen, die das Display "
+"betreffen."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:730 69f333e5b1bf460ca6343080d736d44a
+msgid "**Display Mode**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:731 b89b7fc3ec704b599072754fa5bc10ca
+msgid ""
+"Über den **Display Mode** wird eingestellt, wie sich das Display "
+"unmittelbar nach dem Einschalten verhält."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:732 4194a9a6425946a69ae618eeb9aab686
+msgid ""
+"``Logo + QR Code`` - Das Logo und der QR-Code für den WiFi-Zugang werden "
+"angezeigt."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:733 bcd505c4ee6b4e1188646f34650c7f3c
+msgid "``Logo`` - Nur das Logo wird angezeigt."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:734 d46f21cd480f46a8bab4287ca49dba7d
+msgid "``White Screen`` - Es wird eine weiße Seite angezeigt."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:735 7a93e9505bb7484bbffdf0b943374783
+msgid ""
+"``off`` - Das Display wird deaktiviert, es wird zur Anzeige nicht "
+"verwendet."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:737 d131304c2c744d908e470aebe036058f
+msgid "**Inverted Display Mode**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:738 0fcd8c35cc3840f7a50c3e3779491b77
+msgid ""
+"``Normal`` - Der Bildschirminhalt wird schwarz auf weißem Untergrund "
+"angezeigt."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:739 d3e79381507642b38cd15a004fadb4eb
+msgid ""
+"``Inverse`` - Der Bildschirminhalt wird weiß auf schwarzem Untergrund "
+"angezeigt."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:741 0e7853ecccda493c9d74628983496362
+msgid "**Status Line**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:742 4c69f5fcc96f4fdaa921dd4392ad3dfd
+msgid "``on`` - Die Statuszeile wird im oberen Bereich des Bildschirms angezeigt."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:743 e86f572762f0497c908baaf149e0da91
+msgid "``off`` - Die Statuszeile ist deaktiviert."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:745 5d7dadcef19c4a9cbdb422d46165d9de
+msgid "**Refresh**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:746 246ce0ee9d7b4f8ebf18acf50e3257ec
+msgid ""
+"``on`` - Der Auto-Refresh des Bildschirminhaltes ist aktiviert. Damit "
+"werden Geisterbilder beim Seitenwechsel unterbunden. Es wird ein Voll-"
+"Refresh des E-Paper-Displays durchgeführt. Alle 10 min erfolgt zusätzlich"
+" automatisch ein Voll-Refresh."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:747 e198438878994abeb8502f0f65dfe281
+msgid "``off`` - Auto-Refresh ist deaktiviert"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:750 e1a2e72e6e4e4d7caf60ca866f2030c2
+msgid ""
+"Die Entstehung von Geisterbildern ist von der Display-Temperatur des "
+"OBP60 abhängig. Bei tiefen Temperaturen sind Geisterbilder deutlicher zu "
+"sehen und die Anzeige reagiert träger als bei höheren Temperaturen. Kurz "
+"nach dem Einschalten wird für die ersten 5 Minuten jede Minute ein Voll-"
+"Refresh durchgeführt, damit sich das Display akklimatisieren kann. Bei "
+"extrem großer Sonneneinstrahlung kann es vorkommen, dass der Kontrast des"
+" Display-Inhaltes verloren geht. Schwarze Anzeigebereiche werden dann nur"
+" noch grau dargestellt. Das Display ist in diesem Fall nicht defekt. Nach"
+" einem Voll-Refresh regeneriert sich das Display und der Kontrast wird "
+"wieder vollständig hergestellt."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:752 25c0e45c29e3477fa8c37d0d0ba92a17
+msgid "**Fast Refresh**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:753 fcf0eb27ac7f4ccc95641116022d5892
+msgid ""
+"``on`` - Bei aktiviertem Fast Refresh wird eine Voll-Refresh schneller "
+"ausgeführt. Es werden weniger Schwarz-Weiß-Wechsel durchgeführt."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:754 acc8175a7d6e4514acad3ecf80ffbd6a
+msgid ""
+"``off`` - Bei deaktiviertem Fast Refresh wird eine Voll-Refresh langsamer"
+" ausgeführt, weil mehr Schwarz-Weiß-Wechsel durchgeführt werden."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:756 3213204d84164cf0a70c9ae03f7f0cf7
+msgid "**Full Refresh Time**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:757 f693db6b6bff49d1bd97add79a86bc3c
+msgid ""
+"Über Full Refresh Time kann festgelegt werden nach welcher Zeit ein "
+"regelmäßiger Voll-Refresh durchgeführt wird. Full Refreshes sind für das "
+"e-Paper Display wichtig, da das Display nach einer gewissen Zeit mit "
+"partiellen Updates einen Voll-Refresh zur Erholung durchführen muss, um "
+"die Displayfunktionalität zu erhalten. Bei einem Voll-Refresh wird der "
+"Displaykontrast wieder vollständig hergestellt."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:760 c82f397b71dc462b9c8b1967f3cbddc7
+msgid ""
+"Bei starker Sonneneinstrahlung kann je nach verwendetem Displaytyp ein "
+"Kontrastverlust nach einiger Zeit auftreten. Um den Effekt zu minimieren,"
+" sollte der **Fast Refresh** deaktiviert werden und die **Full Refresh "
+"Time** auf 1 min gesetzt sein. Der Erholungseffekt ist für das Display "
+"dadurch wesentlich stärker."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:762 d7d4700079d34500bbc12dc672cc28da
+msgid ""
+"Als Hilfestellung wie man die Einstellungen zum Display vornehmen kann, "
+"dient die nachfolgende Tabelle:"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:765 285dc2c358f04423bf417b140ea548d7
+msgid "Parameter"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:765 52ad8a63a7904dbf8e7d8c550471c916
+msgid "Temp <= 20°C"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:765 9385328ee92f4de587a15363e432e893
+msgid "Temp > 20°C"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:765 acb09171746d43a5a841627491c7d32c
+msgid "Direkte Sonne"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:767 2053b3e37dd145ec8349883d64acad7f
+msgid "Refresh"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:769 4b62c05c0b474ee783af0d7b5e9a1a6a
+msgid "Fast Refresh"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:771 1cc65f975cea4feda5d7017eef1431ae
+msgid "Full Refresh Time"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:771 a91af80ce451417c861f955d2061f4dd
+msgid "10 min"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:771 eefd2e2ba88c404c8d6e25f560911a5c
+msgid "5 min"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:771 31d07d5e4f17436d96dfaaf49c4c8118
+msgid "1 min"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:774 3f7b9fd3c77e4ec18202f5f92d2e0a19
+msgid "**Hold Values**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:775 9a1340cafb7c4a8abea076a42878501f
+msgid ""
+"``on`` - Anzeigewerte werden gehalten, wenn die Datenverbindung "
+"kurzzeitig fehlen sollte und die Daten nicht aktualisiert werden können. "
+"Diese Einstellung kann bei TCP-Verbindungen über WiFi nützlich sein."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:776 ced05b3bf71c433a859fd0d06d890171
+msgid ""
+"``off`` - Anzeigewerte werden nicht gehalten. Bei unterbrochener "
+"Datenverbindung länger als 5 s werden fehlende Daten mit ``---`` "
+"gekennzeichnet."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:778 8c90afecc3384942a0c40616e733756f
+msgid "**Backlight Mode**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:779 9335c0296df84fefb2fb2947b0f131fc
+msgid "``Off`` - Die Hintergrundbeleuchtung ist dauerhaft ausgeschaltet."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:780 bdbd8af455664f3384f1191e01177462
+msgid ""
+"``Control by Sun`` - Automatisches Schalten der Beleuchtung durch den "
+"Sonnenstand"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:781 f62d9ea9469744c19b2732b0e4efac39
+msgid ""
+"``Control by Bus`` - Automatisches Schalten der Beleuchtung über den Bus "
+"durch NMEA2000"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:782 ce0e00f7f274477a9262d54d799669a5
+msgid ""
+"``Control by Time`` - Schalten der Beleuchtung durch ein vorgegebenes "
+"Zeitintervall"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:783 d2497bdb233b45eda84cb32a0731e1a1
+msgid ""
+"``Control by Key`` - Manuelles Schalten der Beleuchtung durch eine "
+"Sensortaste"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:784 3d366d8f24be4c359a514f6e074ee9c6
+msgid "``On`` - Die Hintergrundbeleuchtung ist dauerhaft eingeschaltet."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:786 4d0106708fd94ebba6eec0f3efe12bdd
+msgid "**Backlight Color**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:787 7339067188c2461884f3b7730f9a09de
+msgid ""
+"Die Farbe der Hintergrundbeleuchtung kann durch 6 RGB-LEDs individuell "
+"eingestellt werden."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:788 36c34f596bcd4cea8e1b51083e4c411e
+msgid "``Red`` - rot"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:789 c25ab75f0156427181bb935baa8dc984
+msgid "``Orange`` - orange"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:790 eaf4c64d1faf4ab79fc6f2bf973ced5f
+msgid "``Yellow`` - gelb"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:791 8f30429138ed4b058b275aa94c8374df
+msgid "``Green`` - grün"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:792 c396e8521075426b886c0c7a2f624ce0
+msgid "``Blue`` - blau"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:793 4ff7291bb0af45268e058b2615a3ee9c
+msgid "``Aqua`` - wasser"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:794 c199e8830d854eafb15609c3e9ab99c0
+msgid "``Violet``- violett"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:795 ca20525622a84b2ea5dbbaa6f9ccb25a
+msgid "``White`` - weiß (höchster Stromverbrauch)"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:797 191760f0a9bc4700b90ca91dd403ba91
+msgid "**Brightness**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:798 d536b4a57fd54bc2bd70e592181bc4e8
+#, python-format
+msgid ""
+"Über **Brightness** kann die Helligkeit der Hintergrundbeleuchtung der "
+"RGB-LEDs zwischen 20... 100% eingestellt werden. Der Default-Wert liegt "
+"bei 50%. Damit wird sehr wenig Strom für die Hintergrundbeleuchtung "
+"benötigt. Die Helligkeit ist damit für den Nachtbetrieb so eingestellt, "
+"dass die Beleuchtung nicht blenden kann."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:801 09a4cccf8bd34a00b8082fc7dc026a89
+#, python-format
+msgid ""
+"Für längere Nachtfahrten ist eine rote Hintergrundbeleuchtung "
+"empfehlenswert, die moderat in der Helligkeit auf z.B. 50% eingestellt "
+"ist. Bei rotem Licht muss sich das Auge nicht ständig an wechselnde "
+"Lichtverhältnisse anpassen. So können Sie nachts das Display ohne "
+"Sichteinschränkungen ablesen."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:804 7c7b0a50f42a469eabe38efbdbc0a131
+msgid ""
+"Je höher die Helligkeit der Hintergrundbeleuchtung eingestellt wird, um "
+"so mehr Strom wird verbraucht. Bei weißer Hintergrundbeleuchtung tritt "
+"der größte Stromverbrauch auf, da alle 3 Farben der RGB-LED zur Erzeugung"
+" von weißem Licht benutzt werden. Bei reinen Grundfarben wie rot, grün "
+"und blau wird am wenigsten Strom verbraucht. Bei Mischfarben weden die "
+"RGB-LEDs unterschiedlich stark angesteuert und der Stromverbrauch ist "
+"höher als bei den Grundfarben. Nachfolgend zwei Beispiele:"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:805 6a97845565b94de1af20d6d1edc32389
+msgid "100%, weiß - 2 W"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:806 b0426fbc2767466ba577dd9029dac92b
+msgid "50%, rot - 0.2W"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:808 f1f6fe6c873442a6a1a31991be616df8
+msgid "**Flash LED Mode**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:813 fb7f5d3808cf4bd384bff50fd15b0b4c
+msgid ""
+"Die Flash-LED befindet sich in der linken oberen Ecke über dem E-Paper-"
+"Display und zeigt verschiedene Zustände des OBP60 an. Die LED kann dabei "
+"verschiedene Farben annehmen, die je nach Verwendung unterschiedliche "
+"Bedeutung haben."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:815 7dbb9101884a4d8ea130c90a8232ad84
+msgid "``Off`` - Die Flash-LED ist dauerhaft ausgeschaltet."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:816 703cc98dd937449390ade99e7a5ecc50
+msgid "``Bus Data`` - Bei eintreffenden Busdaten leuchtet die LED kurz blau auf."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:817 ce73b74825ea443b8f26ad16aaa95b81
+msgid ""
+"``GPS Fix Lost`` - Bei dauerhaft roter Flash-LED wurde der GPS-Fix "
+"verloren. Die GPS-Daten sind ungültig."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:818 44ba01406d2940db9812b0b88942c9de
+msgid ""
+"``Limit Violation`` - Bei blinkend roter Flash-LED ist ein Grenzwert "
+"über- oder unterschritten worden."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:820 88b96511b96c4f9da784e234c0a42bab
+msgid ""
+"Die Flash-LED leuchtet mit maximaler Helligkeit, sodass sie optisch auch "
+"bei hellen Sonnenlicht gut wahrgenommen werden kann. Die Bedeutung der "
+"Farben ist folgende:"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:822 31d8ca963be34164bc13e75862d1d861
+msgid "Rot - Alarmierung bei Grenzwertüberschreitung"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:823 28f2e9b5c87049c5be6c72519d5cd897
+msgid "Grün - Bestätigung von Zustandsänderungen (z.B. Autopilot ein/aus)"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:824 0200a5ead7854c6cacee8568b2caf070
+msgid "Blau - Signalisierung von Zuständen (z.B. GPS-Empfang, Datentransfer usw.)"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:827 99c454bdaa2c462c869abd26439345e8
+msgid "Config - OBP Buzzer"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:832 93ab00251d0443dc9578442403e084d0
+msgid ""
+"In diesem Bereich lassen sich die Funktionen des Buzzer einstellen. Der "
+"Buzzer dient zur akustischen Signalisierung von Systemzuständen und "
+"Störungen des OBP60."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:834 b246bc3554ec4e83998af182a0c3c819
+msgid "**Buzzer Error**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:835 a6825f82680c46d18b88b6420a120821
+msgid "``on`` - Der Buzzer ertönt bei Störungen und Fehlern."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:836
+#: ../../usermanual/configuration.rst:840
+#: ../../usermanual/configuration.rst:844 091f208d607e4a6b8e99dd0caafdc96e
+#: c9134a5c999442d0a9706ddd8f448575 cd868f1767ce43e8b8c54feb8d040896
+msgid "``off`` - Die Funktion ist deaktiviert."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:838 1ce37b6c52064c07853e7a86a00f8194
+msgid "**Buzzer GPS Fix**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:839 85bb1ca1e44c46dcb97382bffd29d7e6
+msgid "``on`` - Der Buzzer ertönt, wenn das GPS-Signal verloren wurde."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:842 2ddb2daebe2449ea97e83a3e1ad83185
+msgid "**Buzzer by Limits**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:843 bda6ce47a29649709ead86c3674f5440
+msgid "``on`` - Der Buzzer ertönt bei Grenzwertüberschreitungen."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:846 0bd444b4ba0a402aad32719849c40c24
+msgid "**Buzzer Mode**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:847 61d513ef17b946798e3fd7ff920828c9
+msgid "``Off`` - Die Buzzer ist dauerhaft ausgeschaltet."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:848 571d54afc62e443784955d7e53a57f2c
+msgid "``Short Single Beep`` - Bei Aktivierung ertönt ein kurzer Einzelton."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:849 ce3f968a2f3946bfb8bc252fdce7c037
+msgid "``Longer Single Beep`` - Bei Aktivierung ertönt ein längerer Einzelton."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:850 ac3ac1f4f36d4ceb8fc5518d2237d37e
+msgid ""
+"``Beep until Confirmation`` - Bei Aktivierung ertönt der Buzzer so lange,"
+" bis er durch Betätigen einer beliebigen Taste deaktiviert wird."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:852 1068024f16504c00b044c7263b8c4035
+msgid "**Buzzer Power**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:853 e27c4045666949baaddc2139fcd37314
+#, python-format
+msgid ""
+"Über **Buzzer Power** kann die Lautstärke des Warntons zwischen 0...100% "
+"eingestellt werden. Die Lautstärke gilt grundsätzlich für alle "
+"Audioausgaben."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:856 303bc9173c3645638ea0c98d95ab5ec1
+msgid "Config - OBP Pages"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:861 703d03d3f0b246f8af6a3e8f7d150b55
+msgid ""
+"Die Konfiguration der möglichen Anzeigeseiten des OPB60 erfolgt auf der "
+"Seite **Pages**. Hier wird festgelegt, wie viele Anzeigeseiten das OPB60 "
+"darstellen soll. Außerdem lässt sich festlegen, welche Anzeigeseite beim "
+"Einschalten gezeigt werden soll."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:863 ae00adf0cc3e4fa6b9b6e552a19924d9
+msgid "**Number of Pages**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:864 d7e2e8441c004db58bf06ba62c392507
+msgid ""
+"Hier wird die maximale Anzahl der Anzeigeseiten festgelegt. Es muss "
+"mindestens eine Anzeigeseite definiert sein, es können maximal 10 "
+"Anzeigeseiten aktiviert werden."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:866 f55d036d4975448f8489f7d161f88c67
+msgid "**Start Page**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:867 97028489e1934dbc93520b251c4491f5
+msgid ""
+"Dieser Wert legt fest, welche Seite beim Start angezeigt werden soll. Es "
+"können nur die Seiten angezeigt werden, die innerhalb der Seitenanzahl "
+"(**Number of Pages**) liegen."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:869 360c3a69b1224fdda61c2e4b0d55e861
+msgid "**Screenshot Format**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:870 fc6092f2be88402f93f20b8e61d953c7
+msgid ""
+"Legt fest welches Bildausgabeformat für Screenshots benutzt wird. Es "
+"stehen folgende Formate zur Verfügung:"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:871 1ba3a74d47fa44e28328569ad2a28edb
+msgid "``Compressed Image (GIF)`` - Komprimierte GIF-Datei"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:872 93cdcfe347f94074afb87fbeeef79aa4
+msgid ""
+"``Portable Bitmap (PBM)`` - Binäres Bildformat ohne Header (kann nicht im"
+" Browser angezeigt werden)"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:873 2244c328227a481c88a170aabe2fe63a
+msgid "``Windows Bitmap (BMP)`` - Binäres Bildformat mit Header"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:874 dd454cc966104ad385b99b5e46e4587e
+msgid ""
+"Ein Screenshot kann erstellt werden, indem folgende Webseite aufgerufen "
+"wird:"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:875 169fdf8d84a84887942586ba0663c0bd
+msgid "`http://192.168.15.1/api/user/OBP60Task/screenshot`_"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:881 f6f392a4059b4716b0b4d261a2fbf6f6
+msgid "Config - OBP Page X"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:886 bcdc6031d7804eecafc15971df982314
+msgid ""
+"Im OBP60 gibt es insgesamt bis zu 10 Seiten, die man frei auswählen und "
+"gestalten kann. Je nach Seite können unterschiedlich viele Daten "
+"angezeigt werden. Es gibt frei definierbare Seiten, in denen die Inhalte "
+"zum Anzeigen ausgewählt werden können. Dann gibt es Seiten mit "
+"vorgegebenem, nicht veränderbarem Inhalt. Die meisten numerischen Seiten "
+"sind änderbar, während die grafischen Seiten oft vordefinierte Inhalte "
+"anzeigen."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:888 eb1269a3344c4de095d2e797a15f13e2
+msgid "Seiten mit veränderbarem Inhalt"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:889 e2b29f9c6c6b46f18d9f9e8a38b75982
+msgid "**OneValue** - Ein Anzeigewert"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:890 a942991bff704aa58a0da9bd2579f83b
+msgid "**TwoValue** - Zwei Anzeigewerte"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:891 8b2990ada6f1443b9f4b7a294cd2dfd6
+msgid "**ThreeValue** - Drei Anzeigewerte"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:892 a8ef8cca134b4298a885bb8dd473e436
+msgid "**FourValue** - Vier Anzeigewerte"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:893 8f8b49cd21fa49e2820fdf79697f0438
+msgid "**FourValue2** - Vier Anzeigewerte (andere Anordnung vertikal/horizontal)"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:894 e0dd75eb97024a4284f66b1d976ef208
+msgid ""
+"**WindRoseFlex** - Anzeige von Windrichtung (grafisch auf einer Windrose)"
+" und Windgeschwindigkeit sowie 4 weiteren frei konfigurierbaren Werten. "
+"Mit einem Button kann zwischen wahrem und scheinbarem Wind umgeschaltet "
+"werden"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:895 1b86ec58763e415f8ca2f0c62854534e
+msgid "**RollPitch** - Grafische Anzeige von Roll und Pitch"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:897 6bdc231f009c4080ac5a25f14d607f72
+msgid "Seiten mit festem Inhalt"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:898 1298e4adfed44058a3f93f0519875edb
+msgid "**Voltage** - Anzeige der Bordspannung (**xdrVBat**)"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:899 9b0a6f4dfcff43cbbbbd74a8948a8e13
+msgid "**WindRose** - Anzeige der Winddaten (**AWA, AWS, TWD, TWS, DBT, STW**)"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:900 c690b7f8696d4e3b95340023883dd262
+msgid ""
+"**DST810** - Anzeige für Tiefe, Speed, Log und Wassertemperatur (**DBT, "
+"STW, Log, WTemp**)"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:901 4f8d31ab02be4464b02cd2eb8072c1a9
+msgid ""
+"**Clock** - Grafische Zeitanzeige mit Sonnenauf- und Sonnenuntergang "
+"(**GPST, GPSD**)"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:902 e501e5ba92064a1bade26503b8837ec4
+msgid "**White Page** - Leere weiße Seite, um Display in StandBy zu schalten"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:903 0400c2eecae94ecda471658a79120f01
+msgid ""
+"**BME280** - Anzeige von Umweltdaten wie Temperatur, Luftdruck und "
+"Feuchtigkeit (**BME280** I2C)"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:904 a14082d6518f47dc80e23c323444c40d
+msgid "**Rudder** - Grafische Anzeige der Ruderposition (**RPOS**)"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:905 0501ac1789cd48f3acef8506c83b5963
+msgid "**Keel** - Grafische Anzeige der Kielposition (**AS5600** I2C)"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:906 baa50275f8214de18800332b71ad70d6
+msgid ""
+"**Battery** - Anzeige von Spannung, Strom und Leistung (**INA219, "
+"INA226** I2C)"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:907 4d6318d7eca1443d917223e2b914c6ef
+msgid ""
+"**Battery2** - Grafische Anzeige des Batterie-Ladezustandes (**INA219, "
+"INA226** I2C)"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:908 e9b733a668fd4e5394d6b770f7286a6d
+msgid ""
+"**Solar** - Grafische Anzeige des Solar-Ladezustandes (**INA219, INA226**"
+" I2C)"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:909 6f7d07d6e373434185a694c5553d3e2e
+msgid ""
+"**Generator** - Grafische Anzeige des Generator-Ladezustandes (**INA219, "
+"INA226** I2C)"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:912 69ac7ae31e89466d9edda9412a1ac5bd
+msgid ""
+"Bitte beachten Sie, dass alle Seiten mit festen Inhalten bestimmte "
+"Sensorwerte voraussetzen, um Messwerte anzeigen zu können. Unter dem "
+"Register **Data** kann die Verfügbarkeit der notwendigen Daten geprüft "
+"werden."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:914 4f960ca90f6a49e18621a3fe29dca0bc
+msgid ""
+"Bei Seiten mit veränderlichem Inhalt stehen je nach Anzahl der "
+"Anzeigewerte unterschiedlich viele Eingabefelder zur Verfügung. Darüber "
+"können die anzuzeigenden Daten ausgewählt werden."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:919 2b8ceacb3d6d451e90337c65aebeed7a
+msgid "Abb.: Seite mit 4 Anzeigewerten"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:921 b45de92ab2c64551ab6c7a75c3f8bb62
+msgid "Datenpool auswählbarer Daten"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:922 a621c20a38484ea3aa4804137164c293
+msgid "**ALT** - Altitude, Höhe über Grund"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:923 5cd6fc101b934e42b7f101bf8abb8128
+msgid "**AWA** - Apparent Wind Angle, scheinbare Windrichtung"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:924 18be07e33fba42adaba76f5d5a7935d3
+msgid "**AWS** - Apparent Wind Speed, scheinbare Windgeschwindigkeit"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:925 1045ee11252d4502bc6dcc28bd6bf8c5
+msgid "**BTW** - Bearing To Waypoint, Winkel zum aktuellen Wegpunkt"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:926 79600a36f3064b5b83c43cc576b70324
+msgid "**COG** - Course over Ground, Kurs über Grund"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:927 0f719a76c1544247a09bc6e0d1e736d8
+msgid "**DBS** - Depth Below Surface, Tiefe unter Wasseroberfläche"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:928 739affbf5e55494eb110a420752ec346
+msgid "**DBT** - Depth Below Transducer, Tiefe unter Sensor"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:929 a3af9171ef7f472fad5a594b362f89c1
+msgid "**DEV** - Deviation, Kursabweichung"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:930 2b73cb2c8ce843ae91d626fe07d92748
+msgid "**DTW** - Distance To Waypoint, Entfernung zum aktuellen Wegpunkt"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:931 310464bd47ed459c83c1d7002755a85f
+msgid "**GPSD** - GPS Date, GPS-Datum"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:932 402442397c9448389c2a0c6174968712
+msgid "**GPDT** - GPS Time, GPS-Zeit als UTC (Weltzeit)"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:933 abfc4ba4886446318e5a8c51d94c1e38
+msgid "**HDM** - Magnetic Heading, magnetischer Kurs"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:934 5a265bfc4d614266bc61a9b3393016cc
+msgid "**HDT** - Heading, wahrer rechtweisender Kurs"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:935 207bfb1bd1684d9cb659e6499ff2bd9d
+msgid "**HDOP** - GPS-Genauigkeit in der Horizontalen"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:936 93f23a5f80ae4782ad0999eea1fa72bd
+msgid "**LAT** - Latitude, geografische Breite"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:937 ed124361d8074545b5f46d3131edae16
+msgid "**LON** - Longitude, geografische Höhe"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:938 8191e27778df4faabcfe6ec2a6f4fed3
+msgid "**Log** - Log, Entfernung"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:939 9100dc95b8924d89946f40d347284fe3
+msgid ""
+"**MaxAws** - Maximum Apparent Wind Speed, Maximum der relativen "
+"Windgeschwindigkeit seit Gerätestart"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:940 60901882f54548e59a559d26177e997b
+msgid ""
+"**MaxTws** - Maximum True Wind Speed, Maximum der wahren "
+"Windgeschwindigkeit seit Gerätestart"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:941 ce764dad203f45f7a7d5774b93c10ecd
+msgid "**PDOP** - GPS-Genauigkeit über alle 3 Raumachsen"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:942 dcaf2b47ffe34a4e8b3205583a6b7bac
+msgid "**PRPOS** - Auslenkung Sekundärruder"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:943 547d266dabc34d69ab767188be20cfd2
+msgid "**ROT** - Rotation, Drehrate"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:944 0e6f20a89e874bff830b8afb7e34907b
+msgid "**RPOS** - Rudder Position, Auslenkung Hauptruder"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:945 d25144ec936a44cf931dff610280756d
+msgid "**SOG** - Speed Over Ground, Geschwindigkeit über Grund"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:946 089c5f11184c4408beaf4f36c0c86154
+msgid "**STW** - Speed Through Water, Geschwindigkeit durch das Wasser"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:947 b91c7b2c1af54bcf984b36b286684db2
+msgid "**SatInfo** - Satellit Info, Anzahl der sichtbaren Satelliten"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:948 44208bff3dd64b0e8dbebf91ebc1c391
+msgid "**TWD** - True Wind Direction, wahre Windrichtung"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:949 1de13a4fbe3548429cb6a23ea0f69946
+msgid "**TWS** - True Wind Speed, wahre Windgeschwindigkeit"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:950 55bc944585ed4a0292fa5733fdddce13
+msgid "**TZ** - Time Zone, Zeitzone"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:951 a9df371f936b4acd9019fc4d6dd90132
+msgid "**TripLog** - Trip Log, Tages-Entfernungszähler"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:952 923eeecf529d407ebf084189b2982d86
+msgid "**VAR** - Variation, Abweichung vom Sollkurs"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:953 23ebf29acb3044e6a86ac63dc8c59fb1
+msgid "**VDOP** - GPS-Genauigkeit in der Vertikalen"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:954 1a8129b427a743f0995d2995d65267ee
+msgid "**WPLat** - Waypoint Latitude, geogr. Breite des Wegpunktes"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:955 c5c9092eba7b4ebdb1aa276cda85e8ff
+msgid "**WPLon** - Waypoint Longitude, geogr. Länge des Wegpunktes"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:956 79490286dc0e46038da056b667a42454
+msgid "**WTemp** - Water Temperature, Wassertemperatur"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:957 3085e8e7029d45f7a1bbdc4d80989964
+msgid "**XTE** - Cross Track Error, Kursfehler"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:958 0f2d4591808c473f927a39c16def45cf
+msgid "**xdrVBat** - Bordspannung"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:961 c8f30e69cfd7421bb9d30d540c75377e
+msgid "OneValue"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:965 bc419ea2e7e84564833440c37f138ab5
+msgid "Abb.: Anzeige OneValue"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:967 43d221e7ca91447cb33072f02337111a
+msgid ""
+"Bei der OneValue-Anzeige kann ein beliebiger Messwert aus dem Datenpool "
+"angezeigt werden. Neben dem Messwert werden der Kurzbezeichner und die "
+"Einheit dargestellt."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:970 b35768642e70471b98bde6592c43afe7
+msgid "TwoValue"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:974 32511d1359ce425f8958297b8f6fcfa7
+msgid "Abb.: Anzeige TwoValue"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:976 25d31068b0bb49f0bfd935f271681905
+msgid ""
+"Bei der TwoValue-Anzeige können zwei beliebige Messwerte aus dem "
+"Datenpool vertikal übereinander angezeigt werden. Neben den Messwerten "
+"werden die Kurzbezeichner und die Einheiten dargestellt."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:979 e2d6600fcb1f403394ae783221ba129a
+msgid "ThreeValue"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:983 8ee824ab1a7a46dd9158264f93b486a1
+msgid "Abb.: Anzeige ThreeValue"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:985 b74de550d7a44749bc75a0718d8e6c35
+msgid ""
+"Bei der ThreeValue-Anzeige können drei beliebige Messwerte aus dem "
+"Datenpool vertikal übereinander angezeigt werden. Neben den Messwerten "
+"werden die Kurzbezeichner und die Einheiten dargestellt."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:988 0078fae5e4ce454cba8be80d52128a1d
+msgid "FourValue"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:992
+#: ../../usermanual/configuration.rst:1001
+#: ../../usermanual/configuration.rst:1051 0adbbb1cad8f4996bbe5773e256e0b0f
+#: 6773654beea94737b6a2a80a599651e2 a17a1d780e3e4470956e0fc3ae940b07
+msgid "Abb.: Anzeige FourValue"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:994 fd51ad03f1ca4aa58cfec61e66609c65
+msgid ""
+"Bei der ThreeValue-Anzeige können vier beliebige Messwerte aus dem "
+"Datenpool vertikal übereinander angezeigt werden. Neben den Messwerten "
+"werden die Kurzbezeichner und die Einheiten dargestellt."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:997 66a71f4a6ab3426ebcfafbc150e182a7
+msgid "FourValue2"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1003 7c35a686c27b46ab98d0e9c092caa567
+msgid ""
+"Bei der FourValue-Anzeige können vier beliebige Messwerte aus dem "
+"Datenpool vertikal übereinander und horizontal nebeneinander angezeigt "
+"werden. Neben den Messwerten werden die Kurzbezeichner und die Einheiten "
+"angezeigt. Diese Darstellung entspricht der alten Darstellung vom "
+"Raymarine ST60 TriData mit dem Unterschied, dass hier beliebige Werte "
+"angezeigt werden können. Es gibt noch die Anzeigeseite **DST810** mit "
+"festen Inhalten, die die gleichen Messwerte anzeigt wie beim ST60 "
+"TriData."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1006 e6e45e3c83ba4a92bcf769bc6efe2709
+msgid "Voltage"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1010 b17373b5e3494e0aa72c096a38f0199c
+msgid "Abb.: Anzeige Voltage"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1012 eae1c9822256404a94fef27b95c2e570
+msgid ""
+"Bei der Voltage-Anzeige wird die Versorgungsspannung der Batterie "
+"angezeigt, wie sie am Eingang von CN2 zur Verfügung gestellt wird."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1015 b3a6d457507a40168e159baf5a5d60ef
+msgid ""
+"Beachten Sie, dass die Spannung nicht exakt der Batteriespannung "
+"entsprechen muss. Durch Leitungsverluste können Spannungsabfälle "
+"auftreten, und der gemessene Wert kann kleiner sein als die tatsächliche "
+"Batteriespannung."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1017 d3d0f8f9549f4f93a1c11a47b3407295
+msgid ""
+"Ein Trendindikator zeigt den Trend an, in welche Richtung sich die "
+"Spannung bewegt. Hinter der Einheit Volt werden der Batterietyp "
+"[Pb|AGM|Gel|LiFePo4] und die aktuell benutzte Mittelungstiefe angezeigt. "
+"Über die Tasten können folgende Funktionen genutzt werden."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1019
+#: ../../usermanual/configuration.rst:1198
+#: ../../usermanual/configuration.rst:1258
+#: ../../usermanual/configuration.rst:1300 7a0f5368eb144703a7e2244a195a174e
+#: ca15b40deffe4ba5b1b9523fa1967d26 ca520587847a491dad1eb715f6250175
+#: d3a574927be641b58172b19e25016679
+msgid "``[AVG]`` - Einstellung der Mittelungstiefe in Sekunden [1|30|60|300]"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1020 21cefdcb39e14af7be7f455ef4c297d1
+msgid "``[TRD]`` - Trendanzeige aktivieren oder deaktivieren"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1022 818f7df3530c4b11a8a39096619da747
+msgid "Die Anzeigeseite benötigt folgende Messwerte: **xdrVBat**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1025 b3976ef8cce742fb9232972130e66a17
+msgid "WindRose"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1029 debf097f6a954c4db68f5cbfd15211bf
+msgid "Abb.: Anzeige Windrose"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1031 8a135d6dffc74c6aa0e626bb739986bd
+msgid ""
+"Bei der Windrosen-Anzeige werden Winddaten angezeigt. Auf der linken "
+"Seiten sind die Daten des scheinbaren Windes dargestellt und auf der "
+"rechten Seite die Daten des wahren Windes. Die Daten des scheinbaren "
+"Windes beziehen sich auf den auf dem fahrenden Schiff wahrgenommenen "
+"Wind, der sich aus dem Zusammenwirken des wahren Windes und des "
+"Fahrtwindes ergibt. Es handelt sich um relative Daten bezogen auf das "
+"Boot. Die Daten des wahren Windes sind die Winddaten, wie man sie am "
+"nicht in Fahrt befindlichen Boot messen würde. Der Windwinkel bezieht "
+"sich dabei auf den Bug, die Windrichtung auf die geografische "
+"Nordausrichtung."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1033 3c85723b297a4285bd7738fcc97b7ad8
+msgid ""
+"In der Mitte der Windrose wird die aktuelle Geschwindigkeit durchs Wasser"
+" und die Wassertiefe unter dem Sensor angezeigt."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1035 5906450802174bd7bea76ab4d9db8d0c
+msgid ""
+"Die Anzeigeseite benötigt folgende Messwerte: **AWA, AWS, TWD, TWS, DBT, "
+"STW**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1038 8fd120b51fe549bfbb960cdc354e7c11
+msgid "WindRoseFlex"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1042 20962e2e504743cd8ffd32cfda163e98
+msgid "Abb.: Anzeige WindroseFlex"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1044 a6680702994048a5a8e3b0bb29126c6b
+msgid ""
+"Bei dieser Variante der Anzeige WindRose können die darzustellenden Werte"
+" frei gewählt werden. Der erste Wert wird auf der Windrose grafisch als "
+"Richtung dargestellt, hier ist sinnvollerweise AWA oder TWA zu wählen."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1047 de572749c0d74bbe8e88327a16db5a8c
+msgid "DST810"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1053 4251b90fd4334e1f875af1ea6ade2e9a
+msgid ""
+"Bei der DST810-Anzeige werden der Speed durchs Wasser, die Tiefe, die "
+"zurückgelegte Strecke und die Wassertemperatur angezeigt. Neben den "
+"Messwerten werden die Kurzbezeichner und die Einheiten dargestellt. Die "
+"Anzeigeseite entspricht der alten Darstellung vom **Raymarine ST60 "
+"TriData**. Damit die Daten angezeigt werden können, müssen sich gültige "
+"Informationen im Datenpool befinden. Neben dem DST810 von Airmar können "
+"auch Messwerte anderer Sensorhersteller angezeigt werden, die dieselben "
+"Daten oder einen Teil der Daten liefern"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1055 c02cefcf02fe4cacacf110cca2ed490d
+msgid "Die Anzeigeseite benötigt folgende Messwerte: **DBT, STW, Log, WTemp**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1058 0dc55482f7364865bb33daf4dc6770df
+msgid "Clock"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1062 9708a88f0f754e4cbd9912fd747414fa
+msgid "Abb.: Anzeige Clock"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1064 e7ee71076093450ebfc94d923e3a092f
+msgid ""
+"Bei der Clock-Anzeige werden die Uhrzeit, das Datum, die "
+"Sonnenaufgangszeit und die Sonnenuntergangszeit angezeigt. Die "
+"Anzeigewerte werden primär aus den GPS-Daten gewonnen. Die Auf- und "
+"Untergangszeit der Sonne wird abhängig vom geografischen Ort berechnet "
+"und entspricht der astronomischen Sonnenaufgangs- und Untergangszeit. Als"
+" Zeitanzeige kann die globale Weltzeit **UTC** oder die lokale Ortszeit "
+"**LOT** angezeigt werden. Die Auswahl der Zeitzone kann über die "
+"Konfigurationsseite **Config - OBP Settings** eingestellt werden."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1066 088d4fc111944d45a2f9534f90d76f11
+msgid ""
+"Die Einstellung der Uhrzeit erfolgt automatisch über die GPS-Zeit. "
+"Stellen Sie vor der Benutzung des OBP60 sicher, dass ein GPS-Empfang "
+"möglich ist, damit sich die Zeit einstellen kann. In regelmäßigen "
+"Abständen wird die RTC-Zeit mit der GPS-Zeit synchronisiert, so dass Sie "
+"auch über Zeitinformationen verfügen, wenn kein GPS-Empfang möglich ist."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1069 bca04a9e33bd4a1a96925e1037d42374
+msgid ""
+"Stehen keine GPS-Daten zur Verfügung, so wird die Zeit und das Datum aus "
+"der RTC benutzt. In dem Fall stehen keine Sonnenaufgangszeit und "
+"Sonnenuntergangszeit zur Verfügung, da die geografischen Ortsdaten "
+"fehlen."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1071 a9c5e118ae3440a69f0d9c9da5575921
+msgid "Die Anzeigeseite benötigt folgende Messwerte: **GPST, GPSD**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1074 46a1c62f687640c0a272849899b6c1e4
+msgid "WhitePage"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1078 7cb3224f01c44949b77338e50ab48bda
+msgid "Abb.: Anzeige WhitePage"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1080 1adc8c37dabc4853999e66425b03b66f
+msgid ""
+"Bei WhitePage handelt es sich um eine Anzeigeseite, die nur eine weiße "
+"leere Seite darstellt. Diese Seite kann dazu benutzt werden, den "
+"Bildschirminhalt vor dem Ausschalten definiert zu löschen."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1083 21232a55ee67404b98d5f66537fd14f2
+msgid "BME280"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1087 e261a666a7f34768822f2dba3a8263a9
+msgid "Abb.: Anzeige BME280"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1089 ae512a5cfc7b46f7b95bad0760a5c32b
+msgid ""
+"Bei der BME-Anzeige werden die 3 Messwerte Lufttemperatur, Luftdruck und "
+"Luftfeuchtigkeit des BME280 angezeigt. Der BME280 muss dazu an den "
+"externen I2C-Bus angeschlossen werden und auf die Adresse 0x77 "
+"eingestellt sein."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1092 ac369e11919e4a5c820480a834adeda7
+msgid ""
+"Bedenken Sie, dass der externe I2C-Bus **5V** Signalpegel für **SCL** und"
+" **SDA** benutzt. Benutzen Sie solche Module, die tolerant für 5V sind, "
+"oder verwenden Sie Pegelumsetzer von 5V auf 3.3V für die Signale SCL und "
+"SDA. Beachten Sie das nicht, so können die externen Module beschädigt "
+"werden oder nur fehlerbehaftet arbeiten."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1094 3ecc0cbc412e4d189c0a67b2f6568e2a
+msgid "Ein 5V taugliches BME280-Modul ist das **GYBME** Elektronikmodul:"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1098 e040de93fb9444e196d494b5c135539a
+msgid "Abb.: BME280-Modul"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1100 6f93c8b555c7415f87ea8660615ef2ef
+msgid ""
+"Die Messwerte vom externen Sensor müssen als XDR-Telegramme angelegt "
+"werden (siehe Konfigurationsseite: **XDR**). Dabei sind folgende "
+"Zuordnungen zu beachten:"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1102 ddccfd941f7d405c9ed015743a498eaa
+msgid "**TAir** - Lufttemperatur"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1103 d7623ea70fd9482397e4b0da6908e1b1
+msgid "**PAir** - Luftdruck"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1104 2f408d87fb1e4993a9452936bd04d288
+msgid "**HAir** - Luftfeuchtigkeit"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1107 203892c6ebe64e8f8a1bb0fa770b8f23
+msgid "Rudder"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1111 400881a68618471dbca6d3d04712afed
+msgid "Abb.: Anzeige Rudder"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1113 268079aa98834275a39f725ece6197c2
+msgid ""
+"Bei der Rudder-Anzeige wird der Ruderausschlag angezeigt. Der "
+"Ruderausschlag ist im Bereich von +/-45° grafisch darstellbar. Wenn keine"
+" Sensorwerte für den Ruderausschlag vorliegen, ist der Zeiger nicht "
+"sichtbar."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1116 bfb7467504954f7f96e7c66b3b819698
+msgid ""
+"Die Ruderanzeige kann sowohl für Daten aus NMEA0183 , NMEA2000 und einem "
+"I2C-Rotationssensor benutzt werden."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1118 a57348b9c0b54fdcab270aeefcd34f95
+msgid "Die Anzeigeseite benötigt folgende Messwerte: **RPOS**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1121 b472f07df7434d0e81e13c3c76cbb526
+msgid "Keel"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1125 f0942bf7b48a4e81bd2e8c6143a30bd1
+msgid "Abb.: Anzeige Keel"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1127 3964aa95207e44e9a212a103ea9e0b38
+msgid ""
+"Bei der Keel-Anzeige wird die Kielstellung eines Neigekiels angezeigt. "
+"Die Kielstellung ist im Bereich von +/-45° grafisch darstellbar. Wenn "
+"keine Sensorwerte für die Kielstellung vorliegen, ist der Kiel nicht "
+"sichtbar."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1129 b85ce85512274c79841431889d88c961
+msgid ""
+"Damit die Kielstellung angezeigt werden kann, muss ein Rotationssensor-"
+"Modul **AS5600** am I2C-Bus angeschlossen und der Sensor als "
+"**Kielsensor** auf der Konfigurationsseite **Config - OBP Hardware** "
+"parametriert werden."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1133 5a7628494e4243bab8ad947de12d591b
+msgid "Abb.: Magnetischer Rotationssensor AS5600 zur Anzeige der Kielstellung"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1135 29c06da175ac4612af89120d0a554793
+msgid ""
+"Beachten Sie auch die Hinweise im Kapitel **Datenaustausch - I2C-Bus** "
+"und **Bussysteme - I2C**."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1138 216adfd789d3413f888582773053ea6e
+msgid ""
+"Die Kielanzeige kann nur in Verbindung mit einem I2C-Rotationssensor "
+"benutzt werden."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1141 27bb2a1b7f2a4367bae2d943421ede04
+msgid "Battery"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1145 5d95b1d06e8640a1a1157cc4bc4b2083
+msgid "Abb.: Anzeige Battery"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1147 dc80bb8ef2e44ad2a2f04ef27f8d1a3c
+msgid ""
+"Bei der Battery-Anzeige werden die aktuellen Werte für Bord-Spannung, "
+"Strom und Leistung angezeigt. Neben den Messwerten werden die "
+"Kurzbezeichner und die Einheiten dargestellt. Um die Batterie-Werte "
+"anzeigen zu können, muss ein I2C-Modul **INA226** am I2C-Bus "
+"angeschlossen und auf die Adresse **0x41** eingestellt sein. Der Shunt "
+"kann für verschiedene maximale Stromstärken in Ampere "
+"[10|50|100|200|300|400|500] unter **Config - OBP Hardware** konfiguriert "
+"werden."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1150
+#: ../../usermanual/configuration.rst:1209
+#: ../../usermanual/configuration.rst:1263 33d972c6df6f47c1977fbfd15a04b518
+#: 5a559fa5378e449e8dd485f1bcd0340f 8d171e499a47409c9c9041b1f22ac073
+msgid ""
+"Bedenken Sie, dass für höhere Stromstärken die Ungenauigkeit der "
+"Messwerte zunimmt. Wählen Sie den Shunt so aus, dass er zu typischen "
+"Nutzungsszenarien passt und nicht überdimensioniert ist. Die Messeingänge"
+" des Shunts sind bis zum zweifachen Wert der Maximalstromstärke "
+"eigensicher und vertragen kurzzeitige Überlastungen."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1154
+#: ../../usermanual/configuration.rst:1213
+#: ../../usermanual/configuration.rst:1267
+#: ../../usermanual/configuration.rst:1309 77c8c2f6f5a644a18f7520e592e5acfa
+#: 9391b64f992640fab007ef04488d16bd e69a2901d7a14f7e92507caac9a6364d
+#: f45a7b6c4dfd45c19688fdb77568eeb2
+msgid "Abb.: I2C-Adresszuweisung INA226"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1156
+#: ../../usermanual/configuration.rst:1215
+#: ../../usermanual/configuration.rst:1269
+#: ../../usermanual/configuration.rst:1311 9c04e55cc8d9496f9581e0b146589531
+#: 9daf96cafbe74efabfcd3bf2667da96f ad55ccb301994b77b0cd68616f2580c5
+#: b3aac911290247a5a113085fa13d2062
+msgid ""
+"Für die Messung mit einem externen Leistungs-Shunt muss der schwarze "
+"große Widerstand **R100** auf der Frontseite der Platine entfernt werden."
+" Danach ist das Modul wie folgt zu verschalten."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1160
+#: ../../usermanual/configuration.rst:1219 20df5c2f8d494f7185d396fae4b3be16
+#: bd0240e0944946b6ada6bdc2500c9002
+msgid "Abb.: Schaltung INA226 Batteriemonitoring"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1163 97e0b6a765c9408eb10f0f9a6fa76191
+msgid ""
+"Wenn Sie die Batterieanzeige verwenden, jedoch kein INA226-Modul am I2C-"
+"Bus angeschlossen ist, werden keine Messwerte angezeigt."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1166 e499565f8703482eb5fb95ef18b1aed0
+msgid ""
+"Verwenden Sie für den Leistungskreis ausreichend groß dimensionierte "
+"Leitungsquerschnitte, die auf den maximalen Strom ausgelegt sein müssen. "
+"Verwenden Sie in den Leistungskreisen passende Sicherungen, um "
+"Kabelbrände bei Kurzschlüssen zu vermeiden. Für eine langlebige "
+"Installation sollten Sie Litze mit verzinnten Einzeladern verwenden. Wenn"
+" das aus Kostengründen nicht möglich ist, sollten die Kabelenden mit "
+"gequetschten Kabelösen oder Aderendhülsen versehen sein. Die Kabelösen "
+"sollten dann zusätzlich mit Zinn verlötet werden, um Korrosion in den "
+"Kabelhülsen zu unterbinden. Ein Überzug der Chrimp- und Lötstellen mit "
+"Schrumpfschlauch verhindert aufsteigende Feuchtigkeit im Kabel, die "
+"ebenso Korrosion über lange Zeiträume verursachen kann. Sorgen Sie dafür,"
+" dass der INA226 wassergeschützt in einem isolierten Gehäuse "
+"untergebracht ist und die Sensoranschlüsse **VBS** und **GND** mit einer "
+"**Feinsicherung 100 mA** geschützt sind. Wenn Sie nicht über "
+"ausreichendes Fachwissen verfügen, sollten Sie die Installation des "
+"Sensors einem Fachmann überlassen oder ihre Installation vor der "
+"Inbetriebnahme durch einen Fachmann prüfen lassen."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1169 84176aa66aaa4a068db91779eea0d298
+msgid ""
+"Unsachgemäße oder defekte Installationen von Leistungsstromkreisen können"
+" Brände verursachen und Leben gefährden. Prüfen Sie die Installation in "
+"regelmäßigen Abständen hinsichtlich Funktion und Sicherheit."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1173 00c610c96eea43a4bd23165d6e9242c0
+msgid "Abb.: Leitungsquerschnitte (EP 12/00)"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1175 889cbbec7d434dd9a77a4e1c65d3afd9
+msgid ""
+"Zu weitergehenden Informationen können Sie das Informationsmaterial "
+"**Leitungen und Kabel** :download:`pdf "
+"</info_material/Querschnittsbestimmung_Leitungen_Kabel.pdf>` verwenden."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1178 44dd91984edd4504944b95330ab4cea7
+msgid "Battery2"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1182 76b7bc45765c4599bb56a1af05afc3f2
+msgid "Abb.: Anzeige Battery2"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1184 9ae4a17974d745cda76e7ea7495a44db
+msgid "Bei der Battery2-Anzeige werden folgende Werte angezeigt:"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1186 d07642123c03456bbfde5481b4d34a60
+msgid "Batterietyp [Pb|Gel|AGM|LiFePo4]"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1187 7fbaa74f5fc746da84d3b971dff8df94
+msgid "Nenn-Batteriespannung in V"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1188 266b7ce3751d4abd9effc48d156ca675
+msgid "Nenn-Batteriekapazität in Ah"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1189 81e74fb5151f4190831b515730da454c
+msgid "Grafische Füllstandsanzeige in %"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1190 3dee1656457748d2bc188592acd8ce53
+msgid "Geschätzte Reichweite in Stunden bei aktuellen Verbrauchswerten"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1191
+#: ../../usermanual/configuration.rst:1251
+#: ../../usermanual/configuration.rst:1293 1c2938813ebd4ac696866525b768fb6c
+#: 3c62bbcaf9904c33a128fd202bdbbd74 5eb0ec76b709482d9a648e7f13b1504f
+msgid "Art des Sensormoduls [interner Sensor|INA219|INA226]"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1192 75bb98e9547145f8bc676bbd8bfedbdc
+msgid "Aktuelle Batteriespannung in V"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1193 b3af03b599ad4212aedf07896698860f
+msgid "Aktueller Stromverbrauch in A"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1194 1dea8d64a03d4f488c38a94e14561273
+msgid "Aktuelle Leistung in W"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1196
+#: ../../usermanual/configuration.rst:1256
+#: ../../usermanual/configuration.rst:1298 2c6abc72ab734bdda76940bc20cd78d8
+#: c6c92b8c897249aeb9c2b072b731082a df53f89f66ec4efe85bb1c889ab50990
+msgid "Über die Tasten können folgende Funktionen genutzt werden."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1201 f9398edd4fbf4087ad10eb02bb129a70
+msgid ""
+"Die Reichweitenanzeige gibt einen ungefähren Zeitwert an, wie lange die "
+"Batterie mit den aktuellen Verbrauchswerten Energie liefern wird. Die "
+"Zeitdauer ist abhängig vom aktuellen Stromverbrauch und passt sich "
+"kontinuierlich an. Die Batteriespannung wird zur Reichweitenbestimmung "
+"benutzt und damit der Füllstand der Batterie ermittelt. Diese Methode ist"
+" nicht sehr genau und vom Alterungszustand der Batterie abhängig. Prüfen "
+"Sie in unkritischen Situationen die Genauigkeit der Reichweitenanzeige "
+"und planen Sie entsprechende Sicherheitsreserven ein, um keine "
+"unerwarteten Ausfälle zu riskieren."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1204 03609b2f0403460698e0b31166bab3ce
+msgid ""
+"Nutzen Sie eine große Mittelungszeit über die Taste ``[AVG]`` von 300s, "
+"um eine realistische Reichweitenanzeige zu bekommen. Dadurch werden "
+"Lastspitzen im Stromverbrauch geglättet und der Reichweitenwert ist "
+"deutlich ruhiger."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1206 8289f43d9b8d41fc88cd6f6a7124e8b5
+msgid ""
+"Um die Batterie-Werte anzeigen zu können, muss ein I2C-Modul **INA226** "
+"am I2C-Bus angeschlossen und auf die Adresse **0x41** eingestellt sein. "
+"Der Shunt kann für verschiedene maximale Stromstärken in Ampere "
+"[10|50|100|200|300|400|500] unter **Config - OBP Hardware** konfiguriert "
+"werden."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1222 fca481a5dfe5406ebf99b3da97eb323a
+msgid ""
+"Wenn Sie die Batterieanzeige verwenden, jedoch kein INA226-Modul am I2C-"
+"Bus angeschlossen ist, werden keine Messwerte außer der aktuellen "
+"Batteriespannung angezeigt. In diesem Fall wird der interne "
+"Spannungssensor des OBP60 benutzt. Der Wert der gemessenen Spannung muss "
+"nicht direkt der Spannung an der Batterie entsprechen, da durch "
+"Leitungsverluste der Spannungswert verfälscht sein kann."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1225 39353576bfd94b22bb2427886b17c573
+msgid ""
+"Die Gefahren und Risiken bei der Benutzung des INA226 zum "
+"Batteriemonitoring sind die selben wie im Kapitel **Battery** "
+"beschrieben. Folgen Sie den Empfehlungen und beachten Sie die Gefahren."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1228 202d6f5e70af4c65ae513570b7d47fa4
+msgid "RollPitch"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1232 df5725d802464438b19751ad868288c8
+msgid "Abb.: Anzeige RollPitch"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1234 545a042a9ea74f4fac57a72792902762
+msgid ""
+"Bei der RollPitch-Anzeige werden die aktuellen Werte für Roll und Pitch "
+"angezeigt sowie der Grenzwert, ab dem ein optisches Signal über die "
+"Flash-LED ausgegeben wird. Pitch entspricht der Neigung in Längsrichtung "
+"und Roll in Querrichtung des Bootes. Die Sensorwerte müssen als XDR-"
+"Telegramme in Form von **xdrRoll** und **xdrPitch** angelegt werden "
+"(siehe Konfigurationsseite: :ref:`XDR`) . Dabei sind folgende Zuordnungen"
+" zu beachten:"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1236 bba555a6bc474882a5c1f23ea7a7c07f
+msgid "**Roll** - Neigung in Querrichtung"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1237 ab785c443364425db07a7b19ba08aaee
+msgid "**Pitch** - Neigung in Längsrichtung"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1240 ddf52d16c86a4b94b2c0832d0276dfe8
+msgid "Solar"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1244 4f7048977da34e48a079e7b041ec75fa
+msgid "Abb.: Anzeige Solar"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1246 220e3db7af704f4897b23fbc3cfa2705
+msgid "Bei der Solar-Anzeige werden folgende Werte angezeigt:"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1248 2906fac94b534f16b769152c63c2e3d9
+msgid "Nenn-Spannung der Solarmodule in V"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1249 a2df4f5f537e449f8cd0c9d32d8ccff4
+msgid "Nenn-Leistung der Solarmodule in W"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1250
+#: ../../usermanual/configuration.rst:1292 2a13a490c08b496eaa9bf6bee3ddea29
+#: 9f105743d47542efb81cc1ebde5e4566
+msgid "Nutzungsgrad in %"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1252 fa61dbb9241843d49e9e665e1cfecf4e
+msgid "Aktuelle Solarspannung in V"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1253 133113ae5b824af9836bd6f1bee28c55
+msgid "Aktueller Solareinspeisung in A"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1254 653f90208e84420a9c2ecf41e975a4f4
+msgid "Aktuelle Einspeiseleistung in W"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1260 8f5bd7e1590340d2a4187944b454e6c4
+msgid ""
+"Um die Messwerte anzeigen zu können, muss ein I2C-Modul **INA226** am "
+"I2C-Bus angeschlossen und auf die Adresse **0x44** eingestellt sein. Der "
+"Shunt kann für verschiedene maximale Stromstärken in Ampere "
+"[10|50|100|200|300|400|500] unter **Config - OBP Hardware** konfiguriert "
+"werden."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1273 7a990cff59c346d79a6bcc32098c920f
+msgid "Abb.: Schaltung INA226 Solarmonitoring"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1276 a97a5cfeda1d4ad3b866c79f8f78fd36
+msgid ""
+"Wenn Sie die Solaranzeige verwenden, jedoch kein INA226-Modul am I2C-Bus "
+"angeschlossen ist, werden keine Messwerte außer die aktuelle "
+"Batteriespannung angezeigt. In diesem Fall wird der interne "
+"Spannungssensor des OBP60 benutzt. Der Wert der gemessenen Spannung muss "
+"nicht direkt der Spannung am Ausgang des Wechselrichters entsprechen, da "
+"durch Leitungsverluste der Spannungswert verfälscht sein kann."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1279
+#: ../../usermanual/configuration.rst:1321 1c82d61415f94314a3d4dbcb2d66a725
+#: 99ef04554125428aa4d7c9e85e3ee3ef
+msgid ""
+"Die Gefahren und Risiken bei der Benutzung des INA226 zum "
+"Batteriemonitoring sind dieselben wie im Kapitel **Battery** beschrieben."
+" Folgen Sie den Empfehlungen und beachten Sie die Gefahren."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1282 8fd2bf130b1b4b1c949eb100320c49cf
+msgid "Generator"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1286 1ff8882138d74263a6e64b794224512c
+msgid "Abb.: Anzeige Generator"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1288 763cfec087d649b0be76068f01ecb643
+msgid "Bei der Generator-Anzeige werden folgende Werte angezeigt:"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1290 088814ebb89b41b8959cbc6127eadeee
+msgid "Nenn-Spannung des Generators in V"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1291 3ac9f0a6c21c4aa783b149c894918e55
+msgid "Nenn-Leistung des Generators in W"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1294 174cff2bc4a64f368fffc4bec6762770
+msgid "Aktuelle Generatorspannung in V"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1295 d268440e43384186bea569e7e714d3ec
+msgid "Aktuelle Generatoreinspeisung in A"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1296 1ce0a664f0f9449098dc9008dadeb8d3
+msgid "Aktuelle Generatorleistung in W"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1302 bfa56c363f45461e9929c76602150b60
+msgid ""
+"Um die Messwerte anzeigen zu können, muss ein I2C-Modul **INA226** am "
+"I2C-Bus angeschlossen und auf die Adresse **0x45** eingestellt sein. Der "
+"Shunt kann für verschiedene maximale Stromstärken in Ampere "
+"[10|50|100|200|300|400|500] unter **Config - OBP Hardware** konfiguriert "
+"werden."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1305 ae06851d34444ba29508da12f4bc6c8a
+msgid ""
+"Bedenken Sie, dass für höhere Stromstärken die Ungenauigkeit der "
+"Messwerte zunimmt. Wählen Sie den Shunt so aus, dass er zu typischen "
+"Nutzungszenarien passt und nicht überdimensioniert ist. Die Messeingänge "
+"des Shunts sind bis zum zweifachen Wert der Maximalstromstärke "
+"eigensicher und vertragen kurzzeitige Überlastungen."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1315 02040d51ac28421b96e817edf9f2a049
+msgid "Abb.: Schaltung INA226 Generatormonitoring"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1318 9130cff54845437db33bf59817621fa3
+msgid ""
+"Wenn Sie die Generatoranzeige verwenden, jedoch kein INA226-Modul am I2C-"
+"Bus angeschlossen ist, werden keine Messwerte außer die aktuelle "
+"Batteriespannung angezeigt. In diesem Fall wird der interne "
+"Spannungssensor des OBP60 benutzt. Der Wert der gemessenen Spannung muss "
+"nicht direkt der Spannung am Ausgang des Generator entsprechen, da durch "
+"Leitungsverluste der Spannungswert verfälscht sein kann."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1326 2551e5e0732d4811b23a2b8f4a09d94a
+msgid "XDR"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1328 f7e1f127ff8e42a99587cb6a57cb47cb
+msgid ""
+"Über die Konfigurationsseite XDR können XDR-Sentences für NMEA0183 "
+"erstellt werden. XDR-Sentences sind Telegramme für generische "
+"Sensorwerte, die verwendet werden, wenn sich kein geeignetes "
+"NMEA0183-Telegramm findet, mit dem man die gewünschten Sensorwerte "
+"übertragen kann. Es ist ein universelles Telegramm zur Übertragung von "
+"Sensordaten. Sofern nicht zugewiesene Sensordaten im OBP60 vorhanden "
+"sind, können diese über ein XDR-Mapping zugewiesen werden. Damit sind "
+"diese Daten als NMEA0183-Telegramme allgemein nutzbar und werden im OBP60"
+" dargestellt. Die Daten lassen sich dann auch über NMEA0183 in andere "
+"Systeme übertragen und dort nutzen. XDR-Sentences werden immer dann "
+"benutzt, wenn Daten aus dem I2C-Bus, dem 1Wire-Bus oder interne "
+"Sensordaten vom ESP32 übertragen werden sollen."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1330 3d18e6882612487bac83547ecd7b4574
+msgid "Ein XDR-Sentence ist folgendermaßen aufgebaut:"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1332 f22c1d67bf1d4d2296bc8a02e8c97502
+msgid "**Sensor Werte**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1334 c7a21b9332b34024b7f90a3501adcc64
+msgid "$--XDR,a,x.x,b,c--c,x--x*hh<CR><LF>"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1336 0d9221e531f2470eb3208292195f3c4b
+msgid "Feldnummer:"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1337 9c12e4248d4241379efa8307b5efaf47
+msgid "a - Sensor-Typ"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1338 594d1d7cb7d44a4fa22bb99342e2c7b4
+msgid "x.x - Messwerrt"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1339 e864230280f44e67af71382f01a24342
+msgid "b - Einheit des Messwertes"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1340 5d18ca9f16b4408cb7f496f889790c9f
+msgid "c - Name des Sensors"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1341 0fcf5ea1fee44af585a8c6870a46ee76
+msgid "x - Weitere Sensordaten"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1342 07acc56e70c54787b24a37b3fadf566e
+msgid "hh - Checksumme"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1344 c30256fa34d04db783e7781c0a21b2db
+msgid "Beispiele:"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1345 ec0d7fff5ad948688b651c5358615e0c
+msgid "$IIXDR,C,19.52,C,TempAir*19"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1346 863653bae58f4b379d96d21067325f1c
+msgid "$IIXDR,P,1.02481,B,Barometer*29"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1349 5041041845734bf594eafc8f346a2dec
+msgid "Messwert"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1349 0016d35dcab1400baa954a83c19501e8
+msgid "Sensor-Typ"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1349 e2913be988cf4126b587e1d92cc07ff3
+msgid "Beispiele für Messdaten"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1349 1be23e68d2ae47a3a33c087661ff97b2
+msgid "Einheit"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1349 3c97709595f049ae86c9db477952d2bb
+msgid "Name des Sensors"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1351 0c64241cbede4b5b9363369258c62fb5
+msgid "Luftdruck"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1351 e5a578ef52334a6d9085be69182ce8b2
+msgid "**P** Druck"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1351 d5814437ee3a48e2a6c73936ed60781f
+msgid "0.8..1.1 oder 800..1100"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1351 9e437a47b5ea4894abb7af6a60195e61
+msgid "**B** Bar"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1351 8a273d45642a45bb8d5709bce10b63b4
+msgid "**Barometer**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1353 fea0cf026cba4de3884ec7e33cd912dc
+msgid "Lufttemperatur"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1353
+#: ../../usermanual/configuration.rst:1359 3bd085ccbfe94a8ea519e4c9f01fd83d
+#: 7f9c104dd04e474fa722208994e1072a
+msgid "**C** Temperatur"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1353
+#: ../../usermanual/configuration.rst:1359 24f7c776ed134e2bbf00c700e06562af
+#: 5ddb458944a94109ab49745c59ab471f
+msgid "2 Dezimalstellen"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1353
+#: ../../usermanual/configuration.rst:1359 3fcf934ea9f14589941af194fdc5f31c
+#: 653b2aceb1224d3693da104c88ee14fb
+msgid "**C** Celsius"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1353 f4139f28ae5b44e5961c3a6dfe858f82
+msgid "**TempAir** oder **ENV_OUTAIR_T**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1355 c2ad439cb2374fb3bbb81e70682beed4
+msgid "Pitch"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1355
+#: ../../usermanual/configuration.rst:1357 52a8e7f240e94f8484b7798a0bb06960
+#: f53ef164702d489eacdfdc61a4acb02c
+msgid "**A** Winkel"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1355 d70810def0a24c03b95480bf6adc6014
+msgid "-180..0 abwärts  0..180 aufwärts"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1355
+#: ../../usermanual/configuration.rst:1357 be6f519ebe474207a979fa378b9702e0
+#: c062be89ddd74282a01c63b7634f9a00
+msgid "**D** Degrees"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1355 b84518e1f33f4832a471536b78a42d01
+msgid "**PTCH** oder **PITCH**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1357 d1f37e5291814aa8a2e213f6730f3e9c
+msgid "Rolling"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1357 f5689d7002214f52b6c89c4201ee51cd
+msgid "-180..0 links    0..180 rechts"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1357 3ab17b976fe2451d93b7ab801e8bd3cf
+msgid "**ROLL**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1359 4bf10d0b084649eaa242627f7110cf3f
+msgid "Wassertemperatur"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1359 9892173806d54d9b908f2bd32a0a4118
+msgid "**ENV_WATER_T**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1362 65482c74ee4b4dcb87cbe1dc83c4fe31
+msgid ""
+"Über die XDR-Konfigurationsseite lassen sich 30 XDR-Telegramme "
+"individuell erstellen."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1367 bfeaa4a2c11547e3aa9908c2f7a78618
+msgid ""
+"Dazu öffnet man als erstes über **Show Unmapped** eine Liste der nicht "
+"verknüpften Sensordaten."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1372 4ae8d041ddb048199fb477f5c4c4892d
+msgid ""
+"In der Liste sehen Sie dann, welche Daten zur Verfügung stehen. Über "
+"``+`` werden die Daten in die letzte, frei verfügbare XDR-Konfiguration "
+"automatisch eingefügt und der richtigen Kategorie zugeordnet. Der "
+"Sensorname muss noch im Feld **Transducer** hinzugefügt werden."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1377 22bc15bc75d748f88dd0290e374c71b7
+msgid ""
+"Nach der Zuordnung des Sensornamens wird unter **Example** ein Beispiel "
+"für das XDR-Telegramm angezeigt. Danach können alle Einstellungen noch "
+"individuell geändert werden. Die Erklärung zu den Einstellungen ist "
+"nachfolgend aufgeführt."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1379 01e1a0537b9e4338912a927e9d76758c
+msgid "**Direction**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1380 ba42b1d177f6417885507733fa87314a
+msgid ""
+"Über **Direction** lässt sich einstellen, wie Sensordaten eingelesen "
+"werden sollen und wohin sie übertragen werden:"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1382 492381cfd542483ca572f2f495eb2d27
+msgid ""
+"``off`` - Die Sensordaten werden nicht benutzt. Damit können Sie ein "
+"bereits konfiguriertes XDR-Telegramm deaktivieren."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1383 5c391212e4dc4d12a568d02c6ad641d5
+msgid ""
+"``bidir`` - Die Sensordaten werden zwischen NMEA0183 und NMEA2000 "
+"ausgetauscht."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1384 d180f1d5a9004153bb754f899a5d108a
+msgid "``to2K`` - Das Sensordaten werden nur nach NMEA2000 gesendet."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1385 c31bccc6a1944d908ebde93564afbc90
+msgid "``from2k`` - Sensordaten werden von NMEA2000 eingelesen."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1387 56646268bd8545fa8bdc59e801a9a7be
+msgid "**Category**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1388 54ce1a5dd76546c18a0fece112faa3cc
+msgid "Über **Category** kann ein Sensor-Typ zugeordnet werden:"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1390 fbf16263b8a34daeae14183af714d487
+msgid "``Temperature`` - Temperatursensoren z.B. für Luft, Wasser, Kühlgeräte"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1391 d9799502f03a4092979a1b54b0bae56f
+msgid "``Humidity`` - Luftfeuchtigkeitssensoren"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1392 536725a4ffb941d58ce053512bcb9f1c
+msgid ""
+"``Pressure`` - Drucksensoren für Luftdruck und andere Drücke wie z.B. "
+"Öldruck"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1393 84a0182a72ed4992bbabd1b24b5645c8
+msgid "``Fluid`` - Sensoren für Flüssigkeiten wie Durchfluss und Füllstand"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1394 5725a5ed3f1341e6aacf44eddf01b89d
+msgid ""
+"``Battery`` - Batteriesensoren für Spannung, Strom, Leistung, "
+"Batterietemperatur"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1395 0362ed60bc1a44ea9fcf9d22a51bc5f4
+msgid ""
+"``Engine`` - Motorsensoren für Drehzahl, Anstellung, Trimmklappen, Öl, "
+"Kühlwasser"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1396 e4260c9438594060b6c51b623e3f9853
+msgid "``Attitude`` - Lagedaten, aus Lagesensordaten ermittelt"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1398 e34271c1c3a4458fb925b9a42521b24b
+msgid "**Source**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1399 82991a3e70c4422a82196cb8f921f87e
+msgid ""
+"Über **Source** lässt sich die Quelle der Sensordaten genauer einstellen."
+" Je nach verwendetem Sensortyp stehen verschiedene Sensor-Quellen zur "
+"Verfügung."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1401 d0692cf570314039b482148c12fbb5dd
+msgid "**Field**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1402 474ec3850d1842e9bbb8de87a3f4633b
+msgid ""
+"Mit **Field** kann genauer beschrieben werden, wie die Sensordaten zu "
+"verstehen sind. Es sind Zusatzdaten, die kontextabhängig je nach "
+"verwendetem Sensor-Typ einstellbar sind. So kann z.B. festgelegt werden, "
+"ob es sich um einen Anzeigewert oder um einen Einstellwert handelt."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1404 3ca1a45893e74472ab56173e6d6224ff
+msgid "**Instance**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1405 26c6f5bab50e4e15bdb24e35beb21eb0
+msgid ""
+"Mit **Instance** kann festgelegt werden, ob es mehrere Sensoren des "
+"selben Typs gibt. Das kann z.B. auftreten, wenn zwei Motoren in einem "
+"Boot verbaut sind, und zwei Tankwerte angezeigt werden sollen. Mit Hilfe "
+"einer Instanz-Nummer werden die Sensoren unterschieden. An den "
+"Sensornamen wird dann z.B. \\#1 angefügt. Die Instanziierung kann "
+"folgendermaßen festgelegt werden:"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1407 34d68ce3c4d84bb89dfef8f53ca1be71
+msgid ""
+"``single`` - Es wird ein Sensor instanziiert, dem einen freie Instanz-"
+"Nummer zugeordnet wird. So können z.B. zwei Sensoren die selben Daten in "
+"ein XDR-Telegramm übertragen, wenn die Sensoren redundant sind."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1408 b235a49cc7564697a5c4929f669e9c7c
+msgid "``ignore`` - Es existiert nur genau ein einziger Sensor dieses Typs."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1409 fd5133f26bde4070be77663bda59dc93
+msgid ""
+"``auto`` - Die Instanziierung wird automatisch übernommen. Sobald ein "
+"neuer Sensor des gleichen Typs und der selben Source verwendet wird, wird"
+" eine neue Instanz des Sensors angelegt."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1411 255a07396842463f913b4e1ca414f94b
+msgid "**Transducer**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1412 75af331cbc3c44f98692a3d4232edf36
+msgid ""
+"Über **Transducer** wird der Sensorname festgelegt. Es handelt sich dabei"
+" um eine Klartextbeschreibung des Sensors mit ASCII Zeichen. Verwenden "
+"Sie nur Buchstaben und Zahlen ohne Leer- und Sonderzeichen."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1415 048ef8f961d14040b3578e19202f1ae9
+msgid ""
+"Verwenden Sie nicht mehr als 6 Zeichen und benutzen Sie Abkürzungen, die "
+"geläufig sind. Längere Namen werden aufgrund des begrenzten "
+"Anzeigeplatzes im Display auf 6 Zeichen gekürzt."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1417 9e918a5a6217443e8e06ef296bfdd6c1
+msgid "**Example**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1418 4fca2f1f8e654266b169390a88cf2f5c
+msgid "Beispiel, wie der Inhalt des XDR-Telegramms aussehen wird."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1420 c21c7c5935df4e24afdb20b3cd455fe1
+msgid "**NMEA0183 XDR einlesen**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1421 95b5ca6e1cc14e4b98d9ab7b04eccdb3
+msgid ""
+"Auch für eingehende NMEA0183-Daten muss zunächst ein XDR-Mapping angelegt"
+" werden, bevor sie auf dem OBP60 zur Verfügung stehen. Wenn NMEA0183 XDR-"
+"Daten zum Beispiel in folgender Form eingehen:  "
+"``$IIXDR,A,0.9,D,PTCH,A,0.8,D,ROLL*5D`` können sie mit diesen "
+"Einstellungen auf dem OBP60 verwendet werden:"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1428 926e39dbc24e4a6597433630d9c52661
+msgid ""
+"Danach sind die Daten auf der Seite Data verfügbar, und können auch in "
+"der Konfiguration der Anzeigeseiten ausgewählt werden. Gegebenenfalls "
+"muss hierzu allerdings die Seite im Web-Browser neu geladen werden, bevor"
+" die neuen Einträge sichtbar werden."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1433 1f2bbb50856c48308804de7c186fc48c
+msgid "Data"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1438 e6a9d5b502cb485fa92c0f801161cd70
+msgid ""
+"Unter Data werden die Sensordaten aller Bussysteme angezeigt, die derzeit"
+" verarbeitet werden können. Sensordaten, die nicht verfügbar sind, werden"
+" mit ``---`` gekennzeichnet. Man kann die Datenanzeige auch so "
+"konfigurieren, dass nur verfügbare Daten angezeigt werden. Nicht "
+"verfügbare Datenfelder sind dann ausgeblendet."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1444 be22522ce8774318a1a287380f0a2dd2
+msgid ""
+"Die Beschränkung der Datenanzeige auf aktuelle Daten führt dazu, dass "
+"sich die Anordnung der Daten ändert, wenn einige Sensordaten nicht mehr "
+"verfügbar sind. Diese Datenfelder werden dann ausgeblendet. Wenn Sie ein "
+"festes Anzeigeformat bevorzugen, lassen Sie sich am besten alle Daten "
+"anzeigen."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1449 7fcabf2ede034b89a000832f3fb5b5d1
+msgid "Update"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1451 3cd1218198ee45988cb2e56c83adce8a
+msgid ""
+"Um die Firmware eines Gerätes zu aktualisieren, können Sie die "
+"Registerkarte ``Update`` verwenden. Es gibt zwei Arten von Firmware-"
+"Updates."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1453 cf887c91709a47a69b9c7a9cc8e3bdb4
+msgid "**Initial Firmware-Update**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1454 3d20688c10324d11bd154449468f87d2
+msgid ""
+"Beim Initial Firmware-Update wird der komplette Flash-Speicher des OBP60 "
+"gelöscht. Anschließend werden alle Firmware-Bestandteile im Flash "
+"gespeichert. Dabei wird eine initiale Konfiguration erstellt. Eine "
+"vorherige alte Konfiguration wird überschrieben. Die Initial Firmware-"
+"Updates verwendet den Dateinamen **xxx-all.bin**."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1456 e0554dfbebb0400f8add822cc38a9c31
+msgid "**Normales Firmware-Update**"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1457 d4ae8fb03e5e4969ba1735d0801607e6
+msgid ""
+"Beim normalen Firmware-Update wird nur der Programmteil der Firmware "
+"aktualisiert. Eine vorhandene Konfiguration bleibt dabei erhalten und ist"
+" nach dem Firmware-Update wieder nutzbar. Normale Firmware-Updates "
+"verwenden den Dateinamen **xxx-update.bin**."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1459 ad9c3b4dabf4488aa802be397ba64f35
+msgid ""
+"Die letzte aktuelle Firmware können Sie von folgender Webseite "
+"herunterladen:"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1461 770b71ca495948e4a84214ef411cb4f3
+msgid "https://github.com/norbert-walter/esp32-nmea2000-obp60/releases"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1463 882fc616a44b4cef9e2983de778a7dfb
+msgid ""
+"Unter **Releases** ist eine Reihe verfügbarer Firmware-Updates für das "
+"OBP60 zu finden. Beachten Sie dabei die jeweilige Hardware-Version, für "
+"die Sie eine Firmware benutzen wollen."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1468 365354fab8954372878db18d528a3ab1
+msgid ""
+"Für ein normales Firmware-Update laden Sie sich die gewünschte Firmware "
+"als Datei herunter und speichern Sie die Datei auf ihrem Gerät. Über die "
+"Taste ``Choose File`` wählen Sie dann die heruntergeladene Datei aus. "
+"Danach werden der Firmware-Typ, der Chip-Typ und die Firmware-Version "
+"angezeigt. Sollte die Firmware nicht zur verwendeten Hardware passen, so "
+"erhalten Sie eine Meldung. Die Firmware kann in diesem Fall nicht "
+"geflasht werden. Über die Taste ``Upload`` starten Sie den Flash-Vorgang."
+" Im Fortschrittsbalken sehen Sie den Verlauf des Vorgangs. Nach einem "
+"erfolgreichen Firmware-Update wird ein Neustart des Systems durchgeführt."
+" In dieser Zeit ist die Web-Konfigurationsseite offline (roter Punkt). "
+"Nach beendetem Neustart ist die Seite wieder online (grüner Punkt). Dann "
+"ist das System erneut betriebsbereit."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1471 534c337766294d09b582a43cc1ceff8f
+msgid ""
+"Beachten Sie, dass Sie bei einem Firmware-Update auf eine ältere Version "
+"ein **Initial Firmware Update** durchführen sollten. So vermeiden Sie "
+"Komplikationen mit den gespeicherten Konfigurationsdaten. Bei "
+"Nichtbeachtung ist das System  ansonsten unter Umständen nicht nutzbar "
+"und kann komplett einfrieren. Ein Firmware-Update über die "
+"Konfigurationsseiten ist dann nicht mehr möglich. Die Firmware muss dann "
+"über USB geflasht werden."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1473 21361767cde6497084e9ab3aad23abdd
+msgid ""
+"Wie man ein **Initial Firmware Update** durchführt, bzw. die Firmware "
+"eines OBP60 über USB flasht, ist unter :ref:`Update` beschrieben."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1476 6114dcd7c8014db9b4847ddd97baed81
+msgid "Help"
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1478 b8959e51555243969011ab33d983642b
+msgid ""
+"Unter **Help** erfolgt ein Wechsel ins Internet zur Github-Seite, auf der"
+" das Projekt gehostet wird. Dort sind einige weitergehende Informationen "
+"zum NMEA2000-Gateway zu finden, das die Basis für diese Firmware ist."
+msgstr ""
+
+#: ../../usermanual/configuration.rst:1481 7da5508e316342439f8e07330ce51511
+msgid ""
+"Die Github-Seite lässt sich nur aufrufen, wenn das OBP60 auf das Internet"
+" zugreifen kann. Das lässt sich realisieren, wenn das OBP60 zum Beispiel "
+"als Client in Ihrem Boots-WLAN arbeitet, und Ihr Boots-WLAN "
+"Internetzugang hat. Alternativ starten Sie zum Beispiel einen Hotspot auf"
+" Ihrem Handy und verbinden das OBP60 als WLAN-Client mit Ihrem Handy."
+msgstr ""
+

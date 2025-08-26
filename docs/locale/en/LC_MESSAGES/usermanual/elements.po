@@ -1,0 +1,361 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Open Boat Projects
+# This file is distributed under the same license as the OBP60 V2
+# Dokumentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OBP60 V2 Dokumentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-08-26 14:37+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../usermanual/elements.rst:2 5cf749aeaaea4665ac7433107519f7e9
+msgid "Bedienelemente"
+msgstr ""
+
+#: ../../usermanual/elements.rst:8 c1c61e0865534cb8b621abe08aa2e975
+msgid "Statuszeile"
+msgstr ""
+
+#: ../../usermanual/elements.rst:10 e4c6b5a9dfd9417592caafebf23f3a14
+msgid "Die Statuszeile dient zur Anzeige von Statusinformationen. Dazu zählen:"
+msgstr ""
+
+#: ../../usermanual/elements.rst:12 2cfe6b1151d245fd85e18594460ebe33
+msgid "**Zustandsanzeige des Access Points**"
+msgstr ""
+
+#: ../../usermanual/elements.rst:13 2bec3b7944de44529f379d938083f763
+msgid "**AP** - Access Point"
+msgstr ""
+
+#: ../../usermanual/elements.rst:15 f7f92c6387684498a29d8c285845cd2f
+msgid "**Zustandsanzeige aktiver Bussysteme und Komponenten**"
+msgstr ""
+
+#: ../../usermanual/elements.rst:16 846d51df8e6d43c7ba9b638ff9b2c822
+msgid "**N2K** - NMEA2000"
+msgstr ""
+
+#: ../../usermanual/elements.rst:17 cf032351f925400da8bc6b873d51e6b9
+msgid "**183** - NMEA0183"
+msgstr ""
+
+#: ../../usermanual/elements.rst:18 eee22d8c4cba408c856693fe1cf285b5
+msgid "**USB** - NMEA0183 via USB"
+msgstr ""
+
+#: ../../usermanual/elements.rst:19 b5221c0a886d4f7e84e515b11817db7e
+msgid "**TCP** - NMEA0183 via TCP (WiFi)"
+msgstr ""
+
+#: ../../usermanual/elements.rst:20 a338a08201c64a09a338a65fe4c3f746
+msgid "**GPS** - GPS-Sensor des OBP60 (Position gefunden)"
+msgstr ""
+
+#: ../../usermanual/elements.rst:22 f4f00aaa98b148ffbd832856f955af19
+msgid "Lebenszeichen (pulsierender Punkt)"
+msgstr ""
+
+#: ../../usermanual/elements.rst:23 0373f0ff3fc9439c8f007ff105dd2479
+msgid "Datum und Uhrzeit (landesspezifisch)"
+msgstr ""
+
+#: ../../usermanual/elements.rst:24 454c27336d424966b57f9f7ccf65b3b6
+msgid "Anzeige der Zeitzone"
+msgstr ""
+
+#: ../../usermanual/elements.rst:26 8c90744779e4478cad6f2dc9527cef85
+msgid "**UTC** - Weltzeit"
+msgstr ""
+
+#: ../../usermanual/elements.rst:27 41325071fb45427abe587be5185eb1d5
+msgid "**LOT** - Lokalzeit"
+msgstr ""
+
+#: ../../usermanual/elements.rst:32 6a600c9b5e9e4a50910088db56b42022
+msgid ""
+"Die Statuszeile ist in allen Anzeigeseiten zu sehen, sie zeigt den "
+"aktuellen Status des Gerätes an."
+msgstr ""
+
+#: ../../usermanual/elements.rst:35 82c0e939afd9478eabf5b0af3dd87f04
+msgid ""
+"Der Anzeigeinhalt eines E-Paper Displays bleibt beim Ausschalten des "
+"Gerätes erhalten. Der pulsierende Punkt in der Statuszeile kennzeichnet "
+"das Gerät als aktiv. Sollte der Punkt nicht blinken, so ist die Software "
+"inaktiv oder das Gerät wurde ausgeschaltet."
+msgstr ""
+
+#: ../../usermanual/elements.rst:38 48c77c5099344d048b73d5f827ebf14c
+msgid "Anzeigebereich"
+msgstr ""
+
+#: ../../usermanual/elements.rst:40 76a5fb25511e4ac6a36ecd97bc8a20e9
+msgid ""
+"Im mittleren Bereich befindet sich der Anzeigebereich. Dort werden alle "
+"relevanten Informationen angezeigt. Bei jedem Wechsel auf eine neue Seite"
+" wird der Inhalt des Anzeigebereichs verändert. Die Aktualisierung des "
+"Anzeigebereichs erfolgt jede Sekunde als partieller Bild-Refresh."
+msgstr ""
+
+#: ../../usermanual/elements.rst:42 7c103e55be724e099b7aecf6af3d1a8d
+msgid ""
+"Bedingt durch die E-Paper Technologie sind im Display nach einiger Zeit "
+"Geisterbilder von alten Anzeigezuständen zu sehen. Um die Geisterbilder "
+"zu entfernen, wird in regelmäßigen Abständen von 10 min ein Voll-Refresh "
+"der Anzeige durchgeführt. Dabei wird der komplette Bildinhalt mehrmals "
+"invertiert, dann gelöscht und anschließend neu geschrieben. Man erkennt "
+"einen Voll-Refresh am kurzen Flackern der Anzeige. Das gleiche passiert 4"
+" Sekunden nach einem Seitenwechsel. Dadurch kann man schnell mehrere "
+"Anzeigeseiten nacheinander aufrufen. Erst bei der zuletzt aufgerufenen "
+"Seite wird nach 4 Sekunden ein Voll-Refresh durchgeführt, damit werden "
+"Geisterbilder alter Anzeigeseiten entfernt. Der regelmäßige Voll-Refresh "
+"ist per Default eingestellt und kann bei Bedarf über die Konfiguration "
+"deaktiviert werden."
+msgstr ""
+
+#: ../../usermanual/elements.rst:44 ddbcfbde56a746ff82e43605066ff0c7
+msgid ""
+"Die Entstehung von Geisterbildern ist von der Display-Temperatur des "
+"OBP60 abhängig. Bei niedrigen Temperaturen sind Geisterbilder deutlicher "
+"zu sehen und die Anzeige reagiert träger als bei hohen Temperaturen. Kurz"
+" nach dem Einschalten wird für die ersten 5 Minuten jede Minute ein Voll-"
+"Refresh durchgeführt, damit sich das Display akklimatisieren kann. Die "
+"Plexiglasscheibe schützt vor zu großer UV-Strahlung der Sonne, ein IR-"
+"Filter vor übermäßiger Erwärmung."
+msgstr ""
+
+#: ../../usermanual/elements.rst:47 f887c8e22a524592a46c855042f408c5
+msgid ""
+"Trotz Filter kann es bei extrem hoher Sonneneinstrahlung vorkommen, dass "
+"der Kontrast des Display-Inhaltes verloren geht. Schwarze Anzeigebereiche"
+" werden dann nur noch grau dargestellt. Das Display ist in dem Fall nicht"
+" defekt. Nach einem Voll-Refresh regeneriert sich das Display und der "
+"Kontrast wird wieder vollständig hergestellt."
+msgstr ""
+
+#: ../../usermanual/elements.rst:50 be5062007ec14b8a91b3e489fa06f224
+msgid ""
+"Wird das OBP60 nicht benutzt, löschen Sie bitte den Bildschirminhalt und "
+"decken das Gerät mit der Schutzkappe ab. So schützen Sie es vor zu großer"
+" Sonneneinstrahlung und vor Witterungseinflüssen."
+msgstr ""
+
+#: ../../usermanual/elements.rst:53 c719536402134e1eb366cfa2064a7045
+msgid "Fußzeile"
+msgstr ""
+
+#: ../../usermanual/elements.rst:57 2f0b5c1fbb8a4f84be06766f44a472b4
+msgid ""
+"Die Fußzeile dient zur Bezeichnung der Tastenfunktionen. Die Belegung der"
+" Tasten ändert sich abhängig vom Inhalt der Anzeigeseiten. Aktive Tasten "
+"sind mit Kurzbezeichnungen in eckigen Klammern versehen wie z.B. "
+"``[AVG]``. Es kann auch Anzeigeseiten geben, die keine Tastenfunktionen "
+"enthalten. In der Mitte der Fußzeile werden weitere Informationen "
+"eingeblendet:"
+msgstr ""
+
+#: ../../usermanual/elements.rst:59 079a20c1bb9444d0adf619d4dd4dc41d
+msgid "``[ <<<< 1/5 >>>> ]`` - Wischgeste aktiv"
+msgstr ""
+
+#: ../../usermanual/elements.rst:60 6b90f63840c84692801d63d931d186d7
+msgid "``[ Keylock active ]`` - Tasten gesperrt"
+msgstr ""
+
+#: ../../usermanual/elements.rst:62 de87c013306145e4bcac32d649e5e5e3
+msgid ""
+"Sofern die Wischgeste aktiv ist, werden im Infobereich die aktuelle Seite"
+" und die Seitenanzahl angezeigt."
+msgstr ""
+
+#: ../../usermanual/elements.rst:65 886ab063c8ed4b19a597403339301313
+msgid "Sensor-Tasten"
+msgstr ""
+
+#: ../../usermanual/elements.rst:67 10a6e0b0d2974228a5262003a07010a5
+msgid ""
+"Das OBP60 hat 6 kapazitive Sensortasten am unteren Displayrand. Die "
+"Tasten reagieren auf Berührung durch Veränderung des Bezugspotenzials. "
+"Wassertropfen oder Regen haben so gut wie keinen Einfluss auf die "
+"Auslösefunktion der Tasten. Aktuell sind folgende Tastenfunktionen "
+"realisiert:"
+msgstr ""
+
+#: ../../usermanual/elements.rst:69 9ccf541156c14634b436f3c86657df44
+msgid "Konfiguration der Tasten-Sensitivität"
+msgstr ""
+
+#: ../../usermanual/elements.rst:70 3c4bcae405064226a0f88424a3057ea5
+msgid "Wischen links / rechts"
+msgstr ""
+
+#: ../../usermanual/elements.rst:71 5065a10713f54defb51b61de7975ed75
+msgid "Kurzes Tippen"
+msgstr ""
+
+#: ../../usermanual/elements.rst:72 df207c78c35f46dcb35e9ea320e5af1c
+msgid "Normales Drücken"
+msgstr ""
+
+#: ../../usermanual/elements.rst:73 2b593aa04afb4406b5f6043ea113c154
+msgid "Drücken mehrerer Tasten gleichzeitig"
+msgstr ""
+
+#: ../../usermanual/elements.rst:74 00226191c78444559d77339b21a12e61
+msgid "Tasten sperren"
+msgstr ""
+
+#: ../../usermanual/elements.rst:76 66eacfb107b545779ba813c5caf4a89e
+msgid ""
+"Die Tasten-Sensitivität kann über die Konfigurationsseite eingestellt "
+"werden. Damit lässt sich die Schwelle einstellen, ab der ein Tastendruck "
+"erkannt wird. Die Tasten haben in der Mitte eine Vertiefung. So kann das "
+"Zentrum der Taste besser erfühlt werden. Erkannte Tastenberührungen "
+"werden akustisch mit einem Piepton signalisiert."
+msgstr ""
+
+#: ../../usermanual/elements.rst:78 3952c1624ad248e6a4bd378c8c036070
+msgid ""
+"Die Tasten sind bündig in das Display eingelassen. So ist es möglich, mit"
+" Wischgesten die Seiteninhalte umzuschalten. Dazu wischt man zügig nach "
+"rechts oder links über mindestens zwei Tasten. Die Software erkennt "
+"automatisch, wenn mehrere Tasten hintereinander ausgelöst werden, und "
+"bestimmt daraus die Wischrichtung. Für die Wischgeste wird ein "
+"akustisches Feedback gegeben. **Rechts wischen** wird mit der Tonfolge "
+"**tief-hoch** signalisiert, **links wischen** mit **hoch-tief**. Die "
+"Seitenweiterschaltung ist an den Enden rollierend."
+msgstr ""
+
+#: ../../usermanual/elements.rst:80 adbab238bd254671ad111ba21a434daf
+msgid ""
+"Bei kurzem Tippen wird kein Piepton ausgegeben. Kurzes Tippen der zwei "
+"äußeren Tasten links und rechts nacheinander aktiviert die Tastensperre, "
+"gefolgt von einem langen Piepton. Danach sind die normalen "
+"Tastenfunktionen deaktiviert und es wird keine Wischgeste mehr erkannt. "
+"Im Display ist die Meldung ``[Keylock active]`` zu sehen. Welche Taste "
+"beim Aktivieren der Tastensperre zuerst gedrückt wird, ist unerheblich, "
+"ebenso die Reihenfolge. Die Deaktivierung der Tastensperre erfolgt auf "
+"die gleiche Weise."
+msgstr ""
+
+#: ../../usermanual/elements.rst:83 7582f6a512684ec99b5eb952584ef9ea
+msgid ""
+"Sollte Ihr OBP60 so platziert sein, dass sich eine Person versehentlich "
+"dagegen lehnen kann, so stellen Sie die Tasten-Sensitivität entsprechend "
+"niedriger ein. So vermeiden Sie versehentliches Auslösen der Tasten. Sie "
+"können als zusätzlichen Schutz gegen unbeabsichtigtes Bedienen auch die "
+"Tasten-Sperrfunktion aktivieren."
+msgstr ""
+
+#: ../../usermanual/elements.rst:86 9da2316b535742a8bb22ef59707f29b5
+msgid "Flash LED"
+msgstr ""
+
+#: ../../usermanual/elements.rst:90 3191bfc737da4cac8726840aaab85fde
+msgid ""
+"Links oberhalb des Displays befindet sich eine kleine Flash-LED. Diese "
+"LED dient zur Signalisierung von Betriebszuständen des OPB60. Die LED "
+"kann dabei verschiedene Farben annehmen. Die LED leuchtet mit maximaler "
+"Helligkeit, sodass sie optisch auch bei hellen Sonnenlicht gut "
+"wahrgenommen werden kann."
+msgstr ""
+
+#: ../../usermanual/elements.rst:92 444c8d60cc2546548f3b3f6d121b577a
+msgid "Rot - Alarmierung bei Grenzwertüberschreitung"
+msgstr ""
+
+#: ../../usermanual/elements.rst:93 0662b2a78d794ac0b8c8154e41f56733
+msgid "Grün - Bestätigung von Zustandsänderungen (z.B. Autopilot ein/aus)"
+msgstr ""
+
+#: ../../usermanual/elements.rst:94 84103842a9aa4f73aea63575e767f88f
+msgid "Blau - Signalisierung von Zuständen (z.B. GPS-Empfang, Datentransfer usw.)"
+msgstr ""
+
+#: ../../usermanual/elements.rst:97 6863d17b4c12416e96d924799a7fb50d
+msgid "Hintergrundbeleuchtung"
+msgstr ""
+
+#: ../../usermanual/elements.rst:99 73aef39515014524a1913c8deece622a
+msgid ""
+"Um das Display bei Nacht ablesen zu können, kann eine "
+"Hintergrundbeleuchtung über die rechte Sensortaste zugeschaltet werden. "
+"Die Farbe und die Helligkeit können über die Konfiguration eingestellt "
+"werden. Grundsätzlich lässt sich die Hintergrundbeleuchtung "
+"folgendermaßen konfigurieren:"
+msgstr ""
+
+#: ../../usermanual/elements.rst:101 bfae4db201bb40edba0bd511bc2e0870
+msgid "Dauerhaft an"
+msgstr ""
+
+#: ../../usermanual/elements.rst:102 717094cc689543229e6b161d52164b5f
+msgid "Dauerhaft aus"
+msgstr ""
+
+#: ../../usermanual/elements.rst:103 98ea651889ac408cae25a079078b40b2
+msgid "Manuell einschaltbar über Sensortaste"
+msgstr ""
+
+#: ../../usermanual/elements.rst:104 86df27cd3e9e4222ab17a7bc6ee52e6a
+msgid "Automatisch schaltbar abhängig vom Sonnenstand"
+msgstr ""
+
+#: ../../usermanual/elements.rst:107 b632c078ed6a4c49abf0a1838098d882
+msgid ""
+"Wenn Sie den Sonnenstand zum Schalten der Hintergrundbeleuchtung "
+"verwenden wollen, benötigen Sie ein gültiges GPS-Signal, damit die "
+"Schaltzustände ausgelöst werden können. Die Hintergrundbeleuchtung wird "
+"dann automatisch bei astronomischem Sonnenuntergang eingeschaltet und bei"
+" Sonnenaufgang abgeschaltet. Dabei wird der geografische Ort "
+"berücksichtigt. Ist kein gültiges GPS-Signal vorhanden, so erfolgt keine "
+"Änderung der Schaltzustände."
+msgstr ""
+
+#: ../../usermanual/elements.rst:112 d57f4c96f556404d92c0b334b9bd9dd8
+msgid "Buzzer"
+msgstr ""
+
+#: ../../usermanual/elements.rst:114 474acbb24f03467a92b27081031517a8
+msgid ""
+"Der Buzzer dient zur akustischen Signalisierung von Störungen und als "
+"Feedback bei Zustandsänderungen. Der Buzzer befindet sich im Inneren des "
+"Gerätes. Die Funktion und Lautstärke des Buzzers kann in der "
+"Konfiguration eingestellt werden. Beim Einschalten und beim manuellen "
+"oder automatischen Reset des OBP60 erfolgt ein kurzer Signalton, um das "
+"Hochfahren des Gerätes zu signalisieren."
+msgstr ""
+
+#: ../../usermanual/elements.rst:117 474d4cbb2c064f3680b4cca57142b303
+msgid "Reset-Taster"
+msgstr ""
+
+#: ../../usermanual/elements.rst:122 440d1b0fa34e4999ad20fdd9d6c19805
+msgid ""
+"Der Reset-Taster befindet sich auf der Rückseite des Displays an der "
+"Unterseite des großen linken Steckverbinders **CN1**. Der Reset-Taster "
+"wird im normalen Betrieb nicht genutzt. Bei Programmiervorgängen kann es "
+"nützlich sein, einen manuellen Reset auszulösen. Benutzen Sie zum "
+"Auslösen des Reset einen nicht leitenden, schmalen Gegenstand und drücken"
+" Sie den Taster vorsichtig, bis der Druckpunkt spürbar überwunden ist."
+msgstr ""
+
+#: ../../usermanual/elements.rst:125 f80151f6a9f1410cad16df3ab4526fdb
+msgid ""
+"Verwenden Sie keine leitenden Gegenstände. Damit können Kurzschlüsse auf "
+"der Platine ausgelöst werden, das Gerät kann dadurch beschädigt werden."
+msgstr ""
+

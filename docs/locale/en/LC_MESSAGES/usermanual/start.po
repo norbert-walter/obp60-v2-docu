@@ -1,0 +1,313 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Open Boat Projects
+# This file is distributed under the same license as the OBP60 V2
+# Dokumentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OBP60 V2 Dokumentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-08-26 14:37+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../usermanual/start.rst:2 90354ce002a649f695640fb9c52995da
+msgid "Inbetriebnahme"
+msgstr ""
+
+#: ../../usermanual/start.rst:4 c46989f7a56d402e8afa9dc588405088
+msgid ""
+"Dieser Abschnitt hat die Erstinbetriebnahme Ihres OBP60 zum Inhalt. Das "
+"geht am einfachsten, wenn das Gerät noch nicht im Boot eingebaut ist. "
+"Dazu wird das Gerät mit Strom versorgt, um die ersten Einstellungen "
+"vorzunehmen. So können Sie die Funktionalität testen, bevor Sie das Gerät"
+" im Boot einbauen."
+msgstr ""
+
+#: ../../usermanual/start.rst:7 b12cf1da26c34f6da37e5719afe10dbf
+msgid "Schutzkonzept"
+msgstr ""
+
+#: ../../usermanual/start.rst:9 16b2d01f4c044f60919e08f391e4ac4f
+msgid ""
+"Das OBP60 verfügt über ein mehrstufiges Schutzkonzept. Das soll "
+"verhindern, dass sich Störungen im Versorgungsnetz und auf den "
+"Datenleitungen im System ausbreiten. Damit wird sichergestellt, dass das "
+"OBP60 trotz Störungen nicht komplett ausfällt und in wichtigen Teilen "
+"weitestgehend funktionsfähig bleibt. Um dies zu erreichen, sind die "
+"Bussysteme:"
+msgstr ""
+
+#: ../../usermanual/start.rst:11 45e126de8d7942ab8939de8fd8df97f0
+msgid "NMEA2000"
+msgstr ""
+
+#: ../../usermanual/start.rst:12 3e1db443e49e431e90c3b32345c91da8
+msgid "NMEA0182"
+msgstr ""
+
+#: ../../usermanual/start.rst:13 121b36413eb142dc82f74d7092db31b8
+msgid "I2C"
+msgstr ""
+
+#: ../../usermanual/start.rst:15 26f50ff600f1421991500b2763407d93
+msgid "vom Bordnetz isoliert aufgebaut."
+msgstr ""
+
+#: ../../usermanual/start.rst:20 8ec11c135e3c44d0a227274d027a03ac
+msgid "Abb.: Sicherheitskonzept"
+msgstr ""
+
+#: ../../usermanual/start.rst:22 4e2874f47f964b3bb6c07cc73145d699
+msgid ""
+"Im OBP60 ist dazu eine zusätzliche 5V-Stromversorgung enthalten, die die "
+"isolierten Schaltungsteile versorgt. Die zusätzliche Stromversorgung hat "
+"die Ausgänge ``+5Viso`` und ``GND2``, die am Steckverbinder CN1 und CN2 "
+"anliegen. Über diese können auch externe Schaltungen bis 200 mA versorgt "
+"werden."
+msgstr ""
+
+#: ../../usermanual/start.rst:25 986186c4ab3949c89d7caa55e96fbe0d
+msgid ""
+"Verbinden Sie die unterschiedlichen Massepotenziale ``GNDS``, ``GND``, "
+"``GND2`` und ``Shield`` niemals miteinander! Dadurch geht die Isolations-"
+" und Schutzwirkung verloren. Die Massepotenziale dürfen nicht "
+"gleichberechtigt verwendet werden."
+msgstr ""
+
+#: ../../usermanual/start.rst:27 38cf1bd534d94a749bb2139c4d873199
+msgid "Die unterschiedlichen Massepotenziale haben folgende Bedeutung:"
+msgstr ""
+
+#: ../../usermanual/start.rst:29 b1d075166ce24f7ea36c26d71dc8eb5b
+msgid "``GNDS`` - Masse der Versorgungsspannung"
+msgstr ""
+
+#: ../../usermanual/start.rst:30 8532ca5ae6974417bd3548185ba5643f
+msgid "``GND`` - Interne Masse der Elektronik"
+msgstr ""
+
+#: ../../usermanual/start.rst:31 fe8e521f34b545f9a40f20a646841ba8
+msgid "``GND2`` - Masse der isolierten Bus-Elektronik"
+msgstr ""
+
+#: ../../usermanual/start.rst:32 55d4d77b73a64361953b5a4a3ca5af35
+msgid "``Shield`` - Schutzleiter für die Kabelschirmung"
+msgstr ""
+
+#: ../../usermanual/start.rst:34 2d3187b425354afb821db8a3843d4133
+msgid ""
+"Im folgenden Bild sind die geschützten und ungeschützten Anschlüsse zu "
+"sehen."
+msgstr ""
+
+#: ../../usermanual/start.rst:39 cf6b14ece7e940c3a6ac849a101d2461
+msgid "Abb.: Sichere und unsichere Bereiche"
+msgstr ""
+
+#: ../../usermanual/start.rst:42 6ceafe1af6924dba9ac529871e3de639
+msgid ""
+"Bitte beachten Sie, dass der 1Wire-Bus gegenüber Störungen nicht "
+"geschützt ist und entsprechend durch Schirmung geschützt werden muss. "
+"Daher sollten für die Leitungen des 1Wire-Bus nur abgeschirmte Kabel "
+"verwendet werden. ``GND`` darf mit keinen weiteren externen "
+"Schaltungsteilen verbunden werden, denn ``GND`` dient ausschließlich als "
+"Masseleitung für den 1Wire-Bus."
+msgstr ""
+
+#: ../../usermanual/start.rst:45 2d2bea0df0104b2394925bcd0c9adab8
+msgid "Stromversorgung 12V/24V"
+msgstr ""
+
+#: ../../usermanual/start.rst:47 9a258d94b46b468caba6d157c1a628e6
+msgid ""
+"Die Stromversorgung des OBP60 erfolgt über den Steckverbinder CN2. Beim "
+"Zuschalten der Versorgungsspannung schaltet sich das OBP60 automatisch "
+"ein. Es gibt keinen gesonderten Ein- oder Ausschalter am Gerät. Benutzen "
+"Sie für die Stromversorgung die Anschlüsse ``+12V`` und ``GNDS``. Dabei "
+"wird ``+12V`` mit dem positiven Pol der Batterie verbunden und ``GNDS`` "
+"mit dem negativen Pol. Diese Anschlüsse für die Stromversorgung sind:"
+msgstr ""
+
+#: ../../usermanual/start.rst:49 75ef300f16234ce697c5e63a4f15057b
+msgid "verpolungssicher"
+msgstr ""
+
+#: ../../usermanual/start.rst:50 076f24038431433e8f018265d4edcb30
+msgid "kurzschlussfest"
+msgstr ""
+
+#: ../../usermanual/start.rst:51 f1c3b2f57f8342b086e85ff18c4500b0
+msgid "überspannungssicher"
+msgstr ""
+
+#: ../../usermanual/start.rst:52 6674096806a74b1695ff58239659ad43
+msgid "ESD-geschützt"
+msgstr ""
+
+#: ../../usermanual/start.rst:54 8d45a567457a41b0aca62a1313b5f721
+msgid "Der zulässige Spannungsbereich liegt zwischen 10V...28V."
+msgstr ""
+
+#: ../../usermanual/start.rst:58 42bf9fa268114de3b57900b2f9a5ed49
+msgid "Abb.: Stromversorgung"
+msgstr ""
+
+#: ../../usermanual/start.rst:60 2f3138fc4ecc405c860daed2c9cea181
+msgid ""
+"Das OBP60 kann in 12V- und in 24V-Bord-Versorgungsnetzen verwendet "
+"werden. Bei Spannungen höher als 28V wird die interne Sicherung im Gerät "
+"ausgelöst."
+msgstr ""
+
+#: ../../usermanual/start.rst:63 3c9ab0cc0f0a4443bdd30d59af8f7994
+msgid ""
+"Verwenden Sie für die Verkabelung der Stromversorgung Kabelquerschnitte "
+"von 0,5...0,75 mm². Die Kabel sollten direkt an der Schalttafel aufgelegt"
+" sein und keine weiteren Abgänge für andere Geräte enthalten. "
+"Kabelüberlängen sollten vermieden werden. Wird der Strom an anderen "
+"Geräten abgezweigt oder sind die Kabelquerschnitte zu gering oder die "
+"Versorgungsleitungen zu lang, so kann es Probleme beim Einschalten des "
+"OBP60 geben."
+msgstr ""
+
+#: ../../usermanual/start.rst:65 3b91d674e24d4ac59775c02de741cc39
+msgid ""
+"In einigen Situationen ist es günstiger, die Stromversorgung direkt über "
+"den NMEA2000-Bus vorzunehmen. Dies setzt aber eine korrekte Installation "
+"des NMEA2000-Buses voraus. Dann entfällt die Verkabelung der "
+"Stromversorgung zu einer Schalttafel. Nähere Details dazu finden Sie im "
+"Kapitel  :ref:`Bussysteme`."
+msgstr ""
+
+#: ../../usermanual/start.rst:68 d8442d945f4d496f8b8dbbaf0304f679
+msgid ""
+"Im Gerät ist eine selbst rückstellende Sicherung verbaut, die bei zu "
+"hohem Stromverbrauch die Versorgungsspannung selbständig trennt. Sie "
+"können die Sicherung zurücksetzen, indem Sie die Stromversorgung zum "
+"OBP60 trennen und den Grund des übermäßigen Stromverbrauchs beseitigen. "
+"Danach warten Sie einige Minuten und schalten dann die "
+"Versorgungsspannung wieder ein."
+msgstr ""
+
+#: ../../usermanual/start.rst:71 0f25d74e0d984a40b9b3cc5f30fe1574
+msgid ""
+"Die interne Sicherung im OBP60 schützt nur das Gerät und nicht die "
+"Versorgungsleitungen! Daher sollte die bereitgestellte Stromversorgung "
+"des OBP60 im Bordnetz mit einer zusätzlichen Sicherung von mindestens 5A "
+"abgesichert werden. Das erfolgt typischerweise über die Schalttafel, über"
+" die die Stromkreise im Boot geschaltet werden können. So vermeiden Sie "
+"Brände zum Beispiel durch aufgescheuerte oder überhitzte "
+"Versorgungsleitungen."
+msgstr ""
+
+#: ../../usermanual/start.rst:74 c7c22a67243d4c32bfa342256c7bafb2
+msgid "Stromversorgung USB-C"
+msgstr ""
+
+#: ../../usermanual/start.rst:76 60cee3fc502d4f1fa833dbe253b72280
+msgid ""
+"Das OBP60 kann auch über USB-C mit Strom versorgt werden. Der USB-"
+"Anschluss muss aber ausreichend Spannung von 5.1V und Strom bis 1 A "
+"liefern können. Der USB-Anschluss am OBP60 verfügt über einen "
+"Rücklaufschutz, so dass gleichzeitig 12V/24V und 5V über den USB-Port "
+"eingespeist werden können."
+msgstr ""
+
+#: ../../usermanual/start.rst:79 3ff26389f1834541995f09a178eb6b84
+msgid ""
+"Viele USB-Computeranschlüsse verfügen nicht über einen ausreichend hohen "
+"Ausgangsstrom und teilen sich den Strom mit mehreren Anschlüssen. Das "
+"kann dazu führen, dass das OBP60 nicht direkt von einem PC aus mit Strom "
+"versorgt werden kann. Auch die Kabelqualität und Kabellänge ist "
+"entscheidend. Einige Kabel haben zu geringe Querschnitte und erzeugen "
+"einen hohen Spannungsabfall auf den Leitungen. Die Spannung ist dann am "
+"USB-C-Ausgang zu gering. Benutzen Sie in solchen Fällen den zusätzlichen "
+"12V-Eingang an **CN2** zur Stromversorgung."
+msgstr ""
+
+#: ../../usermanual/start.rst:81 eafbdc48dffd4eeaad2ce5b931944942
+msgid ""
+"Zum Testen, ob die USB-C-Versorgung genügend Spannung und Strom liefert, "
+"kann man ein **USB-C Diagnosegerät** verwenden. Das Diagnosegerät wird am"
+" Eingang des OBP60 angesteckt und das USB-C Stromversorgungskabel in das "
+"Diagnosegerät gesteckt. Auf dem Display kann die bereitgestellte Spannung"
+" und der aktuelle Stromverbrauch abgelesen werden. Die Spannung sollte "
+"bei mindestens 5.0 V liegen. Der Strom variiert dabei je nach "
+"Stromverbrauch."
+msgstr ""
+
+#: ../../usermanual/start.rst:84 391c5f25bb944de38fbb4054514be0fa
+msgid ""
+"Je nach verwendeten USB-C Diagnosegerät kann es sein, dass nur die "
+"Stromversorgungspins angeschlossen sind aber keine Daten übertragen "
+"werden können. Wenn Sie eine Kommunikation über USB-C benötigen, müssen "
+"Sie das Diagnosegerät wieder entfernen."
+msgstr ""
+
+#: ../../usermanual/start.rst:88 31ff75d86ec44612b5804ee4912fb2a8
+msgid "Abb.: USB-C Diagnosegerät"
+msgstr ""
+
+#: ../../usermanual/start.rst:91 b9bb681a0108404bb5c0f12e5c48ee92
+msgid "Einbau"
+msgstr ""
+
+#: ../../usermanual/start.rst:93 5f9623942e4f49d280ed48f37853d4fa
+msgid ""
+"Der Einbau des OBP60 erfolgt über die Rückseite. Zum Anzeichnen der "
+"Öffnung und der Löcher in der Cockpitwand kann die Moosgummidichtung als "
+"Schablone benutzt werden. Vor der Montage des OBP60 ist die Rückseite "
+"abzunehmen. Die 2 Sechskantschrauben werden in die dafür vorgesehenen "
+"Vertiefungen eingeführt und gegen Herausfallen gesichert. Prüfen Sie vor "
+"dem Einbau, ob die Länge der M5x25 Schrauben ausreichend ist. "
+"Gegebenenfalls ersetzen Sie die Schrauben in passiger Länge."
+msgstr ""
+
+#: ../../usermanual/start.rst:96 fd23e2f14dcd4a4ca0c303244a2bcd1f
+msgid ""
+"Die Köpfe der Sechskantschrauben sollten in den Vertiefungen eingeklebt "
+"werden, damit sie beim Einbau nicht in das Gehäuseinnere geschoben werden"
+" und dort einen Kurzschluss auf der Platine verursachen können."
+msgstr ""
+
+#: ../../usermanual/start.rst:98 0b3f866702da492a98ac422b54e5f1a5
+msgid "Danach wird das Gehäuse wieder vollständig zusammen gebaut."
+msgstr ""
+
+#: ../../usermanual/start.rst:100 f7e8d570420f49f4857c258d92f19a2f
+msgid ""
+"Vor der Montage wird zwischen Rückseite und Cockpitwand eine 2 mm dicke "
+"Moosgummidichtung platziert. Die Moosgummidichtung kann Unebenheiten der "
+"Oberfläche in gewissen Grenzen ausgleichen. Mit den Unterlegscheiben und "
+"den Muttern befestigt man das OBP60."
+msgstr ""
+
+#: ../../usermanual/start.rst:103 bb576ba820854d0e80db18691368d4b5
+msgid ""
+"Ziehen Sie die Muttern nicht zu fest an. Die Verdrehsicherung oder die "
+"Rückwand können beschädigt werden."
+msgstr ""
+
+#: ../../usermanual/start.rst:107 ccdc6c21c75b402a836871cac64f338a
+msgid "Abb.: Geräteeinbau in Cockpitwand"
+msgstr ""
+
+#: ../../usermanual/start.rst:110 83628699e99b4dfa8335dd060cd27bdd
+msgid ""
+"Die GPS-Antenne des GPS-Empfängers befindet sich links oben in der Ecke "
+"auf der Rückseite des OBP60 (von hinten gesehen). Hinter der Anbaufläche "
+"sollten sich keine großflächigen Metallteile befinden. Die Metallteile "
+"können den GPS-Empfang stören oder unmöglich machen. Wenn Sie "
+"Empfangsprobleme haben, können Sie eine externe GPS-Antenne benutzt."
+msgstr ""
+

@@ -1,0 +1,1475 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Open Boat Projects
+# This file is distributed under the same license as the OBP60 V2
+# Dokumentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OBP60 V2 Dokumentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-08-26 14:37+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../usermanual/bussystems.rst:4 70b824f715e543c8b93e86d9da78cb11
+msgid "Bussysteme"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:9 581c81063656457a8b685f001dd821bb
+msgid ""
+"Das OBP60 unterstützt mehrere Bussysteme. In diesem Kapitel geht es "
+"ausschließlich um die Vernetzung der Komponenten. Die dafür notwendige "
+"Software-Konfiguration finden Sie im darauf folgenden Kapitel "
+":ref:`Datenaustausch`."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:11 3614d1a3268f4142af5b837abafd58ef
+msgid "**NMEA2000** über CAN-Bus (isoliert)"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:12 d7a90313040446e5bab00d64736b0863
+msgid "**NMEA0183** über RS485/RS422-Bus (isoliert)"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:13 2bd066a4272b4d8bb8259209a4dc613a
+msgid "**I2C-Bus** (isoliert)"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:14 a6bc7b4c275b4df0b7ca5afba58f7e18
+msgid "**1-Wire-Bus** (nicht isoliert)"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:15 83e8179494bf42acbfd466b019881af9
+msgid "**USB-C** (nicht isoliert)"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:20 e0066eefb4ee42da92f8e1ece4fe21a3
+msgid "Abb.: Anschlussbelegung der Bussysteme"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:22 ecec691feced4b479f932f13de5eec08
+msgid ""
+"NMEA2000 und NMEA0183 sind Bussysteme, die im Marine-Bereich verwendet "
+"werden. Der I2C-Bus und der 1Wire-Bus kommen aus dem Elektronikbereich. "
+"Darüber lassen sich viele günstige Sensor-Module einbinden. Im "
+"Nachfolgenden werden die jeweiligen Bussysteme näher beschrieben."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:25 04088e0c0e354c16adc4fc16a5d3551b
+msgid "NMEA2000"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:27 03f3907c393d41a68e6b70a629457511
+msgid ""
+"NMEA2000 ist ein Bussystem und dient der Datenübertragung zwischen "
+"elektronischen Geräten in der Schifffahrt. NMEA2000 verwendet **CAN** zur"
+" Datenübertragung. Die Übertragung erfolgt über ein zentrales Kabel, an "
+"das alle Geräte parallel angeschlossen sind. Jedes Gerät im "
+"NMEA2000-Netzwerk hat eine eindeutige Geräte-ID, um Datenquellen und "
+"Datenanzeigegeräte zu identifizieren und zu adressieren. Daten werden in "
+"Parameter Group Numbers (**PGN**) organisiert. PGN sind eindeutige Daten-"
+"IDs, um bestimmte Typen von Daten zu beschreiben, wie beispielsweise "
+"Geschwindigkeit, Kurs, Temperatur usw. Alle Geräte können PGN empfangen "
+"und senden, auch kann festgelegt werden, welche PGN von einem bestimmten "
+"Gerät gesendet oder empfangen werden sollen."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:29 09133e82af6d4bf88e24b8d83f6db58a
+msgid "**Spezifikation NMEA2000 im OBP60**"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:31 0875ee9879964779b2b117d057767d91
+msgid "Differenzielles, bidirektionales Datenprotokoll auf Binär-Basis"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:32 ../../usermanual/bussystems.rst:324
+#: ../../usermanual/bussystems.rst:380 be37aaf417404d0f81ee2a9bc9163b6f
+#: c1d4b567994240e99fc194100788a4e3 e6d69af4d2d44bc89a552e1cc2a703bb
+msgid "Halb duplex mit Kollisionserkennung und Vermeidung"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:33 ../../usermanual/bussystems.rst:323
+#: 008400fa205d4dc680b62ee9af0af223 12a949942df2402593dfe0eafc41e5f7
+msgid "Busstruktur (isoliert)"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:34 f0da9ba73cd74b39803e0ca354a164e2
+msgid "Beidseitige Bus-Terminierung"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:35 ../../usermanual/bussystems.rst:182
+#: ../../usermanual/bussystems.rst:326 ../../usermanual/bussystems.rst:382
+#: ../../usermanual/bussystems.rst:454 48cdb130d51b4a739cf7139eabae5f7e
+#: 731ab8defa7847129d2d4f9b93d9d005 9b4aa4149c1f49fdbf01e079c6223990
+#: a5c7f5a22ebb473389d7ee2d6619bc11 e29790db24b542ef9e851c2db89ef4ff
+msgid "Unterstützte Protokolle"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:36 6ddc3a3679f34713a5ca52ddbd7e1b4d
+msgid "CAN (Standard, mit speziellen Datenpaketen)"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:37 2127fcc9e8cb47359cb3e658386db926
+msgid "Datenrate 250.000 Bit/s fix"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:38 c46037cb03db453c8f5f37544c646d77
+msgid "Stromversorgung von Sensoren und Anzeigegeräten über den Bus"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:39 f095a941e08c41f8b7b2acba1b129443
+msgid "Buslänge bis zu 30 m (Stichleitungen <1.5 m)"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:40 da26f34824e249f688f42209777467fc
+msgid "Kabelart 5-polig geschirmt mit 2x2 verdrillten Leitungen 0,35 mm²"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:41 feef9069fa574e36a8689d8128bae666
+msgid "Steckerart M12 5-polig A-kodiert"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:43 ea22296e0efe4b249cc73c732de2858a
+msgid "**Differenzielle Datenübertragung**"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:45 c1ea717d28924742a78d77b75fe74034
+msgid ""
+"Die Datenübertragung auf dem CAN-Bus erfolgt differenziell. Es werden "
+"jeweils zwei Signale mit entgegengesetzter Polarität vom Sender "
+"übertragen, die im Empfänger durch Subtraktion der beiden Signalen wieder"
+" zu einem Einzelsignal zusammen gefügt werden. Störungen, die sich in "
+"gleicher Weise auf beide Signalleitungen auswirken, werden durch die "
+"Subtraktion im Empfänger eliminiert. Dadurch wird eine robuste und "
+"störunanfällige Signalübertragung ermöglicht."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:50 a417ddb85bdc472abc70519f6c78a754
+msgid "Abb.: Differenzielle Datenübertragung (rot CAN-H, blau CAN-L)"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:52 7e6ce7be750a48c99d32fa0544d13f49
+msgid ""
+"Die Datenrate von NMEA2000 beträgt **250 kbps**. Sie wurde gewählt, um "
+"eine ausreichend hohe Übertragungsgeschwindigkeit für eine Vielzahl von "
+"Anwendungen in Booten zu gewährleisten, während gleichzeitig eine "
+"möglichst effiziente Nutzung des Netzwerks sichergestellt wird. Mit einer"
+" Datenrate von 250 kbps können Sensordaten in Echtzeit übertragen werden,"
+" was für eine Vielzahl von Anwendungen wichtig ist, z.B. für die "
+"Überwachung der Schiffsposition, für Navigations- und "
+"Kommunikationsgeräte, Motorsysteme und weitere Systeme an Bord."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:55 c5c83d073cc34a5da435331eca8ac33f
+msgid ""
+"SeaTalk NG, SIMnet, Raynet, C-Net 2000 und CANet haben einige "
+"Ähnlichkeiten zu NMEA2000. Sie unterscheiden sich jedoch durch ihre "
+"spezifische Auslegung der Hardware und der Datentelegramme. SeaTalk NG "
+"und SIMnet sind teilweise kompatibel mit NMEA2000. Das bedeutet, dass "
+"einige Geräte, die für SeaTalk NG und SimNet entwickelt wurden, mit "
+"Abstrichen auch mit NMEA2000-Geräten kommunizieren können."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:57 505de56d1185434fb4aedf29859bc29b
+msgid "**Terminierung des Bussystems**"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:59 d9ba73b3504b4901a66c79a3ec256249
+msgid ""
+"Ein CAN-Bus verwendet an den beiden Enden des Bussystems Abschluss-"
+"Widerstände von 120 Ohm zwischen den Leitungen CAN-H und CAN-L. Die "
+"beiden Abschluss-Widerstände entsprechen dem Leitungswiderstand von 120 "
+"Ohm und verhindern Signalreflexionen an den Leitungsenden bei hohen "
+"Datenübertragungsraten. Der CAN-Bus besteht aus einem langen Busstrang "
+"(Backbone) mit kurzen Stichleitungen kürzer als 1.5 m. Eine Sternstruktur"
+" des Bussystems ist nicht erlaubt. Die beiden Abschluss-Widerstände "
+"dürfen nur am Busende verbaut sein."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:63 1e4bc590944b46cdbf4dca64832b0e49
+msgid "Abb.: CAN-Bus-Terminierung für NMEA2000 über ``T183``"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:66 c48da4c4204a4afa9a21f5143c4a77bb
+msgid ""
+"Einige Geräte besitzen eingebaute Abschluss-Widerstände, die durch "
+"entsprechende Schalter zu- oder abgeschaltet werden können. Vergewissern "
+"Sie sich vor dem Einfügen neuer Geräte in Ihr NMEA-2000-Netzwerk, ob "
+"integrierte Abschluss-Widerstände benutzt werden und wie sie konfiguriert"
+" sind. Falsch terminierte Busse können Übertragungsprobleme verursachen, "
+"die schwer zu finden sind."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:69 fc00edd2c60842d48117c6d658200640
+msgid ""
+"Um herauszufinden, ob nur zwei Widerstände im NMEA-Bus aktiv sind, können"
+" Sie ein Digitalvoltmeter benutzen. Wenn Sie eine Widerstandsmessung bei "
+"**spannungslosen NMEA-Bus** zwischen den Leitungen **CAN-High** und "
+"**CAN-Low** vornehmen, sollte ein Widerstand von ca. **60 Ohm** zu messen"
+" sein. Ist der Widerstand deutlich kleiner als 60 Ohm, sind weitere "
+"Geräte im Bussystem vorhanden, deren Abschlusswiderstände "
+"fälschlicherweise aktiv ist. Trennen Sie, während Sie laufend weiter den "
+"Widerstand messen, nacheinander ein Gerät nach dem anderen vom "
+"NMEA2000-Bus, bis sich der Widerstandswert deutlich erhöht. Beim zuletzt "
+"entnommenen Gerät sollte der Abschlusswiderstand deaktiviert werden. Ist "
+"der Widerstandswert danach noch immer nicht bei 60 Ohm, suchen Sie nach "
+"weiteren Geräten mit offensichtlich aktiviertem Abschlusswiderstand."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:71 c6c8eb83d63c41f29051134352d79d95
+msgid "**NMEA2000-Kabel**"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:76 39ad736e64ca4c9fa1c1d87cdab153dc
+msgid ""
+"Als Buskabel sollten nur hochwertige, wasserdichte und geschirmte "
+"Industrie-Kabel verwendet werden. Der Marine-Einzelhandel bietet dazu "
+"eine breite Auswahl an Produkten mit M12-Verbindungstechnik an, die sehr "
+"gut geeignet sind."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:79 c16e1bcdedbe49dfa81d602ac12a595b
+msgid ""
+"Im Industriebereich findet man gleichwertige Kabel mit "
+"M12-Verbindungstechnik, die deutlich günstiger sind und ebenfalls "
+"verwendet werden können. Achten Sie dabei auf Steckverbinder mit "
+"**A-Kodierung**. Die Indexkerbe befindet sich zwischen Pin 1 und 2."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:83 837b3528eb984fcd9fd127af4e7d649a
+msgid "Abb.: Stecker und Buchse (Sicht auf Kontakte)"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:85 4a97af1317634ac7b151cb060013a92d
+msgid ""
+"Die Belegung und Aderfarben sind in der nachfolgenden Tabelle zu sehen. "
+"Beachten Sie, dass die Farbbelegung bei Industriekabeln anders ausfallen "
+"kann. In dem Fall müssen Sie die Zuordnung der Aderfarben zu den Pins mit"
+" einem Ohmmeter ermitteln."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:88 7c08fd8b827f4d0da81622b129cd1de9
+msgid "Pin"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:88 884d4ef45d6b4d8a89d282e7d4ac0162
+msgid "Belegung"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:88 950121b57d1c44748742f720a041bb1e
+msgid "Farbe"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:88 ../../usermanual/bussystems.rst:337
+#: ../../usermanual/bussystems.rst:394 0a78012edc1d495fa760bed5591a6187
+#: 9c2573428d6d4c7980bd2044dfa2bd46 a42272a7e69748c889495c8922d35b96
+msgid "Bedeutung"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:90 b46da68c35314d6989c0c102c5ff44ee
+msgid "1"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:90 ../../usermanual/bussystems.rst:400
+#: 88c41c4db61c4d2da8b1d94e6eeb4fcd e600cf0f40904d54ad29219d031390df
+msgid "Schirmung"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:90 7ded1f4c36904d9e961b4d3f4d456bfd
+msgid "ohne"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:90 bcf941f896d04ab2ad3f370e10d0fabc
+msgid "Schirmgeflecht"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:92 ../../usermanual/bussystems.rst:227
+#: 3b99ee55a4ef43f29ccf82b102285008 824af4f7ab7b485f868741dde4352a7a
+msgid "2"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:92 630ce33e33b949e6946a300b06315d15
+msgid "+12V"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:92 691596d62c0b436aa7f5dc01a035a188
+msgid "rot"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:92 ../../usermanual/bussystems.rst:339
+#: 21dba9d665f1405d9ca69a5d8fbadbaa 306c2b7182214a3ab61a9ce8121bf8d8
+msgid "Versorgungsspannung"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:94 ffb3b931598346af92c16cc7fc35f3e0
+msgid "3"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:94 ../../usermanual/bussystems.rst:398
+#: ../../usermanual/bussystems.rst:418 1ee83fd2451e4d13a17dc6016751a279
+#: b5ae8b23ea6a47849491938e2dfd1bcc d788ea60a3124d6295badbccdff305e7
+msgid "GND"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:94 cbd534af31a14400b5b73c01e5631bb1
+msgid "schwarz"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:94 4bd90a4edff44205979324fa4ea98b21
+msgid "Bord-Masse"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:96 21c67b4feeca4892a04daa5b030b6128
+msgid "4"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:96 b05ef0f191a94596becd6bbc181b37b9
+msgid "CAN-H"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:96 e8689853c10b40a19e758c36f6bbb02b
+msgid "weiß"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:96 1a131e543b624a3b9def2465e5f9e1c4
+msgid "CAN High-Signal"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:98 ../../usermanual/bussystems.rst:225
+#: c2d8cd51a83d4106b7f13286ebe7ee5b c5fab52170034a098295f214aee759d7
+msgid "5"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:98 fd63b5f6b9754f238f04725b8c453971
+msgid "CAN-L"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:98 d6d67a8315044013ac852e3d567bae62
+msgid "blau"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:98 c106befcb0bf4bca8dfd91269bc8b32a
+msgid "CAN Low-Signal"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:100 3e0fbbc7e48348edb23e9f74dac5b0d6
+msgid "Tab.: NMEA2000 Steckerbelegung"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:104 b599bd6001d54d09af4af203cf572148
+msgid "Abb. NMEA2000-Buskabel mit Schirmung"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:107 b3097b6551104716aa9aa51048433514
+msgid ""
+"Wer eigene Buskabel herstellen möchte, sollte Kabel vergleichbar zum Typ "
+"\"Lapp Busleitung UNITRONIC 2 x 2 x 0.34 mm²\" verwenden."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:111 d24ab6aafe054b4a89a4a2968f2cec43
+msgid "Abb. CAN-Buskabel"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:113 6b7b02f26636469ea416c20cab33e173
+msgid ""
+"Dabei sind 2x zwei Einzeladern paarweise verdrillt und zusätzlich mit "
+"einem äußeren Schirmgeflecht umgeben. Ein verdrilltes Aderpaar wird für "
+"CAN-H und CAN-L verwendet und das andere Aderpaar für GND und 12V. Das "
+"Schirmgeflecht wird mit GND an nur einem Kabelende verbunden. Damit "
+"erzielt man die besten Ergebnisse und hat eine sichere und langlebige "
+"Installation. Dünnere Kabel als 0.34 mm² sollten nicht verwendet werden, "
+"wenn die Versorgung aus dem Bus erfolgen soll. Die Länge des Buskabels "
+"sollte in Summe 30 m nicht übersteigen."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:117 1dcbab79c39e4715aa0a1e4faa983706
+msgid "Abb.: NMEA2000 Stecker zur Selbstmontage"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:120 e59855be838a4924af2c6ab5497c5151
+msgid ""
+"SeaTalk NG und Simnet benutzen eigene Steckverbinder, die untereinander "
+"nicht zu NMEA2000 kompatibel sind. Mit entsprechenden Konverter-Kabeln "
+"kann aber ein Datenaustausch zwischen diesen Netzen vorgenommen werden. "
+"Grundsätzlich sollte eine Mischung verschiedener Bustechnologien aber "
+"vermieden werden."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:122 fd00ec498d7642db95669273c1f995d9
+msgid "**Stromversorgung aus dem NMEA2000-Bus**"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:124 8c998b4fc2504a11a99387d7f97c4801
+msgid ""
+"NMEA2000-Geräte mit geringem Stromverbrauch wie z.B. Sensoren können auch"
+" aus dem Bussystem mit Strom versorgt werden. So sind keine zusätzlichen "
+"Versorgungskabel notwendig. Allerdings ist darauf zu achten, dass aus dem"
+" NMEA2000-Bus nur eine begrenzte Leistung von bis zu 35W entnommen werden"
+" darf. Die NMEA2000-Geräte sind dazu mit Load-Werten gekennzeichnet, die "
+"die Stromentnahme aus dem Bus angeben. Die Load wird als Vielfaches von "
+"50 mA angegeben. Ein Gerät mit Load 3 würde demnach 150 mA an 12V "
+"benötigen und 1,8 W an Leistung verbrauchen. Die Einspeisung der 12V-"
+"Versorgungsspannung in den NMEA2000-Bus erfolgt entweder über ein "
+"Einspeisekabel oder ein Gerät mit Buseinspeisung, zum Beispiel einen "
+"Plotter. Die Einspeisung in den Bus sollte idealerweise in der Mitte "
+"erfolgen, da so Leitungsverluste durch Leitungswiderstände minimiert "
+"werden."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:127 d989eadc4e544dd1adb84b7bcad297e4
+msgid ""
+"Das OBP60 hat einen Load-Wert von 5 und benötigt maximal 250 mA Strom. "
+"Sie können das OBP60 direkt mit Strom aus dem NMA2000-Bus versorgen. Im "
+"Normalbetrieb liegt der Stromverbrauch des OBP60 bei ca. 120 mA."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:129 25303b4325cb4116bbdf27394da9bc5a
+msgid "**Verkabelung für NMEA2000**"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:131 6c25818110064ee499302e379cb89896
+msgid ""
+"Für NMEA2000 wird eine Busstruktur verwendet. Im Hauptstrang sind eine "
+"oder mehrere Buskoppler-Einheiten enthalten, über die die jeweiligen "
+"Geräte eingebunden werden. Die Buslänge darf 30 m nicht übersteigen und "
+"die Stichleitungen zu den Geräten sollte nicht länger als 1.5 m sein. An "
+"den Enden des Hautstrangs befinden sich Abschlusswiderstände zur Bus-"
+"Terminierung. Die Einspeisung der Stromversorgung des NMEA2000-Busses "
+"erfolgt im unteren Bild über den Plotter."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:135 9542c71388974c02a67c556632ec03f6
+msgid "Abb.: NMEA2000-Bussystem mit Sensoren und Anzeigegeräten"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:137 1e29ac8b3cf4482d92d3fbd88b8f3521
+msgid ""
+"Um das OBP60 an den NMEA2000-Bus anzuschließen, können Sie am einfachsten"
+" ein NMEA2000-Verlängerungskabel benutzen, indem Sie es in der Mitte "
+"trennen und die offenen Kabelenden an den Schraubklemmen auflegen. Es ist"
+" ratsam, die Kabelenden mit Aderendhülsen zu versehen oder die "
+"Kupferkabel zu verzinnen."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:141 bb93c6c1e2544b30a42151e5300f01e5
+msgid "Abb.: NMEA2000-Verbindung mit Stromversorgung über den NMEA2000-Bus"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:143 f74618eb15164d9ea8c724d585671109
+msgid ""
+"Eine Minimal-Konfiguration könnte folgendermaßen aussehen. Dabei ist zu "
+"beachten, dass der NMEA2000-Bus auf der rechten Seite durch das OBP60 "
+"terminiert ist, indem die interne Bus-Terminierung über den Jumper "
+"``TN2K`` aktiviert wurde. Der Jumper ``TN2K`` befindet sich mittig "
+"zwischen den beiden Steckverbindern **CN1** und **CN2**."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:146 61f4230a460b4c69bc5a66da2726bb0d
+msgid ""
+"Legen Sie den Schirm des NMEA2000-Kabels am Eingang ``Shield`` auf. "
+"Verbinden Sie den Schirm **nicht** mit ``GND``, ``GND2`` oder ``GNDS``, "
+"da Sie damit Masseschleifen erzeugen und die Isolationswirkung verloren "
+"geht. Der gesamte Schirm der Busleitung darf nur einseitig am Eingang "
+"``Shield`` des NMEA2000-Bus am OBP60 aufgelegt werden. An anderen Stellen"
+" darf die Kabelschirmung nicht verbunden werden."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:150 6a7a3492c8284f8daaacb47f585b31dc
+msgid "Abb.: NMEA2000 Minimal-Konfiguration mit einem Sensor"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:152 34a9c4f0c6324c1d8ee1ce49901c0a40
+msgid ""
+"Die Stromversorgung des NMEA2000-Bus kann auch über das OBP60 erfolgen. "
+"Die Einspeisung in den Bus sieht dann so aus:"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:156 f5422d61c3694363b5e19d383391e598
+msgid "Abb.: NMEA2000-Verbindung mit Stromeinspeisung über OBP60"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:159 b566361128b642efb0b95a61c4ea9e7e
+msgid ""
+"Beachten Sie, dass der NMEA2000-Bus nur von einer Quelle gespeist sein "
+"darf. Anderenfalls kann es zu Störungen im Bussystem kommen. Achten Sie "
+"darauf, dass die Stromeinspeisung in den Bus mit einer 3A-Sicherung "
+"abgesichert ist."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:161 918e7531910e48209ddd3f0318007f1c
+msgid ""
+"Das folgende Bild zeigt ein mögliches Anwendungsbeispiel. Die Bus-"
+"Terminierung ist dabei im OBP60 deaktiviert, sie wird am Busverteiler "
+"vorgenommen."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:165 3b2acecf8dfe4c299c275c7ee4a56ec8
+msgid "Abb.: NMEA2000 Minimal-Konfiguration mit Buseinspeisung"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:167 7c85ce757e28451ab16787b275d0d1fb
+msgid "**Kompatibilität zu Simnet und SeaTalk NG**"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:169 69b56e0579c9450e936bb86ed35ebed3
+msgid ""
+"Simnet und SeaTalk GN besitzen eine eingeschränkte Kompatibitität zu "
+"NMEA2000. Beide Bussysteme setzen auf eigene Steckersysteme und verwenden"
+" teilweise propritäre NMEA2000-Telegramme. Die meisten gängigen "
+"NMEA2000-Bustelegramme werden von beiden Systemen unterstützt. Mit "
+"speziellen einfachen passiven Adapterkabeln können Simnet und SeaTalk GN "
+"Bussysteme mit einem NMEA2000 Bussystem verbunden werden. Das OBP60 kann "
+"dann Informationen aus Simnet oder SeaTalk NG über den CAN-Bus oder über "
+"WiFi mit dem SeaSmart-Protokoll verarbeiten und auch Informationen in "
+"diese Bussysteme senden. Properitäre Telegramme werden nicht unterstützt,"
+" jedoch im Bussystem übertragen und weitergeleitet."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:172 422f7a9036a243a9a5d96bc06dd82159
+msgid "NMEA0183"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:174 85487503ea784c16833c1ab532756251
+msgid ""
+"NMEA0183 ist ein Standard für serielle Datenübertragung in der "
+"Schifffahrt. Es definiert ein Format für die Übertragung von "
+"Informationen zwischen Navigationsgeräten und anderen elektronischen "
+"Geräten auf Booten. NMEA0183 ist ein weit verbreiteter Standard, der vor "
+"allem von vielen älteren Geräten unterstützt wird."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:176 aa2c074452f34629bcdabfbcc701f786
+msgid "**Spezifikation NMEA0183 im OBP60**"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:178 7cc81f27a33c431a8022924e8b184ffa
+msgid "Serielles, unidirektionales Datenprotokoll auf ASCII-Basis"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:179 59e707eefafe4c9bac2476c8a093d0cc
+msgid "Punkt zu Punkt-Verbindung (isoliert)"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:180 154b1bde75274eeb99bbb3daedcf5ccb
+msgid "Simplex ohne Kollisionserkennung und Vermeidung"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:181 4830cc383c6b4de69a82ce9ee68e273b
+msgid "Bus-Terminierung am Empfänger"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:183 e2c04ffd8fff402d920cd3c9b7afb1af
+msgid "RS422 (Standard)"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:184 b195d7e1881043d398a591f1c81149b4
+msgid "RS485"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:185 58a6d1a8aafa4624842f2a50b2ad1843
+msgid "Datenrate 1.200...460.800 Bd variabel"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:186 7c8c75054e564d5ab0f4e94ae50d3c7d
+msgid "Stromversorgung von Sensoren und Anzeigegeräten über 12V-Bordnetz"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:187 83a41b0e43354d7cb7d2d98eeeadf696
+msgid "Buslänge bis zu 1000 m (abhängig von Datenrate und Kabelart)"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:188 ../../usermanual/bussystems.rst:331
+#: ../../usermanual/bussystems.rst:387 17b09e0a83f14d09aa462f61a1a389b8
+#: 7c22447abf0848d781881d62bb461f35 f0e1767cdf624703b680591da704176e
+msgid "Kabelart nicht spezifiziert"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:189 ../../usermanual/bussystems.rst:332
+#: 4590e0938482437aad77c70304e34d0f 62582a3c0bc34a0897d5f37bb4f6d4e3
+msgid "Steckerart nicht spezifiziert"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:191 57e31e0dcd9e4ca88231e8576fe9c120
+msgid "**Datenübertragung**"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:193 9f3b872d1d934878a86f30e799c70255
+msgid ""
+"Die Datenübertragung erfolgt im OBP60 halb duplex auf serielle Weise über"
+" zwei einfache Kabel. Das bedeutet, dass man etweder senden oder "
+"empfangen kann. Beides gleichzeitig ist nicht möglich. Die Standard-"
+"Datenrate liegt bei 4800 Bd, was für heutige Verhältnisse recht langsam "
+"ist, aber Buslängen von bis zu 1000 m zulässt. Als Datenübertragungsrate "
+"lassen sich folgende Einstellungen verwenden:"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:195 868fee779ae54170866813204e8a844e
+msgid "1.200 Bd"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:196 189a068b9b934a16b17325d3e9878f97
+msgid "2.400 Bd"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:197 0a38cb0b3af74bea82bef0e079b298a8
+msgid "4.800 Bd"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:198 a941776c8b934426941266b5545592cb
+msgid "9.600 Bd"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:199 4c800fade04e48aaa33580227aa48f8f
+msgid "14.400 Bd"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:200 8a33a80d95e34a6a8c0c89a3d2510d70
+msgid "19.200 Bd"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:201 b4d593e3676445f6a84cb94d43b33d11
+msgid "28.800 Bd"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:202 2ca43188ebcb40ef95d4ceb3963a5c3b
+msgid "38.400 Bd"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:203 2678314dc0494b9c8d877a3fd121020a
+msgid "56.600 Bd"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:204 8e46826fa0bf4dbc8d706fd35f5e2fd7
+msgid "57.600 Bd"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:205 c983a42f6547441b8277e8b3dfaa7932
+msgid "115.200 Bd"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:206 bf808d76114548d996280f01607f2071
+msgid "230.400 Bd"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:207 a2ba13b2c08f4b7585379103fa93a687
+msgid "460.800 Bd"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:209 85579a6273f245ffac50586ac31696bd
+msgid ""
+"Je nach Datenrate und Protokoll können die zulässigen Kabellängen "
+"unterschiedlich lang ausfallen. Im realen Betrieb sollten diese Werte "
+"beachtet werden."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:213 feca1bf502f94a7b8e8592efb90930bb
+msgid "Abb.: Zulässige Kabellängen für RS422 und RS485"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:216 6ec18253cdce4d5ca56f985870f96c53
+msgid "Übertragungsrate [Bd]"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:216 c79b389563144e9aa9fd49250c0989c9
+msgid "zul. Leitungslänge [m]"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:219 8a1fe5170a5b42bd89adf22d5e9a4738
+msgid "4.800"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:219 af4bcc7cec284c819a85566e0f34d3e3
+msgid "300"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:221 ff0107c899df42a1864b5208c9d8e729
+msgid "9.600"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:221 82808bbf962142979c961ae8acbeb901
+msgid "152"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:223 57db5ff4d1be4752a988c1bd0ff75b4e
+msgid "19.200"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:223 95dd66b6035a4e23a31f5c43f7a2efdc
+msgid "15"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:225 bbbb02ec8c6b410d91a2db46d17bd74e
+msgid "57.600"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:227 6f6add108faf4f2690d70a5c56d8537d
+msgid "115.200"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:229 9b11c451bdc24de08253732be5c0ed71
+msgid "Tab.: Zulässige Leitungslängen für RS232"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:231 3a3fa46ef486463d9efb6b886e1884bb
+msgid ""
+"Die Datenübertragung erfolgt mit differenziellen Signalen ähnlich wie bei"
+" NMEA2000. Damit können Gleichtaktstörungen über lange Leitungslängen "
+"sicher unterdrückt werden."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:235 94de6124afe04b5188ff1325d3cdfc1d
+msgid "Abb.: RS422-Übertragungsmodell Sender - Empfänger"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:237 43e349ef8ea84f4cb3d69e7c13296f4e
+msgid "**Bus-Terminierung**"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:241 524fdae2bc724549a776d9e07b451fe2
+msgid "Abb.: Bus-Terminierung für NMEA0183"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:243 9f8aad9e53be4eb483d31ba32e6ad950
+msgid ""
+"Auf der Empfängerseite ist der NMEA0183-Bus terminiert. Im OBP60 findet "
+"man den Jumper ``T183`` für die Bus-Terminierung zwischen den "
+"Steckverbindern **CN1** und **CN2**. Der Jumper ist zu setzen, wenn das "
+"OBP60 als Empfänger von NMEA0183-Telegrammen als **Serial Direction "
+"Receive** konfiguriert wurde (siehe Kapitel :ref:`Config - Serial Port`)."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:246 ed78513c8be2466ca995cf4e0c61f3ef
+msgid "**Multiplexer**"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:248 49bc68e29cd042fcbd2ba786a41bcf8f
+msgid ""
+"Insgesamt ist NMEA0183 ein nützlicher Standard für die Übertragung von "
+"Navigationsdaten auf Booten, aber er hat seine Beschränkungen und kann "
+"nicht in allen Einsatzfällen mit moderneren Technologien wie NMEA2000 "
+"mithalten. Um zum Beispiel Daten von mehreren Datenquellen wie z.B. "
+"Sensoren zu einem Datenstrom zusammenfassen zu können, sind in der "
+"NMEA0183-Welt Multiplexer notwendig."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:252 b3dcdf30f08b4a1ca467b089bf40c1cc
+msgid "Abb.: NMEA0183 Multiplexer (Ship Modul)"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:254 dbae0dacad664e47aeb3ff5252b05817
+msgid ""
+"Der Multiplexer empfängt verschiedene Datentelegramme an "
+"unterschiedlichen Ports und gibt den zusammengefassten Datenstrom "
+"mehrerer Sensoren an einem neuen Datenport aus. So lassen sich mehrere "
+"Sensorsignale über eine Leitung an ein Datenendgerät wie z.B. einen "
+"Plotter oder ein Multifunktionsdisplay übertragen. Viele Multiplexer "
+"bieten auch die Möglichkeit, bestimmte Datentelegramme im Datenstrom mit "
+"einer Filterfunktion zu unterdrücken. So können z.B. nur die wirklich "
+"notwendigen Daten an einen Autopiloten übertragen oder Mehrdeutigkeiten "
+"durch mehrere GPS-Empfänger vermieden werden."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:256 81f6fe8a5eda47bfb7490f13a603aa5f
+msgid "**NMEA0183-Telegrammstruktur**"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:258 2152933e74ea4be9b15aaaf80f37c512
+msgid ""
+"NMEA0183-Telegramme sind recht einfach aufgebaut und werden als ASCII-"
+"Datensätze übertragen. Ein NMEA0183-Telegramm besteht aus folgenden "
+"Informationen."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:260 3cf1460265ce493a82be17b98f6771d7
+msgid "Kennung"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:261 7e6b7d57665644f3870cbe3e53a3177a
+msgid "Telegrammtyp"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:262 c49b112c96554fe2bf990f529f35573f
+msgid "Sensordaten"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:263 94f50625f9a440b88a635df307630497
+msgid "Einheit"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:264 da624b858f7b46e2a389895e04a60cf5
+msgid "Status"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:265 b0c996c0ea4940588e8482bf86a7ad47
+msgid "CRC-Checksumme"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:267 7675f3007efc4d21baac5e86756c87c4
+msgid ""
+"Je nach Komplexität eines Telegramms können auch mehrere Sensordaten oder"
+" Statusinformationen in einem Telegramm übertragen werden. Nachfolgend "
+"ist beispielhaft das Telegramm eines Tiefenmessers dargestellt."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:269 b64390b1a0d9442e95fe4807b20d2bda
+msgid "**DBT** - Depth below transducer"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:271 bec7df41d0cd4f77aff016ff658fc3e5
+msgid "$--DBT,a.a,b,c.c,d,e.e,f*hh<CR><LF>"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:273 27b8d0e638d34b979ceece6cdf200b36
+msgid "Feldnummer:"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:274 153aa8e62d7d4b9cb189c738489c8610
+msgid "a.a - Tiefe in Fuß"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:275 4108983bfe4f4c17b08e0849d9f57752
+msgid "b - f = Fuß"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:276 a962a2ebb29e405282deb134a6712589
+msgid "c.c - Tiefe in Metern"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:277 c31b8fec535744a4a7628b4a13379e31
+msgid "d - M = Meter"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:278 0fc8bbd9180144e9b7e9b365c8f88a7a
+msgid "e.e - Tiefe in Fathoms"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:279 c01545e63e0b4bc5b101fe2b84bc7af2
+msgid "f - F = Fathoms"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:280 0ab947ac984447a288970b5d6bcfe09b
+msgid "hh - Checksumme"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:282 32da3af8082b49a19fd4cf046c1cafbb
+msgid "Beispiel:"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:283 caeb3fb8d2df49d6a482ec87dbbb33eb
+msgid "$IIDBT,12.8,f,39.0,M,21.3,F*20"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:285 b40fd2412a0e4cb5b0844ca3d30a4304
+msgid ""
+"Wer mehr Informationen zu NMEA0183-Telegrammen erfahren möchte, findet "
+"auf dieser `Webseite`_ ausführliche Informationen."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:289 ce6ed95a4f4d4d49a22bf6e8612d6bc4
+msgid "**Verkabelung für NMEA0183**"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:291 a182e62b7ffb4280a909f6316220f85c
+msgid ""
+"Im nachfolgenden Bild ist eine Konfiguration zu sehen, in der ein "
+"NMEA0183-Windsensor mit dem OBP60 verbunden ist. Der Windsensor sendet "
+"die Daten zum OBP60, dieses ist als NMEA0183-Empfänger konfiguriert. Die "
+"Bus-Terminierung ist über den Jumper ``T183`` eingeschaltet."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:295 390ed20aaea44cd8ae4f29c94e5a4f23
+msgid "Abb.: NMEA0183-Minimalkonfiguration"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:298 88a5a89b0c9d4f97ad431a82a6b774dc
+msgid ""
+"In ähnlicher Art und Weise können auch andere Sensoren an das OBP60 "
+"angebunden werden. Dabei ist aber zu berücksichtigen, dass immer nur ein "
+"Gerät oder Sensor mit dem OBP60 verbunden werden kann. Wenn mehere Geräte"
+" eingebunden werden sollen, dann benötigt man einen vorgeschalteten "
+"Multiplexer."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:301 78315746e61d4c01804e5f89ff97758e
+msgid ""
+"Verwenden Sie für die Verkabelung externer Sensoren über NMEA0183 "
+"möglichst geschirmte Kabel und führen Sie den Schirm direkt bis zum "
+"Sensor. Verbinden Sie den Schirm am Sensor **nicht** mit ``GND2``, da Sie"
+" damit Masseschleifen erzeugen. Der gesamte Schirm der Busleitung darf "
+"nur einseitig an Eingang ``Shield`` des NMEA0183-Bus am OBP60 aufgelegt "
+"werden. Der Schirm am anderen Ende der Leitung beleibt offen. Andere "
+"Schirmeingänge dürfen nicht benutzt werden."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:304 1c6f45b193e543ac9a4a18e59b2304cd
+msgid ""
+"Beachten Sie, dass bei NMEA0183-Datenübertragungen die selbe "
+"Übertragungsgeschwindigkeit für Sender und Empfänger und das selbe "
+"Übertragungsprotokoll verwendet werden muss. Anderenfalls kann keine "
+"Datenübertragung stattfinden. Die NMEA0183-Schnittstelle im OBP60 "
+"unterstützt das RS232-Protokoll nicht."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:306 d4b61ed457724b37b1c08cfc2c248d4f
+msgid ""
+"Die meisten Multiplexer haben mehrere NMEA0183-Eingänge und mindestens "
+"einen NMEA0183-Ausgang. Bei der Verwendung eines Multiplexers werden alle"
+" Sensoren an die NMEA0183-Eingänge des Multiplexers angeschlossen und der"
+" NMEA0183-Ausgang mit dem OBP60 verbunden. Der Multiplexer bündelt dann "
+"wie beschrieben die Datenströme aller Sensoren zu einem gemeinsamen "
+"Datenstrom am Ausgang. Über Filter am Datenausgang lässt sich die "
+"Datenmenge auf wichtige Daten eingrenzen. Das OBP60 ist in diesem "
+"Beispiel als Empfänger konfiguriert. Die Terminierung des Bussystems ist "
+"deaktiviert."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:310 2377b40927494e08bb5e07bc31b14b10
+msgid "Abb.: NMEA0183-Verbindung zu einem Multiplexer"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:313 dc0165867c144422a937d7e2ea2eb13a
+msgid ""
+"Alle NMEA0183-Daten werden vom OBP60-Gateway automatisch nach NMEA2000 "
+"konvertiert. Die Konvertierung ist dabei unidirektional nur in Richtung "
+"NMEA2000. In umgekehrte Richtung nach NMEA0183 werden keine Daten "
+"konvertiert, da der NMEA0183-Port des OBP60 in der dargestellten "
+"Konfiguration im Empfangs-Modus arbeitet."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:316 25035bb82de8464d9c05136a8844b847
+msgid "I2C"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:318 d236f140908545bda43232054f2cbc71
+msgid ""
+"Der I2C-Bus dient zur Anbindung von elektronischen Komponenten. Er wird "
+"hauptsächlich im Elektronikbereich eingesetzt, um verschiedene "
+"Komponenten auf einer Platine miteinander kostengünstig zu verbinden. Die"
+" Verbindung erfolgt über eine Zweidrahtleitung und arbeitet mit "
+"Signalpegeln von 5.0V. Es gibt das Taktsignal **SCL** und das Datensignal"
+" **SDA**. Die Kommunikation läuft als Master- und Slave-System. Dabei "
+"steuert der Master die Slaves über eine eindeutige Adresse an und kann "
+"mit ihnen Daten austauschen."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:320 acd8417a8a81438aa5d693872d30a61b
+msgid "**Spezifikation I2C im OBP60**"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:322 d3f9765476804ca199db7db875a3a570
+msgid "Serielles, bidirektionales, synchrones Datenprotokoll auf Binär-Basis"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:325 d9d5b92fa25a4b17a60db28eb5f0b1ca
+msgid "Bus-Terminierung intern über PullUp-Widerstände"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:327 57881e71871948ff997e3cac21226864
+msgid "I2C, TTL 5.0V"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:328 c444808f69cd4287944b3eb9da25c136
+msgid "Datenrate 100.000 kBit/s variabel"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:329 8b345dec3b6b43cfb98a57ffd355673e
+msgid "Stromversorgung von Sensoren und Anzeigegeräten über separate Leitungen"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:330 bfcedda8b68f4d36bd910f9444d27f46
+msgid "Buslänge bis zu 10 m (abhängig von Datenrate und Kabelart)"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:334 acd089f7f0534788a0709dc0069dc154
+msgid ""
+"Im OBP60 ist der I2C-Bus isoliert gegenüber der Außenwelt aufgebaut und "
+"verwendet 5.0V TTL-Signalpegel. Der Takt- und Datenausgang ist über "
+"Leitungstreiber herausgeführt, die lange Leitungen mit einer hohen "
+"Leitungskapazität betreiben können. Damit wird verhindert, dass sich "
+"Störungen im Bussystem negativ auf die Funktionssicherheit des OBP60 "
+"auswirken. Der I2C-Bus hat 5 Leitungen, über die externe Geräte "
+"angeschlossen werden können."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:337 ../../usermanual/bussystems.rst:394
+#: ../../usermanual/bussystems.rst:414 7d88b692a9be49c4a8c6a685cbbc7036
+#: 809b1d6be6024661b1bf69f9b8c424cf a2055c7f750c40369a9466abbe3d010d
+msgid "Ausgang"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:339 f61386d4c4b544d8b0f8192d8d8109f1
+msgid "5Viso"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:341 ../../usermanual/bussystems.rst:400
+#: 85d6ec6d900541f2833fea9ca16e270e c1e3200e31694102b625dd4977ba9574
+msgid "GND2"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:341 287d78c1b4474171bcaa7c6af5b65777
+msgid "Masse I2C"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:343 2939ade258ca46fab00a8780b70a0195
+msgid "Shield"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:343 e81f405a8a6f499ea03b839fd268b43b
+msgid "Schirmung I2C"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:345 2954721b99d8490aa792605233d8f1ab
+msgid "SCL"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:345 206341d357bc441db948a3ed4099679c
+msgid "Bus-Takt"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:347 42ea452284a349b49a2ce53b21acf6c8
+msgid "SDA"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:347 ../../usermanual/bussystems.rst:396
+#: 972e214e67294ba4870610a338fd8a39 de0ef35bb4b449f7a0cd4f506fb8eb4c
+msgid "Datenleitung"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:350 1de525fb49724782ab5d300fc27c822a
+msgid ""
+"Im folgenden Bild ist ein I2C-Busaufbau mit 3 I2C-Sensoren zu sehen. Alle"
+" Sensoren sind mit geschirmten Kabeln mit dem I2C-Eingang am OBP60 "
+"verbunden. Die Stromversorgung der externen Sensoren erfolgt direkt über "
+"das OBP60 über den integrierten, isolierenden DC/DC-Wandler (``5Viso``, "
+"``GND2``). Der Versorgungsausgang kann bis zu 200 mA bei ``5Viso`` "
+"liefern und damit auch mehrere Sensoren mit Strom versorgen."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:354 440f6ad214734a9ba9f2cc4e2f336871
+msgid "Abb.: I2C-Anbindung von externen Sensoren"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:357 fdb049163d29434c92e3500fc8ed4411
+msgid ""
+"Verwenden Sie für die Verkabelung externer Sensoren möglichst geschirmte "
+"Kabel und führen Sie den Schirm direkt bis zum Sensor. Verbinden Sie den "
+"Schirm des Sensorkabels **nicht** mit ``GND2``, da Sie damit "
+"Masseschleifen erzeugen. Der gesamte Schirm der Busleitung darf nur "
+"einseitig an Eingang ``Shield`` des I2C-Bus am OBP60 aufgelegt werden. "
+"Der Schirm am anderen Ende der Leitung beleibt offen. Andere "
+"Schirmeingänge dürfen nicht benutzt werden. Halten Sie Stichleitungen vom"
+" Bus zu den Sensoren möglichst kurz."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:360 46ce5fd5e969452aa3a75ef384d0774d
+msgid ""
+"Einige I2C-Module können zwar mit 5V versorgt werden, benutzen aber 3.3V "
+"TTL-Signale für ``SCL`` und ``SDA``. In diesem Fall benötigen Sie einen "
+"Pegelwandler für das SCL- und SDA-Signal auf 5V TTL-Signale. Beachten Sie"
+" das nicht, so können der I2C-Sensor oder das I2C-Modul beschädigt "
+"werden. Das Gleiche gilt auch für Module, die nur mit 3,3V versorgt "
+"werden. Dann benötigen Sie neben dem Pegelwandler noch zusätzlich einen "
+"DC/DC-Wandler zur Reduzierung der Versorgungsspannung. Die meisten I2C-"
+"Module, die für einen **Arduino Uno** verwendet werden können, lassen "
+"sich auch am OBP60 verwenden. Diese Module sind für 5V-TTL-Signale "
+"geeignet."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:363 a7e16dbdebdd404b90d053a548be1ce2
+msgid ""
+"Wenn Sie externe Sensoren oder Module am I2C-Bus verwenden wollen, dann "
+"prüfen Sie, ob es zu einem Adresskonflikt zwischen den verwendeten "
+"Sensoren oder Modulen kommen kann. Achten Sie darauf, dass I2C-Adressen "
+"nicht mehrfach vergeben sind. Es kommt dann zu Kommunikationsstörungen "
+"auf dem I2C-Bus. Insbesondere bei mehrfacher Verwendung gleicher Module "
+"müssen die I2C-Adressen verschieden eingestellt werden. Bei einigen I2C-"
+"Modulen ist das nicht möglich. In dem Fall können Sie nur ein I2C-Modul "
+"des jeweiligen Typs im Bus verwenden. Das OBP60 belegt bereits folgende "
+"Adressen, die nicht von Sensoren benutzt werden dürfen: 0x76, 0x68."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:366 2f3f4c26d9ba4e688105a699f80ab92e
+msgid ""
+"Nicht angeschlossene externe I2C-Sensoren, die jedoch in der "
+"Konfiguration aktiviert sind, führen dazu, dass die Reaktionsfähigkeit "
+"des OBP60 beeinträchtigt wird. Diese Sensoren können nicht auf das System"
+" antworten, sie erzeugen dadurch einen Software-Timeout. Deaktivieren Sie"
+" in einem solchen Fall die Sensoren in der Konfiguration."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:369 8ebcd8d3f3cc4714b018cda4ed807942
+msgid ""
+"Bestimmen Sie den Strombedarf Ihrer externen Sensoren und achten Sie "
+"darauf, dass die Stromversorgung ``5Viso`` nicht überlastet oder "
+"kurzgeschlossen wird. Der maximal zulässige Strom liegt bei **200 mA**. "
+"Anderenfalls fallen sonst alle isolierten Bussysteme wie **NMEA2000**, "
+"**NMEA0183** und **I2C** aus, da sie mit der selben Stromquelle versorgt "
+"werden. Die Folge ist ein Kommunikationsverlust auf allen genannten "
+"Bussystemen, der schwere Folgen für die Navigation Ihres Bootes haben "
+"kann. Verbinden Sie ``GND2`` **nicht** mit ``GND`` oder ``GNDS``, da die "
+"Isolationswirkung verloren geht und die Empfindlichkeit für Störungen "
+"steigt."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:372 ../../usermanual/bussystems.rst:396
+#: ../../usermanual/bussystems.rst:416 0c20e142438b4f10a18dfd8119f0b830
+#: 4666be1f84ac42eba232cbb0d561871c 814546e580c440f29a59de75e7991594
+msgid "1Wire"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:374 f7ba0be3821d4fc781529008b9d18aab
+msgid ""
+"Der 1Wire-Bus ist ein Eindraht-Bus zur seriellen Übertragung von Daten in"
+" elektronischen Schaltungen. Neben der Datenleitung wird noch eine "
+"Masseleitung als Potenzialbezug benötigt. Die Übertragung ist "
+"bidirektional und asynchron. Der 1Wire-Bus wird oft für einfache Sensoren"
+" verwendet, die nur kleine Datenmengen übertragen wie z.B. für die "
+"Temperatursensoren **DS18B20**. Beim OBP60 ist der 1Wire-Bus an der "
+"Anschlussklemme CN2 herausgeführt."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:376 09ceac2beb964e1484368015c9139c97
+msgid "**Spezifikation 1Wire**"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:378 ../../usermanual/bussystems.rst:449
+#: 1ef58fd7e1a2405185970e9a45e0cbd3 f55510908c78453cbdec52480e660d3b
+msgid "Serielles, bidirektionales asynchrones Datenprotokoll auf Binär-Basis"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:379 dd41cf37f306451b856df53af74c7bd7
+msgid "Busstruktur (nicht isoliert)"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:381 1bf9fe48c4484a6ba2ca24caf2f0ec74
+msgid "Bus-Terminierung über PullUp-Widerstand am Ausgang"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:383 bb16bf3262de4389931e4a7211226450
+msgid "1Wire, TTL 3.3V"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:384 db9d3482d68c40a686c1ed9027f95415
+msgid "Datenrate 9600 kBit/s (bei parasitärer Stromversorgung über Datenleitung)"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:385 831f13e707074d3aaa6f686602632010
+msgid "Stromversorgung von Sensoren über Datenleitung"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:386 d885ea7cdb784a91b30b4f70c387da24
+msgid "Buslänge bis zu 10 m (abhängig von Datenrate und Stromversorgung)"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:388 a6869a4ca96743bab8bd5717d5e3b203
+msgid "Steckerart für einige Anwendungen spezifiziert"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:389 e6e8d1b9e03348de9a17ebe7b48d6ff8
+msgid "Maximal 8 DS18B20 Sensoren nutzbar"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:391 bfc314a9953f444c86f54a6bfc809c00
+msgid ""
+"Der 1Wire-Bus bietet eine einfache und kostengünstige Möglichkeit, "
+"Temperatursensoren einzubinden. Zur Anbindung werden nur 3 Leitungen am "
+"OBP60 benötigt."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:398 cacf1ff51c2045948f718d7ae9c95af5
+msgid "Masse 1Wire"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:403 cc29e59c2c104acc8f7d0fd33bab0615
+msgid ""
+"Die Stromversorgung der Temperatursensoren erfolgt parasitär über die "
+"Datenleitung. Intern im Sensor befindet sich ein Kondensator, der eine "
+"gewisse Menge an Energie für den Zeitpunkt der Übertragung speichern "
+"kann, wenn der Datenpegel auf 3.3V liegt. Die Sensoren werden über "
+"eindeutige Adressen angesprochen und können mit dem OBP60 Daten "
+"austauschen. Bei der parasitären Stromversorgung ist die Datenrate auf "
+"max. 9600 kBit/s limitiert. Die Sensoren können nur wenige Male in der "
+"Minute abgefragt werden, da sie ihre Energie über einen längeren Zeitraum"
+" über die Datenleitung sammeln müssen. Pro Sekunde wird nur ein Sensor "
+"ausgelesen. Der Vorgang wiederholt sich dann für alle weiteren Sensoren. "
+"1Wire-Temperatur-Sensoren eignen sich daher nur für die Verarbeitung "
+"unkritischer Temperaturwerte."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:405 d71eb9f3f9514778b8a0498c5ceefbca
+msgid ""
+"Nachfolgend ist eine Beispielanwendung für 1Wire-Temperatur-Sensoren zu "
+"sehen."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:409 37942df4f1f64318a3e0508d2be349d6
+msgid ""
+"Abb.: 1Wire-Anbindung von externen Temperatur-Sensoren (parasitär "
+"versorgt)"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:411 0da935f9204c4b358c864e2bbec6e343
+msgid ""
+"Die Belegung der DS18B20-Temperatur-Sensoren ist folgendermaßen "
+"durchzuführen."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:414 c3cbfc12ca1c4dfe9155c8b6b4c5b9a1
+msgid "Temperatursensor"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:416 0f13f3a63bb9439ba18f317e4c901759
+msgid "gelb, Datenleitung"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:418 4a26ee5af3a2428b820aceea9a6b7ae4
+msgid "schwarz + rot"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:420 ce9afd4447e94116b4f280c6dbca7b10
+msgid "GNDS"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:420 529feba7ea124ec7920c518bef1b3a1f
+msgid "Schirm"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:424 c829a0f01b854e7caf9e87ca87ef621a
+msgid ""
+"Verwenden Sie für die Verkabelung externer Temperatur-Sensoren möglichst "
+"geschirmte Kabel und führen Sie den Schirm direkt bis zum Sensor. "
+"Verbinden Sie den Schirm des Sensorkabels **nicht** mit ``GND``, da Sie "
+"damit Masseschleifen erzeugen. Der gesamte Schirm der Busleitung darf nur"
+" einseitig an Eingang ``GNDS`` des 1Wire-Bus am OBP60 aufgelegt werden. "
+"Der Schirm am anderen Ende der Leitung bleibt offen. Andere "
+"Schirmeingänge dürfen nicht benutzt werden. Halten Sie Stichleitungen vom"
+" Bus zu den Sensoren möglichst kurz. Die maximale Anzahl der Sensoren am "
+"1Wire-Bus ist auf 8 Sensoren begrenzt. Die Ausleszeit eines Sensors ist "
+"von der Anzahl (N) der Sensoren im Bus abhängig. Die Auslesezeit T lässt "
+"sich über folgende Formel berechnen: T[s]=N*1s."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:427 09b2f8e9184d4caa8d644fd29c078792
+msgid ""
+"Wenn möglich, verwenden Sie Temperatursensoren am I2C-Bus statt am 1Wire-"
+"Bus. Sie erhöhen damit die Betriebssicherheit des Gesamtsystems, da der "
+"I2C-Bus gegenüber der Außenwelt isoliert ist."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:430 674c001e95c448a99a276a171fd4edc4
+msgid ""
+"Im Internet-Handel sind Nachbauten von DS18B20-Temperatur-Sensoren im "
+"Umlauf, die eine parasitäre Stromversorgung nicht unterstützen. Wenn Sie "
+"keine Kommunikation mit dem OBP60 zustande bekommen, dann probieren Sie "
+"andere Sensoren aus. Wenn auch das zu keinem Erfolg führt, benutzen Sie "
+"eine normale Stromversorgung für die Temperatursensoren. Mit dieser Art "
+"der Stromversorgung sollten nahezu alle Sensoren funktionieren."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:434 c85de9773794443899a760655fceb95f
+msgid "Abb.: 1Wire-Anbindung von externen Temperatur-Sensoren (direkt versorgt)"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:437 b390af5c465940aeb15b75e0c18bd431
+msgid ""
+"Der 1Wire-Bus ist nicht isoliert gegenüber der internen Schaltung des "
+"OBP60. Das erhöht bei unsachgemäßer Installation das Risiko, dass "
+"eingekoppelte Störungen in die Busleitungen die Funktion und Stabilität "
+"des OBP60 beeinträchtigen können. Halten Sie daher die Buslänge so kurz "
+"wie möglich. Im schlimmsten Fall kann das zum kompletten Ausfall des "
+"OBP60 führen mit daraus resultierenden schweren Folgen für die "
+"Navigationsfähigkeit Ihres Bootes."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:440 2d0fb62d06284922bc2728e68ef20382
+msgid ""
+"Es darf auf keinen Fall eine Spannung von 12V an den Ausgang ``1Wire`` "
+"angelegt werden. Das hat unmittelbar zur Folge, dass das OBP60 beschädigt"
+" oder sogar zerstört wird."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:443 9c6d7de5eeaa48af8fc48a453d857f03
+msgid "USB"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:445 bd01e9c1233744b8a219d39a7b4787a0
+msgid ""
+"Die USB-C-Schnittstelle im OBP60 dient zum Flashen der Firmware und zum "
+"Debugging. Die USB-Schnittstelle ist als serielle Schnittstelle "
+"ausgeführt. Darüber hinaus kann auch eine bidirektionale, voll duplex-"
+"fähige NMEA0183-Kommunikation zu anderen Geräten wie einem Laptop, PC "
+"oder einem Marine Control Server aufgebaut werden."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:447 49c72f5f08ab4201b14a0f7251ad4a5d
+msgid "**Spezifikation USB im OBP60**"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:450 b8000ca2dba14b3d8280d030bcfa2da9
+msgid "Punkt zu Punkt (nicht isoliert)"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:451 4ec37c73169849ce876a425cc5535090
+msgid "USB-OTG (serielles Device)"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:452 1fd88a4c3ba2405590944fb8d5a7ff4b
+msgid "Voll duplex"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:453 aa37bb5e707b4ef2bc6e46e01a6b7032
+msgid "Bus-Terminierung über PullUp-Widerstand im ESP32"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:455 694164d7228f4932bca4d9386172c46f
+msgid "USB 1.1, TTL 3.3V"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:456 4b25b04a6b7649fcb322d1ecce2062d7
+msgid "Datenrate 1 MBit/s"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:457 cc9e8ce9d1bc4ebda6a3c31eebcc8ba5
+msgid "Stromversorgung des OBP60 über USB möglich"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:458 1fdd43615847462c916592185fde282d
+msgid "Stromversorgung von externen Geräten aus dem OBP60 heraus nicht möglich"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:459 f7fd368baccd431fab0a631d79caee1a
+msgid "Buslänge bis zu 3 m"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:460 915a5027415143f29c4552e68ad52552
+msgid "Kabelart geschirmt"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:461 caeb8d67867d42d3b0a6d4b7af9237c2
+msgid "Steckerart USB-C"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:464 65cec53f23cd4ad79399d277806bec08
+msgid ""
+"Für Linux und Win10/11 sind entsprechende USB-Treiber im Betriebssystem "
+"integriert. Für die älteren Win7/8-Versionen benötigen Sie `zusätzliche "
+"Treiber`_, um die USB-Schnittstelle benutzen zu können."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:468 af041cf1500645fb8985670e404ed2c0
+msgid "**Stromversorgung**"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:470 bb9d1fb4ef194206926eaf95cf58305e
+msgid ""
+"Das OBP60 kann auch über USB-C mit Strom versorgt werden. Das ist "
+"nützlich, wenn man z.B. Software-Entwicklung durchführt und das Gerät am "
+"Schreibtisch nutzen möchte. Das stromliefernde Gerät muss bis zu 1 A mit "
+"einer Spannung von 5.1V bereitstellen können, wie etwa ein Raspberry Pi "
+"Netzteil. Die USB-C-Schnittstelle verfügt über einen Rücklaufschutz, so "
+"dass kein Strom aus dem OBP60 herausfließen kann. Das OBP60 kann zudem "
+"auch gleichzeitig mit 12V und über USB-C mit 5V versorgt werden."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:473 e9dca01079194072860d1b8f9e8a0933
+msgid ""
+"Die reguläre Stromversorgung des OBP60 im Boot erfolgt immer über 12V aus"
+" dem Bordnetz. Es wird nicht empfohlen, eine Versorgung nur über USB-C "
+"durchzuführen, da die Steckverbindung nicht gegen unbeabsichtigtes Lösen "
+"gesichert ist. Kabellängen größer 1,5 m sollten nur für "
+"Datenübertragungen und nicht für die Stromversorgung genutzt werden, da "
+"der Spannungsabfall auf den Leitungen zu groß ist. Die Kabellänge ist auf"
+" maximal 3 m begrenzt. Wenn Sie größere Strecken überbrücken wollen, "
+"müssen Sie aktive USB-Repeater-Kabel verwenden, die die Signalpegel "
+"auffrischen."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:477 9e3b805939024792a6024e826ab79a4a
+msgid "Abb.: Aktive USB-Verlängerung für 5 m"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:480 d2cbdf1ad6504a2cbedbba3d084b74ca
+msgid ""
+"In einigen Situationen kann es vorkommen, dass unzulässige "
+"Ausgleichsströme über die nicht isolierte USB-C-Schnittstelle fließen und"
+" das OBP60 so beschädigen können. Das passiert z.B. dann, wenn Ladegeräte"
+" mit dem 230V-Landstrom verbunden sind, die Bord-Batterie aufladen und "
+"gleichzeitig ein Laptop mit 230V-Versorgung mit dem OBP60 über USB-C "
+"verbunden ist. Wenn Sie beabsichtigen, die USB-C-Verbindung dauerhaft zur"
+" Kommunikation im Boot zu nutzen, sollten sie einen USB-Isolator "
+"verwenden, um Schäden zu vermeiden. Beim Betrieb des Laptops nur über "
+"seinen eingebauten Akku entstehen die beschriebenen Probleme nicht."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:484 d7429813ffe547a9a02db81b3c0c1af9
+msgid "Abb.: USB-Isolator"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:486 14cfdf9b3a9743f383f5c4e19502f36f
+msgid ""
+"USB-Isolatoren haben allerdings den Nachteil, dass sie nur einen sehr "
+"geringen Strom von ca. 150 mA für ihre isolierte Seite in Richtung OBP60 "
+"liefern können. Das OBP60 wird so nur eingeschränkt mit Strom versorgt, "
+"was Funktionsbeeinträchtigungen nach sich ziehen kann. Das OBP60 muss "
+"dann je nach Bedarf wie beschrieben noch zusätzlich mit 12V über den "
+"Steckverbinder **CN2** versorgt werden."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:489 56b839ba0a204a97aa73ae753dda256a
+msgid ""
+"Wenn das OBP60 über USB versorgt wird, kann es vorkommen, dass das Gerät "
+"gelegentlich je nach Stromverbrauch ungewollt einen Reboot durchführt. "
+"Der Grund liegt oft in einer unzureichenden Stromversorgung des USB-Ports"
+" oder an ungeigneten oder zu langen USB-Kabeln. Entweder liegt die "
+"Ausgangsspannung nicht exakt bei 5V oder der Strom ist nicht ausreichend."
+" Um solche Probleme zu vermeiden, benutzen Sie die Stromversorgung über "
+"12V an der Anschlussklemme **CN2** oder ein eigenständiges Netzteil mit "
+"5,2 V/2 A."
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:491 ad16efee0eb54c43b9208e93ccb57ba9
+msgid "**Kommunikation**"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:493 da7d6821323c4ad1a1c76e9bd7829ac5
+msgid ""
+"Die USB-C-Schnittselle kann zur voll duplexfähigen NMEA0183-Kommunikation"
+" mit weiteren Geräten verwendet werden. Denkbar wären folgende Nutzungs-"
+"Szenarien:"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:495 53c3262e1f2e4445979ad583656a68ac
+msgid "Kommunikation mit einem Marine Control Server"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:496 c11968ac6f6d4ba9ade75f7f3be35867
+msgid "Datenlieferant für ein Android-Autoradio als Plotter"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:497 207e6ffcc5cb4385b4ae6c82a4d47113
+msgid ""
+"Kommunikation mit einem Laptop oder PC zur Softwareentwicklung, Diagnose "
+"und zum Flashen der Firmware"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:498 abc7c0b51bff4b488afc24b4522af7ce
+msgid ""
+"Diagnose der Buskommunikation mit externer Software wie dem `Actisense "
+"Reader`_"
+msgstr ""
+
+#: ../../usermanual/bussystems.rst:499 58e903d418c441d0b9663380db04f759
+msgid ""
+"Einspeisung von Simulationsdaten in die Bussysteme mit dem `NMEA-"
+"Simulator`_"
+msgstr ""
+

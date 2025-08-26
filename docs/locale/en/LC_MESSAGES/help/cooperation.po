@@ -1,0 +1,86 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Open Boat Projects
+# This file is distributed under the same license as the OBP60 V2
+# Dokumentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OBP60 V2 Dokumentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-08-26 14:37+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../help/cooperation.rst:2 5bbba36a24854420816d6c2edcba76ae
+msgid "Mitarbeit"
+msgstr ""
+
+#: ../../help/cooperation.rst:4 552e5f12183f4815b8ff7a81d881bc3a
+msgid ""
+"Wenn Sie das Projekt interessant finden und mitarbeiten wollen, so können"
+" Sie uns hier kontaktieren:"
+msgstr ""
+
+#: ../../help/cooperation.rst:6 8a37809f100644f6bfee5dd489a0b71e
+msgid "https://www.segeln-forum.de/board/195-open-boat-projects-org/"
+msgstr ""
+
+#: ../../help/cooperation.rst:7 00d9042a2b4041d3b1fd83aed668034f
+msgid "https://open-boat-projects.org"
+msgstr ""
+
+#: ../../help/cooperation.rst:9 ca2499e399504201a47112b1a6fb3890
+msgid ""
+"Wir sind eine begeisterne Community und pflegen einen kollegialen und "
+"freundlichen Umgang miteinander. Im Vordergrund steht der Gedanke von "
+"Open Source und Open Hardware sowie der Ideenaustausch mit "
+"Gleichgesinnten. Wir laden alle Interessierten ein, sich am "
+"Ideenaustausch zu beteiligen. Dazu muss man kein Experte sein. Jeder, der"
+" tolle Ideen hat, kann sie gerne beisteuern."
+msgstr ""
+
+#: ../../help/cooperation.rst:11 eaede89e826e4a658a61584548804262
+msgid "Unterstützung für folgende Themenbereiche ist immer willkommen:"
+msgstr ""
+
+#: ../../help/cooperation.rst:13 c7e64b531f8d485781bd665da2858136
+msgid "Software"
+msgstr ""
+
+#: ../../help/cooperation.rst:14 c16cfd9f48ba4dc7a1da6ac93835083c
+msgid "Hardware"
+msgstr ""
+
+#: ../../help/cooperation.rst:15 620c5d7c96334eddab522517df34f571
+msgid "Dokumentation"
+msgstr ""
+
+#: ../../help/cooperation.rst:16 66e44289c01e44b9b3dad17390842c92
+msgid "Organisation (Messe, Events, Workshops)"
+msgstr ""
+
+#: ../../help/cooperation.rst:17 7bd3994320b54ab891b9efece1226b95
+msgid "Übersetzungen"
+msgstr ""
+
+#: ../../help/cooperation.rst:18 801d78fd6ad44f46a8f23d60397aa165
+msgid "Korrekturen"
+msgstr ""
+
+#: ../../help/cooperation.rst:19 2801633aa1884efab6db2ec569cd973b
+msgid "PR-Arbeit"
+msgstr ""
+
+#: ../../help/cooperation.rst:20 fde763a70d354420b1e22b270f9ec497
+msgid "Pflege der Internetseiten und der Social Media Kanäle"
+msgstr ""
+

@@ -1,0 +1,56 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Open Boat Projects
+# This file is distributed under the same license as the OBP60 V2
+# Dokumentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OBP60 V2 Dokumentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-08-26 14:37+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../programming/pages.rst:2 17559dde68964c70abe4bf9b74ac43a3
+msgid "Seitenerstellung"
+msgstr ""
+
+#: ../../programming/pages.rst:4 320f3883fab64901be4f7af6d9529734
+msgid "Um eine neue Seite zu erstellen sind folgende Schritte notwendig:"
+msgstr ""
+
+#: ../../programming/pages.rst:6 f43073c40dcc4d18a2bd26332616f8e0
+msgid "Anlegen einer neuen Seite unter ``lib\\obp60task\\PageXXXX.cpp``"
+msgstr ""
+
+#: ../../programming/pages.rst:7 394f9124285f4407ab6fa12f38bdd4c1
+msgid ""
+"Registrierung der Seite in ``lib\\obp60task\\obp60task.cpp``. Dazu die "
+"Funktion ``registerAllPages`` entsprechend erweitern"
+msgstr ""
+
+#: ../../programming/pages.rst:8 36d2dd74c43542ee804cafe7dc2a9852
+msgid ""
+"In ``/lib/obp60task/config.json`` die neue Seite in die jeweiligen "
+"Seitenlisten aufnehmen oder Seite in ``/lib/obp60task/gen_set.py`` "
+"aufnehmen und damit den relevanten Teil der Datei "
+"``/lib/obp60task/config.json`` neu erzeugen."
+msgstr ""
+
+#: ../../programming/pages.rst:10 3f268640da88473dbfe72fd6a7aa2922
+msgid ""
+"Als Vorlage für eine neue Seite kann z.B. die vorhandene Seite "
+"*PageWhite* verwendet werden. Sie enthält nur minimalen Code. In der "
+"kopierten Seite ist dann lediglich der Text *White* durch *Beispiel* zu "
+"ersetzen."
+msgstr ""
+

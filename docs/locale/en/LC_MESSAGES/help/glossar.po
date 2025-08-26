@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Open Boat Projects
+# This file is distributed under the same license as the OBP60 V2
+# Dokumentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OBP60 V2 Dokumentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-08-26 14:37+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../help/glossar.rst:2 95a3008373414f1da674ba0e45cc8fa0
+msgid "Glossar"
+msgstr ""
+
+#: ../../help/glossar.rst:4 29e10b8950474e9eb7c4de0af4299dc2
+msgid ""
+"An dieser Stelle sind Hervorhebungen und deren Bedeutung gezeigt, die in "
+"den Texten verwendet werden. Die Hervorhebungen werden in farbigen Kästen"
+" dargestellt. Die Farben folgen dem Ampelprinzip. Grüne Farben "
+"entsprechen Hinweisen und Empfehlungen, während gelbe und rote Farben "
+"wichtige und gefährliche Vorgehensweisen kennzeichnen, die vermieden "
+"werden sollten."
+msgstr ""
+
+#: ../../help/glossar.rst:7 08937266c8d8434784734c111d5de3f6
+msgid "Eine Bemerkung hebt einen bestimmten Sachverhalt hervor."
+msgstr ""
+
+#: ../../help/glossar.rst:10 be8e4430a42a45368cdbf726f116a745
+msgid "Ein Hinweis dient als Hilfestellung."
+msgstr ""
+
+#: ../../help/glossar.rst:13 b94a989648494883b69da9c1605bed54
+msgid "Mit Wichtig gekennzeichnete Stellen sollten besonders beachtet werden."
+msgstr ""
+
+#: ../../help/glossar.rst:16 cf419a6b2aef482389cdebd4afab41b3
+msgid "Ein Tipp vereinfacht den Umgang mit einem Sachverhalt."
+msgstr ""
+
+#: ../../help/glossar.rst:19 cd4c28037f514056823d084c62fe12e4
+msgid "Achtung weist auf einen bestimmten Sachverhalt hin, der eintreten kann."
+msgstr ""
+
+#: ../../help/glossar.rst:22 bb1223c97b11493388e70abf635ee276
+msgid ""
+"Vorsicht kennzeichnet Vorgehensweisen, die vermieden werden sollen und "
+"kritisch werden können."
+msgstr ""
+
+#: ../../help/glossar.rst:25 dc7abbabe9b44987b8912430bc4daa12
+msgid ""
+"Warnung kennzeichnet Vorgehensweisen oder Sachverhalte die nicht "
+"durchgeführt werden dürfen. Warnungen haben den Character einer "
+"Empfehlung."
+msgstr ""
+
+#: ../../help/glossar.rst:28 f3970217a18d4c6580eba94c0c221116
+msgid ""
+"Als gefährlich ausgewiesene Bereiche können Schaden verursachen. Sie "
+"sollten unbedingt den Anweisungen folgen."
+msgstr ""
+
+#: ../../help/glossar.rst:31 4dda18070f304b0882e03f5abc675cb2
+msgid ""
+"Mit Fehler gekennzeichnete Stellen zeigen, wie Fehler entstehen und "
+"vermieden werden können."
+msgstr ""
+

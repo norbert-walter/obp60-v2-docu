@@ -1,0 +1,120 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Open Boat Projects
+# This file is distributed under the same license as the OBP60 V2
+# Dokumentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OBP60 V2 Dokumentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-08-26 14:37+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../programming/environment.rst:2 8fc1153544d94d7887482f1996192ee0
+msgid "Programmierumgebung"
+msgstr ""
+
+#: ../../programming/environment.rst:4 6266d6d442ae46b1b763d2924605edd6
+msgid ""
+"Als Programmierumgebung für das OBP40 wird das kostenlose "
+"Entwicklungstool **Visual Studio Code** in Verbindung mit **PlatformIO** "
+"verwendet. Diese Kombination bietet Vorteile gegenüber der Arduino-IDE, "
+"da projektbezogen die verwendete Hardware und die Bibliotheken in den "
+"richtigen Versionen hinzugelinkt sind und Sie sich um diese Dinge nicht "
+"kümmern müssen. Zusätzlich verfügt Visual Studio Code über eine mächtige "
+"Querverweisliste, so dass Sie den Code besser verstehen und "
+"nachvollziehen können. Intellisense unterstützt Sie bei der korrekten "
+"Verwendung von Funktionsaufrufen und Variablen. Über Github können Sie "
+"von Visual Studio Code aus auf den aktuellsten Firmware-Code zugreifen "
+"und sind damit immer auf dem aktuellsten Stand."
+msgstr ""
+
+#: ../../programming/environment.rst:8 ce26c5ebe4d24f70970c6947c84ed738
+msgid "Abb.: Visual Studio Code"
+msgstr ""
+
+#: ../../programming/environment.rst:10 f7b097c1e52f4893ad867b9b5c111853
+msgid ""
+"Visual Studio Code mit PlatformIO ist für alle gängigen Betriebssysteme "
+"verfügbar wie:"
+msgstr ""
+
+#: ../../programming/environment.rst:12 1c13edab4f984caf9362dac0a1e00540
+msgid "Linux"
+msgstr ""
+
+#: ../../programming/environment.rst:13 8d4cbc77cf424024b76d49e9ff133161
+msgid "Windows"
+msgstr ""
+
+#: ../../programming/environment.rst:14 d549be7ee3c447c8baf48efa305931a4
+msgid "Mac OS"
+msgstr ""
+
+#: ../../programming/environment.rst:16 c7174f3dc9a647b2ae117c31b25a8cc0
+msgid ""
+"Wer an der Weiterentwicklung des Firmware-Codes interessiert ist, sollte "
+"Visual Studio Code mit PlatformIO in Verbindung mit Github nutzen. So "
+"kann eine breite Community an der Weiterentwicklung mitwirken und den "
+"Firmware-Code erweitern und verbessern. Aufgetretene Fehler und Wünsche "
+"der Community verwalten wir über Issues im Trackingsystem von Github. Im "
+"Segeln-Forum gibt es eine große Community, die an der Weiterentwicklung "
+"mitarbeitet und auf Support-Fragen antworten kann."
+msgstr ""
+
+#: ../../programming/environment.rst:18 df7bbc873b6644c4b9aaeb803af57d52
+msgid "`Visual Studio Code`_"
+msgstr ""
+
+#: ../../programming/environment.rst:19 d58181e2fc1b471e81a2824e5bedccb1
+msgid "**Notwendige Erweiterungen**"
+msgstr ""
+
+#: ../../programming/environment.rst:20 314b1fa8c5644876931aff0a4fabce7d
+msgid "PlatformIO"
+msgstr ""
+
+#: ../../programming/environment.rst:21 01a93c15292d470ea0af68b139a8d07c
+msgid "C/C++"
+msgstr ""
+
+#: ../../programming/environment.rst:22 90a980da7a8d418882cf97802756d47e
+msgid "`Github-Projekt-Repository`_"
+msgstr ""
+
+#: ../../programming/environment.rst:23 93dc4f54f35041f8ae0a2e05c08f6fb4
+msgid "`Issues Tracking System`_"
+msgstr ""
+
+#: ../../programming/environment.rst:24 46c33ac504ad40b6a0a0c03f013df5c4
+msgid "`Community Forum`_"
+msgstr ""
+
+#: ../../programming/environment.rst:32 93793afeb9d146d08a93800968d0895c
+msgid ""
+"Wie man Visual Studio Code installiert und benutzt ist im Kapitel "
+":ref:`Visual Studio Code / PlatformIO` beschrieben."
+msgstr ""
+
+#: ../../programming/environment.rst:34 65ab7d4e7bb44534bc2a82cdb3c1cb1e
+msgid ""
+"Wer kleine Änderungen am Code unterwegs unkompliziert vornehmen möchte "
+"ohne eine aufwändige Installation von Visual Studio Code und PlatformIO "
+"durchzuführen, kann Gitpod benutzen. Gitpod ist vollständig webbasiert. "
+"Sie benötigen nur einen aktuellen Webbrowser und können sofort mit der "
+"Programmierung beginnen. Der Workplace von Gitpod orientiert sich an "
+"Visual Studio Code und enthält alle vorinstallierten Komponenten die Sie "
+"zur Softwareentwicklung benötigen. Gitpod eignet sich dahzer hervorragend"
+" für Anfänger. Im Kapitel :ref:`Gitpod` ist die Benutzung beschrieben."
+msgstr ""
+

@@ -1,0 +1,1317 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Open Boat Projects
+# This file is distributed under the same license as the OBP60 V2
+# Dokumentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OBP60 V2 Dokumentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-08-26 14:37+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../usermanual/dataexchange.rst:4 a4bd6a874f3d4edf8dc3a4c81c495471
+msgid "Datenaustausch"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:7 6cabbf730d6a4d3f94812383d56b09fc
+msgid "Interne Datenverarbeitung"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:9 76e3c3ca631c4368bcd5cb6031cdc4bc
+msgid ""
+"Die Firmware des OBP60 besteht aus zwei Teilen. Der erste Teil ist das "
+"**NMEA2000-Gateway** und der zweite Teil die **Hardwareansteuerung** des "
+"OBP60. Das `NMEA2000-Gateway`_ ist ein Open Source Projekt von Andreas "
+"Vogel. Es ist eine Software, mit der man bidirektionale "
+"Datenkonvertierungen zwischen NMEA2000 und NMEA0183 durchführen kann. Die"
+" Software ist so gestaltet, dass sie unterschiedliche kommerzielle "
+"Hardware unterstützen kann. So läuft das NMEA2000-Gateway z.B. auf einer "
+"Reihe von Produkten der Firma `M5Stack`_ wie dem **M5Stack Atom**, aber "
+"auch auf ESP32-Entwicklerboards wie dem **ESP32 Node MCU**. Es werden "
+"ESP32-CPUs in unterschiedlicher Ausprägung unterstützt wie der "
+"ESP32-Wroom und der ESP32-S3. Die Hardwareansteuerung des OBP60 ist über "
+"eigenständige Tasks implementiert und nutzt die Grundfunktionalität des "
+"NMEA2000-Gateways."
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:16 5701231eedcc42269fd529c7382aa60d
+msgid "Abb.: Datenflussschema"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:18 197d604202ae4ee3aaee8e341c065e21
+msgid ""
+"Die gesamte Datenverarbeitung sämtlicher Bussysteme und Konvertierungen "
+"ist Bestandteil des NMEA2000-Gateways. Neben NMEA2000 (**CAN**) und "
+"NMEA0183 (**RS485**) werden weitere Bussysteme wie **I2C** und **1Wire** "
+"unterstützt. Die Hauptaufgabe des NMEA2000-Gateways besteht darin, alle "
+"ankommenden Daten der Bussysteme zu empfangen und in einem gemeinsamen "
+"Daten-Pool abzubilden. Diese Daten können über die Webseite **Data** "
+"eingesehen werden. Erweiterte Sensorik, die nicht Bestandteil von "
+"NMEA2000 und NMEA0183 sind, kann über I2C und 1Wire eingefügt werden. So "
+"lassen sich preisgünstige Sensoren nutzen. Damit die Daten der "
+"erweiterten Sensorik im NMEA2000- und NMEA0183-Netzwerk genutzt werden "
+"können, werden sie über NMEA0183 als universelle :ref:`XDR`-Datensätze in"
+" den Daten-Pool eingefügt. Als XDR-Datensätze können die Daten dann auch "
+"nach NMEA2000 konvertiert werden, sofern im Konverter entsprechende "
+"Übersetzungen implementiert sind. Als Ausgabeschnittstellen stehen CAN, "
+"RS485 und WiFi zur Verfügung. Über die CAN-Schnittstelle lassen sich nur "
+"NMEA2000-Daten austauschen. Über RS485 und WiFi (TCP) lassen sich sowohl "
+"NMEA0183-Daten, als auch NMEA2000-Daten austauschen, sofern die "
+"NMEA2000-Daten in SeaSmart-Telegrammen durch NMEA0183 getunnelt werden."
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:20 4bc361d53e914b9aa49d55cacc332fdc
+msgid ""
+"Der Datenaustausch im OBP60 kann auf verschiedene Weise erfolgen. "
+"Grundsätzlich stehen mehrere Übertragungsarten über verschiedene "
+"Übertragungswege zur Verfügung:"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:23 b1fa26bdbbe34fff889c316aa9b0d6f0
+msgid "Übertragungsarten"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:25 8e0735826e6344cab2844f78814f2842
+msgid "Simplex"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:26 e20a788a1f2740d188d2c1b42badd15e
+msgid "Daten können in nur eine Richtung übertragen werden"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:27 3287baad7db8456eb10bed924dfe6335
+msgid "Halbduplex"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:28 3bc1c6740b7b4844a381d43c1a0f1b06
+msgid ""
+"Daten können abwechselnd, aber nicht gleichzeitig, in beide Richtungen "
+"fließen"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:29 cd064a3ca9c64b4fa302ab0478ffe7a8
+msgid "Vollduplex"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:30 d4a111c90cf9471187c58b51fb20f67f
+msgid "Daten können in beide Richtungen gleichzeitig übertragen werden."
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:33 1d8ece1f4d6149b8a3d2215db322e58a
+msgid "Übertragungswege"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:35 a208952e381546ce92783459eab59eb0
+msgid "NMEA2000"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:36 1823ae0d2d434507a49cd6d557a968ff
+msgid "Kabelgebunden NMEA2000-Bus (halbduplex)"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:37 5144205c1ff34c4193d8213d51a25bff
+msgid "Über WiFi via SeaSmart (vollduplex)"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:38 55e7c91d1c6e42d58c00821bc693bb1d
+msgid "NMEA0183"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:39 e3cc96305b9d46ffbfd918745a6f84b5
+msgid "Kabelgebunden NMEA0183-Bus (simplex)"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:40 ff4729a78ecf46e881b50cf296576bf3
+msgid "USB (vollduplex)"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:41 d71821aed9414ed489df4d036a5b2f62
+msgid "Über WiFi via TCP (vollduplex)"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:42 bbe762025e35480f8490030143e3a5f1
+msgid "**I2C** (halbduplex)"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:43 b0034cf84a734d5c843d76b0b2d7b6a7
+msgid "**1Wire** (halbduplex)"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:46 e5b243d497fe485a9cd8e9e350897c0e
+msgid "Datenquellen"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:48 f60bf1a8cf1640a08b1a887270d45621
+msgid ""
+"Als Datenquellen werden Geräte bezeichnet, die überwiegend Daten zur "
+"anderen Geräten senden und selber nur Daten zur Parametrierung empfangen."
+" Dazu zählen folgende Geräte:"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:50 66a26966be9d4fbd879d1460967fd4a5
+msgid "GPS-Empfänger (Position, Geschwindigkeit, Richtung)"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:51 6d839ebf9e5d494bb34f49a597978bc2
+msgid "Windsensor (Geschwindigkeit, Richtung, Temperatur)"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:52 8bbe96083949420bbfbd4371b3435169
+msgid ""
+"Tiefen-Sensor (Tiefe, Geschwindigkeit, Wassertemperatur, zurückgelegte "
+"Strecke)"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:53 b1529c736a6547d59fe24d2e7e66cf24
+msgid "Winkelsensoren (Ruderlage, Mast, Großbaum, Foil, Trimmklappen)"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:54 4c2fa5a348ed4eadade4ffcf82cc72e1
+msgid "Elektro-Sensor (Spannung, Strom, Leistung, Energie)"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:55 98e2100af30245ffa8421578efa90eca
+msgid ""
+"Umgebungssensoren (Lufttemperatur, Luftdruck, Luftfeuchtigkeit, "
+"Helligkeit, Niederschlag, Zustand, Bewegung)"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:56 8446f46107d440fbbe5abc9779a3f5a3
+msgid "Durchflusssensoren (Kühlwasserfluss, Kühlwassertemperatur)"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:57 2319d9a914a04fdfbbca67bf5f049809
+msgid "Druck- und Zugsensoren (Öldruck, Achterstag, Vorstag)"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:58 e11a9c0061c7407ca2070d38a462a0c9
+msgid "Füllstandsensoren (Level für Wasser, Abwasser, Kraftstoff)"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:59 37a32435cd274efebb8a335df80bbc14
+msgid ""
+"Lagesensoren (Roll-, Pitch-, Nick-Winkel, Beschleunigung, Rotation, "
+"Magnetfeld)"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:60 5e2db560b9b04336942a7cadb908ad7b
+msgid ""
+"Temperatursensoren (Luft, Kühlwasser, Raum, Kühlschrank, Wasser, "
+"Maschinenraum)"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:61 d270578e2e9b48189ed39dd367599821
+msgid "Elektrogeneratoren (Solar, Wind-, Schlepp- Dieselgenerator)"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:62 45c4157b26564ce0aeb9027b4eb78be8
+msgid "Radargeräte (Umgebungskarte)"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:63 093974ada81248d4ac7d107f01e1cf29
+msgid "Funkgeräte (Position, AIS-Schiffsverkehr, Anrufer, Meldungen, Notrufe)"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:64 ../../usermanual/dataexchange.rst:75
+#: 13482afe8a1741e0b5de2daaff1dd8a9 1fb421e0a2524ab097ba66246a83049f
+msgid "Anzeigegeräte (Multifunktionsdisplays, Plotter)"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:65 4305940aea4c467f853db12cd7fa242b
+msgid "Videokameras (Bild, Ton, Bewegung)"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:68 cfa15952691f440ebf24cab4b060f2bd
+msgid "Datensenken"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:70 2fa527aac5a5473c850b5253d99a466c
+msgid "Datensenken empfangen Informationen und führen bestimmte Aktionen aus."
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:72 abdd627241dc4387b0b0e56f713ae4bc
+msgid "Ruder-Aktuator (linear, rotatorisch, hydraulisch, elektrisch)"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:73 12c44cfbab53455c8faa9a29169fbc87
+msgid ""
+"Relais und Schalter (elektrische Verbraucher wie Ankerwinde, Licht, "
+"Positionsleuchten, Lüftung, Heizung, Ladegeräte)"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:74 3016f1abd37841989a00067d7ac94927
+msgid "Winkelaktuator (Trimmklappen, Foil-Einstellung)"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:76 aeaf43e640904a5aabd01a6d2cc84009
+msgid "Multimediageräte (Radio, Lautsprecher)"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:78 9349d8a64d954216b0df5762bcab68de
+msgid ""
+"Einige komplexere Geräte können sowohl Datenquelle, als auch Datensenke "
+"sein wie z.B. Multifunktionsdisplays oder Plotter."
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:80 7cc644c976d7418eb8eed18dafd4d480
+msgid "Nachfolgend werden die Übertragungswege näher beschrieben."
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:83 fd5fcecac2d34359b6ed2b736bbfb476
+msgid "NMEA2000 - Kabelgebunden"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:85 38bffdfe3ae84b88ac47845674ded4e7
+msgid ""
+"Der kabelgebundene NMEA2000-Bus ist der aktuelle Standard in der "
+"Bootsvernetzung. Über ein NMEA2000-Backbone auf CAN-Basis werden "
+"verschiedene Geräte an das Bussystem angeschlossen. Alle Bus-Teilnehmer "
+"können Daten lesen und schreiben. Dabei sind Sensoren Datenlieferanten, "
+"die ihre Daten an Displays und Plotter übertragen. Das NMEA2000-Backbone "
+"kann Sensoren auch mit Strom versorgen. Die Einspeisung der "
+"Versorgungspannung erfolgt über einen Plotter oder über ein "
+"Einspeisekabel."
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:89 37ba948865af4f378c121f20f3fbea24
+msgid "Abb.: NMEA2000-Bussystem mit Sensoren und Anzeigegeräten"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:91 0f629d91d9f442959b03266cbf54ef8f
+msgid ""
+"Für den Betrieb von NMEA2000 muss nichts speziell konfiguriert werden. "
+"Die Standardeinstellungen sind so gesetzt, dass ein Betrieb problemlos "
+"möglich ist. Bei Bedarf kann das Senden von NMEA2000-Telegrammen "
+"unterbunden werden. Dann ist nur ein Empfang von NMEA2000-Telegrammen "
+"möglich. Die Einstellungen zu NMEA2000 findet man unter :ref:`Config - "
+"Converter`."
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:94 c7be77cc34ef435d9196ce1ce206bff7
+msgid "NMEA2000 - WiFi via SeaSmart"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:96 4d509ed4ffb64f099b67ea90fab4ae5c
+msgid ""
+"Über das SeaSmart-Protokoll besteht die Möglichkeit, NMEA2000-Telegramme "
+"über Ethernet und WiFi zu übertragen. Dazu werden die Binärdaten der "
+"NMEA2000-Telegramme in proprietäre NMEA0183-Telegramme eingebettet. Ein "
+"SeaSmart-Telegramm sieht wie folgt aus:"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:98 dfd4154d773a447f9677e431746584cb
+msgid "$PCDIN,a--a,b--b,b,cc,d--d*hh<CR><LF>"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:100 fc03a1f951ac419da4119504e59f448e
+msgid "Feldnummer:"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:101 a12d8fda4e2744fea4d5d7195fdeba89
+msgid "a - PGN im Binärform"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:102 c20c93683a134b8fb99abc8885ac5b0d
+msgid "b - Zeitstempel im Binärform"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:103 af9198d63119459b8028e12bc534c787
+msgid "c - Source-ID"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:104 11c67d6aff034b9c9c4555177eb238f2
+msgid "d - PGN-Daten im Binärform"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:105 f13b6e6d06e448f6ad05f9c74204dc3a
+msgid "hh - Checksumme"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:107 fcde1392bf6044be90267b70a22fb596
+msgid "Beispiel:"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:108 e9dfb322848f41b0974a1dd0e01f804c
+msgid "$PCDIN,01F211,0B9CF01B,03,008061480D0000FF*5C"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:110 bde6e6ed149e4eafab2644a2e0f46ab8
+msgid ""
+"Der Vorteil ist, dass sich SeaSmart-Telegramme genauso wie "
+"NMEA0183-Telegramme übertragen lassen. Damit ist es möglich, "
+"NMEA2000-Telegramme drahtlos über Wifi von einem OBP60 zu einem anderen "
+"OBP60 zu übertragen. Diese Funktion kann z.B. genutzt werden, um Bus-"
+"Sensordaten von einem OBP60 oder einem `NMEA2000-Gateway`_ auf einem "
+"OBP60-Tochtergerät anzeigen zu lassen."
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:116 42f78b79144948e3b6f524764086ef35
+msgid "Abb.: Datenübertragung via WiFi OBP60 - OBP60"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:120 601d85fe3fb145ad85857f1b08e0b001
+msgid "Abb.: Datenübertragung via WiFi M5Stack - OBP60"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:123 a12932e60e874c6dbfdbaf0de7604009
+msgid ""
+"Beide Geräte müssen sich im selben WiFi-Netzwerk befinden und "
+"unterschiedliche Netzwerknamen und IP-Adressen besitzen. Dabei muss ein "
+"Gerät als TCP-Server und das andere Gerät als TCP-Client konfiguriert "
+"sein und auf beiden Geräten **SeaSmart out** aktiviert werden."
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:125 4c14b035ecb743a58282defc71deb87a
+msgid ""
+"Nachfolgend ist ein Konfigurationsbeispiel für die obere Abbildung "
+"gezeigt, in dem ein Datenaustausch über WiFi zwischen zwei OBP60 "
+"stattfindet. Das Gerät 1 ist dabei als TCP-Server und Gerät 2 als TCP-"
+"Client konfiguriert. Das Gerät 2 bucht sich in das WiFi-Netzwerk vom "
+"Gerät 1 ein und tauscht darüber bidirektional Daten aus."
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:128 ../../usermanual/dataexchange.rst:175
+#: ../../usermanual/dataexchange.rst:193 ../../usermanual/dataexchange.rst:240
+#: ../../usermanual/dataexchange.rst:484 ../../usermanual/dataexchange.rst:523
+#: 0d706d72943f44028da4207f3fe2325e 2360c2be8ad24c6693a6ee83843e0a36
+#: 25588ca9d3a748b4bcf5735bfb99f3f8 4fe5b08044044af4b9e10b5d9a7ba2ef
+#: c7809f7615c64062a1c04b7b8199bad5 f51537a415924ee2b1c92de4c8c4bcb7
+msgid "Einstellung"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:128 bf4eca614d3e4145bbc0f73994aa1943
+msgid "Gerät 1"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:128 2e7cba4849534868afabd97bbcea7302
+msgid "Gerät 2"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:130 ../../usermanual/dataexchange.rst:242
+#: 4c61074123194d0c9e63ea7d2153ab4a 54a6dd84527745458a9262b2743957f9
+msgid ":ref:`Config - System`"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:132 0250ca55eb294628bef7174d8719bb69
+msgid "System Name"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:132 ../../usermanual/dataexchange.rst:154
+#: 2b36b2511ff34f8ba00441d436301656 2f8a3bfb2d194f14ababedbf9cef68d9
+msgid "OBP60-1"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:132 dc63a1cf7d0a4c54903fcf515438d3d1
+msgid "OBP60-2"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:134 6afa6a38c0c3457a85f24d69d5a8b17e
+msgid "ApPassword"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:134 ../../usermanual/dataexchange.rst:156
+#: 60152df2e5244316a16b1ea3bf91527b a3b8aa63025f4290acb0176070b8d9d2
+msgid "11111111"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:134 82082b1cd68945d9a99f325d076a136e
+msgid "22222222"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:136 533702164edb4d53aeaad8bc1df012d6
+msgid "ApIP"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:136 ../../usermanual/dataexchange.rst:146
+#: e817347553444fbc84a5efaeeec27a75 edfcac4e594149bea65936f79a5de97f
+msgid "192.168.15.1"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:136 13bacd3558124c128bbc6cb6d6cb4c3d
+msgid "192.168.16.1"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:138 391001617a2e4d0abcb21bbfbf950578
+msgid ":ref:`Config - TCP Server`"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:140 6398a541187a4427bd27fb4dd2edc743
+msgid "SeaSmart Out"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:140 ../../usermanual/dataexchange.rst:144
+#: ../../usermanual/dataexchange.rst:148 ../../usermanual/dataexchange.rst:152
+#: ../../usermanual/dataexchange.rst:183 ../../usermanual/dataexchange.rst:201
+#: ../../usermanual/dataexchange.rst:252 ../../usermanual/dataexchange.rst:254
+#: ../../usermanual/dataexchange.rst:256 06fb55ecc32e4440b2896665a309513a
+#: 1452872b89a448dcac1d82fd06cb3c02 3cdbb06a89cd4f38b65befdbdeaa19db
+#: 41391bea5aec4b11b785448d8a04e261 b772e46a38684a039f648ba4fa9a4344
+#: c120daa34d414fc1927578d544268e14 ccb6b1afcd6a4a0485014f98a504a294
+#: d1b93d762e5e4c5184583741d3b8a066 e0b83665908f42229fa6a640ccc27476
+msgid "on"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:140 ../../usermanual/dataexchange.rst:144
+#: ../../usermanual/dataexchange.rst:148 ../../usermanual/dataexchange.rst:152
+#: ../../usermanual/dataexchange.rst:244 06c87634d9344a169015fcb8fc385b19
+#: 19207ead9c1a490ea33516523e668a66 4704953742644f5b9f97af58c05fc2e9
+#: a1ded126b9f24d04bdca8e995e3eb770 f9c65c8dd9bf44c8be67a4fe4363be1b
+msgid "off"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:142 3aca388c78e6461fb2d564b9faf48948
+msgid ":ref:`Config - TCP Client`"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:144 c3e1007bfb164ff29c67aa197641729e
+msgid "Enable"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:146 57ab568315664e6c971f803a442f1a88
+msgid "Remote Address"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:146 ../../usermanual/dataexchange.rst:154
+#: ../../usermanual/dataexchange.rst:156 ../../usermanual/dataexchange.rst:203
+#: 00b69af333134bf39c8785861ae80ad4 341aca29b0e64e53bd3ef4f4b2b69fdf
+#: e22c527c47d443dea7339ccd6c23e060 f777885f9ccc4de192a615a70f3d195c
+msgid "---"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:148 5037f51fbd88474f8aed2436e81ee330
+msgid "SeaSamart Out"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:150 f2a21e6272224a869e38599aeea86b39
+msgid ":ref:`Config - WiFi Client`"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:152 51744fa6a6784631b7fa50390cce0fa3
+msgid "WiFi Client"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:154 9574f28eac734c70a1dde045077351f7
+msgid "WiFi Client SSID"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:156 e248cd8aea22420cb2c1fd2abca93fc9
+msgid "WiFi Client Password"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:161 4c55e3e85b0d4de28af9abb690d1e667
+msgid "NMEA0183 - Kabelgebunden"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:163 340479fb8c2441d0be942e3a2ff587b7
+msgid ""
+"Bei der kabelgebundenen Datenübertragung für NMEA0183 handelt es sich um "
+"eine Simplex-Übertragung. Das bedeutet, dass man entweder senden oder "
+"empfangen kann. Als Default ist das OBP60 auf Empfang eingestellt. Es ist"
+" aber auch möglich, NMEA0183-Daten zu senden. Die Einstellung dazu "
+"erfolgt unter :ref:`Config - Serial Port`. Über **Serial Direction** kann"
+" die Datenrichtung eingestellt werden."
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:165 9408309b973e4d70bfba320d76d27122
+msgid ""
+"An dieser Stelle wird ein Beispiel gezeigt, wie Daten von einem "
+"NMEA0183-Multiplexer in ein OBP60 eingebunden werden können. Dabei "
+"sammelt der Multiplexer alle Sensordaten über die Eingänge ein und "
+"erzeugt einen zusammengefassten Datenstrom an seinem Ausgang. Die Daten "
+"werden lesend vom OBP60 empfangen und können dann entsprechend verwendet "
+"werden."
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:168 aac88ae93a704247a5f0fb9bdaf64bd6
+msgid ""
+"Die Konfiguration des Multiplexers ist vom Modell abhängig. Konsultieren "
+"Sie dazu das Handbuch und achten Sie auf die korrekte Einstellung der "
+"Baudraten für die Eingänge und Ausgänge des Multiplexers."
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:172 28408d3feaa64a358e6d00cebf3742d7
+msgid "Abb.: NMEA0183-Verbindung zu einem Multiplexer (empfangen)"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:175 ../../usermanual/dataexchange.rst:193
+#: ../../usermanual/dataexchange.rst:240 ../../usermanual/dataexchange.rst:484
+#: ../../usermanual/dataexchange.rst:523 0dc5f7fce2de433dbe6ed69261436f6c
+#: 6f0c6a3be7cd4907998f998b1eb1699e 8636e90dde914261b23b9b79a29c6a85
+#: 97e3e800bbef444480abe2c76811b4b6 cbbf052351bb421d978d9aec6eeccd4b
+msgid "OBP60"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:177 ../../usermanual/dataexchange.rst:195
+#: 1b4873f00bb6491bab7d4f73ae4fb3ae 95b92efbae1d4e088308e119f2d81d74
+msgid ":ref:`Config - Serial Port`"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:179 ../../usermanual/dataexchange.rst:197
+#: 06c9b5775a5340f5a259b1a96e6b13c6 ab0f48646f5c46f3b9b0029fc676aad4
+msgid "Serial Direction"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:179 49de2f03738843d482af3af12deac09f
+msgid "receive"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:181 ../../usermanual/dataexchange.rst:199
+#: 48e98b3d6bf24ff1ae8db4fccc5bee69 ca949575d4304190a97869fe6d436965
+msgid "Serial Baud Rate"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:181 ../../usermanual/dataexchange.rst:250
+#: b876536b5dba47c9b60d48362275795b bec1b66f5f7346f6a65ad1f3e9f94d74
+msgid "115200"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:183 ../../usermanual/dataexchange.rst:201
+#: 7e808226ee214fb6b65ea616782a853a d79fb68ceac544389ff14ee73e1e92b8
+msgid "Serial to NMEA2000"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:186 79da3abd06a54d5596aecd54db8a25f5
+msgid ""
+"Zum Senden von NMEA0183-Daten hier ein Beispiel für einen Autopiloten. "
+"Dabei werden Daten aus den verwendeten Kommunikationsmöglichkeiten "
+"genutzt und diese an einen Autopiloten gesendet. Die Ausgabe der Daten "
+"erfolgt über einen Filter, so dass nur relevante Informationen den "
+"Autopiloten erreichen. In dem gezeigten Beispiel verwendet der Autopilot "
+"einen NMEA0183-Eingang nach RS422 oder RS485 mit einer "
+"Schnittstellengeschwindigkeit von 4800 Bd. Unter Umständen müssen Sie die"
+" Geschwindigkeit an Ihren Autopiloten anpassen."
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:190 1b08b2e3dc794ab2a5c0122b5c518cbd
+msgid "Abb.: NMEA0183-Verbindung zu einem Autopiloten (senden)"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:197 0e66909b9dfb42a9b93744265080c278
+msgid "send"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:199 130f2724af8b46aabb16e20d2f7b97a1
+msgid "4800"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:203 8ca62f199dd74ce3a75d42d5c938deeb
+msgid "Serial Read Filter"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:205 0f7f7d7d998e4b03822bfc406a96f58c
+msgid "Serial Write Filter"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:205 948d4e01a6534e23b65e1c2a933bcf09
+msgid "XTE,XDR,RMB,RMC,ROT"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:208 e96562bd7a2543d9ab88f5b433473940
+msgid ""
+"An den Autopiloten werden nur die NMEA0183-Telegramme **XTE**, **XDR**, "
+"**RMB**, **RMC** und **ROT** gesendet."
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:211 0b68c1f7a5154ce1bf68b7f93956600f
+msgid ""
+"Prüfen Sie in der Dokumentation des Autopiloten, ob die übermittelten "
+"NMEA0183-Telegramme zur Navigation verwendet werden können und "
+"ausreichend sind. In einigen Fällen kann es sein, dass der Autopilot "
+"andere Telegramme zur Kursregelung benutzt. In dem Fall kann der "
+"Autopilot nicht angesteuert werden."
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:214 d560fecce8a742d7938712ab61a9e075
+msgid "NMEA0183 - USB"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:216 87e1268d82fb44d5a759cb981a5c3a10
+msgid ""
+"NMEA0183-Telegramme lassen sich auch über USB vollduplex übertragen. Das "
+"bedeutet, dass Daten gleichzeitig gesendet und empfangen werden können. "
+"Den USB-Port für die Datenübertragung findet man auf der Rückseite des "
+"OBP60 unterhalb des Steckverbinders **CN2**. Er ist als USB-C ausgeführt."
+" Die USB-Schnittstelle im OBP60 ist als serielles RS232 Device "
+"implementiert und unterstützt die Übertragungsgeschwindigkeiten "
+"1.200...460.800 Bd. Die Defaulteinstellung für die Datenübertragung ist "
+"auf 115.200 Bd eingestellt und sollte für die meisten Anwendungen "
+"ausreichend schnell sein. Die Daten werden ausschließlich als "
+"NMEA0183-Daten über USB übertragen."
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:218 1358496e113449a7b4ced46165ee70d6
+msgid "Als mögliche Endpunkte könnte folgende Hardware verwendet werden:"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:220 71e00421756a4d0c93085a2517695d39
+msgid "Raspberry Pi 3, 3B, 4B, 5"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:221 66286b6d43a645a695b482c6a79af8bf
+msgid "Android Autoradio"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:222 85e28d6dac1a4686ba42fb09cfe863bb
+msgid "Laptop"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:223 4ffd7bcd027d4d69b8910250756f5e9b
+msgid "PC"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:225 f17c2d0e85f14330a5a214e97b2398a1
+msgid "Die NMEA0183-Daten lassen sich in unterschiedliche Software einbinden wie:"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:227 adac8d4d56b64dddb3c57cbbe3659c19
+msgid "AvNav"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:228 369d08e64fde45e39110f602dabd88f4
+msgid "OpenPlotter"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:229 5867cdb5782041528b71e010eddb3e5f
+msgid "OpenCPN"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:230 1cb9e355c2cc487385ac76febda0da2e
+msgid "BBN"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:231 4a1dd581d5e948f0b00cd50c226d4525
+msgid "SignalK"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:232 08dc2a8ed858460582939a6949a0e44e
+msgid "qtVlm"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:233 3efc09a63821454694fc04c0a2c89ae8
+msgid "Navionics"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:234 ce5c64f57b92449199dba79bee0c9d36
+msgid "WinGPS"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:235 9d13ca2986ee4f0d9ddc75ebe4ac561c
+msgid "NMEA Simulator"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:237 e2f1921aa4c14f26b6859fc801f11cb4
+msgid ""
+"Für alle oben aufgeführten Endpunkte sind folgende Einstellungen im OBP60"
+" vorzunehmen. Dabei werden NMEA0183-Daten auf der USB-Schnittstelle "
+"empfangen und gesendet und gleichzeitig nach NMEA2000 bidirektional "
+"konvertiert."
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:244 bbfb6673a46c44459a7091c87e65a748
+msgid "Log Level"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:246 c446893be7c8433a8261bc964009e26b
+msgid ":ref:`Config - USB Port`"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:248 83d6804bb909489ea65d1301e47bdabc
+msgid "USB Mode"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:248 397895eed40e4b779b6d6c48e38563ca
+msgid "nmea0183"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:250 b9925e7c1cfa4c88a25b5cbb52ef364e
+msgid "USB Baud Rate"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:252 0ef4f53639904ed08fcbe58c0d97e9b0
+msgid "NMEA to USB"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:254 fa27f5730df94618990bd7c490e6aeb5
+msgid "NMEA from USB"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:256 ab6028aee9594f3b8af351be87aa6fbb
+msgid "USB to NMEA2000"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:260 3264f87dd04e4f988858d34065465071
+msgid ""
+"Achten Sie darauf, dass der **Log Level** auf ``off`` gestellt ist. "
+"Anderenfalls kann es sonst zu Störungen in der Kommunikation kommen, da "
+"Logging-Ausgaben in den Datenstrom eingespeist werden, die ebenfalls über"
+" USB-C ausgegeben werden."
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:263 7992480765544c36b9cce36bf1a7ca92
+msgid "NMEA0183 - WLAN"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:265 620b21b924a64161a09ac1ef7cb71499
+msgid ""
+"Mit dem TCP Client könenn (ähnlich wie bei der Übertragung per USB) "
+"NMEA0183-Telegramme z.B. von einem Raspberry Pi mit OpenPlotter bzw. "
+"SignalK empfangen werden. Dazu muss der TCP-Client entsprechend "
+"konfiguriert sein. :ref:`Config - WiFi Client`"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:270 87141414195245a8a7466c40d915cc4f
+msgid "Konfigurationsbeispiele"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:271 f0c01d6193e747ecb50197977382ffd2
+msgid ""
+"Nachfolgend sind einige Konfigurationsbeispiele aufgeführt. Es wird "
+"gezeigt, wie die weitere Konfiguration auf dem System erfolgt."
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:274 0ddf14e55bdb47e8befaee663725097e
+msgid "Beispiel AVnav auf Raspberry Pi"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:276 b37bbba3ed944dc081a734056caabdd2
+msgid ""
+"Dieses Beispiel zeigt die Einbindung eines OBP60 über USB in AvNav, das "
+"auf einem Rasberry Pi läuft. Dabei werden NMEA2000 Busdaten ausgelesen "
+"und nach NMEA0183 übertragen. Die Anbindung erfolgt direkt in AvNav als "
+"Device und die Daten stehen dann der Anwendung zu Verfügung. In diesem "
+"Fall wird das AvNav-Image benutzt. Wer AvNav unter OpenPlotter als Plugin"
+" benutzt, sollte dem **Konfigurationsbeispiel OpenPlotter auf Raspberry "
+"Pi** folgten."
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:278 2496d8c42de141f182e414ae5a398bb9
+msgid ""
+"Zur Verbindung des OBP60 und den Raspberry Pi über benötigen Sie ein "
+"**USB-C zu USB-A Kabel**. Am Raspberry Pi können Sie jeden beliebigen "
+"USB-A-Port verwenden."
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:281 189eb74926044260b5f2f1b0e6034558
+msgid ""
+"Es ist ratsam, die schwarzen USB-A-Ports am Raspberry zu nutzen, da das "
+"OBP60 nur USB 1.1 unterstützt und dadurch die leistungsfähigeren USB "
+"3.0-Ports frei bleiben und anderweitig genutzt werden können. Versorgen "
+"Sie auf jeden Fall das OBP60 zusätzlich mit 12V, da der Raspberry Pi zu "
+"wenig Strom an seinen USB-Ports liefert."
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:285 720c0802b01e44858db91db0220481d7
+msgid "Abb.: Verbindung OBP60 - Raspberry Pi"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:288 6541219a9b7743e6abd8511fa59e31e0
+msgid ""
+"Verwenden Sie zur Verbindung des OBP60 mit dem Raspberry Pi nur "
+"hochwertige geschirmte USB-C-Kabel. Die Länge sollte 1,5 m nicht "
+"überschreiten, damit die Signalpegel nicht zu stark reduziert werden und "
+"eine hohe Übertragungsrate möglich ist. Bei Überbrückung größerer Längen "
+"verwenden sie aktive USB-Verlängerungskabel"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:292 ../../usermanual/dataexchange.rst:347
+#: 32f66bd35cb94707a34e05c3722e78ca 82fa3dd640ef44859426fbdb58ec533f
+msgid "Abb.: Aktive USB-Verlängerung für 5 m"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:296 701961c1239c40ad9137370ae19c39e6
+msgid "Abb.: AvNav Startseite"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:298 ../../usermanual/dataexchange.rst:356
+#: 33cfa587ac284aeabee63c0dc43c93ba bf6e1a4f4f5c4021ba85145dedbb5fc7
+msgid ""
+"Unter AvNav kicken Sie auf der Startseite oben rechts das Symbol mit den "
+"3 Strichen."
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:302 85d7419811574996b3433cea27b5ce33
+msgid "Sie gelangen dann auf die Seite zum Serverstatus."
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:306 55138e01af9c452f8765070bc2aa3919
+msgid "Abb.: Server-Status ohne OBP60"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:308 2e63dd9668b3445d96f4b7b69d2abfad
+msgid ""
+"AvNav ist so eingerichtet, dass es automatisch alle seriellen USB-Geräte "
+"erkennen kann und automatisch zuordnet. Sowohl das Gerät, als auch die "
+"Übertragungsrate werden erkannt. Verschaffen Sie sich als erstes einen "
+"Überblick, welche Geräte bereits mit USB verbunden sind. Im oberen Bild "
+"sehen Sie unter Punkt **[3] USBSerialReader** alle aktuell erkannten und "
+"zugeordneten Geräte. In unserem Fall ist bereits ein GPS-Stick an USB "
+"angeschlossen. Das Gerät ist der Schnittstelle **/dev/ttyACM0** "
+"zugeordnet und arbeitet mit einer Übertragungsrate von 38.400 Bd."
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:312 f96dd605e2a24b749ec0463dd54f4ab9
+msgid "Abb.: Server-Status mit OBP60 (noch nicht konfiguriert)"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:314 e4e62193e4b84884921ba0d53c92d52d
+msgid ""
+"Wenn man das OBP60 mit dem Raspberry Pi über USB verbindet, sieht man im "
+"oberen Bild unter Punkt 3 ein neu hinzugefügtes Gerät **/dev/ttyACM1**. "
+"Es handelt sich dabei um das OBP60. Die Schnittstellengeschwindigkeit ist"
+" aber noch nicht korrekt eingestellt."
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:316 8d052a92c0494aa5807dcbaae788da37
+msgid ""
+"Wenn Sie auf das Stiftsymbol hinter der Zeile mit dem Eintrag "
+"**/dev/ttyACM1** klicken, können die Einstellungen zum Gerät vorgenommen "
+"werden. Folgende Werte sind anzupassen:"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:318 eacbdf4ee4f4453da906d5aa895dd3aa
+msgid "**Baud** ``115200``"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:319 fd7bd09c145941d6a8dacd9acd6c4c3b
+msgid "**Type** ``combined``"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:320 f9442876f7904136836f7f7b4067fecb
+msgid "**Name** ``OBP60V2``"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:324 b7363d1a73434bd286fa5bf9d4eafc45
+msgid "Abb.: Einstellungen für das OBP60"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:326 9affb46063364cea90ca6cb9348a8283
+msgid ""
+"Durch die Änderung des Typs von ``read`` auf ``combined`` ist eine "
+"bidirektionale Kommunikation über USB mit einer "
+"Übertragungsgeschwindigkeit von 115200 Bd möglich. Das OBP60 ist nun mit "
+"AvNav verbunden. Solange Sie die selben USB-Ports verwenden, werden nach "
+"jedem Neustart des Systems die USB-Geräte korrekt zugeordnet und die "
+"Übertragungsgeschwindigkeit richtig eingestellt."
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:330 742bdfaac57b411fbfaa360879b714ae
+msgid "Abb.: Server-Status mit OBP60 (korrekt konfiguriert)"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:334 fcde4808ac5b4842a97219a68ffd1271
+msgid "Beispiel AvNav auf Android-Autoradio"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:338 649898dd29474c96bf7f9594e6069345
+msgid "Abb.: Verbindung OBP60 - Android Autoradio AvNav"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:340 014be93cbcc146c8a787c255a482d023
+msgid ""
+"In diesem Beispiel wird gezeigt, wie man Busdaten in ein Android-Radio "
+"einspeisen kann, um die Daten dort in AvNav nutzen zu können. Für die "
+"Datenübertragung zum Android-Autoradio benötigen Sie ein **USB-C zu USB-A"
+" Kabel**, sofern eine passende Adapterbuchse zur Verfügung steht. In "
+"einigen Situation müssen Sie die USB-Kabel direkt über spezielle Stecker "
+"am Autoradio anschließen. Konsultieren Sie dazu das Handbuch zum Android-"
+"Autoradio und stellen Sie die USB-Verbindung wie gefordert her."
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:343 e39156d06a87443fb8543615196c6667
+msgid ""
+"Verwenden Sie zur Verbindung des OBP60 mit dem Android Autoradio nur "
+"hochwertige geschirmte USB-C-Kabel. Die Länge sollte 1,5 m nicht "
+"überschreiten, damit die Signalpegel nicht zu stark reduziert werden und "
+"eine hohe Übertragungsrate möglich ist. Bei Überbrückung größerer Längen "
+"verwenden sie aktive USB-Verlängerungskabel."
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:350 f8690b482a0240fe8313eb4ec9fc1edb
+msgid ""
+"Die Konfiguration von AvNav für Android läuft in einigen Schritten "
+"verschieden zur Server-Version von AvNav auf einem Rasberry Pi ab. "
+"Beachten Sie, dass es unter Android keine automatische Konfiguration von "
+"seriellen USB-Devices gibt. USB-Geräte müssen hier immer manuell "
+"hinzugefügt werden."
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:354 a4e3fc17a22e4f5ea626af2b71acadb4
+msgid "Abb.: Startseite AvNav für Android"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:360 c19e46786c924c4fa1ebe9d173d4cd1c
+msgid ""
+"Sie gelangen dann auf die Seite zum Serverstatus. Dort können Sie über "
+"das Plus-Symbol weitere Verbindungen zum AvNavServer einrichten."
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:364 700b0bdc0d3b41ee90f264c2452bb560
+msgid ""
+"Für die bidirektionale Kommunikation über USB wählen Sie "
+"**UsbConnection**."
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:368 cdf50153a5c742deb5f1c39c6f7d01aa
+msgid "Abb.: Verbindungstypen"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:370 f7f467b41d0542dc927b06e187f50ad3
+msgid ""
+"Unter **Device** wählen Sie die serielle Verbindung aus, unter der das "
+"OBP60 mit dem Raspberry Pi verbunden ist (``/dev/bus/usb/001/003``). Als "
+"Schnittstellengeschwindigkeit wird ``115200 Bd`` eingestellt. Um nicht "
+"nur Daten senden, sondern auch empfangen zu können, aktivieren Sie "
+"**SendOut**."
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:374 3f923a2b49ab4f379b880fc8a360dec0
+msgid "Abb.: Einstellungen zur USB-Verbindung"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:376 fcee83399e6f428eb0b95848b774b7c6
+msgid ""
+"Nach der Übernahme aller Daten ist die neue Verbindung im Server-Status "
+"zu sehen."
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:380 417166a8914a4e11a44f35cdb09a0ae0
+msgid "Abb.: Server-Status"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:384 7494af909b45405c972e165a013b3883
+msgid "Beispiel SignalK auf Raspberry Pi"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:386 1fcbbfd221f245f0bb87dc5a7a9978c9
+msgid ""
+"SignalK kann die verfügbaren Daten im NMEA0183-Format über das WiFi-"
+"Netzwerk verteilen. Ein Vorteil dieser Varriante ist, dass kein "
+"Datenkabel zum OBP60 benötigt wird, sondern nur der Raspberry und das "
+"OBP60 im selben WLAN angemeldet sein müssen. Hierfür muss in SignalK "
+"unter Server  ``Settings  NMEA 0183 over TCP (10110)`` aktiviert sein."
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:390 24b4f3f9966e4a9eb4a2388c90d28ee7
+msgid "Abb.: SignalK Server"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:392 e88ca0ef945a44ecb8cbfcb09be0843f
+msgid ""
+"Außerdem muss das signalk-to-nmea0183 Plugin installert und aktiviert "
+"sein, in dessen Konfiguration ausgewählt werden kann, welche "
+"NMEA0183-Daten ausgegeben werden sollen."
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:396 f4d796bae9b346e899ca03da21c4b897
+msgid "Abb.: SignalK Plugin"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:400 467d33b0bf4b4fe290c7464a609054bf
+msgid "Abb.: SignalK Plugin Konfigurationsbeispiel"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:403 f0336a4602a34a21b651f1618aad6a7e
+msgid ""
+"Um diese Funkioanlität zu testen, kann man sich auf dem Raspberry Pi mit "
+"folgendem Kommando in einem Terminal den Datenstrom anzeigen lassen: ``nc"
+" localhost 10110``"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:405 3b8be32e4bad41d69757dc14aa8a730e
+msgid ""
+"Die so bereitgestellten Daten könenn mit dem :ref:`Config - WiFi Client` "
+"des OBP60 abgerufen werden und stehen dann auf der Seite Data und zur "
+"Anzeige in den einzelnen Seiten ausgewählt werden."
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:409 36a968f9cc0043db8bb4fb9c3d43b7f0
+msgid "Beispiel OpenPlotter auf Raspberry Pi"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:410 fddfaab333f14ba7bdbc11e8a80ecea8
+msgid ""
+"OpenPlotter stellt alle verfügbaren Daten über SignalK zur Verfügung. Von"
+" dort könenn die Daten im NMEA0183-Format mit dem TCP-Client abgerufen "
+"werden, oder mit dem signalk-to-nmea2000 Plugin übertragen werden."
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:413 703c46a2f4924ea1b0abf623d06d46e3
+msgid "Beispiel Navionics auf Android-Autoradio"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:417 e11332412b42480da17951908971e23a
+msgid "Abb.: Verbindung OBP60 - Android Autoradio Navionics"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:419 3d47892ad7a84df3bb7b2c984323f7be
+msgid ""
+"In dem Beispiel wird gezeigt, wie man Busdaten in ein Android-Radio "
+"einspeisen kann, um die Daten in Navionics nutzen zu können. Für die "
+"Datenübertragung zum Android-Autoradio muss eine WiFi-Verbindung benutzt "
+"werden. Eine USB-Kabelverbindung zur Datenübertragung ist nicht möglich. "
+"Stellen Sie sicher, dass das WiFi des Android Autoradios angeschaltet ist"
+" und sich beide Geräte im selben WiFi-Netzwerk befinden."
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:422 9ef7a0523c5d4536933851b97d50ebf0
+msgid ""
+"Bedingt durch die Navigationssoftware können nicht alle Busdaten in "
+"Navionics verwendet werden. Aktuell lassen sich nur einige Daten nutzen. "
+"Die nachfolgende Liste zeigt die derzeitig verarbeitbaren NMEA0183 "
+"Sentences."
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:424 92098864288f47a398a4274638eebd90
+msgid "**AIVDM** (AIS-Daten)"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:425 c770b63897ac41d3b1860baf02208a77
+msgid "**AIVDO** (AIS-Daten)"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:426 d7481cb828ad4d1ea1b98151e277553c
+msgid "**DBT**  (Tiefe unter Sensor)"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:427 ec7efcf50f5b43aba9334db1c24eb557
+msgid "**DPT**  (Korrigierte Tiefe)"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:428 65dc6e39dd7d47e58fc4a603e771e4a0
+msgid "**GGA**  (Position)"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:429 3da03b1bea34401cac63223b54c65815
+msgid "**GLL**  (Position)"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:430 8be02c9fb4bf4d6482c104aba9f44e42
+msgid ""
+"**RMC**  (Notwendige minimale Navigationsdaten - Zeit, Position, Kurs, "
+"Speed)"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:431 a8985c1abcf24fd892854b0f58422bd5
+msgid "**VTG**  (Kurs und Speed über Grund)"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:432 1ecc5afd2fa6461b923acc1c25b08009
+msgid "**ZDA**  (Uhrzeit und Datum)"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:434 ccf11fc3f30642acae88968fabfafe7f
+msgid ""
+"Zur Konfiguration der Verbindung zum OBP60 geht man auf **Menue** und den"
+" Unterpunkt **Paired Devices**."
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:437 db5f385313484b38b2c997a6b428f15d
+msgid "Abb.: Verbindung OBP60 - Menu Paired Devices"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:439 be27c579bd8943c7a20fade7939ffb91
+msgid ""
+"Über den Button **Add Device** kann eine neue Verbindung zum Device OBP60"
+" angelegt werden, wenn sich beide Geräte im selben WiFi-Netzwerk "
+"befinden."
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:442 ../../usermanual/dataexchange.rst:447
+#: ../../usermanual/dataexchange.rst:452 29355e562fe5457dab398c2e70a18f39
+#: 49e6d6f768d14885afc5d67a7d385090 7418e3b2dbc942c29ea6fec1289eed7d
+msgid "Abb.: Verbindung OBP60 - Add Device"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:444 f4b2c00d178e4f3884bcc762a380021a
+msgid ""
+"Ermitteln Sie die IP-Adresse des OBP60, indem sie auf die Webseite des "
+"OBP60 gehen. Unter **WiFi client IP** finden Sie die IP-Adresse. In "
+"unserem Beispiel werden die Adresse 192.168.15.1 und der **Port 10110** "
+"verwendet. In Ihrem Fall kann das eine andere IP-Adresse sein. Vergeben "
+"Sie einen Namen für das Device und verwenden Sie als Verbindungsart "
+"**TCP**. Speichern Sie die Einstellungen oben rechts unter **Save**."
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:449 24f3a574a1c540719ef6a9839278d51e
+msgid ""
+"Unter **Paired Devices** sollten jetzt das OBP60 zu finden sein und der "
+"Status auf **Connected** stehen. Sofern Daten übertagen werden, sehen Sie"
+" den Typ der Daten. In unserem Fall wurden das externe GPS-Signal des "
+"OBP60 erkannt und die Daten in der Karte im Instrumententeil dargestellt."
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:455 8321976258ed47f4b4858f2aaf961657
+msgid ""
+"Navionics ist aktuell (Stand 2025) nicht in der Lage WiFi-"
+"Verbindungsabbrüche zu erkennen und kann sich nach einem "
+"Verbindungsverlust nicht wieder automatisch an das OBP60 anbinden. Der "
+"Verbindungsstatus wird fortlaufend mit Connected angezeigt, obwohl die "
+"Verbindung unterbrochen sein kann. Nur durch deaktivieren und neustarten "
+"der Navionics App wird der Verbindungsstatus richtig angezeigt."
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:458 e247061f51e441ccabe3c346318205fd
+msgid "I2C-Bus"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:461 ef348c2f381b45db802b668a91f80c80
+msgid "Beispiel I2C Ruderlagensensor"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:463 ed7e906be3594294bf3203e88f5ae558
+msgid ""
+"Es wird an dieser Stelle gezeigt, wie man einen I2C-Winkelsensor als "
+"Ruderlagensensor am I2C-Bus benutzt. Grundsätzlich kann der Winkelsensor "
+"für folgende Winkelmessungen benutzt werden:"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:465 9721395994a6460e83e691bc4a8caecf
+msgid "Ruderlage"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:466 b2f4797de949498083c2d85e6ec7fec6
+msgid "Windrichtung"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:467 3d5ef50872724c7288b9f9d295eaa586
+msgid "Mastausrichtung bei drehbaren Masten"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:468 ff198b88f7454417bf206b0b74bc5967
+msgid "Kielneigung"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:469 4905d809abba4cdd91c8585209aefff6
+msgid "Winkelsensor für Trimmklappen oder Foils"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:470 f6e594c85c6f48b6a53d3cb422d0d5ea
+msgid "Großbaum"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:472 2782bc8fe254432dad6f9d73ff5be386
+msgid ""
+"Als I2C-Winkelsensor wird eine kleine Platine mit einem AS5600 verwendet,"
+" die auf Adresse 0x36 angesprochen werden kann. Der AS5600 ist ein "
+"magnetischer Winkelsensor, der die Ausrichtung eines Magnetfeldes "
+"erkennt. Über einen diametralen Magneten, dessen Magnetfeld in der "
+"Scheibenebene geteilt und mit der Ruderachse verbunden ist, kann der "
+"Ruderausschlag gemessen werden. Der Magnet entspricht dabei der Drehachse"
+" des Ruders."
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:476 c524c9fcd0d44b8f8a4d0768b245c4be
+msgid "Abb.: I2C-Anbindung magnetischer Winkelmesser AS5600"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:479 4d4485c05cc846a4b1d33e77b7c222f5
+msgid ""
+"Bedenken Sie, dass nur ein AS5600 als Winkelmesser verwendet werden kann,"
+" da die I2C-Adresse nicht änderbar ist. Das Verbindungskabel sollte ein "
+"geschirmtes Kabel sein und eine Länge von 10 m nicht überschreiten."
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:481 353b9e40c3a444de8d0fa0001de0f636
+msgid "Folgende Einstellungen sind im OBP60 vorzunehmen."
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:486 ../../usermanual/dataexchange.rst:525
+#: 287068f6d75642ef89307057a65d0702 ad8a8c526639421d8d75c770044ad191
+msgid ":ref:`Config - OBP Hardware`"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:488 31dcee27aa694b65a7fe2d59d60bdd2d
+msgid "Rot. Sensor"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:488 959d6ec200344173bf967157a995b362
+msgid "AS5600"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:490 45f1a93cef834c33bcee8ed7e651550e
+msgid "Rot. Function"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:490 610d7a78078045a5baa976fc7bd604b6
+msgid "Rudder"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:492 2efd7399c095443fb3240479f505df8b
+msgid "Rot. Offset"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:492 84f74147c8914a29b8be585e71d32192
+msgid "0"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:495 d243af53ae664f00829abacb7a07befd
+msgid ""
+"Je nach Erfordernissen muss noch der Offset über **Rot. Offset** "
+"eingestellt werden."
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:499 14a2b8ef460449c082bccae07d23cfca
+msgid "1Wire-Bus"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:501 079b6ccc447940cba398895472fc1ec7
+msgid ""
+"Über den 1Wire-Buss lassen sich bis zu 8 Temperatursensoren des Typs "
+"DS18B20 anschließen. Damit können Temperaturen im Bereich von -55°C bis "
+"125°C an verschiedenen Stellen im Boot gemessen werden. Die Sensoren gibt"
+" es als elektronisches Bauteil in Transistorform (TO-92) oder in einer "
+"wasserdichten Metallhülse mit Kabel. Die letztere Variante eignet sich am"
+" besten im Marinebereich."
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:505 faf4496fed754861827cb710ce206dbd
+msgid "Abb.: DS18B20 TO-92"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:509 e93558ef113544d1aaf9d32ee40bf5fa
+msgid "Abb.: DS18B20 Wasserdicht"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:511 f1973763c6444c2383e92c64059a39b7
+msgid ""
+"Wenn Sie im Boot an verschiedenen Stellen Temperaturen messen möchten, "
+"erstellen Sie sich ein Backbone mit Abzweigdosen und schließen die "
+"Sensoren an den Abzweigdosen an. So entstehen im 1Wire-Bussystem nicht "
+"ungewollt lange Stichleitungen."
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:514 f7ceaa384d104a0494de71a805204984
+msgid "Konfigurationsbeispiel 1Wire"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:516 6322066eedb84108a9dca7c2fd0d50d5
+msgid ""
+"Im unteren Bild ist eine Schaltung zu sehen, in der 4 DS18B20 verwendet "
+"werden. Die Sensoren sind dabei über einen Spannungswandler LM7805 direkt"
+" versorgt. Diese Schaltung funktioniert für alle Sensoren, die am Markt "
+"erhältlich sind."
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:520 a2009a0b46c24edebf5561b7ed66a48c
+msgid "Abb.: 1Wire-Anbindung von externen Temperatur-Sensoren (direkt versorgt)"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:527 c91e3ce604a840ca8da1725f8c482d0b
+msgid "Temp. Sensor"
+msgstr ""
+
+#: ../../usermanual/dataexchange.rst:527 0c286a0bc7c0437fb69a84ae2bed0078
+msgid "DS18B20"
+msgstr ""
+

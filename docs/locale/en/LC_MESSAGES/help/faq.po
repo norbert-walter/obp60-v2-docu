@@ -1,0 +1,172 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Open Boat Projects
+# This file is distributed under the same license as the OBP60 V2
+# Dokumentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OBP60 V2 Dokumentation \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-08-26 14:37+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../help/faq.rst:2 0241189345be42db9e0a0be53286041f
+msgid "Fragen und Antworten"
+msgstr ""
+
+#: ../../help/faq.rst:4 d0e9e937f54a434b96091de15ad874c9
+msgid "**Warum flackert der Bildschirm in regelmäßigen Abständen?**"
+msgstr ""
+
+#: ../../help/faq.rst:6 a74310ba1ee24e86adbda4a43a886c3e
+msgid ""
+"Das Flackern des Bildschirmes dienst zum Auffrischen des "
+"Bildschirminhaltes. In regelmäßigen Abständen muss das Display den "
+"Bildschirminhalt durch einen Voll-Refresh komplett erneuern, um "
+"Geisterbilder zu entfernen und den Kontrast aufzufrischen. Dazu wird der "
+"Bildinhalt invertiert, mehrmals gelöscht und wieder vollständig "
+"aufgebaut."
+msgstr ""
+
+#: ../../help/faq.rst:8 991dcea419ed4a5ab541bd7cc843ed24
+msgid "**Wie kann ich das flackern des Bildschirms reduzieren?**"
+msgstr ""
+
+#: ../../help/faq.rst:10 2ba162ce94b44b88a9bc44410be856b4
+msgid ""
+"Die Zeitpunkt eines Voll-Refreshes hängt von einigen Faktoren ab. In den "
+"ersten 5 Minuten nach einem Neustart des Gerätes erfolgt jede Minute ein "
+"Voll-Refresh, um eine Temperaturanpassung des Displays aus einem kalten "
+"Zustand heraus zu ermöglichen. Nach jedem Seitenwechsel wird ebenfalls "
+"ein Voll-Refresh ausgeführt. Das gilt für die Seite die zu letzt "
+"aufgerufen wurde und die mindestens 4s lang angezeigt wird. Dieses "
+"Verhalten bei Seitenwechsel lässt sich über den Parameter **Refresh** "
+"abstellen. Das ist aber mit dem Nachteil verbunden, dass sich "
+"Geisterbilder alter Seiten nicht vollständig entfernen lassen. Zusätzlich"
+" lässt sich festlegen in welchen Intervallen ein Voll-Refresh generell "
+"ausgeführt wird. Die Zykluszeit kann im Bereich von 1...10 min über den "
+"Parameter **Full Refresh Time** eingestellt werden. Der Voll-Refresh "
+"lässt sich zusätzlich über den Parameter **Fast Refresh** beschleunigen. "
+"Dann laufen die Voll-Refreshes schneller ab. Die Beschreibungen zu den "
+"Refresh-Einstellungen finden Sie im Kapitel :ref:`Config - OBP Display`. "
+"Die Einstellungen zum Bildschirm-Refresh haben auch Auswirkungen auf den "
+"Bildschirmkontrast unter Sonneneinwirkung."
+msgstr ""
+
+#: ../../help/faq.rst:12 de104d1421bb4dbd91b200044f6aecd2
+msgid "**Warum verblasst das Display unter Sonneneinwirkung?**"
+msgstr ""
+
+#: ../../help/faq.rst:14 75cb5fdcf822408aa481716a2e33e98c
+msgid ""
+"Bei extremer Sonneneinwirkung erhitzt sich das e-Paper-Display auf und "
+"verursacht einen Kontrastverlust bei der partiellen "
+"Bildschirmaktualisierung. Das Bild wird zunehmend grau und es entstehen "
+"einige Streifen im Display. Das Display ist nicht defekt. Der Zustand "
+"lässt sich durch einen Voll-Refresh beseitigen."
+msgstr ""
+
+#: ../../help/faq.rst:16 1414778c3d15446ea99da22fc855c0bb
+msgid "**Was kann man dagegen tun?**"
+msgstr ""
+
+#: ../../help/faq.rst:18 ef527dbadad6485a8c7a04745f65a69e
+msgid ""
+"Der Effekt kann reduziert werden, indem direkte Sonnenstrahlung auf das "
+"Display vermieden wird. Eine andere Möglichkeit zur Verbesserung besteht "
+"darin, die Voll-Refreshes in kürzeren Zyklen ausführen zu lassen. Im "
+"Kapitel :ref:`Config - OBP Display` finden Sie eine Tabelle zu sinnvollen"
+" Einstellungen unter verschiedenen Bedingungen. Auch der Stromverbrauch "
+"des Gerätes hat einen Einfluss auf den Kontrastverlust, da die "
+"Verlustwärme im Gerät ebenfalls zur Temperaturerhöhung beiträgt."
+msgstr ""
+
+#: ../../help/faq.rst:20 5273ebbf44c448d3a7ea4f794851e234
+msgid "**Welche Möglichkeiten bestehen den Stromverbrauch zu reduzieren?**"
+msgstr ""
+
+#: ../../help/faq.rst:22 35033dd969b647d9893ff730628f1493
+msgid ""
+"Der Stromverbrauch lässt sich reduzieren, indem der Access Point "
+"standardmäßig nach einer vorgegebenen Zeit abgeschaltet wird. Zusätzlich "
+"kann der Prozessortakt reduziert werden. Einige Geräte wie das OBP60 "
+"verfügen über spezielle Stromsparfunktionen über den Parameter **Power "
+"Mode**. Details zu Stromsparfunktionen finden Sie im Kapitel :ref:`Config"
+" - OBP Hardware`."
+msgstr ""
+
+#: ../../help/faq.rst:25 60f88f74120746958e3018d7705e2d7b
+msgid "**Warum startet mein OBP60 nicht, wenn ich die Spannung zuschalte?**"
+msgstr ""
+
+#: ../../help/faq.rst:27 b88198c111b246a3b425d2f8afa33a48
+msgid ""
+"Das Problem liegt am Softstart-Verhalten des StepDown- Wandler, der die "
+"12V Versorgungsspannung in eine 5V-Gerätespannung umwandelt. Die "
+"Zeitdauer des Softstarts ist auf 5 ms begrenzt. Beim Start wird "
+"kurzzeitig recht viel Strom gezogen, weil die internen Kondensatoren "
+"geladen werden. Ist der Leitungswiderstand zu groß, läuft der "
+"Startprozess nicht schnell genug ab und der StepDown-Wandler startet "
+"nicht. Er hängt dann in einem undefinierten Zustand und kommt aus diesem "
+"Zustand nicht mehr heraus. Empfehlenswert sind für Stromversorgungskabel "
+"Leiterquerschnitte von 0,5...0,75 mm2. Das Kabel sollte direkt an der "
+"Schalttafel angeschlossen sein und so kurz wie möglich sein und keine "
+"weiteren Abgänge haben. Überlängen des Kabels hinter der Verkleidung "
+"sollten vermieden werden. Ebenso das abgreifen von Strom an anderen "
+"Geräten. Hilfsweise kann man hinten am 12V-Eingang einen "
+"Elektrolytkondensator von ca. 470...1000 uF parallel anschließen. Damit "
+"sollte sich das Problem reduzieren lassen."
+msgstr ""
+
+#: ../../help/faq.rst:29 4bcf5923d0d6486098220f971bda96c3
+msgid "**Warum funktionieren WiFi-Verbindungen nicht richtig?**"
+msgstr ""
+
+#: ../../help/faq.rst:31 5611c380ad76490ab6879fe48d08cffe
+msgid ""
+"WiFi-Verbindungen sind auf das 2,4 GHz Frequenzband begrenzt. Andere "
+"Teilnehmer außerhalb des eigenen Access Point nutzen das selbe "
+"Frequenzband und müssen sich die Bandbreite mit anderen Teilnehmern "
+"teilen. In größeren Häfen kann es dazu kommen, dass die Bandbreite aller "
+"Kanäle durch zu viele Teilnehmer ausgelastet ist. In diesem Fall kommt es"
+" zu Verzögerungen bei der Datenübertragung. Sie müssen dann mit einem "
+"trägen Ansprechverhalten der Messdaten im Display rechnen, wenn die Daten"
+" über WiFi-Verbindungen übertragen werden. Leitungsgebundene "
+"Datenübertragungen aus Bussystemen wie NMEA2000 oder NMEA0183 sind davon "
+"nicht betroffen. Etwas Abhilfe kann die Auswahl der Übertagungskanäle "
+"Kanäle 1 und 13 bewirken, da sie sich an den Rändern des 2,4 GHz "
+"Frequenzbereiches befinden und nur einen Nachbarkanal haben."
+msgstr ""
+
+#: ../../help/faq.rst:36 599eaf4713384d5584e61f70d92fb655
+msgid "**Das GPS bekommt beim OBP60 keinen Fix. Was kann ich tun?**"
+msgstr ""
+
+#: ../../help/faq.rst:38 52095714edd24932996f6438ee4f95eb
+msgid ""
+"Beim OBP60 befindet sich die GPS-Antenne auf der Rückseite des Displays. "
+"Sind direkt hinter dem Display Metallteile oder Metallflächen, so kann "
+"der GPS-Empfang behindert oder unmöglich sein. Sorgen Sie dafür, dass "
+"sich keine größeren Metallteile oder Metallflächen hinter dem Display "
+"befinden. Kann der Empfang nicht verbessert werden, so besteht die "
+"Möglichkeit eine externe GPS-Antenne zu verwenden. Sie sollten die GPS-"
+"Antenne möglichst an einer Stelle positionieren, bei der die Antenne "
+"freie Sicht zum Himmel hat. Damit erzielen Sie die beste GPS-"
+"Empfangsleistung und hohe Positionsgenauigkeiten. In einigen Fällen "
+"verursachen Stromversorgungsgeräte mit Schaltreglern wie z.B. bei LED-"
+"Beleuchtungen unzulässige Störungen, die sich auf die Empfangsleistung "
+"von GPS-Signalen auswirken können. Versuchen Sie in solchen Fällen "
+"systematisch die Störquelle zu ermitteln, indem sie Geräte zu- und "
+"abschalten und die Auswirkungen auf die GPS-Empfangsqualität beobachten."
+msgstr ""
+
