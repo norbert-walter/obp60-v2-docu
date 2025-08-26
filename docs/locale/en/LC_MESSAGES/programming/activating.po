@@ -396,8 +396,8 @@ msgid ""
 "Wenn der Kompiliervorgang erfolgreich abgeschlossen ist, sollten Sie die "
 "folgende Meldung sehen:"
 msgstr ""
-"If the compilation process is successful, you should see the following "
-"message:"
+"If the compilation process completes successfully, you should see the "
+"following message:"
 
 #: ../../programming/activating.rst:106 64a73153215341e58bb8c7cd9d8eeec0
 #, fuzzy

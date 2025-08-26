@@ -433,7 +433,7 @@ msgstr ""
 #: ../../assembling/device.rst:81 f956d784287f42e0a7a2d40f84968f7c
 #, fuzzy
 msgid "Abb.: Unbestückte Platinen-Oberseite"
-msgstr "Fig.: Unpopulated board top side"
+msgstr "Fig.: Unpopulated top side of the board"
 
 #: ../../assembling/device.rst:85 4583cde7801943c2a5696edb4740c6f9
 #, fuzzy
