@@ -14,7 +14,7 @@ ENV-Variablen:
   BATCH_SIZE=128          # max. 128 Texte/Request (Default: 128)
   THROTTLE_SECONDS=0.0    # Pause zwischen Requests in Sekunden (Default: 0.0)
 
-  POSTPROCESS=none|capitalize_first|title_case   # Nachbearbeitung (Default: none)
+  POSTPROCESS=none|capitalize_first|title_case   # Nachbearbeitung (Default: none, capitalize_first = große Anfangsbuchstaben bei Überschriften, title_case = heuristische Title Case für Überschriften, kleine Stoppwörter bleiben klein)
   POSTPROCESS_LANGS=en,fr                        # Für welche Zielsprachen anwenden (Default: en)
   HEADING_MAX_LEN=70                             # Heuristik-Grenze für Title-Case (Default: 70)
 
