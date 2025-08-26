@@ -300,8 +300,8 @@ msgid ""
 msgstr ""
 "The OBP60 can also be powered via USB-C. However, the USB port must be able "
 "to supply a sufficient voltage of 5.1V and a current of up to 1A. The USB "
-"port on the OBP60 features reverse flow protection, allowing simultaneous "
-"input of 12V/24V and 5V via the USB port."
+"port on the OBP60 features reverse flow protection, allowing 12V/24V and 5V "
+"to be supplied simultaneously via the USB port."
 
 #: ../../usermanual/start.rst:79 3ff26389f1834541995f09a178eb6b84
 #, fuzzy

@@ -1438,11 +1438,11 @@ msgid ""
 "Gegenseite ebenfalls **Seasmart** aktiviert ist."
 msgstr ""
 "Seasmart allows you to translate NMEA 2000 data into NMEA 0183 telegrams. If"
-" you enable **Seasmart**, all NMEA 2000 data is output and tunneled via NMEA"
-" 0183 telegrams. The data is transmitted in binary form in a single NMEA "
-"0183 telegram. This allows you to transmit NMEA 2000 data from one OBP60 "
-"(TCP server) to another OBP60 (TCP client) via Wi-Fi. Make sure that "
-"**Seasmart** is also enabled on the other end."
+" you enable Seasmart, all NMEA 2000 data is output and tunneled via NMEA "
+"0183 telegrams. The data is transmitted in binary form in a single NMEA 0183"
+" telegram. This allows you to transmit NMEA 2000 data from one OBP60 (TCP "
+"server) to another OBP60 (TCP client) via Wi-Fi. Make sure Seasmart is also "
+"enabled on the other end."
 
 #: ../../usermanual/configuration.rst:351 c944fd338fe745619c1bc7d42bf4bbef
 #, fuzzy
@@ -3930,7 +3930,7 @@ msgstr "**LON** - Longitude, geographical altitude"
 #: ../../usermanual/configuration.rst:938 8191e27778df4faabcfe6ec2a6f4fed3
 #, fuzzy
 msgid "**Log** - Log, Entfernung"
-msgstr "**Log** - Log, distance"
+msgstr "**Log** - Log, Distance"
 
 #: ../../usermanual/configuration.rst:939 9100dc95b8924d89946f40d347284fe3
 #, fuzzy
