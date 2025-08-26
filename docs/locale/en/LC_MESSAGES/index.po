@@ -31,9 +31,8 @@ msgid "Technische Daten"
 msgstr "Technical data"
 
 #: ../../index.rst:23
-#, fuzzy
 msgid "Einführung"
-msgstr "introduction"
+msgstr "Introduction"
 
 #: ../../index.rst:31
 #, fuzzy
@@ -51,9 +50,8 @@ msgid "Inbetriebnahme"
 msgstr "Commissioning"
 
 #: ../../index.rst:31
-#, fuzzy
 msgid "Konfiguration"
-msgstr "configuration"
+msgstr "Configuration"
 
 #: ../../index.rst:31
 #, fuzzy
@@ -111,14 +109,12 @@ msgid "Funktionstest"
 msgstr "Functional test"
 
 #: ../../index.rst:46
-#, fuzzy
 msgid "Zusammenbau"
-msgstr "assembly"
+msgstr "Assembly"
 
 #: ../../index.rst:57
-#, fuzzy
 msgid "Programmierumgebung"
-msgstr "programming environment"
+msgstr "Programming environment"
 
 #: ../../index.rst:57
 #, fuzzy
@@ -136,14 +132,12 @@ msgid "Web-Flashtool"
 msgstr "Web-Flashtool"
 
 #: ../../index.rst:57
-#, fuzzy
 msgid "Programmierung"
-msgstr "programming"
+msgstr "Programming"
 
 #: ../../index.rst:67
-#, fuzzy
 msgid "Fragen und Antworten"
-msgstr "questions and answers"
+msgstr "Questions and answers"
 
 #: ../../index.rst:67
 #, fuzzy
@@ -176,9 +170,8 @@ msgid "Spenden"
 msgstr "Donate"
 
 #: ../../index.rst:67
-#, fuzzy
 msgid "Glossar"
-msgstr "glossary"
+msgstr "Glossary"
 
 #: ../../index.rst:67
 #, fuzzy
@@ -201,9 +194,8 @@ msgid "Documentation Status"
 msgstr "Documentation Status"
 
 #: ../../index.rst:10 757ca611c2ff402dbc7dbb7cf108c8c5
-#, fuzzy
 msgid "Frage `ChatGPT`_ über diese Seite"
-msgstr "Question `ChatGPT`_ about this page"
+msgstr "Ask `ChatGPT`_ about this page"
 
 #: ../../index.rst:15 459c95855d594f57b004171ee1b31b06
 #, fuzzy
