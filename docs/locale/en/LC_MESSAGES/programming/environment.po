@@ -7,114 +7,156 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: OBP60 V2 Dokumentation \n"
+"Project-Id-Version: OBP60 V2 Dokumentation\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-26 14:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: en\n"
 "Language-Team: en <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../programming/environment.rst:2 8fc1153544d94d7887482f1996192ee0
+#, fuzzy
 msgid "Programmierumgebung"
-msgstr ""
+msgstr "Programming environment"
 
 #: ../../programming/environment.rst:4 6266d6d442ae46b1b763d2924605edd6
+#, fuzzy
 msgid ""
-"Als Programmierumgebung für das OBP40 wird das kostenlose "
-"Entwicklungstool **Visual Studio Code** in Verbindung mit **PlatformIO** "
-"verwendet. Diese Kombination bietet Vorteile gegenüber der Arduino-IDE, "
-"da projektbezogen die verwendete Hardware und die Bibliotheken in den "
-"richtigen Versionen hinzugelinkt sind und Sie sich um diese Dinge nicht "
-"kümmern müssen. Zusätzlich verfügt Visual Studio Code über eine mächtige "
-"Querverweisliste, so dass Sie den Code besser verstehen und "
-"nachvollziehen können. Intellisense unterstützt Sie bei der korrekten "
-"Verwendung von Funktionsaufrufen und Variablen. Über Github können Sie "
-"von Visual Studio Code aus auf den aktuellsten Firmware-Code zugreifen "
-"und sind damit immer auf dem aktuellsten Stand."
+"Als Programmierumgebung für das OBP40 wird das kostenlose Entwicklungstool "
+"**Visual Studio Code** in Verbindung mit **PlatformIO** verwendet. Diese "
+"Kombination bietet Vorteile gegenüber der Arduino-IDE, da projektbezogen die"
+" verwendete Hardware und die Bibliotheken in den richtigen Versionen "
+"hinzugelinkt sind und Sie sich um diese Dinge nicht kümmern müssen. "
+"Zusätzlich verfügt Visual Studio Code über eine mächtige Querverweisliste, "
+"so dass Sie den Code besser verstehen und nachvollziehen können. "
+"Intellisense unterstützt Sie bei der korrekten Verwendung von "
+"Funktionsaufrufen und Variablen. Über Github können Sie von Visual Studio "
+"Code aus auf den aktuellsten Firmware-Code zugreifen und sind damit immer "
+"auf dem aktuellsten Stand."
 msgstr ""
+"The free development tool **Visual Studio Code** is used in conjunction with"
+" **PlatformIO** as the programming environment for the OBP40. This "
+"combination offers advantages over the Arduino IDE, as the hardware and "
+"libraries used are linked in the correct versions for each project, "
+"eliminating the need to worry about these details. Visual Studio Code also "
+"features a powerful cross-reference list, allowing you to better understand "
+"and follow the code. Intellisense supports you in the correct use of "
+"function calls and variables. You can access the latest firmware code from "
+"Visual Studio Code via Github, ensuring you're always up to date."
 
 #: ../../programming/environment.rst:8 ce26c5ebe4d24f70970c6947c84ed738
+#, fuzzy
 msgid "Abb.: Visual Studio Code"
-msgstr ""
+msgstr "Abb.: Visual Studio Code"
 
 #: ../../programming/environment.rst:10 f7b097c1e52f4893ad867b9b5c111853
+#, fuzzy
 msgid ""
 "Visual Studio Code mit PlatformIO ist für alle gängigen Betriebssysteme "
 "verfügbar wie:"
 msgstr ""
+"Visual Studio Code with PlatformIO is available for all major operating "
+"systems such as:"
 
 #: ../../programming/environment.rst:12 1c13edab4f984caf9362dac0a1e00540
+#, fuzzy
 msgid "Linux"
-msgstr ""
+msgstr "Linux"
 
 #: ../../programming/environment.rst:13 8d4cbc77cf424024b76d49e9ff133161
+#, fuzzy
 msgid "Windows"
-msgstr ""
+msgstr "Windows"
 
 #: ../../programming/environment.rst:14 d549be7ee3c447c8baf48efa305931a4
+#, fuzzy
 msgid "Mac OS"
-msgstr ""
+msgstr "Mac OS"
 
 #: ../../programming/environment.rst:16 c7174f3dc9a647b2ae117c31b25a8cc0
+#, fuzzy
 msgid ""
 "Wer an der Weiterentwicklung des Firmware-Codes interessiert ist, sollte "
-"Visual Studio Code mit PlatformIO in Verbindung mit Github nutzen. So "
-"kann eine breite Community an der Weiterentwicklung mitwirken und den "
-"Firmware-Code erweitern und verbessern. Aufgetretene Fehler und Wünsche "
-"der Community verwalten wir über Issues im Trackingsystem von Github. Im "
-"Segeln-Forum gibt es eine große Community, die an der Weiterentwicklung "
-"mitarbeitet und auf Support-Fragen antworten kann."
+"Visual Studio Code mit PlatformIO in Verbindung mit Github nutzen. So kann "
+"eine breite Community an der Weiterentwicklung mitwirken und den Firmware-"
+"Code erweitern und verbessern. Aufgetretene Fehler und Wünsche der Community"
+" verwalten wir über Issues im Trackingsystem von Github. Im Segeln-Forum "
+"gibt es eine große Community, die an der Weiterentwicklung mitarbeitet und "
+"auf Support-Fragen antworten kann."
 msgstr ""
+"Anyone interested in further developing the firmware code should use Visual "
+"Studio Code with PlatformIO in conjunction with Github. This allows a broad "
+"community to contribute to the further development and expand and improve "
+"the firmware code. We manage bugs and community requests via issues in the "
+"Github tracking system. The Sailing Forum has a large community that "
+"contributes to further development and can answer support questions."
 
 #: ../../programming/environment.rst:18 df7bbc873b6644c4b9aaeb803af57d52
+#, fuzzy
 msgid "`Visual Studio Code`_"
-msgstr ""
+msgstr "`Visual Studio Code`_"
 
 #: ../../programming/environment.rst:19 d58181e2fc1b471e81a2824e5bedccb1
+#, fuzzy
 msgid "**Notwendige Erweiterungen**"
-msgstr ""
+msgstr "**Necessary extensions**"
 
 #: ../../programming/environment.rst:20 314b1fa8c5644876931aff0a4fabce7d
+#, fuzzy
 msgid "PlatformIO"
-msgstr ""
+msgstr "PlatformIO"
 
 #: ../../programming/environment.rst:21 01a93c15292d470ea0af68b139a8d07c
+#, fuzzy
 msgid "C/C++"
-msgstr ""
+msgstr "C/C++"
 
 #: ../../programming/environment.rst:22 90a980da7a8d418882cf97802756d47e
+#, fuzzy
 msgid "`Github-Projekt-Repository`_"
-msgstr ""
+msgstr "`Github-Projekt-Repository`_"
 
 #: ../../programming/environment.rst:23 93dc4f54f35041f8ae0a2e05c08f6fb4
+#, fuzzy
 msgid "`Issues Tracking System`_"
-msgstr ""
+msgstr "`Issues Tracking System`_"
 
 #: ../../programming/environment.rst:24 46c33ac504ad40b6a0a0c03f013df5c4
+#, fuzzy
 msgid "`Community Forum`_"
-msgstr ""
+msgstr "`Community Forum`_"
 
 #: ../../programming/environment.rst:32 93793afeb9d146d08a93800968d0895c
+#, fuzzy
 msgid ""
 "Wie man Visual Studio Code installiert und benutzt ist im Kapitel "
 ":ref:`Visual Studio Code / PlatformIO` beschrieben."
 msgstr ""
+"How to install and use Visual Studio Code is described in chapter "
+":ref:`Visual Studio Code / PlatformIO`."
 
 #: ../../programming/environment.rst:34 65ab7d4e7bb44534bc2a82cdb3c1cb1e
+#, fuzzy
 msgid ""
-"Wer kleine Änderungen am Code unterwegs unkompliziert vornehmen möchte "
-"ohne eine aufwändige Installation von Visual Studio Code und PlatformIO "
-"durchzuführen, kann Gitpod benutzen. Gitpod ist vollständig webbasiert. "
-"Sie benötigen nur einen aktuellen Webbrowser und können sofort mit der "
-"Programmierung beginnen. Der Workplace von Gitpod orientiert sich an "
-"Visual Studio Code und enthält alle vorinstallierten Komponenten die Sie "
-"zur Softwareentwicklung benötigen. Gitpod eignet sich dahzer hervorragend"
-" für Anfänger. Im Kapitel :ref:`Gitpod` ist die Benutzung beschrieben."
+"Wer kleine Änderungen am Code unterwegs unkompliziert vornehmen möchte ohne "
+"eine aufwändige Installation von Visual Studio Code und PlatformIO "
+"durchzuführen, kann Gitpod benutzen. Gitpod ist vollständig webbasiert. Sie "
+"benötigen nur einen aktuellen Webbrowser und können sofort mit der "
+"Programmierung beginnen. Der Workplace von Gitpod orientiert sich an Visual "
+"Studio Code und enthält alle vorinstallierten Komponenten die Sie zur "
+"Softwareentwicklung benötigen. Gitpod eignet sich dahzer hervorragend für "
+"Anfänger. Im Kapitel :ref:`Gitpod` ist die Benutzung beschrieben."
 msgstr ""
-
+"Anyone who wants to easily make small changes to their code on the go "
+"without the hassle of installing Visual Studio Code and PlatformIO can use "
+"Gitpod. Gitpod is completely web-based. All you need is a modern web browser"
+" and you can start programming immediately. Gitpod's workplace is modeled on"
+" Visual Studio Code and includes all the pre-installed components you need "
+"for software development. Gitpod is therefore ideal for beginners. Chapter "
+":ref:`Gitpod` describes how to use it."

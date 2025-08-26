@@ -7,251 +7,353 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: OBP60 V2 Dokumentation \n"
+"Project-Id-Version: OBP60 V2 Dokumentation\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-26 14:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: en\n"
 "Language-Team: en <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../usermanual/elements.rst:2 5cf749aeaaea4665ac7433107519f7e9
+#, fuzzy
 msgid "Bedienelemente"
-msgstr ""
+msgstr "Controls"
 
 #: ../../usermanual/elements.rst:8 c1c61e0865534cb8b621abe08aa2e975
+#, fuzzy
 msgid "Statuszeile"
-msgstr ""
+msgstr "Status bar"
 
 #: ../../usermanual/elements.rst:10 e4c6b5a9dfd9417592caafebf23f3a14
-msgid "Die Statuszeile dient zur Anzeige von Statusinformationen. Dazu zählen:"
-msgstr ""
+#, fuzzy
+msgid ""
+"Die Statuszeile dient zur Anzeige von Statusinformationen. Dazu zählen:"
+msgstr "The status bar displays status information, including:"
 
 #: ../../usermanual/elements.rst:12 2cfe6b1151d245fd85e18594460ebe33
+#, fuzzy
 msgid "**Zustandsanzeige des Access Points**"
-msgstr ""
+msgstr "**Access Point Status Display**"
 
 #: ../../usermanual/elements.rst:13 2bec3b7944de44529f379d938083f763
+#, fuzzy
 msgid "**AP** - Access Point"
-msgstr ""
+msgstr "**AP** - Access Point"
 
 #: ../../usermanual/elements.rst:15 f7f92c6387684498a29d8c285845cd2f
+#, fuzzy
 msgid "**Zustandsanzeige aktiver Bussysteme und Komponenten**"
-msgstr ""
+msgstr "**Status display of active bus systems and components**"
 
 #: ../../usermanual/elements.rst:16 846d51df8e6d43c7ba9b638ff9b2c822
+#, fuzzy
 msgid "**N2K** - NMEA2000"
-msgstr ""
+msgstr "**N2K** - NMEA2000"
 
 #: ../../usermanual/elements.rst:17 cf032351f925400da8bc6b873d51e6b9
+#, fuzzy
 msgid "**183** - NMEA0183"
-msgstr ""
+msgstr "**183** - NMEA0183"
 
 #: ../../usermanual/elements.rst:18 eee22d8c4cba408c856693fe1cf285b5
+#, fuzzy
 msgid "**USB** - NMEA0183 via USB"
-msgstr ""
+msgstr "**USB** - NMEA0183 via USB"
 
 #: ../../usermanual/elements.rst:19 b5221c0a886d4f7e84e515b11817db7e
+#, fuzzy
 msgid "**TCP** - NMEA0183 via TCP (WiFi)"
-msgstr ""
+msgstr "**TCP** - NMEA0183 via TCP (WiFi)"
 
 #: ../../usermanual/elements.rst:20 a338a08201c64a09a338a65fe4c3f746
+#, fuzzy
 msgid "**GPS** - GPS-Sensor des OBP60 (Position gefunden)"
-msgstr ""
+msgstr "**GPS** - GPS sensor of the OBP60 (position found)"
 
 #: ../../usermanual/elements.rst:22 f4f00aaa98b148ffbd832856f955af19
+#, fuzzy
 msgid "Lebenszeichen (pulsierender Punkt)"
-msgstr ""
+msgstr "Sign of life (pulsating point)"
 
 #: ../../usermanual/elements.rst:23 0373f0ff3fc9439c8f007ff105dd2479
+#, fuzzy
 msgid "Datum und Uhrzeit (landesspezifisch)"
-msgstr ""
+msgstr "Date and time (country-specific)"
 
 #: ../../usermanual/elements.rst:24 454c27336d424966b57f9f7ccf65b3b6
+#, fuzzy
 msgid "Anzeige der Zeitzone"
-msgstr ""
+msgstr "Time zone display"
 
 #: ../../usermanual/elements.rst:26 8c90744779e4478cad6f2dc9527cef85
+#, fuzzy
 msgid "**UTC** - Weltzeit"
-msgstr ""
+msgstr "**UTC** - Universal Time"
 
 #: ../../usermanual/elements.rst:27 41325071fb45427abe587be5185eb1d5
+#, fuzzy
 msgid "**LOT** - Lokalzeit"
-msgstr ""
+msgstr "**LOT** - Local time"
 
 #: ../../usermanual/elements.rst:32 6a600c9b5e9e4a50910088db56b42022
+#, fuzzy
 msgid ""
-"Die Statuszeile ist in allen Anzeigeseiten zu sehen, sie zeigt den "
-"aktuellen Status des Gerätes an."
+"Die Statuszeile ist in allen Anzeigeseiten zu sehen, sie zeigt den aktuellen"
+" Status des Gerätes an."
 msgstr ""
+"The status bar is visible on all display pages and shows the current status "
+"of the device."
 
 #: ../../usermanual/elements.rst:35 82c0e939afd9478eabf5b0af3dd87f04
+#, fuzzy
 msgid ""
-"Der Anzeigeinhalt eines E-Paper Displays bleibt beim Ausschalten des "
-"Gerätes erhalten. Der pulsierende Punkt in der Statuszeile kennzeichnet "
-"das Gerät als aktiv. Sollte der Punkt nicht blinken, so ist die Software "
-"inaktiv oder das Gerät wurde ausgeschaltet."
+"Der Anzeigeinhalt eines E-Paper Displays bleibt beim Ausschalten des Gerätes"
+" erhalten. Der pulsierende Punkt in der Statuszeile kennzeichnet das Gerät "
+"als aktiv. Sollte der Punkt nicht blinken, so ist die Software inaktiv oder "
+"das Gerät wurde ausgeschaltet."
 msgstr ""
+"The display content of an e-paper display remains intact when the device is "
+"turned off. The pulsing dot in the status bar indicates the device is "
+"active. If the dot is not flashing, the software is inactive or the device "
+"has been turned off."
 
 #: ../../usermanual/elements.rst:38 48c77c5099344d048b73d5f827ebf14c
+#, fuzzy
 msgid "Anzeigebereich"
-msgstr ""
+msgstr "Display area"
 
 #: ../../usermanual/elements.rst:40 76a5fb25511e4ac6a36ecd97bc8a20e9
+#, fuzzy
 msgid ""
 "Im mittleren Bereich befindet sich der Anzeigebereich. Dort werden alle "
-"relevanten Informationen angezeigt. Bei jedem Wechsel auf eine neue Seite"
-" wird der Inhalt des Anzeigebereichs verändert. Die Aktualisierung des "
+"relevanten Informationen angezeigt. Bei jedem Wechsel auf eine neue Seite "
+"wird der Inhalt des Anzeigebereichs verändert. Die Aktualisierung des "
 "Anzeigebereichs erfolgt jede Sekunde als partieller Bild-Refresh."
 msgstr ""
+"The display area is located in the middle section. All relevant information "
+"is displayed there. The content of the display area changes each time you "
+"switch to a new page. The display area is updated every second with a "
+"partial image refresh."
 
 #: ../../usermanual/elements.rst:42 7c103e55be724e099b7aecf6af3d1a8d
+#, fuzzy
 msgid ""
 "Bedingt durch die E-Paper Technologie sind im Display nach einiger Zeit "
-"Geisterbilder von alten Anzeigezuständen zu sehen. Um die Geisterbilder "
-"zu entfernen, wird in regelmäßigen Abständen von 10 min ein Voll-Refresh "
-"der Anzeige durchgeführt. Dabei wird der komplette Bildinhalt mehrmals "
+"Geisterbilder von alten Anzeigezuständen zu sehen. Um die Geisterbilder zu "
+"entfernen, wird in regelmäßigen Abständen von 10 min ein Voll-Refresh der "
+"Anzeige durchgeführt. Dabei wird der komplette Bildinhalt mehrmals "
 "invertiert, dann gelöscht und anschließend neu geschrieben. Man erkennt "
-"einen Voll-Refresh am kurzen Flackern der Anzeige. Das gleiche passiert 4"
-" Sekunden nach einem Seitenwechsel. Dadurch kann man schnell mehrere "
-"Anzeigeseiten nacheinander aufrufen. Erst bei der zuletzt aufgerufenen "
-"Seite wird nach 4 Sekunden ein Voll-Refresh durchgeführt, damit werden "
-"Geisterbilder alter Anzeigeseiten entfernt. Der regelmäßige Voll-Refresh "
-"ist per Default eingestellt und kann bei Bedarf über die Konfiguration "
+"einen Voll-Refresh am kurzen Flackern der Anzeige. Das gleiche passiert 4 "
+"Sekunden nach einem Seitenwechsel. Dadurch kann man schnell mehrere "
+"Anzeigeseiten nacheinander aufrufen. Erst bei der zuletzt aufgerufenen Seite"
+" wird nach 4 Sekunden ein Voll-Refresh durchgeführt, damit werden "
+"Geisterbilder alter Anzeigeseiten entfernt. Der regelmäßige Voll-Refresh ist"
+" per Default eingestellt und kann bei Bedarf über die Konfiguration "
 "deaktiviert werden."
 msgstr ""
+"Due to the e-paper technology, ghost images from previous display states can"
+" appear on the display after some time. To remove these ghost images, a full"
+" refresh of the display is performed at regular 10-minute intervals. The "
+"entire image content is inverted several times, then deleted, and finally "
+"rewritten. A full refresh can be recognized by the brief flickering of the "
+"display. The same happens 4 seconds after a page change. This allows you to "
+"quickly call up several display pages in succession. A full refresh is only "
+"performed after 4 seconds on the last page called up, thus removing ghost "
+"images from previous display pages. The regular full refresh is set by "
+"default and can be deactivated via the configuration if required."
 
 #: ../../usermanual/elements.rst:44 ddbcfbde56a746ff82e43605066ff0c7
+#, fuzzy
 msgid ""
-"Die Entstehung von Geisterbildern ist von der Display-Temperatur des "
-"OBP60 abhängig. Bei niedrigen Temperaturen sind Geisterbilder deutlicher "
-"zu sehen und die Anzeige reagiert träger als bei hohen Temperaturen. Kurz"
-" nach dem Einschalten wird für die ersten 5 Minuten jede Minute ein Voll-"
-"Refresh durchgeführt, damit sich das Display akklimatisieren kann. Die "
-"Plexiglasscheibe schützt vor zu großer UV-Strahlung der Sonne, ein IR-"
-"Filter vor übermäßiger Erwärmung."
+"Die Entstehung von Geisterbildern ist von der Display-Temperatur des OBP60 "
+"abhängig. Bei niedrigen Temperaturen sind Geisterbilder deutlicher zu sehen "
+"und die Anzeige reagiert träger als bei hohen Temperaturen. Kurz nach dem "
+"Einschalten wird für die ersten 5 Minuten jede Minute ein Voll-Refresh "
+"durchgeführt, damit sich das Display akklimatisieren kann. Die "
+"Plexiglasscheibe schützt vor zu großer UV-Strahlung der Sonne, ein IR-Filter"
+" vor übermäßiger Erwärmung."
 msgstr ""
+"The occurrence of ghosting depends on the OBP60's display temperature. At "
+"lower temperatures, ghosting is more noticeable and the display responds "
+"more slowly than at higher temperatures. Shortly after power-on, a full "
+"refresh is performed every minute for the first five minutes to allow the "
+"display to acclimatize. The Plexiglas panel protects against excessive UV "
+"radiation from the sun, and an IR filter prevents excessive heating."
 
 #: ../../usermanual/elements.rst:47 f887c8e22a524592a46c855042f408c5
+#, fuzzy
 msgid ""
-"Trotz Filter kann es bei extrem hoher Sonneneinstrahlung vorkommen, dass "
-"der Kontrast des Display-Inhaltes verloren geht. Schwarze Anzeigebereiche"
-" werden dann nur noch grau dargestellt. Das Display ist in dem Fall nicht"
-" defekt. Nach einem Voll-Refresh regeneriert sich das Display und der "
+"Trotz Filter kann es bei extrem hoher Sonneneinstrahlung vorkommen, dass der"
+" Kontrast des Display-Inhaltes verloren geht. Schwarze Anzeigebereiche "
+"werden dann nur noch grau dargestellt. Das Display ist in dem Fall nicht "
+"defekt. Nach einem Voll-Refresh regeneriert sich das Display und der "
 "Kontrast wird wieder vollständig hergestellt."
 msgstr ""
+"Despite the filter, the contrast of the display content may be lost in "
+"extremely strong sunlight. Black areas of the display will then appear gray."
+" The display is not defective in this case. After a full refresh, the "
+"display regenerates itself and the contrast is fully restored."
 
 #: ../../usermanual/elements.rst:50 be5062007ec14b8a91b3e489fa06f224
+#, fuzzy
 msgid ""
 "Wird das OBP60 nicht benutzt, löschen Sie bitte den Bildschirminhalt und "
-"decken das Gerät mit der Schutzkappe ab. So schützen Sie es vor zu großer"
-" Sonneneinstrahlung und vor Witterungseinflüssen."
+"decken das Gerät mit der Schutzkappe ab. So schützen Sie es vor zu großer "
+"Sonneneinstrahlung und vor Witterungseinflüssen."
 msgstr ""
+"When the OBP60 is not in use, please clear the screen and cover the device "
+"with the protective cap. This protects it from excessive sunlight and the "
+"elements."
 
 #: ../../usermanual/elements.rst:53 c719536402134e1eb366cfa2064a7045
+#, fuzzy
 msgid "Fußzeile"
-msgstr ""
+msgstr "Footer"
 
 #: ../../usermanual/elements.rst:57 2f0b5c1fbb8a4f84be06766f44a472b4
+#, fuzzy
 msgid ""
-"Die Fußzeile dient zur Bezeichnung der Tastenfunktionen. Die Belegung der"
-" Tasten ändert sich abhängig vom Inhalt der Anzeigeseiten. Aktive Tasten "
-"sind mit Kurzbezeichnungen in eckigen Klammern versehen wie z.B. "
-"``[AVG]``. Es kann auch Anzeigeseiten geben, die keine Tastenfunktionen "
-"enthalten. In der Mitte der Fußzeile werden weitere Informationen "
-"eingeblendet:"
+"Die Fußzeile dient zur Bezeichnung der Tastenfunktionen. Die Belegung der "
+"Tasten ändert sich abhängig vom Inhalt der Anzeigeseiten. Aktive Tasten sind"
+" mit Kurzbezeichnungen in eckigen Klammern versehen wie z.B. ``[AVG]``. Es "
+"kann auch Anzeigeseiten geben, die keine Tastenfunktionen enthalten. In der "
+"Mitte der Fußzeile werden weitere Informationen eingeblendet:"
 msgstr ""
+"The footer is used to label key functions. Key assignments change depending "
+"on the content of the display pages. Active keys are indicated by "
+"abbreviations in square brackets, such as ``[AVG]``. There may also be "
+"display pages that do not contain any key functions. Further information is "
+"displayed in the middle of the footer:"
 
 #: ../../usermanual/elements.rst:59 079a20c1bb9444d0adf619d4dd4dc41d
+#, fuzzy
 msgid "``[ <<<< 1/5 >>>> ]`` - Wischgeste aktiv"
-msgstr ""
+msgstr "``[ <<<< 1/5 >>>> ]`` - Swipe gesture active"
 
 #: ../../usermanual/elements.rst:60 6b90f63840c84692801d63d931d186d7
+#, fuzzy
 msgid "``[ Keylock active ]`` - Tasten gesperrt"
-msgstr ""
+msgstr "``[ Keylock active ]`` - Keys locked"
 
 #: ../../usermanual/elements.rst:62 de87c013306145e4bcac32d649e5e5e3
+#, fuzzy
 msgid ""
-"Sofern die Wischgeste aktiv ist, werden im Infobereich die aktuelle Seite"
-" und die Seitenanzahl angezeigt."
+"Sofern die Wischgeste aktiv ist, werden im Infobereich die aktuelle Seite "
+"und die Seitenanzahl angezeigt."
 msgstr ""
+"If the swipe gesture is active, the current page and the page number are "
+"displayed in the notification area."
 
 #: ../../usermanual/elements.rst:65 886ab063c8ed4b19a597403339301313
+#, fuzzy
 msgid "Sensor-Tasten"
-msgstr ""
+msgstr "Sensor buttons"
 
 #: ../../usermanual/elements.rst:67 10a6e0b0d2974228a5262003a07010a5
+#, fuzzy
 msgid ""
-"Das OBP60 hat 6 kapazitive Sensortasten am unteren Displayrand. Die "
-"Tasten reagieren auf Berührung durch Veränderung des Bezugspotenzials. "
+"Das OBP60 hat 6 kapazitive Sensortasten am unteren Displayrand. Die Tasten "
+"reagieren auf Berührung durch Veränderung des Bezugspotenzials. "
 "Wassertropfen oder Regen haben so gut wie keinen Einfluss auf die "
 "Auslösefunktion der Tasten. Aktuell sind folgende Tastenfunktionen "
 "realisiert:"
 msgstr ""
+"The OBP60 has six capacitive sensor buttons at the bottom of the display. "
+"The buttons respond to touch by changing the reference potential. Water "
+"drops or rain have virtually no effect on the buttons' trigger function. The"
+" following button functions are currently implemented:"
 
 #: ../../usermanual/elements.rst:69 9ccf541156c14634b436f3c86657df44
+#, fuzzy
 msgid "Konfiguration der Tasten-Sensitivität"
-msgstr ""
+msgstr "Configuring key sensitivity"
 
 #: ../../usermanual/elements.rst:70 3c4bcae405064226a0f88424a3057ea5
+#, fuzzy
 msgid "Wischen links / rechts"
-msgstr ""
+msgstr "Swipe left / right"
 
 #: ../../usermanual/elements.rst:71 5065a10713f54defb51b61de7975ed75
+#, fuzzy
 msgid "Kurzes Tippen"
-msgstr ""
+msgstr "Short tap"
 
 #: ../../usermanual/elements.rst:72 df207c78c35f46dcb35e9ea320e5af1c
+#, fuzzy
 msgid "Normales Drücken"
-msgstr ""
+msgstr "Normal pressing"
 
 #: ../../usermanual/elements.rst:73 2b593aa04afb4406b5f6043ea113c154
+#, fuzzy
 msgid "Drücken mehrerer Tasten gleichzeitig"
-msgstr ""
+msgstr "Pressing multiple keys at the same time"
 
 #: ../../usermanual/elements.rst:74 00226191c78444559d77339b21a12e61
+#, fuzzy
 msgid "Tasten sperren"
-msgstr ""
+msgstr "Lock keys"
 
 #: ../../usermanual/elements.rst:76 66eacfb107b545779ba813c5caf4a89e
+#, fuzzy
 msgid ""
 "Die Tasten-Sensitivität kann über die Konfigurationsseite eingestellt "
 "werden. Damit lässt sich die Schwelle einstellen, ab der ein Tastendruck "
 "erkannt wird. Die Tasten haben in der Mitte eine Vertiefung. So kann das "
-"Zentrum der Taste besser erfühlt werden. Erkannte Tastenberührungen "
-"werden akustisch mit einem Piepton signalisiert."
+"Zentrum der Taste besser erfühlt werden. Erkannte Tastenberührungen werden "
+"akustisch mit einem Piepton signalisiert."
 msgstr ""
+"The key sensitivity can be adjusted via the configuration page. This allows "
+"you to set the threshold at which a keystroke is detected. The keys have a "
+"recess in the middle, making it easier to feel the center of the key. "
+"Detected keystrokes are signaled acoustically with a beep."
 
 #: ../../usermanual/elements.rst:78 3952c1624ad248e6a4bd378c8c036070
+#, fuzzy
 msgid ""
-"Die Tasten sind bündig in das Display eingelassen. So ist es möglich, mit"
-" Wischgesten die Seiteninhalte umzuschalten. Dazu wischt man zügig nach "
+"Die Tasten sind bündig in das Display eingelassen. So ist es möglich, mit "
+"Wischgesten die Seiteninhalte umzuschalten. Dazu wischt man zügig nach "
 "rechts oder links über mindestens zwei Tasten. Die Software erkennt "
 "automatisch, wenn mehrere Tasten hintereinander ausgelöst werden, und "
-"bestimmt daraus die Wischrichtung. Für die Wischgeste wird ein "
-"akustisches Feedback gegeben. **Rechts wischen** wird mit der Tonfolge "
-"**tief-hoch** signalisiert, **links wischen** mit **hoch-tief**. Die "
-"Seitenweiterschaltung ist an den Enden rollierend."
+"bestimmt daraus die Wischrichtung. Für die Wischgeste wird ein akustisches "
+"Feedback gegeben. **Rechts wischen** wird mit der Tonfolge **tief-hoch** "
+"signalisiert, **links wischen** mit **hoch-tief**. Die Seitenweiterschaltung"
+" ist an den Enden rollierend."
 msgstr ""
+"The buttons are flush with the display. This allows you to scroll through "
+"the page content using swipe gestures. To do this, quickly swipe right or "
+"left across at least two buttons. The software automatically detects when "
+"multiple buttons are pressed in succession and determines the swipe "
+"direction. Acoustic feedback is provided for the swipe gesture. **Swipe "
+"right** is signaled with the tone sequence **low-high**, **swipe left** with"
+" **high-low**. The page advancement is scrolling at the ends."
 
 #: ../../usermanual/elements.rst:80 adbab238bd254671ad111ba21a434daf
+#, fuzzy
 msgid ""
 "Bei kurzem Tippen wird kein Piepton ausgegeben. Kurzes Tippen der zwei "
 "äußeren Tasten links und rechts nacheinander aktiviert die Tastensperre, "
-"gefolgt von einem langen Piepton. Danach sind die normalen "
-"Tastenfunktionen deaktiviert und es wird keine Wischgeste mehr erkannt. "
-"Im Display ist die Meldung ``[Keylock active]`` zu sehen. Welche Taste "
-"beim Aktivieren der Tastensperre zuerst gedrückt wird, ist unerheblich, "
-"ebenso die Reihenfolge. Die Deaktivierung der Tastensperre erfolgt auf "
-"die gleiche Weise."
+"gefolgt von einem langen Piepton. Danach sind die normalen Tastenfunktionen "
+"deaktiviert und es wird keine Wischgeste mehr erkannt. Im Display ist die "
+"Meldung ``[Keylock active]`` zu sehen. Welche Taste beim Aktivieren der "
+"Tastensperre zuerst gedrückt wird, ist unerheblich, ebenso die Reihenfolge. "
+"Die Deaktivierung der Tastensperre erfolgt auf die gleiche Weise."
 msgstr ""
+"A short tap will not produce a beep. A short tap of the two outer buttons on"
+" the left and right in succession activates the key lock, followed by a long"
+" beep. After that, normal key functions are deactivated, and swipe gestures "
+"are no longer recognized. The message ``[Keylock active]`` appears on the "
+"display. It doesn't matter which button is pressed first when activating the"
+" key lock, nor does the order. Deactivating the key lock is done in the same"
+" way."
 
 #: ../../usermanual/elements.rst:83 7582f6a512684ec99b5eb952584ef9ea
+#, fuzzy
 msgid ""
 "Sollte Ihr OBP60 so platziert sein, dass sich eine Person versehentlich "
 "dagegen lehnen kann, so stellen Sie die Tasten-Sensitivität entsprechend "
@@ -259,103 +361,145 @@ msgid ""
 "können als zusätzlichen Schutz gegen unbeabsichtigtes Bedienen auch die "
 "Tasten-Sperrfunktion aktivieren."
 msgstr ""
+"If your OBP60 is positioned where someone could accidentally lean against "
+"it, lower the key sensitivity accordingly. This will prevent accidental key "
+"presses. You can also activate the key lock function for additional "
+"protection against unintentional operation."
 
 #: ../../usermanual/elements.rst:86 9da2316b535742a8bb22ef59707f29b5
+#, fuzzy
 msgid "Flash LED"
-msgstr ""
+msgstr "Flash LED"
 
 #: ../../usermanual/elements.rst:90 3191bfc737da4cac8726840aaab85fde
+#, fuzzy
 msgid ""
-"Links oberhalb des Displays befindet sich eine kleine Flash-LED. Diese "
-"LED dient zur Signalisierung von Betriebszuständen des OPB60. Die LED "
-"kann dabei verschiedene Farben annehmen. Die LED leuchtet mit maximaler "
-"Helligkeit, sodass sie optisch auch bei hellen Sonnenlicht gut "
-"wahrgenommen werden kann."
+"Links oberhalb des Displays befindet sich eine kleine Flash-LED. Diese LED "
+"dient zur Signalisierung von Betriebszuständen des OPB60. Die LED kann dabei"
+" verschiedene Farben annehmen. Die LED leuchtet mit maximaler Helligkeit, "
+"sodass sie optisch auch bei hellen Sonnenlicht gut wahrgenommen werden kann."
 msgstr ""
+"To the left above the display is a small flash LED. This LED is used to "
+"indicate the operating status of the OPB60. The LED can take on various "
+"colors. The LED shines at maximum brightness, making it easy to see even in "
+"bright sunlight."
 
 #: ../../usermanual/elements.rst:92 444c8d60cc2546548f3b3f6d121b577a
+#, fuzzy
 msgid "Rot - Alarmierung bei Grenzwertüberschreitung"
-msgstr ""
+msgstr "Red - Alarm when limit value is exceeded"
 
 #: ../../usermanual/elements.rst:93 0662b2a78d794ac0b8c8154e41f56733
+#, fuzzy
 msgid "Grün - Bestätigung von Zustandsänderungen (z.B. Autopilot ein/aus)"
-msgstr ""
+msgstr "Green - Confirmation of status changes (e.g. autopilot on/off)"
 
 #: ../../usermanual/elements.rst:94 84103842a9aa4f73aea63575e767f88f
-msgid "Blau - Signalisierung von Zuständen (z.B. GPS-Empfang, Datentransfer usw.)"
-msgstr ""
+#, fuzzy
+msgid ""
+"Blau - Signalisierung von Zuständen (z.B. GPS-Empfang, Datentransfer usw.)"
+msgstr "Blue - Signaling of states (e.g. GPS reception, data transfer, etc.)"
 
 #: ../../usermanual/elements.rst:97 6863d17b4c12416e96d924799a7fb50d
+#, fuzzy
 msgid "Hintergrundbeleuchtung"
-msgstr ""
+msgstr "Backlight"
 
 #: ../../usermanual/elements.rst:99 73aef39515014524a1913c8deece622a
+#, fuzzy
 msgid ""
-"Um das Display bei Nacht ablesen zu können, kann eine "
-"Hintergrundbeleuchtung über die rechte Sensortaste zugeschaltet werden. "
-"Die Farbe und die Helligkeit können über die Konfiguration eingestellt "
-"werden. Grundsätzlich lässt sich die Hintergrundbeleuchtung "
-"folgendermaßen konfigurieren:"
+"Um das Display bei Nacht ablesen zu können, kann eine Hintergrundbeleuchtung"
+" über die rechte Sensortaste zugeschaltet werden. Die Farbe und die "
+"Helligkeit können über die Konfiguration eingestellt werden. Grundsätzlich "
+"lässt sich die Hintergrundbeleuchtung folgendermaßen konfigurieren:"
 msgstr ""
+"To make the display easier to read at night, a backlight can be activated "
+"using the right touch button. The color and brightness can be adjusted via "
+"the configuration. The backlight can be configured as follows:"
 
 #: ../../usermanual/elements.rst:101 bfae4db201bb40edba0bd511bc2e0870
+#, fuzzy
 msgid "Dauerhaft an"
-msgstr ""
+msgstr "Permanently on"
 
 #: ../../usermanual/elements.rst:102 717094cc689543229e6b161d52164b5f
+#, fuzzy
 msgid "Dauerhaft aus"
-msgstr ""
+msgstr "Permanently off"
 
 #: ../../usermanual/elements.rst:103 98ea651889ac408cae25a079078b40b2
+#, fuzzy
 msgid "Manuell einschaltbar über Sensortaste"
-msgstr ""
+msgstr "Can be switched on manually via sensor button"
 
 #: ../../usermanual/elements.rst:104 86df27cd3e9e4222ab17a7bc6ee52e6a
+#, fuzzy
 msgid "Automatisch schaltbar abhängig vom Sonnenstand"
-msgstr ""
+msgstr "Automatically switchable depending on the position of the sun"
 
 #: ../../usermanual/elements.rst:107 b632c078ed6a4c49abf0a1838098d882
+#, fuzzy
 msgid ""
-"Wenn Sie den Sonnenstand zum Schalten der Hintergrundbeleuchtung "
-"verwenden wollen, benötigen Sie ein gültiges GPS-Signal, damit die "
-"Schaltzustände ausgelöst werden können. Die Hintergrundbeleuchtung wird "
-"dann automatisch bei astronomischem Sonnenuntergang eingeschaltet und bei"
-" Sonnenaufgang abgeschaltet. Dabei wird der geografische Ort "
-"berücksichtigt. Ist kein gültiges GPS-Signal vorhanden, so erfolgt keine "
-"Änderung der Schaltzustände."
+"Wenn Sie den Sonnenstand zum Schalten der Hintergrundbeleuchtung verwenden "
+"wollen, benötigen Sie ein gültiges GPS-Signal, damit die Schaltzustände "
+"ausgelöst werden können. Die Hintergrundbeleuchtung wird dann automatisch "
+"bei astronomischem Sonnenuntergang eingeschaltet und bei Sonnenaufgang "
+"abgeschaltet. Dabei wird der geografische Ort berücksichtigt. Ist kein "
+"gültiges GPS-Signal vorhanden, so erfolgt keine Änderung der Schaltzustände."
 msgstr ""
+"If you want to use the sun's position to switch the backlight, you need a "
+"valid GPS signal to trigger the switching states. The backlight will then "
+"automatically turn on at astronomical sunset and turn off at sunrise. The "
+"geographical location is taken into account. If there is no valid GPS "
+"signal, the switching states will not change."
 
 #: ../../usermanual/elements.rst:112 d57f4c96f556404d92c0b334b9bd9dd8
+#, fuzzy
 msgid "Buzzer"
-msgstr ""
+msgstr "Buzzer"
 
 #: ../../usermanual/elements.rst:114 474acbb24f03467a92b27081031517a8
+#, fuzzy
 msgid ""
 "Der Buzzer dient zur akustischen Signalisierung von Störungen und als "
 "Feedback bei Zustandsänderungen. Der Buzzer befindet sich im Inneren des "
-"Gerätes. Die Funktion und Lautstärke des Buzzers kann in der "
-"Konfiguration eingestellt werden. Beim Einschalten und beim manuellen "
-"oder automatischen Reset des OBP60 erfolgt ein kurzer Signalton, um das "
-"Hochfahren des Gerätes zu signalisieren."
+"Gerätes. Die Funktion und Lautstärke des Buzzers kann in der Konfiguration "
+"eingestellt werden. Beim Einschalten und beim manuellen oder automatischen "
+"Reset des OBP60 erfolgt ein kurzer Signalton, um das Hochfahren des Gerätes "
+"zu signalisieren."
 msgstr ""
+"The buzzer serves to acoustically signal faults and provide feedback when "
+"status changes occur. The buzzer is located inside the device. The function "
+"and volume of the buzzer can be configured. When the OBP60 is switched on "
+"and reset manually or automatically, a short beep is emitted to signal the "
+"device's boot-up."
 
 #: ../../usermanual/elements.rst:117 474d4cbb2c064f3680b4cca57142b303
+#, fuzzy
 msgid "Reset-Taster"
-msgstr ""
+msgstr "Reset-Taster"
 
 #: ../../usermanual/elements.rst:122 440d1b0fa34e4999ad20fdd9d6c19805
+#, fuzzy
 msgid ""
 "Der Reset-Taster befindet sich auf der Rückseite des Displays an der "
-"Unterseite des großen linken Steckverbinders **CN1**. Der Reset-Taster "
-"wird im normalen Betrieb nicht genutzt. Bei Programmiervorgängen kann es "
-"nützlich sein, einen manuellen Reset auszulösen. Benutzen Sie zum "
-"Auslösen des Reset einen nicht leitenden, schmalen Gegenstand und drücken"
-" Sie den Taster vorsichtig, bis der Druckpunkt spürbar überwunden ist."
+"Unterseite des großen linken Steckverbinders **CN1**. Der Reset-Taster wird "
+"im normalen Betrieb nicht genutzt. Bei Programmiervorgängen kann es nützlich"
+" sein, einen manuellen Reset auszulösen. Benutzen Sie zum Auslösen des Reset"
+" einen nicht leitenden, schmalen Gegenstand und drücken Sie den Taster "
+"vorsichtig, bis der Druckpunkt spürbar überwunden ist."
 msgstr ""
+"The reset button is located on the back of the display, under the large left"
+" connector **CN1**. The reset button is not used during normal operation. "
+"During programming, it can be useful to initiate a manual reset. To initiate"
+" the reset, use a thin, non-conductive object and gently press the button "
+"until you feel it go beyond the pressure point."
 
 #: ../../usermanual/elements.rst:125 f80151f6a9f1410cad16df3ab4526fdb
+#, fuzzy
 msgid ""
-"Verwenden Sie keine leitenden Gegenstände. Damit können Kurzschlüsse auf "
-"der Platine ausgelöst werden, das Gerät kann dadurch beschädigt werden."
+"Verwenden Sie keine leitenden Gegenstände. Damit können Kurzschlüsse auf der"
+" Platine ausgelöst werden, das Gerät kann dadurch beschädigt werden."
 msgstr ""
-
+"Do not use conductive objects. This could cause short circuits on the "
+"circuit board and damage the device."

@@ -7,56 +7,72 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: OBP60 V2 Dokumentation \n"
+"Project-Id-Version: OBP60 V2 Dokumentation\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-26 14:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: en\n"
 "Language-Team: en <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../help/donation.rst:2 19c45804209a4c5aaec7158948a4199e
+#, fuzzy
 msgid "Spenden"
-msgstr ""
+msgstr "Donate"
 
 #: ../../help/donation.rst:4 6ab79a4e7390428a81214430e587e017
+#, fuzzy
 msgid ""
-"Wenn diese Dokumentation für Sie hilfreich war, würden wir uns freuen, "
-"wenn Sie uns mit einer Spende unterstützen. Wir haben sehr viel "
-"ehrenamtliche Arbeit und Energie in das Projekt gesteckt, um es in einer "
-"qualitativ hochwertigen Form anbieten zu können. Ihre Spende ist eine "
-"Wertschätzung unserer Arbeit gegenüber. Wir sehen uns in der "
-"Verpflichtung, den Prinzipien von Open Source, Open Hardware und Open "
-"Data zu folgen. Wir stellen daher unser Wissen der Allgemeinheit "
-"kostenlos zur Verfügung. Mit Ihrer Hilfe können wir weitere interessante "
-"Projekte veröffentlichen. Sie tragen auch dazu bei, dass diese Seite "
-"weiterhin der Allgemeinheit kostenlos zur Verfügung steht."
+"Wenn diese Dokumentation für Sie hilfreich war, würden wir uns freuen, wenn "
+"Sie uns mit einer Spende unterstützen. Wir haben sehr viel ehrenamtliche "
+"Arbeit und Energie in das Projekt gesteckt, um es in einer qualitativ "
+"hochwertigen Form anbieten zu können. Ihre Spende ist eine Wertschätzung "
+"unserer Arbeit gegenüber. Wir sehen uns in der Verpflichtung, den Prinzipien"
+" von Open Source, Open Hardware und Open Data zu folgen. Wir stellen daher "
+"unser Wissen der Allgemeinheit kostenlos zur Verfügung. Mit Ihrer Hilfe "
+"können wir weitere interessante Projekte veröffentlichen. Sie tragen auch "
+"dazu bei, dass diese Seite weiterhin der Allgemeinheit kostenlos zur "
+"Verfügung steht."
 msgstr ""
+"If this documentation was helpful to you, we would be grateful if you would "
+"support us with a donation. We have invested a great deal of volunteer work "
+"and energy into this project to ensure it is of the highest quality. Your "
+"donation is an appreciation of our work. We are committed to following the "
+"principles of open source, open hardware, and open data. Therefore, we make "
+"our knowledge available to the public free of charge. With your help, we can"
+" publish other interesting projects. You also contribute to ensuring that "
+"this site remains freely available to the public."
 
 #: ../../help/donation.rst:6 5220fa823c094be0b82b5f2105478b3c
+#, fuzzy
 msgid "|IMG|_"
-msgstr ""
+msgstr "|IMG|_"
 
 #: ../../help/donation.rst:8 0cf134c761db4e9babbddeb81727229f
+#, fuzzy
 msgid "IMG"
-msgstr ""
+msgstr "IMG"
 
 #: ../../help/donation.rst:13 020b29af29484aafb1060b481405b0e7
+#, fuzzy
 msgid ""
 "Wenn Sie mehr erfahren wollen, was wir mit Ihren Spenden machen, dann "
 "schauen Sie sich folgende Links an:"
 msgstr ""
+"If you would like to learn more about what we do with your donations, please"
+" visit the following links:"
 
 #: ../../help/donation.rst:15 76194ed7ec0f4c9985256819b1b4f45b
+#, fuzzy
 msgid "https://open-boat-projects.org/sponsors/"
-msgstr ""
+msgstr "Https://open-boat-projects.org/sponsors/"
 
 #: ../../help/donation.rst:16 3cef6ea7b09d4ca29c639f9c5207417c
+#, fuzzy
 msgid "https://open-boat-projects.org/de/boot-2023/"
-msgstr ""
-
+msgstr "Https://open-boat-projects.org/de/boot-2023/"

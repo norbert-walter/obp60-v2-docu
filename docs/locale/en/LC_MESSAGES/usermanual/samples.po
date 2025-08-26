@@ -7,301 +7,406 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: OBP60 V2 Dokumentation \n"
+"Project-Id-Version: OBP60 V2 Dokumentation\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-26 14:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: en\n"
 "Language-Team: en <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../usermanual/samples.rst:2 bc2d6499f9dc49c086148653208e08fa
+#, fuzzy
 msgid "Beispielkonfiguration"
-msgstr ""
+msgstr "Example configuration"
 
 #: ../../usermanual/samples.rst:5 99639d2e0fa549b79921e6789a01e7d4
+#, fuzzy
 msgid "OBP60 Yachta AvNav"
-msgstr ""
+msgstr "OBP60 Yacht AvNav"
 
 #: ../../usermanual/samples.rst:7 7664afdc171a4425a0e565728c234815
+#, fuzzy
 msgid ""
 "Im folgenden Beispiel wird gezeigt wie man mit einem **OBP60** eine "
-"Datenübertragung zum **Windsensor Yachta** und zu einem NMEA2000-Netzwerk"
-" aufbauen und die Daten in der Navigationsapp AvNav auf einem Tablett "
-"nutzen kann. Das OBP60 dient dabei als zentrale Datenbasis, in der alle "
-"Daten zusammenlaufen. Die Datenübertragung erfolgt über WiFi-"
-"Netzwerkverbindungen, die ein LTE-Router zur Verfügung stellt. Der "
-"Vorteil eines LTE-Routers besteht darin, dass sie alle Geräte an Bord mit"
-" einer WiFi-Internetverbindung versorgen können und die Geräte im WiFi-"
-"Netzwerk untereinander kommunizieren können. Der LTE-Router schottet das "
-"eigene WiFi-Netzwerk gegenüber dem Internet ab, so dass von außerhalb "
-"niemand auf Ihr internes Netzwerk Zugriff erhält. Somit lassen sich auch "
-"Geräte wie Handys, Tabletts oder Laptops an Bord mit dem Internet "
-"verbinden und alle Geräte haben Zugriff auf die Daten der Sensoren und "
-"können über einen Web-Browser darauf zugreifen. Die Naviationssoftware "
-"AvNav wird dabei auf einem Android-Tablett installiert und zur Navigation"
-" genutzt."
+"Datenübertragung zum **Windsensor Yachta** und zu einem NMEA2000-Netzwerk "
+"aufbauen und die Daten in der Navigationsapp AvNav auf einem Tablett nutzen "
+"kann. Das OBP60 dient dabei als zentrale Datenbasis, in der alle Daten "
+"zusammenlaufen. Die Datenübertragung erfolgt über WiFi-Netzwerkverbindungen,"
+" die ein LTE-Router zur Verfügung stellt. Der Vorteil eines LTE-Routers "
+"besteht darin, dass sie alle Geräte an Bord mit einer WiFi-"
+"Internetverbindung versorgen können und die Geräte im WiFi-Netzwerk "
+"untereinander kommunizieren können. Der LTE-Router schottet das eigene WiFi-"
+"Netzwerk gegenüber dem Internet ab, so dass von außerhalb niemand auf Ihr "
+"internes Netzwerk Zugriff erhält. Somit lassen sich auch Geräte wie Handys, "
+"Tabletts oder Laptops an Bord mit dem Internet verbinden und alle Geräte "
+"haben Zugriff auf die Daten der Sensoren und können über einen Web-Browser "
+"darauf zugreifen. Die Naviationssoftware AvNav wird dabei auf einem Android-"
+"Tablett installiert und zur Navigation genutzt."
 msgstr ""
+"The following example shows how to use an **OBP60** to set up data "
+"transmission to the **Yachta wind sensor** and to an NMEA 2000 network, and "
+"how to use the data in the AvNav navigation app on a tablet. The OBP60 "
+"serves as a central database where all data converges. Data is transmitted "
+"via WiFi network connections provided by an LTE router. The advantage of an "
+"LTE router is that it can provide all devices on board with a WiFi internet "
+"connection, and the devices in the WiFi network can communicate with each "
+"other. The LTE router isolates its own WiFi network from the internet, "
+"ensuring that no one from outside can access your internal network. This "
+"means that devices such as cell phones, tablets, or laptops on board can "
+"also be connected to the internet, and all devices have access to the sensor"
+" data and can access it via a web browser. The AvNav navigation software is "
+"installed on an Android tablet and used for navigation."
 
 #: ../../usermanual/samples.rst:10 d00605dd79d1484b98d3449f119d2279
+#, fuzzy
 msgid ""
-"Grundsätzlich ließe sich der Access Point vom OBP60 auch als zentraler "
-"WiFi-Router nutzen. Die Leistungsfähigkeit ist aber deutlich geringer als"
-" bei einem LTE-Router. Wir empfehlen ausdrücklich die Verwendung eines "
-"dedizierte LTE- oder WiFi-Routers. Sie vermeiden damit Probleme bei der "
-"Kommunikation der Geräte untereinander."
+"Grundsätzlich ließe sich der Access Point vom OBP60 auch als zentraler WiFi-"
+"Router nutzen. Die Leistungsfähigkeit ist aber deutlich geringer als bei "
+"einem LTE-Router. Wir empfehlen ausdrücklich die Verwendung eines dedizierte"
+" LTE- oder WiFi-Routers. Sie vermeiden damit Probleme bei der Kommunikation "
+"der Geräte untereinander."
 msgstr ""
+"In principle, the OBP60 access point could also be used as a central Wi-Fi "
+"router. However, its performance is significantly lower than that of an LTE "
+"router. We strongly recommend using a dedicated LTE or Wi-Fi router. This "
+"will prevent problems with communication between devices."
 
 #: ../../usermanual/samples.rst:14 e0c5b649db9141d480b3310315740a3c
+#, fuzzy
 msgid "Abb.: Beispielkonfiguration OBP60, Yachta, AvNav"
-msgstr ""
+msgstr "Fig.: Example configuration OBP60, Yachta, AvNav"
 
 #: ../../usermanual/samples.rst:16 07b707cb12374b1580053da29480cc50
+#, fuzzy
 msgid "Die Konfiguration läuft in folgenden Schritten ab:"
-msgstr ""
+msgstr "The configuration proceeds in the following steps:"
 
 #: ../../usermanual/samples.rst:18 ../../usermanual/samples.rst:23
 #: 1ac9dacc0c6c4b2e85b8cc1478b9db25 2fb68b390a0a4464acee22c94cb72e84
+#, fuzzy
 msgid "LTE-Router einrichten"
-msgstr ""
+msgstr "Setting up an LTE router"
 
 #: ../../usermanual/samples.rst:19 c6b8d014175847a78c12e9f87b02d7e9
+#, fuzzy
 msgid "OBP60 mit NMEA2000-Netzwerk und Windsensor Yachta verbinden"
-msgstr ""
+msgstr "Connect OBP60 to NMEA2000 network and Yachta wind sensor"
 
 #: ../../usermanual/samples.rst:20 ad2e540af6134df08652db3a954e8fe2
+#, fuzzy
 msgid "AvNav mit dem OBP60 verbinden"
-msgstr ""
+msgstr "Connecting AvNav to the OBP60"
 
 #: ../../usermanual/samples.rst:25 c245161fb7ec4425a6f00e6ce9ab8e87
+#, fuzzy
 msgid ""
-"Als LTE-Router können Sie sowohl mobile Geräte als auch stationäre Geräte"
-" verwenden. Mobile Geräte haben den Vorteil, dass sie autark über eine "
-"Batterie über einen längeren Zeitraum funktionieren und auch außerhalb "
-"des Bootes an Land bei Ausflügen benutzt werden können. Stationäre Geräte"
-" bieten sich an, wenn man maximale Empfangsleistung benötigt und in "
-"Küstennähe unterwegs ist und große Entfernungen zur nächsten Mobilfunk-"
-"Basisstation überbrücken möchte. In solchen Fällen bietet es sich an, "
-"Mobilfunkantennen oben im Mast zu installieren und die Antenne per Kabel "
-"mit dem stationären Router zu verbinden."
+"Als LTE-Router können Sie sowohl mobile Geräte als auch stationäre Geräte "
+"verwenden. Mobile Geräte haben den Vorteil, dass sie autark über eine "
+"Batterie über einen längeren Zeitraum funktionieren und auch außerhalb des "
+"Bootes an Land bei Ausflügen benutzt werden können. Stationäre Geräte bieten"
+" sich an, wenn man maximale Empfangsleistung benötigt und in Küstennähe "
+"unterwegs ist und große Entfernungen zur nächsten Mobilfunk-Basisstation "
+"überbrücken möchte. In solchen Fällen bietet es sich an, Mobilfunkantennen "
+"oben im Mast zu installieren und die Antenne per Kabel mit dem stationären "
+"Router zu verbinden."
 msgstr ""
+"You can use both mobile and stationary devices as LTE routers. Mobile "
+"devices have the advantage of operating independently via a battery for "
+"extended periods and can also be used off the boat on land during "
+"excursions. Stationary devices are ideal when you need maximum reception "
+"performance and are traveling near the coast, bridging long distances to the"
+" nearest mobile phone base station. In such cases, it's a good idea to "
+"install mobile phone antennas at the top of the mast and connect the antenna"
+" to the stationary router via cable."
 
 #: ../../usermanual/samples.rst:28 e19820288ed64255b2f8b1d6c57c1169
+#, fuzzy
 msgid ""
-"Achten Sie beim Kauf des LTE-Routers, dass der Router im Dualband-Modus "
-"in den zwei WiFi-Frequenzbereichen 2.4 GHz und 5 GHz **gleichzeitig** "
-"arbeiten kann und über 4G/5G-Mobilfunk-Standard verfügt. So profitieren "
-"sie von einer leistungsfähigen Internet- und WiFi-Verbindung im 5 GHz "
-"Bereich und umgehen die meist überfüllten 2.4 GHz Frequenzbereiche. "
-"Solche Router können Daten zwischen beiden Frequenzbereichen problemlos "
-"austauschen. Ein ausgedientes Handy im Hotspot-Mode leistet ähnliches wie"
-" ein LTE-Router und kann eine günstige Alternative darstellen."
+"Achten Sie beim Kauf des LTE-Routers, dass der Router im Dualband-Modus in "
+"den zwei WiFi-Frequenzbereichen 2.4 GHz und 5 GHz **gleichzeitig** arbeiten "
+"kann und über 4G/5G-Mobilfunk-Standard verfügt. So profitieren sie von einer"
+" leistungsfähigen Internet- und WiFi-Verbindung im 5 GHz Bereich und umgehen"
+" die meist überfüllten 2.4 GHz Frequenzbereiche. Solche Router können Daten "
+"zwischen beiden Frequenzbereichen problemlos austauschen. Ein ausgedientes "
+"Handy im Hotspot-Mode leistet ähnliches wie ein LTE-Router und kann eine "
+"günstige Alternative darstellen."
 msgstr ""
+"When purchasing an LTE router, make sure it can operate in dual-band mode in"
+" both the 2.4 GHz and 5 GHz Wi-Fi frequency ranges **simultaneously** and "
+"supports the 4G/5G mobile network standard. This way, you'll benefit from a "
+"high-performance internet and Wi-Fi connection in the 5 GHz range, bypassing"
+" the often overcrowded 2.4 GHz frequency range. Such routers can easily "
+"exchange data between both frequency ranges. An old cell phone in hotspot "
+"mode performs similarly to an LTE router and can be a cost-effective "
+"alternative."
 
 #: ../../usermanual/samples.rst:32 705c75dabac941bfbbe021c7e76a0430
+#, fuzzy
 msgid "Abb.: Mobiler 4G-LTE-Dualband-Router TP-Link M7450"
-msgstr ""
+msgstr "Abb.: Mobiler 4G-LTE-Dualband-Router TP-Link M7450"
 
 #: ../../usermanual/samples.rst:34 ../../usermanual/samples.rst:53
 #: 92d5509c6e2c45b3bb5b043730432709 c367fe8dc4f54ea7a2d78e7a8196500c
+#, fuzzy
 msgid "Leistungsdaten"
-msgstr ""
+msgstr "Performance data"
 
 #: ../../usermanual/samples.rst:35 bef4b9b4a637418f95bb483f93b599b4
+#, fuzzy
 msgid "4G/LTE Mobilfunkstandard 50 MBit/s"
-msgstr ""
+msgstr "4G/LTE mobile communications standard 50 Mbit/s"
 
 #: ../../usermanual/samples.rst:36 6ad3f04b9efd47e0a6f64735e492981b
+#, fuzzy
 msgid "WiFi Dualband 2.4 GHz **oder** 5 GHz 300 MBit/s [#f2]_"
-msgstr ""
+msgstr "WiFi Dualband 2.4 GHz **oder** 5 GHz 300 MBit/s [#f2]_"
 
 #: ../../usermanual/samples.rst:37 65106486ddaa4697998c454f049f4822
+#, fuzzy
 msgid "3000 mAh LiPo-Akku"
-msgstr ""
+msgstr "3000 MAh LiPo-Battery"
 
 #: ../../usermanual/samples.rst:38 05cd6bb1c01a49aea8c42bbb67dc1936
+#, fuzzy
 msgid "15 Stunden autarke Laufzeit"
-msgstr ""
+msgstr "15 Hours of self-sufficient runtime"
 
 #: ../../usermanual/samples.rst:39 d324a46ccd3d47e5abf1f15fea955ed1
+#, fuzzy
 msgid "32 WiFi-Geräte einbindbar"
-msgstr ""
+msgstr "32 WiFi devices can be integrated"
 
 #: ../../usermanual/samples.rst:40 62cd7956ec524993be40f331f828c1bd
+#, fuzzy
 msgid "32 GB SD-Card-Speicher"
-msgstr ""
+msgstr "32 GB SD card storage"
 
 #: ../../usermanual/samples.rst:41 03708f84e86744d9a42d61105a05abbe
+#, fuzzy
 msgid "USB-, SMB- und FTP-Share für Filme und Musik von SD-Card"
-msgstr ""
+msgstr "USB, SMB and FTP sharing for movies and music from SD card"
 
 #: ../../usermanual/samples.rst:42 509f00fbfacc45908bbc62bd288bac72
+#, fuzzy
 msgid "`Dokumentation <../_static/m7450.pdf>`_"
-msgstr ""
+msgstr "`Dokumentation <../_static/m7450.pdf>`_"
 
 #: ../../usermanual/samples.rst:43 13d50ff7902444039c3442edba37d4ba
+#, fuzzy
 msgid "Kein gleichzeitiger Dualbetrieb möglich"
-msgstr ""
+msgstr "No simultaneous dual operation possible"
 
 #: ../../usermanual/samples.rst:46 90fa13063778473a95f67382a26db45d
+#, fuzzy
 msgid ""
 "Der LTE-Router TP-Link M7450 kann nicht gleichzeitig in beiden "
-"Frequenzbändern arbeiten. Daher müssen Sie den TP-Link M7450 fest auf das"
-" Frequenzband 2.4 GHz einstellen. Das OBP60 arbeitet nur im 2.4 GHz "
-"Bereich."
+"Frequenzbändern arbeiten. Daher müssen Sie den TP-Link M7450 fest auf das "
+"Frequenzband 2.4 GHz einstellen. Das OBP60 arbeitet nur im 2.4 GHz Bereich."
 msgstr ""
+"The TP-Link M7450 LTE router cannot operate in both frequency bands "
+"simultaneously. Therefore, you must configure the TP-Link M7450 to operate "
+"on the 2.4 GHz frequency band. The OBP60 only operates in the 2.4 GHz range."
 
 #: ../../usermanual/samples.rst:51 ccf1535dcdb24443b6c0392132d532c7
+#, fuzzy
 msgid "Abb.: Stationärer 4G-LTE-Dualband-Router RTU360"
-msgstr ""
+msgstr "Fig.: Stationary 4G LTE dual-band router RTU360"
 
 #: ../../usermanual/samples.rst:54 8683984fc04049c1820ebc2fea11aa1a
+#, fuzzy
 msgid "4G/LTE Mobilfunkstandard 50 MBit/scale"
-msgstr ""
+msgstr "4G/LTE mobile communications standard 50 Mbit/scale"
 
 #: ../../usermanual/samples.rst:55 e368afe987344a948809e9fa18cb3c1b
+#, fuzzy
 msgid "WiFi Dualband 2.4 GHz und 5 GHz 300 MBit/s"
-msgstr ""
+msgstr "WiFi dual band 2.4 GHz and 5 GHz 300 Mbit/s"
 
 #: ../../usermanual/samples.rst:56 db7ecb7b6a914293a66995d2d7f151a7
+#, fuzzy
 msgid "2x LAN CAT6 100 MBit/s"
-msgstr ""
+msgstr "2X CAT6 LAN 100 MBit/s"
 
 #: ../../usermanual/samples.rst:57 46d57a889d1a40bdba79a6f7c51b26d7
+#, fuzzy
 msgid "Externe Antennen für LTE und WiFi"
-msgstr ""
+msgstr "External antennas for LTE and WiFi"
 
 #: ../../usermanual/samples.rst:58 b1bc1b32507f48b1823b0574ea6b1c18
+#, fuzzy
 msgid "12V Versorgungseingang"
-msgstr ""
+msgstr "12V supply input"
 
 #: ../../usermanual/samples.rst:59 766c335f4c9c4afb86cf1e1ddef33e65
+#, fuzzy
 msgid "230V AC-Netzteil"
-msgstr ""
+msgstr "230V AC power supply"
 
 #: ../../usermanual/samples.rst:60 39128e8cbe2143d7a9d6801d5fa6973f
+#, fuzzy
 msgid "`Online-Dokumentation`_"
-msgstr ""
+msgstr "`Online-Dokumentation`_"
 
 #: ../../usermanual/samples.rst:61 60c6730052c34a8ab4074353dd8b6523
+#, fuzzy
 msgid "`Quick-Installation Guide`_"
-msgstr ""
+msgstr "`Quick-Installation Guide`_"
 
 #: ../../usermanual/samples.rst:66 f07ea518a1a84fd68b2ed5599d701c11
+#, fuzzy
 msgid ""
 "Der verwendete LTE-Router wird entsprechend der Bedienungsanleitung in "
-"Betrieb genommen. Für eine Internetverbindung benötigen Sie einen "
-"Mobilfunk-Datenvertrag. Die meisten Mobilfunkfirmen bieten preisgünstige "
-"Datentarife an. Empfehlenswert sind Volumenverträge, die ein festes "
-"Datenvolumen für eine vorgegebene Zeitdauer bieten. Wählen Sie einen "
-"Tarif aus, der Ihrem Datenverbrauch entspricht. Das Datenvolumen können "
-"Sie ebenfalls in allen Ländern der EU uneingeschränkt nutzen, so wie Sie "
-"das in Ihrem Heimatland gewohnt sind."
+"Betrieb genommen. Für eine Internetverbindung benötigen Sie einen Mobilfunk-"
+"Datenvertrag. Die meisten Mobilfunkfirmen bieten preisgünstige Datentarife "
+"an. Empfehlenswert sind Volumenverträge, die ein festes Datenvolumen für "
+"eine vorgegebene Zeitdauer bieten. Wählen Sie einen Tarif aus, der Ihrem "
+"Datenverbrauch entspricht. Das Datenvolumen können Sie ebenfalls in allen "
+"Ländern der EU uneingeschränkt nutzen, so wie Sie das in Ihrem Heimatland "
+"gewohnt sind."
 msgstr ""
+"The LTE router used is set up according to the user manual. You will need a "
+"mobile data plan for an internet connection. Most mobile phone companies "
+"offer affordable data plans. Volume contracts, which provide a fixed data "
+"volume for a specified period of time, are recommended. Choose a plan that "
+"matches your data usage. You can also use this data volume without "
+"restrictions in all EU countries, just as you would in your home country."
 
 #: ../../usermanual/samples.rst:68 e00afe0cd4d74c14ba840a50211f9d48
+#, fuzzy
 msgid ""
 "Für das Konfigurationsbeispiel wird davon ausgegangen, dass die Geräte "
 "folgende IP-Adressen vom Router zugewiesen bekommen:"
 msgstr ""
+"For the configuration example, it is assumed that the devices are assigned "
+"the following IP addresses by the router:"
 
 #: ../../usermanual/samples.rst:70 87e4522c6fd6409eb5bddfa92eaf8ae8
+#, fuzzy
 msgid "MyBoat - WiFi-SSID"
-msgstr ""
+msgstr "MyBoat - WiFi-SSID"
 
 #: ../../usermanual/samples.rst:71 920d46cf907148a09b7a7c3d76c89e6b
+#, fuzzy
 msgid "MySecret - WiFi Passwort"
-msgstr ""
+msgstr "MySecret - WiFi Password"
 
 #: ../../usermanual/samples.rst:72 64e7894244fa460583adb6c78b9d4f98
+#, fuzzy
 msgid "192.168.1.1   - LTE-Router"
-msgstr ""
+msgstr "192.168.1.1   - LTE-Router"
 
 #: ../../usermanual/samples.rst:73 0298865aa33b4cd4814b26ea091a2706
+#, fuzzy
 msgid "192.168.1.101 - OBP60"
-msgstr ""
+msgstr "192.168.1.101 - OBP60"
 
 #: ../../usermanual/samples.rst:74 619ec05c6d554768a28a333475d03102
+#, fuzzy
 msgid "192.168.1.102 - Windsensor Yachta"
-msgstr ""
+msgstr "192.168.1.102 - Windsensor Yachta"
 
 #: ../../usermanual/samples.rst:75 6a7071fefcdc4bf5bc98b795504d30f5
+#, fuzzy
 msgid "192.168.1.103 - Android-Tablett mit AvNav"
-msgstr ""
+msgstr "192.168.1.103 - Android tablet with AvNav"
 
 #: ../../usermanual/samples.rst:78 c948146bfe4e413793ee407724a57b83
+#, fuzzy
 msgid ""
-"In Ihrem konkreten Fall können die IP-Adressen abweichen. Verwenden Sie "
-"dann die IP-Adressen, die den Geräten vom Router zugewiesen worden sind."
+"In Ihrem konkreten Fall können die IP-Adressen abweichen. Verwenden Sie dann"
+" die IP-Adressen, die den Geräten vom Router zugewiesen worden sind."
 msgstr ""
+"In your specific case, the IP addresses may be different. In this case, use "
+"the IP addresses assigned to the devices by the router."
 
 #: ../../usermanual/samples.rst:81 f15c76dbac41446993cd59419ddb9181
+#, fuzzy
 msgid "Datenübertragung"
-msgstr ""
+msgstr "Data transfer"
 
 #: ../../usermanual/samples.rst:83 5374fac29fad4bc0981b56f82d5f1b88
+#, fuzzy
 msgid ""
-"Das folgende Schema zeigt die Datenübertragung und welche Geräte Server "
-"oder Client bei der Datenübertragung sind."
+"Das folgende Schema zeigt die Datenübertragung und welche Geräte Server oder"
+" Client bei der Datenübertragung sind."
 msgstr ""
+"The following diagram shows the data transfer and which devices are servers "
+"or clients during data transfer."
 
 #: ../../usermanual/samples.rst:87 fca6d4bd618c4db1ad844803939172fc
+#, fuzzy
 msgid "Abb.: Schema Datenübertragung"
-msgstr ""
+msgstr "Fig.: Data transfer diagram"
 
 #: ../../usermanual/samples.rst:90 1b9bca39b3f84e2ab4ba5617b24a1a0a
+#, fuzzy
 msgid "Konfiguration OBP60"
-msgstr ""
+msgstr "Configuration OBP60"
 
 #: ../../usermanual/samples.rst:95 ff4a93d2d62e43b29557d00b8d397463
+#, fuzzy
 msgid ""
 "Das OBP60 wird mit dem WiFi-Netzwerk des LTE-Routers verbunden. Der TCP-"
-"Server ist so konfiguriert, dass zum Tablett Daten übertragen werden "
-"können. Die TCP-Client-Verbindung dient zur Kommunikation mit dem "
-"Windsensor Yachta. Das OBP60 ist per Kabel mit dem NMEA2000-Netzwerk des "
-"Bootes verbunden. Sensordaten die im OBP60 vorliegen, wie z.B. die "
-"Windsensor-Daten, werden auch in den NMEA2000-Bus übertragen."
+"Server ist so konfiguriert, dass zum Tablett Daten übertragen werden können."
+" Die TCP-Client-Verbindung dient zur Kommunikation mit dem Windsensor "
+"Yachta. Das OBP60 ist per Kabel mit dem NMEA2000-Netzwerk des Bootes "
+"verbunden. Sensordaten die im OBP60 vorliegen, wie z.B. die Windsensor-"
+"Daten, werden auch in den NMEA2000-Bus übertragen."
 msgstr ""
+"The OBP60 is connected to the LTE router's Wi-Fi network. The TCP server is "
+"configured to transmit data to the tablet. The TCP client connection is used"
+" for communication with the Yachta wind sensor. The OBP60 is connected to "
+"the boat's NMEA 2000 network via cable. Sensor data stored in the OBP60, "
+"such as wind sensor data, is also transmitted to the NMEA 2000 bus."
 
 #: ../../usermanual/samples.rst:97 b2a8108fadaa440e9aec3065eec82b23
+#, fuzzy
 msgid "Nehmen Sie folgende Einstellungen vor:"
-msgstr ""
+msgstr "Make the following settings:"
 
 #: ../../usermanual/samples.rst:100 ../../usermanual/samples.rst:186
 #: ../../usermanual/samples.rst:237 1eaba7be32ed4437a862e95e2e3c56ed
 #: 5e09193282b2413f904814f22b5900e8 fc8f23e4e39241e592b3f6efff388487
+#, fuzzy
 msgid "Einstellung"
-msgstr ""
+msgstr "Attitude"
 
 #: ../../usermanual/samples.rst:100 ../../usermanual/samples.rst:148
 #: c11ba8b0cf384af0883583fdacb46cab ed373547d12848128bfa0ef5800b3396
+#, fuzzy
 msgid "OBP60"
-msgstr ""
+msgstr "OBP60"
 
 #: ../../usermanual/samples.rst:102 52cc1f0a1ced47e4ba0e1d6170f6435b
+#, fuzzy
 msgid ":ref:`Config - System`"
-msgstr ""
+msgstr ":Ref:`Config - System`"
 
 #: ../../usermanual/samples.rst:104 2b65c6698e6c4735b54f556f77086106
+#, fuzzy
 msgid "System Name"
-msgstr ""
+msgstr "System Name"
 
 #: ../../usermanual/samples.rst:104 686bd98811b648c3a8dd6914dd7e2150
+#, fuzzy
 msgid "OBP60V2"
-msgstr ""
+msgstr "OBP60V2"
 
 #: ../../usermanual/samples.rst:106 0d84423dc5f7477988738d0d9408ae2e
+#, fuzzy
 msgid ":ref:`Config - WiFi Client`"
-msgstr ""
+msgstr ":Ref:`Config - WiFi Client`"
 
 #: ../../usermanual/samples.rst:108 5f0275bcbbcd40b9839e65efe89aebf3
+#, fuzzy
 msgid "WiFi Client"
-msgstr ""
+msgstr "WiFi Client"
 
 #: ../../usermanual/samples.rst:108 ../../usermanual/samples.rst:116
 #: ../../usermanual/samples.rst:122 ../../usermanual/samples.rst:124
@@ -313,390 +418,511 @@ msgstr ""
 #: 9022cc24653c4de4b687fcd33c37a715 b177eb7cdd264ae980cd3d5ee7efe0f6
 #: b4f171933f8b489eb27a291339ec8a7a d7da2249b6ea4b85a58d4562c6f70e56
 #: eda0bfb839bb4ed19828078fd45dbcad f6c1fc0fb39f47f585b4eaab4d136fdb
+#, fuzzy
 msgid "on"
-msgstr ""
+msgstr "On"
 
 #: ../../usermanual/samples.rst:110 ../../usermanual/samples.rst:243
 #: 4788f12735814810a2ddaf710d1234a9 c8b268fb361a402e9296803c6f9f42db
+#, fuzzy
 msgid "WiFi Client SSID"
-msgstr ""
+msgstr "WiFi Client SSID"
 
 #: ../../usermanual/samples.rst:110 ../../usermanual/samples.rst:190
 #: ../../usermanual/samples.rst:221 ../../usermanual/samples.rst:243
 #: 1a22cc8b04f0430499b9c831aa599be5 29e75bd81e1b4f648bf7712286cfd4c2
 #: 399965fa27794dd3900e9c89aa9cad5d 6348bdd9df8a480aa2ba7d4571448a7f
+#, fuzzy
 msgid "MyBoat"
-msgstr ""
+msgstr "MyBoat"
 
 #: ../../usermanual/samples.rst:112 ../../usermanual/samples.rst:245
 #: 146e1060a1fc47fd92eb54ac097d240f 77faf0b651fb4276b608204ae26cf0dc
+#, fuzzy
 msgid "WiFi Client Password"
-msgstr ""
+msgstr "WiFi Client Password"
 
 #: ../../usermanual/samples.rst:112 ../../usermanual/samples.rst:192
 #: ../../usermanual/samples.rst:245 1c9d5d6436464725bde642c54e4d4f35
 #: 8af044877ea44776931c5556b0646606 f932117af60d46f2b8a8fc31a927c233
+#, fuzzy
 msgid "MySecret"
-msgstr ""
+msgstr "MySecret"
 
 #: ../../usermanual/samples.rst:114 919611a0d2c643a494b621467d708ce3
+#, fuzzy
 msgid ":ref:`Config - Converter"
-msgstr ""
+msgstr ":Ref:`Config - Converter"
 
 #: ../../usermanual/samples.rst:116 ../../usermanual/samples.rst:162
 #: 068e137b1da245078f28eb833e08786e 6241e47d57ac4a40be3d2c5143f16bba
+#, fuzzy
 msgid "NMEA2000 Out"
-msgstr ""
+msgstr "NMEA2000 Out"
 
 #: ../../usermanual/samples.rst:118 45f26748bbb943e1a182c70c3c55fe4f
+#, fuzzy
 msgid ":ref:`Config - TCP Server`"
-msgstr ""
+msgstr ":Ref:`Config - TCP Server`"
 
 #: ../../usermanual/samples.rst:120 d3681ea61b3f4686b1c8c590c0e5a04e
+#, fuzzy
 msgid "TCP Port"
-msgstr ""
+msgstr "TCP Port"
 
 #: ../../usermanual/samples.rst:120 d334cbcdff0e40929338192a9401b0c6
+#, fuzzy
 msgid "10110"
-msgstr ""
+msgstr "10110"
 
 #: ../../usermanual/samples.rst:122 ../../usermanual/samples.rst:138
 #: 38377620fbc340df87faeaa3345c8b21 c06c154b1ef54601ba877f0359d6a69d
+#, fuzzy
 msgid "NMEA0183 Out"
-msgstr ""
+msgstr "NMEA0183 Out"
 
 #: ../../usermanual/samples.rst:124 f452182598cb4587b86e2324ec69fe77
+#, fuzzy
 msgid "NMEA0183 In"
-msgstr ""
+msgstr "NMEA0183 In"
 
 #: ../../usermanual/samples.rst:126 ../../usermanual/samples.rst:140
 #: 878baff488c148d8911db7f701f91aba bcbe15752b4245bdb7adef11c2eb5f45
+#, fuzzy
 msgid "To NMEA2000"
-msgstr ""
+msgstr "To NMEA2000"
 
 #: ../../usermanual/samples.rst:128 2c0c55c276e9447db7ae2a4bedd47ce0
+#, fuzzy
 msgid "SeaSmart Out"
-msgstr ""
+msgstr "SeaSmart Out"
 
 #: ../../usermanual/samples.rst:130 e81e0c684183404c9ee61606ee071a11
+#, fuzzy
 msgid ":ref:`Config - TCP Client`"
-msgstr ""
+msgstr ":Ref:`Config - TCP Client`"
 
 #: ../../usermanual/samples.rst:132 52f7ec2a05bf4453aba9be560991fe78
+#, fuzzy
 msgid "Enable"
-msgstr ""
+msgstr "Enable"
 
 #: ../../usermanual/samples.rst:134 a7470402c11544a1bedf0911c8429a2b
+#, fuzzy
 msgid "Remote Port"
-msgstr ""
+msgstr "Remote Port"
 
 #: ../../usermanual/samples.rst:134 24964d7f833448e2ba6dc852c8d8bd05
+#, fuzzy
 msgid "6666"
-msgstr ""
+msgstr "6666"
 
 #: ../../usermanual/samples.rst:136 0fb2754227ba477288c4e103e73d4d70
+#, fuzzy
 msgid "Remote Address"
-msgstr ""
+msgstr "Remote Address"
 
 #: ../../usermanual/samples.rst:136 ../../usermanual/samples.rst:223
 #: 5d2132004bb749a68633931132be49b6 ab933e00d2764dfaba1cd056036a120e
+#, fuzzy
 msgid "192.168.1.102"
-msgstr ""
+msgstr "192.168.1.102"
 
 #: ../../usermanual/samples.rst:138 ../../usermanual/samples.rst:142
 #: 991cf611c217456f9784539454287a8c a4de52c0771a45cea3813b3d7e5d73a0
+#, fuzzy
 msgid "off"
-msgstr ""
+msgstr "Off"
 
 #: ../../usermanual/samples.rst:142 c4de3013487543138ed75f36ea9c8a41
+#, fuzzy
 msgid "SeaSamart Out"
-msgstr ""
+msgstr "SeaSmart Out"
 
 #: ../../usermanual/samples.rst:145 d94a183eadae4882b7a9fa2280369dc3
+#, fuzzy
 msgid ""
 "Nach der Konfiguration sollten Sie im Status nachfolgende Informationen "
-"sehen. Das OBP60 ist als WiFi-Client beim LTE-Router angemeldet und hat "
-"die IP-Adresse 192.168.1.101 zugewiesen bekommen. Das OBP60 ist als TCP-"
-"Client mit dem Windsensor Yachta verbunden. Über diese Verbindung werden "
-"Winddaten als NMEA0183-Telegramme empfangen. Unter Clients werden die "
-"Anzahl der Geräte angezeigt, die als TCP-Client mit dem OBP60 verbunden "
-"sind. Wenn das Tablet mit dem OBP60 verbunden ist, sollte ein Gerät "
-"angezeigt werden. Der NMEA2000-Status wird als Online angezeigt, wenn "
-"Daten mit dem NMEA2000-Bus ausgetauscht werden. Die Anzahl der "
-"ausgetauschten NMEA2000-Telegramme sieht man unter NMEA2000 In/Out. Wenn "
-"ein Tablett mit dem OBP60 per TCP verbunden ist, sieht man die Anzahl der"
-" ausgetauschten NMEA0183-Telegramme unter TCP In/Out."
+"sehen. Das OBP60 ist als WiFi-Client beim LTE-Router angemeldet und hat die "
+"IP-Adresse 192.168.1.101 zugewiesen bekommen. Das OBP60 ist als TCP-Client "
+"mit dem Windsensor Yachta verbunden. Über diese Verbindung werden Winddaten "
+"als NMEA0183-Telegramme empfangen. Unter Clients werden die Anzahl der "
+"Geräte angezeigt, die als TCP-Client mit dem OBP60 verbunden sind. Wenn das "
+"Tablet mit dem OBP60 verbunden ist, sollte ein Gerät angezeigt werden. Der "
+"NMEA2000-Status wird als Online angezeigt, wenn Daten mit dem NMEA2000-Bus "
+"ausgetauscht werden. Die Anzahl der ausgetauschten NMEA2000-Telegramme sieht"
+" man unter NMEA2000 In/Out. Wenn ein Tablett mit dem OBP60 per TCP verbunden"
+" ist, sieht man die Anzahl der ausgetauschten NMEA0183-Telegramme unter TCP "
+"In/Out."
 msgstr ""
+"After configuration, you should see the following information in the status."
+" The OBP60 is registered as a WiFi client with the LTE router and has been "
+"assigned the IP address 192.168.1.101. The OBP60 is connected to the Yachta "
+"wind sensor as a TCP client. Wind data is received via this connection as "
+"NMEA0183 telegrams. The number of devices connected to the OBP60 as TCP "
+"clients is displayed under Clients. If the tablet is connected to the OBP60,"
+" one device should be displayed. The NMEA2000 status is displayed as Online "
+"if data is being exchanged via the NMEA2000 bus. The number of exchanged "
+"NMEA2000 telegrams can be seen under NMEA2000 In/Out. If a tablet is "
+"connected to the OBP60 via TCP, the number of exchanged NMEA0183 telegrams "
+"can be seen under TCP In/Out."
 
 #: ../../usermanual/samples.rst:148 ../../usermanual/samples.rst:217
 #: 437dfb0066cd431f8c2e9a0627f1e979 bbe5d79d111648bd9f6a65514683a5d3
+#, fuzzy
 msgid "Statusmeldungen"
-msgstr ""
+msgstr "Status messages"
 
 #: ../../usermanual/samples.rst:150 f48581f0ce9241d3997f850f0edf03fb
+#, fuzzy
 msgid ":ref:`Status`"
-msgstr ""
+msgstr ":Ref:`Status`"
 
 #: ../../usermanual/samples.rst:152 12b3e56c6f1b4f959d0a648ae11c409a
+#, fuzzy
 msgid "WiFi Client Connected"
-msgstr ""
+msgstr "WiFi Client Connected"
 
 #: ../../usermanual/samples.rst:152 15b0344db9a34d1cb413f2acb59facb8
+#, fuzzy
 msgid "true"
-msgstr ""
+msgstr "True"
 
 #: ../../usermanual/samples.rst:154 77616f3b75724e6fa6bcb1b3fd1f9ef8
+#, fuzzy
 msgid "WiFi Client IP"
-msgstr ""
+msgstr "WiFi Client IP"
 
 #: ../../usermanual/samples.rst:154 d525de74750742e49b1fd7ed57cba130
+#, fuzzy
 msgid "192.168.1.101"
-msgstr ""
+msgstr "192.168.1.101"
 
 #: ../../usermanual/samples.rst:156 ca7f029676454a93b6e402e27ed47130
+#, fuzzy
 msgid "#Clients"
-msgstr ""
+msgstr "#Clients"
 
 #: ../../usermanual/samples.rst:156 210b2878dc554433bde5a7330332cc0c
+#, fuzzy
 msgid "2"
-msgstr ""
+msgstr "2"
 
 #: ../../usermanual/samples.rst:158 94f843e5682e40b5b96a5d95134bbad5
+#, fuzzy
 msgid "NMEA2000 State"
-msgstr ""
+msgstr "NMEA2000 State"
 
 #: ../../usermanual/samples.rst:158 a8eb094a05db47eda54710bdb4af4d59
+#, fuzzy
 msgid "[0] Online"
-msgstr ""
+msgstr "[0] Online"
 
 #: ../../usermanual/samples.rst:160 d3c72d9f6e9c46b786648ced063e88e9
+#, fuzzy
 msgid "NMEA2000 In"
-msgstr ""
+msgstr "NMEA2000 In"
 
 #: ../../usermanual/samples.rst:160 ../../usermanual/samples.rst:162
 #: ../../usermanual/samples.rst:164 ../../usermanual/samples.rst:166
 #: 078714eafd114246806046c36881bd6f 764c3f478bc44a3bb0818aa0bc9be336
 #: 7d50ff5377d447859ae66cef0bb393bc dfc90c4b659744579e69d413fe1352ca
+#, fuzzy
 msgid "Telegrammeanzahl"
-msgstr ""
+msgstr "Number of telegrams"
 
 #: ../../usermanual/samples.rst:164 49527728d239482fb1c3b6d03b546dcd
+#, fuzzy
 msgid "TCP In"
-msgstr ""
+msgstr "TCP In"
 
 #: ../../usermanual/samples.rst:166 32c778acc33c44c0a742124b2a91d66f
+#, fuzzy
 msgid "TCP Out"
-msgstr ""
+msgstr "TCP Out"
 
 #: ../../usermanual/samples.rst:169 0565177c926c492a854e6e3eae4d9d94
+#, fuzzy
 msgid ""
 "Die Verbindung des OBP60 mit dem NMEA2000-Netzwerk erfolgt wie im "
 "nachfolgenden Bild angezeigt. Ist das OBP60 ein normaler Teilnehmer des "
 "Bussystems, so muss die Terminierung deaktiviert sein."
 msgstr ""
+"The OBP60 is connected to the NMEA 2000 network as shown in the following "
+"figure. If the OBP60 is a normal participant in the bus system, termination "
+"must be disabled."
 
 #: ../../usermanual/samples.rst:173 d820605350e74edf9d3a076a7d7c9dbd
+#, fuzzy
 msgid "Abb. CAN-Bus Anbindung OBP60"
-msgstr ""
+msgstr "Fig. CAN bus connection OBP60"
 
 #: ../../usermanual/samples.rst:176 acdcdb71173a407b82e85645fbaf4dff
+#, fuzzy
 msgid "Konfiguration Yachta"
-msgstr ""
+msgstr "Yachta configuration"
 
 #: ../../usermanual/samples.rst:181 be2773387bdd4e42bb0a6a4c18af3ba3
+#, fuzzy
 msgid ""
-"Der Windsensor Yachta ist so konfiguriert, dass er im WiFi-Netzwerk des "
-"LTE-Routers eingebucht ist. Der Windsensor stellt über den Port 6666 dem "
-"OBP60 Winddaten zur Verfügung. Es werden dabei nur Daten vom Windsensor "
-"Yachta zum OBP60 übertragen."
+"Der Windsensor Yachta ist so konfiguriert, dass er im WiFi-Netzwerk des LTE-"
+"Routers eingebucht ist. Der Windsensor stellt über den Port 6666 dem OBP60 "
+"Winddaten zur Verfügung. Es werden dabei nur Daten vom Windsensor Yachta zum"
+" OBP60 übertragen."
 msgstr ""
+"The Yachta wind sensor is configured to log into the LTE router's Wi-Fi "
+"network. The wind sensor provides wind data to the OBP60 via port 6666. Only"
+" data from the Yachta wind sensor is transferred to the OBP60."
 
 #: ../../usermanual/samples.rst:183 45c7538ead94415abdb8944219f259b2
+#, fuzzy
 msgid "Folgende Einstellungen werden für den Windsensor Yachta vorgenommen:"
-msgstr ""
+msgstr "The following settings are made for the Yachta wind sensor:"
 
 #: ../../usermanual/samples.rst:186 ../../usermanual/samples.rst:196
 #: ../../usermanual/samples.rst:217 946bca45d9ad4dadb93c9ee3584d867b
 #: ab33eb741f9d4b1d9f449ad0a0771ee6 d3dbb322a94344b8b32cc33225a282a8
+#, fuzzy
 msgid "Yachta"
-msgstr ""
+msgstr "Yacht"
 
 #: ../../usermanual/samples.rst:188 5d624cb3cc7a46a0aab88c2a2832cf52
+#, fuzzy
 msgid "**Network Settings**"
-msgstr ""
+msgstr "**Network Settings**"
 
 #: ../../usermanual/samples.rst:190 ../../usermanual/samples.rst:221
 #: 1147f454d1924d5c8269d4f139deb41a 212d7b071b214f608b3b37be2d6d3fce
+#, fuzzy
 msgid "WLAN Client SSID"
-msgstr ""
+msgstr "WLAN Client SSID"
 
 #: ../../usermanual/samples.rst:192 ../../usermanual/samples.rst:223
 #: 968a4a82be6c43c78c914dd3301e02fd ed5f2cfa8b3d4629942c6482089f98a6
+#, fuzzy
 msgid "WLAN Client IP"
-msgstr ""
+msgstr "WLAN Client IP"
 
 #: ../../usermanual/samples.rst:194 56010cdcc9f44836af7a1aacfb00e139
+#, fuzzy
 msgid "Connection Timeout"
-msgstr ""
+msgstr "Connection Timeout"
 
 #: ../../usermanual/samples.rst:194 959d74c593874dd9862d127ba6069f77
+#, fuzzy
 msgid "30s"
-msgstr ""
+msgstr "30S"
 
 #: ../../usermanual/samples.rst:196 85b1264257814bb4ae9fbfba5a40a34a
+#, fuzzy
 msgid "WLAN Sever SSID"
-msgstr ""
+msgstr "WLAN Sever SSID"
 
 #: ../../usermanual/samples.rst:198 d111de89a0dd4ac287d7ac07a7ddaeec
+#, fuzzy
 msgid "WLAN Server Password"
-msgstr ""
+msgstr "WLAN Server Password"
 
 #: ../../usermanual/samples.rst:198 e67aa39a787249bf92def8b313d2f6c9
+#, fuzzy
 msgid "xxxxxxxx"
-msgstr ""
+msgstr "Xxxxxxxxx"
 
 #: ../../usermanual/samples.rst:200 4de1ab2adc344ba997ded8e557b62a9a
+#, fuzzy
 msgid "AP Channel"
-msgstr ""
+msgstr "AP Channel"
 
 #: ../../usermanual/samples.rst:200 87f87e7849d540e28c7219c7ba73247e
+#, fuzzy
 msgid "1"
-msgstr ""
+msgstr "1"
 
 #: ../../usermanual/samples.rst:202 42473bb9cbe648afb2c653f5f5ad28eb
+#, fuzzy
 msgid "Server Mode"
-msgstr ""
+msgstr "Server Mode"
 
 #: ../../usermanual/samples.rst:202 676e2b647b994b29ae000360042b2ec4
+#, fuzzy
 msgid "HTTP (JSON/NMEA)"
-msgstr ""
+msgstr "HTTP (JSON/NMEA)"
 
 #: ../../usermanual/samples.rst:204 94f06c37f307408f9c1015f9cf9c84f5
+#, fuzzy
 msgid "mDNS Service"
-msgstr ""
+msgstr "MDNS Service"
 
 #: ../../usermanual/samples.rst:206 6d3008070fa74f44af0072d9f39a6bf4
+#, fuzzy
 msgid "**Device Settings**"
-msgstr ""
+msgstr "**Device Settings**"
 
 #: ../../usermanual/samples.rst:208 15fc3872a6f44498936d1903d8b7b6de
+#, fuzzy
 msgid "Wind Sensor Type"
-msgstr ""
+msgstr "Wind Sensor Type"
 
 #: ../../usermanual/samples.rst:208 3f0f5b1054e84d4c94d44b5b9092cdd2
+#, fuzzy
 msgid "Yachta 2.0"
-msgstr ""
+msgstr "Yacht 2.0"
 
 #: ../../usermanual/samples.rst:212 30c6b2ab59024575a99e2adb0fbaea61
+#, fuzzy
 msgid ""
-"Der Windsensor Yachta lässt sich in einen Demo-Mode versetzen. So kann "
-"die Funktionalität außerhalb des Bootes getestet werden. Der Windsensor "
-"liefert dann simulierte Winddaten. Über **Server Mode** kann der "
-"Simulationsmodus mit der Einstellung ``Demo Mode`` aktiviert werden."
+"Der Windsensor Yachta lässt sich in einen Demo-Mode versetzen. So kann die "
+"Funktionalität außerhalb des Bootes getestet werden. Der Windsensor liefert "
+"dann simulierte Winddaten. Über **Server Mode** kann der Simulationsmodus "
+"mit der Einstellung ``Demo Mode`` aktiviert werden."
 msgstr ""
+"The Yachta wind sensor can be put into demo mode. This allows functionality "
+"to be tested outside of the boat. The wind sensor then provides simulated "
+"wind data. Simulation mode can be activated via **Server Mode** with the "
+"setting ``Demo Mode``."
 
 #: ../../usermanual/samples.rst:214 34cced813f3d44b2b08c92fc854a1eb9
+#, fuzzy
 msgid ""
-"Nach der Konfiguration sollten unter **Device Info** im Windsensor Yachta"
-" folgende Statusmeldungen zu sehen sein:"
+"Nach der Konfiguration sollten unter **Device Info** im Windsensor Yachta "
+"folgende Statusmeldungen zu sehen sein:"
 msgstr ""
+"After configuration, the following status messages should be visible under "
+"**Device Info** in the Yachta wind sensor:"
 
 #: ../../usermanual/samples.rst:219 3665b30fa6414637a99a91a6af697532
+#, fuzzy
 msgid "**Network Parameter**"
-msgstr ""
+msgstr "**Network Parameter**"
 
 #: ../../usermanual/samples.rst:225 5f9c133b03644fc9abf6f25a378b3b9c
+#, fuzzy
 msgid "Connection Quality"
-msgstr ""
+msgstr "Connection Quality"
 
 #: ../../usermanual/samples.rst:225 44b7f33576584280b689b2cd929c711c
+#, fuzzy
 msgid ">50%"
-msgstr ""
+msgstr ">50%"
 
 #: ../../usermanual/samples.rst:229 e9cd60902c7e4c38a34244c79689f59b
+#, fuzzy
 msgid "Tablett Konfiguration"
-msgstr ""
+msgstr "Tablet configuration"
 
 #: ../../usermanual/samples.rst:234 439b124810e54430a3937b8a014fa6c9
+#, fuzzy
 msgid ""
-"Das Android-Tablett wird in das WiFi-Netzwerk des LTE-Routers hinzugefügt"
-" und anschließend die App AvNav aus dem Play-Sore installiert. Details "
-"zur Konfiguration entnehmen Sie dem Handbuch zum Tablett. Die Daten eines"
-" GPS-Empfängers im Tablett lassen sich ebenfalls im NMEA0183- und "
+"Das Android-Tablett wird in das WiFi-Netzwerk des LTE-Routers hinzugefügt "
+"und anschließend die App AvNav aus dem Play-Sore installiert. Details zur "
+"Konfiguration entnehmen Sie dem Handbuch zum Tablett. Die Daten eines GPS-"
+"Empfängers im Tablett lassen sich ebenfalls im NMEA0183- und "
 "NMEA2000-Netzwerk nutzen."
 msgstr ""
+"The Android tablet is added to the LTE router's Wi-Fi network, and then the "
+"AvNav app is installed from the Play Store. Configuration details can be "
+"found in the tablet's manual. Data from a GPS receiver in the tablet can "
+"also be used in the NMEA 0183 and NMEA 2000 network."
 
 #: ../../usermanual/samples.rst:237 3c5db368510f49b68dca17cffa075c6b
+#, fuzzy
 msgid "Android-Tablett"
-msgstr ""
+msgstr "Android-Tablett"
 
 #: ../../usermanual/samples.rst:239 3dede54e5a5049fd9d4710ef4c8e2906
+#, fuzzy
 msgid "**Einstellungen WiFi**"
-msgstr ""
+msgstr "**Wi-Fi Settings**"
 
 #: ../../usermanual/samples.rst:241 c2b07858ff9f4c0ab1803e86df73c4de
+#, fuzzy
 msgid "WiFi"
-msgstr ""
+msgstr "WiFi"
 
 #: ../../usermanual/samples.rst:247 fd25c5a68c734fc8b7134ec7291fabef
+#, fuzzy
 msgid "App-Installation"
-msgstr ""
+msgstr "App-Installation"
 
 #: ../../usermanual/samples.rst:247 4e07bd0901f04ed8a68c03d8668e93fd
+#, fuzzy
 msgid "AvNav"
-msgstr ""
+msgstr "AvNav"
 
 #: ../../usermanual/samples.rst:250 494fccdbe3324cc9839c27d58c91898a
+#, fuzzy
 msgid ""
-"Nachfolgend wird gezeigt, wie man Busdaten über ein Tablett in AvNav "
-"nutzen kann. Die Datenübertragung erfolgt über WiFi. Das Tablett tauscht "
-"dabei die Daten mit dem OBP60 über einen TCP-Verbindung aus. Dabei wird "
-"das Tablett als TCP-Client an den OBP60 angedockt. Unter AvNav wird die "
-"Verbindung als TCPReader eingerichtet."
+"Nachfolgend wird gezeigt, wie man Busdaten über ein Tablett in AvNav nutzen "
+"kann. Die Datenübertragung erfolgt über WiFi. Das Tablett tauscht dabei die "
+"Daten mit dem OBP60 über einen TCP-Verbindung aus. Dabei wird das Tablett "
+"als TCP-Client an den OBP60 angedockt. Unter AvNav wird die Verbindung als "
+"TCPReader eingerichtet."
 msgstr ""
+"The following demonstrates how to use bus data via a tablet in AvNav. Data "
+"is transferred via WiFi. The tablet exchanges data with the OBP60 via a TCP "
+"connection. The tablet is docked to the OBP60 as a TCP client. In AvNav, the"
+" connection is configured as a TCPReader."
 
 #: ../../usermanual/samples.rst:254 171ca3e20c0d46bf9c35c31319638d23
+#, fuzzy
 msgid "Abb.: Startseite AvNav für Android"
-msgstr ""
+msgstr "Fig.: AvNav homepage for Android"
 
 #: ../../usermanual/samples.rst:256 13a559a5e9844ee2a3f9793cacf2c382
+#, fuzzy
 msgid ""
-"Unter AvNav klicken Sie auf der Startseite oben rechts das Symbol mit den"
-" 3 Strichen."
+"Unter AvNav klicken Sie auf der Startseite oben rechts das Symbol mit den 3 "
+"Strichen."
 msgstr ""
+"Under AvNav, click the icon with the three lines in the top right corner of "
+"the home page."
 
 #: ../../usermanual/samples.rst:260 6090fbaa676c49bf9774bd5e50695da6
+#, fuzzy
 msgid ""
-"Sie gelangen dann auf die Seite zum Serverstatus. Dort können Sie über "
-"das Plus-Symbol weitere Verbindungen zum AvNavServer einrichten."
+"Sie gelangen dann auf die Seite zum Serverstatus. Dort können Sie über das "
+"Plus-Symbol weitere Verbindungen zum AvNavServer einrichten."
 msgstr ""
+"You will then be taken to the server status page. There, you can set up "
+"additional connections to the AvNavServer using the plus symbol."
 
 #: ../../usermanual/samples.rst:264 797e33f67dd14043a43ecd8cb145cc90
-msgid "Für die bidirektionale Kommunikation über USB wählen Sie **TCPReader**."
-msgstr ""
+#, fuzzy
+msgid ""
+"Für die bidirektionale Kommunikation über USB wählen Sie **TCPReader**."
+msgstr "For bidirectional communication via USB, select **TCPReader**."
 
 #: ../../usermanual/samples.rst:268 a8827391a13240d9ad3fdbee3fc4a3cb
+#, fuzzy
 msgid "Abb.: Verbindungstypen"
-msgstr ""
+msgstr "Fig.: Connection types"
 
 #: ../../usermanual/samples.rst:270 8982d635e2ba4699813f967af2cfa3f2
+#, fuzzy
 msgid ""
 "Unter **IP-Address** tragen Sie die IP-Adresse des OBP60 ein und als "
 "**Port** die 10110. Um nicht nur Daten senden, sondern auch empfangen zu "
 "können, aktivieren Sie **SendOut**."
 msgstr ""
+"Under **IP Address** enter the IP address of the OBP60 and as **Port** enter"
+" 10110. To be able to not only send but also receive data, activate "
+"**SendOut**."
 
 #: ../../usermanual/samples.rst:274 be6644a958964a42b4cdb84a8cc00702
+#, fuzzy
 msgid "Abb.: Einstellungen zur TCPReader-Verbindung"
-msgstr ""
+msgstr "Fig.: Settings for the TCPReader connection"
 
 #: ../../usermanual/samples.rst:276 3a6a660357304beb951ff56f96abb3cb
+#, fuzzy
 msgid ""
-"Nach der Übernahme aller Daten ist die neue Verbindung im Server-Status "
-"als TCPReader-Verbindung zu sehen."
+"Nach der Übernahme aller Daten ist die neue Verbindung im Server-Status als "
+"TCPReader-Verbindung zu sehen."
 msgstr ""
+"After all data has been transferred, the new connection can be seen in the "
+"server status as a TCPReader connection."
 
 #: ../../usermanual/samples.rst:280 d66211b0cd6a45a1a049d3abe6633841
+#, fuzzy
 msgid "Abb.: Server-Status"
-msgstr ""
-
+msgstr "Abb.: Server-Status"

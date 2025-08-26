@@ -7,75 +7,96 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: OBP60 V2 Dokumentation \n"
+"Project-Id-Version: OBP60 V2 Dokumentation\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-26 14:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: en\n"
 "Language-Team: en <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../help/glossar.rst:2 95a3008373414f1da674ba0e45cc8fa0
+#, fuzzy
 msgid "Glossar"
-msgstr ""
+msgstr "Glossary"
 
 #: ../../help/glossar.rst:4 29e10b8950474e9eb7c4de0af4299dc2
+#, fuzzy
 msgid ""
-"An dieser Stelle sind Hervorhebungen und deren Bedeutung gezeigt, die in "
-"den Texten verwendet werden. Die Hervorhebungen werden in farbigen Kästen"
-" dargestellt. Die Farben folgen dem Ampelprinzip. Grüne Farben "
-"entsprechen Hinweisen und Empfehlungen, während gelbe und rote Farben "
-"wichtige und gefährliche Vorgehensweisen kennzeichnen, die vermieden "
-"werden sollten."
+"An dieser Stelle sind Hervorhebungen und deren Bedeutung gezeigt, die in den"
+" Texten verwendet werden. Die Hervorhebungen werden in farbigen Kästen "
+"dargestellt. Die Farben folgen dem Ampelprinzip. Grüne Farben entsprechen "
+"Hinweisen und Empfehlungen, während gelbe und rote Farben wichtige und "
+"gefährliche Vorgehensweisen kennzeichnen, die vermieden werden sollten."
 msgstr ""
+"Here, the highlights used in the text and their meaning are shown. The "
+"highlights are shown in colored boxes. The colors follow the traffic light "
+"principle. Green colors correspond to notes and recommendations, while "
+"yellow and red colors indicate important and dangerous practices that should"
+" be avoided."
 
 #: ../../help/glossar.rst:7 08937266c8d8434784734c111d5de3f6
+#, fuzzy
 msgid "Eine Bemerkung hebt einen bestimmten Sachverhalt hervor."
-msgstr ""
+msgstr "A remark highlights a particular fact."
 
 #: ../../help/glossar.rst:10 be8e4430a42a45368cdbf726f116a745
+#, fuzzy
 msgid "Ein Hinweis dient als Hilfestellung."
-msgstr ""
+msgstr "A note serves as an aid."
 
 #: ../../help/glossar.rst:13 b94a989648494883b69da9c1605bed54
+#, fuzzy
 msgid "Mit Wichtig gekennzeichnete Stellen sollten besonders beachtet werden."
-msgstr ""
+msgstr "Sections marked as Important should be given special attention."
 
 #: ../../help/glossar.rst:16 cf419a6b2aef482389cdebd4afab41b3
+#, fuzzy
 msgid "Ein Tipp vereinfacht den Umgang mit einem Sachverhalt."
-msgstr ""
+msgstr "A tip makes it easier to deal with a situation."
 
 #: ../../help/glossar.rst:19 cd4c28037f514056823d084c62fe12e4
-msgid "Achtung weist auf einen bestimmten Sachverhalt hin, der eintreten kann."
-msgstr ""
+#, fuzzy
+msgid ""
+"Achtung weist auf einen bestimmten Sachverhalt hin, der eintreten kann."
+msgstr "Caution indicates a specific situation that may occur."
 
 #: ../../help/glossar.rst:22 bb1223c97b11493388e70abf635ee276
+#, fuzzy
 msgid ""
 "Vorsicht kennzeichnet Vorgehensweisen, die vermieden werden sollen und "
 "kritisch werden können."
 msgstr ""
+"Caution indicates procedures that should be avoided and could become "
+"critical."
 
 #: ../../help/glossar.rst:25 dc7abbabe9b44987b8912430bc4daa12
+#, fuzzy
 msgid ""
 "Warnung kennzeichnet Vorgehensweisen oder Sachverhalte die nicht "
-"durchgeführt werden dürfen. Warnungen haben den Character einer "
-"Empfehlung."
+"durchgeführt werden dürfen. Warnungen haben den Character einer Empfehlung."
 msgstr ""
+"A warning indicates a procedure or situation that should not be performed. "
+"Warnings have the character of a recommendation."
 
 #: ../../help/glossar.rst:28 f3970217a18d4c6580eba94c0c221116
+#, fuzzy
 msgid ""
-"Als gefährlich ausgewiesene Bereiche können Schaden verursachen. Sie "
-"sollten unbedingt den Anweisungen folgen."
+"Als gefährlich ausgewiesene Bereiche können Schaden verursachen. Sie sollten"
+" unbedingt den Anweisungen folgen."
 msgstr ""
+"Areas designated as hazardous can cause harm. You should strictly follow the"
+" instructions."
 
 #: ../../help/glossar.rst:31 4dda18070f304b0882e03f5abc675cb2
+#, fuzzy
 msgid ""
 "Mit Fehler gekennzeichnete Stellen zeigen, wie Fehler entstehen und "
 "vermieden werden können."
 msgstr ""
-
+"Places marked with errors show how errors occur and how they can be avoided."

@@ -7,143 +7,204 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: OBP60 V2 Dokumentation \n"
+"Project-Id-Version: OBP60 V2 Dokumentation\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-26 14:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: en\n"
 "Language-Team: en <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../usermanual/functionality.rst:2 2b19ff6d04e245a29792077e7cd4514c
+#, fuzzy
 msgid "Funktionsweise"
-msgstr ""
+msgstr "How it works"
 
 #: ../../usermanual/functionality.rst:5 38f19375ab7f4344af0ab854d7ed7ee5
+#, fuzzy
 msgid "Bussysteme"
-msgstr ""
+msgstr "Bus systems"
 
 #: ../../usermanual/functionality.rst:10 e09568aba7c54ecd9f4a381bdc6df251
+#, fuzzy
 msgid ""
 "Das OBP60 ist ein Datenanzeigegerät für den Marinebereich, mit dem "
 "verschiedenste Informationen aus Bussystemen ausgelesen und angezeigt "
 "werden. Zu den typischen Bussystemen im Marinebereich, die das OBP60 "
 "verarbeitet, gehören:"
 msgstr ""
+"The OBP60 is a marine data display unit that reads and displays a wide "
+"variety of information from bus systems. Typical marine bus systems that the"
+" OBP60 processes include:"
 
 #: ../../usermanual/functionality.rst:12 80419e9038084d51a1434b7452918fed
+#, fuzzy
 msgid "NMEA0183 (RS485, isoliert)"
-msgstr ""
+msgstr "NMEA0183 (RS485, isolated)"
 
 #: ../../usermanual/functionality.rst:13 a7052566250a45ffb1a687fd0c0c0221
+#, fuzzy
 msgid "NMEA2000 (CAN, isoliert)"
-msgstr ""
+msgstr "NMEA2000 (CAN, isolated)"
 
 #: ../../usermanual/functionality.rst:15 fd8a4956e94a40579e495b6cb2a54bb8
+#, fuzzy
 msgid ""
 "Damit lässt sich das OBP60 in vorhandene Bootsnetze integrieren. Es kann "
-"selbst Daten einspeisen und auslesen. Darüber hinaus verarbeitet das "
-"OPB60 weitere Sensornetzwerke wie:"
+"selbst Daten einspeisen und auslesen. Darüber hinaus verarbeitet das OPB60 "
+"weitere Sensornetzwerke wie:"
 msgstr ""
+"This allows the OBP60 to be integrated into existing boat networks. It can "
+"input and read data itself. In addition, the OPB60 processes other sensor "
+"networks such as:"
 
 #: ../../usermanual/functionality.rst:17 d6508f85b9804bd6a8b18dab2c680aa5
+#, fuzzy
 msgid "I2C-Bus (5V, isoliert)"
-msgstr ""
+msgstr "I2C bus (5V, isolated)"
 
 #: ../../usermanual/functionality.rst:18 87446bc00d1046298fa77961bd192a11
+#, fuzzy
 msgid "1Wire-Bus (3.3V, nicht isoliert)"
-msgstr ""
+msgstr "1-Wire bus (3.3V, non-isolated)"
 
 #: ../../usermanual/functionality.rst:20 b02b15a3aa364b62b8957a86e3c8091d
+#, fuzzy
 msgid ""
-"Diese beiden Bussysteme kommen aus dem Elektronikbereich. Über diese "
-"beiden Busse lassen sich günstige Sensoren anbinden, um deren Daten "
-"anzuzeigen. Über den isolierten I2C-Bus können zudem recht einfach und "
-"sicher eigene Hardwareerweiterungen eingebunden werden."
+"Diese beiden Bussysteme kommen aus dem Elektronikbereich. Über diese beiden "
+"Busse lassen sich günstige Sensoren anbinden, um deren Daten anzuzeigen. "
+"Über den isolierten I2C-Bus können zudem recht einfach und sicher eigene "
+"Hardwareerweiterungen eingebunden werden."
 msgstr ""
+"These two bus systems originate from the electronics sector. These two buses"
+" can be used to connect inexpensive sensors and display their data. The "
+"isolated I2C bus also allows for easy and secure integration of custom "
+"hardware extensions."
 
 #: ../../usermanual/functionality.rst:23 db3be424717f44caa026c60615857aff
+#, fuzzy
 msgid "Gateway"
-msgstr ""
+msgstr "Gateway"
 
 #: ../../usermanual/functionality.rst:28 55f12c2a4d2d4759a60bc4363eb89d41
+#, fuzzy
 msgid ""
 "Im OBP60 ist ein Gateway integriert, das Daten zwischen NMEA0183 und "
-"NMEA2000 bidirektional austauschen kann. Dabei werden die Daten des einen"
-" Busses in die Daten des anderen Busses übersetzt. Die Übersetzung "
+"NMEA2000 bidirektional austauschen kann. Dabei werden die Daten des einen "
+"Busses in die Daten des anderen Busses übersetzt. Die Übersetzung "
 "funktioniert dabei in beide Richtungen."
 msgstr ""
+"The OBP60 features a gateway that can exchange data bidirectionally between "
+"NMEA 0183 and NMEA 2000. Data from one bus is translated into data from the "
+"other bus. The translation works in both directions."
 
 #: ../../usermanual/functionality.rst:31 f0486fa8b5a44e7c8a15db98644262be
+#, fuzzy
 msgid ""
 "Dabei ist zu beachten, dass nicht alle NMEA2000-Daten in NMEA0183-Daten "
 "übersetzt werden können, weil dafür nicht immer geeignete Telegramme in "
 "NMEA0183 existieren."
 msgstr ""
+"It should be noted that not all NMEA2000 data can be translated into "
+"NMEA0183 data because suitable telegrams do not always exist in NMEA0183."
 
 #: ../../usermanual/functionality.rst:34 fedbeacff9d84653b3ae2ea588e2ea2e
+#, fuzzy
 msgid "WiFi-Verbindung"
-msgstr ""
+msgstr "WiFi connection"
 
 #: ../../usermanual/functionality.rst:36 9723926e7d7e495f86c644b4251dc1a0
+#, fuzzy
 msgid ""
 "Das OBP60 verfügt über eine WiFi-Funktionalität im 2.4 GHz Funkbereich. "
 "Darüber hinaus kann das Gerät mit dem Internet oder mit anderen WiFi-"
 "Netzwerken verbunden werden und so mit anderen Geräten kommunizieren. So "
-"lassen sich z.B. Daten aus den Bussystemen an einen Laptop, einen PC oder"
-" ein Handy übertragen oder von dort beziehen. Damit ist es möglich, die "
-"Sensordaten auch in Drittanbieter-Software wie Navionics, NMEA-Remote "
-"oder WinGPS zu verwenden."
+"lassen sich z.B. Daten aus den Bussystemen an einen Laptop, einen PC oder "
+"ein Handy übertragen oder von dort beziehen. Damit ist es möglich, die "
+"Sensordaten auch in Drittanbieter-Software wie Navionics, NMEA-Remote oder "
+"WinGPS zu verwenden."
 msgstr ""
+"The OBP60 features Wi-Fi functionality in the 2.4 GHz wireless range. "
+"Furthermore, the device can be connected to the internet or other Wi-Fi "
+"networks, allowing it to communicate with other devices. For example, data "
+"from the bus systems can be transferred to or retrieved from a laptop, PC, "
+"or mobile phone. This also makes it possible to use the sensor data in "
+"third-party software such as Navionics, NMEA Remote, or WinGPS."
 
 #: ../../usermanual/functionality.rst:39 5ec9344af16f4d8c982da7414fd3b8f4
+#, fuzzy
 msgid "Konfiguration"
-msgstr ""
+msgstr "Configuration"
 
 #: ../../usermanual/functionality.rst:41 3984966ebb8c42fc8c8971638422e593
+#, fuzzy
 msgid ""
-"Das OBP60 hat einen Access Point und einen kleinen Webserver integriert, "
-"mit denen das Gerät konfiguriert werden kann. Im Gegensatz zu anderen "
+"Das OBP60 hat einen Access Point und einen kleinen Webserver integriert, mit"
+" denen das Gerät konfiguriert werden kann. Im Gegensatz zu anderen "
 "kommerziellen Geräten erfolgt die Konfiguration des OBP60 ausschließlich "
 "webbasiert. Dazu kann z.B. ein Handy benutzt werden. So ist die "
 "Konfiguration des Gerätes deutlich einfacher und komfortabler. Im Gerät "
 "lassen sich bis zu 10 Anzeigeseiten frei definieren. Der Anwender kann "
 "zwischen numerischen und grafischen Anzeigeseiten auswählen. Für jede "
 "numerische Anzeigeseite können beliebige Daten der Bussysteme angezeigt "
-"werden. Bei den grafischen Anzeigeseiten sind die Dateninhalte "
-"vorgegeben, da sie spezielle Funktionalitäten bieten."
+"werden. Bei den grafischen Anzeigeseiten sind die Dateninhalte vorgegeben, "
+"da sie spezielle Funktionalitäten bieten."
 msgstr ""
+"The OBP60 has an integrated access point and a small web server for device "
+"configuration. Unlike other commercial devices, the OBP60 is configured "
+"entirely via the web. A mobile phone, for example, can be used for this "
+"purpose. This makes device configuration significantly simpler and more "
+"convenient. Up to 10 display pages can be freely defined in the device. The "
+"user can choose between numeric and graphic display pages. Any bus system "
+"data can be displayed on each numeric display page. The data content of the "
+"graphic display pages is predefined because they offer special "
+"functionality."
 
 #: ../../usermanual/functionality.rst:44 cc9ccf9ddc254c08a6bf93b1183e808c
+#, fuzzy
 msgid "Anzeige und Bedienung"
-msgstr ""
+msgstr "Display and operation"
 
 #: ../../usermanual/functionality.rst:49 c310d452c5f743bfa29cf44d2495fe28
+#, fuzzy
 msgid ""
 "Als Anzeige wird ein E-Paper Display verwendet. Es besitzt einen hohen "
 "Kontrast und eine gute Ablesbarkeit auch bei starkem Sonnenlicht. Zudem "
 "verbraucht es sehr wenig Energie. Beim Nachtbetrieb ist das Display "
-"beleuchtbar. Die Hintergrundfarbe kann frei gewählt werden. So lässt sich"
-" das OBP60 auch gut mit anderen Anzeigegeräten kombinieren, um ein "
-"einheitliches Aussehen zu erreichen. Eine kleine Flash-LED und ein Buzzer"
-" signalisieren dem Anwender optisch und akustisch "
-"Grenzwertüberschreitungen. Die Grenzwerte lassen sich frei einstellen."
+"beleuchtbar. Die Hintergrundfarbe kann frei gewählt werden. So lässt sich "
+"das OBP60 auch gut mit anderen Anzeigegeräten kombinieren, um ein "
+"einheitliches Aussehen zu erreichen. Eine kleine Flash-LED und ein Buzzer "
+"signalisieren dem Anwender optisch und akustisch Grenzwertüberschreitungen. "
+"Die Grenzwerte lassen sich frei einstellen."
 msgstr ""
+"An e-paper display is used. It features high contrast and is easy to read, "
+"even in strong sunlight. It also consumes very little energy. The display "
+"can be illuminated for nighttime operation. The background color can be "
+"freely selected. This allows the OBP60 to be easily combined with other "
+"display devices to achieve a consistent look. A small flashing LED and a "
+"buzzer provide the user with visual and acoustic warnings when limit values "
+"are exceeded. The limit values can be freely adjusted."
 
 #: ../../usermanual/functionality.rst:51 968c646441ec4fe99dc8df0ff3b5e456
+#, fuzzy
 msgid ""
-"Die Auswahl der Anzeigeseiten erfolgt über kapazitive Sensortasten, indem"
-" mit einer Wischgeste über die Tasten die nächste Seite angesteuert wird."
-" Die Sensitivität der Tasten lässt sich einstellen. Gegen versehentliche "
+"Die Auswahl der Anzeigeseiten erfolgt über kapazitive Sensortasten, indem "
+"mit einer Wischgeste über die Tasten die nächste Seite angesteuert wird. Die"
+" Sensitivität der Tasten lässt sich einstellen. Gegen versehentliche "
 "Auslösung können die Tasten auch gesperrt werden. Je nach Anzeigeseite "
 "können einige Einstellungen auch über die Tasten vorgenommen werden. Die "
 "Einstellungen gelten dann ausschließlich für die Anzeigeseite und werden "
-"gespeichert, sodass die Einstellungen beim Seitenwechsel erhalten "
-"bleiben."
+"gespeichert, sodass die Einstellungen beim Seitenwechsel erhalten bleiben."
 msgstr ""
-
+"The display pages are selected using capacitive sensor buttons, which allow "
+"you to navigate to the next page with a swipe. The sensitivity of the "
+"buttons can be adjusted. The buttons can also be locked to prevent "
+"accidental activation. Depending on the display page, some settings can also"
+" be adjusted using the buttons. The settings then apply exclusively to that "
+"display page and are saved so that the settings are retained when changing "
+"pages."

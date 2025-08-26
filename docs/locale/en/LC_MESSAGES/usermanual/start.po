@@ -7,307 +7,432 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: OBP60 V2 Dokumentation \n"
+"Project-Id-Version: OBP60 V2 Dokumentation\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-26 14:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: en\n"
 "Language-Team: en <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../usermanual/start.rst:2 90354ce002a649f695640fb9c52995da
+#, fuzzy
 msgid "Inbetriebnahme"
-msgstr ""
+msgstr "Commissioning"
 
 #: ../../usermanual/start.rst:4 c46989f7a56d402e8afa9dc588405088
+#, fuzzy
 msgid ""
-"Dieser Abschnitt hat die Erstinbetriebnahme Ihres OBP60 zum Inhalt. Das "
-"geht am einfachsten, wenn das Gerät noch nicht im Boot eingebaut ist. "
-"Dazu wird das Gerät mit Strom versorgt, um die ersten Einstellungen "
-"vorzunehmen. So können Sie die Funktionalität testen, bevor Sie das Gerät"
-" im Boot einbauen."
+"Dieser Abschnitt hat die Erstinbetriebnahme Ihres OBP60 zum Inhalt. Das geht"
+" am einfachsten, wenn das Gerät noch nicht im Boot eingebaut ist. Dazu wird "
+"das Gerät mit Strom versorgt, um die ersten Einstellungen vorzunehmen. So "
+"können Sie die Funktionalität testen, bevor Sie das Gerät im Boot einbauen."
 msgstr ""
+"This section covers the initial setup of your OBP60. This is easiest when "
+"the device is not yet installed in the boat. This involves powering the "
+"device up and making the initial settings. This allows you to test its "
+"functionality before installing the device in the boat."
 
 #: ../../usermanual/start.rst:7 b12cf1da26c34f6da37e5719afe10dbf
+#, fuzzy
 msgid "Schutzkonzept"
-msgstr ""
+msgstr "Protection concept"
 
 #: ../../usermanual/start.rst:9 16b2d01f4c044f60919e08f391e4ac4f
+#, fuzzy
 msgid ""
-"Das OBP60 verfügt über ein mehrstufiges Schutzkonzept. Das soll "
-"verhindern, dass sich Störungen im Versorgungsnetz und auf den "
-"Datenleitungen im System ausbreiten. Damit wird sichergestellt, dass das "
-"OBP60 trotz Störungen nicht komplett ausfällt und in wichtigen Teilen "
-"weitestgehend funktionsfähig bleibt. Um dies zu erreichen, sind die "
-"Bussysteme:"
+"Das OBP60 verfügt über ein mehrstufiges Schutzkonzept. Das soll verhindern, "
+"dass sich Störungen im Versorgungsnetz und auf den Datenleitungen im System "
+"ausbreiten. Damit wird sichergestellt, dass das OBP60 trotz Störungen nicht "
+"komplett ausfällt und in wichtigen Teilen weitestgehend funktionsfähig "
+"bleibt. Um dies zu erreichen, sind die Bussysteme:"
 msgstr ""
+"The OBP60 features a multi-level protection concept. This is designed to "
+"prevent faults in the power grid and data lines from spreading throughout "
+"the system. This ensures that the OBP60 does not fail completely despite "
+"faults and that important components remain largely functional. To achieve "
+"this, the bus systems are:"
 
 #: ../../usermanual/start.rst:11 45e126de8d7942ab8939de8fd8df97f0
+#, fuzzy
 msgid "NMEA2000"
-msgstr ""
+msgstr "NMEA2000"
 
 #: ../../usermanual/start.rst:12 3e1db443e49e431e90c3b32345c91da8
+#, fuzzy
 msgid "NMEA0182"
-msgstr ""
+msgstr "NMEA0182"
 
 #: ../../usermanual/start.rst:13 121b36413eb142dc82f74d7092db31b8
+#, fuzzy
 msgid "I2C"
-msgstr ""
+msgstr "I2C"
 
 #: ../../usermanual/start.rst:15 26f50ff600f1421991500b2763407d93
+#, fuzzy
 msgid "vom Bordnetz isoliert aufgebaut."
-msgstr ""
+msgstr "Constructed in isolation from the on-board network."
 
 #: ../../usermanual/start.rst:20 8ec11c135e3c44d0a227274d027a03ac
+#, fuzzy
 msgid "Abb.: Sicherheitskonzept"
-msgstr ""
+msgstr "Fig.: Security concept"
 
 #: ../../usermanual/start.rst:22 4e2874f47f964b3bb6c07cc73145d699
+#, fuzzy
 msgid ""
 "Im OBP60 ist dazu eine zusätzliche 5V-Stromversorgung enthalten, die die "
-"isolierten Schaltungsteile versorgt. Die zusätzliche Stromversorgung hat "
-"die Ausgänge ``+5Viso`` und ``GND2``, die am Steckverbinder CN1 und CN2 "
+"isolierten Schaltungsteile versorgt. Die zusätzliche Stromversorgung hat die"
+" Ausgänge ``+5Viso`` und ``GND2``, die am Steckverbinder CN1 und CN2 "
 "anliegen. Über diese können auch externe Schaltungen bis 200 mA versorgt "
 "werden."
 msgstr ""
+"The OBP60 includes an additional 5V power supply that powers the isolated "
+"circuitry. The additional power supply has outputs ``+5Viso`` and ``GND2``, "
+"which are connected to connectors CN1 and CN2. These can also power external"
+" circuits up to 200 mA."
 
 #: ../../usermanual/start.rst:25 986186c4ab3949c89d7caa55e96fbe0d
+#, fuzzy
 msgid ""
 "Verbinden Sie die unterschiedlichen Massepotenziale ``GNDS``, ``GND``, "
-"``GND2`` und ``Shield`` niemals miteinander! Dadurch geht die Isolations-"
-" und Schutzwirkung verloren. Die Massepotenziale dürfen nicht "
+"``GND2`` und ``Shield`` niemals miteinander! Dadurch geht die Isolations- "
+"und Schutzwirkung verloren. Die Massepotenziale dürfen nicht "
 "gleichberechtigt verwendet werden."
 msgstr ""
+"Never connect the different ground potentials ``GNDS``, ``GND``, ``GND2``, "
+"and ``Shield`` with each other! This will result in the loss of insulation "
+"and protection. The ground potentials must not be used interchangeably."
 
 #: ../../usermanual/start.rst:27 38cf1bd534d94a749bb2139c4d873199
+#, fuzzy
 msgid "Die unterschiedlichen Massepotenziale haben folgende Bedeutung:"
-msgstr ""
+msgstr "The different ground potentials have the following meaning:"
 
 #: ../../usermanual/start.rst:29 b1d075166ce24f7ea36c26d71dc8eb5b
+#, fuzzy
 msgid "``GNDS`` - Masse der Versorgungsspannung"
-msgstr ""
+msgstr "``GNDS`` - Ground of the supply voltage"
 
 #: ../../usermanual/start.rst:30 8532ca5ae6974417bd3548185ba5643f
+#, fuzzy
 msgid "``GND`` - Interne Masse der Elektronik"
-msgstr ""
+msgstr "``GND`` - Internal Mass of Electronics"
 
 #: ../../usermanual/start.rst:31 fe8e521f34b545f9a40f20a646841ba8
+#, fuzzy
 msgid "``GND2`` - Masse der isolierten Bus-Elektronik"
-msgstr ""
+msgstr "``GND2`` - Ground of the isolated bus electronics"
 
 #: ../../usermanual/start.rst:32 55d4d77b73a64361953b5a4a3ca5af35
+#, fuzzy
 msgid "``Shield`` - Schutzleiter für die Kabelschirmung"
-msgstr ""
+msgstr "``Shield`` - Protective conductor for the cable shielding"
 
 #: ../../usermanual/start.rst:34 2d3187b425354afb821db8a3843d4133
+#, fuzzy
 msgid ""
 "Im folgenden Bild sind die geschützten und ungeschützten Anschlüsse zu "
 "sehen."
-msgstr ""
+msgstr "The following image shows the protected and unprotected connections."
 
 #: ../../usermanual/start.rst:39 cf6b14ece7e940c3a6ac849a101d2461
+#, fuzzy
 msgid "Abb.: Sichere und unsichere Bereiche"
-msgstr ""
+msgstr "Fig.: Safe and unsafe areas"
 
 #: ../../usermanual/start.rst:42 6ceafe1af6924dba9ac529871e3de639
+#, fuzzy
 msgid ""
-"Bitte beachten Sie, dass der 1Wire-Bus gegenüber Störungen nicht "
-"geschützt ist und entsprechend durch Schirmung geschützt werden muss. "
-"Daher sollten für die Leitungen des 1Wire-Bus nur abgeschirmte Kabel "
-"verwendet werden. ``GND`` darf mit keinen weiteren externen "
-"Schaltungsteilen verbunden werden, denn ``GND`` dient ausschließlich als "
-"Masseleitung für den 1Wire-Bus."
+"Bitte beachten Sie, dass der 1Wire-Bus gegenüber Störungen nicht geschützt "
+"ist und entsprechend durch Schirmung geschützt werden muss. Daher sollten "
+"für die Leitungen des 1Wire-Bus nur abgeschirmte Kabel verwendet werden. "
+"``GND`` darf mit keinen weiteren externen Schaltungsteilen verbunden werden,"
+" denn ``GND`` dient ausschließlich als Masseleitung für den 1Wire-Bus."
 msgstr ""
+"Please note that the 1-Wire bus is not protected against interference and "
+"must be shielded accordingly. Therefore, only shielded cables should be used"
+" for the 1-Wire bus lines. ``GND`` must not be connected to any other "
+"external circuit components, because ``GND`` serves exclusively as a ground "
+"line for the 1-Wire bus."
 
 #: ../../usermanual/start.rst:45 2d2bea0df0104b2394925bcd0c9adab8
+#, fuzzy
 msgid "Stromversorgung 12V/24V"
-msgstr ""
+msgstr "Power supply 12V/24V"
 
 #: ../../usermanual/start.rst:47 9a258d94b46b468caba6d157c1a628e6
+#, fuzzy
 msgid ""
 "Die Stromversorgung des OBP60 erfolgt über den Steckverbinder CN2. Beim "
-"Zuschalten der Versorgungsspannung schaltet sich das OBP60 automatisch "
-"ein. Es gibt keinen gesonderten Ein- oder Ausschalter am Gerät. Benutzen "
-"Sie für die Stromversorgung die Anschlüsse ``+12V`` und ``GNDS``. Dabei "
-"wird ``+12V`` mit dem positiven Pol der Batterie verbunden und ``GNDS`` "
-"mit dem negativen Pol. Diese Anschlüsse für die Stromversorgung sind:"
+"Zuschalten der Versorgungsspannung schaltet sich das OBP60 automatisch ein. "
+"Es gibt keinen gesonderten Ein- oder Ausschalter am Gerät. Benutzen Sie für "
+"die Stromversorgung die Anschlüsse ``+12V`` und ``GNDS``. Dabei wird "
+"``+12V`` mit dem positiven Pol der Batterie verbunden und ``GNDS`` mit dem "
+"negativen Pol. Diese Anschlüsse für die Stromversorgung sind:"
 msgstr ""
+"The OBP60 is powered via connector CN2. The OBP60 turns on automatically "
+"when the power supply is applied. There is no separate on/off switch on the "
+"device. Use the ``+12V`` and ``GNDS`` connectors for the power supply. "
+"``+12V`` is connected to the positive terminal of the battery, and ``GNDS`` "
+"is connected to the negative terminal. These power supply connectors are:"
 
 #: ../../usermanual/start.rst:49 75ef300f16234ce697c5e63a4f15057b
+#, fuzzy
 msgid "verpolungssicher"
-msgstr ""
+msgstr "Reverse polarity protected"
 
 #: ../../usermanual/start.rst:50 076f24038431433e8f018265d4edcb30
+#, fuzzy
 msgid "kurzschlussfest"
-msgstr ""
+msgstr "Short-circuit proof"
 
 #: ../../usermanual/start.rst:51 f1c3b2f57f8342b086e85ff18c4500b0
+#, fuzzy
 msgid "überspannungssicher"
-msgstr ""
+msgstr "Surge-proof"
 
 #: ../../usermanual/start.rst:52 6674096806a74b1695ff58239659ad43
+#, fuzzy
 msgid "ESD-geschützt"
-msgstr ""
+msgstr "ESD protected"
 
 #: ../../usermanual/start.rst:54 8d45a567457a41b0aca62a1313b5f721
+#, fuzzy
 msgid "Der zulässige Spannungsbereich liegt zwischen 10V...28V."
-msgstr ""
+msgstr "The permissible voltage range is between 10V...28V."
 
 #: ../../usermanual/start.rst:58 42bf9fa268114de3b57900b2f9a5ed49
+#, fuzzy
 msgid "Abb.: Stromversorgung"
-msgstr ""
+msgstr "Fig.: Power supply"
 
 #: ../../usermanual/start.rst:60 2f3138fc4ecc405c860daed2c9cea181
+#, fuzzy
 msgid ""
-"Das OBP60 kann in 12V- und in 24V-Bord-Versorgungsnetzen verwendet "
-"werden. Bei Spannungen höher als 28V wird die interne Sicherung im Gerät "
-"ausgelöst."
+"Das OBP60 kann in 12V- und in 24V-Bord-Versorgungsnetzen verwendet werden. "
+"Bei Spannungen höher als 28V wird die interne Sicherung im Gerät ausgelöst."
 msgstr ""
+"The OBP60 can be used in 12V and 24V on-board power systems. Voltages higher"
+" than 28V will blow the device's internal fuse."
 
 #: ../../usermanual/start.rst:63 3c9ab0cc0f0a4443bdd30d59af8f7994
+#, fuzzy
 msgid ""
-"Verwenden Sie für die Verkabelung der Stromversorgung Kabelquerschnitte "
-"von 0,5...0,75 mm². Die Kabel sollten direkt an der Schalttafel aufgelegt"
-" sein und keine weiteren Abgänge für andere Geräte enthalten. "
-"Kabelüberlängen sollten vermieden werden. Wird der Strom an anderen "
-"Geräten abgezweigt oder sind die Kabelquerschnitte zu gering oder die "
-"Versorgungsleitungen zu lang, so kann es Probleme beim Einschalten des "
-"OBP60 geben."
+"Verwenden Sie für die Verkabelung der Stromversorgung Kabelquerschnitte von "
+"0,5...0,75 mm². Die Kabel sollten direkt an der Schalttafel aufgelegt sein "
+"und keine weiteren Abgänge für andere Geräte enthalten. Kabelüberlängen "
+"sollten vermieden werden. Wird der Strom an anderen Geräten abgezweigt oder "
+"sind die Kabelquerschnitte zu gering oder die Versorgungsleitungen zu lang, "
+"so kann es Probleme beim Einschalten des OBP60 geben."
 msgstr ""
+"For the power supply wiring, use cable cross-sections of 0.5 to 0.75 mm². "
+"The cables should be connected directly to the control panel and should not "
+"contain any additional outlets for other devices. Excessive cable lengths "
+"should be avoided. If the power is branched off to other devices, or if the "
+"cable cross-sections are too small, or the supply lines are too long, this "
+"may cause problems when switching on the OBP60."
 
 #: ../../usermanual/start.rst:65 3b91d674e24d4ac59775c02de741cc39
+#, fuzzy
 msgid ""
-"In einigen Situationen ist es günstiger, die Stromversorgung direkt über "
-"den NMEA2000-Bus vorzunehmen. Dies setzt aber eine korrekte Installation "
-"des NMEA2000-Buses voraus. Dann entfällt die Verkabelung der "
-"Stromversorgung zu einer Schalttafel. Nähere Details dazu finden Sie im "
-"Kapitel  :ref:`Bussysteme`."
+"In einigen Situationen ist es günstiger, die Stromversorgung direkt über den"
+" NMEA2000-Bus vorzunehmen. Dies setzt aber eine korrekte Installation des "
+"NMEA2000-Buses voraus. Dann entfällt die Verkabelung der Stromversorgung zu "
+"einer Schalttafel. Nähere Details dazu finden Sie im Kapitel  "
+":ref:`Bussysteme`."
 msgstr ""
+"In some situations, it is more convenient to supply power directly via the "
+"NMEA 2000 bus. However, this requires proper installation of the NMEA 2000 "
+"bus. This eliminates the need to wire the power supply to a control panel. "
+"Further details can be found in the :ref:`Bussysteme` chapter."
 
 #: ../../usermanual/start.rst:68 d8442d945f4d496f8b8dbbaf0304f679
+#, fuzzy
 msgid ""
-"Im Gerät ist eine selbst rückstellende Sicherung verbaut, die bei zu "
-"hohem Stromverbrauch die Versorgungsspannung selbständig trennt. Sie "
-"können die Sicherung zurücksetzen, indem Sie die Stromversorgung zum "
-"OBP60 trennen und den Grund des übermäßigen Stromverbrauchs beseitigen. "
-"Danach warten Sie einige Minuten und schalten dann die "
-"Versorgungsspannung wieder ein."
+"Im Gerät ist eine selbst rückstellende Sicherung verbaut, die bei zu hohem "
+"Stromverbrauch die Versorgungsspannung selbständig trennt. Sie können die "
+"Sicherung zurücksetzen, indem Sie die Stromversorgung zum OBP60 trennen und "
+"den Grund des übermäßigen Stromverbrauchs beseitigen. Danach warten Sie "
+"einige Minuten und schalten dann die Versorgungsspannung wieder ein."
 msgstr ""
+"The device has a self-resetting fuse that automatically disconnects the "
+"power supply if power consumption is too high. You can reset the fuse by "
+"disconnecting the power supply to the OBP60 and eliminating the cause of the"
+" excessive power consumption. Then wait a few minutes and then reconnect the"
+" power supply."
 
 #: ../../usermanual/start.rst:71 0f25d74e0d984a40b9b3cc5f30fe1574
+#, fuzzy
 msgid ""
 "Die interne Sicherung im OBP60 schützt nur das Gerät und nicht die "
-"Versorgungsleitungen! Daher sollte die bereitgestellte Stromversorgung "
-"des OBP60 im Bordnetz mit einer zusätzlichen Sicherung von mindestens 5A "
-"abgesichert werden. Das erfolgt typischerweise über die Schalttafel, über"
-" die die Stromkreise im Boot geschaltet werden können. So vermeiden Sie "
+"Versorgungsleitungen! Daher sollte die bereitgestellte Stromversorgung des "
+"OBP60 im Bordnetz mit einer zusätzlichen Sicherung von mindestens 5A "
+"abgesichert werden. Das erfolgt typischerweise über die Schalttafel, über "
+"die die Stromkreise im Boot geschaltet werden können. So vermeiden Sie "
 "Brände zum Beispiel durch aufgescheuerte oder überhitzte "
 "Versorgungsleitungen."
 msgstr ""
+"The internal fuse in the OBP60 only protects the device, not the power "
+"cables! Therefore, the power supply provided by the OBP60 should be "
+"protected in the on-board electrical system with an additional fuse of at "
+"least 5A. This is typically done via the switchboard, which is used to "
+"switch the electrical circuits in the boat. This prevents fires caused, for "
+"example, by frayed or overheated power cables."
 
 #: ../../usermanual/start.rst:74 c7c22a67243d4c32bfa342256c7bafb2
+#, fuzzy
 msgid "Stromversorgung USB-C"
-msgstr ""
+msgstr "Power supply USB-C"
 
 #: ../../usermanual/start.rst:76 60cee3fc502d4f1fa833dbe253b72280
+#, fuzzy
 msgid ""
-"Das OBP60 kann auch über USB-C mit Strom versorgt werden. Der USB-"
-"Anschluss muss aber ausreichend Spannung von 5.1V und Strom bis 1 A "
-"liefern können. Der USB-Anschluss am OBP60 verfügt über einen "
-"Rücklaufschutz, so dass gleichzeitig 12V/24V und 5V über den USB-Port "
-"eingespeist werden können."
+"Das OBP60 kann auch über USB-C mit Strom versorgt werden. Der USB-Anschluss "
+"muss aber ausreichend Spannung von 5.1V und Strom bis 1 A liefern können. "
+"Der USB-Anschluss am OBP60 verfügt über einen Rücklaufschutz, so dass "
+"gleichzeitig 12V/24V und 5V über den USB-Port eingespeist werden können."
 msgstr ""
+"The OBP60 can also be powered via USB-C. However, the USB port must be able "
+"to supply a sufficient voltage of 5.1V and a current of up to 1A. The USB "
+"port on the OBP60 features reverse flow protection, allowing simultaneous "
+"input of 12V/24V and 5V via the USB port."
 
 #: ../../usermanual/start.rst:79 3ff26389f1834541995f09a178eb6b84
+#, fuzzy
 msgid ""
 "Viele USB-Computeranschlüsse verfügen nicht über einen ausreichend hohen "
-"Ausgangsstrom und teilen sich den Strom mit mehreren Anschlüssen. Das "
-"kann dazu führen, dass das OBP60 nicht direkt von einem PC aus mit Strom "
-"versorgt werden kann. Auch die Kabelqualität und Kabellänge ist "
-"entscheidend. Einige Kabel haben zu geringe Querschnitte und erzeugen "
-"einen hohen Spannungsabfall auf den Leitungen. Die Spannung ist dann am "
-"USB-C-Ausgang zu gering. Benutzen Sie in solchen Fällen den zusätzlichen "
-"12V-Eingang an **CN2** zur Stromversorgung."
+"Ausgangsstrom und teilen sich den Strom mit mehreren Anschlüssen. Das kann "
+"dazu führen, dass das OBP60 nicht direkt von einem PC aus mit Strom versorgt"
+" werden kann. Auch die Kabelqualität und Kabellänge ist entscheidend. Einige"
+" Kabel haben zu geringe Querschnitte und erzeugen einen hohen "
+"Spannungsabfall auf den Leitungen. Die Spannung ist dann am USB-C-Ausgang zu"
+" gering. Benutzen Sie in solchen Fällen den zusätzlichen 12V-Eingang an "
+"**CN2** zur Stromversorgung."
 msgstr ""
+"Many USB computer ports don't have a sufficiently high output current and "
+"share the power with multiple ports. This can prevent the OBP60 from being "
+"powered directly from a PC. Cable quality and length are also crucial. Some "
+"cables have too small a cross-section and create a high voltage drop across "
+"the lines. The voltage at the USB-C output is then too low. In such cases, "
+"use the additional 12V input on **CN2** for power."
 
 #: ../../usermanual/start.rst:81 eafbdc48dffd4eeaad2ce5b931944942
+#, fuzzy
 msgid ""
 "Zum Testen, ob die USB-C-Versorgung genügend Spannung und Strom liefert, "
-"kann man ein **USB-C Diagnosegerät** verwenden. Das Diagnosegerät wird am"
-" Eingang des OBP60 angesteckt und das USB-C Stromversorgungskabel in das "
-"Diagnosegerät gesteckt. Auf dem Display kann die bereitgestellte Spannung"
-" und der aktuelle Stromverbrauch abgelesen werden. Die Spannung sollte "
-"bei mindestens 5.0 V liegen. Der Strom variiert dabei je nach "
-"Stromverbrauch."
+"kann man ein **USB-C Diagnosegerät** verwenden. Das Diagnosegerät wird am "
+"Eingang des OBP60 angesteckt und das USB-C Stromversorgungskabel in das "
+"Diagnosegerät gesteckt. Auf dem Display kann die bereitgestellte Spannung "
+"und der aktuelle Stromverbrauch abgelesen werden. Die Spannung sollte bei "
+"mindestens 5.0 V liegen. Der Strom variiert dabei je nach Stromverbrauch."
 msgstr ""
+"To test whether the USB-C power supply is providing sufficient voltage and "
+"current, you can use a **USB-C diagnostic device**. The diagnostic device is"
+" connected to the OBP60 input and the USB-C power supply cable is plugged "
+"into the diagnostic device. The supplied voltage and the current power "
+"consumption can be read on the display. The voltage should be at least 5.0 "
+"V. The current varies depending on the power consumption."
 
 #: ../../usermanual/start.rst:84 391c5f25bb944de38fbb4054514be0fa
+#, fuzzy
 msgid ""
 "Je nach verwendeten USB-C Diagnosegerät kann es sein, dass nur die "
-"Stromversorgungspins angeschlossen sind aber keine Daten übertragen "
-"werden können. Wenn Sie eine Kommunikation über USB-C benötigen, müssen "
-"Sie das Diagnosegerät wieder entfernen."
+"Stromversorgungspins angeschlossen sind aber keine Daten übertragen werden "
+"können. Wenn Sie eine Kommunikation über USB-C benötigen, müssen Sie das "
+"Diagnosegerät wieder entfernen."
 msgstr ""
+"Depending on the USB-C diagnostic device you're using, it may be that only "
+"the power pins are connected, but no data can be transferred. If you need to"
+" communicate via USB-C, you'll need to remove the diagnostic device."
 
 #: ../../usermanual/start.rst:88 31ff75d86ec44612b5804ee4912fb2a8
+#, fuzzy
 msgid "Abb.: USB-C Diagnosegerät"
-msgstr ""
+msgstr "Fig.: USB-C diagnostic device"
 
 #: ../../usermanual/start.rst:91 b9bb681a0108404bb5c0f12e5c48ee92
+#, fuzzy
 msgid "Einbau"
-msgstr ""
+msgstr "Installation"
 
 #: ../../usermanual/start.rst:93 5f9623942e4f49d280ed48f37853d4fa
+#, fuzzy
 msgid ""
-"Der Einbau des OBP60 erfolgt über die Rückseite. Zum Anzeichnen der "
-"Öffnung und der Löcher in der Cockpitwand kann die Moosgummidichtung als "
-"Schablone benutzt werden. Vor der Montage des OBP60 ist die Rückseite "
-"abzunehmen. Die 2 Sechskantschrauben werden in die dafür vorgesehenen "
-"Vertiefungen eingeführt und gegen Herausfallen gesichert. Prüfen Sie vor "
-"dem Einbau, ob die Länge der M5x25 Schrauben ausreichend ist. "
-"Gegebenenfalls ersetzen Sie die Schrauben in passiger Länge."
+"Der Einbau des OBP60 erfolgt über die Rückseite. Zum Anzeichnen der Öffnung "
+"und der Löcher in der Cockpitwand kann die Moosgummidichtung als Schablone "
+"benutzt werden. Vor der Montage des OBP60 ist die Rückseite abzunehmen. Die "
+"2 Sechskantschrauben werden in die dafür vorgesehenen Vertiefungen "
+"eingeführt und gegen Herausfallen gesichert. Prüfen Sie vor dem Einbau, ob "
+"die Länge der M5x25 Schrauben ausreichend ist. Gegebenenfalls ersetzen Sie "
+"die Schrauben in passiger Länge."
 msgstr ""
+"The OBP60 is installed from the rear. The foam rubber seal can be used as a "
+"template to mark the opening and holes in the cockpit wall. Before "
+"installing the OBP60, the rear panel must be removed. The two hex screws are"
+" inserted into the designated recesses and secured to prevent them from "
+"falling out. Before installation, check that the M5x25 screws are long "
+"enough. If necessary, replace the screws with the correct length."
 
 #: ../../usermanual/start.rst:96 fd23e2f14dcd4a4ca0c303244a2bcd1f
+#, fuzzy
 msgid ""
 "Die Köpfe der Sechskantschrauben sollten in den Vertiefungen eingeklebt "
-"werden, damit sie beim Einbau nicht in das Gehäuseinnere geschoben werden"
-" und dort einen Kurzschluss auf der Platine verursachen können."
+"werden, damit sie beim Einbau nicht in das Gehäuseinnere geschoben werden "
+"und dort einen Kurzschluss auf der Platine verursachen können."
 msgstr ""
+"The heads of the hexagon screws should be glued into the recesses so that "
+"they are not pushed into the interior of the case during installation and "
+"can cause a short circuit on the circuit board."
 
 #: ../../usermanual/start.rst:98 0b3f866702da492a98ac422b54e5f1a5
+#, fuzzy
 msgid "Danach wird das Gehäuse wieder vollständig zusammen gebaut."
-msgstr ""
+msgstr "The housing is then completely reassembled."
 
 #: ../../usermanual/start.rst:100 f7e8d570420f49f4857c258d92f19a2f
+#, fuzzy
 msgid ""
 "Vor der Montage wird zwischen Rückseite und Cockpitwand eine 2 mm dicke "
 "Moosgummidichtung platziert. Die Moosgummidichtung kann Unebenheiten der "
-"Oberfläche in gewissen Grenzen ausgleichen. Mit den Unterlegscheiben und "
-"den Muttern befestigt man das OBP60."
+"Oberfläche in gewissen Grenzen ausgleichen. Mit den Unterlegscheiben und den"
+" Muttern befestigt man das OBP60."
 msgstr ""
+"Before installation, a 2 mm thick foam rubber seal is placed between the "
+"rear panel and the cockpit wall. This foam rubber seal can compensate for "
+"surface unevenness to a certain extent. The OBP60 is secured with washers "
+"and nuts."
 
 #: ../../usermanual/start.rst:103 bb576ba820854d0e80db18691368d4b5
+#, fuzzy
 msgid ""
 "Ziehen Sie die Muttern nicht zu fest an. Die Verdrehsicherung oder die "
 "Rückwand können beschädigt werden."
 msgstr ""
+"Do not overtighten the nuts. This could damage the anti-twist device or the "
+"back panel."
 
 #: ../../usermanual/start.rst:107 ccdc6c21c75b402a836871cac64f338a
+#, fuzzy
 msgid "Abb.: Geräteeinbau in Cockpitwand"
-msgstr ""
+msgstr "Fig.: Device installation in cockpit wall"
 
 #: ../../usermanual/start.rst:110 83628699e99b4dfa8335dd060cd27bdd
+#, fuzzy
 msgid ""
-"Die GPS-Antenne des GPS-Empfängers befindet sich links oben in der Ecke "
-"auf der Rückseite des OBP60 (von hinten gesehen). Hinter der Anbaufläche "
-"sollten sich keine großflächigen Metallteile befinden. Die Metallteile "
-"können den GPS-Empfang stören oder unmöglich machen. Wenn Sie "
-"Empfangsprobleme haben, können Sie eine externe GPS-Antenne benutzt."
+"Die GPS-Antenne des GPS-Empfängers befindet sich links oben in der Ecke auf "
+"der Rückseite des OBP60 (von hinten gesehen). Hinter der Anbaufläche sollten"
+" sich keine großflächigen Metallteile befinden. Die Metallteile können den "
+"GPS-Empfang stören oder unmöglich machen. Wenn Sie Empfangsprobleme haben, "
+"können Sie eine externe GPS-Antenne benutzt."
 msgstr ""
-
+"The GPS antenna of the GPS receiver is located in the top left corner on the"
+" back of the OBP60 (viewed from the rear). There should be no large metal "
+"parts behind the mounting surface. These metal parts can interfere with GPS "
+"reception or make it impossible. If you have reception problems, you can use"
+" an external GPS antenna."

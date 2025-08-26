@@ -7,55 +7,67 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: OBP60 V2 Dokumentation \n"
+"Project-Id-Version: OBP60 V2 Dokumentation\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-08-26 14:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: en\n"
 "Language-Team: en <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.17.0\n"
 
 #: ../../usermanual/sensors.rst:2 f5663379c8fd4a9397a850f184a114cc
+#, fuzzy
 msgid "Erweiterte Sensorik"
-msgstr ""
+msgstr "Advanced sensor technology"
 
 #: ../../usermanual/sensors.rst:4 3b98e854a21f4253abc4da0bc833667f
+#, fuzzy
 msgid ""
 "Bei der erweiterten Sensorik handelt es sich um Sensoren, die nicht am "
-"NMEA0183-Bus und NMEA2000-Bus angeschlossen werden. Zusätzlich lassen "
-"sich preiswerte Sensoren am I2C-Bus und am 1Wire-Bus anschließen. "
-"Beachten Sie die unterschiedlichen Signalpegel für den I2C- und den "
-"1Wire-Bus. Die Module am I2C-Bus müssen so ausgewählt werden, dass sie "
-"mit 5.0V TTL-Pegeln arbeiten. Nicht alle Module unterstützen diese Pegel."
+"NMEA0183-Bus und NMEA2000-Bus angeschlossen werden. Zusätzlich lassen sich "
+"preiswerte Sensoren am I2C-Bus und am 1Wire-Bus anschließen. Beachten Sie "
+"die unterschiedlichen Signalpegel für den I2C- und den 1Wire-Bus. Die Module"
+" am I2C-Bus müssen so ausgewählt werden, dass sie mit 5.0V TTL-Pegeln "
+"arbeiten. Nicht alle Module unterstützen diese Pegel."
 msgstr ""
+"The extended sensors include sensors that are not connected to the NMEA 0183"
+" and NMEA 2000 buses. In addition, inexpensive sensors can be connected to "
+"the I2C and 1-Wire buses. Note the different signal levels for the I2C and "
+"1-Wire buses. Modules connected to the I2C bus must be selected to operate "
+"at 5.0V TTL levels. Not all modules support these levels."
 
 #: ../../usermanual/sensors.rst:7 ../../usermanual/sensors.rst:27
 #: 804c0cae08344212890f51934034be46 dcb6e15c536248a9a116cd3029198980
+#, fuzzy
 msgid "Typ"
-msgstr ""
+msgstr "Type"
 
 #: ../../usermanual/sensors.rst:7 ../../usermanual/sensors.rst:27
 #: d623d2a89c534016b7efb9cd937b6008 f4e4ad52da7649d9b30f82f52cf36860
+#, fuzzy
 msgid "Bus"
-msgstr ""
+msgstr "Bus"
 
 #: ../../usermanual/sensors.rst:7 89043d612824424b9b4c5a86f25df490
+#, fuzzy
 msgid "Spannung"
-msgstr ""
+msgstr "Tension"
 
 #: ../../usermanual/sensors.rst:7 0a26d4b98172444d8b798b0b5cd94d9d
+#, fuzzy
 msgid "Isolation"
-msgstr ""
+msgstr "Isolation"
 
 #: ../../usermanual/sensors.rst:9 ../../usermanual/sensors.rst:11
 #: 4c77cccfee69412aa56de2fdbe238a15 abeebe90b5db467dacb93d845815f372
+#, fuzzy
 msgid "**OBP60**"
-msgstr ""
+msgstr "**OBP60**"
 
 #: ../../usermanual/sensors.rst:9 ../../usermanual/sensors.rst:29
 #: ../../usermanual/sensors.rst:31 ../../usermanual/sensors.rst:33
@@ -71,87 +83,110 @@ msgstr ""
 #: 8fc7b63e99334e3e9f7f4a61b88cf54d 9c845235ce1046459d94d62af5c413d3
 #: 9e2e6462ae7f4f48998bee1d57d04591 c27fa7de65c04e0ebbad02e044bd099d
 #: ca5eaf4100b248d8886e51ea5a884130 d79313c9b30543a389dabbabe3f370e6
+#, fuzzy
 msgid "I2C"
-msgstr ""
+msgstr "I2C"
 
 #: ../../usermanual/sensors.rst:9 192d367c9d614967b267aaa7da060779
+#, fuzzy
 msgid "5.0V TTL"
-msgstr ""
+msgstr "5.0V TTL"
 
 #: ../../usermanual/sensors.rst:9 ae6dcb19625e4a35a8826c7b35ceee33
+#, fuzzy
 msgid "ja"
-msgstr ""
+msgstr "And"
 
 #: ../../usermanual/sensors.rst:11 ../../usermanual/sensors.rst:57
 #: 85dd94a676bf41909b13b5e84899cc79 e340e986e0254a99ba1aee982ee459ad
+#, fuzzy
 msgid "1W"
-msgstr ""
+msgstr "1W"
 
 #: ../../usermanual/sensors.rst:11 10a9c4dec32e4d6aa87638be51c6d66b
+#, fuzzy
 msgid "3.3V TTL"
-msgstr ""
+msgstr "3.3V TTL"
 
 #: ../../usermanual/sensors.rst:11 20108028e8724867b74713a6706ab5a7
+#, fuzzy
 msgid "nein"
-msgstr ""
+msgstr "No"
 
 #: ../../usermanual/sensors.rst:14 86ba71bda0554b1aabcce2d966730946
+#, fuzzy
 msgid ""
-"In der nachfolgenden Tabelle sind einige Sensoren aufgelistet, die am "
-"OBP60 verwendet werden können."
-msgstr ""
+"In der nachfolgenden Tabelle sind einige Sensoren aufgelistet, die am OBP60 "
+"verwendet werden können."
+msgstr "The following table lists some sensors that can be used on the OBP60."
 
 #: ../../usermanual/sensors.rst:17 3d27ccc033d24d8aa39952308ae3af14
+#, fuzzy
 msgid ""
-"Die Sensormodule sind für bestimmte Spannungsbereiche ausgelegt. Achten "
-"Sie darauf, die richtigen Sensoren zu verwenden. Werden 3.3V-Module in "
-"5V-Systemen benutzt, können die 3.3V-Module beschädigt werden. Es sind in"
-" diesem Fall Pegelkonverter notwendig. Die meisten 5V-Module sind auch an"
-" 3.3V-Systemen nutzbar, wenn sie mit 3.3V betrieben werden."
+"Die Sensormodule sind für bestimmte Spannungsbereiche ausgelegt. Achten Sie "
+"darauf, die richtigen Sensoren zu verwenden. Werden 3.3V-Module in "
+"5V-Systemen benutzt, können die 3.3V-Module beschädigt werden. Es sind in "
+"diesem Fall Pegelkonverter notwendig. Die meisten 5V-Module sind auch an "
+"3.3V-Systemen nutzbar, wenn sie mit 3.3V betrieben werden."
 msgstr ""
+"The sensor modules are designed for specific voltage ranges. Make sure you "
+"use the correct sensors. Using 3.3V modules in 5V systems can damage them. "
+"Level converters are required in this case. Most 5V modules can also be used"
+" in 3.3V systems when operated at 3.3V."
 
 #: ../../usermanual/sensors.rst:20 e0772ccfa5834223897891067741c276
+#, fuzzy
 msgid ""
 "Beachten sie beim Kauf der BMP280- und BME280-Module, dass es "
-"unterschiedlieche Typen gibt die ähnlich aussehen, sich aber "
-"unterschiedlich verhalten. Sie erkennen die Typen an der Gehäusegröße und"
-" Form des Chips."
+"unterschiedlieche Typen gibt die ähnlich aussehen, sich aber unterschiedlich"
+" verhalten. Sie erkennen die Typen an der Gehäusegröße und Form des Chips."
 msgstr ""
+"When purchasing BMP280 and BME280 modules, please note that there are "
+"different types that look similar but behave differently. You can identify "
+"the types by the package size and shape of the chip."
 
 #: ../../usermanual/sensors.rst:24 8d41e991b8574c999a88893069a083e5
+#, fuzzy
 msgid "Abb.: Versionen BMP280/BME280 für 3.3V und 5V"
-msgstr ""
+msgstr "Fig.: Versions BMP280/BME280 for 3.3V and 5V"
 
 #: ../../usermanual/sensors.rst:27 3700e22d7bd946d8aecc3980fa107137
+#, fuzzy
 msgid "Sensor"
-msgstr ""
+msgstr "Sensor"
 
 #: ../../usermanual/sensors.rst:27 b81d5b51a8254fcbafead994a6a6390d
+#, fuzzy
 msgid "Bild"
-msgstr ""
+msgstr "Picture"
 
 #: ../../usermanual/sensors.rst:27 9a1cb9bbcddf41a4b639849a323b7a89
+#, fuzzy
 msgid "3.3V"
-msgstr ""
+msgstr "3.3V"
 
 #: ../../usermanual/sensors.rst:27 e1d25890ef2c4619b9b96f945c365f74
+#, fuzzy
 msgid "5V"
-msgstr ""
+msgstr "5V"
 
 #: ../../usermanual/sensors.rst:27 0c83150e19134ec0ada7506d1babfc18
+#, fuzzy
 msgid "Benutzte Pins"
-msgstr ""
+msgstr "Used pins"
 
 #: ../../usermanual/sensors.rst:29 761871e4607e47f386519b35e54e4a91
+#, fuzzy
 msgid "**BMP085**"
-msgstr ""
+msgstr "**BMP085**"
 
 #: ../../usermanual/sensors.rst:29 ../../usermanual/sensors.rst:31
 #: ../../usermanual/sensors.rst:33 ../../usermanual/sensors.rst:43
 #: 11a90058217d4788ad97459777b3b3a6 17c723e74c3846a194819d3f284798b4
 #: 2af4cf67549447339baa88d0d563a338 bb5d45248d99403d8bba76c5036cc164
+#, fuzzy
 msgid "T, P"
-msgstr ""
+msgstr "T, P"
 
 #: ../../usermanual/sensors.rst:29 ../../usermanual/sensors.rst:31
 #: ../../usermanual/sensors.rst:33 ../../usermanual/sensors.rst:35
@@ -172,8 +207,9 @@ msgstr ""
 #: bcb22a870ea84841a892c293d3b5f64d cb11f20789b14fe19cb3330ffb77fb87
 #: d4ef33216f08468f858769de8f3d973d d632f816505a4b229de5fd21d770abf5
 #: e0a50681281947e59bcc8a367d4864f1 e21f7ab91c0c4f0b83da98f409db1ceb
+#, fuzzy
 msgid "X"
-msgstr ""
+msgstr "X"
 
 #: ../../usermanual/sensors.rst:29 ../../usermanual/sensors.rst:31
 #: ../../usermanual/sensors.rst:33 ../../usermanual/sensors.rst:35
@@ -183,136 +219,166 @@ msgstr ""
 #: 3449e9412f3b4269870430725870a7d4 40cab298eeb744c8a9f0dcfa89a5919b
 #: 7359d5c1b6db4c00857830ab019a7081 7415ce5614ec46e2917c7cda99ff32d3
 #: 7edeca621ceb464988c2dee2aa8043ec c29ec5eecfb14c0ba1f683ed880914ec
+#, fuzzy
 msgid "Vin, SCL, SDA, GND"
-msgstr ""
+msgstr "Vin, SCL, SDA, GND"
 
 #: ../../usermanual/sensors.rst:31 d3f7816723a54336a1cf59f141c31e8f
+#, fuzzy
 msgid "**BMP180**"
-msgstr ""
+msgstr "**BMP180**"
 
 #: ../../usermanual/sensors.rst:33 ../../usermanual/sensors.rst:43
 #: 569c88aa0d144e7894cbfb596b0acac3 d3152571ef11456db591505b7495cf65
+#, fuzzy
 msgid "**BMP280**"
-msgstr ""
+msgstr "**BMP280**"
 
 #: ../../usermanual/sensors.rst:35 ../../usermanual/sensors.rst:45
 #: a52f6be6a58644a4941614bee2177ceb d5fbe2a2c133475486fb496ed17e7c6e
+#, fuzzy
 msgid "**BME280**"
-msgstr ""
+msgstr "**BME280**"
 
 #: ../../usermanual/sensors.rst:35 ../../usermanual/sensors.rst:45
 #: 267158ad52724c1492a85364f49c61e2 a0c8aff07fb04a20be4a139ba05df732
+#, fuzzy
 msgid "T, P, H"
-msgstr ""
+msgstr "T, P, H"
 
 #: ../../usermanual/sensors.rst:37 09fc135f6a6547d996aeab5d37d4267e
+#, fuzzy
 msgid "**SHT21**"
-msgstr ""
+msgstr "**SHT21**"
 
 #: ../../usermanual/sensors.rst:37 ../../usermanual/sensors.rst:39
 #: ../../usermanual/sensors.rst:41 6466f0fb4a964decafdbc7dcecf60a8e
 #: a779f449937849149493e0c3f243aecf eb9182a855bf466a817cd8857cac29fe
+#, fuzzy
 msgid "T, H"
-msgstr ""
+msgstr "T, H"
 
 #: ../../usermanual/sensors.rst:37 e67f87a5cc6f40c1af76328009e06938
+#, fuzzy
 msgid "Viin SCL, SDA, GND"
-msgstr ""
+msgstr "Lead SCL, SDA, GND"
 
 #: ../../usermanual/sensors.rst:39 3238ac68585146ff842e5c2ca6ef74ac
+#, fuzzy
 msgid "**SHT31**"
-msgstr ""
+msgstr "**SHT31**"
 
 #: ../../usermanual/sensors.rst:41 bca4e36d0d904081be427a414fb67d44
+#, fuzzy
 msgid "**HTU21**"
-msgstr ""
+msgstr "**HTU21**"
 
 #: ../../usermanual/sensors.rst:47 7ccda79a59a049908e191c0d7b20310a
+#, fuzzy
 msgid "**AS5600**"
-msgstr ""
+msgstr "**AS5600**"
 
 #: ../../usermanual/sensors.rst:47 4fd9b743f1b843b9a7ec43240042e9b4
+#, fuzzy
 msgid "R"
-msgstr ""
+msgstr "R"
 
 #: ../../usermanual/sensors.rst:47 ../../usermanual/sensors.rst:49
 #: ../../usermanual/sensors.rst:51 ../../usermanual/sensors.rst:53
 #: 27e70c13bc314ef19391dbd9843f6976 2ca4e451f75445f6b6c33bbe1eca9b39
 #: 417210342cd543b4a35cc8cabeedd85c 64dd47a68bd2465095c59871c6b09012
+#, fuzzy
 msgid "VCC, SCL, SDA, GND"
-msgstr ""
+msgstr "VCC, SCL, SDA, GND"
 
 #: ../../usermanual/sensors.rst:49 f4b234e18a9d4420b79556244b911fe6
+#, fuzzy
 msgid "**INA219**"
-msgstr ""
+msgstr "**INA219**"
 
 #: ../../usermanual/sensors.rst:49 1cd71813896f4476bcdc21d00519fa2b
+#, fuzzy
 msgid "U, I"
-msgstr ""
+msgstr "In, I"
 
 #: ../../usermanual/sensors.rst:51 ../../usermanual/sensors.rst:53
 #: 32b1ffb6fae94f3ca65c9b937f384bdc f51ff4b7b2794680b7e9e0240709e752
+#, fuzzy
 msgid "**INA226**"
-msgstr ""
+msgstr "**INA226**"
 
 #: ../../usermanual/sensors.rst:51 ../../usermanual/sensors.rst:53
 #: 4aed8f3ef284433582eb839a22e2a0b0 f2b919c936cf41eca8dc718686370814
+#, fuzzy
 msgid "U, I, W"
-msgstr ""
+msgstr "U, I, W"
 
 #: ../../usermanual/sensors.rst:55 3a4dc406293d418da504852185733612
+#, fuzzy
 msgid "**SN65H230**"
-msgstr ""
+msgstr "**SN65H230**"
 
 #: ../../usermanual/sensors.rst:55 4491c05800f04257b7ab07687f730a68
+#, fuzzy
 msgid "TTL"
-msgstr ""
+msgstr "TTL"
 
 #: ../../usermanual/sensors.rst:55 db2407a7e191459f9e467607ca011ecc
+#, fuzzy
 msgid "CAN"
-msgstr ""
+msgstr "CAN"
 
 #: ../../usermanual/sensors.rst:55 84a50350fd42488096e3db842d0d6b7d
+#, fuzzy
 msgid "3.3, CRX, CTX, GND"
-msgstr ""
+msgstr "3.3, CRX, CTX, GND"
 
 #: ../../usermanual/sensors.rst:57 b7797a7775f348a4827a8b4b337add34
+#, fuzzy
 msgid "**DS18B20**"
-msgstr ""
+msgstr "**DS18B20**"
 
 #: ../../usermanual/sensors.rst:57 4cacb97c2fd547779beb6178fa198322
+#, fuzzy
 msgid "T"
-msgstr ""
+msgstr "T"
 
 #: ../../usermanual/sensors.rst:57 9c19a0024b874118b1665ad32ed31b56
+#, fuzzy
 msgid "Vin, Data, GND"
-msgstr ""
+msgstr "Wine, Data, GND"
 
 #: ../../usermanual/sensors.rst:60 fb87034d77f9498d8a92682599e7706c
+#, fuzzy
 msgid "T - Lufttemperatur"
-msgstr ""
+msgstr "T - Air temperature"
 
 #: ../../usermanual/sensors.rst:61 4e9b25470af54a78a9c5a06aaf3035fa
+#, fuzzy
 msgid "P - Luftdruck"
-msgstr ""
+msgstr "P - air pressure"
 
 #: ../../usermanual/sensors.rst:62 46af2caf360246979ea47ca9036c2610
+#, fuzzy
 msgid "H - Relative Luftfeuchtigkeit"
-msgstr ""
+msgstr "H - Relative humidity"
 
 #: ../../usermanual/sensors.rst:63 292a9c8a3abb4596b7f101994de68428
+#, fuzzy
 msgid "R - Rotation 0...360°"
-msgstr ""
+msgstr "R - Rotation 0...360°"
 
 #: ../../usermanual/sensors.rst:64 7623541d00a24f02850e04d55bddc46c
+#, fuzzy
 msgid "U - Spannung"
-msgstr ""
+msgstr "U - voltage"
 
 #: ../../usermanual/sensors.rst:65 3ff7123138514b0fbb1fd5422fb245d1
+#, fuzzy
 msgid "I - Strom"
-msgstr ""
+msgstr "I - Strom"
 
 #: ../../usermanual/sensors.rst:66 2655085fd3884c31a5e2f37829d2e64f
+#, fuzzy
 msgid "W - Leistung"
-msgstr ""
-
+msgstr "W - Power"
