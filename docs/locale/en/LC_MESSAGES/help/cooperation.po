@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2024, Open Boat Projects
+# Copyright (C) 2025, Open Boat Projects
 # This file is distributed under the same license as the OBP60 V2
 # Dokumentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OBP60 V2 Dokumentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-21 08:07+0000\n"
+"POT-Creation-Date: 2025-08-26 14:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -20,12 +20,12 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.17.0\n"
 
-#: ../../help/cooperation.rst:2 f8018c90e01645c6b92d98617ab3af1a
+#: ../../help/cooperation.rst:2 5bbba36a24854420816d6c2edcba76ae
 #, fuzzy
 msgid "Mitarbeit"
-msgstr "cooperation"
+msgstr "Cooperation"
 
-#: ../../help/cooperation.rst:4 0ea81a29074947949b953af1c163c88a
+#: ../../help/cooperation.rst:4 552e5f12183f4815b8ff7a81d881bc3a
 #, fuzzy
 msgid ""
 "Wenn Sie das Projekt interessant finden und mitarbeiten wollen, so können "
@@ -34,17 +34,17 @@ msgstr ""
 "If you find the project interesting and would like to participate, you can "
 "contact us here:"
 
-#: ../../help/cooperation.rst:6 d15d819b30314874be17f1a68a228afa
+#: ../../help/cooperation.rst:6 8a37809f100644f6bfee5dd489a0b71e
 #, fuzzy
 msgid "https://www.segeln-forum.de/board/195-open-boat-projects-org/"
-msgstr "https://www.segeln-forum.de/board/195-open-boat-projects-org/"
+msgstr "Https://www.segeln-forum.de/board/195-open-boat-projects-org/"
 
-#: ../../help/cooperation.rst:7 3381ff8badba4f0fbbb1fde36f70df04
+#: ../../help/cooperation.rst:7 00d9042a2b4041d3b1fd83aed668034f
 #, fuzzy
 msgid "https://open-boat-projects.org"
-msgstr "https://open-boat-projects.org"
+msgstr "Https://open-boat-projects.org"
 
-#: ../../help/cooperation.rst:9 45d2858245e94430900ce1785c9bddaf
+#: ../../help/cooperation.rst:9 ca2499e399504201a47112b1a6fb3890
 #, fuzzy
 msgid ""
 "Wir sind eine begeisterne Community und pflegen einen kollegialen und "
@@ -60,47 +60,47 @@ msgstr ""
 "everyone interested to participate in the exchange of ideas. You don't have "
 "to be an expert. Anyone with great ideas is welcome to contribute."
 
-#: ../../help/cooperation.rst:11 1e1821cc84d54f10b4644aa1773a07d8
+#: ../../help/cooperation.rst:11 eaede89e826e4a658a61584548804262
 #, fuzzy
 msgid "Unterstützung für folgende Themenbereiche ist immer willkommen:"
 msgstr "Support for the following topics is always welcome:"
 
-#: ../../help/cooperation.rst:13 743ebbcdda73419088959a5900942691
+#: ../../help/cooperation.rst:13 c7e64b531f8d485781bd665da2858136
 #, fuzzy
 msgid "Software"
 msgstr "Software"
 
-#: ../../help/cooperation.rst:14 9f451d85590e49e59890ced9e71afe22
+#: ../../help/cooperation.rst:14 c16cfd9f48ba4dc7a1da6ac93835083c
 #, fuzzy
 msgid "Hardware"
 msgstr "Hardware"
 
-#: ../../help/cooperation.rst:15 5c7c536dcc624d66a71a4e7e70c6120e
+#: ../../help/cooperation.rst:15 620c5d7c96334eddab522517df34f571
 #, fuzzy
 msgid "Dokumentation"
 msgstr "Documentation"
 
-#: ../../help/cooperation.rst:16 3bb9bfe18d914bacad25eeffab6018d3
+#: ../../help/cooperation.rst:16 66e44289c01e44b9b3dad17390842c92
 #, fuzzy
 msgid "Organisation (Messe, Events, Workshops)"
 msgstr "Organisation (Messe, Events, Workshops)"
 
-#: ../../help/cooperation.rst:17 28ab56756e624ab19d10f0afa84df250
+#: ../../help/cooperation.rst:17 7bd3994320b54ab891b9efece1226b95
 #, fuzzy
 msgid "Übersetzungen"
 msgstr "Translations"
 
-#: ../../help/cooperation.rst:18 d65e29efa6e54f8ca71f0e358b532310
+#: ../../help/cooperation.rst:18 801d78fd6ad44f46a8f23d60397aa165
 #, fuzzy
 msgid "Korrekturen"
-msgstr "corrections"
+msgstr "Corrections"
 
-#: ../../help/cooperation.rst:19 f4ab703d0bc64550a6bcfe246c8d0ec7
+#: ../../help/cooperation.rst:19 2801633aa1884efab6db2ec569cd973b
 #, fuzzy
 msgid "PR-Arbeit"
 msgstr "PR work"
 
-#: ../../help/cooperation.rst:20 653a8ef4eb40482388b12f4ee456e9ce
+#: ../../help/cooperation.rst:20 fde763a70d354420b1e22b270f9ec497
 #, fuzzy
 msgid "Pflege der Internetseiten und der Social Media Kanäle"
 msgstr "Maintenance of the websites and social media channels"

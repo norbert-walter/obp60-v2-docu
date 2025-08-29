@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2024, Open Boat Projects
+# Copyright (C) 2025, Open Boat Projects
 # This file is distributed under the same license as the OBP60 V2
 # Dokumentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OBP60 V2 Dokumentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-25 20:35+0000\n"
+"POT-Creation-Date: 2025-08-26 14:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -33,7 +33,7 @@ msgstr "Technical data"
 #: ../../index.rst:23
 #, fuzzy
 msgid "Einführung"
-msgstr "introduction"
+msgstr "Introduction"
 
 #: ../../index.rst:31
 #, fuzzy
@@ -53,7 +53,7 @@ msgstr "Commissioning"
 #: ../../index.rst:31
 #, fuzzy
 msgid "Konfiguration"
-msgstr "configuration"
+msgstr "Configuration"
 
 #: ../../index.rst:31
 #, fuzzy
@@ -113,12 +113,12 @@ msgstr "Functional test"
 #: ../../index.rst:46
 #, fuzzy
 msgid "Zusammenbau"
-msgstr "assembly"
+msgstr "Assembly"
 
 #: ../../index.rst:57
 #, fuzzy
 msgid "Programmierumgebung"
-msgstr "programming environment"
+msgstr "Programming environment"
 
 #: ../../index.rst:57
 #, fuzzy
@@ -138,12 +138,12 @@ msgstr "Web-Flashtool"
 #: ../../index.rst:57
 #, fuzzy
 msgid "Programmierung"
-msgstr "programming"
+msgstr "Programming"
 
 #: ../../index.rst:67
 #, fuzzy
 msgid "Fragen und Antworten"
-msgstr "questions and answers"
+msgstr "Questions and answers"
 
 #: ../../index.rst:67
 #, fuzzy
@@ -168,7 +168,7 @@ msgstr "Service"
 #: ../../index.rst:67
 #, fuzzy
 msgid "Mitarbeit"
-msgstr "cooperation"
+msgstr "Cooperation"
 
 #: ../../index.rst:67
 #, fuzzy
@@ -178,39 +178,39 @@ msgstr "Donate"
 #: ../../index.rst:67
 #, fuzzy
 msgid "Glossar"
-msgstr "glossary"
+msgstr "Glossary"
 
 #: ../../index.rst:67
 #, fuzzy
 msgid "Hilfe"
 msgstr "Help"
 
-#: ../../index.rst:3 0855e28c58a7400280dd7124015d6bd6
+#: ../../index.rst:3 fce35fa86acc4788826d22f20d8f4be3
 #, fuzzy
 msgid "OBP60 V2 Dokumentation"
 msgstr "OBP60 V2 Documentation"
 
-#: ../../index.rst:4 4f063853378c48b9bf45d1dc377e549e
+#: ../../index.rst:4 b4d26413238a415a8f2533891235cb67
 #, fuzzy
 msgid "Letzte Aktualisierung |today|"
 msgstr "Last updated |today|"
 
-#: ../../index.rst:6 9de6153bf4b84e9f8c51e286d9d30d1a
+#: ../../index.rst:6 0c36811b78494c1f82550dc5c78f0f92
 #, fuzzy
 msgid "Documentation Status"
 msgstr "Documentation Status"
 
-#: ../../index.rst:10 757ca611c2ff402dbc7dbb7cf108c8c5
+#: ../../index.rst:10 bb61d68a196647058e23e7b9f11e192c
 #, fuzzy
 msgid "Frage `ChatGPT`_ über diese Seite"
 msgstr "Question `ChatGPT`_ about this page"
 
-#: ../../index.rst:15 459c95855d594f57b004171ee1b31b06
+#: ../../index.rst:15 5f1a0355dc264278bfd90a4a08cb29fd
 #, fuzzy
 msgid "Diese Seiten sind noch in Bearbeitung."
 msgstr "These pages are still under construction."
 
-#: ../../index.rst:21 428091adf63a4483abdd1d924320e8e8
+#: ../../index.rst:21 ca38aee2c82f469d83a95cfe4ada2760
 #, fuzzy
 msgid ""
 "Das Multifunktionsdisplay OBP60 dient zur Anzeige von Daten aus Boots-Netzen"

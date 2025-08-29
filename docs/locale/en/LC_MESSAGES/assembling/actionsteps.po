@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2024, Open Boat Projects
+# Copyright (C) 2025, Open Boat Projects
 # This file is distributed under the same license as the OBP60 V2
 # Dokumentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OBP60 V2 Dokumentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-21 08:07+0000\n"
+"POT-Creation-Date: 2025-08-26 14:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.17.0\n"
 
-#: ../../assembling/actionsteps.rst:2 321b1f35213249a9849b6f5200570b1d
+#: ../../assembling/actionsteps.rst:2 0655d39f3a9c4405a4b239acb2bbcd83
 #, fuzzy
 msgid "Durchführung"
 msgstr "Implementation"

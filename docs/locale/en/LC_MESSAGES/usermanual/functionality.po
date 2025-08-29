@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2024, Open Boat Projects
+# Copyright (C) 2025, Open Boat Projects
 # This file is distributed under the same license as the OBP60 V2
 # Dokumentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OBP60 V2 Dokumentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-21 08:07+0000\n"
+"POT-Creation-Date: 2025-08-26 14:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -20,17 +20,17 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.17.0\n"
 
-#: ../../usermanual/functionality.rst:2 7ccf313df364423c979346f1720c877e
+#: ../../usermanual/functionality.rst:2 2b19ff6d04e245a29792077e7cd4514c
 #, fuzzy
 msgid "Funktionsweise"
 msgstr "How it works"
 
-#: ../../usermanual/functionality.rst:5 8266449c3dfa4653a17b87f6a97e7f34
+#: ../../usermanual/functionality.rst:5 38f19375ab7f4344af0ab854d7ed7ee5
 #, fuzzy
 msgid "Bussysteme"
 msgstr "Bus systems"
 
-#: ../../usermanual/functionality.rst:10 d5f9c8a6816f4ee8a6c9cb5241c60a07
+#: ../../usermanual/functionality.rst:10 e09568aba7c54ecd9f4a381bdc6df251
 #, fuzzy
 msgid ""
 "Das OBP60 ist ein Datenanzeigegerät für den Marinebereich, mit dem "
@@ -42,17 +42,17 @@ msgstr ""
 "variety of information from bus systems. Typical marine bus systems that the"
 " OBP60 processes include:"
 
-#: ../../usermanual/functionality.rst:12 828ea5e3511241679f880ccb6613d4d5
+#: ../../usermanual/functionality.rst:12 80419e9038084d51a1434b7452918fed
 #, fuzzy
 msgid "NMEA0183 (RS485, isoliert)"
 msgstr "NMEA0183 (RS485, isolated)"
 
-#: ../../usermanual/functionality.rst:13 c31c7c7039124a0da63e8289cfcf23d4
+#: ../../usermanual/functionality.rst:13 a7052566250a45ffb1a687fd0c0c0221
 #, fuzzy
 msgid "NMEA2000 (CAN, isoliert)"
 msgstr "NMEA2000 (CAN, isolated)"
 
-#: ../../usermanual/functionality.rst:15 c92ff18b19f04d65b01275015ec28c15
+#: ../../usermanual/functionality.rst:15 fd8a4956e94a40579e495b6cb2a54bb8
 #, fuzzy
 msgid ""
 "Damit lässt sich das OBP60 in vorhandene Bootsnetze integrieren. Es kann "
@@ -63,17 +63,17 @@ msgstr ""
 "input and read data itself. In addition, the OPB60 processes other sensor "
 "networks such as:"
 
-#: ../../usermanual/functionality.rst:17 6adbab2fca854f219648f30089b5c088
+#: ../../usermanual/functionality.rst:17 d6508f85b9804bd6a8b18dab2c680aa5
 #, fuzzy
 msgid "I2C-Bus (5V, isoliert)"
 msgstr "I2C bus (5V, isolated)"
 
-#: ../../usermanual/functionality.rst:18 867bfe2af4e5413b8b54c9fd1e9ba745
+#: ../../usermanual/functionality.rst:18 87446bc00d1046298fa77961bd192a11
 #, fuzzy
 msgid "1Wire-Bus (3.3V, nicht isoliert)"
 msgstr "1-Wire bus (3.3V, non-isolated)"
 
-#: ../../usermanual/functionality.rst:20 4a96e6c2476a46aab0f1dfd6645d533e
+#: ../../usermanual/functionality.rst:20 b02b15a3aa364b62b8957a86e3c8091d
 #, fuzzy
 msgid ""
 "Diese beiden Bussysteme kommen aus dem Elektronikbereich. Über diese beiden "
@@ -86,12 +86,12 @@ msgstr ""
 "isolated I2C bus also allows for easy and secure integration of custom "
 "hardware extensions."
 
-#: ../../usermanual/functionality.rst:23 23cb2938d3e248f7a6106d48c04cbd1f
+#: ../../usermanual/functionality.rst:23 db3be424717f44caa026c60615857aff
 #, fuzzy
 msgid "Gateway"
 msgstr "Gateway"
 
-#: ../../usermanual/functionality.rst:28 f981ab3b2bea47a6b07a6654d58ed673
+#: ../../usermanual/functionality.rst:28 55f12c2a4d2d4759a60bc4363eb89d41
 #, fuzzy
 msgid ""
 "Im OBP60 ist ein Gateway integriert, das Daten zwischen NMEA0183 und "
@@ -103,7 +103,7 @@ msgstr ""
 "NMEA 0183 and NMEA 2000. Data from one bus is translated into data from the "
 "other bus. The translation works in both directions."
 
-#: ../../usermanual/functionality.rst:31 0f2ac9b9ca4c4d1d9e0755960d6d938b
+#: ../../usermanual/functionality.rst:31 f0486fa8b5a44e7c8a15db98644262be
 #, fuzzy
 msgid ""
 "Dabei ist zu beachten, dass nicht alle NMEA2000-Daten in NMEA0183-Daten "
@@ -113,12 +113,12 @@ msgstr ""
 "It should be noted that not all NMEA2000 data can be translated into "
 "NMEA0183 data because suitable telegrams do not always exist in NMEA0183."
 
-#: ../../usermanual/functionality.rst:34 0e7a9886343e47f1a333d1a5d17b137a
+#: ../../usermanual/functionality.rst:34 fedbeacff9d84653b3ae2ea588e2ea2e
 #, fuzzy
 msgid "WiFi-Verbindung"
 msgstr "WiFi connection"
 
-#: ../../usermanual/functionality.rst:36 a6ac2e8c33e746e4b5cb449b83723aca
+#: ../../usermanual/functionality.rst:36 9723926e7d7e495f86c644b4251dc1a0
 #, fuzzy
 msgid ""
 "Das OBP60 verfügt über eine WiFi-Funktionalität im 2.4 GHz Funkbereich. "
@@ -136,12 +136,12 @@ msgstr ""
 "or mobile phone. This also makes it possible to use the sensor data in "
 "third-party software such as Navionics, NMEA Remote, or WinGPS."
 
-#: ../../usermanual/functionality.rst:39 ab7a6df658ca48a0a9f2bd8faa4bf8ec
+#: ../../usermanual/functionality.rst:39 5ec9344af16f4d8c982da7414fd3b8f4
 #, fuzzy
 msgid "Konfiguration"
-msgstr "configuration"
+msgstr "Configuration"
 
-#: ../../usermanual/functionality.rst:41 82b62adf848143178c03f85dfdcd892b
+#: ../../usermanual/functionality.rst:41 3984966ebb8c42fc8c8971638422e593
 #, fuzzy
 msgid ""
 "Das OBP60 hat einen Access Point und einen kleinen Webserver integriert, mit"
@@ -165,12 +165,12 @@ msgstr ""
 "graphic display pages is predefined because they offer special "
 "functionality."
 
-#: ../../usermanual/functionality.rst:44 2e02200284c64e268e48b8a606a066f5
+#: ../../usermanual/functionality.rst:44 cc9ccf9ddc254c08a6bf93b1183e808c
 #, fuzzy
 msgid "Anzeige und Bedienung"
 msgstr "Display and operation"
 
-#: ../../usermanual/functionality.rst:49 aa97ff5bfa054e2eaccab84989c0e39c
+#: ../../usermanual/functionality.rst:49 c310d452c5f743bfa29cf44d2495fe28
 #, fuzzy
 msgid ""
 "Als Anzeige wird ein E-Paper Display verwendet. Es besitzt einen hohen "
@@ -190,7 +190,7 @@ msgstr ""
 "buzzer provide the user with visual and acoustic warnings when limit values "
 "are exceeded. The limit values can be freely adjusted."
 
-#: ../../usermanual/functionality.rst:51 7d40c0ca73264b6eaee27d693ac6aae8
+#: ../../usermanual/functionality.rst:51 968c646441ec4fe99dc8df0ff3b5e456
 #, fuzzy
 msgid ""
 "Die Auswahl der Anzeigeseiten erfolgt über kapazitive Sensortasten, indem "

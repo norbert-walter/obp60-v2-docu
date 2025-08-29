@@ -79,6 +79,9 @@ jobs:
           REWRITE_FILLED: "false"
           BATCH_SIZE: "128"
           THROTTLE_SECONDS: "0.2"
+          POSTPROCESS: "capitalize_first"       # POSTPROCESS: "none|capitalize_first|title_case"  Nachbearbeitung (Default: "none")
+          POSTPROCESS_LANGS: "en,fr"            # Für welche Zielsprachen anwenden (Default: "en"), weitere "en,fr"
+          HEADING_MAX_LEN: "70"                 # Heuristik-Grenze für Title-Case (Default: 70)
         run: python ../scripts/mt_po.py
 
       - name: Commit translation updates

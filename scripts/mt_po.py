@@ -2,16 +2,21 @@
 # -*- coding: utf-8 -*-
 """
 mt_po.py — Machine Translation für Sphinx-PO-Kataloge mit Google Translate (v2, API-Key),
-inkl. reST-Masking, Plural-Support, Batching und optionalem Throttling.
+inkl. reST-Masking, Plural-Support, Batching/Throttle und optionaler Nachbearbeitung
+(Capitalize-First oder Title-Case für Überschriften).
 
-Env-Variablen:
-  GOOGLE_API_KEY        # dein Google Cloud Translation API-Key (v2, Basic)
-  TARGET_LANG=en        # Zielsprache (ISO, z. B. en, fr, es). Default: de
-  REWRITE_FUZZY=true    # fuzzy-Einträge neu befüllen (Default: true)
-  REWRITE_FILLED=false  # bereits gefüllte, nicht-fuzzy Einträge überschreiben (Default: false)
-  DNT=Foo,Bar           # Kommagetrennte „Do Not Translate“-Phrasen (optional)
-  BATCH_SIZE=128        # max. 128 Texte/Request (Default: 128)
-  THROTTLE_SECONDS=0.2  # Pause zwischen Requests in Sekunden (Default: 0; setze z. B. 0.2 bei knapper Quote)
+ENV-Variablen:
+  GOOGLE_API_KEY          # dein Google Cloud Translation API-Key (v2, Basic)
+  TARGET_LANG=en          # Zielsprache (ISO, z. B. en, fr, es). Default: de
+  REWRITE_FUZZY=true      # fuzzy-Einträge neu befüllen (Default: true)
+  REWRITE_FILLED=false    # bereits gefüllte, nicht-fuzzy Einträge überschreiben (Default: false)
+  DNT=Foo,Bar             # Kommagetrennte „Do Not Translate“-Phrasen (optional)
+  BATCH_SIZE=128          # max. 128 Texte/Request (Default: 128)
+  THROTTLE_SECONDS=0.0    # Pause zwischen Requests in Sekunden (Default: 0.0)
+
+  POSTPROCESS=none|capitalize_first|title_case   # Nachbearbeitung (Default: none, capitalize_first = große Anfangsbuchstaben bei Überschriften, title_case = heuristische Title Case für Überschriften, kleine Stoppwörter bleiben klein)
+  POSTPROCESS_LANGS=en,fr                        # Für welche Zielsprachen anwenden (Default: en)
+  HEADING_MAX_LEN=70                             # Heuristik-Grenze für Title-Case (Default: 70)
 
 Aufruf (im Workflow mit working-directory=docs):
   python ../scripts/mt_po.py
@@ -25,16 +30,22 @@ import html
 import time
 import requests
 import polib
+import string
 from itertools import islice
 from typing import Dict, List, Tuple
 
 # --------------------- Konfiguration aus ENV ---------------------
-TARGET_LANG     = os.getenv("TARGET_LANG", "de").strip()
-REWRITE_FUZZY   = os.getenv("REWRITE_FUZZY", "true").lower() == "true"
-REWRITE_FILLED  = os.getenv("REWRITE_FILLED", "false").lower() == "true"
-DNT_LIST        = [s.strip() for s in os.getenv("DNT", "").split(",") if s.strip()]
-BATCH_SIZE      = int(os.getenv("BATCH_SIZE", "128"))
+TARGET_LANG      = os.getenv("TARGET_LANG", "de").strip()
+REWRITE_FUZZY    = os.getenv("REWRITE_FUZZY", "true").lower() == "true"
+REWRITE_FILLED   = os.getenv("REWRITE_FILLED", "false").lower() == "true"
+DNT_LIST         = [s.strip() for s in os.getenv("DNT", "").split(",") if s.strip()]
+BATCH_SIZE       = int(os.getenv("BATCH_SIZE", "128"))
 THROTTLE_SECONDS = float(os.getenv("THROTTLE_SECONDS", "0"))
+
+# Nachbearbeitung (optional)
+POSTPROCESS       = os.getenv("POSTPROCESS", "none").strip().lower()   # none | capitalize_first | title_case
+POSTPROCESS_LANGS = {s.strip().lower() for s in os.getenv("POSTPROCESS_LANGS", "en").split(",") if s.strip()}
+HEADING_MAX_LEN   = int(os.getenv("HEADING_MAX_LEN", "70"))
 
 # --------------------- Utilities ---------------------
 def chunked(iterable, n):
@@ -73,8 +84,9 @@ MASK_PATTERNS: List[re.Pattern] = [
     re.compile(r"``[^`]+``"),                # inline code
     re.compile(r":[\w.-]+:`[^`]+`"),         # :role:`...`
     re.compile(r"`[^`]+`_"),                 # `text`_
-#    re.compile(r"\*\*[^*\n]+\*\*"),          # **bold**
-#    re.compile(r"\*[^*\s][^*\n]*\*"),        # *italic*
+    # Fett/Kursiv NICHT maskieren, damit Inhalt übersetzt wird:
+    # re.compile(r"\*\*[^*\n]+\*\*"),        # **bold**
+    # re.compile(r"\*[^*\s][^*\n]*\*"),      # *italic*
     re.compile(r"\|[^|\n]+\|"),              # |subst|
     # Platzhalter:
     re.compile(r"%\([^)]+\)[#0\- +]*(?:\d+|\*)?(?:\.(?:\d+|\*))?[hlL]?[diouxXeEfFgGcrs%]"),
@@ -121,6 +133,70 @@ def translate_many_preserving_markup(texts: List[str]) -> List[str]:
     outs = google_translate_batch(masked, TARGET_LANG.lower())
     return [unmask_text(o, tab) for o, tab in zip(outs, tables)]
 
+# --------------------- Nachbearbeitung (Groß-/Kleinschreibung) ---------------------
+LOWER_WORDS = {
+    "a","an","the","and","but","or","nor","for","so","yet",
+    "at","by","in","of","on","to","up","with","as","from","over","per"
+}
+
+def capitalize_first_alpha(s: str) -> str:
+    """Ersten alphabetischen Buchstaben groß setzen, Markup/Whitespace davor ignorieren."""
+    chars = list(s)
+    for i, ch in enumerate(chars):
+        if ch.isalpha():
+            chars[i] = ch.upper()
+            break
+    return "".join(chars)
+
+def split_punct(word: str) -> Tuple[str, str, str]:
+    """Zerlegt ein Wort in prefix-punct, core, suffix-punct (z. B. '“hello,”' -> ('“','hello',',”'))."""
+    start = 0
+    end = len(word)
+    # erweiterte Anführungszeichen berücksichtigen
+    quotes = "„“‚’«»‹›"
+    while start < end and word[start] in string.punctuation + quotes:
+        start += 1
+    while end > start and word[end-1] in string.punctuation + quotes:
+        end -= 1
+    return word[:start], word[start:end], word[end:]
+
+def looks_like_heading(src: str) -> bool:
+    s = src.strip()
+    return (len(s) > 0) and (len(s) <= HEADING_MAX_LEN) and ("\n" not in s) and (s.count(".") == 0)
+
+def smart_title_case(s: str) -> str:
+    """Very-light Title Case: erste/letzte Wörter groß, sonst Stoppwörter klein."""
+    words = s.split()
+    if not words:
+        return s
+    out = []
+    last_idx = len(words) - 1
+    for i, w in enumerate(words):
+        prefix, core, suffix = split_punct(w)
+        if not core:
+            out.append(w)
+            continue
+        lc = core.lower()
+        if i == 0 or i == last_idx or lc not in LOWER_WORDS:
+            core_tc = core[:1].upper() + core[1:]
+        else:
+            core_tc = lc
+        out.append(prefix + core_tc + suffix)
+    return " ".join(out)
+
+def postprocess_text(translated: str, src_msgid: str) -> str:
+    """Wendet die gewählte Nachbearbeitung auf den übersetzten Text an (abhängig von Sprache & Modus)."""
+    if TARGET_LANG.lower() not in POSTPROCESS_LANGS:
+        return translated
+    if POSTPROCESS == "capitalize_first":
+        return capitalize_first_alpha(translated)
+    if POSTPROCESS == "title_case":
+        if looks_like_heading(src_msgid):
+            return smart_title_case(translated)
+        # Fallback: wenigstens ersten Buchstaben groß
+        return capitalize_first_alpha(translated)
+    return translated
+
 # --------------------- PO-Logik ---------------------
 def should_translate_entry(e: polib.POEntry) -> bool:
     if not e.msgid.strip():
@@ -144,6 +220,7 @@ def process_plural(e: polib.POEntry, nplurals: int) -> bool:
             continue
         src = e.msgid if i == 0 else (e.msgid_plural or e.msgid)
         tr = translate_many_preserving_markup([src])[0]
+        tr = postprocess_text(tr, src)
         if e.msgstr_plural.get(i, "") != tr:
             e.msgstr_plural[i] = tr
             changed = True
@@ -172,6 +249,7 @@ def process_po_file(path: str) -> bool:
         texts = [e.msgid for e in group]
         translated = translate_many_preserving_markup(texts)
         for e, tr in zip(group, translated):
+            tr = postprocess_text(tr, e.msgid)
             if e.msgstr != tr:
                 e.msgstr = tr
                 changed = True
@@ -196,7 +274,7 @@ if __name__ == "__main__":
     if not os.path.isdir(po_dir):
         sys.stderr.write(f"PO directory not found: {po_dir}\n")
         sys.exit(2)
-    print(f"Google v2 MT for {TARGET_LANG} in {po_dir} (REWRITE_FUZZY={REWRITE_FUZZY}, REWRITE_FILLED={REWRITE_FILLED}, BATCH_SIZE={BATCH_SIZE}, THROTTLE_SECONDS={THROTTLE_SECONDS})")
+    print(f"Google v2 MT for {TARGET_LANG} in {po_dir} (REWRITE_FUZZY={REWRITE_FUZZY}, REWRITE_FILLED={REWRITE_FILLED}, BATCH_SIZE={BATCH_SIZE}, THROTTLE_SECONDS={THROTTLE_SECONDS}, POSTPROCESS={POSTPROCESS}, POSTPROCESS_LANGS={','.join(sorted(POSTPROCESS_LANGS))})")
 
     for root, _, files in os.walk(po_dir):
         for fn in files:

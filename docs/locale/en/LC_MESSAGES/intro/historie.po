@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2024, Open Boat Projects
+# Copyright (C) 2025, Open Boat Projects
 # This file is distributed under the same license as the OBP60 V2
 # Dokumentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OBP60 V2 Dokumentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-21 08:07+0000\n"
+"POT-Creation-Date: 2025-08-26 14:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -20,12 +20,12 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.17.0\n"
 
-#: ../../intro/historie.rst:2 349920f9cdcb4981b2d46f1b0938fb71
+#: ../../intro/historie.rst:2 8f2b4ec95d6e40d4818666c1c7879c91
 #, fuzzy
 msgid "Historie"
 msgstr "History"
 
-#: ../../intro/historie.rst:4 9237a9ff8bb44ec48d6cfcec030e024d
+#: ../../intro/historie.rst:4 309a1bd0b738478cb11ae243c276cd0f
 #, fuzzy
 msgid ""
 "Das Multifunktionsdisplay OBP60 V2 gibt es jetzt in einer zweiten, neueren "
@@ -73,7 +73,7 @@ msgstr ""
 "board without modules, as functional testing of the board would have been "
 "impossible."
 
-#: ../../intro/historie.rst:6 0b6f1160514f4e9d97a321904f8f6205
+#: ../../intro/historie.rst:6 2e985f87de5749af96d24d72eb679139
 #, fuzzy
 msgid ""
 "Zusätzlich hatte sich herausgestellt, dass auch einige Schaltungsteile nicht"
@@ -124,7 +124,7 @@ msgstr ""
 "The OBP60's firmware has since been updated, and the error has been "
 "resolved."
 
-#: ../../intro/historie.rst:8 716b0ac2d9864ef4b57e71b16308155b
+#: ../../intro/historie.rst:8 a999e46d35824243befbfa1d2f45877e
 #, fuzzy
 msgid ""
 "Verständlicherweise war es daher nicht sinnvoll, den OBP60 in der alten Form"
@@ -137,7 +137,7 @@ msgstr ""
 "problems, and it would have been impossible to implement logistically and in"
 " terms of time."
 
-#: ../../intro/historie.rst:10 011b6c4abcc240d8a58699383b5066b0
+#: ../../intro/historie.rst:10 eaaf2aa14ed64314adbd6ae83d86a987
 #, fuzzy
 msgid ""
 "Aus diesen Gründen wurde die Platine komplett neu entwickelt. Ziel war es, "
@@ -161,7 +161,7 @@ msgstr ""
 " manufacturer if the manufacturer is provided with the necessary test "
 "equipment."
 
-#: ../../intro/historie.rst:12 35aa0ddcf3e14597b24a4d5375ebe97d
+#: ../../intro/historie.rst:12 f58c53a0540b4c72814fcde1b7b70258
 #, fuzzy
 msgid ""
 "Bei der Neuentwicklung wurden auch einige Funktionen weggelassen, die sich "
@@ -206,7 +206,7 @@ msgstr ""
 " multiple battery monitors to be operated simultaneously or other sensors to"
 " be easily connected."
 
-#: ../../intro/historie.rst:14 b8fc3df2635b4560b9f38a23336b6529
+#: ../../intro/historie.rst:14 0d2cef0842ad4ef9b8335a61a1202e8c
 #, fuzzy
 msgid ""
 "Der Versorgungsspannungseingang wurde ebenfalls gegen Überspannung, "
@@ -227,7 +227,7 @@ msgstr ""
 "other electrical circuit components. With appropriate cable shielding, the "
 "1-Wire bus is adequately protected."
 
-#: ../../intro/historie.rst:16 24a637a982fd4b54b0db456ba833da2b
+#: ../../intro/historie.rst:16 366bd563e55f4bdb9d1a590cd39e5493
 #, fuzzy
 msgid ""
 "Die Hintergrundbeleuchtung und die Flash-LED sind jetzt als RGB-LEDs "
@@ -237,7 +237,7 @@ msgstr ""
 "The backlight and flash LED are now RGB LEDs. This allows the color and "
 "brightness of each LED to be adjusted separately."
 
-#: ../../intro/historie.rst:18 e8bbd4c1ca414cdd8733bfb6be77de91
+#: ../../intro/historie.rst:18 65682f81d6f54a2882127cf8a0759d9d
 #, fuzzy
 msgid ""
 "Das E-Paper-Display wurde direkt mit der Hauptplatine verbunden. Dabei "
@@ -253,7 +253,7 @@ msgstr ""
 " unit. The reduced depth allows the dimensions of the original Raymarine "
 "ST60 instruments to be maintained."
 
-#: ../../intro/historie.rst:20 ed159dc48ff5488f8414d11e3371b573
+#: ../../intro/historie.rst:20 96da7cf2d2634f95807ae53283b29d50
 #, fuzzy
 msgid ""
 "Die Programmierung des OBP60 gestaltet sich jetzt auch einfacher. Auf der "

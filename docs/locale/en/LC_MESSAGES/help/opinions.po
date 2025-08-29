@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2024, Open Boat Projects
+# Copyright (C) 2025, Open Boat Projects
 # This file is distributed under the same license as the OBP60 V2
 # Dokumentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OBP60 V2 Dokumentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-21 08:07+0000\n"
+"POT-Creation-Date: 2025-08-26 14:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -20,12 +20,12 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.17.0\n"
 
-#: ../../help/opinions.rst:2 1ed177475dff4b009f898435fd41da3d
+#: ../../help/opinions.rst:2 874c30dfe266436fbc35278d7dde6beb
 #, fuzzy
 msgid "Meinungen und Tipps"
 msgstr "Opinions and tips"
 
-#: ../../help/opinions.rst:4 4ea7610564074b9f898a65654a2b5aa4
+#: ../../help/opinions.rst:4 e1e262ba1fd5499fb0ab4a4830bee7a8
 #, fuzzy
 msgid ""
 "Wir hoffen, dass diese Anleitung Ihnen eine Hilfe war, das Produkt "
@@ -38,7 +38,7 @@ msgid ""
 msgstr ""
 "We hope this manual has helped you use the product successfully. Your "
 "opinions and tips are important to us. Please let us know if you were able "
-"to use the manual, encountered any difficulties, or have any suggestions for"
-" improving the documentation. The best way to do this is to use our "
-"`Kontaktformular`_. This way, we can ensure high-quality instructions and "
-"successful use."
+"to use the manual, if you encountered any difficulties, or if you have any "
+"suggestions for improving the documentation. The best way to do this is to "
+"use our `Kontaktformular`_. This way, we can ensure high-quality "
+"instructions and successful use."

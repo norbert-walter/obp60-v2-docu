@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2024, Open Boat Projects
+# Copyright (C) 2025, Open Boat Projects
 # This file is distributed under the same license as the OBP60 V2
 # Dokumentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OBP60 V2 Dokumentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-21 08:07+0000\n"
+"POT-Creation-Date: 2025-08-26 14:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -20,12 +20,12 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.17.0\n"
 
-#: ../../help/service.rst:2 84b2364c549c449e8a8071f4882618c8
+#: ../../help/service.rst:2 d8083e4837cc46ecb8aa4058a5fa1010
 #, fuzzy
 msgid "Service"
 msgstr "Service"
 
-#: ../../help/service.rst:4 93564b33a1fe4012bc6c8c978aad0395
+#: ../../help/service.rst:4 2540715fc34345a8a4486ec8f3af2520
 #, fuzzy
 msgid ""
 "Unser Grundgedanke ist, dass durch die offene Projektbeschreibung und "
@@ -58,7 +58,7 @@ msgstr ""
 "cases, we are always happy to receive a small, appropriate donation so that "
 "we can realize further projects for the community."
 
-#: ../../help/service.rst:8 f328d78013d04cc1a9ab0f2ab80aa149
+#: ../../help/service.rst:8 86e579343ea54994b81d5a662b3eed29
 #, fuzzy
 msgid ""
 "Bei Fragen zu einem Hardware-Service verwenden Sie das `Kontaktformular`_."

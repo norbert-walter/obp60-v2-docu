@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2024, Open Boat Projects
+# Copyright (C) 2025, Open Boat Projects
 # This file is distributed under the same license as the OBP60 V2
 # Dokumentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OBP60 V2 Dokumentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-21 08:07+0000\n"
+"POT-Creation-Date: 2025-08-26 14:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -20,12 +20,12 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.17.0\n"
 
-#: ../../help/errors.rst:2 c3e9cf13cb08407d9b7695a12d689907
+#: ../../help/errors.rst:2 277ff5c697764338aa4c25da0a4d6e85
 #, fuzzy
 msgid "Bekannte Fehler"
 msgstr "Known bugs"
 
-#: ../../help/errors.rst:4 b20dfabd8b194cb689620607b819037a
+#: ../../help/errors.rst:4 c83d3518da6a458f86507639ab9a0b03
 #, fuzzy
 msgid ""
 "An dieser Stelle werden bekannte Fehler aufgeführt, die noch nicht behoben "
@@ -40,12 +40,12 @@ msgstr ""
 "bug tracking system. If you want to see reported and fixed bugs, go to the "
 "**Issues** section or look in the respective sections below."
 
-#: ../../help/errors.rst:8 e466b159a9a14df8b36590afbbabcb28
+#: ../../help/errors.rst:8 532f2d0e6c254c7e869f46bf6342228b
 #, fuzzy
 msgid "https://github.com/norbert-walter/esp32-nmea2000-obp60/issues"
-msgstr "https://github.com/norbert-walter/esp32-nmea2000-obp60/issues"
+msgstr "Https://github.com/norbert-walter/esp32-nmea2000-obp60/issues"
 
-#: ../../help/errors.rst:10 1002d55945c444c0930c6bfdde2ef0df
+#: ../../help/errors.rst:10 5904782fc9854706a67ee5bf9bf5cdbb
 #, fuzzy
 msgid ""
 "Dort können Sie nach Fehlern suchen und die Fehlerbeschreibungen und deren "
@@ -64,7 +64,7 @@ msgstr ""
 " for us to fix it. If you have any tips on how to improve things or if "
 "you're missing certain features, please let us know."
 
-#: ../../help/errors.rst:12 348783757f3b4e4faf7369d608cc0504
+#: ../../help/errors.rst:12 c87a7251544a4e9c9341e513a2c7d7ea
 #, fuzzy
 msgid ""
 "Wir bevorzugen diese Art der Fehlerverfolgung, da wir so strukturiert und "
@@ -79,12 +79,12 @@ msgstr ""
 "multiple employees at locations around the world to resolve bugs. With your "
 "support, we are able to provide high-quality software and hardware."
 
-#: ../../help/errors.rst:15 b59be048932f41f2bb36b374a5124f01
+#: ../../help/errors.rst:15 0c2afe3479524a399c5428793ceca87d
 #, fuzzy
 msgid "Kritische Fehler"
 msgstr "Critical errors"
 
-#: ../../help/errors.rst:17 59a1c0a223fb4f579747c41a1ab942c3
+#: ../../help/errors.rst:17 807fb6ee59ba4e5a8d69f939d4a0d06f
 #, fuzzy
 msgid ""
 "`Kritische Fehler`_ sind schwerwiegende Fehler, die die Funktion des Gerätes"
@@ -94,12 +94,12 @@ msgstr ""
 "`Kritische Fehler`_ are serious errors that significantly impair the "
 "function of the device or prevent the execution of an important function."
 
-#: ../../help/errors.rst:22 a8d1362bef3e416cab34bd095ee6916a
+#: ../../help/errors.rst:22 32a16601e9f142fb966d219bf9ea5c35
 #, fuzzy
 msgid "Software-Fehler"
 msgstr "Software error"
 
-#: ../../help/errors.rst:24 93b5e112206e4377ae2d0c70f4260e10
+#: ../../help/errors.rst:24 e51dba937c75439fbfe5991ae14c1910
 #, fuzzy
 msgid ""
 "`Software-Fehler`_ sind Fehler innerhalb der Software. Eine Funktion ist "
@@ -110,12 +110,12 @@ msgstr ""
 "under certain circumstances or is missing altogether. The errors are not "
 "critical."
 
-#: ../../help/errors.rst:29 dea637a412c1468da43b63c5a7295e27
+#: ../../help/errors.rst:29 a4aea0839c7246b2aafcdac8b323e927
 #, fuzzy
 msgid "Hardware-Fehler"
 msgstr "Hardware error"
 
-#: ../../help/errors.rst:31 97527a1faefa44d892703ff66453baab
+#: ../../help/errors.rst:31 6a2e679566854ee0b760ffe8d1a7f4b4
 #, fuzzy
 msgid ""
 "`Hardware-Fehler`_ werden durch die Hardware verursacht. Das können zum "
@@ -129,12 +129,12 @@ msgstr ""
 "circuit boards. The device's construction or the material selection of "
 "individual components can also be affected. The errors are not critical."
 
-#: ../../help/errors.rst:36 6e0f5eefdc5f46f890d9869ffade9ef0
+#: ../../help/errors.rst:36 f8f22e3c4d8a4047bf489611ac42fe27
 #, fuzzy
 msgid "Behobene Fehler"
 msgstr "Fixed bugs"
 
-#: ../../help/errors.rst:38 e8b45e70ee6547f1a16cfb4ae6aaa725
+#: ../../help/errors.rst:38 92b4eb011eb34fa4be5516d9b40f2cda
 #, fuzzy
 msgid ""
 "`Behobene Fehler`_ wurden gelöst. Es lohnt sich beim Auftreten von Fehlern, "
@@ -145,12 +145,12 @@ msgstr ""
 "out the resolved errors, as some workarounds are available to resolve the "
 "errors."
 
-#: ../../help/errors.rst:43 b92054de9e364c74ac7fa8887332b179
+#: ../../help/errors.rst:43 1df387de12cc4100a1ff54d2fa5d557c
 #, fuzzy
 msgid "Software-Erweiterungen"
 msgstr "Software extensions"
 
-#: ../../help/errors.rst:45 22b1e4be8e1944c8a91f3abc899396bb
+#: ../../help/errors.rst:45 586d2fe8012e4f83bc9c0e53e68b62f5
 #, fuzzy
 msgid ""
 "`Software-Erweiterungen`_ sind Vorschläge zur Verbesserung der Software oder"
@@ -159,12 +159,12 @@ msgstr ""
 "`Software-Erweiterungen`_ are suggestions for improving the software or "
 "extending the functionality of the device."
 
-#: ../../help/errors.rst:50 043e400d33274d7e94e3bfc7ba7fa155
+#: ../../help/errors.rst:50 83f318713b084c6e8ceaaefffbb8f9a3
 #, fuzzy
 msgid "Neue Anzeigeseiten"
 msgstr "New display pages"
 
-#: ../../help/errors.rst:52 55bbd6aacba54126bf9cb6b7389dba2b
+#: ../../help/errors.rst:52 b7300b33b2aa469da77ab8fa7f7def32
 #, fuzzy
 msgid ""
 "`Neue Anzeigeseiten`_ dienen zur Erweiterung der Funktionalität und werden "

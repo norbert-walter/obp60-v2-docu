@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2024, Open Boat Projects
+# Copyright (C) 2025, Open Boat Projects
 # This file is distributed under the same license as the OBP60 V2
 # Dokumentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OBP60 V2 Dokumentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-21 08:07+0000\n"
+"POT-Creation-Date: 2025-08-26 14:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -20,12 +20,12 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.17.0\n"
 
-#: ../../help/glossar.rst:2 2065495716a644e585801159a8f878a0
+#: ../../help/glossar.rst:2 95a3008373414f1da674ba0e45cc8fa0
 #, fuzzy
 msgid "Glossar"
-msgstr "glossary"
+msgstr "Glossary"
 
-#: ../../help/glossar.rst:4 f3197b60e6ab4e7f97b97068f2a85b67
+#: ../../help/glossar.rst:4 29e10b8950474e9eb7c4de0af4299dc2
 #, fuzzy
 msgid ""
 "An dieser Stelle sind Hervorhebungen und deren Bedeutung gezeigt, die in den"
@@ -40,33 +40,33 @@ msgstr ""
 "yellow and red colors indicate important and dangerous practices that should"
 " be avoided."
 
-#: ../../help/glossar.rst:7 74aa4066a8c844baa362f4d6433b8f26
+#: ../../help/glossar.rst:7 08937266c8d8434784734c111d5de3f6
 #, fuzzy
 msgid "Eine Bemerkung hebt einen bestimmten Sachverhalt hervor."
 msgstr "A remark highlights a particular fact."
 
-#: ../../help/glossar.rst:10 00923977ecb7478c8bcefd89fbfbc7d8
+#: ../../help/glossar.rst:10 be8e4430a42a45368cdbf726f116a745
 #, fuzzy
 msgid "Ein Hinweis dient als Hilfestellung."
 msgstr "A note serves as an aid."
 
-#: ../../help/glossar.rst:13 ad8f3c5137f94bdd8c699b07a083e5f6
+#: ../../help/glossar.rst:13 b94a989648494883b69da9c1605bed54
 #, fuzzy
 msgid "Mit Wichtig gekennzeichnete Stellen sollten besonders beachtet werden."
 msgstr "Sections marked as Important should be given special attention."
 
-#: ../../help/glossar.rst:16 908530f5398d42b6ab8e96399dabee39
+#: ../../help/glossar.rst:16 cf419a6b2aef482389cdebd4afab41b3
 #, fuzzy
 msgid "Ein Tipp vereinfacht den Umgang mit einem Sachverhalt."
 msgstr "A tip makes it easier to deal with a situation."
 
-#: ../../help/glossar.rst:19 5af5bdbe5f4e4ee390c8e32a40d41e2a
+#: ../../help/glossar.rst:19 cd4c28037f514056823d084c62fe12e4
 #, fuzzy
 msgid ""
 "Achtung weist auf einen bestimmten Sachverhalt hin, der eintreten kann."
 msgstr "Caution indicates a specific situation that may occur."
 
-#: ../../help/glossar.rst:22 4647cebe8119486aa0ff55dc3de1613f
+#: ../../help/glossar.rst:22 bb1223c97b11493388e70abf635ee276
 #, fuzzy
 msgid ""
 "Vorsicht kennzeichnet Vorgehensweisen, die vermieden werden sollen und "
@@ -75,7 +75,7 @@ msgstr ""
 "Caution indicates procedures that should be avoided and could become "
 "critical."
 
-#: ../../help/glossar.rst:25 e4e8040b78eb45e093ebabaf8d169dab
+#: ../../help/glossar.rst:25 dc7abbabe9b44987b8912430bc4daa12
 #, fuzzy
 msgid ""
 "Warnung kennzeichnet Vorgehensweisen oder Sachverhalte die nicht "
@@ -84,7 +84,7 @@ msgstr ""
 "A warning indicates a procedure or situation that should not be performed. "
 "Warnings have the character of a recommendation."
 
-#: ../../help/glossar.rst:28 3f7b40cde88e4dd8b8d542afc1f47409
+#: ../../help/glossar.rst:28 f3970217a18d4c6580eba94c0c221116
 #, fuzzy
 msgid ""
 "Als gefährlich ausgewiesene Bereiche können Schaden verursachen. Sie sollten"
@@ -93,7 +93,7 @@ msgstr ""
 "Areas designated as hazardous can cause harm. You should strictly follow the"
 " instructions."
 
-#: ../../help/glossar.rst:31 b8abc71205044b18be5eaf3e8285d4a8
+#: ../../help/glossar.rst:31 4dda18070f304b0882e03f5abc675cb2
 #, fuzzy
 msgid ""
 "Mit Fehler gekennzeichnete Stellen zeigen, wie Fehler entstehen und "

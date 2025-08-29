@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2024, Open Boat Projects
+# Copyright (C) 2025, Open Boat Projects
 # This file is distributed under the same license as the OBP60 V2
 # Dokumentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OBP60 V2 Dokumentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-21 08:07+0000\n"
+"POT-Creation-Date: 2025-08-26 14:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -20,88 +20,88 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.17.0\n"
 
-#: ../../usermanual/elements.rst:2 fd4514d11cc0424abbacde3abeaa0c6d
+#: ../../usermanual/elements.rst:2 5cf749aeaaea4665ac7433107519f7e9
 #, fuzzy
 msgid "Bedienelemente"
 msgstr "Controls"
 
-#: ../../usermanual/elements.rst:8 0dfe53eaa381494689072eef74ceb2bf
+#: ../../usermanual/elements.rst:8 c1c61e0865534cb8b621abe08aa2e975
 #, fuzzy
 msgid "Statuszeile"
 msgstr "Status bar"
 
-#: ../../usermanual/elements.rst:10 a209505c7fbe48f182b67a26b85926e7
+#: ../../usermanual/elements.rst:10 e4c6b5a9dfd9417592caafebf23f3a14
 #, fuzzy
 msgid ""
 "Die Statuszeile dient zur Anzeige von Statusinformationen. Dazu zählen:"
 msgstr "The status bar displays status information, including:"
 
-#: ../../usermanual/elements.rst:12 58c56be631c147f488afccf75ebb5d6b
+#: ../../usermanual/elements.rst:12 2cfe6b1151d245fd85e18594460ebe33
 #, fuzzy
 msgid "**Zustandsanzeige des Access Points**"
 msgstr "**Access Point Status Display**"
 
-#: ../../usermanual/elements.rst:13 de982111119c4986ae9d5165dd16afd3
+#: ../../usermanual/elements.rst:13 2bec3b7944de44529f379d938083f763
 #, fuzzy
 msgid "**AP** - Access Point"
 msgstr "**AP** - Access Point"
 
-#: ../../usermanual/elements.rst:15 fe8a1f43813e41fd98bda8842d77a4e9
+#: ../../usermanual/elements.rst:15 f7f92c6387684498a29d8c285845cd2f
 #, fuzzy
 msgid "**Zustandsanzeige aktiver Bussysteme und Komponenten**"
 msgstr "**Status display of active bus systems and components**"
 
-#: ../../usermanual/elements.rst:16 4079a1a97eb0483dbfbb48bb5ff338cf
+#: ../../usermanual/elements.rst:16 846d51df8e6d43c7ba9b638ff9b2c822
 #, fuzzy
 msgid "**N2K** - NMEA2000"
 msgstr "**N2K** - NMEA2000"
 
-#: ../../usermanual/elements.rst:17 8ff67086efe045dc8c1e9e7ab7cae378
+#: ../../usermanual/elements.rst:17 cf032351f925400da8bc6b873d51e6b9
 #, fuzzy
 msgid "**183** - NMEA0183"
 msgstr "**183** - NMEA0183"
 
-#: ../../usermanual/elements.rst:18 d9f5a5825db84e59b6774bed62b0442e
+#: ../../usermanual/elements.rst:18 eee22d8c4cba408c856693fe1cf285b5
 #, fuzzy
 msgid "**USB** - NMEA0183 via USB"
 msgstr "**USB** - NMEA0183 via USB"
 
-#: ../../usermanual/elements.rst:19 93733caff6bd4391a74c2791692eb606
+#: ../../usermanual/elements.rst:19 b5221c0a886d4f7e84e515b11817db7e
 #, fuzzy
 msgid "**TCP** - NMEA0183 via TCP (WiFi)"
 msgstr "**TCP** - NMEA0183 via TCP (WiFi)"
 
-#: ../../usermanual/elements.rst:20 a0ca5684bf8441ab81e09fbd3c4bbc28
+#: ../../usermanual/elements.rst:20 a338a08201c64a09a338a65fe4c3f746
 #, fuzzy
 msgid "**GPS** - GPS-Sensor des OBP60 (Position gefunden)"
 msgstr "**GPS** - GPS sensor of the OBP60 (position found)"
 
-#: ../../usermanual/elements.rst:22 39fd6049a2ce406b9ae37a4f9d8b6292
+#: ../../usermanual/elements.rst:22 f4f00aaa98b148ffbd832856f955af19
 #, fuzzy
 msgid "Lebenszeichen (pulsierender Punkt)"
 msgstr "Sign of life (pulsating point)"
 
-#: ../../usermanual/elements.rst:23 88e410fb1274483b95fc2c4de99ceea7
+#: ../../usermanual/elements.rst:23 0373f0ff3fc9439c8f007ff105dd2479
 #, fuzzy
 msgid "Datum und Uhrzeit (landesspezifisch)"
 msgstr "Date and time (country-specific)"
 
-#: ../../usermanual/elements.rst:24 04ae9fd9714c439684dd97a29ea5d8f3
+#: ../../usermanual/elements.rst:24 454c27336d424966b57f9f7ccf65b3b6
 #, fuzzy
 msgid "Anzeige der Zeitzone"
 msgstr "Time zone display"
 
-#: ../../usermanual/elements.rst:26 24a7eab013d6464cb4cf6ad73590e8ce
+#: ../../usermanual/elements.rst:26 8c90744779e4478cad6f2dc9527cef85
 #, fuzzy
 msgid "**UTC** - Weltzeit"
 msgstr "**UTC** - Universal Time"
 
-#: ../../usermanual/elements.rst:27 ff3641eaa80d4b53be11b960cc6fdc61
+#: ../../usermanual/elements.rst:27 41325071fb45427abe587be5185eb1d5
 #, fuzzy
 msgid "**LOT** - Lokalzeit"
 msgstr "**LOT** - Local time"
 
-#: ../../usermanual/elements.rst:32 0f45234ac4cb48ebb526930b85f14f49
+#: ../../usermanual/elements.rst:32 6a600c9b5e9e4a50910088db56b42022
 #, fuzzy
 msgid ""
 "Die Statuszeile ist in allen Anzeigeseiten zu sehen, sie zeigt den aktuellen"
@@ -110,7 +110,7 @@ msgstr ""
 "The status bar is visible on all display pages and shows the current status "
 "of the device."
 
-#: ../../usermanual/elements.rst:35 ec11a3bd2ed54906946d873dde1267a5
+#: ../../usermanual/elements.rst:35 82c0e939afd9478eabf5b0af3dd87f04
 #, fuzzy
 msgid ""
 "Der Anzeigeinhalt eines E-Paper Displays bleibt beim Ausschalten des Gerätes"
@@ -123,12 +123,12 @@ msgstr ""
 "active. If the dot is not flashing, the software is inactive or the device "
 "has been turned off."
 
-#: ../../usermanual/elements.rst:38 8d142e98c746479691b359c323cb0a80
+#: ../../usermanual/elements.rst:38 48c77c5099344d048b73d5f827ebf14c
 #, fuzzy
 msgid "Anzeigebereich"
 msgstr "Display area"
 
-#: ../../usermanual/elements.rst:40 fd68d70296334f8382436a022b8e8e1b
+#: ../../usermanual/elements.rst:40 76a5fb25511e4ac6a36ecd97bc8a20e9
 #, fuzzy
 msgid ""
 "Im mittleren Bereich befindet sich der Anzeigebereich. Dort werden alle "
@@ -141,7 +141,7 @@ msgstr ""
 "switch to a new page. The display area is updated every second with a "
 "partial image refresh."
 
-#: ../../usermanual/elements.rst:42 53b21241b8ee4ed58cc55a4566fa3a66
+#: ../../usermanual/elements.rst:42 7c103e55be724e099b7aecf6af3d1a8d
 #, fuzzy
 msgid ""
 "Bedingt durch die E-Paper Technologie sind im Display nach einiger Zeit "
@@ -168,7 +168,7 @@ msgstr ""
 "images from previous display pages. The regular full refresh is set by "
 "default and can be deactivated via the configuration if required."
 
-#: ../../usermanual/elements.rst:44 586bca8d0da74f648141cdf7826246c2
+#: ../../usermanual/elements.rst:44 ddbcfbde56a746ff82e43605066ff0c7
 #, fuzzy
 msgid ""
 "Die Entstehung von Geisterbildern ist von der Display-Temperatur des OBP60 "
@@ -186,7 +186,7 @@ msgstr ""
 "display to acclimatize. The Plexiglas panel protects against excessive UV "
 "radiation from the sun, and an IR filter prevents excessive heating."
 
-#: ../../usermanual/elements.rst:47 721e65fb417f4fa8a0790c01f8bbfe69
+#: ../../usermanual/elements.rst:47 f887c8e22a524592a46c855042f408c5
 #, fuzzy
 msgid ""
 "Trotz Filter kann es bei extrem hoher Sonneneinstrahlung vorkommen, dass der"
@@ -200,7 +200,7 @@ msgstr ""
 " The display is not defective in this case. After a full refresh, the "
 "display regenerates itself and the contrast is fully restored."
 
-#: ../../usermanual/elements.rst:50 88da303245594a61add84a608cd20f0f
+#: ../../usermanual/elements.rst:50 be5062007ec14b8a91b3e489fa06f224
 #, fuzzy
 msgid ""
 "Wird das OBP60 nicht benutzt, löschen Sie bitte den Bildschirminhalt und "
@@ -211,12 +211,12 @@ msgstr ""
 "with the protective cap. This protects it from excessive sunlight and the "
 "elements."
 
-#: ../../usermanual/elements.rst:53 6892a2dcc8674953b86ad38bda625736
+#: ../../usermanual/elements.rst:53 c719536402134e1eb366cfa2064a7045
 #, fuzzy
 msgid "Fußzeile"
-msgstr "footer"
+msgstr "Footer"
 
-#: ../../usermanual/elements.rst:57 744308268d6d4aa4a03602a5481753d2
+#: ../../usermanual/elements.rst:57 2f0b5c1fbb8a4f84be06766f44a472b4
 #, fuzzy
 msgid ""
 "Die Fußzeile dient zur Bezeichnung der Tastenfunktionen. Die Belegung der "
@@ -231,17 +231,17 @@ msgstr ""
 "display pages that do not contain any key functions. Further information is "
 "displayed in the middle of the footer:"
 
-#: ../../usermanual/elements.rst:59 83a704f54dcf437c952da0e17564b172
+#: ../../usermanual/elements.rst:59 079a20c1bb9444d0adf619d4dd4dc41d
 #, fuzzy
 msgid "``[ <<<< 1/5 >>>> ]`` - Wischgeste aktiv"
 msgstr "``[ <<<< 1/5 >>>> ]`` - Swipe gesture active"
 
-#: ../../usermanual/elements.rst:60 3046242f04864fdea4659628d7aa6b3e
+#: ../../usermanual/elements.rst:60 6b90f63840c84692801d63d931d186d7
 #, fuzzy
 msgid "``[ Keylock active ]`` - Tasten gesperrt"
 msgstr "``[ Keylock active ]`` - Keys locked"
 
-#: ../../usermanual/elements.rst:62 e158f94117c94b61b0ff5831de091714
+#: ../../usermanual/elements.rst:62 de87c013306145e4bcac32d649e5e5e3
 #, fuzzy
 msgid ""
 "Sofern die Wischgeste aktiv ist, werden im Infobereich die aktuelle Seite "
@@ -250,12 +250,12 @@ msgstr ""
 "If the swipe gesture is active, the current page and the page number are "
 "displayed in the notification area."
 
-#: ../../usermanual/elements.rst:65 65e1aa05a82644169c8820228152cd0a
+#: ../../usermanual/elements.rst:65 886ab063c8ed4b19a597403339301313
 #, fuzzy
 msgid "Sensor-Tasten"
 msgstr "Sensor buttons"
 
-#: ../../usermanual/elements.rst:67 9eaa13bc59c54cebb77720a4d6051b42
+#: ../../usermanual/elements.rst:67 10a6e0b0d2974228a5262003a07010a5
 #, fuzzy
 msgid ""
 "Das OBP60 hat 6 kapazitive Sensortasten am unteren Displayrand. Die Tasten "
@@ -269,37 +269,37 @@ msgstr ""
 "drops or rain have virtually no effect on the buttons' trigger function. The"
 " following button functions are currently implemented:"
 
-#: ../../usermanual/elements.rst:69 6c544272556243fe932c6e59820f421e
+#: ../../usermanual/elements.rst:69 9ccf541156c14634b436f3c86657df44
 #, fuzzy
 msgid "Konfiguration der Tasten-Sensitivität"
 msgstr "Configuring key sensitivity"
 
-#: ../../usermanual/elements.rst:70 3849d259eea7446abbb7913ebcf2a693
+#: ../../usermanual/elements.rst:70 3c4bcae405064226a0f88424a3057ea5
 #, fuzzy
 msgid "Wischen links / rechts"
 msgstr "Swipe left / right"
 
-#: ../../usermanual/elements.rst:71 6ba27e7818c14be9babb707828228d62
+#: ../../usermanual/elements.rst:71 5065a10713f54defb51b61de7975ed75
 #, fuzzy
 msgid "Kurzes Tippen"
 msgstr "Short tap"
 
-#: ../../usermanual/elements.rst:72 9db6d272e6a94e32a6a3b53d7c52f9b6
+#: ../../usermanual/elements.rst:72 df207c78c35f46dcb35e9ea320e5af1c
 #, fuzzy
 msgid "Normales Drücken"
 msgstr "Normal pressing"
 
-#: ../../usermanual/elements.rst:73 248450ceef7c468b90cdcdee6f6754a3
+#: ../../usermanual/elements.rst:73 2b593aa04afb4406b5f6043ea113c154
 #, fuzzy
 msgid "Drücken mehrerer Tasten gleichzeitig"
 msgstr "Pressing multiple keys at the same time"
 
-#: ../../usermanual/elements.rst:74 1a15b9a828234f91b2b7f065aba79c71
+#: ../../usermanual/elements.rst:74 00226191c78444559d77339b21a12e61
 #, fuzzy
 msgid "Tasten sperren"
 msgstr "Lock keys"
 
-#: ../../usermanual/elements.rst:76 2a3542179fc9479aa48e81cfef9d6ec9
+#: ../../usermanual/elements.rst:76 66eacfb107b545779ba813c5caf4a89e
 #, fuzzy
 msgid ""
 "Die Tasten-Sensitivität kann über die Konfigurationsseite eingestellt "
@@ -313,7 +313,7 @@ msgstr ""
 "recess in the middle, making it easier to feel the center of the key. "
 "Detected keystrokes are signaled acoustically with a beep."
 
-#: ../../usermanual/elements.rst:78 4b683c70a23d4b74876d5f1ac81c24d8
+#: ../../usermanual/elements.rst:78 3952c1624ad248e6a4bd378c8c036070
 #, fuzzy
 msgid ""
 "Die Tasten sind bündig in das Display eingelassen. So ist es möglich, mit "
@@ -333,7 +333,7 @@ msgstr ""
 "right** is signaled with the tone sequence **low-high**, **swipe left** with"
 " **high-low**. The page advancement is scrolling at the ends."
 
-#: ../../usermanual/elements.rst:80 60c0ac5084934b2baf0ab6bc36e96216
+#: ../../usermanual/elements.rst:80 adbab238bd254671ad111ba21a434daf
 #, fuzzy
 msgid ""
 "Bei kurzem Tippen wird kein Piepton ausgegeben. Kurzes Tippen der zwei "
@@ -352,7 +352,7 @@ msgstr ""
 " key lock, nor does the order. Deactivating the key lock is done in the same"
 " way."
 
-#: ../../usermanual/elements.rst:83 4cbfe7c8028e412897daf3e1bdcac70b
+#: ../../usermanual/elements.rst:83 7582f6a512684ec99b5eb952584ef9ea
 #, fuzzy
 msgid ""
 "Sollte Ihr OBP60 so platziert sein, dass sich eine Person versehentlich "
@@ -366,12 +366,12 @@ msgstr ""
 "presses. You can also activate the key lock function for additional "
 "protection against unintentional operation."
 
-#: ../../usermanual/elements.rst:86 a679b93c91e64f22bc372c388478be9a
+#: ../../usermanual/elements.rst:86 9da2316b535742a8bb22ef59707f29b5
 #, fuzzy
 msgid "Flash LED"
 msgstr "Flash LED"
 
-#: ../../usermanual/elements.rst:90 3a20724bc7d44233a4034287bbff81e4
+#: ../../usermanual/elements.rst:90 3191bfc737da4cac8726840aaab85fde
 #, fuzzy
 msgid ""
 "Links oberhalb des Displays befindet sich eine kleine Flash-LED. Diese LED "
@@ -384,28 +384,28 @@ msgstr ""
 "colors. The LED shines at maximum brightness, making it easy to see even in "
 "bright sunlight."
 
-#: ../../usermanual/elements.rst:92 e3310c6cb390446ca337abfee35071f4
+#: ../../usermanual/elements.rst:92 444c8d60cc2546548f3b3f6d121b577a
 #, fuzzy
 msgid "Rot - Alarmierung bei Grenzwertüberschreitung"
 msgstr "Red - Alarm when limit value is exceeded"
 
-#: ../../usermanual/elements.rst:93 f3886e593d304d7ba692c5ed4eb91711
+#: ../../usermanual/elements.rst:93 0662b2a78d794ac0b8c8154e41f56733
 #, fuzzy
 msgid "Grün - Bestätigung von Zustandsänderungen (z.B. Autopilot ein/aus)"
 msgstr "Green - Confirmation of status changes (e.g. autopilot on/off)"
 
-#: ../../usermanual/elements.rst:94 6289cb6ebfac4434b114beda1f3529ed
+#: ../../usermanual/elements.rst:94 84103842a9aa4f73aea63575e767f88f
 #, fuzzy
 msgid ""
 "Blau - Signalisierung von Zuständen (z.B. GPS-Empfang, Datentransfer usw.)"
 msgstr "Blue - Signaling of states (e.g. GPS reception, data transfer, etc.)"
 
-#: ../../usermanual/elements.rst:97 a2e0695bade846339cb71e48e78d2bc1
+#: ../../usermanual/elements.rst:97 6863d17b4c12416e96d924799a7fb50d
 #, fuzzy
 msgid "Hintergrundbeleuchtung"
 msgstr "Backlight"
 
-#: ../../usermanual/elements.rst:99 bafcd65716af4cd793375187207a5841
+#: ../../usermanual/elements.rst:99 73aef39515014524a1913c8deece622a
 #, fuzzy
 msgid ""
 "Um das Display bei Nacht ablesen zu können, kann eine Hintergrundbeleuchtung"
@@ -417,27 +417,27 @@ msgstr ""
 "using the right touch button. The color and brightness can be adjusted via "
 "the configuration. The backlight can be configured as follows:"
 
-#: ../../usermanual/elements.rst:101 a0b29bf7032f4d0bb93ce0322aacc9c3
+#: ../../usermanual/elements.rst:101 bfae4db201bb40edba0bd511bc2e0870
 #, fuzzy
 msgid "Dauerhaft an"
 msgstr "Permanently on"
 
-#: ../../usermanual/elements.rst:102 8a1da1ed1cc2417eb5f212ea204f90f2
+#: ../../usermanual/elements.rst:102 717094cc689543229e6b161d52164b5f
 #, fuzzy
 msgid "Dauerhaft aus"
 msgstr "Permanently off"
 
-#: ../../usermanual/elements.rst:103 89219a9ed96f4600bab778ad85a971c9
+#: ../../usermanual/elements.rst:103 98ea651889ac408cae25a079078b40b2
 #, fuzzy
 msgid "Manuell einschaltbar über Sensortaste"
 msgstr "Can be switched on manually via sensor button"
 
-#: ../../usermanual/elements.rst:104 d25cd07d25a8461ca18549da3dcf5f38
+#: ../../usermanual/elements.rst:104 86df27cd3e9e4222ab17a7bc6ee52e6a
 #, fuzzy
 msgid "Automatisch schaltbar abhängig vom Sonnenstand"
 msgstr "Automatically switchable depending on the position of the sun"
 
-#: ../../usermanual/elements.rst:107 83d985601ec34c809218c818b8a86793
+#: ../../usermanual/elements.rst:107 b632c078ed6a4c49abf0a1838098d882
 #, fuzzy
 msgid ""
 "Wenn Sie den Sonnenstand zum Schalten der Hintergrundbeleuchtung verwenden "
@@ -453,12 +453,12 @@ msgstr ""
 "geographical location is taken into account. If there is no valid GPS "
 "signal, the switching states will not change."
 
-#: ../../usermanual/elements.rst:112 1739321243c34e9aa413cc7831edc266
+#: ../../usermanual/elements.rst:112 d57f4c96f556404d92c0b334b9bd9dd8
 #, fuzzy
 msgid "Buzzer"
 msgstr "Buzzer"
 
-#: ../../usermanual/elements.rst:114 72ca58eb31ef460ba747fabf0a138913
+#: ../../usermanual/elements.rst:114 474acbb24f03467a92b27081031517a8
 #, fuzzy
 msgid ""
 "Der Buzzer dient zur akustischen Signalisierung von Störungen und als "
@@ -474,12 +474,12 @@ msgstr ""
 "and reset manually or automatically, a short beep is emitted to signal the "
 "device's boot-up."
 
-#: ../../usermanual/elements.rst:117 549e424eb1c8479392a22ea8b81c6d3f
+#: ../../usermanual/elements.rst:117 474d4cbb2c064f3680b4cca57142b303
 #, fuzzy
 msgid "Reset-Taster"
 msgstr "Reset-Taster"
 
-#: ../../usermanual/elements.rst:122 b7b35c4dfd9046d6955baab14d117738
+#: ../../usermanual/elements.rst:122 440d1b0fa34e4999ad20fdd9d6c19805
 #, fuzzy
 msgid ""
 "Der Reset-Taster befindet sich auf der Rückseite des Displays an der "
@@ -495,7 +495,7 @@ msgstr ""
 " the reset, use a thin, non-conductive object and gently press the button "
 "until you feel it go beyond the pressure point."
 
-#: ../../usermanual/elements.rst:125 4e2bd5aa04474444bd06aeb2d7735bd6
+#: ../../usermanual/elements.rst:125 f80151f6a9f1410cad16df3ab4526fdb
 #, fuzzy
 msgid ""
 "Verwenden Sie keine leitenden Gegenstände. Damit können Kurzschlüsse auf der"

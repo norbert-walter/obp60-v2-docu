@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2024, Open Boat Projects
+# Copyright (C) 2025, Open Boat Projects
 # This file is distributed under the same license as the OBP60 V2
 # Dokumentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OBP60 V2 Dokumentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-21 08:07+0000\n"
+"POT-Creation-Date: 2025-08-26 14:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -20,17 +20,17 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.17.0\n"
 
-#: ../../usermanual/safety.rst:2 37537b3cff5342e39306df166e6e3cd1
+#: ../../usermanual/safety.rst:2 f239cf9702b2444aaf02c601435df1ad
 #, fuzzy
 msgid "Sicherheitshinweise"
 msgstr "Safety instructions"
 
-#: ../../usermanual/safety.rst:5 37079b8629924ba6a9bffb6ed2d5d30a
+#: ../../usermanual/safety.rst:5 b2af30cde54648aa94c9543c80bfb058
 #, fuzzy
 msgid "Allgemeine Hinweise"
 msgstr "General information"
 
-#: ../../usermanual/safety.rst:7 c56c45e260904f5292901209803ed50d
+#: ../../usermanual/safety.rst:7 46909fb2ef4046aa989ab0feaff67cbb
 #, fuzzy
 msgid ""
 "Die auf dieser Webseite veröffentlichten Informationen sind im Rahmen eines "
@@ -49,7 +49,7 @@ msgstr ""
 "to commercial products. Use of the open-source software and hardware is at "
 "your own risk, and liability claims are excluded."
 
-#: ../../usermanual/safety.rst:10 6c148eed163744a2ba2746ec9bd1b77c
+#: ../../usermanual/safety.rst:10 5fbb102a67f34d0ebfce63f162a0f189
 #, fuzzy
 msgid ""
 "Jedem Interessierten sollte klar sein, dass die Nutzung des hier "
@@ -65,7 +65,7 @@ msgstr ""
 "analysis and take appropriate measures to avoid damage and endangerment to "
 "others."
 
-#: ../../usermanual/safety.rst:13 c47eac916a5e4f3383e4ca2aa7459642
+#: ../../usermanual/safety.rst:13 fe955c447af74b45bc3ddc5b9039f914
 #, fuzzy
 msgid ""
 "**NMEA2000** (TM), **NMEA0183** (TM), **SeaTalk** (TM), **SeaSmart** (TM) "
@@ -90,7 +90,7 @@ msgstr ""
 "No guarantee can be given for the correct implementation of the protocols or"
 " their functional reliability."
 
-#: ../../usermanual/safety.rst:16 0f642eeb1826418cb747797a2bd8b57f
+#: ../../usermanual/safety.rst:16 4b6597b355ff44dfa02bd34fb16f95a3
 #, fuzzy
 msgid ""
 "Die Integration von Open-Source-Implementierungen in zertifizierte "
@@ -99,7 +99,7 @@ msgstr ""
 "The integration of open source implementations into certified bus systems "
 "can lead to errors, malfunctions and total failures."
 
-#: ../../usermanual/safety.rst:18 54ac24a0231846e8a9ff1acb5022de2b
+#: ../../usermanual/safety.rst:18 8d051b9e75404b9482eff84a01914b91
 #, fuzzy
 msgid ""
 "Bei auftretenden Problemen oder Mängeln bitte wir Sie, uns eine Information "
@@ -110,12 +110,12 @@ msgstr ""
 "`Kontaktformular`_. This will allow us to address any quality and safety "
 "issues and provide remedial action."
 
-#: ../../usermanual/safety.rst:23 6ed135d2198e4711a7d5010acb01feb7
+#: ../../usermanual/safety.rst:23 7cca6e45ed1044ff9f509ba1f231376d
 #, fuzzy
 msgid "Sicherheit im WiFi-Netzwerk"
 msgstr "Security in the WiFi network"
 
-#: ../../usermanual/safety.rst:25 feeb18df686d4c3a8edbe4cc51991a4a
+#: ../../usermanual/safety.rst:25 428d621af3924259b682499e47e47316
 #, fuzzy
 msgid ""
 "Sie sollten das OBP60 nur mit vertrauenswürdigen WiFi-Netzwerken verbinden. "
@@ -137,7 +137,7 @@ msgstr ""
 "connections to open Wi-Fi networks. This also allows unauthorized persons to"
 " access your devices on the network."
 
-#: ../../usermanual/safety.rst:28 3f867e9f65ae4df89e383bfe56e8cb65
+#: ../../usermanual/safety.rst:28 7e1074ee7fe94aee89ffcc0829416ab7
 #, fuzzy
 msgid ""
 "Sie können die Sicherheit erhöhen, indem Sie einen separaten WiFi- oder LTE-"
@@ -157,7 +157,7 @@ msgstr ""
 "This way, all devices on your network have shared internet access while "
 "being adequately protected."
 
-#: ../../usermanual/safety.rst:33 2f255241f26d4a6b819fdc6b63f8371e
+#: ../../usermanual/safety.rst:33 5fba7d4c7c0549eb89b38ca6ea0c89cb
 #, fuzzy
 msgid ""
 "Die Verbindungsqualität von WiFi-Netzwerken hängt maßgeblich von der "
@@ -171,7 +171,7 @@ msgstr ""
 "the same radio channels with other participants in other Wi-Fi networks. The"
 " OBP60 uses the radio channels of the 2.4 GHz frequency band."
 
-#: ../../usermanual/safety.rst:36 c9cda398c34c45aabee172b25a8dee91
+#: ../../usermanual/safety.rst:36 c1e54ba23f5f482a9219f6229bd7bb1b
 #, fuzzy
 msgid ""
 "Bei hoher Auslastung wie z.B. in Häfen kann die Verbindungsqualität des "
@@ -187,7 +187,7 @@ msgstr ""
 "However, please ensure that your boat operation is not affected in such "
 "situations."
 
-#: ../../usermanual/safety.rst:39 ff0b41aefe2a4eee8edad8c15828d3b3
+#: ../../usermanual/safety.rst:39 f774046e8f2d48d783f77d4880f27e22
 #, fuzzy
 msgid ""
 "Verwenden Sie bei hoher Kanalauslastung Kanäle mit geringer Auslastung. Die "
@@ -204,7 +204,7 @@ msgstr ""
 "routers often offer an automatic configuration feature that helps optimize "
 "channel selection."
 
-#: ../../usermanual/safety.rst:41 2abc78d36515400680303dd0585e9a2a
+#: ../../usermanual/safety.rst:41 7b2f4f0706a14608a4cfa2650b159b11
 #, fuzzy
 msgid ""
 "Bei Änderungen der Konfiguration des OBP60 werden Sie grundsätzlich nach dem"

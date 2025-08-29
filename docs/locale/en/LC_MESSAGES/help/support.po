@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2024, Open Boat Projects
+# Copyright (C) 2025, Open Boat Projects
 # This file is distributed under the same license as the OBP60 V2
 # Dokumentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OBP60 V2 Dokumentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-21 08:07+0000\n"
+"POT-Creation-Date: 2025-08-26 14:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -20,12 +20,12 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.17.0\n"
 
-#: ../../help/support.rst:2 d4385a02ad174f5fa35aac94a7d7d7d4
+#: ../../help/support.rst:2 59cecaca8ff44a7d8fcbf72809c39d7b
 #, fuzzy
 msgid "Unterstützung"
 msgstr "Support"
 
-#: ../../help/support.rst:4 11b7262e0f3f44298231c04792926d71
+#: ../../help/support.rst:4 80e5bb415eb84a798f9a72ebbcaeffcf
 #, fuzzy
 msgid ""
 "Wenn Sie im Bereich **Fragen und Antworten** keine Informationen gefunden "
@@ -45,7 +45,7 @@ msgstr ""
 "experience will answer you. The core development team for hardware and "
 "software can also be found there and will provide you with answers."
 
-#: ../../help/support.rst:11 a4174307d3df4c53a838893302833f27
+#: ../../help/support.rst:11 489ac73061cd4027b0f78571235f2e07
 #, fuzzy
 msgid ""
 "Bitte vermeiden Sie einen direkten Kontakt über E-Mail an Open Boat Projects"

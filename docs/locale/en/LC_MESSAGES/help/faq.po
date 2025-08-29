@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2024, Open Boat Projects
+# Copyright (C) 2025, Open Boat Projects
 # This file is distributed under the same license as the OBP60 V2
 # Dokumentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OBP60 V2 Dokumentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-21 08:07+0000\n"
+"POT-Creation-Date: 2025-08-26 14:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -20,17 +20,17 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.17.0\n"
 
-#: ../../help/faq.rst:2 ffb5b6e9470a420a9d155793725b3112
+#: ../../help/faq.rst:2 0241189345be42db9e0a0be53286041f
 #, fuzzy
 msgid "Fragen und Antworten"
-msgstr "questions and answers"
+msgstr "Questions and answers"
 
-#: ../../help/faq.rst:4 fab3e1da4b014c2c977e0aad5883b656
+#: ../../help/faq.rst:4 d0e9e937f54a434b96091de15ad874c9
 #, fuzzy
 msgid "**Warum flackert der Bildschirm in regelmäßigen Abständen?**"
 msgstr "**Why does the screen flicker at regular intervals?**"
 
-#: ../../help/faq.rst:6 22474db713cf4a77a3355346f8fe15a2
+#: ../../help/faq.rst:6 a74310ba1ee24e86adbda4a43a886c3e
 #, fuzzy
 msgid ""
 "Das Flackern des Bildschirmes dienst zum Auffrischen des Bildschirminhaltes."
@@ -44,12 +44,12 @@ msgstr ""
 " remove ghosting and refresh the contrast. To do this, the image content is "
 "inverted, erased several times, and completely redrawn."
 
-#: ../../help/faq.rst:8 b0feb7384bdf4173ad3a1bfa81ee00e1
+#: ../../help/faq.rst:8 991dcea419ed4a5ab541bd7cc843ed24
 #, fuzzy
 msgid "**Wie kann ich das flackern des Bildschirms reduzieren?**"
 msgstr "**How can I reduce screen flickering?**"
 
-#: ../../help/faq.rst:10 381ec7276a09438a895c0f059708b9ac
+#: ../../help/faq.rst:10 2ba162ce94b44b88a9bc44410be856b4
 #, fuzzy
 msgid ""
 "Die Zeitpunkt eines Voll-Refreshes hängt von einigen Faktoren ab. In den "
@@ -85,12 +85,12 @@ msgstr ""
 "settings can be found in chapter :ref:`Config - OBP Display`. The screen "
 "refresh settings also affect the screen contrast when exposed to sunlight."
 
-#: ../../help/faq.rst:12 0127741e043b4414a8e725c7d6c49a5c
+#: ../../help/faq.rst:12 de104d1421bb4dbd91b200044f6aecd2
 #, fuzzy
 msgid "**Warum verblasst das Display unter Sonneneinwirkung?**"
 msgstr "**Why does the display fade under sunlight?**"
 
-#: ../../help/faq.rst:14 71eed52beb964698bed53348a3a2f780
+#: ../../help/faq.rst:14 75cb5fdcf822408aa481716a2e33e98c
 #, fuzzy
 msgid ""
 "Bei extremer Sonneneinwirkung erhitzt sich das e-Paper-Display auf und "
@@ -104,12 +104,12 @@ msgstr ""
 "gray, and some streaks appear on the display. The display is not defective. "
 "This condition can be resolved with a full refresh."
 
-#: ../../help/faq.rst:16 f84709fae7e64242a418800c34d1ab7e
+#: ../../help/faq.rst:16 1414778c3d15446ea99da22fc855c0bb
 #, fuzzy
 msgid "**Was kann man dagegen tun?**"
 msgstr "**What can you do about it?**"
 
-#: ../../help/faq.rst:18 f39e9dad4fa442afb5485a5522ef7f31
+#: ../../help/faq.rst:18 ef527dbadad6485a8c7a04745f65a69e
 #, fuzzy
 msgid ""
 "Der Effekt kann reduziert werden, indem direkte Sonnenstrahlung auf das "
@@ -127,12 +127,12 @@ msgstr ""
 "influences the loss of contrast, as the heat dissipated within the device "
 "also contributes to the temperature increase."
 
-#: ../../help/faq.rst:20 bc36c13175c04b70b796808335bac6c6
+#: ../../help/faq.rst:20 5273ebbf44c448d3a7ea4f794851e234
 #, fuzzy
 msgid "**Welche Möglichkeiten bestehen den Stromverbrauch zu reduzieren?**"
 msgstr "**What options are there to reduce electricity consumption?**"
 
-#: ../../help/faq.rst:22 a22115b3667f4aabae8454ccc5044ca6
+#: ../../help/faq.rst:22 35033dd969b647d9893ff730628f1493
 #, fuzzy
 msgid ""
 "Der Stromverbrauch lässt sich reduzieren, indem der Access Point "
@@ -148,12 +148,12 @@ msgstr ""
 " via the **Power Mode** parameter. Details on power-saving features can be "
 "found in the :ref:`Config - OBP Hardware` chapter."
 
-#: ../../help/faq.rst:25 da12b678c72e486eb40f644ba802d7b2
+#: ../../help/faq.rst:25 60f88f74120746958e3018d7705e2d7b
 #, fuzzy
 msgid "**Warum startet mein OBP60 nicht, wenn ich die Spannung zuschalte?**"
 msgstr "**Why doesn't my OBP60 start when I apply power?**"
 
-#: ../../help/faq.rst:27 5c784ec7c29c4e659fb971a6e3b0e32b
+#: ../../help/faq.rst:27 b88198c111b246a3b425d2f8afa33a48
 #, fuzzy
 msgid ""
 "Das Problem liegt am Softstart-Verhalten des StepDown- Wandler, der die 12V "
@@ -186,12 +186,12 @@ msgstr ""
 " be connected in parallel to the 12V input at the rear. This should reduce "
 "the problem."
 
-#: ../../help/faq.rst:29 762f6284fb0a4e3ebeab198cf69f2d3b
+#: ../../help/faq.rst:29 4bcf5923d0d6486098220f971bda96c3
 #, fuzzy
 msgid "**Warum funktionieren WiFi-Verbindungen nicht richtig?**"
 msgstr "**Why aren't Wi-Fi connections working properly?**"
 
-#: ../../help/faq.rst:31 b7273b274d534d09b01c1cfd1e09a5a0
+#: ../../help/faq.rst:31 5611c380ad76490ab6879fe48d08cffe
 #, fuzzy
 msgid ""
 "WiFi-Verbindungen sind auf das 2,4 GHz Frequenzband begrenzt. Andere "
@@ -218,12 +218,12 @@ msgstr ""
 "channels can provide some relief, as they are at the edges of the 2.4 GHz "
 "frequency range and have only one adjacent channel."
 
-#: ../../help/faq.rst:36 1f98708f52eb489c8a04d41ffc9d6b7b
+#: ../../help/faq.rst:36 599eaf4713384d5584e61f70d92fb655
 #, fuzzy
 msgid "**Das GPS bekommt beim OBP60 keinen Fix. Was kann ich tun?**"
 msgstr "**The GPS on the OBP60 isn't getting a fix. What can I do?**"
 
-#: ../../help/faq.rst:38 ff8308c4775848ada261c00074919f8c
+#: ../../help/faq.rst:38 52095714edd24932996f6438ee4f95eb
 #, fuzzy
 msgid ""
 "Beim OBP60 befindet sich die GPS-Antenne auf der Rückseite des Displays. "

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2024, Open Boat Projects
+# Copyright (C) 2025, Open Boat Projects
 # This file is distributed under the same license as the OBP60 V2
 # Dokumentation package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OBP60 V2 Dokumentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-21 08:07+0000\n"
+"POT-Creation-Date: 2025-08-26 14:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -20,22 +20,22 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.17.0\n"
 
-#: ../../programming/pages.rst:2 92335bd7e7be40b0a69318ae732611e7
+#: ../../programming/pages.rst:2 17559dde68964c70abe4bf9b74ac43a3
 #, fuzzy
 msgid "Seitenerstellung"
 msgstr "Page creation"
 
-#: ../../programming/pages.rst:4 72cda751a1f44252b40781f2c4e5562c
+#: ../../programming/pages.rst:4 320f3883fab64901be4f7af6d9529734
 #, fuzzy
 msgid "Um eine neue Seite zu erstellen sind folgende Schritte notwendig:"
 msgstr "To create a new page, the following steps are necessary:"
 
-#: ../../programming/pages.rst:6 5c9eb1850c9f450e905908d7d6c2b23c
+#: ../../programming/pages.rst:6 f43073c40dcc4d18a2bd26332616f8e0
 #, fuzzy
 msgid "Anlegen einer neuen Seite unter ``lib\\obp60task\\PageXXXX.cpp``"
 msgstr "Create a new page under ``lib\\obp60task\\PageXXXX.cpp``"
 
-#: ../../programming/pages.rst:7 ff7790142fcb42cebbcd50256244e263
+#: ../../programming/pages.rst:7 394f9124285f4407ab6fa12f38bdd4c1
 #, fuzzy
 msgid ""
 "Registrierung der Seite in ``lib\\obp60task\\obp60task.cpp``. Dazu die "
@@ -44,7 +44,7 @@ msgstr ""
 "Register the page in ``lib\\obp60task\\obp60task.cpp``. To do this, extend "
 "the function ``registerAllPages`` accordingly."
 
-#: ../../programming/pages.rst:8 a30e72bd2be14fb2ac72830443979857
+#: ../../programming/pages.rst:8 36d2dd74c43542ee804cafe7dc2a9852
 #, fuzzy
 msgid ""
 "In ``/lib/obp60task/config.json`` die neue Seite in die jeweiligen "
@@ -56,7 +56,7 @@ msgstr ""
 "lists or add the page to ``/lib/obp60task/gen_set.py`` and thus recreate the"
 " relevant part of the file ``/lib/obp60task/config.json``."
 
-#: ../../programming/pages.rst:10 d151dabf5c8d4c9c8e5cc7c4bd0e7956
+#: ../../programming/pages.rst:10 3f268640da88473dbfe72fd6a7aa2922
 #, fuzzy
 msgid ""
 "Als Vorlage für eine neue Seite kann z.B. die vorhandene Seite *PageWhite* "
