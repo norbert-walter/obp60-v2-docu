@@ -23,4 +23,4 @@ msgstr ""
 #: ../../assembling/partlist.rst:2 f217788b12ad49da81cbc1ba0f739b0d
 #, fuzzy
 msgid "Bauteilliste"
-msgstr "Component list"
+msgstr "Parts list"

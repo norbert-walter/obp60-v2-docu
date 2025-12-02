@@ -35,11 +35,11 @@ msgid ""
 " am I2C-Bus müssen so ausgewählt werden, dass sie mit 5.0V TTL-Pegeln "
 "arbeiten. Nicht alle Module unterstützen diese Pegel."
 msgstr ""
-"The extended sensors include sensors that are not connected to the NMEA 0183"
-" and NMEA 2000 buses. In addition, inexpensive sensors can be connected to "
-"the I2C and 1-Wire buses. Note the different signal levels for the I2C and "
-"1-Wire buses. Modules connected to the I2C bus must be selected to operate "
-"at 5.0V TTL levels. Not all modules support these levels."
+"The extended sensor options refer to sensors that are not connected to the "
+"NMEA0183 or NMEA2000 buses. Additionally, inexpensive sensors can be "
+"connected to the I2C and 1-Wire buses. Note the different signal levels for "
+"the I2C and 1-Wire buses. Modules for the I2C bus must be selected to "
+"operate at 5.0V TTL levels. Not all modules support these levels."
 
 #: ../../usermanual/sensors.rst:7 ../../usermanual/sensors.rst:27
 #: 804c0cae08344212890f51934034be46 dcb6e15c536248a9a116cd3029198980
@@ -118,7 +118,7 @@ msgstr "No"
 msgid ""
 "In der nachfolgenden Tabelle sind einige Sensoren aufgelistet, die am OBP60 "
 "verwendet werden können."
-msgstr "The following table lists some sensors that can be used on the OBP60."
+msgstr "The table below lists some sensors that can be used with the OBP60."
 
 #: ../../usermanual/sensors.rst:17 3d27ccc033d24d8aa39952308ae3af14
 #, fuzzy
@@ -129,10 +129,10 @@ msgid ""
 "diesem Fall Pegelkonverter notwendig. Die meisten 5V-Module sind auch an "
 "3.3V-Systemen nutzbar, wenn sie mit 3.3V betrieben werden."
 msgstr ""
-"The sensor modules are designed for specific voltage ranges. Make sure you "
-"use the correct sensors. Using 3.3V modules in 5V systems can damage them. "
-"Level converters are required in this case. Most 5V modules can also be used"
-" in 3.3V systems when operated at 3.3V."
+"The sensor modules are designed for specific voltage ranges. Ensure you use "
+"the correct sensors. Using 3.3V modules in 5V systems can damage them. In "
+"this case, level converters are necessary. Most 5V modules can also be used "
+"in 3.3V systems if operated at 3.3V."
 
 #: ../../usermanual/sensors.rst:20 e0772ccfa5834223897891067741c276
 #, fuzzy
@@ -143,7 +143,7 @@ msgid ""
 msgstr ""
 "When purchasing BMP280 and BME280 modules, please note that there are "
 "different types that look similar but behave differently. You can identify "
-"the types by the package size and shape of the chip."
+"the types by the package size and the shape of the chip."
 
 #: ../../usermanual/sensors.rst:24 8d41e991b8574c999a88893069a083e5
 #, fuzzy
@@ -356,7 +356,7 @@ msgstr "T - Air temperature"
 #: ../../usermanual/sensors.rst:61 4e9b25470af54a78a9c5a06aaf3035fa
 #, fuzzy
 msgid "P - Luftdruck"
-msgstr "P - air pressure"
+msgstr "P - Air pressure"
 
 #: ../../usermanual/sensors.rst:62 46af2caf360246979ea47ca9036c2610
 #, fuzzy
@@ -371,7 +371,7 @@ msgstr "R - Rotation 0...360°"
 #: ../../usermanual/sensors.rst:64 7623541d00a24f02850e04d55bddc46c
 #, fuzzy
 msgid "U - Spannung"
-msgstr "U - voltage"
+msgstr "U-voltage"
 
 #: ../../usermanual/sensors.rst:65 3ff7123138514b0fbb1fd5422fb245d1
 #, fuzzy

@@ -33,13 +33,13 @@ msgstr "Functions"
 #: ../../intro/specification.rst:10 6094e60d38464de49fcf4eaaa564ff79
 #, fuzzy
 msgid "E-Paper Display (tageslichttauglich)"
-msgstr "E-paper display (suitable for daylight)"
+msgstr "E-Paper Display (daylight compatible)"
 
 #: ../../intro/specification.rst:11 96b15ca64f1f48ce95f2d4384caf80e6
 #, fuzzy
 msgid "Numerische Anzeigeseiten für 1, 2, 3 und 4 Werte (Werte frei wählbar)"
 msgstr ""
-"Numerical display pages for 1, 2, 3 and 4 values (values freely selectable)"
+"Numeric display pages for 1, 2, 3 and 4 values (values freely selectable)"
 
 #: ../../intro/specification.rst:12 09507da7206b4fa6972592b207cb1db0
 #, fuzzy
@@ -49,12 +49,12 @@ msgstr "Graphic display pages (fixed values)"
 #: ../../intro/specification.rst:13 e079cd66711345abbb3bb76b84e59f79
 #, fuzzy
 msgid "Trendanzeige für Werte"
-msgstr "Trend display for values"
+msgstr "Trend indicator for values"
 
 #: ../../intro/specification.rst:14 0abf7a0c912541d3b1a14aa912dac6d4
 #, fuzzy
 msgid "Grenzwertüberschreitung akustisch und optisch"
-msgstr "Limit value exceedance acoustically and visually"
+msgstr "Exceedance of limit values acoustically and visually"
 
 #: ../../intro/specification.rst:15 4b5a860062c04408aa2dd5ad0d784d66
 #, fuzzy
@@ -69,7 +69,7 @@ msgstr "Acoustic signal generator (buzzer)"
 #: ../../intro/specification.rst:17 98a4ed8f106044e886fc1a8b52174ad5
 #, fuzzy
 msgid "Optischer Signalgeber (RGB-LED)"
-msgstr "Optical signal generator (RGB LED)"
+msgstr "Optical signal transmitter (RGB LED)"
 
 #: ../../intro/specification.rst:18 9ea805748f464e749d9fe6c8632ec961
 #, fuzzy
@@ -99,7 +99,7 @@ msgstr "I2C (isolated)"
 #: ../../intro/specification.rst:23 9236f700dbea45b58b47cda8705b3d4a
 #, fuzzy
 msgid "1Wire (nicht isoliert)"
-msgstr "1Wire (non-insulated)"
+msgstr "1-Wire (non-isolated)"
 
 #: ../../intro/specification.rst:24 bc5a2f2e951242159bc2fb45631e22da
 #, fuzzy
@@ -119,7 +119,7 @@ msgstr "Battery monitor (12V voltage measurement)"
 #: ../../intro/specification.rst:27 f4f5809238c64803ad14a19c6604823f
 #, fuzzy
 msgid "Umgebungssensor BMP280 (Temperatur, Luftdruck)"
-msgstr "BMP280 ambient sensor (temperature, air pressure)"
+msgstr "BMP280 environmental sensor (temperature, air pressure)"
 
 #: ../../intro/specification.rst:28 0e51b6cb31df43e1b21ccc000a726803
 #, fuzzy
@@ -169,7 +169,7 @@ msgstr "10...28 V"
 #: ../../intro/specification.rst:48 faba2028cb77446a8c8610be876cf99a
 #, fuzzy
 msgid "Stromverbrauch"
-msgstr "Power consumption"
+msgstr "Electricity consumption"
 
 #: ../../intro/specification.rst:48 990d265a6fb5467b95b08e6929361e8d
 #, fuzzy
@@ -319,7 +319,7 @@ msgstr "8 KV"
 #: ../../intro/specification.rst:78 c534daf91f684581ada7b954325eb094
 #, fuzzy
 msgid "Schutzgrad"
-msgstr "Degree of protection"
+msgstr "Protection level"
 
 #: ../../intro/specification.rst:78 245fdedb9f58479b9311a403d0a73921
 #, fuzzy
@@ -349,7 +349,7 @@ msgstr "280 G"
 #: ../../intro/specification.rst:86 0c241dd7296947d38888528b2fd57a4b
 #, fuzzy
 msgid "Anschlussbelegung"
-msgstr "Pin assignment"
+msgstr "Connection assignment"
 
 #: ../../intro/specification.rst:94 a1f3deaf63c04ad1a04c4f62c217c973
 #, fuzzy
@@ -446,7 +446,7 @@ msgstr "AS5600, MT6701 (in preparation)"
 #: ../../intro/specification.rst:126 e9e3cbc0f54e4bfd8f6d39d6741dd022
 #, fuzzy
 msgid "**Port-Erweiterungen**"
-msgstr "**Port extensions**"
+msgstr "**Port expansions**"
 
 #: ../../intro/specification.rst:127 702715b16add4918b2f8d9985af360cc
 #, fuzzy
@@ -456,7 +456,7 @@ msgstr "PCF8574 (in preparation)"
 #: ../../intro/specification.rst:129 adc315bba0c2497890e9248c08d763bb
 #, fuzzy
 msgid "**Echtzeit-Uhren**"
-msgstr "**Real-time clocks**"
+msgstr "**Real-time watches**"
 
 #: ../../intro/specification.rst:130 2588531f01aa4202ad465b23df62b856
 #, fuzzy
@@ -466,7 +466,7 @@ msgstr "DS1388"
 #: ../../intro/specification.rst:133 59a37d9590954abfbbf2b0d38eeafe8e
 #, fuzzy
 msgid "Nutzbare 1Wire-Sensorik"
-msgstr "Usable 1Wire sensors"
+msgstr "Usable 1-Wire sensors"
 
 #: ../../intro/specification.rst:135 55b0059228db4fa99f8f27329cf0b920
 #, fuzzy

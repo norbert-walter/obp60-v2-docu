@@ -33,7 +33,7 @@ msgstr "To create a new page, the following steps are necessary:"
 #: ../../programming/pages.rst:6 f43073c40dcc4d18a2bd26332616f8e0
 #, fuzzy
 msgid "Anlegen einer neuen Seite unter ``lib\\obp60task\\PageXXXX.cpp``"
-msgstr "Create a new page under ``lib\\obp60task\\PageXXXX.cpp``"
+msgstr "Creating a new page under ``lib\\obp60task\\PageXXXX.cpp``"
 
 #: ../../programming/pages.rst:7 394f9124285f4407ab6fa12f38bdd4c1
 #, fuzzy
@@ -41,8 +41,8 @@ msgid ""
 "Registrierung der Seite in ``lib\\obp60task\\obp60task.cpp``. Dazu die "
 "Funktion ``registerAllPages`` entsprechend erweitern"
 msgstr ""
-"Register the page in ``lib\\obp60task\\obp60task.cpp``. To do this, extend "
-"the function ``registerAllPages`` accordingly."
+"Register the page in [``lib\\obp60task\\obp60task.cpp``. Extend the function"
+" ``registerAllPages`` accordingly."
 
 #: ../../programming/pages.rst:8 36d2dd74c43542ee804cafe7dc2a9852
 #, fuzzy
@@ -63,6 +63,6 @@ msgid ""
 "verwendet werden. Sie enthält nur minimalen Code. In der kopierten Seite ist"
 " dann lediglich der Text *White* durch *Beispiel* zu ersetzen."
 msgstr ""
-"For example, the existing *PageWhite* page can be used as a template for a "
-"new page. It contains minimal code. In the copied page, simply replace the "
-"text *White* with *Example*."
+"The existing page *PageWhite* can be used as a template for a new page. It "
+"contains only minimal code. In the copied page, you simply need to replace "
+"the text *White* with *Example*."

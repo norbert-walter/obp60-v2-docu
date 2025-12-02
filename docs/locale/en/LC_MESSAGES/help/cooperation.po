@@ -54,16 +54,16 @@ msgid ""
 "muss man kein Experte sein. Jeder, der tolle Ideen hat, kann sie gerne "
 "beisteuern."
 msgstr ""
-"We are an enthusiastic community and cultivate a friendly and collegial "
+"We are an enthusiastic community and foster a collegial and friendly "
 "atmosphere. Our focus is on the principles of open source and open hardware,"
-" as well as the exchange of ideas with like-minded people. We invite "
-"everyone interested to participate in the exchange of ideas. You don't have "
-"to be an expert. Anyone with great ideas is welcome to contribute."
+" as well as the exchange of ideas with like-minded individuals. We invite "
+"everyone interested to participate in this exchange. You don't need to be an"
+" expert. Anyone with great ideas is welcome to contribute."
 
 #: ../../help/cooperation.rst:11 eaede89e826e4a658a61584548804262
 #, fuzzy
 msgid "Unterstützung für folgende Themenbereiche ist immer willkommen:"
-msgstr "Support for the following topics is always welcome:"
+msgstr "Support in the following areas is always welcome:"
 
 #: ../../help/cooperation.rst:13 c7e64b531f8d485781bd665da2858136
 #, fuzzy
@@ -103,4 +103,4 @@ msgstr "PR work"
 #: ../../help/cooperation.rst:20 fde763a70d354420b1e22b270f9ec497
 #, fuzzy
 msgid "Pflege der Internetseiten und der Social Media Kanäle"
-msgstr "Maintenance of the websites and social media channels"
+msgstr "Maintenance of websites and social media channels"

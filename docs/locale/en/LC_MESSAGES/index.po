@@ -88,7 +88,7 @@ msgstr "Operation"
 #: ../../index.rst:46
 #, fuzzy
 msgid "Geräteaufbau"
-msgstr "Device structure"
+msgstr "Device setup"
 
 #: ../../index.rst:46
 #, fuzzy
@@ -98,7 +98,7 @@ msgstr "Preparation"
 #: ../../index.rst:46
 #, fuzzy
 msgid "Bauteilliste"
-msgstr "Component list"
+msgstr "Parts list"
 
 #: ../../index.rst:46
 #, fuzzy
@@ -108,7 +108,7 @@ msgstr "Implementation"
 #: ../../index.rst:46
 #, fuzzy
 msgid "Funktionstest"
-msgstr "Functional test"
+msgstr "Function test"
 
 #: ../../index.rst:46
 #, fuzzy
@@ -153,7 +153,7 @@ msgstr "Opinions and tips"
 #: ../../index.rst:67
 #, fuzzy
 msgid "Bekannte Fehler"
-msgstr "Known bugs"
+msgstr "Known errors"
 
 #: ../../index.rst:67
 #, fuzzy
@@ -225,11 +225,11 @@ msgid ""
 " durch die Offenheit an beliebige Anforderungen über die Software anpassen."
 msgstr ""
 "The OBP60 multifunction display is used to display data from boat networks "
-"such as NMEA 0183 and NMEA 2000. It can also read data from the 1Wire bus "
-"and the I2C bus. The OBP60 contains a gateway that can exchange data "
-"bidirectionally between NMEA 0183 and NMEA 2000. Data can be imported or "
-"exported via WiFi and used on other devices or in third-party software. "
-"Configuration is done via a website. This allows you to select predefined "
-"display pages and specify their display content. The OBP60 is based on open "
-"hardware, open software, and open data. Thanks to its openness, the device "
-"can be adapted to any requirements via the software."
+"such as NMEA0183 and NMEA2000. It can also read data from the 1-Wire and I2C"
+" buses. The OBP60 includes a gateway that enables bidirectional data "
+"exchange between NMEA0183 and NMEA2000. Data can be imported and exported "
+"via Wi-Fi and used on other devices or in third-party software. "
+"Configuration is done via a web interface, allowing users to select "
+"predefined display pages and customize their content. The OBP60 is based on "
+"open hardware, open software, and open data. This open architecture allows "
+"the device to be adapted to any requirement via the software."

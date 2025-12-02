@@ -23,12 +23,12 @@ msgstr ""
 #: ../../assembling/device.rst:2 83b5d4fc212548d387c7fb1fc03a9ede
 #, fuzzy
 msgid "Geräteaufbau"
-msgstr "Device structure"
+msgstr "Device setup"
 
 #: ../../assembling/device.rst:5 e680343716a44569aed4a797c379dec0
 #, fuzzy
 msgid "Mechanischer Aufbau"
-msgstr "Mechanical structure"
+msgstr "Mechanical design"
 
 #: ../../assembling/device.rst:9 d25b0ba49e464dd58fb9e3c27b500cc5
 #, fuzzy
@@ -56,9 +56,9 @@ msgid ""
 " (V2A). Die Tasten werden mit einem Dichtmittel in die Frontschale des "
 "Gehäuses eingeschraubt, um Wasserdichtigkeit zu erreichen."
 msgstr ""
-"The buttons are made of black anodized countersunk Allen screws made of "
-"stainless steel (V2A). The buttons are screwed into the front shell of the "
-"case with a sealant to ensure watertightness."
+"The buttons are made of black anodized stainless steel (V2A) countersunk "
+"Allen screws. The buttons are screwed into the front shell of the housing "
+"using a sealant to achieve water resistance."
 
 #: ../../assembling/device.rst:15 56c050692f8c4d06a63248602851e9d3
 #, fuzzy
@@ -71,8 +71,8 @@ msgid ""
 "Die Federn hinter den Tasten dienen der elektrischen Kontaktierung der "
 "Tasten mit den Sensorflächen auf der Platine."
 msgstr ""
-"The springs behind the keys serve to make electrical contact between the "
-"keys and the sensor surfaces on the circuit board."
+"The springs behind the keys serve to electrically contact the keys with the "
+"sensor surfaces on the circuit board."
 
 #: ../../assembling/device.rst:17 ff534a7a76a34af3a250fbba66136f57
 #, fuzzy
@@ -88,11 +88,11 @@ msgid ""
 "den Stellen eine Stützstruktur mit einem Füllgrad von 30%. Das Gehäuse ist "
 "als Kastenkonstruktion ausgeführt und dadurch verwindungssteif."
 msgstr ""
-"The front shell of the housing houses the buttons and contains the glued-in "
-"front panel. The outer surfaces of the front shell are made of 2 mm thick "
-"plastic. The housing is hollow in some places and contains a support "
-"structure with a 30% fill level. The housing is designed as a box "
-"construction and is therefore torsionally rigid."
+"The front panel of the housing accommodates the keys and contains the bonded"
+" front glass. The outer surfaces of the front panel are made of 2 mm thick "
+"plastic. The housing is hollow in some areas and contains a support "
+"structure with a 30% fill level. The housing is designed as a box structure,"
+" making it torsionally rigid."
 
 #: ../../assembling/device.rst:19 7c53e51e1b324057853dea961438c95e
 #, fuzzy
@@ -108,11 +108,11 @@ msgid ""
 "Messing-Gewindeeinsätze werden thermisch in den Kunststoff eingeschmolzen "
 "und sind gegen eine ungewollte Verdrehung im Kunststoff gesichert."
 msgstr ""
-"The brass thread inserts are used to reinforce the threads for the housing "
-"screws, as the plastic is not strong enough to exert the necessary pressure "
-"to press the housing seal in place. The brass thread inserts are thermally "
-"fused into the plastic and are secured against unintentional twisting within"
-" the plastic."
+"The brass threaded inserts reinforce the threads for the housing screws, as "
+"the plastic lacks sufficient strength to exert the necessary pressure to "
+"compress the housing gasket. The brass threaded inserts are thermally fused "
+"into the plastic and are secured against unintentional rotation within the "
+"plastic."
 
 #: ../../assembling/device.rst:21 ../../assembling/device.rst:31
 #: 2a4e9eb56b894782afdb4c92e5f10681 fc5c85fa4711490b8a6b1d3ece2f0294
@@ -126,8 +126,8 @@ msgid ""
 "Der Klebefilm wird auf die Frontscheibe aufgetragen und dient zur "
 "wasserdichten Befestigung der Frontscheibe an der Innenseite des Gehäuses."
 msgstr ""
-"The adhesive film is applied to the front screen and is used to watertightly"
-" attach the front screen to the inside of the housing."
+"The adhesive film is applied to the front panel and serves to waterproof the"
+" front panel to the inside of the housing."
 
 #: ../../assembling/device.rst:23 1ceac01f4a9741bda18f7a93eed42f10
 #, fuzzy
@@ -148,15 +148,15 @@ msgid ""
 "e-Paper-Display umgelenkt. Die Ausleuchtung des Displays erfolgt daher "
 "gleichmäßig über die gesamte Displayfläche."
 msgstr ""
-"The front panel, made of 3 mm thick Plexiglas, protects the display from "
-"environmental influences and mechanical damage caused by hard impacts. The "
-"front panel also serves as a high-efficiency UV filter. The exterior of the "
-"front panel is anti-reflective, preventing direct sunlight reflections. A "
-"special feature of the front panel is its ability to illuminate the e-paper "
-"display at night. For this purpose, six RGB LEDs on the upper end of the "
-"panel couple light into the Plexiglas panel. The light from the LEDs is "
-"redirected onto the e-paper display by diffusers within the Plexiglas. The "
-"display is therefore evenly illuminated across the entire surface."
+"The 3 mm thick plexiglass front panel protects the display from "
+"environmental influences and mechanical damage from hard impacts. The front "
+"panel also acts as a highly effective UV filter. Its surface is anti-"
+"reflective, preventing direct reflections of sunlight. A special feature of "
+"the front panel is its ability to illuminate the e-paper display at night. "
+"Six RGB LEDs coupled light into the plexiglass at the top edge of the panel "
+"achieve this. The light from the LEDs is then diffused by diffusers within "
+"the plexiglass onto the e-paper display, resulting in even illumination "
+"across the entire display surface."
 
 #: ../../assembling/device.rst:25 e9b1a062bca54b5abd8d3e944c97da5e
 #, fuzzy
@@ -172,11 +172,11 @@ msgid ""
 "Filterfolie absorbiert und an die Frontscheibe abgegeben, denn bei maximaler"
 " Sonenneinstrahlung treffen bis zu 10 W an Wärmestrahlung auf das Display."
 msgstr ""
-"An IR filter film is also applied to the back of the front panel to reduce "
-"infrared radiation from sunlight and keep it away from the e-paper display. "
-"The infrared radiation is absorbed by the filter film and emitted to the "
-"front panel, as up to 10 W of thermal radiation hits the display at maximum "
-"sunlight."
+"An IR filter film is additionally applied to the back of the front glass to "
+"reduce the infrared radiation from sunlight and keep it away from the "
+"e-paper display. The infrared radiation is absorbed by the filter film and "
+"emitted to the front glass, because at maximum sunlight, up to 10 W of heat "
+"radiation hits the display."
 
 #: ../../assembling/device.rst:27 95394e6ee8424dc6ab38e9123e9edbcb
 #, fuzzy
@@ -191,10 +191,10 @@ msgid ""
 "Hintergrundbeleuchtung gegenüber dem Display abzuschirmen, damit kein "
 "Fremdlicht in die Glasscheibe des e-Paper-Displays eingekoppelt wird."
 msgstr ""
-"The display frame acts as a kind of mask and conceals unwanted areas of the "
-"display. A small bar is also attached to shield the backlight from the "
-"display, preventing extraneous light from being coupled into the glass pane "
-"of the e-paper display."
+"The display frame acts as a kind of mask, concealing unwanted areas of the "
+"display. Additionally, a small bridge is incorporated to shield the "
+"backlight from the display, preventing any ambient light from coupling into "
+"the glass of the e-paper display."
 
 #: ../../assembling/device.rst:29 8869d4c41e0b4232ac216946f0dcdf16
 #, fuzzy
@@ -211,11 +211,12 @@ msgid ""
 "ausgeschalteten Zustand bleibt der Bildinhalt sichtbar. Damit ist diese "
 "Bildschirm-Technologie sehr energiesparend."
 msgstr ""
-"The display is an e-paper display capable of black/white and four shades of "
-"gray. The display resolution is 400 x 300 pixels. The pixel density relative"
-" to the display area is 120 dpi. E-paper displays only require energy when "
-"displaying new image content. When turned off, the image content remains "
-"visible. This makes this screen technology very energy-efficient."
+"The display is an e-paper display capable of showing black and white and "
+"four shades of gray. The display resolution is 400 x 300 pixels. The pixel "
+"density, based on the display area, is 120 dpi. E-paper displays only "
+"consume power when updating the image. Even when switched off, the image "
+"content remains visible. This makes this screen technology very energy "
+"efficient."
 
 #: ../../assembling/device.rst:32 c0f2a6e8895e489cb8006978864a0c04
 #, fuzzy
@@ -240,10 +241,10 @@ msgid ""
 "Displayhalter wird das Display mittels Schrauben mit dem Mainboard "
 "verbunden."
 msgstr ""
-"The display holder supports the e-paper display and prevents it from "
+"The display bracket supports the e-paper display and prevents it from "
 "twisting. The e-paper display is very delicate, as it consists of two glass "
-"substrates with a total thickness of only 0.7 mm. The display holder "
-"connects the display to the motherboard using screws."
+"substrates with a total thickness of only 0.7 mm. The display is attached to"
+" the motherboard via screws using the display bracket."
 
 #: ../../assembling/device.rst:35 d0073501725d4c77902eb88fd8c113c8
 #, fuzzy
@@ -258,8 +259,8 @@ msgid ""
 "Hintergrundbeleuchtung angebracht."
 msgstr ""
 "The motherboard contains all electronic components on a double-sided circuit"
-" board. The LED board for the backlight is mounted on the top of the "
-"motherboard."
+" board. The LED board for the backlighting is mounted on the top side of the"
+" motherboard."
 
 #: ../../assembling/device.rst:37 0fa8008bfd5b44029eadb97fcbc59655
 #, fuzzy
@@ -273,7 +274,7 @@ msgid ""
 "und Rückschale her. Die Dichtung ist dabei als 1 mm dicke Flächendichtung "
 "ausgeführt."
 msgstr ""
-"The housing seal creates a watertight connection between the front and rear "
+"The housing seal creates a watertight connection between the front and back "
 "shells. The seal is designed as a 1 mm thick surface seal."
 
 #: ../../assembling/device.rst:39 834c1095162246b7af596fbb6f87faa0
@@ -287,8 +288,8 @@ msgid ""
 "Die Gehäuserückschale schließt die Rückseite des Gehäuses ab. Sie ist als "
 "verwindungssteife Kastenkonstruktion wie die Frontschale ausgeführt."
 msgstr ""
-"The rear housing cover completes the rear of the case. It is designed as a "
-"torsion-resistant box construction, just like the front cover."
+"The rear housing shell closes off the back of the housing. Like the front "
+"shell, it is designed as a torsionally rigid box construction."
 
 #: ../../assembling/device.rst:41 c7506ee8db6a472e9f33adb827655e00
 #, fuzzy
@@ -302,9 +303,9 @@ msgid ""
 " Dichtung besteht aus 2 mm dickem Neoprenmaterial. Damit lassen sich kleine "
 "Unebenheiten und leichte Krümmungen überbrücken."
 msgstr ""
-"The rear panel seal seals the enclosure against the mounting opening. The "
-"seal is made of 2 mm thick neoprene material. This allows it to accommodate "
-"small bumps and slight curvatures."
+"The rear panel seal seals the housing against the mounting opening. The seal"
+" is made of 2 mm thick neoprene material. This allows it to bridge minor "
+"irregularities and slight curves."
 
 #: ../../assembling/device.rst:43 d6c3a16d61b44993b173e2f49ee660ba
 #, fuzzy
@@ -319,9 +320,9 @@ msgid ""
 "kann das Gerät mit Strom versorgt und an die Bussysteme angeschlossen "
 "werden."
 msgstr ""
-"For easy installation, removable connectors are attached to the rear of the "
-"device. These connectors with screw connections allow the device to be "
-"supplied with power and connected to the bus systems."
+"Removable connectors are attached to the back of the device for easy "
+"installation. The device can be powered and connected to bus systems via "
+"these screw-type connectors."
 
 #: ../../assembling/device.rst:47 16ab3e2bac5741c2b93701987d3b8369
 #, fuzzy
@@ -333,7 +334,7 @@ msgstr "Main Board"
 msgid ""
 "Das Mainboard enthält alle elektrischen und elektronischen Komponenten wie:"
 msgstr ""
-"The mainboard contains all electrical and electronic components such as:"
+"The motherboard contains all electrical and electronic components such as:"
 
 #: ../../assembling/device.rst:51 ca5b797016c744718f23f5deb46d59f7
 #, fuzzy
@@ -413,7 +414,7 @@ msgstr "Fig.: Mainboard top"
 #: ../../assembling/device.rst:72 2903f4706a144565ad8b07ac0ada0958
 #, fuzzy
 msgid "Abb.: Mainboard Unterseite"
-msgstr "Fig.: Mainboard bottom"
+msgstr "Fig.: Mainboard underside"
 
 #: ../../assembling/device.rst:75 43643f8e986c4a37a382a671eb913e78
 #, fuzzy
@@ -427,18 +428,18 @@ msgid ""
 "zweiseitig bestückte SMD-Platine mit Durchkontaktierungen, Stopplack und "
 "Bedruckung ausgeführt."
 msgstr ""
-"The boards for the mainboard and the backlight were designed as double-sided"
-" SMD boards with through-holes, resist coating and printing."
+"The circuit boards for the mainboard and the backlighting were designed as "
+"double-sided SMD boards with vias, masking lacquer and printing."
 
 #: ../../assembling/device.rst:81 f956d784287f42e0a7a2d40f84968f7c
 #, fuzzy
 msgid "Abb.: Unbestückte Platinen-Oberseite"
-msgstr "Fig.: Unpopulated top side of the board"
+msgstr "Fig.: Unpopulated circuit board top side"
 
 #: ../../assembling/device.rst:85 4583cde7801943c2a5696edb4740c6f9
 #, fuzzy
 msgid "Abb.: Unbestückte Platinen-Unterseite"
-msgstr "Fig.: Unpopulated board bottom side"
+msgstr "Fig.: Unpopulated circuit board underside"
 
 #: ../../assembling/device.rst:88 c6797c66b8ac421dbbf1efb9f0ef23cf
 #, fuzzy
@@ -452,8 +453,9 @@ msgid ""
 "EasyEDA erstellt. Nachfolgend sind die Unterlagen für eine Fertigung "
 "aufgeführt."
 msgstr ""
-"The circuit diagram and the circuit board were created using the online "
-"development tool EasyEDA. The documentation for production is listed below."
+"The circuit diagram and circuit board were created using the online "
+"development tool EasyEDA. The documentation for manufacturing is listed "
+"below."
 
 #: ../../assembling/device.rst:92 abcfe7b8dd1740f88dc5a84b50797297
 #, fuzzy
@@ -499,14 +501,14 @@ msgid ""
 " das `Kontaktformular`_. Es besteht die Möglichkeit, ein nicht exklusives "
 "Nutzungsrecht über eine kommerzielle Lizenz zu erwerben."
 msgstr ""
-"The manufacturing data of the circuit diagram, Gerber data, and component "
-"list, as well as the 3D data, are subject to the `Common Creative Lizenz "
-"(CC) BY BC SA 4.0`_. The OBP60 may be reproduced or modified provided the "
-"authors are cited. There are no costs for private, non-commercial use. "
-"Commercial exploitation is prohibited by the license. Derivative works are "
-"subject to the same license. If you intend to use the OBP60 commercially, "
-"please contact us via the `Kontaktformular`_. It is possible to acquire a "
-"non-exclusive right of use through a commercial license."
+"The manufacturing data, including the circuit diagram, Gerber data, parts "
+"list, and 3D data, are subject to `Common Creative Lizenz (CC) BY BC SA "
+"4.0`_. The OBP60 may be reproduced or modified, provided the authors are "
+"credited. There are no costs for private, non-commercial use. Commercial use"
+" is prohibited by the license. Derivative works are subject to the same "
+"license. If you intend to use the OBP60 commercially, please contact us via "
+"`Kontaktformular`_. It is possible to acquire a non-exclusive right of use "
+"through a commercial license."
 
 #: ../../assembling/device.rst:107 91aa033505b140f7a11e47c4510222a8
 #, fuzzy

@@ -40,7 +40,7 @@ msgstr ""
 #: ../../usermanual/bussystems.rst:11 3614d1a3268f4142af5b837abafd58ef
 #, fuzzy
 msgid "**NMEA2000** über CAN-Bus (isoliert)"
-msgstr "**NMEA2000** via CAN bus (isolated)"
+msgstr "**NMEA2000** over CAN bus (isolated)"
 
 #: ../../usermanual/bussystems.rst:12 d7a90313040446e5bab00d64736b0863
 #, fuzzy
@@ -55,7 +55,7 @@ msgstr "**I2C bus** (isolated)"
 #: ../../usermanual/bussystems.rst:14 a6bc7b4c275b4df0b7ca5afba58f7e18
 #, fuzzy
 msgid "**1-Wire-Bus** (nicht isoliert)"
-msgstr "**1-Wire bus** (non-isolated)"
+msgstr "**1-Wire bus** (not insulated)"
 
 #: ../../usermanual/bussystems.rst:15 83e8179494bf42acbfd466b019881af9
 #, fuzzy
@@ -76,9 +76,9 @@ msgid ""
 " werden die jeweiligen Bussysteme näher beschrieben."
 msgstr ""
 "NMEA2000 and NMEA0183 are bus systems used in the marine sector. The I2C bus"
-" and the 1Wire bus originate from the electronics sector. They can be used "
-"to integrate many inexpensive sensor modules. The respective bus systems are"
-" described in more detail below."
+" and the 1-Wire bus originate from the electronics sector. Many inexpensive "
+"sensor modules can be integrated via these systems. The respective bus "
+"systems are described in more detail below."
 
 #: ../../usermanual/bussystems.rst:25 04088e0c0e354c16adc4fc16a5d3551b
 #, fuzzy
@@ -100,15 +100,15 @@ msgid ""
 "werden, welche PGN von einem bestimmten Gerät gesendet oder empfangen werden"
 " sollen."
 msgstr ""
-"NMEA 2000 is a bus system used for data transmission between electronic "
-"devices in marine applications. NMEA 2000 uses CAN for data transmission. "
+"NMEA2000 is a bus system used for data transmission between electronic "
+"devices in the maritime industry. NMEA2000 uses CAN for data transmission. "
 "Transmission occurs via a central cable to which all devices are connected "
-"in parallel. Each device in the NMEA 2000 network has a unique device ID to "
+"in parallel. Each device in the NMEA2000 network has a unique device ID to "
 "identify and address data sources and data display devices. Data is "
 "organized into Parameter Group Numbers (PGNs). PGNs are unique data IDs used"
 " to describe specific types of data, such as speed, course, temperature, "
-"etc. All devices can receive and send PGNs, and it is also possible to "
-"specify which PGNs should be sent or received by a specific device."
+"etc. All devices can send and receive PGNs, and it is also possible to "
+"specify which PGNs a particular device should send or receive."
 
 #: ../../usermanual/bussystems.rst:29 09133e82af6d4bf88e24b8d83f6db58a
 #, fuzzy
@@ -118,14 +118,14 @@ msgstr "**NMEA2000 specification in OBP60**"
 #: ../../usermanual/bussystems.rst:31 0875ee9879964779b2b117d057767d91
 #, fuzzy
 msgid "Differenzielles, bidirektionales Datenprotokoll auf Binär-Basis"
-msgstr "Differential, bidirectional data protocol based on binary"
+msgstr "Differential, bidirectional binary-based data protocol"
 
 #: ../../usermanual/bussystems.rst:32 ../../usermanual/bussystems.rst:324
 #: ../../usermanual/bussystems.rst:380 be37aaf417404d0f81ee2a9bc9163b6f
 #: c1d4b567994240e99fc194100788a4e3 e6d69af4d2d44bc89a552e1cc2a703bb
 #, fuzzy
 msgid "Halb duplex mit Kollisionserkennung und Vermeidung"
-msgstr "Half duplex with collision detection and avoidance"
+msgstr "Half-duplex with collision detection and avoidance"
 
 #: ../../usermanual/bussystems.rst:33 ../../usermanual/bussystems.rst:323
 #: 008400fa205d4dc680b62ee9af0af223 12a949942df2402593dfe0eafc41e5f7
@@ -136,7 +136,7 @@ msgstr "Bus structure (isolated)"
 #: ../../usermanual/bussystems.rst:34 f0da9ba73cd74b39803e0ca354a164e2
 #, fuzzy
 msgid "Beidseitige Bus-Terminierung"
-msgstr "Bus termination on both sides"
+msgstr "Bus terminating on both sides"
 
 #: ../../usermanual/bussystems.rst:35 ../../usermanual/bussystems.rst:182
 #: ../../usermanual/bussystems.rst:326 ../../usermanual/bussystems.rst:382
@@ -155,12 +155,12 @@ msgstr "CAN (standard, with special data packets)"
 #: ../../usermanual/bussystems.rst:37 2127fcc9e8cb47359cb3e658386db926
 #, fuzzy
 msgid "Datenrate 250.000 Bit/s fix"
-msgstr "Data rate 250,000 bit/s fixed"
+msgstr "Fixed data rate of 250,000 bits/s"
 
 #: ../../usermanual/bussystems.rst:38 c46037cb03db453c8f5f37544c646d77
 #, fuzzy
 msgid "Stromversorgung von Sensoren und Anzeigegeräten über den Bus"
-msgstr "Power supply of sensors and display devices via the bus"
+msgstr "Power supply for sensors and display devices via the bus"
 
 #: ../../usermanual/bussystems.rst:39 f095a941e08c41f8b7b2acba1b129443
 #, fuzzy
@@ -170,7 +170,7 @@ msgstr "Bus length up to 30 m (spur lines <1.5 m)"
 #: ../../usermanual/bussystems.rst:40 da26f34824e249f688f42209777467fc
 #, fuzzy
 msgid "Kabelart 5-polig geschirmt mit 2x2 verdrillten Leitungen 0,35 mm²"
-msgstr "Cable type 5-pin shielded with 2x2 twisted wires 0.35 mm²"
+msgstr "Cable type: 5-pin shielded with 2x2 twisted conductors 0.35 mm²"
 
 #: ../../usermanual/bussystems.rst:41 feef9069fa574e36a8689d8128bae666
 #, fuzzy
@@ -193,12 +193,12 @@ msgid ""
 "Empfänger eliminiert. Dadurch wird eine robuste und störunanfällige "
 "Signalübertragung ermöglicht."
 msgstr ""
-"Data transmission on the CAN bus is differential. Two signals of opposite "
-"polarity are transmitted from the transmitter, which are then combined into "
-"a single signal by subtracting the two signals in the receiver. Interference"
-" that affects both signal lines equally is eliminated by subtraction in the "
-"receiver. This enables robust and interference-resistant signal "
-"transmission."
+"Data transmission on the CAN bus is differential. Two signals with opposite "
+"polarities are transmitted from the transmitter, which are then combined "
+"into a single signal at the receiver by subtracting them. Interference "
+"affecting both signal lines equally is eliminated by this subtraction "
+"process at the receiver. This ensures robust and interference-resistant "
+"signal transmission."
 
 #: ../../usermanual/bussystems.rst:50 a417ddb85bdc472abc70519f6c78a754
 #, fuzzy
@@ -217,13 +217,13 @@ msgid ""
 "Schiffsposition, für Navigations- und Kommunikationsgeräte, Motorsysteme und"
 " weitere Systeme an Bord."
 msgstr ""
-"The NMEA 2000 data rate is 250 kbps. This was chosen to provide a "
+"The data rate of NMEA2000 is **250 kbps**. This was chosen to ensure a "
 "sufficiently high transmission speed for a wide range of applications on "
-"boats, while ensuring the most efficient use of the network. A data rate of "
-"250 kbps allows sensor data to be transmitted in real time, which is "
-"important for a wide range of applications, such as vessel position "
-"monitoring, navigation and communication devices, engine systems, and other "
-"on-board systems."
+"boats, while simultaneously guaranteeing the most efficient use of the "
+"network. A data rate of 250 kbps allows sensor data to be transmitted in "
+"real time, which is important for a variety of applications, such as "
+"monitoring the vessel's position, navigation and communication devices, "
+"engine systems, and other onboard systems."
 
 #: ../../usermanual/bussystems.rst:55 c5c83d073cc34a5da435331eca8ac33f
 #, fuzzy
@@ -237,9 +237,9 @@ msgid ""
 msgstr ""
 "SeaTalk NG, SIMnet, Raynet, C-Net 2000, and CANet share some similarities "
 "with NMEA 2000. However, they differ in their specific hardware and data "
-"telegram design. SeaTalk NG and SIMnet are partially compatible with NMEA "
-"2000. This means that some devices designed for SeaTalk NG and SimNet can "
-"also communicate with NMEA 2000 devices, albeit with some limitations."
+"telegram implementations. SeaTalk NG and SIMnet are partially compatible "
+"with NMEA 2000. This means that some devices designed for SeaTalk NG and "
+"SIMnet can also communicate with NMEA 2000 devices, albeit with limitations."
 
 #: ../../usermanual/bussystems.rst:57 505de56d1185434fb4aedf29859bc29b
 #, fuzzy
@@ -260,11 +260,11 @@ msgid ""
 msgstr ""
 "A CAN bus uses 120-ohm termination resistors at both ends of the bus system "
 "between the CAN-H and CAN-L lines. These two termination resistors "
-"correspond to the 120-ohm line resistance and prevent signal reflections at "
-"the line ends at high data transfer rates. The CAN bus consists of a long "
-"bus line (backbone) with short stub lines less than 1.5 m long. A star "
-"structure of the bus system is not permitted. The two termination resistors "
-"may only be installed at the bus end."
+"correspond to the line resistance of 120 ohms and prevent signal reflections"
+" at the line ends during high data transmission rates. The CAN bus consists "
+"of a long bus segment (backbone) with short branch lines less than 1.5 m in "
+"length. A star topology of the bus system is not permitted. The two "
+"termination resistors must only be installed at the bus end."
 
 #: ../../usermanual/bussystems.rst:63 1e4bc590944b46cdbf4dca64832b0e49
 #, fuzzy
@@ -281,11 +281,11 @@ msgid ""
 "sind. Falsch terminierte Busse können Übertragungsprobleme verursachen, die "
 "schwer zu finden sind."
 msgstr ""
-"Some devices have built-in termination resistors that can be enabled or "
-"disabled using appropriate switches. Before adding new devices to your NMEA "
-"2000 network, check whether integrated termination resistors are being used "
-"and how they are configured. Incorrectly terminated buses can cause "
-"transmission problems that are difficult to detect."
+"Some devices have built-in termination resistors that can be switched on or "
+"off using appropriate switches. Before adding new devices to your NMEA 2000 "
+"network, verify whether integrated termination resistors are used and how "
+"they are configured. Incorrectly terminated buses can cause transmission "
+"problems that are difficult to diagnose."
 
 #: ../../usermanual/bussystems.rst:69 fc00edd2c60842d48117c6d658200640
 #, fuzzy
@@ -303,17 +303,16 @@ msgid ""
 "immer nicht bei 60 Ohm, suchen Sie nach weiteren Geräten mit offensichtlich "
 "aktiviertem Abschlusswiderstand."
 msgstr ""
-"You can use a digital voltmeter to determine whether only two resistors are "
-"active on the NMEA bus. If you measure the resistance between the CAN-High "
-"and CAN-Low lines when the NMEA bus is de-energized, you should see a "
-"resistance of approximately 60 ohms. If the resistance is significantly less"
-" than 60 ohms, there are other devices in the bus system whose terminating "
-"resistors are falsely active. While you continue measuring the resistance, "
-"disconnect one device at a time from the NMEA 2000 bus until the resistance "
-"value increases significantly. The terminating resistor should be "
-"deactivated on the last device removed. If the resistance value is still not"
-" 60 ohms, look for other devices with obviously activated terminating "
-"resistors."
+"To determine if only two resistors are active on the NMEA bus, you can use a"
+" digital voltmeter. When measuring the resistance between the CAN-High and "
+"CAN-Low lines on a **de-energized NMEA bus**, you should measure "
+"approximately **60 ohms**. If the resistance is significantly less than 60 "
+"ohms, there are other devices on the bus system whose termination resistors "
+"are incorrectly active. While continuously measuring the resistance, "
+"disconnect one device at a time from the NMEA2000 bus until the resistance "
+"value increases significantly. The termination resistor of the last device "
+"disconnected should be deactivated. If the resistance value is still not 60 "
+"ohms, look for other devices with obviously activated termination resistors."
 
 #: ../../usermanual/bussystems.rst:71 c6c8eb83d63c41f29051134352d79d95
 #, fuzzy
@@ -330,7 +329,7 @@ msgid ""
 msgstr ""
 "Only high-quality, waterproof, and shielded industrial cables should be used"
 " as bus cables. Marine retailers offer a wide selection of products with M12"
-" connector technology that are ideal for this purpose."
+" connectors that are very suitable for this purpose."
 
 #: ../../usermanual/bussystems.rst:79 c16e1bcdedbe49dfa81d602ac12a595b
 #, fuzzy
@@ -340,10 +339,10 @@ msgid ""
 "werden können. Achten Sie dabei auf Steckverbinder mit **A-Kodierung**. Die "
 "Indexkerbe befindet sich zwischen Pin 1 und 2."
 msgstr ""
-"In the industrial sector, equivalent cables with M12 connector technology "
-"can be found, which are significantly cheaper and can also be used. Look for"
-" connectors with **A coding**. The index notch is located between pins 1 and"
-" 2."
+"In industrial settings, you can find equivalent cables with M12 connectors "
+"that are significantly cheaper and can also be used. Make sure to look for "
+"connectors with **A-coding**. The index notch is located between pins 1 and "
+"2."
 
 #: ../../usermanual/bussystems.rst:83 837b3528eb984fcd9fd127af4e7d649a
 #, fuzzy
@@ -358,10 +357,9 @@ msgid ""
 "kann. In dem Fall müssen Sie die Zuordnung der Aderfarben zu den Pins mit "
 "einem Ohmmeter ermitteln."
 msgstr ""
-"The pin assignment and wire colors are shown in the table below. Please note"
-" that the color assignment may vary for industrial cables. In this case, you"
-" will need to determine the wire color assignment to the pins using an "
-"ohmmeter."
+"The pinout and wire colors are shown in the table below. Note that the color"
+" coding may differ for industrial cables. In that case, you will need to "
+"determine the wire colors for each pin using an ohmmeter."
 
 #: ../../usermanual/bussystems.rst:88 7c08fd8b827f4d0da81622b129cd1de9
 #, fuzzy
@@ -404,7 +402,7 @@ msgstr "Without"
 #: ../../usermanual/bussystems.rst:90 bcf941f896d04ab2ad3f370e10d0fabc
 #, fuzzy
 msgid "Schirmgeflecht"
-msgstr "Shielding braid"
+msgstr "Umbrella weave"
 
 #: ../../usermanual/bussystems.rst:92 ../../usermanual/bussystems.rst:227
 #: 3b99ee55a4ef43f29ccf82b102285008 824af4f7ab7b485f868741dde4352a7a
@@ -494,7 +492,7 @@ msgstr "CAN Low-Signal"
 #: ../../usermanual/bussystems.rst:100 3e0fbbc7e48348edb23e9f74dac5b0d6
 #, fuzzy
 msgid "Tab.: NMEA2000 Steckerbelegung"
-msgstr "Tab.: NMEA2000 pin assignment"
+msgstr "Table: NMEA2000 connector pinout"
 
 #: ../../usermanual/bussystems.rst:104 b599bd6001d54d09af4af203cf572148
 #, fuzzy
@@ -507,8 +505,8 @@ msgid ""
 "Wer eigene Buskabel herstellen möchte, sollte Kabel vergleichbar zum Typ "
 "\"Lapp Busleitung UNITRONIC 2 x 2 x 0.34 mm²\" verwenden."
 msgstr ""
-"If you want to manufacture your own bus cables, you should use cables "
-"similar to the type \"Lapp Buskabel UNITRONIC 2 x 2 x 0.34 mm²\"."
+"Anyone wishing to manufacture their own bus cables should use cables "
+"comparable to the type \"Lapp Busleitung UNITRONIC 2 x 2 x 0.34 mm²\"."
 
 #: ../../usermanual/bussystems.rst:111 d24ab6aafe054b4a89a4a2968f2cec43
 #, fuzzy
@@ -527,13 +525,13 @@ msgid ""
 " erfolgen soll. Die Länge des Buskabels sollte in Summe 30 m nicht "
 "übersteigen."
 msgstr ""
-"Two individual wires are twisted together in pairs and additionally "
-"surrounded by an outer braided shield. One twisted pair is used for CAN-H "
-"and CAN-L, and the other pair for GND and 12V. The braided shield is "
-"connected to GND at only one end of the cable. This achieves the best "
-"results and ensures a secure and durable installation. Cables thinner than "
-"0.34 mm² should not be used if the power supply is to be derived from the "
-"bus. The total length of the bus cable should not exceed 30 m."
+"This cable consists of two pairs of single wires twisted together and "
+"additionally surrounded by an outer braided shield. One twisted pair is used"
+" for CAN-H and CAN-L, and the other pair for GND and 12V. The braided shield"
+" is connected to GND at only one end of the cable. This ensures optimal "
+"results and a safe and durable installation. Cables thinner than 0.34 mm² "
+"should not be used if power is to be supplied from the bus. The total length"
+" of the bus cable should not exceed 30 m."
 
 #: ../../usermanual/bussystems.rst:117 1dcbab79c39e4715aa0a1e4faa983706
 #, fuzzy
@@ -549,10 +547,10 @@ msgid ""
 "Grundsätzlich sollte eine Mischung verschiedener Bustechnologien aber "
 "vermieden werden."
 msgstr ""
-"SeaTalk NG and Simnet use their own connectors, which are not compatible "
-"with NMEA 2000. However, data exchange between these networks is possible "
-"using appropriate converter cables. However, mixing different bus "
-"technologies should generally be avoided."
+"SeaTalk NG and Simnet use proprietary connectors that are not compatible "
+"with NMEA2000. However, data exchange between these networks is possible "
+"using appropriate converter cables. Generally, mixing different bus "
+"technologies should be avoided."
 
 #: ../../usermanual/bussystems.rst:122 fd00ec498d7642db95669273c1f995d9
 #, fuzzy
@@ -575,16 +573,16 @@ msgid ""
 "sollte idealerweise in der Mitte erfolgen, da so Leitungsverluste durch "
 "Leitungswiderstände minimiert werden."
 msgstr ""
-"Low-power NMEA 2000 devices, such as sensors, can also be powered from the "
-"bus system. This eliminates the need for additional power cables. However, "
-"it is important to note that only a limited power of up to 35W can be drawn "
-"from the NMEA 2000 bus. NMEA 2000 devices are labeled with load values that "
-"indicate the current drawn from the bus. The load is specified as a multiple"
-" of 50 mA. A device with a load of 3 would therefore require 150 mA at 12V "
-"and consume 1.8W of power. The 12V supply voltage is fed into the NMEA 2000 "
-"bus either via a feeder cable or a device with bus power, such as a plotter."
-" The feed into the bus should ideally be located in the middle, as this "
-"minimizes line losses due to line resistance."
+"Low-power NMEA2000 devices, such as sensors, can also be powered directly "
+"from the bus system. This eliminates the need for additional power cables. "
+"However, it's crucial to note that the NMEA2000 bus is limited to a maximum "
+"power draw of 35W. NMEA2000 devices are marked with load values that "
+"indicate the current draw from the bus. The load value is expressed as a "
+"multiple of 50 mA. A device with a load value of 3 would therefore require "
+"150 mA at 12V and consume 1.8W of power. The 12V supply voltage is fed into "
+"the NMEA2000 bus either via a power supply cable or a device with bus power "
+"input, such as a plotter. Ideally, the power supply should be connected to "
+"the bus in the middle of the bus to minimize line losses due to resistance."
 
 #: ../../usermanual/bussystems.rst:127 d989eadc4e544dd1adb84b7bcad297e4
 #, fuzzy
@@ -593,9 +591,10 @@ msgid ""
 "können das OBP60 direkt mit Strom aus dem NMA2000-Bus versorgen. Im "
 "Normalbetrieb liegt der Stromverbrauch des OBP60 bei ca. 120 mA."
 msgstr ""
-"The OBP60 has a load value of 5 and requires a maximum of 250 mA of current."
-" You can power the OBP60 directly from the NMA2000 bus. In normal operation,"
-" the OBP60's current consumption is approximately 120 mA."
+"The OBP60 has a load value of 5 and requires a maximum current of 250 mA. "
+"You can power the OBP60 directly from the NMA2000 bus. Under normal "
+"operating conditions, the OBP60's current consumption is approximately 120 "
+"mA."
 
 #: ../../usermanual/bussystems.rst:129 25303b4325cb4116bbdf27394da9bc5a
 #, fuzzy
@@ -613,12 +612,12 @@ msgid ""
 "Terminierung. Die Einspeisung der Stromversorgung des NMEA2000-Busses "
 "erfolgt im unteren Bild über den Plotter."
 msgstr ""
-"NMEA 2000 uses a bus structure. The main bus contains one or more bus "
-"coupler units, which connect the respective devices. The bus length must not"
-" exceed 30 m, and the spur lines to the devices should not be longer than "
-"1.5 m. Terminating resistors are located at the ends of the main bus. The "
-"power supply for the NMEA 2000 bus is supplied via the plotter in the image "
-"below."
+"NMEA2000 uses a bus structure. The main bus contains one or more bus coupler"
+" units, through which the respective devices are connected. The bus length "
+"must not exceed 30 m, and the branch lines to the devices should not be "
+"longer than 1.5 m. Termination resistors are located at the ends of the main"
+" bus for bus termination. The power supply for the NMEA2000 bus is shown in "
+"the lower image via the plotter."
 
 #: ../../usermanual/bussystems.rst:135 9542c71388974c02a67c556632ec03f6
 #, fuzzy
@@ -634,10 +633,10 @@ msgid ""
 "die Kabelenden mit Aderendhülsen zu versehen oder die Kupferkabel zu "
 "verzinnen."
 msgstr ""
-"To connect the OBP60 to the NMEA 2000 bus, the easiest way is to use an NMEA"
-" 2000 extension cable. Split it in the middle and connect the open cable "
-"ends to the screw terminals. It is advisable to fit the cable ends with wire"
-" end ferrules or tin the copper wires."
+"To connect the OBP60 to the NMEA2000 bus, the easiest way is to use an "
+"NMEA2000 extension cable. Simply cut it in half and connect the open ends to"
+" the screw terminals. It is advisable to crimp ferrules onto the wire ends "
+"or tin the copper wires."
 
 #: ../../usermanual/bussystems.rst:141 bb93c6c1e2544b30a42151e5300f01e5
 #, fuzzy
@@ -653,10 +652,10 @@ msgid ""
 "aktiviert wurde. Der Jumper ``TN2K`` befindet sich mittig zwischen den "
 "beiden Steckverbindern **CN1** und **CN2**."
 msgstr ""
-"A minimal configuration might look like this. Note that the NMEA 2000 bus on"
-" the right side is terminated by the OBP60 by activating the internal bus "
-"termination via jumper ``TN2K``. The jumper ``TN2K`` is located centrally "
-"between the two connectors **CN1** and **CN2**."
+"A minimal configuration could look like this. Note that the NMEA2000 bus on "
+"the right is terminated by the OBP60 by activating the internal bus "
+"termination via jumper ``TN2K``. Jumper ``TN2K`` is located midway between "
+"the two connectors **CN1** and **CN2**."
 
 #: ../../usermanual/bussystems.rst:146 61f4230a460b4c69bc5a66da2726bb0d
 #, fuzzy
@@ -668,11 +667,11 @@ msgid ""
 "des NMEA2000-Bus am OBP60 aufgelegt werden. An anderen Stellen darf die "
 "Kabelschirmung nicht verbunden werden."
 msgstr ""
-"Connect the NMEA 2000 cable shield to input ``Shield``. Do not connect the "
-"shield to ``GND``, ``GND2``, or ``GNDS``, as this will create ground loops "
-"and the insulation will be lost. The entire bus cable shield may only be "
-"connected at one end to the NMEA 2000 bus input ``Shield`` on the OBP60. The"
-" cable shield may not be connected at any other locations."
+"Connect the shield of the NMEA2000 cable to input ``Shield``. Do **not** "
+"connect the shield to ``GND``, ``GND2``, or ``GNDS``, as this will create "
+"ground loops and compromise the insulation. The entire shield of the bus "
+"cable must be connected at only one end to input ``Shield`` of the NMEA2000 "
+"bus on the OBP60. The cable shield must not be connected at any other point."
 
 #: ../../usermanual/bussystems.rst:150 6a7a3492c8284f8daaacb47f585b31dc
 #, fuzzy
@@ -685,8 +684,8 @@ msgid ""
 "Die Stromversorgung des NMEA2000-Bus kann auch über das OBP60 erfolgen. Die "
 "Einspeisung in den Bus sieht dann so aus:"
 msgstr ""
-"The NMEA 2000 bus can also be powered via the OBP60. The bus feed then looks"
-" like this:"
+"The NMEA2000 bus can also be powered via the OBP60. The power feed into the "
+"bus then looks like this:"
 
 #: ../../usermanual/bussystems.rst:156 f5422d61c3694363b5e19d383391e598
 #, fuzzy
@@ -700,9 +699,9 @@ msgid ""
 " Anderenfalls kann es zu Störungen im Bussystem kommen. Achten Sie darauf, "
 "dass die Stromeinspeisung in den Bus mit einer 3A-Sicherung abgesichert ist."
 msgstr ""
-"Please note that the NMEA 2000 bus must only be powered by one source. "
-"Otherwise, interference may occur in the bus system. Ensure that the power "
-"supply to the bus is protected with a 3A fuse."
+"Note that the NMEA2000 bus must only be powered by one source. Otherwise, "
+"malfunctions in the bus system may occur. Ensure that the power supply to "
+"the bus is protected by a 3A fuse."
 
 #: ../../usermanual/bussystems.rst:161 918e7531910e48209ddd3f0318007f1c
 #, fuzzy
@@ -711,13 +710,13 @@ msgid ""
 "Terminierung ist dabei im OBP60 deaktiviert, sie wird am Busverteiler "
 "vorgenommen."
 msgstr ""
-"The following figure shows a possible application example. Bus termination "
-"is deactivated in the OBP60; it is performed at the bus distributor."
+"The following image shows a possible application example. Bus termination is"
+" deactivated in the OBP60; it is performed at the bus distributor."
 
 #: ../../usermanual/bussystems.rst:165 3b2acecf8dfe4c299c275c7ee4a56ec8
 #, fuzzy
 msgid "Abb.: NMEA2000 Minimal-Konfiguration mit Buseinspeisung"
-msgstr "Fig.: NMEA2000 minimal configuration with bus supply"
+msgstr "Fig.: NMEA2000 minimal configuration with bus input"
 
 #: ../../usermanual/bussystems.rst:167 7c85ce757e28451ab16787b275d0d1fb
 #, fuzzy
@@ -738,15 +737,15 @@ msgid ""
 "Bussysteme senden. Properitäre Telegramme werden nicht unterstützt, jedoch "
 "im Bussystem übertragen und weitergeleitet."
 msgstr ""
-"Simnet and SeaTalk GN have limited compatibility with NMEA 2000. Both bus "
-"systems rely on their own connector systems and sometimes use proprietary "
-"NMEA 2000 telegrams. Most common NMEA 2000 bus telegrams are supported by "
-"both systems. Using special, simple passive adapter cables, Simnet and "
-"SeaTalk GN bus systems can be connected to a NMEA 2000 bus system. The OBP60"
-" can then process information from Simnet or SeaTalk NG via the CAN bus or "
-"via Wi-Fi using the SeaSmart protocol, and can also send information to "
-"these bus systems. Proprietary telegrams are not supported, but can be "
-"transmitted and forwarded within the bus system."
+"Simnet and SeaTalk GN have limited compatibility with NMEA2000. Both bus "
+"systems use their own connector systems and some proprietary NMEA2000 "
+"telegrams. Most common NMEA2000 bus telegrams are supported by both systems."
+" Simnet and SeaTalk GN bus systems can be connected to an NMEA2000 bus "
+"system using special, simple passive adapter cables. The OBP60 can then "
+"process information from Simnet or SeaTalk GN via the CAN bus or via WiFi "
+"using the SeaSmart protocol, and also send information to these bus systems."
+" Proprietary telegrams are not supported, but are transmitted and forwarded "
+"within the bus system."
 
 #: ../../usermanual/bussystems.rst:172 422f7a9036a243a9a5d96bc06dd82159
 #, fuzzy
@@ -762,15 +761,15 @@ msgid ""
 "ist ein weit verbreiteter Standard, der vor allem von vielen älteren Geräten"
 " unterstützt wird."
 msgstr ""
-"NMEA 0183 is a standard for serial data transmission in marine applications."
-" It defines a format for transmitting information between navigation devices"
-" and other electronic devices on boats. NMEA 0183 is a widely used standard,"
-" supported primarily by many older devices."
+"NMEA0183 is a standard for serial data transmission in the maritime "
+"industry. It defines a format for transmitting information between "
+"navigation devices and other electronic equipment on boats. NMEA0183 is a "
+"widely used standard, supported especially by many older devices."
 
 #: ../../usermanual/bussystems.rst:176 aa2c074452f34629bcdabfbcc701f786
 #, fuzzy
 msgid "**Spezifikation NMEA0183 im OBP60**"
-msgstr "**NMEA0183 specification in OBP60**"
+msgstr "**Specification NMEA0183 in OBP60**"
 
 #: ../../usermanual/bussystems.rst:178 7cc81f27a33c431a8022924e8b184ffa
 #, fuzzy
@@ -811,7 +810,7 @@ msgstr "Data rate 1,200...460,800 Bd variable"
 #, fuzzy
 msgid "Stromversorgung von Sensoren und Anzeigegeräten über 12V-Bordnetz"
 msgstr ""
-"Power supply of sensors and display devices via 12V vehicle electrical "
+"Power supply for sensors and display devices via 12V vehicle electrical "
 "system"
 
 #: ../../usermanual/bussystems.rst:187 83a41b0e43354d7cb7d2d98eeeadf696
@@ -830,7 +829,7 @@ msgstr "Cable type not specified"
 #: 4590e0938482437aad77c70304e34d0f 62582a3c0bc34a0897d5f37bb4f6d4e3
 #, fuzzy
 msgid "Steckerart nicht spezifiziert"
-msgstr "Plug type not specified"
+msgstr "Connector type not specified"
 
 #: ../../usermanual/bussystems.rst:191 57e31e0dcd9e4ca88231e8576fe9c120
 #, fuzzy
@@ -847,11 +846,11 @@ msgid ""
 "von bis zu 1000 m zulässt. Als Datenübertragungsrate lassen sich folgende "
 "Einstellungen verwenden:"
 msgstr ""
-"Data transmission in the OBP60 is half-duplex serial, using two simple "
-"cables. This means you can either send or receive. Both simultaneously are "
-"not possible. The standard data rate is 4800 baud, which is quite slow by "
-"today's standards, but allows bus lengths of up to 1000 m. The following "
-"data transmission rate settings can be used:"
+"Data transmission in the OBP60 is half-duplex and serial, using two simple "
+"cables. This means that you can either send or receive; both simultaneously "
+"are not possible. The standard data rate is 4800 baud, which is quite slow "
+"by today's standards, but allows bus lengths of up to 1000 m. The following "
+"data rate settings can be used:"
 
 #: ../../usermanual/bussystems.rst:195 868fee779ae54170866813204e8a844e
 #, fuzzy
@@ -925,8 +924,8 @@ msgid ""
 "unterschiedlich lang ausfallen. Im realen Betrieb sollten diese Werte "
 "beachtet werden."
 msgstr ""
-"Depending on the data rate and protocol, the permissible cable lengths may "
-"vary. These values should be observed in real-world operation."
+"Depending on the data rate and protocol, the permissible cable lengths can "
+"vary. These values should be observed in actual operation."
 
 #: ../../usermanual/bussystems.rst:213 feca1bf502f94a7b8e8592efb90930bb
 #, fuzzy
@@ -986,7 +985,7 @@ msgstr "115.200"
 #: ../../usermanual/bussystems.rst:229 9b11c451bdc24de08253732be5c0ed71
 #, fuzzy
 msgid "Tab.: Zulässige Leitungslängen für RS232"
-msgstr "Tab.: Permissible cable lengths for RS232"
+msgstr "Table: Permissible cable lengths for RS232"
 
 #: ../../usermanual/bussystems.rst:231 3a3fa46ef486463d9efb6b886e1884bb
 #, fuzzy
@@ -995,8 +994,8 @@ msgid ""
 "NMEA2000. Damit können Gleichtaktstörungen über lange Leitungslängen sicher "
 "unterdrückt werden."
 msgstr ""
-"Data transmission is carried out using differential signals similar to NMEA "
-"2000. This reliably suppresses common-mode interference over long cable "
+"Data transmission uses differential signals, similar to NMEA2000. This "
+"allows common-mode interference to be reliably suppressed over long cable "
 "lengths."
 
 #: ../../usermanual/bussystems.rst:235 94de6124afe04b5188ff1325d3cdfc1d
@@ -1007,7 +1006,7 @@ msgstr "Fig.: RS422 transmission model transmitter - receiver"
 #: ../../usermanual/bussystems.rst:237 43e349ef8ea84f4cb3d69e7c13296f4e
 #, fuzzy
 msgid "**Bus-Terminierung**"
-msgstr "**Bus scheduling**"
+msgstr "**Bus Scheduling**"
 
 #: ../../usermanual/bussystems.rst:241 524fdae2bc724549a776d9e07b451fe2
 #, fuzzy
@@ -1023,11 +1022,11 @@ msgid ""
 "von NMEA0183-Telegrammen als **Serial Direction Receive** konfiguriert wurde"
 " (siehe Kapitel :ref:`Config - Serial Port`)."
 msgstr ""
-"The NMEA 0183 bus is terminated on the receiver side. The OBP60 features the"
-" jumper ``T183`` for bus termination between connectors **CN1** and **CN2**."
-" This jumper must be set if the OBP60 has been configured as a receiver of "
-"NMEA 0183 telegrams as **Serial Direction Receive** (see chapter "
-":ref:`Config - Serial Port`)."
+"On the receiver side, the NMEA0183 bus is terminated. The OBP60 contains "
+"jumper ``T183`` for bus termination between connectors **CN1** and **CN2**. "
+"This jumper must be set if the OBP60 is configured as a receiver of NMEA0183"
+" telegrams using **Serial Direction Receive** (see section :ref:`Config - "
+"Serial Port`)."
 
 #: ../../usermanual/bussystems.rst:246 ed78513c8be2466ca995cf4e0c61f3ef
 #, fuzzy
@@ -1046,8 +1045,8 @@ msgid ""
 msgstr ""
 "Overall, NMEA0183 is a useful standard for transmitting navigation data on "
 "boats, but it has its limitations and cannot compete with more modern "
-"technologies like NMEA2000 in all applications. For example, to combine data"
-" from multiple data sources, such as sensors, into a single data stream, "
+"technologies like NMEA2000 in all use cases. For example, to combine data "
+"from multiple sources, such as sensors, into a single data stream, "
 "multiplexers are necessary in the NMEA0183 world."
 
 #: ../../usermanual/bussystems.rst:252 b3dcdf30f08b4a1ca467b089bf40c1cc
@@ -1068,19 +1067,19 @@ msgid ""
 "übertragen oder Mehrdeutigkeiten durch mehrere GPS-Empfänger vermieden "
 "werden."
 msgstr ""
-"The multiplexer receives various data telegrams at different ports and "
-"outputs the combined data stream from multiple sensors to a new data port. "
+"The multiplexer receives various data telegrams on different ports and "
+"outputs the combined data stream from multiple sensors on a new data port. "
 "This allows multiple sensor signals to be transmitted over a single line to "
-"a data terminal device, such as a plotter or multifunction display. Many "
-"multiplexers also offer the option of suppressing certain data telegrams in "
-"the data stream using a filter function. This allows, for example, only the "
-"absolutely necessary data to be transmitted to an autopilot or to avoid "
+"a data terminal such as a plotter or a multifunction display. Many "
+"multiplexers also offer the option of suppressing specific data telegrams "
+"within the data stream using a filter function. This allows, for example, "
+"only the necessary data to be transmitted to an autopilot or prevents "
 "ambiguities caused by multiple GPS receivers."
 
 #: ../../usermanual/bussystems.rst:256 81f6fe8a5eda47bfb7490f13a603aa5f
 #, fuzzy
 msgid "**NMEA0183-Telegrammstruktur**"
-msgstr "**NMEA0183 telegram structure**"
+msgstr "**NMEA0183 Telegram Structure**"
 
 #: ../../usermanual/bussystems.rst:258 2152933e74ea4be9b15aaaf80f37c512
 #, fuzzy
@@ -1090,12 +1089,13 @@ msgid ""
 "Informationen."
 msgstr ""
 "NMEA0183 telegrams are quite simple in structure and are transmitted as "
-"ASCII data sets. An NMEA0183 telegram consists of the following information."
+"ASCII data records. An NMEA0183 telegram consists of the following "
+"information."
 
 #: ../../usermanual/bussystems.rst:260 3cf1460265ce493a82be17b98f6771d7
 #, fuzzy
 msgid "Kennung"
-msgstr "Identification"
+msgstr "Identifier"
 
 #: ../../usermanual/bussystems.rst:261 7e6b7d57665644f3870cbe3e53a3177a
 #, fuzzy
@@ -1129,9 +1129,9 @@ msgid ""
 "Statusinformationen in einem Telegramm übertragen werden. Nachfolgend ist "
 "beispielhaft das Telegramm eines Tiefenmessers dargestellt."
 msgstr ""
-"Depending on the complexity of a telegram, multiple sensor data or status "
-"information can be transmitted in one telegram. The telegram from a depth "
-"gauge is shown below as an example."
+"Depending on the complexity of a telegram, multiple sensor data points or "
+"status information can be transmitted in a single telegram. The following is"
+" an example of a telegram from a depth gauge."
 
 #: ../../usermanual/bussystems.rst:269 b64390b1a0d9442e95fe4807b20d2bda
 #, fuzzy
@@ -1161,7 +1161,7 @@ msgstr "B - f = foot"
 #: ../../usermanual/bussystems.rst:276 a962a2ebb29e405282deb134a6712589
 #, fuzzy
 msgid "c.c - Tiefe in Metern"
-msgstr "C.c - depth in meters"
+msgstr "C.c - Depth in meters"
 
 #: ../../usermanual/bussystems.rst:277 c31b8fec535744a4a7628b4a13379e31
 #, fuzzy
@@ -1199,13 +1199,13 @@ msgid ""
 "Wer mehr Informationen zu NMEA0183-Telegrammen erfahren möchte, findet auf "
 "dieser `Webseite`_ ausführliche Informationen."
 msgstr ""
-"If you would like to learn more about NMEA0183 telegrams, you can find "
-"detailed information on this `Webseite`_."
+"Anyone who wants to learn more about NMEA0183 telegrams can find detailed "
+"information on this `Webseite`_."
 
 #: ../../usermanual/bussystems.rst:289 ce6ed95a4f4d4d49a22bf6e8612d6bc4
 #, fuzzy
 msgid "**Verkabelung für NMEA0183**"
-msgstr "**Wiring for NMEA0183**"
+msgstr "**Cabling for NMEA0183**"
 
 #: ../../usermanual/bussystems.rst:291 a182e62b7ffb4280a909f6316220f85c
 #, fuzzy
@@ -1215,10 +1215,10 @@ msgid ""
 "Daten zum OBP60, dieses ist als NMEA0183-Empfänger konfiguriert. Die Bus-"
 "Terminierung ist über den Jumper ``T183`` eingeschaltet."
 msgstr ""
-"The following image shows a configuration in which an NMEA 0183 wind sensor "
+"The following image shows a configuration in which an NMEA0183 wind sensor "
 "is connected to the OBP60. The wind sensor sends the data to the OBP60, "
-"which is configured as an NMEA 0183 receiver. Bus termination is enabled via"
-" jumper ``T183``."
+"which is configured as an NMEA0183 receiver. Bus termination is enabled via "
+"jumper ``T183``."
 
 #: ../../usermanual/bussystems.rst:295 390ed20aaea44cd8ae4f29c94e5a4f23
 #, fuzzy
@@ -1234,9 +1234,9 @@ msgid ""
 "eingebunden werden sollen, dann benötigt man einen vorgeschalteten "
 "Multiplexer."
 msgstr ""
-"Other sensors can be connected to the OBP60 in a similar way. However, it "
-"should be noted that only one device or sensor can be connected to the OBP60"
-" at a time. If multiple devices are to be integrated, a multiplexer is "
+"Other sensors can be connected to the OBP60 in a similar way. However, it's "
+"important to note that only one device or sensor can be connected to the "
+"OBP60 at a time. If multiple devices need to be connected, a multiplexer is "
 "required."
 
 #: ../../usermanual/bussystems.rst:301 78315746e61d4c01804e5f89ff97758e
@@ -1250,12 +1250,12 @@ msgid ""
 " Ende der Leitung beleibt offen. Andere Schirmeingänge dürfen nicht benutzt "
 "werden."
 msgstr ""
-"When wiring external sensors via NMEA 0183, use shielded cables whenever "
-"possible and route the shield directly to the sensor. Do not connect the "
-"sensor shield to ``GND2``, as this will create ground loops. The entire bus "
-"cable shield may only be connected to input ``Shield`` of the NMEA 0183 bus "
-"on the OBP60. The shield at the other end of the cable remains open. Other "
-"shield inputs may not be used."
+"When wiring external sensors via NMEA0183, use shielded cables whenever "
+"possible and run the shield directly to the sensor. Do **not** connect the "
+"shield at the sensor to ``GND2``, as this will create ground loops. The "
+"entire shield of the bus cable must be connected to input ``Shield`` of the "
+"NMEA0183 bus on the OBP60 at only one end. The shield at the other end of "
+"the cable remains open. Other shield inputs must not be used."
 
 #: ../../usermanual/bussystems.rst:304 1c6f45b193e543ac9a4a18e59b2304cd
 #, fuzzy
@@ -1266,10 +1266,10 @@ msgid ""
 "Datenübertragung stattfinden. Die NMEA0183-Schnittstelle im OBP60 "
 "unterstützt das RS232-Protokoll nicht."
 msgstr ""
-"Please note that NMEA 0183 data transmission requires the same transmission "
-"speed for both transmitter and receiver, and the same transmission protocol."
-" Otherwise, data transmission will not be possible. The NMEA 0183 interface "
-"in the OBP60 does not support the RS232 protocol."
+"Please note that NMEA0183 data transmissions require the same transmission "
+"speed and the same transmission protocol for both the sender and receiver. "
+"Otherwise, data transmission will not be possible. The NMEA0183 interface in"
+" the OBP60 does not support the RS232 protocol."
 
 #: ../../usermanual/bussystems.rst:306 d4b61ed457724b37b1c08cfc2c248d4f
 #, fuzzy
@@ -1283,14 +1283,14 @@ msgid ""
 "wichtige Daten eingrenzen. Das OBP60 ist in diesem Beispiel als Empfänger "
 "konfiguriert. Die Terminierung des Bussystems ist deaktiviert."
 msgstr ""
-"Most multiplexers have multiple NMEA 0183 inputs and at least one NMEA 0183 "
+"Most multiplexers have multiple NMEA0183 inputs and at least one NMEA0183 "
 "output. When using a multiplexer, all sensors are connected to the "
-"multiplexer's NMEA 0183 inputs, and the NMEA 0183 output is connected to the"
-" OBP60. The multiplexer then combines the data streams from all sensors into"
-" a single data stream at the output, as described above. Filters at the data"
-" output can be used to limit the data volume to only the most important "
-"data. In this example, the OBP60 is configured as a receiver. Bus system "
-"termination is disabled."
+"multiplexer's NMEA0183 inputs, and the NMEA0183 output is connected to the "
+"OBP60. The multiplexer then combines the data streams from all sensors into "
+"a single data stream at the output, as described. Filters at the data output"
+" can be used to limit the amount of data to only the most important "
+"information. In this example, the OBP60 is configured as a receiver. Bus "
+"system termination is disabled."
 
 #: ../../usermanual/bussystems.rst:310 2377b40927494e08bb5e07bc31b14b10
 #, fuzzy
@@ -1306,10 +1306,10 @@ msgid ""
 "konvertiert, da der NMEA0183-Port des OBP60 in der dargestellten "
 "Konfiguration im Empfangs-Modus arbeitet."
 msgstr ""
-"All NMEA 0183 data is automatically converted to NMEA 2000 by the OBP60 "
-"gateway. The conversion is unidirectional, only in the NMEA 2000 direction. "
-"No data is converted in the reverse direction to NMEA 0183, as the OBP60's "
-"NMEA 0183 port operates in receive mode in the configuration shown."
+"All NMEA0183 data is automatically converted to NMEA2000 by the OBP60 "
+"gateway. This conversion is unidirectional, only in the direction of "
+"NMEA2000. No data is converted in the reverse direction to NMEA0183, as the "
+"OBP60's NMEA0183 port operates in receive mode in the configuration shown."
 
 #: ../../usermanual/bussystems.rst:316 25035bb82de8464d9c05136a8844b847
 #, fuzzy
@@ -1329,12 +1329,12 @@ msgid ""
 "austauschen."
 msgstr ""
 "The I2C bus is used to connect electronic components. It is primarily used "
-"in the electronics industry to cost-effectively interconnect various "
-"components on a circuit board. The connection is established via a two-wire "
-"cable and operates at signal levels of 5.0V. It provides the clock signal "
-"**SCL** and the data signal **SDA**. Communication operates as a master-"
-"slave system. The master controls the slaves via a unique address and can "
-"exchange data with them."
+"in electronics to connect various components on a circuit board in a cost-"
+"effective manner. The connection is made via a two-wire line and operates "
+"with signal levels of 5.0V. It includes the clock signal **SCL** and the "
+"data signal **SDA**. Communication operates as a master-slave system. The "
+"master controls the slaves via a unique address and can exchange data with "
+"them."
 
 #: ../../usermanual/bussystems.rst:320 acd8417a8a81438aa5d693872d30a61b
 #, fuzzy
@@ -1344,12 +1344,12 @@ msgstr "**I2C specification in the OBP60**"
 #: ../../usermanual/bussystems.rst:322 d3f9765476804ca199db7db875a3a570
 #, fuzzy
 msgid "Serielles, bidirektionales, synchrones Datenprotokoll auf Binär-Basis"
-msgstr "Serial, bidirectional, synchronous data protocol based on binary"
+msgstr "Serial, bidirectional, synchronous binary-based data protocol"
 
 #: ../../usermanual/bussystems.rst:325 d9d5b92fa25a4b17a60db28eb5f0b1ca
 #, fuzzy
 msgid "Bus-Terminierung intern über PullUp-Widerstände"
-msgstr "Bus termination internally via pull-up resistors"
+msgstr "Internal bus termination via pull-up resistors"
 
 #: ../../usermanual/bussystems.rst:327 57881e71871948ff997e3cac21226864
 #, fuzzy
@@ -1365,7 +1365,7 @@ msgstr "Data rate 100,000 kbit/s variable"
 #, fuzzy
 msgid ""
 "Stromversorgung von Sensoren und Anzeigegeräten über separate Leitungen"
-msgstr "Power supply of sensors and display devices via separate cables"
+msgstr "Power supply for sensors and display devices via separate lines"
 
 #: ../../usermanual/bussystems.rst:330 bfcedda8b68f4d36bd910f9444d27f46
 #, fuzzy
@@ -1383,12 +1383,11 @@ msgid ""
 "auswirken. Der I2C-Bus hat 5 Leitungen, über die externe Geräte "
 "angeschlossen werden können."
 msgstr ""
-"In the OBP60, the I2C bus is isolated from the outside world and uses a 5.0V"
-" TTL signal level. The clock and data outputs are routed via line drivers "
-"that can drive long lines with high line capacitance. This prevents "
-"interference in the bus system from negatively impacting the functional "
-"reliability of the OBP60. The I2C bus has five lines that can be used to "
-"connect external devices."
+"The OBP60's I2C bus is isolated from the outside world and uses 5.0V TTL "
+"signal levels. Clock and data outputs are routed via line drivers capable of"
+" operating long cables with high capacitance. This prevents interference "
+"within the bus system from negatively impacting the OBP60's operational "
+"reliability. The I2C bus has five lines for connecting external devices."
 
 #: ../../usermanual/bussystems.rst:337 ../../usermanual/bussystems.rst:394
 #: ../../usermanual/bussystems.rst:414 7d88b692a9be49c4a8c6a685cbbc7036
@@ -1421,7 +1420,7 @@ msgstr "Shield"
 #: ../../usermanual/bussystems.rst:343 e81f405a8a6f499ea03b839fd268b43b
 #, fuzzy
 msgid "Schirmung I2C"
-msgstr "Shielding I2C"
+msgstr "I2C shielding"
 
 #: ../../usermanual/bussystems.rst:345 2954721b99d8490aa792605233d8f1ab
 #, fuzzy
@@ -1455,10 +1454,10 @@ msgid ""
 "mehrere Sensoren mit Strom versorgen."
 msgstr ""
 "The following image shows an I2C bus setup with three I2C sensors. All "
-"sensors are connected to the I2C input on the OBP60 with shielded cables. "
-"The external sensors are powered directly by the OBP60 via the integrated, "
-"isolating DC/DC converter (``5Viso``, ``GND2``). The power output can "
-"deliver up to 200 mA at ``5Viso``, thus powering multiple sensors."
+"sensors are connected to the I2C input of the OBP60 using shielded cables. "
+"The external sensors are powered directly by the OBP60 via its integrated, "
+"isolating DC/DC converter (``5Viso``, ``GND2``). The power output can supply"
+" up to 200 mA at ``5Viso`` and thus power multiple sensors."
 
 #: ../../usermanual/bussystems.rst:354 440f6ad214734a9ba9f2cc4e2f336871
 #, fuzzy
@@ -1476,12 +1475,13 @@ msgid ""
 " der Leitung beleibt offen. Andere Schirmeingänge dürfen nicht benutzt "
 "werden. Halten Sie Stichleitungen vom Bus zu den Sensoren möglichst kurz."
 msgstr ""
-"Whenever possible, use shielded cables for wiring external sensors and route"
-" the shield directly to the sensor. Do not connect the sensor cable shield "
-"to ``GND2``, as this will create ground loops. The entire bus cable shield "
-"may only be connected to input ``Shield`` of the I2C bus on the OBP60. The "
-"shield at the other end of the cable remains open. Do not use other shield "
-"inputs. Keep spur cables from the bus to the sensors as short as possible."
+"For wiring external sensors, use shielded cables whenever possible and run "
+"the shield directly to the sensor. **Do not** connect the sensor cable "
+"shield to ``GND2``, as this will create ground loops. The entire shield of "
+"the bus cable must be connected to input ``Shield`` of the I2C bus on the "
+"OBP60 at only one end. The shield at the other end of the cable remains "
+"open. Do not use any other shield inputs. Keep spur lines from the bus to "
+"the sensors as short as possible."
 
 #: ../../usermanual/bussystems.rst:360 46ce5fd5e969452aa3a75ef384d0774d
 #, fuzzy
@@ -1496,14 +1496,14 @@ msgid ""
 "**Arduino Uno** verwendet werden können, lassen sich auch am OBP60 "
 "verwenden. Diese Module sind für 5V-TTL-Signale geeignet."
 msgstr ""
-"Some I2C modules can be powered by 5V, but use 3.3V TTL signals for ``SCL`` "
-"and ``SDA``. In this case, you will need a level converter for the SCL and "
-"SDA signals to 5V TTL signals. Failure to do so could damage the I2C sensor "
-"or the I2C module. The same applies to modules that are only powered by "
-"3.3V. In this case, you will need a DC/DC converter in addition to the level"
-" converter to reduce the supply voltage. Most I2C modules that can be used "
-"with an **Arduino Uno** can also be used with the OBP60. These modules are "
-"suitable for 5V TTL signals."
+"Some I2C modules can be powered with 5V but use 3.3V TTL signals for ``SCL``"
+" and ``SDA``. In this case, you need a level shifter to convert the SCL and "
+"SDA signals to 5V TTL signals. Failure to do so can damage the I2C sensor or"
+" module. The same applies to modules that only require 3.3V. In this case, "
+"in addition to the level shifter, you will also need a DC/DC converter to "
+"reduce the supply voltage. Most I2C modules that can be used with an "
+"**Arduino Uno** can also be used with the OBP60. These modules are suitable "
+"for 5V TTL signals."
 
 #: ../../usermanual/bussystems.rst:363 a7e16dbdebdd404b90d053a548be1ce2
 #, fuzzy
@@ -1518,14 +1518,14 @@ msgid ""
 " im Bus verwenden. Das OBP60 belegt bereits folgende Adressen, die nicht von"
 " Sensoren benutzt werden dürfen: 0x76, 0x68."
 msgstr ""
-"If you want to use external sensors or modules on the I2C bus, check for "
-"address conflicts between the sensors or modules used. Ensure that I2C "
-"addresses are not assigned multiple times. This will cause communication "
-"problems on the I2C bus. Especially when using the same modules multiple "
-"times, the I2C addresses must be set differently. This is not possible with "
-"some I2C modules. In this case, you can only use one I2C module of the "
-"respective type on the bus. The OBP60 already occupies the following "
-"addresses, which must not be used by sensors: 0x76, 0x68."
+"If you intend to use external sensors or modules on the I2C bus, check "
+"whether an address conflict could occur between the sensors or modules. "
+"Ensure that I2C addresses are not assigned multiple times, as this will lead"
+" to communication problems on the I2C bus. In particular, when using "
+"multiple identical modules, the I2C addresses must be set differently. This "
+"is not possible with some I2C modules. In such cases, you can only use one "
+"I2C module of the respective type on the bus. The OBP60 already occupies the"
+" following addresses, which must not be used by sensors: 0x76 and 0x68."
 
 #: ../../usermanual/bussystems.rst:366 2f3f4c26d9ba4e688105a699f80ab92e
 #, fuzzy
@@ -1536,10 +1536,10 @@ msgid ""
 "sie erzeugen dadurch einen Software-Timeout. Deaktivieren Sie in einem "
 "solchen Fall die Sensoren in der Konfiguration."
 msgstr ""
-"Unconnected external I2C sensors that are enabled in the configuration will "
-"impair the responsiveness of the OBP60. These sensors cannot respond to the "
-"system, causing a software timeout. In this case, disable the sensors in the"
-" configuration."
+"External I2C sensors that are not connected but are enabled in the "
+"configuration will impair the responsiveness of the OBP60. These sensors "
+"cannot respond to the system, resulting in a software timeout. In such a "
+"case, disable the sensors in the configuration."
 
 #: ../../usermanual/bussystems.rst:369 8ebcd8d3f3cc4714b018cda4ed807942
 #, fuzzy
@@ -1557,12 +1557,12 @@ msgstr ""
 "Determine the power requirements of your external sensors and ensure that "
 "the power supply ``5Viso`` is not overloaded or short-circuited. The maximum"
 " permissible current is **200 mA**. Otherwise, all isolated bus systems such"
-" as **NMEA2000**, **NMEA0183**, and **I2C** will fail, as they are supplied "
-"with the same power source. This will result in a loss of communication on "
-"all of the aforementioned bus systems, which can have serious consequences "
-"for your boat's navigation. Do not **connect** ``GND2`` to ``GND`` or "
-"``GNDS``, as the isolation effect will be lost and sensitivity to "
-"interference will increase."
+" as **NMEA2000**, **NMEA0183**, and **I2C** will fail, as they are powered "
+"by the same source. This will result in a loss of communication on all of "
+"the aforementioned bus systems, which can have serious consequences for your"
+" boat's navigation. **Do not** connect ``GND2`` to ``GND`` or ``GNDS``, as "
+"this will eliminate the isolation and increase susceptibility to "
+"interference."
 
 #: ../../usermanual/bussystems.rst:372 ../../usermanual/bussystems.rst:396
 #: ../../usermanual/bussystems.rst:416 0c20e142438b4f10a18dfd8119f0b830
@@ -1584,21 +1584,21 @@ msgid ""
 msgstr ""
 "The 1-Wire bus is a single-wire bus for serial data transmission in "
 "electronic circuits. In addition to the data line, a ground line is required"
-" as a potential reference. Transmission is bidirectional and asynchronous. "
+" for potential reference. Transmission is bidirectional and asynchronous. "
 "The 1-Wire bus is often used for simple sensors that transmit only small "
-"amounts of data, such as the DS18B20 temperature sensors. On the OBP60, the "
-"1-Wire bus is routed to terminal CN2."
+"amounts of data, such as the **DS18B20** temperature sensors. On the OBP60, "
+"the 1-Wire bus is accessible at terminal CN2."
 
 #: ../../usermanual/bussystems.rst:376 09ceac2beb964e1484368015c9139c97
 #, fuzzy
 msgid "**Spezifikation 1Wire**"
-msgstr "**1Wire Specification**"
+msgstr "**1-Wire Specification**"
 
 #: ../../usermanual/bussystems.rst:378 ../../usermanual/bussystems.rst:449
 #: 1ef58fd7e1a2405185970e9a45e0cbd3 f55510908c78453cbdec52480e660d3b
 #, fuzzy
 msgid "Serielles, bidirektionales asynchrones Datenprotokoll auf Binär-Basis"
-msgstr "Serial, bidirectional asynchronous data protocol based on binary"
+msgstr "Serial, bidirectional asynchronous binary-based data protocol"
 
 #: ../../usermanual/bussystems.rst:379 dd41cf37f306451b856df53af74c7bd7
 #, fuzzy
@@ -1619,12 +1619,12 @@ msgstr "1Wire, TTL 3.3V"
 #, fuzzy
 msgid ""
 "Datenrate 9600 kBit/s (bei parasitärer Stromversorgung über Datenleitung)"
-msgstr "Data rate 9600 kbit/s (with parasitic power supply via data line)"
+msgstr "Data rate 9600 kBit/s (with parasitic power supply via data line)"
 
 #: ../../usermanual/bussystems.rst:385 831f13e707074d3aaa6f686602632010
 #, fuzzy
 msgid "Stromversorgung von Sensoren über Datenleitung"
-msgstr "Power supply of sensors via data line"
+msgstr "Power supply to sensors via data line"
 
 #: ../../usermanual/bussystems.rst:386 d885ea7cdb784a91b30b4f70c387da24
 #, fuzzy
@@ -1639,7 +1639,7 @@ msgstr "Connector type specified for some applications"
 #: ../../usermanual/bussystems.rst:389 e6e8d1b9e03348de9a17ebe7b48d6ff8
 #, fuzzy
 msgid "Maximal 8 DS18B20 Sensoren nutzbar"
-msgstr "Maximum 8 DS18B20 sensors can be used"
+msgstr "Maximum 8 DS18B20 sensors can be used."
 
 #: ../../usermanual/bussystems.rst:391 bfc314a9953f444c86f54a6bfc809c00
 #, fuzzy
@@ -1648,8 +1648,8 @@ msgid ""
 "Temperatursensoren einzubinden. Zur Anbindung werden nur 3 Leitungen am "
 "OBP60 benötigt."
 msgstr ""
-"The 1Wire bus offers a simple and cost-effective way to integrate "
-"temperature sensors. Only three wires are required on the OBP60."
+"The 1-Wire bus offers a simple and cost-effective way to integrate "
+"temperature sensors. Only 3 wires are required at the OBP60 for connection."
 
 #: ../../usermanual/bussystems.rst:398 cacf1ff51c2045948f718d7ae9c95af5
 #, fuzzy
@@ -1672,38 +1672,38 @@ msgid ""
 "Sensoren eignen sich daher nur für die Verarbeitung unkritischer "
 "Temperaturwerte."
 msgstr ""
-"The temperature sensors are powered parasitically via the data line. The "
-"sensor contains a capacitor that can store a certain amount of energy for "
-"transmission when the data level is at 3.3V. The sensors are addressed via "
-"unique addresses and can exchange data with the OBP60. With parasitic power,"
-" the data rate is limited to a maximum of 9600 kbps. The sensors can only be"
-" queried a few times per minute because they must collect their energy over "
-"a longer period of time via the data line. Only one sensor is read per "
-"second. The process is then repeated for all other sensors. 1-Wire "
-"temperature sensors are therefore only suitable for processing non-critical "
-"temperature values."
+"The temperature sensors are powered parasitically via the data line. "
+"Internally, each sensor contains a capacitor that stores a certain amount of"
+" energy for transmission when the data level is at 3.3V. The sensors are "
+"addressed via unique addresses and can exchange data with the OBP60. With "
+"this parasitic power supply, the data rate is limited to a maximum of 9600 "
+"kbit/s. The sensors can only be queried a few times per minute, as they need"
+" to accumulate energy over a longer period via the data line. Only one "
+"sensor is read per second. This process is then repeated for all subsequent "
+"sensors. Therefore, 1-Wire temperature sensors are only suitable for "
+"processing non-critical temperature values."
 
 #: ../../usermanual/bussystems.rst:405 d71eb9f3f9514778b8a0498c5ceefbca
 #, fuzzy
 msgid ""
 "Nachfolgend ist eine Beispielanwendung für 1Wire-Temperatur-Sensoren zu "
 "sehen."
-msgstr "Below is an example application for 1Wire temperature sensors."
+msgstr "Below is an example application for 1-Wire temperature sensors."
 
 #: ../../usermanual/bussystems.rst:409 37942df4f1f64318a3e0508d2be349d6
 #, fuzzy
 msgid ""
 "Abb.: 1Wire-Anbindung von externen Temperatur-Sensoren (parasitär versorgt)"
 msgstr ""
-"Fig.: 1Wire connection of external temperature sensors (parasitically "
-"supplied)"
+"Fig.: 1-Wire connection of external temperature sensors (parasitically "
+"powered)"
 
 #: ../../usermanual/bussystems.rst:411 0da935f9204c4b358c864e2bbec6e343
 #, fuzzy
 msgid ""
 "Die Belegung der DS18B20-Temperatur-Sensoren ist folgendermaßen "
 "durchzuführen."
-msgstr "The DS18B20 temperature sensors are wired as follows."
+msgstr "The DS18B20 temperature sensors are to be connected as follows."
 
 #: ../../usermanual/bussystems.rst:414 c3cbfc12ca1c4dfe9155c8b6b4c5b9a1
 #, fuzzy
@@ -1745,16 +1745,16 @@ msgid ""
 " der Sensoren im Bus abhängig. Die Auslesezeit T lässt sich über folgende "
 "Formel berechnen: T[s]=N*1s."
 msgstr ""
-"Whenever possible, use shielded cables for wiring external temperature "
-"sensors and run the shield directly to the sensor. Do not connect the sensor"
-" cable shield to ``GND``, as this will create ground loops. The entire bus "
-"cable shield may only be connected to input ``GNDS`` of the 1-Wire bus on "
-"the OBP60 at one end. The shield at the other end of the cable remains open."
-" Other shield inputs may not be used. Keep spur cables from the bus to the "
-"sensors as short as possible. The maximum number of sensors on the 1-Wire "
-"bus is limited to 8 sensors. The readout time of a sensor depends on the "
-"number (N) of sensors on the bus. The readout time T can be calculated using"
-" the following formula: T[s]=N*1s."
+"For wiring external temperature sensors, use shielded cables whenever "
+"possible and run the shield directly to the sensor. **Do not** connect the "
+"sensor cable shield to ``GND``, as this will create ground loops. The entire"
+" shield of the bus cable must be connected to input ``GNDS`` of the 1-Wire "
+"bus on the OBP60 at only one end. The shield at the other end of the cable "
+"remains open. Other shield inputs must not be used. Keep spur lines from the"
+" bus to the sensors as short as possible. The maximum number of sensors on "
+"the 1-Wire bus is limited to 8. The read time of a sensor depends on the "
+"number (N) of sensors on the bus. The read time T can be calculated using "
+"the following formula: T[s] = N * 1s."
 
 #: ../../usermanual/bussystems.rst:427 09b2f8e9184d4caa8d644fd29c078792
 #, fuzzy
@@ -1763,9 +1763,9 @@ msgid ""
 "Bus. Sie erhöhen damit die Betriebssicherheit des Gesamtsystems, da der "
 "I2C-Bus gegenüber der Außenwelt isoliert ist."
 msgstr ""
-"If possible, use temperature sensors on the I2C bus instead of the 1Wire "
-"bus. This increases the operational reliability of the entire system, as the"
-" I2C bus is isolated from the outside world."
+"If possible, use temperature sensors on the I2C bus instead of the 1-Wire "
+"bus. This increases the operational reliability of the overall system, as "
+"the I2C bus is isolated from the outside world."
 
 #: ../../usermanual/bussystems.rst:430 674c001e95c448a99a276a171fd4edc4
 #, fuzzy
@@ -1777,18 +1777,18 @@ msgid ""
 " normale Stromversorgung für die Temperatursensoren. Mit dieser Art der "
 "Stromversorgung sollten nahezu alle Sensoren funktionieren."
 msgstr ""
-"There are replicas of DS18B20 temperature sensors available online that "
-"don't support parasitic power supply. If you can't establish communication "
-"with the OBP60, try other sensors. If that doesn't work, try using a "
-"standard power supply for the temperature sensors. Almost all sensors should"
-" work with this type of power supply."
+"Counterfeit DS18B20 temperature sensors are circulating online, but these do"
+" not support a parasitic power supply. If you cannot establish communication"
+" with the OBP60, try other sensors. If that also fails, use a standard power"
+" supply for the temperature sensors. Almost all sensors should work with "
+"this type of power supply."
 
 #: ../../usermanual/bussystems.rst:434 c85de9773794443899a760655fceb95f
 #, fuzzy
 msgid ""
 "Abb.: 1Wire-Anbindung von externen Temperatur-Sensoren (direkt versorgt)"
 msgstr ""
-"Fig.: 1Wire connection of external temperature sensors (directly supplied)"
+"Fig.: 1-Wire connection of external temperature sensors (directly powered)"
 
 #: ../../usermanual/bussystems.rst:437 b390af5c465940aeb15b75e0c18bd431
 #, fuzzy
@@ -1801,12 +1801,12 @@ msgid ""
 "daraus resultierenden schweren Folgen für die Navigationsfähigkeit Ihres "
 "Bootes."
 msgstr ""
-"The 1-Wire bus is not isolated from the OBP60's internal circuitry. Improper"
-" installation increases the risk of interference coupled into the bus lines,"
-" which could impair the function and stability of the OBP60. Therefore, keep"
-" the bus length as short as possible. In the worst case, this could lead to "
-"complete failure of the OBP60, with serious consequences for your boat's "
-"navigation capabilities."
+"The 1-Wire bus is not isolated from the OBP60's internal circuitry. If "
+"installed improperly, this increases the risk of interference coupled into "
+"the bus lines, which can impair the OBP60's function and stability. "
+"Therefore, keep the bus length as short as possible. In the worst case, this"
+" can lead to the complete failure of the OBP60, with serious consequences "
+"for your boat's navigation capabilities."
 
 #: ../../usermanual/bussystems.rst:440 2d0fb62d06284922bc2728e68ef20382
 #, fuzzy
@@ -1815,8 +1815,8 @@ msgid ""
 "angelegt werden. Das hat unmittelbar zur Folge, dass das OBP60 beschädigt "
 "oder sogar zerstört wird."
 msgstr ""
-"Under no circumstances should a voltage of 12V be applied to the ``1Wire`` "
-"output. This will directly damage or even destroy the OBP60."
+"Under no circumstances should a voltage of 12V be applied to the output "
+"``1Wire``. This will immediately damage or even destroy the OBP60."
 
 #: ../../usermanual/bussystems.rst:443 9c6d7de5eeaa48af8fc48a453d857f03
 #, fuzzy
@@ -1832,15 +1832,16 @@ msgid ""
 "NMEA0183-Kommunikation zu anderen Geräten wie einem Laptop, PC oder einem "
 "Marine Control Server aufgebaut werden."
 msgstr ""
-"The USB-C interface in the OBP60 is used for flashing firmware and "
-"debugging. The USB interface is designed as a serial interface. Furthermore,"
-" bidirectional, full-duplex NMEA 0183 communication can be established with "
-"other devices such as a laptop, PC, or a marine control server."
+"The USB-C interface on the OBP60 is used for flashing firmware and "
+"debugging. The USB interface is implemented as a serial interface. "
+"Furthermore, bidirectional, full-duplex NMEA0183 communication can be "
+"established with other devices such as a laptop, PC, or marine control "
+"server."
 
 #: ../../usermanual/bussystems.rst:447 49c72f5f08ab4201b14a0f7251ad4a5d
 #, fuzzy
 msgid "**Spezifikation USB im OBP60**"
-msgstr "**USB specification in the OBP60**"
+msgstr "**USB Specification in the OBP60**"
 
 #: ../../usermanual/bussystems.rst:450 b8000ca2dba14b3d8280d030bcfa2da9
 #, fuzzy
@@ -1870,18 +1871,18 @@ msgstr "USB 1.1, TTL 3.3V"
 #: ../../usermanual/bussystems.rst:456 4b25b04a6b7649fcb322d1ecce2062d7
 #, fuzzy
 msgid "Datenrate 1 MBit/s"
-msgstr "Data rate 1 Mbit/s"
+msgstr "Data rate 1 MBit/s"
 
 #: ../../usermanual/bussystems.rst:457 cc9e8ce9d1bc4ebda6a3c31eebcc8ba5
 #, fuzzy
 msgid "Stromversorgung des OBP60 über USB möglich"
-msgstr "Power supply of the OBP60 via USB possible"
+msgstr "The OBP60 can be powered via USB."
 
 #: ../../usermanual/bussystems.rst:458 1fdd43615847462c916592185fde282d
 #, fuzzy
 msgid ""
 "Stromversorgung von externen Geräten aus dem OBP60 heraus nicht möglich"
-msgstr "Power supply of external devices from the OBP60 is not possible"
+msgstr "Powering external devices from the OBP60 is not possible"
 
 #: ../../usermanual/bussystems.rst:459 f7fd368baccd431fab0a631d79caee1a
 #, fuzzy
@@ -1891,12 +1892,12 @@ msgstr "Bus length up to 3 m"
 #: ../../usermanual/bussystems.rst:460 915a5027415143f29c4552e68ad52552
 #, fuzzy
 msgid "Kabelart geschirmt"
-msgstr "Cable type shielded"
+msgstr "Cable type: shielded"
 
 #: ../../usermanual/bussystems.rst:461 caeb8d67867d42d3b0a6d4b7af9237c2
 #, fuzzy
 msgid "Steckerart USB-C"
-msgstr "Connector type USB-C"
+msgstr "Connector type: USB-C"
 
 #: ../../usermanual/bussystems.rst:464 65cec53f23cd4ad79399d277806bec08
 #, fuzzy
@@ -1905,9 +1906,9 @@ msgid ""
 "integriert. Für die älteren Win7/8-Versionen benötigen Sie `zusätzliche "
 "Treiber`_, um die USB-Schnittstelle benutzen zu können."
 msgstr ""
-"For Linux and Windows 10/11, corresponding USB drivers are integrated into "
-"the operating system. For older versions of Windows 7/8, you will need "
-"`zusätzliche Treiber`_ to use the USB interface."
+"For Linux and Windows 10/11, the necessary USB drivers are integrated into "
+"the operating system. For older Windows 7/8 versions, you need `zusätzliche "
+"Treiber`_ to use the USB interface."
 
 #: ../../usermanual/bussystems.rst:468 af041cf1500645fb8985670e404ed2c0
 #, fuzzy
@@ -1925,12 +1926,12 @@ msgid ""
 "dem OBP60 herausfließen kann. Das OBP60 kann zudem auch gleichzeitig mit 12V"
 " und über USB-C mit 5V versorgt werden."
 msgstr ""
-"The OBP60 can also be powered via USB-C. This is useful, for example, if "
-"you're doing software development and want to use the device at your desk. "
-"The power-supplying device must be able to provide up to 1 A at a voltage of"
-" 5.1 V, such as a Raspberry Pi power supply. The USB-C interface has reverse"
-" flow protection to prevent current from flowing out of the OBP60. The OBP60"
-" can also be powered simultaneously with 12 V and 5 V via USB-C."
+"The OBP60 can also be powered via USB-C. This is useful, for example, when "
+"developing software and using the device at your desk. The power supply must"
+" be able to provide up to 1 A at 5.1 V, such as a Raspberry Pi power supply."
+" The USB-C interface has reverse current protection, so no current can flow "
+"out of the OBP60. The OBP60 can also be powered simultaneously with 12 V and"
+" 5 V via USB-C."
 
 #: ../../usermanual/bussystems.rst:473 e9dca01079194072860d1b8f9e8a0933
 #, fuzzy
@@ -1944,18 +1945,18 @@ msgid ""
 "Wenn Sie größere Strecken überbrücken wollen, müssen Sie aktive USB-"
 "Repeater-Kabel verwenden, die die Signalpegel auffrischen."
 msgstr ""
-"The OBP60's regular power supply in the boat is always via 12V from the on-"
-"board electrical system. We do not recommend using USB-C alone, as the "
-"connector is not protected against accidental disconnection. Cable lengths "
-"longer than 1.5 m should only be used for data transmission and not for "
-"power supply, as the voltage drop on the cables is too high. The maximum "
-"cable length is 3 m. If you want to bridge longer distances, you must use "
-"active USB repeater cables that boost the signal levels."
+"The OBP60 is always powered via 12V from the boat's electrical system. "
+"Powering it solely via USB-C is not recommended, as the connection is not "
+"secured against accidental disconnection. Cable lengths greater than 1.5 m "
+"should only be used for data transfer and not for power supply, as the "
+"voltage drop across the cables is too high. The maximum cable length is 3 m."
+" For longer distances, you must use active USB repeater cables, which boost "
+"the signal levels."
 
 #: ../../usermanual/bussystems.rst:477 9e3b805939024792a6024e826ab79a4a
 #, fuzzy
 msgid "Abb.: Aktive USB-Verlängerung für 5 m"
-msgstr "Fig.: Active USB extension for 5 m"
+msgstr "Fig.: Active USB extension cable for 5 m"
 
 #: ../../usermanual/bussystems.rst:480 d2cbdf1ad6504a2cbedbba3d084b74ca
 #, fuzzy
@@ -1970,14 +1971,14 @@ msgid ""
 "vermeiden. Beim Betrieb des Laptops nur über seinen eingebauten Akku "
 "entstehen die beschriebenen Probleme nicht."
 msgstr ""
-"In some situations, excessive currents can flow through the non-isolated "
-"USB-C interface, potentially damaging the OBP60. This can happen, for "
-"example, when chargers are connected to the 230V shore power, charging the "
-"on-board battery, and a laptop with a 230V power supply is connected to the "
-"OBP60 via USB-C at the same time. If you intend to use the USB-C connection "
-"permanently for communication on the boat, you should use a USB isolator to "
-"prevent damage. Operating the laptop solely on its built-in battery will not"
-" cause the problems described above."
+"In some situations, impermissible equalizing currents can flow through the "
+"uninsulated USB-C interface and potentially damage the OBP60. This occurs, "
+"for example, when chargers are connected to 230V shore power, charging the "
+"onboard battery, and simultaneously a laptop with a 230V power supply is "
+"connected to the OBP60 via USB-C. If you intend to use the USB-C connection "
+"permanently for communication on board, you should use a USB isolator to "
+"prevent damage. These problems do not occur when the laptop is powered "
+"solely by its built-in battery."
 
 #: ../../usermanual/bussystems.rst:484 d7429813ffe547a9a02db81b3c0c1af9
 #, fuzzy
@@ -1995,10 +1996,10 @@ msgid ""
 "**CN2** versorgt werden."
 msgstr ""
 "However, USB isolators have the disadvantage that they can only supply a "
-"very low current of approximately 150 mA to the OBP60 on their isolated "
-"side. This limits the OBP60's power supply, which can result in functional "
-"impairments. The OBP60 must then be additionally supplied with 12 V as "
-"needed via the **CN2** connector, as described above."
+"very low current of approximately 150 mA to their insulated side towards the"
+" OBP60. This limits the power supply to the OBP60, which can lead to "
+"malfunctions. Depending on the requirements, the OBP60 may then need to be "
+"additionally supplied with 12V via connector **CN2**, as described."
 
 #: ../../usermanual/bussystems.rst:489 56b839ba0a204a97aa73ae753dda256a
 #, fuzzy
@@ -2011,12 +2012,12 @@ msgid ""
 " solche Probleme zu vermeiden, benutzen Sie die Stromversorgung über 12V an "
 "der Anschlussklemme **CN2** oder ein eigenständiges Netzteil mit 5,2 V/2 A."
 msgstr ""
-"When the OBP60 is powered via USB, it may occasionally reboot accidentally "
-"depending on the power consumption. This is often caused by insufficient "
-"power to the USB port or by unsuitable or too long USB cables. Either the "
-"output voltage is not exactly 5V or the current is insufficient. To avoid "
-"such problems, use a 12V power supply at terminal **CN2** or a separate "
-"5.2V/2A power supply."
+"When the OBP60 is powered via USB, it may occasionally reboot unexpectedly "
+"depending on the power consumption. This is often due to insufficient power "
+"supply to the USB port or unsuitable or excessively long USB cables. Either "
+"the output voltage is not exactly 5V or the current is insufficient. To "
+"avoid such problems, use the 12V power supply at terminal **CN2** or a "
+"separate 5.2V/2A power adapter."
 
 #: ../../usermanual/bussystems.rst:491 ad16efee0eb54c43b9208e93ccb57ba9
 #, fuzzy
@@ -2030,8 +2031,8 @@ msgid ""
 "mit weiteren Geräten verwendet werden. Denkbar wären folgende Nutzungs-"
 "Szenarien:"
 msgstr ""
-"The USB-C interface can be used for full-duplex NMEA 0183 communication with"
-" other devices. The following usage scenarios are conceivable:"
+"The USB-C interface can be used for full-duplex NMEA0183 communication with "
+"other devices. The following usage scenarios are conceivable:"
 
 #: ../../usermanual/bussystems.rst:495 53c3262e1f2e4445979ad583656a68ac
 #, fuzzy
@@ -2066,4 +2067,4 @@ msgstr ""
 msgid ""
 "Einspeisung von Simulationsdaten in die Bussysteme mit dem `NMEA-Simulator`_"
 msgstr ""
-"Feeding simulation data into the bus systems with the `NMEA-Simulator`_"
+"Feeding simulation data into the bus systems using the `NMEA-Simulator`_"
