@@ -23,7 +23,7 @@ Es empfiehlt sich, die allererste Inbetriebnahme des Gerätes am Arbeitstisch zu
 So sieht das Gerät von hinten aus:
 
 .. image:: ../pics/Bus_Systems.png
-   :scale: 45%
+   :scale: 45 
 
 Die 12V Versorgung sind die beiden obersten Pins am rechten Anschluß CN2, also .12V und GNDS.
 USB-C wird am ovalen Stecker unterhalb des Anschlusses CN2 angeschlossen.
@@ -33,12 +33,12 @@ Das Gerät braucht für den Betrieb die 12V Versorgung. Ein Testbetrieb am PC nu
 Nach dem Einschalten der Stromversorgung piept das Gerät und zeigt diesen Startbildschirm:
 
 .. image:: ../pics/OBP60_OBP_Logo_tr.png
-    :scale: 20 %
-
+    :scale: 20bp
+    
 Kurz darauf wird ein QR-Code gezeigt, mit dem man sich per Handy direkt mit dem OBP60 verbinden kann. 
 
 .. image:: ../pics/OBP60_QR_Code_tr.png
-    :scale: 20%
+    :scale: 20pt 
 
 Das Gerät spannt ein eigenes WLAN auf. In der Netzwerkliste z.B. auf Android ist ganz unten ein QR-Symbol, darauf klicken und man kann den QR Code scannen, das Handy / Tablet loggt sich dann direkt in das WLAN des OBP60 ein. 
 
