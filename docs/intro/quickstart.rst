@@ -33,12 +33,12 @@ Das Gerät braucht für den Betrieb die 12V Versorgung. Ein Testbetrieb am PC nu
 Nach dem Einschalten der Stromversorgung piept das Gerät und zeigt diesen Startbildschirm:
 
 .. image:: ../pics/OBP60_OBP_Logo_tr.png
-    :scale: 20bp
+    :scale: 20 bp
     
 Kurz darauf wird ein QR-Code gezeigt, mit dem man sich per Handy direkt mit dem OBP60 verbinden kann. 
 
 .. image:: ../pics/OBP60_QR_Code_tr.png
-    :scale: 20pt 
+    :scale: 20 pt 
 
 Das Gerät spannt ein eigenes WLAN auf. In der Netzwerkliste z.B. auf Android ist ganz unten ein QR-Symbol, darauf klicken und man kann den QR Code scannen, das Handy / Tablet loggt sich dann direkt in das WLAN des OBP60 ein. 
 
@@ -51,7 +51,7 @@ Tip: falls das nicht klappt, kann das daran liegen daß auf dem Mobilgerät ein 
 Es sollte sich dann direkt der Status-Bildschirm öffnen:
 
 .. image:: ../pics/Status_1.png
- :scale: 20%
+ :scale: 20 %
 
 Über die Reiter oben auf dem Bildschirm kann man auf weitere Seiten navigieren:
 
