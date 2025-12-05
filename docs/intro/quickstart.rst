@@ -19,7 +19,7 @@ Erste Inbetriebnahme
 Es empfiehlt sich, die allererste Inbetriebnahme des Gerätes am Arbeitstisch zu machen. Man benötigt dafür ein 12V Netzteil. Nützlich sind ein USB-C Kabel, ein Computer und eine NMEA Simulationssoftware.
 
 So sieht das Gerät von hinten aus:
-.. image:: /pics/Bus_Systems.png
+.. image:: ../pics/Bus_Systems.png
              :scale: 50%
 
 Die 12V Versorgung sind die beiden obersten Pins am rechten Anschluß CN2, also .12V und GNDS.
@@ -28,11 +28,11 @@ USB-C wird am ovalen Stecker unterhalb des Anschlusses CN2 angeschlossen.
 Das Gerät braucht für den Betrieb die 12V Versorgung. Ein Testbetrieb am PC nur mit USB-C ist nicht möglich.
 
 Nach dem Einschalten der Stromversorgung piept das Gerät und zeigt diesen Startbildschirm:
-.. image:: /pics/OBP60_OBP_Logo_tr.png
+.. image:: ../pics/OBP60_OBP_Logo_tr.png
              :scale: 50%
 
 Kurz darauf wird ein QR-Code gezeigt, mit dem man sich per Handy direkt mit dem OBP60 verbinden kann. 
-.. image:: /pics/OBP60_QR_Code_tr.png
+.. image:: ../pics/OBP60_QR_Code_tr.png
              :scale: 50%
 
 Das Gerät spannt ein eigenes WLAN auf. In der Netzwerkliste z.B. auf Android ist ganz unten ein QR-Symbol, darauf klicken und man kann den QR Code scannen, das Handy / Tablet loggt sich dann direkt in das WLAN des OBP60 ein. 
@@ -44,7 +44,7 @@ Sobald die Verbindung hergestellt ist, wird die Adresse des OBP60 eingegeben. Di
 Tip: falls das nicht klappt, kann das daran liegen daß auf dem Mobilgerät ein VPN aktiv ist, das also bitte abschalten.
 
 Es sollte sich dann direkt der Status-Bildschirm öffnen:
-.. image:: /pics/Status_1.png
+.. image:: ../pics/Status_1.png
              :scale: 50%
 
 Über die Reiter oben auf dem Bildschirm kann man auf weitere Seiten navigieren:
@@ -75,7 +75,7 @@ Jede der Seiten kann frei mit einem der vielen Layouts belegt werden. Derzeit gi
 Je nach Seite können dann unterschiedliche Daten gezeigt werden. Welche das sind, wird in der Weboberfläche eingestellt. 
 
 Hier ein Beispiel:
-.. image:: /pics/Page0_WindRoseFlex.png
+.. image:: ../pics/Page0_WindRoseFlex.png
                :scale: 50%
 
 In der obersten Zeile wird der Gerätestatus dargestellt. Hier sieht man gerade, daß das Gerät im Access Point Mode ist (AP), Daten über USB empfängt (USB) und daß Wischgesten genutzt werden könnnen (Hand-Symbol). In der Mitte wird die Nummer der aktuellen Seite dargestellt, und rechts die Uhrzeit und welche Zeit das ist - hier Local Time (LOT).
@@ -92,7 +92,7 @@ Um sich mit dem OBP60 vertraut zu machen, ist es sinnvoll es zunächst via USB m
 
 Sobald die Verbindung zur Simulation steht, wird links oben im Display des OBP60 "USB" angezeigt. Die übertragenen Daten erscheinen auf dem Display:
 
-.. image:: /pics/Page4_ThreeValues.png
+.. image:: ../pics/Page4_ThreeValues.png
              :scale: 50%
 
 Gleichzeitig sind sie im Web-Interface eines eingeloggten Mobilgeräts zu sehen
@@ -113,7 +113,7 @@ Montage
 
 Um das Gerät zu montieren, soll es fest auf einer geeigneten Fläche verschraubt werden. Die beiden mitgelieferten Sechskantschrauben werden von innen durchgesteckt und dann das Gehäuse wieder verschraubt. 
 
-.. _Masszeichnung: /_static/files/Drawing_OBP60_V2.pdf
+.. _Masszeichnung: ../_static/files/Drawing_OBP60_V2.pdf
 Die notwendigen Ausschnitte für die Kabel und die beiden Schrauben sind nach der Masszeichnung_ zu erstellen.
 
 Danach die Dichtung auf die Rückseite des Gehäuses aufsetzen, Schrauben durchstecken und festschrauben.
