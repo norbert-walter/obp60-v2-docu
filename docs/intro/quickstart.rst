@@ -23,7 +23,7 @@ Es empfiehlt sich, die allererste Inbetriebnahme des Gerätes am Arbeitstisch zu
 So sieht das Gerät von hinten aus:
 
 .. image:: ../pics/Bus_Systems.png
-             :scale: 20%
+    :scale: 20%
 
 Die 12V Versorgung sind die beiden obersten Pins am rechten Anschluß CN2, also .12V und GNDS.
 USB-C wird am ovalen Stecker unterhalb des Anschlusses CN2 angeschlossen.
@@ -33,12 +33,12 @@ Das Gerät braucht für den Betrieb die 12V Versorgung. Ein Testbetrieb am PC nu
 Nach dem Einschalten der Stromversorgung piept das Gerät und zeigt diesen Startbildschirm:
 
 .. image:: ../pics/OBP60_OBP_Logo_tr.png
-             :scale: 20%
+    :scale: 20%
 
 Kurz darauf wird ein QR-Code gezeigt, mit dem man sich per Handy direkt mit dem OBP60 verbinden kann. 
 
 .. image:: ../pics/OBP60_QR_Code_tr.png
-             :scale: 20%
+    :scale: 20%
 
 Das Gerät spannt ein eigenes WLAN auf. In der Netzwerkliste z.B. auf Android ist ganz unten ein QR-Symbol, darauf klicken und man kann den QR Code scannen, das Handy / Tablet loggt sich dann direkt in das WLAN des OBP60 ein. 
 
@@ -51,7 +51,7 @@ Tip: falls das nicht klappt, kann das daran liegen daß auf dem Mobilgerät ein 
 Es sollte sich dann direkt der Status-Bildschirm öffnen:
 
 .. image:: ../pics/Status_1.png
-             :scale: 20%
+    :scale: 20%
 
 Über die Reiter oben auf dem Bildschirm kann man auf weitere Seiten navigieren:
 
@@ -88,7 +88,7 @@ Je nach Seite können dann unterschiedliche Daten gezeigt werden. Welche das sin
 Hier ein Beispiel:
 
 .. image:: ../pics/Page0_WindRoseFlex.png
-               :scale: 50%
+    :scale: 50%
 
 In der obersten Zeile wird der Gerätestatus dargestellt. Hier sieht man gerade, daß das Gerät im Access Point Mode ist (AP), Daten über USB empfängt (USB) und daß Wischgesten genutzt werden könnnen (Hand-Symbol). In der Mitte wird die Nummer der aktuellen Seite dargestellt, und rechts die Uhrzeit und welche Zeit das ist - hier Local Time (LOT).
 
@@ -106,7 +106,7 @@ Um sich mit dem OBP60 vertraut zu machen, ist es sinnvoll es zunächst via USB m
 Sobald die Verbindung zur Simulation steht, wird links oben im Display des OBP60 "USB" angezeigt. Die übertragenen Daten erscheinen auf dem Display:
 
 .. image:: ../pics/Page4_ThreeValues.png
-             :scale: 50%
+    :scale: 50%
 
 Gleichzeitig sind sie im Web-Interface eines eingeloggten Mobilgeräts zu sehen
 
@@ -120,6 +120,9 @@ Das OBP60 hat keine Anschlußbuchsen für NMEA2000 oder Seatalk NG, sondern Klem
 * 12V: [+] und [-] an die beiden oberen Anschlüsse am Klemmblock CN2
 * NMEA2000: Die Anschlüse CAN H, CAN L und Shield. Die Farbcodierung kann je nach System unterschiedlich sein, bei Raymarine Seatalk NG (das ja auch NMEA2000 ist) ist CAN L Weiss, CAN H blau. Shield ist die Abschirmung des Kabels 
 * NMEA0183: Hier werden die Signalleitungen für A und B sowie Shield (Abschirmung) angeschlossen
+
+.. image:: ../pics/Bus_Systems.png
+    :scale: 20%
 
 Montage
 -----------------------
