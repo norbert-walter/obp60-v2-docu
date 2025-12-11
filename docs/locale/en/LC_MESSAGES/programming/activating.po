@@ -442,7 +442,7 @@ msgstr "Bootloader.bin - ESP32-S3 Bootloader for Firmware"
 #: ../../programming/activating.rst:122 1c4371072d7e46129a2a44a27b150cb5
 #, fuzzy
 msgid "partitions.bin - Partitionstabelle für den Flash Speicher"
-msgstr "Partitions.bin - Partition table for the flash memory"
+msgstr "Partitions.bin - Partition table for flash memory"
 
 #: ../../programming/activating.rst:123 ../../programming/activating.rst:234
 #: 34cbfff30d8243a4a1b6afca4342d6d0 f76ae69634c54cf686a3a7cc114759b6
@@ -595,9 +595,9 @@ msgid ""
 "einrichtet, ist in dieser `Anleitung`_ beschrieben. Sie finden im Internet "
 "auch weitere Beschreibungen zu diesem Thema."
 msgstr ""
-"This document describes how to install Visual Studio Code and then set up "
-"the PlatformIO plugin. You can also find further descriptions on this topic "
-"online."
+"This document `Anleitung`_ describes how to install Visual Studio Code and "
+"then set up the PlatformIO plugin. You can also find further descriptions on"
+" this topic online."
 
 #: ../../programming/activating.rst:155 1dac969054d2401784a04f1fec0df924
 #, fuzzy

@@ -322,8 +322,8 @@ msgid ""
 "In Ihrem konkreten Fall können die IP-Adressen abweichen. Verwenden Sie dann"
 " die IP-Adressen, die den Geräten vom Router zugewiesen worden sind."
 msgstr ""
-"In your specific case, the IP addresses may differ. In that case, use the IP"
-" addresses assigned to the devices by the router."
+"In your specific case, the IP addresses may differ. If so, use the IP "
+"addresses assigned to the devices by the router."
 
 #: ../../usermanual/samples.rst:81 f15c76dbac41446993cd59419ddb9181
 #, fuzzy
