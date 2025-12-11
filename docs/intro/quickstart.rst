@@ -70,7 +70,7 @@ Hier bitte zunächst nichts verändern.
 Anzeigeseiten
 -------------
 
-Das OBP60 kann Daten, die ihm bekannt sind, auf bis zu 10 Anzeigeseiten darstellen. Zwischen den Seiten schaltet man um, indem man entweder über die sechs Tasten unten wischt, oder auf eine der beiden mittleren Tasten klickt. In jedem Fall geht es um eine Seite weiter.
+Das OBP60 kann Daten, die ihm bekannt sind, auf bis zu 10 Anzeigeseiten darstellen. Zwischen den Seiten schaltet man um, indem man entweder über die sechs Tasten unten wischt oder auf eine der beiden mittleren Tasten klickt. In jedem Fall geht es um eine Seite weiter.
 
 Jede der Seiten kann frei mit einem der vielen Layouts belegt werden. Derzeit gibt es zum Beispiel:
 
