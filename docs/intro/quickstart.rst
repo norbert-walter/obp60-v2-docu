@@ -65,7 +65,7 @@ Es sollte sich dann direkt der Status-Bildschirm öffnen:
 Hier bitte zunächst nichts verändern.  
 
 .. hint::
-	Oberhalb der Reiter für die Seiten ist ein farbiger Punkt sichtbar. Wenn der Punkt grün ist, steht die Verbindung, wenn er rot ist ist sie abgerissen. Ein Abreißen der Verbindung ist oft darauf zurückzuführen, dass sich das Mobilgerät auf ein anderes WLAN umgestellt hat. Deshalb ist es ratsam das automatische Wiederherstellen der Wifi-Verbindung zu aktivieren. Wenn noch ein weiteres WLAN aktiv ist, sollte das automatische Wiederherstellen der Verbindung deaktiviert sein. 
+	Oberhalb der Reiter für die Seiten ist ein farbiger Punkt sichtbar. Wenn der Punkt grün ist, steht die Verbindung. Wenn er rot ist, ist sie abgerissen. Ein Abreißen der Verbindung ist oft darauf zurückzuführen, dass sich das Mobilgerät auf ein anderes WLAN umgestellt hat. Deshalb ist es ratsam das automatische Wiederherstellen der Wifi-Verbindung zu aktivieren. Wenn noch ein weiteres WLAN aktiv ist, sollte das automatische Wiederherstellen der Verbindung deaktiviert sein. 
 
 Anzeigeseiten
 -------------
@@ -115,7 +115,7 @@ Für den Normalbetrieb müssen mindestens die 12V Versorgung und ein Netzwerk, a
 Das OBP60 hat keine Anschlussbuchsen für NMEA2000 oder Seatalk NG, sondern Klemmblöcke auf die die Leitungen direkt aufgelegt werden. Um hier den Kontakt herstellen zu können, muss ggf. ein vorhandenes Kabel aufgeschnitten werden. Die einzelnen Adern werden dann an den passenden Klemmblock angeschlossen.
 
 * 12V: [+] und [-] an die beiden oberen Anschlüsse am Klemmblock CN2
-* NMEA2000: Die Anschlüse CAN H, CAN L und Shield. Die Farbcodierung kann je nach System unterschiedlich sein, bei Raymarine Seatalk NG (das ja auch NMEA2000 ist) ist CAN L Weiss, CAN H blau. Shield ist die Abschirmung des Kabels 
+* NMEA2000: Die Anschlüsse CAN H, CAN L und Shield. Die Farbcodierung kann je nach System unterschiedlich sein, bei Raymarine Seatalk NG (das ja auch NMEA2000 ist) ist CAN L weiß, CAN H blau. Shield ist die Abschirmung des Kabels 
 * NMEA0183: Hier werden die Signalleitungen für A und B sowie Shield (Abschirmung) angeschlossen
 
 .. image:: ../pics/Bus_Systems.png
@@ -126,8 +126,8 @@ Montage
 
 Um das Gerät zu montieren, soll es fest auf einer geeigneten Fläche verschraubt werden. Die beiden mitgelieferten Sechskantschrauben werden von innen durchgesteckt und dann das Gehäuse wieder verschraubt. 
 
-.. _Masszeichnung: ../_static/files/Drawing_OBP60_V2.pdf
+Die notwendigen Ausschnitte für die Kabel und die beiden Schrauben sind nach der Maßzeichnung_ zu erstellen.
 
-Die notwendigen Ausschnitte für die Kabel und die beiden Schrauben sind nach der Masszeichnung_ zu erstellen.
+.. _Maßzeichnung: ../_static/files/Drawing_OBP60_V2.pdf
 
 Danach die Dichtung auf die Rückseite des Gehäuses aufsetzen, Schrauben durchstecken und festschrauben.
