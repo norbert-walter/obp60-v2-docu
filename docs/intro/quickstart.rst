@@ -70,7 +70,7 @@ Hier bitte zunächst nichts verändern.
 Anzeigeseiten
 -------------
 
-Das OBP60 kann Daten, die ihm bekannt sind, auf bis zu 10 Anzeigeseiten darstellen. Zwischen den Seiten schaltet man um, indem man entweder über die sechs Tasten unten wischt, oder auf eine der beiden mittleren Tasten clickt. In jedem Fall geht es um eine Seite weiter.
+Das OBP60 kann Daten, die ihm bekannt sind, auf bis zu 10 Anzeigeseiten darstellen. Zwischen den Seiten schaltet man um, indem man entweder über die sechs Tasten unten wischt, oder auf eine der beiden mittleren Tasten klickt. In jedem Fall geht es um eine Seite weiter.
 
 Jede der Seiten kann frei mit einem der vielen Layouts belegt werden. Derzeit gibt es zum Beispiel:
 
@@ -87,7 +87,7 @@ Hier ein Beispiel:
 .. image:: ../pics/Page0_WindRoseFlex.png
  :scale: 50 %
 
-In der obersten Zeile wird der Gerätestatus dargestellt. Hier sieht man, dass das Gerät im Access Point Mode ist (AP), Daten über USB empfängt (USB) und daß Wischgesten genutzt werden können (Hand-Symbol). In der Mitte wird die Nummer der aktuellen Seite dargestellt, und rechts die Uhrzeit und welche Zeit das ist - hier Local Time (LOT).
+In der obersten Zeile wird der Gerätestatus dargestellt. Hier sieht man, dass das Gerät im Access Point Mode ist (AP), Daten über USB empfängt (USB) und dass Wischgesten genutzt werden können (Hand-Symbol). In der Mitte wird die Nummer der aktuellen Seite dargestellt, und rechts die Uhrzeit und welche Zeit das ist - hier Local Time (LOT).
 
 In der Mitte des Bildschirms sieht man die Nutzinformation des aktuellen Bildschirms.
 
