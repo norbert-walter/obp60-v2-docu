@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OBP60 V2 Dokumentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-26 14:37+0000\n"
+"POT-Creation-Date: 2025-12-11 09:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -32,185 +32,190 @@ msgstr "Technical data"
 
 #: ../../index.rst:23
 #, fuzzy
+msgid "Schnellstart"
+msgstr "Quick Start"
+
+#: ../../index.rst:23
+#, fuzzy
 msgid "Einführung"
 msgstr "Introduction"
 
-#: ../../index.rst:31
+#: ../../index.rst:32
 #, fuzzy
 msgid "Funktionsweise"
 msgstr "How it works"
 
-#: ../../index.rst:31
+#: ../../index.rst:32
 #, fuzzy
 msgid "Bedienelemente"
 msgstr "Controls"
 
-#: ../../index.rst:31
+#: ../../index.rst:32
 #, fuzzy
 msgid "Inbetriebnahme"
 msgstr "Commissioning"
 
-#: ../../index.rst:31
+#: ../../index.rst:32
 #, fuzzy
 msgid "Konfiguration"
 msgstr "Configuration"
 
-#: ../../index.rst:31
+#: ../../index.rst:32
 #, fuzzy
 msgid "Bussysteme"
 msgstr "Bus systems"
 
-#: ../../index.rst:31
+#: ../../index.rst:32
 #, fuzzy
 msgid "Datenaustausch"
 msgstr "Data exchange"
 
-#: ../../index.rst:31
+#: ../../index.rst:32
 #, fuzzy
 msgid "Erweiterte Sensorik"
 msgstr "Advanced sensor technology"
 
-#: ../../index.rst:31
+#: ../../index.rst:32
 #, fuzzy
 msgid "Beispielkonfiguration"
 msgstr "Example configuration"
 
-#: ../../index.rst:31
+#: ../../index.rst:32
 #, fuzzy
 msgid "Sicherheitshinweise"
 msgstr "Safety instructions"
 
-#: ../../index.rst:31
+#: ../../index.rst:32
 #, fuzzy
 msgid "Bedienung"
 msgstr "Operation"
 
-#: ../../index.rst:46
+#: ../../index.rst:47
 #, fuzzy
 msgid "Geräteaufbau"
 msgstr "Device setup"
 
-#: ../../index.rst:46
+#: ../../index.rst:47
 #, fuzzy
 msgid "Vorbereitung"
 msgstr "Preparation"
 
-#: ../../index.rst:46
+#: ../../index.rst:47
 #, fuzzy
 msgid "Bauteilliste"
 msgstr "Parts list"
 
-#: ../../index.rst:46
+#: ../../index.rst:47
 #, fuzzy
 msgid "Durchführung"
 msgstr "Implementation"
 
-#: ../../index.rst:46
+#: ../../index.rst:47
 #, fuzzy
 msgid "Funktionstest"
 msgstr "Function test"
 
-#: ../../index.rst:46
+#: ../../index.rst:47
 #, fuzzy
 msgid "Zusammenbau"
 msgstr "Assembly"
 
-#: ../../index.rst:57
+#: ../../index.rst:58
 #, fuzzy
 msgid "Programmierumgebung"
 msgstr "Programming environment"
 
-#: ../../index.rst:57
+#: ../../index.rst:58
 #, fuzzy
 msgid "Seitenerstellung"
 msgstr "Page creation"
 
-#: ../../index.rst:57
+#: ../../index.rst:58
 #, fuzzy
 msgid "Kompilieren und Download"
 msgstr "Compile and download"
 
-#: ../../index.rst:57
+#: ../../index.rst:58
 #, fuzzy
 msgid "Web-Flashtool"
 msgstr "Web-Flashtool"
 
-#: ../../index.rst:57
+#: ../../index.rst:58
 #, fuzzy
 msgid "Programmierung"
 msgstr "Programming"
 
-#: ../../index.rst:67
+#: ../../index.rst:68
 #, fuzzy
 msgid "Fragen und Antworten"
 msgstr "Questions and answers"
 
-#: ../../index.rst:67
+#: ../../index.rst:68
 #, fuzzy
 msgid "Meinungen und Tipps"
 msgstr "Opinions and tips"
 
-#: ../../index.rst:67
+#: ../../index.rst:68
 #, fuzzy
 msgid "Bekannte Fehler"
 msgstr "Known errors"
 
-#: ../../index.rst:67
+#: ../../index.rst:68
 #, fuzzy
 msgid "Technische Unterstützung"
 msgstr "Technical support"
 
-#: ../../index.rst:67
+#: ../../index.rst:68
 #, fuzzy
 msgid "Service"
 msgstr "Service"
 
-#: ../../index.rst:67
+#: ../../index.rst:68
 #, fuzzy
 msgid "Mitarbeit"
 msgstr "Cooperation"
 
-#: ../../index.rst:67
+#: ../../index.rst:68
 #, fuzzy
 msgid "Spenden"
 msgstr "Donate"
 
-#: ../../index.rst:67
+#: ../../index.rst:68
 #, fuzzy
 msgid "Glossar"
 msgstr "Glossary"
 
-#: ../../index.rst:67
+#: ../../index.rst:68
 #, fuzzy
 msgid "Hilfe"
 msgstr "Help"
 
-#: ../../index.rst:3 fce35fa86acc4788826d22f20d8f4be3
+#: ../../index.rst:3 9856f2dc882446ac8c4c6690cb6ea8ef
 #, fuzzy
 msgid "OBP60 V2 Dokumentation"
 msgstr "OBP60 V2 Documentation"
 
-#: ../../index.rst:4 b4d26413238a415a8f2533891235cb67
+#: ../../index.rst:4 56e211424f1a4e518141c49f93d8c29d
 #, fuzzy
 msgid "Letzte Aktualisierung |today|"
 msgstr "Last updated |today|"
 
-#: ../../index.rst:6 0c36811b78494c1f82550dc5c78f0f92
+#: ../../index.rst:6 9edd17728012481caee12469f58bba06
 #, fuzzy
 msgid "Documentation Status"
 msgstr "Documentation Status"
 
-#: ../../index.rst:10 bb61d68a196647058e23e7b9f11e192c
+#: ../../index.rst:10 f37767b447b74ddaa29a37b3fe6ac81e
 #, fuzzy
 msgid "Frage `ChatGPT`_ über diese Seite"
 msgstr "Question `ChatGPT`_ about this page"
 
-#: ../../index.rst:15 5f1a0355dc264278bfd90a4a08cb29fd
+#: ../../index.rst:15 f7fc0d8cb320487299296ed35cb30176
 #, fuzzy
 msgid "Diese Seiten sind noch in Bearbeitung."
 msgstr "These pages are still under construction."
 
-#: ../../index.rst:21 ca38aee2c82f469d83a95cfe4ada2760
+#: ../../index.rst:21 a2bc5bcd53714f8d98e3d9198b23e547
 #, fuzzy
 msgid ""
 "Das Multifunktionsdisplay OBP60 dient zur Anzeige von Daten aus Boots-Netzen"
