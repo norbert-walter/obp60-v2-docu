@@ -761,10 +761,10 @@ msgid ""
 "ist ein weit verbreiteter Standard, der vor allem von vielen älteren Geräten"
 " unterstützt wird."
 msgstr ""
-"NMEA0183 is a standard for serial data transmission in the marine industry. "
-"It defines a format for transmitting information between navigation devices "
-"and other electronic equipment on boats. NMEA0183 is a widely used standard,"
-" supported especially by many older devices."
+"NMEA0183 is a standard for serial data transmission in the maritime "
+"industry. It defines a format for transmitting information between "
+"navigation devices and other electronic equipment on boats. NMEA0183 is a "
+"widely used standard, supported especially by many older devices."
 
 #: ../../usermanual/bussystems.rst:176 aa2c074452f34629bcdabfbcc701f786
 #, fuzzy
@@ -1365,7 +1365,7 @@ msgstr "Data rate 100,000 kbit/s variable"
 #, fuzzy
 msgid ""
 "Stromversorgung von Sensoren und Anzeigegeräten über separate Leitungen"
-msgstr "Power supply for sensors and display devices via separate lines"
+msgstr "Power supply for sensors and display devices via separate lines."
 
 #: ../../usermanual/bussystems.rst:330 bfcedda8b68f4d36bd910f9444d27f46
 #, fuzzy
@@ -1561,7 +1561,7 @@ msgstr ""
 "by the same source. This will result in a loss of communication on all of "
 "the aforementioned bus systems, which can have serious consequences for your"
 " boat's navigation. **Do not** connect ``GND2`` to ``GND`` or ``GNDS``, as "
-"this will compromise the isolation and increase susceptibility to "
+"this will eliminate the isolation and increase susceptibility to "
 "interference."
 
 #: ../../usermanual/bussystems.rst:372 ../../usermanual/bussystems.rst:396
