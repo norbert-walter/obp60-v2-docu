@@ -27,6 +27,7 @@ Das Multifunktionsdisplay OBP60 dient zur Anzeige von Daten aus Boots-Netzen wie
 
    Historie <intro/historie>
    Technische Daten <intro/specification>
+   Schnellstart <intro/quickstart>
    
 .. toctree::
    :maxdepth: 3
