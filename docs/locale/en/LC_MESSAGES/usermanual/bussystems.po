@@ -1365,7 +1365,7 @@ msgstr "Data rate 100,000 kbit/s variable"
 #, fuzzy
 msgid ""
 "Stromversorgung von Sensoren und Anzeigegeräten über separate Leitungen"
-msgstr "Power supply for sensors and display devices via separate lines."
+msgstr "Power supply for sensors and display devices via separate lines"
 
 #: ../../usermanual/bussystems.rst:330 bfcedda8b68f4d36bd910f9444d27f46
 #, fuzzy

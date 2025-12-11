@@ -838,7 +838,7 @@ msgid ""
 msgstr ""
 "Check the autopilot documentation to see if the transmitted NMEA0183 "
 "telegrams can be used for navigation and are sufficient. In some cases, the "
-"autopilot may use different telegrams for course control. If so, the "
+"autopilot may use different telegrams for course control. In that case, the "
 "autopilot cannot be controlled."
 
 #: ../../usermanual/dataexchange.rst:214 d560fecce8a742d7938712ab61a9e075
@@ -1751,10 +1751,10 @@ msgid ""
 "an den Abzweigdosen an. So entstehen im 1Wire-Bussystem nicht ungewollt "
 "lange Stichleitungen."
 msgstr ""
-"If you want to measure temperatures at different points on the boat, create "
-"a backbone with junction boxes and connect the sensors to the junction "
-"boxes. This prevents unintentionally long branch lines in the 1-Wire bus "
-"system."
+"If you want to measure temperatures at different locations on your boat, "
+"create a backbone with junction boxes and connect the sensors to the "
+"junction boxes. This prevents unintentionally long branch lines in the "
+"1-Wire bus system."
 
 #: ../../usermanual/dataexchange.rst:514 f7ceaa384d104a0494de71a805204984
 #, fuzzy
