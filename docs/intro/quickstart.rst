@@ -13,7 +13,7 @@ In der Packung ist bis auf Verbindungskabel alles, was man so braucht um das Ger
 * Dichtung zur wasserdichten Montage an einer glatten Oberfläche
 * Befestigungsschrauben
 * Zwei Klemmblöcke, an die die diversen Kabel angeschlossen werden
-* Zwei Jumper, also Codierstecker, mit denen die NMEA2000 und NMEA183 Terminierung aktiviert werden können.
+* Zwei Jumper als Codierstecker, mit denen die NMEA2000 und NMEA183 Terminierung aktiviert werden können.
 
 Erste Inbetriebnahme
 --------------------
