@@ -1,10 +1,10 @@
 Schnellstart
 ============
 
-Dies Kapitel beschäftigt sich  mit der ersten Inbetriebnahme des OBP60, vom Auspacken bis zum Anzeigen der ersten Daten auf dem Display. Ziel ist es, die erste Inbetriebnahme für Nutzer die sich mit dem Gerät noch  nicht auskennen, möglichst einfach zu machen. 
+Dies Kapitel beschäftigt sich  mit der ersten Inbetriebnahme des OBP60, vom Auspacken bis zum Anzeigen der ersten Daten auf dem Display. Ziel ist es, die erste Inbetriebnahme für Nutzer die sich mit dem Gerät noch nicht auskennen, möglichst einfach zu machen. 
 
 Packungsinhalt
-----------------
+--------------
 
 In der Packung ist bis auf Verbindungskabel alles, was man so braucht um das Gerät zu montieren und anzuschließen:
 
@@ -13,19 +13,19 @@ In der Packung ist bis auf Verbindungskabel alles, was man so braucht um das Ger
 * Dichtung zur wasserdichten Montage an einer glatten Oberfläche
 * Befestigungsschrauben
 * Zwei Klemmblöcke, an die die diversen Kabel angeschlossen werden
-* Zwei Jumper, also Codierstecker, mit denen die NMEA2000 und NMEA183 Terminierung ktiviert werden können.
+* Zwei Jumper, also Codierstecker, mit denen die NMEA2000 und NMEA183 Terminierung aktiviert werden können.
 
 Erste Inbetriebnahme
------------------------
+--------------------
 
-Es empfiehlt sich, die allererste Inbetriebnahme des Gerätes am Arbeitstisch zu machen. Man benötigt dafür ein 12V Netzteil. Nützlich sind ein USB-C Kabel, ein Computer und eine NMEA Simulationssoftware.
+Es empfiehlt sich, die allererste Inbetriebnahme des Gerätes am Arbeitstisch zu machen. Man benötigt dafür ein 12V-Netzteil. Nützlich sind ein USB-C Kabel, ein Computer und eine NMEA Simulationssoftware.
 
 So sieht das Gerät von hinten aus:
 
 .. image:: ../pics/Bus_Systems.png
-   :scale: 20 %
+   :scale: 30 %
 
-Die 12V Versorgung sind die beiden obersten Pins am rechten Anschluß CN2, also .12V und GNDS.
+Die 12V-Versorgung sind die beiden obersten Pins am rechten Anschluß CN2, also .12V und GNDS.
 USB-C wird am ovalen Stecker unterhalb des Anschlusses CN2 angeschlossen.
 
 Das Gerät braucht für den Betrieb die 12V Versorgung. Ein Testbetrieb am PC nur mit USB-C ist nicht möglich.
@@ -33,12 +33,12 @@ Das Gerät braucht für den Betrieb die 12V Versorgung. Ein Testbetrieb am PC nu
 Nach dem Einschalten der Stromversorgung piept das Gerät und zeigt diesen Startbildschirm:
 
 .. image:: ../pics/OBP60_OBP_Logo_tr.png
-    :scale: 20 %
+    :scale: 30 %
     
 Kurz darauf wird ein QR-Code gezeigt, mit dem man sich per Handy direkt mit dem OBP60 verbinden kann. 
 
 .. image:: ../pics/OBP60_QR_Code_tr.png
-    :scale: 20 %
+    :scale: 30 %
 
 Das Gerät spannt ein eigenes WLAN auf. In der Netzwerkliste z.B. auf Android ist ganz unten ein QR-Symbol, darauf klicken und man kann den QR Code scannen, das Handy / Tablet loggt sich dann direkt in das WLAN des OBP60 ein. 
 
@@ -46,7 +46,8 @@ Falls das nicht klappen sollte, bitte das Wifi-Netzwerk mit der ID "OBP60V2" aus
 
 Sobald die Verbindung hergestellt ist, wird die Adresse des OBP60 eingegeben. Die lautet "OBP60V2.local", alternativ kann auch direkt die IP-Adresse "192.168.15.1" eingegeben werden.
 
-Tip: falls das nicht klappt, kann das daran liegen daß auf dem Mobilgerät ein VPN aktiv ist, das also bitte abschalten.
+.. hint::
+	Falls die Verrbindung nicht klappt, kann das daran liegen daß auf dem Mobilgerät ein VPN aktiv ist. Das VPN muss man dann abschalten bzw. umkonfigurieren.
 
 Es sollte sich dann direkt der Status-Bildschirm öffnen:
 
@@ -59,19 +60,15 @@ Es sollte sich dann direkt der Status-Bildschirm öffnen:
 * XDR: Hier können NMEA Telegramme (XDR Sätze) definiert werden, um Daten weiterzugeben für die es kein geeignetes NMEA 183 Telegramm gibt
 * DATA: Zeigt alle Datensätze an, die für das Gerät definiert sind. Wenn es keine realen Daten gibt (z.B. weil NMEA2000 noch nicht angeschlossen ist), werden hier Striche angezeigt. 
 * Update: Erlaubt das Update der Geräte-Firmware. Dazu wird zunächst eine neue Firmware für das OBP60 auf das Mobilgerät heruntergeladen. Danach auf diese "Update" Seite gehen, die Firmware-Datei auf dem Mobilgerät auswählen und durch "Upload" installiert.
-*  Help: Zeigt eine Webseite mit Hilfeinformationen and, sobald das OBP60 Internetzugang hat, z.B. als Client eines LTE Routers. Das muß allerdings zunächst konfiguriert werden.
+*  Help: Zeigt eine Webseite mit Hilfeinformationen an, sobald das OBP60 den Internetzugang hat, z.B. als Client eines LTE Routers. Das muß allerdings zunächst konfiguriert werden.
 
-Hier bitte zunächst nicht verändern.  
+Hier bitte zunächst nichts verändern.  
 
-Tipps zur Verbindung: 
-
-* Oberhalb der Reiter für die Seiten ist ein farbiger Punkt sichtbar. Wenn der grün ist, steht die Verbindung, wenn er rot ist ist sie abgerissen. 
-* Abreißen der Verbindung ist oft darauf zurückzuführen, daß das Mobilgerät auf ein anderes WLAN umgestellt hat. Deshalb:
-Das automatische Wiederherstellen der Wifi-Verbindung sollte aktiviert sein.
-Wenn noch ein weiteres WLAN aktiv ist, sollte das automatische Wiederherstellen der Verbindung dazu deaktiviert sein. 
+.. hint::
+	Oberhalb der Reiter für die Seiten ist ein farbiger Punkt sichtbar. Wenn der Punkt grün ist, steht die Verbindung, wenn er rot ist ist sie abgerissen. Ein Abreißen der Verbindung ist oft darauf zurückzuführen, daß sich das Mobilgerät auf ein anderes WLAN umgestellt hat. Deshalb ist es ratsam das automatische Wiederherstellen der Wifi-Verbindung zu aktivieren. Wenn noch ein weiteres WLAN aktiv ist, sollte das automatische Wiederherstellen der Verbindung deaktiviert sein. 
 
 Anzeigeseiten
------------------
+-------------
 
 Das OBP60 kann Daten, die ihm bekannt sind, auf bis zu 10 Anzeigeseiten darstellen. Zwischen den Seiten schaltet man um, indem man entweder über die sechs Tasten unten wischt, oder auf eine der beiden mittleren Tasten clickt. In jedem Fall geht es um eine Seite weiter.
 
@@ -97,11 +94,11 @@ In der Mitte des Bildschirms sieht man die Nutzinformation des aktuellen Bildsch
 In der untersten Zeile wird angezeigt, wie die Tasten belegt sind. Rechts kann immer die Bildschirmbeleuchtung eingeschaltet werden, die mittleren beiden Tasten sind für die Navigation da. Wischgesten sind auch möglich.
 
 Simulation
------------------
+----------
+
+Um sich mit dem OBP60 vertraut zu machen, ist es sinnvoll es zunächst via USB mit einem Computer zu verbinden, auf dem eine NMEA-Simulation läuft. Geeignet ist z.B. NMEASimulator_ . Den Simulator installieren, dann den USB-Port für NMEA183 im Simulator auswählen und den Computer via USB mit dem OBP60 verbinden. Dann die Simulation via "Run" starten. Gewünschte Werte können im Hauptbildschirm des Simulators eingegeben werden.
 
 .. _NMEASimulator:  http://www.kave.fi/Apps/NMEA-Simulator/NMEA-Simulator.7z
-
-Um sich mit dem OBP60 vertraut zu machen, ist es sinnvoll es zunächst via USB mit einem Computer zu verbinden, auf dem eine NMEA-Simulation läuft. Geeignet ist z.B. NMEASimulator_ . Den Simulator installieren, dann den USB-Port für NMEA183 im Simulator auswählen und den Computer via USB mit dem OBP60 verbinden. Dann die Simulation via "Run" starten. Gewünschte Werte können im Hauptbildschirm des Simulators eingegeben werden. 
 
 Sobald die Verbindung zur Simulation steht, wird links oben im Display des OBP60 "USB" angezeigt. Die übertragenen Daten erscheinen auf dem Display:
 
@@ -122,7 +119,7 @@ Das OBP60 hat keine Anschlußbuchsen für NMEA2000 oder Seatalk NG, sondern Klem
 * NMEA0183: Hier werden die Signalleitungen für A und B sowie Shield (Abschirmung) angeschlossen
 
 .. image:: ../pics/Bus_Systems.png
- :scale: 20 %
+ :scale: 30 %
 
 Montage
 -----------------------
