@@ -712,7 +712,7 @@ Hier ist dargestellt, wie verschiedene Werte dieses Parameters auf ein Signal wi
 Abb.: Dämpfungswirkung bei Ausreißern
 
 .. image:: ../pics/jump.png
-Abb.: Dämfung schneller sprunghafter Änderungen
+Abb.: Dämpfung schneller sprunghafter Änderungen
 
 Die x-Achse der Diagramme zeigt die Zahl der Datenaktualisierungen, d.h. sie ensprechen einer Zeitachse in Sekunden, wenn der Messwert 1x pro Sekunde aktualisiert wird.
 
