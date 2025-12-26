@@ -106,7 +106,7 @@ msgid ""
 "gleichberechtigt verwendet werden."
 msgstr ""
 "Never connect the different ground potentials ``GNDS``, ``GND``, ``GND2`` "
-"and ``Shield`` together! Doing so will negate the insulating and protective "
+"and ``Shield`` together! Doing so will negate the insulation and protective "
 "effect. The ground potentials must not be used interchangeably."
 
 #: ../../usermanual/start.rst:27 38cf1bd534d94a749bb2139c4d873199

@@ -838,7 +838,7 @@ msgid ""
 msgstr ""
 "Check the autopilot documentation to see if the transmitted NMEA0183 "
 "telegrams can be used for navigation and are sufficient. In some cases, the "
-"autopilot may use different telegrams for course control. In that case, the "
+"autopilot may use different telegrams for course control. If so, the "
 "autopilot cannot be controlled."
 
 #: ../../usermanual/dataexchange.rst:214 d560fecce8a742d7938712ab61a9e075
