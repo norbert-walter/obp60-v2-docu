@@ -1,13 +1,16 @@
+
+.. _bedienelemente001:
+
 Bedienelemente
 ==============
 
 .. image:: ../pics/Front_View_Screen.png
-             :scale: 45%
+             :scale: 30%
              
 Statuszeile
 -----------
 
-Die Statuszeile dient zur Anzeige von Statusinformationen. Dazu zählen:
+Die Statuszeile am oberen Rand des Displays dient zur Anzeige von Statusinformationen. Dazu zählen:
 
 **Zustandsanzeige des Access Points**
    * **AP** - Access Point
@@ -19,7 +22,7 @@ Die Statuszeile dient zur Anzeige von Statusinformationen. Dazu zählen:
    * **TCP** - NMEA0183 via TCP (WiFi)
    * **GPS** - GPS-Sensor des OBP60 (Position gefunden)
 
-* Lebenszeichen (pulsierender Punkt)
+* Angezeigte Seite in der Mitte der Statuszeile. Fungiert gleichzeit als Lebenszeichen (pulsierende Seitenzahl)
 * Datum und Uhrzeit (landesspezifisch)
 * Anzeige der Zeitzone
 
@@ -27,17 +30,19 @@ Die Statuszeile dient zur Anzeige von Statusinformationen. Dazu zählen:
    * **LOT** - Lokalzeit
 
 .. image:: ../pics/Header.png
-             :scale: 45%
+             :scale: 30%
 
 Die Statuszeile ist in allen Anzeigeseiten zu sehen, sie zeigt den aktuellen Status des Gerätes an.
 
 .. note::
-   Der Anzeigeinhalt eines E-Paper Displays bleibt beim Ausschalten des Gerätes erhalten. Der pulsierende Punkt in der Statuszeile kennzeichnet das Gerät als aktiv. Sollte der Punkt nicht blinken, so ist die Software inaktiv oder das Gerät wurde ausgeschaltet.
+   Der Anzeigeinhalt eines E-Paper Displays bleibt beim Ausschalten des Gerätes erhalten. Die pulsierende Zahl in der Statuszeile kennzeichnet das Gerät als aktiv. Sollte sie nicht blinken, so ist die Software inaktiv oder das Gerät wurde ausgeschaltet.
    
 Anzeigebereich
 --------------
 
-Im mittleren Bereich befindet sich der Anzeigebereich. Dort werden alle relevanten Informationen angezeigt. Bei jedem Wechsel auf eine neue Seite wird der Inhalt des Anzeigebereichs verändert. Die Aktualisierung des Anzeigebereichs erfolgt jede Sekunde als partieller Bild-Refresh.
+Im der Mitte des Displays befindet sich der Anzeigebereich. Dort werden alle relevanten Informationen angezeigt. Bei jedem Wechsel auf eine neue Seite wird der Inhalt des Anzeigebereichs angepaßt. 
+
+Die Aktualisierung des Anzeigebereichs erfolgt jede Sekunde als partieller Bild-Refresh.
 
 Bedingt durch die E-Paper Technologie sind im Display nach einiger Zeit Geisterbilder von alten Anzeigezuständen zu sehen. Um die Geisterbilder zu entfernen, wird in regelmäßigen Abständen von 10 min ein Voll-Refresh der Anzeige durchgeführt. Dabei wird der komplette Bildinhalt mehrmals invertiert, dann gelöscht und anschließend neu geschrieben. Man erkennt einen Voll-Refresh am kurzen Flackern der Anzeige. Das gleiche passiert 4 Sekunden nach einem Seitenwechsel. Dadurch kann man schnell mehrere Anzeigeseiten nacheinander aufrufen. Erst bei der zuletzt aufgerufenen Seite wird nach 4 Sekunden ein Voll-Refresh durchgeführt, damit werden Geisterbilder alter Anzeigeseiten entfernt. Der regelmäßige Voll-Refresh ist per Default eingestellt und kann bei Bedarf über die Konfiguration deaktiviert werden.
 
@@ -47,19 +52,25 @@ Die Entstehung von Geisterbildern ist von der Display-Temperatur des OBP60 abhä
    Trotz Filter kann es bei extrem hoher Sonneneinstrahlung vorkommen, dass der Kontrast des Display-Inhaltes verloren geht. Schwarze Anzeigebereiche werden dann nur noch grau dargestellt. Das Display ist in dem Fall nicht defekt. Nach einem Voll-Refresh regeneriert sich das Display und der Kontrast wird wieder vollständig hergestellt.
    
 .. important::  
-   Wird das OBP60 nicht benutzt, löschen Sie bitte den Bildschirminhalt und decken das Gerät mit der Schutzkappe ab. So schützen Sie es vor zu großer Sonneneinstrahlung und vor Witterungseinflüssen.
+   Wird das OBP60 nicht benutzt, löschen Sie bitte den Bildschirminhalt und decken das Gerät mit der Schutzkappe ab. So schützen Sie es vor zu starker Sonneneinstrahlung und vor Witterungseinflüssen.
    
 Fußzeile
 ---------
 .. image:: ../pics/Footer.png
-             :scale: 45%
+             :scale: 30%
 
-Die Fußzeile dient zur Bezeichnung der Tastenfunktionen. Die Belegung der Tasten ändert sich abhängig vom Inhalt der Anzeigeseiten. Aktive Tasten sind mit Kurzbezeichnungen in eckigen Klammern versehen wie z.B. ``[AVG]``. Es kann auch Anzeigeseiten geben, die keine Tastenfunktionen enthalten. In der Mitte der Fußzeile werden weitere Informationen eingeblendet:
+Die Fußzeile dient zur Bezeichnung der Tastenfunktionen. 
 
-* ``[ <<<< 1/5 >>>> ]`` - Wischgeste aktiv
-* ``[ Keylock active ]`` - Tasten gesperrt
+Die beiden mittleren und die rechte Taste haben feste, auf allen Seiten gleiche Funktionen:
 
-Sofern die Wischgeste aktiv ist, werden im Infobereich die aktuelle Seite und die Seitenanzahl angezeigt. 
+* Mittlere Tasten: Seitenwechsel. Die linke Taste schaltet eine Seite zurück, die rechte Taste eine Seite vorwärts. Die Seiten werden dabei rollierend behandelt: Sobald die maximale Seitenzahl erreicht wurde, geht es wieder auf Seite 1.   
+* Rechte Taste: Hintergrundbeleuchtung ein/aus
+
+Seitenwechsel können auch durch Wischgesten gemacht werden. 
+
+Im Infobereich die aktuelle Seite und die Seitenanzahl angezeigt. 
+
+Die Belegung der verbleibenden Tasten ändert sich abhängig vom Inhalt der Anzeigeseiten. Aktive Tasten sind mit Kurzbezeichnungen in eckigen Klammern versehen wie z.B. ``[AVG]``. Es kann auch Anzeigeseiten geben, die keine zusätzlichen Tastenfunktionen enthalten. 
 
 Sensor-Tasten
 -------------
@@ -86,7 +97,7 @@ Flash LED
 ---------
 
 .. image:: ../pics/Flash_LED.png
-             :scale: 45%
+             :scale: 30%
 Links oberhalb des Displays befindet sich eine kleine Flash-LED. Diese LED dient zur Signalisierung von Betriebszuständen des OPB60. Die LED kann dabei verschiedene Farben annehmen. Die LED leuchtet mit maximaler Helligkeit, sodass sie optisch auch bei hellen Sonnenlicht gut wahrgenommen werden kann.
 
 * Rot - Alarmierung bei Grenzwertüberschreitung

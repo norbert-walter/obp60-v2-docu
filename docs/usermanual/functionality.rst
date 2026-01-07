@@ -23,7 +23,7 @@ Gateway
 -------
 
 .. image:: ../pics/NMEA_Gateway.png
-             :scale: 20%
+             :scale: 30%
 
 Im OBP60 ist ein Gateway integriert, das Daten zwischen NMEA0183 und NMEA2000 bidirektional austauschen kann. Dabei werden die Daten des einen Busses in die Daten des anderen Busses übersetzt. Die Übersetzung funktioniert dabei in beide Richtungen.
 
@@ -33,12 +33,18 @@ Im OBP60 ist ein Gateway integriert, das Daten zwischen NMEA0183 und NMEA2000 bi
 WiFi-Verbindung
 ---------------
 
-Das OBP60 verfügt über eine WiFi-Funktionalität im 2.4 GHz Funkbereich. Darüber hinaus kann das Gerät mit dem Internet oder mit anderen WiFi-Netzwerken verbunden werden und so mit anderen Geräten kommunizieren. So lassen sich z.B. Daten aus den Bussystemen an einen Laptop, einen PC oder ein Handy übertragen oder von dort beziehen. Damit ist es möglich, die Sensordaten auch in Drittanbieter-Software wie Navionics, NMEA-Remote oder WinGPS zu verwenden.
+Das OBP60 verfügt über eine WiFi-Funktionalität im 2.4 GHz Funkbereich. Darüber ist sowohl die Konfiguration des Gerätes möglich als auch die Datenübertragung. 
+
+Darüber hinaus kann das Gerät mit dem Internet oder mit anderen WiFi-Netzwerken verbunden werden und so mit anderen Geräten kommunizieren. So lassen sich z.B. Daten aus den Bussystemen an einen Laptop, einen PC oder ein Handy übertragen oder von dort beziehen. Damit ist es möglich, die Sensordaten auch in Drittanbieter-Software wie Navionics, NMEA-Remote oder WinGPS zu verwenden.
 
 Konfiguration
 -------------
 
-Das OBP60 hat einen Access Point und einen kleinen Webserver integriert, mit denen das Gerät konfiguriert werden kann. Im Gegensatz zu anderen kommerziellen Geräten erfolgt die Konfiguration des OBP60 ausschließlich webbasiert. Dazu kann z.B. ein Handy benutzt werden. So ist die Konfiguration des Gerätes deutlich einfacher und komfortabler. Im Gerät lassen sich bis zu 10 Anzeigeseiten frei definieren. Der Anwender kann zwischen numerischen und grafischen Anzeigeseiten auswählen. Für jede numerische Anzeigeseite können beliebige Daten der Bussysteme angezeigt werden. Bei den grafischen Anzeigeseiten sind die Dateninhalte vorgegeben, da sie spezielle Funktionalitäten bieten.
+Das OBP60 hat einen Access Point und einen kleinen Webserver integriert, mit denen das Gerät konfiguriert werden kann. 
+
+Im Gegensatz zu anderen kommerziellen Geräten erfolgt die Konfiguration des OBP60 ausschließlich webbasiert. Dazu kann z.B. ein Handy benutzt werden. So ist die Konfiguration des Gerätes deutlich einfacher und komfortabler. 
+
+Im Gerät lassen sich bis zu 10 Anzeigeseiten frei definieren. Der Anwender kann zwischen numerischen und grafischen Anzeigeseiten auswählen. Für jede numerische Anzeigeseite können beliebige Daten der Bussysteme angezeigt werden. Bei den grafischen Anzeigeseiten sind die Dateninhalte vorgegeben, da sie spezielle Funktionalitäten bieten.
 
 Anzeige und Bedienung
 ---------------------
