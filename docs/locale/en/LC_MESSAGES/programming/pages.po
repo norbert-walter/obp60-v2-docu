@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OBP60 V2 Dokumentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-26 14:37+0000\n"
+"POT-Creation-Date: 2025-12-26 22:32+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -20,22 +20,22 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.17.0\n"
 
-#: ../../programming/pages.rst:2 17559dde68964c70abe4bf9b74ac43a3
+#: ../../programming/pages.rst:2 b9a0ca425f4b4b42a0760dc0d00e5cd1
 #, fuzzy
 msgid "Seitenerstellung"
 msgstr "Page creation"
 
-#: ../../programming/pages.rst:4 320f3883fab64901be4f7af6d9529734
+#: ../../programming/pages.rst:4 282f830ca80b499aa3a883bc1141b96c
 #, fuzzy
 msgid "Um eine neue Seite zu erstellen sind folgende Schritte notwendig:"
 msgstr "To create a new page, the following steps are necessary:"
 
-#: ../../programming/pages.rst:6 f43073c40dcc4d18a2bd26332616f8e0
+#: ../../programming/pages.rst:6 15cfa491068640d980e55a2628ba81c8
 #, fuzzy
 msgid "Anlegen einer neuen Seite unter ``lib\\obp60task\\PageXXXX.cpp``"
 msgstr "Creating a new page under ``lib\\obp60task\\PageXXXX.cpp``"
 
-#: ../../programming/pages.rst:7 394f9124285f4407ab6fa12f38bdd4c1
+#: ../../programming/pages.rst:7 790d2dfe87c241b3a715b6304d51f45a
 #, fuzzy
 msgid ""
 "Registrierung der Seite in ``lib\\obp60task\\obp60task.cpp``. Dazu die "
@@ -44,7 +44,7 @@ msgstr ""
 "Register the page in [``lib\\obp60task\\obp60task.cpp``. Extend the function"
 " ``registerAllPages`` accordingly."
 
-#: ../../programming/pages.rst:8 36d2dd74c43542ee804cafe7dc2a9852
+#: ../../programming/pages.rst:8 7ef138769d994cf1a0272678f4f9af4e
 #, fuzzy
 msgid ""
 "In ``/lib/obp60task/config.json`` die neue Seite in die jeweiligen "
@@ -56,7 +56,7 @@ msgstr ""
 "lists or add the page to ``/lib/obp60task/gen_set.py`` and thus recreate the"
 " relevant part of the file ``/lib/obp60task/config.json``."
 
-#: ../../programming/pages.rst:10 3f268640da88473dbfe72fd6a7aa2922
+#: ../../programming/pages.rst:10 6ebdc15aab3e486ba88ddb179dee7c15
 #, fuzzy
 msgid ""
 "Als Vorlage für eine neue Seite kann z.B. die vorhandene Seite *PageWhite* "
@@ -66,3 +66,83 @@ msgstr ""
 "The existing page *PageWhite* can be used as a template for a new page. It "
 "contains only minimal code. In the copied page, you simply need to replace "
 "the text *White* with *Example*."
+
+#: ../../programming/pages.rst:13 45474f0aa51246bcb28ffd5cc0584dad
+#, fuzzy
+msgid "Zugriff auf Daten"
+msgstr "Access to data"
+
+#: ../../programming/pages.rst:15 d792d6abeb5a4e54ae5abbc6ad7bcd07
+#, fuzzy
+msgid ""
+"Für manche Seiten ist im Quellcode fest vorgegeben, welche Werte verwendet "
+"werden:"
+msgstr "For some pages, the source code specifies which values to use:"
+
+#: ../../programming/pages.rst:26 995cdc0564bf41b5b0748360ac5eff8e
+#, fuzzy
+msgid ""
+"Alternativ könenen in der Page Description sowohl feste als auch über die "
+"Web-Oberfläche konfigurierbare Werte angegeben werden. Diese stehen "
+"innerhalb der Seite als ``pageData.values[i]`` zur Verfügung, wobei die Web-"
+"konfigurierbaren Werte vor den fest konfigurierten Werten stehen."
+msgstr ""
+"Alternatively, both fixed values and values configurable via the web "
+"interface can be specified in the page description. These are available "
+"within the page as ``pageData.values[i]``, with the web-configurable values "
+"appearing before the fixed values."
+
+#: ../../programming/pages.rst:49 a886a461a87446afa582587ef3676a08
+#, fuzzy
+msgid "Darstellung von Daten"
+msgstr "Data presentation"
+
+#: ../../programming/pages.rst:51 01d028092b5841d39be4241dda8243fe
+#, fuzzy
+msgid ""
+"Wie die Zeichenketten aus den Rohdaten erzeugt werden, ist in "
+"``OPB60Foramtter.cpp`` festgelegt, wo auch die Umrechungen in verschiedene "
+"Einheiten hinterlegt sind. Folgendermaßen kann zunächst eine eventuell "
+"vorhandene Kalibrierung auf den Wert angewendet werden und dann eine "
+"Zeichenkette in der gewählten Einheiten und nach den ausgewähten "
+"Formatierungsvorgaben erzeugt werden:"
+msgstr ""
+"How the strings are generated from the raw data is defined in "
+"``OPB60Foramtter.cpp``, which also specifies the conversions to different "
+"units. As follows, any existing calibration can first be applied to the "
+"value, and then a string can be generated in the selected units and "
+"according to the chosen formatting specifications:"
+
+#: ../../programming/pages.rst:63 acebbb7e2aa3422f980a0200200afd9c
+#, fuzzy
+msgid ""
+"Zur Darstellung der Werte wird typischerweise eine Schriftart aus der "
+"Familie DSEG7 verwendet. Eine Besonderheit dieser Schriftart ist die Breite "
+"der Zeichen. Leerzeichen, Punkt und Doppelpunkt sind sehr viel schmaler als "
+"die Ziffern. Für eine Ziffer, bei der keins der 7 Segmente angezeigt wird, "
+"wird das Zeichen ``!`` verwendet. So lassen sich auch Abstände erzeugen, die"
+" genau so breit sind wie eine Ziffer. Daher wird in OBB60Formatter bei einer"
+" Darstellung, die 2 Ziffern verwendet (d.h. bei einer Nachkommastelle für "
+"Zahlen unter 10 und 2 Ziffern ohne Nachkommastelle für Zahlen zwischen 10 "
+"und 99) folgendermaßen die Zahl rechtsbündig ausgerichtet:"
+msgstr ""
+"A font from the DSEG7 family is typically used to display the values. A "
+"special feature of this font is the width of its characters. Spaces, "
+"periods, and colons are much narrower than the digits. For a digit where "
+"none of the seven segments are displayed, the character ``!`` is used. This "
+"allows for the creation of spaces that are exactly as wide as a digit. "
+"Therefore, in OBB60Formatter, when displaying values with two digits (i.e., "
+"one decimal place for numbers under 10 and two digits without a decimal "
+"place for numbers between 10 and 99), the number is right-aligned as "
+"follows:"
+
+#: ../../programming/pages.rst:83 3fd39afe248b4b08b514ea0afc9c4c91
+#, fuzzy
+msgid ""
+"Falls auf einer Seite eine andere Schriftart zur Darstellung verwendet "
+"werden soll, muss die Formatierung auf der Seite selbst aus dem Zahlenwert "
+"erfolgen, um die Ausgabe von Ausrufezeichen zu verhindern."
+msgstr ""
+"If a different font is to be used for display on a page, the formatting on "
+"the page itself must be based on the numerical value to prevent the output "
+"of exclamation marks."

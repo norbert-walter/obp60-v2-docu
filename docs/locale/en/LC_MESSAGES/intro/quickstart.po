@@ -1,0 +1,536 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025, Open Boat Projects
+# This file is distributed under the same license as the OBP60 V2
+# Dokumentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: OBP60 V2 Dokumentation\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-12-11 15:27+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../intro/quickstart.rst:2 fd6bb32d261548b29d636845c9fd9c78
+#, fuzzy
+msgid "Schnellstart"
+msgstr "Quick Start"
+
+#: ../../intro/quickstart.rst:4 77de3ace545d4159bed4d1d6b81e83ca
+#, fuzzy
+msgid ""
+"Dies Kapitel beschäftigt sich  mit der ersten Inbetriebnahme des OBP60, vom "
+"Auspacken bis zum Anzeigen der ersten Daten auf dem Display. Ziel ist es, "
+"die erste Inbetriebnahme für Nutzer die sich mit dem Gerät noch nicht "
+"auskennen, möglichst einfach zu machen."
+msgstr ""
+"This chapter deals with the initial setup of the OBP60, from unpacking to "
+"displaying the first data on the screen. The aim is to make the initial "
+"setup as easy as possible for users who are not yet familiar with the "
+"device."
+
+#: ../../intro/quickstart.rst:7 c0f5fed31d814129bee735fb093de964
+#, fuzzy
+msgid "Packungsinhalt"
+msgstr "Package contents"
+
+#: ../../intro/quickstart.rst:9 55d60ca204114216bfc8b5c9e6717d2e
+#, fuzzy
+msgid ""
+"In der Packung ist bis auf Verbindungskabel alles, was man so braucht um das"
+" Gerät zu montieren und anzuschließen:"
+msgstr ""
+"The package contains everything you need to assemble and connect the device,"
+" except for the connecting cable:"
+
+#: ../../intro/quickstart.rst:11 3757804595a44bbbbd99bcb97f27a2ec
+#, fuzzy
+msgid "Das Gerät selbst, das OBP60 Marine Display"
+msgstr "The device itself, the OBP60 Marine Display"
+
+#: ../../intro/quickstart.rst:12 49e8ab6777de4ef98c93a1c85b0b06e4
+#, fuzzy
+msgid "Eine Schutzkappe - wichtig wenn man das Gerät im Freien montiert"
+msgstr ""
+"A protective cap is important if you are mounting the device outdoors."
+
+#: ../../intro/quickstart.rst:13 4753edb599e34e2398a2d9bfde397ce4
+#, fuzzy
+msgid "Dichtung zur wasserdichten Montage an einer glatten Oberfläche"
+msgstr "Seal for watertight mounting on a smooth surface"
+
+#: ../../intro/quickstart.rst:14 13a3ddc6b09b4e17b0cfd605ef055b08
+#, fuzzy
+msgid "Befestigungsschrauben"
+msgstr "Fastening screws"
+
+#: ../../intro/quickstart.rst:15 fc8ef4afdcd142509e73ed7efabb2c51
+#, fuzzy
+msgid "Zwei Klemmblöcke, an die die diversen Kabel angeschlossen werden"
+msgstr "Two terminal blocks to which the various cables are connected."
+
+#: ../../intro/quickstart.rst:16 befed7315fef4038a3ad98b733c61a5f
+#, fuzzy
+msgid ""
+"Zwei Jumper als Codierstecker, mit denen die NMEA2000 und NMEA183 "
+"Terminierung aktiviert werden können."
+msgstr ""
+"Two jumpers as coding plugs, with which the NMEA2000 and NMEA183 termination"
+" can be activated."
+
+#: ../../intro/quickstart.rst:19 6a57d1afcf94489cb0f1c148bd445c8f
+#, fuzzy
+msgid "Erste Inbetriebnahme"
+msgstr "Initial commissioning"
+
+#: ../../intro/quickstart.rst:21 bf5db9806009400385f5a2a0e2abb665
+#, fuzzy
+msgid ""
+"Es empfiehlt sich, die allererste Inbetriebnahme des Gerätes am Arbeitstisch"
+" zu machen. Man benötigt dafür ein 12V-Netzteil. Nützlich sind ein USB-C "
+"Kabel, ein Computer und eine NMEA Simulationssoftware."
+msgstr ""
+"It is recommended to perform the initial setup of the device at your "
+"workbench. A 12V power supply is required. A USB-C cable, a computer, and "
+"NMEA simulation software are also useful."
+
+#: ../../intro/quickstart.rst:23 33d63c7475614247815fbdf105831452
+#, fuzzy
+msgid "So sieht das Gerät von hinten aus:"
+msgstr "This is what the device looks like from the back:"
+
+#: ../../intro/quickstart.rst:28 819ffef8969b49e3a3deb99b150b1d5b
+#, fuzzy
+msgid ""
+"Die 12V-Versorgung sind die beiden obersten Pins am rechten Anschluss CN2, "
+"also .12V und GNDS. USB-C wird am ovalen Stecker unterhalb des Anschlusses "
+"CN2 angeschlossen."
+msgstr ""
+"The 12V power supply is provided by the two uppermost pins on the right-hand"
+" CN2 connector, namely .12V and GNDS. USB-C is connected to the oval "
+"connector below the CN2 connector."
+
+#: ../../intro/quickstart.rst:31 5c0953592ed149158248ab1bdc9ff443
+#, fuzzy
+msgid ""
+"Das Gerät braucht für den Betrieb die 12V Versorgung. Ein Testbetrieb am PC "
+"nur mit USB-C ist nicht möglich."
+msgstr ""
+"The device requires a 12V power supply to operate. Testing via a PC using "
+"only USB-C is not possible."
+
+#: ../../intro/quickstart.rst:33 cb8a318c914c48bf82c404954d1192be
+#, fuzzy
+msgid ""
+"Nach dem Einschalten der Stromversorgung piept das Gerät und zeigt diesen "
+"Startbildschirm:"
+msgstr ""
+"After switching on the power supply, the device beeps and displays this "
+"start screen:"
+
+#: ../../intro/quickstart.rst:38 8d484bc6357f4a0fb67dba5ff2120c20
+#, fuzzy
+msgid ""
+"Kurz darauf wird ein QR-Code gezeigt, mit dem man sich per Handy direkt mit "
+"dem OBP60 verbinden kann."
+msgstr ""
+"Shortly afterwards, a QR code is displayed, which allows you to connect "
+"directly to the OBP60 via your mobile phone."
+
+#: ../../intro/quickstart.rst:43 10a727d8b3f346a28dd24aedecace06e
+#, fuzzy
+msgid ""
+"Das Gerät spannt ein eigenes WLAN auf. In der Netzwerkliste z.B. auf Android"
+" ist ganz unten ein QR-Symbol. Klickt man darauf, kann der QR Code gescannt "
+"werden und das Handy oder Tablett loggt sich dann direkt in das WLAN des "
+"OBP60 ein."
+msgstr ""
+"The device creates its own Wi-Fi network. In the network list, for example "
+"on Android, there is a QR symbol at the very bottom. Clicking on it allows "
+"you to scan the QR code, and the phone or tablet will then connect directly "
+"to the OBP60's Wi-Fi network."
+
+#: ../../intro/quickstart.rst:45 42f7f8e7d6e24088a607d452e91d881d
+#, fuzzy
+msgid ""
+"Falls das nicht klappen sollte, bitte das Wifi-Netzwerk mit der ID "
+"\"OBP60V2\" auswählen und das Standard-Passwort \"esp32nmea2k\" eingeben."
+msgstr ""
+"If that doesn't work, please select the Wi-Fi network with the ID "
+"\"OBP60V2\" and enter the default password \"esp32nmea2k\"."
+
+#: ../../intro/quickstart.rst:47 0d5eb3fa96a2486fa3e0dac2d98cfa77
+#, fuzzy
+msgid ""
+"Sobald die Verbindung hergestellt ist, wird die Adresse des OBP60 "
+"eingegeben. Die lautet \"OBP60V2.local\", alternativ kann auch direkt die "
+"IP-Adresse \"192.168.15.1\" eingegeben werden."
+msgstr ""
+"Once the connection is established, the address of the OBP60 is entered. "
+"This is \"OBP60V2.local\", alternatively, the IP address \"192.168.15.1\" "
+"can be entered directly."
+
+#: ../../intro/quickstart.rst:50 fa1e85015bac414289cfac020ca8deab
+#, fuzzy
+msgid ""
+"Falls die Verbindung nicht klappt, kann das daran liegen, dass auf dem "
+"Mobilgerät ein VPN aktiv ist. Das VPN muss man dann abschalten bzw. "
+"umkonfigurieren."
+msgstr ""
+"If the connection fails, it may be because a VPN is active on the mobile "
+"device. The VPN must then be deactivated or reconfigured."
+
+#: ../../intro/quickstart.rst:52 5d26d84286ba4a5987fa1445351e3554
+#, fuzzy
+msgid "Es sollte sich dann direkt der Status-Bildschirm öffnen:"
+msgstr "The status screen should then open directly:"
+
+#: ../../intro/quickstart.rst:57 980e1d6e983e4b2a8d92f2404223917a
+#, fuzzy
+msgid ""
+"Über die Reiter oben auf dem Bildschirm kann man auf weitere Seiten "
+"navigieren:"
+msgstr ""
+"You can navigate to other pages using the tabs at the top of the screen:"
+
+#: ../../intro/quickstart.rst:59 daebd37c709b4e40bfcd8a0af976f966
+#, fuzzy
+msgid ""
+"Config: Systemeinstellungen und Auswahl der Bildschirme die das OBP60 "
+"anzeigen soll"
+msgstr ""
+"Config: System settings and selection of the screens that the OBP60 should "
+"display."
+
+#: ../../intro/quickstart.rst:60 e77a351393c34f7b8c6cb2133a9216ae
+#, fuzzy
+msgid ""
+"XDR: Hier können NMEA Telegramme (XDR Sätze) definiert werden, um Daten "
+"weiterzugeben für die es kein geeignetes NMEA 183 Telegramm gibt"
+msgstr ""
+"XDR: Here, NMEA telegrams (XDR sentences) can be defined to transmit data "
+"for which there is no suitable NMEA 183 telegram."
+
+#: ../../intro/quickstart.rst:61 31492dad3e8b41c1b0ded48a3827a75f
+#, fuzzy
+msgid ""
+"DATA: Zeigt alle Datensätze an, die für das Gerät definiert sind. Wenn es "
+"keine realen Daten gibt (z.B. weil NMEA2000 noch nicht angeschlossen ist), "
+"werden hier Striche angezeigt."
+msgstr ""
+"DATA: Displays all data records defined for the device. If there is no "
+"actual data (e.g., because NMEA2000 is not yet connected), dashes are "
+"displayed here."
+
+#: ../../intro/quickstart.rst:62 d2363e555288401eb4d53959b85d16e7
+#, fuzzy
+msgid ""
+"Update: Erlaubt das Update der Geräte-Firmware. Dazu wird zunächst eine neue"
+" Firmware für das OBP60 auf das Mobilgerät heruntergeladen. Danach auf diese"
+" \"Update\" Seite gehen, die Firmware-Datei auf dem Mobilgerät auswählen und"
+" durch \"Upload\" installiert."
+msgstr ""
+"Update: Allows device firmware updates. First, download a new firmware file "
+"for the OBP60 to your mobile device. Then, go to this \"Update\" page, "
+"select the firmware file on your mobile device, and install it by clicking "
+"\"Upload\"."
+
+#: ../../intro/quickstart.rst:63 73473e55214e44a4965808d387bd2b51
+#, fuzzy
+msgid ""
+"Help: Zeigt eine Webseite mit Hilfeinformationen an, sobald das OBP60 den "
+"Internetzugang hat, z.B. als Client eines LTE Routers. Das muß allerdings "
+"zunächst konfiguriert werden."
+msgstr ""
+"Help: Displays a webpage with help information as soon as the OBP60 has "
+"internet access, e.g., as a client of an LTE router. This must first be "
+"configured."
+
+#: ../../intro/quickstart.rst:65 a7e1ff7fbd3a4846895dbff5939d5494
+#, fuzzy
+msgid "Hier bitte zunächst nichts verändern."
+msgstr "Please do not change anything here for now."
+
+#: ../../intro/quickstart.rst:68 61e697b48a374ad2a76261a5f248fb95
+#, fuzzy
+msgid ""
+"Oberhalb der Reiter für die Seiten ist ein farbiger Punkt sichtbar. Wenn der"
+" Punkt grün ist, steht die Verbindung. Wenn er rot ist, ist sie abgerissen. "
+"Ein Abreißen der Verbindung ist oft darauf zurückzuführen, dass sich das "
+"Mobilgerät auf ein anderes WLAN umgestellt hat. Deshalb ist es ratsam das "
+"automatische Wiederherstellen der Wifi-Verbindung zu aktivieren. Wenn noch "
+"ein weiteres WLAN aktiv ist, sollte das automatische Wiederherstellen der "
+"Verbindung deaktiviert sein."
+msgstr ""
+"Above the tabs for the pages, a colored dot is visible. If the dot is green,"
+" the connection is established. If it's red, the connection has dropped. A "
+"dropped connection is often due to the mobile device switching to a "
+"different Wi-Fi network. Therefore, it's advisable to enable automatic Wi-Fi"
+" reconnection. If another Wi-Fi network is active, automatic reconnection "
+"should be disabled."
+
+#: ../../intro/quickstart.rst:71 049412f51c85488988ec317bb6b33697
+#, fuzzy
+msgid "Anzeigeseiten"
+msgstr "Display pages"
+
+#: ../../intro/quickstart.rst:73 da6bf5337afc40c5ad7f4db473a70546
+#, fuzzy
+msgid ""
+"Das OBP60 kann Daten, die ihm bekannt sind, auf bis zu 10 Anzeigeseiten "
+"darstellen. Zwischen den Seiten schaltet man um, indem man entweder über die"
+" sechs Tasten unten wischt oder auf eine der beiden mittleren Tasten klickt."
+" In jedem Fall geht es um eine Seite weiter."
+msgstr ""
+"The OBP60 can display data it knows across up to 10 screens. You switch "
+"between screens by either swiping across the six buttons at the bottom or "
+"clicking one of the two middle buttons. In either case, you advance to the "
+"next screen."
+
+#: ../../intro/quickstart.rst:75 20f76732f6344465b6f34a5216adbf96
+#, fuzzy
+msgid ""
+"Jede der Seiten kann frei mit einem der vielen Layouts belegt werden. "
+"Derzeit gibt es zum Beispiel:"
+msgstr ""
+"Each page can be freely assigned one of the many layouts. Currently, for "
+"example, there are:"
+
+#: ../../intro/quickstart.rst:77 d993fe9accb64b15b6f7915c9de06114
+#, fuzzy
+msgid "Seiten mit einem, zwei, drei oder vier Zahlenwerten"
+msgstr "Pages with one, two, three or four numerical values"
+
+#: ../../intro/quickstart.rst:78 446273422d35454483bb08c90dc03cdc
+#, fuzzy
+msgid "Windrose mit vier Zusatzdaten"
+msgstr "Wind rose with four additional data points"
+
+#: ../../intro/quickstart.rst:79 e8d2bc4e5885496a86916c344598d66f
+#, fuzzy
+msgid "Windrose mit Schiffsdarstellung"
+msgstr "Compass rose with ship depiction"
+
+#: ../../intro/quickstart.rst:80 9bbdd2d4d34e42428565b50da1fe9ce1
+#, fuzzy
+msgid "Uhr"
+msgstr "Clock"
+
+#: ../../intro/quickstart.rst:81 37d2a5fa03ff4e46aaca1c35020b2cac
+#, fuzzy
+msgid "Windverlaufs-Grafik"
+msgstr "Wind pattern graph"
+
+#: ../../intro/quickstart.rst:83 1b121e50cae34cf09dabd63a226911bd
+#, fuzzy
+msgid ""
+"Je nach Seite können dann unterschiedliche Daten gezeigt werden. Welche das "
+"sind, wird in der Weboberfläche eingestellt."
+msgstr ""
+"Depending on the page, different data can be displayed. Which data is shown "
+"is configured in the web interface."
+
+#: ../../intro/quickstart.rst:85 694d62300e584cb5b582825a130e5b2a
+#, fuzzy
+msgid "Hier ein Beispiel:"
+msgstr "Here's an example:"
+
+#: ../../intro/quickstart.rst:90 590105b70bc04b04b092f8f342c4d530
+#, fuzzy
+msgid ""
+"In der obersten Zeile wird der Gerätestatus dargestellt. Hier sieht man, "
+"dass das Gerät im Access Point Mode ist (AP), Daten über USB empfängt (USB) "
+"und dass Wischgesten genutzt werden können (Hand-Symbol). In der Mitte wird "
+"die Nummer der aktuellen Seite dargestellt, und rechts die Uhrzeit und "
+"welche Zeit das ist - hier Local Time (LOT)."
+msgstr ""
+"The top line displays the device status. Here you can see that the device is"
+" in Access Point mode (AP), receiving data via USB (USB), and that swipe "
+"gestures can be used (hand icon). The current page number is displayed in "
+"the middle, and the time and its specific time – in this case, Local Time "
+"(LOT) – are shown on the right."
+
+#: ../../intro/quickstart.rst:92 dd9ae7650dfd4f1d895068350ba5a23a
+#, fuzzy
+msgid ""
+"In der Mitte des Bildschirms sieht man die Nutzinformation des aktuellen "
+"Bildschirms."
+msgstr ""
+"The information displayed in the middle of the screen is relevant to the "
+"current screen."
+
+#: ../../intro/quickstart.rst:94 fc075559500e4acf921230c068718449
+#, fuzzy
+msgid ""
+"In der untersten Zeile wird angezeigt, wie die Tasten belegt sind. Rechts "
+"kann immer die Bildschirmbeleuchtung eingeschaltet werden, die mittleren "
+"beiden Tasten sind für die Navigation da. Wischgesten sind auch möglich."
+msgstr ""
+"The bottom line shows how the buttons are assigned. The screen backlight can"
+" always be turned on on the right, and the two middle buttons are for "
+"navigation. Swipe gestures are also possible."
+
+#: ../../intro/quickstart.rst:97 ba2d2581617d45f7ab35e5c24e7cf43e
+#, fuzzy
+msgid "Simulation"
+msgstr "Simulation"
+
+#: ../../intro/quickstart.rst:99 8e4ab68ef3f347efab59b46fb38a6a0f
+#, fuzzy
+msgid ""
+"Um sich mit dem OBP60 vertraut zu machen, ist es sinnvoll es zunächst via "
+"USB mit einem Computer zu verbinden, auf dem eine NMEA-Simulation läuft. "
+"Geeignet ist z.B. NMEASimulator_ . Den Simulator installieren, dann den USB-"
+"Port für NMEA183 im Simulator auswählen und den Computer via USB mit dem "
+"OBP60 verbinden. Dann die Simulation via \"Run\" starten. Gewünschte Werte "
+"können im Hauptbildschirm des Simulators eingegeben werden."
+msgstr ""
+"To familiarize yourself with the OBP60, it's advisable to first connect it "
+"to a computer running an NMEA simulation via USB. NMEASimulator_ is a "
+"suitable example. Install the simulator, then select the USB port for "
+"NMEA183 within the simulator and connect the computer to the OBP60 via USB. "
+"Then start the simulation by clicking \"Run\". Desired values can be entered"
+" on the simulator's main screen."
+
+#: ../../intro/quickstart.rst:103 7bf3954e70f8440c8b6102b3c4f6f89a
+#, fuzzy
+msgid ""
+"Sobald die Verbindung zur Simulation steht, wird links oben im Display des "
+"OBP60 \"USB\" angezeigt. Die übertragenen Daten erscheinen auf dem Display:"
+msgstr ""
+"Once the connection to the simulation is established, \"USB\" will be "
+"displayed in the upper left corner of the OBP60's display. The transferred "
+"data will then appear on the display:"
+
+#: ../../intro/quickstart.rst:108 cd4bc8c1836944b1b03144c40d576d79
+#, fuzzy
+msgid ""
+"Gleichzeitig sind sie im Web-Interface eines eingeloggten Mobilgeräts zu "
+"sehen"
+msgstr ""
+"At the same time, they can be seen in the web interface of a logged-in "
+"mobile device."
+
+#: ../../intro/quickstart.rst:111 d2f604b1b52b451c89fb8fd0ee987996
+#, fuzzy
+msgid "Elektrische Anschlüsse"
+msgstr "Electrical connections"
+
+#: ../../intro/quickstart.rst:113 9a79322039964f3081f899a5cbf6e2dc
+#, fuzzy
+msgid ""
+"Für den Normalbetrieb müssen mindestens die 12V Versorgung und ein Netzwerk,"
+" also NMEA2000 oder NMEA0183, angeschlossen werden."
+msgstr ""
+"For normal operation, at least a 12V power supply and a network, i.e. "
+"NMEA2000 or NMEA0183, must be connected."
+
+#: ../../intro/quickstart.rst:115 8267f76892cf47fab772eb21e1480edc
+#, fuzzy
+msgid ""
+"Das OBP60 hat keine Anschlussbuchsen für NMEA2000 oder Seatalk NG, sondern "
+"Klemmblöcke auf die die Leitungen direkt aufgelegt werden. Um hier den "
+"Kontakt herstellen zu können, muss ggf. ein vorhandenes Kabel aufgeschnitten"
+" werden. Die einzelnen Adern werden dann an den passenden Klemmblock "
+"angeschlossen."
+msgstr ""
+"The OBP60 does not have connectors for NMEA2000 or Seatalk NG, but rather "
+"terminal blocks to which the wires are directly connected. To establish a "
+"connection, an existing cable may need to be cut. The individual wires are "
+"then connected to the appropriate terminal block."
+
+#: ../../intro/quickstart.rst:117 cdf99b90ba6d485a97c281028569a061
+#, fuzzy
+msgid "12V: [+] und [-] an die beiden oberen Anschlüsse am Klemmblock CN2"
+msgstr ""
+"12V: Connect [+] and [-] to the two upper terminals on terminal block CN2"
+
+#: ../../intro/quickstart.rst:118 4c29909e9350410e88069e58e1d72b28
+#, fuzzy
+msgid ""
+"NMEA2000: Die Anschlüsse CAN H, CAN L und Shield. Die Farbcodierung kann je "
+"nach System unterschiedlich sein, bei Raymarine Seatalk NG (das ja auch "
+"NMEA2000 ist) ist CAN L weiß, CAN H blau. Shield ist die Abschirmung des "
+"Kabels"
+msgstr ""
+"NMEA2000: The connections are CAN H, CAN L, and Shield. The color coding can"
+" vary depending on the system; in Raymarine Seatalk NG (which is also "
+"NMEA2000), CAN L is white and CAN H is blue. Shield refers to the cable's "
+"insulation."
+
+#: ../../intro/quickstart.rst:119 74566119ae644a6d85dd149daa8186dc
+#, fuzzy
+msgid ""
+"NMEA0183: Hier werden die Signalleitungen für A und B sowie Shield "
+"(Abschirmung) angeschlossen"
+msgstr ""
+"NMEA0183: This is where the signal lines for A and B as well as the shield "
+"are connected."
+
+#: ../../intro/quickstart.rst:125 0cf7965255214e17b52166d6e7591092
+#, fuzzy
+msgid "Montage"
+msgstr "Montage"
+
+#: ../../intro/quickstart.rst:127 7e458851cef041c89c63e948aadc7d19
+#, fuzzy
+msgid ""
+"Um das Gerät zu montieren, soll es fest auf einer geeigneten Fläche "
+"verschraubt werden. Die beiden mitgelieferten Sechskantschrauben werden von "
+"innen durchgesteckt und dann das Gehäuse wieder verschraubt."
+msgstr ""
+"To mount the device, it should be securely screwed to a suitable surface. "
+"The two included hex screws are inserted from the inside, and then the "
+"housing is screwed back together."
+
+#: ../../intro/quickstart.rst:129 519651c904a54df3a0b3556a2f8784b5
+#, fuzzy
+msgid ""
+"Die notwendigen Ausschnitte für die Kabel und die beiden Schrauben sind nach"
+" der Maßzeichnung_ zu erstellen."
+msgstr ""
+"The necessary cutouts for the cables and the two screws must be made "
+"according to the dimensioned drawing."
+
+#: ../../intro/quickstart.rst:133 419e34403a16446e9467e2d4b4475134
+#, fuzzy
+msgid ""
+"Danach die Dichtung auf die Rückseite des Gehäuses aufsetzen, Schrauben "
+"durchstecken und festschrauben."
+msgstr ""
+"Then place the seal on the back of the housing, insert the screws and "
+"tighten them."
+
+#~ msgid "Tipps zur Verbindung:"
+#~ msgstr "Tips for connecting:"
+
+#~ msgid ""
+#~ "Oberhalb der Reiter für die Seiten ist ein farbiger Punkt sichtbar. Wenn der"
+#~ " grün ist, steht die Verbindung, wenn er rot ist ist sie abgerissen."
+#~ msgstr ""
+#~ "Above the tabs for the pages, a colored dot is visible. If it is green, the "
+#~ "connection is intact; if it is red, it is broken."
+
+#~ msgid ""
+#~ "Abreißen der Verbindung ist oft darauf zurückzuführen, daß das Mobilgerät "
+#~ "auf ein anderes WLAN umgestellt hat. Deshalb:"
+#~ msgstr ""
+#~ "A dropped connection is often due to the mobile device switching to a "
+#~ "different Wi-Fi network. Therefore:"
+
+#~ msgid ""
+#~ "Das automatische Wiederherstellen der Wifi-Verbindung sollte aktiviert sein."
+#~ " Wenn noch ein weiteres WLAN aktiv ist, sollte das automatische "
+#~ "Wiederherstellen der Verbindung dazu deaktiviert sein."
+#~ msgstr ""
+#~ "Automatic Wi-Fi reconnection should be enabled. If another Wi-Fi network is "
+#~ "active, automatic reconnection to that network should be disabled."
