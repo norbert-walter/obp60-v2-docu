@@ -5,28 +5,27 @@ Kompilieren und Download
 
 Die Firmware zum OBP60 kann recht einfach an eigene Bedürfnisse angepasst werden. Als Programmier-Entwicklungsumgebung wird "PlatformIO" verwendet. Der Source-Code befindet sich zentral auf Github im Internet. Alle Software-Revisionen sind dort verfügbar. Es können bei Bedarf aktuelle oder ältere Versionen benutzt werden. Als Betriebssysteme werden Linux, Windows und Mac iOS unterstützt. Zum Kompilieren der Firmware gibt es zwei Möglichkeiten.
 
-	* Verwendung von **Gitpod** (webbasiert in Cloud)
+	* Verwendung von **Github Codespaces** (webbasiert in Cloud)
 	* **Visual Studio Code** mit **PlatformIO** Plugin (lokal auf dem PC)
 	
 .. note::
 	Die Arduino IDE wird nicht als Programmier-Entwicklungsumgebung verwendet, da der Source-Code sehr komplex ist und die Arduino IDE nicht über eine sinnvolle Querverweisfunktion verfügt. Notwendige Tool-Chains und Bibliotheken werden in PlatformIO in der richtigen Version hinzugelinkt und ermöglichen eine fehlerfreie Kompilierung.
 	
-Gitpod
+Github Codespaces
 ------
 
-Gitpod ist eine standartisierte Entwicklungsumgebung, die webbasiert ist und in der Cloud läuft. So ist es möglich, auf jedem Rechner, der über einen aktuellen Webbrowser verfügt, eine Code-Entwicklung durchzuführen ohne spezielle Installation von irgendwelchen Softwarebestandteilen. Zur Benutzung des Dienstes ist eine Anmeldung bei Github notwendig. Die Code-Entwicklungsumgebung in Anlehnung an PlatformIO befindet sich jederzeit in einem aktuellen Zustand. Abhängigkeiten zu externen Bibliotheken werden selbständig aufgelöst und integriert. Das System ist sofort benutzbar und ist besonders für Anfänger geeignet oder für kleine Änderungen, die unterwegs mal schnell durchgeführt werden sollen. Die Benutzung von Gitpod ist in der Free-Variante kostenfrei, unterliegt jedoch einigen Einschränkungen bezüglich der Nutzungszeit und bereitgestellten Rechnerhardware. Aktuell sind 50 Stunden Nutzungszeit pro Monat frei und vollkommen ausreichend für einfache Änderungen. Wer mehr Zeit benötigt oder schnellere Hardware einsetzen möchte, kann den kostenpflichtigen Service von Gitpod nutzen. Weitere Details findet man auf der `Webseite von Gitpod`_.
+Github Codespaces ist eine standartisierte Entwicklungsumgebung, die webbasiert ist und in der Cloud läuft. So ist es möglich, auf jedem Rechner, der über einen aktuellen Webbrowser verfügt, eine Code-Entwicklung durchzuführen ohne spezielle Installation von irgendwelchen Softwarebestandteilen. Zur Benutzung des Dienstes ist eine Anmeldung bei Github notwendig. Die Code-Entwicklungsumgebung in Anlehnung an PlatformIO befindet sich jederzeit in einem aktuellen Zustand. Abhängigkeiten zu externen Bibliotheken werden selbständig aufgelöst und integriert. Das System ist sofort benutzbar und ist besonders für Anfänger geeignet oder für kleine Änderungen, die unterwegs mal schnell durchgeführt werden sollen. Die Benutzung von Github Codespaces ist in der Free-Variante kostenfrei, unterliegt jedoch einigen Einschränkungen bezüglich der Nutzungszeit und bereitgestellten Rechnerhardware. Aktuell sind 120 Stunden Nutzungszeit pro Monat frei und vollkommen ausreichend für einfache Änderungen. Wer mehr Zeit benötigt oder schnellere Hardware einsetzen möchte, kann den kostenpflichtigen Service von Github Codespaces nutzen. Weitere Details findet man auf der `Webseite von Github Codespaces`_.
 
-.. _Webseite von Gitpod: https://www.gitpod.io
 
-**Der Workflow bei Gitpod sieht folgendermaßen aus:**
+.. _Webseite von Github Codespaces: https://github.com/codespaces
+
+**Der Workflow bei Github Codespaces sieht folgendermaßen aus:**
 
 	1. OBP60-Github-Projekt in eigenes Github-Repository forken
-	2. Gitpod-Link zum Projekt öffnen
-	3. In Gitpod Entwicklungsumgebung und Hardware auswählen
-	4. Start eines Containers mit der Entwicklungsumgebung und Download des Projektes aus dem eigenen Github-Repository
-	5. Source-Code in der Entwicklungsumgebung ändern und kompilieren
-	6. Download des Binary-Files
-	7. Aktualisierung der Änderungen im eigenen Github-Repository
+	2. Github Codespaces-Link zum Projekt öffnen
+	3. Source-Code in der Entwicklungsumgebung ändern und kompilieren
+	4. Download des Binary-Files
+	5. Aktualisierung der Änderungen im eigenen Github-Repository
 
    
 Github-Projekt forken
@@ -48,38 +47,24 @@ Melden Sie sich als erstes bei Github an und gehen dann in das `Original-Projekt
 Der Part ``MyAccountName`` wird durch ihren eigenen Accountnamen ersetzt.
 
 
-Gitpod-Link öffnen
+Github Codespaces-Link öffnen
 ^^^^^^^^^^^^^^^^^^
 
-Das Gitpad-Projekt wird über den Repository-Namen des Github-Projekts aufgerufen:
+Das Gitpad-Projekt wird von der  Repository-Seite des eigenen Github-Projekts aufgerufen, über den Button Code -> Codespaces -> Create codespace:
 
-``https://gitpod.io/#https://github.com/norbert-walter/esp32-nmea2000-obp60/tree/master``
+.. image:: ../pics/Codespace_Create.png
+   :scale: 50%
 
-.. hint::
-	Wer eine ganz bestimmte Release-Version kompilieren möchte, benutzt anstatt ``master`` die Nummer der Release-Version wie z.B. ``20250304``. Branches und getaggte Versionen können auf die selbe Weise verwendet werden, indem der Banch- oder Tagname verwendet wird.
+Sie gelangen dann auf die Startseite von Github Codespaces.
 
-Sie gelangen dann auf die Startseite von Gitpod und müssen sich dort anmelden. Loggen Sie sich dort mit dem bereits vorhandenen Github-Account ein.
-
-.. image:: ../pics/Gitpod_Login.png
-   :scale: 40%
-Abb.: Login bei Gitpod mit Github-Account
-
-Gitpod-Settings
-^^^^^^^^^^^^^^^
-
-Danach können Sie die Default-Einstellungen übernehmen. Sie sind schon korrekt auf das Projekt eingestellt.
-
-.. image:: ../pics/Gitpod_New_Workplace.png
-   :scale: 40%
-Abb.: Einstellungen für Gitpod
 
 Container-Start
 ^^^^^^^^^^^^^^^
 
-Nach der Bestätigung der Einstellungen für Gitpod wird ein neuer Docker-Container gestartet, danach werden alle notwendigen Softwarebestandteile automatisch in den Container geladen. Der Vorgang kann etwas Zeit beanspruchen. Am Ende sollten Sie einen fertigen Workplace vorfinden. Der Workplace erscheint im Look & Feel von Visual Studio Code, ist jedoch nicht mit ihm verwandt und in einigen Punkten verschieden. So gibt es z.B. kein IntelliSense und die Anzahl der Plugins ist deutlich geringer als beim Original. Zusätzlich fehlen die Buttons zum Kompilieren und zum Download auf die Zielhardware, sowie der serielle Monitor, wie man das von Visual Studio Code gewohnt ist. Über den Workplace lässt sich der Code verändern, kompilieren und das Binary herunterladen. Der Download des Binarys auf die Zielhardware muss mit externen Tools durchgeführt werden.
+Beim Starten von Github Codespaces wird ein neuer Docker-Container gestartet, danach werden alle notwendigen Softwarebestandteile automatisch in den Container geladen. Der Vorgang kann etwas Zeit beanspruchen. Am Ende sollten Sie einen fertigen Workplace vorfinden. Der Workplace erscheint im Look & Feel von Visual Studio Code, ist jedoch nicht mit ihm verwandt und in einigen Punkten verschieden. So gibt es z.B. kein IntelliSense und die Anzahl der Plugins ist deutlich geringer als beim Original. Zusätzlich fehlen die Buttons zum Kompilieren und zum Download auf die Zielhardware, sowie der serielle Monitor, wie man das von Visual Studio Code gewohnt ist. Über den Workplace lässt sich der Code verändern, kompilieren und das Binary herunterladen. Der Download des Binarys auf die Zielhardware muss mit externen Tools durchgeführt werden.
 
-.. image:: ../pics/Gitpod_Workplace.png
-   :scale: 40%
+.. image:: ../pics/Codespace_Workplace.png
+   :scale: 50%
 Abb.: Fertiger Workplace
 
 Codeänderung und Kompilieren
@@ -95,14 +80,14 @@ Um den Code kompilieren zu können, müssen Sie folgende Befehle nacheinander in
 
 Nach dem zweiten Befehl werden alle notwendigen Tool-Chains und Bibliotheken in den Workplace geladen. Dieser Vorgang kann einige Minuten dauern. Mit dem letzten Befehl beginnt der eigentliche Kompiliervorgang, der ebenfalls einiges an Zeit benötigt. Wenn Sie den Code später geändert haben und erneut kompilieren wollen, so benutzen Sie einfach den letzten Befehl erneut.
 
-.. image:: ../pics/Gitpod_Compile_Project.png
-   :scale: 40%
+.. image:: ../pics/Codespace_Compile_Project.png
+   :scale: 50%
 Abb.: Source-Code kompilieren
 
 Wenn der Kompiliervorgang erfolgreich abgeschlossen ist, sollten Sie die folgende Meldung sehen: 
 
 .. image:: ../pics/Gitpod_Compile_Finish.png
-   :scale: 40%
+   :scale: 50%
 Abb.: Kompilierung beendet
 
 Binary-Download
@@ -112,8 +97,8 @@ Der Binary-Code zur Firmware befindet sich nach dem Kompilieren im Verzeichnis:
 
 	* */ESP32-NMEA2000-OBP60/.pio/build/obp60_s3* (für OBP60)
 
-.. image:: ../pics/Gitpod_Download.png
-   :scale: 40%
+.. image:: ../pics/Codespace_Download.png
+   :scale: 50%
 Abb.: Datei-Download
 
 Dabei haben die Files folgende Bedeutung:
@@ -131,13 +116,13 @@ Je nachdem, ob man mit Default-Einstellungen starten oder mit den alten Einstell
 Source-Code Aktualisierung
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Wer die Source-Code-Änderungen in seinem Github-Repository speichern möchte, kann die Github-Funktionalität des Workplace nutzen. Auf der linken Seite befindet sich ein Icon mit einer Pfadverzweigung und einer kleinen blauen Zahl daran. Dieses Icon teilt dem Benutzer mit, wie viele Änderungen an Dateien durch die Source-Code-Änderungen vorgenommen worden sind. Mit einem Klick auf das Icon kann man eine Beschreibung für die Änderungen hinzufügen. Wenn man dem Dialog rechts am blauen Commit-Button folgt, kann man **Commit und Push** anklicken. Dadurch werden die Code-Änderungen in das eigene Github-Repository hochgeladen und gesichert. Wer später dort weitermachen möchte, wo er zuletzt aufgehört hat, kann der Vorgehensweise ab Punkt 2 folgen und den Gitpod-Link zu seinem Projekt öffnen.
+Wer die Source-Code-Änderungen in seinem Github-Repository speichern möchte, kann die Github-Funktionalität des Workplace nutzen. Auf der linken Seite befindet sich ein Icon mit einer Pfadverzweigung und einer kleinen blauen Zahl daran. Dieses Icon teilt dem Benutzer mit, wie viele Änderungen an Dateien durch die Source-Code-Änderungen vorgenommen worden sind. Mit einem Klick auf das Icon kann man eine Beschreibung für die Änderungen hinzufügen. Wenn man dem Dialog rechts am blauen Commit-Button folgt, kann man **Commit und Push** anklicken. Dadurch werden die Code-Änderungen in das eigene Github-Repository hochgeladen und gesichert. Wer später dort weitermachen möchte, wo er zuletzt aufgehört hat, kann der Vorgehensweise ab Punkt 2 folgen und den Github Codespaces-Link zu seinem Projekt öffnen.
 
 .. hint::
 	Nur mit einem Beschreibungstext zur Codeänderung können Sie die Änderungen committen und nach Github hochladen.
 
-.. image:: ../pics/Gitpod_Commit_Push.png
-   :scale: 40%
+.. image:: ../pics/Codespace_Commit_Push.png
+   :scale: 50%
 Abb.: Source Code auf Github sichern
 
 Visual Studio Code / PlatformIO
