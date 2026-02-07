@@ -18,7 +18,10 @@ In der Packung ist bis auf Verbindungskabel alles, was man so braucht um das Ger
 Erste Inbetriebnahme
 --------------------
 
-Es empfiehlt sich, die allererste Inbetriebnahme des Gerätes am Arbeitstisch zu machen. Man benötigt dafür ein 12V-Netzteil. Nützlich sind ein USB-C Kabel, ein Computer und eine NMEA Simulationssoftware.
+Detailliertere Zusatzinformationen finden Sie im Kapitel :ref:`inbetriebnahme001`. 
+Hier eine kurze Übersicht der ersten Schritte:
+
+Es empfiehlt sich, die allererste Inbetriebnahme des Gerätes am Arbeitstisch zu machen. Man benötigt dafür ein 12V Netzteil. Nützlich sind ein USB-C Kabel, ein Computer und eine NMEA Simulationssoftware.
 
 So sieht das Gerät von hinten aus:
 
@@ -28,7 +31,8 @@ So sieht das Gerät von hinten aus:
 Die 12V-Versorgung sind die beiden obersten Pins am rechten Anschluss CN2, also .12V und GNDS.
 USB-C wird am ovalen Stecker unterhalb des Anschlusses CN2 angeschlossen.
 
-Das Gerät braucht für den Betrieb die 12V Versorgung. Ein Testbetrieb am PC nur mit USB-C ist nicht möglich.
+.. hint::
+	Das Gerät braucht für den Betrieb die 12V Versorgung. Ein Testbetrieb am PC nur mit USB-C ist nicht möglich.
 
 Nach dem Einschalten der Stromversorgung piept das Gerät und zeigt diesen Startbildschirm:
 
@@ -42,7 +46,8 @@ Kurz darauf wird ein QR-Code gezeigt, mit dem man sich per Handy direkt mit dem 
 
 Das Gerät spannt ein eigenes WLAN auf. In der Netzwerkliste z.B. auf Android ist ganz unten ein QR-Symbol. Klickt man darauf, kann der QR Code gescannt werden und das Handy oder Tablett loggt sich dann direkt in das WLAN des OBP60 ein. 
 
-Falls das nicht klappen sollte, bitte das Wifi-Netzwerk mit der ID "OBP60V2" auswählen und das Standard-Passwort "esp32nmea2k" eingeben.
+.. note::
+	Falls das nicht klappen sollte, bitte das Wifi-Netzwerk mit der ID "OBP60V2" auswählen und das Standard-Passwort "esp32nmea2k" eingeben. Später sollte man das Passwort sinnvollerweise ändern.
 
 Sobald die Verbindung hergestellt ist, wird die Adresse des OBP60 eingegeben. Die lautet "OBP60V2.local", alternativ kann auch direkt die IP-Adresse "192.168.15.1" eingegeben werden.
 
@@ -62,15 +67,23 @@ Es sollte sich dann direkt der Status-Bildschirm öffnen:
 * Update: Erlaubt das Update der Geräte-Firmware. Dazu wird zunächst eine neue Firmware für das OBP60 auf das Mobilgerät heruntergeladen. Danach auf diese "Update" Seite gehen, die Firmware-Datei auf dem Mobilgerät auswählen und durch "Upload" installiert.
 *  Help: Zeigt eine Webseite mit Hilfeinformationen an, sobald das OBP60 den Internetzugang hat, z.B. als Client eines LTE Routers. Das muß allerdings zunächst konfiguriert werden.
 
-Hier bitte zunächst nichts verändern.  
+Detaillierte Zusatzinformationen finden Sie im Kapitel :ref:`konfiguration001`. 
+
 
 .. hint::
-	Oberhalb der Reiter für die Seiten ist ein farbiger Punkt sichtbar. Wenn der Punkt grün ist, steht die Verbindung. Wenn er rot ist, ist sie abgerissen. Ein Abreißen der Verbindung ist oft darauf zurückzuführen, dass sich das Mobilgerät auf ein anderes WLAN umgestellt hat. Deshalb ist es ratsam das automatische Wiederherstellen der Wifi-Verbindung zu aktivieren. Wenn noch ein weiteres WLAN aktiv ist, sollte das automatische Wiederherstellen der Verbindung deaktiviert sein. 
+	Oberhalb der Reiter für die Seiten ist ein farbiger Punkt sichtbar. Wenn der grün ist, steht die Verbindung, wenn er rot ist ist sie abgerissen. 
+
+.. hint::
+	Abreißen der Verbindung ist oft darauf zurückzuführen, daß das Mobilgerät auf ein anderes WLAN umgestellt hat. Deshalb sollte das automatische Wiederherstellen der Wifi-Verbindung aktiviert sein. Wenn noch ein weiteres WLAN aktiv ist, sollte das automatische Wiederherstellen der Verbindung dazu deaktiviert sein. 
 
 Anzeigeseiten
 -------------
 
 Das OBP60 kann Daten, die ihm bekannt sind, auf bis zu 10 Anzeigeseiten darstellen. Zwischen den Seiten schaltet man um, indem man entweder über die sechs Tasten unten wischt oder auf eine der beiden mittleren Tasten klickt. In jedem Fall geht es um eine Seite weiter.
+
+
+.. note::
+	Das OBP60 hat ein ePaper Display. Solche Displays haben eine besonders klare Darstellung und geringen Stromverbrauch. Sie haben aber auch die Eigenheit, daß regelmäßig ein sogenannter "Refresh" gemacht werden muß. Deshalb flackert das Display in regelmäßigen Abständen oder nach Seitenwechseln - das ist normal.
 
 Jede der Seiten kann frei mit einem der vielen Layouts belegt werden. Derzeit gibt es zum Beispiel:
 
@@ -85,13 +98,26 @@ Je nach Seite können dann unterschiedliche Daten gezeigt werden. Welche das sin
 Hier ein Beispiel:
 
 .. image:: ../pics/Page0_WindRoseFlex.png
- :scale: 50 %
+ :scale: 80 %
 
 In der obersten Zeile wird der Gerätestatus dargestellt. Hier sieht man, dass das Gerät im Access Point Mode ist (AP), Daten über USB empfängt (USB) und dass Wischgesten genutzt werden können (Hand-Symbol). In der Mitte wird die Nummer der aktuellen Seite dargestellt, und rechts die Uhrzeit und welche Zeit das ist - hier Local Time (LOT).
 
 In der Mitte des Bildschirms sieht man die Nutzinformation des aktuellen Bildschirms.
 
 In der untersten Zeile wird angezeigt, wie die Tasten belegt sind. Rechts kann immer die Bildschirmbeleuchtung eingeschaltet werden, die mittleren beiden Tasten sind für die Navigation da. Wischgesten sind auch möglich.
+
+Detailliertere Zusatzinformationen zu den Seiten die angezeigt werden können finden Sie im Kapitel :ref:`konfiguration002`. 
+
+Bedienung
+-----------------
+
+Das OBP60 hat unter dem Bildschirm sechs Bedientasten - genauer gesagt nicht physische Tasten, sondern berührungssenitive Knöpfe. Die Bedienung mit Wischgesten erfolgen, oder alternativ durch Drücken einzelner Knöpfe.
+
+Für eine Wischgeste mit einem Finger von nach rechts oder umgekehrt über mehrere Knöpfe fahren.
+
+Knopfdrücke erfolgen wie üblich - einfach den Finger kurz auf eine der Tasten legen. Das ist möglich für die Tasten, die oberhalb auf dem Bildschirm ein Symbol zeigen. Die Belegung der Tasten ändert sich abhängig von der angezeigten Seite.
+
+Detailliertere Zusatzinformationen finden Sie im Kapitel :ref:`bedienelemente001`. 
 
 Simulation
 ----------
@@ -103,12 +129,13 @@ Um sich mit dem OBP60 vertraut zu machen, ist es sinnvoll es zunächst via USB m
 Sobald die Verbindung zur Simulation steht, wird links oben im Display des OBP60 "USB" angezeigt. Die übertragenen Daten erscheinen auf dem Display:
 
 .. image:: ../pics/Page4_ThreeValues.png
- :scale: 50 %
+ :scale: 80 %
 
 Gleichzeitig sind sie im Web-Interface eines eingeloggten Mobilgeräts zu sehen
 
 Elektrische Anschlüsse
-----------------------
+-----------------------
+Detailinformationen zu den elektrischen Anschlüssen finden Sie im Kapitel :ref:`stromversorgung001` 
 
 Für den Normalbetrieb müssen mindestens die 12V Versorgung und ein Netzwerk, also NMEA2000 oder NMEA0183, angeschlossen werden. 
 
@@ -131,3 +158,5 @@ Die notwendigen Ausschnitte für die Kabel und die beiden Schrauben sind nach de
 .. _Maßzeichnung: ../_static/files/Drawing_OBP60_V2.pdf
 
 Danach die Dichtung auf die Rückseite des Gehäuses aufsetzen, Schrauben durchstecken und festschrauben.
+
+Weitere Informationen zur Montage des OBP60 finden Sie im Kapitel :ref:`einbau001` 

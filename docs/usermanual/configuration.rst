@@ -1,3 +1,6 @@
+
+..  _konfiguration001:
+
 Konfiguration
 =============
 
@@ -41,23 +44,26 @@ Nachdem Ihr Endgerät im WiFi-Netzwerk eingebucht ist, öffnen Sie in einem Web-
 Status
 ------
 
-Auf der Statusseite sieht man im oberen Bereich den WiFi-Verbindungsstatus.
+Auf der Statusseite sieht man im oberen Bereich den WiFi-Verbindungsstatus. Ein grüner Punkt bedeutet, dass die WiFi-Verbindung aktiv ist. Ein roter Punkt bedeutet, dass keine WiFi-Verbindung besteht.
+
+.. note::
+	Zum besseren Verständnis ist zu beachten, dass das OBP60 ein eigenes, unabhängiges WiFi-Netzwerk aufbaut, diese Funktion wird auch als Access Point bezeichnet. Die Anzahl der TCP-Clients in der Statuszeile **#clients** bezieht sich dabei immer nur auf die Clients, die sich beim OBP60 im Access Point-Modus anmelden. Das OBP60 kann darüber hinaus in ein anderes, externes WiFi-Netzwerk eingebucht werden, indem es sich dort als Client anmeldet. In dem Fall wird das eigene WiFi-Netz des OBP60 mit dem externen WiFi-Netz gebrückt. Alle Daten des OPB60 sind dann in beiden Netzwerken verfügbar. 
 
 .. image:: ../pics/Status_1.png
-             :scale: 60%
+             :scale: 80%
 
-Die Informationen haben folgende Bedeutung:
+Die Informationen im Statusbereich haben folgende Bedeutung:
 
 **Version**
 	Aktuelle Firmware-Version
 **Access Point IP**
-	IP-Adresse des Access Points
+	IP-Adresse des Access Points (wenn das OBP60)
 **WiFi Client connected**
 	Zeigt an, ob das OBP60 mit einem anderen externen WiFi-Netzwerk als Client verbunden ist
 **WiFi Client IP**
-    IP-Adresse, die dem OBP60 zugewiesen wurde
+    IP-Adresse, die dem OBP60 zugewiesen wurde (wenn das OBP60 als WiFi-Client verbunden ist)
 **#clients**
-	Anzahl der Clients, die sich mit dem OBP60 verbunden haben
+	Anzahl der Clients, die sich mit dem OBP60 als Server über dessen Access Point verbunden haben
 **TCP client connected**
 	Hier wird der Verbindungsstatus des OBP60 angezeigt. false = OBP60 ist nicht als TCP-Client mit einem anderen Gerät verbunden. true = OBP60 ist als TCP-Client mit einem anderen Gerät verbunden.
 **TCP client error**
@@ -70,24 +76,25 @@ Die Informationen haben folgende Bedeutung:
 	Anzahl der NMEA2000-Telegramme, die empfangen wurden
 **NMEA2000 out**
 	Anzahl der NMEA2000-Telegramme, die gesendet wurden
-**TCP in**
-	Anzahl der NMEA0183-Telegramme, die über TCP empfangen wurden
-**TCP out**
-	Anzahl der NMEA0183-Telegramme, die über TCP gesendet wurden
 **USB in**
 	Anzahl der NMEA0183-Telegramme, die über USB empfangen wurden
 **USB out**
-	Anzahl der NMEA0183-Telegramme, die über USB gesendet wurden
+	Anzahl der NMEA0183-Telegramme, die über USB gesendet wurden    
+**TCPServer in**
+	Anzahl der NMEA0183-Telegramme, die über TCP empfangen wurden
+**TCPServer out**
+	Anzahl der NMEA0183-Telegramme, die über TCP gesendet wurden
 **Serial in**
 	Anzahl der NMEA0183-Telegramme, die über RS485 empfangen wurden
-**Serial out**
-	Anzahl der NMEA0183-Telegramme, die über RS485 gesendet wurden
+**TCPClient out**
+	Anzahl der Telegramme, die durch das OBP60 als TCP Client gesendet wurden
+**TCPClient in**
+	Anzahl der Telegramme, die durch das OBP60 als TCP Client empfangen wurden
 
 Wenn Sie auf das Fragezeichen hinter **Version** klicken, werden alle Telegramme angezeigt, die das OBP60 verarbeiten kann. Detailliertere Informationen zu den empfangenen Telegrammen sehen Sie, wenn Sie die Zeile des jeweiligen Bussystems aufklappen. Im Anhang finden Sie eine Tabelle mit allen NMEA0183- und NMEA2000-Telegrammen, die verarbeitet werden können.
-
-.. note::
-	Zum besseren Verständnis ist zu beachten, dass das OBP60 ein eigenes, unabhängiges WiFi-Netzwerk aufbaut, diese Funktion wird auch als Access Point bezeichnet. Die Anzahl der TCP-Clients in der Statuszeile **#clients** bezieht sich dabei immer nur auf die Clients, die sich beim OBP60 im Access Point-Modus anmelden. Das OBP60 kann darüber hinaus in ein anderes, externes WiFi-Netzwerk eingebucht werden, indem es sich dort als Client anmeldet. In dem Fall wird das eigene WiFi-Netz des OBP60 mit dem externen WiFi-Netz gebrückt. Alle Daten des OPB60 sind dann in beiden Netzwerken verfügbar. 
 	
+..  _konfiguration002:
+
 Config
 ------
 
@@ -96,12 +103,12 @@ Die Konfigurationsseite unterteilt sich in zwei Bereiche. Die Firmware basiert a
 **Konfiguration zum NMEA2000-Gateway**
 
 .. image:: ../pics/Config_1.png
-             :scale: 60%
+             :scale: 80%
              
 Abb.: Konfiguration zum NMEA2000-Gateway
 
 .. image:: ../pics/Config_2.png
-             :scale: 60%
+             :scale: 80%
              
 Abb.: Konfiguration zur OBP60-Hardware
 

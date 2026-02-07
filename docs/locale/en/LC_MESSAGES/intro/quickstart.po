@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OBP60 V2 Dokumentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-11 15:27+0000\n"
+"POT-Creation-Date: 2026-01-07 16:20+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -20,12 +20,12 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.17.0\n"
 
-#: ../../intro/quickstart.rst:2 fd6bb32d261548b29d636845c9fd9c78
+#: ../../intro/quickstart.rst:2 53b9f3bf44e7459abac5a30d711ba6f0
 #, fuzzy
 msgid "Schnellstart"
 msgstr "Quick Start"
 
-#: ../../intro/quickstart.rst:4 77de3ace545d4159bed4d1d6b81e83ca
+#: ../../intro/quickstart.rst:4 f58c0d28182b437eb3e7c8419ea9f74c
 #, fuzzy
 msgid ""
 "Dies Kapitel beschäftigt sich  mit der ersten Inbetriebnahme des OBP60, vom "
@@ -38,12 +38,12 @@ msgstr ""
 "setup as easy as possible for users who are not yet familiar with the "
 "device."
 
-#: ../../intro/quickstart.rst:7 c0f5fed31d814129bee735fb093de964
+#: ../../intro/quickstart.rst:7 df140b387ed94f23a481e8496f414a77
 #, fuzzy
 msgid "Packungsinhalt"
 msgstr "Package contents"
 
-#: ../../intro/quickstart.rst:9 55d60ca204114216bfc8b5c9e6717d2e
+#: ../../intro/quickstart.rst:9 38c793f312864948a1a204064d1bc4da
 #, fuzzy
 msgid ""
 "In der Packung ist bis auf Verbindungskabel alles, was man so braucht um das"
@@ -52,33 +52,33 @@ msgstr ""
 "The package contains everything you need to assemble and connect the device,"
 " except for the connecting cable:"
 
-#: ../../intro/quickstart.rst:11 3757804595a44bbbbd99bcb97f27a2ec
+#: ../../intro/quickstart.rst:11 6a9bdaef6b374544a3cf22e4f6e968bb
 #, fuzzy
 msgid "Das Gerät selbst, das OBP60 Marine Display"
 msgstr "The device itself, the OBP60 Marine Display"
 
-#: ../../intro/quickstart.rst:12 49e8ab6777de4ef98c93a1c85b0b06e4
+#: ../../intro/quickstart.rst:12 faa67d950df4403280b4cf7ebcf56e47
 #, fuzzy
 msgid "Eine Schutzkappe - wichtig wenn man das Gerät im Freien montiert"
 msgstr ""
 "A protective cap is important if you are mounting the device outdoors."
 
-#: ../../intro/quickstart.rst:13 4753edb599e34e2398a2d9bfde397ce4
+#: ../../intro/quickstart.rst:13 a4bdafd655a8418e8d9b584519f6834e
 #, fuzzy
 msgid "Dichtung zur wasserdichten Montage an einer glatten Oberfläche"
 msgstr "Seal for watertight mounting on a smooth surface"
 
-#: ../../intro/quickstart.rst:14 13a3ddc6b09b4e17b0cfd605ef055b08
+#: ../../intro/quickstart.rst:14 bca457d110bb496e83fa7596cfc3e445
 #, fuzzy
 msgid "Befestigungsschrauben"
 msgstr "Fastening screws"
 
-#: ../../intro/quickstart.rst:15 fc8ef4afdcd142509e73ed7efabb2c51
+#: ../../intro/quickstart.rst:15 506a30ade56a4c78b01a120312912f30
 #, fuzzy
 msgid "Zwei Klemmblöcke, an die die diversen Kabel angeschlossen werden"
 msgstr "Two terminal blocks to which the various cables are connected."
 
-#: ../../intro/quickstart.rst:16 befed7315fef4038a3ad98b733c61a5f
+#: ../../intro/quickstart.rst:16 924d9396171041db8063af4685c196a9
 #, fuzzy
 msgid ""
 "Zwei Jumper als Codierstecker, mit denen die NMEA2000 und NMEA183 "
@@ -87,28 +87,37 @@ msgstr ""
 "Two jumpers as coding plugs, with which the NMEA2000 and NMEA183 termination"
 " can be activated."
 
-#: ../../intro/quickstart.rst:19 6a57d1afcf94489cb0f1c148bd445c8f
+#: ../../intro/quickstart.rst:19 c124ea754c7340889e2f5cf624ac9a7c
 #, fuzzy
 msgid "Erste Inbetriebnahme"
 msgstr "Initial commissioning"
 
-#: ../../intro/quickstart.rst:21 bf5db9806009400385f5a2a0e2abb665
+#: ../../intro/quickstart.rst:21 078463d2793c4183b7dbdccffe557701
+#, fuzzy
+msgid ""
+"Detailliertere Zusatzinformationen finden Sie im Kapitel "
+":ref:`inbetriebnahme001`. Hier eine kurze Übersicht der ersten Schritte:"
+msgstr ""
+"More detailed additional information can be found in the chapter "
+":ref:`inbetriebnahme001`. Here is a brief overview of the first steps:"
+
+#: ../../intro/quickstart.rst:24 864be7c4d48449f6abbe553b0fc4ad20
 #, fuzzy
 msgid ""
 "Es empfiehlt sich, die allererste Inbetriebnahme des Gerätes am Arbeitstisch"
-" zu machen. Man benötigt dafür ein 12V-Netzteil. Nützlich sind ein USB-C "
+" zu machen. Man benötigt dafür ein 12V Netzteil. Nützlich sind ein USB-C "
 "Kabel, ein Computer und eine NMEA Simulationssoftware."
 msgstr ""
 "It is recommended to perform the initial setup of the device at your "
 "workbench. A 12V power supply is required. A USB-C cable, a computer, and "
 "NMEA simulation software are also useful."
 
-#: ../../intro/quickstart.rst:23 33d63c7475614247815fbdf105831452
+#: ../../intro/quickstart.rst:26 d132eb46868b4297803fb28d66add236
 #, fuzzy
 msgid "So sieht das Gerät von hinten aus:"
 msgstr "This is what the device looks like from the back:"
 
-#: ../../intro/quickstart.rst:28 819ffef8969b49e3a3deb99b150b1d5b
+#: ../../intro/quickstart.rst:31 4d5d0e58f035454daad064ed1874fd38
 #, fuzzy
 msgid ""
 "Die 12V-Versorgung sind die beiden obersten Pins am rechten Anschluss CN2, "
@@ -119,7 +128,7 @@ msgstr ""
 " CN2 connector, namely .12V and GNDS. USB-C is connected to the oval "
 "connector below the CN2 connector."
 
-#: ../../intro/quickstart.rst:31 5c0953592ed149158248ab1bdc9ff443
+#: ../../intro/quickstart.rst:35 a08048994ad6412896c7b9ddccda0a31
 #, fuzzy
 msgid ""
 "Das Gerät braucht für den Betrieb die 12V Versorgung. Ein Testbetrieb am PC "
@@ -128,7 +137,7 @@ msgstr ""
 "The device requires a 12V power supply to operate. Testing via a PC using "
 "only USB-C is not possible."
 
-#: ../../intro/quickstart.rst:33 cb8a318c914c48bf82c404954d1192be
+#: ../../intro/quickstart.rst:37 9a2469c991504cbeb64a554d781086f4
 #, fuzzy
 msgid ""
 "Nach dem Einschalten der Stromversorgung piept das Gerät und zeigt diesen "
@@ -137,7 +146,7 @@ msgstr ""
 "After switching on the power supply, the device beeps and displays this "
 "start screen:"
 
-#: ../../intro/quickstart.rst:38 8d484bc6357f4a0fb67dba5ff2120c20
+#: ../../intro/quickstart.rst:42 3c938a7cfd394c0a910d21f05bee81fc
 #, fuzzy
 msgid ""
 "Kurz darauf wird ein QR-Code gezeigt, mit dem man sich per Handy direkt mit "
@@ -146,7 +155,7 @@ msgstr ""
 "Shortly afterwards, a QR code is displayed, which allows you to connect "
 "directly to the OBP60 via your mobile phone."
 
-#: ../../intro/quickstart.rst:43 10a727d8b3f346a28dd24aedecace06e
+#: ../../intro/quickstart.rst:47 724d2452ed044cf09fd71f37288036cf
 #, fuzzy
 msgid ""
 "Das Gerät spannt ein eigenes WLAN auf. In der Netzwerkliste z.B. auf Android"
@@ -159,16 +168,18 @@ msgstr ""
 "you to scan the QR code, and the phone or tablet will then connect directly "
 "to the OBP60's Wi-Fi network."
 
-#: ../../intro/quickstart.rst:45 42f7f8e7d6e24088a607d452e91d881d
+#: ../../intro/quickstart.rst:50 e6a15809bd2d4778ba3e14b41ef3537c
 #, fuzzy
 msgid ""
 "Falls das nicht klappen sollte, bitte das Wifi-Netzwerk mit der ID "
-"\"OBP60V2\" auswählen und das Standard-Passwort \"esp32nmea2k\" eingeben."
+"\"OBP60V2\" auswählen und das Standard-Passwort \"esp32nmea2k\" eingeben. "
+"Später sollte man das Passwort sinnvollerweise ändern."
 msgstr ""
 "If that doesn't work, please select the Wi-Fi network with the ID "
-"\"OBP60V2\" and enter the default password \"esp32nmea2k\"."
+"\"OBP60V2\" and enter the default password \"esp32nmea2k\". It's advisable "
+"to change the password later."
 
-#: ../../intro/quickstart.rst:47 0d5eb3fa96a2486fa3e0dac2d98cfa77
+#: ../../intro/quickstart.rst:52 ad73eda81b2b49de8a1553ce6e663d20
 #, fuzzy
 msgid ""
 "Sobald die Verbindung hergestellt ist, wird die Adresse des OBP60 "
@@ -179,7 +190,7 @@ msgstr ""
 "This is \"OBP60V2.local\", alternatively, the IP address \"192.168.15.1\" "
 "can be entered directly."
 
-#: ../../intro/quickstart.rst:50 fa1e85015bac414289cfac020ca8deab
+#: ../../intro/quickstart.rst:55 9b61ad3e6b7e44d6b26e90597123745d
 #, fuzzy
 msgid ""
 "Falls die Verbindung nicht klappt, kann das daran liegen, dass auf dem "
@@ -189,12 +200,12 @@ msgstr ""
 "If the connection fails, it may be because a VPN is active on the mobile "
 "device. The VPN must then be deactivated or reconfigured."
 
-#: ../../intro/quickstart.rst:52 5d26d84286ba4a5987fa1445351e3554
+#: ../../intro/quickstart.rst:57 b02316401cb34b5f97f521a7584a1ff6
 #, fuzzy
 msgid "Es sollte sich dann direkt der Status-Bildschirm öffnen:"
 msgstr "The status screen should then open directly:"
 
-#: ../../intro/quickstart.rst:57 980e1d6e983e4b2a8d92f2404223917a
+#: ../../intro/quickstart.rst:62 94ff32df44f54058a06381580aef59cc
 #, fuzzy
 msgid ""
 "Über die Reiter oben auf dem Bildschirm kann man auf weitere Seiten "
@@ -202,7 +213,7 @@ msgid ""
 msgstr ""
 "You can navigate to other pages using the tabs at the top of the screen:"
 
-#: ../../intro/quickstart.rst:59 daebd37c709b4e40bfcd8a0af976f966
+#: ../../intro/quickstart.rst:64 bbd5b241e10a4c76a7fb9b83d294474d
 #, fuzzy
 msgid ""
 "Config: Systemeinstellungen und Auswahl der Bildschirme die das OBP60 "
@@ -211,7 +222,7 @@ msgstr ""
 "Config: System settings and selection of the screens that the OBP60 should "
 "display."
 
-#: ../../intro/quickstart.rst:60 e77a351393c34f7b8c6cb2133a9216ae
+#: ../../intro/quickstart.rst:65 1e17e72d31be40a5bccc3a582cf6fe58
 #, fuzzy
 msgid ""
 "XDR: Hier können NMEA Telegramme (XDR Sätze) definiert werden, um Daten "
@@ -220,7 +231,7 @@ msgstr ""
 "XDR: Here, NMEA telegrams (XDR sentences) can be defined to transmit data "
 "for which there is no suitable NMEA 183 telegram."
 
-#: ../../intro/quickstart.rst:61 31492dad3e8b41c1b0ded48a3827a75f
+#: ../../intro/quickstart.rst:66 ea978bd32e1c4806bbcb3ff6023cb48d
 #, fuzzy
 msgid ""
 "DATA: Zeigt alle Datensätze an, die für das Gerät definiert sind. Wenn es "
@@ -231,7 +242,7 @@ msgstr ""
 "actual data (e.g., because NMEA2000 is not yet connected), dashes are "
 "displayed here."
 
-#: ../../intro/quickstart.rst:62 d2363e555288401eb4d53959b85d16e7
+#: ../../intro/quickstart.rst:67 1fb8e2e7484b4c3b9bb4d17c4439b63c
 #, fuzzy
 msgid ""
 "Update: Erlaubt das Update der Geräte-Firmware. Dazu wird zunächst eine neue"
@@ -244,7 +255,7 @@ msgstr ""
 "select the firmware file on your mobile device, and install it by clicking "
 "\"Upload\"."
 
-#: ../../intro/quickstart.rst:63 73473e55214e44a4965808d387bd2b51
+#: ../../intro/quickstart.rst:68 dade76909573489aa21cc9dcd7141196
 #, fuzzy
 msgid ""
 "Help: Zeigt eine Webseite mit Hilfeinformationen an, sobald das OBP60 den "
@@ -255,35 +266,44 @@ msgstr ""
 "internet access, e.g., as a client of an LTE router. This must first be "
 "configured."
 
-#: ../../intro/quickstart.rst:65 a7e1ff7fbd3a4846895dbff5939d5494
+#: ../../intro/quickstart.rst:70 3b1af86676a84eac94df1ae4c03271c8
 #, fuzzy
-msgid "Hier bitte zunächst nichts verändern."
-msgstr "Please do not change anything here for now."
+msgid ""
+"Detaillierte Zusatzinformationen finden Sie im Kapitel "
+":ref:`konfiguration001`."
+msgstr ""
+"Detailed additional information can be found in the chapter "
+":ref:`konfiguration001`."
 
-#: ../../intro/quickstart.rst:68 61e697b48a374ad2a76261a5f248fb95
+#: ../../intro/quickstart.rst:74 6f59d7998e7240499762c9fb4ab6a6e2
 #, fuzzy
 msgid ""
 "Oberhalb der Reiter für die Seiten ist ein farbiger Punkt sichtbar. Wenn der"
-" Punkt grün ist, steht die Verbindung. Wenn er rot ist, ist sie abgerissen. "
-"Ein Abreißen der Verbindung ist oft darauf zurückzuführen, dass sich das "
-"Mobilgerät auf ein anderes WLAN umgestellt hat. Deshalb ist es ratsam das "
-"automatische Wiederherstellen der Wifi-Verbindung zu aktivieren. Wenn noch "
-"ein weiteres WLAN aktiv ist, sollte das automatische Wiederherstellen der "
-"Verbindung deaktiviert sein."
+" grün ist, steht die Verbindung, wenn er rot ist ist sie abgerissen."
 msgstr ""
-"Above the tabs for the pages, a colored dot is visible. If the dot is green,"
-" the connection is established. If it's red, the connection has dropped. A "
-"dropped connection is often due to the mobile device switching to a "
-"different Wi-Fi network. Therefore, it's advisable to enable automatic Wi-Fi"
-" reconnection. If another Wi-Fi network is active, automatic reconnection "
-"should be disabled."
+"Above the tabs for the pages, a colored dot is visible. If it is green, the "
+"connection is intact; if it is red, it is broken."
 
-#: ../../intro/quickstart.rst:71 049412f51c85488988ec317bb6b33697
+#: ../../intro/quickstart.rst:77 83be88f17a9e47baa5c168744cd97a27
+#, fuzzy
+msgid ""
+"Abreißen der Verbindung ist oft darauf zurückzuführen, daß das Mobilgerät "
+"auf ein anderes WLAN umgestellt hat. Deshalb sollte das automatische "
+"Wiederherstellen der Wifi-Verbindung aktiviert sein. Wenn noch ein weiteres "
+"WLAN aktiv ist, sollte das automatische Wiederherstellen der Verbindung dazu"
+" deaktiviert sein."
+msgstr ""
+"A dropped connection is often due to the mobile device switching to a "
+"different Wi-Fi network. Therefore, automatic Wi-Fi reconnection should be "
+"enabled. If another Wi-Fi network is active, automatic reconnection to that "
+"network should be disabled."
+
+#: ../../intro/quickstart.rst:80 711413d47eda4c9cbdf3f325cca8864d
 #, fuzzy
 msgid "Anzeigeseiten"
 msgstr "Display pages"
 
-#: ../../intro/quickstart.rst:73 da6bf5337afc40c5ad7f4db473a70546
+#: ../../intro/quickstart.rst:82 4a351495b25b4b0dafa5ab105dc5caf8
 #, fuzzy
 msgid ""
 "Das OBP60 kann Daten, die ihm bekannt sind, auf bis zu 10 Anzeigeseiten "
@@ -296,7 +316,21 @@ msgstr ""
 "clicking one of the two middle buttons. In either case, you advance to the "
 "next screen."
 
-#: ../../intro/quickstart.rst:75 20f76732f6344465b6f34a5216adbf96
+#: ../../intro/quickstart.rst:86 33dcc2f9cb8c408d8c58ced6a456d938
+#, fuzzy
+msgid ""
+"Das OBP60 hat ein ePaper Display. Solche Displays haben eine besonders klare"
+" Darstellung und geringen Stromverbrauch. Sie haben aber auch die Eigenheit,"
+" daß regelmäßig ein sogenannter \"Refresh\" gemacht werden muß. Deshalb "
+"flackert das Display in regelmäßigen Abständen oder nach Seitenwechseln - "
+"das ist normal."
+msgstr ""
+"The OBP60 has an ePaper display. These displays offer particularly clear "
+"images and low power consumption. However, they also have the characteristic"
+" that a \"refresh\" is required regularly. Therefore, the display flickers "
+"at regular intervals or after page changes – this is normal."
+
+#: ../../intro/quickstart.rst:88 73eb0c41a7ad4301af91e37c1fb6d031
 #, fuzzy
 msgid ""
 "Jede der Seiten kann frei mit einem der vielen Layouts belegt werden. "
@@ -305,32 +339,32 @@ msgstr ""
 "Each page can be freely assigned one of the many layouts. Currently, for "
 "example, there are:"
 
-#: ../../intro/quickstart.rst:77 d993fe9accb64b15b6f7915c9de06114
+#: ../../intro/quickstart.rst:90 4a1f53c585064b57859c370466f1c731
 #, fuzzy
 msgid "Seiten mit einem, zwei, drei oder vier Zahlenwerten"
 msgstr "Pages with one, two, three or four numerical values"
 
-#: ../../intro/quickstart.rst:78 446273422d35454483bb08c90dc03cdc
+#: ../../intro/quickstart.rst:91 862683738c804c6589cda35a0f676c37
 #, fuzzy
 msgid "Windrose mit vier Zusatzdaten"
 msgstr "Wind rose with four additional data points"
 
-#: ../../intro/quickstart.rst:79 e8d2bc4e5885496a86916c344598d66f
+#: ../../intro/quickstart.rst:92 8a1ab3467d0f42a78af444aa09d17517
 #, fuzzy
 msgid "Windrose mit Schiffsdarstellung"
 msgstr "Compass rose with ship depiction"
 
-#: ../../intro/quickstart.rst:80 9bbdd2d4d34e42428565b50da1fe9ce1
+#: ../../intro/quickstart.rst:93 7aed3a46d7524cf6a8efb3f4e5c35f5c
 #, fuzzy
 msgid "Uhr"
 msgstr "Clock"
 
-#: ../../intro/quickstart.rst:81 37d2a5fa03ff4e46aaca1c35020b2cac
+#: ../../intro/quickstart.rst:94 abbeedaf23644735883a02e59a254900
 #, fuzzy
 msgid "Windverlaufs-Grafik"
 msgstr "Wind pattern graph"
 
-#: ../../intro/quickstart.rst:83 1b121e50cae34cf09dabd63a226911bd
+#: ../../intro/quickstart.rst:96 a3c413acb47042dba583658e7994b3d7
 #, fuzzy
 msgid ""
 "Je nach Seite können dann unterschiedliche Daten gezeigt werden. Welche das "
@@ -339,12 +373,12 @@ msgstr ""
 "Depending on the page, different data can be displayed. Which data is shown "
 "is configured in the web interface."
 
-#: ../../intro/quickstart.rst:85 694d62300e584cb5b582825a130e5b2a
+#: ../../intro/quickstart.rst:98 ca95e217730c4f07acfdfe669baab4ed
 #, fuzzy
 msgid "Hier ein Beispiel:"
 msgstr "Here's an example:"
 
-#: ../../intro/quickstart.rst:90 590105b70bc04b04b092f8f342c4d530
+#: ../../intro/quickstart.rst:103 e7bc46506c044f0cb0f65707adb6b2fe
 #, fuzzy
 msgid ""
 "In der obersten Zeile wird der Gerätestatus dargestellt. Hier sieht man, "
@@ -359,7 +393,7 @@ msgstr ""
 "the middle, and the time and its specific time – in this case, Local Time "
 "(LOT) – are shown on the right."
 
-#: ../../intro/quickstart.rst:92 dd9ae7650dfd4f1d895068350ba5a23a
+#: ../../intro/quickstart.rst:105 293481eba7d243ecb0f7423a4a0f4ffe
 #, fuzzy
 msgid ""
 "In der Mitte des Bildschirms sieht man die Nutzinformation des aktuellen "
@@ -368,7 +402,7 @@ msgstr ""
 "The information displayed in the middle of the screen is relevant to the "
 "current screen."
 
-#: ../../intro/quickstart.rst:94 fc075559500e4acf921230c068718449
+#: ../../intro/quickstart.rst:107 7f3b65e3b40d4011bb0a5661c4babee6
 #, fuzzy
 msgid ""
 "In der untersten Zeile wird angezeigt, wie die Tasten belegt sind. Rechts "
@@ -379,12 +413,68 @@ msgstr ""
 " always be turned on on the right, and the two middle buttons are for "
 "navigation. Swipe gestures are also possible."
 
-#: ../../intro/quickstart.rst:97 ba2d2581617d45f7ab35e5c24e7cf43e
+#: ../../intro/quickstart.rst:109 00a535d63d824a19a457ac3442e5a57c
+#, fuzzy
+msgid ""
+"Detailliertere Zusatzinformationen zu den Seiten die angezeigt werden können"
+" finden Sie im Kapitel :ref:`konfiguration002`."
+msgstr ""
+"More detailed additional information about the pages that can be displayed "
+"can be found in the chapter :ref:`konfiguration002`."
+
+#: ../../intro/quickstart.rst:112 fb03e7e1acc84f96aedd9b2c373b9fe5
+#, fuzzy
+msgid "Bedienung"
+msgstr "Operation"
+
+#: ../../intro/quickstart.rst:114 9a01960a37f2495890acce75c4afd9e2
+#, fuzzy
+msgid ""
+"Das OBP60 hat unter dem Bildschirm sechs Bedientasten - genauer gesagt nicht"
+" physische Tasten, sondern berührungssenitive Knöpfe. Die Bedienung mit "
+"Wischgesten erfolgen, oder alternativ durch Drücken einzelner Knöpfe."
+msgstr ""
+"The OBP60 has six control buttons below the screen – more precisely, not "
+"physical buttons, but touch-sensitive buttons. Operation is via swipe "
+"gestures, or alternatively by pressing individual buttons."
+
+#: ../../intro/quickstart.rst:116 d62d5eaba529403c8873d65cae524968
+#, fuzzy
+msgid ""
+"Für eine Wischgeste mit einem Finger von nach rechts oder umgekehrt über "
+"mehrere Knöpfe fahren."
+msgstr ""
+"For a swipe gesture, move one finger from right to left or vice versa across"
+" several buttons."
+
+#: ../../intro/quickstart.rst:118 d2901ff5d9f74bb7b4c232c70b63f39e
+#, fuzzy
+msgid ""
+"Knopfdrücke erfolgen wie üblich - einfach den Finger kurz auf eine der "
+"Tasten legen. Das ist möglich für die Tasten, die oberhalb auf dem "
+"Bildschirm ein Symbol zeigen. Die Belegung der Tasten ändert sich abhängig "
+"von der angezeigten Seite."
+msgstr ""
+"Pressing the buttons works as usual – simply place your finger briefly on "
+"one of the buttons. This is possible for the buttons that display a symbol "
+"at the top of the screen. The button functions change depending on the page "
+"being displayed."
+
+#: ../../intro/quickstart.rst:120 ebec0a202b504d458659da8d06ee19d2
+#, fuzzy
+msgid ""
+"Detailliertere Zusatzinformationen finden Sie im Kapitel "
+":ref:`bedienelemente001`."
+msgstr ""
+"More detailed additional information can be found in the chapter "
+":ref:`bedienelemente001`."
+
+#: ../../intro/quickstart.rst:123 a6e9376c621e4a6390b5942a3944e315
 #, fuzzy
 msgid "Simulation"
 msgstr "Simulation"
 
-#: ../../intro/quickstart.rst:99 8e4ab68ef3f347efab59b46fb38a6a0f
+#: ../../intro/quickstart.rst:125 3954551eb6b347bd909a57c56104cc57
 #, fuzzy
 msgid ""
 "Um sich mit dem OBP60 vertraut zu machen, ist es sinnvoll es zunächst via "
@@ -401,7 +491,7 @@ msgstr ""
 "Then start the simulation by clicking \"Run\". Desired values can be entered"
 " on the simulator's main screen."
 
-#: ../../intro/quickstart.rst:103 7bf3954e70f8440c8b6102b3c4f6f89a
+#: ../../intro/quickstart.rst:129 27be6d5edee34793b88cc5e90c593853
 #, fuzzy
 msgid ""
 "Sobald die Verbindung zur Simulation steht, wird links oben im Display des "
@@ -411,7 +501,7 @@ msgstr ""
 "displayed in the upper left corner of the OBP60's display. The transferred "
 "data will then appear on the display:"
 
-#: ../../intro/quickstart.rst:108 cd4bc8c1836944b1b03144c40d576d79
+#: ../../intro/quickstart.rst:134 89238587812344c1b7e4a30896300df2
 #, fuzzy
 msgid ""
 "Gleichzeitig sind sie im Web-Interface eines eingeloggten Mobilgeräts zu "
@@ -420,12 +510,21 @@ msgstr ""
 "At the same time, they can be seen in the web interface of a logged-in "
 "mobile device."
 
-#: ../../intro/quickstart.rst:111 d2f604b1b52b451c89fb8fd0ee987996
+#: ../../intro/quickstart.rst:137 5ec03ee6e60f47d5a1c9de73ba123ef0
 #, fuzzy
 msgid "Elektrische Anschlüsse"
 msgstr "Electrical connections"
 
-#: ../../intro/quickstart.rst:113 9a79322039964f3081f899a5cbf6e2dc
+#: ../../intro/quickstart.rst:138 14f8b822bcb64e2291189f1a2dc52a2b
+#, fuzzy
+msgid ""
+"Detailinformationen zu den elektrischen Anschlüssen finden Sie im Kapitel "
+":ref:`stromversorgung001`"
+msgstr ""
+"Detailed information on the electrical connections can be found in the "
+"chapter :ref:`stromversorgung001`"
+
+#: ../../intro/quickstart.rst:140 bcce7f4ccd7549eaab3589f1586213ad
 #, fuzzy
 msgid ""
 "Für den Normalbetrieb müssen mindestens die 12V Versorgung und ein Netzwerk,"
@@ -434,7 +533,7 @@ msgstr ""
 "For normal operation, at least a 12V power supply and a network, i.e. "
 "NMEA2000 or NMEA0183, must be connected."
 
-#: ../../intro/quickstart.rst:115 8267f76892cf47fab772eb21e1480edc
+#: ../../intro/quickstart.rst:142 47950a39e949495f9136fb0d550af2fb
 #, fuzzy
 msgid ""
 "Das OBP60 hat keine Anschlussbuchsen für NMEA2000 oder Seatalk NG, sondern "
@@ -448,13 +547,13 @@ msgstr ""
 "connection, an existing cable may need to be cut. The individual wires are "
 "then connected to the appropriate terminal block."
 
-#: ../../intro/quickstart.rst:117 cdf99b90ba6d485a97c281028569a061
+#: ../../intro/quickstart.rst:144 6efe3b32daa84ac0be0a0e1e79215d40
 #, fuzzy
 msgid "12V: [+] und [-] an die beiden oberen Anschlüsse am Klemmblock CN2"
 msgstr ""
 "12V: Connect [+] and [-] to the two upper terminals on terminal block CN2"
 
-#: ../../intro/quickstart.rst:118 4c29909e9350410e88069e58e1d72b28
+#: ../../intro/quickstart.rst:145 fcc3f74d3d634982af23a762b2cf5ee7
 #, fuzzy
 msgid ""
 "NMEA2000: Die Anschlüsse CAN H, CAN L und Shield. Die Farbcodierung kann je "
@@ -467,7 +566,7 @@ msgstr ""
 "NMEA2000), CAN L is white and CAN H is blue. Shield refers to the cable's "
 "insulation."
 
-#: ../../intro/quickstart.rst:119 74566119ae644a6d85dd149daa8186dc
+#: ../../intro/quickstart.rst:146 f426092aeec44ff4bd07be5607040aaa
 #, fuzzy
 msgid ""
 "NMEA0183: Hier werden die Signalleitungen für A und B sowie Shield "
@@ -476,12 +575,12 @@ msgstr ""
 "NMEA0183: This is where the signal lines for A and B as well as the shield "
 "are connected."
 
-#: ../../intro/quickstart.rst:125 0cf7965255214e17b52166d6e7591092
+#: ../../intro/quickstart.rst:152 e4a33c6ece6c4e7e99c3aaca96bec49c
 #, fuzzy
 msgid "Montage"
 msgstr "Montage"
 
-#: ../../intro/quickstart.rst:127 7e458851cef041c89c63e948aadc7d19
+#: ../../intro/quickstart.rst:154 70d799c3575e47d1a3072663ed762563
 #, fuzzy
 msgid ""
 "Um das Gerät zu montieren, soll es fest auf einer geeigneten Fläche "
@@ -492,7 +591,7 @@ msgstr ""
 "The two included hex screws are inserted from the inside, and then the "
 "housing is screwed back together."
 
-#: ../../intro/quickstart.rst:129 519651c904a54df3a0b3556a2f8784b5
+#: ../../intro/quickstart.rst:156 94c3016fca0e4cb9a8203e90f0fa1540
 #, fuzzy
 msgid ""
 "Die notwendigen Ausschnitte für die Kabel und die beiden Schrauben sind nach"
@@ -501,7 +600,7 @@ msgstr ""
 "The necessary cutouts for the cables and the two screws must be made "
 "according to the dimensioned drawing."
 
-#: ../../intro/quickstart.rst:133 419e34403a16446e9467e2d4b4475134
+#: ../../intro/quickstart.rst:160 9b8c2cee3de54ca3adf979519a5f1579
 #, fuzzy
 msgid ""
 "Danach die Dichtung auf die Rückseite des Gehäuses aufsetzen, Schrauben "
@@ -509,6 +608,15 @@ msgid ""
 msgstr ""
 "Then place the seal on the back of the housing, insert the screws and "
 "tighten them."
+
+#: ../../intro/quickstart.rst:162 71f76ef4a1514a118040d9cc839c7341
+#, fuzzy
+msgid ""
+"Weitere Informationen zur Montage des OBP60 finden Sie im Kapitel "
+":ref:`einbau001`"
+msgstr ""
+"Further information on the installation of the OBP60 can be found in the "
+"chapter :ref:`einbau001`"
 
 #~ msgid "Tipps zur Verbindung:"
 #~ msgstr "Tips for connecting:"
@@ -534,3 +642,6 @@ msgstr ""
 #~ msgstr ""
 #~ "Automatic Wi-Fi reconnection should be enabled. If another Wi-Fi network is "
 #~ "active, automatic reconnection to that network should be disabled."
+
+#~ msgid "Hier bitte zunächst nichts verändern."
+#~ msgstr "Please do not change anything here for now."

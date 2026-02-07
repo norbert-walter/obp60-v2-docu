@@ -1,7 +1,15 @@
+
+.. _inbetriebnahme001:
+
 Inbetriebnahme
 ==============
 
-Dieser Abschnitt hat die Erstinbetriebnahme Ihres OBP60 zum Inhalt. Das geht am einfachsten, wenn das Gerät noch nicht im Boot eingebaut ist. Dazu wird das Gerät mit Strom versorgt, um die ersten Einstellungen vorzunehmen. So können Sie die Funktionalität testen, bevor Sie das Gerät im Boot einbauen.
+Dieser Abschnitt enthält detaillierte Informationen für die Erstinbetriebnahme Ihres OBP60. 
+
+Die geht am einfachsten, wenn das Gerät noch nicht im Boot eingebaut ist. Dazu wird das Gerät über die hintere Steckerleiste mit Strom versorgt, Sie können dann ersten Einstellungen vorzunehmen. So können Sie die Funktionalität testen, bevor Sie das Gerät im Boot einbauen. 
+
+.. hint::
+	Es reicht meist nicht aus, das Gerät nur über USB-C mit Strom zu versorgen, da dann nicht alle Funktionen des OBP60 zur Verfügung stehen.	
 
 Schutzkonzept
 -------------
@@ -14,12 +22,15 @@ Das OBP60 verfügt über ein mehrstufiges Schutzkonzept. Das soll verhindern, da
 
 vom Bordnetz isoliert aufgebaut.
 
+.. warning::
+	Bitte beachten Sie, dass der 1Wire-Bus gegenüber Störungen nicht geschützt ist und entsprechend durch Schirmung geschützt werden muss. Daher sollten für die Leitungen des 1Wire-Bus nur abgeschirmte Kabel verwendet werden. ``GND`` darf mit keinen weiteren externen Schaltungsteilen verbunden werden, denn ``GND`` dient ausschließlich als Masseleitung für den 1Wire-Bus.
+
 .. image:: ../pics/Safety_Concept.png
-             :scale: 45%
+             :scale: 30%
 
-Abb.: Sicherheitskonzept
+Abb.: Schutzkonzept
 
-Im OBP60 ist dazu eine zusätzliche 5V-Stromversorgung enthalten, die die isolierten Schaltungsteile versorgt. Die zusätzliche Stromversorgung hat die Ausgänge ``+5Viso`` und ``GND2``, die am Steckverbinder CN1 und CN2 anliegen. Über diese können auch externe Schaltungen bis 200 mA versorgt werden.
+Im OBP60 ist dazu eine zusätzliche 5V-Stromversorgung enthalten, die die isolierten Schaltungsteile versorgt. Diese zusätzliche Stromversorgung hat die Ausgänge ``+5Viso`` und ``GND2``, die am Steckverbinder CN1 und CN2 anliegen. Über diese können auch externe Schaltungen bis 200 mA versorgt werden.
 
 .. warning::
 	Verbinden Sie die unterschiedlichen Massepotenziale ``GNDS``, ``GND``, ``GND2`` und ``Shield`` niemals miteinander! Dadurch geht die Isolations- und Schutzwirkung verloren. Die Massepotenziale dürfen nicht gleichberechtigt verwendet werden.
@@ -38,20 +49,22 @@ Im folgenden Bild sind die geschützten und ungeschützten Anschlüsse zu sehen.
 
 Abb.: Sichere und unsichere Bereiche
 
-.. warning::
-	Bitte beachten Sie, dass der 1Wire-Bus gegenüber Störungen nicht geschützt ist und entsprechend durch Schirmung geschützt werden muss. Daher sollten für die Leitungen des 1Wire-Bus nur abgeschirmte Kabel verwendet werden. ``GND`` darf mit keinen weiteren externen Schaltungsteilen verbunden werden, denn ``GND`` dient ausschließlich als Masseleitung für den 1Wire-Bus.
+
+.. _stromversorgung001:
 
 Stromversorgung 12V/24V
 -----------------------
 
-Die Stromversorgung des OBP60 erfolgt über den Steckverbinder CN2. Beim Zuschalten der Versorgungsspannung schaltet sich das OBP60 automatisch ein. Es gibt keinen gesonderten Ein- oder Ausschalter am Gerät. Benutzen Sie für die Stromversorgung die Anschlüsse ``+12V`` und ``GNDS``. Dabei wird ``+12V`` mit dem positiven Pol der Batterie verbunden und ``GNDS`` mit dem negativen Pol. Diese Anschlüsse für die Stromversorgung sind:
+Die Stromversorgung des OBP60 erfolgt über den Steckverbinder CN2. Bitte benutzen Sie dafür die Anschlüsse ``+12V`` und ``GNDS``. 
+
+Beim Zuschalten der Versorgungsspannung schaltet sich das OBP60 automatisch ein. Es gibt keinen gesonderten Ein- oder Ausschalter am Gerät. Benutzen Sie für die Stromversorgung die Anschlüsse ``+12V`` und ``GNDS``. Dabei wird ``+12V`` mit dem positiven Pol der Batterie verbunden und ``GNDS`` mit dem negativen Pol. Diese Anschlüsse für die Stromversorgung sind:
 
 * verpolungssicher
 * kurzschlussfest
 * überspannungssicher
 * ESD-geschützt
 
-Der zulässige Spannungsbereich liegt zwischen 10V...28V.
+Der zulässige Spannungsbereich liegt im Bereich 10V - 28V.
 
 .. image:: ../pics/Power_Connection.png
              :scale: 80%
@@ -86,6 +99,8 @@ Zum Testen, ob die USB-C-Versorgung genügend Spannung und Strom liefert, kann m
 .. image:: ../pics/USB-C_Diagnostic_Device.png
              :scale: 60%
 Abb.: USB-C Diagnosegerät 
+
+.. _einbau001:
 
 Einbau
 ------
