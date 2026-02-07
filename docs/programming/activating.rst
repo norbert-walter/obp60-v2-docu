@@ -50,7 +50,7 @@ Der Part ``MyAccountName`` wird durch ihren eigenen Accountnamen ersetzt.
 Github Codespaces-Link öffnen
 ^^^^^^^^^^^^^^^^^^
 
-Das Gitpad-Projekt wird von der  Repository-Seite des eigenen Github-Projekts aufgerufen, über den Button Code -> Codespaces -> Create codespace:
+Das Github Codespaces -Projekt wird von der  Repository-Seite des eigenen Github-Projekts aufgerufen, über den Button Code -> Codespaces -> Create codespace:
 
 .. image:: ../pics/Codespace_Create.png
    :scale: 50%
@@ -61,7 +61,7 @@ Sie gelangen dann auf die Startseite von Github Codespaces.
 Container-Start
 ^^^^^^^^^^^^^^^
 
-Beim Starten von Github Codespaces wird ein neuer Docker-Container gestartet, danach werden alle notwendigen Softwarebestandteile automatisch in den Container geladen. Der Vorgang kann etwas Zeit beanspruchen. Am Ende sollten Sie einen fertigen Workplace vorfinden. Der Workplace erscheint im Look & Feel von Visual Studio Code, ist jedoch nicht mit ihm verwandt und in einigen Punkten verschieden. So gibt es z.B. kein IntelliSense und die Anzahl der Plugins ist deutlich geringer als beim Original. Zusätzlich fehlen die Buttons zum Kompilieren und zum Download auf die Zielhardware, sowie der serielle Monitor, wie man das von Visual Studio Code gewohnt ist. Über den Workplace lässt sich der Code verändern, kompilieren und das Binary herunterladen. Der Download des Binarys auf die Zielhardware muss mit externen Tools durchgeführt werden.
+Beim Starten von Github Codespaces wird ein neuer Docker-Container gestartet, danach werden alle notwendigen Softwarebestandteile automatisch in den Container geladen. Der Vorgang kann etwas Zeit beanspruchen. Am Ende sollten Sie einen fertigen Workplace vorfinden. Der Workplace erscheint im Look & Feel von Visual Studio Code. Über den Workplace lässt sich der Code verändern, kompilieren und das Binary herunterladen. Der Download des Binarys auf die Zielhardware muss mit externen Tools durchgeführt werden.
 
 .. image:: ../pics/Codespace_Workplace.png
    :scale: 50%
@@ -86,7 +86,7 @@ Abb.: Source-Code kompilieren
 
 Wenn der Kompiliervorgang erfolgreich abgeschlossen ist, sollten Sie die folgende Meldung sehen: 
 
-.. image:: ../pics/Gitpod_Compile_Finish.png
+.. image:: ../pics/Codespace_Compile_Finish.png
    :scale: 50%
 Abb.: Kompilierung beendet
 
