@@ -691,19 +691,25 @@ Auf der Seite **Calibrations** können Einstellungen zur Kalibrierung vorgenomme
 **VSensor Slope**
     * Steigung der Korrekturfunktion des internen Spannungssensors des OBP60
 
-**Calibration Data Instance [1..3]**
-    * Auswahl von bis zu drei Datentypen, die kalibriert werden sollen. Die zur Auswahl stehenden Datentypen erscheinen, wenn man die Pulldown-Auswahlliste öffnet. Sobald man einen Datentyp ausgewählt hat, erscheinen die im Folgenden beschriebenen Konfigurationsparameter. Eine Auswahl von ``---`` deaktiviert die Kalibrierung für diesen Datentyp.
-    
+**Calibration Data Instance [1..4]**
+    * Auswahl von bis zu vier Boots-Datentypen, die kalibriert werden sollen. Die zur Auswahl stehenden Datentypen erscheinen, wenn man die Pulldown-Auswahlliste öffnet. Sobald man einen Datentyp ausgewählt hat, erscheinen die im Folgenden beschriebenen Konfigurationsparameter. Eine Auswahl von ``---`` deaktiviert die Kalibrierung für diesen Datentyp.
+
+Aktuell können diese Boots-Datentypen für eine Kalibrierung ausgewählt werden: ``AWA`` ``AWS`` ``COG`` ``DBS`` ``DBT`` ``HDM`` ``HDT`` ``PRPOS`` ``RPOS`` ``SOG`` ``STW`` ``TWA`` ``TWS`` ``TWD`` ``WTemp``.
+Eine Kalibrierung von **XDR**-Datentypen ist noch nicht möglich.
+
 .. image:: ../pics/OBP60_Datenkalibrierung.png
 
-**Data Instance [1..3] Calibration Offset**
+**Data Instance [1..4] Calibration Offset**
     * Offset der Korrekturfunktion für den gewählten Datentyp
 
-**Data Instance [1..3] Calibration Slope**
-    * Steigung der Korrekturfunktion für den gewählten Datentyp
+**Data Instance [1..4] Calibration Slope**
+    * Steigung der Korrekturfunktion für den gewählten Datentyp.
 
-**Data Instance [1..3] Smoothing**
+**Data Instance [1..4] Smoothing**
     * Hiermit wird eine Glättung bzw. Dämpfung des jeweiligen Datentyps durchgeführt. Es ist eine Einstellung im Bereich [0..10] möglich. ``0`` bedeutet "keine Glättung", ``10`` erzielt eine maximale Glättung.
+
+.. attention::
+    Der Default für die Steigung (Slope) jedes Kalibrierungswertes ist **1**. Wird hier eine **0** eingetragen, wird jeder Datenwert auch auf **0** gesetzt. Der Default für die Konfigurationsparameter **Offset** und **Smoothing** ist **0**.
 
 Zur Glättung wird der **Exponetnial Smoothing Algorithmus** verwendet, dessen Stärke über einen Parameter (Werte zwischen 0 und 10) eingestellt werden kann. Dabei wird der neue geglättete Wert **s** aus den aktuellen Messwert **x**, dem vorherigen geglätteten Wert und dem Gewichtungsfaktor **a** berechnet:  
 
@@ -723,8 +729,8 @@ Abb.: Dämpfung schneller sprunghafter Änderungen
 
 Die x-Achse der Diagramme zeigt die Zahl der Datenaktualisierungen, d.h. sie ensprechen einer Zeitachse in Sekunden, wenn der Messwert 1x pro Sekunde aktualisiert wird.
 
-.. attention::
-    Der Default für die Steigung (Slope) jedes Kalibrierungswertes ist **1**. Wird hier eine **0** eingetragen, wird jeder Datenwert auch auf **0** gesetzt. Der Default für die Konfigurationsparameter **Offset** und **Smoothing** ist **0**.
+.. note::
+    Die Kalibrierung der ausgewählten Boots-Datentypen ist auf allen ausgewählten Anzeigeseiten sichtbar. Auf der **Data**-Seite der Web-Konfigurationsseite werden die nicht-kalibrierten Messwerte des jeweiligen Sensors dargestellt. Dies kann helfen, die eingestellte Kalibrierung zu bewerten.
 
 Config - OBP Display
 --------------------
