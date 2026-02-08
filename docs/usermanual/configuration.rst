@@ -1042,6 +1042,30 @@ Ein Trendindikator zeigt den Trend an, in welche Richtung sich die Spannung bewe
 	
 Die Anzeigeseite benötigt folgende Messwerte: **xdrVBat**
 
+WindPlot
+^^^^^^^
+
+.. image:: /pics/OBP60_Windplot.png
+             :scale: 30%
+Abb.: Anzeige WindPlot
+
+Diese Seite zeigt den zeitlichen Verlauf von Winddaten grafisch an. Über die Taste ``MODE`` wird zwischen drei verschiedenen Liniendiagrammen umgeschaltet:
+
+	* absolute Windrichtung (wind direction **TWD**/**AWD**)
+	* Windgeschwindigkeit (wind speed **TWS**/**AWS**)
+	* gemeinsame Anzeige von Windrichtung und Windgeschwindigkeit.
+
+Die Werteachse wird in Abhängigkeit von den Anzeigedaten dynamisch angepasst. Zusätzlich zur grafischen Anzeige der Winddaten wird der jeweils aktuellste Wert als Zahl dargestellt.
+
+Mit der Taste ``SRC`` kann man zwischen der Anzeige von wahren und scheinbaren Winddaten (true/apparent) umschalten.
+
+Das Grafikdiagramm kann den Verlauf der Winddaten über ein auswählbares Zeitintervall anzeigen. Über die Taste ``ZOOM`` kann das Zeitintervall verändert werden. Mit jedem Tastendruck wird das Intervall zwischen [4, 8, 12, 16, 32] Minuten weitergeschaltet. Auf der Zeitachse ist das gewählte Intervall erkennbar. Bei dem Zeitintervall von vier Minuten wird jede Sekunde einer neuer Datenwert ergänzt. Bei größeren Zeitintervallen werden nur jeweils alle 2-8 Sekunden neue Werte angezeigt.
+	
+Die Anzeigeseite benötigt folgende Messwerte: **TWD, TWS, AWS**. Der Wert **AWD** wird automatisch berechnet, sofern die Windaten **AWA** und **AWS** vorhanden sind.
+
+.. note::
+	Die Umschaltung zwischen wahren und scheinbaren Winddaten ist nur beim **OBP60** verfügbar. Da das **OBP40** nur zwei Tasten besitzt, muss die Auswahl des Winddatentyps hier im Konfigurationsunterpunkt zur Seitendefinition der Seite ``WindPlot`` vorgenommen werden. Die Auswahl lässt sich am Gerät nicht umstellen.
+
 WindRose
 ^^^^^^^
 
