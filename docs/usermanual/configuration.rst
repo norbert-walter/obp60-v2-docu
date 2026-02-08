@@ -907,16 +907,17 @@ Config - OBP Page X
 Im OBP60 gibt es insgesamt bis zu 10 Seiten, die man frei auswählen und gestalten kann. Je nach Seite können unterschiedlich viele Daten angezeigt werden. Es gibt frei definierbare Seiten, in denen die Inhalte zum Anzeigen ausgewählt werden können. Dann gibt es Seiten mit vorgegebenem, nicht veränderbarem Inhalt. Die meisten numerischen Seiten sind änderbar, während die grafischen Seiten oft vordefinierte Inhalte anzeigen.
 
 * Seiten mit veränderbarem Inhalt
-    * **OneValue** - Ein Anzeigewert
-    * **TwoValue** - Zwei Anzeigewerte
-    * **ThreeValue** - Drei Anzeigewerte
-    * **FourValue** - Vier Anzeigewerte
+    * **OneValue** - Ein Anzeigewert numerisch/grafisch
+    * **TwoValue** - Zwei Anzeigewerte numerisch/grafisch
+    * **ThreeValue** - Drei Anzeigewerte numerisch
+    * **FourValue** - Vier Anzeigewerte numersich
     * **FourValue2** - Vier Anzeigewerte (andere Anordnung vertikal/horizontal)
     * **WindRoseFlex** - Anzeige von Windrichtung (grafisch auf einer Windrose) und Windgeschwindigkeit sowie 4 weiteren frei konfigurierbaren Werten. Mit einem Button kann zwischen wahrem und scheinbarem Wind umgeschaltet werden
     * **RollPitch** - Grafische Anzeige von Roll und Pitch
 
 * Seiten mit festem Inhalt
     * **Voltage** - Anzeige der Bordspannung (**xdrVBat**)
+    * **WindPlot** - Grafische Anzeige von Winddaten der vergangenen 4-32 Minuten (**TWD, TWS, AWD, AWS**)
     * **WindRose** - Anzeige der Winddaten (**AWA, AWS, TWD, TWS, DBT, STW**)
     * **DST810** - Anzeige für Tiefe, Speed, Log und Wassertemperatur (**DBT, STW, Log, WTemp**)
     * **Clock** - Grafische Zeitanzeige mit Sonnenauf- und Sonnenuntergang (**GPST, GPSD**)
@@ -941,7 +942,8 @@ Abb.: Seite mit 4 Anzeigewerten
 
 * Datenpool auswählbarer Daten
     * **ALT** - Altitude, Höhe über Grund
-    * **AWA** - Apparent Wind Angle, scheinbare Windrichtung
+    * **AWA** - Apparent Wind Angle, scheinbare Windrichtung relativ zum Boot
+    * **AWD** - Apparent Wind Direction, scheinbare Windrichtung über Grund
     * **AWS** - Apparent Wind Speed, scheinbare Windgeschwindigkeit
     * **BTW** - Bearing To Waypoint, Winkel zum aktuellen Wegpunkt
     * **COG** - Course over Ground, Kurs über Grund
@@ -966,7 +968,8 @@ Abb.: Seite mit 4 Anzeigewerten
     * **SOG** - Speed Over Ground, Geschwindigkeit über Grund
     * **STW** - Speed Through Water, Geschwindigkeit durch das Wasser
     * **SatInfo** - Satellit Info, Anzahl der sichtbaren Satelliten
-    * **TWD** - True Wind Direction, wahre Windrichtung
+    * **TWA** - True Wind Angle, wahre Windrichtung relativ zum Boot
+    * **TWD** - True Wind Direction, wahre Windrichtung über Grund
     * **TWS** - True Wind Speed, wahre Windgeschwindigkeit
     * **TZ** - Time Zone, Zeitzone
     * **TripLog** - Trip Log, Tages-Entfernungszähler
@@ -981,20 +984,55 @@ Abb.: Seite mit 4 Anzeigewerten
 OneValue
 ^^^^^^^^
 
-.. image:: /pics/OBP60_OneValue_tr.png
-             :scale: 30%
+.. list-table::
+   :widths: 50 50
+   :class: borderless
+
+   * - .. image:: ../pics/OBP60_OneValue.png
+          :scale: 100%
+          :width: 50%
+     - .. image:: ../pics/OBP60_OneValue_2.png
+           :scale: 100%
+           :width: 50%
+
 Abb.: Anzeige OneValue
 
 Bei der OneValue-Anzeige kann ein beliebiger Messwert aus dem Datenpool angezeigt werden. Neben dem Messwert werden der Kurzbezeichner und die Einheit dargestellt.
 
+Über die Taste ``MODE`` kann für bestimmte Datentypen zusätzlich numerischen Anzeige eine grafische Anzeige des Datenverlaufs gewählt werden. Die Anzeige wechselt zwischen drei verschiedenen Anzeigen:
+
+	* großformatige numerische Anzeige des aktuellen Messwertes
+	* Anzeige des Messwertes in der oberern Hälfte der Anzeige und grafisches Diagramm mit dem zeitlichen Verlauf der Messwerte in der unteren Hälfte der Anzeige
+	* vollflächige grafische Anzeige des zeitlichen Verlaufs der Messwerte mit kleiner numerischer Darstellung des aktuellen Messwertes
+
+Die Werteachse wird in Abhängigkeit von den Anzeigedaten dynamisch angepasst.
+
+Das Grafikdiagramm kann den Verlauf der Messwerte über ein auswählbares Zeitintervall anzeigen. Über die Taste ``ZOOM`` kann das Zeitintervall verändert werden. Mit jedem Tastendruck wird das Intervall zwischen [4, 8, 12, 16, 32] Minuten weitergeschaltet. Auf der Zeitachse ist das gewählte Intervall erkennbar. Bei dem Zeitintervall von vier Minuten wird jede Sekunde einer neuer Datenwert ergänzt. Bei größeren Zeitintervallen werden nur jeweils alle 2-8 Sekunden neue Werte angezeigt.
+
+.. note::
+   Die grafische Anzeige wird für diese Datentypen unterstützt: 
+   **AWA**, **AWD**, **AWS**, **COG**, **DBS**, **DBT**, **DPT**, **HDM**, **HDT**, **ROT**, **SOG**, **STW**, **TWA**, **TWD**, **TWS**, **WTEMP**.
+   Sollte für die OneValue-Anzeige ein Datentyp gewählt werden, für den nur eine numerische Anzeige möglich ist, sind die Tasten ``MODE`` und ``ZOOM`` nicht verfügbar.
+
 TwoValue
 ^^^^^^^^
 
-.. image:: /pics/OBP60_TwoValue_tr.png
-             :scale: 30%
+.. list-table::
+   :widths: 50 50
+   :class: borderless
+
+   * - .. image:: ../pics/OBP60_TwoValue.png
+          :scale: 100%
+          :width: 50%
+     - .. image:: ../pics/OBP60_TwoValue4.png
+           :scale: 100%
+           :width: 50%
+
 Abb.: Anzeige TwoValue
 
 Bei der TwoValue-Anzeige können zwei beliebige Messwerte aus dem Datenpool vertikal übereinander angezeigt werden. Neben den Messwerten werden die Kurzbezeichner und die Einheiten dargestellt.
+
+Die weiteren Funktionen sind identisch mit der Anzeige **OneValue**.
 
 ThreeValue
 ^^^^^^^^^^
@@ -1045,7 +1083,7 @@ Die Anzeigeseite benötigt folgende Messwerte: **xdrVBat**
 WindPlot
 ^^^^^^^
 
-.. image:: /pics/OBP60_Windplot.png
+.. image:: ../pics/OBP60_WindPlot.png
              :scale: 30%
 Abb.: Anzeige WindPlot
 
@@ -1069,7 +1107,7 @@ Die Anzeigeseite benötigt folgende Messwerte: **TWD, TWS, AWS**. Der Wert **AWD
 WindRose
 ^^^^^^^
 
-.. image:: /pics/OBP60_WindRose.png
+.. image:: ../pics/OBP60_WindRose.png
              :scale: 30%
 Abb.: Anzeige Windrose
 
