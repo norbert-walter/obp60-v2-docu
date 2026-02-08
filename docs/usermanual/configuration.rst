@@ -457,6 +457,14 @@ Auf der Seite **OBP60 Settings** können Sie Einstellungen vornehmen, die sich a
 
 Die meisten Einstellungen sollten selbsterklärend sein. Sofern Sie keine Solarpaneele benutzen, belassen Sie den Wert von **Solar Power**  auf 0. **Generator Power** bezieht sich auf einen Elektrogenerator, der im Boot arbeitet. Das kann eine Lichtmaschine, ein Windgenerator, ein Schleppgenerator oder ein weiterer Zusatz-Generator sein. Die Leistungsangaben für **Solar Power** und **Generator Power** werden zur Visualisierung der Energieflüsse benötigt.
 
+**Calculate True Wind**
+	* Sofern die Bootssensoren keine Daten zum wahren Wind zur Verfügung stellen, kann hier ausgewählt werden, diese Daten aus den scheinbaren Winddaten und einigen anderen Datentypen zu errechnen. Zur Berechnung sind die Datentypen **AWA** und **AWS** erforderlich. Für die Bootsgeschwindigkeit wird **STW** oder ersatzweise **SOG** verwendet. Zur Ermittlung der aktuellen Ausrichtung des Bootes werden die Daten in dieser Reihenfolge verwendet, soweit vorhanden: (1) **HDT**, (2) **HDM+VAR**, (3) **HDM**, (4) **COG**, wenn gültig. Drift wird in die Berechnung nicht mit einbezogen.
+	* ``on`` - Sofern nicht vorhanden, werden die Datentypen **TWD** (True Wind Direction), **TWA** (True Wind Angle) und **TWS** (True Wind Speed) berechnet. Desweiteren wird **AWD** (Apparent Wind Direction) ermittelt.
+	* ``off`` - Es werden keine Daten zum wahren Wind berechnet. Sollten die Bootssensoren entsprechende Daten bereitstellen, werden sie natürlich verwendet.
+
+.. note::
+	Die berechneten wahren Winddaten sind auf allen Datenseiten, soweit sinnvoll, anzeigbar. Auf der **Data**-Seite des Web-Browsers sind die wahren Winddaten nur sichtbar, wenn sie von Bootssensoren bereitgestellt werden. *Berechnete* Winddaten werden dort nicht angezeigt.
+
 Config - OBP Units
 ------------------
 
@@ -667,9 +675,9 @@ Tab.: Stromverbrauch der LED-Hintergrundbeleuchtung
     Wenn Sie das OBP60 über USB mit Strom versorgen möchten, muss die Erkennung der Unterspannung abgeschaltet werden, da sich das Gerät sonst automatisch abschaltet.
 	
 **Simulation Data**
-    * Mit **Simulation Data** können Bus- und Sensordaten simuliert werden. Die Funktion ist nützlich, wenn die Funktionalität des Gerätes im ausgebauten Zustand ohne angeschlossene Busse oder Sensoren getestet werden soll. Das Gerät befindet sich dann in einem Demo-Mode.
-    * ``on`` - Sensordaten werden durch Simulationsdaten ersetzt
-    * ``off`` - Es werden Live-Sensordaten verwendet
+	* Mit **Simulation Data** können Bus- und Sensordaten simuliert werden. Die Funktion ist nützlich, wenn die Funktionalität des Gerätes im ausgebauten Zustand ohne angeschlossene Busse oder Sensoren getestet werden soll. Das Gerät befindet sich dann in einem Demo-Mode.
+	* ``on`` - Sensordaten werden durch Simulationsdaten ersetzt
+	* ``off`` - Es werden Live-Sensordaten verwendet
 	
 .. warning::
     Bedenken Sie, dass Simulationsdaten als Live-Daten fehlinterpretiert werden können. Benutzen Sie Simulationsdaten nur, wenn Sie das OBP60 nicht zur Navigation benötigen und stellen es nach der Benutzung wieder auf Live-Daten um, indem Sie den Simulations-Modus beenden.
@@ -694,7 +702,7 @@ Auf der Seite **Calibrations** können Einstellungen zur Kalibrierung vorgenomme
 **Calibration Data Instance [1..4]**
     * Auswahl von bis zu vier Boots-Datentypen, die kalibriert werden sollen. Die zur Auswahl stehenden Datentypen erscheinen, wenn man die Pulldown-Auswahlliste öffnet. Sobald man einen Datentyp ausgewählt hat, erscheinen die im Folgenden beschriebenen Konfigurationsparameter. Eine Auswahl von ``---`` deaktiviert die Kalibrierung für diesen Datentyp.
 
-Aktuell können diese Boots-Datentypen für eine Kalibrierung ausgewählt werden: ``AWA`` ``AWS`` ``COG`` ``DBS`` ``DBT`` ``HDM`` ``HDT`` ``PRPOS`` ``RPOS`` ``SOG`` ``STW`` ``TWA`` ``TWS`` ``TWD`` ``WTemp``.
+Aktuell können die folgenden Boots-Datentypen für eine Kalibrierung ausgewählt werden: ``AWA`` ``AWS`` ``COG`` ``DBS`` ``DBT`` ``HDM`` ``HDT`` ``PRPOS`` ``RPOS`` ``SOG`` ``STW`` ``TWA`` ``TWS`` ``TWD`` ``WTemp``.
 Eine Kalibrierung von **XDR**-Datentypen ist noch nicht möglich.
 
 .. image:: ../pics/OBP60_Datenkalibrierung.png
@@ -730,7 +738,7 @@ Abb.: Dämpfung schneller sprunghafter Änderungen
 Die x-Achse der Diagramme zeigt die Zahl der Datenaktualisierungen, d.h. sie ensprechen einer Zeitachse in Sekunden, wenn der Messwert 1x pro Sekunde aktualisiert wird.
 
 .. note::
-    Die Kalibrierung der ausgewählten Boots-Datentypen ist auf allen ausgewählten Anzeigeseiten sichtbar. Auf der **Data**-Seite der Web-Konfigurationsseite werden die nicht-kalibrierten Messwerte des jeweiligen Sensors dargestellt. Dies kann helfen, die eingestellte Kalibrierung zu bewerten.
+	Die Kalibrierung der ausgewählten Boots-Datentypen ist auf allen ausgewählten Anzeigeseiten sichtbar. Auf der **Data**-Seite des Web-Browsers werden die *nicht-kalibrierten* Messwerte des jeweiligen Sensors dargestellt. Dies kann helfen, die eingestellte Kalibrierung zu bewerten.
 
 Config - OBP Display
 --------------------
