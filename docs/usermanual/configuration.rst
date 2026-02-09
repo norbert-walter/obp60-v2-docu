@@ -990,7 +990,7 @@ OneValue
 
    * - .. image:: ../pics/OBP60_OneValue.png
           :scale: 30%
-     - .. image:: ../pics/OBP60_OneValue_2.png
+     - .. image:: ../pics/OBP60_OneValue2.png
           :scale: 30%
 
 Abb.: Anzeige OneValue
