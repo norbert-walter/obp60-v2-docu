@@ -1830,8 +1830,8 @@ msgid ""
 "Bootssensoren entsprechende Daten bereitstellen, werden sie natürlich "
 "verwendet."
 msgstr ""
-"``Off`` - No true wind data is calculated. If the boat sensors provide "
-"relevant data, it will of course be used."
+"``Off`` - No data on the true wind is calculated. If the boat sensors "
+"provide relevant data, it will of course be used."
 
 #: ../../usermanual/configuration.rst:466 6b76f7200dd443c3a11f442913050422
 #, fuzzy
@@ -1871,7 +1871,8 @@ msgstr "**Date Format**"
 msgid ""
 "Mit **Date Format** kann das Ausgabeformat des Datums angepasst werden."
 msgstr ""
-"The **Date Format** option allows you to customize the date output format."
+"The **Date Format** option allows you to customize the output format of the "
+"date."
 
 #: ../../usermanual/configuration.rst:478 0fd00486980b4cf19bb6464492a1448f
 #, fuzzy
@@ -2811,8 +2812,8 @@ msgid ""
 msgstr ""
 "**Simulation Data** allows you to simulate bus and sensor data. This "
 "function is useful when you want to test the functionality of the device in "
-"its uninstalled state, without any connected buses or sensors. The device "
-"then operates in demo mode."
+"its removed state, without any connected buses or sensors. The device then "
+"operates in demo mode."
 
 #: ../../usermanual/configuration.rst:679 4b29a8c1c7f941c08b2986c6334dc97d
 #, fuzzy

@@ -297,10 +297,10 @@ msgid ""
 "Auslösefunktion der Tasten. Aktuell sind folgende Tastenfunktionen "
 "realisiert:"
 msgstr ""
-"The OBP60 has six capacitive touch buttons along the bottom edge of the "
-"display. The buttons respond to touch by changing the reference potential. "
-"Water droplets or rain have virtually no effect on the buttons' activation. "
-"The following button functions are currently implemented:"
+"The OBP60 has six capacitive touch-sensitive buttons along the bottom edge "
+"of the display. The buttons respond to touch by changing the reference "
+"potential. Water droplets or rain have virtually no effect on the buttons' "
+"activation. The following button functions are currently implemented:"
 
 #: ../../usermanual/elements.rst:80 429d64db89374177a705c9b25ebf81c8
 #, fuzzy
