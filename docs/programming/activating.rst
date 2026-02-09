@@ -102,7 +102,7 @@ Der Binary-Code zur Firmware befindet sich nach dem Kompilieren im Verzeichnis:
 Abb.: Datei-Download
 
 .. hint::
-	Falls sie nur 'Einfügen' im Auswahlmenü sehen und 'Herunterladen' vermissen, drücken Sie einfach auf 'Einfügen'. Sie erhalten dann das vollständige Menü mit allen Auswhlmöglichkeiten. 
+	Falls sie nur ``Einfügen`` im Auswahlmenü sehen und ``Herunterladen`` vermissen, drücken Sie einfach auf ``Einfügen``. Sie erhalten dann das vollständige Menü mit allen Auswhlmöglichkeiten. 
 
 Dabei haben die Files folgende Bedeutung:
 
