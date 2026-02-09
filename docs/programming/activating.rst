@@ -50,7 +50,7 @@ Der Part ``MyAccountName`` wird durch ihren eigenen Accountnamen ersetzt.
 Github Codespaces-Link öffnen
 ^^^^^^^^^^^^^^^^^^
 
-Das Github Codespaces -Projekt wird von der  Repository-Seite des eigenen Github-Projekts aufgerufen, über den Button Code -> Codespaces -> Create codespace:
+Das Github Codespaces -Projekt wird von der  Repository-Seite des eigenen Github-Projekts aufgerufen, über den Button **Code -> Codespaces -> Create codespace**:
 
 .. image:: ../pics/Codespace_Create.png
    :scale: 50%
@@ -74,9 +74,9 @@ Der Code zum OBP60 befindet sich im Ordner: */ESP32-NMEA2000-OBP60/lib/obp60task
 
 Um den Code kompilieren zu können, müssen Sie folgende Befehle nacheinander in das Terminal-Fenster unten rechts einfügen. Sie können dazu die Copy & Paste Funktion benutzen.
 
-	* ``cd /workspace/esp32-nmea2000-obp60``
-	* ``bash /workspace/esp32-nmea2000-obp60/lib/obp60task/run_install_tools``
-	* ``bash /workspace/esp32-nmea2000-obp60/lib/obp60task/run_obp60_s3``
+	* ``cd /workspaces/esp32-nmea2000-obp60``
+	* ``bash /workspaces/esp32-nmea2000-obp60/lib/obp60task/run_install_tools``
+	* ``bash /workspaces/esp32-nmea2000-obp60/lib/obp60task/run_obp60_s3``
 
 Nach dem zweiten Befehl werden alle notwendigen Tool-Chains und Bibliotheken in den Workplace geladen. Dieser Vorgang kann einige Minuten dauern. Mit dem letzten Befehl beginnt der eigentliche Kompiliervorgang, der ebenfalls einiges an Zeit benötigt. Wenn Sie den Code später geändert haben und erneut kompilieren wollen, so benutzen Sie einfach den letzten Befehl erneut.
 
@@ -100,6 +100,9 @@ Der Binary-Code zur Firmware befindet sich nach dem Kompilieren im Verzeichnis:
 .. image:: ../pics/Codespace_Download.png
    :scale: 50%
 Abb.: Datei-Download
+
+.. hint::
+	Falls sie nur 'Einfügen' im Auswahlmenü sehen und 'Herunterladen' vermissen, drücken Sie einfach auf 'Einfügen'. Sie erhalten dann das vollständige Menü mit allen Auswhlmöglichkeiten. 
 
 Dabei haben die Files folgende Bedeutung:
 
