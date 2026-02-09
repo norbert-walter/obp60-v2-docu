@@ -1427,7 +1427,7 @@ msgstr "Example: Navionics on an Android car radio"
 #: ../../usermanual/dataexchange.rst:417 e11332412b42480da17951908971e23a
 #, fuzzy
 msgid "Abb.: Verbindung OBP60 - Android Autoradio Navionics"
-msgstr "Abb.: Connection OBP60 - Android Car Radio Navionics"
+msgstr "Abb.: Connection OBP60 - Android car radio Navionics"
 
 #: ../../usermanual/dataexchange.rst:419 3d47892ad7a84df3bb7b2c984323f7be
 #, fuzzy
@@ -1751,10 +1751,10 @@ msgid ""
 "an den Abzweigdosen an. So entstehen im 1Wire-Bussystem nicht ungewollt "
 "lange Stichleitungen."
 msgstr ""
-"If you want to measure temperatures at different points on the boat, create "
-"a backbone with junction boxes and connect the sensors to the junction "
-"boxes. This prevents unintentionally long branch lines in the 1-Wire bus "
-"system."
+"If you want to measure temperatures at different locations on your boat, "
+"create a backbone with junction boxes and connect the sensors to the "
+"junction boxes. This prevents unintentionally long branch lines in the "
+"1-Wire bus system."
 
 #: ../../usermanual/dataexchange.rst:514 f7ceaa384d104a0494de71a805204984
 #, fuzzy

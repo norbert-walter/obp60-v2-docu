@@ -180,7 +180,7 @@ msgstr "15 Hours of stand-alone runtime"
 #: ../../usermanual/samples.rst:39 d324a46ccd3d47e5abf1f15fea955ed1
 #, fuzzy
 msgid "32 WiFi-Geräte einbindbar"
-msgstr "Up to 32 WiFi devices can be connected"
+msgstr "Up to 32 WiFi devices can be connected."
 
 #: ../../usermanual/samples.rst:40 62cd7956ec524993be40f331f828c1bd
 #, fuzzy
@@ -231,7 +231,7 @@ msgstr "WiFi Dual Band 2.4 GHz and 5 GHz 300 Mbps"
 #: ../../usermanual/samples.rst:56 db7ecb7b6a914293a66995d2d7f151a7
 #, fuzzy
 msgid "2x LAN CAT6 100 MBit/s"
-msgstr "2X LAN CAT6 100 MBit/s"
+msgstr "2X CAT6 LAN 100 MBit/s"
 
 #: ../../usermanual/samples.rst:57 46d57a889d1a40bdba79a6f7c51b26d7
 #, fuzzy
