@@ -2811,8 +2811,8 @@ msgid ""
 msgstr ""
 "**Simulation Data** allows you to simulate bus and sensor data. This "
 "function is useful when you want to test the functionality of the device in "
-"its removed state, without any connected buses or sensors. The device then "
-"operates in demo mode."
+"its uninstalled state, without any connected buses or sensors. The device "
+"then operates in demo mode."
 
 #: ../../usermanual/configuration.rst:679 4b29a8c1c7f941c08b2986c6334dc97d
 #, fuzzy

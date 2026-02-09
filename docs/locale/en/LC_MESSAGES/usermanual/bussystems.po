@@ -700,7 +700,7 @@ msgid ""
 "dass die Stromeinspeisung in den Bus mit einer 3A-Sicherung abgesichert ist."
 msgstr ""
 "Note that the NMEA2000 bus must only be powered by one source. Otherwise, "
-"malfunctions in the bus system may occur. Ensure that the power supply to "
+"malfunctions may occur in the bus system. Ensure that the power supply to "
 "the bus is protected by a 3A fuse."
 
 #: ../../usermanual/bussystems.rst:161 918e7531910e48209ddd3f0318007f1c
