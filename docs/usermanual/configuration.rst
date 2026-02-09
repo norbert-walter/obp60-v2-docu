@@ -990,10 +990,8 @@ OneValue
 
    * - .. image:: ../pics/OBP60_OneValue.png
           :scale: 30%
-          :width: 50%
      - .. image:: ../pics/OBP60_OneValue_2.png
-           :scale: 30%
-           :width: 50%
+          :scale: 30%
 
 Abb.: Anzeige OneValue
 
@@ -1023,10 +1021,8 @@ TwoValue
 
    * - .. image:: ../pics/OBP60_TwoValue.png
           :scale: 30%
-          :width: 50%
-     - .. image:: ../pics/OBP60_TwoValue4.png
+     - .. image:: ../pics/OBP60_TwoValue2.png
            :scale: 30%
-           :width: 50%
 
 Abb.: Anzeige TwoValue
 
