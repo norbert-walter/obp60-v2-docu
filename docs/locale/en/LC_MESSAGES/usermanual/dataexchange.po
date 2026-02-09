@@ -1427,7 +1427,7 @@ msgstr "Example: Navionics on an Android car radio"
 #: ../../usermanual/dataexchange.rst:417 e11332412b42480da17951908971e23a
 #, fuzzy
 msgid "Abb.: Verbindung OBP60 - Android Autoradio Navionics"
-msgstr "Abb.: Connection OBP60 - Android car radio Navionics"
+msgstr "Abb.: Connection OBP60 - Android Car Radio Navionics"
 
 #: ../../usermanual/dataexchange.rst:419 3d47892ad7a84df3bb7b2c984323f7be
 #, fuzzy

@@ -127,8 +127,8 @@ msgid ""
 msgstr ""
 "The OBP60 includes an additional 5V power supply that powers the isolated "
 "circuit components. This additional power supply has outputs ``+5Viso`` and "
-"``GND2``, which are connected to connectors CN1 and CN2. External circuits "
-"up to 200 mA can also be powered via these outputs."
+"``GND2``, which are connected to connectors CN1 and CN2. These outputs can "
+"also power external circuits up to 200 mA."
 
 #: ../../usermanual/start.rst:36 ef44d3cafc71467aa215726c1c22b316
 #, fuzzy
@@ -375,7 +375,7 @@ msgid ""
 "Diagnosegerät wieder entfernen."
 msgstr ""
 "Depending on the USB-C diagnostic device used, only the power supply pins "
-"may be connected, and no data transfer is possible. If you need "
+"may be connected, and no data transfer may be possible. If you require "
 "communication via USB-C, you must disconnect the diagnostic device."
 
 #: ../../usermanual/start.rst:101 35c57b1ee5294b0b84bec4b9e05355cf

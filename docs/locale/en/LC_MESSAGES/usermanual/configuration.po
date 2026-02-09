@@ -4719,8 +4719,8 @@ msgid ""
 " vor dem Ausschalten definiert zu löschen."
 msgstr ""
 "WhitePage is a display page that shows only a blank white page. This page "
-"can be used to selectively clear the screen content before turning off the "
-"device."
+"can be used to selectively clear the screen content before switching off the"
+" device."
 
 #: ../../usermanual/configuration.rst:1166 c747e6811b34475ca40d49e0d70bdd34
 #, fuzzy
