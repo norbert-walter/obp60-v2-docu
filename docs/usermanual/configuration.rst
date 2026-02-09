@@ -989,10 +989,10 @@ OneValue
    :class: borderless
 
    * - .. image:: ../pics/OBP60_OneValue.png
-          :scale: 100%
+          :scale: 30%
           :width: 50%
      - .. image:: ../pics/OBP60_OneValue_2.png
-           :scale: 100%
+           :scale: 30%
            :width: 50%
 
 Abb.: Anzeige OneValue
@@ -1022,10 +1022,10 @@ TwoValue
    :class: borderless
 
    * - .. image:: ../pics/OBP60_TwoValue.png
-          :scale: 100%
+          :scale: 30%
           :width: 50%
      - .. image:: ../pics/OBP60_TwoValue4.png
-           :scale: 100%
+           :scale: 30%
            :width: 50%
 
 Abb.: Anzeige TwoValue
