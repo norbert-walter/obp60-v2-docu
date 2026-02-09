@@ -64,7 +64,7 @@ msgstr "A tip simplifies dealing with a situation."
 #, fuzzy
 msgid ""
 "Achtung weist auf einen bestimmten Sachverhalt hin, der eintreten kann."
-msgstr "\"Attention\" indicates a specific situation that may occur."
+msgstr "Caution indicates a specific situation that may occur."
 
 #: ../../help/glossar.rst:22 bb1223c97b11493388e70abf635ee276
 #, fuzzy
@@ -98,5 +98,5 @@ msgid ""
 "Mit Fehler gekennzeichnete Stellen zeigen, wie Fehler entstehen und "
 "vermieden werden können."
 msgstr ""
-"Sections marked with an error indicate how errors occur and how they can be "
-"avoided."
+"Sections marked with an error symbol show how errors occur and how they can "
+"be avoided."
