@@ -1297,7 +1297,7 @@ Navigation
 		   
 Abb.: Anzeige Navigation
 
-Die Navigation-Anzeige stellt den Standort des Bootes in einer nautischen Seekarte dar. Oben rechts im Bild wird die aktuelle Zoomstufe angezeigt. Je nach Konfiguration können verschieden Seekarten benutzt werden. Open Boat Projects stellt einen kostenlosen Seekartenservice zur Verfügung, der auf Open Source aufsetzt und standardmäßig aktiviert ist. Als Kartenmaterial werden öffentliche Seekarten verwendet, die auf Open Data basieren. Den Tasten sind folgende Funktionen zugeordnet:
+Die Navigation-Anzeige stellt den Standort des Bootes in einer nautischen Seekarte dar. Je nach Konfiguration können verschieden Seekarten benutzt werden. Open Boat Projects stellt einen kostenlosen Seekartenservice zur Verfügung, der auf Open Source aufsetzt und standardmäßig aktiviert ist. Als Kartenmaterial werden öffentliche Seekarten verwendet, die auf Open Data basieren. Den Tasten sind folgende Funktionen zugeordnet:
 
 	* ``[Zoom -]`` - Herauszoomen aus der Karte
 	* ``[Zoom +]`` - Hineinzoomen in die Karte
@@ -1306,7 +1306,7 @@ Die Navigation-Anzeige stellt den Standort des Bootes in einer nautischen Seekar
 	* ``[VALUES]`` - Anzeige von **HDT**, **SOG**, **DBT**
 	* ``[ILUM]`` - Beleuchtung ein/aus
 
-Die aktuelle Zoomstufe wird oben rechts im Display angezeigt. Im Falle einer unterbrochenen Internetverbindung erfolgt die Ausgabe der Meldung **Map server lost** unten rechts. Sie signalisiert, wenn der Kartenserver im Internet nicht mehr erreichbar sein sollte. 
+Die aktuelle Zoomstufe wird oben rechts im Display angezeigt. Im Falle einer unterbrochenen Internetverbindung erfolgt die Ausgabe der Meldung **Map server lost** unten rechts. Sie signalisiert, wenn der Kartenserver im Internet nicht mehr erreichbar sein sollte. Die mittlere Datenrate bei kontinuierlicher Darstellung der Karten beträgt ungefähr 40 MB/h. Achten Sie darsuf, dass Ihr mobiles Datenkontingent nicht überschritten wird.
 
 .. note::
 	Zur Anzeige von Seekarten muss das Geräte über WiFi mit dem Internet verbunden sein, da die Seekarten nicht im Gerät vorgehalten werden. Der Vorteil ist, Sie verfügen immer über die aktuellsten Seekarten und müssen sich nicht um das Update des Kartenmaterials kümmern. Achten Sie auf eine ausreichend stabile Internetverbindung, um Aussetzer in der Kartendarstellung zu vermeiden. 
@@ -1315,6 +1315,9 @@ Die aktuelle Zoomstufe wird oben rechts im Display angezeigt. Im Falle einer unt
 	Sie können auch einen eigenen Docker-Dienst zur Bereitstellung der Seekarten auf einem Raspberry Pi im Boot betreiben. So können Sie unabhängig von einer Internetverbindung die Seekarten auf dem Gerät anzeigen lassen. Als Alternative zum Seekartenservice von Open Boat Projects kann aber auch ein eigener Cloudserver mit Internetverbindung genutzt werden. Es stehen `Docker-Container`_ bei **Docker Hub** zur Verfügung, die Sie für einen selbst gehosteten Seekartenservice nutzen können.
 
 .. _Docker-Container: https://hub.docker.com/r/openboatprojects/maps_converter
+
+.. warning::
+	Die Navigation-Anzeige ist nur ein Hilfsmittel zur Navigation und ersetzt keine amtliche Seekarte. Mit der Seekarte könenn Sie sich in bekannten Revieren einen schnellen Überblick verschaffen und zur Lagekontrolle verwenden. Das OBP60 ist kein vollwertiger Plotter und er kann nicht in unbekannten Revieren für die Routenplanunung oder Navigation verwendet werden. Bei der Seekartendarstellung kann es zu zeitlichen Verzögerungen der angezeigten Karte kommen. Eine Echtzeitdarstellung der Bootsposition ist nicht immer garantiert und hängt von der Verbindungsqualität zum Internet ab. Ist die Internetverbindung länger als 5s nicht verfügbar, wird das letzte verfügbare Kartenbild angezeigt und im Display erscheint die Meldung **Map server lost**. Dies kann z.B. auch passieren, wenn Ihr mobiles Datenkontingent überschritten ist. Prüfen Sie vor der Nutzung der Onlinekarte das zur Verfügung stehende Datenvolumen. Beachten Sie, dass die verfügbaren Seekarten unterschiedliche Qualitäten aufweisen und teilweise keine Wassertiefen anzeigen.
 
 
 Battery
