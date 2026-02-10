@@ -61,7 +61,7 @@ msgstr "The device itself, the OBP60 Marine Display"
 #, fuzzy
 msgid "Eine Schutzkappe - wichtig wenn man das Gerät im Freien montiert"
 msgstr ""
-"A protective cap is essential if you are mounting the device outdoors."
+"A protective cap is important if you are mounting the device outdoors."
 
 #: ../../intro/quickstart.rst:13 a4bdafd655a8418e8d9b584519f6834e
 #, fuzzy
