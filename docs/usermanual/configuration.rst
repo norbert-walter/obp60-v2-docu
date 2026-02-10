@@ -1234,11 +1234,14 @@ Die Navigation-Anzeige stellt den Standort des Bootes in einer nautischen Seekar
 
 Über die Tasten ``[Zoom -]`` und ``[Zoom +]`` lassen sich die Zoomstufen der Auflösung der Seekarte einstellen. Mit der Taste ``[Values]`` können in der linken oberen Ecke einige Basisdaten angezeigt werden wie der GPS-Kurs **HDT**, die Geschwindigkeit über Grund **SOG** und die Wassertiefe **DBT**. Im Falle einer unterbrochenen Internetverbindung erfolgt einen Meldung **Map server lost**. Sie signalisiert, wenn der Kartenserver im Internet nicht mehr erreichbar sein sollte. 
 
-.. hint::
+.. note::
 	Zur Anzeige von Seekarten muss das Geräte über WiFi mit dem Internet verbunden sein, da die Seekarten nicht im Gerät vorgehalten werden. Der Vorteil ist, Sie verfügen immer über die aktuellsten Seekarten und müssen sich nicht um das Update des Kartenmaterials kümmern. Achten Sie auf eine ausreichend stabile Internetverbindung, um Aussetzer in der Kartendarstellung zu vermeiden. 
 
 .. tip::
-	Sie können auch einen eigenen Docker-Dienst zur Bereitstellung der Seekarten auf einem Raspberry Pi im Boot betreiben. So können Sie unabhängig von einer Internetverbindung die Seekarten auf dem Gerät anzeigen lassen. Als Alternative zum Seekartenservice von Open Boat Projects kann aber auch ein eigener Cloudserver mit Internetverbindung genutzt werden. Es stehen Docker-Container bei **Docker Hub** zur Verfügung, die Sie für einen selbst gehosteten Seekartenservice nutzen können.
+	Sie können auch einen eigenen Docker-Dienst zur Bereitstellung der Seekarten auf einem Raspberry Pi im Boot betreiben. So können Sie unabhängig von einer Internetverbindung die Seekarten auf dem Gerät anzeigen lassen. Als Alternative zum Seekartenservice von Open Boat Projects kann aber auch ein eigener Cloudserver mit Internetverbindung genutzt werden. Es stehen `Docker-Container`_ bei **Docker Hub** zur Verfügung, die Sie für einen selbst gehosteten Seekartenservice nutzen können.
+
+.. _Docker-Container: https://hub.docker.com/r/openboatprojects/maps_converter
+
 
 Battery
 ^^^^^^^
