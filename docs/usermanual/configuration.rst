@@ -997,7 +997,7 @@ Abb.: Anzeige OneValue
 
 Bei der OneValue-Anzeige kann ein beliebiger Messwert aus dem Datenpool angezeigt werden. Neben dem Messwert werden der Kurzbezeichner und die Einheit dargestellt.
 
-Über die Taste ``MODE`` kann für bestimmte Datentypen zusätzlich numerischen Anzeige eine grafische Anzeige des Datenverlaufs gewählt werden. Die Anzeige wechselt zwischen drei verschiedenen Anzeigen:
+Über die Taste ``[MODE]`` kann für bestimmte Datentypen zusätzlich numerischen Anzeige eine grafische Anzeige des Datenverlaufs gewählt werden. Die Anzeige wechselt zwischen drei verschiedenen Anzeigen:
 
 	* großformatige numerische Anzeige des aktuellen Messwertes
 	* Anzeige des Messwertes in der oberern Hälfte der Anzeige und grafisches Diagramm mit dem zeitlichen Verlauf der Messwerte in der unteren Hälfte der Anzeige
@@ -1005,12 +1005,12 @@ Bei der OneValue-Anzeige kann ein beliebiger Messwert aus dem Datenpool angezeig
 
 Die Werteachse wird in Abhängigkeit von den Anzeigedaten dynamisch angepasst.
 
-Das Grafikdiagramm kann den Verlauf der Messwerte über ein auswählbares Zeitintervall anzeigen. Über die Taste ``ZOOM`` kann das Zeitintervall verändert werden. Mit jedem Tastendruck wird das Intervall zwischen [4, 8, 12, 16, 32] Minuten weitergeschaltet. Auf der Zeitachse ist das gewählte Intervall erkennbar. Bei dem Zeitintervall von vier Minuten wird jede Sekunde einer neuer Datenwert ergänzt. Bei größeren Zeitintervallen werden nur jeweils alle 2-8 Sekunden neue Werte angezeigt.
+Das Grafikdiagramm kann den Verlauf der Messwerte über ein auswählbares Zeitintervall anzeigen. Über die Taste ``[ZOOM]`` kann das Zeitintervall verändert werden. Mit jedem Tastendruck wird das Intervall zwischen [4, 8, 12, 16, 32] Minuten weitergeschaltet. Auf der Zeitachse ist das gewählte Intervall erkennbar. Bei dem Zeitintervall von vier Minuten wird jede Sekunde einer neuer Datenwert ergänzt. Bei größeren Zeitintervallen werden nur jeweils alle 2-8 Sekunden neue Werte angezeigt.
 
 .. note::
    Die grafische Anzeige wird für diese Datentypen unterstützt: 
    **AWA**, **AWD**, **AWS**, **COG**, **DBS**, **DBT**, **DPT**, **HDM**, **HDT**, **ROT**, **SOG**, **STW**, **TWA**, **TWD**, **TWS**, **WTEMP**.
-   Sollte für die OneValue-Anzeige ein Datentyp gewählt werden, für den nur eine numerische Anzeige möglich ist, sind die Tasten ``MODE`` und ``ZOOM`` nicht verfügbar.
+   Sollte für die OneValue-Anzeige ein Datentyp gewählt werden, für den nur eine numerische Anzeige möglich ist, sind die Tasten ``[MODE]`` und ``[ZOOM]`` nicht verfügbar.
 
 TwoValue
 ^^^^^^^^
@@ -1083,7 +1083,7 @@ WindPlot
              :scale: 30%
 Abb.: Anzeige WindPlot
 
-Diese Seite zeigt den zeitlichen Verlauf von Winddaten grafisch an. Über die Taste ``MODE`` wird zwischen drei verschiedenen Liniendiagrammen umgeschaltet:
+Diese Seite zeigt den zeitlichen Verlauf von Winddaten grafisch an. Über die Taste ``[MODE]`` wird zwischen drei verschiedenen Liniendiagrammen umgeschaltet:
 
 	* absolute Windrichtung (wind direction **TWD**/**AWD**)
 	* Windgeschwindigkeit (wind speed **TWS**/**AWS**)
@@ -1091,9 +1091,9 @@ Diese Seite zeigt den zeitlichen Verlauf von Winddaten grafisch an. Über die Ta
 
 Die Werteachse wird in Abhängigkeit von den Anzeigedaten dynamisch angepasst. Zusätzlich zur grafischen Anzeige der Winddaten wird der jeweils aktuellste Wert als Zahl dargestellt.
 
-Mit der Taste ``SRC`` kann man zwischen der Anzeige von wahren und scheinbaren Winddaten (true/apparent) umschalten.
+Mit der Taste ``[SRC]`` kann man zwischen der Anzeige von wahren und scheinbaren Winddaten (true/apparent) umschalten.
 
-Das Grafikdiagramm kann den Verlauf der Winddaten über ein auswählbares Zeitintervall anzeigen. Über die Taste ``ZOOM`` kann das Zeitintervall verändert werden. Mit jedem Tastendruck wird das Intervall zwischen [4, 8, 12, 16, 32] Minuten weitergeschaltet. Auf der Zeitachse ist das gewählte Intervall erkennbar. Bei dem Zeitintervall von vier Minuten wird jede Sekunde einer neuer Datenwert ergänzt. Bei größeren Zeitintervallen werden nur jeweils alle 2-8 Sekunden neue Werte angezeigt.
+Das Grafikdiagramm kann den Verlauf der Winddaten über ein auswählbares Zeitintervall anzeigen. Über die Taste ``[ZOOM]`` kann das Zeitintervall verändert werden. Mit jedem Tastendruck wird das Intervall zwischen [4, 8, 12, 16, 32] Minuten weitergeschaltet. Auf der Zeitachse ist das gewählte Intervall erkennbar. Bei dem Zeitintervall von vier Minuten wird jede Sekunde einer neuer Datenwert ergänzt. Bei größeren Zeitintervallen werden nur jeweils alle 2-8 Sekunden neue Werte angezeigt.
 	
 Die Anzeigeseite benötigt folgende Messwerte: **TWD, TWS, AWS**. Der Wert **AWD** wird automatisch berechnet, sofern die Windaten **AWA** und **AWS** vorhanden sind.
 
@@ -1223,10 +1223,10 @@ Navigation
    :widths: 50 50
    :class: borderless
 
-   * - .. image:: ../OBP60_Navigation_tr.png
+   * - .. image:: ../pics/OBP60_Navigation_tr.png
           :scale: 30%
-     - .. image:: ../OBP60_Navigation2_tr.png
-           :scale: 30%
+     - .. image:: ../pics/OBP60_Navigation2_tr.png
+          :scale: 30%
 		   
 Abb.: Anzeige Navigation
 
