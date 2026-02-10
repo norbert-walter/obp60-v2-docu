@@ -1441,6 +1441,41 @@ Abb.: Schaltung INA226 Generatormonitoring
 
 .. warning::
 	Die Gefahren und Risiken bei der Benutzung des INA226 zum Batteriemonitoring sind dieselben wie im Kapitel **Battery** beschrieben. Folgen Sie den Empfehlungen und beachten Sie die Gefahren.
+	
+Digital Out
+^^^^^^^^^^^
+
+.. image:: ../pics/OBP60_Digital_Out.png
+          :scale: 30%
+
+Abb.: Anzeige Digital Out
+
+.. image:: ../pics/I2C_Digital_Output2.png
+          :scale: 30%
+
+Abb.: I2C-Ausgabemodul mit Optokoppler
+
+
+Die Digital-Out-Anzeige dient zur Bedienung eines Ausgangsmoduls und zur Anzeige von Schaltzuständen. Als Ausgangsmodul kann das `I2C-Ausgabemodul`_ der Fa. **Horter & Kalb** verwendet werden. Damit können digitale Schaltzustände ausgegeben werden. Das Modul kann als Open Source DIY-Bausatz bezogen werden und hat folgende technische Daten:
+
+.. _I2C-Ausgabemodul: https://www.horter-shop.de/de/i2c-hutschienen-module/237-442-bausatz-i2c-digital-output-modul-mit-optokoppler-4260404260875.html#/25-klemmen-feste_klemmen/27-pcf_typ-pcf_8574_adresse_64_78
+
+	* Galvanische Trennung zwischen I2C-Bus und Leistungskreis
+	* Negative Logik des Ausgangssignals
+	* Unterstützt 12/24V-Leistungskreise
+	* 40V max. Spannung des Leistungkreises
+	* 1A max. Ausgangsstrom
+	* Ausführung: Hutschinenmodul
+	* 4 I2C-Adressen auswählbar
+	
+Mit dem Dgital-Ausgangsmodul lassen sich in 12V-Kreisen Lasten bis zu 12W direkt versorgen, wie z.B. Glühlampen, LED-Lampen, Magnetventile oder Relais. Verwenden Sie für die I2C-Verbindung geschirmte Leitungen und legen den Schirm am OBP60 auf und lassen den Schirm am digitalen Ausgangsmodul unbelegt. Für die 5V-Versorgung des Moduls könen Sie die Klemmen ``5Viso`` und ``GND2`` am Steckverbinder **CN2** des OBP60 nutzen.
+	
+.. tip::
+	Möchten Sie größere Lasten schalten, so können Sie am digitalen Ausgang ein Relais benutzen. Damit lassen sich je nach verwendeten Relaistyp Lasten von bis zu 3000W schalten. Mit einem Relais ist es auch möglich Lasten in 230V AC Stromkreisen zu schalten.
+	
+.. warning::
+	Das digitale Ausgangsmodul verfügt über keinen Verpolungsschutz und keine Leistungsbegrenzung. Eine verpolte Versorgungsspannung oder zu hohe Lasten können das digitale Ausgangsmodul zerstören. Beim Schalten induktiver Lasten ist eine Freilaufdiode an der Spule zu verwenden, um gefährliche Rückinduktionsströme zu unterdrücken. Beim dauerhaften Schalten hoher Lasten können die Leistungs-Transistoren heiß werden. Sorgen sie für eine ausreichende Belüftung oder reduzieren Sie die Last bei ungenügender Belüftung.
+
 
 .. _XDR:
 
