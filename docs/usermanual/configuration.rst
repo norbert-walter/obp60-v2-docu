@@ -1157,6 +1157,25 @@ Abb.: Anzeige WindroseFlex
 
 Bei dieser Variante der Anzeige WindRose können die darzustellenden Werte frei gewählt werden. Der erste Wert wird auf der Windrose grafisch als Richtung dargestellt, hier ist sinnvollerweise AWA oder TWA zu wählen.
 
+XTETrack
+^^^^^^^^
+
+.. image:: ../pics/OBP60_XTETrack.png
+             :scale: 30%
+Abb.: Anzeige XTETrack
+
+Diese Anzeige stellt Informationen über den Kurs zum nächsten Wegepunkt dar, wenn von einem Plotter entsprechende Routen- und Wegepunktdaten im Netz bereitgestellt werden. Es werden Daten zum
+
+    * **Cross-track-error**: aktuelle Distanz zur idealen Wegepunktlinie und Position (backbord/steuerbord) von dieser Linie
+    * **Track**: aktueller Kurs über Grund
+    * **Distance to waypoint**: Entfernung zum nächsten Wegepunkt
+    * **Bearing**: aktuelle Richtung zum nächsten Wegepunkt
+    * **Wegepunktname**: sofern vorhanden
+
+angezeigt. Die aktuelle Distanz/Position zur Wegepunktlinie wird außerdem über "Autobahnstreifen" visualisiert.
+
+Die Anzeigeseite benötigt folgende Messwerte: **XTE, COG, DTW, BTW**
+
 Compass
 ^^^^^^^
 
@@ -1166,8 +1185,8 @@ Abb.: Anzeige Compass
 
 Diese Anzeige stellt eine rollierende Kompassscheibe und darüber einen ergänzenden Messwert dar. Die Kompassscheibe wandert entsprechend des aktuellen Kurses. Eine gestrichelte Linie nach links/rechts stellt die letzte Kursänderung dar. Die Länge der Linie symbolisiert die Größe der Kursänderung.
 
-    * Mit der Taste ``CMP`` lässt sich die Quelle der Kompassanzeige zwischen **HDM, HDT** und **COG** umschalten.
-    * Mit der Taste ``SRC`` lässt sich der ergänzende Messwert zwischen **HDM, HDT, COG, STW, SOG** und **DBS** umschalten.
+    * Mit der Taste ``[CMP]`` lässt sich die Quelle der Kompassanzeige zwischen **HDM, HDT** und **COG** umschalten.
+    * Mit der Taste ``[SRC]`` lässt sich der ergänzende Messwert zwischen **HDM, HDT, COG, STW, SOG** und **DBS** umschalten.
 
 Die Anzeigeseite benötigt folgende Messwerte: **HDM, HDT, COG, STW, SOG, DBS**
 
