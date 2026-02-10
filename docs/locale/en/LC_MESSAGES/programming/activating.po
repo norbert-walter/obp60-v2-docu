@@ -384,7 +384,7 @@ msgstr "Bootloader.bin - ESP32-S3 Bootloader for Firmware"
 #: ../../programming/activating.rst:110 de0fb35c20e34a9c8105f7f2e7a53b7f
 #, fuzzy
 msgid "partitions.bin - Partitionstabelle für den Flash Speicher"
-msgstr "Partitions.bin - Partition table for flash memory"
+msgstr "Partitions.bin - Partition table for the flash memory"
 
 #: ../../programming/activating.rst:111 ../../programming/activating.rst:222
 #: 0d83447e618b40e0a05092e041d4e186 50a6c5d9573a4338a0e0faa124eb39a1
