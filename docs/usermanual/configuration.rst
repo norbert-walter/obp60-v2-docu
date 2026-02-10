@@ -1178,7 +1178,7 @@ Die Uhr-Anzeige erfüllt 3 Anzeigeaufgaben:
 	
 Dabei haben die Tasten je nach Mode unterschioedliche Bedeutung:
 
-**Analoge und Digitale Uhr**
+**Analoge und Digitale Uhr** 
 
 	* ``[MODE]`` - Umschaltung des Anzeigetyps
 	* ``[SRC]`` - Umschaltung der Zeitquelle [RTC|GPS]
