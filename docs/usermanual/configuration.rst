@@ -1065,6 +1065,17 @@ Abb.: Anzeige FourValue
 
 Bei der FourValue-Anzeige können vier beliebige Messwerte aus dem Datenpool vertikal übereinander und horizontal nebeneinander angezeigt werden. Neben den Messwerten werden die Kurzbezeichner und die Einheiten angezeigt. Diese Darstellung entspricht der alten Darstellung vom Raymarine ST60 TriData mit dem Unterschied, dass hier beliebige Werte angezeigt werden können. Es gibt noch die Anzeigeseite **DST810** mit festen Inhalten, die die gleichen Messwerte anzeigt wie beim ST60 TriData.
 
+DST810
+^^^^^^
+
+.. image:: ../pics/OBP60_DST810.png
+             :scale: 30%
+Abb.: Anzeige DST810
+
+Bei der DST810-Anzeige werden der Speed durchs Wasser, die Tiefe, die zurückgelegte Strecke und die Wassertemperatur angezeigt. Neben den Messwerten werden die Kurzbezeichner und die Einheiten dargestellt. Die Anzeigeseite entspricht der alten Darstellung vom **Raymarine ST60 TriData**. Damit die Daten angezeigt werden können, müssen sich gültige Informationen im Datenpool befinden. Neben dem DST810 von Airmar können auch Messwerte anderer Sensorhersteller angezeigt werden, die dieselben Daten oder einen Teil der Daten liefern
+
+Die Anzeigeseite benötigt folgende Messwerte: **DBT, STW, Log, WTemp**
+
 Voltage
 ^^^^^^^
 
@@ -1145,17 +1156,6 @@ WindRoseFlex
 Abb.: Anzeige WindroseFlex
 
 Bei dieser Variante der Anzeige WindRose können die darzustellenden Werte frei gewählt werden. Der erste Wert wird auf der Windrose grafisch als Richtung dargestellt, hier ist sinnvollerweise AWA oder TWA zu wählen.
-
-DST810
-^^^^^^
-
-.. image:: ../pics/OBP60_DST810.png
-             :scale: 30%
-Abb.: Anzeige DST810
-
-Bei der DST810-Anzeige werden der Speed durchs Wasser, die Tiefe, die zurückgelegte Strecke und die Wassertemperatur angezeigt. Neben den Messwerten werden die Kurzbezeichner und die Einheiten dargestellt. Die Anzeigeseite entspricht der alten Darstellung vom **Raymarine ST60 TriData**. Damit die Daten angezeigt werden können, müssen sich gültige Informationen im Datenpool befinden. Neben dem DST810 von Airmar können auch Messwerte anderer Sensorhersteller angezeigt werden, die dieselben Daten oder einen Teil der Daten liefern
-
-Die Anzeigeseite benötigt folgende Messwerte: **DBT, STW, Log, WTemp**
 
 Compass
 ^^^^^^^
