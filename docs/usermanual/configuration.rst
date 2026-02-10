@@ -929,6 +929,7 @@ Im OBP60 gibt es insgesamt bis zu 10 Seiten, die man frei auswählen und gestalt
     * **Battery2** - Grafische Anzeige des Batterie-Ladezustandes (**INA219, INA226** I2C)
     * **Solar** - Grafische Anzeige des Solar-Ladezustandes (**INA219, INA226** I2C)
     * **Generator** - Grafische Anzeige des Generator-Ladezustandes (**INA219, INA226** I2C)
+	
 	* **Digital Out** - Grafische Anzeige der digitalen Ausgangszustände (**Ausgabe-Modul**, Horter & Kalb I2C)
     
 .. note::
@@ -1163,7 +1164,7 @@ Clock
    :widths: 50 50
    :class: borderless
 
-   * - .. image:: ../pics/OBP60_Digital_Clock_tr.png
+   * - .. image:: ../pics/OBP60_Clock_tr.png
           :scale: 30%
      - .. image:: ../pics/OBP60_Digital_Clock_tr.png
           :scale: 30%
@@ -1176,9 +1177,9 @@ Die Uhr-Anzeige erfüllt 3 Anzeigeaufgaben:
 	* Digitale Uhrzeit
 	* Regattatimer
 	
-Dabei haben die Tasten je nach Mode unterschioedliche Bedeutung:
+Dabei haben die Tasten je nach Mode unterschiedliche Bedeutung:
 
-**Analoge und Digitale Uhr** 
+**Analoge und Digitale Uhr**
 
 	* ``[MODE]`` - Umschaltung des Anzeigetyps
 	* ``[SRC]`` - Umschaltung der Zeitquelle [RTC|GPS]
