@@ -996,7 +996,13 @@ OneValue
 
 Abb.: Anzeige OneValue
 
-Bei der OneValue-Anzeige kann ein beliebiger Messwert aus dem Datenpool angezeigt werden. Neben dem Messwert werden der Kurzbezeichner und die Einheit dargestellt.
+Bei der OneValue-Anzeige kann ein beliebiger Messwert aus dem Datenpool angezeigt werden. Neben dem Messwert werden der Kurzbezeichner und die Einheit dargestellt. Die Tasten haben dabei folgende Bedeutung:
+
+	* ``[MODE]`` - Umschaltung des Anzeigetyps
+	* ``[<-]`` - Zur vorherigen Anzeigeseite wechseln
+	* ``[->]`` - Zur nachfolgenden Anzeigeseite wechseln
+	* ``[ZOOM]`` - Veränderung des Zeitintervalls der Grafik [4|8|12|16|32] in Minuten
+	* ``[ILUM]`` - Beleuchtung ein/aus
 
 Über die Taste ``[MODE]`` kann für bestimmte Datentypen zusätzlich numerischen Anzeige eine grafische Anzeige des Datenverlaufs gewählt werden. Die Anzeige wechselt zwischen drei verschiedenen Anzeigen:
 
@@ -1006,7 +1012,7 @@ Bei der OneValue-Anzeige kann ein beliebiger Messwert aus dem Datenpool angezeig
 
 Die Werteachse wird in Abhängigkeit von den Anzeigedaten dynamisch angepasst.
 
-Das Grafikdiagramm kann den Verlauf der Messwerte über ein auswählbares Zeitintervall anzeigen. Über die Taste ``[ZOOM]`` kann das Zeitintervall verändert werden. Mit jedem Tastendruck wird das Intervall zwischen [4, 8, 12, 16, 32] Minuten weitergeschaltet. Auf der Zeitachse ist das gewählte Intervall erkennbar. Bei dem Zeitintervall von vier Minuten wird jede Sekunde einer neuer Datenwert ergänzt. Bei größeren Zeitintervallen werden nur jeweils alle 2-8 Sekunden neue Werte angezeigt.
+Das Grafikdiagramm kann den Verlauf der Messwerte über ein auswählbares Zeitintervall anzeigen. Über die Taste ``[ZOOM]`` kann das Zeitintervall verändert werden. Mit jedem Tastendruck wird das Intervall zwischen [4|8|12|16|32] Minuten weitergeschaltet. Auf der Zeitachse ist das gewählte Intervall erkennbar. Bei dem Zeitintervall von vier Minuten wird jede Sekunde einer neuer Datenwert ergänzt. Bei größeren Zeitintervallen werden nur jeweils alle 2-8 Sekunden neue Werte angezeigt.
 
 .. note::
    Die grafische Anzeige wird für diese Datentypen unterstützt: 
@@ -1153,18 +1159,61 @@ Die Anzeigeseite benötigt folgende Messwerte: **DBT, STW, Log, WTemp**
 Clock
 ^^^^^
 
-.. image:: /pics/OBP60_Clock_tr.png
-             :scale: 30%
+.. list-table::
+   :widths: 50 50
+   :class: borderless
+
+   * - .. image:: ../pics/OBP60_Digital_Clock_tr.png
+          :scale: 30%
+     - .. image:: ../pics/OBP60_Digital_Clock_tr.png
+          :scale: 30%
+		  
 Abb.: Anzeige Clock
 
-Bei der Clock-Anzeige werden die Uhrzeit, das Datum, die Sonnenaufgangszeit und die Sonnenuntergangszeit angezeigt. Die Anzeigewerte werden primär aus den GPS-Daten gewonnen. Die Auf- und Untergangszeit der Sonne wird abhängig vom geografischen Ort berechnet und entspricht der astronomischen Sonnenaufgangs- und Untergangszeit. Als Zeitanzeige kann die globale Weltzeit **UTC** oder die lokale Ortszeit **LOT** angezeigt werden. Die Auswahl der Zeitzone kann über die Konfigurationsseite **Config - OBP Settings** eingestellt werden.
+Die Uhr-Anzeige erfüllt 3 Anzeigeaufgaben:
 
-Die Einstellung der Uhrzeit erfolgt automatisch über die GPS-Zeit. Stellen Sie vor der Benutzung des OBP60 sicher, dass ein GPS-Empfang möglich ist, damit sich die Zeit einstellen kann. In regelmäßigen Abständen wird die RTC-Zeit mit der GPS-Zeit synchronisiert, so dass Sie auch über Zeitinformationen verfügen, wenn kein GPS-Empfang möglich ist.
+	* Anloge Uhrzeit
+	* Digitale Uhrzeit
+	* Regattatimer
+	
+Dabei haben die Tasten je nach Mode unterschioedliche Bedeutung:
+
+**Analoge und Digitale Uhr**
+
+	* ``[MODE]`` - Umschaltung des Anzeigetyps
+	* ``[SRC]`` - Umschaltung der Zeitquelle [RTC|GPS]
+	* ``[<-]`` - Zur vorherigen Anzeigeseite wechseln, 
+	* ``[->]`` - Zur nachfolgenden Anzeigeseite wechseln
+	* ``[TZ]`` - Einstellung der Zeitzone [LOT|UTC]
+	* ``[ILUM]`` - Beleuchtung ein/aus
+	
+Bei der Clock-Anzeige werden die Uhrzeit, das Datum, die Sonnenaufgangszeit und die Sonnenuntergangszeit angezeigt. Die Anzeigewerte werden primär aus den GPS-Daten gewonnen. Für den Fall, dass kein GPS vorhanden ist, kann als Zeitquelle die interne Real Time Clock (RTC) benutzt werden. Die Auf- und Untergangszeit der Sonne wird abhängig vom geografischen Ort berechnet und entspricht der astronomischen Sonnenaufgangs- und Untergangszeit. Als Zeitanzeige kann die globale Weltzeit **UTC** oder die lokale Ortszeit **LOT** angezeigt werden. Die Auswahl der Zeitzone kann über die Konfigurationsseite **Config - OBP Settings** eingestellt werden. Die Einstellung der Uhrzeit erfolgt automatisch über die GPS-Zeit. Stellen Sie vor der Benutzung des OBP60 sicher, dass ein GPS-Empfang möglich ist, damit sich die Zeit einstellen kann. In regelmäßigen Abständen wird die RTC-Zeit mit der GPS-Zeit synchronisiert, so dass Sie auch über Zeitinformationen verfügen, wenn kein GPS-Empfang möglich ist.
 
 .. note::
 	Stehen keine GPS-Daten zur Verfügung, so wird die Zeit und das Datum aus der RTC benutzt. In dem Fall stehen keine Sonnenaufgangszeit und Sonnenuntergangszeit zur Verfügung, da die geografischen Ortsdaten fehlen.
 	
-Die Anzeigeseite benötigt folgende Messwerte: **GPST, GPSD**
+.. image:: /pics/OBP60_Regatta_Timer_tr.png
+             :scale: 30%
+Abb.: Anzeige Regatta-Timer
+	
+**Regatta-Timer**
+
+	* ``[MODE]`` - Umschaltung des Anzeigetyps
+	* ``[POS]`` - Umschaltung zw. Stunde, Minute, Sekunde für Einstellung
+	* ``[+][SYNC]`` - Inkrement des Anzeigewertes oder Synchronisierung des Timers mit einer festen Zeit [4 min] 
+	* ``[-][ ]`` - Dekrement des Anzeigewertes
+	* ``[START][RESET]`` - Start und Reset des Timers
+	* ``[ILUM]`` - Beleuchtung ein/aus
+	
+Der Regatta-Timer ist ein Count-Down-Timer mit speziellen Funktionen. Über die Taste ``[POS]`` kann der Cursor zum Einstellen der Uhrzeit auf die entsprechende Stelle positioniert werden. Der Cursor ist nur sichtbar, wenn der Timer nicht läuft. Über ``[+]`` und ``[-]`` lassen sich die Anzeigewerte verändern. Sobald der Timer läuft, ist keine Einstellung mehr möglich und über die Taste ``[SYNC]`` kann der Timer mit einem 4-Minuten-Vorsignal der Regattaleitung synchronisiert werden. Nach drücken der Taste ``[SYNC]`` springt der Timer direkt auf die Zeit 00:04:00 und der Count Down läuft weiter. Wird der Count Down über die Taste ``[RESET]`` angehalten, so wird die Uhrzeit auf den Anfangswert zurückgesetzt und der Timer ist wieder startbereit oder kann ggf. in der Zeit angepasst werden. Vor dem Ablaufen des Count Downs erfolgen akustische Signale zu folgenden Zeiten:
+
+	* [60|50|40|30|20|10]s Kurze Zweitonausgabe
+	* [5|4|3|2|1]s Kurze Eintonausgabe
+	* [0]s Lange Eintonausgabe
+	
+Nachdem der Count Down abgelaufen ist, springt der Timer zurück auf die Anfangszeit.
+	
+Die Anzeigeseite benötigt folgende Werte: **GPST, GPSD**
 
 WhitePage
 ^^^^^^^^^
@@ -1247,9 +1296,16 @@ Navigation
 		   
 Abb.: Anzeige Navigation
 
-Die Navigation-Anzeige stellt den Standort des Bootes in einer nautischen Seekarte dar. Oben rechts im Bild wird die aktuelle Zoomstufe angezeigt. Je nach Konfiguration können verschieden Seekarten benutzt werden. Open Boat Projects stellt einen kostenlosen Seekartenservice zur Verfügung, der auf Open Source aufsetzt und standardmäßig aktiviert ist. Als Kartenmaterial werden öffentliche Seekarten verwendet, die auf Open Data basieren.
+Die Navigation-Anzeige stellt den Standort des Bootes in einer nautischen Seekarte dar. Oben rechts im Bild wird die aktuelle Zoomstufe angezeigt. Je nach Konfiguration können verschieden Seekarten benutzt werden. Open Boat Projects stellt einen kostenlosen Seekartenservice zur Verfügung, der auf Open Source aufsetzt und standardmäßig aktiviert ist. Als Kartenmaterial werden öffentliche Seekarten verwendet, die auf Open Data basieren. Den Tasten sind folgende Funktionen zugeordnet:
 
-Über die Tasten ``[Zoom -]`` und ``[Zoom +]`` lassen sich die Zoomstufen der Auflösung der Seekarte einstellen. Mit der Taste ``[Values]`` können in der linken oberen Ecke einige Basisdaten angezeigt werden wie der GPS-Kurs **HDT**, die Geschwindigkeit über Grund **SOG** und die Wassertiefe **DBT**. Im Falle einer unterbrochenen Internetverbindung erfolgt einen Meldung **Map server lost**. Sie signalisiert, wenn der Kartenserver im Internet nicht mehr erreichbar sein sollte. 
+	* ``[Zoom -]`` - Herauszoomen aus der Karte
+	* ``[Zoom +]`` - Hineinzoomen in die Karte
+	* ``[<-]`` - Zur vorherigen Anzeigeseite wechseln
+	* ``[->]`` - Zur nachfolgenden Anzeigeseite wechseln
+	* ``[VALUES]`` - Anzeige von **HDT**, **SOG**, **DBT**
+	* ``[ILUM]`` - Beleuchtung ein/aus
+
+Die aktuelle Zoomstufe wird oben rechts im Display angezeigt. Im Falle einer unterbrochenen Internetverbindung erfolgt die Ausgabe der Meldung **Map server lost** unten rechts. Sie signalisiert, wenn der Kartenserver im Internet nicht mehr erreichbar sein sollte. 
 
 .. note::
 	Zur Anzeige von Seekarten muss das Geräte über WiFi mit dem Internet verbunden sein, da die Seekarten nicht im Gerät vorgehalten werden. Der Vorteil ist, Sie verfügen immer über die aktuellsten Seekarten und müssen sich nicht um das Update des Kartenmaterials kümmern. Achten Sie auf eine ausreichend stabile Internetverbindung, um Aussetzer in der Kartendarstellung zu vermeiden. 
@@ -1457,7 +1513,16 @@ Abb.: Anzeige Digital Out
 Abb.: I2C-Ausgabemodul mit Optokoppler
 
 
-Die Digital-Out-Anzeige dient zur Bedienung eines Ausgangsmoduls und zur Anzeige von Schaltzuständen. Als Ausgangsmodul kann das `I2C-Ausgabemodul`_ der Fa. **Horter & Kalb** verwendet werden. Damit können digitale Schaltzustände ausgegeben werden. Das Modul kann als Open Source DIY-Bausatz bezogen werden und hat folgende technische Daten:
+Die Digital-Out-Anzeige dient zur Bedienung eines Ausgangsmoduls und zur Anzeige von Schaltzuständen. Als Ausgangsmodul kann das `I2C-Ausgabemodul`_ der Fa. **Horter & Kalb** verwendet werden. Damit können digitale Schaltzustände ausgegeben werden. Die Tasten haben dabei folgende Bedeutung:
+
+	* ``[1]`` - Auagang 1 ein/aus
+	* ``[2]`` - Auagang 2 ein/aus
+	* ``[3]`` - Auagang 3 ein/aus
+	* ``[4]`` - Auagang 4 ein/aus
+	* ``[5]`` - Auagang 5 ein/aus
+	* ``[ILUM]`` - Beleuchtung ein/aus
+
+Die weiteren Ausgänge 6, 7 und 8 können über die Seite nicht angesteuert werden und bleiben ungenutzt. Das Modul kann als Open Source DIY-Bausatz bezogen werden und hat folgende technische Daten:
 
 .. _I2C-Ausgabemodul: https://www.horter-shop.de/de/i2c-hutschienen-module/237-442-bausatz-i2c-digital-output-modul-mit-optokoppler-4260404260875.html#/25-klemmen-feste_klemmen/27-pcf_typ-pcf_8574_adresse_64_78
 
