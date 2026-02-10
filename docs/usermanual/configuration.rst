@@ -1060,9 +1060,17 @@ Bei der FourValue-Anzeige können vier beliebige Messwerte aus dem Datenpool ver
 Voltage
 ^^^^^^^
 
-.. image:: /pics/OBP60_Voltage.png
-             :scale: 30%
+.. list-table::
+   :widths: 50 50
+   :class: borderless
+
+   * - .. image:: ../pics/OBP60_Voltage.png
+          :scale: 30%
+     - .. image:: ../pics/OBP60_Voltage_Analog_tr.png
+          :scale: 30%
+
 Abb.: Anzeige Voltage
+
 
 Bei der Voltage-Anzeige wird die Versorgungsspannung der Batterie angezeigt, wie sie am Eingang von CN2 zur Verfügung gestellt wird.
 
@@ -1071,6 +1079,7 @@ Bei der Voltage-Anzeige wird die Versorgungsspannung der Batterie angezeigt, wie
 	
 Ein Trendindikator zeigt den Trend an, in welche Richtung sich die Spannung bewegt. Hinter der Einheit Volt werden der Batterietyp [Pb|AGM|Gel|LiFePo4] und die aktuell benutzte Mittelungstiefe angezeigt. Über die Tasten können folgende Funktionen genutzt werden.
 
+	* ``[MODE]`` - Umschaltung zwischen analoger und digitaler Anzeige
 	* ``[AVG]`` - Einstellung der Mittelungstiefe in Sekunden [1|30|60|300]
 	* ``[TRD]`` - Trendanzeige aktivieren oder deaktivieren
 	
@@ -1079,8 +1088,15 @@ Die Anzeigeseite benötigt folgende Messwerte: **xdrVBat**
 WindPlot
 ^^^^^^^
 
-.. image:: ../pics/OBP60_WindPlot.png
-             :scale: 30%
+.. list-table::
+   :widths: 50 50
+   :class: borderless
+
+   * - .. image:: ../pics/OBP60_WindPlot.png
+          :scale: 30%
+     - .. image:: ../pics/OBP60_WindPlot2.png
+          :scale: 30%
+
 Abb.: Anzeige WindPlot
 
 Diese Seite zeigt den zeitlichen Verlauf von Winddaten grafisch an. Über die Taste ``[MODE]`` wird zwischen drei verschiedenen Liniendiagrammen umgeschaltet:
