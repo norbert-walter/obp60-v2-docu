@@ -1157,6 +1157,20 @@ Bei der DST810-Anzeige werden der Speed durchs Wasser, die Tiefe, die zurückgel
 
 Die Anzeigeseite benötigt folgende Messwerte: **DBT, STW, Log, WTemp**
 
+Compass
+^^^^^^^
+
+.. image:: ../pics/OBP60_Compass.png
+             :scale: 30%
+Abb.: Anzeige Compass
+
+Diese Anzeige stellt eine rollierende Kompassscheibe und darüber einen ergänzenden Messwert dar. Die Kompassscheibe wandert entsprechend des aktuellen Kurses. Eine gestrichelte Linie nach links/rechts stellt die letzte Kursänderung dar. Die Länge der Linie symbolisiert die Größe der Kursänderung.
+
+    * Mit der Taste ``CMP`` lässt sich die Quelle der Kompassanzeige zwischen **HDM, HDT** und **COG** umschalten.
+    * Mit der Taste ``SRC`` lässt sich der ergänzende Messwert zwischen **HDM, HDT, COG, STW, SOG** und **DBS** umschalten.
+
+Die Anzeigeseite benötigt folgende Messwerte: **HDM, HDT, COG, STW, SOG, DBS**
+
 Clock
 ^^^^^
 
