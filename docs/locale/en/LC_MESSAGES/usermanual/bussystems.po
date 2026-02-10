@@ -402,7 +402,7 @@ msgstr "Without"
 #: ../../usermanual/bussystems.rst:90 bcf941f896d04ab2ad3f370e10d0fabc
 #, fuzzy
 msgid "Schirmgeflecht"
-msgstr "Umbrella mesh"
+msgstr "Umbrella weave"
 
 #: ../../usermanual/bussystems.rst:92 ../../usermanual/bussystems.rst:227
 #: 3b99ee55a4ef43f29ccf82b102285008 824af4f7ab7b485f868741dde4352a7a
@@ -761,10 +761,10 @@ msgid ""
 "ist ein weit verbreiteter Standard, der vor allem von vielen älteren Geräten"
 " unterstützt wird."
 msgstr ""
-"NMEA0183 is a standard for serial data transmission in the maritime "
-"industry. It defines a format for transmitting information between "
-"navigation devices and other electronic equipment on boats. NMEA0183 is a "
-"widely used standard, supported especially by many older devices."
+"NMEA0183 is a standard for serial data transmission in the marine industry. "
+"It defines a format for transmitting information between navigation devices "
+"and other electronic equipment on boats. NMEA0183 is a widely used standard,"
+" supported especially by many older devices."
 
 #: ../../usermanual/bussystems.rst:176 aa2c074452f34629bcdabfbcc701f786
 #, fuzzy
@@ -848,8 +848,8 @@ msgid ""
 msgstr ""
 "Data transmission in the OBP60 is half-duplex and serial, using two simple "
 "cables. This means that you can either send or receive; both simultaneously "
-"are not possible. The standard data rate is 4800 baud, which is quite slow "
-"by today's standards, but allows bus lengths of up to 1000 m. The following "
+"is not possible. The standard data rate is 4800 baud, which is quite slow by"
+" today's standards, but allows bus lengths of up to 1000 m. The following "
 "data rate settings can be used:"
 
 #: ../../usermanual/bussystems.rst:195 868fee779ae54170866813204e8a844e
