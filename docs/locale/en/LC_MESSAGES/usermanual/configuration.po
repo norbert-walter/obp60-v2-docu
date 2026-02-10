@@ -736,7 +736,8 @@ msgid ""
 "``debug`` - Es werden alle vorgesehenen Meldungen inklusive Debug-Meldungen "
 "ausgegeben"
 msgstr ""
-"``Debug`` - All intended messages, including debug messages, are displayed."
+"``Debug`` - All intended messages, including debug messages, will be "
+"displayed."
 
 #: ../../usermanual/configuration.rst:175 fc16df338e8a417ea3ea6274e018e219
 #, fuzzy
