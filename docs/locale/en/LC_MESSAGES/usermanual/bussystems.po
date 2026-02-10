@@ -402,7 +402,7 @@ msgstr "Without"
 #: ../../usermanual/bussystems.rst:90 bcf941f896d04ab2ad3f370e10d0fabc
 #, fuzzy
 msgid "Schirmgeflecht"
-msgstr "Umbrella weave"
+msgstr "Umbrella mesh"
 
 #: ../../usermanual/bussystems.rst:92 ../../usermanual/bussystems.rst:227
 #: 3b99ee55a4ef43f29ccf82b102285008 824af4f7ab7b485f868741dde4352a7a
@@ -700,7 +700,7 @@ msgid ""
 "dass die Stromeinspeisung in den Bus mit einer 3A-Sicherung abgesichert ist."
 msgstr ""
 "Note that the NMEA2000 bus must only be powered by one source. Otherwise, "
-"malfunctions in the bus system may occur. Ensure that the power supply to "
+"malfunctions may occur in the bus system. Ensure that the power supply to "
 "the bus is protected by a 3A fuse."
 
 #: ../../usermanual/bussystems.rst:161 918e7531910e48209ddd3f0318007f1c
@@ -848,8 +848,8 @@ msgid ""
 msgstr ""
 "Data transmission in the OBP60 is half-duplex and serial, using two simple "
 "cables. This means that you can either send or receive; both simultaneously "
-"is not possible. The standard data rate is 4800 baud, which is quite slow by"
-" today's standards, but allows bus lengths of up to 1000 m. The following "
+"are not possible. The standard data rate is 4800 baud, which is quite slow "
+"by today's standards, but allows bus lengths of up to 1000 m. The following "
 "data rate settings can be used:"
 
 #: ../../usermanual/bussystems.rst:195 868fee779ae54170866813204e8a844e
@@ -1561,7 +1561,7 @@ msgstr ""
 "by the same source. This will result in a loss of communication on all of "
 "the aforementioned bus systems, which can have serious consequences for your"
 " boat's navigation. **Do not** connect ``GND2`` to ``GND`` or ``GNDS``, as "
-"this will eliminate the isolation and increase susceptibility to "
+"this will compromise the isolation and increase susceptibility to "
 "interference."
 
 #: ../../usermanual/bussystems.rst:372 ../../usermanual/bussystems.rst:396
