@@ -1149,9 +1149,9 @@ Bei dieser Variante der Anzeige WindRose können die darzustellenden Werte frei 
 DST810
 ^^^^^^
 
-.. image:: /pics/OBP60_FourValue2_tr.png
+.. image:: ../pics/OBP60_DST810.png
              :scale: 30%
-Abb.: Anzeige FourValue
+Abb.: Anzeige DST810
 
 Bei der DST810-Anzeige werden der Speed durchs Wasser, die Tiefe, die zurückgelegte Strecke und die Wassertemperatur angezeigt. Neben den Messwerten werden die Kurzbezeichner und die Einheiten dargestellt. Die Anzeigeseite entspricht der alten Darstellung vom **Raymarine ST60 TriData**. Damit die Daten angezeigt werden können, müssen sich gültige Informationen im Datenpool befinden. Neben dem DST810 von Airmar können auch Messwerte anderer Sensorhersteller angezeigt werden, die dieselben Daten oder einen Teil der Daten liefern
 
