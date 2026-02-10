@@ -920,7 +920,7 @@ Im OBP60 gibt es insgesamt bis zu 10 Seiten, die man frei auswählen und gestalt
     * **WindPlot** - Grafische Anzeige von Winddaten der vergangenen 4-32 Minuten (**TWD, TWS, AWD, AWS**)
     * **WindRose** - Anzeige der Winddaten (**AWA, AWS, TWD, TWS, DBT, STW**)
     * **DST810** - Anzeige für Tiefe, Speed, Log und Wassertemperatur (**DBT, STW, Log, WTemp**)
-    * **Clock** - Grafische Zeitanzeige mit Sonnenauf- und Sonnenuntergang (**GPST, GPSD**)
+    * **Clock** - Grafische Zeitanzeige mit Sonnenauf- und Sonnenuntergang, Regattatimer (**GPST, GPSD**)
     * **White Page** - Leere weiße Seite, um Display in StandBy zu schalten
     * **BME280** - Anzeige von Umweltdaten wie Temperatur, Luftdruck und Feuchtigkeit (**BME280** I2C)
     * **Rudder** - Grafische Anzeige der Ruderposition (**RPOS**)
@@ -929,6 +929,7 @@ Im OBP60 gibt es insgesamt bis zu 10 Seiten, die man frei auswählen und gestalt
     * **Battery2** - Grafische Anzeige des Batterie-Ladezustandes (**INA219, INA226** I2C)
     * **Solar** - Grafische Anzeige des Solar-Ladezustandes (**INA219, INA226** I2C)
     * **Generator** - Grafische Anzeige des Generator-Ladezustandes (**INA219, INA226** I2C)
+	* **Digital Out** - Grafische Anzeige der digitalen Ausgangszustände (**Ausgabe-Modul**, Horter & Kalb I2C)
     
 .. note::
     Bitte beachten Sie, dass alle Seiten mit festen Inhalten bestimmte Sensorwerte voraussetzen, um Messwerte anzeigen zu können. Unter dem Register **Data** kann die Verfügbarkeit der notwendigen Daten geprüft werden. 
@@ -1246,7 +1247,7 @@ Navigation
 		   
 Abb.: Anzeige Navigation
 
-Die Navigation-Anzeige stellt den Standort des Bootes in einer nautischen Seekarte dar. Je nach Konfiguration können verschieden Seekarten angezeigt werden. Open Boat Projects stellt einen kostenlosen Seekartenservice zur Verfügung, der auf Open Source aufsetzt und standardmäßig aktiviert ist. Als Kartenmaterial werden öffentlich nutzbare Seekarten verwendet, die auf Open Data basieren.
+Die Navigation-Anzeige stellt den Standort des Bootes in einer nautischen Seekarte dar. Oben rechts im Bild wird die aktuelle Zoomstufe angezeigt. Je nach Konfiguration können verschieden Seekarten benutzt werden. Open Boat Projects stellt einen kostenlosen Seekartenservice zur Verfügung, der auf Open Source aufsetzt und standardmäßig aktiviert ist. Als Kartenmaterial werden öffentliche Seekarten verwendet, die auf Open Data basieren.
 
 Über die Tasten ``[Zoom -]`` und ``[Zoom +]`` lassen sich die Zoomstufen der Auflösung der Seekarte einstellen. Mit der Taste ``[Values]`` können in der linken oberen Ecke einige Basisdaten angezeigt werden wie der GPS-Kurs **HDT**, die Geschwindigkeit über Grund **SOG** und die Wassertiefe **DBT**. Im Falle einer unterbrochenen Internetverbindung erfolgt einen Meldung **Map server lost**. Sie signalisiert, wenn der Kartenserver im Internet nicht mehr erreichbar sein sollte. 
 
@@ -1465,10 +1466,10 @@ Die Digital-Out-Anzeige dient zur Bedienung eines Ausgangsmoduls und zur Anzeige
 	* Unterstützt 12/24V-Leistungskreise
 	* 40V max. Spannung des Leistungkreises
 	* 1A max. Ausgangsstrom
-	* Ausführung: Hutschinenmodul
+	* Ausführung als Hutschinenmodul
 	* 4 I2C-Adressen auswählbar
 	
-Mit dem Dgital-Ausgangsmodul lassen sich in 12V-Kreisen Lasten bis zu 12W direkt versorgen, wie z.B. Glühlampen, LED-Lampen, Magnetventile oder Relais. Verwenden Sie für die I2C-Verbindung geschirmte Leitungen und legen den Schirm am OBP60 auf und lassen den Schirm am digitalen Ausgangsmodul unbelegt. Für die 5V-Versorgung des Moduls könen Sie die Klemmen ``5Viso`` und ``GND2`` am Steckverbinder **CN2** des OBP60 nutzen.
+Mit dem Dgital-Ausgangsmodul lassen sich in 12V-Kreisen Lasten bis zu 12W direkt versorgen, wie z.B. Glühlampen, LED-Lampen, Magnetventile oder Relais. Verwenden Sie für die I2C-Verbindung geschirmte Leitungen und legen den Schirm am OBP60 auf und lassen den Schirm am digitalen Ausgangsmodul unbelegt. Für die 5V-Versorgung des Moduls könen Sie die Klemmen ``5Viso`` und ``GND2`` am Steckverbinder **CN2** des OBP60 nutzen. Die Anzeigetexte hinter den Tasten lassen sich über die Konfiguration individuell anpassen. Es können bis zu 4 Module des selben Typs im I2C-Bus betrieben und angesteuert werden.
 	
 .. tip::
 	Möchten Sie größere Lasten schalten, so können Sie am digitalen Ausgang ein Relais benutzen. Damit lassen sich je nach verwendeten Relaistyp Lasten von bis zu 3000W schalten. Mit einem Relais ist es auch möglich Lasten in 230V AC Stromkreisen zu schalten.
