@@ -1751,10 +1751,10 @@ msgid ""
 "an den Abzweigdosen an. So entstehen im 1Wire-Bussystem nicht ungewollt "
 "lange Stichleitungen."
 msgstr ""
-"If you want to measure temperatures at different points on the boat, create "
-"a backbone with junction boxes and connect the sensors to the junction "
-"boxes. This prevents unintentionally long branch lines in the 1-Wire bus "
-"system."
+"If you want to measure temperatures at different locations on your boat, "
+"create a backbone with junction boxes and connect the sensors to the "
+"junction boxes. This prevents unintentionally long branch lines in the "
+"1-Wire bus system."
 
 #: ../../usermanual/dataexchange.rst:514 f7ceaa384d104a0494de71a805204984
 #, fuzzy
