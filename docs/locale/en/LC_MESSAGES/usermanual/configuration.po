@@ -2163,8 +2163,8 @@ msgid ""
 "Hier können Sensoren ausgewählt werden, die am externen I2C-Bus "
 "angeschlossen sind und Solar-Werte auslesen."
 msgstr ""
-"Here you can select sensors that are connected to the external I2C bus and "
-"read solar values."
+"Here, sensors can be selected that are connected to the external I2C bus and"
+" read solar values."
 
 #: ../../usermanual/configuration.rst:539 d2e557462400487ea77a818747fbb839
 #, fuzzy
@@ -2363,8 +2363,8 @@ msgid ""
 "Offset des Winkelsensors für Pitch. Damit kann der Nullpunkt des "
 "Winkelsensors für das Nicken Ihres Bootes korrigiert werden."
 msgstr ""
-"Pitch sensor offset. This allows you to correct the zero point of the angle "
-"sensor for your boat's pitch."
+"Offset of the angle sensor for pitch. This allows the zero point of the "
+"angle sensor for the pitch of your boat to be corrected."
 
 #: ../../usermanual/configuration.rst:594 11b10799629e4906978c6df95e2c526a
 #, fuzzy

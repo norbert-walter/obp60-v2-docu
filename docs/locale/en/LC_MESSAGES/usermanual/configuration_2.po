@@ -3052,9 +3052,9 @@ msgid ""
 " ensprechen einer Zeitachse in Sekunden, wenn der Messwert 1x pro Sekunde "
 "aktualisiert wird."
 msgstr ""
-"The x-axis of the diagrams shows the number of data updates, i.e., they "
-"correspond to a time axis in seconds if the measurement is updated once per "
-"second."
+"The x-axis of the diagrams shows the number of data updates, i.e., it "
+"corresponds to a time axis in seconds if the measurement is updated once per"
+" second."
 
 #: ../../usermanual/configuration_2.rst:741 05d45563a12c4c3f8342d67b02d6ca70
 #, fuzzy
