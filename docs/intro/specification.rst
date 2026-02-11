@@ -110,7 +110,7 @@ Technische Daten
            </div>
 		   <div class="sphinx-slide">
                <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_Voltage_Analog_tr.png" alt="Voltage Analog">
-               <h3 class="sphinx-caption">Voltage</h3>
+               <h3 class="sphinx-caption">Voltage Analog</h3>
            </div>
 		   <div class="sphinx-slide">
                <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_OneValue_tr.png" alt="One Value">
