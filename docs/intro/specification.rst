@@ -1,9 +1,6 @@
 Technische Daten
 ================
 
-.. image:: ../pics/OBP60_OBP_Logo_tr.png
-   :scale: 30%
-   
 .. raw:: html
 
    <style>
@@ -16,7 +13,8 @@ Technische Daten
            overflow: hidden;
            background: transparent;
            border-radius: 15px;
-           margin: 20px auto; /* Zentrierung in Sphinx */
+		   margin: 20px 0; /* Left orientated*/
+           /*margin: 20px auto;*/ /* Center orientated */
        }
 
        .sphinx-gallery {
@@ -45,10 +43,10 @@ Technische Daten
            object-fit: cover;
            display: block;
            border-radius: 15px;
-           margin-bottom: 0 !important; /* Override für Sphinx Themes */
+           margin-bottom: 0 !important; /* Override for Sphinx Themes */
        }
 
-       /* Beschriftung */
+       /* Labeling */
        .sphinx-caption {
            position: absolute;
            top: 15px;
@@ -90,7 +88,7 @@ Technische Daten
        #sph-nextBtn { right: 15px; }
    </style>
 
-   <div class="sphinx-gallery-container" style="--galerie-breite: 400px; --galerie-hoehe: 420px;">
+   <div class="sphinx-gallery-container" style="--galerie-breite: 400px; --galerie-hoehe: 440px;">
        <button class="sphinx-nav-btn" id="sph-backBtn">❮</button>
        
        <div class="sphinx-gallery" id="sph-gallery">
