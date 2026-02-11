@@ -1027,7 +1027,7 @@ TwoValue
    :widths: 50 50
    :class: borderless
 
-   * - .. image:: ../pics/OBP60_TwoValue.png
+   * - .. image:: ../pics/OBP60_TwoValue_tr.png
           :scale: 30%
      - .. image:: ../pics/OBP60_TwoValue2.png
            :scale: 30%
@@ -1041,7 +1041,7 @@ Die weiteren Funktionen sind identisch mit der Anzeige **OneValue**.
 ThreeValue
 ^^^^^^^^^^
 
-.. image:: /pics/OBP60_ThreeValue.png
+.. image:: /pics/OBP60_ThreeValue_tr.png
              :scale: 30%
 Abb.: Anzeige ThreeValue
 
@@ -1064,17 +1064,6 @@ FourValue2
 Abb.: Anzeige FourValue
 
 Bei der FourValue-Anzeige können vier beliebige Messwerte aus dem Datenpool vertikal übereinander und horizontal nebeneinander angezeigt werden. Neben den Messwerten werden die Kurzbezeichner und die Einheiten angezeigt. Diese Darstellung entspricht der alten Darstellung vom Raymarine ST60 TriData mit dem Unterschied, dass hier beliebige Werte angezeigt werden können. Es gibt noch die Anzeigeseite **DST810** mit festen Inhalten, die die gleichen Messwerte anzeigt wie beim ST60 TriData.
-
-DST810
-^^^^^^
-
-.. image:: ../pics/OBP60_DST810.png
-             :scale: 30%
-Abb.: Anzeige DST810
-
-Bei der DST810-Anzeige werden der Speed durchs Wasser, die Tiefe, die zurückgelegte Strecke und die Wassertemperatur angezeigt. Neben den Messwerten werden die Kurzbezeichner und die Einheiten dargestellt. Die Anzeigeseite entspricht der alten Darstellung vom **Raymarine ST60 TriData**. Damit die Daten angezeigt werden können, müssen sich gültige Informationen im Datenpool befinden. Neben dem DST810 von Airmar können auch Messwerte anderer Sensorhersteller angezeigt werden, die dieselben Daten oder einen Teil der Daten liefern
-
-Die Anzeigeseite benötigt folgende Messwerte: **DBT, STW, Log, WTemp**
 
 Voltage
 ^^^^^^^
@@ -1138,7 +1127,7 @@ Die Anzeigeseite benötigt folgende Messwerte: **TWD, TWS, AWS**. Der Wert **AWD
 WindRose
 ^^^^^^^
 
-.. image:: ../pics/OBP60_WindRose.png
+.. image:: ../pics/OBP60_WindRose_tr.png
              :scale: 30%
 Abb.: Anzeige Windrose
 
@@ -1157,38 +1146,16 @@ Abb.: Anzeige WindroseFlex
 
 Bei dieser Variante der Anzeige WindRose können die darzustellenden Werte frei gewählt werden. Der erste Wert wird auf der Windrose grafisch als Richtung dargestellt, hier ist sinnvollerweise AWA oder TWA zu wählen.
 
-XTETrack
-^^^^^^^^
+DST810
+^^^^^^
 
-.. image:: ../pics/OBP60_XTETrack.png
+.. image:: /pics/OBP60_FourValue2_tr.png
              :scale: 30%
-Abb.: Anzeige XTETrack
+Abb.: Anzeige FourValue
 
-Diese Anzeige stellt Informationen über den Kurs zum nächsten Wegepunkt dar, wenn von einem Plotter entsprechende Routen- und Wegepunktdaten im Netz bereitgestellt werden. Es werden Daten zum
+Bei der DST810-Anzeige werden der Speed durchs Wasser, die Tiefe, die zurückgelegte Strecke und die Wassertemperatur angezeigt. Neben den Messwerten werden die Kurzbezeichner und die Einheiten dargestellt. Die Anzeigeseite entspricht der alten Darstellung vom **Raymarine ST60 TriData**. Damit die Daten angezeigt werden können, müssen sich gültige Informationen im Datenpool befinden. Neben dem DST810 von Airmar können auch Messwerte anderer Sensorhersteller angezeigt werden, die dieselben Daten oder einen Teil der Daten liefern
 
-    * **Cross-track-error**: aktuelle Distanz zur idealen Wegepunktlinie und Position (backbord/steuerbord) von dieser Linie
-    * **Track**: aktueller Kurs über Grund
-    * **Distance to waypoint**: Entfernung zum nächsten Wegepunkt
-    * **Bearing**: aktuelle Richtung zum nächsten Wegepunkt
-    * **Wegepunktname**: sofern vorhanden
-
-angezeigt. Die aktuelle Distanz/Position zur Wegepunktlinie wird außerdem über "Autobahnstreifen" visualisiert.
-
-Die Anzeigeseite benötigt folgende Messwerte: **XTE, COG, DTW, BTW**
-
-Compass
-^^^^^^^
-
-.. image:: ../pics/OBP60_Compass.png
-             :scale: 30%
-Abb.: Anzeige Compass
-
-Diese Anzeige stellt eine rollierende Kompassscheibe und darüber einen ergänzenden Messwert dar. Die Kompassscheibe wandert entsprechend des aktuellen Kurses. Eine gestrichelte Linie nach links/rechts stellt die letzte Kursänderung dar. Die Länge der Linie symbolisiert die Größe der Kursänderung.
-
-    * Mit der Taste ``[CMP]`` lässt sich die Quelle der Kompassanzeige zwischen **HDM, HDT** und **COG** umschalten.
-    * Mit der Taste ``[SRC]`` lässt sich der ergänzende Messwert zwischen **HDM, HDT, COG, STW, SOG** und **DBS** umschalten.
-
-Die Anzeigeseite benötigt folgende Messwerte: **HDM, HDT, COG, STW, SOG, DBS**
+Die Anzeigeseite benötigt folgende Messwerte: **DBT, STW, Log, WTemp**
 
 Clock
 ^^^^^
@@ -1330,7 +1297,7 @@ Navigation
 		   
 Abb.: Anzeige Navigation
 
-Die Navigation-Anzeige stellt den Standort des Bootes in einer nautischen Seekarte dar. Je nach Konfiguration können verschieden Seekarten benutzt werden. Open Boat Projects stellt einen kostenlosen Seekartenservice zur Verfügung, der auf Open Source aufsetzt und standardmäßig aktiviert ist. Als Kartenmaterial werden öffentliche Seekarten verwendet, die auf Open Data basieren. Den Tasten sind folgende Funktionen zugeordnet:
+Die Navigation-Anzeige stellt den Standort des Bootes in einer nautischen Seekarte dar. Oben rechts im Bild wird die aktuelle Zoomstufe angezeigt. Je nach Konfiguration können verschieden Seekarten benutzt werden. Open Boat Projects stellt einen kostenlosen Seekartenservice zur Verfügung, der auf Open Source aufsetzt und standardmäßig aktiviert ist. Als Kartenmaterial werden öffentliche Seekarten verwendet, die auf Open Data basieren. Den Tasten sind folgende Funktionen zugeordnet:
 
 	* ``[Zoom -]`` - Herauszoomen aus der Karte
 	* ``[Zoom +]`` - Hineinzoomen in die Karte
@@ -1339,7 +1306,7 @@ Die Navigation-Anzeige stellt den Standort des Bootes in einer nautischen Seekar
 	* ``[VALUES]`` - Anzeige von **HDT**, **SOG**, **DBT**
 	* ``[ILUM]`` - Beleuchtung ein/aus
 
-Die aktuelle Zoomstufe wird oben rechts im Display angezeigt. Im Falle einer unterbrochenen Internetverbindung erfolgt die Ausgabe der Meldung **Map server lost** unten rechts. Sie signalisiert, wenn der Kartenserver im Internet nicht mehr erreichbar sein sollte. Die mittlere Datenrate bei kontinuierlicher Darstellung der Karten beträgt ungefähr 40 MB/h. Achten Sie darauf, dass Ihr mobiles Datenkontingent nicht überschritten wird.
+Die aktuelle Zoomstufe wird oben rechts im Display angezeigt. Im Falle einer unterbrochenen Internetverbindung erfolgt die Ausgabe der Meldung **Map server lost** unten rechts. Sie signalisiert, wenn der Kartenserver im Internet nicht mehr erreichbar sein sollte. 
 
 .. note::
 	Zur Anzeige von Seekarten muss das Geräte über WiFi mit dem Internet verbunden sein, da die Seekarten nicht im Gerät vorgehalten werden. Der Vorteil ist, Sie verfügen immer über die aktuellsten Seekarten und müssen sich nicht um das Update des Kartenmaterials kümmern. Achten Sie auf eine ausreichend stabile Internetverbindung, um Aussetzer in der Kartendarstellung zu vermeiden. 
@@ -1348,9 +1315,6 @@ Die aktuelle Zoomstufe wird oben rechts im Display angezeigt. Im Falle einer unt
 	Sie können auch einen eigenen Docker-Dienst zur Bereitstellung der Seekarten auf einem Raspberry Pi im Boot betreiben. So können Sie unabhängig von einer Internetverbindung die Seekarten auf dem Gerät anzeigen lassen. Als Alternative zum Seekartenservice von Open Boat Projects kann aber auch ein eigener Cloudserver mit Internetverbindung genutzt werden. Es stehen `Docker-Container`_ bei **Docker Hub** zur Verfügung, die Sie für einen selbst gehosteten Seekartenservice nutzen können.
 
 .. _Docker-Container: https://hub.docker.com/r/openboatprojects/maps_converter
-
-.. warning::
-	Die Navigation-Anzeige ist nur ein Hilfsmittel zur Navigation und ersetzt **keine amtliche Seekarte**. Mit der Seekarte können Sie sich in bekannten Revieren einen schnellen Überblick verschaffen und zur Lagekontrolle verwenden. Das OBP60 ist kein vollwertiger Plotter und er kann nicht in unbekannten Revieren für die Routenplanunung oder Navigation verwendet werden. Bei der Seekartendarstellung kann es zu zeitlichen Verzögerungen der angezeigten Karte kommen. Eine Echtzeitdarstellung der Bootsposition ist nicht immer garantiert und hängt von der Verbindungsqualität zum Internet ab. Ist die Internetverbindung länger als 5s nicht verfügbar, wird das letzte verfügbare Kartenbild angezeigt und im Display erscheint die Meldung **Map server lost**. Dies kann z.B. auch passieren, wenn Ihr mobiles Datenkontingent überschritten ist. Prüfen Sie vor der Nutzung der Onlinekarte das zur Verfügung stehende Datenvolumen. Beachten Sie, dass die verfügbaren Seekarten unterschiedliche Qualitäten aufweisen und teilweise keine Wassertiefen anzeigen.
 
 
 Battery
