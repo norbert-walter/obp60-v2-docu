@@ -229,6 +229,8 @@ Technische Daten
            bck.addEventListener('click', () => doScroll('back'));
        })();
    </script>
+   
+Abb.: OBP60 mit mehr als 25 verschiedenen Anzeigeseiten
 
 
 Funktionen
