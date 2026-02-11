@@ -92,17 +92,101 @@ Technische Daten
        <button class="sphinx-nav-btn" id="sph-backBtn">❮</button>
        
        <div class="sphinx-gallery" id="sph-gallery">
-           <div class="sphinx-slide">
-               <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_WindPlot2.png" alt="Windplot 2">
-               <h3 class="sphinx-caption">Windplot 2 Diagrams</h3>
+		   <div class="sphinx-slide">
+               <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_OBP_Logo_tr.png" alt="Start Page">
+               <h3 class="sphinx-caption">Start Page</h3>
            </div>
            <div class="sphinx-slide">
-               <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_WindPlot.png" alt="Windplot 1">
-               <h3 class="sphinx-caption">Windplot 1 Diagram</h3>
+               <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_QR_Code_tr.png" alt="WiFi QR Code">
+               <h3 class="sphinx-caption">WiFi QR Code</h3>
            </div>
            <div class="sphinx-slide">
                <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_Voltage.png" alt="Voltage">
                <h3 class="sphinx-caption">Voltage</h3>
+           </div>
+		   <div class="sphinx-slide">
+               <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_OneValue_tr.png" alt="One Value">
+               <h3 class="sphinx-caption">One Value</h3>
+           </div>
+           <div class="sphinx-slide">
+               <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_TwoValue_tr.png" alt="Two Value">
+               <h3 class="sphinx-caption">Two Value</h3>
+           </div>
+           <div class="sphinx-slide">
+               <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_TwoValue2.png" alt="Two Value Diagram">
+               <h3 class="sphinx-caption">Two Value Diagram</h3>
+           </div>
+		   <div class="sphinx-slide">
+               <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_ThreeValue_tr.png" alt="Three Value">
+               <h3 class="sphinx-caption">Three Value</h3>
+           </div>
+		   <div class="sphinx-slide">
+               <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_DST810.png" alt="DST810">
+               <h3 class="sphinx-caption">DST810</h3>
+           </div>
+           <div class="sphinx-slide">
+               <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_FourValue_tr.png" alt="Four Value">
+               <h3 class="sphinx-caption">Four Value</h3>
+           </div>
+           <div class="sphinx-slide">
+               <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_FourValue2_tr.png" alt="Four Value 2">
+               <h3 class="sphinx-caption">Four Value 2</h3>
+           </div>
+		   <div class="sphinx-slide">
+               <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_WindPlot2.png" alt="Six Value">
+               <h3 class="sphinx-caption">Six Value</h3>
+           </div>
+		   <div class="sphinx-slide">
+               <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_Compass.png" alt="Compass">
+               <h3 class="sphinx-caption">Compass</h3>
+           </div>
+           <div class="sphinx-slide">
+               <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_WindPlot.png" alt="Windplot 1 Diagram">
+               <h3 class="sphinx-caption">Windplot 1 Diagram</h3>
+           </div>
+		   <div class="sphinx-slide">
+               <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_WindPlot2.png" alt="Windplot 2 Diagram">
+               <h3 class="sphinx-caption">Windplot 2 Diagrams</h3>
+           </div>
+           <div class="sphinx-slide">
+               <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_Windrose_tr.png" alt="Windrose">
+               <h3 class="sphinx-caption">Windrose</h3>
+           </div>
+           <div class="sphinx-slide">
+               <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_Rudder_tr.png" alt="Rudder">
+               <h3 class="sphinx-caption">Rudder</h3>
+           </div>
+		   <div class="sphinx-slide">
+               <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_RollPitch_tr.png" alt="Roll & Pitch">
+               <h3 class="sphinx-caption">Roll & Pitch</h3>
+           </div>
+           <div class="sphinx-slide">
+               <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_Keel_tr.png" alt="Keel">
+               <h3 class="sphinx-caption">Keel</h3>
+           </div>
+           <div class="sphinx-slide">
+               <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_Clock_tr.png alt="Clock Analog">
+               <h3 class="sphinx-caption">Clock Analog</h3>
+           </div>
+		   <div class="sphinx-slide">
+               <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_Digital_Clock_tr.png" alt="Clock Digital">
+               <h3 class="sphinx-caption">Clock Digital</h3>
+           </div>
+           <div class="sphinx-slide">
+               <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_Regatta_Timer_tr.png" alt="Regatta Timer">
+               <h3 class="sphinx-caption">Regatta Timer</h3>
+           </div>
+           <div class="sphinx-slide">
+               <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_Navigation_tr.png" alt="Navigation">
+               <h3 class="sphinx-caption">Navigation</h3>
+           </div>
+		   <div class="sphinx-slide">
+               <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_XTETrack.png" alt="XTE Track">
+               <h3 class="sphinx-caption">XTE Track</h3>
+           </div>
+           <div class="sphinx-slide">
+               <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_Digital_Out.png" alt="Digital Out">
+               <h3 class="sphinx-caption">Digital Out</h3>
            </div>
        </div>
 
