@@ -1030,7 +1030,7 @@ TwoValue
    :widths: 50 50
    :class: borderless
 
-   * - .. image:: ../pics/OBP60_TwoValue.png
+   * - .. image:: ../pics/OBP60_TwoValue_tr.png
           :scale: 30%
      - .. image:: ../pics/OBP60_TwoValue2.png
            :scale: 30%
@@ -1044,7 +1044,7 @@ Die weiteren Funktionen sind identisch mit der Anzeige **OneValue**.
 ThreeValue
 ^^^^^^^^^^
 
-.. image:: /pics/OBP60_ThreeValue.png
+.. image:: /pics/OBP60_ThreeValue_tr.png
              :scale: 30%
 			 
 Abb.: Anzeige ThreeValue
@@ -1112,7 +1112,7 @@ Ein Trendindikator zeigt den Trend an, in welche Richtung sich die Spannung bewe
 Die Anzeigeseite benötigt folgende Messwerte: **xdrVBat**
 
 WindPlot
-^^^^^^^
+^^^^^^^^
 
 .. list-table::
    :widths: 50 50
@@ -1143,9 +1143,9 @@ Die Anzeigeseite benötigt folgende Messwerte: **TWD, TWS, AWS**. Der Wert **AWD
 	Die Umschaltung zwischen wahren und scheinbaren Winddaten ist nur beim **OBP60** verfügbar. Da das **OBP40** nur zwei Tasten besitzt, muss die Auswahl des Winddatentyps hier im Konfigurationsunterpunkt zur Seitendefinition der Seite ``WindPlot`` vorgenommen werden. Die Auswahl lässt sich am Gerät nicht umstellen.
 
 WindRose
-^^^^^^^
+^^^^^^^^
 
-.. image:: ../pics/OBP60_WindRose.png
+.. image:: ../pics/OBP60_WindRose_tr.png
              :scale: 30%
 			 
 Abb.: Anzeige Windrose
