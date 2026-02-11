@@ -49,7 +49,7 @@ Technische Daten
        /* Labeling */
        .sphinx-caption {
            position: absolute;
-           top: 15px;
+           top: 20px;
            left: 50%;
            transform: translateX(-50%);
            color: white !important;
@@ -88,7 +88,7 @@ Technische Daten
        #sph-nextBtn { right: 15px; }
    </style>
 
-   <div class="sphinx-gallery-container" style="--galerie-breite: 400px; --galerie-hoehe: 440px;">
+   <div class="sphinx-gallery-container" style="--galerie-breite: 420px; --galerie-hoehe: 440px;">
        <button class="sphinx-nav-btn" id="sph-backBtn">❮</button>
        
        <div class="sphinx-gallery" id="sph-gallery">
