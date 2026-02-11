@@ -3805,7 +3805,7 @@ msgstr "**OneValue** - A single display value, numeric/graphical"
 #: ../../usermanual/configuration.rst:914 41e78dc3dba947f1b6986f28e4efe10c
 #, fuzzy
 msgid "**TwoValue** - Zwei Anzeigewerte numerisch/grafisch"
-msgstr "**TwoValue** - Two display values (numeric/graphical)"
+msgstr "**TwoValue** - Two display values, numeric/graphical"
 
 #: ../../usermanual/configuration.rst:915 aee19ccd9eae46cf9d249bbb4fd19f4b
 #, fuzzy
@@ -5169,7 +5169,7 @@ msgstr ""
 #, fuzzy
 msgid "Abb.: Magnetischer Rotationssensor AS5600 zur Anzeige der Kielstellung"
 msgstr ""
-"Fig.: AS5600 magnetic rotation sensor for displaying the keel position"
+"Fig.: Magnetic rotation sensor AS5600 for displaying the keel position"
 
 #: ../../usermanual/configuration.rst:1332 2816cde6caf943fca19f85281decf8f7
 #, fuzzy

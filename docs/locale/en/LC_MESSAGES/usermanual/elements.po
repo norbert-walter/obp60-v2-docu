@@ -207,10 +207,10 @@ msgid ""
 "defekt. Nach einem Voll-Refresh regeneriert sich das Display und der "
 "Kontrast wird wieder vollständig hergestellt."
 msgstr ""
-"Despite the filter, extremely bright sunlight can cause the display to lose "
-"contrast. Black areas will then appear gray. The display is not defective in"
-" this case. After a full refresh, the display will regenerate and the "
-"contrast will be fully restored."
+"Despite the filter, extremely bright sunlight can cause the display content "
+"to lose contrast. Black areas will then appear gray. The display is not "
+"defective in this case. After a full refresh, the display will regenerate "
+"and the contrast will be fully restored."
 
 #: ../../usermanual/elements.rst:55 373d5cf7827044dcab0c7601130347cc
 #, fuzzy
