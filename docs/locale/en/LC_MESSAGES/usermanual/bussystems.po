@@ -848,8 +848,8 @@ msgid ""
 msgstr ""
 "Data transmission in the OBP60 is half-duplex and serial, using two simple "
 "cables. This means that you can either send or receive; both simultaneously "
-"are not possible. The standard data rate is 4800 baud, which is quite slow "
-"by today's standards, but allows bus lengths of up to 1000 m. The following "
+"is not possible. The standard data rate is 4800 baud, which is quite slow by"
+" today's standards, but allows bus lengths of up to 1000 m. The following "
 "data rate settings can be used:"
 
 #: ../../usermanual/bussystems.rst:195 868fee779ae54170866813204e8a844e

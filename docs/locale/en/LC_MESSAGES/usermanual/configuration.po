@@ -754,7 +754,7 @@ msgstr ""
 "evaluating log output very confusing, as log data and NMEA0183 telegrams "
 "will then be displayed mixed together. If you only want to see log output, "
 "set **NMEA to USB** and **NMEA from USB** under :ref:`Config - USB Port` to "
-"[``off``."
+"``off``."
 
 #: ../../usermanual/configuration.rst:182 1a3a04b210a04dc095bd36fa09f555e8
 #, fuzzy
@@ -989,8 +989,7 @@ msgstr ""
 "data can be filtered. It is possible to configure separately whether AIS "
 "position signals are processed. The available filter types are <Whitelist> "
 "and <Blacklist>: Whitelist allows you to specify filter criteria that should"
-" include the data, while Blacklist specifies criteria that exclude certain "
-"data."
+" include the data, while Blacklist specifies criteria that exclude data."
 
 #: ../../usermanual/configuration.rst:243 a47fdece78bc4017852508f57416023d
 #, fuzzy
