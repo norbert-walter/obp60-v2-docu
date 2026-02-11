@@ -149,7 +149,7 @@ Technische Daten
                <h3 class="sphinx-caption">Windplot 2 Diagrams</h3>
            </div>
            <div class="sphinx-slide">
-               <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_Windrose_tr.png" alt="Windrose">
+               <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_WindRose_tr.png" alt="Windrose">
                <h3 class="sphinx-caption">Windrose</h3>
            </div>
            <div class="sphinx-slide">
@@ -165,7 +165,7 @@ Technische Daten
                <h3 class="sphinx-caption">Keel</h3>
            </div>
            <div class="sphinx-slide">
-               <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_Clock_tr.png alt="Clock Analog">
+               <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_Clock_tr.png" alt="Clock Analog">
                <h3 class="sphinx-caption">Clock Analog</h3>
            </div>
 		   <div class="sphinx-slide">
