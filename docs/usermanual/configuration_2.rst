@@ -629,7 +629,6 @@ Unter **Hardware** werden alle Einstellungen bezüglich verbauter Hardware oder 
 +----------------------+--------------+--------------+ 
 |Externe 5V-Versorgung |on            |off           |
 +----------------------+--------------+--------------+
-
 Tab.: Aktive Baugruppen OBP60 V2.1
     
 +----------------------+--------------+--------------+
@@ -649,7 +648,6 @@ Tab.: Aktive Baugruppen OBP60 V2.1
 +----------------------+--------------+--------------+ 
 |Externe 5V-Versorgung |0.83          |0.00          |
 +----------------------+--------------+--------------+
-
 Tab.: Stromverbrauch OBP60 V2.1 (AP - Access Point)
 
 Je nach zugeschalteter Farbe und Leistung der Hintergrundbeleuchtung entsteht ein zusätzlicher Stromverbrauch.
@@ -665,7 +663,6 @@ Je nach zugeschalteter Farbe und Leistung der Hintergrundbeleuchtung entsteht ei
 +----------------------+--------------+--------------+
 |LED weiss             |0.61          |0.32          |
 +----------------------+--------------+--------------+
-
 Tab.: Stromverbrauch der LED-Hintergrundbeleuchtung
 
     
@@ -1046,7 +1043,6 @@ ThreeValue
 
 .. image:: /pics/OBP60_ThreeValue.png
              :scale: 30%
-			 
 Abb.: Anzeige ThreeValue
 
 Bei der ThreeValue-Anzeige können drei beliebige Messwerte aus dem Datenpool vertikal übereinander angezeigt werden. Neben den Messwerten werden die Kurzbezeichner und die Einheiten dargestellt.
@@ -1056,7 +1052,6 @@ FourValue
 
 .. image:: /pics/OBP60_FourValue_tr.png
              :scale: 30%
-			 
 Abb.: Anzeige FourValue
 
 Bei der ThreeValue-Anzeige können vier beliebige Messwerte aus dem Datenpool vertikal übereinander angezeigt werden. Neben den Messwerten werden die Kurzbezeichner und die Einheiten dargestellt.
@@ -1066,7 +1061,6 @@ FourValue2
 
 .. image:: /pics/OBP60_FourValue2_tr.png
              :scale: 30%
-			 
 Abb.: Anzeige FourValue
 
 Bei der FourValue-Anzeige können vier beliebige Messwerte aus dem Datenpool vertikal übereinander und horizontal nebeneinander angezeigt werden. Neben den Messwerten werden die Kurzbezeichner und die Einheiten angezeigt. Diese Darstellung entspricht der alten Darstellung vom Raymarine ST60 TriData mit dem Unterschied, dass hier beliebige Werte angezeigt werden können. Es gibt noch die Anzeigeseite **DST810** mit festen Inhalten, die die gleichen Messwerte anzeigt wie beim ST60 TriData.
@@ -1076,7 +1070,6 @@ DST810
 
 .. image:: ../pics/OBP60_DST810.png
              :scale: 30%
-			 
 Abb.: Anzeige DST810
 
 Bei der DST810-Anzeige werden der Speed durchs Wasser, die Tiefe, die zurückgelegte Strecke und die Wassertemperatur angezeigt. Neben den Messwerten werden die Kurzbezeichner und die Einheiten dargestellt. Die Anzeigeseite entspricht der alten Darstellung vom **Raymarine ST60 TriData**. Damit die Daten angezeigt werden können, müssen sich gültige Informationen im Datenpool befinden. Neben dem DST810 von Airmar können auch Messwerte anderer Sensorhersteller angezeigt werden, die dieselben Daten oder einen Teil der Daten liefern
@@ -1147,7 +1140,6 @@ WindRose
 
 .. image:: ../pics/OBP60_WindRose.png
              :scale: 30%
-			 
 Abb.: Anzeige Windrose
 
 Bei der Windrosen-Anzeige werden Winddaten angezeigt. Auf der linken Seiten sind die Daten des scheinbaren Windes dargestellt und auf der rechten Seite die Daten des wahren Windes. Die Daten des scheinbaren Windes beziehen sich auf den auf dem fahrenden Schiff wahrgenommenen Wind, der sich aus dem Zusammenwirken des wahren Windes und des Fahrtwindes ergibt. Es handelt sich um relative Daten bezogen auf das Boot. Die Daten des wahren Windes sind die Winddaten, wie man sie am nicht in Fahrt befindlichen Boot messen würde. Der Windwinkel bezieht sich dabei auf den Bug, die Windrichtung auf die geografische Nordausrichtung.
@@ -1161,7 +1153,6 @@ WindRoseFlex
 
 .. image:: /pics/OBP60_WindRose.png
              :scale: 30%
-			 
 Abb.: Anzeige WindroseFlex
 
 Bei dieser Variante der Anzeige WindRose können die darzustellenden Werte frei gewählt werden. Der erste Wert wird auf der Windrose grafisch als Richtung dargestellt, hier ist sinnvollerweise AWA oder TWA zu wählen.
@@ -1171,7 +1162,6 @@ XTETrack
 
 .. image:: ../pics/OBP60_XTETrack.png
              :scale: 30%
-			 
 Abb.: Anzeige XTETrack
 
 Diese Anzeige stellt Informationen über den Kurs zum nächsten Wegepunkt dar, wenn von einem Plotter entsprechende Routen- und Wegepunktdaten im Netz bereitgestellt werden. Es werden Daten zum
@@ -1191,7 +1181,6 @@ Compass
 
 .. image:: ../pics/OBP60_Compass.png
              :scale: 30%
-			 
 Abb.: Anzeige Compass
 
 Diese Anzeige stellt eine rollierende Kompassscheibe und darüber einen ergänzenden Messwert dar. Die Kompassscheibe wandert entsprechend des aktuellen Kurses. Eine gestrichelte Linie nach links/rechts stellt die letzte Kursänderung dar. Die Länge der Linie symbolisiert die Größe der Kursänderung.
@@ -1239,7 +1228,6 @@ Bei der Clock-Anzeige werden die Uhrzeit, das Datum, die Sonnenaufgangszeit und 
 	
 .. image:: /pics/OBP60_Regatta_Timer_tr.png
              :scale: 30%
-			 
 Abb.: Anzeige Regatta-Timer
 	
 **Regatta-Timer**
@@ -1266,7 +1254,6 @@ WhitePage
 
 .. image:: /pics/OBP60_Blank_tr.png
              :scale: 30%
-			 
 Abb.: Anzeige WhitePage
 
 Bei WhitePage handelt es sich um eine Anzeigeseite, die nur eine weiße leere Seite darstellt. Diese Seite kann dazu benutzt werden, den Bildschirminhalt vor dem Ausschalten definiert zu löschen.
@@ -1276,7 +1263,6 @@ BME280
 
 .. image:: /pics/OBP60_ThreeValue.png
              :scale: 30%
-			 
 Abb.: Anzeige BME280
 
 Bei der BME-Anzeige werden die 3 Messwerte Lufttemperatur, Luftdruck und Luftfeuchtigkeit des BME280 angezeigt. Der BME280 muss dazu an den externen I2C-Bus angeschlossen werden und auf die Adresse 0x77 eingestellt sein.
@@ -1288,7 +1274,6 @@ Ein 5V taugliches BME280-Modul ist das **GYBME** Elektronikmodul:
 
 .. image:: /pics/BME280.png
              :scale: 30%
-			 
 Abb.: BME280-Modul
 	
 Die Messwerte vom externen Sensor müssen als XDR-Telegramme angelegt werden (siehe Konfigurationsseite: **XDR**). Dabei sind folgende Zuordnungen zu beachten:
@@ -1302,7 +1287,6 @@ Rudder
 
 .. image:: /pics/OBP60_Rudder_tr.png
              :scale: 30%
-			 
 Abb.: Anzeige Rudder
 
 Bei der Rudder-Anzeige wird der Ruderausschlag angezeigt. Der Ruderausschlag ist im Bereich von +/-45° grafisch darstellbar. Wenn keine Sensorwerte für den Ruderausschlag vorliegen, ist der Zeiger nicht sichtbar.
@@ -1317,7 +1301,6 @@ Keel
 
 .. image:: /pics/OBP60_Keel_tr.png
              :scale: 30%
-			 
 Abb.: Anzeige Keel
 
 Bei der Keel-Anzeige wird die Kielstellung eines Neigekiels angezeigt. Die Kielstellung ist im Bereich von +/-45° grafisch darstellbar. Wenn keine Sensorwerte für die Kielstellung vorliegen, ist der Kiel nicht sichtbar.
@@ -1326,7 +1309,6 @@ Damit die Kielstellung angezeigt werden kann, muss ein Rotationssensor-Modul **A
 
 .. image:: /pics/I2C_Sample_Setup_AS5600.png
              :scale: 50%
-			 
 Abb.: Magnetischer Rotationssensor AS5600 zur Anzeige der Kielstellung
 
 Beachten Sie auch die Hinweise im Kapitel **Datenaustausch - I2C-Bus** und **Bussysteme - I2C**.
@@ -1373,7 +1355,6 @@ Battery
 
 .. image:: /pics/OBP60_ThreeValue.png
              :scale: 30%
-			 
 Abb.: Anzeige Battery
 
 Bei der Battery-Anzeige werden die aktuellen Werte für Bord-Spannung, Strom und Leistung angezeigt. Neben den Messwerten werden die Kurzbezeichner und die Einheiten dargestellt. Um die Batterie-Werte anzeigen zu können, muss ein I2C-Modul **INA226** am I2C-Bus angeschlossen und auf die Adresse **0x41** eingestellt sein. Der Shunt kann für verschiedene maximale Stromstärken in Ampere [10|50|100|200|300|400|500] unter **Config - OBP Hardware** konfiguriert werden.
@@ -1383,14 +1364,12 @@ Bei der Battery-Anzeige werden die aktuellen Werte für Bord-Spannung, Strom und
 
 .. image:: /pics/INA226.png
              :scale: 30%
-			 
 Abb.: I2C-Adresszuweisung INA226
 
 Für die Messung mit einem externen Leistungs-Shunt muss der schwarze große Widerstand **R100** auf der Frontseite der Platine entfernt werden. Danach ist das Modul wie folgt zu verschalten.
 
 .. image:: /pics/I2C_Sample_Setup_INA226_Battery.png
              :scale: 45%
-			 
 Abb.: Schaltung INA226 Batteriemonitoring
 
 .. note::
@@ -1404,7 +1383,6 @@ Abb.: Schaltung INA226 Batteriemonitoring
 	
 .. image:: /pics/Wire_Diameter.png
              :scale: 50%
-			 
 Abb.: Leitungsquerschnitte (EP 12/00)
 
 Zu weitergehenden Informationen können Sie das Informationsmaterial **Leitungen und Kabel** :download:`pdf </info_material/Querschnittsbestimmung_Leitungen_Kabel.pdf>` verwenden.
@@ -1414,7 +1392,6 @@ Battery2
 
 .. image:: /pics/OBP60_Battery2_tr.png
              :scale: 30%
-			 
 Abb.: Anzeige Battery2
 
 Bei der Battery2-Anzeige werden folgende Werte angezeigt:
@@ -1446,14 +1423,12 @@ Um die Batterie-Werte anzeigen zu können, muss ein I2C-Modul **INA226** am I2C-
 
 .. image:: /pics/INA226.png
              :scale: 30%
-			 
 Abb.: I2C-Adresszuweisung INA226
 
 Für die Messung mit einem externen Leistungs-Shunt muss der schwarze große Widerstand **R100** auf der Frontseite der Platine entfernt werden. Danach ist das Modul wie folgt zu verschalten.
 
 .. image:: /pics/I2C_Sample_Setup_INA226_Battery.png
              :scale: 45%
-			 
 Abb.: Schaltung INA226 Batteriemonitoring
 
 .. note::
@@ -1467,7 +1442,6 @@ RollPitch
 
 .. image:: /pics/OBP60_RollPitch_tr.png
              :scale: 30%
-			 
 Abb.: Anzeige RollPitch
 
 Bei der RollPitch-Anzeige werden die aktuellen Werte für Roll und Pitch angezeigt sowie der Grenzwert, ab dem ein optisches Signal über die Flash-LED ausgegeben wird. Pitch entspricht der Neigung in Längsrichtung und Roll in Querrichtung des Bootes. Die Sensorwerte müssen als XDR-Telegramme in Form von **xdrRoll** und **xdrPitch** angelegt werden (siehe Konfigurationsseite: :ref:`XDR`) . Dabei sind folgende Zuordnungen zu beachten:
@@ -1480,7 +1454,6 @@ Solar
 
 .. image:: /pics/OBP60_Solar_tr.png
              :scale: 30%
-			 
 Abb.: Anzeige Solar
 
 Bei der Solar-Anzeige werden folgende Werte angezeigt:
@@ -1504,14 +1477,12 @@ Um die Messwerte anzeigen zu können, muss ein I2C-Modul **INA226** am I2C-Bus a
 
 .. image:: /pics/INA226.png
              :scale: 30%
-			 
 Abb.: I2C-Adresszuweisung INA226
 
 Für die Messung mit einem externen Leistungs-Shunt muss der schwarze große Widerstand **R100** auf der Frontseite der Platine entfernt werden. Danach ist das Modul wie folgt zu verschalten.
 
 .. image:: /pics/I2C_Sample_Setup_INA226_Solar.png
              :scale: 45%
-			 
 Abb.: Schaltung INA226 Solarmonitoring
 
 .. note::
@@ -1525,7 +1496,6 @@ Generator
 
 .. image:: /pics/OBP60_Generator_tr.png
              :scale: 30%
-			 
 Abb.: Anzeige Generator
 
 Bei der Generator-Anzeige werden folgende Werte angezeigt:
@@ -1549,14 +1519,12 @@ Um die Messwerte anzeigen zu können, muss ein I2C-Modul **INA226** am I2C-Bus a
 
 .. image:: /pics/INA226.png
              :scale: 30%
-			 
 Abb.: I2C-Adresszuweisung INA226
 
 Für die Messung mit einem externen Leistungs-Shunt muss der schwarze große Widerstand **R100** auf der Frontseite der Platine entfernt werden. Danach ist das Modul wie folgt zu verschalten.
 
 .. image:: /pics/I2C_Sample_Setup_INA226_Generator.png
              :scale: 45%
-			 
 Abb.: Schaltung INA226 Generatormonitoring
 
 .. note::
