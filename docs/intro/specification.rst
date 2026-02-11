@@ -87,7 +87,11 @@ Technische Daten
        #sph-backBtn { left: 15px; }
        #sph-nextBtn { right: 15px; }
    </style>
-
+   <! -- 
+   *********************************************************************************************************
+   ******** !!!Attantion!!! All pictures must be used in other pages otherwise is the link not valid *******
+   *********************************************************************************************************
+   -->
    <div class="sphinx-gallery-container" style="--galerie-breite: 420px; --galerie-hoehe: 440px;">
        <button class="sphinx-nav-btn" id="sph-backBtn">❮</button>
        
@@ -102,6 +106,10 @@ Technische Daten
            </div>
            <div class="sphinx-slide">
                <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_Voltage.png" alt="Voltage">
+               <h3 class="sphinx-caption">Voltage</h3>
+           </div>
+		   <div class="sphinx-slide">
+               <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_Voltage_Analog_tr.png" alt="Voltage Analog">
                <h3 class="sphinx-caption">Voltage</h3>
            </div>
 		   <div class="sphinx-slide">
