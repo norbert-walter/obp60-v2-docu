@@ -1367,6 +1367,20 @@ Die aktuelle Zoomstufe wird oben rechts im Display angezeigt. Im Falle einer unt
 
 .. _Docker-Container: https://hub.docker.com/r/openboatprojects/maps_converter
 
+SkyView
+^^^^^^^
+
+.. image:: ../pics/OBP60_SkyView.png
+             :scale: 30%
+			 
+Abb.: Anzeige SkyView
+
+Die SkyView-Anzeige stellt Informationen zu den aktuell empfangenen Satelliten des ausgewählten GNSS (Global Navigation Satellite System, z.B. GPS, Galileo, Beidou) dar. Diese Daten können entweder vom eingebauten GNSS-Empfänger oder von einem externen Empfänger, der seine Daten über das Netzwerk bereitstellt, stammen.
+
+    * **Sat** weist die Anzahl der aktuell empfangenen Satelliten aus.
+    * **HDOP** (Horizontal Dilution of Precision - horizontale Genauigkeitsverschlechterung) ist als dimensionsloser Wert grundsätzlich ein indikator für die Qualität der horizontalen Positionsbestimmung. In dieser Anzeige wird er näherungsweise als eine Distanz in Metern angegeben.
+
+In der stilisierten Himmelsansicht werden die Positionen der aktuell empfangenen Satelliten über dem Horizont dargestellt. In der Liste auf der rechten Seite ist die Empfangsqualität (**SNR** - Signal Noise Ratio oder Rauschabstand) der einzelnen Satelliten unter ihrer aktuellen Nummer als Balken ablesbar. Ein längerer Balken stellt eine höhere Empfangsqualität dar. Die Nummer korrespondiert mit der Nummer der Satelliten in der Himmelsansicht.
 
 Battery
 ^^^^^^^
