@@ -1065,6 +1065,17 @@ Abb.: Anzeige FourValue
 
 Bei der FourValue-Anzeige können vier beliebige Messwerte aus dem Datenpool vertikal übereinander und horizontal nebeneinander angezeigt werden. Neben den Messwerten werden die Kurzbezeichner und die Einheiten angezeigt. Diese Darstellung entspricht der alten Darstellung vom Raymarine ST60 TriData mit dem Unterschied, dass hier beliebige Werte angezeigt werden können. Es gibt noch die Anzeigeseite **DST810** mit festen Inhalten, die die gleichen Messwerte anzeigt wie beim ST60 TriData.
 
+DST810
+^^^^^^
+
+.. image:: ../pics/OBP60_DST810.png
+             :scale: 30%
+Abb.: Anzeige DST810
+
+Bei der DST810-Anzeige werden der Speed durchs Wasser, die Tiefe, die zurückgelegte Strecke und die Wassertemperatur angezeigt. Neben den Messwerten werden die Kurzbezeichner und die Einheiten dargestellt. Die Anzeigeseite entspricht der alten Darstellung vom **Raymarine ST60 TriData**. Damit die Daten angezeigt werden können, müssen sich gültige Informationen im Datenpool befinden. Neben dem DST810 von Airmar können auch Messwerte anderer Sensorhersteller angezeigt werden, die dieselben Daten oder einen Teil der Daten liefern
+
+Die Anzeigeseite benötigt folgende Messwerte: **DBT, STW, Log, WTemp**
+
 Voltage
 ^^^^^^^
 
@@ -1146,16 +1157,38 @@ Abb.: Anzeige WindroseFlex
 
 Bei dieser Variante der Anzeige WindRose können die darzustellenden Werte frei gewählt werden. Der erste Wert wird auf der Windrose grafisch als Richtung dargestellt, hier ist sinnvollerweise AWA oder TWA zu wählen.
 
-DST810
-^^^^^^
+XTETrack
+^^^^^^^^
 
-.. image:: /pics/OBP60_FourValue2_tr.png
+.. image:: ../pics/OBP60_XTETrack.png
              :scale: 30%
-Abb.: Anzeige FourValue
+Abb.: Anzeige XTETrack
 
-Bei der DST810-Anzeige werden der Speed durchs Wasser, die Tiefe, die zurückgelegte Strecke und die Wassertemperatur angezeigt. Neben den Messwerten werden die Kurzbezeichner und die Einheiten dargestellt. Die Anzeigeseite entspricht der alten Darstellung vom **Raymarine ST60 TriData**. Damit die Daten angezeigt werden können, müssen sich gültige Informationen im Datenpool befinden. Neben dem DST810 von Airmar können auch Messwerte anderer Sensorhersteller angezeigt werden, die dieselben Daten oder einen Teil der Daten liefern
+Diese Anzeige stellt Informationen über den Kurs zum nächsten Wegepunkt dar, wenn von einem Plotter entsprechende Routen- und Wegepunktdaten im Netz bereitgestellt werden. Es werden Daten zum
 
-Die Anzeigeseite benötigt folgende Messwerte: **DBT, STW, Log, WTemp**
+    * **Cross-track-error**: aktuelle Distanz zur idealen Wegepunktlinie und Position (backbord/steuerbord) von dieser Linie
+    * **Track**: aktueller Kurs über Grund
+    * **Distance to waypoint**: Entfernung zum nächsten Wegepunkt
+    * **Bearing**: aktuelle Richtung zum nächsten Wegepunkt
+    * **Wegepunktname**: sofern vorhanden
+
+angezeigt. Die aktuelle Distanz/Position zur Wegepunktlinie wird außerdem über "Autobahnstreifen" visualisiert.
+
+Die Anzeigeseite benötigt folgende Messwerte: **XTE, COG, DTW, BTW**
+
+Compass
+^^^^^^^
+
+.. image:: ../pics/OBP60_Compass.png
+             :scale: 30%
+Abb.: Anzeige Compass
+
+Diese Anzeige stellt eine rollierende Kompassscheibe und darüber einen ergänzenden Messwert dar. Die Kompassscheibe wandert entsprechend des aktuellen Kurses. Eine gestrichelte Linie nach links/rechts stellt die letzte Kursänderung dar. Die Länge der Linie symbolisiert die Größe der Kursänderung.
+
+    * Mit der Taste ``[CMP]`` lässt sich die Quelle der Kompassanzeige zwischen **HDM, HDT** und **COG** umschalten.
+    * Mit der Taste ``[SRC]`` lässt sich der ergänzende Messwert zwischen **HDM, HDT, COG, STW, SOG** und **DBS** umschalten.
+
+Die Anzeigeseite benötigt folgende Messwerte: **HDM, HDT, COG, STW, SOG, DBS**
 
 Clock
 ^^^^^
