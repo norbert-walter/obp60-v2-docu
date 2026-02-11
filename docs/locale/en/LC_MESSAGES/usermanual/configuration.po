@@ -2163,8 +2163,8 @@ msgid ""
 "Hier können Sensoren ausgewählt werden, die am externen I2C-Bus "
 "angeschlossen sind und Solar-Werte auslesen."
 msgstr ""
-"Here, sensors can be selected that are connected to the external I2C bus and"
-" read solar values."
+"Here you can select sensors that are connected to the external I2C bus and "
+"read solar values."
 
 #: ../../usermanual/configuration.rst:539 d2e557462400487ea77a818747fbb839
 #, fuzzy
@@ -2363,8 +2363,8 @@ msgid ""
 "Offset des Winkelsensors für Pitch. Damit kann der Nullpunkt des "
 "Winkelsensors für das Nicken Ihres Bootes korrigiert werden."
 msgstr ""
-"Offset of the angle sensor for pitch. This allows the zero point of the "
-"angle sensor for the pitch of your boat to be corrected."
+"Pitch sensor offset. This allows you to correct the zero point of the angle "
+"sensor for your boat's pitch."
 
 #: ../../usermanual/configuration.rst:594 11b10799629e4906978c6df95e2c526a
 #, fuzzy
@@ -4078,7 +4078,7 @@ msgstr "**LON** - Longitude, geographical altitude"
 #: ../../usermanual/configuration.rst:966 6f0aec504872412480f81cd5b77f04d5
 #, fuzzy
 msgid "**Log** - Log, Entfernung"
-msgstr "**Log** - Log, distance"
+msgstr "**Log** - Log, Distance"
 
 #: ../../usermanual/configuration.rst:967 0d4ae85fa23f4cc0ba4bd59bfb3191cd
 #, fuzzy

@@ -1648,7 +1648,7 @@ msgid ""
 msgstr ""
 "The OBP60 can be operated as a WiFi access point or as a WiFi client. In "
 "this mode, the OBP60 can join another WiFi network and exchange data. This "
-"allows you to integrate the OBP60 into your existing onboard WiFi network. "
+"allows you to integrate the OBP60 into your existing onboard WiFi system. "
 "The WiFi client mode includes an auto-connect feature to automatically "
 "reconnect after connection interruptions."
 
@@ -1871,8 +1871,7 @@ msgstr "**Date Format**"
 msgid ""
 "Mit **Date Format** kann das Ausgabeformat des Datums angepasst werden."
 msgstr ""
-"The **Date Format** option allows you to customize the output format of the "
-"date."
+"The **Date Format** option allows you to customize the date output format."
 
 #: ../../usermanual/configuration_2.rst:478 7b3d0b0f26d249569cb6e417cd06ec66
 #, fuzzy
@@ -2878,8 +2877,7 @@ msgstr "**VSensor Offset**"
 #, fuzzy
 msgid "Offset der Korrekturfunktion des internen Spannungssensors des OBP60"
 msgstr ""
-"Offset of the correction function of the internal voltage sensor of the "
-"OBP60"
+"Offset of the correction function of the OBP60's internal voltage sensor"
 
 #: ../../usermanual/configuration_2.rst:699 16890abf6b8c45dabf80f232d2591c1a
 #, fuzzy
@@ -3054,9 +3052,9 @@ msgid ""
 " ensprechen einer Zeitachse in Sekunden, wenn der Messwert 1x pro Sekunde "
 "aktualisiert wird."
 msgstr ""
-"The x-axis of the diagrams shows the number of data updates, i.e., it "
-"corresponds to a time axis in seconds if the measurement is updated once per"
-" second."
+"The x-axis of the diagrams shows the number of data updates, i.e., they "
+"correspond to a time axis in seconds if the measurement is updated once per "
+"second."
 
 #: ../../usermanual/configuration_2.rst:741 05d45563a12c4c3f8342d67b02d6ca70
 #, fuzzy
