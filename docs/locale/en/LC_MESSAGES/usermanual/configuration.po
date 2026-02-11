@@ -3378,7 +3378,7 @@ msgid ""
 "``Control by Time`` - Schalten der Beleuchtung durch ein vorgegebenes "
 "Zeitintervall"
 msgstr ""
-"``Control by Time`` - Switching the lighting at a predetermined time "
+"``Control by Time`` - Switching the lighting after a predetermined time "
 "interval"
 
 #: ../../usermanual/configuration.rst:804 5d52a6755977497eabe4dc6fd6cabf37
