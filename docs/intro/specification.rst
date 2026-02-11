@@ -3,6 +3,143 @@ Technische Daten
 
 .. image:: ../pics/OBP60_OBP_Logo_tr.png
    :scale: 30%
+   
+.. raw:: html
+
+   <style>
+       /* Container & Layout */
+       .sphinx-gallery-container {
+           position: relative;
+           width: var(--galerie-breite, 400px);
+           height: var(--galerie-hoehe, 420px);
+           max-width: 100%;
+           overflow: hidden;
+           background: transparent;
+           border-radius: 15px;
+           margin: 20px auto; /* Zentrierung in Sphinx */
+       }
+
+       .sphinx-gallery {
+           display: flex;
+           width: 100%;
+           height: 100%;
+           overflow-x: auto;
+           scroll-snap-type: x mandatory;
+           scroll-behavior: smooth;
+           -ms-overflow-style: none; 
+           scrollbar-width: none; 
+       }
+       .sphinx-gallery::-webkit-scrollbar { display: none; }
+
+       .sphinx-slide {
+           position: relative;
+           min-width: 100%;
+           height: 100%;
+           scroll-snap-align: start;
+           background: transparent;
+       }
+
+       .sphinx-slide img {
+           width: 100%;
+           height: 100%;
+           object-fit: cover;
+           display: block;
+           border-radius: 15px;
+           margin-bottom: 0 !important; /* Override für Sphinx Themes */
+       }
+
+       /* Beschriftung */
+       .sphinx-caption {
+           position: absolute;
+           top: 15px;
+           left: 50%;
+           transform: translateX(-50%);
+           color: white !important;
+           margin: 0;
+           font-family: 'Ubuntu', Arial, sans-serif;
+           font-size: 16px;
+           text-align: center;
+           width: 90%;
+           font-weight: bold;
+           text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+           pointer-events: none;
+       }
+
+       /* Navigation */
+       .sphinx-nav-btn {
+           position: absolute;
+           top: 50%;
+           transform: translateY(-50%);
+           background: rgba(255, 255, 255, 0.3);
+           backdrop-filter: blur(4px);
+           -webkit-backdrop-filter: blur(4px);
+           border: none;
+           width: 45px;
+           height: 45px;
+           cursor: pointer;
+           font-size: 20px;
+           border-radius: 50%;
+           z-index: 10;
+           transition: 0.3s;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+       }
+       .sphinx-nav-btn:hover { background: rgba(255, 255, 255, 0.8); }
+       #sph-backBtn { left: 15px; }
+       #sph-nextBtn { right: 15px; }
+   </style>
+
+   <div class="sphinx-gallery-container" style="--galerie-breite: 400px; --galerie-hoehe: 420px;">
+       <button class="sphinx-nav-btn" id="sph-backBtn">❮</button>
+       
+       <div class="sphinx-gallery" id="sph-gallery">
+           <div class="sphinx-slide">
+               <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_WindPlot2.png" alt="Windplot 2">
+               <h3 class="sphinx-caption">Windplot 2 Diagrams</h3>
+           </div>
+           <div class="sphinx-slide">
+               <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_WindPlot.png" alt="Windplot 1">
+               <h3 class="sphinx-caption">Windplot 1 Diagram</h3>
+           </div>
+           <div class="sphinx-slide">
+               <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_Voltage.png" alt="Voltage">
+               <h3 class="sphinx-caption">Voltage</h3>
+           </div>
+       </div>
+
+       <button class="sphinx-nav-btn" id="sph-nextBtn">❯</button>
+   </div>
+
+   <script>
+       (function() {
+           const gal = document.getElementById('sph-gallery');
+           const nxt = document.getElementById('sph-nextBtn');
+           const bck = document.getElementById('sph-backBtn');
+
+           function doScroll(dir) {
+               const amt = gal.offsetWidth;
+               const max = gal.scrollWidth - gal.offsetWidth;
+               if (dir === 'next') {
+                   if (gal.scrollLeft >= max - 5) {
+                       gal.scrollTo({ left: 0, behavior: 'smooth' });
+                   } else {
+                       gal.scrollBy({ left: amt, behavior: 'smooth' });
+                   }
+               } else {
+                   if (gal.scrollLeft <= 5) {
+                       gal.scrollTo({ left: max, behavior: 'smooth' });
+                   } else {
+                       gal.scrollBy({ left: -amt, behavior: 'smooth' });
+                   }
+               }
+           }
+
+           nxt.addEventListener('click', () => doScroll('next'));
+           bck.addEventListener('click', () => doScroll('back'));
+       })();
+   </script>
+
 
 Funktionen
 ----------
