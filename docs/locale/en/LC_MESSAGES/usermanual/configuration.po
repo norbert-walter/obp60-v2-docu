@@ -3805,7 +3805,7 @@ msgstr "**OneValue** - A single display value, numeric/graphical"
 #: ../../usermanual/configuration.rst:914 41e78dc3dba947f1b6986f28e4efe10c
 #, fuzzy
 msgid "**TwoValue** - Zwei Anzeigewerte numerisch/grafisch"
-msgstr "**TwoValue** - Two display values, numeric/graphical"
+msgstr "**TwoValue** - Two display values (numeric/graphical)"
 
 #: ../../usermanual/configuration.rst:915 aee19ccd9eae46cf9d249bbb4fd19f4b
 #, fuzzy
