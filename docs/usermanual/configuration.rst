@@ -1071,6 +1071,16 @@ Abb.: Anzeige FourValue
 
 Bei der FourValue-Anzeige können vier beliebige Messwerte aus dem Datenpool vertikal übereinander und horizontal nebeneinander angezeigt werden. Neben den Messwerten werden die Kurzbezeichner und die Einheiten angezeigt. Diese Darstellung entspricht der alten Darstellung vom Raymarine ST60 TriData mit dem Unterschied, dass hier beliebige Werte angezeigt werden können. Es gibt noch die Anzeigeseite **DST810** mit festen Inhalten, die die gleichen Messwerte anzeigt wie beim ST60 TriData.
 
+SixValue
+^^^^^^^^
+
+.. image:: /pics/OBP60_Six_Value_tr.png
+             :scale: 30%
+			 
+Abb.: Anzeige SixValue
+
+Bei der SixValue-Anzeige können sechs beliebige Messwerte aus dem Datenpool vertikal übereinander angezeigt werden. Neben den Messwerten werden die Kurzbezeichner und die Einheiten dargestellt.
+
 DST810
 ^^^^^^
 
@@ -1334,6 +1344,22 @@ Beachten Sie auch die Hinweise im Kapitel **Datenaustausch - I2C-Bus** und **Bus
 .. hint::
 	Die Kielanzeige kann nur in Verbindung mit einem I2C-Rotationssensor benutzt werden.
 	
+Sky View
+^^^^^^^
+
+.. image:: /pics/OBP60_Sky_View_tr.png
+             :scale: 30%
+			 
+Abb.: Anzeige SkyView
+
+Bei der SkyView werden alle verfügbaren Satelliten in einem Polardiagramm dargestellt. Für jeden aktuell benutzten Satelitten werden die Satelliten-Nummer und das Signal zu Rausch Verhältnis (SNR) angegeben. Zusätzlich wird die Ortsgenauigkeit des GPS-Signals in der horizontalen Ebene (HDOP) angezeigt.
+
+.. warning::
+	Die GPS-Ortsgenauigkeit ist nicht in jedem Fall exakt und dient nur zur groben Orientierung, um das GPS-Signal besser einschätzen zu können.
+	
+.. tip::
+    Sie können die GPS-Ortsgenauigkeit erhöhen, indem Sie eine externe GPS-Antenne an Deck benutzen. Wählen Sie eine Position mit freiem Blick nach oben. Eine Installation am Heckkorb ist optimal. 
+
 Navigation
 ^^^^^^^^^^
 
@@ -1564,6 +1590,26 @@ Abb.: Schaltung INA226 Generatormonitoring
 
 .. warning::
 	Die Gefahren und Risiken bei der Benutzung des INA226 zum Batteriemonitoring sind dieselben wie im Kapitel **Battery** beschrieben. Folgen Sie den Empfehlungen und beachten Sie die Gefahren.
+	
+Fluid
+^^^^^
+
+.. image:: /pics/OBP60_Fluid_tr.png
+             :scale: 30%
+			 
+Abb.: Anzeige Fluid
+
+Mit der Fluid-Anzeige lassen sich verschieden Füllstände von Flüssigkeiten als rundes Zeigerinstrument anzeigen wie:
+
+	* Diesel (Fuel)
+	* Benzin (Fuel Gasoline)
+	* Öl (Oil)
+	* Frischwasser (Water)
+	* Grauwasser (Gray Water)
+	* Schmutzwasser (Black Water)
+	* Bunkerwasser (Live Well)
+	
+Die Einstellung des Typs wird über die Konfiguration vorgenommen. Je Typ wird ein entsprechendes Symbol im Instrument angezeigt.
 	
 Digital Out
 ^^^^^^^^^^^

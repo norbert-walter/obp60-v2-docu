@@ -104,14 +104,6 @@ Technische Daten
                <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_QR_Code_tr.png" alt="WiFi QR Code">
                <h3 class="sphinx-caption">WiFi QR Code</h3>
            </div>
-           <div class="sphinx-slide">
-               <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_Voltage.png" alt="Voltage">
-               <h3 class="sphinx-caption">Voltage</h3>
-           </div>
-		   <div class="sphinx-slide">
-               <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_Voltage_Analog_tr.png" alt="Voltage Analog">
-               <h3 class="sphinx-caption">Voltage Analog</h3>
-           </div>
 		   <div class="sphinx-slide">
                <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_OneValue_tr.png" alt="One Value">
                <h3 class="sphinx-caption">One Value</h3>
@@ -141,12 +133,8 @@ Technische Daten
                <h3 class="sphinx-caption">Four Value 2</h3>
            </div>
 		   <div class="sphinx-slide">
-               <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_WindPlot2.png" alt="Six Value">
+               <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_Six_Value_tr.png" alt="Six Value">
                <h3 class="sphinx-caption">Six Value</h3>
-           </div>
-		   <div class="sphinx-slide">
-               <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_Compass.png" alt="Compass">
-               <h3 class="sphinx-caption">Compass</h3>
            </div>
            <div class="sphinx-slide">
                <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_WindPlot.png" alt="Windplot 1 Diagram">
@@ -188,13 +176,45 @@ Technische Daten
                <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_Navigation_tr.png" alt="Navigation">
                <h3 class="sphinx-caption">Navigation</h3>
            </div>
+           <div class="sphinx-slide">
+               <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_Compass.png" alt="Compass">
+               <h3 class="sphinx-caption">Compass</h3>
+           </div>
 		   <div class="sphinx-slide">
                <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_XTETrack.png" alt="XTE Track">
                <h3 class="sphinx-caption">XTE Track</h3>
            </div>
            <div class="sphinx-slide">
+               <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_Sky_View_tr.png" alt="Sky View">
+               <h3 class="sphinx-caption">Sky View</h3>
+           </div>
+           <div class="sphinx-slide">
                <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_Digital_Out.png" alt="Digital Out">
                <h3 class="sphinx-caption">Digital Out</h3>
+           </div>
+           <div class="sphinx-slide">
+               <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_Voltage.png" alt="Voltage">
+               <h3 class="sphinx-caption">Voltage</h3>
+           </div>
+		   <div class="sphinx-slide">
+               <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_Voltage_Analog_tr.png" alt="Voltage Analog">
+               <h3 class="sphinx-caption">Voltage Analog</h3>
+           </div>
+           <div class="sphinx-slide">
+               <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_Battery2_tr.png" alt="Battery2">
+               <h3 class="sphinx-caption">Battery2</h3>
+           </div>
+		   <div class="sphinx-slide">
+               <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_Solar_tr.png" alt="Solar">
+               <h3 class="sphinx-caption">Solar</h3>
+           </div>
+           <div class="sphinx-slide">
+               <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_Generator_tr.png" alt="Generator">
+               <h3 class="sphinx-caption">Generator</h3>
+           </div>
+           <div class="sphinx-slide">
+               <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_Fluid_tr.png" alt="Fluid">
+               <h3 class="sphinx-caption">Fluid</h3>
            </div>
        </div>
 
