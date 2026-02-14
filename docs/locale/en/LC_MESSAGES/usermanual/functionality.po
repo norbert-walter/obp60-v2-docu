@@ -38,9 +38,9 @@ msgid ""
 "werden. Zu den typischen Bussystemen im Marinebereich, die das OBP60 "
 "verarbeitet, gehören:"
 msgstr ""
-"The OBP60 is a data display device for marine applications, capable of "
-"reading and displaying a wide range of information from bus systems. Typical"
-" marine bus systems that the OBP60 processes include:"
+"The OBP60 is a data display device for the marine sector, capable of reading"
+" and displaying a wide variety of information from bus systems. Typical "
+"marine bus systems that the OBP60 processes include:"
 
 #: ../../usermanual/functionality.rst:12 71aa00ba8c424da6998e35ed07f3c7a1
 #, fuzzy
