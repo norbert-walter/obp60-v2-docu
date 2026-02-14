@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OBP60 V2 Dokumentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-11 16:44+0000\n"
+"POT-Creation-Date: 2026-02-14 16:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -20,373 +20,373 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.18.0\n"
 
-#: ../../intro/specification.rst:2 e09575cc6cbb49f099af3917ba988caa
+#: ../../intro/specification.rst:2 6da51693ffd940c3811eaaf2eb6c2a8c
 #, fuzzy
 msgid "Technische Daten"
 msgstr "Technical data"
 
-#: ../../intro/specification.rst:233 5ede3f6f151e4cfd9187be83ec115c3c
+#: ../../intro/specification.rst:261 7ca0a9630d444ca48d6f7da4ff13ee13
 #, fuzzy
-msgid "Abb.: OBP60 mit mehr als 25 verschiedenen Anzeigeseiten"
-msgstr "Fig.: OBP60 with more than 25 different display pages"
+msgid "Abb.: OBP60 mit mehr als 32 verschiedenen Anzeigeseiten"
+msgstr "Fig.: OBP60 with more than 32 different display pages"
 
-#: ../../intro/specification.rst:237 59c7e0ae8cbd4b1da7154ba9b3c483b8
+#: ../../intro/specification.rst:265 8b198d58daa0466ea2ed05ef88002ee9
 #, fuzzy
 msgid "Funktionen"
 msgstr "Functions"
 
-#: ../../intro/specification.rst:239 accd8844adfc4e40850df3e6a4004ac3
+#: ../../intro/specification.rst:267 97ad4f3ac3c740f3938e77dafcdafe78
 #, fuzzy
 msgid "E-Paper Display (tageslichttauglich)"
 msgstr "E-Paper Display (daylight compatible)"
 
-#: ../../intro/specification.rst:240 c270f82e7c0d4586a3f917becd30989c
+#: ../../intro/specification.rst:268 b69053dd310c4dd391f11680e5fa7f7f
 #, fuzzy
 msgid "Numerische Anzeigeseiten für 1, 2, 3 und 4 Werte (Werte frei wählbar)"
 msgstr ""
 "Numeric display pages for 1, 2, 3 and 4 values (values freely selectable)"
 
-#: ../../intro/specification.rst:241 4e8cad14980645eb9c23811225bc2f2f
+#: ../../intro/specification.rst:269 76102810a95242ddb7c8dcc4fd615bce
 #, fuzzy
 msgid "Grafische Anzeigeseiten (feste Werte)"
 msgstr "Graphic display pages (fixed values)"
 
-#: ../../intro/specification.rst:242 f04904b075fb4217ac5577dc031b7aff
+#: ../../intro/specification.rst:270 fee707ac365046f89ab826752e5b2bdb
 #, fuzzy
 msgid "Trendanzeige für Werte"
 msgstr "Trend indicator for values"
 
-#: ../../intro/specification.rst:243 ebeb51bf675246daa171ac20c45c3f41
+#: ../../intro/specification.rst:271 794288c8a62a42289fad55d7452eb834
 #, fuzzy
 msgid "Grenzwertüberschreitung akustisch und optisch"
 msgstr "Exceedance of limit values acoustically and visually"
 
-#: ../../intro/specification.rst:244 e34a555a5d99452aaad12f15dd7a94a8
+#: ../../intro/specification.rst:272 49040476736144189deae3544414373f
 #, fuzzy
 msgid "6 Sensor-Tasten (geeignet für Wischgesten)"
 msgstr "6 Sensor buttons (suitable for swipe gestures)"
 
-#: ../../intro/specification.rst:245 d043ac75da644136bae78ada9c0f5f09
+#: ../../intro/specification.rst:273 003e477b69294aa2afa20531297fd153
 #, fuzzy
 msgid "Akustischer Signalgeber (Buzzer)"
 msgstr "Acoustic signal generator (buzzer)"
 
-#: ../../intro/specification.rst:246 c6092522c21f4ea19df287559663f7be
+#: ../../intro/specification.rst:274 8c350fe278294a8da763ba1c4d335a84
 #, fuzzy
 msgid "Optischer Signalgeber (RGB-LED)"
 msgstr "Optical signal transmitter (RGB LED)"
 
-#: ../../intro/specification.rst:247 13547eb079ed4194875cab878971f7c1
+#: ../../intro/specification.rst:275 3f2266422d3244f7a0ca9fb0b3562186
 #, fuzzy
 msgid "LED-Displaybeleuchtung (RGB-LEDs)"
 msgstr "LED-Displaybeleuchtung (RGB-LEDs)"
 
-#: ../../intro/specification.rst:248 9c62de48042e4f769ca7faea30be3fbd
+#: ../../intro/specification.rst:276 b3ff30158af74043a8c07c445d8f73e5
 #, fuzzy
 msgid "NMEA2000 (vollduplex, isoliert)"
 msgstr "NMEA2000 (full duplex, isolated)"
 
-#: ../../intro/specification.rst:249 f601f34b35904afab147e4e26f69ab4c
+#: ../../intro/specification.rst:277 3adf547624714c078398411d08590796
 #, fuzzy
 msgid "NMEA0183 (RX oder TX, konfigurierbar, isoliert)"
 msgstr "NMEA0183 (RX or TX, configurable, isolated)"
 
-#: ../../intro/specification.rst:250 05be79cfda894bee9780a6ec7c7093f6
+#: ../../intro/specification.rst:278 fa28306eda1d4174a1061a4f71a77975
 #, fuzzy
 msgid "NMEA2000/NMEA0183 Gateway (bidirektional)"
 msgstr "NMEA2000/NMEA0183 Gateway (bidirektional)"
 
-#: ../../intro/specification.rst:251 d9572f39063344a7878cbbff1f3b638b
+#: ../../intro/specification.rst:279 28ed3e015a7a4f9da0c92f915c80cc2f
 #, fuzzy
 msgid "I2C (isoliert)"
 msgstr "I2C (isolated)"
 
-#: ../../intro/specification.rst:252 da5d9068e68a42c490f2c81e9f85b011
+#: ../../intro/specification.rst:280 3864a8f734d44f13a9726d4be57128d9
 #, fuzzy
 msgid "1Wire (nicht isoliert)"
 msgstr "1-Wire (non-isolated)"
 
-#: ../../intro/specification.rst:253 55a7aa0f145a4daba615dba6aa813ecc
+#: ../../intro/specification.rst:281 a22851787f064758b3e44598ae13c57c
 #, fuzzy
 msgid "Spannungsausgang 5V (max. 200mA) für externe Sensorik"
 msgstr "Voltage output 5V (max. 200mA) for external sensors"
 
-#: ../../intro/specification.rst:254 c5d16a0d9148443b80ed24d4f93ac68e
+#: ../../intro/specification.rst:282 19471f319c8e4a35a151ad82b2fe9617
 #, fuzzy
 msgid "USB-C (OTG, Debug, NMEA0183)"
 msgstr "USB-C (OTG, Debug, NMEA0183)"
 
-#: ../../intro/specification.rst:255 e91c814cd1bb4a05827c654defd2c232
+#: ../../intro/specification.rst:283 38867450fc7d45f287cd3943853f79b7
 #, fuzzy
 msgid "Batteriemonitor (12V-Spannungsmessung)"
 msgstr "Battery monitor (12V voltage measurement)"
 
-#: ../../intro/specification.rst:256 76088903437346459c7b6f4367a39074
+#: ../../intro/specification.rst:284 3746edccde884b4ea99a2012cc3b46b8
 #, fuzzy
 msgid "Umgebungssensor BMP280 (Temperatur, Luftdruck)"
 msgstr "BMP280 environmental sensor (temperature, air pressure)"
 
-#: ../../intro/specification.rst:257 dba35f4e2137441cbc141c34810134f1
+#: ../../intro/specification.rst:285 9fc755c35abe4cfa813b6294ac1bb734
 #, fuzzy
 msgid "GPS-Empfäger (GPS, Glonass, Baidu, interne oder externe GPS-Antenne)"
 msgstr "GPS receiver (GPS, Glonass, Baidu, internal or external GPS antenna)"
 
-#: ../../intro/specification.rst:258 5ebaff993184446bae8f7997a7225053
+#: ../../intro/specification.rst:286 6002c5e495e0404cad46607147d812e5
 #, fuzzy
 msgid "WiFi 2.4GHz (HTTP, TCP, UDP)"
 msgstr "WiFi 2.4GHz (HTTP, TCP, UDP)"
 
-#: ../../intro/specification.rst:259 22922c2964d846f2b41c0060a66548a0
+#: ../../intro/specification.rst:287 5bab9fb51184423aa76b82e88c2c800e
 #, fuzzy
 msgid "Bluetooth (aktuell ungenutzt)"
 msgstr "Bluetooth (currently unused)"
 
-#: ../../intro/specification.rst:260 16c482a37eba413bad3f6b3359f27f32
+#: ../../intro/specification.rst:288 b38fbe823c9847599f593d4105a878b3
 #, fuzzy
 msgid "Batterie-Tiefentladeschutz < 9.0V"
 msgstr "Battery deep discharge protection < 9.0V"
 
-#: ../../intro/specification.rst:261 b2d3820ad1454601adf30e3c64785fe0
+#: ../../intro/specification.rst:289 bba36fa1c1704f29abc5d914782477b2
 #, fuzzy
 msgid "Low Power Modus"
 msgstr "Low Power Modus"
 
-#: ../../intro/specification.rst:265 fd027746f9e64bfda407eeee014208dd
+#: ../../intro/specification.rst:293 0293f8e4a5eb463c84ee1b459269e970
 #, fuzzy
 msgid "Aufbau"
 msgstr "Construction"
 
-#: ../../intro/specification.rst:272 62beb640b2db4336ac0314f93f8f9347
+#: ../../intro/specification.rst:300 85dbd5e675664224b33c4e625cf7536d
 #, fuzzy
 msgid "Spezifikation"
 msgstr "Specification"
 
-#: ../../intro/specification.rst:275 4e0814e502ea413e9bc557dacefd07e1
+#: ../../intro/specification.rst:303 4203c6bafe094558a29d629bb3ef0c8a
 #, fuzzy
 msgid "Versorgungsspannung"
 msgstr "Supply voltage"
 
-#: ../../intro/specification.rst:275 4b8f6aca3d7f4592a4a906d121066540
+#: ../../intro/specification.rst:303 d959377910b3461882d8f22c7dcbb8c9
 #, fuzzy
 msgid "10...28 V"
 msgstr "10...28 V"
 
-#: ../../intro/specification.rst:277 f1d3cc0590fe47dcb6309fef0aef985d
+#: ../../intro/specification.rst:305 63c14a1c71b04929a07323cbb6bf6eeb
 #, fuzzy
 msgid "Stromverbrauch"
 msgstr "Electricity consumption"
 
-#: ../../intro/specification.rst:277 dc6be8f52645423d861933d76d0fcd80
+#: ../../intro/specification.rst:305 b55cb96b60a440d892d39832b389a95c
 #, fuzzy
 msgid "0.5...3.5 W, typisch 1 W"
 msgstr "0.5...3.5 W, typisch 1 W"
 
-#: ../../intro/specification.rst:279 bad28b99443e4b60a21a483b07296f43
+#: ../../intro/specification.rst:307 35940d2187a84239baba95f36e684ab6
 #, fuzzy
 msgid "Prozessor"
 msgstr "Processor"
 
-#: ../../intro/specification.rst:279 dd41a237840146988a1be4327b046279
+#: ../../intro/specification.rst:307 8418fd194f5344629bd5c82d4ef1c501
 #, fuzzy
 msgid "ESP32-S3, Dual Core"
 msgstr "ESP32-S3, Dual Core"
 
-#: ../../intro/specification.rst:281 9e7fec9e01c949b2b9b60c98197f8838
+#: ../../intro/specification.rst:309 159efbce93c149cab56b8296be11d3a4
 #, fuzzy
 msgid "Clock Speed"
 msgstr "Clock Speed"
 
-#: ../../intro/specification.rst:281 1f02b560fb1f42eb87226fea48c93010
+#: ../../intro/specification.rst:309 f55d3cc135ff4940a7adb8ab4b60932d
 #, fuzzy
 msgid "80, 160, 240 MHz"
 msgstr "80, 160, 240 MHz"
 
-#: ../../intro/specification.rst:283 e44960b544f640a5a137ea4a5bf2937d
+#: ../../intro/specification.rst:311 8a652709b0fb47129f135e7266aed708
 #, fuzzy
 msgid "RAM"
 msgstr "RAM"
 
-#: ../../intro/specification.rst:283 fbb2009b7b3243cbb3aee8bbfba0ce05
+#: ../../intro/specification.rst:311 d5e43554ce5e4c72894f6dae1e013163
 #, fuzzy
 msgid "512 kB"
 msgstr "512 KB"
 
-#: ../../intro/specification.rst:285 54481af6f59c4cc68ef5bccf7f8112e2
+#: ../../intro/specification.rst:313 e4c8ab9fbafc4cd09e74230c46cb7164
 #, fuzzy
 msgid "Flash"
 msgstr "Flash"
 
-#: ../../intro/specification.rst:285 d711b515ba8a40f8b15f8744bef30f69
+#: ../../intro/specification.rst:313 a6141abd37764140a64eecccecade6e8
 #, fuzzy
 msgid "16 MB"
 msgstr "16 MB"
 
-#: ../../intro/specification.rst:287 aeb3a77c7f364cdabfb1612be9f3a583
+#: ../../intro/specification.rst:315 ebe0c21886614a4a8245b9a4a027202f
 #, fuzzy
 msgid "PSRAM"
 msgstr "PSRAM"
 
-#: ../../intro/specification.rst:287 631b84d5be2942878c6dd84f2a2c9b8a
+#: ../../intro/specification.rst:315 239ce6ddfb1b4fc1ba41f452e0ce5e2f
 #, fuzzy
 msgid "8 MB"
 msgstr "8 MB"
 
-#: ../../intro/specification.rst:289 4d9fcbcce8f04fe3bff5d3e299550e28
+#: ../../intro/specification.rst:317 b019269def804bc8a80bc3d1068aaa48
 #, fuzzy
 msgid "Displaygröße"
 msgstr "Display size"
 
-#: ../../intro/specification.rst:289 a0c292b7cf3b425ab1e6242a909bd73c
+#: ../../intro/specification.rst:317 3e8a9cb9fc9546218aa3f87d74bf7dd7
 #, fuzzy
 msgid "400 x 300 pix, 120 dpi"
 msgstr "400 X 300 pix, 120 dpi"
 
-#: ../../intro/specification.rst:291 49682865f18a414ba984febbd632882f
+#: ../../intro/specification.rst:319 3979a07e6c8a41b3b3c8e9ecdbe0be8e
 #, fuzzy
 msgid "Refreshrate"
 msgstr "Refreshrate"
 
-#: ../../intro/specification.rst:291 867aa6a17ba6403687e064705bab4529
+#: ../../intro/specification.rst:319 59f755863bd145ecabe6adc84c408d58
 #, fuzzy
 msgid "1 Hz"
 msgstr "1 Hz"
 
-#: ../../intro/specification.rst:293 84b2c1cf1b234b0eb7e2afd236f2ac5b
+#: ../../intro/specification.rst:321 22e79cf3a51a4df3997d0b5b141cc750
 #, fuzzy
 msgid "Sensortasten"
 msgstr "Sensor buttons"
 
-#: ../../intro/specification.rst:293 4bf6446a5f2b40769a43c29052931631
+#: ../../intro/specification.rst:321 521eb22c7d9d476082585cadbca49878
 #, fuzzy
 msgid "kapazitiv"
 msgstr "Capacitive"
 
-#: ../../intro/specification.rst:295 62550acf34a84376ae23b4d289d66ff3
+#: ../../intro/specification.rst:323 ffc7d7824130495f9bed9a3bddb83bb7
 #, fuzzy
 msgid "NMEA0183-Bus"
 msgstr "NMEA0183-Bus"
 
-#: ../../intro/specification.rst:295 f833b7bf35c944b59ed3aecf1cc7c072
+#: ../../intro/specification.rst:323 879dd3976b5647e592fa22173e5de737
 #, fuzzy
 msgid "RS485, max. 115.2 kBd, 30 m"
 msgstr "RS485, max. 115.2 kBd, 30 m"
 
-#: ../../intro/specification.rst:297 95aebabe23f84d0c9af02cf594805c5e
+#: ../../intro/specification.rst:325 9e5c84e1af084e2f8f51dd601167a156
 #, fuzzy
 msgid "NMEA2000-Bus"
 msgstr "NMEA2000-Bus"
 
-#: ../../intro/specification.rst:297 a9647f5e17c94aae81e5c36c2f6ed212
+#: ../../intro/specification.rst:325 420c99ea9385442a8d910870c4de4c23
 #, fuzzy
 msgid "CAN, 250 kBit/s, 30 m"
 msgstr "CAN, 250 kBit/s, 30 m"
 
-#: ../../intro/specification.rst:299 83527de45ff34ae08a4e9661eb00c127
+#: ../../intro/specification.rst:327 04eee026dc5840eeb7298369f177e103
 #, fuzzy
 msgid "I2C-Bus"
 msgstr "I2C bus"
 
-#: ../../intro/specification.rst:299 0d4594c1a53d4e0a94b9d36bfa93606f
+#: ../../intro/specification.rst:327 0021bed2fc054e819585c2539c8ce268
 #, fuzzy
 msgid "5V, 100 kBit/s, 10 m"
 msgstr "5V, 100 kBit/s, 10 m"
 
-#: ../../intro/specification.rst:301 f4591abd662046e1bebf11acd35099b4
+#: ../../intro/specification.rst:329 76ea9f017050498194aeb1ad26e91aff
 #, fuzzy
 msgid "1Wire-Bus"
 msgstr "1Wire-Bus"
 
-#: ../../intro/specification.rst:301 38c9c83a5b064296be36676498f187b6
+#: ../../intro/specification.rst:329 156d5ba28d09446ca96932876ce46521
 #, fuzzy
 msgid "3.3V, 10 m"
 msgstr "3.3V, 10 m"
 
-#: ../../intro/specification.rst:303 3ea0ab9432ae4277b2ead8771d01e5ab
+#: ../../intro/specification.rst:331 c632df3333f242eba056fc21d8500054
 #, fuzzy
 msgid "5V-Ausgang"
 msgstr "5V output"
 
-#: ../../intro/specification.rst:303 d4c0e1e973804c9996562138a2f59366
+#: ../../intro/specification.rst:331 d8905ea3247c43e596a8e63f0b334207
 #, fuzzy
 msgid "200 mA, isoliert"
 msgstr "200 MA, isolated"
 
-#: ../../intro/specification.rst:305 2f790e15ca8a4aec9ab5e72cc8590333
+#: ../../intro/specification.rst:333 8129e9663e1a48a7ba34ae41679118b9
 #, fuzzy
 msgid "ESD-Schutz"
 msgstr "ESD protection"
 
-#: ../../intro/specification.rst:305 4dc08a0889a84f10bc328b9a7c6aef9c
+#: ../../intro/specification.rst:333 65c71cade8214bdfab5117902eb57b49
 #, fuzzy
 msgid "8 kV"
 msgstr "8 KV"
 
-#: ../../intro/specification.rst:307 83c6534046544804af4157544ee66531
+#: ../../intro/specification.rst:335 172c7c4d8cfd4413a2025e96e4bdb7a5
 #, fuzzy
 msgid "Schutzgrad"
 msgstr "Protection level"
 
-#: ../../intro/specification.rst:307 4ae732a447dc48fb8b63ed1af4cdfa10
+#: ../../intro/specification.rst:335 dc127dc7ddf94359a249d3c0bf1adf5b
 #, fuzzy
 msgid "IP68, frontseitig"
 msgstr "IP68, front"
 
-#: ../../intro/specification.rst:309 5445974054f345c2880b9f8c7f55a184
+#: ../../intro/specification.rst:337 d9b7fbbc38694ddcb78b50cdb6218401
 #, fuzzy
 msgid "Abmessungen"
 msgstr "Dimensions"
 
-#: ../../intro/specification.rst:309 a35c0707e72b4306a5eaaf4e63914e06
+#: ../../intro/specification.rst:337 76f9b840e4594df9a4ab38614e1d1cad
 #, fuzzy
 msgid "110 x 115 x 30 mm"
 msgstr "110 X 115 x 30 mm"
 
-#: ../../intro/specification.rst:311 49b170af72f146dc80152ae29e342314
+#: ../../intro/specification.rst:339 9ecbd344d360432fa2c4fd7105c466f6
 #, fuzzy
 msgid "Gewicht"
 msgstr "Weight"
 
-#: ../../intro/specification.rst:311 12e8662651a94ba5b0c721f4cc443384
+#: ../../intro/specification.rst:339 2bab7d1e612045eabdc41f5efece988d
 #, fuzzy
 msgid "280 g"
 msgstr "280 G"
 
-#: ../../intro/specification.rst:315 3bfa071293d44e468463dbbe0b7d2b31
+#: ../../intro/specification.rst:343 84a6df42a29646128a1a61320ffe16a6
 #, fuzzy
 msgid "Anschlussbelegung"
 msgstr "Connection assignment"
 
-#: ../../intro/specification.rst:323 ee4b5549acb2401693843e0ef0820502
+#: ../../intro/specification.rst:351 3fd8ec7868574374a010f07298abc119
 #, fuzzy
 msgid "Schaltplan"
 msgstr "Circuit diagram"
 
-#: ../../intro/specification.rst:325 3fd92067d44942a7beb87260db3b473a
+#: ../../intro/specification.rst:353 ae818e09500c4d74a41ab49325806dec
 #, fuzzy
 msgid "`Schaltplan V2.1 [PDF] <../_static/files/Schematic_OBP60_V2.1.pdf>`_"
 msgstr "`Schaltplan V2.1 [PDF] <../_static/files/Schematic_OBP60_V2.1.pdf>`_"
 
-#: ../../intro/specification.rst:329 287857cc1a16405f976398b680129774
+#: ../../intro/specification.rst:357 026845536e8447de8dcb366acec320f8
 #, fuzzy
 msgid "Maßbilder"
 msgstr "Dimensional drawings"
 
-#: ../../intro/specification.rst:331 ef47a09529304c0aab7ab85475196899
+#: ../../intro/specification.rst:359 dd8f201aec9947ab973d18dc716576e4
 #, fuzzy
 msgid "`Maßbild [PDF] <../_static/files/Drawing_OBP60_V2.pdf>`_"
 msgstr "`Maßbild [PDF] <../_static/files/Drawing_OBP60_V2.pdf>`_"
 
-#: ../../intro/specification.rst:335 8cb7d0baa2d84818acb7c177e4e6acd4
+#: ../../intro/specification.rst:363 5600029350df40058c6a45c2c1947c11
 #, fuzzy
 msgid "Nutzbare und konvertierbare Telegramme"
 msgstr "Usable and convertible telegrams"
 
-#: ../../intro/specification.rst:337 591ba2dd458a434fb7f0fdb361917250
+#: ../../intro/specification.rst:365 13e07f028f9f40b3bf27474c0f041e84
 #, fuzzy
 msgid "**NMEA0183**"
 msgstr "**NMEA0183**"
 
-#: ../../intro/specification.rst:338 709d9cc915e74a00aba1047128c778a8
+#: ../../intro/specification.rst:366 38d3c43ddec34c5c846ef6e9b6d196a4
 #, fuzzy
 msgid ""
 "AIVDM, AIVDO, DBK, DBS, DBT, DPT, GGA, GLL, GSA, GSV, HDG, HDM, HDT, MTW, "
@@ -395,12 +395,12 @@ msgstr ""
 "AIVDM, AIVDO, DBK, DBS, DBT, DPT, GGA, GLL, GSA, GSV, HDG, HDM, HDT, MTW, "
 "MWD, MWV, RMB, RMC, ROT, RSA, VHW, VTG, VWR, XDR, XTE, ZDA"
 
-#: ../../intro/specification.rst:340 835dd95034954f308401839cdb221ea3
+#: ../../intro/specification.rst:368 44add67e017d4166a3139d470330f90b
 #, fuzzy
 msgid "**NMEA2000**"
 msgstr "**NMEA2000**"
 
-#: ../../intro/specification.rst:341 71837a5011384298bfad9f3694d91d60
+#: ../../intro/specification.rst:369 7e734e1106fc4c1882c0d91525029b26
 #, fuzzy
 msgid ""
 "126992, 127245, 127250, 127251, 127257, 127258, 127488, 127489, 127505, "
@@ -413,72 +413,72 @@ msgstr ""
 "129039, 129283, 129284, 129539, 129540, 129794, 129809, 129810, 130306, "
 "130310, 130311, 130312, 130313, 130314, 130316"
 
-#: ../../intro/specification.rst:344 272f7bdfaf0c4eb5b3551f847d4505d8
+#: ../../intro/specification.rst:372 e79eeea1c5be4528a2e61118ea462be2
 #, fuzzy
 msgid "Nutzbare I2C-Sensorik"
 msgstr "Usable I2C sensors"
 
-#: ../../intro/specification.rst:346 0135255be3a24af78a648a72e782a052
+#: ../../intro/specification.rst:374 a632bb6bd2a340469060329ad5bc0ce1
 #, fuzzy
 msgid "**Umgebungssensoren**"
 msgstr "**Environmental sensors**"
 
-#: ../../intro/specification.rst:347 b335c7ff68914e1090a5cffc72da7a8d
+#: ../../intro/specification.rst:375 3096a23f27b4443fad141a659f7d6ac5
 #, fuzzy
 msgid "BMP085, BMP180, BMP280, BME280, SHT20, HTU21"
 msgstr "BMP085, BMP180, BMP280, BME280, SHT20, HTU21"
 
-#: ../../intro/specification.rst:349 89e92ec4832943b8a534cd4c375eee11
+#: ../../intro/specification.rst:377 3b99cf1532464efd90ae0a548eb85890
 #, fuzzy
 msgid "**Spannungs- und Stromsensoren**"
 msgstr "**Voltage and current sensors**"
 
-#: ../../intro/specification.rst:350 2d1f37dd76d944fcbedbf55633080457
+#: ../../intro/specification.rst:378 e834867a679b408b9bba6bd22bbff78e
 #, fuzzy
 msgid "INA226, INA219 (in Vorbereitung)"
 msgstr "INA226, INA219 (in preparation)"
 
-#: ../../intro/specification.rst:352 6cd3140734014842a565bec9d39385bf
+#: ../../intro/specification.rst:380 0c3cbd8482274882889880f6f9191596
 #, fuzzy
 msgid "**Winkelsensoren**"
 msgstr "**Shop sensors**"
 
-#: ../../intro/specification.rst:353 6804247e8d2f4be28dd32df2ddf6681c
+#: ../../intro/specification.rst:381 3626932f500445d08f70c0d0c713e8a9
 #, fuzzy
 msgid "AS5600, MT6701 (in Vorbereitung)"
 msgstr "AS5600, MT6701 (in preparation)"
 
-#: ../../intro/specification.rst:355 fc9cc3a4aac24ae1bcc2dcf4c1ab9822
+#: ../../intro/specification.rst:383 839d473a1f594121ae992e080636ddee
 #, fuzzy
 msgid "**Port-Erweiterungen**"
 msgstr "**Port expansions**"
 
-#: ../../intro/specification.rst:356 e37c2e95a1884ade938deecf519b5c96
+#: ../../intro/specification.rst:384 fbfe2d2aee274165803602f39c5bb01c
 #, fuzzy
 msgid "PCF8574 (in Vorbereitung)"
 msgstr "PCF8574 (in preparation)"
 
-#: ../../intro/specification.rst:358 b4531c05b1ca46e7ae1ac4ea2ed69283
+#: ../../intro/specification.rst:386 7bda9773f9e9494b9b7b5d311068e284
 #, fuzzy
 msgid "**Echtzeit-Uhren**"
 msgstr "**Real-time watches**"
 
-#: ../../intro/specification.rst:359 7957ab7378f241298829098b9b73772f
+#: ../../intro/specification.rst:387 875da81a50024a8aa9fc5dd64b932222
 #, fuzzy
 msgid "DS1388"
 msgstr "DS1388"
 
-#: ../../intro/specification.rst:362 2a73d827c67a47579e5af9b5dac6d857
+#: ../../intro/specification.rst:390 fca91ff4bf0f4663a20ede54a68a5afa
 #, fuzzy
 msgid "Nutzbare 1Wire-Sensorik"
 msgstr "Usable 1-Wire sensors"
 
-#: ../../intro/specification.rst:364 ed5e9996499d4316984c4ecf3cdd3445
+#: ../../intro/specification.rst:392 30b1e72b70ea49db88bc049ca05540a6
 #, fuzzy
 msgid "**Temperatursensoren**"
 msgstr "**Temperature sensors**"
 
-#: ../../intro/specification.rst:365 0b2328fb473b46b0a770c07235224949
+#: ../../intro/specification.rst:393 c3f686e5dd6f4a4d80e837aa8d73ec79
 #, fuzzy
 msgid "DS18B20"
 msgstr "DS18B20"
