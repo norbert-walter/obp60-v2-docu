@@ -1169,7 +1169,7 @@ Die Anzeigeseite benötigt folgende Messwerte: **AWA, AWS, TWD, TWS, DBT, STW**
 WindRoseFlex
 ^^^^^^^^^^^^
 
-.. image:: /pics/OBP60_Windrose_Flex.png
+.. image:: /pics/OBP60_Windrose_Flex_tr.png
              :scale: 30%
 			 
 Abb.: Anzeige WindroseFlex
