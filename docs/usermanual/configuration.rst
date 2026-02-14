@@ -1306,7 +1306,7 @@ Bei WhitePage handelt es sich um eine Anzeigeseite, die nur eine weiße leere Se
 BME280
 ^^^^^^
 
-.. image:: /pics/OBP60_ThreeValue.png
+.. image:: /pics/OBP60_BME280_tr.png
              :scale: 30%
 			 
 Abb.: Anzeige BME280
