@@ -1871,7 +1871,8 @@ msgstr "**Date Format**"
 msgid ""
 "Mit **Date Format** kann das Ausgabeformat des Datums angepasst werden."
 msgstr ""
-"The **Date Format** option allows you to customize the date output format."
+"The **Date Format** option allows you to customize the output format of the "
+"date."
 
 #: ../../usermanual/configuration_2.rst:478 7b3d0b0f26d249569cb6e417cd06ec66
 #, fuzzy

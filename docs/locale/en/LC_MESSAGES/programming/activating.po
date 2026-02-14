@@ -479,7 +479,7 @@ msgid ""
 "committen und nach Github hochladen."
 msgstr ""
 "You can only commit and upload changes to Github if you include a "
-"description of the code change."
+"description text for the code change."
 
 #: ../../programming/activating.rst:129 ../../programming/activating.rst:266
 #: ../../programming/activating.rst:275 14a489605d9a43df80f32aa5e640640d
