@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OBP60 V2 Dokumentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-02 19:35+0000\n"
+"POT-Creation-Date: 2026-02-14 17:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -18,14 +18,14 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Generated-By: Babel 2.17.0\n"
+"Generated-By: Babel 2.18.0\n"
 
-#: ../../programming/environment.rst:2 31753564c092481c82101a8993375684
+#: ../../programming/environment.rst:2 581e7b2a8d794f2391f6d090267be906
 #, fuzzy
 msgid "Programmierumgebung"
 msgstr "Programming environment"
 
-#: ../../programming/environment.rst:4 fd9377ea0a744f2489ff00f8f1784618
+#: ../../programming/environment.rst:4 2ff0bb7bd7eb4e3a89354ba3a89ec65d
 #, fuzzy
 msgid ""
 "Als Programmierumgebung für das OBP60 wird das kostenlose Entwicklungstool "
@@ -50,12 +50,12 @@ msgstr ""
 " You can access the latest firmware code from within Visual Studio Code via "
 "GitHub, ensuring you're always using the most up-to-date version."
 
-#: ../../programming/environment.rst:8 38c2808b210a45779ab16739dd3917fe
+#: ../../programming/environment.rst:8 d43410c058d94d4a99b88666a78f79a1
 #, fuzzy
 msgid "Abb.: Visual Studio Code"
 msgstr "Abb.: Visual Studio Code"
 
-#: ../../programming/environment.rst:10 958a49000bc6477b8cbd42d16a80d3ca
+#: ../../programming/environment.rst:10 82c209511de1414ca71f9059ca8458f8
 #, fuzzy
 msgid ""
 "Visual Studio Code mit PlatformIO ist für alle gängigen Betriebssysteme "
@@ -64,22 +64,22 @@ msgstr ""
 "Visual Studio Code with PlatformIO is available for all major operating "
 "systems, such as:"
 
-#: ../../programming/environment.rst:12 e4145714f77a4d78bf549bd70f7def6a
+#: ../../programming/environment.rst:12 1eda989d2717436a9eba37b28af4f40a
 #, fuzzy
 msgid "Linux"
 msgstr "Linux"
 
-#: ../../programming/environment.rst:13 01e01543cff04c92a0059f507184f6ab
+#: ../../programming/environment.rst:13 50de0617443a4f45ba7c486fab036dd0
 #, fuzzy
 msgid "Windows"
 msgstr "Windows"
 
-#: ../../programming/environment.rst:14 9525e1eeca084dd6a292b6edad7ca24c
+#: ../../programming/environment.rst:14 0f61dba8613f45f0a8783a1f715a7e89
 #, fuzzy
 msgid "Mac OS"
 msgstr "Mac OS"
 
-#: ../../programming/environment.rst:16 f3893d19572f459a848debc3cde35565
+#: ../../programming/environment.rst:16 37f243d7e1794db9b99cf3607ffd402a
 #, fuzzy
 msgid ""
 "Wer an der Weiterentwicklung des Firmware-Codes interessiert ist, sollte "
@@ -97,42 +97,42 @@ msgstr ""
 "GitHub's tracking system. The sailing forum has a large community that "
 "contributes to the development and can answer support questions."
 
-#: ../../programming/environment.rst:18 b15c1355f92d4a039eed42f280c4d7de
+#: ../../programming/environment.rst:18 dc347f916b4f480ca4adc1623d7a0fa7
 #, fuzzy
 msgid "`Visual Studio Code`_"
 msgstr "`Visual Studio Code`_"
 
-#: ../../programming/environment.rst:19 81d2621aabac44f8a9b4359d172cf46b
+#: ../../programming/environment.rst:19 38b55d9f0da84497a4d9f0f2262005c7
 #, fuzzy
 msgid "**Notwendige Erweiterungen**"
 msgstr "**Necessary Extensions**"
 
-#: ../../programming/environment.rst:20 1b20631c81624595b9d2a079e6e6c219
+#: ../../programming/environment.rst:20 4ff1e77ee37d486aa48a3668b988017b
 #, fuzzy
 msgid "PlatformIO"
 msgstr "PlatformIO"
 
-#: ../../programming/environment.rst:21 155d8726799444aebc2c7498cb021ad6
+#: ../../programming/environment.rst:21 9ded0a7cc29f4808a7cbb27b93ac6bdb
 #, fuzzy
 msgid "C/C++"
 msgstr "C/C++"
 
-#: ../../programming/environment.rst:22 adde3baaa74e452aab66b0483f3cdede
+#: ../../programming/environment.rst:22 e7ca81748f264027b271bc99a9dbf2c5
 #, fuzzy
 msgid "`Github-Projekt-Repository`_"
 msgstr "`Github-Projekt-Repository`_"
 
-#: ../../programming/environment.rst:23 6946adf5e9714792ad540cb6a2933a03
+#: ../../programming/environment.rst:23 df7d3e0e1fc3456ab0251de82c9b51df
 #, fuzzy
 msgid "`Issues Tracking System`_"
 msgstr "`Issues Tracking System`_"
 
-#: ../../programming/environment.rst:24 ab65c96ba39940ffa0a5430c03f8f8ad
+#: ../../programming/environment.rst:24 d47e2adab1924ede92f5838ab51735a2
 #, fuzzy
 msgid "`Community Forum`_"
 msgstr "`Community Forum`_"
 
-#: ../../programming/environment.rst:32 d4118c38cc664a4cbbc8f3801c0bc870
+#: ../../programming/environment.rst:32 71649f1a5da7463ba5c99918983c7e95
 #, fuzzy
 msgid ""
 "Wie man Visual Studio Code installiert und benutzt ist im Kapitel "
@@ -141,27 +141,29 @@ msgstr ""
 "How to install and use Visual Studio Code is described in the chapter "
 ":ref:`Visual Studio Code / PlatformIO`."
 
-#: ../../programming/environment.rst:34 088dd98842e847769fe9ad2e719f0168
+#: ../../programming/environment.rst:34 085c0acf15e1487c9a184c108d53023a
 #, fuzzy
 msgid ""
 "Wer kleine Änderungen am Code unterwegs unkompliziert vornehmen möchte ohne "
 "eine aufwändige Installation von Visual Studio Code und PlatformIO "
-"durchzuführen, kann Gitpod benutzen. Gitpod ist vollständig webbasiert. Sie "
-"benötigen nur einen aktuellen Webbrowser und können sofort mit der "
-"Programmierung beginnen. Der Workplace von Gitpod orientiert sich an Visual "
-"Studio Code und enthält alle vorinstallierten Komponenten die Sie zur "
-"Softwareentwicklung benötigen. Gitpod eignet sich dahzer hervorragend für "
-"Anfänger. Im Kapitel :ref:`Gitpod` ist die Benutzung beschrieben."
+"durchzuführen, kann GitHub Codespace benutzen. GitHub Codespace ist "
+"vollständig webbasiert. Sie benötigen nur einen aktuellen Webbrowser und "
+"können sofort mit der Programmierung beginnen. Der Workplace von GitHub "
+"Codespace orientiert sich an Visual Studio Code und enthält alle "
+"vorinstallierten Komponenten die Sie zur Softwareentwicklung benötigen. "
+"GitHub Codespace eignet sich dahzer hervorragend für Anfänger. Im Kapitel "
+":ref:`GitHub Codespace` ist die Benutzung beschrieben."
 msgstr ""
 "For those who want to easily make small code changes on the go without the "
-"hassle of installing Visual Studio Code and PlatformIO, Gitpod is a great "
-"option. Gitpod is entirely web-based. All you need is a modern web browser, "
-"and you can start programming immediately. The Gitpod workspace is modeled "
-"after Visual Studio Code and includes all the pre-installed components you "
-"need for software development. Therefore, Gitpod is ideal for beginners. Its"
-" use is described in the chapter :ref:`Gitpod`."
+"hassle of installing Visual Studio Code and PlatformIO, GitHub Codespace is "
+"the perfect solution. GitHub Codespace is entirely web-based. All you need "
+"is a modern web browser, and you can start programming immediately. The "
+"GitHub Codespace workspace is modeled after Visual Studio Code and includes "
+"all the pre-installed components you need for software development. "
+"Therefore, GitHub Codespace is ideal for beginners. Its use is described in "
+"the chapter :ref:`GitHub Codespace`."
 
-#: ../../programming/environment.rst:36 1ceadbc7e6a84a0582536b4cdb73003e
+#: ../../programming/environment.rst:36 909868bd4f504540a96670e9451d74c8
 #, fuzzy
 msgid ""
 "Wer alternativ unter Linux gerne auf der Kommandozeile arbeitet, kann auf "
