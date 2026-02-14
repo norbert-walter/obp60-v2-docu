@@ -197,6 +197,10 @@ Technische Daten
                <h3 class="sphinx-caption">Sky View</h3>
            </div>
            <div class="sphinx-slide">
+               <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_BME280_tr.png" alt="BME280">
+               <h3 class="sphinx-caption">BME280</h3>
+           </div>
+           <div class="sphinx-slide">
                <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_Digital_Out.png" alt="Digital Out">
                <h3 class="sphinx-caption">Digital Out</h3>
            </div>
@@ -258,7 +262,7 @@ Technische Daten
        })();
    </script>
    
-Abb.: OBP60 mit mehr als 32 verschiedenen Anzeigeseiten
+Abb.: OBP60 mit mehr als 33 verschiedenen Anzeigeseiten
 
 
 Funktionen
