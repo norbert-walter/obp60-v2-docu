@@ -1174,7 +1174,7 @@ WindRoseFlex
 			 
 Abb.: Anzeige WindroseFlex
 
-Bei dieser Variante der Anzeige WindRose können 4 darzustellenden Werte frei gewählt werden. Die Windrichtung wird immer mit dem Zeiger dargestellt, und die Wingeschwindigkeit als Zahl oben links. Ob der wahre oder der scheinbare Wind angezeigt werden soll, kann mit dem Button "SRC" umgeschlatet werden. Welche von beiden Einstellungen gewählt ist, kann man sowohl an dem Buchstaben in der Mitte der Windrose erkennen. 
+Bei dieser Variante der Anzeige WindRose können 4 darzustellenden Werte frei gewählt werden. Die Windrichtung wird immer mit dem Zeiger dargestellt, und die Wingeschwindigkeit als Zahlenwert oben links. Ob der wahre oder der scheinbare Wind angezeigt werden soll, kann mit dem Button "SRC" umgeschlatet werden. Welche von beiden Einstellungen gewählt ist, kann man sowohl an dem Buchstaben in der Mitte der Windrose als auch an der Abkürzung der dargestellten Windgeschwindigkeit (TWA oder AWA) erkennen. Die Position des innerhalb der Windrose dargestellten Werts wird automatisch so angepasst, dass der Wert und der Windzeiger nicht überlappen.  
 
     * ``[SRC]`` - Umschaltung zwischen wahren und scheinbaren Wind
     
