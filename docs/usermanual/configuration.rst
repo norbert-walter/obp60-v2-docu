@@ -1169,12 +1169,34 @@ Die Anzeigeseite benötigt folgende Messwerte: **AWA, AWS, TWD, TWS, DBT, STW**
 WindRoseFlex
 ^^^^^^^^^^^^
 
-.. image:: /pics/OBP60_WindRose.png
+.. image:: /pics/OBP60_Windrose_Flex.png
              :scale: 30%
 			 
 Abb.: Anzeige WindroseFlex
 
 Bei dieser Variante der Anzeige WindRose können die darzustellenden Werte frei gewählt werden. Der erste Wert wird auf der Windrose grafisch als Richtung dargestellt, hier ist sinnvollerweise AWA oder TWA zu wählen.
+
+    * ``[SRC]`` - Umschaltung zwischen wahren und scheinbaren Wind
+    
+Wind
+^^^^
+
+.. list-table::
+   :widths: 50 50
+   :class: borderless
+
+   * - .. image:: ../pics/OBP60_Wind_tr.png
+          :scale: 30%
+     - .. image:: ../pics/OBP60_Wind2_tr.png
+          :scale: 30%
+			 
+Abb.: Anzeige Wind und Windlupe
+
+Mit der Anzeige Wind können eine Windanzeige und eine Windlupe dargestellt werden.
+
+    * ``[MODE]`` - Umschaltung zwischen Windanzeige und Windlupe
+    * ``[SRC]`` - Umschaltung zwischen wahren und scheinbaren Wind
+
 
 XTETrack
 ^^^^^^^^
@@ -1206,8 +1228,8 @@ Abb.: Anzeige Compass
 
 Diese Anzeige stellt eine rollierende Kompassscheibe und darüber einen ergänzenden Messwert dar. Die Kompassscheibe wandert entsprechend des aktuellen Kurses. Eine gestrichelte Linie nach links/rechts stellt die letzte Kursänderung dar. Die Länge der Linie symbolisiert die Größe der Kursänderung.
 
-    * Mit der Taste ``[CMP]`` lässt sich die Quelle der Kompassanzeige zwischen **HDM, HDT** und **COG** umschalten.
-    * Mit der Taste ``[SRC]`` lässt sich der ergänzende Messwert zwischen **HDM, HDT, COG, STW, SOG** und **DBS** umschalten.
+    * ``[CMP]`` Umschaltung der Kompassanzeige zwischen **HDM, HDT** und **COG**
+    * ``[SRC]`` Umschaltungder  Messwert zwischen **HDM, HDT, COG, STW, SOG** und **DBS**
 
 Die Anzeigeseite benötigt folgende Messwerte: **HDM, HDT, COG, STW, SOG, DBS**
 

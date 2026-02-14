@@ -145,8 +145,16 @@ Technische Daten
                <h3 class="sphinx-caption">Windplot 2 Diagrams</h3>
            </div>
            <div class="sphinx-slide">
-               <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_WindRose_tr.png" alt="Windrose">
+               <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_Windrose_Flex_tr.png" alt="Windrose">
                <h3 class="sphinx-caption">Windrose</h3>
+           </div>
+           <div class="sphinx-slide">
+               <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_Wind_tr.png" alt="Windanzeige">
+               <h3 class="sphinx-caption">Windanzeige</h3>
+           </div>
+           <div class="sphinx-slide">
+               <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_Wind2_tr.png" alt="Windlupe">
+               <h3 class="sphinx-caption">Windlupe</h3>
            </div>
            <div class="sphinx-slide">
                <img src="https://obp60-v2-docu.readthedocs.io/de/latest/_images/OBP60_Rudder_tr.png" alt="Rudder">
@@ -250,7 +258,7 @@ Technische Daten
        })();
    </script>
    
-Abb.: OBP60 mit mehr als 25 verschiedenen Anzeigeseiten
+Abb.: OBP60 mit mehr als 32 verschiedenen Anzeigeseiten
 
 
 Funktionen
