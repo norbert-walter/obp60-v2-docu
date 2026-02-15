@@ -1377,7 +1377,7 @@ Abb.: Anzeige SkyView
 Bei der SkyView werden alle verfügbaren Satelliten in einem Polardiagramm dargestellt. Für jeden aktuell benutzten Satelitten werden die Satelliten-Nummer und das Signal zu Rausch Verhältnis (SNR) angegeben. Zusätzlich wird die Ortsgenauigkeit des GPS-Signals in der horizontalen Ebene (HDOP) angezeigt.
 
 .. warning::
-	Die GPS-Ortsgenauigkeit ist nicht in jedem Fall exakt und dient nur zur groben Orientierung, um das GPS-Signal besser einschätzen zu können.
+	Die GPS-Ortsgenauigkeit **HDOP** ist nicht in jedem Fall exakt und dient nur zur groben Orientierung, um das GPS-Signal besser einschätzen zu können.
 	
 .. tip::
     Sie können die GPS-Ortsgenauigkeit erhöhen, indem Sie eine externe GPS-Antenne an Deck benutzen. Wählen Sie eine Position mit freiem Blick nach oben. Eine Installation am Heckkorb ist optimal. 
