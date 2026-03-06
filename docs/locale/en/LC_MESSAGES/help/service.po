@@ -62,4 +62,5 @@ msgstr ""
 #, fuzzy
 msgid ""
 "Bei Fragen zu einem Hardware-Service verwenden Sie das `Kontaktformular`_."
-msgstr "For questions regarding hardware service, use the `Kontaktformular`_."
+msgstr ""
+"For questions regarding hardware service, please use the `Kontaktformular`_."
