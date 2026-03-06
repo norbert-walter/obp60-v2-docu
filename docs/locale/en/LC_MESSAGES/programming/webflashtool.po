@@ -128,7 +128,7 @@ msgstr "Fig.: Bridge between ``GND`` and ``Pin 27``"
 #: ../../programming/webflashtool.rst:30 d982ab66067240c3b0484b40ce717aa8
 #, fuzzy
 msgid "**2. Flashtool starten**"
-msgstr "**2. Launch Flashtool**"
+msgstr "**2. Start Flashtool**"
 
 #: ../../programming/webflashtool.rst:32 3a6a2d8b7c5f4acaa510e5e62ed39509
 #, fuzzy
