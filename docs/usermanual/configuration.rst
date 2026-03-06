@@ -1169,12 +1169,12 @@ Die Anzeigeseite benötigt folgende Messwerte: **AWA, AWS, TWD, TWS, DBT, STW**
 WindRoseFlex
 ^^^^^^^^^^^^
 
-.. image:: /pics/OBP60_Windrose_Flex_tr.png
+.. image:: ../pics/OBP60_Windrose_Flex_tr.png
              :scale: 30%
 			 
 Abb.: Anzeige WindroseFlex
 
-Bei dieser Variante der Anzeige WindRose können die darzustellenden Werte frei gewählt werden. Der erste Wert wird auf der Windrose grafisch als Richtung dargestellt, hier ist sinnvollerweise AWA oder TWA zu wählen.
+Bei dieser Variante der Anzeige Windrose wird die Windrichtung immer mit dem Zeiger dargestellt, die Windgeschwindigkeit als Zahlenwert oben links, und zusätzlich werden vier weitere frei wählbare Messwerte angezeigt. Ob der wahre oder der scheinbare Wind angezeigt werden soll, kann mit dem Button „SRC“ umgeschaltet werden. Welche der beiden Einstellungen gewählt ist, kann man sowohl an dem Buchstaben in der Mitte der Windrose als auch an der Abkürzung der dargestellten Windgeschwindigkeit (TWA oder AWA) erkennen. Die Position des innerhalb der Windrose dargestellten Messwerts wird automatisch so angepasst, dass der Wert und der Windzeiger nicht überlappen.
 
     * ``[SRC]`` - Umschaltung zwischen wahren und scheinbaren Wind
     
