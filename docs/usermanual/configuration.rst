@@ -1174,7 +1174,7 @@ WindRoseFlex
 			 
 Abb.: Anzeige WindroseFlex
 
-Bei dieser Variante der Anzeige Windrose wird die Windrichtung immer mit dem Zeiger dargestellt, die Windgeschwindigkeit als Zahlenwert oben links, und zusätzlich werden vier weitere frei wählbare Messwerte angezeigt. Ob der wahre oder der scheinbare Wind angezeigt werden soll, kann mit dem Button „SRC“ umgeschaltet werden. Welche der beiden Einstellungen gewählt ist, kann man sowohl an dem Buchstaben in der Mitte der Windrose als auch an der Abkürzung der dargestellten Windgeschwindigkeit (TWA oder AWA) erkennen. Die Position des innerhalb der Windrose dargestellten Messwerts wird automatisch so angepasst, dass der Wert und der Windzeiger nicht überlappen.
+Bei dieser Variante der Anzeige Windrose wird die Windrichtung immer mit dem Zeiger dargestellt, die Windgeschwindigkeit als Zahlenwert oben links, und zusätzlich werden vier weitere frei wählbare Messwerte angezeigt. Ob der wahre oder der scheinbare Wind angezeigt werden soll, kann mit dem Button „SRC“ umgeschaltet werden. Welche der beiden Einstellungen gewählt ist, kann man sowohl an dem Buchstaben in der Mitte des Zeigers der Windrose als auch an der Abkürzung der dargestellten Windgeschwindigkeit (TWA oder AWA) erkennen. Die Position des innerhalb der Windrose dargestellten Messwerts wird automatisch so angepasst, dass der Wert und der Windzeiger nicht überlappen.
 
     * ``[SRC]`` - Umschaltung zwischen wahren und scheinbaren Wind
     
@@ -1369,7 +1369,7 @@ Beachten Sie auch die Hinweise im Kapitel **Datenaustausch - I2C-Bus** und **Bus
 Sky View
 ^^^^^^^
 
-.. image:: /pics/OBP60_Sky_View_tr.png
+.. image:: ../pics/OBP60_Sky_View_tr.png
              :scale: 30%
 			 
 Abb.: Anzeige SkyView
@@ -1418,17 +1418,23 @@ Die aktuelle Zoomstufe wird oben rechts im Display angezeigt. Im Falle einer unt
 SkyView
 ^^^^^^^
 
-.. image:: ../pics/OBP60_SkyView.png
+.. image:: /pics/OBP60_Sky_View_tr.png
              :scale: 30%
 			 
 Abb.: Anzeige SkyView
 
-Die SkyView-Anzeige stellt Informationen zu den aktuell empfangenen Satelliten des ausgewählten GNSS (Global Navigation Satellite System, z.B. GPS, Galileo, Beidou) dar. Diese Daten können entweder vom eingebauten GNSS-Empfänger oder von einem externen Empfänger, der seine Daten über das Netzwerk bereitstellt, stammen.
+Die SkyView-Anzeige stellt Informationen zu den aktuell empfangenen Satelliten des ausgewählten GNSS (Global Navigation Satellite System), z.B. GPS, Galileo und Beidou dar. Diese Daten können entweder vom eingebauten GNSS-Empfänger oder von einem externen Empfänger, der seine Daten über das Netzwerk bereitstellt, stammen.
 
     * **Sat** weist die Anzahl der aktuell empfangenen Satelliten aus.
-    * **HDOP** (Horizontal Dilution of Precision - horizontale Genauigkeitsverschlechterung) ist als dimensionsloser Wert grundsätzlich ein indikator für die Qualität der horizontalen Positionsbestimmung. In dieser Anzeige wird er näherungsweise als eine Distanz in Metern angegeben.
+    * **HDOP** Horizontal Dilution of Precision - horizontale Genauigkeitsverschlechterung ist als dimensionsloser Wert grundsätzlich ein indikator für die Qualität der horizontalen Positionsbestimmung. In dieser Anzeige wird er näherungsweise als eine Distanz in Metern angegeben.
 
-In der stilisierten Himmelsansicht werden die Positionen der aktuell empfangenen Satelliten über dem Horizont dargestellt. In der Liste auf der rechten Seite ist die Empfangsqualität (**SNR** - Signal Noise Ratio oder Rauschabstand) der einzelnen Satelliten unter ihrer aktuellen Nummer als Balken ablesbar. Ein längerer Balken stellt eine höhere Empfangsqualität dar. Die Nummer korrespondiert mit der Nummer der Satelliten in der Himmelsansicht.
+In der stilisierten Himmelsansicht werden die Positionen der aktuell empfangenen Satelliten über dem Horizont in einem Polardiagramm dargestellt. In der Liste auf der rechten Seite ist die Empfangsqualität (**SNR** - Signal Noise Ratio oder Rauschabstand) der einzelnen Satelliten unter ihrer aktuellen Nummer als Balken ablesbar. Ein längerer Balken stellt eine höhere Empfangsqualität dar. Die Nummer korrespondiert mit der Nummer der Satelliten in der Horizontansicht.
+
+.. warning::
+	Die GPS-Ortsgenauigkeit **HDOP** ist nicht in jedem Fall exakt und dient nur zur groben Orientierung, um das GPS-Signal besser einschätzen zu können.
+	
+.. tip::
+    Sie können die GPS-Ortsgenauigkeit erhöhen, indem Sie eine externe GPS-Antenne an Deck benutzen. Wählen Sie eine Position mit freiem Blick nach oben. Eine Installation am Heckkorb ist optimal. 
 
 Battery
 ^^^^^^^
