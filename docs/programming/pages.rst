@@ -99,7 +99,7 @@ Text
 	getdisplay().print("A");			// Print text
 
 .. image:: /pics/Draw_Character.png
-             :scale: 50%
+             :scale: 80%
 
 Abb.: Platzierung eines Schriftzeichens
 
@@ -111,7 +111,7 @@ Linie
 	getdisplay().drawLine(x0, y0, x1, y1, color);	// Draw single line
 
 .. image:: /pics/Draw_Line.png
-             :scale: 50%
+             :scale: 80%
 
 Abb.: Platzierung einer Linie
 
@@ -124,7 +124,7 @@ Viereck
 	getdisplay().fillRect(x0, y0, width, hight, color);	// Draw filled rect
 
 .. image:: /pics/Draw_Rect.png
-             :scale: 50%
+             :scale: 80%
 
 Abb.: Platzierung eines Vierecks
 
@@ -139,7 +139,7 @@ Diese Funktion kann sehr gut zum Zeichen von Bedienknöpfen verwendet werden.
 	getdisplay().fillRoundRect(x0, y0, width, hight, radius, color);	// Draw filled round rect
 
 .. image:: /pics/Draw_RoundRect.png
-             :scale: 50%
+             :scale: 80%
 
 Abb.: Platzierung eines Vierecks mit runden Ecken
 
@@ -153,7 +153,7 @@ Dreieck
 	getdisplay().fillTriangle(x0, y0, x1, y1, x2, y2, color);	// Draw filled triangle
 
 .. image:: /pics/Draw_Triangle.png
-             :scale: 50%
+             :scale: 80%
 
 Abb.: Platzierung eines Dreiecks
 
@@ -166,7 +166,7 @@ Kreis
 	getdisplay().fillCircle(x0, y0, radius, color); // Draw filled circle
 
 .. image:: /pics/Draw_Circle.png
-             :scale: 50%
+             :scale: 80%
 			 
 Abb.: Platzierung eines Kreises
 
@@ -211,7 +211,7 @@ Für farbige Bilder mit 64.000 Farben nach dem RGB565-Standard kann folgende Fun
 Spezialfunktionen
 =================
 
-Die Spezialfunktionen sind Funktionen, um spezifische Displayfunktionen für die jeweiligen Display-Typen 
+Die Spezialfunktionen ermöglichen displayspezifische Aktionen, die je nach Displaytechnologie unterschiedlich behandelt werden müssen.
 
 e-Paper-Display
 ---------------
