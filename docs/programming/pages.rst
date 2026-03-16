@@ -80,13 +80,13 @@ Falls auf einer Seite eine andere Schriftart zur Darstellung verwendet werden so
 Darstellung grafischer Inhalte
 ==============================
 
-Auf dem Display lassen sich sowohl textuelle als auch grafische Elemente platzieren. Die Grundlage für diese Operationen wird durch die GFX-Grafik-Lib bereitgestellt. Die Bibliothek wurde von Adafruit initiiert, um verschiedenste Grafikdisplays mit einem einheitlichen Befehlssatz ansprechen zu können. Viele Treiber-Hersteller für Displays orientieren sich an der Lib und haben eigene Adaptionen vorgenommen, die in weiten Teilen mit dem Befehlssatz identisch sind. Für das e-Paper-Display gibt es aber einige Einschränkungen und es stehen nicht alle Befehle der Adafruit-GFX-Lib zur Verfügung.
+Auf dem Display lassen sich sowohl textbasierte als auch grafische Elemente platzieren. Die Grundlage für diese Operationen wird durch die GFX-Grafik-Lib bereitgestellt. Die Bibliothek wurde von Adafruit initiiert, um verschiedenste Grafikdisplays mit einem einheitlichen Befehlssatz ansprechen zu können. Viele Treiber-Hersteller für Displays orientieren sich an der Lib und haben eigene Adaptionen vorgenommen, die in weiten Teilen mit dem Befehlssatz identisch sind. Für das e-Paper-Display gibt es aber einige Einschränkungen und es stehen nicht alle Befehle der Adafruit-GFX-Lib zur Verfügung.
 
 In diesem `PDF-Dokument <../_static/files/adafruit-gfx-graphics-library.pdf>`_ können die grundlegenden Befehle der Adafruit-GFX-Lib eingesehen werden. Darüber hinausgehend können Sie den kompletten Funktionsumfang der Lib als `Klassen Referenz`_ hier online abrufen.
 
 .. _Klassen Referenz: https://adafruit.github.io/Adafruit-GFX-Library/html/class_adafruit___g_f_x.html
 
-Das Koordinatensystem des Grafikdisplays ist so organisert, dass sich in der linken oberen Ecke der Nullpunkt befinden. Alle Koordinatenangaben beziehn sich auf diesen Ursprung. Im Projekt wird die Hilfsfunktion getdisplay() verwendet, in die alle GFX-Befehle eingebettet sind.
+Das Koordinatensystem des Grafikdisplays ist so organisiert, dass sich in der linken oberen Ecke der Nullpunkt befindet. Alle Koordinatenangaben beziehen sich auf diesen Ursprung. Im Projekt wird die Hilfsfunktion getdisplay() verwendet, in die alle GFX-Befehle eingebettet sind.
 
 Text
 ----
@@ -95,7 +95,7 @@ Text
 
 	getdisplay().setFont(Arial);        // Set text font 
 	getdisplay().setTextColor(color);   // Set text color
-	getdisplay().setCursor(x, y);       // Set text color
+	getdisplay().setCursor(x, y);       // Set cursor for text position
 	getdisplay().print("A");            // Print text
 
 .. image:: /pics/Draw_Character.png
@@ -173,7 +173,7 @@ Abb.: Platzierung eines Kreises
 Bild
 ----
 
-Mit dem nachfolgenden Befehl können Bilder als 1Bit-Scharz/Weiß-Bilder angezeigt werden. Über den Parameter color kann die Farbe des aktiven Pixels festgelegt werden. Bei einem e-Paper-Display ist das Schwarz uder Weiß und bei einem TFT-Display eine beliebige Farbe. Somit ist es möglich, auch reine Scharz/Weiß-Bilder auf einem Farbdisplay darzustellen.
+Mit dem nachfolgenden Befehl können Bilder als 1Bit-Scharz/Weiß-Bilder angezeigt werden. Über den Parameter color kann die Farbe des aktiven Pixels festgelegt werden. Bei einem e-Paper-Display ist das Schwarz oder Weiß und bei einem TFT-Display eine beliebige Farbe. Somit ist es möglich, auch reine Scharz/Weiß-Bilder auf einem Farbdisplay darzustellen.
 
 Bevor Sie Bilder nutzen können, müssen die Bilder in eine C-compatible Schreibweise umgewandelt werden. Mit folgenden Tools ist das möglich:
 
@@ -184,7 +184,7 @@ Bevor Sie Bilder nutzen können, müssen die Bilder in eine C-compatible Schreib
 		* Scan mode: Fix horizontal
 		* Bit order: Fix LSB fist
 
-Darüber werden die Bilder als eine Array-Struktur direkt im Quellcode abgelegt und können über eine Variable im Code aufgerufen und zur Anzeige gebracht werden. Beispeilhaft ist hier der C-Code für ein Icon als XBitmap-Bild zu sehen.
+Darüber werden die Bilder als eine Array-Struktur direkt im Quellcode abgelegt und können über eine Variable im Code aufgerufen und zur Anzeige gebracht werden. Beispielhaft ist hier der C-Code für ein Icon als XBitmap-Bild zu sehen.
 
 .. code-block:: c++
 
