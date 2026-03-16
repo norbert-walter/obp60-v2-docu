@@ -1886,7 +1886,7 @@ msgstr "``GB`` - British date format ``31/12/2024``"
 #: ../../usermanual/configuration.rst:480 53d1004f618f4736bb5679a2498f380d
 #, fuzzy
 msgid "``US`` - US-Datumsformat ``12/31/2024``"
-msgstr "``US`` - US Date Format ``12/31/2024``"
+msgstr "``US`` - US-Datumformat ``12/31/2024``"
 
 #: ../../usermanual/configuration.rst:485 3fcc9114caeb49339aa44d5e98d7dcee
 #, fuzzy

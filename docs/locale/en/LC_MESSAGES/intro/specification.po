@@ -441,7 +441,7 @@ msgstr "INA226, INA219 (in preparation)"
 #: ../../intro/specification.rst:384 cf4d08d249c445e7aa382f8f11f7b42c
 #, fuzzy
 msgid "**Winkelsensoren**"
-msgstr "**Shop sensors**"
+msgstr "Store sensors**"
 
 #: ../../intro/specification.rst:385 612ad36f36d84a189c62f8db90b92b38
 #, fuzzy

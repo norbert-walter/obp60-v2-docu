@@ -364,7 +364,7 @@ msgstr "The transmission methods are described in more detail below."
 #: ../../usermanual/dataexchange.rst:83 fd5fcecac2d34359b6ed2b736bbfb476
 #, fuzzy
 msgid "NMEA2000 - Kabelgebunden"
-msgstr "NMEA2000 - Cable bundled"
+msgstr "NMEA2000 - Cable-bound"
 
 #: ../../usermanual/dataexchange.rst:85 38bffdfe3ae84b88ac47845674ded4e7
 #, fuzzy
@@ -677,7 +677,7 @@ msgstr "WiFi Client Password"
 #: ../../usermanual/dataexchange.rst:161 4c55e3e85b0d4de28af9abb690d1e667
 #, fuzzy
 msgid "NMEA0183 - Kabelgebunden"
-msgstr "NMEA0183 - Cable bundled"
+msgstr "NMEA0183 - Cable-bound"
 
 #: ../../usermanual/dataexchange.rst:163 340479fb8c2441d0be942e3a2ff587b7
 #, fuzzy
