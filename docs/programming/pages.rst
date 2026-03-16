@@ -93,10 +93,10 @@ Text
 
 .. code-block:: c++
 
-	getdisplay().setFont(Arial);		// Set text font 
-	getdisplay().setTextColor(color);	// Set text color
-	getdisplay().setCursor(x, y);		// Set text color
-	getdisplay().print("A");			// Print text
+	getdisplay().setFont(Arial);        // Set text font 
+	getdisplay().setTextColor(color);   // Set text color
+	getdisplay().setCursor(x, y);       // Set text color
+	getdisplay().print("A");            // Print text
 
 .. image:: /pics/Draw_Character.png
              :scale: 80%
@@ -204,8 +204,8 @@ Für farbige Bilder mit 64.000 Farben nach dem RGB565-Standard kann folgende Fun
 
 .. code-block:: c++
 
-	drawRgb565Image(x, y, imageRGB565, width, height);		// Draw a RGB565 image (LSB first)
-	createRgb565StripeImage(imageRGB565, width, height);	// Create a stripe image as test image (LSB first)
+	drawRgb565Image(x, y, imageRGB565, width, height);    // Draw a RGB565 image (LSB first)
+	createRgb565StripeImage(imageRGB565, width, height);  // Create a stripe image as test image (LSB first)
 
 
 Spezialfunktionen
@@ -218,28 +218,28 @@ e-Paper-Display
 
 .. code-block:: c++
 
-	getdisplay().init(115200);		// Display init
-	getdisplay().setRotation(0);	// Set display orientation
-	getdisplay().powerOff();		// Activae StandBy mode
-	getdisplay().fillScreen(color);	// Clear screen or fill screen with a color
+	getdisplay().init(115200);      // Display init
+	getdisplay().setRotation(0);    // Set display orientation
+	getdisplay().powerOff();        // Activae StandBy mode
+	getdisplay().fillScreen(color); // Clear screen or fill screen with a color
 
 TFT-Display
 -----------
 
 .. code-block:: c++
 
-	getpaneldisplay().init();				// Display init
-	getpaneldisplay().setRotation(0);		// Set display orientation
-	getpaneldisplay().powerSave(true);		// Activate power save mode
-	getpaneldisplay().fillScreen(color);	// Clear screen or fill screen with a color
-	getpaneldisplay().setPanelOffset(x, y);	// Set panel offset for display 
+	getpaneldisplay().init();               // Display init
+	getpaneldisplay().setRotation(0);       // Set display orientation
+	getpaneldisplay().powerSave(true);      // Activate power save mode
+	getpaneldisplay().fillScreen(color);    // Clear screen or fill screen with a color
+	getpaneldisplay().setPanelOffset(x, y); // Set panel offset for display 
 
 Funktionen zur Display-Aktualisierung
 -------------------------------------
 
 .. code-block:: c++
 
-	displayFirstPage();		// Show fist display content
-	displayNextPage();		// Show next display content
-	displaySetFullWindow();	// Full display refresh for e-paper display 
+	displayFirstPage();     // Show fist display content
+	displayNextPage();      // Show next display content
+	displaySetFullWindow(); // Full display refresh for e-paper display 
 	displaySetPartialWindow(0, 0, getdisplay().width(), getdisplay().height()); // Partial display refresh for e-paper display
