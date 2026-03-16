@@ -113,7 +113,7 @@ Linie
 .. image:: /pics/Draw_Line.png
              :scale: 80%
 
-Abb.: Platzierung einer Linie
+Abb.: Linie
 
 Viereck
 -------
@@ -126,7 +126,7 @@ Viereck
 .. image:: /pics/Draw_Rect.png
              :scale: 80%
 
-Abb.: Platzierung eines Vierecks
+Abb.: Vierecks
 
 Viereck gerundet
 ----------------
@@ -141,7 +141,7 @@ Diese Funktion kann sehr gut zum Zeichen von Bedienknöpfen verwendet werden.
 .. image:: /pics/Draw_RoundRect.png
              :scale: 80%
 
-Abb.: Platzierung eines Vierecks mit runden Ecken
+Abb.: Vierecks mit runden Ecken
 
 
 Dreieck
@@ -155,7 +155,7 @@ Dreieck
 .. image:: /pics/Draw_Triangle.png
              :scale: 80%
 
-Abb.: Platzierung eines Dreiecks
+Abb.: Dreiecks
 
 Kreis
 -----
@@ -168,7 +168,7 @@ Kreis
 .. image:: /pics/Draw_Circle.png
              :scale: 80%
 			 
-Abb.: Platzierung eines Kreises
+Abb.: Kreises
 
 Bild
 ----
@@ -178,8 +178,8 @@ Mit dem nachfolgenden Befehl können Bilder als 1Bit-Scharz/Weiß-Bilder angezei
 Bevor Sie Bilder nutzen können, müssen die Bilder in eine C-compatible Schreibweise umgewandelt werden. Mit folgenden Tools ist das möglich:
 
 	* **Image2LCD** - 1Bit-Bild (C-Code)
-		* Scan mode: Einzustellen auf Horizontal
-		* Bit order: Einstellen auf MSB first
+		* Scan mode: Einstellung auf Horizontal
+		* Bit order: Einstellung auf MSB first
 	* **Gimp** - XBitmap-Bild (xbm-Datei)
 		* Scan mode: Fix horizontal
 		* Bit order: Fix LSB fist
