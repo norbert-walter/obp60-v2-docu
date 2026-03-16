@@ -754,7 +754,7 @@ msgstr ""
 "evaluating log output very confusing, as log data and NMEA0183 telegrams "
 "will then be displayed mixed together. If you only want to see log output, "
 "set **NMEA to USB** and **NMEA from USB** under :ref:`Config - USB Port` to "
-"``off``."
+"[``off``."
 
 #: ../../usermanual/configuration.rst:182 10199ec7b11c4272baf733e725c72668
 #, fuzzy
@@ -4448,7 +4448,7 @@ msgid ""
 msgstr ""
 "The SixValue display allows any six measurements from the data pool to be "
 "displayed vertically, one above the other. In addition to the measurements, "
-"the abbreviations and units are also shown."
+"their short names and units are also shown."
 
 #: ../../usermanual/configuration.rst:1085 f0b1896ef13549c2957104bd65a4d0b9
 #, fuzzy
