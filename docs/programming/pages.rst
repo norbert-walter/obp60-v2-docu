@@ -242,4 +242,4 @@ Funktionen zur Display-Aktualisierung
 	displayFirstPage();     // Show fist display content
 	displayNextPage();      // Show next display content
 	displaySetFullWindow(); // Full display refresh for e-paper display 
-	displaySetPartialWindow(0, 0, getdisplay().width(), getdisplay().height()); // Partial display refresh for e-paper display
+	displaySetPartialWindow(x, y, width, height); // Partial display refresh for e-paper display
