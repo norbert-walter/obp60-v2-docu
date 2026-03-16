@@ -1830,8 +1830,8 @@ msgid ""
 "Bootssensoren entsprechende Daten bereitstellen, werden sie natürlich "
 "verwendet."
 msgstr ""
-"``Off`` - No data on the true wind is calculated. If the boat sensors "
-"provide relevant data, it will of course be used."
+"``Off`` - No true wind data is calculated. If the boat sensors provide "
+"relevant data, it will of course be used."
 
 #: ../../usermanual/configuration_2.rst:466 d8054de825c748699978086a89d14f8e
 #, fuzzy
