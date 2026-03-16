@@ -80,7 +80,7 @@ Falls auf einer Seite eine andere Schriftart zur Darstellung verwendet werden so
 Darstellung grafischer Inhalte
 ==============================
 
-Auf dem Display lassen sich sowohl textuelle als auch grafische Elemente platzieren. Die Grundlage für diese Operationen wird durch die GFX-Grafik-Lib bereitgestellt. Die Bibliothek wurde von Adafruit initiiert, um verschiedenste Grafikdisplays mit einem einheitlichen Befehlssatz ansprechen zu können. Viele Treiber-Hersteller für Displays orientieren sich an der Lib und haben eigene Adaptionen vorgenommen, die in weiten Teilen dem Befehlssatz identisch sind. Für das e-Paper-Display gibt es aber einige Einschränkungen und es stehen nicht alle Befehle der Adafruit-GFX-Lib zur Verfügung.
+Auf dem Display lassen sich sowohl textuelle als auch grafische Elemente platzieren. Die Grundlage für diese Operationen wird durch die GFX-Grafik-Lib bereitgestellt. Die Bibliothek wurde von Adafruit initiiert, um verschiedenste Grafikdisplays mit einem einheitlichen Befehlssatz ansprechen zu können. Viele Treiber-Hersteller für Displays orientieren sich an der Lib und haben eigene Adaptionen vorgenommen, die in weiten Teilen mit dem Befehlssatz identisch sind. Für das e-Paper-Display gibt es aber einige Einschränkungen und es stehen nicht alle Befehle der Adafruit-GFX-Lib zur Verfügung.
 
 In diesem `PDF-Dokument <../_static/files/adafruit-gfx-graphics-library.pdf>`_ können die grundlegenden Befehle der Adafruit-GFX-Lib eingesehen werden. Darüber hinausgehend können Sie den kompletten Funktionsumfang der Lib als `Klassen Referenz`_ hier online abrufen.
 
