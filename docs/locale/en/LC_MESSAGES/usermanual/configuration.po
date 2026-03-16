@@ -4743,7 +4743,7 @@ msgstr ""
 #: d3262d868e1f4fe39192ccaa7c16dee0
 #, fuzzy
 msgid "``[SRC]`` - Umschaltung zwischen wahren und scheinbaren Wind"
-msgstr "``[SRC]`` - Switching between true and apparent wind"
+msgstr "``[SRC]`` - Switch between true and apparent wind"
 
 #: ../../usermanual/configuration.rst:1182 b56604ebd0b0412d8628af8154ec999d
 #, fuzzy
