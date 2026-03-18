@@ -93,7 +93,7 @@ Das Koordinatensystem des Grafikdisplays ist so organisiert, dass sich in der li
 
 Abb.: Koordinatensystem
 
-Im Projekt wird die Hilfsfunktion **getdisplay()** verwendet, in die alle GFX-Befehle eingebettet sind. Die nachfolgenden Beschreibungen zu den Grafikfunktionen gelten sowohl für das schwarz/weiß e-Paper-Display als auch für das Farb-TFT-Display und können gleichwertig benutzt werden. Je nach Displaytyp werden die Farben monchrom oder farbig dargestellt.  
+Im Projekt wird die Hilfsfunktion *getdisplay()* verwendet, in die alle GFX-Befehle eingebettet sind. Die nachfolgenden Beschreibungen zu den Grafikfunktionen gelten sowohl für das schwarz/weiß e-Paper-Display als auch für das Farb-TFT-Display und können gleichwertig benutzt werden. Je nach Displaytyp werden die Farben monchrom oder farbig dargestellt.  
 
 Farbraum
 --------
@@ -130,8 +130,8 @@ Es gibt noch deutlich mehr Farbnamen, die man in dieser `Farbtabelle`_ nachlesen
 	// EPD color definitions
 	#define GxEPD_BLACK 0x0000
 	#define GxEPD_WHITE 0xFFFF
-	
-In den Anzeigeseiten wird die Farbauswahl zentral über folgende Weise gesteuert. In **commonData** sind die aktuellen Farben hinterlegt, die im Display verwendet werden sollen. **fgcolor** und **bgcolor** definieren dabei die Vordergrund- und Hintergrundfarbe, die man zentral in der Webkonfiguration ausgewählen kann (normale oder inverse Darstellung). Die Farben beziehen sich dabei immer auf Schwarz und Weiß, damit sie in verschiedenen Displaytypen einheitlich angezeigt werden können.
+
+In den Anzeigeseiten wird die Farbauswahl zentral über folgende Weise gesteuert. In *commonData* sind die aktuellen Farben hinterlegt, die im Display verwendet werden sollen. *fgcolor* und *bgcolor* definieren dabei die Vordergrund- und Hintergrundfarbe, die man zentral in der Webkonfiguration ausgewählen kann (normale oder inverse Darstellung). Die Farben beziehen sich dabei immer auf Schwarz und Weiß, damit sie in verschiedenen Displaytypen einheitlich angezeigt werden können.
 
 .. code-block:: c++
 
@@ -286,11 +286,11 @@ TFT-Display
 Funktionen zur Display-Aktualisierung
 -------------------------------------
 
-Die Funktionen **displayFirstPage()** und **displayNextPage()** steuern die Aktualisierung der Displayinhalte und folgen einem seitenbasierten Renderkonzept, wie es bei e-Paper-Displays verwendet wird. Bei TFT-Farbdisplays erfolgt die Ausgabe normalerweise direkt durch Schreiben in den Framebuffer des Display-Controllers, sodass dieses Verfahren dort nicht zwingend erforderlich ist. Dennoch werden die Funktionen aus Kompatibilitätsgründen beibehalten.
+Die Funktionen *displayFirstPage()* und *displayNextPage()* steuern die Aktualisierung der Displayinhalte und folgen einem seitenbasierten Renderkonzept, wie es bei e-Paper-Displays verwendet wird. Bei TFT-Farbdisplays erfolgt die Ausgabe normalerweise direkt durch Schreiben in den Framebuffer des Display-Controllers, sodass dieses Verfahren dort nicht zwingend erforderlich ist. Dennoch werden die Funktionen aus Kompatibilitätsgründen beibehalten.
 
-Die Darstellung erfolgt in zwei Schritten: Zunächst werden mittels Grafikbefehlen die Bilddaten erzeugt. Anschließend übernimmt **displayNextPage()** die Übertragung dieser Daten in den Framebuffer und führt die eigentliche Aktualisierung des Bildschirms durch. Dieses Vorgehen ermöglicht eine standardisierte Darstellung von Displayinhalten für verschiedene Displaytypen und eine klare Trennung zwischen Rendering und Anzeigeaktualisierung.
+Die Darstellung erfolgt in zwei Schritten: Zunächst werden mittels Grafikbefehlen die Bilddaten erzeugt. Anschließend übernimmt *displayNextPage()* die Übertragung dieser Daten in den Framebuffer und führt die eigentliche Aktualisierung des Bildschirms durch. Dieses Vorgehen ermöglicht eine standardisierte Darstellung von Displayinhalten für verschiedene Displaytypen und eine klare Trennung zwischen Rendering und Anzeigeaktualisierung.
 
-Die Funktionen **displaySetFullWindow()** und **displaySetPartialWindow()** werden aus Kompatibilitätsgründen ebenfalls bei einem TFT-Display verwendet. Der Displayinhalt wird jedoch nicht aufgefrischt, da das bei TFT-Displays nicht notwendig ist. Die Befehle müssen aber trotzdem im Code einer Anzeigeseite verwendet werden, um ein identisches Anzeigeverhalten über alle Displaytypen hinweg zu ermöglichen.
+Die Funktionen *displaySetFullWindow()* und **displaySetPartialWindow()* werden aus Kompatibilitätsgründen ebenfalls bei einem TFT-Display verwendet. Der Displayinhalt wird jedoch nicht aufgefrischt, da das bei TFT-Displays nicht notwendig ist. Die Befehle müssen aber trotzdem im Code einer Anzeigeseite verwendet werden, um ein identisches Anzeigeverhalten über alle Displaytypen hinweg zu ermöglichen.
 
 .. code-block:: c++
 
