@@ -290,7 +290,7 @@ Die Funktionen *displayFirstPage()* und *displayNextPage()* steuern die Aktualis
 
 Die Darstellung erfolgt in zwei Schritten: Zunächst werden mittels Grafikbefehlen die Bilddaten erzeugt. Anschließend übernimmt *displayNextPage()* die Übertragung dieser Daten in den Framebuffer und führt die eigentliche Aktualisierung des Bildschirms durch. Dieses Vorgehen ermöglicht eine standardisierte Darstellung von Displayinhalten für verschiedene Displaytypen und eine klare Trennung zwischen Rendering und Anzeigeaktualisierung.
 
-Die Funktionen *displaySetFullWindow()* und **displaySetPartialWindow()* werden aus Kompatibilitätsgründen ebenfalls bei einem TFT-Display verwendet. Der Displayinhalt wird jedoch nicht aufgefrischt, da das bei TFT-Displays nicht notwendig ist. Die Befehle müssen aber trotzdem im Code einer Anzeigeseite verwendet werden, um ein identisches Anzeigeverhalten über alle Displaytypen hinweg zu ermöglichen.
+Die Funktionen *displaySetFullWindow()* und *displaySetPartialWindow()* werden aus Kompatibilitätsgründen ebenfalls bei einem TFT-Display verwendet. Der Displayinhalt wird jedoch nicht aufgefrischt, da das bei TFT-Displays nicht notwendig ist. Die Befehle müssen aber trotzdem im Code einer Anzeigeseite verwendet werden, um ein identisches Anzeigeverhalten über alle Displaytypen hinweg zu ermöglichen.
 
 .. code-block:: c++
 
