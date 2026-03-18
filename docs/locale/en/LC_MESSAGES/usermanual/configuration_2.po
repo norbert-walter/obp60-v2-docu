@@ -663,7 +663,7 @@ msgid ""
 "Hiermit kann festgelegt werden, ob für Änderungen der Konfiguration ein "
 "Passwort notwendig ist."
 msgstr ""
-"This allows you to specify whether a password is required to change the "
+"This setting determines whether a password is required to change the "
 "configuration."
 
 #: ../../usermanual/configuration_2.rst:160 4c5f7989bc54493f8602cbb2cda4491a
@@ -736,7 +736,8 @@ msgid ""
 "``debug`` - Es werden alle vorgesehenen Meldungen inklusive Debug-Meldungen "
 "ausgegeben"
 msgstr ""
-"``Debug`` - All intended messages, including debug messages, are displayed."
+"``Debug`` - All intended messages, including debug messages, will be "
+"displayed."
 
 #: ../../usermanual/configuration_2.rst:175 db6fa6f845354ba3bb58c9ab25d79596
 #, fuzzy

@@ -1830,8 +1830,8 @@ msgid ""
 "Bootssensoren entsprechende Daten bereitstellen, werden sie natürlich "
 "verwendet."
 msgstr ""
-"``Off`` - No data on the true wind is calculated. If the boat sensors "
-"provide relevant data, it will of course be used."
+"``Off`` - No true wind data is calculated. If the boat sensors provide "
+"relevant data, it will of course be used."
 
 #: ../../usermanual/configuration.rst:466 4c8b9622797d48bf9fb7e6727097400b
 #, fuzzy
@@ -3052,9 +3052,9 @@ msgid ""
 " ensprechen einer Zeitachse in Sekunden, wenn der Messwert 1x pro Sekunde "
 "aktualisiert wird."
 msgstr ""
-"The x-axis of the diagrams shows the number of data updates, i.e., it "
-"corresponds to a time axis in seconds if the measurement is updated once per"
-" second."
+"The x-axis of the diagrams shows the number of data updates, i.e., they "
+"correspond to a time axis in seconds if the measurement is updated once per "
+"second."
 
 #: ../../usermanual/configuration.rst:744 20aab0c2f35c4239bccac0cfcd7338c7
 #, fuzzy
@@ -4448,7 +4448,7 @@ msgid ""
 msgstr ""
 "The SixValue display allows any six measurements from the data pool to be "
 "displayed vertically, one above the other. In addition to the measurements, "
-"their short names and units are also shown."
+"the abbreviations and units are also shown."
 
 #: ../../usermanual/configuration.rst:1085 f0b1896ef13549c2957104bd65a4d0b9
 #, fuzzy
