@@ -180,7 +180,7 @@ msgstr "15 Hours of stand-alone runtime"
 #: ../../usermanual/samples.rst:39 d324a46ccd3d47e5abf1f15fea955ed1
 #, fuzzy
 msgid "32 WiFi-Geräte einbindbar"
-msgstr "Up to 32 WiFi devices can be connected"
+msgstr "Up to 32 WiFi devices can be connected."
 
 #: ../../usermanual/samples.rst:40 62cd7956ec524993be40f331f828c1bd
 #, fuzzy
