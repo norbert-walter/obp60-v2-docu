@@ -7,7 +7,7 @@ Um eine neue Seite zu erstellen sind folgende Schritte notwendig:
 	2. Registrierung der Seite in ``lib\obp60task\obp60task.cpp``. Dazu die Funktion ``registerAllPages`` entsprechend erweitern
 	3. In ``/lib/obp60task/config.json`` die neue Seite in die jeweiligen Seitenlisten aufnehmen oder Seite in ``/lib/obp60task/gen_set.py`` aufnehmen und damit den relevanten Teil der Datei ``/lib/obp60task/config.json`` neu erzeugen. 
 
-Als Vorlage für eine neue Seite kann z.B. die vorhandene Seite *PageWhite* verwendet werden. Sie enthält nur minimalen Code. In der kopierten Seite ist dann lediglich der Text *White* durch *Beispiel* zu ersetzen.
+Als Vorlage für eine neue Seite kann z.B. die vorhandene Seite *PageDigitalOut.cpp* verwendet werden. Sie enthält nur minimalen Code und zeigt die typische Verwendung der Grafik- und Anzeigefunktionen. In der kopierten Seite sind dann lediglich alle Texte *PageDigitalOut* durch *PageMySample* zu ersetzen und die Datei unter dem Namen PageMySample.cpp abzuspeichern. Alle erstellten Seiten müssen dem Schema *PageXXXX.cpp* folgen.
 
 Zugriff auf Daten
 =================
@@ -180,8 +180,6 @@ Abb.: Vierecks
 Viereck gerundet
 ----------------
 
-Diese Funktion kann sehr gut zum Zeichen von Bedienknöpfen verwendet werden.
-
 .. code-block:: c++
 
 	getdisplay().drawRoundRect(x0, y0, width, hight, radius, color);	// Draw round rect
@@ -191,6 +189,11 @@ Diese Funktion kann sehr gut zum Zeichen von Bedienknöpfen verwendet werden.
              :scale: 80%
 
 Abb.: Vierecks mit runden Ecken
+
+Diese Funktion kann sehr gut zum Zeichen von Bedienknöpfen verwendet werden. Mit ihr wurde eine weiter Funktion erstellt, mit der sich Bedienknöpfe anzeigen lassen.
+
+.. code-block:: c++
+	drawButtonCenter(x, y, width, hight, textButtonLabel, fgcolor, bgcolor, textBehindButton);
 
 
 Dreieck
@@ -298,3 +301,68 @@ Die Funktionen *displaySetFullWindow()* und *displaySetPartialWindow()* werden a
 	displayNextPage();      // Show next display content
 	displaySetFullWindow(); // Full display refresh for e-paper display 
 	displaySetPartialWindow(x, y, width, height); // Partial display refresh for e-paper display
+
+Konfigurationswerte
+-------------------
+
+Manchmal ist es notwendig über die Web-Konfigurationsoberfläche Konfigurationen für bestimmte Einstellwerte vorzunehmen. Dabei wird Variablen ein Wert zum Startzeitpunkt der Software zugewiesen, den der User über die Konfigurationsoberfläche nachträglich ändern kann. Die Konfigurationswerte werden in einer JSON-Konfigurationsdatei mit dem Namen *config_obp60.json* definiert. Ein typischer Eintrag für einen Konfigurationswert sieht so aus:
+
+.. code-block:: json
+
+	{
+	  "name": "waterTank",
+	  "label": "Water Tank [l]",
+	  "type": "number",
+	  "default": "0",
+	  "check": "checkMinMax",
+	  "min": 0,
+	  "max": 5000,
+	  "description": "Water tank capacity [0...5000l]",
+	  "category": "OBP60 Settings",
+	  "capabilities": {
+		"obp60":"true"
+	  }
+	},
+
+.. code-block:: json
+
+	{
+        "name": "batteryVoltage",
+        "label": "Battery Voltage [V]",
+        "type": "list",
+        "default": "12V",
+        "description": "Battery Voltage [12V|24V]",
+        "list": [
+            "12V",
+            "24V"
+        ],
+        "category": "OBP60 Settings",
+        "capabilities": {
+            "obp60":"true"
+        },
+		 "condition": [
+            { "battery": ["available"] }
+        ]
+    },
+	
+Die Datei *config_obp60.json* enthält eine Vielzahl von Konfigurationswerten. Die Bedeutung der Werte ist nachfolgend beschrieben.
+
+    * **name**: Varianblenname im Programm (Kleinschreibung, max. 12 Zeichen)
+    * **label**: Variablenname in der Web-Konfigurationsoberfläche
+    * **type**: Typ der Variable
+		* **number**: Zahlenwert
+		* **string**: Textwert
+		* **list**: Liste von Auswahlqwerten
+    * **default**: Defaultwert der Variable
+    * **check**: Prüfanweisung
+		* **checkMinMax**: Variablenwert auf Min, Max prüfen und ggf. begrenzen
+	* **min**: Min-Wert
+    * **max**: Max-Wert
+    * **description**: Beschreibungstext (die Kombination *\n* erzeugt eine Zeilenumbruch)
+    * **category**: Kategorie in der vertikalen Menüstruktur (wird automatisch angelegt, wenn nicht vorhanden)
+    * **capabilities**: Anzeigemöglichkeit für unterschiedliche Hardwareversionen
+		* **"obp60":"true"**: Nur anzeigen, wenn Capabilitie für obp60 in Datei obp60task.h definiert ist
+	* **condition**: Anzeigebedingung (UND-Verknüpft bei mehreren Einträgen)
+		* **"battery": ["available"]: Nur anzeigen, wenn Variable *batery* den Wert *available* hat
+	
+	
