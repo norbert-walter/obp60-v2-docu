@@ -5790,8 +5790,8 @@ msgstr ""
 "If you are using the generator display but no INA226 module is connected to "
 "the I2C bus, no readings other than the current battery voltage will be "
 "displayed. In this case, the OBP60's internal voltage sensor is used. The "
-"measured voltage value may not directly correspond to the voltage at the "
-"generator output, as line losses can distort the voltage reading."
+"measured voltage may not directly correspond to the voltage at the generator"
+" output, as line losses can distort the voltage reading."
 
 #: ../../usermanual/configuration_2.rst:1537 1c8de633e4c84a24b9dda26860c6f40b
 #, fuzzy
