@@ -260,7 +260,7 @@ Für farbige Bilder mit 64.000 Farben nach dem RGB565-Standard kann folgende Fun
 Spezialfunktionen
 =================
 
-Die Spezialfunktionen ermöglichen displayspezifische Aktionen, die je nach Displaytechnologie unterschiedlich behandelt werden müssen.
+Die Spezialfunktionen ermöglichen displayspezifische Aktionen, die je nach Displaytechnologie unterschiedlich behandelt werden müssen. Die Funktionen dienen zur Initialisierung der Displayfunktionen und werden zentral je nach verwendeten Displaytyps in obp60task.cpp und in OBP60Extensions.ccp aufgerufen. Die Befehle werden nicht im Code einer Anzeigeseite verwendet.
 
 e-Paper-Display
 ---------------
@@ -285,6 +285,12 @@ TFT-Display
 
 Funktionen zur Display-Aktualisierung
 -------------------------------------
+
+Die Funktionen **displayFirstPage()** und **displayNextPage()** steuern die Aktualisierung der Displayinhalte und folgen einem seitenbasierten Renderkonzept, wie es bei e-Paper-Displays verwendet wird. Bei TFT-Farbdisplays erfolgt die Ausgabe normalerweise direkt durch Schreiben in den Framebuffer des Display-Controllers, sodass dieses Verfahren dort nicht zwingend erforderlich ist. Dennoch werden die Funktionen aus Kompatibilitätsgründen beibehalten.
+
+Die Darstellung erfolgt in zwei Schritten: Zunächst werden mittels Grafikbefehlen die Bilddaten erzeugt. Anschließend übernimmt **displayNextPage()** die Übertragung dieser Daten in den Framebuffer und führt die eigentliche Aktualisierung des Bildschirms durch. Dieses Vorgehen ermöglicht eine standardisierte Darstellung von Displayinhalten für verschiedene Displaytypen und eine klare Trennung zwischen Rendering und Anzeigeaktualisierung.
+
+Die Funktionen **displaySetFullWindow()** und **displaySetPartialWindow()** werden aus Kompatibilitätsgründen ebenfalls bei einem TFT-Display verwendet. Der Displayinhalt wird jedoch nicht aufgefrischt, da das bei TFT-Displays nicht notwendig ist. Die Befehle müssen aber trotzdem im Code einer Anzeigeseite verwendet werden, um ein identisches Anzeigeverhalten über alle Displaytypen hinweg zu ermöglichen.
 
 .. code-block:: c++
 
