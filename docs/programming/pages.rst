@@ -122,30 +122,30 @@ Manchmal ist es notwendig über die Web-Konfigurationsoberfläche Konfiguratione
 	
 Die Datei *config_obp60.json* enthält eine Vielzahl von Konfigurationswerten. Die Bedeutung der Werte ist nachfolgend beschrieben.
 
-    * **name**: Varianblenname im Programm (Kleinschreibung, max. 12 Zeichen)
-    * **label**: Variablenname in der Web-Konfigurationsoberfläche	
+* **name**: Varianblenname im Programm (Kleinschreibung, max. 12 Zeichen)
+* **label**: Variablenname in der Web-Konfigurationsoberfläche	
+
+* **type**: Typ der Variable
+  * **number**: Zahlenwert
+  * **string**: Textwert
+  * **list**: Liste von Auswahlwerten
 	
-    * **type**: Typ der Variable
-		* **number**: Zahlenwert
-		* **string**: Textwert
-		* **list**: Liste von Auswahlwerten
-		
-    * **default**: Defaultwert der Variable	
+* **default**: Defaultwert der Variable	
+
+* **check**: Prüfanweisung
+  * **checkMinMax**: Variablenwert auf Min, Max prüfen und ggf. begrenzen
 	
-    * **check**: Prüfanweisung
-		* **checkMinMax**: Variablenwert auf Min, Max prüfen und ggf. begrenzen
-		
-	* **min**: Min-Wert
-    * **max**: Max-Wert
-    * **description**: Beschreibungstext (die Kombination *\n* erzeugt eine Zeilenumbruch)
-    * **category**: Kategorie in der vertikalen Menüstruktur (wird automatisch angelegt, wenn nicht vorhanden)
+* **min**: Min-Wert
+* **max**: Max-Wert
+* **description**: Beschreibungstext (die Kombination *\n* erzeugt eine Zeilenumbruch)
+* **category**: Kategorie in der vertikalen Menüstruktur (wird automatisch angelegt, wenn nicht vorhanden)
+
+* **capabilities**: Anzeigemöglichkeit für unterschiedliche Hardwareversionen
+  * **"obp60":"true"**: Nur anzeigen, wenn Capabilitie für obp60 in Datei *obp60task.h* definiert ist
 	
-    * **capabilities**: Anzeigemöglichkeit für unterschiedliche Hardwareversionen
-		* **"obp60":"true"**: Nur anzeigen, wenn Capabilitie für obp60 in Datei *obp60task.h* definiert ist
-		
-	* **condition**: Anzeigebedingung (UND-Verknüpft bei mehreren Einträgen)
-		* **"battery": ["available"]**: Nur anzeigen, wenn Variable *batery* den Wert *available* hat
-	
+* **condition**: Anzeigebedingung (UND-Verknüpft bei mehreren Einträgen)
+  * **"battery": ["available"]**: Nur anzeigen, wenn Variable *batery* den Wert *available* hat
+
 
 Darstellung grafischer Inhalte
 ==============================
