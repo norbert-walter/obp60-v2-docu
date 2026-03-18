@@ -124,12 +124,14 @@ Die Datei *config_obp60.json* enthält eine Vielzahl von Konfigurationswerten. D
 
     * **name**: Varianblenname im Programm (Kleinschreibung, max. 12 Zeichen)
     * **label**: Variablenname in der Web-Konfigurationsoberfläche	
+	
     * **type**: Typ der Variable
 		* **number**: Zahlenwert
 		* **string**: Textwert
 		* **list**: Liste von Auswahlwerten
 		
     * **default**: Defaultwert der Variable	
+	
     * **check**: Prüfanweisung
 		* **checkMinMax**: Variablenwert auf Min, Max prüfen und ggf. begrenzen
 		
@@ -137,11 +139,12 @@ Die Datei *config_obp60.json* enthält eine Vielzahl von Konfigurationswerten. D
     * **max**: Max-Wert
     * **description**: Beschreibungstext (die Kombination *\n* erzeugt eine Zeilenumbruch)
     * **category**: Kategorie in der vertikalen Menüstruktur (wird automatisch angelegt, wenn nicht vorhanden)
+	
     * **capabilities**: Anzeigemöglichkeit für unterschiedliche Hardwareversionen
-		* **"obp60":"true"**: Nur anzeigen, wenn Capabilitie für obp60 in Datei obp60task.h definiert ist
+		* **"obp60":"true"**: Nur anzeigen, wenn Capabilitie für obp60 in Datei *obp60task.h* definiert ist
 		
 	* **condition**: Anzeigebedingung (UND-Verknüpft bei mehreren Einträgen)
-		* **"battery": ["available"]: Nur anzeigen, wenn Variable *batery* den Wert *available* hat
+		* **"battery": ["available"]**: Nur anzeigen, wenn Variable *batery* den Wert *available* hat
 	
 
 Darstellung grafischer Inhalte
