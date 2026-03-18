@@ -4078,7 +4078,7 @@ msgstr "**LON** - Longitude, geographical altitude"
 #: ../../usermanual/configuration.rst:966 87c404f78cb041349c0b63332e70b690
 #, fuzzy
 msgid "**Log** - Log, Entfernung"
-msgstr "**Log** - Log, Distance"
+msgstr "**Log** - Log, distance"
 
 #: ../../usermanual/configuration.rst:967 bf1d9a850f784552911f0f39458566ac
 #, fuzzy
@@ -6481,7 +6481,7 @@ msgstr "``Bidir`` - Sensor data is exchanged between NMEA0183 and NMEA2000."
 #: ../../usermanual/configuration.rst:1761 ca64ae0202ae449b9d02a0c57ee839c3
 #, fuzzy
 msgid "``to2K`` - Das Sensordaten werden nur nach NMEA2000 gesendet."
-msgstr "``To2K`` - The sensor data is only sent via NMEA2000."
+msgstr "``To2K`` - Sensor data is only sent via NMEA2000."
 
 #: ../../usermanual/configuration.rst:1762 33acaab4a2fc4c48b928254e2dc0958a
 #, fuzzy
