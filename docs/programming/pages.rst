@@ -7,7 +7,7 @@ Um eine neue Seite zu erstellen sind folgende Schritte notwendig:
 	2. Registrierung der Seite in ``lib\obp60task\obp60task.cpp``. Dazu die Funktion ``registerAllPages`` entsprechend erweitern
 	3. In ``/lib/obp60task/config.json`` die neue Seite in die jeweiligen Seitenlisten aufnehmen oder Seite in ``/lib/obp60task/gen_set.py`` aufnehmen und damit den relevanten Teil der Datei ``/lib/obp60task/config.json`` neu erzeugen. 
 
-Als Vorlage für eine neue Seite kann z.B. die vorhandene Seite *PageDigitalOut.cpp* verwendet werden. Sie enthält nur minimalen Code und zeigt die typische Verwendung der Grafik- und Anzeigefunktionen. In der kopierten Seite sind dann lediglich alle Texte *PageDigitalOut* durch *PageMySample* zu ersetzen und die Datei unter dem Namen PageMySample.cpp abzuspeichern. Alle erstellten Seiten müssen dem Schema *PageXXXX.cpp* folgen.
+Als Vorlage für eine neue Seite kann z.B. die vorhandene Seite ``PageDigitalOut.cpp`` verwendet werden. Sie enthält nur minimalen Code und zeigt die typische Verwendung der Grafik- und Anzeigefunktionen. In der kopierten Seite sind dann lediglich alle Texte *PageDigitalOut* durch *PageMySample* zu ersetzen und die Datei unter dem Namen ``PageMySample.cpp`` abzuspeichern. Alle erstellten Seiten müssen dem Schema ``PageXXXX.cpp`` folgen.
 
 Zugriff auf Daten
 =================
@@ -80,7 +80,7 @@ Falls auf einer Seite eine andere Schriftart zur Darstellung verwendet werden so
 Konfigurationswerte
 ===================
 
-Manchmal ist es notwendig über die Web-Konfigurationsoberfläche Konfigurationen für bestimmte Einstellwerte vorzunehmen. Dabei wird Variablen ein Wert zum Startzeitpunkt der Software zugewiesen, den der User über die Konfigurationsoberfläche nachträglich ändern kann. Die Konfigurationswerte werden in einer JSON-Konfigurationsdatei mit dem Namen *config_obp60.json* definiert. Ein typischer Eintrag für einen Konfigurationswert sieht so aus:
+Manchmal ist es notwendig über die Web-Konfigurationsoberfläche Konfigurationen für bestimmte Einstellwerte vorzunehmen. Dabei wird Variablen ein Wert zum Startzeitpunkt der Software zugewiesen, den der User über die Konfigurationsoberfläche nachträglich ändern kann. Die Konfigurationswerte werden in einer JSON-Konfigurationsdatei mit dem Namen ``config_obp60.json`` definiert. Ein typischer Eintrag für einen Konfigurationswert sieht so aus:
 
 .. code-block:: json
 
@@ -120,7 +120,7 @@ Manchmal ist es notwendig über die Web-Konfigurationsoberfläche Konfiguratione
         ]
     },
 	
-Die Datei *config_obp60.json* enthält eine Vielzahl von Konfigurationswerten. Die Bedeutung der Werte ist nachfolgend beschrieben.
+Die Datei ``config_obp60.json`` enthält eine Vielzahl von Konfigurationswerten. Die Bedeutung der Werte ist nachfolgend beschrieben.
 
 * **name**: Varianblenname im Programm (Kleinschreibung, max. 12 Zeichen)
 * **label**: Variablenname in der Web-Konfigurationsoberfläche	
@@ -141,7 +141,7 @@ Die Datei *config_obp60.json* enthält eine Vielzahl von Konfigurationswerten. D
 * **category**: Kategorie in der vertikalen Menüstruktur (wird automatisch angelegt, wenn nicht vorhanden)
 
 * **capabilities**: Anzeigemöglichkeit für unterschiedliche Hardwareversionen
-	* **"obp60":"true"**: Nur anzeigen, wenn Capabilitie für obp60 in Datei *obp60task.h* definiert ist
+	* **"obp60":"true"**: Nur anzeigen, wenn Capabilitie für obp60 in Datei ``obp60task.h`` definiert ist
 	
 * **condition**: Anzeigebedingung (UND-Verknüpft bei mehreren Einträgen)
 	* **"battery": ["available"]**: Nur anzeigen, wenn Variable *batery* den Wert *available* hat
@@ -333,7 +333,7 @@ Für farbige Bilder mit 64.000 Farben nach dem RGB565-Standard kann folgende Fun
 Spezialfunktionen
 =================
 
-Die Spezialfunktionen ermöglichen displayspezifische Aktionen, die je nach Displaytechnologie unterschiedlich behandelt werden müssen. Die Funktionen dienen zur Initialisierung der Displayfunktionen und werden zentral je nach verwendeten Displaytyps in obp60task.cpp und in OBP60Extensions.ccp aufgerufen. Die Befehle werden nicht im Code einer Anzeigeseite verwendet.
+Die Spezialfunktionen ermöglichen displayspezifische Aktionen, die je nach Displaytechnologie unterschiedlich behandelt werden müssen. Die Funktionen dienen zur Initialisierung der Displayfunktionen und werden zentral je nach verwendeten Displaytyps in ``obp60task.cpp`` und in OBP60Extensions.ccp aufgerufen. Die Befehle werden nicht im Code einer Anzeigeseite verwendet.
 
 e-Paper-Display
 ---------------
