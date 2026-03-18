@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OBP60 V2 Dokumentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-18 15:42+0000\n"
+"POT-Creation-Date: 2026-03-18 15:54+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: en <LL@li.org>\n"
@@ -20,22 +20,22 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.18.0\n"
 
-#: ../../programming/pages.rst:2 d8d2b9052c744a58bae907c7931a38ad
+#: ../../programming/pages.rst:2 d6742551bdcb47af9c87ed5704b164d6
 #, fuzzy
 msgid "Seitenerstellung"
 msgstr "Page creation"
 
-#: ../../programming/pages.rst:4 bac7f147cc7942f4b7bd079bbac7e317
+#: ../../programming/pages.rst:4 d7e9614285e44a639fe3aa72e5a569ec
 #, fuzzy
 msgid "Um eine neue Seite zu erstellen sind folgende Schritte notwendig:"
 msgstr "To create a new page, the following steps are necessary:"
 
-#: ../../programming/pages.rst:6 d2102ab8e033469a8ecd0eeddc7f1888
+#: ../../programming/pages.rst:6 1f6c40a174df4e629a205c95577cceee
 #, fuzzy
 msgid "Anlegen einer neuen Seite unter ``lib\\obp60task\\PageXXXX.cpp``"
 msgstr "Creating a new page under ``lib\\obp60task\\PageXXXX.cpp``"
 
-#: ../../programming/pages.rst:7 6f7cc56b23ad466b9655931edced5331
+#: ../../programming/pages.rst:7 9919c9d6b44b414282442d0ec2864132
 #, fuzzy
 msgid ""
 "Registrierung der Seite in ``lib\\obp60task\\obp60task.cpp``. Dazu die "
@@ -44,7 +44,7 @@ msgstr ""
 "Register the page in [``lib\\obp60task\\obp60task.cpp``. Extend the function"
 " ``registerAllPages`` accordingly."
 
-#: ../../programming/pages.rst:8 7f7e746baedc483fae71cb67cb96e089
+#: ../../programming/pages.rst:8 0b7c35c8786044b3bfba0338fed193a5
 #, fuzzy
 msgid ""
 "In ``/lib/obp60task/config.json`` die neue Seite in die jeweiligen "
@@ -56,7 +56,7 @@ msgstr ""
 "lists or add the page to ``/lib/obp60task/gen_set.py`` and thus recreate the"
 " relevant part of the file ``/lib/obp60task/config.json``."
 
-#: ../../programming/pages.rst:10 8d1752d2029445d28d3d701b7ff27d80
+#: ../../programming/pages.rst:10 209d85c85dff449b88924a0107839664
 #, fuzzy
 msgid ""
 "Als Vorlage für eine neue Seite kann z.B. die vorhandene Seite "
@@ -74,19 +74,19 @@ msgstr ""
 "``PageMySample.cpp``. All created pages must follow the schema "
 "``PageXXXX.cpp``."
 
-#: ../../programming/pages.rst:13 d319fe4c9beb4b828a5dba75dda08ae6
+#: ../../programming/pages.rst:13 039dd1a00c1f4243af7d14ba14c0f482
 #, fuzzy
 msgid "Zugriff auf Daten"
 msgstr "Access to data"
 
-#: ../../programming/pages.rst:15 56bf697768e3436083371bd19884653b
+#: ../../programming/pages.rst:15 b98748fedc694dd48923aa344e739b47
 #, fuzzy
 msgid ""
 "Für manche Seiten ist im Quellcode fest vorgegeben, welche Werte verwendet "
 "werden:"
 msgstr "For some pages, the source code specifies which values to use:"
 
-#: ../../programming/pages.rst:26 59e7b779d0184c7ea17a347f09b574cf
+#: ../../programming/pages.rst:26 def280a56d134e93ad4046692dec118f
 #, fuzzy
 msgid ""
 "Alternativ könenen in der Page Description sowohl feste als auch über die "
@@ -99,12 +99,12 @@ msgstr ""
 "within the page as ``pageData.values[i]``, with the web-configurable values "
 "appearing before the fixed values."
 
-#: ../../programming/pages.rst:47 c8a3ad30353842249718be93f38e648c
+#: ../../programming/pages.rst:47 34a193d99886409f813098deee3b4ded
 #, fuzzy
 msgid "Darstellung von Daten"
 msgstr "Data presentation"
 
-#: ../../programming/pages.rst:49 4c9dd474fdb24d199ca4144f954edb38
+#: ../../programming/pages.rst:49 9b5c23bebc8b42a5a9fc8057b066d878
 #, fuzzy
 msgid ""
 "Wie die Zeichenketten aus den Rohdaten erzeugt werden, ist in "
@@ -120,7 +120,7 @@ msgstr ""
 "value, and then a string can be generated in the selected units and "
 "according to the chosen formatting specifications:"
 
-#: ../../programming/pages.rst:60 d25a299a4c2d429a812a89eb64f549a8
+#: ../../programming/pages.rst:60 93ee2edbebd3465da0c8078aa905053c
 #, fuzzy
 msgid ""
 "Zur Darstellung der Werte wird typischerweise eine Schriftart aus der "
@@ -143,7 +143,7 @@ msgstr ""
 "place for numbers between 10 and 99), the number is right-aligned as "
 "follows:"
 
-#: ../../programming/pages.rst:78 7fee473bc4fc4d73a2f3ebb591a56561
+#: ../../programming/pages.rst:78 22e07a1b40064012af36bc2fb4868477
 #, fuzzy
 msgid ""
 "Falls auf einer Seite eine andere Schriftart zur Darstellung verwendet "
@@ -154,12 +154,12 @@ msgstr ""
 "the page itself must be based on the numerical value to prevent the output "
 "of exclamation marks."
 
-#: ../../programming/pages.rst:81 458dcacf47f6458bb086d019ec582e2f
+#: ../../programming/pages.rst:81 fc6d403129d84a9e8004f55a2a05350c
 #, fuzzy
 msgid "Konfigurationswerte"
 msgstr "Configuration values"
 
-#: ../../programming/pages.rst:83 013928b3364c4491b2dee7d55d804cbc
+#: ../../programming/pages.rst:83 244b666dce0b49f1b31dc3a6bda8f762
 #, fuzzy
 msgid ""
 "Manchmal ist es notwendig über die Web-Konfigurationsoberfläche "
@@ -176,7 +176,7 @@ msgstr ""
 " are defined in a JSON configuration file named ``config_obp60.json``. A "
 "typical entry for a configuration value looks like this:"
 
-#: ../../programming/pages.rst:123 5abbfc625aba488f8108d2bf0c229c26
+#: ../../programming/pages.rst:123 de789ad5e9004dbc926cfcadac11ed77
 #, fuzzy
 msgid ""
 "Die Datei ``config_obp60.json`` enthält eine Vielzahl von "
@@ -185,66 +185,66 @@ msgstr ""
 "The file ``config_obp60.json`` contains a variety of configuration values. "
 "The meaning of these values is described below."
 
-#: ../../programming/pages.rst:125 972184c16208489ab5022f4d8029e22a
+#: ../../programming/pages.rst:125 928fd8ba0e794aac9aeea56f242e6d78
 #, fuzzy
 msgid ""
 "**name**: Varianblenname im Programm (Kleinschreibung, max. 12 Zeichen)"
 msgstr ""
 "**Name**: Variable name in the program (lowercase, max. 12 characters)"
 
-#: ../../programming/pages.rst:126 ae62c7618de44d1e843ccd6fdc84e134
+#: ../../programming/pages.rst:126 279b78a23e0b4aae90374fe563af911b
 #, fuzzy
 msgid "**label**: Variablenname in der Web-Konfigurationsoberfläche"
 msgstr "**Label**: Variable name in the web configuration interface"
 
-#: ../../programming/pages.rst:128 c24e230405694ed18dfa5d06c76ceda4
+#: ../../programming/pages.rst:128 c72c054cf0144d92affe8db32ee38624
 #, fuzzy
 msgid "**type**: Typ der Variable"
 msgstr "**Type**: Type of variable"
 
-#: ../../programming/pages.rst:129 29fdb9b2ab914d8bb04f88ebe59e8456
+#: ../../programming/pages.rst:129 ec775c98c18c48508a3d04f03c62b1f9
 #, fuzzy
 msgid "**number**: Zahlenwert"
 msgstr "**Number**: Numerical value"
 
-#: ../../programming/pages.rst:130 dbc09ba44b66415ab90a48bcfd5537f6
+#: ../../programming/pages.rst:130 dcf55046cbc146ca939bcecc5709e0b6
 #, fuzzy
 msgid "**string**: Textwert"
 msgstr "**String**: Text value"
 
-#: ../../programming/pages.rst:131 9556b029609645e792bf1149a8c100ca
+#: ../../programming/pages.rst:131 5075755d2aab4fb096b8dc7af52ec3dd
 #, fuzzy
 msgid "**list**: Liste von Auswahlwerten"
 msgstr "**List**: List of selection values"
 
-#: ../../programming/pages.rst:133 6feaf56a78ad4838af2dac3a8d385c0f
+#: ../../programming/pages.rst:133 1eaff4c0494447ed9901298af9b330a0
 #, fuzzy
 msgid "**default**: Defaultwert der Variable"
 msgstr "**Default**: Default value of the variable"
 
-#: ../../programming/pages.rst:135 6efee2127f5a423ea2f2c1c693bc9938
+#: ../../programming/pages.rst:135 a739861dc6bf4af386005deb30907f2e
 #, fuzzy
 msgid "**check**: Prüfanweisung"
 msgstr "**Check**: Test instructions"
 
-#: ../../programming/pages.rst:136 3d6d5daf711546349ae0bff973f6cf13
+#: ../../programming/pages.rst:136 5a43737bfae748a9b68b121f86d91b16
 #, fuzzy
 msgid "**checkMinMax**: Variablenwert auf Min, Max prüfen und ggf. begrenzen"
 msgstr ""
 "**CheckMinMax**: Check variable values for minimum and maximum values and "
 "limit them if necessary."
 
-#: ../../programming/pages.rst:138 a1904651c00d41fd92034e16a961e474
+#: ../../programming/pages.rst:138 1a8c8c4c425e4caf81539e69bc6a826b
 #, fuzzy
 msgid "**min**: Min-Wert"
 msgstr "**Min**: Minimum value"
 
-#: ../../programming/pages.rst:139 c91e1443e85e4b2e9a55294cf638a211
+#: ../../programming/pages.rst:139 b2efd0fded2347d7ab0bc531a0f33b05
 #, fuzzy
 msgid "**max**: Max-Wert"
 msgstr "**Max**: Max-Wert"
 
-#: ../../programming/pages.rst:140 64bde87512994892a090568838c9d6a9
+#: ../../programming/pages.rst:140 972b3f5e96e140cabec0880fd8970230
 #, fuzzy
 msgid ""
 "**description**: Beschreibungstext (die Kombination *\\n* erzeugt eine "
@@ -253,7 +253,7 @@ msgstr ""
 "**Description**: Description text (the combination *\\n* creates a line "
 "break)"
 
-#: ../../programming/pages.rst:141 623122be25b841a8810eae84433cba18
+#: ../../programming/pages.rst:141 0e5edc3b9bf64bd9969b505796919750
 #, fuzzy
 msgid ""
 "**category**: Kategorie in der vertikalen Menüstruktur (wird automatisch "
@@ -262,13 +262,13 @@ msgstr ""
 "**Category**: Category in the vertical menu structure (created automatically"
 " if not already present)"
 
-#: ../../programming/pages.rst:143 792d375b3f0b4e728e65b6154c936f41
+#: ../../programming/pages.rst:143 7395414e097f41a29e9b357c98fed444
 #, fuzzy
 msgid ""
 "**capabilities**: Anzeigemöglichkeit für unterschiedliche Hardwareversionen"
 msgstr "**Capabilities**: Display option for different hardware versions"
 
-#: ../../programming/pages.rst:144 bb0fd4f6fa8c40a5860cae93eb332087
+#: ../../programming/pages.rst:144 d16364cd30db43089882bb81c377cf91
 #, fuzzy
 msgid ""
 "**\"obp60\":\"true\"**: Nur anzeigen, wenn Capabilitie für obp60 in Datei "
@@ -277,12 +277,12 @@ msgstr ""
 "**\"Obp60\":\"true\"**: Only display if capability for obp60 is defined in "
 "file ``obp60task.h``"
 
-#: ../../programming/pages.rst:146 dfecb2fcb63f4a55aacf4dd0c443180c
+#: ../../programming/pages.rst:146 5c8a61aac8d44b1aa151befd2c8dc54c
 #, fuzzy
 msgid "**condition**: Anzeigebedingung (UND-Verknüpft bei mehreren Einträgen)"
 msgstr "**Condition**: Display condition (AND-linked for multiple entries)"
 
-#: ../../programming/pages.rst:147 46ab53cb66f94014a3052f644c47f5e0
+#: ../../programming/pages.rst:147 f0dde57a18634ee2af5fd9651c62c061
 #, fuzzy
 msgid ""
 "**\"battery\": [\"available\"]**: Nur anzeigen, wenn Variable *batery* den "
@@ -291,12 +291,12 @@ msgstr ""
 "**\"Battery\": [\"available\"]**: Only display if variable *batery* has the "
 "value *available*"
 
-#: ../../programming/pages.rst:151 2d8e8ac7887a42d299e5601b5994d7c0
+#: ../../programming/pages.rst:151 d941733292ab4d45b7a9d873f1809337
 #, fuzzy
 msgid "Darstellung grafischer Inhalte"
 msgstr "Display of graphical content"
 
-#: ../../programming/pages.rst:153 49e092b654aa420889a0093cb0fca6be
+#: ../../programming/pages.rst:153 4f4cef1e283c467f97deeacc03f9958e
 #, fuzzy
 msgid ""
 "Auf dem Display lassen sich sowohl textbasierte als auch grafische Elemente "
@@ -318,7 +318,7 @@ msgstr ""
 "are some limitations for the e-paper display, and not all commands of the "
 "Adafruit GFX library are available."
 
-#: ../../programming/pages.rst:155 84f01450b9d44879a850b995cc7b2334
+#: ../../programming/pages.rst:155 44e40ae014bc4ad0a7ac8c45957ee00d
 #, fuzzy
 msgid ""
 "In diesem `PDF-Dokument <../_static/files/adafruit-gfx-graphics-"
@@ -330,7 +330,7 @@ msgstr ""
 "contains the basic commands of the Adafruit GFX library. You can also access"
 " the complete functionality of the library online here `Klassen Referenz`_."
 
-#: ../../programming/pages.rst:159 f86dd5898ec74e78ae10dda535967ed2
+#: ../../programming/pages.rst:159 5a656608c57a4776981a0124ec0a2e3a
 #, fuzzy
 msgid ""
 "Das Koordinatensystem des Grafikdisplays ist so organisiert, dass sich in "
@@ -341,12 +341,12 @@ msgstr ""
 " is located in the upper left corner. All coordinate values refer to this "
 "origin."
 
-#: ../../programming/pages.rst:164 8b9736eb33db46d486d4475a9d2ac350
+#: ../../programming/pages.rst:164 952e8ebd18a648cbb14f94b6e6f4e261
 #, fuzzy
 msgid "Abb.: Koordinatensystem"
 msgstr "Fig.: Coordinate system"
 
-#: ../../programming/pages.rst:166 f0c195c514c148588574d347abe47e14
+#: ../../programming/pages.rst:166 a0235f5de91542c587dc2237631b79f2
 #, fuzzy
 msgid ""
 "Im Projekt wird die Hilfsfunktion *getdisplay()* verwendet, in die alle GFX-"
@@ -361,12 +361,12 @@ msgstr ""
 "used interchangeably. Depending on the display type, the colors are "
 "displayed in monochrome or color."
 
-#: ../../programming/pages.rst:169 60a3f8ab848c4f7ca47ba6728c459a46
+#: ../../programming/pages.rst:169 6e5bb259b44e4cb89e1e75c304cfd33f
 #, fuzzy
 msgid "Farbraum"
 msgstr "Color space"
 
-#: ../../programming/pages.rst:171 7bf822d7f0c246febb4b28d7937f602a
+#: ../../programming/pages.rst:171 0068958ff347491b90078a1d1442eb30
 #, fuzzy
 msgid ""
 "Der Farbraum für Grafikdisplays folgt dem RGB565-Farbschema. Dabei werden 16"
@@ -393,24 +393,36 @@ msgstr ""
 "represent up to 16,777,216 colors. Those who would like to learn more about "
 "`RGB-Farbschema`_ can find further information in this description."
 
-#: ../../programming/pages.rst:178 1cec5e8d13a24e968dc7dabf2b4c2df9
+#: ../../programming/pages.rst:178 de58c0b5543540d0851d64ed38797d09
 #, fuzzy
 msgid "Abb.: RGB565-Farbschema"
 msgstr "Fig.: RGB565 color scheme"
 
-#: ../../programming/pages.rst:180 8bf42c1fa8d74ccb9fdb64623a969bc8
+#: ../../programming/pages.rst:180 07654042c5bf451bb91363becc69081f
 #, fuzzy
 msgid ""
 "Die 16 Bits des Farbschemas werden in zwei Byte aufgeteilt. Ein High-Byte "
-"und ein Low-Byte. Mit diesen beiden Bytes wird die Farbe eines Pixels "
-"definiert. In der folgenden Tabelle sind für einige Farben der HEX-Farbcode "
-"und der Farbname exemplarisch dargestellt."
+"und ein Low-Byte."
 msgstr ""
 "The 16 bits of the color scheme are divided into two bytes: a high byte and "
-"a low byte. These two bytes define the color of a pixel. The following table"
-" shows the HEX color code and color name as examples for some colors."
+"a low byte."
 
-#: ../../programming/pages.rst:194 c2d2b7291ec141948811ecb53f0646e2
+#: ../../programming/pages.rst:185 9d4f3c012d344d469851380e26703675
+#, fuzzy
+msgid "Abb.: RGB565 High- und Low-Byte"
+msgstr "Fig.: RGB565 High and Low Byte"
+
+#: ../../programming/pages.rst:187 bc8c490b738741e8a7a20bb2deb5f7ce
+#, fuzzy
+msgid ""
+"Mit diesen beiden Bytes wird die Farbe eines Pixels definiert. In der "
+"folgenden Tabelle sind für einige Farben der HEX-Farbcode und der Farbname "
+"exemplarisch dargestellt."
+msgstr ""
+"These two bytes define the color of a pixel. The following table shows "
+"examples of the HEX color code and color name for some colors."
+
+#: ../../programming/pages.rst:201 e5c075e3d25e470d9e1d6d1d1d157a8a
 #, fuzzy
 msgid ""
 "Es gibt noch deutlich mehr Farbnamen, die man in dieser `Farbtabelle`_ "
@@ -419,7 +431,7 @@ msgstr ""
 "There are many more color names, which can be found in this `Farbtabelle`_. "
 "The e-paper display has two separate color names."
 
-#: ../../programming/pages.rst:204 b25fc39e6a514fb28249e6c2311e92cf
+#: ../../programming/pages.rst:211 7e6940d24adc4897a5232723df0e6670
 #, fuzzy
 msgid ""
 "In den Anzeigeseiten wird die Farbauswahl zentral über folgende Weise "
@@ -437,47 +449,47 @@ msgstr ""
 "display). The colors are always based on black and white to ensure "
 "consistent display across different screen types."
 
-#: ../../programming/pages.rst:211 755da054ce0140849999d7058a22926e
+#: ../../programming/pages.rst:218 a40d497ccb8c438387c6b1f26369ad9f
 #, fuzzy
 msgid "Text"
 msgstr "Text"
 
-#: ../../programming/pages.rst:223 d5ce106fb573482c9c2df72b72b3c5a1
+#: ../../programming/pages.rst:230 9a120cf9b9614a2e9cbec5c2de6ea5a8
 #, fuzzy
 msgid "Abb.: Platzierung eines Schriftzeichens"
 msgstr "Fig.: Placement of a character"
 
-#: ../../programming/pages.rst:226 089e0c3e31e5437d98fd8b0bace0e824
+#: ../../programming/pages.rst:233 18a863c8a20e45fa9af63297b5f74844
 #, fuzzy
 msgid "Linie"
 msgstr "Line"
 
-#: ../../programming/pages.rst:235 9ea26508ea4549ec831afc9c360eec2b
+#: ../../programming/pages.rst:242 7f4e54f5572f47a8a4666d7d086c2514
 #, fuzzy
 msgid "Abb.: Linie"
 msgstr "Fig.: Line"
 
-#: ../../programming/pages.rst:238 d33fd99b40c64dbfaf7eab0f70678d22
+#: ../../programming/pages.rst:245 4df24bffbeaa42c0a5c06c7fbd044929
 #, fuzzy
 msgid "Viereck"
 msgstr "Square"
 
-#: ../../programming/pages.rst:248 76a8bc47161743f5b6f3be3b0b952e84
+#: ../../programming/pages.rst:255 522892dd78024499b7402911b82a64d6
 #, fuzzy
 msgid "Abb.: Vierecks"
 msgstr "Fig.: Quadrilateral"
 
-#: ../../programming/pages.rst:251 103594ef23b742fd949f1ba2bb70ae18
+#: ../../programming/pages.rst:258 91af219a60d54ba9ba9f3e92460980d4
 #, fuzzy
 msgid "Viereck gerundet"
 msgstr "Rounded square"
 
-#: ../../programming/pages.rst:261 e8258ad83e304f779d381d587d98b1fa
+#: ../../programming/pages.rst:268 9db55a855dde40a9b4a4566e896fb21e
 #, fuzzy
 msgid "Abb.: Vierecks mit runden Ecken"
 msgstr "Fig.: Quadrilateral with rounded corners"
 
-#: ../../programming/pages.rst:263 75437d0aba45454881af274f3edac6fd
+#: ../../programming/pages.rst:270 81188b6b26c545728db9ed6f120985be
 #, fuzzy
 msgid ""
 "Diese Funktion kann sehr gut zum Zeichen von Bedienknöpfen verwendet werden."
@@ -487,32 +499,32 @@ msgstr ""
 "This function is very useful for drawing control buttons. It has been used "
 "to create a further function that allows control buttons to be displayed."
 
-#: ../../programming/pages.rst:270 9f3e12d4b3104c74803e0553a54745ba
+#: ../../programming/pages.rst:277 45609adf24e1407cb03bbba87351b828
 #, fuzzy
 msgid "Dreieck"
 msgstr "Triangle"
 
-#: ../../programming/pages.rst:280 8e31d1ad569747e5997929d8139f149d
+#: ../../programming/pages.rst:287 dcdbfa97ac904f91a8d21f2bd2072696
 #, fuzzy
 msgid "Abb.: Dreiecks"
 msgstr "Fig.: Triangle"
 
-#: ../../programming/pages.rst:283 04d95bc4b8854f999c84732cd7187f87
+#: ../../programming/pages.rst:290 d8b0d9f377db4b19a8092405661ba2fd
 #, fuzzy
 msgid "Kreis"
 msgstr "Circle"
 
-#: ../../programming/pages.rst:293 9abcb5718a894f4b8afe88338614546e
+#: ../../programming/pages.rst:300 70283235ee2d4563b4c77bef93341ab5
 #, fuzzy
 msgid "Abb.: Kreises"
 msgstr "Fig.: Circle"
 
-#: ../../programming/pages.rst:296 673ce9721c904a369337d8848a5ac39f
+#: ../../programming/pages.rst:303 301fe84181b74e9891ff2791e2db7bfa
 #, fuzzy
 msgid "Bild"
 msgstr "Picture"
 
-#: ../../programming/pages.rst:298 dff05885b35140189f5bb21b3fdfd8eb
+#: ../../programming/pages.rst:305 81144f5e1e864cac874233cffc7e5e7f
 #, fuzzy
 msgid ""
 "Mit dem nachfolgenden Befehl können Bilder als 1Bit-Scharz/Weiß-Bilder "
@@ -527,7 +539,7 @@ msgstr ""
 " This makes it possible to display pure black and white images on a color "
 "display."
 
-#: ../../programming/pages.rst:300 f7ee6d7cf3d8408e895eb4a4b5201608
+#: ../../programming/pages.rst:307 a351b9b39c6d450da52dc774827885e7
 #, fuzzy
 msgid ""
 "Bevor Sie Bilder nutzen können, müssen die Bilder in eine C-compatible "
@@ -536,37 +548,37 @@ msgstr ""
 "Before you can use images, they must be converted to a C-compatible "
 "notation. This can be done with the following tools:"
 
-#: ../../programming/pages.rst:302 c46fab994e5d4a3d8f74777e7212a22f
+#: ../../programming/pages.rst:309 f8ffcd2a78d54ff09797856d504000ab
 #, fuzzy
 msgid "**Image2LCD** - 1Bit-Bild (C-Code)"
 msgstr "**Image2LCD** - 1Bit-Bild (C-Code)"
 
-#: ../../programming/pages.rst:303 da592f4824d24f48a86a306204ae8162
+#: ../../programming/pages.rst:310 5db3d78054174f6795e802e9e556b94e
 #, fuzzy
 msgid "Scan mode: Einstellung auf Horizontal"
 msgstr "Scan mode: Set to Horizontal"
 
-#: ../../programming/pages.rst:304 bc3b5bf18a1849b68911ea761bb9c611
+#: ../../programming/pages.rst:311 2038b19e43df4c9aa30f060967df962f
 #, fuzzy
 msgid "Bit order: Einstellung auf MSB first"
 msgstr "Bit order: Setting to MSB first"
 
-#: ../../programming/pages.rst:305 52b955e1fc074b43ae8a3ddd8c249d95
+#: ../../programming/pages.rst:312 d663d2c58cd34765ad159d8e320f9fca
 #, fuzzy
 msgid "**Gimp** - XBitmap-Bild (xbm-Datei)"
 msgstr "**GIMP** - XBitmap image (XBM file)"
 
-#: ../../programming/pages.rst:306 aeda61f87e1a443fadc74ee603568e3a
+#: ../../programming/pages.rst:313 a987c80f729c4a289e5d5e1692484d09
 #, fuzzy
 msgid "Scan mode: Fix horizontal"
 msgstr "Scan mode: Fix horizontal"
 
-#: ../../programming/pages.rst:307 9b02762920b940cea40d664013d6c926
+#: ../../programming/pages.rst:314 4a126fd6ad1f408eb1400779f4be9e10
 #, fuzzy
 msgid "Bit order: Fix LSB fist"
 msgstr "Bit order: Fix LSB fist"
 
-#: ../../programming/pages.rst:309 191a76a1d32a4759aae897be25bedfd2
+#: ../../programming/pages.rst:316 fca3734c07954a1da0678f3836d5590c
 #, fuzzy
 msgid ""
 "Darüber werden die Bilder als eine Array-Struktur direkt im Quellcode "
@@ -578,14 +590,14 @@ msgstr ""
 "can be accessed and displayed via a variable in the code. The C code for an "
 "icon as an XBitmap image is shown here as an example."
 
-#: ../../programming/pages.rst:318 158478342b7745f58645eb48b5f24719
+#: ../../programming/pages.rst:325 0d54981365474b68b1972bcb81322311
 #, fuzzy
 msgid ""
 "Das eigentliche Bild ist unter dem Namen (xbm_icon) als Hex-Array nutzbar."
 msgstr ""
 "The actual image can be used as a hex array under the name (xbm_icon)."
 
-#: ../../programming/pages.rst:325 e605b863a6f04e8897f7529f8b0f2eba
+#: ../../programming/pages.rst:332 ba1303e2b53d4b438c761e0f91ea7511
 #, fuzzy
 msgid ""
 "Für farbige Bilder mit 64.000 Farben nach dem RGB565-Standard kann folgende "
@@ -594,12 +606,12 @@ msgstr ""
 "The following function can be used for colored images with 64,000 colors "
 "according to the RGB565 standard."
 
-#: ../../programming/pages.rst:334 1e7f7fd14e91431c998234b4f38882c8
+#: ../../programming/pages.rst:341 05a808159fb24117a0311ce68db14361
 #, fuzzy
 msgid "Spezialfunktionen"
 msgstr "Special functions"
 
-#: ../../programming/pages.rst:336 0e63a58f75324c26bbe7167a8366a961
+#: ../../programming/pages.rst:343 b9245badc8414565bd11fa162008805b
 #, fuzzy
 msgid ""
 "Die Spezialfunktionen ermöglichen displayspezifische Aktionen, die je nach "
@@ -614,22 +626,22 @@ msgstr ""
 "``obp60task.cpp`` and in OBP60Extensions.ccp, depending on the display type "
 "used. The commands are not used in the code of a display page."
 
-#: ../../programming/pages.rst:339 846c1e8e0e7e477b95a7ad23137562dd
+#: ../../programming/pages.rst:346 3a0b9f5edbb540deabc9c38a21f1374a
 #, fuzzy
 msgid "e-Paper-Display"
 msgstr "E-Paper-Display"
 
-#: ../../programming/pages.rst:349 228a5e0f43534b69b5ce40ab3a1f1fb2
+#: ../../programming/pages.rst:356 2658337d768e46bbafc3e5f7412f3274
 #, fuzzy
 msgid "TFT-Display"
 msgstr "TFT-Display"
 
-#: ../../programming/pages.rst:360 f2c74187c47e401ba40ac04e99f03557
+#: ../../programming/pages.rst:367 c646d6d0af5342719d70a580871802a7
 #, fuzzy
 msgid "Funktionen zur Display-Aktualisierung"
 msgstr "Display update functions"
 
-#: ../../programming/pages.rst:362 bc9f97c3c1194eff9257d8f7f321b511
+#: ../../programming/pages.rst:369 a72c5bb04f054e3d9b02a5707177ac60
 #, fuzzy
 msgid ""
 "Die Funktionen *displayFirstPage()* und *displayNextPage()* steuern die "
@@ -647,7 +659,7 @@ msgstr ""
 "method is not strictly necessary. Nevertheless, the functions are retained "
 "for compatibility reasons."
 
-#: ../../programming/pages.rst:364 189a587b8fd240d1b6c76540cde1b844
+#: ../../programming/pages.rst:371 7ddd8229133d4b77ae975ca92f49e1bf
 #, fuzzy
 msgid ""
 "Die Darstellung erfolgt in zwei Schritten: Zunächst werden mittels "
@@ -665,7 +677,7 @@ msgstr ""
 "different display types and a clear separation between rendering and display"
 " updates."
 
-#: ../../programming/pages.rst:366 4574f70a2c5843c7be90b4dab14074a3
+#: ../../programming/pages.rst:373 48d7b9b4b48d4befa771e82ee2704bbd
 #, fuzzy
 msgid ""
 "Die Funktionen *displaySetFullWindow()* und *displaySetPartialWindow()* "
