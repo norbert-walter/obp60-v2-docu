@@ -89,16 +89,16 @@ In diesem `PDF-Dokument <../_static/files/adafruit-gfx-graphics-library.pdf>`_ k
 Das Koordinatensystem des Grafikdisplays ist so organisiert, dass sich in der linken oberen Ecke der Nullpunkt befindet. Alle Koordinatenangaben beziehen sich auf diesen Ursprung.
 
 .. image:: /pics/Draw_Coordinates.png
-             :scale: 80%
+             :scale: 50%
 
 Abb.: Koordinatensystem
 
-Im Projekt wird die Hilfsfunktion getdisplay() verwendet, in die alle GFX-Befehle eingebettet sind. Die nachfolgenden Beschreibungen zu den Grafikfunktionen gelten sowohl für das schwarz/weiß e-Paper-Display als auch für das Farb-TFT-Display und können gleichwertig benutzt werden. Je nach Displaytyp werden die Farben monchrom oder farbig dargestellt.  
+Im Projekt wird die Hilfsfunktion **getdisplay()** verwendet, in die alle GFX-Befehle eingebettet sind. Die nachfolgenden Beschreibungen zu den Grafikfunktionen gelten sowohl für das schwarz/weiß e-Paper-Display als auch für das Farb-TFT-Display und können gleichwertig benutzt werden. Je nach Displaytyp werden die Farben monchrom oder farbig dargestellt.  
 
 Farbraum
 --------
 
-Der Farbraum für Grafikdisplays folgt dem RGB565-Farbschema. Dabei werden 16 Bits auf die jeweiligen Farben Blau, Grün und Rot zugeordnet. Die Farbauflösung ist bei Grün um 1 Bit höher gegenüber Rot und Blau. Dadurch können Mischfarben deutlich besser abgebildet werden. Mit dem RGB565-Farbschema lassen sich 65.536 verschiedene Farben abbilden. Das RGB565-Farbschema ist ein guter Kompromiss zwischen Hardwareaufwand und Detailtiefe in der Farbwiedergabe für kleine Mikrocontroller und ist ein geläufiger Farbstandard in diesem Bereich. Auf PCs wird dagegen meist das RGB888-Farbschema verwendet mit dem bis zu 16.777.216 Farben abgebildet werden können. Wer mehr über das `RGB-Farbschema`_ wissen möchte, kann in dieser Beschreibung mehr Informationen finden.
+Der Farbraum für Grafikdisplays folgt dem RGB565-Farbschema. Dabei werden 16 Bits auf die jeweiligen Farben Blau, Grün und Rot zugeordnet. Die Farbauflösung ist bei Grün um 1 Bit höher gegenüber Rot und Blau. Dadurch können Mischfarben trotz geringer Bitanzahl deutlich besser abgebildet werden. Mit dem RGB565-Farbschema lassen sich 65.536 verschiedene Farben abbilden. Das RGB565-Farbschema ist für kleine Mikrocontroller ein guter Kompromiss zwischen Hardwareaufwand und Detailtiefe in der Farbwiedergabe und ist der meist verwendete Farbstandard in diesem Bereich. Auf PCs wird dagegen meist das RGB888-Farbschema verwendet mit dem bis zu 16.777.216 Farben abgebildet werden können. Wer mehr über das `RGB-Farbschema`_ wissen möchte, kann in dieser Beschreibung weitere Informationen finden.
 
 .. _RGB-Farbschema: https://barth-dev.de/online/rgb565-color-picker/
 
@@ -121,11 +121,9 @@ Die 16 Bits des Farbschemas werden in zwei Byte aufgeteilt. Ein High-Byte und ei
 	#define YELLOW 0xFFE0
 	#define WHITE 0xFFFF
 	
-Es gibt noch deutlich mehr Farbnamen, die man in dieser `Farbtabelle`_ nachlesen kann.
+Es gibt noch deutlich mehr Farbnamen, die man in dieser `Farbtabelle`_ nachlesen kann. Für das E-Paper-Display gibt es zwei eigene Farbnamen. 
 
 .. _Farbtabelle: https://github.com/newdigate/rgb565_colors
-
-Für das E-Paper-Display gibt es zwei eigene Farbnamen. 
 
 .. code-block:: c++
 
@@ -135,7 +133,9 @@ Für das E-Paper-Display gibt es zwei eigene Farbnamen.
 	
 In den Anzeigeseiten wird die Farbauswahl zentral über folgende Weise gesteuert. In **commonData** sind die aktuellen Farben hinterlegt, die im Display verwendet werden sollen. **fgcolor** und **bgcolor** definieren dabei die Vordergrund- und Hintergrundfarbe, die man zentral in der Webkonfiguration ausgewählen kann (normale oder inverse Darstellung). Die Farben beziehen sich dabei immer auf Schwarz und Weiß, damit sie in verschiedenen Displaytypen einheitlich angezeigt werden können.
 
-getdisplay().setTextColor(commonData->fgcolor);
+.. code-block:: c++
+
+	getdisplay().setTextColor(commonData->fgcolor);
 
 Text
 ----
