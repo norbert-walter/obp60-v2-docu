@@ -177,7 +177,14 @@ Der Farbraum für Grafikdisplays folgt dem RGB565-Farbschema. Dabei werden 16 Bi
 
 Abb.: RGB565-Farbschema
 
-Die 16 Bits des Farbschemas werden in zwei Byte aufgeteilt. Ein High-Byte und ein Low-Byte. Mit diesen beiden Bytes wird die Farbe eines Pixels definiert. In der folgenden Tabelle sind für einige Farben der HEX-Farbcode und der Farbname exemplarisch dargestellt.
+Die 16 Bits des Farbschemas werden in zwei Byte aufgeteilt. Ein High-Byte und ein Low-Byte.
+
+.. image:: /pics/RGB565_MSB_LSB.png
+             :scale: 80%
+			 
+Abb.: RGB565 High- und Low-Byte			 
+
+Mit diesen beiden Bytes wird die Farbe eines Pixels definiert. In der folgenden Tabelle sind für einige Farben der HEX-Farbcode und der Farbname exemplarisch dargestellt.
 
 .. code-block:: c++
 
