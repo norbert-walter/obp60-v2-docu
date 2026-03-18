@@ -77,6 +77,73 @@ Zur Darstellung der Werte wird typischerweise eine Schriftart aus der Familie DS
 
 Falls auf einer Seite eine andere Schriftart zur Darstellung verwendet werden soll, muss die Formatierung auf der Seite selbst aus dem Zahlenwert erfolgen, um die Ausgabe von Ausrufezeichen zu verhindern.
 
+Konfigurationswerte
+===================
+
+Manchmal ist es notwendig über die Web-Konfigurationsoberfläche Konfigurationen für bestimmte Einstellwerte vorzunehmen. Dabei wird Variablen ein Wert zum Startzeitpunkt der Software zugewiesen, den der User über die Konfigurationsoberfläche nachträglich ändern kann. Die Konfigurationswerte werden in einer JSON-Konfigurationsdatei mit dem Namen *config_obp60.json* definiert. Ein typischer Eintrag für einen Konfigurationswert sieht so aus:
+
+.. code-block:: json
+
+	{
+	  "name": "waterTank",
+	  "label": "Water Tank [l]",
+	  "type": "number",
+	  "default": "0",
+	  "check": "checkMinMax",
+	  "min": 0,
+	  "max": 5000,
+	  "description": "Water tank capacity [0...5000l]",
+	  "category": "OBP60 Settings",
+	  "capabilities": {
+		"obp60":"true"
+	  }
+	},
+
+.. code-block:: json
+
+	{
+        "name": "batteryVoltage",
+        "label": "Battery Voltage [V]",
+        "type": "list",
+        "default": "12V",
+        "description": "Battery Voltage [12V|24V]",
+        "list": [
+            "12V",
+            "24V"
+        ],
+        "category": "OBP60 Settings",
+        "capabilities": {
+            "obp60":"true"
+        },
+		 "condition": [
+            { "battery": ["available"] }
+        ]
+    },
+	
+Die Datei *config_obp60.json* enthält eine Vielzahl von Konfigurationswerten. Die Bedeutung der Werte ist nachfolgend beschrieben.
+
+    * **name**: Varianblenname im Programm (Kleinschreibung, max. 12 Zeichen)
+    * **label**: Variablenname in der Web-Konfigurationsoberfläche	
+    * **type**: Typ der Variable
+		* **number**: Zahlenwert
+		* **string**: Textwert
+		* **list**: Liste von Auswahlwerten
+		
+    * **default**: Defaultwert der Variable	
+    * **check**: Prüfanweisung
+		* **checkMinMax**: Variablenwert auf Min, Max prüfen und ggf. begrenzen
+		
+	* **min**: Min-Wert
+    * **max**: Max-Wert
+    * **description**: Beschreibungstext (die Kombination *\n* erzeugt eine Zeilenumbruch)
+    * **category**: Kategorie in der vertikalen Menüstruktur (wird automatisch angelegt, wenn nicht vorhanden)
+    * **capabilities**: Anzeigemöglichkeit für unterschiedliche Hardwareversionen
+		* **"obp60":"true"**: Nur anzeigen, wenn Capabilitie für obp60 in Datei obp60task.h definiert ist
+		
+	* **condition**: Anzeigebedingung (UND-Verknüpft bei mehreren Einträgen)
+		* **"battery": ["available"]: Nur anzeigen, wenn Variable *batery* den Wert *available* hat
+	
+
 Darstellung grafischer Inhalte
 ==============================
 
@@ -301,68 +368,3 @@ Die Funktionen *displaySetFullWindow()* und *displaySetPartialWindow()* werden a
 	displayNextPage();      // Show next display content
 	displaySetFullWindow(); // Full display refresh for e-paper display 
 	displaySetPartialWindow(x, y, width, height); // Partial display refresh for e-paper display
-
-Konfigurationswerte
--------------------
-
-Manchmal ist es notwendig über die Web-Konfigurationsoberfläche Konfigurationen für bestimmte Einstellwerte vorzunehmen. Dabei wird Variablen ein Wert zum Startzeitpunkt der Software zugewiesen, den der User über die Konfigurationsoberfläche nachträglich ändern kann. Die Konfigurationswerte werden in einer JSON-Konfigurationsdatei mit dem Namen *config_obp60.json* definiert. Ein typischer Eintrag für einen Konfigurationswert sieht so aus:
-
-.. code-block:: json
-
-	{
-	  "name": "waterTank",
-	  "label": "Water Tank [l]",
-	  "type": "number",
-	  "default": "0",
-	  "check": "checkMinMax",
-	  "min": 0,
-	  "max": 5000,
-	  "description": "Water tank capacity [0...5000l]",
-	  "category": "OBP60 Settings",
-	  "capabilities": {
-		"obp60":"true"
-	  }
-	},
-
-.. code-block:: json
-
-	{
-        "name": "batteryVoltage",
-        "label": "Battery Voltage [V]",
-        "type": "list",
-        "default": "12V",
-        "description": "Battery Voltage [12V|24V]",
-        "list": [
-            "12V",
-            "24V"
-        ],
-        "category": "OBP60 Settings",
-        "capabilities": {
-            "obp60":"true"
-        },
-		 "condition": [
-            { "battery": ["available"] }
-        ]
-    },
-	
-Die Datei *config_obp60.json* enthält eine Vielzahl von Konfigurationswerten. Die Bedeutung der Werte ist nachfolgend beschrieben.
-
-    * **name**: Varianblenname im Programm (Kleinschreibung, max. 12 Zeichen)
-    * **label**: Variablenname in der Web-Konfigurationsoberfläche
-    * **type**: Typ der Variable
-		* **number**: Zahlenwert
-		* **string**: Textwert
-		* **list**: Liste von Auswahlqwerten
-    * **default**: Defaultwert der Variable
-    * **check**: Prüfanweisung
-		* **checkMinMax**: Variablenwert auf Min, Max prüfen und ggf. begrenzen
-	* **min**: Min-Wert
-    * **max**: Max-Wert
-    * **description**: Beschreibungstext (die Kombination *\n* erzeugt eine Zeilenumbruch)
-    * **category**: Kategorie in der vertikalen Menüstruktur (wird automatisch angelegt, wenn nicht vorhanden)
-    * **capabilities**: Anzeigemöglichkeit für unterschiedliche Hardwareversionen
-		* **"obp60":"true"**: Nur anzeigen, wenn Capabilitie für obp60 in Datei obp60task.h definiert ist
-	* **condition**: Anzeigebedingung (UND-Verknüpft bei mehreren Einträgen)
-		* **"battery": ["available"]: Nur anzeigen, wenn Variable *batery* den Wert *available* hat
-	
-	
