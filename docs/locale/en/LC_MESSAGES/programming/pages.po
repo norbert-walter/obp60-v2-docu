@@ -9,243 +9,242 @@ msgid ""
 msgstr ""
 "Project-Id-Version: OBP60 V2 Dokumentation\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-18 14:39+0000\n"
+"POT-Creation-Date: 2026-03-18 14:46+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: en\n"
 "Language-Team: en <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Generated-By: Babel 2.18.0\n"
 
-#: ../../programming/pages.rst:2 e5295785e3644d09ae02a05a60075725
+#: ../../programming/pages.rst:2 2657c12caa1b448c8e4435fb668e6f47
 #, fuzzy
 msgid "Seitenerstellung"
 msgstr "Page creation"
 
-#: ../../programming/pages.rst:4 f18fb5cd97984c86b3a686d18d91b894
+#: ../../programming/pages.rst:4 5aca3a96b40e49af9610881a6c97ceb0
 #, fuzzy
 msgid "Um eine neue Seite zu erstellen sind folgende Schritte notwendig:"
 msgstr "To create a new page, the following steps are necessary:"
 
-#: ../../programming/pages.rst:6 313625cc1688415a9788b1583560fe46
+#: ../../programming/pages.rst:6 6517b2efbce54503a2d6ad92fac8059d
 #, fuzzy
 msgid "Anlegen einer neuen Seite unter ``lib\\obp60task\\PageXXXX.cpp``"
 msgstr "Creating a new page under ``lib\\obp60task\\PageXXXX.cpp``"
 
-#: ../../programming/pages.rst:7 c55e233a555f4b1584c22346832f559e
+#: ../../programming/pages.rst:7 174fd96e06454751bf5a2a1b781ae31d
 #, fuzzy
 msgid ""
 "Registrierung der Seite in ``lib\\obp60task\\obp60task.cpp``. Dazu die "
 "Funktion ``registerAllPages`` entsprechend erweitern"
 msgstr ""
-"Register the page in [``lib\\obp60task\\obp60task.cpp``. Extend the "
-"function ``registerAllPages`` accordingly."
+"Register the page in [``lib\\obp60task\\obp60task.cpp``. Extend the function"
+" ``registerAllPages`` accordingly."
 
-#: ../../programming/pages.rst:8 41bae2908cf445469e7edb72d5247c7a
+#: ../../programming/pages.rst:8 d9f70ae4dbd24108981edb70fea071ed
 #, fuzzy
 msgid ""
 "In ``/lib/obp60task/config.json`` die neue Seite in die jeweiligen "
-"Seitenlisten aufnehmen oder Seite in ``/lib/obp60task/gen_set.py`` "
-"aufnehmen und damit den relevanten Teil der Datei "
-"``/lib/obp60task/config.json`` neu erzeugen."
+"Seitenlisten aufnehmen oder Seite in ``/lib/obp60task/gen_set.py`` aufnehmen"
+" und damit den relevanten Teil der Datei ``/lib/obp60task/config.json`` neu "
+"erzeugen."
 msgstr ""
-"In ``/lib/obp60task/config.json``, add the new page to the respective "
-"page lists or add the page to ``/lib/obp60task/gen_set.py`` and thus "
-"recreate the relevant part of the file ``/lib/obp60task/config.json``."
+"In ``/lib/obp60task/config.json``, add the new page to the respective page "
+"lists or add the page to ``/lib/obp60task/gen_set.py`` and thus recreate the"
+" relevant part of the file ``/lib/obp60task/config.json``."
 
-#: ../../programming/pages.rst:10 176f841f1a3443c5b3694eb4af2137d9
+#: ../../programming/pages.rst:10 b21ebf5310d643f4a42c0e935dc4ad11
 #, fuzzy
 msgid ""
 "Als Vorlage für eine neue Seite kann z.B. die vorhandene Seite "
-"*PageDigitalOut.cpp* verwendet werden. Sie enthält nur minimalen Code und"
-" zeigt die typische Verwendung der Grafik- und Anzeigefunktionen. In der "
+"*PageDigitalOut.cpp* verwendet werden. Sie enthält nur minimalen Code und "
+"zeigt die typische Verwendung der Grafik- und Anzeigefunktionen. In der "
 "kopierten Seite sind dann lediglich alle Texte *PageDigitalOut* durch "
-"*PageMySample* zu ersetzen und die Datei unter dem Namen PageMySample.cpp"
-" abzuspeichern. Alle erstellten Seiten müssen dem Schema *PageXXXX.cpp* "
+"*PageMySample* zu ersetzen und die Datei unter dem Namen PageMySample.cpp "
+"abzuspeichern. Alle erstellten Seiten müssen dem Schema *PageXXXX.cpp* "
 "folgen."
 msgstr ""
-"The existing page *PageDigitalOut.cpp* can be used as a template for a "
-"new page. It contains minimal code and demonstrates the typical use of "
-"the graphics and display functions. In the copied page, simply replace "
-"all text from *PageDigitalOut* with *PageMySample* and save the file as "
+"The existing page *PageDigitalOut.cpp* can be used as a template for a new "
+"page. It contains minimal code and demonstrates the typical use of the "
+"graphics and display functions. In the copied page, simply replace all text "
+"from *PageDigitalOut* with *PageMySample* and save the file as "
 "PageMySample.cpp. All created pages must follow the naming convention "
 "*PageXXXX.cpp*."
 
-#: ../../programming/pages.rst:13 9945e1b65cd343da96b53f0a36dbfafa
+#: ../../programming/pages.rst:13 414559939e2449bf8789fe548b1461f2
 #, fuzzy
 msgid "Zugriff auf Daten"
 msgstr "Access to data"
 
-#: ../../programming/pages.rst:15 bf0ffaf3b7a24a46978aa4f0c1b4bc8c
+#: ../../programming/pages.rst:15 cfc995500a454b9f8e99951d1d3d1fb5
 #, fuzzy
 msgid ""
-"Für manche Seiten ist im Quellcode fest vorgegeben, welche Werte "
-"verwendet werden:"
+"Für manche Seiten ist im Quellcode fest vorgegeben, welche Werte verwendet "
+"werden:"
 msgstr "For some pages, the source code specifies which values to use:"
 
-#: ../../programming/pages.rst:26 840cb03a406848eea36b48f91e69acfb
+#: ../../programming/pages.rst:26 20cbcb47dffe4c1fae3bc074db95920f
 #, fuzzy
 msgid ""
-"Alternativ könenen in der Page Description sowohl feste als auch über die"
-" Web-Oberfläche konfigurierbare Werte angegeben werden. Diese stehen "
-"innerhalb der Seite als ``pageData.values[i]`` zur Verfügung, wobei die "
-"Web-konfigurierbaren Werte vor den fest konfigurierten Werten stehen."
+"Alternativ könenen in der Page Description sowohl feste als auch über die "
+"Web-Oberfläche konfigurierbare Werte angegeben werden. Diese stehen "
+"innerhalb der Seite als ``pageData.values[i]`` zur Verfügung, wobei die Web-"
+"konfigurierbaren Werte vor den fest konfigurierten Werten stehen."
 msgstr ""
 "Alternatively, both fixed values and values configurable via the web "
 "interface can be specified in the page description. These are available "
-"within the page as ``pageData.values[i]``, with the web-configurable "
-"values appearing before the fixed values."
+"within the page as ``pageData.values[i]``, with the web-configurable values "
+"appearing before the fixed values."
 
-#: ../../programming/pages.rst:47 91d5487a367a46bda0d3f267c52a894f
+#: ../../programming/pages.rst:47 737aec34fcb5413491d16563ed555de2
 #, fuzzy
 msgid "Darstellung von Daten"
 msgstr "Data presentation"
 
-#: ../../programming/pages.rst:49 b7d225e6a2cb4620889b5cc61e847aa1
+#: ../../programming/pages.rst:49 7d9bd093f20149c3b007f7a2d919021c
 #, fuzzy
 msgid ""
 "Wie die Zeichenketten aus den Rohdaten erzeugt werden, ist in "
-"``OPB60Foramtter.cpp`` festgelegt, wo auch die Umrechungen in "
-"verschiedene Einheiten hinterlegt sind. Folgendermaßen kann zunächst eine"
-" eventuell vorhandene Kalibrierung auf den Wert angewendet werden und "
-"dann eine Zeichenkette in der gewählten Einheiten und nach den "
-"ausgewähten Formatierungsvorgaben erzeugt werden:"
+"``OPB60Foramtter.cpp`` festgelegt, wo auch die Umrechungen in verschiedene "
+"Einheiten hinterlegt sind. Folgendermaßen kann zunächst eine eventuell "
+"vorhandene Kalibrierung auf den Wert angewendet werden und dann eine "
+"Zeichenkette in der gewählten Einheiten und nach den ausgewähten "
+"Formatierungsvorgaben erzeugt werden:"
 msgstr ""
 "How the strings are generated from the raw data is defined in "
-"``OPB60Foramtter.cpp``, which also specifies the conversions to different"
-" units. As follows, any existing calibration can first be applied to the "
+"``OPB60Foramtter.cpp``, which also specifies the conversions to different "
+"units. As follows, any existing calibration can first be applied to the "
 "value, and then a string can be generated in the selected units and "
 "according to the chosen formatting specifications:"
 
-#: ../../programming/pages.rst:60 636d72cab8074f6fa6de4a5814c2e4af
+#: ../../programming/pages.rst:60 18829f12040a43d398ba02b126d55b77
 #, fuzzy
 msgid ""
 "Zur Darstellung der Werte wird typischerweise eine Schriftart aus der "
-"Familie DSEG7 verwendet. Eine Besonderheit dieser Schriftart ist die "
-"Breite der Zeichen. Leerzeichen, Punkt und Doppelpunkt sind sehr viel "
-"schmaler als die Ziffern. Für eine Ziffer, bei der keins der 7 Segmente "
-"angezeigt wird, wird das Zeichen ``!`` verwendet. So lassen sich auch "
-"Abstände erzeugen, die genau so breit sind wie eine Ziffer. Daher wird in"
-" OBB60Formatter bei einer Darstellung, die 2 Ziffern verwendet (d.h. bei "
-"einer Nachkommastelle für Zahlen unter 10 und 2 Ziffern ohne "
-"Nachkommastelle für Zahlen zwischen 10 und 99) folgendermaßen die Zahl "
-"rechtsbündig ausgerichtet:"
+"Familie DSEG7 verwendet. Eine Besonderheit dieser Schriftart ist die Breite "
+"der Zeichen. Leerzeichen, Punkt und Doppelpunkt sind sehr viel schmaler als "
+"die Ziffern. Für eine Ziffer, bei der keins der 7 Segmente angezeigt wird, "
+"wird das Zeichen ``!`` verwendet. So lassen sich auch Abstände erzeugen, die"
+" genau so breit sind wie eine Ziffer. Daher wird in OBB60Formatter bei einer"
+" Darstellung, die 2 Ziffern verwendet (d.h. bei einer Nachkommastelle für "
+"Zahlen unter 10 und 2 Ziffern ohne Nachkommastelle für Zahlen zwischen 10 "
+"und 99) folgendermaßen die Zahl rechtsbündig ausgerichtet:"
 msgstr ""
 "A font from the DSEG7 family is typically used to display the values. A "
 "special feature of this font is the width of its characters. Spaces, "
 "periods, and colons are much narrower than the digits. For a digit where "
-"none of the seven segments are displayed, the character ``!`` is used. "
-"This allows for the creation of spaces that are exactly as wide as a "
-"digit. Therefore, in OBB60Formatter, when displaying values with two "
-"digits (i.e., one decimal place for numbers under 10 and two digits "
-"without a decimal place for numbers between 10 and 99), the number is "
-"right-aligned as follows:"
+"none of the seven segments are displayed, the character ``!`` is used. This "
+"allows for the creation of spaces that are exactly as wide as a digit. "
+"Therefore, in OBB60Formatter, when displaying values with two digits (i.e., "
+"one decimal place for numbers under 10 and two digits without a decimal "
+"place for numbers between 10 and 99), the number is right-aligned as "
+"follows:"
 
-#: ../../programming/pages.rst:78 3c34bef689c444d3bbcd292a86239894
+#: ../../programming/pages.rst:78 5cb40daebc054e65b0a2ecea9535e13f
 #, fuzzy
 msgid ""
 "Falls auf einer Seite eine andere Schriftart zur Darstellung verwendet "
-"werden soll, muss die Formatierung auf der Seite selbst aus dem "
-"Zahlenwert erfolgen, um die Ausgabe von Ausrufezeichen zu verhindern."
+"werden soll, muss die Formatierung auf der Seite selbst aus dem Zahlenwert "
+"erfolgen, um die Ausgabe von Ausrufezeichen zu verhindern."
 msgstr ""
-"If a different font is to be used for display on a page, the formatting "
-"on the page itself must be based on the numerical value to prevent the "
-"output of exclamation marks."
+"If a different font is to be used for display on a page, the formatting on "
+"the page itself must be based on the numerical value to prevent the output "
+"of exclamation marks."
 
-#: ../../programming/pages.rst:81 888e2ec6b7054ea9afac79907995ebc6
+#: ../../programming/pages.rst:81 6bb0845a0f9f445b881b6ae78b8ad5b5
 #, fuzzy
 msgid "Konfigurationswerte"
 msgstr "Configuration values"
 
-#: ../../programming/pages.rst:83 4c1aecfaff9b471aa34a052f114da8cb
+#: ../../programming/pages.rst:83 761ef32fe5b34f08b57e57c17f636e27
 #, fuzzy
 msgid ""
 "Manchmal ist es notwendig über die Web-Konfigurationsoberfläche "
 "Konfigurationen für bestimmte Einstellwerte vorzunehmen. Dabei wird "
-"Variablen ein Wert zum Startzeitpunkt der Software zugewiesen, den der "
-"User über die Konfigurationsoberfläche nachträglich ändern kann. Die "
-"Konfigurationswerte werden in einer JSON-Konfigurationsdatei mit dem "
-"Namen *config_obp60.json* definiert. Ein typischer Eintrag für einen "
+"Variablen ein Wert zum Startzeitpunkt der Software zugewiesen, den der User "
+"über die Konfigurationsoberfläche nachträglich ändern kann. Die "
+"Konfigurationswerte werden in einer JSON-Konfigurationsdatei mit dem Namen "
+"*config_obp60.json* definiert. Ein typischer Eintrag für einen "
 "Konfigurationswert sieht so aus:"
 msgstr ""
 "Sometimes it's necessary to configure certain settings via the web "
-"interface. Variables are assigned a value at the software's startup time,"
-" which the user can then modify via the interface. These configuration "
-"values are defined in a JSON configuration file named "
-"*config_obp60.json*. A typical entry for a configuration value looks like"
-" this:"
+"interface. Variables are assigned a value at the software's startup time, "
+"which the user can then modify via the interface. These configuration values"
+" are defined in a JSON configuration file named *config_obp60.json*. A "
+"typical entry for a configuration value looks like this:"
 
-#: ../../programming/pages.rst:123 09547a60a9114e2bab3b73cda30a1845
+#: ../../programming/pages.rst:123 b76e92412ce544d1a5e668f83db1bb04
 #, fuzzy
 msgid ""
 "Die Datei *config_obp60.json* enthält eine Vielzahl von "
-"Konfigurationswerten. Die Bedeutung der Werte ist nachfolgend "
-"beschrieben."
+"Konfigurationswerten. Die Bedeutung der Werte ist nachfolgend beschrieben."
 msgstr ""
-"The file *config_obp60.json* contains a variety of configuration values. "
-"The meaning of these values is described below."
+"The file *config_obp60.json* contains a variety of configuration values. The"
+" meaning of these values is described below."
 
-#: ../../programming/pages.rst:125 77a19416751b40d183799aecb05eae25
+#: ../../programming/pages.rst:125 3d8a2c9d6b154e4f8ab9d25493ca500c
 #, fuzzy
-msgid "**name**: Varianblenname im Programm (Kleinschreibung, max. 12 Zeichen)"
-msgstr "**Name**: Variable name in the program (lowercase, max. 12 characters)"
+msgid ""
+"**name**: Varianblenname im Programm (Kleinschreibung, max. 12 Zeichen)"
+msgstr ""
+"**Name**: Variable name in the program (lowercase, max. 12 characters)"
 
-#: ../../programming/pages.rst:126 2c48952552de4b788ad910f2ec4eab87
+#: ../../programming/pages.rst:126 24ca478ffd5b4f499832d73047ba2990
 #, fuzzy
 msgid "**label**: Variablenname in der Web-Konfigurationsoberfläche"
 msgstr "**Label**: Variable name in the web configuration interface"
 
-#: ../../programming/pages.rst:127 983bf1bf11484f8e8f568c9410c4d59b
+#: ../../programming/pages.rst:128 e2c2cbc626954048b00ffd7b09e05923
 #, fuzzy
 msgid "**type**: Typ der Variable"
 msgstr "**Type**: Type of variable"
 
-#: ../../programming/pages.rst:128 794eb6ee00a543d0995ef093070a7fc0
+#: ../../programming/pages.rst:129 d4d48de17a1749d2806355ef5a0a72aa
 #, fuzzy
 msgid "**number**: Zahlenwert"
 msgstr "**Number**: Numerical value"
 
-#: ../../programming/pages.rst:129 6f0dbb34921a4af2b62faae8ba1381aa
+#: ../../programming/pages.rst:130 6d45c6eb26904cc9b72bb9975735418c
 #, fuzzy
 msgid "**string**: Textwert"
 msgstr "**String**: Text value"
 
-#: ../../programming/pages.rst:130 c1dd991766d5428fa2889ec7d1af7d11
+#: ../../programming/pages.rst:131 d0635470252a418d91f60e35d2c24891
 #, fuzzy
 msgid "**list**: Liste von Auswahlwerten"
 msgstr "**List**: List of selection values"
 
-#: ../../programming/pages.rst:132 ed2604172ebe42c18d79a77f9c640027
+#: ../../programming/pages.rst:133 47f17f9055934f879e59f50ce362b1cc
 #, fuzzy
 msgid "**default**: Defaultwert der Variable"
 msgstr "**Default**: Default value of the variable"
 
-#: ../../programming/pages.rst:133 a9de27442fc84e4197ae3d09ddd3cf27
+#: ../../programming/pages.rst:135 80eb40ed365f451d9f642546f23cb62d
 #, fuzzy
 msgid "**check**: Prüfanweisung"
 msgstr "**Check**: Test instructions"
 
-#: ../../programming/pages.rst:134 54f85d3a22f04116978bd21d287a1b89
+#: ../../programming/pages.rst:136 097c0f235b634618a59d0c003f6c9263
 #, fuzzy
 msgid "**checkMinMax**: Variablenwert auf Min, Max prüfen und ggf. begrenzen"
 msgstr ""
-"**CheckMinMax**: Check variable values for minimum and maximum values and"
-" limit them if necessary."
+"**CheckMinMax**: Check variable values for minimum and maximum values and "
+"limit them if necessary."
 
-#: ../../programming/pages.rst:136 a3a80dc899954000a7f350eddbca23b0
+#: ../../programming/pages.rst:138 eed90171957d48c09e7874ee7998ee73
 #, fuzzy
 msgid "**min**: Min-Wert"
 msgstr "**Min**: Minimum value"
 
-#: ../../programming/pages.rst:137 4de090c6918644fe945910fbb0433d21
+#: ../../programming/pages.rst:139 561e1976a87e48859554dd9b49bf398e
 #, fuzzy
 msgid "**max**: Max-Wert"
 msgstr "**Max**: Max-Wert"
 
-#: ../../programming/pages.rst:138 beb94dd212924879901396e8ab50fa9a
+#: ../../programming/pages.rst:140 ddbd148fe7594cba9643e0661b3d76bb
 #, fuzzy
 msgid ""
 "**description**: Beschreibungstext (die Kombination *\\n* erzeugt eine "
@@ -254,73 +253,72 @@ msgstr ""
 "**Description**: Description text (the combination *\\n* creates a line "
 "break)"
 
-#: ../../programming/pages.rst:139 d68a9337dcba478986a4b60791b67eaf
+#: ../../programming/pages.rst:141 9ddda6683f164c69a67ba2b364432243
 #, fuzzy
 msgid ""
 "**category**: Kategorie in der vertikalen Menüstruktur (wird automatisch "
 "angelegt, wenn nicht vorhanden)"
 msgstr ""
-"**Category**: Category in the vertical menu structure (created "
-"automatically if not already present)"
+"**Category**: Category in the vertical menu structure (created automatically"
+" if not already present)"
 
-#: ../../programming/pages.rst:140 3e5c4e19018248b3aff5650bc1572eea
+#: ../../programming/pages.rst:143 09e8ce98f443493983de90f2c416a9b3
 #, fuzzy
 msgid ""
-"**capabilities**: Anzeigemöglichkeit für unterschiedliche "
-"Hardwareversionen"
+"**capabilities**: Anzeigemöglichkeit für unterschiedliche Hardwareversionen"
 msgstr "**Capabilities**: Display option for different hardware versions"
 
-#: ../../programming/pages.rst:141 c2404ccc1c904b64829d6822493d687d
+#: ../../programming/pages.rst:144 5e88e8fe385642b2aab565ec39cd2e08
 #, fuzzy
 msgid ""
-"**\"obp60\":\"true\"**: Nur anzeigen, wenn Capabilitie für obp60 in Datei"
-" obp60task.h definiert ist"
+"**\"obp60\":\"true\"**: Nur anzeigen, wenn Capabilitie für obp60 in Datei "
+"*obp60task.h* definiert ist"
 msgstr ""
-"**\"Obp60\":\"true\"**: Only display if capability for obp60 is defined "
-"in file obp60task.h"
+"**\"Obp60\":\"true\"**: Only display if capability for obp60 is defined in "
+"file *obp60task.h*."
 
-#: ../../programming/pages.rst:143 829a1224a4d84333973ed91a6cf4b6fa
+#: ../../programming/pages.rst:146 689b7dcadca64f728cdeaf3a212d142c
 #, fuzzy
 msgid "**condition**: Anzeigebedingung (UND-Verknüpft bei mehreren Einträgen)"
 msgstr "**Condition**: Display condition (AND-linked for multiple entries)"
 
-#: ../../programming/pages.rst:144 7e184cb991454a87b39122fd646f2629
+#: ../../programming/pages.rst:147 d87617cdd6e84a9e8fbcc4676e198e9f
 #, fuzzy
 msgid ""
-"**\"battery\": [\"available\"]: Nur anzeigen, wenn Variable *batery* den "
+"**\"battery\": [\"available\"]**: Nur anzeigen, wenn Variable *batery* den "
 "Wert *available* hat"
 msgstr ""
-"**\"Battery\": [\"available\"]: Only display if variable *batery* has the"
-" value *available*"
+"**\"Battery\": [\"available\"]**: Only display if variable *batery* has the "
+"value *available*"
 
-#: ../../programming/pages.rst:148 5d2788220e0049afb2187835a8086db0
+#: ../../programming/pages.rst:151 5449960da58e4ec888e4fd6922783a1e
 #, fuzzy
 msgid "Darstellung grafischer Inhalte"
 msgstr "Display of graphical content"
 
-#: ../../programming/pages.rst:150 31be67a9142f4e19b8eaa99c1f2839a7
+#: ../../programming/pages.rst:153 8db35a2ac7524634ad2cc629ab9fce9f
 #, fuzzy
 msgid ""
-"Auf dem Display lassen sich sowohl textbasierte als auch grafische "
-"Elemente platzieren. Die Grundlage für diese Operationen wird durch die "
-"GFX-Grafik-Lib bereitgestellt. Die Bibliothek wurde von Adafruit "
-"initiiert, um verschiedenste Grafikdisplays mit einem einheitlichen "
-"Befehlssatz ansprechen zu können. Viele Treiber-Hersteller für Displays "
-"orientieren sich an der Lib und haben eigene Adaptionen vorgenommen, die "
-"in weiten Teilen mit dem Befehlssatz identisch sind. Für das e-Paper-"
-"Display gibt es aber einige Einschränkungen und es stehen nicht alle "
-"Befehle der Adafruit-GFX-Lib zur Verfügung."
+"Auf dem Display lassen sich sowohl textbasierte als auch grafische Elemente "
+"platzieren. Die Grundlage für diese Operationen wird durch die GFX-Grafik-"
+"Lib bereitgestellt. Die Bibliothek wurde von Adafruit initiiert, um "
+"verschiedenste Grafikdisplays mit einem einheitlichen Befehlssatz ansprechen"
+" zu können. Viele Treiber-Hersteller für Displays orientieren sich an der "
+"Lib und haben eigene Adaptionen vorgenommen, die in weiten Teilen mit dem "
+"Befehlssatz identisch sind. Für das e-Paper-Display gibt es aber einige "
+"Einschränkungen und es stehen nicht alle Befehle der Adafruit-GFX-Lib zur "
+"Verfügung."
 msgstr ""
 "Both text-based and graphical elements can be placed on the display. The "
 "foundation for these operations is provided by the GFX graphics library. "
-"This library was initiated by Adafruit to enable a uniform command set "
-"for addressing a wide variety of graphics displays. Many display driver "
+"This library was initiated by Adafruit to enable a uniform command set for "
+"addressing a wide variety of graphics displays. Many display driver "
 "manufacturers base their designs on this library and have made their own "
-"adaptations, which are largely identical to the command set. However, "
-"there are some limitations for the e-paper display, and not all commands "
-"of the Adafruit GFX library are available."
+"adaptations, which are largely identical to the command set. However, there "
+"are some limitations for the e-paper display, and not all commands of the "
+"Adafruit GFX library are available."
 
-#: ../../programming/pages.rst:152 b50c1e01a36345b9893daafe47155385
+#: ../../programming/pages.rst:155 a3a42174c0c640b58618f5aa01c92b43
 #, fuzzy
 msgid ""
 "In diesem `PDF-Dokument <../_static/files/adafruit-gfx-graphics-"
@@ -328,215 +326,208 @@ msgid ""
 "eingesehen werden. Darüber hinausgehend können Sie den kompletten "
 "Funktionsumfang der Lib als `Klassen Referenz`_ hier online abrufen."
 msgstr ""
-"This `PDF-Dokument <../_static/files/adafruit-gfx-graphics-library.pdf>`_"
-" contains the basic commands of the Adafruit GFX library. You can also "
-"access the complete functionality of the library online here `Klassen "
-"Referenz`_."
+"This `PDF-Dokument <../_static/files/adafruit-gfx-graphics-library.pdf>`_ "
+"contains the basic commands of the Adafruit GFX library. You can also access"
+" the complete functionality of the library online here `Klassen Referenz`_."
 
-#: ../../programming/pages.rst:156 6a6dbbcc0ef144a0985bbe7b678c68f1
+#: ../../programming/pages.rst:159 b9f5dec4d2464f34ade982e8f24d6459
 #, fuzzy
 msgid ""
-"Das Koordinatensystem des Grafikdisplays ist so organisiert, dass sich in"
-" der linken oberen Ecke der Nullpunkt befindet. Alle Koordinatenangaben "
+"Das Koordinatensystem des Grafikdisplays ist so organisiert, dass sich in "
+"der linken oberen Ecke der Nullpunkt befindet. Alle Koordinatenangaben "
 "beziehen sich auf diesen Ursprung."
 msgstr ""
-"The coordinate system of the graphic display is organized so that the "
-"origin is located in the upper left corner. All coordinate values refer "
-"to this origin."
+"The coordinate system of the graphic display is organized so that the origin"
+" is located in the upper left corner. All coordinate values refer to this "
+"origin."
 
-#: ../../programming/pages.rst:161 44f1e201aa3e44548b3f43a54e59ff76
+#: ../../programming/pages.rst:164 b746e9de21664a0c8154b29443c51f04
 #, fuzzy
 msgid "Abb.: Koordinatensystem"
 msgstr "Fig.: Coordinate system"
 
-#: ../../programming/pages.rst:163 27c814ee7c00414cb2cb3d69b6248616
+#: ../../programming/pages.rst:166 d7163e73f49d4c2b9330e11fec20edcf
 #, fuzzy
 msgid ""
-"Im Projekt wird die Hilfsfunktion *getdisplay()* verwendet, in die alle "
-"GFX-Befehle eingebettet sind. Die nachfolgenden Beschreibungen zu den "
-"Grafikfunktionen gelten sowohl für das schwarz/weiß e-Paper-Display als "
-"auch für das Farb-TFT-Display und können gleichwertig benutzt werden. Je "
-"nach Displaytyp werden die Farben monchrom oder farbig dargestellt."
+"Im Projekt wird die Hilfsfunktion *getdisplay()* verwendet, in die alle GFX-"
+"Befehle eingebettet sind. Die nachfolgenden Beschreibungen zu den "
+"Grafikfunktionen gelten sowohl für das schwarz/weiß e-Paper-Display als auch"
+" für das Farb-TFT-Display und können gleichwertig benutzt werden. Je nach "
+"Displaytyp werden die Farben monchrom oder farbig dargestellt."
 msgstr ""
-"The project uses the helper function *getdisplay()*, which contains all "
-"GFX commands. The following descriptions of the graphics functions apply "
-"to both the black and white e-paper display and the color TFT display and"
-" can be used interchangeably. Depending on the display type, the colors "
-"are displayed in monochrome or color."
+"The project uses the helper function *getdisplay()*, which contains all GFX "
+"commands. The following descriptions of the graphics functions apply to both"
+" the black and white e-paper display and the color TFT display and can be "
+"used interchangeably. Depending on the display type, the colors are "
+"displayed in monochrome or color."
 
-#: ../../programming/pages.rst:166 4fcc108336994f3db4038f1363490c21
+#: ../../programming/pages.rst:169 c0a2651db006441aa93a14c686f505cf
 #, fuzzy
 msgid "Farbraum"
 msgstr "Color space"
 
-#: ../../programming/pages.rst:168 a0b22ce57e0e40deadce3054cc2850b0
+#: ../../programming/pages.rst:171 7a2c36bc147a432ba6c9d33b6dae5163
 #, fuzzy
 msgid ""
-"Der Farbraum für Grafikdisplays folgt dem RGB565-Farbschema. Dabei werden"
-" 16 Bits auf die jeweiligen Farben Blau, Grün und Rot zugeordnet. Die "
-"Farbauflösung ist bei Grün um 1 Bit höher gegenüber Rot und Blau. Dadurch"
-" können Mischfarben trotz geringer Bitanzahl deutlich besser abgebildet "
+"Der Farbraum für Grafikdisplays folgt dem RGB565-Farbschema. Dabei werden 16"
+" Bits auf die jeweiligen Farben Blau, Grün und Rot zugeordnet. Die "
+"Farbauflösung ist bei Grün um 1 Bit höher gegenüber Rot und Blau. Dadurch "
+"können Mischfarben trotz geringer Bitanzahl deutlich besser abgebildet "
 "werden. Mit dem RGB565-Farbschema lassen sich 65.536 verschiedene Farben "
 "abbilden. Das RGB565-Farbschema ist für kleine Mikrocontroller ein guter "
-"Kompromiss zwischen Hardwareaufwand und Detailtiefe in der Farbwiedergabe"
-" und ist der meist verwendete Farbstandard in diesem Bereich. Auf PCs "
-"wird dagegen meist das RGB888-Farbschema verwendet mit dem bis zu "
-"16.777.216 Farben abgebildet werden können. Wer mehr über das `RGB-"
-"Farbschema`_ wissen möchte, kann in dieser Beschreibung weitere "
-"Informationen finden."
+"Kompromiss zwischen Hardwareaufwand und Detailtiefe in der Farbwiedergabe "
+"und ist der meist verwendete Farbstandard in diesem Bereich. Auf PCs wird "
+"dagegen meist das RGB888-Farbschema verwendet mit dem bis zu 16.777.216 "
+"Farben abgebildet werden können. Wer mehr über das `RGB-Farbschema`_ wissen "
+"möchte, kann in dieser Beschreibung weitere Informationen finden."
 msgstr ""
-"The color space for graphics displays follows the RGB565 color scheme. In"
-" this scheme, 16 bits are allocated to the respective colors blue, green,"
-" and red. The color resolution for green is one bit higher than for red "
-"and blue. This allows for significantly better reproduction of mixed "
-"colors despite the lower bit count. The RGB565 color scheme can represent"
-" 65,536 different colors. For small microcontrollers, the RGB565 color "
-"scheme offers a good compromise between hardware requirements and the "
-"level of detail in color reproduction and is the most widely used color "
-"standard in this area. PCs, on the other hand, typically use the RGB888 "
-"color scheme, which can represent up to 16,777,216 colors. Those who "
-"would like to learn more about `RGB-Farbschema`_ can find further "
-"information in this description."
+"The color space for graphics displays follows the RGB565 color scheme. In "
+"this scheme, 16 bits are allocated to the respective colors blue, green, and"
+" red. The color resolution for green is one bit higher than for red and "
+"blue. This allows for significantly better reproduction of mixed colors "
+"despite the lower bit count. The RGB565 color scheme can represent 65,536 "
+"different colors. For small microcontrollers, the RGB565 color scheme offers"
+" a good compromise between hardware requirements and the level of detail in "
+"color reproduction and is the most widely used color standard in this area. "
+"PCs, on the other hand, typically use the RGB888 color scheme, which can "
+"represent up to 16,777,216 colors. Those who would like to learn more about "
+"`RGB-Farbschema`_ can find further information in this description."
 
-#: ../../programming/pages.rst:175 decdb6f3541949f7a0920b8e0f0afae2
+#: ../../programming/pages.rst:178 06d147baed364afa9074e05ae9fe72eb
 #, fuzzy
 msgid "Abb.: RGB565-Farbschema"
 msgstr "Fig.: RGB565 color scheme"
 
-#: ../../programming/pages.rst:177 8f93ce087a1f4534ae05c68e50e32135
+#: ../../programming/pages.rst:180 3ed8bd97fbde4f95b79a0378a305d312
 #, fuzzy
 msgid ""
-"Die 16 Bits des Farbschemas werden in zwei Byte aufgeteilt. Ein High-Byte"
-" und ein Low-Byte. Mit diesen beiden Bytes wird die Farbe eines Pixels "
-"definiert. In der folgenden Tabelle sind für einige Farben der HEX-"
-"Farbcode und der Farbname exemplarisch dargestellt."
+"Die 16 Bits des Farbschemas werden in zwei Byte aufgeteilt. Ein High-Byte "
+"und ein Low-Byte. Mit diesen beiden Bytes wird die Farbe eines Pixels "
+"definiert. In der folgenden Tabelle sind für einige Farben der HEX-Farbcode "
+"und der Farbname exemplarisch dargestellt."
 msgstr ""
-"The 16 bits of the color scheme are divided into two bytes: a high byte "
-"and a low byte. These two bytes define the color of a pixel. The "
-"following table shows the HEX color code and color name as examples for "
-"some colors."
+"The 16 bits of the color scheme are divided into two bytes: a high byte and "
+"a low byte. These two bytes define the color of a pixel. The following table"
+" shows the HEX color code and color name as examples for some colors."
 
-#: ../../programming/pages.rst:191 b1c06b2a192f49ce8c09699e32bc3ef3
+#: ../../programming/pages.rst:194 98961438f56d4bcabf5edbc943905f41
 #, fuzzy
 msgid ""
 "Es gibt noch deutlich mehr Farbnamen, die man in dieser `Farbtabelle`_ "
 "nachlesen kann. Für das E-Paper-Display gibt es zwei eigene Farbnamen."
 msgstr ""
-"There are many more color names, which can be found in this "
-"`Farbtabelle`_. The e-paper display has two separate color names."
+"There are many more color names, which can be found in this `Farbtabelle`_. "
+"The e-paper display has two separate color names."
 
-#: ../../programming/pages.rst:201 e200fb56553745ad92df5f5353f9cc72
+#: ../../programming/pages.rst:204 4dde4d39a800460c832a579a33c91a51
 #, fuzzy
 msgid ""
 "In den Anzeigeseiten wird die Farbauswahl zentral über folgende Weise "
 "gesteuert. In *commonData* sind die aktuellen Farben hinterlegt, die im "
-"Display verwendet werden sollen. *fgcolor* und *bgcolor* definieren dabei"
-" die Vordergrund- und Hintergrundfarbe, die man zentral in der "
-"Webkonfiguration ausgewählen kann (normale oder inverse Darstellung). Die"
-" Farben beziehen sich dabei immer auf Schwarz und Weiß, damit sie in "
+"Display verwendet werden sollen. *fgcolor* und *bgcolor* definieren dabei "
+"die Vordergrund- und Hintergrundfarbe, die man zentral in der "
+"Webkonfiguration ausgewählen kann (normale oder inverse Darstellung). Die "
+"Farben beziehen sich dabei immer auf Schwarz und Weiß, damit sie in "
 "verschiedenen Displaytypen einheitlich angezeigt werden können."
 msgstr ""
-"The color selection on the display pages is centrally controlled as "
-"follows. The current colors to be used in the display are stored in "
-"*commonData*. *fgcolor* and *bgcolor* define the foreground and "
-"background colors, which can be selected centrally in the web "
-"configuration (normal or inverse display). The colors are always based on"
-" black and white to ensure consistent display across different screen "
-"types."
+"The color selection on the display pages is centrally controlled as follows."
+" The current colors to be used in the display are stored in *commonData*. "
+"*fgcolor* and *bgcolor* define the foreground and background colors, which "
+"can be selected centrally in the web configuration (normal or inverse "
+"display). The colors are always based on black and white to ensure "
+"consistent display across different screen types."
 
-#: ../../programming/pages.rst:208 36826b21511e4b3db2b9761d33855417
+#: ../../programming/pages.rst:211 78d5d58537314d469d9f20195b1240d6
 #, fuzzy
 msgid "Text"
 msgstr "Text"
 
-#: ../../programming/pages.rst:220 f81b98bb42e1429fbd84f85f6bbf40ec
+#: ../../programming/pages.rst:223 8d4dd523815c40498583c5b7da62fb32
 #, fuzzy
 msgid "Abb.: Platzierung eines Schriftzeichens"
 msgstr "Fig.: Placement of a character"
 
-#: ../../programming/pages.rst:223 2e721d8bc51844d3b8e244df841939bc
+#: ../../programming/pages.rst:226 24fc1b22eede4abbb08112b045b711b2
 #, fuzzy
 msgid "Linie"
 msgstr "Line"
 
-#: ../../programming/pages.rst:232 3dd89f0996b641cc8670c2457f037c94
+#: ../../programming/pages.rst:235 d3af710be7a94904abde959d3c0b6549
 #, fuzzy
 msgid "Abb.: Linie"
 msgstr "Fig.: Line"
 
-#: ../../programming/pages.rst:235 bde16c1e1d0648fbbb085f77d670f225
+#: ../../programming/pages.rst:238 745a1ead92e1443a87885dbdca07ea16
 #, fuzzy
 msgid "Viereck"
 msgstr "Square"
 
-#: ../../programming/pages.rst:245 824581dd324d4c4a8e71dffcd17cdbc7
+#: ../../programming/pages.rst:248 3e2ada18aebe425e95fa0df1a5b95330
 #, fuzzy
 msgid "Abb.: Vierecks"
 msgstr "Fig.: Quadrilateral"
 
-#: ../../programming/pages.rst:248 96f937b932bf43e68b4201ffcea1e8e7
+#: ../../programming/pages.rst:251 2e98a2c36102414bb8851be493e2abc7
 #, fuzzy
 msgid "Viereck gerundet"
 msgstr "Rounded square"
 
-#: ../../programming/pages.rst:258 d75139c7de804d3299efd1cfd4db1ba6
+#: ../../programming/pages.rst:261 39004e9312144e7cb0f5cd0bb1a7d8fa
 #, fuzzy
 msgid "Abb.: Vierecks mit runden Ecken"
 msgstr "Fig.: Quadrilateral with rounded corners"
 
-#: ../../programming/pages.rst:260 4a6f7b6bc7fd40c292b9cde47917277f
+#: ../../programming/pages.rst:263 845f291a41214919b964c290962f2182
 #, fuzzy
 msgid ""
-"Diese Funktion kann sehr gut zum Zeichen von Bedienknöpfen verwendet "
-"werden. Mit ihr wurde eine weiter Funktion erstellt, mit der sich "
-"Bedienknöpfe anzeigen lassen."
+"Diese Funktion kann sehr gut zum Zeichen von Bedienknöpfen verwendet werden."
+" Mit ihr wurde eine weiter Funktion erstellt, mit der sich Bedienknöpfe "
+"anzeigen lassen."
 msgstr ""
-"This function is very useful for drawing control buttons. It has been "
-"used to create a further function that allows control buttons to be "
-"displayed."
+"This function is very useful for drawing control buttons. It has been used "
+"to create a further function that allows control buttons to be displayed."
 
-#: ../../programming/pages.rst:267 f74650268258427ba261ecb7e29fddbb
+#: ../../programming/pages.rst:270 00d3296abad24d64a5a50cc0889f7845
 #, fuzzy
 msgid "Dreieck"
 msgstr "Triangle"
 
-#: ../../programming/pages.rst:277 2e93efd63a344ac9bade1447bc7967ff
+#: ../../programming/pages.rst:280 c8f365d9ef7f40b092df340794598ac6
 #, fuzzy
 msgid "Abb.: Dreiecks"
 msgstr "Fig.: Triangle"
 
-#: ../../programming/pages.rst:280 140418c1582c4d44a3856f24758a3214
+#: ../../programming/pages.rst:283 4350064821714da28f3ee4a477393da0
 #, fuzzy
 msgid "Kreis"
 msgstr "Circle"
 
-#: ../../programming/pages.rst:290 168f749a40d9439fbbaca2a515d8f053
+#: ../../programming/pages.rst:293 e8bbebbd6d8d4046a5869d78abf13377
 #, fuzzy
 msgid "Abb.: Kreises"
 msgstr "Fig.: Circle"
 
-#: ../../programming/pages.rst:293 4b51b87f511d4d1690eb7261456fbc0b
+#: ../../programming/pages.rst:296 54fc8c02d9d04fbf9f9ccf1d39e86a48
 #, fuzzy
 msgid "Bild"
 msgstr "Picture"
 
-#: ../../programming/pages.rst:295 b840d2bc8f4345d2a1bb24034bc6851b
+#: ../../programming/pages.rst:298 1507856fc31d4254b42ddddcf4231f79
 #, fuzzy
 msgid ""
 "Mit dem nachfolgenden Befehl können Bilder als 1Bit-Scharz/Weiß-Bilder "
-"angezeigt werden. Über den Parameter color kann die Farbe des aktiven "
-"Pixels festgelegt werden. Bei einem e-Paper-Display ist das Schwarz oder "
-"Weiß und bei einem TFT-Display eine beliebige Farbe. Somit ist es "
-"möglich, auch reine Scharz/Weiß-Bilder auf einem Farbdisplay "
-"darzustellen."
+"angezeigt werden. Über den Parameter color kann die Farbe des aktiven Pixels"
+" festgelegt werden. Bei einem e-Paper-Display ist das Schwarz oder Weiß und "
+"bei einem TFT-Display eine beliebige Farbe. Somit ist es möglich, auch reine"
+" Scharz/Weiß-Bilder auf einem Farbdisplay darzustellen."
 msgstr ""
-"The following command displays images as 1-bit black and white images. "
-"The `color` parameter sets the color of the active pixel. For an e-paper "
-"display, this is black or white, and for a TFT display, it can be any "
-"color. This makes it possible to display pure black and white images on a"
-" color display."
+"The following command displays images as 1-bit black and white images. The "
+"`color` parameter sets the color of the active pixel. For an e-paper "
+"display, this is black or white, and for a TFT display, it can be any color."
+" This makes it possible to display pure black and white images on a color "
+"display."
 
-#: ../../programming/pages.rst:297 e09c32a8d56b40feaccc455069832839
+#: ../../programming/pages.rst:300 981a026772a14053b3472deed1172228
 #, fuzzy
 msgid ""
 "Bevor Sie Bilder nutzen können, müssen die Bilder in eine C-compatible "
@@ -545,159 +536,157 @@ msgstr ""
 "Before you can use images, they must be converted to a C-compatible "
 "notation. This can be done with the following tools:"
 
-#: ../../programming/pages.rst:299 87a59e5ede484fec87f46723aadd4721
+#: ../../programming/pages.rst:302 c7aeeba59463488abab66d5315d5a55a
 #, fuzzy
 msgid "**Image2LCD** - 1Bit-Bild (C-Code)"
 msgstr "**Image2LCD** - 1Bit-Bild (C-Code)"
 
-#: ../../programming/pages.rst:300 b897f03376494cc69047100a5977c34c
+#: ../../programming/pages.rst:303 c086c93b1c8f4859ab002499ae04afe4
 #, fuzzy
 msgid "Scan mode: Einstellung auf Horizontal"
 msgstr "Scan mode: Set to Horizontal"
 
-#: ../../programming/pages.rst:301 0d35b37ae46146339d19af363b828fce
+#: ../../programming/pages.rst:304 e17ca4b9358e4ae7be738b84c23e685e
 #, fuzzy
 msgid "Bit order: Einstellung auf MSB first"
 msgstr "Bit order: Setting to MSB first"
 
-#: ../../programming/pages.rst:302 29e62584bb304631a83b7fc13f1cbc59
+#: ../../programming/pages.rst:305 0bdad4cb45074d8883460804c8e8aa3b
 #, fuzzy
 msgid "**Gimp** - XBitmap-Bild (xbm-Datei)"
 msgstr "**GIMP** - XBitmap image (XBM file)"
 
-#: ../../programming/pages.rst:303 1648ceb943f9455ba032499435ecb330
+#: ../../programming/pages.rst:306 1109dbf515ca43828d4ea08b1b6ebc1c
 #, fuzzy
 msgid "Scan mode: Fix horizontal"
 msgstr "Scan mode: Fix horizontal"
 
-#: ../../programming/pages.rst:304 580c0c8357874cbb8570d0eb834b235c
+#: ../../programming/pages.rst:307 3e1d7d60a4854f7c85fc77f44cef7e91
 #, fuzzy
 msgid "Bit order: Fix LSB fist"
 msgstr "Bit order: Fix LSB fist"
 
-#: ../../programming/pages.rst:306 4258db7e83064bc3a86bf44c9a4298b4
+#: ../../programming/pages.rst:309 996f4a9b6832455aadac7b3b11fb12b5
 #, fuzzy
 msgid ""
 "Darüber werden die Bilder als eine Array-Struktur direkt im Quellcode "
-"abgelegt und können über eine Variable im Code aufgerufen und zur Anzeige"
-" gebracht werden. Beispielhaft ist hier der C-Code für ein Icon als "
-"XBitmap-Bild zu sehen."
+"abgelegt und können über eine Variable im Code aufgerufen und zur Anzeige "
+"gebracht werden. Beispielhaft ist hier der C-Code für ein Icon als XBitmap-"
+"Bild zu sehen."
 msgstr ""
-"The images are stored directly in the source code as an array structure "
-"and can be accessed and displayed via a variable in the code. The C code "
-"for an icon as an XBitmap image is shown here as an example."
+"The images are stored directly in the source code as an array structure and "
+"can be accessed and displayed via a variable in the code. The C code for an "
+"icon as an XBitmap image is shown here as an example."
 
-#: ../../programming/pages.rst:315 a91a966a6e684b1383190e6e85f3bd90
-#, fuzzy
-msgid "Das eigentliche Bild ist unter dem Namen (xbm_icon) als Hex-Array nutzbar."
-msgstr "The actual image can be used as a hex array under the name (xbm_icon)."
-
-#: ../../programming/pages.rst:322 0b6a6c3d95494995a0754ad683f93fba
+#: ../../programming/pages.rst:318 57efcc5470bd4237998a48964f4bd826
 #, fuzzy
 msgid ""
-"Für farbige Bilder mit 64.000 Farben nach dem RGB565-Standard kann "
-"folgende Funktion verwendet werden."
+"Das eigentliche Bild ist unter dem Namen (xbm_icon) als Hex-Array nutzbar."
+msgstr ""
+"The actual image can be used as a hex array under the name (xbm_icon)."
+
+#: ../../programming/pages.rst:325 63939ef849aa495684c0768ca7eb8cf2
+#, fuzzy
+msgid ""
+"Für farbige Bilder mit 64.000 Farben nach dem RGB565-Standard kann folgende "
+"Funktion verwendet werden."
 msgstr ""
 "The following function can be used for colored images with 64,000 colors "
 "according to the RGB565 standard."
 
-#: ../../programming/pages.rst:331 b0ba4f1e7e3042a488bc498e53ecbb77
+#: ../../programming/pages.rst:334 1a424a5ebecf4598b602e18ceca472ec
 #, fuzzy
 msgid "Spezialfunktionen"
 msgstr "Special functions"
 
-#: ../../programming/pages.rst:333 a224593eb4304e9cada3377f70e505c5
+#: ../../programming/pages.rst:336 fe9a9ac8eecf498680551e6319033d89
 #, fuzzy
 msgid ""
-"Die Spezialfunktionen ermöglichen displayspezifische Aktionen, die je "
-"nach Displaytechnologie unterschiedlich behandelt werden müssen. Die "
-"Funktionen dienen zur Initialisierung der Displayfunktionen und werden "
-"zentral je nach verwendeten Displaytyps in obp60task.cpp und in "
-"OBP60Extensions.ccp aufgerufen. Die Befehle werden nicht im Code einer "
-"Anzeigeseite verwendet."
+"Die Spezialfunktionen ermöglichen displayspezifische Aktionen, die je nach "
+"Displaytechnologie unterschiedlich behandelt werden müssen. Die Funktionen "
+"dienen zur Initialisierung der Displayfunktionen und werden zentral je nach "
+"verwendeten Displaytyps in obp60task.cpp und in OBP60Extensions.ccp "
+"aufgerufen. Die Befehle werden nicht im Code einer Anzeigeseite verwendet."
 msgstr ""
-"The special functions enable display-specific actions that must be "
-"handled differently depending on the display technology. These functions "
-"initialize the display functions and are called centrally in "
-"obp60task.cpp and OBP60Extensions.ccp, depending on the display type "
-"used. The commands are not used in the code of a display page."
+"The special functions enable display-specific actions that must be handled "
+"differently depending on the display technology. These functions initialize "
+"the display functions and are called centrally in obp60task.cpp and "
+"OBP60Extensions.ccp, depending on the display type used. The commands are "
+"not used in the code of a display page."
 
-#: ../../programming/pages.rst:336 7ab6774ffd3f49b9a1e3a78ec91964ab
+#: ../../programming/pages.rst:339 502b5c957fab47e79256333ce126b189
 #, fuzzy
 msgid "e-Paper-Display"
 msgstr "E-Paper-Display"
 
-#: ../../programming/pages.rst:346 b3ba4dd57691446daa05a8a8f8130d68
+#: ../../programming/pages.rst:349 fd08553c2390489b9e59d7aa92aecbac
 #, fuzzy
 msgid "TFT-Display"
 msgstr "TFT-Display"
 
-#: ../../programming/pages.rst:357 f190a031af1c4126ae98af1f6bbf7a8d
+#: ../../programming/pages.rst:360 377527e1151d411d8a5e0ff6e2bc0efb
 #, fuzzy
 msgid "Funktionen zur Display-Aktualisierung"
 msgstr "Display update functions"
 
-#: ../../programming/pages.rst:359 af9d8f026c78460abb2936bac2a484bf
+#: ../../programming/pages.rst:362 fbafdef7bf564b48806c2cb5bae85e8b
 #, fuzzy
 msgid ""
 "Die Funktionen *displayFirstPage()* und *displayNextPage()* steuern die "
 "Aktualisierung der Displayinhalte und folgen einem seitenbasierten "
 "Renderkonzept, wie es bei e-Paper-Displays verwendet wird. Bei TFT-"
-"Farbdisplays erfolgt die Ausgabe normalerweise direkt durch Schreiben in "
-"den Framebuffer des Display-Controllers, sodass dieses Verfahren dort "
-"nicht zwingend erforderlich ist. Dennoch werden die Funktionen aus "
+"Farbdisplays erfolgt die Ausgabe normalerweise direkt durch Schreiben in den"
+" Framebuffer des Display-Controllers, sodass dieses Verfahren dort nicht "
+"zwingend erforderlich ist. Dennoch werden die Funktionen aus "
 "Kompatibilitätsgründen beibehalten."
 msgstr ""
 "The functions *displayFirstPage()* and *displayNextPage()* control the "
-"updating of the display content and follow a page-based rendering "
-"concept, as used in e-paper displays. With TFT color displays, output is "
-"usually done directly by writing to the framebuffer of the display "
-"controller, so this method is not strictly necessary. Nevertheless, the "
-"functions are retained for compatibility reasons."
+"updating of the display content and follow a page-based rendering concept, "
+"as used in e-paper displays. With TFT color displays, output is usually done"
+" directly by writing to the framebuffer of the display controller, so this "
+"method is not strictly necessary. Nevertheless, the functions are retained "
+"for compatibility reasons."
 
-#: ../../programming/pages.rst:361 58b047c7e41a4d25ae15ca17ca90383e
+#: ../../programming/pages.rst:364 101b795bfbc64053b6dd871b0a64576d
 #, fuzzy
 msgid ""
 "Die Darstellung erfolgt in zwei Schritten: Zunächst werden mittels "
 "Grafikbefehlen die Bilddaten erzeugt. Anschließend übernimmt "
 "*displayNextPage()* die Übertragung dieser Daten in den Framebuffer und "
-"führt die eigentliche Aktualisierung des Bildschirms durch. Dieses "
-"Vorgehen ermöglicht eine standardisierte Darstellung von Displayinhalten "
-"für verschiedene Displaytypen und eine klare Trennung zwischen Rendering "
-"und Anzeigeaktualisierung."
+"führt die eigentliche Aktualisierung des Bildschirms durch. Dieses Vorgehen "
+"ermöglicht eine standardisierte Darstellung von Displayinhalten für "
+"verschiedene Displaytypen und eine klare Trennung zwischen Rendering und "
+"Anzeigeaktualisierung."
 msgstr ""
 "The rendering process occurs in two steps: First, the image data is "
-"generated using graphics commands. Then, the `displayNextPage()` function"
-" transfers this data to the framebuffer and performs the actual screen "
+"generated using graphics commands. Then, the `displayNextPage()` function "
+"transfers this data to the framebuffer and performs the actual screen "
 "update. This approach enables a standardized display of content for "
-"different display types and a clear separation between rendering and "
-"display updates."
+"different display types and a clear separation between rendering and display"
+" updates."
 
-#: ../../programming/pages.rst:363 e612cbaab2ac4c06839c97913ed761d4
+#: ../../programming/pages.rst:366 7448516b06264676992fcd3259627b84
 #, fuzzy
 msgid ""
 "Die Funktionen *displaySetFullWindow()* und *displaySetPartialWindow()* "
-"werden aus Kompatibilitätsgründen ebenfalls bei einem TFT-Display "
-"verwendet. Der Displayinhalt wird jedoch nicht aufgefrischt, da das bei "
-"TFT-Displays nicht notwendig ist. Die Befehle müssen aber trotzdem im "
-"Code einer Anzeigeseite verwendet werden, um ein identisches "
-"Anzeigeverhalten über alle Displaytypen hinweg zu ermöglichen."
+"werden aus Kompatibilitätsgründen ebenfalls bei einem TFT-Display verwendet."
+" Der Displayinhalt wird jedoch nicht aufgefrischt, da das bei TFT-Displays "
+"nicht notwendig ist. Die Befehle müssen aber trotzdem im Code einer "
+"Anzeigeseite verwendet werden, um ein identisches Anzeigeverhalten über alle"
+" Displaytypen hinweg zu ermöglichen."
 msgstr ""
-"The functions *displaySetFullWindow()* and *displaySetPartialWindow()* "
-"are also used with TFT displays for compatibility reasons. However, the "
-"display content is not refreshed, as this is not necessary with TFT "
-"displays. Nevertheless, these commands must still be used in the code of "
-"a display page to ensure consistent display behavior across all display "
-"types."
+"The functions *displaySetFullWindow()* and *displaySetPartialWindow()* are "
+"also used with TFT displays for compatibility reasons. However, the display "
+"content is not refreshed, as this is not necessary with TFT displays. "
+"Nevertheless, these commands must still be used in the code of a display "
+"page to ensure consistent display behavior across all display types."
 
 #~ msgid ""
-#~ "Die Spezialfunktionen sind Funktionen, um "
-#~ "spezifische Displayfunktionen für die "
-#~ "jeweiligen Display-Typen"
+#~ "Die Spezialfunktionen sind Funktionen, um spezifische Displayfunktionen für "
+#~ "die jeweiligen Display-Typen"
 #~ msgstr ""
-#~ "The special functions are functions to"
-#~ " provide specific display functions for "
-#~ "the respective display types."
+#~ "The special functions are functions to provide specific display functions "
+#~ "for the respective display types."
 
 #~ msgid "Abb.: Platzierung einer Linie"
 #~ msgstr "Fig.: Placement of a line"
@@ -718,12 +707,8 @@ msgstr ""
 #~ msgstr "Getdisplay().setTextColor(commonData->fgcolor);"
 
 #~ msgid ""
-#~ "Die Spezialfunktionen ermöglichen displayspezifische"
-#~ " Aktionen, die je nach Displaytechnologie"
-#~ " unterschiedlich behandelt werden müssen."
+#~ "Die Spezialfunktionen ermöglichen displayspezifische Aktionen, die je nach "
+#~ "Displaytechnologie unterschiedlich behandelt werden müssen."
 #~ msgstr ""
-#~ "The special functions enable display-"
-#~ "specific actions that must be handled"
-#~ " differently depending on the display "
-#~ "technology."
-
+#~ "The special functions enable display-specific actions that must be handled "
+#~ "differently depending on the display technology."

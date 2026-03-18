@@ -77,8 +77,7 @@ msgstr ""
 "We prefer this method of bug tracking because it allows us to resolve errors"
 " in a structured and timely manner. This system enables us to collaborate "
 "with multiple employees at globally distributed locations to fix bugs. With "
-"your support, this will allow us to provide high-quality software and "
-"hardware."
+"your support, we will be able to provide high-quality software and hardware."
 
 #: ../../help/errors.rst:15 0c2afe3479524a399c5428793ceca87d
 #, fuzzy

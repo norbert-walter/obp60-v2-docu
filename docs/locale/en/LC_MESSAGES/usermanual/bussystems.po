@@ -402,7 +402,7 @@ msgstr "Without"
 #: ../../usermanual/bussystems.rst:90 bcf941f896d04ab2ad3f370e10d0fabc
 #, fuzzy
 msgid "Schirmgeflecht"
-msgstr "Umbrella mesh"
+msgstr "Umbrella weave"
 
 #: ../../usermanual/bussystems.rst:92 ../../usermanual/bussystems.rst:227
 #: 3b99ee55a4ef43f29ccf82b102285008 824af4f7ab7b485f868741dde4352a7a
