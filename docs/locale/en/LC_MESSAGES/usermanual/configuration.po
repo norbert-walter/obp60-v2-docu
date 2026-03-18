@@ -1830,8 +1830,8 @@ msgid ""
 "Bootssensoren entsprechende Daten bereitstellen, werden sie natürlich "
 "verwendet."
 msgstr ""
-"``Off`` - No true wind data is calculated. If the boat sensors provide "
-"relevant data, it will of course be used."
+"``Off`` - No data on the true wind is calculated. If the boat sensors "
+"provide relevant data, it will of course be used."
 
 #: ../../usermanual/configuration.rst:466 4c8b9622797d48bf9fb7e6727097400b
 #, fuzzy
@@ -3052,9 +3052,9 @@ msgid ""
 " ensprechen einer Zeitachse in Sekunden, wenn der Messwert 1x pro Sekunde "
 "aktualisiert wird."
 msgstr ""
-"The x-axis of the diagrams shows the number of data updates, i.e., they "
-"correspond to a time axis in seconds if the measurement is updated once per "
-"second."
+"The x-axis of the diagrams shows the number of data updates, i.e., it "
+"corresponds to a time axis in seconds if the measurement is updated once per"
+" second."
 
 #: ../../usermanual/configuration.rst:744 20aab0c2f35c4239bccac0cfcd7338c7
 #, fuzzy
@@ -4078,7 +4078,7 @@ msgstr "**LON** - Longitude, geographical altitude"
 #: ../../usermanual/configuration.rst:966 87c404f78cb041349c0b63332e70b690
 #, fuzzy
 msgid "**Log** - Log, Entfernung"
-msgstr "**Log** - Log, distance"
+msgstr "**Log** - Log, Distance"
 
 #: ../../usermanual/configuration.rst:967 bf1d9a850f784552911f0f39458566ac
 #, fuzzy
@@ -6481,7 +6481,7 @@ msgstr "``Bidir`` - Sensor data is exchanged between NMEA0183 and NMEA2000."
 #: ../../usermanual/configuration.rst:1761 ca64ae0202ae449b9d02a0c57ee839c3
 #, fuzzy
 msgid "``to2K`` - Das Sensordaten werden nur nach NMEA2000 gesendet."
-msgstr "``To2K`` - Sensor data is only sent via NMEA2000."
+msgstr "``To2K`` - The sensor data is only sent via NMEA2000."
 
 #: ../../usermanual/configuration.rst:1762 33acaab4a2fc4c48b928254e2dc0958a
 #, fuzzy
