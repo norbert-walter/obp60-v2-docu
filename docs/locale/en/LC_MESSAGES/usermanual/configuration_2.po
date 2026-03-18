@@ -3052,9 +3052,9 @@ msgid ""
 " ensprechen einer Zeitachse in Sekunden, wenn der Messwert 1x pro Sekunde "
 "aktualisiert wird."
 msgstr ""
-"The x-axis of the diagrams shows the number of data updates, i.e., they "
-"correspond to a time axis in seconds if the measurement is updated once per "
-"second."
+"The x-axis of the diagrams shows the number of data updates, i.e., it "
+"corresponds to a time axis in seconds if the measurement is updated once per"
+" second."
 
 #: ../../usermanual/configuration_2.rst:741 05d45563a12c4c3f8342d67b02d6ca70
 #, fuzzy
@@ -3378,7 +3378,7 @@ msgid ""
 "``Control by Time`` - Schalten der Beleuchtung durch ein vorgegebenes "
 "Zeitintervall"
 msgstr ""
-"``Control by Time`` - Switching the lighting at a predetermined time "
+"``Control by Time`` - Switching the lighting after a predetermined time "
 "interval"
 
 #: ../../usermanual/configuration_2.rst:804 ffe4ab67b53149e9a56c054fe58fb7a5
@@ -5790,8 +5790,8 @@ msgstr ""
 "If you are using the generator display but no INA226 module is connected to "
 "the I2C bus, no readings other than the current battery voltage will be "
 "displayed. In this case, the OBP60's internal voltage sensor is used. The "
-"measured voltage may not directly correspond to the voltage at the generator"
-" output, as line losses can distort the voltage reading."
+"measured voltage value may not directly correspond to the voltage at the "
+"generator output, as line losses can distort the voltage reading."
 
 #: ../../usermanual/configuration_2.rst:1537 1c8de633e4c84a24b9dda26860c6f40b
 #, fuzzy

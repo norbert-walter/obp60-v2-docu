@@ -1830,8 +1830,8 @@ msgid ""
 "Bootssensoren entsprechende Daten bereitstellen, werden sie natürlich "
 "verwendet."
 msgstr ""
-"``Off`` - No data on the true wind is calculated. If the boat sensors "
-"provide relevant data, it will of course be used."
+"``Off`` - No true wind data is calculated. If the boat sensors provide "
+"relevant data, it will of course be used."
 
 #: ../../usermanual/configuration.rst:466 4c8b9622797d48bf9fb7e6727097400b
 #, fuzzy
@@ -1871,8 +1871,7 @@ msgstr "**Date Format**"
 msgid ""
 "Mit **Date Format** kann das Ausgabeformat des Datums angepasst werden."
 msgstr ""
-"The **Date Format** option allows you to customize the output format of the "
-"date."
+"The **Date Format** option allows you to customize the date output format."
 
 #: ../../usermanual/configuration.rst:478 9ad6c8c112b54949ac2742d821109a79
 #, fuzzy
