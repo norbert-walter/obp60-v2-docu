@@ -691,7 +691,7 @@ msgid ""
 msgstr ""
 "Wired data transmission for NMEA0183 uses simplex transmission. This means "
 "you can either send or receive. By default, the OBP60 is set to receive. "
-"However, it is also possible to send NMEA0183 data. This setting is found "
+"However, it is also possible to send NMEA0183 data. This setting is located "
 "under :ref:`Config - Serial Port`. The data direction can be set via "
 "**Serial Direction**."
 
