@@ -440,6 +440,10 @@ Das OBP60 kann neben dem WiFi Access Point auch als WiFi-Client betrieben werden
     
 .. hint::
     Wenn Sie Probleme mit der Verbindung zu weiteren WiFi-Netzwerken haben, dann überprüfen Sie, ob der Netzwerkname oder das Passwort Sonderzeichen enthält. In einigen Situationen können Sonderzeichen oder zu lange Passwörter Verbindungsprobleme verursachen. Ändern Sie dann versuchsweise den Netzwerknamen oder das Passwort. Mitunter hilft auch ein Neustart Ihres Bord-Routers, in dessen WLAN Sie das OPB60 einbuchen möchten.
+
+.. warning::
+	Wenn der Wifi Client-Modus aktiviert ist, versucht das Gerät etwa einmal pro Minute, sich mit dem konfigurierten WLAN zu verbinden. Während dieses Verbindungsversuchs ist das vom Gerät selbst erzeugte WLAN ( siehe :ref:`Config - System` ) für einige Sekunden nicht verfürbar.
+
     
 Config - OBP Settings
 ---------------------
