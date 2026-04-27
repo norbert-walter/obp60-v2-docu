@@ -442,7 +442,7 @@ Das OBP60 kann neben dem WiFi Access Point auch als WiFi-Client betrieben werden
     Wenn Sie Probleme mit der Verbindung zu weiteren WiFi-Netzwerken haben, dann überprüfen Sie, ob der Netzwerkname oder das Passwort Sonderzeichen enthält. In einigen Situationen können Sonderzeichen oder zu lange Passwörter Verbindungsprobleme verursachen. Ändern Sie dann versuchsweise den Netzwerknamen oder das Passwort. Mitunter hilft auch ein Neustart Ihres Bord-Routers, in dessen WLAN Sie das OPB60 einbuchen möchten.
 
 .. warning::
-	Wenn der Wifi Client-Modus aktiviert ist, versucht das Gerät etwa einmal pro Minute, sich mit dem konfigurierten WLAN zu verbinden. Während dieses Verbindungsversuchs ist das vom Gerät selbst erzeugte WLAN ( siehe :ref:`Config - System` ) für einige Sekunden nicht verfürbar.
+	Wenn der Wifi Client-Modus aktiviert ist, versucht das Gerät etwa einmal pro Minute, sich mit dem konfigurierten WLAN zu verbinden. Während dieses Verbindungsversuchs ist das vom Gerät selbst erzeugte WLAN ( siehe :ref:`Config - System` ) für einige Sekunden nicht verfügbar.
 
     
 Config - OBP Settings
@@ -461,8 +461,23 @@ Auf der Seite **OBP60 Settings** können Sie Einstellungen vornehmen, die sich a
 
 Die meisten Einstellungen sollten selbsterklärend sein. Sofern Sie keine Solarpaneele benutzen, belassen Sie den Wert von **Solar Power**  auf 0. **Generator Power** bezieht sich auf einen Elektrogenerator, der im Boot arbeitet. Das kann eine Lichtmaschine, ein Windgenerator, ein Schleppgenerator oder ein weiterer Zusatz-Generator sein. Die Leistungsangaben für **Solar Power** und **Generator Power** werden zur Visualisierung der Energieflüsse benötigt.
 
+**Leeway Coefficient**
+
+Der Leeway-Koeffizient *K* ist ein dimensionsloser Wert, der für jedes Boot individuell ist. Er wird für die Ermittlung der Abdrift des Bootes benötigt. Die Abdrift wiederum fließt in die Berechnung der aktuellen Strömung ein.
+
+Als Anhaltswert kann *K* aus einer Liste von Bootstypen ausgewählt werden. Sollte *K* bekannt sein, kann er als individueller Wert eingegeben werden.
+
+.. note::
+    Der Leeway-Koeffizient lässt sich u.a. mithilfe der „Two-Tack“-Methode ermitteln:
+1. Suchen Sie sich einen Tag bzw. ein Gebiet ohne Strömung.
+2. Segeln Sie einen gleichmäßigen Upwind-Kurs auf beiden Bugen. Ermitteln Sie HDT, STW, Neigung (Roll) und den COG von Ihrem GPS.
+3. Die Differenz zwischen HDT und COG ist Ihre tatsächliche Abdrift.
+4. Berechnen Sie den K-Wert mit dieser Formel: K = ((COG - HDT) * STW²) / ROLL
+
 **Calculate True Wind**
-	* Sofern die Bootssensoren keine Daten zum wahren Wind zur Verfügung stellen, kann hier ausgewählt werden, diese Daten aus den scheinbaren Winddaten und einigen anderen Datentypen zu errechnen. Zur Berechnung sind die Datentypen **AWA** und **AWS** erforderlich. Für die Bootsgeschwindigkeit wird **STW** oder ersatzweise **SOG** verwendet. Zur Ermittlung der aktuellen Ausrichtung des Bootes werden die Daten in dieser Reihenfolge verwendet, soweit vorhanden: (1) **HDT**, (2) **HDM+VAR**, (3) **HDM**, (4) **COG**, wenn gültig. Drift wird in die Berechnung nicht mit einbezogen.
+
+Sofern die Bootssensoren keine Daten zum wahren Wind zur Verfügung stellen, kann hier ausgewählt werden, diese Daten aus den scheinbaren Winddaten und einigen anderen Datentypen zu errechnen. Zur Berechnung sind die Datentypen **AWA** und **AWS** erforderlich. Für die Bootsgeschwindigkeit wird **STW** oder ersatzweise **SOG** verwendet. Zur Ermittlung der aktuellen Ausrichtung des Bootes werden die Daten in dieser Reihenfolge verwendet, soweit vorhanden: (1) **HDT**, (2) **HDM+VAR**, (3) **HDM**, (4) **COG**, wenn gültig. Drift wird in die Berechnung nicht mit einbezogen.
+
 	* ``on`` - Sofern nicht vorhanden, werden die Datentypen **TWD** (True Wind Direction), **TWA** (True Wind Angle) und **TWS** (True Wind Speed) berechnet. Desweiteren wird **AWD** (Apparent Wind Direction) ermittelt.
 	* ``off`` - Es werden keine Daten zum wahren Wind berechnet. Sollten die Bootssensoren entsprechende Daten bereitstellen, werden sie natürlich verwendet.
 
@@ -1201,6 +1216,30 @@ Mit der Anzeige Wind können eine Windanzeige und eine Windlupe dargestellt werd
     * ``[MODE]`` - Umschaltung zwischen Windanzeige und Windlupe
     * ``[SRC]`` - Umschaltung zwischen wahren und scheinbaren Wind
 
+Current
+^^^^^^^
+
+.. image:: ../pics/OBP60_Current.png
+             :scale: 30%
+			 
+Abb.: Anzeige Strömung (Current)
+
+Diese Seite zeigt die Richtung und Geschwindigkeit einer eventuell vorhandenen Strömung an. Der Pfeil der grafischen Darstellung weist in die Richtung der Strömung. Seine Größe visualisiert die Stärke (Geschwindigkeit) der Strömung und variiert zwischen 1 und 10 Knoten. Strömungen unter 0.1 Knoten werden nicht angezeigt. Die Kompassrose wird immer steuerkursorientiert (heading-up) dargestellt. Bezugsgröße ist der wahre Kurs (**HDT**), sofern vorhanden bzw. ermittelbar (aus magnetischem Kompasskurs **HDM** und magnetischer Missweisung **VAR**).
+
+Sofern Strömungsdaten (**SET** und **DFT** - Drift) bereits im Boots-Netzwerk vorhanden sind, werden sie direkt angezeigt. Ansonsten werden sie aus den weiteren bereitgestellten Werten berechnet.
+
+Leeway
+
+Bei einer Berechnung der Strömungsdaten kann auch die aktuelle Drift des Bootes (Leeway) einbezogen werden.
+*Leeway* ist die Bewegung eines Bootes nach Lee, die dadurch verursacht wird, dass der Wind gegen Rumpf, Segel und Aufbauten bläst. Sie wird als Winkelwert in Grad angegeben.
+Dazu sind Neigung (ROLL) und ein Leeway-Koeffizient *K* erforderlich. Der Koeffizient ist vom jeweiligen Boot abhängig und wird im Web-Konfigurationsmenü ausgewählt bzw. eingegeben ( siehe :ref:`Config - OBP Settings` ). Sollte kein Koeffizient oder kein ROLL-Wert vorhanden sein, wird Leeway nicht berechnet und berücksichtig.
+
+Die Anzeigeseite benötigt folgende Messwerte: **ROLL**, **SET**, **DFT**, **HDT**, **STW**, **COG**, **SOG**, **HDM**, **VAR**, **AWA**
+
+Der Wert für *ROLL* repräsentiert die Neigung des Bootes in Grad. Ein entsprechend verfügbarer Datentyp - z.B. **xdrROLL** - muss bei der Auswahl der Seite im Web-Konfigurationsmenü aus den verfügbaren Bootswerten ausgewählt werden. Ein nicht passender Datentyp kann zu verfälschten Stromdaten führen.
+
+.. note::
+    Sofern die Strömungswerte berechnet werden, sind sie nur auf dieser Datenseite sichtbar. Auf der *Data*-Seite des Web-Browsers sind die Strömungswerte **SET** und **DFT** nur sichtbar, wenn sie von Bootssensoren bereitgestellt werden. Berechnete Stromdaten werden dort nicht angezeigt.
 
 XTETrack
 ^^^^^^^^
