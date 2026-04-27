@@ -1216,6 +1216,26 @@ Mit der Anzeige Wind können eine Windanzeige und eine Windlupe dargestellt werd
     * ``[MODE]`` - Umschaltung zwischen Windanzeige und Windlupe
     * ``[SRC]`` - Umschaltung zwischen wahren und scheinbaren Wind
 
+Current
+^^^^^^^
+
+Abb.: Anzeige Strömung (Current)
+
+Diese Seite zeigt die Richtung und Geschwindigkeit einer eventuell vorhandenen Strömung an. Der Pfeil der grafischen Darstellung weist in die Richtung der Strömung. Seine Größe visualisiert die Stärke (Geschwindigkeit) der Strömung und variiert zwischen 1 und 10 Knoten. Strömungen unter xx Knoten werden nicht angezeigt. Die Kompassrose wird immer steuerkursorientiert (heading-up) dargestellt. Bezugsgröße ist der wahre Kurs (**HDT**), sofern vorhanden bzw. ermittelbar (aus magnetischem Kompasskurs **HDM** und magnetischer Missweisung **VAR**).
+
+Sofern Strömungsdaten (**SET** und **DFT** - Drift) bereits im Boots-Netzwerk vorhanden sind, werden sie direkt angezeigt. Ansonsten werden sie aus den weiteren bereitgestellten Werten berechnet.
+
+**Leeway**
+
+Bei einer Berechnung der Strömungsdaten kann auch die aktuelle Drift des Bootes (Leeway) einbezogen werden.
+*Leeway* ist die Bewegung eines Bootes nach Lee, die dadurch verursacht wird, dass der Wind gegen Rumpf, Segel und Aufbautenbläst. Sie wird als Winkelwert in Grad angegeben.
+Dazu sind Neigung (ROLL) und ein Leeway-Koeffizient *K* erforderlich. Der Koeffizient ist vom jeweiligen Boot abhängig und wird im Web-Konfigurationsmenü ausgewählt bzw. eingegeben (s. *Config - OBP Settings*). Sollte kein Koeffizient oder kein ROLL-Wert vorhanden sein, wird Leeway nicht berechnet und berücksichtig.
+
+Die Anzeigeseite benötigt folgende Messwerte: **ROLL**, **SET**, **DFT**, **HDT**, **STW**, **COG**, **SOG**, **HDM**, **VAR**, **AWA**
+Der Wert für *ROLL* repräsentiert die Neigung des Bootes in Grad. Ein entsprechend verfügbarer Datentyp - z.B. **xdrROLL** - muss bei der Auswahl der Seite im Web-Konfigurationsmenü aus den verfügbaren Bootswerten ausgewählt werden. Ein nicht passender Datentyp kann zu verfälschten Stromdaten führen.
+
+.. note::
+    Sofern die Strömungswerte berechnet werden, sind sie nur auf dieser Datenseite sichtbar. Auf der *Data*-Seite des Web-Browsers sind die Strömungswerte **SET** und **DFT** nur sichtbar, wenn sie von Bootssensoren bereitgestellt werden. Berechnete Stromdaten werden dort nicht angezeigt.
 
 XTETrack
 ^^^^^^^^
