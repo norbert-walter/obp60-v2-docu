@@ -462,12 +462,27 @@ Auf der Seite **OBP60 Settings** können Sie Einstellungen vornehmen, die sich a
 Die meisten Einstellungen sollten selbsterklärend sein. Sofern Sie keine Solarpaneele benutzen, belassen Sie den Wert von **Solar Power**  auf 0. **Generator Power** bezieht sich auf einen Elektrogenerator, der im Boot arbeitet. Das kann eine Lichtmaschine, ein Windgenerator, ein Schleppgenerator oder ein weiterer Zusatz-Generator sein. Die Leistungsangaben für **Solar Power** und **Generator Power** werden zur Visualisierung der Energieflüsse benötigt.
 
 **Calculate True Wind**
-	* Sofern die Bootssensoren keine Daten zum wahren Wind zur Verfügung stellen, kann hier ausgewählt werden, diese Daten aus den scheinbaren Winddaten und einigen anderen Datentypen zu errechnen. Zur Berechnung sind die Datentypen **AWA** und **AWS** erforderlich. Für die Bootsgeschwindigkeit wird **STW** oder ersatzweise **SOG** verwendet. Zur Ermittlung der aktuellen Ausrichtung des Bootes werden die Daten in dieser Reihenfolge verwendet, soweit vorhanden: (1) **HDT**, (2) **HDM+VAR**, (3) **HDM**, (4) **COG**, wenn gültig. Drift wird in die Berechnung nicht mit einbezogen.
+
+Sofern die Bootssensoren keine Daten zum wahren Wind zur Verfügung stellen, kann hier ausgewählt werden, diese Daten aus den scheinbaren Winddaten und einigen anderen Datentypen zu errechnen. Zur Berechnung sind die Datentypen **AWA** und **AWS** erforderlich. Für die Bootsgeschwindigkeit wird **STW** oder ersatzweise **SOG** verwendet. Zur Ermittlung der aktuellen Ausrichtung des Bootes werden die Daten in dieser Reihenfolge verwendet, soweit vorhanden: (1) **HDT**, (2) **HDM+VAR**, (3) **HDM**, (4) **COG**, wenn gültig. Drift wird in die Berechnung nicht mit einbezogen.
+
 	* ``on`` - Sofern nicht vorhanden, werden die Datentypen **TWD** (True Wind Direction), **TWA** (True Wind Angle) und **TWS** (True Wind Speed) berechnet. Desweiteren wird **AWD** (Apparent Wind Direction) ermittelt.
 	* ``off`` - Es werden keine Daten zum wahren Wind berechnet. Sollten die Bootssensoren entsprechende Daten bereitstellen, werden sie natürlich verwendet.
 
 .. note::
 	Die berechneten wahren Winddaten sind auf allen Datenseiten, soweit sinnvoll, anzeigbar. Auf der **Data**-Seite des Web-Browsers sind die wahren Winddaten nur sichtbar, wenn sie von Bootssensoren bereitgestellt werden. *Berechnete* Winddaten werden dort nicht angezeigt.
+
+**Leeway Coefficient**
+
+Der Leeway-Koeffizient *K* ist ein dimensionsloser Wert, der für jedes Boot individuell ist. Er wird für die Ermittlung der Abdrift des Bootes benötigt. Die Abdrift wiederum fließt in die Berechnung der aktuellen Strömung ein.
+
+Als Anhaltswert kann *K* aus einer Liste von Bootstypen ausgewählt werden. Sollte *K* bekannt sein, kann er als individueller Werte eingegeben werden.
+
+.. note::
+    Der Leeway-Koeffizient lässt sich u.a. mithilfe der „Two-Tack“-Methode ermitteln:
+1. Suchen Sie sich einen Tag bzw. ein Gebiet ohne Strömung.
+2. Segeln Sie einen gleichmäßigen Upwind-Kurs auf beiden Bugen. Ermitteln Sie HDT, STW, Neigung (Roll) und den COG von Ihrem GPS.
+3. Die Differenz zwischen HDT und COG ist Ihre tatsächliche Abdrift.
+4. Berechnen Sie den K-Wert mit dieser Formel: K = ((COG - HDT) * STW²) / ROLL
 
 Config - OBP Units
 ------------------
